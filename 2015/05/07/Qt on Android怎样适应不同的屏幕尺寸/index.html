@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://greedysky.github.io/2015/05/07/Qt on Android怎样适应不同的屏幕尺寸/index.html">
 <meta property="og:site_name" content="Greedysky's Blog">
 <meta property="og:description" content="使用 Qt 开发的 Android 应用，怎样适应 Android 智能手机各种各样的屏幕尺寸？">
-<meta property="og:updated_time" content="2016-08-13T14:26:17.068Z">
+<meta property="og:updated_time" content="2016-08-14T05:49:24.757Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Qt on Android怎样适应不同的屏幕尺寸">
 <meta name="twitter:description" content="使用 Qt 开发的 Android 应用，怎样适应 Android 智能手机各种各样的屏幕尺寸？">
@@ -63,6 +63,8 @@
           <h1 class="header-author"><a href="/">Greedysky</a></h1>
         </hgroup>
 
+        
+        <p class="header-subtitle">Where there is a will, there is a way.</p>
         
         
         
@@ -124,7 +126,7 @@
                     <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
+                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=laahoa2npqWhpdXk5Lv2_vg" title="mail">mail</a>
                             
                                 <a class="fl github" target="_blank" href="https://github.com/Greedysky" title="github">github</a>
                             
@@ -197,6 +199,8 @@
               <h1 class="header-author"><a href="/" title="回到主页">Greedysky</a></h1>
             </hgroup>
             
+            <p class="header-subtitle">Where there is a will, there is a way.</p>
+            
             <nav class="header-menu">
                 <ul>
                 
@@ -212,7 +216,7 @@
             <nav class="header-nav">
                 <div class="social">
                     
-                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
+                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=laahoa2npqWhpdXk5Lv2_vg" title="mail">mail</a>
                     
                         <a class="github" target="_blank" href="https://github.com/Greedysky" title="github">github</a>
                     
@@ -291,14 +295,14 @@
 <p>&#160; &#160; &#160; &#160;<strong>从 pointSize 到 pixelSize 的计算公式： pixelSize = DPI * pointSize/72</strong>。</p>
 <p>&#160; &#160; &#160; &#160;<strong><font color="red">Qt 应用如何使用 DPI</font></strong></p>
 <p>&#160; &#160; &#160; &#160;看一个代码片段：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">int main(int argc, char **argv)</div><div class="line">&#123;</div><div class="line">　　QApplication a(argc, argv);</div><div class="line">　　...</div><div class="line">　　QScreen *screen = a.primaryScreen();</div><div class="line">　　QFont f = a.font();</div><div class="line">　　int pixelSize = (f.pointSize() * screen-&gt;logicalDotsPerInch()) / 72;</div><div class="line">　　/*</div><div class="line">　　f.setPointSize(25);</div><div class="line">　　a.setFont(f);</div><div class="line">　　int newSize = (f.pointSize() * screen-&gt;logicalDotsPerInch()) / 72;</div><div class="line">　　*/</div><div class="line">　　...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> **argv)</span></span></div><div class="line">&#123;</div><div class="line">　　<span class="function">QApplication <span class="title">a</span><span class="params">(argc, argv)</span></span>;</div><div class="line">　　...</div><div class="line">　　QScreen *screen = a.primaryScreen();</div><div class="line">　　QFont f = a.font();</div><div class="line">　　<span class="keyword">int</span> pixelSize = (f.pointSize() * screen-&gt;logicalDotsPerInch()) / <span class="number">72</span>;</div><div class="line">　　<span class="comment">/*</span></div><div class="line">　　f.setPointSize(25);</div><div class="line">　　a.setFont(f);</div><div class="line">　　int newSize = (f.pointSize() * screen-&gt;logicalDotsPerInch()) / 72;</div><div class="line">　　*/</div><div class="line">　　...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>&#160; &#160; &#160; &#160;其实很简单，只要设置了 QApplication 的 字体，你应用的所有界面元素的字体大小都会变。如果你想单独设置某个 Widget 的字体，可以针对它调用 setFont() 方法。</p>
 <p>&#160; &#160; &#160; &#160;上面的代码还演示了从 pointSize 到 pixelSize 的换算，一旦你得到了合适的 pixelSize ，就可以以它为基础来设置非文本界面元素的尺寸。</p>
 <p>&#160; &#160; &#160; &#160;<strong><qt 获取屏幕分辨率<="" font=""></qt></strong></p>
 <p>&#160; &#160; &#160; &#160;前面我们说最好结合分辨率和 DPI ，一起来调整界面元素。 DPI 的使用已经简单介绍过了，剩分辨率了。</p>
 <p>&#160; &#160; &#160; &#160;QScreen 类的 size 属性可以返回屏幕的像素尺寸， availableSize 可以返回应用能够使用的尺寸。两者的区别是， availableSize 移除了窗口管理器占用的尺寸（在电脑上就是任务栏， Android 手机上是状态栏之类的区域）。</p>
 <p>&#160; &#160; &#160; &#160;下面是一个简单的示例代码：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#ifdef ANDROID</span></div><div class="line">　　QSize iconSize(32, 32);</div><div class="line">　　...</div><div class="line">　　QScreen *screen = qApp-&gt;primaryScreen();</div><div class="line">　　QFont f = qApp-&gt;font();</div><div class="line">　　int pixelSize = (f.pointSize() * screen-&gt;logicalDotsPerInch()) / 72;</div><div class="line">　　QSize screenSize = screen-&gt;size();</div><div class="line">　　<span class="keyword">if</span>(screenSize.width() &gt; 960 || screenSize.height() &gt; 960)</div><div class="line">　　&#123;</div><div class="line">　　　iconSize *= ((qreal)pixelSize) / 20;</div><div class="line">　　&#125;</div><div class="line"><span class="comment">#endif</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">ifdef</span> ANDROID</span></div><div class="line">　　<span class="function">QSize <span class="title">iconSize</span><span class="params">(<span class="number">32</span>, <span class="number">32</span>)</span></span>;</div><div class="line">　　...</div><div class="line">　　QScreen *screen = qApp-&gt;primaryScreen();</div><div class="line">　　QFont f = qApp-&gt;font();</div><div class="line">　　<span class="keyword">int</span> pixelSize = (f.pointSize() * screen-&gt;logicalDotsPerInch()) / <span class="number">72</span>;</div><div class="line">　　QSize screenSize = screen-&gt;size();</div><div class="line">　　<span class="keyword">if</span>(screenSize.width() &gt; <span class="number">960</span> || screenSize.height() &gt; <span class="number">960</span>)</div><div class="line">　　&#123;</div><div class="line">　　　iconSize *= ((qreal)pixelSize) / <span class="number">20</span>;</div><div class="line">　　&#125;</div><div class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>&#160; &#160; &#160; &#160;我们知道该如何设置 Qt on Android 应用来适配多样化的屏幕尺寸，但你的应用运行后是什么效果，就看你如何综合使用前面介绍的这些内容了……</p>
 
       
@@ -311,7 +315,7 @@
         <p><span>本文标题:</span><a href="/2015/05/07/Qt on Android怎样适应不同的屏幕尺寸/">Qt on Android怎样适应不同的屏幕尺寸</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Greedysky 的个人博客">Greedysky</a></p>
         <p><span>发布时间:</span>2015年05月07日 - 00时18分</p>
-        <p><span>最后更新:</span>2016年08月13日 - 22时26分</p>
+        <p><span>最后更新:</span>2016年08月14日 - 13时49分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2015/05/07/Qt on Android怎样适应不同的屏幕尺寸/" title="Qt on Android怎样适应不同的屏幕尺寸">http://greedysky.github.io/2015/05/07/Qt on Android怎样适应不同的屏幕尺寸/</a>
             <span class="copy-path" data-clipboard-text="原文: http://greedysky.github.io/2015/05/07/Qt on Android怎样适应不同的屏幕尺寸/　　作者: Greedysky" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>

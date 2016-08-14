@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://greedysky.github.io/2014/11/16/[MFC]透明图展示/index.html">
 <meta property="og:site_name" content="Greedysky's Blog">
 <meta property="og:description" content="一般我们可见的图形RGB三元色，对Alpha通道的话，它不一定会显示到窗体中来。">
-<meta property="og:updated_time" content="2016-08-13T13:47:00.623Z">
+<meta property="og:updated_time" content="2016-08-14T05:48:32.980Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MFC透明图展示">
 <meta name="twitter:description" content="一般我们可见的图形RGB三元色，对Alpha通道的话，它不一定会显示到窗体中来。">
@@ -63,6 +63,8 @@
           <h1 class="header-author"><a href="/">Greedysky</a></h1>
         </hgroup>
 
+        
+        <p class="header-subtitle">Where there is a will, there is a way.</p>
         
         
         
@@ -124,7 +126,7 @@
                     <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
+                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=laahoa2npqWhpdXk5Lv2_vg" title="mail">mail</a>
                             
                                 <a class="fl github" target="_blank" href="https://github.com/Greedysky" title="github">github</a>
                             
@@ -197,6 +199,8 @@
               <h1 class="header-author"><a href="/" title="回到主页">Greedysky</a></h1>
             </hgroup>
             
+            <p class="header-subtitle">Where there is a will, there is a way.</p>
+            
             <nav class="header-menu">
                 <ul>
                 
@@ -212,7 +216,7 @@
             <nav class="header-nav">
                 <div class="social">
                     
-                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
+                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=laahoa2npqWhpdXk5Lv2_vg" title="mail">mail</a>
                     
                         <a class="github" target="_blank" href="https://github.com/Greedysky" title="github">github</a>
                     
@@ -277,8 +281,8 @@
 <p>&#160; &#160; &#160; &#160;1．读取原图片颜色信息</p>
 <p>&#160; &#160; &#160; &#160;2．逐个像素读取(blue, green, red, alpha)，当alpha不为255(255-不透明)时</p>
 <p>&#160; &#160; &#160; &#160;&#160; &#160;a)读取底图对应x,y位置的颜色colorBk</p>
-<p>&#160; &#160; &#160; &#160;&#160; &#160;b)使用颜色混合：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">blue = (blue *alpha + colorBk.blue * (255 – alpha))/255;</div><div class="line">green = (green *alpha + colorBk.green * (255 – alpha))/255;</div><div class="line">red = (red *alpha + colorBk.red * (255 – alpha))/255;</div></pre></td></tr></table></figure></p>
-<p>&#160; &#160; &#160; &#160;&#160; &#160;　c)alpha设置为255，不允许颜色被window缺省颜色混合<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">alpha = 255</div></pre></td></tr></table></figure></p>
+<p>&#160; &#160; &#160; &#160;&#160; &#160;b)使用颜色混合：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">blue = (blue *alpha + colorBk.blue * (<span class="number">255</span> – alpha))/<span class="number">255</span>;</div><div class="line">green = (green *alpha + colorBk.green * (<span class="number">255</span> – alpha))/<span class="number">255</span>;</div><div class="line">red = (red *alpha + colorBk.red * (<span class="number">255</span> – alpha))/<span class="number">255</span>;</div></pre></td></tr></table></figure></p>
+<p>&#160; &#160; &#160; &#160;&#160; &#160;　c)alpha设置为255，不允许颜色被window缺省颜色混合<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">alpha = <span class="number">255</span></div></pre></td></tr></table></figure></p>
 <p>&#160; &#160; &#160; &#160;把处理后的像素显示到窗体中，这样就可以展示一张和Photoshop类似效果的透明图形了。</p>
 <p>&#160; &#160; &#160; &#160;注意: 使用CImage读取24/32位图形时，读取的字节序是BGR/BGRA。参考MSDN结构体定tagRGBTRIPLE/ tagRGBQUAD义</p>
 
@@ -292,7 +296,7 @@
         <p><span>本文标题:</span><a href="/2014/11/16/[MFC]透明图展示/">MFC透明图展示</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Greedysky 的个人博客">Greedysky</a></p>
         <p><span>发布时间:</span>2014年11月16日 - 16时05分</p>
-        <p><span>最后更新:</span>2016年08月13日 - 21时47分</p>
+        <p><span>最后更新:</span>2016年08月14日 - 13时48分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2014/11/16/[MFC]透明图展示/" title="MFC透明图展示">http://greedysky.github.io/2014/11/16/[MFC]透明图展示/</a>
             <span class="copy-path" data-clipboard-text="原文: http://greedysky.github.io/2014/11/16/[MFC]透明图展示/　　作者: Greedysky" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>

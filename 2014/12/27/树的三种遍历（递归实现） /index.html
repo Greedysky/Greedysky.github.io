@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://greedysky.github.io/2014/12/27/树的三种遍历（递归实现） /index.html">
 <meta property="og:site_name" content="Greedysky's Blog">
 <meta property="og:description" content="树的遍历分为先序遍历，中序遍历和后序遍历 。">
-<meta property="og:updated_time" content="2016-08-13T14:09:23.079Z">
+<meta property="og:updated_time" content="2016-08-14T05:48:55.589Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="树的三种遍历（递归实现）">
 <meta name="twitter:description" content="树的遍历分为先序遍历，中序遍历和后序遍历 。">
@@ -63,6 +63,8 @@
           <h1 class="header-author"><a href="/">Greedysky</a></h1>
         </hgroup>
 
+        
+        <p class="header-subtitle">Where there is a will, there is a way.</p>
         
         
         
@@ -124,7 +126,7 @@
                     <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
+                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=laahoa2npqWhpdXk5Lv2_vg" title="mail">mail</a>
                             
                                 <a class="fl github" target="_blank" href="https://github.com/Greedysky" title="github">github</a>
                             
@@ -197,6 +199,8 @@
               <h1 class="header-author"><a href="/" title="回到主页">Greedysky</a></h1>
             </hgroup>
             
+            <p class="header-subtitle">Where there is a will, there is a way.</p>
+            
             <nav class="header-menu">
                 <ul>
                 
@@ -212,7 +216,7 @@
             <nav class="header-nav">
                 <div class="social">
                     
-                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
+                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=laahoa2npqWhpdXk5Lv2_vg" title="mail">mail</a>
                     
                         <a class="github" target="_blank" href="https://github.com/Greedysky" title="github">github</a>
                     
@@ -273,13 +277,13 @@
           
         <p>&#160; &#160; &#160; &#160;树的遍历分为先序遍历，中序遍历和后序遍历</p>
 <p>&#160; &#160; &#160; &#160;这三种遍历方法其实都很简单的，举例来说：</p>
-<p>&#160; &#160; &#160; &#160;下面是数据结构<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">struct TreeNode;</div><div class="line">typedef TreeNode* Node;</div><div class="line">typedef int EleType;</div><div class="line">struct TreeNode&#123;</div><div class="line">　　Node lchild;</div><div class="line">　　Node rchild;</div><div class="line">　　EleType data;</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
+<p>&#160; &#160; &#160; &#160;下面是数据结构<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">struct</span> TreeNode;</div><div class="line"><span class="keyword">typedef</span> TreeNode* Node;</div><div class="line"><span class="keyword">typedef</span> <span class="keyword">int</span> EleType;</div><div class="line"><span class="keyword">struct</span> TreeNode&#123;</div><div class="line">　　Node lchild;</div><div class="line">　　Node rchild;</div><div class="line">　　EleType data;</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
 <h3 id="先序遍历"><a href="#先序遍历" class="headerlink" title="先序遍历"></a>先序遍历</h3><p>&#160; &#160; &#160; &#160;先序遍历，就是从上到下，从左到右，遇到一个就遍历，上面这个例子遍历的序列就是:a b c 递归代码如下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">struct TreeNode;</div><div class="line">typedef TreeNode* Node;</div><div class="line">typedef int EleType;</div><div class="line">struct TreeNode&#123;</div><div class="line">　　Node lchild;</div><div class="line">　　Node rchild;</div><div class="line">　　EleType data;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">struct</span> TreeNode;</div><div class="line"><span class="keyword">typedef</span> TreeNode* Node;</div><div class="line"><span class="keyword">typedef</span> <span class="keyword">int</span> EleType;</div><div class="line"><span class="keyword">struct</span> TreeNode&#123;</div><div class="line">　　Node lchild;</div><div class="line">　　Node rchild;</div><div class="line">　　EleType data;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
 <h3 id="中序遍历"><a href="#中序遍历" class="headerlink" title="中序遍历"></a>中序遍历</h3><p>&#160; &#160; &#160; &#160;中序遍历的序列：b a c 其实中序遍历就是先从左到右，来遍历，先找到最左的，然后找到，它的右孩子，没有的话再找父亲，输出，最后输出右兄弟。 代码如下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">void PreOrderTree(Node node)</div><div class="line">&#123;</div><div class="line">　<span class="keyword">if</span> (node != NULL)</div><div class="line">　&#123;</div><div class="line">　　PreOrderTree(node-&gt;lchild);</div><div class="line">　　<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,node-&gt;data);</div><div class="line">　　PreOrderTree(node-&gt;rchild);</div><div class="line">　&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">PreOrderTree</span><span class="params">(Node node)</span></span></div><div class="line">&#123;</div><div class="line">　<span class="keyword">if</span> (node != <span class="literal">NULL</span>)</div><div class="line">　&#123;</div><div class="line">　　PreOrderTree(node-&gt;lchild);</div><div class="line">　　<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,node-&gt;data);</div><div class="line">　　PreOrderTree(node-&gt;rchild);</div><div class="line">　&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h3 id="后序遍历"><a href="#后序遍历" class="headerlink" title="后序遍历"></a>后序遍历</h3><p>&#160; &#160; &#160; &#160;后序遍历的序列：a c b 其实后序遍历就是把中序遍历的父亲在它右兄弟输出后再输出。 代码如下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">void PreOrderTree(Node node)</div><div class="line">&#123;</div><div class="line">　<span class="keyword">if</span> (node != NULL)</div><div class="line">　&#123;</div><div class="line">　　PreOrderTree(node-&gt;lchild);</div><div class="line">　　PreOrderTree(node-&gt;rchild);</div><div class="line">　　<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,node-&gt;data);</div><div class="line">　&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">PreOrderTree</span><span class="params">(Node node)</span></span></div><div class="line">&#123;</div><div class="line">　<span class="keyword">if</span> (node != <span class="literal">NULL</span>)</div><div class="line">　&#123;</div><div class="line">　　PreOrderTree(node-&gt;lchild);</div><div class="line">　　PreOrderTree(node-&gt;rchild);</div><div class="line">　　<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,node-&gt;data);</div><div class="line">　&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
       
     </div>
     
@@ -290,7 +294,7 @@
         <p><span>本文标题:</span><a href="/2014/12/27/树的三种遍历（递归实现） /">树的三种遍历（递归实现）</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Greedysky 的个人博客">Greedysky</a></p>
         <p><span>发布时间:</span>2014年12月27日 - 13时50分</p>
-        <p><span>最后更新:</span>2016年08月13日 - 22时09分</p>
+        <p><span>最后更新:</span>2016年08月14日 - 13时48分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2014/12/27/树的三种遍历（递归实现） /" title="树的三种遍历（递归实现）">http://greedysky.github.io/2014/12/27/树的三种遍历（递归实现） /</a>
             <span class="copy-path" data-clipboard-text="原文: http://greedysky.github.io/2014/12/27/树的三种遍历（递归实现） /　　作者: Greedysky" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>

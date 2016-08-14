@@ -14,7 +14,7 @@
 <meta property="og:image" content="http://greedysky.github.io/image/23_1.png">
 <meta property="og:image" content="http://greedysky.github.io/image/23_2.png">
 <meta property="og:image" content="http://greedysky.github.io/image/23_3.png">
-<meta property="og:updated_time" content="2016-08-13T15:00:48.601Z">
+<meta property="og:updated_time" content="2016-08-14T05:50:30.613Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Qt on Android 资源文件系统qrc与assets">
 <meta name="twitter:description" content="使用 Qt 为 Android 开发应用时，有时我们的应用会携带一些资源文件，如 png 、 jpg 等，也可能有一些配置文件，如 xml 等，这些文件放在哪里呢？有两种方式：qrc和assets，咱们分别来看下。">
@@ -67,6 +67,8 @@
           <h1 class="header-author"><a href="/">Greedysky</a></h1>
         </hgroup>
 
+        
+        <p class="header-subtitle">Where there is a will, there is a way.</p>
         
         
         
@@ -128,7 +130,7 @@
                     <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
+                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=laahoa2npqWhpdXk5Lv2_vg" title="mail">mail</a>
                             
                                 <a class="fl github" target="_blank" href="https://github.com/Greedysky" title="github">github</a>
                             
@@ -201,6 +203,8 @@
               <h1 class="header-author"><a href="/" title="回到主页">Greedysky</a></h1>
             </hgroup>
             
+            <p class="header-subtitle">Where there is a will, there is a way.</p>
+            
             <nav class="header-menu">
                 <ul>
                 
@@ -216,7 +220,7 @@
             <nav class="header-nav">
                 <div class="social">
                     
-                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
+                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=laahoa2npqWhpdXk5Lv2_vg" title="mail">mail</a>
                     
                         <a class="github" target="_blank" href="https://github.com/Greedysky" title="github">github</a>
                     
@@ -282,7 +286,7 @@
 <p>&#160; &#160; &#160; &#160;那资源文件怎么放呢？很简单，就是放在 Qt 项目目录下的 android/assets 文件夹内即可。<br><img src="/image/23_2.png" alt="demo"> </p>
 <p>&#160; &#160; &#160; &#160;只要你这么一放， Qt 编译时就会把 assets 内的文件打包到 APK ，然后就可以在 C++ 代码内访问了。</p>
 <h3 id="使用-assets-的-Android-示例"><a href="#使用-assets-的-Android-示例" class="headerlink" title="使用 assets 的 Android 示例"></a>使用 assets 的 Android 示例</h3><p>&#160; &#160; &#160; &#160;建立一个针对 Android 的项目。 创建 AndroidManifest.xml ，然后在 android/assets 目录下放一个 beauty.jpg 。删除项目的 widget.h 和 widget.cpp 。修改 main.cpp ，如下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#include &lt;QApplication&gt;</span></div><div class="line"><span class="comment">#include &lt;QLabel&gt;</span></div><div class="line"><span class="comment">#include &lt;QPixmap&gt;</span></div><div class="line"></div><div class="line">int main(int argc, char *argv[])</div><div class="line">&#123;</div><div class="line">　　QApplication a(argc, argv);</div><div class="line">　　QLabel label;</div><div class="line">　　QPixmap pixmap(<span class="string">"assets:/beauty.jpg"</span>);</div><div class="line">　　label.setPixmap(pixmap);</div><div class="line">　　label.show();</div><div class="line">　　<span class="built_in">return</span> a.exec();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QApplication&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QLabel&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QPixmap&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> *argv[])</span></span></div><div class="line">&#123;</div><div class="line">　　<span class="function">QApplication <span class="title">a</span><span class="params">(argc, argv)</span></span>;</div><div class="line">　　QLabel label;</div><div class="line">　　<span class="function">QPixmap <span class="title">pixmap</span><span class="params">(<span class="string">"assets:/beauty.jpg"</span>)</span></span>;</div><div class="line">　　label.setPixmap(pixmap);</div><div class="line">　　label.show();</div><div class="line">　　<span class="keyword">return</span> a.exec();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>&#160; &#160; &#160; &#160;编译，运行，可以看到下图 :<br><img src="/image/23_3.png" alt="demo"> </p>
 <p>&#160; &#160; &#160; &#160;OK，到此结束。</p>
 
@@ -296,7 +300,7 @@
         <p><span>本文标题:</span><a href="/2016/04/03/Qt on Android 资源文件系统qrc与assets/">Qt on Android 资源文件系统qrc与assets</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Greedysky 的个人博客">Greedysky</a></p>
         <p><span>发布时间:</span>2016年04月03日 - 16时13分</p>
-        <p><span>最后更新:</span>2016年08月13日 - 23时00分</p>
+        <p><span>最后更新:</span>2016年08月14日 - 13时50分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2016/04/03/Qt on Android 资源文件系统qrc与assets/" title="Qt on Android 资源文件系统qrc与assets">http://greedysky.github.io/2016/04/03/Qt on Android 资源文件系统qrc与assets/</a>
             <span class="copy-path" data-clipboard-text="原文: http://greedysky.github.io/2016/04/03/Qt on Android 资源文件系统qrc与assets/　　作者: Greedysky" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>

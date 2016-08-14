@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://greedysky.github.io/2014/11/15/[MFC]图形附加alpha透明通道/index.html">
 <meta property="og:site_name" content="Greedysky's Blog">
 <meta property="og:description" content="修改图形并且附加透明通道。">
-<meta property="og:updated_time" content="2016-08-13T13:42:36.046Z">
+<meta property="og:updated_time" content="2016-08-14T05:45:58.709Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MFC图形附加alpha透明通道">
 <meta name="twitter:description" content="修改图形并且附加透明通道。">
@@ -63,6 +63,8 @@
           <h1 class="header-author"><a href="/">Greedysky</a></h1>
         </hgroup>
 
+        
+        <p class="header-subtitle">Where there is a will, there is a way.</p>
         
         
         
@@ -124,7 +126,7 @@
                     <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
+                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=laahoa2npqWhpdXk5Lv2_vg" title="mail">mail</a>
                             
                                 <a class="fl github" target="_blank" href="https://github.com/Greedysky" title="github">github</a>
                             
@@ -197,6 +199,8 @@
               <h1 class="header-author"><a href="/" title="回到主页">Greedysky</a></h1>
             </hgroup>
             
+            <p class="header-subtitle">Where there is a will, there is a way.</p>
+            
             <nav class="header-menu">
                 <ul>
                 
@@ -212,7 +216,7 @@
             <nav class="header-nav">
                 <div class="social">
                     
-                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
+                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=laahoa2npqWhpdXk5Lv2_vg" title="mail">mail</a>
                     
                         <a class="github" target="_blank" href="https://github.com/Greedysky" title="github">github</a>
                     
@@ -272,7 +276,7 @@
       
           
         <p>&#160; &#160; &#160; &#160;修改图形并且附加透明通道:<br>&#160; &#160; &#160; &#160;要附加透明度，可以要把图片转化为32位png图片，然后设置相应的alpha值:<br>&#160; &#160; &#160; &#160;如何把一张图片修改为32位的Png:<br>&#160; &#160; &#160; &#160; &#160; &#160;a) 读取原图片颜色信息。<br>&#160; &#160; &#160; &#160; &#160; &#160;b) 创建一张32位并且带透明的位图。<br>&#160; &#160; &#160; &#160;例如: 创建带透明的DIB图形(DIB:设备无关图形)</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">CImageimage image;</div><div class="line">image.Create(nWidth(),nHeight(),32,CImage::createAlphaChannel);</div><div class="line">byte* pHead = (byte*) image.GetBits();</div><div class="line">//颜色buffer</div><div class="line">intnPitch = imageConvert.GetPitch();</div><div class="line">//每行字节数--为负时图形自下而上</div></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">CImageimage image;</div><div class="line">image.Create(nWidth(),nHeight(),<span class="number">32</span>,CImage::createAlphaChannel);</div><div class="line">byte* pHead = (byte*) image.GetBits();</div><div class="line"><span class="comment">//颜色buffer</span></div><div class="line">intnPitch = imageConvert.GetPitch();</div><div class="line"><span class="comment">//每行字节数--为负时图形自下而上</span></div></pre></td></tr></table></figure>
 <p>&#160; &#160; &#160; &#160; &#160; &#160;c) 读取原图片的RGB值写入到新图片中，Alpha值缺省使用255，此时，也可以为指定颜色，设置特殊的alpha值。</p>
 <p>&#160; &#160; &#160; &#160; &#160; &#160;d) 保存为png图片。</p>
 <p>&#160; &#160; &#160; &#160;注意: 使用CImage读取24/32位图形时，读取的字节序是BGR/BGRA。参考MSDN结构体定tagRGBTRIPLE/ tagRGBQUAD义。</p>
@@ -287,7 +291,7 @@
         <p><span>本文标题:</span><a href="/2014/11/15/[MFC]图形附加alpha透明通道/">MFC图形附加alpha透明通道</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Greedysky 的个人博客">Greedysky</a></p>
         <p><span>发布时间:</span>2014年11月15日 - 15时37分</p>
-        <p><span>最后更新:</span>2016年08月13日 - 21时42分</p>
+        <p><span>最后更新:</span>2016年08月14日 - 13时45分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2014/11/15/[MFC]图形附加alpha透明通道/" title="MFC图形附加alpha透明通道">http://greedysky.github.io/2014/11/15/[MFC]图形附加alpha透明通道/</a>
             <span class="copy-path" data-clipboard-text="原文: http://greedysky.github.io/2014/11/15/[MFC]图形附加alpha透明通道/　　作者: Greedysky" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
