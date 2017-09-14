@@ -94,16 +94,21 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="../../d4/d11/class_music_data_tag_download_thread.html">MusicDataTagDownloadThread</a>(<span class="keyword">const</span> QString &amp;url, <span class="keyword">const</span> QString &amp;save,</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                               <a class="code" href="../../dc/def/class_music_down_load_thread_abstract.html#abc64ac534fa59f5a85fc81e2d8506439">Download_Type</a> type, QObject *parent = 0);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../d8/dfa/class_music_data_download_thread.html#a1039d258539287548996cf8f6f9d9c39">getClassName</a>();</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> setTags(<span class="keyword">const</span> QString &amp;smlUrl, <span class="keyword">const</span> QString &amp;title, <span class="keyword">const</span> QString &amp;artist);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d8/dfa/class_music_data_download_thread.html#ab1bfb54e10636694a01db1bb2ed4627a">startToDownload</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="../../d4/d11/class_music_data_tag_download_thread.html">MusicDataTagDownloadThread</a>(<span class="keyword">const</span> QString &amp;url, <span class="keyword">const</span> QString &amp;save,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                               <a class="code" href="../../dc/def/class_music_down_load_thread_abstract.html#abc64ac534fa59f5a85fc81e2d8506439">Download_Type</a> type, QObject *parent = 0);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../d8/dfa/class_music_data_download_thread.html#a1039d258539287548996cf8f6f9d9c39">getClassName</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> setTags(<span class="keyword">const</span> QString &amp;smlUrl, <span class="keyword">const</span> QString &amp;title, <span class="keyword">const</span> QString &amp;artist);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d8/dfa/class_music_data_download_thread.html#ab1bfb54e10636694a01db1bb2ed4627a">startToDownload</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> finished();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> finished();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d8/dfa/class_music_data_download_thread.html#aad8e51733f046f6306cea820cbe8fbf1">downLoadFinished</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d8/dfa/class_music_data_download_thread.html#aad8e51733f046f6306cea820cbe8fbf1">downLoadFinished</a>(<span class="keyword">const</span> QByteArray &amp;data);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d8/dfa/class_music_data_download_thread.html#aad8e51733f046f6306cea820cbe8fbf1">downLoadFinished</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d8/dfa/class_music_data_download_thread.html#aad8e51733f046f6306cea820cbe8fbf1">downLoadFinished</a>(<span class="keyword">const</span> QByteArray &amp;data);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="../../d4/d11/class_music_data_tag_download_thread.html#a6162c77e82ee9210dcedf7669253142b">   58</a></span>&#160;    QString <a class="code" href="../../d4/d11/class_music_data_tag_download_thread.html#a6162c77e82ee9210dcedf7669253142b">m_smallPicUrl</a>;</div>
 <div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="../../d4/d11/class_music_data_tag_download_thread.html#aee5c2884dbf1fd0f6951857efa454bd8">   59</a></span>&#160;    QString <a class="code" href="../../d4/d11/class_music_data_tag_download_thread.html#aee5c2884dbf1fd0f6951857efa454bd8">m_title</a>, m_artist;</div>
@@ -123,7 +128,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 13 2017 23:23:32 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 14 2017 20:51:20 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

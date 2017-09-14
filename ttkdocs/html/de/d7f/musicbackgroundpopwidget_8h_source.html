@@ -96,35 +96,41 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d2/db5/class_music_background_pop_widget.html">MusicBackgroundPopWidget</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d2/db5/class_music_background_pop_widget.html">MusicBackgroundPopWidget</a>();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../dc/d29/class_music_tool_menu_widget.html#af9d355bf2630616291299db646231cb7">getClassName</a>();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> setValue(<span class="keywordtype">int</span> value);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">int</span> value() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> valueChanged(<span class="keywordtype">int</span> value);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> sliderStateChanged(<span class="keywordtype">bool</span> state);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">private</span> Q_SLOTS:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> sliderPressed();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> sliderReleased();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> initWidget();</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="../../d2/db5/class_music_background_pop_widget.html#a4218ae2d23ea1449049357acb6e2c99c">   69</a></span>&#160;    <a class="code" href="../../dd/d8a/class_music_clicked_slider.html">MusicClickedSlider</a> *<a class="code" href="../../d2/db5/class_music_background_pop_widget.html#a4218ae2d23ea1449049357acb6e2c99c">m_slider</a>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif // MUSICBACKGROUNDPOPWIDGET_H</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d2/db5/class_music_background_pop_widget.html">MusicBackgroundPopWidget</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d2/db5/class_music_background_pop_widget.html">MusicBackgroundPopWidget</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../dc/d29/class_music_tool_menu_widget.html#af9d355bf2630616291299db646231cb7">getClassName</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> setValue(<span class="keywordtype">int</span> value);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">int</span> value() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> valueChanged(<span class="keywordtype">int</span> value);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> sliderStateChanged(<span class="keywordtype">bool</span> state);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">private</span> Q_SLOTS:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> sliderPressed();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> sliderReleased();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> initWidget();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="../../d2/db5/class_music_background_pop_widget.html#a4218ae2d23ea1449049357acb6e2c99c">   70</a></span>&#160;    <a class="code" href="../../dd/d8a/class_music_clicked_slider.html">MusicClickedSlider</a> *<a class="code" href="../../d2/db5/class_music_background_pop_widget.html#a4218ae2d23ea1449049357acb6e2c99c">m_slider</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif // MUSICBACKGROUNDPOPWIDGET_H</span></div>
 <div class="ttc" id="class_music_tool_menu_widget_html"><div class="ttname"><a href="../../dc/d29/class_music_tool_menu_widget.html">MusicToolMenuWidget</a></div><div class="ttdoc">The class of the tool menu base widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd6/musictoolmenuwidget_8h_source.html#l00052">musictoolmenuwidget.h:52</a></div></div>
 <div class="ttc" id="class_music_background_pop_widget_html"><div class="ttname"><a href="../../d2/db5/class_music_background_pop_widget.html">MusicBackgroundPopWidget</a></div><div class="ttdoc">The class of the background popup widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d7f/musicbackgroundpopwidget_8h_source.html#l00019">musicbackgroundpopwidget.h:19</a></div></div>
 <div class="ttc" id="musictoolmenuwidget_8h_html"><div class="ttname"><a href="../../d6/dd6/musictoolmenuwidget_8h.html">musictoolmenuwidget.h</a></div></div>
 <div class="ttc" id="class_music_tool_menu_widget_html_af9d355bf2630616291299db646231cb7"><div class="ttname"><a href="../../dc/d29/class_music_tool_menu_widget.html#af9d355bf2630616291299db646231cb7">MusicToolMenuWidget::getClassName</a></div><div class="ttdeci">static QString getClassName()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dac/musictoolmenuwidget_8cpp_source.html#l00051">musictoolmenuwidget.cpp:51</a></div></div>
-<div class="ttc" id="class_music_background_pop_widget_html_a4218ae2d23ea1449049357acb6e2c99c"><div class="ttname"><a href="../../d2/db5/class_music_background_pop_widget.html#a4218ae2d23ea1449049357acb6e2c99c">MusicBackgroundPopWidget::m_slider</a></div><div class="ttdeci">MusicClickedSlider * m_slider</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d7f/musicbackgroundpopwidget_8h_source.html#l00069">musicbackgroundpopwidget.h:69</a></div></div>
+<div class="ttc" id="class_music_background_pop_widget_html_a4218ae2d23ea1449049357acb6e2c99c"><div class="ttname"><a href="../../d2/db5/class_music_background_pop_widget.html#a4218ae2d23ea1449049357acb6e2c99c">MusicBackgroundPopWidget::m_slider</a></div><div class="ttdeci">MusicClickedSlider * m_slider</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d7f/musicbackgroundpopwidget_8h_source.html#l00070">musicbackgroundpopwidget.h:70</a></div></div>
 <div class="ttc" id="class_music_clicked_slider_html"><div class="ttname"><a href="../../dd/d8a/class_music_clicked_slider.html">MusicClickedSlider</a></div><div class="ttdoc">The class of the slider that can clicked any position. </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dcd/musicclickedslider_8h_source.html#l00018">musicclickedslider.h:18</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 13 2017 23:23:35 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 14 2017 20:51:23 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

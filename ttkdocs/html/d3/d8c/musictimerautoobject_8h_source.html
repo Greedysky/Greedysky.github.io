@@ -112,28 +112,33 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<a class="code" href="../../da/d4e/musicglobal_8h.html#a26874f3399a60d18f8f82ce4a546e0c9">TTK_DECLARE_LISTS</a>(<a class="code" href="../../d4/d21/struct_music_time_object.html">MusicTimeObject</a>)</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../d2/d82/class_music_timer_auto_object.html">   41</a></span>&#160;class MUSIC_SUPER_EXPORT <a class="code" href="../../d2/d82/class_music_timer_auto_object.html">MusicTimerAutoObject</a> : public QObject</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d2/d82/class_music_timer_auto_object.html">MusicTimerAutoObject</a>(QObject *parent = 0);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    ~<a class="code" href="../../d2/d82/class_music_timer_auto_object.html">MusicTimerAutoObject</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../d2/d82/class_music_timer_auto_object.html">   42</a></span>&#160;class MUSIC_SUPER_EXPORT <a class="code" href="../../d2/d82/class_music_timer_auto_object.html">MusicTimerAutoObject</a> : public QObject</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d2/d82/class_music_timer_auto_object.html">MusicTimerAutoObject</a>(QObject *parent = 0);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">static</span> QString getClassName();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> runTimerAutoConfig();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> timeout();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> setShutdown();</div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="../../d2/d82/class_music_timer_auto_object.html#abf654537cbfbb4c2cde68c26d2bbe88b">   72</a></span>&#160;    QTimer <a class="code" href="../../d2/d82/class_music_timer_auto_object.html#abf654537cbfbb4c2cde68c26d2bbe88b">m_timer</a>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="../../d2/d82/class_music_timer_auto_object.html#a770621f0f34a11bf87b8b82923a8fd2e">   73</a></span>&#160;    MusicTimeObjects <a class="code" href="../../d2/d82/class_music_timer_auto_object.html#a770621f0f34a11bf87b8b82923a8fd2e">m_timeObjects</a>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    ~<a class="code" href="../../d2/d82/class_music_timer_auto_object.html">MusicTimerAutoObject</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">static</span> QString getClassName();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> runTimerAutoConfig();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> timeout();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> setShutdown();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="../../d2/d82/class_music_timer_auto_object.html#abf654537cbfbb4c2cde68c26d2bbe88b">   74</a></span>&#160;    QTimer <a class="code" href="../../d2/d82/class_music_timer_auto_object.html#abf654537cbfbb4c2cde68c26d2bbe88b">m_timer</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="../../d2/d82/class_music_timer_auto_object.html#a770621f0f34a11bf87b8b82923a8fd2e">   75</a></span>&#160;    MusicTimeObjects <a class="code" href="../../d2/d82/class_music_timer_auto_object.html#a770621f0f34a11bf87b8b82923a8fd2e">m_timeObjects</a>;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif // MUSICTIMERAUTOOBJECT_H</span></div>
-<div class="ttc" id="class_music_timer_auto_object_html_abf654537cbfbb4c2cde68c26d2bbe88b"><div class="ttname"><a href="../../d2/d82/class_music_timer_auto_object.html#abf654537cbfbb4c2cde68c26d2bbe88b">MusicTimerAutoObject::m_timer</a></div><div class="ttdeci">QTimer m_timer</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d8c/musictimerautoobject_8h_source.html#l00072">musictimerautoobject.h:72</a></div></div>
-<div class="ttc" id="class_music_timer_auto_object_html_a770621f0f34a11bf87b8b82923a8fd2e"><div class="ttname"><a href="../../d2/d82/class_music_timer_auto_object.html#a770621f0f34a11bf87b8b82923a8fd2e">MusicTimerAutoObject::m_timeObjects</a></div><div class="ttdeci">MusicTimeObjects m_timeObjects</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d8c/musictimerautoobject_8h_source.html#l00073">musictimerautoobject.h:73</a></div></div>
-<div class="ttc" id="class_music_timer_auto_object_html"><div class="ttname"><a href="../../d2/d82/class_music_timer_auto_object.html">MusicTimerAutoObject</a></div><div class="ttdoc">The class of the time auto run. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d8c/musictimerautoobject_8h_source.html#l00041">musictimerautoobject.h:41</a></div></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif // MUSICTIMERAUTOOBJECT_H</span></div>
+<div class="ttc" id="class_music_timer_auto_object_html_abf654537cbfbb4c2cde68c26d2bbe88b"><div class="ttname"><a href="../../d2/d82/class_music_timer_auto_object.html#abf654537cbfbb4c2cde68c26d2bbe88b">MusicTimerAutoObject::m_timer</a></div><div class="ttdeci">QTimer m_timer</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d8c/musictimerautoobject_8h_source.html#l00074">musictimerautoobject.h:74</a></div></div>
+<div class="ttc" id="class_music_timer_auto_object_html_a770621f0f34a11bf87b8b82923a8fd2e"><div class="ttname"><a href="../../d2/d82/class_music_timer_auto_object.html#a770621f0f34a11bf87b8b82923a8fd2e">MusicTimerAutoObject::m_timeObjects</a></div><div class="ttdeci">MusicTimeObjects m_timeObjects</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d8c/musictimerautoobject_8h_source.html#l00075">musictimerautoobject.h:75</a></div></div>
+<div class="ttc" id="class_music_timer_auto_object_html"><div class="ttname"><a href="../../d2/d82/class_music_timer_auto_object.html">MusicTimerAutoObject</a></div><div class="ttdoc">The class of the time auto run. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d8c/musictimerautoobject_8h_source.html#l00042">musictimerautoobject.h:42</a></div></div>
 <div class="ttc" id="musictimerautoobject_8h_html_a5f4df131ccedacae45bf000e4115a7ca"><div class="ttname"><a href="../../d3/d8c/musictimerautoobject_8h.html#a5f4df131ccedacae45bf000e4115a7ca">MusicTimeObject</a></div><div class="ttdeci">struct MUSIC_SUPER_EXPORT MusicTimeObject MusicTimeObject</div><div class="ttdoc">The class of the time check object. </div></div>
 <div class="ttc" id="struct_music_time_object_html_a8fd314b0dbd531ca3a80dcd0e3209561"><div class="ttname"><a href="../../d4/d21/struct_music_time_object.html#a8fd314b0dbd531ca3a80dcd0e3209561">MusicTimeObject::m_minute</a></div><div class="ttdeci">int m_minute</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d8c/musictimerautoobject_8h_source.html#l00025">musictimerautoobject.h:25</a></div></div>
 <div class="ttc" id="struct_music_time_object_html"><div class="ttname"><a href="../../d4/d21/struct_music_time_object.html">MusicTimeObject</a></div><div class="ttdoc">The class of the time check object. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d8c/musictimerautoobject_8h_source.html#l00021">musictimerautoobject.h:21</a></div></div>
@@ -147,7 +152,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 13 2017 23:23:33 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 14 2017 20:51:21 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

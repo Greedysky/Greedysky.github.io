@@ -97,34 +97,38 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../df/de7/class_music_connect_mobile_widget.html">MusicConnectMobileWidget</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    ~<a class="code" href="../../df/de7/class_music_connect_mobile_widget.html">MusicConnectMobileWidget</a>();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">static</span> QString getClassName();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">private</span> Q_SLOTS:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> changeStatckedWidgetFirst();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> changeStatckedWidgetSecond();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> changeStatckedWidgetThird();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> openTransferFiles2Mobile();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> openTransferFiles2Wifi();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> contextMenuEvent(QContextMenuEvent *event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> initFirstWidget();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> initSecondWidget();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> initThirdWidget();</div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="../../df/de7/class_music_connect_mobile_widget.html#afd181e37cce83eb23d226f058bb4f05e">   75</a></span>&#160;    <a class="code" href="../../d6/d89/class_music_animation_stacked_widget.html">MusicAnimationStackedWidget</a> *<a class="code" href="../../df/de7/class_music_connect_mobile_widget.html#afd181e37cce83eb23d226f058bb4f05e">m_stackedWidget</a>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif // MUSICCONNECTMOBILEWIDGET_H</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../df/de7/class_music_connect_mobile_widget.html">MusicConnectMobileWidget</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    ~<a class="code" href="../../df/de7/class_music_connect_mobile_widget.html">MusicConnectMobileWidget</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">static</span> QString getClassName();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">private</span> Q_SLOTS:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> changeStatckedWidgetFirst();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> changeStatckedWidgetSecond();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> changeStatckedWidgetThird();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> openTransferFiles2Mobile();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> openTransferFiles2Wifi();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> contextMenuEvent(QContextMenuEvent *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> initFirstWidget();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> initSecondWidget();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> initThirdWidget();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="../../df/de7/class_music_connect_mobile_widget.html#afd181e37cce83eb23d226f058bb4f05e">   76</a></span>&#160;    <a class="code" href="../../d6/d89/class_music_animation_stacked_widget.html">MusicAnimationStackedWidget</a> *<a class="code" href="../../df/de7/class_music_connect_mobile_widget.html#afd181e37cce83eb23d226f058bb4f05e">m_stackedWidget</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif // MUSICCONNECTMOBILEWIDGET_H</span></div>
 <div class="ttc" id="class_music_connect_mobile_widget_html"><div class="ttname"><a href="../../df/de7/class_music_connect_mobile_widget.html">MusicConnectMobileWidget</a></div><div class="ttdoc">The class of the connect mobile widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/dba/musicconnectmobilewidget_8h_source.html#l00020">musicconnectmobilewidget.h:20</a></div></div>
 <div class="ttc" id="musicglobaldefine_8h_html"><div class="ttname"><a href="../../d6/d9b/musicglobaldefine_8h.html">musicglobaldefine.h</a></div></div>
-<div class="ttc" id="class_music_connect_mobile_widget_html_afd181e37cce83eb23d226f058bb4f05e"><div class="ttname"><a href="../../df/de7/class_music_connect_mobile_widget.html#afd181e37cce83eb23d226f058bb4f05e">MusicConnectMobileWidget::m_stackedWidget</a></div><div class="ttdeci">MusicAnimationStackedWidget * m_stackedWidget</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dba/musicconnectmobilewidget_8h_source.html#l00075">musicconnectmobilewidget.h:75</a></div></div>
+<div class="ttc" id="class_music_connect_mobile_widget_html_afd181e37cce83eb23d226f058bb4f05e"><div class="ttname"><a href="../../df/de7/class_music_connect_mobile_widget.html#afd181e37cce83eb23d226f058bb4f05e">MusicConnectMobileWidget::m_stackedWidget</a></div><div class="ttdeci">MusicAnimationStackedWidget * m_stackedWidget</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dba/musicconnectmobilewidget_8h_source.html#l00076">musicconnectmobilewidget.h:76</a></div></div>
 <div class="ttc" id="class_music_animation_stacked_widget_html"><div class="ttname"><a href="../../d6/d89/class_music_animation_stacked_widget.html">MusicAnimationStackedWidget</a></div><div class="ttdoc">The class of the statckwidget switch animation. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d68/musicanimationstackedwidget_8h_source.html#l00020">musicanimationstackedwidget.h:20</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 13 2017 23:23:33 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 14 2017 20:51:22 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

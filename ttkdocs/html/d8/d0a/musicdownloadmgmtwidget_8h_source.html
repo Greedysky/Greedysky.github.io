@@ -99,47 +99,53 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d6/d3e/class_music_download_reset_widget.html">MusicDownloadResetWidget</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    ~<a class="code" href="../../d6/d3e/class_music_download_reset_widget.html">MusicDownloadResetWidget</a>();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../d5/d2d/class_music_abstract_move_widget.html#adf129b027d906c36d605238a27043ede">getClassName</a>();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> setSongName(<span class="keyword">const</span> QString &amp;name);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> openStackedDownloadWidget();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> show();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> restartToDownload();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> openDetailInfo();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> openFileLocation();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="../../d6/d3e/class_music_download_reset_widget.html#a6d4ca2cd5e42e7ec772ad759cff866dd">   66</a></span>&#160;    Ui::MusicDownloadResetWidget* <a class="code" href="../../d6/d3e/class_music_download_reset_widget.html#a6d4ca2cd5e42e7ec772ad759cff866dd">m_ui</a>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="../../d6/d3e/class_music_download_reset_widget.html#a07b84599fc75f76b1ac290fdb830f694">   68</a></span>&#160;    QWidget *<a class="code" href="../../d6/d3e/class_music_download_reset_widget.html#a07b84599fc75f76b1ac290fdb830f694">m_parentClass</a>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="../../d6/d3e/class_music_download_reset_widget.html#a6ff6e8f79035aabe8e0bbb5ad3322915">   69</a></span>&#160;    QString <a class="code" href="../../d6/d3e/class_music_download_reset_widget.html#a6ff6e8f79035aabe8e0bbb5ad3322915">m_currentName</a>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d6/d3e/class_music_download_reset_widget.html">MusicDownloadResetWidget</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    ~<a class="code" href="../../d6/d3e/class_music_download_reset_widget.html">MusicDownloadResetWidget</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../d5/d2d/class_music_abstract_move_widget.html#adf129b027d906c36d605238a27043ede">getClassName</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> setSongName(<span class="keyword">const</span> QString &amp;name);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> openStackedDownloadWidget();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> show();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> restartToDownload();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> openDetailInfo();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> openFileLocation();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="../../d6/d3e/class_music_download_reset_widget.html#a6d4ca2cd5e42e7ec772ad759cff866dd">   67</a></span>&#160;    Ui::MusicDownloadResetWidget* <a class="code" href="../../d6/d3e/class_music_download_reset_widget.html#a6d4ca2cd5e42e7ec772ad759cff866dd">m_ui</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="../../d6/d3e/class_music_download_reset_widget.html#a07b84599fc75f76b1ac290fdb830f694">   69</a></span>&#160;    QWidget *<a class="code" href="../../d6/d3e/class_music_download_reset_widget.html#a07b84599fc75f76b1ac290fdb830f694">m_parentClass</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="../../d6/d3e/class_music_download_reset_widget.html#a6ff6e8f79035aabe8e0bbb5ad3322915">   70</a></span>&#160;    QString <a class="code" href="../../d6/d3e/class_music_download_reset_widget.html#a6ff6e8f79035aabe8e0bbb5ad3322915">m_currentName</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="../../dc/dae/class_music_download_mgmt_widget.html">   77</a></span>&#160;<span class="keyword">class </span>MUSIC_WIDGET_EXPORT <a class="code" href="../../dc/dae/class_music_download_mgmt_widget.html">MusicDownloadMgmtWidget</a> : <span class="keyword">public</span> QObject</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../dc/dae/class_music_download_mgmt_widget.html">MusicDownloadMgmtWidget</a>(QObject *parent = 0);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">static</span> QString getClassName();</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> setSongName(<span class="keyword">const</span> QString &amp;name, <a class="code" href="../../dc/de4/class_music_down_load_query_thread_abstract.html#a02a8296199ce895500ee46786781f2b2">MusicDownLoadQueryThreadAbstract::QueryType</a> type);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="../../dc/dae/class_music_download_mgmt_widget.html#a8857f935af805c8cc290ab6b4e82f9da">   96</a></span>&#160;    QWidget *<a class="code" href="../../dc/dae/class_music_download_mgmt_widget.html#a8857f935af805c8cc290ab6b4e82f9da">m_parentClass</a>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;};</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#endif // MUSICDOWNLOADMGMTWIDGET_H</span></div>
-<div class="ttc" id="class_music_download_reset_widget_html_a07b84599fc75f76b1ac290fdb830f694"><div class="ttname"><a href="../../d6/d3e/class_music_download_reset_widget.html#a07b84599fc75f76b1ac290fdb830f694">MusicDownloadResetWidget::m_parentClass</a></div><div class="ttdeci">QWidget * m_parentClass</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d0a/musicdownloadmgmtwidget_8h_source.html#l00068">musicdownloadmgmtwidget.h:68</a></div></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="../../dc/dae/class_music_download_mgmt_widget.html">   78</a></span>&#160;<span class="keyword">class </span>MUSIC_WIDGET_EXPORT <a class="code" href="../../dc/dae/class_music_download_mgmt_widget.html">MusicDownloadMgmtWidget</a> : <span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../dc/dae/class_music_download_mgmt_widget.html">MusicDownloadMgmtWidget</a>(QObject *parent = 0);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">static</span> QString getClassName();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> setSongName(<span class="keyword">const</span> QString &amp;name, <a class="code" href="../../dc/de4/class_music_down_load_query_thread_abstract.html#a02a8296199ce895500ee46786781f2b2">MusicDownLoadQueryThreadAbstract::QueryType</a> type);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="../../dc/dae/class_music_download_mgmt_widget.html#a8857f935af805c8cc290ab6b4e82f9da">   97</a></span>&#160;    QWidget *<a class="code" href="../../dc/dae/class_music_download_mgmt_widget.html#a8857f935af805c8cc290ab6b4e82f9da">m_parentClass</a>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;};</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif // MUSICDOWNLOADMGMTWIDGET_H</span></div>
+<div class="ttc" id="class_music_download_reset_widget_html_a07b84599fc75f76b1ac290fdb830f694"><div class="ttname"><a href="../../d6/d3e/class_music_download_reset_widget.html#a07b84599fc75f76b1ac290fdb830f694">MusicDownloadResetWidget::m_parentClass</a></div><div class="ttdeci">QWidget * m_parentClass</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d0a/musicdownloadmgmtwidget_8h_source.html#l00069">musicdownloadmgmtwidget.h:69</a></div></div>
 <div class="ttc" id="namespace_ui_html"><div class="ttname"><a href="../../dc/df0/namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d24/musicapplication_8h_source.html#l00023">musicapplication.h:23</a></div></div>
-<div class="ttc" id="class_music_download_reset_widget_html_a6d4ca2cd5e42e7ec772ad759cff866dd"><div class="ttname"><a href="../../d6/d3e/class_music_download_reset_widget.html#a6d4ca2cd5e42e7ec772ad759cff866dd">MusicDownloadResetWidget::m_ui</a></div><div class="ttdeci">Ui::MusicDownloadResetWidget * m_ui</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d0a/musicdownloadmgmtwidget_8h_source.html#l00066">musicdownloadmgmtwidget.h:66</a></div></div>
-<div class="ttc" id="class_music_download_mgmt_widget_html_a8857f935af805c8cc290ab6b4e82f9da"><div class="ttname"><a href="../../dc/dae/class_music_download_mgmt_widget.html#a8857f935af805c8cc290ab6b4e82f9da">MusicDownloadMgmtWidget::m_parentClass</a></div><div class="ttdeci">QWidget * m_parentClass</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d0a/musicdownloadmgmtwidget_8h_source.html#l00096">musicdownloadmgmtwidget.h:96</a></div></div>
-<div class="ttc" id="class_music_download_mgmt_widget_html"><div class="ttname"><a href="../../dc/dae/class_music_download_mgmt_widget.html">MusicDownloadMgmtWidget</a></div><div class="ttdoc">The class of the download manager widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d0a/musicdownloadmgmtwidget_8h_source.html#l00077">musicdownloadmgmtwidget.h:77</a></div></div>
+<div class="ttc" id="class_music_download_reset_widget_html_a6d4ca2cd5e42e7ec772ad759cff866dd"><div class="ttname"><a href="../../d6/d3e/class_music_download_reset_widget.html#a6d4ca2cd5e42e7ec772ad759cff866dd">MusicDownloadResetWidget::m_ui</a></div><div class="ttdeci">Ui::MusicDownloadResetWidget * m_ui</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d0a/musicdownloadmgmtwidget_8h_source.html#l00067">musicdownloadmgmtwidget.h:67</a></div></div>
+<div class="ttc" id="class_music_download_mgmt_widget_html_a8857f935af805c8cc290ab6b4e82f9da"><div class="ttname"><a href="../../dc/dae/class_music_download_mgmt_widget.html#a8857f935af805c8cc290ab6b4e82f9da">MusicDownloadMgmtWidget::m_parentClass</a></div><div class="ttdeci">QWidget * m_parentClass</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d0a/musicdownloadmgmtwidget_8h_source.html#l00097">musicdownloadmgmtwidget.h:97</a></div></div>
+<div class="ttc" id="class_music_download_mgmt_widget_html"><div class="ttname"><a href="../../dc/dae/class_music_download_mgmt_widget.html">MusicDownloadMgmtWidget</a></div><div class="ttdoc">The class of the download manager widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d0a/musicdownloadmgmtwidget_8h_source.html#l00078">musicdownloadmgmtwidget.h:78</a></div></div>
 <div class="ttc" id="musicabstractmovewidget_8h_html"><div class="ttname"><a href="../../d8/ddc/musicabstractmovewidget_8h.html">musicabstractmovewidget.h</a></div></div>
-<div class="ttc" id="class_music_download_reset_widget_html_a6ff6e8f79035aabe8e0bbb5ad3322915"><div class="ttname"><a href="../../d6/d3e/class_music_download_reset_widget.html#a6ff6e8f79035aabe8e0bbb5ad3322915">MusicDownloadResetWidget::m_currentName</a></div><div class="ttdeci">QString m_currentName</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d0a/musicdownloadmgmtwidget_8h_source.html#l00069">musicdownloadmgmtwidget.h:69</a></div></div>
+<div class="ttc" id="class_music_download_reset_widget_html_a6ff6e8f79035aabe8e0bbb5ad3322915"><div class="ttname"><a href="../../d6/d3e/class_music_download_reset_widget.html#a6ff6e8f79035aabe8e0bbb5ad3322915">MusicDownloadResetWidget::m_currentName</a></div><div class="ttdeci">QString m_currentName</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d0a/musicdownloadmgmtwidget_8h_source.html#l00070">musicdownloadmgmtwidget.h:70</a></div></div>
 <div class="ttc" id="class_music_download_reset_widget_html"><div class="ttname"><a href="../../d6/d3e/class_music_download_reset_widget.html">MusicDownloadResetWidget</a></div><div class="ttdoc">The class of the download file exist widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d0a/musicdownloadmgmtwidget_8h_source.html#l00022">musicdownloadmgmtwidget.h:22</a></div></div>
 <div class="ttc" id="musicdownloadquerythreadabstract_8h_html"><div class="ttname"><a href="../../dc/d3d/musicdownloadquerythreadabstract_8h.html">musicdownloadquerythreadabstract.h</a></div></div>
 <div class="ttc" id="class_music_abstract_move_widget_html_adf129b027d906c36d605238a27043ede"><div class="ttname"><a href="../../d5/d2d/class_music_abstract_move_widget.html#adf129b027d906c36d605238a27043ede">MusicAbstractMoveWidget::getClassName</a></div><div class="ttdeci">static QString getClassName()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/de6/musicabstractmovewidget_8cpp_source.html#l00038">musicabstractmovewidget.cpp:38</a></div></div>
@@ -148,7 +154,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 13 2017 23:23:35 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 14 2017 20:51:23 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

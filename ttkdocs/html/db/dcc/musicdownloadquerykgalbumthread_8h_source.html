@@ -96,17 +96,21 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../df/ddd/class_music_down_load_query_k_g_album_thread.html">MusicDownLoadQueryKGAlbumThread</a>(QObject *parent = 0);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../dc/de4/class_music_down_load_query_thread_abstract.html#a322eb4df37b258365c203bb189e4cc79">getClassName</a>();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../dc/de4/class_music_down_load_query_thread_abstract.html#ad712a3b3f5c1de3513edc512172f8758">startToSearch</a>(<a class="code" href="../../dc/de4/class_music_down_load_query_thread_abstract.html#a02a8296199ce895500ee46786781f2b2">QueryType</a> type, <span class="keyword">const</span> QString &amp;album) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../dc/de4/class_music_down_load_query_thread_abstract.html#ad712a3b3f5c1de3513edc512172f8758">startToSearch</a>(<span class="keyword">const</span> QString &amp;album);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d5/de6/class_music_network_abstract.html#a5633d328e4f80b91dde0113550d6e852">downLoadFinished</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> readFromMusicSongAlbumInfo(<a class="code" href="../../d9/d32/struct_music_object_1_1_music_song_information.html">MusicObject::MusicSongInformation</a> *info);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif // MUSICDOWNLOADQUERYKGALBUMTHREAD_H</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../df/ddd/class_music_down_load_query_k_g_album_thread.html">MusicDownLoadQueryKGAlbumThread</a>(QObject *parent = 0);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../dc/de4/class_music_down_load_query_thread_abstract.html#a322eb4df37b258365c203bb189e4cc79">getClassName</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../dc/de4/class_music_down_load_query_thread_abstract.html#ad712a3b3f5c1de3513edc512172f8758">startToSearch</a>(<a class="code" href="../../dc/de4/class_music_down_load_query_thread_abstract.html#a02a8296199ce895500ee46786781f2b2">QueryType</a> type, <span class="keyword">const</span> QString &amp;album) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../dc/de4/class_music_down_load_query_thread_abstract.html#ad712a3b3f5c1de3513edc512172f8758">startToSearch</a>(<span class="keyword">const</span> QString &amp;album);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d5/de6/class_music_network_abstract.html#a5633d328e4f80b91dde0113550d6e852">downLoadFinished</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> readFromMusicSongAlbumInfo(<a class="code" href="../../d9/d32/struct_music_object_1_1_music_song_information.html">MusicObject::MusicSongInformation</a> *info);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif // MUSICDOWNLOADQUERYKGALBUMTHREAD_H</span></div>
 <div class="ttc" id="musicdownloadkginterface_8h_html"><div class="ttname"><a href="../../dd/d9b/musicdownloadkginterface_8h.html">musicdownloadkginterface.h</a></div></div>
 <div class="ttc" id="class_music_network_abstract_html_a5633d328e4f80b91dde0113550d6e852"><div class="ttname"><a href="../../d5/de6/class_music_network_abstract.html#a5633d328e4f80b91dde0113550d6e852">MusicNetworkAbstract::downLoadFinished</a></div><div class="ttdeci">virtual void downLoadFinished()=0</div></div>
 <div class="ttc" id="class_music_down_load_query_k_g_album_thread_html"><div class="ttname"><a href="../../df/ddd/class_music_down_load_query_k_g_album_thread.html">MusicDownLoadQueryKGAlbumThread</a></div><div class="ttdoc">The class to kugou query album download data from net. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/dcc/musicdownloadquerykgalbumthread_8h_source.html#l00018">musicdownloadquerykgalbumthread.h:18</a></div></div>
@@ -120,7 +124,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 13 2017 23:23:32 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 14 2017 20:51:20 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

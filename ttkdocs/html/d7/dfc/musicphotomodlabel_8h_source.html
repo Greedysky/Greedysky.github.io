@@ -98,18 +98,22 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d4/d0a/class_music_photo_mod_label.html">MusicPhotoModLabel</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">static</span> QString getClassName();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> setImagePath(<span class="keyword">const</span> QString &amp;path);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> saveImagePath(<span class="keyword">const</span> QString &amp;path) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d4/d0a/class_music_photo_mod_label.html">MusicPhotoModLabel</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">static</span> QString getClassName();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> setImagePath(<span class="keyword">const</span> QString &amp;path);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> saveImagePath(<span class="keyword">const</span> QString &amp;path) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> deltaValueChanged(<span class="keywordtype">float</span> v);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> deltaValueChanged(<span class="keywordtype">float</span> v);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> paintEvent(QPaintEvent *event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> wheelEvent(QWheelEvent *event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> mousePressEvent(QMouseEvent *event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> mouseMoveEvent(QMouseEvent *event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> mouseReleaseEvent(QMouseEvent *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> paintEvent(QPaintEvent *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> wheelEvent(QWheelEvent *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> mousePressEvent(QMouseEvent *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> mouseMoveEvent(QMouseEvent *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> mouseReleaseEvent(QMouseEvent *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="../../d4/d0a/class_music_photo_mod_label.html#a202fee894de82fc5f88e9f3dcd6caa36">   59</a></span>&#160;    QString <a class="code" href="../../d4/d0a/class_music_photo_mod_label.html#a202fee894de82fc5f88e9f3dcd6caa36">m_path</a>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="../../d4/d0a/class_music_photo_mod_label.html#a7e348c450d87796ede7730debba65ff6">   60</a></span>&#160;    QPixmap <a class="code" href="../../d4/d0a/class_music_photo_mod_label.html#a7e348c450d87796ede7730debba65ff6">m_showPix</a>;</div>
 <div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="../../d4/d0a/class_music_photo_mod_label.html#a6079e7850af40f7d4cd4630176691b34">   61</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="../../d4/d0a/class_music_photo_mod_label.html#a6079e7850af40f7d4cd4630176691b34">m_ratio</a>;</div>
@@ -131,7 +135,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 13 2017 23:23:35 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 14 2017 20:51:23 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

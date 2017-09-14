@@ -108,37 +108,40 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../de/d68/class_music_song_sharing_widget.html">MusicSongSharingWidget</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../de/d68/class_music_song_sharing_widget.html">MusicSongSharingWidget</a>();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../da/db2/class_music_abstract_move_dialog.html#a5ffbeacd6e9d019df169bb0608564954">getClassName</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> setSongName(<span class="keyword">const</span> QString &amp;name);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> exec();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> textAreaChanged();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> confirmButtonClicked();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> downLoadDataChanged(<span class="keyword">const</span> QString &amp;playUrl, <span class="keyword">const</span> QString &amp;imageUrl);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> queryUrlTimeout();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> close();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="../../de/d68/class_music_song_sharing_widget.html#a8dd713b081e7004c7d07c7cc5283d4be">   77</a></span>&#160;    Ui::MusicSongSharingWidget *<a class="code" href="../../de/d68/class_music_song_sharing_widget.html#a8dd713b081e7004c7d07c7cc5283d4be">m_ui</a>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="../../de/d68/class_music_song_sharing_widget.html#acd4421a60f4a22a44555d16c668592c3">   78</a></span>&#160;    <a class="code" href="../../da/d56/class_q_r_code_q_widget.html">QRCodeQWidget</a> *<a class="code" href="../../de/d68/class_music_song_sharing_widget.html#acd4421a60f4a22a44555d16c668592c3">m_qrCodeWidget</a>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif // MUSICSONGSHARINGWIDGET_H</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../de/d68/class_music_song_sharing_widget.html">MusicSongSharingWidget</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../de/d68/class_music_song_sharing_widget.html">MusicSongSharingWidget</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../da/db2/class_music_abstract_move_dialog.html#a5ffbeacd6e9d019df169bb0608564954">getClassName</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> setSongName(<span class="keyword">const</span> QString &amp;name);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> exec();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> textAreaChanged();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> confirmButtonClicked();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> downLoadDataChanged(<span class="keyword">const</span> QString &amp;playUrl, <span class="keyword">const</span> QString &amp;imageUrl);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> queryUrlTimeout();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> close();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="../../de/d68/class_music_song_sharing_widget.html#a8dd713b081e7004c7d07c7cc5283d4be">   78</a></span>&#160;    Ui::MusicSongSharingWidget *<a class="code" href="../../de/d68/class_music_song_sharing_widget.html#a8dd713b081e7004c7d07c7cc5283d4be">m_ui</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="../../de/d68/class_music_song_sharing_widget.html#acd4421a60f4a22a44555d16c668592c3">   79</a></span>&#160;    <a class="code" href="../../da/d56/class_q_r_code_q_widget.html">QRCodeQWidget</a> *<a class="code" href="../../de/d68/class_music_song_sharing_widget.html#acd4421a60f4a22a44555d16c668592c3">m_qrCodeWidget</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif // MUSICSONGSHARINGWIDGET_H</span></div>
 <div class="ttc" id="musicabstractmovedialog_8h_html"><div class="ttname"><a href="../../da/d49/musicabstractmovedialog_8h.html">musicabstractmovedialog.h</a></div></div>
 <div class="ttc" id="class_music_song_sharing_widget_html"><div class="ttname"><a href="../../de/d68/class_music_song_sharing_widget.html">MusicSongSharingWidget</a></div><div class="ttdoc">The class of the song share widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d1e/musicsongsharingwidget_8h_source.html#l00031">musicsongsharingwidget.h:31</a></div></div>
 <div class="ttc" id="namespace_ui_html"><div class="ttname"><a href="../../dc/df0/namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d24/musicapplication_8h_source.html#l00023">musicapplication.h:23</a></div></div>
-<div class="ttc" id="class_music_song_sharing_widget_html_acd4421a60f4a22a44555d16c668592c3"><div class="ttname"><a href="../../de/d68/class_music_song_sharing_widget.html#acd4421a60f4a22a44555d16c668592c3">MusicSongSharingWidget::m_qrCodeWidget</a></div><div class="ttdeci">QRCodeQWidget * m_qrCodeWidget</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d1e/musicsongsharingwidget_8h_source.html#l00078">musicsongsharingwidget.h:78</a></div></div>
+<div class="ttc" id="class_music_song_sharing_widget_html_acd4421a60f4a22a44555d16c668592c3"><div class="ttname"><a href="../../de/d68/class_music_song_sharing_widget.html#acd4421a60f4a22a44555d16c668592c3">MusicSongSharingWidget::m_qrCodeWidget</a></div><div class="ttdeci">QRCodeQWidget * m_qrCodeWidget</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d1e/musicsongsharingwidget_8h_source.html#l00079">musicsongsharingwidget.h:79</a></div></div>
 <div class="ttc" id="class_music_abstract_move_dialog_html_a5ffbeacd6e9d019df169bb0608564954"><div class="ttname"><a href="../../da/db2/class_music_abstract_move_dialog.html#a5ffbeacd6e9d019df169bb0608564954">MusicAbstractMoveDialog::getClassName</a></div><div class="ttdeci">static QString getClassName()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de8/musicabstractmovedialog_8cpp_source.html#l00038">musicabstractmovedialog.cpp:38</a></div></div>
 <div class="ttc" id="class_q_r_code_q_widget_html"><div class="ttname"><a href="../../da/d56/class_q_r_code_q_widget.html">QRCodeQWidget</a></div><div class="ttdoc">The namespace of the qr code widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d96/qrcodewidget_8h_source.html#l00022">qrcodewidget.h:22</a></div></div>
 <div class="ttc" id="class_music_abstract_move_dialog_html"><div class="ttname"><a href="../../da/db2/class_music_abstract_move_dialog.html">MusicAbstractMoveDialog</a></div><div class="ttdoc">The class of the moving dialog base. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d49/musicabstractmovedialog_8h_source.html#l00019">musicabstractmovedialog.h:19</a></div></div>
-<div class="ttc" id="class_music_song_sharing_widget_html_a8dd713b081e7004c7d07c7cc5283d4be"><div class="ttname"><a href="../../de/d68/class_music_song_sharing_widget.html#a8dd713b081e7004c7d07c7cc5283d4be">MusicSongSharingWidget::m_ui</a></div><div class="ttdeci">Ui::MusicSongSharingWidget * m_ui</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d1e/musicsongsharingwidget_8h_source.html#l00077">musicsongsharingwidget.h:77</a></div></div>
+<div class="ttc" id="class_music_song_sharing_widget_html_a8dd713b081e7004c7d07c7cc5283d4be"><div class="ttname"><a href="../../de/d68/class_music_song_sharing_widget.html#a8dd713b081e7004c7d07c7cc5283d4be">MusicSongSharingWidget::m_ui</a></div><div class="ttdeci">Ui::MusicSongSharingWidget * m_ui</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d1e/musicsongsharingwidget_8h_source.html#l00078">musicsongsharingwidget.h:78</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 13 2017 23:23:35 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 14 2017 20:51:23 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

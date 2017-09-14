@@ -271,6 +271,8 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d3/dbf/qrencode_8h_source.html#l00139">139</a> of file <a class="el" href="../../d3/dbf/qrencode_8h_source.html">qrencode.h</a>.</p>
 
+<p>Referenced by <a class="el" href="../../dc/dd4/mqrspec_8c_source.html#l00264">MQRspec_clearCache()</a>, <a class="el" href="../../dc/dd4/mqrspec_8c_source.html#l00140">MQRspec_getFormatInfo()</a>, <a class="el" href="../../dc/dd4/mqrspec_8c_source.html#l00238">MQRspec_newFrame()</a>, <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00543">QRcode_encodeMaskMQR()</a>, <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00135">QRinput_newMQR()</a>, and <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00188">QRinput_setVersionAndErrorCorrectionLevel()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ad9e0fe046aaa6dc0ef84e7982dc3693d"></a>
@@ -286,6 +288,8 @@ Functions</h2></td></tr>
 <p>Maximum version (size) of QR-code symbol. </p>
 
 <p>Definition at line <a class="el" href="../../d3/dbf/qrencode_8h_source.html#l00134">134</a> of file <a class="el" href="../../d3/dbf/qrencode_8h_source.html">qrencode.h</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00462">QRcode_encodeMask()</a>, <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00113">QRinput_new2()</a>, <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00159">QRinput_setVersion()</a>, <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00188">QRinput_setVersionAndErrorCorrectionLevel()</a>, <a class="el" href="../../d7/d2e/qrspec_8c_source.html#l00546">QRspec_clearCache()</a>, <a class="el" href="../../d7/d2e/qrspec_8c_source.html#l00109">QRspec_getMinimumVersion()</a>, <a class="el" href="../../d7/d2e/qrspec_8c_source.html#l00365">QRspec_getVersionPattern()</a>, and <a class="el" href="../../d7/d2e/qrspec_8c_source.html#l00520">QRspec_newFrame()</a>.</p>
 
 </div>
 </div>
@@ -453,6 +457,10 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00905">905</a> of file <a class="el" href="../../d0/d95/qrencode_8c_source.html">qrencode.c</a>.</p>
+
+<p>References <a class="el" href="../../db/d16/config_8h_source.html#l00048">MAJOR_VERSION</a>, <a class="el" href="../../db/d16/config_8h_source.html#l00051">MICRO_VERSION</a>, and <a class="el" href="../../db/d16/config_8h_source.html#l00054">MINOR_VERSION</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a5a81ea5edb9baea8fa97ef2cb0e922c6"></a>
@@ -472,6 +480,10 @@ Functions</h2></td></tr>
 <p>Return a string that identifies the library version. </p>
 <dl class="section return"><dt>Returns</dt><dd>a string identifies the library version. The string is held by the library. Do NOT free it. </dd></dl>
 
+<p>Definition at line <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00918">918</a> of file <a class="el" href="../../d0/d95/qrencode_8c_source.html">qrencode.c</a>.</p>
+
+<p>References <a class="el" href="../../db/d16/config_8h_source.html#l00084">VERSION</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ac00fcf538f3886dfb49c9b7a8d5bfdf8"></a>
@@ -490,6 +502,10 @@ Functions</h2></td></tr>
 
 <p>Clear all caches. </p>
 <p>This is only for debug purpose. If you are attacking a complicated memory leak bug, try this to reduce the reachable blocks record. </p><dl class="section warning"><dt>Warning</dt><dd>This function is THREAD UNSAFE when pthread is disabled. </dd></dl>
+
+<p>Definition at line <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00923">923</a> of file <a class="el" href="../../d0/d95/qrencode_8c_source.html">qrencode.c</a>.</p>
+
+<p>References <a class="el" href="../../d3/d91/rscode_8c_source.html#l00249">free_rs_cache()</a>, <a class="el" href="../../dc/dd4/mqrspec_8c_source.html#l00264">MQRspec_clearCache()</a>, and <a class="el" href="../../d7/d2e/qrspec_8c_source.html#l00546">QRspec_clearCache()</a>.</p>
 
 </div>
 </div>
@@ -549,6 +565,10 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00706">706</a> of file <a class="el" href="../../d0/d95/qrencode_8c_source.html">qrencode.c</a>.</p>
+
+<p>References <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00677">QRcode_encodeDataReal()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a5d995f1eebd94cac8fe3e1f0e1a16ca0"></a>
@@ -589,6 +609,10 @@ Functions</h2></td></tr>
 
 <p>Micro QR Code version of <a class="el" href="../../d3/dbf/qrencode_8h.html#af1ecc6cbfc25ccf59ab18919f64ef8f5" title="Encode byte stream (may include &#39;\0&#39;) in 8-bit mode. ">QRcode_encodeData()</a>. </p>
 <dl class="section warning"><dt>Warning</dt><dd>This function is THREAD UNSAFE when pthread is disabled. </dd></dl>
+
+<p>Definition at line <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00720">720</a> of file <a class="el" href="../../d0/d95/qrencode_8c_source.html">qrencode.c</a>.</p>
+
+<p>References <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00677">QRcode_encodeDataReal()</a>.</p>
 
 </div>
 </div>
@@ -648,6 +672,12 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00880">880</a> of file <a class="el" href="../../d0/d95/qrencode_8c_source.html">qrencode.c</a>.</p>
+
+<p>References <a class="el" href="../../d3/dbf/qrencode_8h_source.html#l00110">QR_MODE_NUL</a>, and <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00844">QRcode_encodeDataStructuredReal()</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00884">QRcode_encodeString8bitStructured()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a7e3d85c72fed82f0fc08aff3bcda9053"></a>
@@ -681,6 +711,12 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00625">625</a> of file <a class="el" href="../../d0/d95/qrencode_8c_source.html">qrencode.c</a>.</p>
+
+<p>References <a class="el" href="../../da/d19/qrinput_8h_source.html#l00051">_QRinput::mqr</a>, <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00462">QRcode_encodeMask()</a>, and <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00543">QRcode_encodeMaskMQR()</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00677">QRcode_encodeDataReal()</a>, <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00798">QRcode_encodeInputStructured()</a>, and <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00634">QRcode_encodeStringReal()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a2f8a7dac1451170721a14e00952d3fa8"></a>
@@ -706,6 +742,12 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a singly-linked list of <a class="el" href="../../df/de2/struct_q_rcode.html" title="QRcode class. ">QRcode</a>. </dd></dl>
+
+<p>Definition at line <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00798">798</a> of file <a class="el" href="../../d0/d95/qrencode_8c_source.html">qrencode.c</a>.</p>
+
+<p>References <a class="el" href="../../d3/dbf/qrencode_8h_source.html#l00386">_QRcode_List::code</a>, <a class="el" href="../../da/d19/qrinput_8h_source.html#l00069">_QRinput_Struct::head</a>, <a class="el" href="../../da/d19/qrinput_8h_source.html#l00062">_QRinput_InputList::input</a>, <a class="el" href="../../da/d19/qrinput_8h_source.html#l00063">_QRinput_InputList::next</a>, <a class="el" href="../../d3/dbf/qrencode_8h_source.html#l00387">_QRcode_List::next</a>, <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00625">QRcode_encodeInput()</a>, <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00760">QRcode_List_free()</a>, and <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00739">QRcode_List_newEntry()</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00830">QRcode_encodeInputToStructured()</a>.</p>
 
 </div>
 </div>
@@ -773,6 +815,10 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00667">667</a> of file <a class="el" href="../../d0/d95/qrencode_8c_source.html">qrencode.c</a>.</p>
+
+<p>References <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00634">QRcode_encodeStringReal()</a>.</p>
+
 <p>Referenced by <a class="el" href="../../d4/df2/qrcodewidget_8cpp_source.html#l00165">QRCodeQWidget::paintEvent()</a>.</p>
 
 </div>
@@ -810,6 +856,10 @@ Functions</h2></td></tr>
 <p>Same to <a class="el" href="../../d3/dbf/qrencode_8h.html#a4cebc3c670efe1b8866b14c42737fc8f" title="Create a symbol from the string. ">QRcode_encodeString()</a>, but encode whole data in 8-bit mode. </p>
 <dl class="section warning"><dt>Warning</dt><dd>This function is THREAD UNSAFE when pthread is disabled. </dd></dl>
 
+<p>Definition at line <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00711">711</a> of file <a class="el" href="../../d0/d95/qrencode_8c_source.html">qrencode.c</a>.</p>
+
+<p>References <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00677">QRcode_encodeDataReal()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a96eaeb88ffcc7448f5e8c31fb5dc13d3"></a>
@@ -845,6 +895,10 @@ Functions</h2></td></tr>
 <p>Micro QR Code version of <a class="el" href="../../d3/dbf/qrencode_8h.html#a85dc467ee77d8524b508aea064699a82" title="Same to QRcode_encodeString(), but encode whole data in 8-bit mode. ">QRcode_encodeString8bit()</a>. </p>
 <dl class="section warning"><dt>Warning</dt><dd>This function is THREAD UNSAFE when pthread is disabled. </dd></dl>
 
+<p>Definition at line <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00725">725</a> of file <a class="el" href="../../d0/d95/qrencode_8c_source.html">qrencode.c</a>.</p>
+
+<p>References <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00677">QRcode_encodeDataReal()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a62438c11e91a3e43928d4ceaf5803f33"></a>
@@ -879,6 +933,10 @@ Functions</h2></td></tr>
 
 <p>Same to <a class="el" href="../../d3/dbf/qrencode_8h.html#a61b52b2057480cd1f0a58e8d294c68a9" title="Create structured symbols from the string. ">QRcode_encodeStringStructured()</a>, but encode whole data in 8-bit mode. </p>
 <dl class="section warning"><dt>Warning</dt><dd>This function is THREAD UNSAFE when pthread is disabled. </dd></dl>
+
+<p>Definition at line <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00884">884</a> of file <a class="el" href="../../d0/d95/qrencode_8c_source.html">qrencode.c</a>.</p>
+
+<p>References <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00880">QRcode_encodeDataStructured()</a>.</p>
 
 </div>
 </div>
@@ -926,6 +984,10 @@ Functions</h2></td></tr>
 
 <p>Micro QR Code version of <a class="el" href="../../d3/dbf/qrencode_8h.html#a4cebc3c670efe1b8866b14c42737fc8f" title="Create a symbol from the string. ">QRcode_encodeString()</a>. </p>
 <dl class="section warning"><dt>Warning</dt><dd>This function is THREAD UNSAFE when pthread is disabled. </dd></dl>
+
+<p>Definition at line <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00672">672</a> of file <a class="el" href="../../d0/d95/qrencode_8c_source.html">qrencode.c</a>.</p>
+
+<p>References <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00634">QRcode_encodeStringReal()</a>.</p>
 
 </div>
 </div>
@@ -992,6 +1054,10 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00892">892</a> of file <a class="el" href="../../d0/d95/qrencode_8c_source.html">qrencode.c</a>.</p>
+
+<p>References <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00844">QRcode_encodeDataStructuredReal()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="af724395da2e575b3d9c1f616df534d65"></a>
@@ -1016,7 +1082,11 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Referenced by <a class="el" href="../../d4/df2/qrcodewidget_8cpp_source.html#l00165">QRCodeQWidget::paintEvent()</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00454">454</a> of file <a class="el" href="../../d0/d95/qrencode_8c_source.html">qrencode.c</a>.</p>
+
+<p>References <a class="el" href="../../d3/dbf/qrencode_8h_source.html#l00378">QRcode::data</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d4/df2/qrcodewidget_8cpp_source.html#l00165">QRCodeQWidget::paintEvent()</a>, and <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00752">QRcode_List_freeEntry()</a>.</p>
 
 </div>
 </div>
@@ -1042,6 +1112,12 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00760">760</a> of file <a class="el" href="../../d0/d95/qrencode_8c_source.html">qrencode.c</a>.</p>
+
+<p>References <a class="el" href="../../d3/dbf/qrencode_8h_source.html#l00387">_QRcode_List::next</a>, and <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00752">QRcode_List_freeEntry()</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00798">QRcode_encodeInputStructured()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="afc435991bbd7392c390624b084af514e"></a>
@@ -1066,6 +1142,10 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of symbols in the list. </dd></dl>
+
+<p>Definition at line <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00771">771</a> of file <a class="el" href="../../d0/d95/qrencode_8c_source.html">qrencode.c</a>.</p>
+
+<p>References <a class="el" href="../../d3/dbf/qrencode_8h_source.html#l00387">_QRcode_List::next</a>.</p>
 
 </div>
 </div>
@@ -1130,6 +1210,12 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00220">220</a> of file <a class="el" href="../../d5/d4f/qrinput_8c_source.html">qrinput.c</a>.</p>
+
+<p>References <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00208">QRinput_appendEntry()</a>, and <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00046">QRinput_List_newEntry()</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00677">QRcode_encodeDataReal()</a>, <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00844">QRcode_encodeDataStructuredReal()</a>, <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00273">QRinput_appendECIheader()</a>, <a class="el" href="../../d7/de7/split_8c_source.html#l00187">Split_eat8()</a>, <a class="el" href="../../d7/de7/split_8c_source.html#l00121">Split_eatAn()</a>, <a class="el" href="../../d7/de7/split_8c_source.html#l00170">Split_eatKanji()</a>, and <a class="el" href="../../d7/de7/split_8c_source.html#l00081">Split_eatNum()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ab2b5bfe6453cd3398778e92c9f697624"></a>
@@ -1178,6 +1264,10 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00273">273</a> of file <a class="el" href="../../d5/d4f/qrinput_8c_source.html">qrinput.c</a>.</p>
+
+<p>References <a class="el" href="../../d3/dbf/qrencode_8h_source.html#l00116">QR_MODE_ECI</a>, and <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00220">QRinput_append()</a>.</p>
 
 </div>
 </div>
@@ -1228,6 +1318,12 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00865">865</a> of file <a class="el" href="../../d5/d4f/qrinput_8c_source.html">qrinput.c</a>.</p>
+
+<p>References <a class="el" href="../../d3/dbf/qrencode_8h_source.html#l00113">QR_MODE_8</a>, <a class="el" href="../../d3/dbf/qrencode_8h_source.html#l00112">QR_MODE_AN</a>, <a class="el" href="../../d3/dbf/qrencode_8h_source.html#l00116">QR_MODE_ECI</a>, <a class="el" href="../../d3/dbf/qrencode_8h_source.html#l00117">QR_MODE_FNC1FIRST</a>, <a class="el" href="../../d3/dbf/qrencode_8h_source.html#l00118">QR_MODE_FNC1SECOND</a>, <a class="el" href="../../d3/dbf/qrencode_8h_source.html#l00114">QR_MODE_KANJI</a>, <a class="el" href="../../d3/dbf/qrencode_8h_source.html#l00110">QR_MODE_NUL</a>, <a class="el" href="../../d3/dbf/qrencode_8h_source.html#l00111">QR_MODE_NUM</a>, <a class="el" href="../../d3/dbf/qrencode_8h_source.html#l00115">QR_MODE_STRUCTURE</a>, <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00480">QRinput_checkModeAn()</a>, <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00763">QRinput_checkModeFNC1Second()</a>, <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00645">QRinput_checkModeKanji()</a>, and <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00361">QRinput_checkModeNum()</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00046">QRinput_List_newEntry()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a49404b1ca0e1d58a2d8ae18544606252"></a>
@@ -1251,6 +1347,12 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00291">291</a> of file <a class="el" href="../../d5/d4f/qrinput_8c_source.html">qrinput.c</a>.</p>
+
+<p>References <a class="el" href="../../da/d19/qrinput_8h_source.html#l00049">_QRinput::head</a>, <a class="el" href="../../da/d19/qrinput_8h_source.html#l00040">_QRinput_List::next</a>, and <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00074">QRinput_List_freeEntry()</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00677">QRcode_encodeDataReal()</a>, <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00844">QRcode_encodeDataStructuredReal()</a>, <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00634">QRcode_encodeStringReal()</a>, <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00325">QRinput_dup()</a>, <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l01459">QRinput_InputList_freeEntry()</a>, and <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l01579">QRinput_splitQRinputToStruct()</a>.</p>
 
 </div>
 </div>
@@ -1277,6 +1379,10 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Current error correcntion level. </dd></dl>
 
+<p>Definition at line <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00171">171</a> of file <a class="el" href="../../d5/d4f/qrinput_8c_source.html">qrinput.c</a>.</p>
+
+<p>References <a class="el" href="../../da/d19/qrinput_8h_source.html#l00048">_QRinput::level</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a35050445687bd7e9c74dd2bb18146e51"></a>
@@ -1302,6 +1408,12 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>current version. </dd></dl>
 
+<p>Definition at line <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00154">154</a> of file <a class="el" href="../../d5/d4f/qrinput_8c_source.html">qrinput.c</a>.</p>
+
+<p>References <a class="el" href="../../da/d19/qrinput_8h_source.html#l00047">_QRinput::version</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l01155">QRinput_convertData()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ab774facc2deb2ae0746d6da45577682c"></a>
@@ -1326,6 +1438,10 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00108">108</a> of file <a class="el" href="../../d5/d4f/qrinput_8c_source.html">qrinput.c</a>.</p>
+
+<p>References <a class="el" href="../../d3/dbf/qrencode_8h_source.html#l00125">QR_ECLEVEL_L</a>, and <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00113">QRinput_new2()</a>.</p>
 
 </div>
 </div>
@@ -1370,6 +1486,12 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00113">113</a> of file <a class="el" href="../../d5/d4f/qrinput_8c_source.html">qrinput.c</a>.</p>
+
+<p>References <a class="el" href="../../da/d19/qrinput_8h_source.html#l00052">_QRinput::fnc1</a>, <a class="el" href="../../da/d19/qrinput_8h_source.html#l00049">_QRinput::head</a>, <a class="el" href="../../da/d19/qrinput_8h_source.html#l00048">_QRinput::level</a>, <a class="el" href="../../da/d19/qrinput_8h_source.html#l00051">_QRinput::mqr</a>, <a class="el" href="../../d3/dbf/qrencode_8h_source.html#l00128">QR_ECLEVEL_H</a>, <a class="el" href="../../d3/dbf/qrencode_8h_source.html#l00134">QRSPEC_VERSION_MAX</a>, <a class="el" href="../../da/d19/qrinput_8h_source.html#l00050">_QRinput::tail</a>, and <a class="el" href="../../da/d19/qrinput_8h_source.html#l00047">_QRinput::version</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00677">QRcode_encodeDataReal()</a>, <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00844">QRcode_encodeDataStructuredReal()</a>, <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00634">QRcode_encodeStringReal()</a>, <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00325">QRinput_dup()</a>, <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00108">QRinput_new()</a>, <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00135">QRinput_newMQR()</a>, and <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l01579">QRinput_splitQRinputToStruct()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a6c76391a37cd87d75301a0362a3954b3"></a>
@@ -1413,6 +1535,12 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00135">135</a> of file <a class="el" href="../../d5/d4f/qrinput_8c_source.html">qrinput.c</a>.</p>
+
+<p>References <a class="el" href="../../da/d19/qrinput_8h_source.html#l00051">_QRinput::mqr</a>, <a class="el" href="../../dc/dd4/mqrspec_8c_source.html#l00076">MQRspec_getECCLength()</a>, <a class="el" href="../../d3/dbf/qrencode_8h_source.html#l00139">MQRSPEC_VERSION_MAX</a>, and <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00113">QRinput_new2()</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00677">QRcode_encodeDataReal()</a>, <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00634">QRcode_encodeStringReal()</a>, and <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00325">QRinput_dup()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="af7dc14905a33c5bc41af445d05b4d7ea"></a>
@@ -1455,6 +1583,10 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00176">176</a> of file <a class="el" href="../../d5/d4f/qrinput_8c_source.html">qrinput.c</a>.</p>
+
+<p>References <a class="el" href="../../da/d19/qrinput_8h_source.html#l00048">_QRinput::level</a>, <a class="el" href="../../da/d19/qrinput_8h_source.html#l00051">_QRinput::mqr</a>, and <a class="el" href="../../d3/dbf/qrencode_8h_source.html#l00128">QR_ECLEVEL_H</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ab32f78461e5d8f47c395ac1b09dd4152"></a>
@@ -1472,6 +1604,10 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set FNC1-1st position flag. </p>
+
+<p>Definition at line <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l01709">1709</a> of file <a class="el" href="../../d5/d4f/qrinput_8c_source.html">qrinput.c</a>.</p>
+
+<p>References <a class="el" href="../../da/d19/qrinput_8h_source.html#l00052">_QRinput::fnc1</a>, and <a class="el" href="../../da/d19/qrinput_8h_source.html#l00051">_QRinput::mqr</a>.</p>
 
 </div>
 </div>
@@ -1500,6 +1636,10 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set FNC1-2nd position flag and application identifier. </p>
+
+<p>Definition at line <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l01720">1720</a> of file <a class="el" href="../../d5/d4f/qrinput_8c_source.html">qrinput.c</a>.</p>
+
+<p>References <a class="el" href="../../da/d19/qrinput_8h_source.html#l00053">_QRinput::appid</a>, <a class="el" href="../../da/d19/qrinput_8h_source.html#l00052">_QRinput::fnc1</a>, and <a class="el" href="../../da/d19/qrinput_8h_source.html#l00051">_QRinput::mqr</a>.</p>
 
 </div>
 </div>
@@ -1542,6 +1682,12 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00159">159</a> of file <a class="el" href="../../d5/d4f/qrinput_8c_source.html">qrinput.c</a>.</p>
+
+<p>References <a class="el" href="../../da/d19/qrinput_8h_source.html#l00051">_QRinput::mqr</a>, <a class="el" href="../../d3/dbf/qrencode_8h_source.html#l00134">QRSPEC_VERSION_MAX</a>, and <a class="el" href="../../da/d19/qrinput_8h_source.html#l00047">_QRinput::version</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l01155">QRinput_convertData()</a>.</p>
 
 </div>
 </div>
@@ -1592,6 +1738,10 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00188">188</a> of file <a class="el" href="../../d5/d4f/qrinput_8c_source.html">qrinput.c</a>.</p>
+
+<p>References <a class="el" href="../../da/d19/qrinput_8h_source.html#l00048">_QRinput::level</a>, <a class="el" href="../../da/d19/qrinput_8h_source.html#l00051">_QRinput::mqr</a>, <a class="el" href="../../dc/dd4/mqrspec_8c_source.html#l00076">MQRspec_getECCLength()</a>, <a class="el" href="../../d3/dbf/qrencode_8h_source.html#l00139">MQRSPEC_VERSION_MAX</a>, <a class="el" href="../../d3/dbf/qrencode_8h_source.html#l00128">QR_ECLEVEL_H</a>, <a class="el" href="../../d3/dbf/qrencode_8h_source.html#l00134">QRSPEC_VERSION_MAX</a>, and <a class="el" href="../../da/d19/qrinput_8h_source.html#l00047">_QRinput::version</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="af086adb0e9cbb76a61eba71572288c3e"></a>
@@ -1624,6 +1774,12 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l01579">1579</a> of file <a class="el" href="../../d5/d4f/qrinput_8c_source.html">qrinput.c</a>.</p>
+
+<p>References <a class="el" href="../../da/d19/qrinput_8h_source.html#l00049">_QRinput::head</a>, <a class="el" href="../../da/d19/qrinput_8h_source.html#l00048">_QRinput::level</a>, <a class="el" href="../../da/d19/qrinput_8h_source.html#l00112">MAX_STRUCTURED_SYMBOLS</a>, <a class="el" href="../../da/d19/qrinput_8h_source.html#l00036">_QRinput_List::mode</a>, <a class="el" href="../../da/d19/qrinput_8h_source.html#l00051">_QRinput::mqr</a>, <a class="el" href="../../da/d19/qrinput_8h_source.html#l00040">_QRinput_List::next</a>, <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00306">QRinput_calcParity()</a>, <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00325">QRinput_dup()</a>, <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l01054">QRinput_encodeBitStream()</a>, <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00904">QRinput_estimateBitStreamSizeOfEntry()</a>, <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00291">QRinput_free()</a>, <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l01003">QRinput_lengthOfCode()</a>, <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00113">QRinput_new2()</a>, <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l01557">QRinput_splitEntry()</a>, <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l01487">QRinput_Struct_appendInput()</a>, <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l01511">QRinput_Struct_free()</a>, <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l01679">QRinput_Struct_insertStructuredAppendHeaders()</a>, <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l01467">QRinput_Struct_new()</a>, <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l01482">QRinput_Struct_setParity()</a>, <a class="el" href="../../d7/d2e/qrspec_8c_source.html#l00099">QRspec_getDataLength()</a>, <a class="el" href="../../da/d19/qrinput_8h_source.html#l00067">_QRinput_Struct::size</a>, <a class="el" href="../../da/d19/qrinput_8h_source.html#l00107">STRUCTURE_HEADER_SIZE</a>, <a class="el" href="../../da/d19/qrinput_8h_source.html#l00050">_QRinput::tail</a>, and <a class="el" href="../../da/d19/qrinput_8h_source.html#l00047">_QRinput::version</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00830">QRcode_encodeInputToStructured()</a>.</p>
 
 </div>
 </div>
@@ -1675,6 +1831,12 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l01487">1487</a> of file <a class="el" href="../../d5/d4f/qrinput_8c_source.html">qrinput.c</a>.</p>
+
+<p>References <a class="el" href="../../da/d19/qrinput_8h_source.html#l00069">_QRinput_Struct::head</a>, <a class="el" href="../../da/d19/qrinput_8h_source.html#l00051">_QRinput::mqr</a>, <a class="el" href="../../da/d19/qrinput_8h_source.html#l00063">_QRinput_InputList::next</a>, <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l01446">QRinput_InputList_newEntry()</a>, <a class="el" href="../../da/d19/qrinput_8h_source.html#l00067">_QRinput_Struct::size</a>, and <a class="el" href="../../da/d19/qrinput_8h_source.html#l00070">_QRinput_Struct::tail</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l01579">QRinput_splitQRinputToStruct()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ae0b2b92a9987bec0e3f6204684857bb7"></a>
@@ -1698,6 +1860,12 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l01511">1511</a> of file <a class="el" href="../../d5/d4f/qrinput_8c_source.html">qrinput.c</a>.</p>
+
+<p>References <a class="el" href="../../da/d19/qrinput_8h_source.html#l00069">_QRinput_Struct::head</a>, <a class="el" href="../../da/d19/qrinput_8h_source.html#l00063">_QRinput_InputList::next</a>, and <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l01459">QRinput_InputList_freeEntry()</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d0/d95/qrencode_8c_source.html#l00830">QRcode_encodeInputToStructured()</a>, and <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l01579">QRinput_splitQRinputToStruct()</a>.</p>
 
 </div>
 </div>
@@ -1737,6 +1905,12 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l01679">1679</a> of file <a class="el" href="../../d5/d4f/qrinput_8c_source.html">qrinput.c</a>.</p>
+
+<p>References <a class="el" href="../../da/d19/qrinput_8h_source.html#l00069">_QRinput_Struct::head</a>, <a class="el" href="../../da/d19/qrinput_8h_source.html#l00062">_QRinput_InputList::input</a>, <a class="el" href="../../da/d19/qrinput_8h_source.html#l00063">_QRinput_InputList::next</a>, <a class="el" href="../../da/d19/qrinput_8h_source.html#l00068">_QRinput_Struct::parity</a>, <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l00245">QRinput_insertStructuredAppendHeader()</a>, and <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l01526">QRinput_Struct_calcParity()</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l01579">QRinput_splitQRinputToStruct()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a80d3a56ef46e66b580ef67d77cefa85c"></a>
@@ -1761,6 +1935,12 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l01467">1467</a> of file <a class="el" href="../../d5/d4f/qrinput_8c_source.html">qrinput.c</a>.</p>
+
+<p>References <a class="el" href="../../da/d19/qrinput_8h_source.html#l00069">_QRinput_Struct::head</a>, <a class="el" href="../../da/d19/qrinput_8h_source.html#l00068">_QRinput_Struct::parity</a>, <a class="el" href="../../da/d19/qrinput_8h_source.html#l00067">_QRinput_Struct::size</a>, and <a class="el" href="../../da/d19/qrinput_8h_source.html#l00070">_QRinput_Struct::tail</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l01579">QRinput_splitQRinputToStruct()</a>.</p>
 
 </div>
 </div>
@@ -1797,12 +1977,18 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l01482">1482</a> of file <a class="el" href="../../d5/d4f/qrinput_8c_source.html">qrinput.c</a>.</p>
+
+<p>References <a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int()</a>, and <a class="el" href="../../da/d19/qrinput_8h_source.html#l00068">_QRinput_Struct::parity</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l01579">QRinput_splitQRinputToStruct()</a>, and <a class="el" href="../../d5/d4f/qrinput_8c_source.html#l01526">QRinput_Struct_calcParity()</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 13 2017 23:23:38 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 14 2017 20:51:27 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

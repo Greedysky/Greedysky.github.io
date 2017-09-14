@@ -98,35 +98,38 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d0/d63/class_music_lrc_color_widget.html">MusicLrcColorWidget</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d0/d63/class_music_lrc_color_widget.html">MusicLrcColorWidget</a>();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../da/db2/class_music_abstract_move_dialog.html#a5ffbeacd6e9d019df169bb0608564954">getClassName</a>();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> setColors(<span class="keyword">const</span> QList&lt;QColor&gt; &amp;colors);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    QList&lt;QColor&gt; getColors() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> addButtonClicked();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> deleteButtonClicked();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> modifyButtonClicked();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> upButtonClicked();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> downButtonClicked();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> exec();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="../../d0/d63/class_music_lrc_color_widget.html#a3aef74273ba6bd6b2ece4a343840939d">   71</a></span>&#160;    Ui::MusicLrcColorWidget *<a class="code" href="../../d0/d63/class_music_lrc_color_widget.html#a3aef74273ba6bd6b2ece4a343840939d">m_ui</a>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif // MUSICLRCCOLORWIDGET_H</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d0/d63/class_music_lrc_color_widget.html">MusicLrcColorWidget</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d0/d63/class_music_lrc_color_widget.html">MusicLrcColorWidget</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../da/db2/class_music_abstract_move_dialog.html#a5ffbeacd6e9d019df169bb0608564954">getClassName</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> setColors(<span class="keyword">const</span> QList&lt;QColor&gt; &amp;colors);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    QList&lt;QColor&gt; getColors() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> addButtonClicked();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> deleteButtonClicked();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> modifyButtonClicked();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> upButtonClicked();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> downButtonClicked();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> exec();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="../../d0/d63/class_music_lrc_color_widget.html#a3aef74273ba6bd6b2ece4a343840939d">   72</a></span>&#160;    Ui::MusicLrcColorWidget *<a class="code" href="../../d0/d63/class_music_lrc_color_widget.html#a3aef74273ba6bd6b2ece4a343840939d">m_ui</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif // MUSICLRCCOLORWIDGET_H</span></div>
 <div class="ttc" id="musicabstractmovedialog_8h_html"><div class="ttname"><a href="../../da/d49/musicabstractmovedialog_8h.html">musicabstractmovedialog.h</a></div></div>
 <div class="ttc" id="namespace_ui_html"><div class="ttname"><a href="../../dc/df0/namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d24/musicapplication_8h_source.html#l00023">musicapplication.h:23</a></div></div>
 <div class="ttc" id="class_music_abstract_move_dialog_html_a5ffbeacd6e9d019df169bb0608564954"><div class="ttname"><a href="../../da/db2/class_music_abstract_move_dialog.html#a5ffbeacd6e9d019df169bb0608564954">MusicAbstractMoveDialog::getClassName</a></div><div class="ttdeci">static QString getClassName()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de8/musicabstractmovedialog_8cpp_source.html#l00038">musicabstractmovedialog.cpp:38</a></div></div>
-<div class="ttc" id="class_music_lrc_color_widget_html_a3aef74273ba6bd6b2ece4a343840939d"><div class="ttname"><a href="../../d0/d63/class_music_lrc_color_widget.html#a3aef74273ba6bd6b2ece4a343840939d">MusicLrcColorWidget::m_ui</a></div><div class="ttdeci">Ui::MusicLrcColorWidget * m_ui</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcc/musiclrccolorwidget_8h_source.html#l00071">musiclrccolorwidget.h:71</a></div></div>
+<div class="ttc" id="class_music_lrc_color_widget_html_a3aef74273ba6bd6b2ece4a343840939d"><div class="ttname"><a href="../../d0/d63/class_music_lrc_color_widget.html#a3aef74273ba6bd6b2ece4a343840939d">MusicLrcColorWidget::m_ui</a></div><div class="ttdeci">Ui::MusicLrcColorWidget * m_ui</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcc/musiclrccolorwidget_8h_source.html#l00072">musiclrccolorwidget.h:72</a></div></div>
 <div class="ttc" id="class_music_lrc_color_widget_html"><div class="ttname"><a href="../../d0/d63/class_music_lrc_color_widget.html">MusicLrcColorWidget</a></div><div class="ttdoc">The class of the lrc color picker widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcc/musiclrccolorwidget_8h_source.html#l00021">musiclrccolorwidget.h:21</a></div></div>
 <div class="ttc" id="class_music_abstract_move_dialog_html"><div class="ttname"><a href="../../da/db2/class_music_abstract_move_dialog.html">MusicAbstractMoveDialog</a></div><div class="ttdoc">The class of the moving dialog base. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d49/musicabstractmovedialog_8h_source.html#l00019">musicabstractmovedialog.h:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 13 2017 23:23:33 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 14 2017 20:51:21 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

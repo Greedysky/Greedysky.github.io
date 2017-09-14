@@ -94,59 +94,67 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../dd/db7/class_music_song_tag.html">   18</a></span>&#160;<span class="keyword">class </span>MUSIC_CORE_EXPORT <a class="code" href="../../dd/db7/class_music_song_tag.html">MusicSongTag</a></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="../../dd/db7/class_music_song_tag.html">MusicSongTag</a>();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../dd/db7/class_music_song_tag.html">MusicSongTag</a>(<span class="keyword">const</span> QString &amp;file);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">static</span> QString getClassName();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">bool</span> read();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">bool</span> read(<span class="keyword">const</span> QString &amp;file);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">bool</span> save();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    QString getDecoder() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    QString getFilePath() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    QString getArtist() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    QString getTitle() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    QString getAlbum() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    QString getComment() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    QString getYear() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    QString getTrackNum() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    QString getGenre() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    QString getAlbumArtist() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    QString getComposer() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    QString getChannel() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    QString getURL() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> setArtist(<span class="keyword">const</span> QString &amp;artist);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> setTitle(<span class="keyword">const</span> QString &amp;title);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> setAlbum(<span class="keyword">const</span> QString &amp;album);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> setComment(<span class="keyword">const</span> QString &amp;comment);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">void</span> setYear(<span class="keyword">const</span> QString &amp;year);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">void</span> setTrackNum(<span class="keyword">const</span> QString &amp;track);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">void</span> setGenre(<span class="keyword">const</span> QString &amp;genre);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">void</span> setCover(<span class="keyword">const</span> QPixmap &amp;pix);</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">void</span> setCover(<span class="keyword">const</span> QByteArray &amp;data);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    QPixmap getCover() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    QString getSamplingRate() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    QString getFormat() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    QString getMode() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    QString getBitrate() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    QString getLengthString() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    QString findPluginPath() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordtype">bool</span> readOtherTaglib();</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordtype">bool</span> saveOtherTaglib();</div>
-<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="../../dd/db7/class_music_song_tag.html#afb67edcc7b5c555266967bb51d71a9b0">  179</a></span>&#160;    QString <a class="code" href="../../dd/db7/class_music_song_tag.html#afb67edcc7b5c555266967bb51d71a9b0">m_filePath</a>;</div>
-<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="../../dd/db7/class_music_song_tag.html#a84918d64ed2ef74fa223058b1defc08e">  180</a></span>&#160;    QMap&lt;TagReadAndWrite::MusicTag, QVariant&gt; <a class="code" href="../../dd/db7/class_music_song_tag.html#a84918d64ed2ef74fa223058b1defc08e">m_parameters</a>;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;};</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="preprocessor">#endif // MUSICSONGTAG_H</span></div>
-<div class="ttc" id="class_music_song_tag_html_afb67edcc7b5c555266967bb51d71a9b0"><div class="ttname"><a href="../../dd/db7/class_music_song_tag.html#afb67edcc7b5c555266967bb51d71a9b0">MusicSongTag::m_filePath</a></div><div class="ttdeci">QString m_filePath</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dce/musicsongtag_8h_source.html#l00179">musicsongtag.h:179</a></div></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="../../dd/db7/class_music_song_tag.html">MusicSongTag</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../dd/db7/class_music_song_tag.html">MusicSongTag</a>(<span class="keyword">const</span> QString &amp;file);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">static</span> QString getClassName();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">bool</span> read();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">bool</span> read(<span class="keyword">const</span> QString &amp;file);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">bool</span> save();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    QString getDecoder() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    QString getFilePath() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    QString getArtist() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    QString getTitle() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    QString getAlbum() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    QString getComment() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    QString getYear() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    QString getTrackNum() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    QString getGenre() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    QString getAlbumArtist() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    QString getComposer() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    QString getChannel() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    QString getURL() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> setArtist(<span class="keyword">const</span> QString &amp;artist);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> setTitle(<span class="keyword">const</span> QString &amp;title);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> setAlbum(<span class="keyword">const</span> QString &amp;album);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">void</span> setComment(<span class="keyword">const</span> QString &amp;comment);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">void</span> setYear(<span class="keyword">const</span> QString &amp;year);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">void</span> setTrackNum(<span class="keyword">const</span> QString &amp;track);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">void</span> setGenre(<span class="keyword">const</span> QString &amp;genre);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">void</span> setCover(<span class="keyword">const</span> QPixmap &amp;pix);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordtype">void</span> setCover(<span class="keyword">const</span> QByteArray &amp;data);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    QPixmap getCover() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    QString getSamplingRate() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    QString getFormat() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    QString getMode() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    QString getBitrate() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    QString getLengthString() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    QString findPluginPath() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordtype">bool</span> readOtherTaglib();</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordtype">bool</span> saveOtherTaglib();</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="../../dd/db7/class_music_song_tag.html#afb67edcc7b5c555266967bb51d71a9b0">  180</a></span>&#160;    QString <a class="code" href="../../dd/db7/class_music_song_tag.html#afb67edcc7b5c555266967bb51d71a9b0">m_filePath</a>;</div>
+<div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="../../dd/db7/class_music_song_tag.html#a84918d64ed2ef74fa223058b1defc08e">  181</a></span>&#160;    QMap&lt;TagReadAndWrite::MusicTag, QVariant&gt; <a class="code" href="../../dd/db7/class_music_song_tag.html#a84918d64ed2ef74fa223058b1defc08e">m_parameters</a>;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;};</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="preprocessor">#endif // MUSICSONGTAG_H</span></div>
+<div class="ttc" id="class_music_song_tag_html_afb67edcc7b5c555266967bb51d71a9b0"><div class="ttname"><a href="../../dd/db7/class_music_song_tag.html#afb67edcc7b5c555266967bb51d71a9b0">MusicSongTag::m_filePath</a></div><div class="ttdeci">QString m_filePath</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dce/musicsongtag_8h_source.html#l00180">musicsongtag.h:180</a></div></div>
 <div class="ttc" id="class_music_song_tag_html"><div class="ttname"><a href="../../dd/db7/class_music_song_tag.html">MusicSongTag</a></div><div class="ttdoc">The class of the music song tag. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dce/musicsongtag_8h_source.html#l00018">musicsongtag.h:18</a></div></div>
-<div class="ttc" id="class_music_song_tag_html_a84918d64ed2ef74fa223058b1defc08e"><div class="ttname"><a href="../../dd/db7/class_music_song_tag.html#a84918d64ed2ef74fa223058b1defc08e">MusicSongTag::m_parameters</a></div><div class="ttdeci">QMap&lt; TagReadAndWrite::MusicTag, QVariant &gt; m_parameters</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dce/musicsongtag_8h_source.html#l00180">musicsongtag.h:180</a></div></div>
+<div class="ttc" id="class_music_song_tag_html_a84918d64ed2ef74fa223058b1defc08e"><div class="ttname"><a href="../../dd/db7/class_music_song_tag.html#a84918d64ed2ef74fa223058b1defc08e">MusicSongTag::m_parameters</a></div><div class="ttdeci">QMap&lt; TagReadAndWrite::MusicTag, QVariant &gt; m_parameters</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dce/musicsongtag_8h_source.html#l00181">musicsongtag.h:181</a></div></div>
 <div class="ttc" id="musicglobaldefine_8h_html"><div class="ttname"><a href="../../d6/d9b/musicglobaldefine_8h.html">musicglobaldefine.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 13 2017 23:23:32 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 14 2017 20:51:20 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

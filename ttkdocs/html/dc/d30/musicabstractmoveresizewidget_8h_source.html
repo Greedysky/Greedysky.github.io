@@ -117,17 +117,21 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="../../db/d84/class_music_abstract_move_resize_widget.html#a3aef32980da7bf53f07123e96d6d801fac019339b3694449e9c4b1d867a89e39c">   45</a></span>&#160;        Direction_RightTop = Direction_Right + Direction_Top,       </div>
 <div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="../../db/d84/class_music_abstract_move_resize_widget.html#a3aef32980da7bf53f07123e96d6d801fa8ad74c51e835e509a1fe1058f617e4de">   46</a></span>&#160;        Direction_RightBottom = Direction_Right + Direction_Bottom  </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    };</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../db/d84/class_music_abstract_move_resize_widget.html">MusicAbstractMoveResizeWidget</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">static</span> QString getClassName();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../db/d84/class_music_abstract_move_resize_widget.html">MusicAbstractMoveResizeWidget</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">static</span> QString getClassName();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> eventFilter(QObject *<span class="keywordtype">object</span>, QEvent *event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> mouseDoubleClickEvent(QMouseEvent *event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> mousePressEvent(QMouseEvent *event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> mouseReleaseEvent(QMouseEvent *event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> mouseMoveEvent(QMouseEvent *event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> sizeDirection();</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> moveDirection();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    QObjectList foreachWidget(QObject *<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> eventFilter(QObject *<span class="keywordtype">object</span>, QEvent *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> mouseDoubleClickEvent(QMouseEvent *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> mousePressEvent(QMouseEvent *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> mouseReleaseEvent(QMouseEvent *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> mouseMoveEvent(QMouseEvent *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> sizeDirection();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> moveDirection();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    QObjectList foreachWidget(QObject *<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
 <div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="../../db/d84/class_music_abstract_move_resize_widget.html#ab2ef38faacbd482c6f043384792c4f1a">   81</a></span>&#160;    <a class="code" href="../../d4/d89/struct_move_resize_struct.html">MoveResizeStruct</a> <a class="code" href="../../db/d84/class_music_abstract_move_resize_widget.html#ab2ef38faacbd482c6f043384792c4f1a">m_struct</a>;</div>
 <div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="../../db/d84/class_music_abstract_move_resize_widget.html#ad4668482ce35a7664ae78fd73e5848fb">   82</a></span>&#160;    <a class="code" href="../../db/d84/class_music_abstract_move_resize_widget.html#a3aef32980da7bf53f07123e96d6d801f">Direction</a> <a class="code" href="../../db/d84/class_music_abstract_move_resize_widget.html#ad4668482ce35a7664ae78fd73e5848fb">m_direction</a>;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
@@ -149,7 +153,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 13 2017 23:23:34 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 14 2017 20:51:22 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

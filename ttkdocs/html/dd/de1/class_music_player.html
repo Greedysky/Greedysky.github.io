@@ -200,7 +200,7 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a9a2c4f2798697112ab68f7488ccab62b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6dc88fc61f26d597da869856d9cd9d83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dbc/namespace_music_object.html#a85dbc7f8359cfda6504c7f64d5349217">MusicObject::PlayState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de1/class_music_player.html#a6dc88fc61f26d597da869856d9cd9d83">m_state</a></td></tr>
 <tr class="separator:a6dc88fc61f26d597da869856d9cd9d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55ee18c87103941d2625127fc62e9cb1"><td class="memItemLeft" align="right" valign="top">SoundCore *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de1/class_music_player.html#a55ee18c87103941d2625127fc62e9cb1">m_music</a></td></tr>
+<tr class="memitem:a55ee18c87103941d2625127fc62e9cb1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d98/class_sound_core.html">SoundCore</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de1/class_music_player.html#a55ee18c87103941d2625127fc62e9cb1">m_music</a></td></tr>
 <tr class="separator:a55ee18c87103941d2625127fc62e9cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48835e4bc42fa3b97ae590b26e3a32fb"><td class="memItemLeft" align="right" valign="top">QTimer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de1/class_music_player.html#a48835e4bc42fa3b97ae590b26e3a32fb">m_timer</a></td></tr>
 <tr class="separator:a48835e4bc42fa3b97ae590b26e3a32fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -243,19 +243,19 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a076e78b0ea35321bbb37c0a84793c9e6a934a5e5356ec421a62fe53e7461d6738"></a>EnhancedOff&#160;</td><td class="fielddoc">
+<p>enhanced off, no any effect </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a076e78b0ea35321bbb37c0a84793c9e6adeb7e7f7f36b708e0e361aa373969ddf"></a>Music3D&#160;</td><td class="fielddoc">
-<p><em>enhanced off, no any effect</em>/ </p>
+<p>3d music effect </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a076e78b0ea35321bbb37c0a84793c9e6afbc057de163f1e9cd737cd66026229c1"></a>MusicNICAM&#160;</td><td class="fielddoc">
-<p><em>3d music effect</em>/ </p>
+<p>nicam music effect </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a076e78b0ea35321bbb37c0a84793c9e6a5c1bcb0cf3f7ec5df0669a388cf7c4d6"></a>MusicSubwoofer&#160;</td><td class="fielddoc">
-<p><em>nicam music effect</em>/ </p>
+<p>subwoofer music effect </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a076e78b0ea35321bbb37c0a84793c9e6a6da25573bab91606f6a5ec6d2cb39fda"></a>MusicVocal&#160;</td><td class="fielddoc">
-<p><em>subwoofer music effect</em>/ </p>
-<p><em>vocal music effect</em>/ </p>
+<p>vocal music effect </p>
 </td></tr>
 </table>
 
@@ -287,10 +287,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 
 <p>qmmp incldue </p>
+<p>Object contsructor. </p>
 
 <p>Definition at line <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00011">11</a> of file <a class="el" href="../../df/d94/musicplayer_8cpp_source.html">musicplayer.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00032">EnhancedOff</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00035">getClassName()</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00196">m_balance</a>, <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html#l00016">M_CONNECTION_PTR</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00193">m_duration</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00189">m_music</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00192">m_musicEnhanced</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00187">m_playlist</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00197">m_posOnCircle</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00188">m_state</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00190">m_timer</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00195">m_tryTimes</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00196">m_volumeMusic3D</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00203">MusicObject::PS_StoppedState</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00205">setEnaleEffect()</a>, and <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00248">update()</a>.</p>
+<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00032">EnhancedOff</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00035">getClassName()</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00197">m_balance</a>, <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html#l00016">M_CONNECTION_PTR</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00194">m_duration</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00190">m_music</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00193">m_musicEnhanced</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00188">m_playlist</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00198">m_posOnCircle</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00189">m_state</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00191">m_timer</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00196">m_tryTimes</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00197">m_volumeMusic3D</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00203">MusicObject::PS_StoppedState</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00205">setEnaleEffect()</a>, and <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00248">update()</a>.</p>
 
 </div>
 </div>
@@ -306,11 +307,10 @@ Private Slots</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Object contsructor. </p>
 
 <p>Definition at line <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00030">30</a> of file <a class="el" href="../../df/d94/musicplayer_8cpp_source.html">musicplayer.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00189">m_music</a>.</p>
+<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00190">m_music</a>.</p>
 
 </div>
 </div>
@@ -327,11 +327,11 @@ Private Slots</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get current play list. </p>
+<p>Get current player duration. </p>
 
 <p>Definition at line <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00061">61</a> of file <a class="el" href="../../df/d94/musicplayer_8cpp_source.html">musicplayer.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00189">m_music</a>.</p>
+<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00190">m_music</a>, and <a class="el" href="../../d4/d98/class_sound_core.html#a8d3a3939d6e8ed2d414b92edca183c71">SoundCore::totalTime()</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00284">getCurrentDuration()</a>, and <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00297">MusicApplication::positionChanged()</a>.</p>
 
@@ -358,7 +358,7 @@ Private Slots</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Current state changed. </p>
+<p>Current duration changed. </p>
 
 <p>Referenced by <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00284">getCurrentDuration()</a>.</p>
 
@@ -384,6 +384,7 @@ Private Slots</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Get class object name. </p>
 
 <p>Definition at line <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00035">35</a> of file <a class="el" href="../../df/d94/musicplayer_8cpp_source.html">musicplayer.cpp</a>.</p>
 
@@ -411,11 +412,11 @@ Private Slots</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Player one second time out. </p>
+<p>Get current duration by time out. </p>
 
 <p>Definition at line <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00284">284</a> of file <a class="el" href="../../df/d94/musicplayer_8cpp_source.html">musicplayer.cpp</a>.</p>
 
-<p>References <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00061">duration()</a>, <a class="el" href="../../dd/de1/class_music_player.html#a94fa74c93b7d82ee3d7d855adf2a45cc">durationChanged()</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00193">m_duration</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00195">m_tryTimes</a>, and <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00014">MT_MS</a>.</p>
+<p>References <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00061">duration()</a>, <a class="el" href="../../dd/de1/class_music_player.html#a94fa74c93b7d82ee3d7d855adf2a45cc">durationChanged()</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00194">m_duration</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00196">m_tryTimes</a>, and <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00014">MT_MS</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00132">play()</a>.</p>
 
@@ -433,11 +434,11 @@ Private Slots</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set current music enhanced effect. </p>
+<p>Get current music enhanced effect. </p>
 
 <p>Definition at line <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00127">127</a> of file <a class="el" href="../../df/d94/musicplayer_8cpp_source.html">musicplayer.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00192">m_musicEnhanced</a>.</p>
+<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00193">m_musicEnhanced</a>.</p>
 
 <p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l01186">MusicApplication::writeXMLConfigToText()</a>.</p>
 
@@ -455,11 +456,11 @@ Private Slots</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set current player volume. </p>
+<p>Get current player mute state. </p>
 
 <p>Definition at line <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00094">94</a> of file <a class="el" href="../../df/d94/musicplayer_8cpp_source.html">musicplayer.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00189">m_music</a>.</p>
+<p>References <a class="el" href="../../d4/d98/class_sound_core.html#a4c4bc655791e2a896fa8beb3a7df99e8">SoundCore::isMuted()</a>, and <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00190">m_music</a>.</p>
 
 <p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00483">MusicApplication::musicVolumeMute()</a>, and <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00083">volume()</a>.</p>
 
@@ -477,11 +478,11 @@ Private Slots</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get class object name. </p>
+<p>Get current player is playing or not. </p>
 
 <p>Definition at line <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00040">40</a> of file <a class="el" href="../../df/d94/musicplayer_8cpp_source.html">musicplayer.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00188">m_state</a>, and <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00204">MusicObject::PS_PlayingState</a>.</p>
+<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00189">m_state</a>, and <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00204">MusicObject::PS_PlayingState</a>.</p>
 
 <p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00279">MusicApplication::isPlaying()</a>.</p>
 
@@ -508,7 +509,7 @@ Private Slots</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Current volume changed. </p>
+<p>Current mute state changed. </p>
 
 </div>
 </div>
@@ -532,11 +533,11 @@ Private Slots</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Player to play. </p>
+<p>Player to pause. </p>
 
 <p>Definition at line <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00174">174</a> of file <a class="el" href="../../df/d94/musicplayer_8cpp_source.html">musicplayer.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00189">m_music</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00188">m_state</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00190">m_timer</a>, and <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00205">MusicObject::PS_PausedState</a>.</p>
+<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00190">m_music</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00189">m_state</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00191">m_timer</a>, <a class="el" href="../../d4/d98/class_sound_core.html#abff770377d2d5cfcfb1c227846009c6b">SoundCore::pause()</a>, and <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00205">MusicObject::PS_PausedState</a>.</p>
 
 <p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00385">MusicApplication::musicStatePlay()</a>.</p>
 
@@ -562,7 +563,7 @@ Private Slots</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Current mute state changed. </p>
+<p>Player to play. </p>
 <p>Get the current state of play</p>
 <p>When the pause time for recovery</p>
 <p>The current playback path</p>
@@ -571,7 +572,7 @@ Private Slots</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00132">132</a> of file <a class="el" href="../../df/d94/musicplayer_8cpp_source.html">musicplayer.cpp</a>.</p>
 
-<p>References <a class="el" href="../../da/db8/musicplaylist_8cpp_source.html#l00032">MusicPlaylist::currentMediaString()</a>, <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00086">MusicSettingManager::EnhancedBalanceChoiced</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00284">getCurrentDuration()</a>, <a class="el" href="../../da/db8/musicplaylist_8cpp_source.html#l00051">MusicPlaylist::isEmpty()</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00191">m_currentMedia</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00189">m_music</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00187">m_playlist</a>, <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00016">M_SETTING_PTR</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00188">m_state</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00190">m_timer</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00195">m_tryTimes</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00017">MT_S2MS</a>, <a class="el" href="../../dd/de1/class_music_player.html#a8c84c85277027a1684e37a8465977712">positionChanged()</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00204">MusicObject::PS_PlayingState</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00203">MusicObject::PS_StoppedState</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00236">setSoundEffectVolume()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00088">setVolume()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00045">state()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00083">volume()</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00034">MusicSettingManager::VolumeChoiced</a>.</p>
+<p>References <a class="el" href="../../da/db8/musicplaylist_8cpp_source.html#l00032">MusicPlaylist::currentMediaString()</a>, <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00086">MusicSettingManager::EnhancedBalanceChoiced</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00284">getCurrentDuration()</a>, <a class="el" href="../../da/db8/musicplaylist_8cpp_source.html#l00051">MusicPlaylist::isEmpty()</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00192">m_currentMedia</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00190">m_music</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00188">m_playlist</a>, <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00016">M_SETTING_PTR</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00189">m_state</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00191">m_timer</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00196">m_tryTimes</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00017">MT_S2MS</a>, <a class="el" href="../../d4/d98/class_sound_core.html#abff770377d2d5cfcfb1c227846009c6b">SoundCore::pause()</a>, <a class="el" href="../../d3/d23/_qt4_2qmmp_8h_source.html#l00054">Qmmp::Paused</a>, <a class="el" href="../../d4/d98/class_sound_core.html#ae3e611397f80a3d8c1b5d74ea2a5a49f">SoundCore::play()</a>, <a class="el" href="../../dd/de1/class_music_player.html#a8c84c85277027a1684e37a8465977712">positionChanged()</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00204">MusicObject::PS_PlayingState</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00203">MusicObject::PS_StoppedState</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00236">setSoundEffectVolume()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00088">setVolume()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00045">state()</a>, <a class="el" href="../../d4/d98/class_sound_core.html#a38adf6d4b3749427da582b7afb956429">SoundCore::state()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00083">volume()</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00034">MusicSettingManager::VolumeChoiced</a>.</p>
 
 <p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00385">MusicApplication::musicStatePlay()</a>, and <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00248">update()</a>.</p>
 
@@ -589,11 +590,11 @@ Private Slots</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set current play list. </p>
+<p>Get current play list. </p>
 
 <p>Definition at line <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00056">56</a> of file <a class="el" href="../../df/d94/musicplayer_8cpp_source.html">musicplayer.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00187">m_playlist</a>.</p>
+<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00188">m_playlist</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00050">setPlaylist()</a>.</p>
 
@@ -611,11 +612,11 @@ Private Slots</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get current player postion. </p>
+<p>Set current player to next music. </p>
 
 <p>Definition at line <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00071">71</a> of file <a class="el" href="../../df/d94/musicplayer_8cpp_source.html">musicplayer.cpp</a>.</p>
 
-<p>References <a class="el" href="../../da/db8/musicplaylist_8cpp_source.html#l00027">MusicPlaylist::currentIndex()</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00187">m_playlist</a>, <a class="el" href="../../da/db8/musicplaylist_8cpp_source.html#l00046">MusicPlaylist::mediaCount()</a>, and <a class="el" href="../../da/db8/musicplaylist_8cpp_source.html#l00134">MusicPlaylist::setCurrentIndex()</a>.</p>
+<p>References <a class="el" href="../../da/db8/musicplaylist_8cpp_source.html#l00027">MusicPlaylist::currentIndex()</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00188">m_playlist</a>, <a class="el" href="../../da/db8/musicplaylist_8cpp_source.html#l00046">MusicPlaylist::mediaCount()</a>, and <a class="el" href="../../da/db8/musicplaylist_8cpp_source.html#l00134">MusicPlaylist::setCurrentIndex()</a>.</p>
 
 <p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00434">MusicApplication::musicPlayNext()</a>.</p>
 
@@ -633,11 +634,11 @@ Private Slots</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set current player to next music. </p>
+<p>Set current player to previous music. </p>
 
 <p>Definition at line <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00077">77</a> of file <a class="el" href="../../df/d94/musicplayer_8cpp_source.html">musicplayer.cpp</a>.</p>
 
-<p>References <a class="el" href="../../da/db8/musicplaylist_8cpp_source.html#l00027">MusicPlaylist::currentIndex()</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00187">m_playlist</a>, and <a class="el" href="../../da/db8/musicplaylist_8cpp_source.html#l00134">MusicPlaylist::setCurrentIndex()</a>.</p>
+<p>References <a class="el" href="../../da/db8/musicplaylist_8cpp_source.html#l00027">MusicPlaylist::currentIndex()</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00188">m_playlist</a>, and <a class="el" href="../../da/db8/musicplaylist_8cpp_source.html#l00134">MusicPlaylist::setCurrentIndex()</a>.</p>
 
 <p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00415">MusicApplication::musicPlayPrevious()</a>.</p>
 
@@ -655,11 +656,11 @@ Private Slots</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get current player duration. </p>
+<p>Get current player postion. </p>
 
 <p>Definition at line <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00066">66</a> of file <a class="el" href="../../df/d94/musicplayer_8cpp_source.html">musicplayer.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00189">m_music</a>.</p>
+<p>References <a class="el" href="../../d4/d98/class_sound_core.html#af2cf57e080a377f9f67f8927d4a1eaef">SoundCore::elapsed()</a>, and <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00190">m_music</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00248">update()</a>.</p>
 
@@ -686,7 +687,7 @@ Private Slots</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Current duration changed. </p>
+<p>Current position changed. </p>
 
 <p>Referenced by <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00132">play()</a>, and <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00248">update()</a>.</p>
 
@@ -712,11 +713,11 @@ Private Slots</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set current player volume. </p>
+<p>Remove current music media data. </p>
 
 <p>Definition at line <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00242">242</a> of file <a class="el" href="../../df/d94/musicplayer_8cpp_source.html">musicplayer.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00189">m_music</a>, and <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00190">m_timer</a>.</p>
+<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00190">m_music</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00191">m_timer</a>, and <a class="el" href="../../d4/d98/class_sound_core.html#a607807effa5d9f2365dc48758f690f4c">SoundCore::stop()</a>.</p>
 
 </div>
 </div>
@@ -741,7 +742,7 @@ Private Slots</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set current equalizer effect. </p>
+<p>Set enable to set current equalizer effect. </p>
 
 <p>Definition at line <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00205">205</a> of file <a class="el" href="../../df/d94/musicplayer_8cpp_source.html">musicplayer.cpp</a>.</p>
 
@@ -772,11 +773,11 @@ Private Slots</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Player to stop. </p>
+<p>Set current equalizer effect. </p>
 
 <p>Definition at line <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00188">188</a> of file <a class="el" href="../../df/d94/musicplayer_8cpp_source.html">musicplayer.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00189">m_music</a>.</p>
+<p>References <a class="el" href="../../dd/d84/_qt4_2eqsettings_8h_source.html#l00082">EqSettings::EQ_BANDS_10</a>, <a class="el" href="../../d4/d98/class_sound_core.html#acf12d8ff5f4dfc41f93811ae145c17fa">SoundCore::eqSettings()</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00190">m_music</a>, <a class="el" href="../../dd/dc4/class_eq_settings.html#ad1e5ecac2f2e0cd0d0034c052a67cdb2">EqSettings::setEnabled()</a>, <a class="el" href="../../d4/d98/class_sound_core.html#a231d1a57e50f39885739810e07ff3cd8">SoundCore::setEqSettings()</a>, <a class="el" href="../../dd/dc4/class_eq_settings.html#aa4a9fa7c68fc9fa2af9bae960f493f5b">EqSettings::setGain()</a>, and <a class="el" href="../../dd/dc4/class_eq_settings.html#a944069b0ca69416a56f513a1e8f81b94">EqSettings::setPreamp()</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00205">setEnaleEffect()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00213">setEqInformation()</a>, and <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00297">setMusicEnhancedCase()</a>.</p>
 
@@ -802,7 +803,7 @@ Private Slots</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set enable to set current equalizer effect. </p>
+<p>Read equalizer effect from config file. </p>
 <p>Read the equalizer parameters from a configuration file </p>
 
 <p>Definition at line <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00213">213</a> of file <a class="el" href="../../df/d94/musicplayer_8cpp_source.html">musicplayer.cpp</a>.</p>
@@ -826,11 +827,11 @@ Private Slots</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set current play pos. </p>
+<p>Set current music enhanced effect. </p>
 
 <p>Definition at line <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00110">110</a> of file <a class="el" href="../../df/d94/musicplayer_8cpp_source.html">musicplayer.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00196">m_balance</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00189">m_music</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00192">m_musicEnhanced</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00196">m_volumeMusic3D</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00033">Music3D</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00297">setMusicEnhancedCase()</a>, and <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00083">volume()</a>.</p>
+<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00197">m_balance</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00190">m_music</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00193">m_musicEnhanced</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00197">m_volumeMusic3D</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00033">Music3D</a>, <a class="el" href="../../d4/d98/class_sound_core.html#a590b72d2e96c5b3f37a1871a97671325">SoundCore::setBalance()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00297">setMusicEnhancedCase()</a>, <a class="el" href="../../d4/d98/class_sound_core.html#a20c7a61b0ba37ec014c10945ac321287">SoundCore::setVolume()</a>, and <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00083">volume()</a>.</p>
 
 <p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00734">MusicApplication::musicEnhancedMusicChanged()</a>.</p>
 
@@ -856,11 +857,11 @@ Private Slots</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get current duration by time out. </p>
+<p>Set current music enhanced effect option. </p>
 
 <p>Definition at line <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00297">297</a> of file <a class="el" href="../../df/d94/musicplayer_8cpp_source.html">musicplayer.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00032">EnhancedOff</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00192">m_musicEnhanced</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00034">MusicNICAM</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00035">MusicSubwoofer</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00036">MusicVocal</a>, and <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00188">setEqEffect()</a>.</p>
+<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00032">EnhancedOff</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00193">m_musicEnhanced</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00034">MusicNICAM</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00035">MusicSubwoofer</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00036">MusicVocal</a>, and <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00188">setEqEffect()</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00110">setMusicEnhanced()</a>.</p>
 
@@ -879,11 +880,11 @@ Private Slots</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get current player mute state. </p>
+<p>Set current player mute or not. </p>
 
 <p>Definition at line <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00099">99</a> of file <a class="el" href="../../df/d94/musicplayer_8cpp_source.html">musicplayer.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00189">m_music</a>, and <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00196">m_volumeMusic3D</a>.</p>
+<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00190">m_music</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00197">m_volumeMusic3D</a>, <a class="el" href="../../d4/d98/class_sound_core.html#ac8c554b21da73aa9acf24d64a159e8bd">SoundCore::setMuted()</a>, and <a class="el" href="../../d4/d98/class_sound_core.html#a2bfbff0dbf0d566e57797de53f50aa8a">SoundCore::volume()</a>.</p>
 
 <p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00483">MusicApplication::musicVolumeMute()</a>.</p>
 
@@ -902,11 +903,11 @@ Private Slots</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get current player state. </p>
+<p>Set current play list. </p>
 
 <p>Definition at line <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00050">50</a> of file <a class="el" href="../../df/d94/musicplayer_8cpp_source.html">musicplayer.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00187">m_playlist</a>, and <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00056">playlist()</a>.</p>
+<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00188">m_playlist</a>, and <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00056">playlist()</a>.</p>
 
 </div>
 </div>
@@ -923,11 +924,11 @@ Private Slots</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set current player mute or not. </p>
+<p>Set current play pos. </p>
 
 <p>Definition at line <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00105">105</a> of file <a class="el" href="../../df/d94/musicplayer_8cpp_source.html">musicplayer.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00189">m_music</a>.</p>
+<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00190">m_music</a>, and <a class="el" href="../../d4/d98/class_sound_core.html#a657295aa99fcce936f823d04a93f60d9">SoundCore::seek()</a>.</p>
 
 <p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00638">MusicApplication::musicPlayAnyTimeAt()</a>, and <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00903">MusicApplication::updateCurrentTime()</a>.</p>
 
@@ -954,11 +955,11 @@ Private Slots</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Read equalizer effect from config file. </p>
+<p>Set current player volume. </p>
 
 <p>Definition at line <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00236">236</a> of file <a class="el" href="../../df/d94/musicplayer_8cpp_source.html">musicplayer.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00196">m_balance</a>, and <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00189">m_music</a>.</p>
+<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00197">m_balance</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00190">m_music</a>, and <a class="el" href="../../d4/d98/class_sound_core.html#a590b72d2e96c5b3f37a1871a97671325">SoundCore::setBalance()</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00132">play()</a>.</p>
 
@@ -977,11 +978,11 @@ Private Slots</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get current player volume. </p>
+<p>Set current player volume. </p>
 
 <p>Definition at line <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00088">88</a> of file <a class="el" href="../../df/d94/musicplayer_8cpp_source.html">musicplayer.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00189">m_music</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00196">m_volumeMusic3D</a>, and <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00083">volume()</a>.</p>
+<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00190">m_music</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00197">m_volumeMusic3D</a>, <a class="el" href="../../d4/d98/class_sound_core.html#a20c7a61b0ba37ec014c10945ac321287">SoundCore::setVolume()</a>, and <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00083">volume()</a>.</p>
 
 <p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00493">MusicApplication::musicVolumeChanged()</a>, and <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00132">play()</a>.</p>
 
@@ -999,11 +1000,11 @@ Private Slots</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get current player is playing or not. </p>
+<p>Get current player state. </p>
 
 <p>Definition at line <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00045">45</a> of file <a class="el" href="../../df/d94/musicplayer_8cpp_source.html">musicplayer.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00188">m_state</a>.</p>
+<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00189">m_state</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00132">play()</a>, and <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00248">update()</a>.</p>
 
@@ -1030,7 +1031,7 @@ Private Slots</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get current music enhanced effect. </p>
+<p>Current state changed. </p>
 
 <p>Referenced by <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00248">update()</a>.</p>
 
@@ -1056,11 +1057,11 @@ Private Slots</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Player to pause. </p>
+<p>Player to stop. </p>
 
 <p>Definition at line <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00181">181</a> of file <a class="el" href="../../df/d94/musicplayer_8cpp_source.html">musicplayer.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00189">m_music</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00188">m_state</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00190">m_timer</a>, and <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00203">MusicObject::PS_StoppedState</a>.</p>
+<p>References <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00190">m_music</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00189">m_state</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00191">m_timer</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00203">MusicObject::PS_StoppedState</a>, and <a class="el" href="../../d4/d98/class_sound_core.html#a607807effa5d9f2365dc48758f690f4c">SoundCore::stop()</a>.</p>
 
 <p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00586">MusicApplication::musicPlayIndex()</a>, and <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00335">MusicApplication::showCurrentSong()</a>.</p>
 
@@ -1086,12 +1087,12 @@ Private Slots</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Remove current music media data. </p>
+<p>Player one second time out. </p>
 <p>3D music settings </p>
 
 <p>Definition at line <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00248">248</a> of file <a class="el" href="../../df/d94/musicplayer_8cpp_source.html">musicplayer.cpp</a>.</p>
 
-<p>References <a class="el" href="../../da/db8/musicplaylist_8cpp_source.html#l00027">MusicPlaylist::currentIndex()</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00189">m_music</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00192">m_musicEnhanced</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00187">m_playlist</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00197">m_posOnCircle</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00190">m_timer</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00033">Music3D</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00132">play()</a>, <a class="el" href="../../da/db8/musicplaylist_8cpp_source.html#l00017">MusicPlaylist::playbackMode()</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00214">MusicObject::PM_PlayOnce</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00210">MusicObject::PM_PlayOrder</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00066">position()</a>, <a class="el" href="../../dd/de1/class_music_player.html#a8c84c85277027a1684e37a8465977712">positionChanged()</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00203">MusicObject::PS_StoppedState</a>, <a class="el" href="../../da/db8/musicplaylist_8cpp_source.html#l00134">MusicPlaylist::setCurrentIndex()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00205">setEnaleEffect()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00045">state()</a>, and <a class="el" href="../../dd/de1/class_music_player.html#af5c036bcc56b5614a89281401e22a1fe">stateChanged()</a>.</p>
+<p>References <a class="el" href="../../da/db8/musicplaylist_8cpp_source.html#l00027">MusicPlaylist::currentIndex()</a>, <a class="el" href="../../d4/d98/class_sound_core.html#a4c4bc655791e2a896fa8beb3a7df99e8">SoundCore::isMuted()</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00190">m_music</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00193">m_musicEnhanced</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00188">m_playlist</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00198">m_posOnCircle</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00191">m_timer</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00033">Music3D</a>, <a class="el" href="../../d3/d23/_qt4_2qmmp_8h_source.html#l00054">Qmmp::Paused</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00132">play()</a>, <a class="el" href="../../da/db8/musicplaylist_8cpp_source.html#l00017">MusicPlaylist::playbackMode()</a>, <a class="el" href="../../d3/d23/_qt4_2qmmp_8h_source.html#l00053">Qmmp::Playing</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00214">MusicObject::PM_PlayOnce</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00210">MusicObject::PM_PlayOrder</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00066">position()</a>, <a class="el" href="../../dd/de1/class_music_player.html#a8c84c85277027a1684e37a8465977712">positionChanged()</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00203">MusicObject::PS_StoppedState</a>, <a class="el" href="../../da/db8/musicplaylist_8cpp_source.html#l00134">MusicPlaylist::setCurrentIndex()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00205">setEnaleEffect()</a>, <a class="el" href="../../d4/d98/class_sound_core.html#a20c7a61b0ba37ec014c10945ac321287">SoundCore::setVolume()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00045">state()</a>, <a class="el" href="../../d4/d98/class_sound_core.html#a38adf6d4b3749427da582b7afb956429">SoundCore::state()</a>, <a class="el" href="../../dd/de1/class_music_player.html#af5c036bcc56b5614a89281401e22a1fe">stateChanged()</a>, and <a class="el" href="../../d4/d98/class_sound_core.html#a607807effa5d9f2365dc48758f690f4c">SoundCore::stop()</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00011">MusicPlayer()</a>.</p>
 
@@ -1109,11 +1110,11 @@ Private Slots</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set current player to previous music. </p>
+<p>Get current player volume. </p>
 
 <p>Definition at line <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00083">83</a> of file <a class="el" href="../../df/d94/musicplayer_8cpp_source.html">musicplayer.cpp</a>.</p>
 
-<p>References <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00094">isMuted()</a>, and <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00189">m_music</a>.</p>
+<p>References <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00094">isMuted()</a>, <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00190">m_music</a>, and <a class="el" href="../../d4/d98/class_sound_core.html#a2bfbff0dbf0d566e57797de53f50aa8a">SoundCore::volume()</a>.</p>
 
 <p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00657">MusicApplication::musicActionVolumePlus()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00646">MusicApplication::musicActionVolumeSub()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00483">MusicApplication::musicVolumeMute()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00132">play()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00110">setMusicEnhanced()</a>, and <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00088">setVolume()</a>.</p>
 
@@ -1140,7 +1141,7 @@ Private Slots</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Current position changed. </p>
+<p>Current volume changed. </p>
 
 </div>
 </div>
@@ -1163,7 +1164,7 @@ Private Slots</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00196">196</a> of file <a class="el" href="../../dd/d60/musicplayer_8h_source.html">musicplayer.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00197">197</a> of file <a class="el" href="../../dd/d60/musicplayer_8h_source.html">musicplayer.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00011">MusicPlayer()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00110">setMusicEnhanced()</a>, and <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00236">setSoundEffectVolume()</a>.</p>
 
@@ -1187,7 +1188,7 @@ Private Slots</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00191">191</a> of file <a class="el" href="../../dd/d60/musicplayer_8h_source.html">musicplayer.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00192">192</a> of file <a class="el" href="../../dd/d60/musicplayer_8h_source.html">musicplayer.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00132">play()</a>.</p>
 
@@ -1211,7 +1212,7 @@ Private Slots</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00193">193</a> of file <a class="el" href="../../dd/d60/musicplayer_8h_source.html">musicplayer.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00194">194</a> of file <a class="el" href="../../dd/d60/musicplayer_8h_source.html">musicplayer.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00284">getCurrentDuration()</a>, and <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00011">MusicPlayer()</a>.</p>
 
@@ -1225,7 +1226,7 @@ Private Slots</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">SoundCore* MusicPlayer::m_music</td>
+          <td class="memname"><a class="el" href="../../d4/d98/class_sound_core.html">SoundCore</a>* MusicPlayer::m_music</td>
         </tr>
       </table>
   </td>
@@ -1235,7 +1236,7 @@ Private Slots</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00189">189</a> of file <a class="el" href="../../dd/d60/musicplayer_8h_source.html">musicplayer.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00190">190</a> of file <a class="el" href="../../dd/d60/musicplayer_8h_source.html">musicplayer.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00061">duration()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00094">isMuted()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00011">MusicPlayer()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00174">pause()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00132">play()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00066">position()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00242">removeCurrentMedia()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00188">setEqEffect()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00110">setMusicEnhanced()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00099">setMuted()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00105">setPosition()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00236">setSoundEffectVolume()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00088">setVolume()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00181">stop()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00248">update()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00083">volume()</a>, and <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00030">~MusicPlayer()</a>.</p>
 
@@ -1259,7 +1260,7 @@ Private Slots</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00192">192</a> of file <a class="el" href="../../dd/d60/musicplayer_8h_source.html">musicplayer.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00193">193</a> of file <a class="el" href="../../dd/d60/musicplayer_8h_source.html">musicplayer.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00127">getMusicEnhanced()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00011">MusicPlayer()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00110">setMusicEnhanced()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00297">setMusicEnhancedCase()</a>, and <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00248">update()</a>.</p>
 
@@ -1282,9 +1283,8 @@ Private Slots</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set current music enhanced effect option. </p>
 
-<p>Definition at line <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00187">187</a> of file <a class="el" href="../../dd/d60/musicplayer_8h_source.html">musicplayer.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00188">188</a> of file <a class="el" href="../../dd/d60/musicplayer_8h_source.html">musicplayer.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00011">MusicPlayer()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00132">play()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00056">playlist()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00071">playNext()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00077">playPrevious()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00050">setPlaylist()</a>, and <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00248">update()</a>.</p>
 
@@ -1308,7 +1308,7 @@ Private Slots</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00197">197</a> of file <a class="el" href="../../dd/d60/musicplayer_8h_source.html">musicplayer.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00198">198</a> of file <a class="el" href="../../dd/d60/musicplayer_8h_source.html">musicplayer.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00011">MusicPlayer()</a>, and <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00248">update()</a>.</p>
 
@@ -1332,7 +1332,7 @@ Private Slots</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00188">188</a> of file <a class="el" href="../../dd/d60/musicplayer_8h_source.html">musicplayer.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00189">189</a> of file <a class="el" href="../../dd/d60/musicplayer_8h_source.html">musicplayer.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00040">isPlaying()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00011">MusicPlayer()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00174">pause()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00132">play()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00045">state()</a>, and <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00181">stop()</a>.</p>
 
@@ -1356,7 +1356,7 @@ Private Slots</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00190">190</a> of file <a class="el" href="../../dd/d60/musicplayer_8h_source.html">musicplayer.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00191">191</a> of file <a class="el" href="../../dd/d60/musicplayer_8h_source.html">musicplayer.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00011">MusicPlayer()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00174">pause()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00132">play()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00242">removeCurrentMedia()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00181">stop()</a>, and <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00248">update()</a>.</p>
 
@@ -1380,7 +1380,7 @@ Private Slots</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00195">195</a> of file <a class="el" href="../../dd/d60/musicplayer_8h_source.html">musicplayer.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00196">196</a> of file <a class="el" href="../../dd/d60/musicplayer_8h_source.html">musicplayer.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00284">getCurrentDuration()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00011">MusicPlayer()</a>, and <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00132">play()</a>.</p>
 
@@ -1404,7 +1404,7 @@ Private Slots</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00196">196</a> of file <a class="el" href="../../dd/d60/musicplayer_8h_source.html">musicplayer.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d60/musicplayer_8h_source.html#l00197">197</a> of file <a class="el" href="../../dd/d60/musicplayer_8h_source.html">musicplayer.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00011">MusicPlayer()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00110">setMusicEnhanced()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00099">setMuted()</a>, and <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00088">setVolume()</a>.</p>
 
@@ -1417,7 +1417,7 @@ Private Slots</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 13 2017 23:23:41 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 14 2017 20:51:32 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

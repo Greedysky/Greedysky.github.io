@@ -125,25 +125,30 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../dd/d7b/class_music_cloud_file_manager_dialog.html">MusicCloudFileManagerDialog</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../dd/d7b/class_music_cloud_file_manager_dialog.html">MusicCloudFileManagerDialog</a>();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../da/db2/class_music_abstract_move_dialog.html#a5ffbeacd6e9d019df169bb0608564954">getClassName</a>();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> setReuploadState(<span class="keywordtype">bool</span> state);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> creatFileManager(<span class="keyword">const</span> <a class="code" href="../../d2/deb/struct_music_upload_data.html">MusicUploadData</a> &amp;data);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> creatFilesManager(<span class="keyword">const</span> MusicUploadDatas &amp;datas);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> updateItemProgress(<span class="keywordtype">int</span> percent, <span class="keyword">const</span> <a class="code" href="../../d2/deb/struct_music_upload_data.html">MusicUploadData</a> &amp;data);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> downloadStateChanged();</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> exec();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> show();</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    QIcon getIconByDataState(<a class="code" href="../../d2/deb/struct_music_upload_data.html#ab48faa87b771c52a05535a3b7f986cb4">MusicUploadData::State</a> state);</div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="../../dd/d7b/class_music_cloud_file_manager_dialog.html#a3aeb31a3b321a0dbbdd376d93cbfd467">  103</a></span>&#160;    Ui::MusicCloudFileManagerDialog *<a class="code" href="../../dd/d7b/class_music_cloud_file_manager_dialog.html#a3aeb31a3b321a0dbbdd376d93cbfd467">m_ui</a>;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;};</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif // MUSICCLOUDFILEMANAGERDIALOG_H</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../dd/d7b/class_music_cloud_file_manager_dialog.html">MusicCloudFileManagerDialog</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../dd/d7b/class_music_cloud_file_manager_dialog.html">MusicCloudFileManagerDialog</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../da/db2/class_music_abstract_move_dialog.html#a5ffbeacd6e9d019df169bb0608564954">getClassName</a>();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> setReuploadState(<span class="keywordtype">bool</span> state);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> creatFileManager(<span class="keyword">const</span> <a class="code" href="../../d2/deb/struct_music_upload_data.html">MusicUploadData</a> &amp;data);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> creatFilesManager(<span class="keyword">const</span> MusicUploadDatas &amp;datas);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> updateItemProgress(<span class="keywordtype">int</span> percent, <span class="keyword">const</span> <a class="code" href="../../d2/deb/struct_music_upload_data.html">MusicUploadData</a> &amp;data);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> downloadStateChanged();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> exec();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> show();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    QIcon getIconByDataState(<a class="code" href="../../d2/deb/struct_music_upload_data.html#ab48faa87b771c52a05535a3b7f986cb4">MusicUploadData::State</a> state);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="../../dd/d7b/class_music_cloud_file_manager_dialog.html#a3aeb31a3b321a0dbbdd376d93cbfd467">  104</a></span>&#160;    Ui::MusicCloudFileManagerDialog *<a class="code" href="../../dd/d7b/class_music_cloud_file_manager_dialog.html#a3aeb31a3b321a0dbbdd376d93cbfd467">m_ui</a>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;};</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif // MUSICCLOUDFILEMANAGERDIALOG_H</span></div>
 <div class="ttc" id="musicabstractmovedialog_8h_html"><div class="ttname"><a href="../../da/d49/musicabstractmovedialog_8h.html">musicabstractmovedialog.h</a></div></div>
 <div class="ttc" id="struct_music_upload_data_html_acd7586d3c340b2d3038f5201a69ce9b0"><div class="ttname"><a href="../../d2/deb/struct_music_upload_data.html#acd7586d3c340b2d3038f5201a69ce9b0">MusicUploadData::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const MusicUploadData &amp;other) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d29/musiccloudfilemanagerdialog_8h_source.html#l00031">musiccloudfilemanagerdialog.h:31</a></div></div>
 <div class="ttc" id="musicabstracttablewidget_8h_html"><div class="ttname"><a href="../../da/db4/musicabstracttablewidget_8h.html">musicabstracttablewidget.h</a></div></div>
@@ -156,15 +161,15 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="musicglobal_8h_html_a26874f3399a60d18f8f82ce4a546e0c9"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a26874f3399a60d18f8f82ce4a546e0c9">TTK_DECLARE_LISTS</a></div><div class="ttdeci">#define TTK_DECLARE_LISTS(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00089">musicglobal.h:89</a></div></div>
 <div class="ttc" id="struct_music_upload_data_html_aa05a2d76a4f8963dbe15c0e136702dab"><div class="ttname"><a href="../../d2/deb/struct_music_upload_data.html#aa05a2d76a4f8963dbe15c0e136702dab">MusicUploadData::m_path</a></div><div class="ttdeci">QString m_path</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d29/musiccloudfilemanagerdialog_8h_source.html#l00027">musiccloudfilemanagerdialog.h:27</a></div></div>
 <div class="ttc" id="class_music_abstract_move_dialog_html"><div class="ttname"><a href="../../da/db2/class_music_abstract_move_dialog.html">MusicAbstractMoveDialog</a></div><div class="ttdoc">The class of the moving dialog base. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d49/musicabstractmovedialog_8h_source.html#l00019">musicabstractmovedialog.h:19</a></div></div>
-<div class="ttc" id="struct_music_upload_data_html_ab48faa87b771c52a05535a3b7f986cb4a2612d38a281033ad8da728fa860e829f"><div class="ttname"><a href="../../d2/deb/struct_music_upload_data.html#ab48faa87b771c52a05535a3b7f986cb4a2612d38a281033ad8da728fa860e829f">MusicUploadData::Successed</a></div><div class="ttdoc">0 waited </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d29/musiccloudfilemanagerdialog_8h_source.html#l00023">musiccloudfilemanagerdialog.h:23</a></div></div>
-<div class="ttc" id="class_music_cloud_file_manager_dialog_html_a3aeb31a3b321a0dbbdd376d93cbfd467"><div class="ttname"><a href="../../dd/d7b/class_music_cloud_file_manager_dialog.html#a3aeb31a3b321a0dbbdd376d93cbfd467">MusicCloudFileManagerDialog::m_ui</a></div><div class="ttdeci">Ui::MusicCloudFileManagerDialog * m_ui</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d29/musiccloudfilemanagerdialog_8h_source.html#l00103">musiccloudfilemanagerdialog.h:103</a></div></div>
+<div class="ttc" id="struct_music_upload_data_html_ab48faa87b771c52a05535a3b7f986cb4a2612d38a281033ad8da728fa860e829f"><div class="ttname"><a href="../../d2/deb/struct_music_upload_data.html#ab48faa87b771c52a05535a3b7f986cb4a2612d38a281033ad8da728fa860e829f">MusicUploadData::Successed</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d29/musiccloudfilemanagerdialog_8h_source.html#l00023">musiccloudfilemanagerdialog.h:23</a></div></div>
+<div class="ttc" id="class_music_cloud_file_manager_dialog_html_a3aeb31a3b321a0dbbdd376d93cbfd467"><div class="ttname"><a href="../../dd/d7b/class_music_cloud_file_manager_dialog.html#a3aeb31a3b321a0dbbdd376d93cbfd467">MusicCloudFileManagerDialog::m_ui</a></div><div class="ttdeci">Ui::MusicCloudFileManagerDialog * m_ui</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d29/musiccloudfilemanagerdialog_8h_source.html#l00104">musiccloudfilemanagerdialog.h:104</a></div></div>
 <div class="ttc" id="musiccloudfilemanagerdialog_8h_html_a994c4cc6bf1f3712ac94dc7a3e70be4d"><div class="ttname"><a href="../../d7/d29/musiccloudfilemanagerdialog_8h.html#a994c4cc6bf1f3712ac94dc7a3e70be4d">MusicUploadData</a></div><div class="ttdeci">struct MUSIC_TOOL_EXPORT MusicUploadData MusicUploadData</div><div class="ttdoc">The class of the local upload record item. </div></div>
 <div class="ttc" id="struct_music_upload_data_html_a35bcb3df053c6046ec57e311f8309755"><div class="ttname"><a href="../../d2/deb/struct_music_upload_data.html#a35bcb3df053c6046ec57e311f8309755">MusicUploadData::m_state</a></div><div class="ttdeci">State m_state</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d29/musiccloudfilemanagerdialog_8h_source.html#l00029">musiccloudfilemanagerdialog.h:29</a></div></div>
 <div class="ttc" id="struct_music_upload_data_html_a762b3545fb9359bcfd854f9de8ba759f"><div class="ttname"><a href="../../d2/deb/struct_music_upload_data.html#a762b3545fb9359bcfd854f9de8ba759f">MusicUploadData::m_name</a></div><div class="ttdeci">QString m_name</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d29/musiccloudfilemanagerdialog_8h_source.html#l00028">musiccloudfilemanagerdialog.h:28</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 13 2017 23:23:33 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 14 2017 20:51:22 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -122,7 +122,7 @@ Macros</h2></td></tr>
 <tr class="separator:a9e77d621548de2a80bc9c5909bfa2b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9564352992f7a4001386d1c8e2977571"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/gzguts_8h.html#a9564352992f7a4001386d1c8e2977571">GZIP</a>&#160;&#160;&#160;2      /* decompress a gzip <a class="el" href="../../d2/db7/ioapi_8h.html#a4ed0a20697a8c37f8af699a8ec6d76a8">stream</a> */</td></tr>
 <tr class="separator:a9564352992f7a4001386d1c8e2977571"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87ad28552e786eaa1c31fed1950fdff4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/gzguts_8h.html#a87ad28552e786eaa1c31fed1950fdff4">GT_OFF</a>(x)&#160;&#160;&#160;(sizeof(<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>) == sizeof(<a class="el" href="../../de/d95/zconf_8h.html#ab9923767082c7a76924b31493e60d42c">z_off64_t</a>) &amp;&amp; (x) &gt; gz_intmax())</td></tr>
+<tr class="memitem:a87ad28552e786eaa1c31fed1950fdff4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/gzguts_8h.html#a87ad28552e786eaa1c31fed1950fdff4">GT_OFF</a>(x)&#160;&#160;&#160;(sizeof(<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>) == sizeof(<a class="el" href="../../de/d95/zconf_8h.html#ab9923767082c7a76924b31493e60d42c">z_off64_t</a>) &amp;&amp; (x) &gt; <a class="el" href="../../d3/dd9/gzlib_8c.html#a5999f074c4c2468c0b57c5f365262de5">gz_intmax</a>())</td></tr>
 <tr class="separator:a87ad28552e786eaa1c31fed1950fdff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -136,15 +136,15 @@ Functions</h2></td></tr>
 <tr class="separator:add8b03ae5c2c602b728ebb3b21931371"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f8149fe81b707d93e4b55388d11a430"><td class="memItemLeft" align="right" valign="top">void free&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/gzguts_8h.html#a8f8149fe81b707d93e4b55388d11a430">OF</a> ((<a class="el" href="../../de/d95/zconf_8h.html#a77f1b683ae4caa6b621a95d9698ca341">voidpf</a> ptr))</td></tr>
 <tr class="separator:a8f8149fe81b707d93e4b55388d11a430"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac76b39fa0bae53b6d22bb30e786e97c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d95/zconf_8h.html#a49b7f5eccfcc99e53178581632bc9589">ZEXTERN</a> <a class="el" href="../../d4/dae/zlib_8h.html#a8e80bd9e2c359bc5bdabb2e97b4e62bf">gzFile</a> <a class="el" href="../../de/d95/zconf_8h.html#a181415878f03b95a7094309d824a14b6">ZEXPORT</a> gzopen64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/gzguts_8h.html#aac76b39fa0bae53b6d22bb30e786e97c">OF</a> ((<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *, <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *))</td></tr>
+<tr class="memitem:aac76b39fa0bae53b6d22bb30e786e97c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d95/zconf_8h.html#a49b7f5eccfcc99e53178581632bc9589">ZEXTERN</a> <a class="el" href="../../d4/dae/zlib_8h.html#a8e80bd9e2c359bc5bdabb2e97b4e62bf">gzFile</a> <a class="el" href="../../de/d95/zconf_8h.html#a181415878f03b95a7094309d824a14b6">ZEXPORT</a> <a class="el" href="../../d3/dd9/gzlib_8c.html#a620dfd97f021034caf83324a44b82461">gzopen64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/gzguts_8h.html#aac76b39fa0bae53b6d22bb30e786e97c">OF</a> ((<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *, <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *))</td></tr>
 <tr class="separator:aac76b39fa0bae53b6d22bb30e786e97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38d034b71b5426e3253b1dbbcd9e3a3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d95/zconf_8h.html#a49b7f5eccfcc99e53178581632bc9589">ZEXTERN</a> <a class="el" href="../../de/d95/zconf_8h.html#ab9923767082c7a76924b31493e60d42c">z_off64_t</a> <a class="el" href="../../de/d95/zconf_8h.html#a181415878f03b95a7094309d824a14b6">ZEXPORT</a> gzseek64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/gzguts_8h.html#a38d034b71b5426e3253b1dbbcd9e3a3b">OF</a> ((<a class="el" href="../../d4/dae/zlib_8h.html#a8e80bd9e2c359bc5bdabb2e97b4e62bf">gzFile</a>, <a class="el" href="../../de/d95/zconf_8h.html#ab9923767082c7a76924b31493e60d42c">z_off64_t</a>, <a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>))</td></tr>
+<tr class="memitem:a38d034b71b5426e3253b1dbbcd9e3a3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d95/zconf_8h.html#a49b7f5eccfcc99e53178581632bc9589">ZEXTERN</a> <a class="el" href="../../de/d95/zconf_8h.html#ab9923767082c7a76924b31493e60d42c">z_off64_t</a> <a class="el" href="../../de/d95/zconf_8h.html#a181415878f03b95a7094309d824a14b6">ZEXPORT</a> <a class="el" href="../../d3/dd9/gzlib_8c.html#a0b826c4ce1c145c4bd5437fc04e83a6b">gzseek64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/gzguts_8h.html#a38d034b71b5426e3253b1dbbcd9e3a3b">OF</a> ((<a class="el" href="../../d4/dae/zlib_8h.html#a8e80bd9e2c359bc5bdabb2e97b4e62bf">gzFile</a>, <a class="el" href="../../de/d95/zconf_8h.html#ab9923767082c7a76924b31493e60d42c">z_off64_t</a>, <a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>))</td></tr>
 <tr class="separator:a38d034b71b5426e3253b1dbbcd9e3a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ba4df5fd79fa726abea6b0b9950f736"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d95/zconf_8h.html#a49b7f5eccfcc99e53178581632bc9589">ZEXTERN</a> <a class="el" href="../../de/d95/zconf_8h.html#ab9923767082c7a76924b31493e60d42c">z_off64_t</a> <a class="el" href="../../de/d95/zconf_8h.html#a181415878f03b95a7094309d824a14b6">ZEXPORT</a> gztell64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/gzguts_8h.html#a2ba4df5fd79fa726abea6b0b9950f736">OF</a> ((<a class="el" href="../../d4/dae/zlib_8h.html#a8e80bd9e2c359bc5bdabb2e97b4e62bf">gzFile</a>))</td></tr>
+<tr class="memitem:a2ba4df5fd79fa726abea6b0b9950f736"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d95/zconf_8h.html#a49b7f5eccfcc99e53178581632bc9589">ZEXTERN</a> <a class="el" href="../../de/d95/zconf_8h.html#ab9923767082c7a76924b31493e60d42c">z_off64_t</a> <a class="el" href="../../de/d95/zconf_8h.html#a181415878f03b95a7094309d824a14b6">ZEXPORT</a> <a class="el" href="../../d3/dd9/gzlib_8c.html#a4e4262939145f46bee50a7913354a7e8">gztell64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/gzguts_8h.html#a2ba4df5fd79fa726abea6b0b9950f736">OF</a> ((<a class="el" href="../../d4/dae/zlib_8h.html#a8e80bd9e2c359bc5bdabb2e97b4e62bf">gzFile</a>))</td></tr>
 <tr class="separator:a2ba4df5fd79fa726abea6b0b9950f736"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36ce0a727eede48426b5e0a15ff85fd8"><td class="memItemLeft" align="right" valign="top">void <a class="el" href="../../d6/dba/zutil_8h.html#a59d4d7ef4d73655c759211ec33a5d44f">ZLIB_INTERNAL</a> gz_error&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/gzguts_8h.html#a36ce0a727eede48426b5e0a15ff85fd8">OF</a> ((<a class="el" href="../../d5/d6d/gzguts_8h.html#a15adc208a26903dbfe8c57720cf401c8">gz_statep</a>, <a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>, <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *))</td></tr>
+<tr class="memitem:a36ce0a727eede48426b5e0a15ff85fd8"><td class="memItemLeft" align="right" valign="top">void <a class="el" href="../../d6/dba/zutil_8h.html#a59d4d7ef4d73655c759211ec33a5d44f">ZLIB_INTERNAL</a> <a class="el" href="../../d3/dd9/gzlib_8c.html#abfa9d832c83a5f58ad064e1a617ae910">gz_error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/gzguts_8h.html#a36ce0a727eede48426b5e0a15ff85fd8">OF</a> ((<a class="el" href="../../d5/d6d/gzguts_8h.html#a15adc208a26903dbfe8c57720cf401c8">gz_statep</a>, <a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>, <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *))</td></tr>
 <tr class="separator:a36ce0a727eede48426b5e0a15ff85fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefb198b657e0692645b197f67da89711"><td class="memItemLeft" align="right" valign="top">unsigned <a class="el" href="../../d6/dba/zutil_8h.html#a59d4d7ef4d73655c759211ec33a5d44f">ZLIB_INTERNAL</a> gz_intmax&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/gzguts_8h.html#aefb198b657e0692645b197f67da89711">OF</a> ((void))</td></tr>
+<tr class="memitem:aefb198b657e0692645b197f67da89711"><td class="memItemLeft" align="right" valign="top">unsigned <a class="el" href="../../d6/dba/zutil_8h.html#a59d4d7ef4d73655c759211ec33a5d44f">ZLIB_INTERNAL</a> <a class="el" href="../../d3/dd9/gzlib_8c.html#a5999f074c4c2468c0b57c5f365262de5">gz_intmax</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6d/gzguts_8h.html#aefb198b657e0692645b197f67da89711">OF</a> ((void))</td></tr>
 <tr class="separator:aefb198b657e0692645b197f67da89711"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -199,12 +199,14 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">x</td><td>)</td>
-          <td>&#160;&#160;&#160;(sizeof(<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>) == sizeof(<a class="el" href="../../de/d95/zconf_8h.html#ab9923767082c7a76924b31493e60d42c">z_off64_t</a>) &amp;&amp; (x) &gt; gz_intmax())</td>
+          <td>&#160;&#160;&#160;(sizeof(<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>) == sizeof(<a class="el" href="../../de/d95/zconf_8h.html#ab9923767082c7a76924b31493e60d42c">z_off64_t</a>) &amp;&amp; (x) &gt; <a class="el" href="../../d3/dd9/gzlib_8c.html#a5999f074c4c2468c0b57c5f365262de5">gz_intmax</a>())</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="../../d5/d6d/gzguts_8h_source.html#l00217">217</a> of file <a class="el" href="../../d5/d6d/gzguts_8h_source.html">gzguts.h</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d0/df1/gzread_8c_source.html#l00259">gz_skip()</a>, <a class="el" href="../../d8/db6/gzwrite_8c_source.html#l00145">gz_zero()</a>, and <a class="el" href="../../d3/dd9/gzlib_8c_source.html#l00366">gzseek64()</a>.</p>
 
 </div>
 </div>
@@ -220,6 +222,8 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d5/d6d/gzguts_8h_source.html#l00162">162</a> of file <a class="el" href="../../d5/d6d/gzguts_8h_source.html">gzguts.h</a>.</p>
 
+<p>Referenced by <a class="el" href="../../d3/dd9/gzlib_8c_source.html#l00091">gz_open()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="afe4b4578cd8417c83de400ece282ac3b"></a>
@@ -233,6 +237,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="../../d5/d6d/gzguts_8h_source.html#l00159">159</a> of file <a class="el" href="../../d5/d6d/gzguts_8h_source.html">gzguts.h</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d3/dd9/gzlib_8c_source.html#l00091">gz_open()</a>.</p>
 
 </div>
 </div>
@@ -248,6 +254,8 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d5/d6d/gzguts_8h_source.html#l00160">160</a> of file <a class="el" href="../../d5/d6d/gzguts_8h_source.html">gzguts.h</a>.</p>
 
+<p>Referenced by <a class="el" href="../../d3/dd9/gzlib_8c_source.html#l00091">gz_open()</a>, <a class="el" href="../../d3/dd9/gzlib_8c_source.html#l00075">gz_reset()</a>, <a class="el" href="../../d3/dd9/gzlib_8c_source.html#l00316">gzbuffer()</a>, <a class="el" href="../../d3/dd9/gzlib_8c_source.html#l00553">gzclearerr()</a>, <a class="el" href="../../dc/d41/gzclose_8c_source.html#l00011">gzclose()</a>, <a class="el" href="../../d0/df1/gzread_8c_source.html#l00627">gzclose_r()</a>, <a class="el" href="../../d0/df1/gzread_8c_source.html#l00607">gzdirect()</a>, <a class="el" href="../../d3/dd9/gzlib_8c_source.html#l00515">gzeof()</a>, <a class="el" href="../../d3/dd9/gzlib_8c_source.html#l00532">gzerror()</a>, <a class="el" href="../../d0/df1/gzread_8c_source.html#l00411">gzfread()</a>, <a class="el" href="../../d0/df1/gzread_8c_source.html#l00447">gzgetc()</a>, <a class="el" href="../../d0/df1/gzread_8c_source.html#l00543">gzgets()</a>, <a class="el" href="../../d3/dd9/gzlib_8c_source.html#l00482">gzoffset64()</a>, <a class="el" href="../../d0/df1/gzread_8c_source.html#l00375">gzread()</a>, <a class="el" href="../../d3/dd9/gzlib_8c_source.html#l00343">gzrewind()</a>, <a class="el" href="../../d3/dd9/gzlib_8c_source.html#l00366">gzseek64()</a>, <a class="el" href="../../d3/dd9/gzlib_8c_source.html#l00455">gztell64()</a>, and <a class="el" href="../../d0/df1/gzread_8c_source.html#l00483">gzungetc()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a357c4f5723c26966ed9d68c9bd6490c0"></a>
@@ -262,6 +270,8 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d5/d6d/gzguts_8h_source.html#l00161">161</a> of file <a class="el" href="../../d5/d6d/gzguts_8h_source.html">gzguts.h</a>.</p>
 
+<p>Referenced by <a class="el" href="../../d3/dd9/gzlib_8c_source.html#l00091">gz_open()</a>, <a class="el" href="../../d3/dd9/gzlib_8c_source.html#l00316">gzbuffer()</a>, <a class="el" href="../../d3/dd9/gzlib_8c_source.html#l00553">gzclearerr()</a>, <a class="el" href="../../d8/db6/gzwrite_8c_source.html#l00627">gzclose_w()</a>, <a class="el" href="../../d3/dd9/gzlib_8c_source.html#l00515">gzeof()</a>, <a class="el" href="../../d3/dd9/gzlib_8c_source.html#l00532">gzerror()</a>, <a class="el" href="../../d8/db6/gzwrite_8c_source.html#l00553">gzflush()</a>, <a class="el" href="../../d8/db6/gzwrite_8c_source.html#l00274">gzfwrite()</a>, <a class="el" href="../../d3/dd9/gzlib_8c_source.html#l00482">gzoffset64()</a>, <a class="el" href="../../d8/db6/gzwrite_8c_source.html#l00465">gzprintf()</a>, <a class="el" href="../../d8/db6/gzwrite_8c_source.html#l00304">gzputc()</a>, <a class="el" href="../../d8/db6/gzwrite_8c_source.html#l00352">gzputs()</a>, <a class="el" href="../../d3/dd9/gzlib_8c_source.html#l00366">gzseek64()</a>, <a class="el" href="../../d8/db6/gzwrite_8c_source.html#l00585">gzsetparams()</a>, <a class="el" href="../../d3/dd9/gzlib_8c_source.html#l00455">gztell64()</a>, and <a class="el" href="../../d8/db6/gzwrite_8c_source.html#l00246">gzwrite()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ac7601d319250861159389e68594fd72e"></a>
@@ -275,6 +285,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="../../d5/d6d/gzguts_8h_source.html#l00156">156</a> of file <a class="el" href="../../d5/d6d/gzguts_8h_source.html">gzguts.h</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d3/dd9/gzlib_8c_source.html#l00091">gz_open()</a>.</p>
 
 </div>
 </div>
@@ -318,6 +330,8 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d5/d6d/gzguts_8h_source.html#l00165">165</a> of file <a class="el" href="../../d5/d6d/gzguts_8h_source.html">gzguts.h</a>.</p>
 
+<p>Referenced by <a class="el" href="../../d0/df1/gzread_8c_source.html#l00175">gz_decomp()</a>, <a class="el" href="../../d0/df1/gzread_8c_source.html#l00229">gz_fetch()</a>, <a class="el" href="../../d0/df1/gzread_8c_source.html#l00294">gz_read()</a>, <a class="el" href="../../d3/dd9/gzlib_8c_source.html#l00075">gz_reset()</a>, and <a class="el" href="../../d0/df1/gzread_8c_source.html#l00607">gzdirect()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a59d4d7ef4d73655c759211ec33a5d44f"></a>
@@ -348,6 +362,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="../../d5/d6d/gzguts_8h_source.html#l00133">133</a> of file <a class="el" href="../../d5/d6d/gzguts_8h_source.html">gzguts.h</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d8/db6/gzwrite_8c_source.html#l00073">gz_comp()</a>, and <a class="el" href="../../d0/df1/gzread_8c_source.html#l00021">gz_load()</a>.</p>
 
 </div>
 </div>
@@ -404,7 +420,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../de/d95/zconf_8h.html#a49b7f5eccfcc99e53178581632bc9589">ZEXTERN</a> <a class="el" href="../../d4/dae/zlib_8h.html#a8e80bd9e2c359bc5bdabb2e97b4e62bf">gzFile</a> <a class="el" href="../../de/d95/zconf_8h.html#a181415878f03b95a7094309d824a14b6">ZEXPORT</a> gzopen64 OF </td>
+          <td class="memname"><a class="el" href="../../de/d95/zconf_8h.html#a49b7f5eccfcc99e53178581632bc9589">ZEXTERN</a> <a class="el" href="../../d4/dae/zlib_8h.html#a8e80bd9e2c359bc5bdabb2e97b4e62bf">gzFile</a> <a class="el" href="../../de/d95/zconf_8h.html#a181415878f03b95a7094309d824a14b6">ZEXPORT</a> <a class="el" href="../../d3/dd9/gzlib_8c.html#a620dfd97f021034caf83324a44b82461">gzopen64</a> OF </td>
           <td>(</td>
           <td class="paramtype">(<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *, <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *)&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -420,7 +436,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../de/d95/zconf_8h.html#a49b7f5eccfcc99e53178581632bc9589">ZEXTERN</a> <a class="el" href="../../de/d95/zconf_8h.html#ab9923767082c7a76924b31493e60d42c">z_off64_t</a> <a class="el" href="../../de/d95/zconf_8h.html#a181415878f03b95a7094309d824a14b6">ZEXPORT</a> gzseek64 OF </td>
+          <td class="memname"><a class="el" href="../../de/d95/zconf_8h.html#a49b7f5eccfcc99e53178581632bc9589">ZEXTERN</a> <a class="el" href="../../de/d95/zconf_8h.html#ab9923767082c7a76924b31493e60d42c">z_off64_t</a> <a class="el" href="../../de/d95/zconf_8h.html#a181415878f03b95a7094309d824a14b6">ZEXPORT</a> <a class="el" href="../../d3/dd9/gzlib_8c.html#a0b826c4ce1c145c4bd5437fc04e83a6b">gzseek64</a> OF </td>
           <td>(</td>
           <td class="paramtype">(<a class="el" href="../../d4/dae/zlib_8h.html#a8e80bd9e2c359bc5bdabb2e97b4e62bf">gzFile</a>, <a class="el" href="../../de/d95/zconf_8h.html#ab9923767082c7a76924b31493e60d42c">z_off64_t</a>, <a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -436,7 +452,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../de/d95/zconf_8h.html#a49b7f5eccfcc99e53178581632bc9589">ZEXTERN</a> <a class="el" href="../../de/d95/zconf_8h.html#ab9923767082c7a76924b31493e60d42c">z_off64_t</a> <a class="el" href="../../de/d95/zconf_8h.html#a181415878f03b95a7094309d824a14b6">ZEXPORT</a> gztell64 OF </td>
+          <td class="memname"><a class="el" href="../../de/d95/zconf_8h.html#a49b7f5eccfcc99e53178581632bc9589">ZEXTERN</a> <a class="el" href="../../de/d95/zconf_8h.html#ab9923767082c7a76924b31493e60d42c">z_off64_t</a> <a class="el" href="../../de/d95/zconf_8h.html#a181415878f03b95a7094309d824a14b6">ZEXPORT</a> <a class="el" href="../../d3/dd9/gzlib_8c.html#a4e4262939145f46bee50a7913354a7e8">gztell64</a> OF </td>
           <td>(</td>
           <td class="paramtype">(<a class="el" href="../../d4/dae/zlib_8h.html#a8e80bd9e2c359bc5bdabb2e97b4e62bf">gzFile</a>)&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -452,7 +468,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="../../d6/dba/zutil_8h.html#a59d4d7ef4d73655c759211ec33a5d44f">ZLIB_INTERNAL</a> gz_error OF </td>
+          <td class="memname">void <a class="el" href="../../d6/dba/zutil_8h.html#a59d4d7ef4d73655c759211ec33a5d44f">ZLIB_INTERNAL</a> <a class="el" href="../../d3/dd9/gzlib_8c.html#abfa9d832c83a5f58ad064e1a617ae910">gz_error</a> OF </td>
           <td>(</td>
           <td class="paramtype">(<a class="el" href="../../d5/d6d/gzguts_8h.html#a15adc208a26903dbfe8c57720cf401c8">gz_statep</a>, <a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>, <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *)&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -468,7 +484,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned <a class="el" href="../../d6/dba/zutil_8h.html#a59d4d7ef4d73655c759211ec33a5d44f">ZLIB_INTERNAL</a> gz_intmax OF </td>
+          <td class="memname">unsigned <a class="el" href="../../d6/dba/zutil_8h.html#a59d4d7ef4d73655c759211ec33a5d44f">ZLIB_INTERNAL</a> <a class="el" href="../../d3/dd9/gzlib_8c.html#a5999f074c4c2468c0b57c5f365262de5">gz_intmax</a> OF </td>
           <td>(</td>
           <td class="paramtype">(void)&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -482,7 +498,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 13 2017 23:23:38 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 14 2017 20:51:27 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
