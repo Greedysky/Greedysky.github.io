@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.0.0</span>
+   &#160;<span id="projectnumber">2.6.1.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -73,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-slots">Public Slots</a> &#124;
-<a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
@@ -163,15 +162,6 @@ Public Slots</h2></td></tr>
 <tr class="memitem:a835ec5123a10ecc211f583a52f4f1bf7 inherit pub_slots_class_music_songs_tool_box_widget"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/ded/class_music_songs_tool_box_widget.html#a835ec5123a10ecc211f583a52f4f1bf7">setTransparent</a> (<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> alpha)</td></tr>
 <tr class="separator:a835ec5123a10ecc211f583a52f4f1bf7 inherit pub_slots_class_music_songs_tool_box_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
-Signals</h2></td></tr>
-<tr class="memitem:acfc83d518ba9c7c3d83f2c8debce05c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/class_music_songs_summarizied_widget.html#acfc83d518ba9c7c3d83f2c8debce05c5">updatePlayLists</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;list)</td></tr>
-<tr class="separator:acfc83d518ba9c7c3d83f2c8debce05c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb1df349d87cad73c8bc65322c8c36a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/class_music_songs_summarizied_widget.html#abb1df349d87cad73c8bc65322c8c36a8">updateMediaLists</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QStringList &amp;list, <a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> index)</td></tr>
-<tr class="separator:abb1df349d87cad73c8bc65322c8c36a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ab16238537576794a0306e09f567056"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/class_music_songs_summarizied_widget.html#a8ab16238537576794a0306e09f567056">clearSearchText</a> ()</td></tr>
-<tr class="separator:a8ab16238537576794a0306e09f567056"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac5ffb9b538361c2f5e3c5a1c96c8b953"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/class_music_songs_summarizied_widget.html#ac5ffb9b538361c2f5e3c5a1c96c8b953">MusicSongsSummariziedWidget</a> (QWidget *parent=0)</td></tr>
@@ -190,8 +180,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abc07186811d2a59c331688adf519fe53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78586ac8c5a4bd5a3db867dcce85dbe0"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/class_music_songs_summarizied_widget.html#a78586ac8c5a4bd5a3db867dcce85dbe0">getMusicSongsFilePath</a> (<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> index) <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
 <tr class="separator:a78586ac8c5a4bd5a3db867dcce85dbe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac507850b9ed32fe4c46799c29b1b2f4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/class_music_songs_summarizied_widget.html#ac507850b9ed32fe4c46799c29b1b2f4d">searchFileListCache</a> (<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> index, <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;text)</td></tr>
-<tr class="separator:ac507850b9ed32fe4c46799c29b1b2f4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74e5dc323accc04a42ee78fd73ce75ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/class_music_songs_summarizied_widget.html#a74e5dc323accc04a42ee78fd73ce75ad">mapSongIndexByFilePath</a> (<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> toolIndex, <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;path) <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a74e5dc323accc04a42ee78fd73ce75ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf511b5286bf9e3b3ae489d35e958759"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/class_music_songs_summarizied_widget.html#aaf511b5286bf9e3b3ae489d35e958759">mapFilePathBySongIndex</a> (<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> toolIndex, <a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> index) <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:aaf511b5286bf9e3b3ae489d35e958759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a393339e0c9b00620a0d67b26e1b6f48c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/class_music_songs_summarizied_widget.html#a393339e0c9b00620a0d67b26e1b6f48c">searchFileListCache</a> (<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> index)</td></tr>
+<tr class="separator:a393339e0c9b00620a0d67b26e1b6f48c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad25b3fd5e0dfb00cfd0a39301ec7c824"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/class_music_songs_summarizied_widget.html#ad25b3fd5e0dfb00cfd0a39301ec7c824">searchFileListEmpty</a> () <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
 <tr class="separator:ad25b3fd5e0dfb00cfd0a39301ec7c824"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4991cdba7cace0398bfa1b7e56a7dcfa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/class_music_songs_summarizied_widget.html#a4991cdba7cace0398bfa1b7e56a7dcfa">getSearchFileListIndex</a> (<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> row)</td></tr>
@@ -254,6 +248,10 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a8223e2dac91d6050fe0bea92cd378ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad433dc2075ef0f88d3d2eb1fcd140799"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/class_music_songs_summarizied_widget.html#ad433dc2075ef0f88d3d2eb1fcd140799">connectMusicToolBoxWidgetItem</a> (QObject *object)</td></tr>
 <tr class="separator:ad433dc2075ef0f88d3d2eb1fcd140799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f18e4fb4994607cd5a234d5a3d3279a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/class_music_songs_summarizied_widget.html#a2f18e4fb4994607cd5a234d5a3d3279a">resizeWindow</a> ()</td></tr>
+<tr class="separator:a2f18e4fb4994607cd5a234d5a3d3279a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9df66777b04a4905f1b12a205ce78b33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/class_music_songs_summarizied_widget.html#a9df66777b04a4905f1b12a205ce78b33">resetToolIndex</a> ()</td></tr>
+<tr class="separator:a9df66777b04a4905f1b12a205ce78b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7c8c1d9081fb033a49a35fbeb46e1e0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/class_music_songs_summarizied_widget.html#aa7c8c1d9081fb033a49a35fbeb46e1e0">resizeEvent</a> (QResizeEvent *event) override</td></tr>
 <tr class="separator:aa7c8c1d9081fb033a49a35fbeb46e1e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ce056010fbca6ccfdc4b9ec998d04cf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/class_music_songs_summarizied_widget.html#a0ce056010fbca6ccfdc4b9ec998d04cf">contextMenuEvent</a> (QContextMenuEvent *event) override</td></tr>
@@ -284,8 +282,10 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:ac95a346a563c60d86cfee2b5f5c5bb35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45a74d1d42005fa7a345fc2f539ba390"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/de9/class_music_song_check_tools_widget.html">MusicSongCheckToolsWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/class_music_songs_summarizied_widget.html#a45a74d1d42005fa7a345fc2f539ba390">m_songCheckToolsWidget</a></td></tr>
 <tr class="separator:a45a74d1d42005fa7a345fc2f539ba390"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4292440a49b41a471d260385a0eb4e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d02/class_music_songs_list_function_widget.html">MusicSongsListFunctionWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/class_music_songs_summarizied_widget.html#ac4292440a49b41a471d260385a0eb4e0">m_floatWidget</a></td></tr>
-<tr class="separator:ac4292440a49b41a471d260385a0eb4e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc90bd3b9540b8636dfa560c5e4bae00"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d02/class_music_songs_list_function_widget.html">MusicSongsListFunctionWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/class_music_songs_summarizied_widget.html#abc90bd3b9540b8636dfa560c5e4bae00">m_listFunctionWidget</a></td></tr>
+<tr class="separator:abc90bd3b9540b8636dfa560c5e4bae00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a926d1dc77865285b5d079825b9d35c6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d5e/class_music_local_song_search_dialog.html">MusicLocalSongSearchDialog</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/class_music_songs_summarizied_widget.html#a926d1dc77865285b5d079825b9d35c6b">m_musicSongSearchWidget</a></td></tr>
+<tr class="separator:a926d1dc77865285b5d079825b9d35c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_music_songs_tool_box_widget"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_music_songs_tool_box_widget')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d7/ded/class_music_songs_tool_box_widget.html">MusicSongsToolBoxWidget</a></td></tr>
 <tr class="memitem:af387599418feaf710f3522f3dbb4e7c1 inherit pro_attribs_class_music_songs_tool_box_widget"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/ded/class_music_songs_tool_box_widget.html#af387599418feaf710f3522f3dbb4e7c1">m_currentIndex</a></td></tr>
 <tr class="separator:af387599418feaf710f3522f3dbb4e7c1 inherit pro_attribs_class_music_songs_tool_box_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -302,6 +302,8 @@ Protected Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
 Private Slots</h2></td></tr>
+<tr class="memitem:ab56625784871b4904f4540789802aa51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/class_music_songs_summarizied_widget.html#ab56625784871b4904f4540789802aa51">musicSearchWidget</a> ()</td></tr>
+<tr class="separator:ab56625784871b4904f4540789802aa51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21baaff642e1284ae27d9fcc11f4589c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/class_music_songs_summarizied_widget.html#a21baaff642e1284ae27d9fcc11f4589c">sliderValueChanaged</a> (<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> value)</td></tr>
 <tr class="separator:a21baaff642e1284ae27d9fcc11f4589c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11233002582571bd5a9a408fbd9d1e4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de9/class_music_songs_summarizied_widget.html#a11233002582571bd5a9a408fbd9d1e4d">deleteFloatWidget</a> ()</td></tr>
@@ -311,7 +313,7 @@ Private Slots</h2></td></tr>
 <div class="textblock"><p>The class of the songs summarizied widget. </p>
 <dl class="section author"><dt>Author</dt><dd>Greedysky <a href="#" onclick="location.href='mai'+'lto:'+'gre'+'ed'+'ysk'+'y@'+'163'+'.c'+'om'; return false;">greed<span style="display: none;">.nosp@m.</span>ysky<span style="display: none;">.nosp@m.</span>@163.<span style="display: none;">.nosp@m.</span>com</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00024">24</a> of file <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html">musicsongssummariziedwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00025">25</a> of file <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html">musicsongssummariziedwidget.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ac5ffb9b538361c2f5e3c5a1c96c8b953"></a>
 <div class="memitem">
@@ -336,9 +338,9 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Object contsructor. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00024">24</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00025">25</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00938">connectMusicToolBoxWidgetItem()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00054">getClassName()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00048">MusicSongSearchOnlineTableWidget::getClassName()</a>, <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html#l00016">M_CONNECTION_PTR</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00266">m_currentDeleteIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00266">m_currentImportIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00265">m_currentPlayToolIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00272">m_floatWidget</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00269">m_listMaskWidget</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00425">MusicSongsToolBoxWidget::m_scrollArea</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00265">m_searchFileListIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00271">m_songCheckToolsWidget</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00267">m_toolDeleteChanged</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00699">MusicSongsToolBoxWidget::mousePressAt()</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00036">MUSIC_NORMAL_LIST</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00835">sliderValueChanaged()</a>.</p>
+<p>References <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00996">connectMusicToolBoxWidgetItem()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00057">getClassName()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00048">MusicSongSearchOnlineTableWidget::getClassName()</a>, <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html#l00016">M_CONNECTION_PTR</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00273">m_currentDeleteIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00273">m_currentImportIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00272">m_currentPlayToolIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00279">m_listFunctionWidget</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00276">m_listMaskWidget</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00280">m_musicSongSearchWidget</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00425">MusicSongsToolBoxWidget::m_scrollArea</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00272">m_searchFileListIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00278">m_songCheckToolsWidget</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00274">m_toolDeleteChanged</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00699">MusicSongsToolBoxWidget::mousePressAt()</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00036">MUSIC_NORMAL_LIST</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00893">sliderValueChanaged()</a>.</p>
 
 </div>
 </div>
@@ -363,9 +365,9 @@ Private Slots</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00045">45</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00047">47</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00920">clearAllLists()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00054">getClassName()</a>, <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html#l00016">M_CONNECTION_PTR</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00272">m_floatWidget</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00269">m_listMaskWidget</a>, and <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00271">m_songCheckToolsWidget</a>.</p>
+<p>References <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00978">clearAllLists()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00057">getClassName()</a>, <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html#l00016">M_CONNECTION_PTR</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00279">m_listFunctionWidget</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00276">m_listMaskWidget</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00280">m_musicSongSearchWidget</a>, and <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00278">m_songCheckToolsWidget</a>.</p>
 
 </div>
 </div>
@@ -385,11 +387,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Add music datas into container. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00059">59</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00062">62</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00890">createWidgetItem()</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00180">MusicSongItem::m_itemIndex</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00181">MusicSongItem::m_itemName</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00268">m_songItems</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00037">MUSIC_LOVEST_LIST</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00038">MUSIC_NETWORK_LIST</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00036">MUSIC_NORMAL_LIST</a>, and <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00039">MUSIC_RECENT_LIST</a>.</p>
+<p>References <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00948">createWidgetItem()</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00172">MusicSongItem::m_itemIndex</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00173">MusicSongItem::m_itemName</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00037">MUSIC_LOVEST_LIST</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00038">MUSIC_NETWORK_LIST</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00036">MUSIC_NORMAL_LIST</a>, and <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00039">MUSIC_RECENT_LIST</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l01039">MusicApplication::readXMLConfigFromText()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l01107">MusicApplication::readXMLConfigFromText()</a>.</p>
 
 </div>
 </div>
@@ -439,9 +441,9 @@ Private Slots</h2></td></tr>
 <p>Add current network music to download to local. </p>
 <p>when download finished just play it at once </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00576">576</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00629">629</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d8/d63/musicalgorithmutils_8h_source.html#l00014">ALG_DOWNLOAD_KEY</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00110">CACHE_DIR_FULL</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00127">MusicApplication::instance()</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00265">m_currentPlayToolIndex</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00184">MusicSongItem::m_itemObject</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00268">m_songItems</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00183">MusicSongItem::m_songs</a>, <a class="el" href="../../d3/dfd/musicalgorithmutils_8cpp_source.html#l00016">MusicUtils::Algorithm::mdII()</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00038">MUSIC_NETWORK_LIST</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00586">MusicApplication::musicPlayIndex()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00690">MusicSongsToolBoxWidget::setCurrentIndex()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00928">setItemTitle()</a>, <a class="el" href="../../db/de9/class_music_songs_summarizied_widget.html#acfc83d518ba9c7c3d83f2c8debce05c5">updatePlayLists()</a>, and <a class="el" href="../../d1/d50/musicsongslisttablewidget_8cpp_source.html#l00085">MusicSongsListTableWidget::updateSongsFileName()</a>.</p>
+<p>References <a class="el" href="../../d8/d63/musicalgorithmutils_8h_source.html#l00014">ALG_DOWNLOAD_KEY</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00110">CACHE_DIR_FULL</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00125">MusicApplication::instance()</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00176">MusicSongItem::m_itemObject</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00175">MusicSongItem::m_songs</a>, <a class="el" href="../../d3/dfd/musicalgorithmutils_8cpp_source.html#l00042">MusicUtils::Algorithm::mdII()</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00038">MUSIC_NETWORK_LIST</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00652">MusicApplication::musicPlayIndexClicked()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00690">MusicSongsToolBoxWidget::setCurrentIndex()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00986">setItemTitle()</a>, and <a class="el" href="../../d1/d50/musicsongslisttablewidget_8cpp_source.html#l00086">MusicSongsListTableWidget::updateSongsFileName()</a>.</p>
 
 </div>
 </div>
@@ -468,11 +470,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Add new music dir to list. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00422">422</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00479">479</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00729">MusicSongsToolBoxWidget::foundMappingIndex()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00127">MusicApplication::instance()</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00266">m_currentImportIndex</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00036">MUSIC_NORMAL_LIST</a>, and <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00526">MusicApplication::musicImportSongsOnlyDir()</a>.</p>
+<p>References <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00729">MusicSongsToolBoxWidget::foundMappingIndex()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00125">MusicApplication::instance()</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00273">m_currentImportIndex</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00036">MUSIC_NORMAL_LIST</a>, and <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00540">MusicApplication::musicImportSongsOnlyDir()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00938">connectMusicToolBoxWidgetItem()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00996">connectMusicToolBoxWidgetItem()</a>.</p>
 
 </div>
 </div>
@@ -499,11 +501,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Add new music file or files to list. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00409">409</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00466">466</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00729">MusicSongsToolBoxWidget::foundMappingIndex()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00127">MusicApplication::instance()</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00266">m_currentImportIndex</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00036">MUSIC_NORMAL_LIST</a>, and <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00513">MusicApplication::musicImportSongsOnlyFile()</a>.</p>
+<p>References <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00729">MusicSongsToolBoxWidget::foundMappingIndex()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00125">MusicApplication::instance()</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00273">m_currentImportIndex</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00036">MUSIC_NORMAL_LIST</a>, and <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00527">MusicApplication::musicImportSongsOnlyFile()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00938">connectMusicToolBoxWidgetItem()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00996">connectMusicToolBoxWidgetItem()</a>.</p>
 
 </div>
 </div>
@@ -529,11 +531,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Add new play list item. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00293">293</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00350">350</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00859">checkCurrentNameExist()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00021">ITEM_MAX_COUNT</a>, and <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00268">m_songItems</a>.</p>
+<p>References <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00917">checkCurrentNameExist()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00022">ITEM_MAX_COUNT</a>, and <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00938">connectMusicToolBoxWidgetItem()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00959">contextMenuEvent()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00996">connectMusicToolBoxWidgetItem()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l01042">contextMenuEvent()</a>.</p>
 
 </div>
 </div>
@@ -560,9 +562,9 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Add new play list item by name. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00882">882</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00940">940</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00890">createWidgetItem()</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00181">MusicSongItem::m_itemName</a>, and <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00268">m_songItems</a>.</p>
+<p>References <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00948">createWidgetItem()</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00173">MusicSongItem::m_itemName</a>, and <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>.</p>
 
 </div>
 </div>
@@ -590,9 +592,9 @@ Private Slots</h2></td></tr>
 <p>Add current selected song to play lists. </p>
 <p>just play it at once </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00598">598</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00647">647</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00131">importOtherMusicSongs()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00127">MusicApplication::instance()</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00265">m_currentPlayToolIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00268">m_songItems</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00183">MusicSongItem::m_songs</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00036">MUSIC_NORMAL_LIST</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00586">MusicApplication::musicPlayIndex()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00690">MusicSongsToolBoxWidget::setCurrentIndex()</a>, and <a class="el" href="../../db/de9/class_music_songs_summarizied_widget.html#acfc83d518ba9c7c3d83f2c8debce05c5">updatePlayLists()</a>.</p>
+<p>References <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00134">importOtherMusicSongs()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00125">MusicApplication::instance()</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00175">MusicSongItem::m_songs</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00036">MUSIC_NORMAL_LIST</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00652">MusicApplication::musicPlayIndexClicked()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00690">MusicSongsToolBoxWidget::setCurrentIndex()</a>.</p>
 
 </div>
 </div>
@@ -611,11 +613,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Append music datas into container. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00119">119</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00122">122</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00859">checkCurrentNameExist()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00890">createWidgetItem()</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00180">MusicSongItem::m_itemIndex</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00423">MusicSongsToolBoxWidget::m_itemIndexRaise</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00181">MusicSongItem::m_itemName</a>, and <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00268">m_songItems</a>.</p>
+<p>References <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00917">checkCurrentNameExist()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00948">createWidgetItem()</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00172">MusicSongItem::m_itemIndex</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00423">MusicSongsToolBoxWidget::m_itemIndexRaise</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00173">MusicSongItem::m_itemName</a>, and <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00546">MusicApplication::musicImportSongsItemList()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00560">MusicApplication::musicImportSongsItemList()</a>.</p>
 
 </div>
 </div>
@@ -652,11 +654,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Open rename selected play list item widget. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00396">396</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00453">453</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00729">MusicSongsToolBoxWidget::foundMappingIndex()</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00181">MusicSongItem::m_itemName</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00268">m_songItems</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00928">setItemTitle()</a>.</p>
+<p>References <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00729">MusicSongsToolBoxWidget::foundMappingIndex()</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00173">MusicSongItem::m_itemName</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00986">setItemTitle()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00938">connectMusicToolBoxWidgetItem()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00996">connectMusicToolBoxWidgetItem()</a>.</p>
 
 </div>
 </div>
@@ -683,11 +685,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Check current name exist. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00859">859</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00917">917</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00021">ITEM_MAX_COUNT</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00181">MusicSongItem::m_itemName</a>, and <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00268">m_songItems</a>.</p>
+<p>References <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00022">ITEM_MAX_COUNT</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00173">MusicSongItem::m_itemName</a>, and <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00293">addNewRowItem()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00119">appendMusicLists()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00350">addNewRowItem()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00122">appendMusicLists()</a>.</p>
 
 </div>
 </div>
@@ -713,37 +715,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Delete all objects. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00920">920</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00978">978</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00268">m_songItems</a>.</p>
+<p>References <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00045">~MusicSongsSummariziedWidget()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8ab16238537576794a0306e09f567056"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MusicSongsSummariziedWidget::clearSearchText </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Clear current search lineedit text. </p>
-
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00243">getSearchFileListIndexAndClear()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00047">~MusicSongsSummariziedWidget()</a>.</p>
 
 </div>
 </div>
@@ -770,11 +746,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Connect music toolBox widget item. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00938">938</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00996">996</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00422">addNewDir()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00409">addNewFiles()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00293">addNewRowItem()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00396">changRowItemName()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00303">deleteRowItem()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00372">deleteRowItemAll()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00793">musicListSongSortBy()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00435">swapDragItemIndex()</a>.</p>
+<p>References <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00479">addNewDir()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00466">addNewFiles()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00350">addNewRowItem()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00453">changRowItemName()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00360">deleteRowItem()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00424">deleteRowItemAll()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00836">musicListSongSortBy()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00492">swapDragItemIndex()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00890">createWidgetItem()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00024">MusicSongsSummariziedWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00948">createWidgetItem()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00025">MusicSongsSummariziedWidget()</a>.</p>
 
 </div>
 </div>
@@ -802,9 +778,9 @@ Private Slots</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d7/ded/class_music_songs_tool_box_widget.html#a9e5fb7f78b9993f421481a78c46d9e34">MusicSongsToolBoxWidget</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00959">959</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l01042">1042</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00293">addNewRowItem()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00724">MusicSongsToolBoxWidget::contextMenuEvent()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00347">deleteRowItems()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00127">MusicApplication::instance()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00020">ITEM_MIN_COUNT</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00268">m_songItems</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00372">MusicUIObject::MMenuStyle02</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00487">musicSongsCheckTestTools()</a>.</p>
+<p>References <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00350">addNewRowItem()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00724">MusicSongsToolBoxWidget::contextMenuEvent()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00399">deleteRowItems()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00125">MusicApplication::instance()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00021">ITEM_MIN_COUNT</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00372">MusicUIObject::MMenuStyle02</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00546">musicSongsCheckTestTools()</a>.</p>
 
 </div>
 </div>
@@ -832,11 +808,11 @@ Private Slots</h2></td></tr>
 <p>Create widget item. </p>
 <p>connect to items </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00890">890</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00948">948</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00559">MusicSongsToolBoxWidget::addItem()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00938">connectMusicToolBoxWidgetItem()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00729">MusicSongsToolBoxWidget::foundMappingIndex()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00127">MusicApplication::instance()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00694">isCurrentIndexs()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00699">isSearchFileListEmpty()</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00180">MusicSongItem::m_itemIndex</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00423">MusicSongsToolBoxWidget::m_itemIndexRaise</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00427">MusicSongsToolBoxWidget::m_itemList</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00181">MusicSongItem::m_itemName</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00184">MusicSongItem::m_itemObject</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00425">MusicSongsToolBoxWidget::m_scrollArea</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00183">MusicSongItem::m_songs</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00182">MusicSongItem::m_sort</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00480">musicImportSongsOnlyDir()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00473">musicImportSongsOnlyFile()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00793">musicListSongSortBy()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00508">musicListSongToLovestListAt()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00630">setDeleteItemAt()</a>, <a class="el" href="../../d7/dc4/musicslowmovingtablewidget_8cpp_source.html#l00036">MusicSlowMovingTableWidget::setMovedScrollBar()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00669">setMusicIndexSwaped()</a>, <a class="el" href="../../dd/d38/musicsongslisttablewidget_8h_source.html#l00063">MusicSongsListTableWidget::setMusicSort()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00654">MusicSongsToolBoxWidget::setMusicSort()</a>, <a class="el" href="../../df/dce/musicsongslistabstracttablewidget_8cpp_source.html#l00059">MusicSongsListAbstractTableWidget::setParentToolIndex()</a>, <a class="el" href="../../df/dce/musicsongslistabstracttablewidget_8cpp_source.html#l00033">MusicSongsListAbstractTableWidget::setSongsFileName()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00622">MusicSongsToolBoxWidget::setTitle()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00777">showFloatWidget()</a>.</p>
+<p>References <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00559">MusicSongsToolBoxWidget::addItem()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00996">connectMusicToolBoxWidgetItem()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00729">MusicSongsToolBoxWidget::foundMappingIndex()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00125">MusicApplication::instance()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00737">isCurrentIndexs()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00742">isSearchFileListEmpty()</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00172">MusicSongItem::m_itemIndex</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00423">MusicSongsToolBoxWidget::m_itemIndexRaise</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00427">MusicSongsToolBoxWidget::m_itemList</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00173">MusicSongItem::m_itemName</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00176">MusicSongItem::m_itemObject</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00425">MusicSongsToolBoxWidget::m_scrollArea</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00175">MusicSongItem::m_songs</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00174">MusicSongItem::m_sort</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00539">musicImportSongsOnlyDir()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00532">musicImportSongsOnlyFile()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00836">musicListSongSortBy()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00567">musicListSongToLovestListAt()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00672">setDeleteItemAt()</a>, <a class="el" href="../../d7/dc4/musicslowmovingtablewidget_8cpp_source.html#l00036">MusicSlowMovingTableWidget::setMovedScrollBar()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00712">setMusicIndexSwaped()</a>, <a class="el" href="../../dd/d38/musicsongslisttablewidget_8h_source.html#l00063">MusicSongsListTableWidget::setMusicSort()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00654">MusicSongsToolBoxWidget::setMusicSort()</a>, <a class="el" href="../../df/dce/musicsongslistabstracttablewidget_8cpp_source.html#l00058">MusicSongsListAbstractTableWidget::setParentToolIndex()</a>, <a class="el" href="../../df/dce/musicsongslistabstracttablewidget_8cpp_source.html#l00032">MusicSongsListAbstractTableWidget::setSongsFileName()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00622">MusicSongsToolBoxWidget::setTitle()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00820">showFloatWidget()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00059">addMusicLists()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00882">addNewRowItem()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00119">appendMusicLists()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00062">addMusicLists()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00940">addNewRowItem()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00122">appendMusicLists()</a>.</p>
 
 </div>
 </div>
@@ -862,11 +838,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Delete the float function widget. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00853">853</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00911">911</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00272">m_floatWidget</a>.</p>
+<p>References <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00279">m_listFunctionWidget</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00777">showFloatWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00820">showFloatWidget()</a>.</p>
 
 </div>
 </div>
@@ -893,11 +869,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Delete selected play list item. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00303">303</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00360">360</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00098">MusicMessageBox::exec()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00729">MusicSongsToolBoxWidget::foundMappingIndex()</a>, <a class="el" href="../../d4/d0e/musicplayedlistpopwidget_8cpp_source.html#l00043">MusicPlayedListPopWidget::instance()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00127">MusicApplication::instance()</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00265">m_currentPlayToolIndex</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00180">MusicSongItem::m_itemIndex</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00427">MusicSongsToolBoxWidget::m_itemList</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00184">MusicSongItem::m_itemObject</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00268">m_songItems</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00183">MusicSongItem::m_songs</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00036">MUSIC_NORMAL_LIST</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00586">MusicApplication::musicPlayIndex()</a>, <a class="el" href="../../d4/d0e/musicplayedlistpopwidget_8cpp_source.html#l00081">MusicPlayedListPopWidget::remove()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00589">MusicSongsToolBoxWidget::removeItem()</a>, <a class="el" href="../../d4/d0e/musicplayedlistpopwidget_8cpp_source.html#l00055">MusicPlayedListPopWidget::resetToolIndex()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00690">MusicSongsToolBoxWidget::setCurrentIndex()</a>, <a class="el" href="../../df/dce/musicsongslistabstracttablewidget_8cpp_source.html#l00059">MusicSongsListAbstractTableWidget::setParentToolIndex()</a>, and <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00077">MusicMessageBox::setText()</a>.</p>
+<p>References <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00098">MusicMessageBox::exec()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00729">MusicSongsToolBoxWidget::foundMappingIndex()</a>, <a class="el" href="../../d4/d0e/musicplayedlistpopwidget_8cpp_source.html#l00046">MusicPlayedListPopWidget::instance()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00125">MusicApplication::instance()</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00272">m_currentPlayToolIndex</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00172">MusicSongItem::m_itemIndex</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00427">MusicSongsToolBoxWidget::m_itemList</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00176">MusicSongItem::m_itemObject</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00175">MusicSongItem::m_songs</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00036">MUSIC_NORMAL_LIST</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00608">MusicApplication::musicPlayIndex()</a>, <a class="el" href="../../d4/d0e/musicplayedlistpopwidget_8cpp_source.html#l00086">MusicPlayedListPopWidget::remove()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00589">MusicSongsToolBoxWidget::removeItem()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l01021">resetToolIndex()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00690">MusicSongsToolBoxWidget::setCurrentIndex()</a>, and <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00077">MusicMessageBox::setText()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00938">connectMusicToolBoxWidgetItem()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00996">connectMusicToolBoxWidgetItem()</a>.</p>
 
 </div>
 </div>
@@ -924,11 +900,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Delete all items in play list item. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00372">372</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00424">424</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00729">MusicSongsToolBoxWidget::foundMappingIndex()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00127">MusicApplication::instance()</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00266">m_currentDeleteIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00265">m_currentPlayToolIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00268">m_songItems</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00267">m_toolDeleteChanged</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00586">MusicApplication::musicPlayIndex()</a>, and <a class="el" href="../../df/dce/musicsongslistabstracttablewidget_8cpp_source.html#l00079">MusicSongsListAbstractTableWidget::setDeleteItemAll()</a>.</p>
+<p>References <a class="el" href="../../d5/d58/musiclocalsongsearchdialog_8cpp_source.html#l00062">MusicLocalSongSearchDialog::close()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00729">MusicSongsToolBoxWidget::foundMappingIndex()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00125">MusicApplication::instance()</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00273">m_currentDeleteIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00272">m_currentPlayToolIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00280">m_musicSongSearchWidget</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00274">m_toolDeleteChanged</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00608">MusicApplication::musicPlayIndex()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00280">searchFileListEmpty()</a>, and <a class="el" href="../../df/dce/musicsongslistabstracttablewidget_8cpp_source.html#l00078">MusicSongsListAbstractTableWidget::setDeleteItemAll()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00938">connectMusicToolBoxWidgetItem()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00996">connectMusicToolBoxWidgetItem()</a>.</p>
 
 </div>
 </div>
@@ -954,11 +930,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Delete all other item, left than three item. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00347">347</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00399">399</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00098">MusicMessageBox::exec()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00127">MusicApplication::instance()</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00265">m_currentPlayToolIndex</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00427">MusicSongsToolBoxWidget::m_itemList</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00184">MusicSongItem::m_itemObject</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00268">m_songItems</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00037">MUSIC_LOVEST_LIST</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00038">MUSIC_NETWORK_LIST</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00036">MUSIC_NORMAL_LIST</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00039">MUSIC_RECENT_LIST</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00586">MusicApplication::musicPlayIndex()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00589">MusicSongsToolBoxWidget::removeItem()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00690">MusicSongsToolBoxWidget::setCurrentIndex()</a>, and <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00077">MusicMessageBox::setText()</a>.</p>
+<p>References <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00098">MusicMessageBox::exec()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00125">MusicApplication::instance()</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00272">m_currentPlayToolIndex</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00427">MusicSongsToolBoxWidget::m_itemList</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00176">MusicSongItem::m_itemObject</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00037">MUSIC_LOVEST_LIST</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00038">MUSIC_NETWORK_LIST</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00036">MUSIC_NORMAL_LIST</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00039">MUSIC_RECENT_LIST</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00608">MusicApplication::musicPlayIndex()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00589">MusicSongsToolBoxWidget::removeItem()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00690">MusicSongsToolBoxWidget::setCurrentIndex()</a>, and <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00077">MusicMessageBox::setText()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00959">contextMenuEvent()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l01042">contextMenuEvent()</a>.</p>
 
 </div>
 </div>
@@ -984,9 +960,9 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Get class object name. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00054">54</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00057">57</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d4a/musicconnecttransferwidget_8cpp_source.html#l00018">MusicConnectTransferWidget::MusicConnectTransferWidget()</a>, <a class="el" href="../../dd/d6e/musicdownloadrecordwidget_8cpp_source.html#l00011">MusicDownloadRecordWidget::MusicDownloadRecordWidget()</a>, <a class="el" href="../../d9/d47/musiclocalsongsmanagerwidget_8cpp_source.html#l00016">MusicLocalSongsManagerWidget::MusicLocalSongsManagerWidget()</a>, <a class="el" href="../../d5/d6e/musicqueryfoundtablewidget_8cpp_source.html#l00011">MusicQueryFoundTableWidget::MusicQueryFoundTableWidget()</a>, <a class="el" href="../../d9/d0f/musicsongchecktoolstablewidget_8cpp_source.html#l00098">MusicSongCheckToolsDuplicateTableWidget::MusicSongCheckToolsDuplicateTableWidget()</a>, <a class="el" href="../../d9/d0f/musicsongchecktoolstablewidget_8cpp_source.html#l00232">MusicSongCheckToolsQualityTableWidget::MusicSongCheckToolsQualityTableWidget()</a>, <a class="el" href="../../df/d22/musicsongchecktoolswidget_8cpp_source.html#l00012">MusicSongCheckToolsWidget::MusicSongCheckToolsWidget()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00024">MusicSongsSummariziedWidget()</a>, <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html#l00083">MusicConnectionPool::poolConnect()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00045">~MusicSongsSummariziedWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00047">MusicCloudDownloadTableWidget::MusicCloudDownloadTableWidget()</a>, <a class="el" href="../../d8/d4a/musicconnecttransferwidget_8cpp_source.html#l00018">MusicConnectTransferWidget::MusicConnectTransferWidget()</a>, <a class="el" href="../../dd/d6e/musicdownloadrecordwidget_8cpp_source.html#l00011">MusicDownloadRecordWidget::MusicDownloadRecordWidget()</a>, <a class="el" href="../../d9/d47/musiclocalsongsmanagerwidget_8cpp_source.html#l00016">MusicLocalSongsManagerWidget::MusicLocalSongsManagerWidget()</a>, <a class="el" href="../../d5/d6e/musicqueryfoundtablewidget_8cpp_source.html#l00011">MusicQueryFoundTableWidget::MusicQueryFoundTableWidget()</a>, <a class="el" href="../../d9/d0f/musicsongchecktoolstablewidget_8cpp_source.html#l00098">MusicSongCheckToolsDuplicateTableWidget::MusicSongCheckToolsDuplicateTableWidget()</a>, <a class="el" href="../../d9/d0f/musicsongchecktoolstablewidget_8cpp_source.html#l00232">MusicSongCheckToolsQualityTableWidget::MusicSongCheckToolsQualityTableWidget()</a>, <a class="el" href="../../df/d22/musicsongchecktoolswidget_8cpp_source.html#l00012">MusicSongCheckToolsWidget::MusicSongCheckToolsWidget()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00025">MusicSongsSummariziedWidget()</a>, <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html#l00078">MusicConnectionPool::poolConnect()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00047">~MusicSongsSummariziedWidget()</a>.</p>
 
 </div>
 </div>
@@ -1012,9 +988,9 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Get current played tool index. </p>
 
-<p>Definition at line <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00084">84</a> of file <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html">musicsongssummariziedwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00093">93</a> of file <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html">musicsongssummariziedwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00223">MusicApplication::musicDownloadContains()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00243">MusicApplication::musicLovestContains()</a>, and <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l01186">MusicApplication::writeXMLConfigToText()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00229">MusicApplication::musicDownloadContains()</a>, and <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00247">MusicApplication::musicLovestContains()</a>.</p>
 
 </div>
 </div>
@@ -1040,9 +1016,9 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Get music datas from container. </p>
 
-<p>Definition at line <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00050">50</a> of file <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html">musicsongssummariziedwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00051">51</a> of file <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html">musicsongssummariziedwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00223">MusicApplication::musicDownloadContains()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00562">MusicApplication::musicExportSongsItemList()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00259">MusicApplication::musicListLovestContains()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00243">MusicApplication::musicLovestContains()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00594">MusicApplication::musicPlayIndex()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00622">MusicApplication::musicPlayIndexClicked()</a>, and <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l01186">MusicApplication::writeXMLConfigToText()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00130">MusicApplication::getCurrentFileName()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00147">MusicApplication::getCurrentFilePath()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00576">MusicApplication::musicExportSongsItemList()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00264">MusicApplication::musicListLovestContains()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00247">MusicApplication::musicLovestContains()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00625">MusicApplication::musicPlayIndex()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00652">MusicApplication::musicPlayIndexClicked()</a>, and <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l01256">MusicApplication::writeXMLConfigToText()</a>.</p>
 
 </div>
 </div>
@@ -1069,9 +1045,9 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Get music datas from container. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00763">763</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00806">806</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00268">m_songItems</a>.</p>
+<p>References <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>.</p>
 
 </div>
 </div>
@@ -1090,11 +1066,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Get music songs file name by index. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00173">173</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00181">181</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00082">MusicSong::getMusicName()</a>, and <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00268">m_songItems</a>.</p>
+<p>References <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00082">MusicSong::getMusicName()</a>, and <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00132">MusicApplication::getCurrentFileName()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00927">MusicApplication::getCurrentPlayList()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00205">searchFileListCache()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00995">MusicApplication::getCurrentPlayList()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00247">searchFileListCache()</a>.</p>
 
 </div>
 </div>
@@ -1113,11 +1089,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Get music songs file path by index. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00189">189</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00197">197</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00090">MusicSong::getMusicPath()</a>, and <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00268">m_songItems</a>.</p>
+<p>References <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00090">MusicSong::getMusicPath()</a>, and <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00143">MusicApplication::getCurrentFilePath()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00579">MusicApplication::musicPlaySort()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l01039">MusicApplication::readXMLConfigFromText()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00669">setMusicIndexSwaped()</a>, and <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l01031">MusicApplication::setMusicPlayIndex()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l01107">MusicApplication::readXMLConfigFromText()</a>, and <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l01099">MusicApplication::setMusicPlayIndex()</a>.</p>
 
 </div>
 </div>
@@ -1136,11 +1112,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Get search file index from list by given row. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00233">233</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00285">285</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00270">m_searchfileListCache</a>, and <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00265">m_searchFileListIndex</a>.</p>
+<p>References <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00277">m_searchfileListCache</a>, and <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00272">m_searchFileListIndex</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00243">getSearchFileListIndexAndClear()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00295">getSearchFileListIndexAndClear()</a>.</p>
 
 </div>
 </div>
@@ -1159,11 +1135,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Get search file index from list by given row and clear cache. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00243">243</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00295">295</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../db/de9/class_music_songs_summarizied_widget.html#a8ab16238537576794a0306e09f567056">clearSearchText()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00233">getSearchFileListIndex()</a>, and <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00270">m_searchfileListCache</a>.</p>
+<p>References <a class="el" href="../../d5/d58/musiclocalsongsearchdialog_8cpp_source.html#l00062">MusicLocalSongSearchDialog::close()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00285">getSearchFileListIndex()</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00280">m_musicSongSearchWidget</a>, and <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00277">m_searchfileListCache</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00594">MusicApplication::musicPlayIndex()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00625">MusicApplication::musicPlayIndex()</a>.</p>
 
 </div>
 </div>
@@ -1182,11 +1158,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Input orther imported music datas into container. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00131">131</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00134">134</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d3/dc4/musicsongtag_8cpp_source.html#l00071">MusicSongTag::getArtist()</a>, <a class="el" href="../../d3/dc4/musicsongtag_8cpp_source.html#l00218">MusicSongTag::getLengthString()</a>, <a class="el" href="../../d3/dc4/musicsongtag_8cpp_source.html#l00076">MusicSongTag::getTitle()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00127">MusicApplication::instance()</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00266">m_currentImportIndex</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00184">MusicSongItem::m_itemObject</a>, <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00016">M_SETTING_PTR</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00268">m_songItems</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00183">MusicSongItem::m_songs</a>, <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00056">MusicSettingManager::OtherInfoChoiced</a>, <a class="el" href="../../d6/d11/musictoastlabel_8cpp_source.html#l00078">MusicToastLabel::popup()</a>, <a class="el" href="../../d3/dc4/musicsongtag_8cpp_source.html#l00033">MusicSongTag::read()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00690">MusicSongsToolBoxWidget::setCurrentIndex()</a>, <a class="el" href="../../d6/d11/musictoastlabel_8cpp_source.html#l00038">MusicToastLabel::setFontMargin()</a>, <a class="el" href="../../d6/d11/musictoastlabel_8cpp_source.html#l00056">MusicToastLabel::setFontSize()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00928">setItemTitle()</a>, <a class="el" href="../../d6/d11/musictoastlabel_8cpp_source.html#l00086">MusicToastLabel::setText()</a>, <a class="el" href="../../da/d94/musicprogresswidget_8cpp_source.html#l00070">MusicProgressWidget::setTitle()</a>, <a class="el" href="../../da/d94/musicprogresswidget_8cpp_source.html#l00101">MusicProgressWidget::show()</a>, and <a class="el" href="../../d1/d50/musicsongslisttablewidget_8cpp_source.html#l00085">MusicSongsListTableWidget::updateSongsFileName()</a>.</p>
+<p>References <a class="el" href="../../d5/d58/musiclocalsongsearchdialog_8cpp_source.html#l00062">MusicLocalSongSearchDialog::close()</a>, <a class="el" href="../../d3/dc4/musicsongtag_8cpp_source.html#l00071">MusicSongTag::getArtist()</a>, <a class="el" href="../../d3/dc4/musicsongtag_8cpp_source.html#l00218">MusicSongTag::getLengthString()</a>, <a class="el" href="../../d3/dc4/musicsongtag_8cpp_source.html#l00076">MusicSongTag::getTitle()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00125">MusicApplication::instance()</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00273">m_currentImportIndex</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00176">MusicSongItem::m_itemObject</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00280">m_musicSongSearchWidget</a>, <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00016">M_SETTING_PTR</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00175">MusicSongItem::m_songs</a>, <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00056">MusicSettingManager::OtherInfoChoiced</a>, <a class="el" href="../../d6/d11/musictoastlabel_8cpp_source.html#l00078">MusicToastLabel::popup()</a>, <a class="el" href="../../d3/dc4/musicsongtag_8cpp_source.html#l00033">MusicSongTag::read()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00280">searchFileListEmpty()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00690">MusicSongsToolBoxWidget::setCurrentIndex()</a>, <a class="el" href="../../d6/d11/musictoastlabel_8cpp_source.html#l00038">MusicToastLabel::setFontMargin()</a>, <a class="el" href="../../d6/d11/musictoastlabel_8cpp_source.html#l00056">MusicToastLabel::setFontSize()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00986">setItemTitle()</a>, <a class="el" href="../../d6/d11/musictoastlabel_8cpp_source.html#l00086">MusicToastLabel::setText()</a>, <a class="el" href="../../da/d94/musicprogresswidget_8cpp_source.html#l00070">MusicProgressWidget::setTitle()</a>, <a class="el" href="../../da/d94/musicprogresswidget_8cpp_source.html#l00101">MusicProgressWidget::show()</a>, and <a class="el" href="../../d1/d50/musicsongslisttablewidget_8cpp_source.html#l00086">MusicSongsListTableWidget::updateSongsFileName()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00598">addSongToPlayList()</a>, and <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00175">MusicApplication::musicImportSongsSettingPath()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00647">addSongToPlayList()</a>, and <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00185">MusicApplication::musicImportSongsSettingPath()</a>.</p>
 
 </div>
 </div>
@@ -1213,11 +1189,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Check is current play stack widget. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00694">694</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00737">737</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00423">MusicSongsToolBoxWidget::m_currentIndex</a>, and <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00265">m_currentPlayToolIndex</a>.</p>
+<p>References <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00423">MusicSongsToolBoxWidget::m_currentIndex</a>, and <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00272">m_currentPlayToolIndex</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00890">createWidgetItem()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00948">createWidgetItem()</a>.</p>
 
 </div>
 </div>
@@ -1244,11 +1220,77 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Check current list is searched or not. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00699">699</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00742">742</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00228">searchFileListEmpty()</a>.</p>
+<p>References <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00280">searchFileListEmpty()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00890">createWidgetItem()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00948">createWidgetItem()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaf511b5286bf9e3b3ae489d35e958759"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString MusicSongsSummariziedWidget::mapFilePathBySongIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramname"><em>toolIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Map music file path by song index. </p>
+
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00231">231</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+
+<p>References <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>.</p>
+
+<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00608">MusicApplication::musicPlayIndex()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00593">MusicApplication::musicPlaySort()</a>, and <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l01107">MusicApplication::readXMLConfigFromText()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a74e5dc323accc04a42ee78fd73ce75ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> MusicSongsSummariziedWidget::mapSongIndexByFilePath </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramname"><em>toolIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;&#160;</td>
+          <td class="paramname"><em>path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Map music song index by file path. </p>
+
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00213">213</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+
+<p>References <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>.</p>
+
+<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00130">MusicApplication::getCurrentFileName()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00147">MusicApplication::getCurrentFilePath()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00719">MusicApplication::musicAddSongToLovestListAt()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00702">MusicApplication::musicCurrentPlayLocation()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00247">MusicApplication::musicLovestContains()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00340">MusicApplication::showCurrentSong()</a>, and <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l01256">MusicApplication::writeXMLConfigToText()</a>.</p>
 
 </div>
 </div>
@@ -1274,11 +1316,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Import music songs by dir. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00480">480</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00539">539</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00127">MusicApplication::instance()</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00266">m_currentImportIndex</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00423">MusicSongsToolBoxWidget::m_currentIndex</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00036">MUSIC_NORMAL_LIST</a>, and <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00526">MusicApplication::musicImportSongsOnlyDir()</a>.</p>
+<p>References <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00125">MusicApplication::instance()</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00273">m_currentImportIndex</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00423">MusicSongsToolBoxWidget::m_currentIndex</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00036">MUSIC_NORMAL_LIST</a>, and <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00540">MusicApplication::musicImportSongsOnlyDir()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00890">createWidgetItem()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00948">createWidgetItem()</a>.</p>
 
 </div>
 </div>
@@ -1304,11 +1346,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Import music songs by file. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00473">473</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00532">532</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00127">MusicApplication::instance()</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00266">m_currentImportIndex</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00423">MusicSongsToolBoxWidget::m_currentIndex</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00036">MUSIC_NORMAL_LIST</a>, and <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00513">MusicApplication::musicImportSongsOnlyFile()</a>.</p>
+<p>References <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00125">MusicApplication::instance()</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00273">m_currentImportIndex</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00423">MusicSongsToolBoxWidget::m_currentIndex</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00036">MUSIC_NORMAL_LIST</a>, and <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00527">MusicApplication::musicImportSongsOnlyFile()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00890">createWidgetItem()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00948">createWidgetItem()</a>.</p>
 
 </div>
 </div>
@@ -1335,11 +1377,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Music list songs sort by type. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00793">793</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00836">836</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d1/d50/musicsongslisttablewidget_8cpp_source.html#l00119">MusicSongsListTableWidget::clearAllItems()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00729">MusicSongsToolBoxWidget::foundMappingIndex()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00127">MusicApplication::instance()</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00423">MusicSongsToolBoxWidget::m_currentIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00265">m_currentPlayToolIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00268">m_songItems</a>, <a class="el" href="../../da/d4e/musicglobal_8h_source.html#l00069">MStatic_cast</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00579">MusicApplication::musicPlaySort()</a>, <a class="el" href="../../df/dce/musicsongslistabstracttablewidget_8cpp_source.html#l00033">MusicSongsListAbstractTableWidget::setSongsFileName()</a>, and <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00023">MusicSong::SortByFileName</a>.</p>
+<p>References <a class="el" href="../../d1/d50/musicsongslisttablewidget_8cpp_source.html#l00120">MusicSongsListTableWidget::clearAllItems()</a>, <a class="el" href="../../d5/d58/musiclocalsongsearchdialog_8cpp_source.html#l00062">MusicLocalSongSearchDialog::close()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00729">MusicSongsToolBoxWidget::foundMappingIndex()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00125">MusicApplication::instance()</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00423">MusicSongsToolBoxWidget::m_currentIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00272">m_currentPlayToolIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00280">m_musicSongSearchWidget</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>, <a class="el" href="../../da/d4e/musicglobal_8h_source.html#l00066">MStatic_cast</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00593">MusicApplication::musicPlaySort()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00280">searchFileListEmpty()</a>, <a class="el" href="../../df/dce/musicsongslistabstracttablewidget_8cpp_source.html#l00032">MusicSongsListAbstractTableWidget::setSongsFileName()</a>, and <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00023">MusicSong::SortByFileName</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00938">connectMusicToolBoxWidgetItem()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00890">createWidgetItem()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00996">connectMusicToolBoxWidgetItem()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00948">createWidgetItem()</a>.</p>
 
 </div>
 </div>
@@ -1379,11 +1421,39 @@ Private Slots</h2></td></tr>
 <p>Add to lovest list</p>
 <p>Remove to lovest list </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00508">508</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00567">567</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d1/d50/musicsongslisttablewidget_8cpp_source.html#l00119">MusicSongsListTableWidget::clearAllItems()</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00090">MusicSong::getMusicPath()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00127">MusicApplication::instance()</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00423">MusicSongsToolBoxWidget::m_currentIndex</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00184">MusicSongItem::m_itemObject</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00268">m_songItems</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00183">MusicSongItem::m_songs</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00037">MUSIC_LOVEST_LIST</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00682">MusicApplication::musicAddSongToLovestListAt()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00228">searchFileListEmpty()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00928">setItemTitle()</a>, <a class="el" href="../../db/de9/class_music_songs_summarizied_widget.html#acfc83d518ba9c7c3d83f2c8debce05c5">updatePlayLists()</a>, and <a class="el" href="../../d1/d50/musicsongslisttablewidget_8cpp_source.html#l00085">MusicSongsListTableWidget::updateSongsFileName()</a>.</p>
+<p>References <a class="el" href="../../d1/d50/musicsongslisttablewidget_8cpp_source.html#l00120">MusicSongsListTableWidget::clearAllItems()</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00090">MusicSong::getMusicPath()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00125">MusicApplication::instance()</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00423">MusicSongsToolBoxWidget::m_currentIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00272">m_currentPlayToolIndex</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00176">MusicSongItem::m_itemObject</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00175">MusicSongItem::m_songs</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00037">MUSIC_LOVEST_LIST</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00714">MusicApplication::musicAddSongToLovestListAt()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00280">searchFileListEmpty()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00986">setItemTitle()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00870">MusicApplication::setLoveDeleteItemAt()</a>, and <a class="el" href="../../d1/d50/musicsongslisttablewidget_8cpp_source.html#l00086">MusicSongsListTableWidget::updateSongsFileName()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00890">createWidgetItem()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00948">createWidgetItem()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab56625784871b4904f4540789802aa51"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MusicSongsSummariziedWidget::musicSearchWidget </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Show searched text widget. </p>
+
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00883">883</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+
+<p>References <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00280">m_musicSongSearchWidget</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l01008">resizeWindow()</a>.</p>
 
 </div>
 </div>
@@ -1409,11 +1479,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Open music songs check test tools. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00487">487</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00546">546</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00271">m_songCheckToolsWidget</a>, and <a class="el" href="../../df/d22/musicsongchecktoolswidget_8cpp_source.html#l00263">MusicSongCheckToolsWidget::show()</a>.</p>
+<p>References <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00278">m_songCheckToolsWidget</a>, and <a class="el" href="../../df/d22/musicsongchecktoolswidget_8cpp_source.html#l00263">MusicSongCheckToolsWidget::show()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00959">contextMenuEvent()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l01042">contextMenuEvent()</a>.</p>
 
 </div>
 </div>
@@ -1452,11 +1522,11 @@ Private Slots</h2></td></tr>
 <p>Add to lovest list</p>
 <p>Remove to lovest list </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00546">546</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00602">602</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d1/d50/musicsongslisttablewidget_8cpp_source.html#l00119">MusicSongsListTableWidget::clearAllItems()</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00090">MusicSong::getMusicPath()</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00265">m_currentPlayToolIndex</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00184">MusicSongItem::m_itemObject</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00268">m_songItems</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00183">MusicSongItem::m_songs</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00037">MUSIC_LOVEST_LIST</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00928">setItemTitle()</a>, <a class="el" href="../../db/de9/class_music_songs_summarizied_widget.html#acfc83d518ba9c7c3d83f2c8debce05c5">updatePlayLists()</a>, and <a class="el" href="../../d1/d50/musicsongslisttablewidget_8cpp_source.html#l00085">MusicSongsListTableWidget::updateSongsFileName()</a>.</p>
+<p>References <a class="el" href="../../d1/d50/musicsongslisttablewidget_8cpp_source.html#l00120">MusicSongsListTableWidget::clearAllItems()</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00090">MusicSong::getMusicPath()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00125">MusicApplication::instance()</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00272">m_currentPlayToolIndex</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00176">MusicSongItem::m_itemObject</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00175">MusicSongItem::m_songs</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00037">MUSIC_LOVEST_LIST</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00986">setItemTitle()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00870">MusicApplication::setLoveDeleteItemAt()</a>, and <a class="el" href="../../d1/d50/musicsongslisttablewidget_8cpp_source.html#l00086">MusicSongsListTableWidget::updateSongsFileName()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00687">MusicApplication::musicAddSongToLovestListAt()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00719">MusicApplication::musicAddSongToLovestListAt()</a>.</p>
 
 </div>
 </div>
@@ -1475,11 +1545,41 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Show current play index. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00265">265</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00317">317</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00670">MusicSongsToolBoxWidget::resizeScrollIndex()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00228">searchFileListEmpty()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00274">selectRow()</a>.</p>
+<p>References <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00670">MusicSongsToolBoxWidget::resizeScrollIndex()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00280">searchFileListEmpty()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00326">selectRow()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00673">MusicApplication::musicCurrentPlayLocation()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00702">MusicApplication::musicCurrentPlayLocation()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9df66777b04a4905f1b12a205ce78b33"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MusicSongsSummariziedWidget::resetToolIndex </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get current played list. </p>
+
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l01021">1021</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+
+<p>References <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00729">MusicSongsToolBoxWidget::foundMappingIndex()</a>, <a class="el" href="../../d4/d0e/musicplayedlistpopwidget_8cpp_source.html#l00046">MusicPlayedListPopWidget::instance()</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00172">MusicSongItem::m_itemIndex</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00176">MusicSongItem::m_itemObject</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>, <a class="el" href="../../d1/d94/musicplayedlistpopwidget_8h_source.html#l00020">PairItem</a>, <a class="el" href="../../d4/d0e/musicplayedlistpopwidget_8cpp_source.html#l00069">MusicPlayedListPopWidget::resetToolIndex()</a>, and <a class="el" href="../../df/dce/musicsongslistabstracttablewidget_8cpp_source.html#l00058">MusicSongsListAbstractTableWidget::setParentToolIndex()</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00360">deleteRowItem()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00492">swapDragItemIndex()</a>.</p>
 
 </div>
 </div>
@@ -1506,13 +1606,43 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Override the widget event. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00950">950</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l01036">1036</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00272">m_floatWidget</a>, and <a class="el" href="../../d1/dcb/musicsongslistfunctionwidget_8cpp_source.html#l00069">MusicSongsListFunctionWidget::setGeometry()</a>.</p>
+<p>References <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l01008">resizeWindow()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac507850b9ed32fe4c46799c29b1b2f4d"></a>
+<a class="anchor" id="a2f18e4fb4994607cd5a234d5a3d3279a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MusicSongsSummariziedWidget::resizeWindow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Resize window bound by widgte resize called. </p>
+
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l01008">1008</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+
+<p>References <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00279">m_listFunctionWidget</a>, and <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00280">m_musicSongSearchWidget</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00883">musicSearchWidget()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l01036">resizeEvent()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00820">showFloatWidget()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a393339e0c9b00620a0d67b26e1b6f48c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1520,28 +1650,18 @@ Private Slots</h2></td></tr>
           <td class="memname">void MusicSongsSummariziedWidget::searchFileListCache </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
-          <td class="paramname"><em>index</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>index</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;&#160;</td>
-          <td class="paramname"><em>text</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Set current name to searched file names to list. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00205">205</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00247">247</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00173">getMusicSongsFileName()</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00423">MusicSongsToolBoxWidget::m_currentIndex</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00184">MusicSongItem::m_itemObject</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00270">m_searchfileListCache</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00265">m_searchFileListIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00268">m_songItems</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00183">MusicSongItem::m_songs</a>, and <a class="el" href="../../d1/d50/musicsongslisttablewidget_8cpp_source.html#l00134">MusicSongsListTableWidget::setMusicSongsSearchedFileName()</a>.</p>
+<p>References <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00181">getMusicSongsFileName()</a>, <a class="el" href="../../d5/d58/musiclocalsongsearchdialog_8cpp_source.html#l00068">MusicLocalSongSearchDialog::getSearchedText()</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00423">MusicSongsToolBoxWidget::m_currentIndex</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00176">MusicSongItem::m_itemObject</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00280">m_musicSongSearchWidget</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00277">m_searchfileListCache</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00272">m_searchFileListIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00175">MusicSongItem::m_songs</a>, <a class="el" href="../../d1/d50/musicsongslisttablewidget_8cpp_source.html#l00135">MusicSongsListTableWidget::setMusicSongsSearchedFileName()</a>, and <a class="el" href="../../d1/d50/musicsongslisttablewidget_8cpp_source.html#l00086">MusicSongsListTableWidget::updateSongsFileName()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00826">MusicApplication::musicSearchIndexChanged()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00854">MusicApplication::musicSearchIndexChanged()</a>.</p>
 
 </div>
 </div>
@@ -1559,11 +1679,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Check current search file is empty or not. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00228">228</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00280">280</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00270">m_searchfileListCache</a>.</p>
+<p>References <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00277">m_searchfileListCache</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00699">isSearchFileListEmpty()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00508">musicListSongToLovestListAt()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00594">MusicApplication::musicPlayIndex()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00265">playLocation()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00630">setDeleteItemAt()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00424">deleteRowItemAll()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00134">importOtherMusicSongs()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00742">isSearchFileListEmpty()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00836">musicListSongSortBy()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00567">musicListSongToLovestListAt()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00625">MusicApplication::musicPlayIndex()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00317">playLocation()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00326">selectRow()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00672">setDeleteItemAt()</a>.</p>
 
 </div>
 </div>
@@ -1582,11 +1702,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Select the current play row. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00274">274</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00326">326</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00265">m_currentPlayToolIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00268">m_songItems</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00690">MusicSongsToolBoxWidget::setCurrentIndex()</a>.</p>
+<p>References <a class="el" href="../../d5/d58/musiclocalsongsearchdialog_8cpp_source.html#l00062">MusicLocalSongSearchDialog::close()</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00272">m_currentPlayToolIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00280">m_musicSongSearchWidget</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00280">searchFileListEmpty()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00690">MusicSongsToolBoxWidget::setCurrentIndex()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00265">playLocation()</a>, and <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00335">MusicApplication::showCurrentSong()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00317">playLocation()</a>, and <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00340">MusicApplication::showCurrentSong()</a>.</p>
 
 </div>
 </div>
@@ -1612,9 +1732,9 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Set current play index from config file. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00494">494</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00553">553</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00127">MusicApplication::instance()</a>, <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00039">MusicSettingManager::LastPlayIndexChoiced</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00265">m_currentPlayToolIndex</a>, <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00016">M_SETTING_PTR</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00690">MusicSongsToolBoxWidget::setCurrentIndex()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00704">setMusicPlayCount()</a>, and <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00335">MusicApplication::showCurrentSong()</a>.</p>
+<p>References <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00125">MusicApplication::instance()</a>, <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00039">MusicSettingManager::LastPlayIndexChoiced</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00272">m_currentPlayToolIndex</a>, <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00016">M_SETTING_PTR</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00690">MusicSongsToolBoxWidget::setCurrentIndex()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00747">setMusicPlayCount()</a>, and <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00340">MusicApplication::showCurrentSong()</a>.</p>
 
 </div>
 </div>
@@ -1633,11 +1753,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Set current music song tree index. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00251">251</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00306">306</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00265">m_currentPlayToolIndex</a>, and <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00268">m_songItems</a>.</p>
+<p>References <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00272">m_currentPlayToolIndex</a>, and <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l01031">MusicApplication::setMusicPlayIndex()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l01099">MusicApplication::setMusicPlayIndex()</a>, and <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00340">MusicApplication::showCurrentSong()</a>.</p>
 
 </div>
 </div>
@@ -1674,11 +1794,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Delete items from indexs and check remove file or not. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00630">630</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00672">672</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d1/d50/musicsongslisttablewidget_8cpp_source.html#l00250">MusicSongsListTableWidget::createUploadFileWidget()</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00090">MusicSong::getMusicPath()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00127">MusicApplication::instance()</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00266">m_currentDeleteIndex</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00423">MusicSongsToolBoxWidget::m_currentIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00265">m_currentPlayToolIndex</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00184">MusicSongItem::m_itemObject</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00268">m_songItems</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00183">MusicSongItem::m_songs</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00267">m_toolDeleteChanged</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00037">MUSIC_LOVEST_LIST</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00682">MusicApplication::musicAddSongToLovestListAt()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00228">searchFileListEmpty()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00842">MusicApplication::setDeleteItemAt()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00928">setItemTitle()</a>.</p>
+<p>References <a class="el" href="../../d1/d50/musicsongslisttablewidget_8cpp_source.html#l00251">MusicSongsListTableWidget::createUploadFileWidget()</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00090">MusicSong::getMusicPath()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00125">MusicApplication::instance()</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00273">m_currentDeleteIndex</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00423">MusicSongsToolBoxWidget::m_currentIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00272">m_currentPlayToolIndex</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00176">MusicSongItem::m_itemObject</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00175">MusicSongItem::m_songs</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00274">m_toolDeleteChanged</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00037">MUSIC_LOVEST_LIST</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00714">MusicApplication::musicAddSongToLovestListAt()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00280">searchFileListEmpty()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00875">MusicApplication::setDeleteItemAt()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00986">setItemTitle()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00890">createWidgetItem()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00948">createWidgetItem()</a>.</p>
 
 </div>
 </div>
@@ -1705,11 +1825,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Set item title. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00928">928</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00986">986</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00045">MusicSongsToolBoxTopWidget::getItemIndex()</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00180">MusicSongItem::m_itemIndex</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00181">MusicSongItem::m_itemName</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00184">MusicSongItem::m_itemObject</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00269">m_listMaskWidget</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00183">MusicSongItem::m_songs</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00105">MusicSongsToolBoxTopWidget::setTitle()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00622">MusicSongsToolBoxWidget::setTitle()</a>.</p>
+<p>References <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00045">MusicSongsToolBoxTopWidget::getItemIndex()</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00172">MusicSongItem::m_itemIndex</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00173">MusicSongItem::m_itemName</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00176">MusicSongItem::m_itemObject</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00276">m_listMaskWidget</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00175">MusicSongItem::m_songs</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00105">MusicSongsToolBoxTopWidget::setTitle()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00622">MusicSongsToolBoxWidget::setTitle()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00576">addNetMusicSongToList()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00396">changRowItemName()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00131">importOtherMusicSongs()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00508">musicListSongToLovestListAt()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00546">musicSongToLovestListAt()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00630">setDeleteItemAt()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00629">addNetMusicSongToList()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00453">changRowItemName()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00134">importOtherMusicSongs()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00567">musicListSongToLovestListAt()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00602">musicSongToLovestListAt()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00672">setDeleteItemAt()</a>.</p>
 
 </div>
 </div>
@@ -1758,11 +1878,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Swap the current play index when user drag and drop. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00669">669</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00712">712</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00189">getMusicSongsFilePath()</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00423">MusicSongsToolBoxWidget::m_currentIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00265">m_currentPlayToolIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00268">m_songItems</a>, and <a class="el" href="../../db/de9/class_music_songs_summarizied_widget.html#abb1df349d87cad73c8bc65322c8c36a8">updateMediaLists()</a>.</p>
+<p>References <a class="el" href="../../d4/d0e/musicplayedlistpopwidget_8cpp_source.html#l00046">MusicPlayedListPopWidget::instance()</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00423">MusicSongsToolBoxWidget::m_currentIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00272">m_currentPlayToolIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>, and <a class="el" href="../../d4/d0e/musicplayedlistpopwidget_8cpp_source.html#l00164">MusicPlayedListPopWidget::setCurrentIndex()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00890">createWidgetItem()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00948">createWidgetItem()</a>.</p>
 
 </div>
 </div>
@@ -1789,11 +1909,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Set current music song play count by given song index. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00704">704</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00747">747</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00122">MusicSong::getMusicPlayCount()</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00265">m_currentPlayToolIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00268">m_songItems</a>, and <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00118">MusicSong::setMusicPlayCount()</a>.</p>
+<p>References <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00122">MusicSong::getMusicPlayCount()</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00272">m_currentPlayToolIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>, and <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00118">MusicSong::setMusicPlayCount()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00494">setCurrentIndex()</a>, and <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00335">MusicApplication::showCurrentSong()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00553">setCurrentIndex()</a>, and <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00340">MusicApplication::showCurrentSong()</a>.</p>
 
 </div>
 </div>
@@ -1820,11 +1940,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Input recent imported music datas into container. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00719">719</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00762">762</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d1/d50/musicsongslisttablewidget_8cpp_source.html#l00119">MusicSongsListTableWidget::clearAllItems()</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00122">MusicSong::getMusicPlayCount()</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00265">m_currentPlayToolIndex</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00181">MusicSongItem::m_itemName</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00184">MusicSongItem::m_itemObject</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00268">m_songItems</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00183">MusicSongItem::m_songs</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00039">MUSIC_RECENT_LIST</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00022">RECENT_ITEM_MAX_COUNT</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00118">MusicSong::setMusicPlayCount()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00622">MusicSongsToolBoxWidget::setTitle()</a>, and <a class="el" href="../../d1/d50/musicsongslisttablewidget_8cpp_source.html#l00085">MusicSongsListTableWidget::updateSongsFileName()</a>.</p>
+<p>References <a class="el" href="../../d1/d50/musicsongslisttablewidget_8cpp_source.html#l00120">MusicSongsListTableWidget::clearAllItems()</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00122">MusicSong::getMusicPlayCount()</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00272">m_currentPlayToolIndex</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00173">MusicSongItem::m_itemName</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00176">MusicSongItem::m_itemObject</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00175">MusicSongItem::m_songs</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00039">MUSIC_RECENT_LIST</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00023">RECENT_ITEM_MAX_COUNT</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00118">MusicSong::setMusicPlayCount()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00622">MusicSongsToolBoxWidget::setTitle()</a>, and <a class="el" href="../../d1/d50/musicsongslisttablewidget_8cpp_source.html#l00086">MusicSongsListTableWidget::updateSongsFileName()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00335">MusicApplication::showCurrentSong()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00340">MusicApplication::showCurrentSong()</a>.</p>
 
 </div>
 </div>
@@ -1853,11 +1973,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Update item time label time. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00284">284</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00341">341</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00265">m_currentPlayToolIndex</a>, and <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00268">m_songItems</a>.</p>
+<p>References <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00272">m_currentPlayToolIndex</a>, and <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00297">MusicApplication::positionChanged()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00302">MusicApplication::positionChanged()</a>.</p>
 
 </div>
 </div>
@@ -1883,11 +2003,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Show the float function widget. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00777">777</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00820">820</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d1/dcb/musicsongslistfunctionwidget_8cpp_source.html#l00063">MusicSongsListFunctionWidget::active()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00853">deleteFloatWidget()</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00272">m_floatWidget</a>, and <a class="el" href="../../d1/dcb/musicsongslistfunctionwidget_8cpp_source.html#l00069">MusicSongsListFunctionWidget::setGeometry()</a>.</p>
+<p>References <a class="el" href="../../d1/dcb/musicsongslistfunctionwidget_8cpp_source.html#l00062">MusicSongsListFunctionWidget::active()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00911">deleteFloatWidget()</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00279">m_listFunctionWidget</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l01008">resizeWindow()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00890">createWidgetItem()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00948">createWidgetItem()</a>.</p>
 
 </div>
 </div>
@@ -1914,11 +2034,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Current vertical slider value chanaged. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00835">835</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00893">893</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00423">MusicSongsToolBoxWidget::m_currentIndex</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00180">MusicSongItem::m_itemIndex</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00181">MusicSongItem::m_itemName</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00269">m_listMaskWidget</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00268">m_songItems</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00183">MusicSongItem::m_songs</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00182">MusicSongItem::m_sort</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00095">MusicSongsToolBoxTopWidget::setItemExpand()</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00041">MusicSongsToolBoxTopWidget::setItemIndex()</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00068">MusicSongsToolBoxTopWidget::setMusicSort()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00105">MusicSongsToolBoxTopWidget::setTitle()</a>.</p>
+<p>References <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00423">MusicSongsToolBoxWidget::m_currentIndex</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00172">MusicSongItem::m_itemIndex</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00173">MusicSongItem::m_itemName</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00276">m_listMaskWidget</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00175">MusicSongItem::m_songs</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00174">MusicSongItem::m_sort</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00095">MusicSongsToolBoxTopWidget::setItemExpand()</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00041">MusicSongsToolBoxTopWidget::setItemIndex()</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00068">MusicSongsToolBoxTopWidget::setMusicSort()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00105">MusicSongsToolBoxTopWidget::setTitle()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00024">MusicSongsSummariziedWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00025">MusicSongsSummariziedWidget()</a>.</p>
 
 </div>
 </div>
@@ -1955,11 +2075,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Swap the item index by drag adn drop. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00435">435</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00492">492</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00729">MusicSongsToolBoxWidget::foundMappingIndex()</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00423">MusicSongsToolBoxWidget::m_currentIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00265">m_currentPlayToolIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00268">m_songItems</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00607">MusicSongsToolBoxWidget::swapItem()</a>.</p>
+<p>References <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00729">MusicSongsToolBoxWidget::foundMappingIndex()</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00423">MusicSongsToolBoxWidget::m_currentIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00272">m_currentPlayToolIndex</a>, <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l01021">resetToolIndex()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00607">MusicSongsToolBoxWidget::swapItem()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00938">connectMusicToolBoxWidgetItem()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00996">connectMusicToolBoxWidgetItem()</a>.</p>
 
 </div>
 </div>
@@ -1985,75 +2105,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Update current artist when it download finished. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00768">768</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00811">811</a> of file <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html">musicsongssummariziedwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00265">m_currentPlayToolIndex</a>, and <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00268">m_songItems</a>.</p>
+<p>References <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00272">m_currentPlayToolIndex</a>, and <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">m_songItems</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00274">MusicApplication::updateCurrentArtist()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="abb1df349d87cad73c8bc65322c8c36a8"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MusicSongsSummariziedWidget::updateMediaLists </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QStringList &amp;&#160;</td>
-          <td class="paramname"><em>list</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
-          <td class="paramname"><em>index</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Update swap the current play index if in current stack widget. </p>
-
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00669">setMusicIndexSwaped()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="acfc83d518ba9c7c3d83f2c8debce05c5"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MusicSongsSummariziedWidget::updatePlayLists </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;&#160;</td>
-          <td class="paramname"><em>list</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Update music song to lovest if in current stack widget. </p>
-
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00576">addNetMusicSongToList()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00598">addSongToPlayList()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00508">musicListSongToLovestListAt()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00546">musicSongToLovestListAt()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00279">MusicApplication::updateCurrentArtist()</a>.</p>
 
 </div>
 </div>
@@ -2076,9 +2132,9 @@ Private Slots</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00266">266</a> of file <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html">musicsongssummariziedwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00273">273</a> of file <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html">musicsongssummariziedwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00372">deleteRowItemAll()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00024">MusicSongsSummariziedWidget()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00630">setDeleteItemAt()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00424">deleteRowItemAll()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00025">MusicSongsSummariziedWidget()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00672">setDeleteItemAt()</a>.</p>
 
 </div>
 </div>
@@ -2100,9 +2156,9 @@ Private Slots</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00266">266</a> of file <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html">musicsongssummariziedwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00273">273</a> of file <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html">musicsongssummariziedwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00422">addNewDir()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00409">addNewFiles()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00131">importOtherMusicSongs()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00480">musicImportSongsOnlyDir()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00473">musicImportSongsOnlyFile()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00024">MusicSongsSummariziedWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00479">addNewDir()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00466">addNewFiles()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00134">importOtherMusicSongs()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00539">musicImportSongsOnlyDir()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00532">musicImportSongsOnlyFile()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00025">MusicSongsSummariziedWidget()</a>.</p>
 
 </div>
 </div>
@@ -2124,13 +2180,13 @@ Private Slots</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00265">265</a> of file <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html">musicsongssummariziedwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00272">272</a> of file <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html">musicsongssummariziedwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00576">addNetMusicSongToList()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00598">addSongToPlayList()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00303">deleteRowItem()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00372">deleteRowItemAll()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00347">deleteRowItems()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00694">isCurrentIndexs()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00793">musicListSongSortBy()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00024">MusicSongsSummariziedWidget()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00546">musicSongToLovestListAt()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00274">selectRow()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00494">setCurrentIndex()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00251">setCurrentMusicSongTreeIndex()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00630">setDeleteItemAt()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00669">setMusicIndexSwaped()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00704">setMusicPlayCount()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00719">setRecentMusicSongs()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00284">setTimerLabel()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00435">swapDragItemIndex()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00768">updateCurrentArtist()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00360">deleteRowItem()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00424">deleteRowItemAll()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00399">deleteRowItems()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00737">isCurrentIndexs()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00836">musicListSongSortBy()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00567">musicListSongToLovestListAt()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00025">MusicSongsSummariziedWidget()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00602">musicSongToLovestListAt()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00326">selectRow()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00553">setCurrentIndex()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00306">setCurrentMusicSongTreeIndex()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00672">setDeleteItemAt()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00712">setMusicIndexSwaped()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00747">setMusicPlayCount()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00762">setRecentMusicSongs()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00341">setTimerLabel()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00492">swapDragItemIndex()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00811">updateCurrentArtist()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac4292440a49b41a471d260385a0eb4e0"></a>
+<a class="anchor" id="abc90bd3b9540b8636dfa560c5e4bae00"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -2138,7 +2194,7 @@ Private Slots</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../df/d02/class_music_songs_list_function_widget.html">MusicSongsListFunctionWidget</a>* MusicSongsSummariziedWidget::m_floatWidget</td>
+          <td class="memname"><a class="el" href="../../df/d02/class_music_songs_list_function_widget.html">MusicSongsListFunctionWidget</a>* MusicSongsSummariziedWidget::m_listFunctionWidget</td>
         </tr>
       </table>
   </td>
@@ -2148,9 +2204,9 @@ Private Slots</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00272">272</a> of file <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html">musicsongssummariziedwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00279">279</a> of file <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html">musicsongssummariziedwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00853">deleteFloatWidget()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00024">MusicSongsSummariziedWidget()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00950">resizeEvent()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00777">showFloatWidget()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00045">~MusicSongsSummariziedWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00911">deleteFloatWidget()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00025">MusicSongsSummariziedWidget()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l01008">resizeWindow()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00820">showFloatWidget()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00047">~MusicSongsSummariziedWidget()</a>.</p>
 
 </div>
 </div>
@@ -2172,9 +2228,33 @@ Private Slots</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00269">269</a> of file <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html">musicsongssummariziedwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00276">276</a> of file <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html">musicsongssummariziedwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00024">MusicSongsSummariziedWidget()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00928">setItemTitle()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00835">sliderValueChanaged()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00045">~MusicSongsSummariziedWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00025">MusicSongsSummariziedWidget()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00986">setItemTitle()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00893">sliderValueChanaged()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00047">~MusicSongsSummariziedWidget()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a926d1dc77865285b5d079825b9d35c6b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/d5e/class_music_local_song_search_dialog.html">MusicLocalSongSearchDialog</a>* MusicSongsSummariziedWidget::m_musicSongSearchWidget</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00280">280</a> of file <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html">musicsongssummariziedwidget.h</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00424">deleteRowItemAll()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00295">getSearchFileListIndexAndClear()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00134">importOtherMusicSongs()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00836">musicListSongSortBy()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00883">musicSearchWidget()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00025">MusicSongsSummariziedWidget()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l01008">resizeWindow()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00247">searchFileListCache()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00326">selectRow()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00047">~MusicSongsSummariziedWidget()</a>.</p>
 
 </div>
 </div>
@@ -2196,9 +2276,9 @@ Private Slots</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00270">270</a> of file <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html">musicsongssummariziedwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00277">277</a> of file <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html">musicsongssummariziedwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00233">getSearchFileListIndex()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00243">getSearchFileListIndexAndClear()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00205">searchFileListCache()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00228">searchFileListEmpty()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00285">getSearchFileListIndex()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00295">getSearchFileListIndexAndClear()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00247">searchFileListCache()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00280">searchFileListEmpty()</a>.</p>
 
 </div>
 </div>
@@ -2220,9 +2300,9 @@ Private Slots</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00265">265</a> of file <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html">musicsongssummariziedwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00272">272</a> of file <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html">musicsongssummariziedwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00233">getSearchFileListIndex()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00024">MusicSongsSummariziedWidget()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00205">searchFileListCache()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00285">getSearchFileListIndex()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00025">MusicSongsSummariziedWidget()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00247">searchFileListCache()</a>.</p>
 
 </div>
 </div>
@@ -2244,9 +2324,9 @@ Private Slots</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00271">271</a> of file <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html">musicsongssummariziedwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00278">278</a> of file <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html">musicsongssummariziedwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00487">musicSongsCheckTestTools()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00024">MusicSongsSummariziedWidget()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00045">~MusicSongsSummariziedWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00546">musicSongsCheckTestTools()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00025">MusicSongsSummariziedWidget()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00047">~MusicSongsSummariziedWidget()</a>.</p>
 
 </div>
 </div>
@@ -2268,9 +2348,9 @@ Private Slots</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00268">268</a> of file <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html">musicsongssummariziedwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00275">275</a> of file <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html">musicsongssummariziedwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00059">addMusicLists()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00576">addNetMusicSongToList()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00293">addNewRowItem()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00598">addSongToPlayList()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00119">appendMusicLists()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00396">changRowItemName()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00859">checkCurrentNameExist()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00920">clearAllLists()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00959">contextMenuEvent()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00303">deleteRowItem()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00372">deleteRowItemAll()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00347">deleteRowItems()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00763">getMusicLists()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00173">getMusicSongsFileName()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00189">getMusicSongsFilePath()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00131">importOtherMusicSongs()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00793">musicListSongSortBy()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00508">musicListSongToLovestListAt()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00546">musicSongToLovestListAt()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00205">searchFileListCache()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00274">selectRow()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00251">setCurrentMusicSongTreeIndex()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00630">setDeleteItemAt()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00669">setMusicIndexSwaped()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00704">setMusicPlayCount()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00719">setRecentMusicSongs()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00284">setTimerLabel()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00835">sliderValueChanaged()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00435">swapDragItemIndex()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00768">updateCurrentArtist()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00062">addMusicLists()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00629">addNetMusicSongToList()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00350">addNewRowItem()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00647">addSongToPlayList()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00122">appendMusicLists()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00453">changRowItemName()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00917">checkCurrentNameExist()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00978">clearAllLists()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l01042">contextMenuEvent()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00360">deleteRowItem()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00424">deleteRowItemAll()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00399">deleteRowItems()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00806">getMusicLists()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00181">getMusicSongsFileName()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00197">getMusicSongsFilePath()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00134">importOtherMusicSongs()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00231">mapFilePathBySongIndex()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00213">mapSongIndexByFilePath()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00836">musicListSongSortBy()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00567">musicListSongToLovestListAt()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00602">musicSongToLovestListAt()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l01021">resetToolIndex()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00247">searchFileListCache()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00326">selectRow()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00306">setCurrentMusicSongTreeIndex()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00672">setDeleteItemAt()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00712">setMusicIndexSwaped()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00747">setMusicPlayCount()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00762">setRecentMusicSongs()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00341">setTimerLabel()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00893">sliderValueChanaged()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00492">swapDragItemIndex()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00811">updateCurrentArtist()</a>.</p>
 
 </div>
 </div>
@@ -2292,9 +2372,9 @@ Private Slots</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00267">267</a> of file <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html">musicsongssummariziedwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00274">274</a> of file <a class="el" href="../../d7/db6/musicsongssummariziedwidget_8h_source.html">musicsongssummariziedwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00372">deleteRowItemAll()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00024">MusicSongsSummariziedWidget()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00630">setDeleteItemAt()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00424">deleteRowItemAll()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00025">MusicSongsSummariziedWidget()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00672">setDeleteItemAt()</a>.</p>
 
 </div>
 </div>
@@ -2305,7 +2385,7 @@ Private Slots</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 14 2017 20:51:33 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 8 2017 21:56:23 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

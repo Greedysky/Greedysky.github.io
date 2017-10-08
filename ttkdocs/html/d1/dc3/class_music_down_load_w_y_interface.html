@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.0.0</span>
+   &#160;<span id="projectnumber">2.6.1.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -95,6 +95,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <area href="../../d9/d01/class_music_down_load_query_w_y_artist_thread.html" title="The class to wangyi query artist download data from net. " alt="MusicDownLoadQueryWYArtistThread" shape="rect" coords="252,56,494,80"/>
 <area href="../../d8/d2d/class_music_down_load_query_w_y_playlist_thread.html" title="The class to wangyi query playlist download data from net. " alt="MusicDownLoadQueryWYPlaylistThread" shape="rect" coords="504,56,746,80"/>
 <area href="../../de/d56/class_music_down_load_query_w_y_thread.html" title="The class to wangyi query download data from net. " alt="MusicDownLoadQueryWYThread" shape="rect" coords="756,56,998,80"/>
+<area href="../../d0/d90/class_music_down_load_query_w_y_toplist_thread.html" title="The class to wangyi query toplist download data from net. " alt="MusicDownLoadQueryWYToplistThread" shape="rect" coords="1008,56,1250,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -195,9 +196,9 @@ Public Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d78/musicdownloadwyinterface_8cpp_source.html#l00013">13</a> of file <a class="el" href="../../d8/d78/musicdownloadwyinterface_8cpp_source.html">musicdownloadwyinterface.cpp</a>.</p>
 
-<p>References <a class="el" href="../../de/d32/musicsemaphoreloop_8cpp_source.html#l00022">MusicSemaphoreLoop::exec()</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00164">MusicObject::MusicSongAttribute::m_bitrate</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00165">MusicObject::MusicSongAttribute::m_format</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00167">MusicObject::MusicSongAttribute::m_size</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00188">MusicObject::MusicSongInformation::m_songAttrs</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00166">MusicObject::MusicSongAttribute::m_url</a>, <a class="el" href="../../d3/dfd/musicalgorithmutils_8cpp_source.html#l00016">MusicUtils::Algorithm::mdII()</a>, <a class="el" href="../../dc/ddd/parser_8cpp_source.html#l00069">QJson::Parser::parse()</a>, <a class="el" href="../../d4/da7/musicnumberutils_8cpp_source.html#l00040">MusicUtils::Number::size2Label()</a>, and <a class="el" href="../../df/d50/musicdownloadwyinterface_8h_source.html#l00030">WY_SONG_INFO_URL</a>.</p>
+<p>References <a class="el" href="../../de/d32/musicsemaphoreloop_8cpp_source.html#l00022">MusicSemaphoreLoop::exec()</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00164">MusicObject::MusicSongAttribute::m_bitrate</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00165">MusicObject::MusicSongAttribute::m_format</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00167">MusicObject::MusicSongAttribute::m_size</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00188">MusicObject::MusicSongInformation::m_songAttrs</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00166">MusicObject::MusicSongAttribute::m_url</a>, <a class="el" href="../../d3/dfd/musicalgorithmutils_8cpp_source.html#l00042">MusicUtils::Algorithm::mdII()</a>, <a class="el" href="../../dc/ddd/parser_8cpp_source.html#l00069">QJson::Parser::parse()</a>, <a class="el" href="../../d4/da7/musicnumberutils_8cpp_source.html#l00041">MusicUtils::Number::size2Label()</a>, and <a class="el" href="../../df/d50/musicdownloadwyinterface_8h_source.html#l00030">WY_SONG_INFO_URL</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/dc5/musicdownloadquerywythread_8cpp_source.html#l00047">MusicDownLoadQueryWYThread::downLoadFinished()</a>, <a class="el" href="../../d6/db0/musicdownloadquerywyalbumthread_8cpp_source.html#l00052">MusicDownLoadQueryWYAlbumThread::downLoadFinished()</a>, <a class="el" href="../../df/d72/musicdownloadquerywyartistthread_8cpp_source.html#l00050">MusicDownLoadQueryWYArtistThread::downLoadFinished()</a>, <a class="el" href="../../dd/dd9/musicdownloadquerywyplaylistthread_8cpp_source.html#l00152">MusicDownLoadQueryWYPlaylistThread::getDetailsFinished()</a>, and <a class="el" href="../../d8/d78/musicdownloadwyinterface_8cpp_source.html#l00061">readFromMusicSongAttribute()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/dc5/musicdownloadquerywythread_8cpp_source.html#l00047">MusicDownLoadQueryWYThread::downLoadFinished()</a>, <a class="el" href="../../d6/db0/musicdownloadquerywyalbumthread_8cpp_source.html#l00052">MusicDownLoadQueryWYAlbumThread::downLoadFinished()</a>, <a class="el" href="../../df/d72/musicdownloadquerywyartistthread_8cpp_source.html#l00050">MusicDownLoadQueryWYArtistThread::downLoadFinished()</a>, <a class="el" href="../../de/d3d/musicdownloadquerywytoplistthread_8cpp_source.html#l00049">MusicDownLoadQueryWYToplistThread::downLoadFinished()</a>, <a class="el" href="../../dd/dd9/musicdownloadquerywyplaylistthread_8cpp_source.html#l00152">MusicDownLoadQueryWYPlaylistThread::getDetailsFinished()</a>, and <a class="el" href="../../d8/d78/musicdownloadwyinterface_8cpp_source.html#l00061">readFromMusicSongAttribute()</a>.</p>
 
 </div>
 </div>
@@ -240,7 +241,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d78/musicdownloadwyinterface_8cpp_source.html#l00061">61</a> of file <a class="el" href="../../d8/d78/musicdownloadwyinterface_8cpp_source.html">musicdownloadwyinterface.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d8/d78/musicdownloadwyinterface_8cpp_source.html#l00112">encryptedId()</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00164">MusicObject::MusicSongAttribute::m_bitrate</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00165">MusicObject::MusicSongAttribute::m_format</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00167">MusicObject::MusicSongAttribute::m_size</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00188">MusicObject::MusicSongInformation::m_songAttrs</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00166">MusicObject::MusicSongAttribute::m_url</a>, <a class="el" href="../../d3/dfd/musicalgorithmutils_8cpp_source.html#l00016">MusicUtils::Algorithm::mdII()</a>, <a class="el" href="../../d8/d78/musicdownloadwyinterface_8cpp_source.html#l00013">readFromMusicSongAttribute()</a>, <a class="el" href="../../d4/da7/musicnumberutils_8cpp_source.html#l00040">MusicUtils::Number::size2Label()</a>, and <a class="el" href="../../df/d50/musicdownloadwyinterface_8h_source.html#l00025">WY_SONG_PATH_URL</a>.</p>
+<p>References <a class="el" href="../../d8/d78/musicdownloadwyinterface_8cpp_source.html#l00112">encryptedId()</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00164">MusicObject::MusicSongAttribute::m_bitrate</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00165">MusicObject::MusicSongAttribute::m_format</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00167">MusicObject::MusicSongAttribute::m_size</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00188">MusicObject::MusicSongInformation::m_songAttrs</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00166">MusicObject::MusicSongAttribute::m_url</a>, <a class="el" href="../../d3/dfd/musicalgorithmutils_8cpp_source.html#l00042">MusicUtils::Algorithm::mdII()</a>, <a class="el" href="../../d8/d78/musicdownloadwyinterface_8cpp_source.html#l00013">readFromMusicSongAttribute()</a>, <a class="el" href="../../d4/da7/musicnumberutils_8cpp_source.html#l00041">MusicUtils::Number::size2Label()</a>, and <a class="el" href="../../df/d50/musicdownloadwyinterface_8h_source.html#l00025">WY_SONG_PATH_URL</a>.</p>
 
 </div>
 </div>
@@ -283,7 +284,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d78/musicdownloadwyinterface_8cpp_source.html#l00080">80</a> of file <a class="el" href="../../d8/d78/musicdownloadwyinterface_8cpp_source.html">musicdownloadwyinterface.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00078">MB_128</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00079">MB_192</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00080">MB_320</a>, and <a class="el" href="../../d8/d78/musicdownloadwyinterface_8cpp_source.html#l00013">readFromMusicSongAttribute()</a>.</p>
+<p>References <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00079">MB_128</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00080">MB_192</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00081">MB_320</a>, and <a class="el" href="../../d8/d78/musicdownloadwyinterface_8cpp_source.html#l00013">readFromMusicSongAttribute()</a>.</p>
 
 </div>
 </div>
@@ -294,7 +295,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 14 2017 20:51:31 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 8 2017 21:56:15 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

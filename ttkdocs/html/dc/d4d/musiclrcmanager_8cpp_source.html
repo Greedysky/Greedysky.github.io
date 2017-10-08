@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.0.0</span>
+   &#160;<span id="projectnumber">2.6.1.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -322,7 +322,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <a class="code" href="../../d6/d4a/class_music_lrc_manager.html#a9a795d9639a22ee5c9033047dd1e6a5f">m_intervalCount</a> = 0.0f;</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <a class="code" href="../../d6/d4a/class_music_lrc_manager.html#a6eabb11b7f11f21d3405a0e7b161e3f2">m_geometry</a>.setX(QFontMetrics(<a class="code" href="../../d6/d4a/class_music_lrc_manager.html#a4ccebb8834df495fde96811f2e67a5c7">m_font</a>).width(text()));</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    qreal count = intervaltime / <a class="code" href="../../d6/d4a/class_music_lrc_manager.html#a1390a2646a33400637a09b46b21a8425">m_speedLevel</a>;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <a class="code" href="../../d6/d4a/class_music_lrc_manager.html#a93f4107289c90b9c75a6a4d972ba461c">m_lrcMaskWidthInterval</a> = <a class="code" href="../../d6/d4a/class_music_lrc_manager.html#a6eabb11b7f11f21d3405a0e7b161e3f2">m_geometry</a>.x() / count;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <a class="code" href="../../d6/d4a/class_music_lrc_manager.html#a93f4107289c90b9c75a6a4d972ba461c">m_lrcMaskWidthInterval</a> = (count != 0) ? <a class="code" href="../../d6/d4a/class_music_lrc_manager.html#a6eabb11b7f11f21d3405a0e7b161e3f2">m_geometry</a>.x() / count : 0;</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <a class="code" href="../../d6/d4a/class_music_lrc_manager.html#aeaf6e1fcc45e6dd7fb274f13f2d90c3c">m_lrcMaskWidth</a> = 0;</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <a class="code" href="../../d6/d4a/class_music_lrc_manager.html#ab9f4ebcd0e4cb044b898d38fdb3f5645">m_timer</a>-&gt;start(<a class="code" href="../../d1/d52/musiclrcmanager_8h.html#aba3f2cd7f2e12a971985c4fa439f61db">LRC_PER_TIME</a>);</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;}</div>
@@ -430,7 +430,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 14 2017 20:51:21 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 8 2017 21:55:55 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

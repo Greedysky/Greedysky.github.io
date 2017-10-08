@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.0.0</span>
+   &#160;<span id="projectnumber">2.6.1.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -139,6 +139,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="d4/d31/class_music_cut_slider_widget.html#a67674e5055bca365efd5f42e936ee714">MusicCutSliderWidget</a>
 , <a class="el" href="dd/df5/class_music_funtion_animation_widget.html#a172ab8832dae94bd2300a56ae7445ace">MusicFuntionAnimationWidget</a>
 , <a class="el" href="d9/de1/class_music_grab_widget.html#aa1e49ba92400a3eb50251dac2201069c">MusicGrabWidget</a>
+, <a class="el" href="da/d5b/class_music_hl_palette.html#a96e99200c2bc0f63e6f64df10e35e713">MusicHlPalette</a>
+, <a class="el" href="d8/dc9/class_music_hl_saturation_palette.html#a7c832ac7eb6c516bc4475d8c4a6ec046">MusicHlSaturationPalette</a>
 , <a class="el" href="dd/d53/class_music_layout_animation_widget.html#a87f86a31095f63c8d97a8b8e8d312b7f">MusicLayoutAnimationWidget</a>
 , <a class="el" href="d1/dac/class_music_line_background_widget.html#a3e7472af608906e39e1c11985320e185">MusicLineBackgroundWidget</a>
 , <a class="el" href="da/d7e/class_music_local_song_search_pop_widget.html#af5110a8e0b02c0f7067f6003346da3a9">MusicLocalSongSearchPopWidget</a>
@@ -254,10 +256,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="d2/d45/class_music_playlist_found_info_widget.html#a96d30996c25a8b166b80a9a5122ec814">MusicPlaylistFoundInfoWidget</a>
 </li>
 <li>playbackMode()
-: <a class="el" href="d7/d81/class_music_playlist.html#a4648a22cc4aae148f199a01488cb2edf">MusicPlaylist</a>
+: <a class="el" href="d9/df3/class_music_playedlist.html#aef74682f47636cd7adb6df8e7d603763">MusicPlayedlist</a>
+, <a class="el" href="d7/d81/class_music_playlist.html#a4648a22cc4aae148f199a01488cb2edf">MusicPlaylist</a>
 </li>
 <li>playbackModeChanged()
-: <a class="el" href="d7/d81/class_music_playlist.html#a824bc7ab424f083d413d81476ef549ef">MusicPlaylist</a>
+: <a class="el" href="d9/df3/class_music_playedlist.html#a05edc8842458ef310718df5e25e72c0b">MusicPlayedlist</a>
+, <a class="el" href="d7/d81/class_music_playlist.html#a824bc7ab424f083d413d81476ef549ef">MusicPlaylist</a>
 </li>
 <li>playButtonChanged()
 : <a class="el" href="db/d83/class_music_sound_k_micro_widget.html#aba8477a01c73edfe289ed4f6bf65ce56">MusicSoundKMicroWidget</a>
@@ -267,6 +271,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="df/d43/class_music_artist_found_widget.html#ad014c56e4d67a5d479d56e9ea4f6884e">MusicArtistFoundWidget</a>
 , <a class="el" href="d2/d45/class_music_playlist_found_info_widget.html#a3c9a9159e19e1a7a0668418268802683">MusicPlaylistFoundInfoWidget</a>
 , <a class="el" href="d1/d7f/class_music_similar_found_widget.html#a6fd66be9e86361a33cc4ee39522fcd78">MusicSimilarFoundWidget</a>
+, <a class="el" href="dd/dc1/class_music_top_list_found_widget.html#a0778274ada1dce5c53d50224600320a8">MusicTopListFoundWidget</a>
 </li>
 <li>playButtonStateChanged()
 : <a class="el" href="d3/de0/class_music_song_ringtone_maker.html#acd5736348cbb8e4f5f5a86927808db62">MusicSongRingtoneMaker</a>
@@ -278,7 +283,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="d3/de0/class_music_song_ringtone_maker.html#acfea6dbcf60f474c86f71faced466834">MusicSongRingtoneMaker</a>
 </li>
 <li>playlist()
-: <a class="el" href="dd/de1/class_music_player.html#a556526cb986b8249fd67d24f5d32c368">MusicPlayer</a>
+: <a class="el" href="d8/d64/class_music_played_list_pop_widget.html#a8fd38e27247963858c86da1fc6906d95">MusicPlayedListPopWidget</a>
+, <a class="el" href="dd/de1/class_music_player.html#a14d44df9d74e29b52f50cda52975c082">MusicPlayer</a>
 </li>
 <li>playLocation()
 : <a class="el" href="db/de9/class_music_songs_summarizied_widget.html#ac9a9cdbda5454c6c6c4cffb2b6b0bed5">MusicSongsSummariziedWidget</a>
@@ -302,7 +308,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="d9/d95/class_qmmp.html#a3b9d2c77a9ead7cff4af549df785a1df">Qmmp</a>
 </li>
 <li>poolConnect()
-: <a class="el" href="d5/d19/class_music_connection_pool.html#a087990465954f5c824214f2cadae2d78">MusicConnectionPool</a>
+: <a class="el" href="d5/d19/class_music_connection_pool.html#adac5d271bfc666e4e963c2c1e4b946d6">MusicConnectionPool</a>
 </li>
 <li>popup()
 : <a class="el" href="d2/d6f/class_music_toast_label.html#a82264d84b6b03e382f2402d8e117c4df">MusicToastLabel</a>
@@ -396,7 +402,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 14 2017 20:51:37 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 8 2017 21:56:34 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

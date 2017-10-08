@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.0.0</span>
+   &#160;<span id="projectnumber">2.6.1.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -90,16 +90,16 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/d83/musicabstractxml_8h.html">musicabstractxml.h</a>&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../d9/da2/struct_music_barrage_record.html">   17</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>MUSIC_SUPER_EXPORT <a class="code" href="../../d9/da2/struct_music_barrage_record.html">MusicBarrageRecord</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../d9/da2/struct_music_barrage_record.html">   17</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>MUSIC_VIDEO_EXPORT <a class="code" href="../../d9/da2/struct_music_barrage_record.html">MusicBarrageRecord</a></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
 <div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../d9/da2/struct_music_barrage_record.html#a3eb032e9d0e1f0d26de55f58050753ee">   19</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d9/da2/struct_music_barrage_record.html#a3eb032e9d0e1f0d26de55f58050753ee">m_size</a>;</div>
 <div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../d9/da2/struct_music_barrage_record.html#abbadffd6ae4a4247e81e797a06a937f5">   20</a></span>&#160;    QString <a class="code" href="../../d9/da2/struct_music_barrage_record.html#abbadffd6ae4a4247e81e797a06a937f5">m_color</a>;</div>
 <div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="../../d9/da2/struct_music_barrage_record.html#a12800ff49e0f30a843b435800bf4fc14">   21</a></span>&#160;    QString <a class="code" href="../../d9/da2/struct_music_barrage_record.html#a12800ff49e0f30a843b435800bf4fc14">m_value</a>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}<a class="code" href="../../dd/d73/musicbarragerecordconfigmanager_8h.html#a0c5462d34ca8ad3f238832e0e104af2f">MusicBarrageRecord</a>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<a class="code" href="../../da/d4e/musicglobal_8h.html#a26874f3399a60d18f8f82ce4a546e0c9">TTK_DECLARE_LISTS</a>(<a class="code" href="../../d9/da2/struct_music_barrage_record.html">MusicBarrageRecord</a>)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}<a class="code" href="../../dd/d73/musicbarragerecordconfigmanager_8h.html#a83244bbf5b5c4990e062c66365f227d4">MusicBarrageRecord</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<a class="code" href="../../da/d4e/musicglobal_8h.html#a4d238857fa9c278de1e80a4f427f6987">MUSIC_DECLARE_LISTS</a>(<a class="code" href="../../d9/da2/struct_music_barrage_record.html">MusicBarrageRecord</a>)</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../db/d99/class_music_barrage_record_config_manager.html">   28</a></span>&#160;class MUSIC_SUPER_EXPORT <a class="code" href="../../db/d99/class_music_barrage_record_config_manager.html">MusicBarrageRecordConfigManager</a> : public <a class="code" href="../../d7/d53/class_music_abstract_xml.html">MusicAbstractXml</a></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../db/d99/class_music_barrage_record_config_manager.html">   28</a></span>&#160;class MUSIC_VIDEO_EXPORT <a class="code" href="../../db/d99/class_music_barrage_record_config_manager.html">MusicBarrageRecordConfigManager</a> : public <a class="code" href="../../d7/d53/class_music_abstract_xml.html">MusicAbstractXml</a></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div>
@@ -113,12 +113,12 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif // MUSICBARRAGERECORDCONFIGMANAGER_H</span></div>
-<div class="ttc" id="musicbarragerecordconfigmanager_8h_html_a0c5462d34ca8ad3f238832e0e104af2f"><div class="ttname"><a href="../../dd/d73/musicbarragerecordconfigmanager_8h.html#a0c5462d34ca8ad3f238832e0e104af2f">MusicBarrageRecord</a></div><div class="ttdeci">struct MUSIC_SUPER_EXPORT MusicBarrageRecord MusicBarrageRecord</div><div class="ttdoc">The class of the barrage record item. </div></div>
+<div class="ttc" id="musicglobal_8h_html_a4d238857fa9c278de1e80a4f427f6987"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a4d238857fa9c278de1e80a4f427f6987">MUSIC_DECLARE_LISTS</a></div><div class="ttdeci">#define MUSIC_DECLARE_LISTS(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00086">musicglobal.h:86</a></div></div>
 <div class="ttc" id="struct_music_barrage_record_html_abbadffd6ae4a4247e81e797a06a937f5"><div class="ttname"><a href="../../d9/da2/struct_music_barrage_record.html#abbadffd6ae4a4247e81e797a06a937f5">MusicBarrageRecord::m_color</a></div><div class="ttdeci">QString m_color</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d73/musicbarragerecordconfigmanager_8h_source.html#l00020">musicbarragerecordconfigmanager.h:20</a></div></div>
 <div class="ttc" id="class_music_abstract_xml_html"><div class="ttname"><a href="../../d7/d53/class_music_abstract_xml.html">MusicAbstractXml</a></div><div class="ttdoc">The class of the base class of xml interface. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d83/musicabstractxml_8h_source.html#l00039">musicabstractxml.h:39</a></div></div>
 <div class="ttc" id="struct_music_barrage_record_html"><div class="ttname"><a href="../../d9/da2/struct_music_barrage_record.html">MusicBarrageRecord</a></div><div class="ttdoc">The class of the barrage record item. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d73/musicbarragerecordconfigmanager_8h_source.html#l00017">musicbarragerecordconfigmanager.h:17</a></div></div>
 <div class="ttc" id="struct_music_barrage_record_html_a12800ff49e0f30a843b435800bf4fc14"><div class="ttname"><a href="../../d9/da2/struct_music_barrage_record.html#a12800ff49e0f30a843b435800bf4fc14">MusicBarrageRecord::m_value</a></div><div class="ttdeci">QString m_value</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d73/musicbarragerecordconfigmanager_8h_source.html#l00021">musicbarragerecordconfigmanager.h:21</a></div></div>
-<div class="ttc" id="musicglobal_8h_html_a26874f3399a60d18f8f82ce4a546e0c9"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a26874f3399a60d18f8f82ce4a546e0c9">TTK_DECLARE_LISTS</a></div><div class="ttdeci">#define TTK_DECLARE_LISTS(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00089">musicglobal.h:89</a></div></div>
+<div class="ttc" id="musicbarragerecordconfigmanager_8h_html_a83244bbf5b5c4990e062c66365f227d4"><div class="ttname"><a href="../../dd/d73/musicbarragerecordconfigmanager_8h.html#a83244bbf5b5c4990e062c66365f227d4">MusicBarrageRecord</a></div><div class="ttdeci">struct MUSIC_VIDEO_EXPORT MusicBarrageRecord MusicBarrageRecord</div><div class="ttdoc">The class of the barrage record item. </div></div>
 <div class="ttc" id="class_music_barrage_record_config_manager_html_a3a0cd9610ed2e14cce00473ff2ce231d"><div class="ttname"><a href="../../db/d99/class_music_barrage_record_config_manager.html#a3a0cd9610ed2e14cce00473ff2ce231d">MusicBarrageRecordConfigManager::readBarrageXMLConfig</a></div><div class="ttdeci">bool readBarrageXMLConfig()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d73/musicbarragerecordconfigmanager_8h_source.html#l00044">musicbarragerecordconfigmanager.h:44</a></div></div>
 <div class="ttc" id="struct_music_barrage_record_html_a3eb032e9d0e1f0d26de55f58050753ee"><div class="ttname"><a href="../../d9/da2/struct_music_barrage_record.html#a3eb032e9d0e1f0d26de55f58050753ee">MusicBarrageRecord::m_size</a></div><div class="ttdeci">int m_size</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d73/musicbarragerecordconfigmanager_8h_source.html#l00019">musicbarragerecordconfigmanager.h:19</a></div></div>
 <div class="ttc" id="class_music_barrage_record_config_manager_html"><div class="ttname"><a href="../../db/d99/class_music_barrage_record_config_manager.html">MusicBarrageRecordConfigManager</a></div><div class="ttdoc">The class of the barrage record manager. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d73/musicbarragerecordconfigmanager_8h_source.html#l00028">musicbarragerecordconfigmanager.h:28</a></div></div>
@@ -127,7 +127,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 14 2017 20:51:21 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 8 2017 21:55:55 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

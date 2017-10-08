@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.0.0</span>
+   &#160;<span id="projectnumber">2.6.1.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -126,7 +126,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">if</span>(!nets.isEmpty())</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        QString adds = nets.first().hardwareAddress();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d8/d7d/class_music_license_core.html#ab4d5e6bd46b02957d11dd8de3b678cd3">hmacSha1</a>(adds.toUtf8(), <a class="code" href="../../d1/d2d/musiclicensecore_8cpp.html#a92fa867309ebd28e81a08db9a0d0053d">VALUE0</a>).toHex().mid(15, 10);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d6/d11/namespace_music_utils_1_1_algorithm.html#ad0c59ee5546c9aaa3890d282b86cd0ec">MusicUtils::Algorithm::hmackSha1</a>(adds.toUtf8(), <a class="code" href="../../d1/d2d/musiclicensecore_8cpp.html#a92fa867309ebd28e81a08db9a0d0053d">VALUE0</a>).toHex().mid(15, 10);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> QString();</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
@@ -141,59 +141,33 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> data;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="../../d8/d7d/class_music_license_core.html#ab4d5e6bd46b02957d11dd8de3b678cd3">   65</a></span>&#160;QByteArray <a class="code" href="../../d8/d7d/class_music_license_core.html#ab4d5e6bd46b02957d11dd8de3b678cd3">MusicLicenseCore::hmacSha1</a>(<span class="keyword">const</span> QByteArray &amp;data, <span class="keyword">const</span> QByteArray &amp;<a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>)</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="../../d8/d7d/class_music_license_core.html#a1cd5ef2389d9ca551fa395d24ef5d5d6">   65</a></span>&#160;QString <a class="code" href="../../d8/d7d/class_music_license_core.html#a1cd5ef2389d9ca551fa395d24ef5d5d6">MusicLicenseCore::splitString</a>(<span class="keyword">const</span> QByteArray &amp;data, <span class="keyword">const</span> QByteArray &amp;<a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>)</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">int</span> blockSize = 64;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    QByteArray newSecretKey = <a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">if</span>(newSecretKey.length() &gt; blockSize)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    QString value = <a class="code" href="../../d6/d11/namespace_music_utils_1_1_algorithm.html#ad0c59ee5546c9aaa3890d282b86cd0ec">MusicUtils::Algorithm::hmackSha1</a>(data, key).toHex().mid(10, 20);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">int</span> count = value.count();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=1; i&lt;count/5; ++i)</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        newSecretKey = <a class="code" href="../../d6/d11/namespace_music_utils_1_1_algorithm.html#acd79e2391bdba72f44631ecc7d48e999">MusicUtils::Algorithm::sha1</a>(newSecretKey);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        value.insert(count - 5*i, <span class="stringliteral">&quot;-&quot;</span>);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    QByteArray innerPadding(blockSize, <span class="keywordtype">char</span>(0x36));</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    QByteArray outerPadding(blockSize, <span class="keywordtype">char</span>(0x5c));</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; key.length(); i++)</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        innerPadding[i] = innerPadding[i] ^ key.at(i);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        outerPadding[i] = outerPadding[i] ^ key.at(i);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    QByteArray total = outerPadding;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    QByteArray part = innerPadding;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    part.append(data);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    total.append(<a class="code" href="../../d6/d11/namespace_music_utils_1_1_algorithm.html#acd79e2391bdba72f44631ecc7d48e999">MusicUtils::Algorithm::sha1</a>(part));</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d6/d11/namespace_music_utils_1_1_algorithm.html#acd79e2391bdba72f44631ecc7d48e999">MusicUtils::Algorithm::sha1</a>(total);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="../../d8/d7d/class_music_license_core.html#a1cd5ef2389d9ca551fa395d24ef5d5d6">   90</a></span>&#160;QString <a class="code" href="../../d8/d7d/class_music_license_core.html#a1cd5ef2389d9ca551fa395d24ef5d5d6">MusicLicenseCore::splitString</a>(<span class="keyword">const</span> QByteArray &amp;data, <span class="keyword">const</span> QByteArray &amp;<a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>)</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    QString value = <a class="code" href="../../d8/d7d/class_music_license_core.html#ab4d5e6bd46b02957d11dd8de3b678cd3">hmacSha1</a>(data, key).toHex().mid(10, 20);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">int</span> count = value.count();</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=1; i&lt;count/5; ++i)</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        value.insert(count - 5*i, <span class="stringliteral">&quot;-&quot;</span>);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">return</span> value;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> value;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
 <div class="ttc" id="class_music_license_core_html_acf0ca76c255491555d85f799df8cd713"><div class="ttname"><a href="../../d8/d7d/class_music_license_core.html#acf0ca76c255491555d85f799df8cd713">MusicLicenseCore::getEncodeKey</a></div><div class="ttdeci">QString getEncodeKey(const QString &amp;key)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d2d/musiclicensecore_8cpp_source.html#l00016">musiclicensecore.cpp:16</a></div></div>
 <div class="ttc" id="musiclicensecore_8h_html"><div class="ttname"><a href="../../d1/da7/musiclicensecore_8h.html">musiclicensecore.h</a></div></div>
 <div class="ttc" id="class_music_license_core_html_af27acdac8a5f9bf74d0200b487024ccd"><div class="ttname"><a href="../../d8/d7d/class_music_license_core.html#af27acdac8a5f9bf74d0200b487024ccd">MusicLicenseCore::checkLicense</a></div><div class="ttdeci">bool checkLicense(const QString &amp;str)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d2d/musiclicensecore_8cpp_source.html#l00021">musiclicensecore.cpp:21</a></div></div>
 <div class="ttc" id="class_music_license_core_html_ab9a1fa121a7df3cf7ab7f3eb19bbc8bf"><div class="ttname"><a href="../../d8/d7d/class_music_license_core.html#ab9a1fa121a7df3cf7ab7f3eb19bbc8bf">MusicLicenseCore::getCharacteristicString</a></div><div class="ttdeci">QString getCharacteristicString()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d2d/musiclicensecore_8cpp_source.html#l00033">musiclicensecore.cpp:33</a></div></div>
 <div class="ttc" id="musiclrcfromkrc_8cpp_html_ad706e4249347c1cd1381934a5691137d"><div class="ttname"><a href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a></div><div class="ttdeci">const wchar_t key[]</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d45/musiclrcfromkrc_8cpp_source.html#l00017">musiclrcfromkrc.cpp:17</a></div></div>
 <div class="ttc" id="class_music_license_core_html_a16a9ef97eac53142a794470e136404c6"><div class="ttname"><a href="../../d8/d7d/class_music_license_core.html#a16a9ef97eac53142a794470e136404c6">MusicLicenseCore::getCharacteristicStrings</a></div><div class="ttdeci">QStringList getCharacteristicStrings()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d2d/musiclicensecore_8cpp_source.html#l00055">musiclicensecore.cpp:55</a></div></div>
+<div class="ttc" id="namespace_music_utils_1_1_algorithm_html_ad0c59ee5546c9aaa3890d282b86cd0ec"><div class="ttname"><a href="../../d6/d11/namespace_music_utils_1_1_algorithm.html#ad0c59ee5546c9aaa3890d282b86cd0ec">MusicUtils::Algorithm::hmackSha1</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT QByteArray hmackSha1(const QByteArray &amp;data, const QByteArray &amp;key)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dfd/musicalgorithmutils_8cpp_source.html#l00016">musicalgorithmutils.cpp:16</a></div></div>
 <div class="ttc" id="musiclicensecore_8cpp_html_a92fa867309ebd28e81a08db9a0d0053d"><div class="ttname"><a href="../../d1/d2d/musiclicensecore_8cpp.html#a92fa867309ebd28e81a08db9a0d0053d">VALUE0</a></div><div class="ttdeci">#define VALUE0</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d2d/musiclicensecore_8cpp_source.html#l00007">musiclicensecore.cpp:7</a></div></div>
 <div class="ttc" id="class_music_license_core_html_a198a16d5e978452efd6c97e17c71ee7a"><div class="ttname"><a href="../../d8/d7d/class_music_license_core.html#a198a16d5e978452efd6c97e17c71ee7a">MusicLicenseCore::getCharacteristicStringNormal</a></div><div class="ttdeci">QString getCharacteristicStringNormal()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d2d/musiclicensecore_8cpp_source.html#l00044">musiclicensecore.cpp:44</a></div></div>
-<div class="ttc" id="class_music_license_core_html_ab4d5e6bd46b02957d11dd8de3b678cd3"><div class="ttname"><a href="../../d8/d7d/class_music_license_core.html#ab4d5e6bd46b02957d11dd8de3b678cd3">MusicLicenseCore::hmacSha1</a></div><div class="ttdeci">QByteArray hmacSha1(const QByteArray &amp;data, const QByteArray &amp;key)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d2d/musiclicensecore_8cpp_source.html#l00065">musiclicensecore.cpp:65</a></div></div>
-<div class="ttc" id="class_music_license_core_html_a1cd5ef2389d9ca551fa395d24ef5d5d6"><div class="ttname"><a href="../../d8/d7d/class_music_license_core.html#a1cd5ef2389d9ca551fa395d24ef5d5d6">MusicLicenseCore::splitString</a></div><div class="ttdeci">QString splitString(const QByteArray &amp;data, const QByteArray &amp;key)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d2d/musiclicensecore_8cpp_source.html#l00090">musiclicensecore.cpp:90</a></div></div>
+<div class="ttc" id="class_music_license_core_html_a1cd5ef2389d9ca551fa395d24ef5d5d6"><div class="ttname"><a href="../../d8/d7d/class_music_license_core.html#a1cd5ef2389d9ca551fa395d24ef5d5d6">MusicLicenseCore::splitString</a></div><div class="ttdeci">QString splitString(const QByteArray &amp;data, const QByteArray &amp;key)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d2d/musiclicensecore_8cpp_source.html#l00065">musiclicensecore.cpp:65</a></div></div>
 <div class="ttc" id="musiclicensecore_8cpp_html_a7263ab7b75721300b928c30da7073e26"><div class="ttname"><a href="../../d1/d2d/musiclicensecore_8cpp.html#a7263ab7b75721300b928c30da7073e26">VALUE1</a></div><div class="ttdeci">#define VALUE1</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d2d/musiclicensecore_8cpp_source.html#l00008">musiclicensecore.cpp:8</a></div></div>
-<div class="ttc" id="namespace_music_utils_1_1_algorithm_html_acd79e2391bdba72f44631ecc7d48e999"><div class="ttname"><a href="../../d6/d11/namespace_music_utils_1_1_algorithm.html#acd79e2391bdba72f44631ecc7d48e999">MusicUtils::Algorithm::sha1</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT QByteArray sha1(const QByteArray &amp;data)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dfd/musicalgorithmutils_8cpp_source.html#l00011">musicalgorithmutils.cpp:11</a></div></div>
 <div class="ttc" id="class_music_license_core_html_ab0703a4a65838c4c57dacc773a7cce3c"><div class="ttname"><a href="../../d8/d7d/class_music_license_core.html#ab0703a4a65838c4c57dacc773a7cce3c">MusicLicenseCore::MusicLicenseCore</a></div><div class="ttdeci">MusicLicenseCore(QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d2d/musiclicensecore_8cpp_source.html#l00010">musiclicensecore.cpp:10</a></div></div>
 <div class="ttc" id="musicalgorithmutils_8h_html"><div class="ttname"><a href="../../d8/d63/musicalgorithmutils_8h.html">musicalgorithmutils.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 14 2017 20:51:20 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 8 2017 21:55:53 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

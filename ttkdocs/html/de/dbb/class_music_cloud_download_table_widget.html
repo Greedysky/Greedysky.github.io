@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.0.0</span>
+   &#160;<span id="projectnumber">2.6.1.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -73,6 +73,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-slots">Public Slots</a> &#124;
+<a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
@@ -105,6 +106,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 Public Slots</h2></td></tr>
 <tr class="memitem:a577c5debe922d9bb74af8d04a8222d4e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbb/class_music_cloud_download_table_widget.html#a577c5debe922d9bb74af8d04a8222d4e">listCellClicked</a> (<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> row, <a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> column) override</td></tr>
 <tr class="separator:a577c5debe922d9bb74af8d04a8222d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add58f195333c9625745cfee09f164e70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbb/class_music_cloud_download_table_widget.html#add58f195333c9625745cfee09f164e70">listCellDoubleClicked</a> (<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> row, <a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> column)</td></tr>
+<tr class="separator:add58f195333c9625745cfee09f164e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bf601af5edb43725117f3acda880a93"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbb/class_music_cloud_download_table_widget.html#a8bf601af5edb43725117f3acda880a93">setDeleteItemAt</a> () override</td></tr>
 <tr class="separator:a8bf601af5edb43725117f3acda880a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb88bcae895e700eecfbb53ffcac27df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbb/class_music_cloud_download_table_widget.html#abb88bcae895e700eecfbb53ffcac27df">downloadProgressChanged</a> (float percent, <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;total, qint64 time)</td></tr>
@@ -136,6 +139,14 @@ Public Slots</h2></td></tr>
 <tr class="separator:a49e55335deb6b6d0b9311b29f9b282b4 inherit pub_slots_class_music_songs_list_abstract_table_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64b1d5ceead1501d2f07304061b99cbc inherit pub_slots_class_music_songs_list_abstract_table_widget"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#a64b1d5ceead1501d2f07304061b99cbc">musicSongDownload</a> ()</td></tr>
 <tr class="separator:a64b1d5ceead1501d2f07304061b99cbc inherit pub_slots_class_music_songs_list_abstract_table_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4976e4939f892e6365911a8ee0c1e4db inherit pub_slots_class_music_songs_list_abstract_table_widget"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#a4976e4939f892e6365911a8ee0c1e4db">musicSongMovieFoundPy</a> ()</td></tr>
+<tr class="separator:a4976e4939f892e6365911a8ee0c1e4db inherit pub_slots_class_music_songs_list_abstract_table_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c69ea2d1f479dfdab312bafc6caa6bd inherit pub_slots_class_music_songs_list_abstract_table_widget"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#a0c69ea2d1f479dfdab312bafc6caa6bd">musicSimilarFoundWidgetPy</a> ()</td></tr>
+<tr class="separator:a0c69ea2d1f479dfdab312bafc6caa6bd inherit pub_slots_class_music_songs_list_abstract_table_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbaee20a62ba4665b72d1d50a2193c74 inherit pub_slots_class_music_songs_list_abstract_table_widget"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#afbaee20a62ba4665b72d1d50a2193c74">musicSongSharedWidgetPy</a> ()</td></tr>
+<tr class="separator:afbaee20a62ba4665b72d1d50a2193c74 inherit pub_slots_class_music_songs_list_abstract_table_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a136e66875108384c8c683aa2f4d25b91 inherit pub_slots_class_music_songs_list_abstract_table_widget"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#a136e66875108384c8c683aa2f4d25b91">musicSongKMicroWidgetPy</a> ()</td></tr>
+<tr class="separator:a136e66875108384c8c683aa2f4d25b91 inherit pub_slots_class_music_songs_list_abstract_table_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_slots_class_music_slow_moving_table_widget"><td colspan="2" onclick="javascript:toggleInherit('pub_slots_class_music_slow_moving_table_widget')"><img src="../../closed.png" alt="-"/>&#160;Public Slots inherited from <a class="el" href="../../d2/dfe/class_music_slow_moving_table_widget.html">MusicSlowMovingTableWidget</a></td></tr>
 <tr class="memitem:ad159cfaf8d74f85793948b254ac69453 inherit pub_slots_class_music_slow_moving_table_widget"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dfe/class_music_slow_moving_table_widget.html#ad159cfaf8d74f85793948b254ac69453">timeToAnimation</a> ()</td></tr>
 <tr class="separator:ad159cfaf8d74f85793948b254ac69453 inherit pub_slots_class_music_slow_moving_table_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,6 +157,14 @@ Public Slots</h2></td></tr>
 <tr class="separator:ae44f9823a70195fd53cda4d7b47a40be inherit pub_slots_class_music_abstract_table_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01ba3eac2062cb7fb5fe22753594f4f3 inherit pub_slots_class_music_abstract_table_widget"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dab/class_music_abstract_table_widget.html#a01ba3eac2062cb7fb5fe22753594f4f3">listCellClicked</a> (<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> row, <a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> column)=0</td></tr>
 <tr class="separator:a01ba3eac2062cb7fb5fe22753594f4f3 inherit pub_slots_class_music_abstract_table_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:a7f508f32f0079c1c39ea2f7d0e785d2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbb/class_music_cloud_download_table_widget.html#a7f508f32f0079c1c39ea2f7d0e785d2b">addSongToPlay</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QStringList &amp;names)</td></tr>
+<tr class="separator:a7f508f32f0079c1c39ea2f7d0e785d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header signals_class_music_songs_list_abstract_table_widget"><td colspan="2" onclick="javascript:toggleInherit('signals_class_music_songs_list_abstract_table_widget')"><img src="../../closed.png" alt="-"/>&#160;Signals inherited from <a class="el" href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html">MusicSongsListAbstractTableWidget</a></td></tr>
+<tr class="memitem:a7c86154b58e2b45903e6f56d4e1b4ca1 inherit signals_class_music_songs_list_abstract_table_widget"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#a7c86154b58e2b45903e6f56d4e1b4ca1">isCurrentIndexs</a> (bool &amp;state)</td></tr>
+<tr class="separator:a7c86154b58e2b45903e6f56d4e1b4ca1 inherit signals_class_music_songs_list_abstract_table_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -262,12 +281,6 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a9f1daac066c8513507af2e15b8fa9e9e inherit pro_attribs_class_music_abstract_table_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01dd275a318624adc535a0136939bc21 inherit pro_attribs_class_music_abstract_table_widget"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dab/class_music_abstract_table_widget.html#a01dd275a318624adc535a0136939bc21">m_previousClickRow</a></td></tr>
 <tr class="separator:a01dd275a318624adc535a0136939bc21 inherit pro_attribs_class_music_abstract_table_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header signals_class_music_songs_list_abstract_table_widget"><td colspan="2" onclick="javascript:toggleInherit('signals_class_music_songs_list_abstract_table_widget')"><img src="../../closed.png" alt="-"/>&#160;Signals inherited from <a class="el" href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html">MusicSongsListAbstractTableWidget</a></td></tr>
-<tr class="memitem:a7c86154b58e2b45903e6f56d4e1b4ca1 inherit signals_class_music_songs_list_abstract_table_widget"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#a7c86154b58e2b45903e6f56d4e1b4ca1">isCurrentIndexs</a> (bool &amp;state)</td></tr>
-<tr class="separator:a7c86154b58e2b45903e6f56d4e1b4ca1 inherit signals_class_music_songs_list_abstract_table_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The class of the cloud shared song download table widget. </p>
@@ -298,9 +311,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Object contsructor. </p>
 
-<p>Definition at line <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00046">46</a> of file <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html">musiccloudtablewidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00047">47</a> of file <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html">musiccloudtablewidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00078">getClassName()</a>, <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html#l00016">M_CONNECTION_PTR</a>, <a class="el" href="../../dd/dbf/musiccloudtablewidget_8h_source.html#l00099">m_progressBarDelegate</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00320">MusicUIObject::MScrollBarStyle05</a>, and <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00148">musicSongsFileName()</a>.</p>
+<p>References <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00057">MusicSongsSummariziedWidget::getClassName()</a>, <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00082">getClassName()</a>, <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00093">listCellDoubleClicked()</a>, <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html#l00016">M_CONNECTION_PTR</a>, <a class="el" href="../../dd/dbf/musiccloudtablewidget_8h_source.html#l00109">m_progressBarDelegate</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00320">MusicUIObject::MScrollBarStyle05</a>, and <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00166">musicSongsFileName()</a>.</p>
 
 </div>
 </div>
@@ -325,13 +338,40 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00067">67</a> of file <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html">musiccloudtablewidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00071">71</a> of file <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html">musiccloudtablewidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d8/d08/musicabstracttablewidget_8cpp_source.html#l00055">MusicAbstractTableWidget::clear()</a>, <a class="el" href="../../db/d30/musicdownloadrecordconfigmanager_8h_source.html#l00035">MusicDownloadRecordConfigManager::Cloud</a>, <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00078">getClassName()</a>, <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html#l00016">M_CONNECTION_PTR</a>, <a class="el" href="../../dd/dbf/musiccloudtablewidget_8h_source.html#l00100">m_musicRecords</a>, <a class="el" href="../../da/dd8/musicsongslistabstracttablewidget_8h_source.html#l00144">MusicSongsListAbstractTableWidget::m_musicSongs</a>, <a class="el" href="../../dd/dbf/musiccloudtablewidget_8h_source.html#l00099">m_progressBarDelegate</a>, and <a class="el" href="../../d5/d4e/musicdownloadrecordconfigmanager_8cpp_source.html#l00014">MusicDownloadRecordConfigManager::writeDownloadConfig()</a>.</p>
+<p>References <a class="el" href="../../d8/d08/musicabstracttablewidget_8cpp_source.html#l00055">MusicAbstractTableWidget::clear()</a>, <a class="el" href="../../db/d30/musicdownloadrecordconfigmanager_8h_source.html#l00035">MusicDownloadRecordConfigManager::Cloud</a>, <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00082">getClassName()</a>, <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html#l00016">M_CONNECTION_PTR</a>, <a class="el" href="../../dd/dbf/musiccloudtablewidget_8h_source.html#l00110">m_musicRecords</a>, <a class="el" href="../../da/dd8/musicsongslistabstracttablewidget_8h_source.html#l00160">MusicSongsListAbstractTableWidget::m_musicSongs</a>, <a class="el" href="../../dd/dbf/musiccloudtablewidget_8h_source.html#l00109">m_progressBarDelegate</a>, and <a class="el" href="../../d5/d4e/musicdownloadrecordconfigmanager_8cpp_source.html#l00014">MusicDownloadRecordConfigManager::writeDownloadConfig()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a7f508f32f0079c1c39ea2f7d0e785d2b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MusicCloudDownloadTableWidget::addSongToPlay </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QStringList &amp;&#160;</td>
+          <td class="paramname"><em>names</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Add current selected song to play lists. </p>
+
+<p>Referenced by <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00093">listCellDoubleClicked()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ac7723517004d9d551a4a30f4b3b1d66c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -355,9 +395,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Override the widget event. </p>
 
-<p>Definition at line <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00165">165</a> of file <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html">musiccloudtablewidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00183">183</a> of file <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html">musiccloudtablewidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../df/dce/musicsongslistabstracttablewidget_8cpp_source.html#l00203">MusicSongsListAbstractTableWidget::createMoreMenu()</a>, <a class="el" href="../../da/dd8/musicsongslistabstracttablewidget_8h_source.html#l00144">MusicSongsListAbstractTableWidget::m_musicSongs</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00372">MusicUIObject::MMenuStyle02</a>, <a class="el" href="../../df/dce/musicsongslistabstracttablewidget_8cpp_source.html#l00136">MusicSongsListAbstractTableWidget::musicAlbumFoundWidget()</a>, <a class="el" href="../../df/dce/musicsongslistabstracttablewidget_8cpp_source.html#l00114">MusicSongsListAbstractTableWidget::musicFileInformation()</a>, <a class="el" href="../../df/dce/musicsongslistabstracttablewidget_8cpp_source.html#l00092">MusicSongsListAbstractTableWidget::musicOpenFileDir()</a>, <a class="el" href="../../df/dce/musicsongslistabstracttablewidget_8cpp_source.html#l00064">MusicSongsListAbstractTableWidget::musicPlayClicked()</a>, <a class="el" href="../../df/dce/musicsongslistabstracttablewidget_8cpp_source.html#l00191">MusicSongsListAbstractTableWidget::musicSongDownload()</a>, <a class="el" href="../../df/dce/musicsongslistabstracttablewidget_8cpp_source.html#l00079">MusicSongsListAbstractTableWidget::setDeleteItemAll()</a>, and <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00089">setDeleteItemAt()</a>.</p>
+<p>References <a class="el" href="../../df/dce/musicsongslistabstracttablewidget_8cpp_source.html#l00243">MusicSongsListAbstractTableWidget::createMoreMenu()</a>, <a class="el" href="../../da/dd8/musicsongslistabstracttablewidget_8h_source.html#l00160">MusicSongsListAbstractTableWidget::m_musicSongs</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00372">MusicUIObject::MMenuStyle02</a>, <a class="el" href="../../df/dce/musicsongslistabstracttablewidget_8cpp_source.html#l00135">MusicSongsListAbstractTableWidget::musicAlbumFoundWidget()</a>, <a class="el" href="../../df/dce/musicsongslistabstracttablewidget_8cpp_source.html#l00113">MusicSongsListAbstractTableWidget::musicFileInformation()</a>, <a class="el" href="../../df/dce/musicsongslistabstracttablewidget_8cpp_source.html#l00091">MusicSongsListAbstractTableWidget::musicOpenFileDir()</a>, <a class="el" href="../../df/dce/musicsongslistabstracttablewidget_8cpp_source.html#l00063">MusicSongsListAbstractTableWidget::musicPlayClicked()</a>, <a class="el" href="../../df/dce/musicsongslistabstracttablewidget_8cpp_source.html#l00189">MusicSongsListAbstractTableWidget::musicSongDownload()</a>, <a class="el" href="../../df/dce/musicsongslistabstracttablewidget_8cpp_source.html#l00078">MusicSongsListAbstractTableWidget::setDeleteItemAll()</a>, and <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00106">setDeleteItemAt()</a>.</p>
 
 </div>
 </div>
@@ -394,9 +434,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Create download item from download name and total time. </p>
 
-<p>Definition at line <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00133">133</a> of file <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html">musiccloudtablewidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00151">151</a> of file <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html">musiccloudtablewidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00190">createItem()</a>, <a class="el" href="../../dd/dbf/musiccloudtablewidget_8h_source.html#l00100">m_musicRecords</a>, <a class="el" href="../../db/d30/musicdownloadrecordconfigmanager_8h_source.html#l00019">MusicDownloadRecord::m_name</a>, <a class="el" href="../../db/d30/musicdownloadrecordconfigmanager_8h_source.html#l00020">MusicDownloadRecord::m_path</a>, <a class="el" href="../../db/d30/musicdownloadrecordconfigmanager_8h_source.html#l00021">MusicDownloadRecord::m_size</a>, and <a class="el" href="../../d3/d43/musiccoreutils_8cpp_source.html#l00033">MusicUtils::Core::musicPrefix()</a>.</p>
+<p>References <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00208">createItem()</a>, <a class="el" href="../../dd/dbf/musiccloudtablewidget_8h_source.html#l00110">m_musicRecords</a>, <a class="el" href="../../db/d30/musicdownloadrecordconfigmanager_8h_source.html#l00019">MusicDownloadRecord::m_name</a>, <a class="el" href="../../db/d30/musicdownloadrecordconfigmanager_8h_source.html#l00020">MusicDownloadRecord::m_path</a>, <a class="el" href="../../db/d30/musicdownloadrecordconfigmanager_8h_source.html#l00021">MusicDownloadRecord::m_size</a>, and <a class="el" href="../../d3/d43/musiccoreutils_8cpp_source.html#l00033">MusicUtils::Core::musicPrefix()</a>.</p>
 
 </div>
 </div>
@@ -439,11 +479,11 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Create item by index and name and size and time. </p>
 
-<p>Definition at line <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00190">190</a> of file <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html">musiccloudtablewidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00208">208</a> of file <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html">musiccloudtablewidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../da/d90/musicwidgetutils_8cpp_source.html#l00033">MusicUtils::Widget::elidedText()</a>, <a class="el" href="../../da/dd8/musicsongslistabstracttablewidget_8h_source.html#l00144">MusicSongsListAbstractTableWidget::m_musicSongs</a>, <a class="el" href="../../db/d30/musicdownloadrecordconfigmanager_8h_source.html#l00019">MusicDownloadRecord::m_name</a>, <a class="el" href="../../db/d30/musicdownloadrecordconfigmanager_8h_source.html#l00020">MusicDownloadRecord::m_path</a>, <a class="el" href="../../db/d30/musicdownloadrecordconfigmanager_8h_source.html#l00021">MusicDownloadRecord::m_size</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00057">MusicUIObject::MColorStyle12_S</a>, <a class="el" href="../../df/d13/musicitemdelegate_8h_source.html#l00017">MUSIC_PROCS_ROLE</a>, and <a class="el" href="../../df/d13/musicitemdelegate_8h_source.html#l00020">MUSIC_TIMES_ROLE</a>.</p>
+<p>References <a class="el" href="../../da/d90/musicwidgetutils_8cpp_source.html#l00033">MusicUtils::Widget::elidedText()</a>, <a class="el" href="../../da/dd8/musicsongslistabstracttablewidget_8h_source.html#l00160">MusicSongsListAbstractTableWidget::m_musicSongs</a>, <a class="el" href="../../db/d30/musicdownloadrecordconfigmanager_8h_source.html#l00019">MusicDownloadRecord::m_name</a>, <a class="el" href="../../db/d30/musicdownloadrecordconfigmanager_8h_source.html#l00020">MusicDownloadRecord::m_path</a>, <a class="el" href="../../db/d30/musicdownloadrecordconfigmanager_8h_source.html#l00021">MusicDownloadRecord::m_size</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00057">MusicUIObject::MColorStyle12_S</a>, <a class="el" href="../../df/d13/musicitemdelegate_8h_source.html#l00017">MUSIC_PROCS_ROLE</a>, and <a class="el" href="../../df/d13/musicitemdelegate_8h_source.html#l00020">MUSIC_TIMES_ROLE</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00133">createDownloadItem()</a>, and <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00148">musicSongsFileName()</a>.</p>
+<p>Referenced by <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00151">createDownloadItem()</a>, and <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00166">musicSongsFileName()</a>.</p>
 
 </div>
 </div>
@@ -486,9 +526,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Update download percent\ total time and current time progress. </p>
 
-<p>Definition at line <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00114">114</a> of file <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html">musiccloudtablewidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00132">132</a> of file <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html">musiccloudtablewidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/dbf/musiccloudtablewidget_8h_source.html#l00100">m_musicRecords</a>, <a class="el" href="../../df/d13/musicitemdelegate_8h_source.html#l00017">MUSIC_PROCS_ROLE</a>, and <a class="el" href="../../df/d13/musicitemdelegate_8h_source.html#l00020">MUSIC_TIMES_ROLE</a>.</p>
+<p>References <a class="el" href="../../dd/dbf/musiccloudtablewidget_8h_source.html#l00110">m_musicRecords</a>, <a class="el" href="../../df/d13/musicitemdelegate_8h_source.html#l00017">MUSIC_PROCS_ROLE</a>, and <a class="el" href="../../df/d13/musicitemdelegate_8h_source.html#l00020">MUSIC_TIMES_ROLE</a>.</p>
 
 </div>
 </div>
@@ -514,9 +554,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Get class object name. </p>
 
-<p>Definition at line <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00078">78</a> of file <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html">musiccloudtablewidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00082">82</a> of file <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html">musiccloudtablewidget.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html#l00049">MusicConnectionPool::connectMusicDownload()</a>, <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00046">MusicCloudDownloadTableWidget()</a>, and <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00067">~MusicCloudDownloadTableWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html#l00048">MusicConnectionPool::connectMusicDownload()</a>, <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00047">MusicCloudDownloadTableWidget()</a>, <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html#l00078">MusicConnectionPool::poolConnect()</a>, and <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00071">~MusicCloudDownloadTableWidget()</a>.</p>
 
 </div>
 </div>
@@ -553,7 +593,48 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Table widget list cell click. </p>
 
-<p>Definition at line <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00083">83</a> of file <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html">musiccloudtablewidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00087">87</a> of file <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html">musiccloudtablewidget.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="add58f195333c9625745cfee09f164e70"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MusicCloudDownloadTableWidget::listCellDoubleClicked </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramname"><em>row</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramname"><em>column</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>List cell double clicked. </p>
+
+<p>Definition at line <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00093">93</a> of file <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html">musiccloudtablewidget.cpp</a>.</p>
+
+<p>References <a class="el" href="../../de/dbb/class_music_cloud_download_table_widget.html#a7f508f32f0079c1c39ea2f7d0e785d2b">addSongToPlay()</a>, and <a class="el" href="../../dd/dbf/musiccloudtablewidget_8h_source.html#l00110">m_musicRecords</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00047">MusicCloudDownloadTableWidget()</a>.</p>
 
 </div>
 </div>
@@ -579,11 +660,11 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Read all config from file and insert items. </p>
 
-<p>Definition at line <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00148">148</a> of file <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html">musiccloudtablewidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00166">166</a> of file <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html">musiccloudtablewidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../db/d30/musicdownloadrecordconfigmanager_8h_source.html#l00035">MusicDownloadRecordConfigManager::Cloud</a>, <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00190">createItem()</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00145">DEFAULT_INDEX_LEVEL1</a>, <a class="el" href="../../dd/dbf/musiccloudtablewidget_8h_source.html#l00100">m_musicRecords</a>, <a class="el" href="../../da/dd8/musicsongslistabstracttablewidget_8h_source.html#l00144">MusicSongsListAbstractTableWidget::m_musicSongs</a>, <a class="el" href="../../d5/d4e/musicdownloadrecordconfigmanager_8cpp_source.html#l00036">MusicDownloadRecordConfigManager::readDownloadConfig()</a>, and <a class="el" href="../../db/d30/musicdownloadrecordconfigmanager_8h_source.html#l00058">MusicDownloadRecordConfigManager::readDownloadXMLConfig()</a>.</p>
+<p>References <a class="el" href="../../db/d30/musicdownloadrecordconfigmanager_8h_source.html#l00035">MusicDownloadRecordConfigManager::Cloud</a>, <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00208">createItem()</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00145">DEFAULT_INDEX_LEVEL1</a>, <a class="el" href="../../dd/dbf/musiccloudtablewidget_8h_source.html#l00110">m_musicRecords</a>, <a class="el" href="../../da/dd8/musicsongslistabstracttablewidget_8h_source.html#l00160">MusicSongsListAbstractTableWidget::m_musicSongs</a>, <a class="el" href="../../d5/d4e/musicdownloadrecordconfigmanager_8cpp_source.html#l00036">MusicDownloadRecordConfigManager::readDownloadConfig()</a>, and <a class="el" href="../../db/d30/musicdownloadrecordconfigmanager_8h_source.html#l00058">MusicDownloadRecordConfigManager::readDownloadXMLConfig()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00046">MusicCloudDownloadTableWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00047">MusicCloudDownloadTableWidget()</a>.</p>
 
 </div>
 </div>
@@ -609,11 +690,11 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Delete item from list at current row. </p>
 
-<p>Definition at line <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00089">89</a> of file <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html">musiccloudtablewidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00106">106</a> of file <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html">musiccloudtablewidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00098">MusicMessageBox::exec()</a>, <a class="el" href="../../dd/dbf/musiccloudtablewidget_8h_source.html#l00100">m_musicRecords</a>, and <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00077">MusicMessageBox::setText()</a>.</p>
+<p>References <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00098">MusicMessageBox::exec()</a>, <a class="el" href="../../dd/dbf/musiccloudtablewidget_8h_source.html#l00110">m_musicRecords</a>, <a class="el" href="../../da/dd8/musicsongslistabstracttablewidget_8h_source.html#l00160">MusicSongsListAbstractTableWidget::m_musicSongs</a>, and <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00077">MusicMessageBox::setText()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00165">contextMenuEvent()</a>.</p>
+<p>Referenced by <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00183">contextMenuEvent()</a>.</p>
 
 </div>
 </div>
@@ -636,9 +717,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/dbf/musiccloudtablewidget_8h_source.html#l00100">100</a> of file <a class="el" href="../../dd/dbf/musiccloudtablewidget_8h_source.html">musiccloudtablewidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dbf/musiccloudtablewidget_8h_source.html#l00110">110</a> of file <a class="el" href="../../dd/dbf/musiccloudtablewidget_8h_source.html">musiccloudtablewidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00133">createDownloadItem()</a>, <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00114">downloadProgressChanged()</a>, <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00148">musicSongsFileName()</a>, <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00089">setDeleteItemAt()</a>, and <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00067">~MusicCloudDownloadTableWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00151">createDownloadItem()</a>, <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00132">downloadProgressChanged()</a>, <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00093">listCellDoubleClicked()</a>, <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00166">musicSongsFileName()</a>, <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00106">setDeleteItemAt()</a>, and <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00071">~MusicCloudDownloadTableWidget()</a>.</p>
 
 </div>
 </div>
@@ -660,9 +741,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/dbf/musiccloudtablewidget_8h_source.html#l00099">99</a> of file <a class="el" href="../../dd/dbf/musiccloudtablewidget_8h_source.html">musiccloudtablewidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dbf/musiccloudtablewidget_8h_source.html#l00109">109</a> of file <a class="el" href="../../dd/dbf/musiccloudtablewidget_8h_source.html">musiccloudtablewidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00046">MusicCloudDownloadTableWidget()</a>, and <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00067">~MusicCloudDownloadTableWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00047">MusicCloudDownloadTableWidget()</a>, and <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00071">~MusicCloudDownloadTableWidget()</a>.</p>
 
 </div>
 </div>
@@ -673,7 +754,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 14 2017 20:51:28 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 8 2017 21:56:12 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

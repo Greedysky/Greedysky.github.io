@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.0.0</span>
+   &#160;<span id="projectnumber">2.6.1.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -160,22 +160,23 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                    }</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                    value = var.toMap();</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                    <a class="code" href="../../da/d19/class_music_down_load_discover_list_thread.html#a97a5405d2ad1ab9d6e34f6d0aadc0f2d">m_topListInfo</a> = QString(<span class="stringliteral">&quot;%1 %2&quot;</span>).arg(value[<span class="stringliteral">&quot;artistName&quot;</span>].toString())</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                    <a class="code" href="../../da/d19/class_music_down_load_discover_list_thread.html#a97a5405d2ad1ab9d6e34f6d0aadc0f2d">m_topListInfo</a> = QString(<span class="stringliteral">&quot;%1 - %2&quot;</span>).arg(value[<span class="stringliteral">&quot;artistName&quot;</span>].toString())</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                                    .arg(value[<span class="stringliteral">&quot;songName&quot;</span>].toString());</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    emit <a class="code" href="../../d5/de6/class_music_network_abstract.html#ae957b20ab1307ec7a7d0fdde4405f646">downLoadDataChanged</a>(<a class="code" href="../../da/d19/class_music_down_load_discover_list_thread.html#a97a5405d2ad1ab9d6e34f6d0aadc0f2d">m_topListInfo</a>);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="../../de/d41/class_music_down_load_paging_thread.html#ac88d6ff22d9bbc03f06a1fdcc0d7ace4">deleteAll</a>();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="../../d3/d77/musiclogger_8h.html#a40ddce420b21f37a70b70ca5de3d879a">M_LOGGER_INFO</a>(QString(<span class="stringliteral">&quot;%1 downLoadFinished deleteAll&quot;</span>).arg(<a class="code" href="../../d0/dc1/class_music_x_m_discover_list_thread.html#a7243c03b35dc83c73819cfc7072a6a7b">getClassName</a>()));</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    emit <a class="code" href="../../d5/de6/class_music_network_abstract.html#ae957b20ab1307ec7a7d0fdde4405f646">downLoadDataChanged</a>(<a class="code" href="../../da/d19/class_music_down_load_discover_list_thread.html#a97a5405d2ad1ab9d6e34f6d0aadc0f2d">m_topListInfo</a>);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="../../de/d41/class_music_down_load_paging_thread.html#ac88d6ff22d9bbc03f06a1fdcc0d7ace4">deleteAll</a>();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="../../d3/d77/musiclogger_8h.html#a40ddce420b21f37a70b70ca5de3d879a">M_LOGGER_INFO</a>(QString(<span class="stringliteral">&quot;%1 downLoadFinished deleteAll&quot;</span>).arg(<a class="code" href="../../d0/dc1/class_music_x_m_discover_list_thread.html#a7243c03b35dc83c73819cfc7072a6a7b">getClassName</a>()));</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
 <div class="ttc" id="class_music_down_load_discover_list_thread_html"><div class="ttname"><a href="../../da/d19/class_music_down_load_discover_list_thread.html">MusicDownLoadDiscoverListThread</a></div><div class="ttdoc">The class to download discover toplist abstract thread. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/dfd/musicdownloaddiscoverlistthread_8h_source.html#l00017">musicdownloaddiscoverlistthread.h:17</a></div></div>
 <div class="ttc" id="musiclogger_8h_html_a40ddce420b21f37a70b70ca5de3d879a"><div class="ttname"><a href="../../d3/d77/musiclogger_8h.html#a40ddce420b21f37a70b70ca5de3d879a">M_LOGGER_INFO</a></div><div class="ttdeci">#define M_LOGGER_INFO(str)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d77/musiclogger_8h_source.html#l00037">musiclogger.h:37</a></div></div>
 <div class="ttc" id="class_music_x_m_discover_list_thread_html_a0d511091fe54e729248a63e7e5e33558"><div class="ttname"><a href="../../d0/dc1/class_music_x_m_discover_list_thread.html#a0d511091fe54e729248a63e7e5e33558">MusicXMDiscoverListThread::startToSearch</a></div><div class="ttdeci">virtual void startToSearch() override</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dd0/musicxmdiscoverlistthread_8cpp_source.html#l00017">musicxmdiscoverlistthread.cpp:17</a></div></div>
 <div class="ttc" id="class_music_x_m_discover_list_thread_html_a69319edfd14e929503828dcce5c6eac1"><div class="ttname"><a href="../../d0/dc1/class_music_x_m_discover_list_thread.html#a69319edfd14e929503828dcce5c6eac1">MusicXMDiscoverListThread::downLoadFinished</a></div><div class="ttdeci">virtual void downLoadFinished() override</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dd0/musicxmdiscoverlistthread_8cpp_source.html#l00045">musicxmdiscoverlistthread.cpp:45</a></div></div>
-<div class="ttc" id="namespace_music_utils_1_1_algorithm_html_a5e5f071a5bb196d53c48fb2be855da67"><div class="ttname"><a href="../../d6/d11/namespace_music_utils_1_1_algorithm.html#a5e5f071a5bb196d53c48fb2be855da67">MusicUtils::Algorithm::mdII</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT QString mdII(const QString &amp;data, bool encode)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dfd/musicalgorithmutils_8cpp_source.html#l00016">musicalgorithmutils.cpp:16</a></div></div>
+<div class="ttc" id="namespace_music_utils_1_1_algorithm_html_a5e5f071a5bb196d53c48fb2be855da67"><div class="ttname"><a href="../../d6/d11/namespace_music_utils_1_1_algorithm.html#a5e5f071a5bb196d53c48fb2be855da67">MusicUtils::Algorithm::mdII</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT QString mdII(const QString &amp;data, bool encode)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dfd/musicalgorithmutils_8cpp_source.html#l00042">musicalgorithmutils.cpp:42</a></div></div>
 <div class="ttc" id="class_music_down_load_paging_thread_html_ac88d6ff22d9bbc03f06a1fdcc0d7ace4"><div class="ttname"><a href="../../de/d41/class_music_down_load_paging_thread.html#ac88d6ff22d9bbc03f06a1fdcc0d7ace4">MusicDownLoadPagingThread::deleteAll</a></div><div class="ttdeci">virtual void deleteAll() override</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/df9/musicdownloadpagingthread_8cpp_source.html#l00027">musicdownloadpagingthread.cpp:27</a></div></div>
 <div class="ttc" id="musicdownloadxminterface_8h_html_a32afa70e7edc28e2cb29b7edcb10fdf1"><div class="ttname"><a href="../../de/d07/musicdownloadxminterface_8h.html#a32afa70e7edc28e2cb29b7edcb10fdf1">XM_SONG_TOPLIST_DATA_URL</a></div><div class="ttdeci">const QString XM_SONG_TOPLIST_DATA_URL</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d07/musicdownloadxminterface_8h_source.html#l00039">musicdownloadxminterface.h:39</a></div></div>
 <div class="ttc" id="class_music_network_abstract_html_a6b377fbd50c30fdd3d164c7cb7c8f2a4"><div class="ttname"><a href="../../d5/de6/class_music_network_abstract.html#a6b377fbd50c30fdd3d164c7cb7c8f2a4">MusicNetworkAbstract::m_stateCode</a></div><div class="ttdeci">StateCode m_stateCode</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dbf/musicnetworkabstract_8h_source.html#l00075">musicnetworkabstract.h:75</a></div></div>
@@ -196,7 +197,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 14 2017 20:51:21 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 8 2017 21:55:55 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
