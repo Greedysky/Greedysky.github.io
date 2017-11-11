@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>TTKMusicplayer: TTKModule/TTKCore/musicNetworkKits/musicnetworkthread.h Source File</title>
+<title>TTKMusicplayer: TTKModule/TTKCore/musicNetworkKits/ztl/musicnetworkthread.h Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.1.0</span>
+   &#160;<span id="projectnumber">2.6.2.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_a3dc49d95d9832a3f058c36369f57e9d.html">TTKModule</a></li><li class="navelem"><a class="el" href="../../dir_18d57a76ce51370551ab9b136ef02b09.html">TTKCore</a></li><li class="navelem"><a class="el" href="../../dir_dc05e37370f37b7f980133d958ead9ee.html">musicNetworkKits</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_a3dc49d95d9832a3f058c36369f57e9d.html">TTKModule</a></li><li class="navelem"><a class="el" href="../../dir_18d57a76ce51370551ab9b136ef02b09.html">TTKCore</a></li><li class="navelem"><a class="el" href="../../dir_dc05e37370f37b7f980133d958ead9ee.html">musicNetworkKits</a></li><li class="navelem"><a class="el" href="../../dir_a187bb4984b5202dd21817880b6d9fa6.html">ztl</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -82,60 +82,70 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">/* =================================================</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of the TTK Music Player project</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (c) 2015 - 2017 Greedysky Studio</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * All rights reserved!</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * Redistribution and use of the source code or any derivative</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * works are strictly forbiden.</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">   =================================================*/</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QTimer&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d7/d5f/musicsingleton_8h.html">musicsingleton.h</a>&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="../../df/d0e/musicnetworkthread_8h.html#a43aef8d05e3e115d371dcf6b190282b5">   15</a></span>&#160;<span class="preprocessor">#define M_NETWORK_PTR (MusicSingleton&lt;MusicNetworkThread&gt;::createInstance())</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../df/d0e/musicnetworkthread_8h.html#ad50566abf17ec316f06ba29cd7fd9a22">   16</a></span>&#160;<span class="preprocessor">#define NETWORK_DETECT_INTERVAL     5000             // second</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../df/d0e/musicnetworkthread_8h.html#a1d9f59043481eaacc0287061b1cafcb5">   17</a></span>&#160;<span class="preprocessor">#define NETWORK_REQUEST_ADDRESS     &quot;www.baidu.com&quot;  // ip</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../db/d5e/class_music_network_thread.html">   22</a></span>&#160;<span class="keyword">class </span>MUSIC_NETWORK_EXPORT <a class="code" href="../../db/d5e/class_music_network_thread.html">MusicNetworkThread</a> : <span class="keyword">public</span> QObject</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">static</span> QString getClassName();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> start();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> setBlockNetWork(<span class="keywordtype">int</span> block);</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../db/d5e/class_music_network_thread.html#a5f18d9871199b6f44cda5770d479f043">   42</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="../../db/d5e/class_music_network_thread.html#a5f18d9871199b6f44cda5770d479f043">setNetWorkState</a>(<span class="keywordtype">bool</span> state) { m_networkState = state; }</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="../../db/d5e/class_music_network_thread.html#a51ea7aca2642f85e6d507cf509238b98">   46</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../db/d5e/class_music_network_thread.html#a51ea7aca2642f85e6d507cf509238b98">isOnline</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_networkState; }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> networkConnectionStateChanged(<span class="keywordtype">bool</span> state);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> networkStateChanged();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="../../db/d5e/class_music_network_thread.html">MusicNetworkThread</a>();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    ~<a class="code" href="../../db/d5e/class_music_network_thread.html">MusicNetworkThread</a>();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="../../db/d5e/class_music_network_thread.html#a7f1586d6af1e8a6af25d2b4dd1618563">   69</a></span>&#160;    QTimer <a class="code" href="../../db/d5e/class_music_network_thread.html#a7f1586d6af1e8a6af25d2b4dd1618563">m_timer</a>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="../../db/d5e/class_music_network_thread.html#a631fc422b30f7a1a6e5adf67f7c16615">   70</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../db/d5e/class_music_network_thread.html#a631fc422b30f7a1a6e5adf67f7c16615">m_networkState</a>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="../../d7/d5f/musicsingleton_8h.html#a8d62f3ef8a22e40d7a4ff45f03d0ce0e">DECLARE_SINGLETON_CLASS</a>(<a class="code" href="../../db/d5e/class_music_network_thread.html">MusicNetworkThread</a>)</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif // MUSICNETWORKTHREAD_H</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2017 Greedysky Studio</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * the Free Software Foundation; either version 3 of the License, or</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * (at your option) any later version.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * GNU General Public License for more details.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * with this program; If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> ================================================= */</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;QTimer&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d7/d5f/musicsingleton_8h.html">musicsingleton.h</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../df/d0e/musicnetworkthread_8h.html#a43aef8d05e3e115d371dcf6b190282b5">   25</a></span>&#160;<span class="preprocessor">#define M_NETWORK_PTR (MusicSingleton&lt;MusicNetworkThread&gt;::createInstance())</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../df/d0e/musicnetworkthread_8h.html#ad50566abf17ec316f06ba29cd7fd9a22">   26</a></span>&#160;<span class="preprocessor">#define NETWORK_DETECT_INTERVAL     5000             // second</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../df/d0e/musicnetworkthread_8h.html#a1d9f59043481eaacc0287061b1cafcb5">   27</a></span>&#160;<span class="preprocessor">#define NETWORK_REQUEST_ADDRESS     &quot;www.baidu.com&quot;  // ip</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../db/d5e/class_music_network_thread.html">   32</a></span>&#160;<span class="keyword">class </span>MUSIC_NETWORK_EXPORT <a class="code" href="../../db/d5e/class_music_network_thread.html">MusicNetworkThread</a> : <span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">static</span> QString getClassName();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> start();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> setBlockNetWork(<span class="keywordtype">int</span> block);</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="../../db/d5e/class_music_network_thread.html#a5f18d9871199b6f44cda5770d479f043">   52</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="../../db/d5e/class_music_network_thread.html#a5f18d9871199b6f44cda5770d479f043">setNetWorkState</a>(<span class="keywordtype">bool</span> state) { m_networkState = state; }</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="../../db/d5e/class_music_network_thread.html#a51ea7aca2642f85e6d507cf509238b98">   56</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../db/d5e/class_music_network_thread.html#a51ea7aca2642f85e6d507cf509238b98">isOnline</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_networkState; }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> networkConnectionStateChanged(<span class="keywordtype">bool</span> state);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> networkStateChanged();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="../../db/d5e/class_music_network_thread.html">MusicNetworkThread</a>();</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="ttc" id="class_music_network_thread_html_a631fc422b30f7a1a6e5adf67f7c16615"><div class="ttname"><a href="../../db/d5e/class_music_network_thread.html#a631fc422b30f7a1a6e5adf67f7c16615">MusicNetworkThread::m_networkState</a></div><div class="ttdeci">bool m_networkState</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0e/musicnetworkthread_8h_source.html#l00070">musicnetworkthread.h:70</a></div></div>
-<div class="ttc" id="class_music_network_thread_html_a5f18d9871199b6f44cda5770d479f043"><div class="ttname"><a href="../../db/d5e/class_music_network_thread.html#a5f18d9871199b6f44cda5770d479f043">MusicNetworkThread::setNetWorkState</a></div><div class="ttdeci">void setNetWorkState(bool state)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0e/musicnetworkthread_8h_source.html#l00042">musicnetworkthread.h:42</a></div></div>
-<div class="ttc" id="class_music_network_thread_html"><div class="ttname"><a href="../../db/d5e/class_music_network_thread.html">MusicNetworkThread</a></div><div class="ttdoc">The class of thread to check current network. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0e/musicnetworkthread_8h_source.html#l00022">musicnetworkthread.h:22</a></div></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    ~<a class="code" href="../../db/d5e/class_music_network_thread.html">MusicNetworkThread</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="../../db/d5e/class_music_network_thread.html#a7f1586d6af1e8a6af25d2b4dd1618563">   79</a></span>&#160;    QTimer <a class="code" href="../../db/d5e/class_music_network_thread.html#a7f1586d6af1e8a6af25d2b4dd1618563">m_timer</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="../../db/d5e/class_music_network_thread.html#a631fc422b30f7a1a6e5adf67f7c16615">   80</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../db/d5e/class_music_network_thread.html#a631fc422b30f7a1a6e5adf67f7c16615">m_networkState</a>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="../../d7/d5f/musicsingleton_8h.html#a8d62f3ef8a22e40d7a4ff45f03d0ce0e">DECLARE_SINGLETON_CLASS</a>(<a class="code" href="../../db/d5e/class_music_network_thread.html">MusicNetworkThread</a>)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif // MUSICNETWORKTHREAD_H</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="ttc" id="class_music_network_thread_html_a631fc422b30f7a1a6e5adf67f7c16615"><div class="ttname"><a href="../../db/d5e/class_music_network_thread.html#a631fc422b30f7a1a6e5adf67f7c16615">MusicNetworkThread::m_networkState</a></div><div class="ttdeci">bool m_networkState</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0e/musicnetworkthread_8h_source.html#l00080">musicnetworkthread.h:80</a></div></div>
+<div class="ttc" id="class_music_network_thread_html_a5f18d9871199b6f44cda5770d479f043"><div class="ttname"><a href="../../db/d5e/class_music_network_thread.html#a5f18d9871199b6f44cda5770d479f043">MusicNetworkThread::setNetWorkState</a></div><div class="ttdeci">void setNetWorkState(bool state)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0e/musicnetworkthread_8h_source.html#l00052">musicnetworkthread.h:52</a></div></div>
+<div class="ttc" id="class_music_network_thread_html"><div class="ttname"><a href="../../db/d5e/class_music_network_thread.html">MusicNetworkThread</a></div><div class="ttdoc">The class of thread to check current network. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0e/musicnetworkthread_8h_source.html#l00032">musicnetworkthread.h:32</a></div></div>
 <div class="ttc" id="musicsingleton_8h_html"><div class="ttname"><a href="../../d7/d5f/musicsingleton_8h.html">musicsingleton.h</a></div></div>
-<div class="ttc" id="class_music_network_thread_html_a51ea7aca2642f85e6d507cf509238b98"><div class="ttname"><a href="../../db/d5e/class_music_network_thread.html#a51ea7aca2642f85e6d507cf509238b98">MusicNetworkThread::isOnline</a></div><div class="ttdeci">bool isOnline() const </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0e/musicnetworkthread_8h_source.html#l00046">musicnetworkthread.h:46</a></div></div>
-<div class="ttc" id="class_music_network_thread_html_a7f1586d6af1e8a6af25d2b4dd1618563"><div class="ttname"><a href="../../db/d5e/class_music_network_thread.html#a7f1586d6af1e8a6af25d2b4dd1618563">MusicNetworkThread::m_timer</a></div><div class="ttdeci">QTimer m_timer</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0e/musicnetworkthread_8h_source.html#l00069">musicnetworkthread.h:69</a></div></div>
-<div class="ttc" id="musicsingleton_8h_html_a8d62f3ef8a22e40d7a4ff45f03d0ce0e"><div class="ttname"><a href="../../d7/d5f/musicsingleton_8h.html#a8d62f3ef8a22e40d7a4ff45f03d0ce0e">DECLARE_SINGLETON_CLASS</a></div><div class="ttdeci">#define DECLARE_SINGLETON_CLASS(Class)</div><div class="ttdoc">                                         //  Singleton Macro // // </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5f/musicsingleton_8h_source.html#l00085">musicsingleton.h:85</a></div></div>
+<div class="ttc" id="class_music_network_thread_html_a51ea7aca2642f85e6d507cf509238b98"><div class="ttname"><a href="../../db/d5e/class_music_network_thread.html#a51ea7aca2642f85e6d507cf509238b98">MusicNetworkThread::isOnline</a></div><div class="ttdeci">bool isOnline() const </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0e/musicnetworkthread_8h_source.html#l00056">musicnetworkthread.h:56</a></div></div>
+<div class="ttc" id="class_music_network_thread_html_a7f1586d6af1e8a6af25d2b4dd1618563"><div class="ttname"><a href="../../db/d5e/class_music_network_thread.html#a7f1586d6af1e8a6af25d2b4dd1618563">MusicNetworkThread::m_timer</a></div><div class="ttdeci">QTimer m_timer</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0e/musicnetworkthread_8h_source.html#l00079">musicnetworkthread.h:79</a></div></div>
+<div class="ttc" id="musicsingleton_8h_html_a8d62f3ef8a22e40d7a4ff45f03d0ce0e"><div class="ttname"><a href="../../d7/d5f/musicsingleton_8h.html#a8d62f3ef8a22e40d7a4ff45f03d0ce0e">DECLARE_SINGLETON_CLASS</a></div><div class="ttdeci">#define DECLARE_SINGLETON_CLASS(Class)</div><div class="ttdoc">                                         //  Singleton Macro // // </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5f/musicsingleton_8h_source.html#l00095">musicsingleton.h:95</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 8 2017 21:55:54 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 11 2017 16:15:51 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

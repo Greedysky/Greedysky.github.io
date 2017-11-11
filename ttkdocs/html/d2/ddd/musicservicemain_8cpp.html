@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.1.0</span>
+   &#160;<span id="projectnumber">2.6.2.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -85,6 +85,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <code>#include &quot;<a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html">musicnumberdefine.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d5/d84/ttkdumper_8h_source.html">ttkdumper.h</a>&quot;</code><br />
 <code>#include &lt;QTimer&gt;</code><br />
+<code>#include &lt;QScreen&gt;</code><br />
 <code>#include &lt;QTranslator&gt;</code><br />
 <code>#include &lt;QApplication&gt;</code><br />
 </div>
@@ -97,6 +98,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a95d589a23543155a9bc85e19cc70520f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddd/musicservicemain_8cpp.html#a95d589a23543155a9bc85e19cc70520f">loadDXcbPlugin</a> (<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> argc, char *argv[])</td></tr>
+<tr class="separator:a95d589a23543155a9bc85e19cc70520f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddd/musicservicemain_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> argc, char *argv[])</td></tr>
 <tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -111,11 +114,41 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/ddd/musicservicemain_8cpp_source.html#l00010">10</a> of file <a class="el" href="../../d2/ddd/musicservicemain_8cpp_source.html">musicservicemain.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/ddd/musicservicemain_8cpp_source.html#l00011">11</a> of file <a class="el" href="../../d2/ddd/musicservicemain_8cpp_source.html">musicservicemain.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a95d589a23543155a9bc85e19cc70520f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loadDXcbPlugin </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>argv</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d2/ddd/musicservicemain_8cpp_source.html#l00013">13</a> of file <a class="el" href="../../d2/ddd/musicservicemain_8cpp_source.html">musicservicemain.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d2/ddd/musicservicemain_8cpp_source.html#l00034">main()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a0ddf1224851353fc92bfbff6f499fa97"></a>
 <div class="memitem">
 <div class="memproto">
@@ -140,16 +173,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/ddd/musicservicemain_8cpp_source.html#l00012">12</a> of file <a class="el" href="../../d2/ddd/musicservicemain_8cpp_source.html">musicservicemain.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/ddd/musicservicemain_8cpp_source.html#l00034">34</a> of file <a class="el" href="../../d2/ddd/musicservicemain_8cpp_source.html">musicservicemain.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00025">APPCOME</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00023">APPNAME</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00014">MT_MS</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00185">MusicApplication::musicImportSongsSettingPath()</a>, <a class="el" href="../../d1/d77/ttkdumper_8cpp_source.html#l00019">TTKDumper::run()</a>, <a class="el" href="../../d5/d15/musicruntimemanager_8cpp_source.html#l00020">MusicRunTimeManager::run()</a>, and <a class="el" href="../../d5/d15/musicruntimemanager_8cpp_source.html#l00056">MusicRunTimeManager::translator()</a>.</p>
+<p>References <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00035">APPCOME</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00033">APPNAME</a>, <a class="el" href="../../d2/ddd/musicservicemain_8cpp_source.html#l00013">loadDXcbPlugin()</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00024">MT_MS</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00185">MusicApplication::musicImportSongsSettingPath()</a>, <a class="el" href="../../d1/d77/ttkdumper_8cpp_source.html#l00019">TTKDumper::run()</a>, <a class="el" href="../../d5/d15/musicruntimemanager_8cpp_source.html#l00020">MusicRunTimeManager::run()</a>, and <a class="el" href="../../d5/d15/musicruntimemanager_8cpp_source.html#l00056">MusicRunTimeManager::translator()</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 8 2017 21:56:06 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 11 2017 16:16:02 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

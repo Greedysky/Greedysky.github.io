@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.1.0</span>
+   &#160;<span id="projectnumber">2.6.2.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -82,88 +82,98 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">/* =================================================</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of the TTK Music Player project</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (c) 2015 - 2017 Greedysky Studio</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * All rights reserved!</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * Redistribution and use of the source code or any derivative</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * works are strictly forbiden.</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">   =================================================*/</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../da/d49/musicabstractmovedialog_8h.html">musicabstractmovedialog.h</a>&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/ddc/musicabstractmovewidget_8h.html">musicabstractmovewidget.h</a>&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="../../d6/ddb/musicsourceupdatewidget_8h.html#a95acb93243320e9780fee56917c730da">   15</a></span>&#160;<span class="preprocessor">#define CSDN_URL        &quot;S1Nqc1N0ZmI3c3pHeWE2Z1BhMTE4WlFVMjNBVG5qRjZkZ0tVRmV2L0VJeVF0bUlTOGE1Zmp3Z0xpZWRpM25lOA==&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dc/df0/namespace_ui.html">Ui</a> {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span><a class="code" href="../../d9/daf/class_music_source_update_widget.html">MusicSourceUpdateWidget</a>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2017 Greedysky Studio</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * the Free Software Foundation; either version 3 of the License, or</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * (at your option) any later version.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * GNU General Public License for more details.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * with this program; If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> ================================================= */</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../d0/df3/class_music_source_update_notify_widget.html">   25</a></span>&#160;<span class="keyword">class </span>MUSIC_WIDGET_EXPORT <a class="code" href="../../d0/df3/class_music_source_update_notify_widget.html">MusicSourceUpdateNotifyWidget</a> : <span class="keyword">public</span> <a class="code" href="../../d8/db5/class_music_abstract_move_single_widget.html">MusicAbstractMoveSingleWidget</a></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d0/df3/class_music_source_update_notify_widget.html">MusicSourceUpdateNotifyWidget</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    ~<a class="code" href="../../d0/df3/class_music_source_update_notify_widget.html">MusicSourceUpdateNotifyWidget</a>();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../d8/db5/class_music_abstract_move_single_widget.html#aeb8e8d280e97ff8d7130f29af714e1d8">getClassName</a>();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> start();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../da/d49/musicabstractmovedialog_8h.html">musicabstractmovedialog.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/ddc/musicabstractmovewidget_8h.html">musicabstractmovewidget.h</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../d6/ddb/musicsourceupdatewidget_8h.html#a95acb93243320e9780fee56917c730da">   25</a></span>&#160;<span class="preprocessor">#define CSDN_URL        &quot;S1Nqc1N0ZmI3c3pHeWE2Z1BhMTE4WlFVMjNBVG5qRjZkZ0tVRmV2L0VJeVF0bUlTOGE1Zmp3Z0xpZWRpM25lOA==&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dc/df0/namespace_ui.html">Ui</a> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">class </span><a class="code" href="../../d9/daf/class_music_source_update_widget.html">MusicSourceUpdateWidget</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../d0/df3/class_music_source_update_notify_widget.html">   35</a></span>&#160;<span class="keyword">class </span>MUSIC_WIDGET_EXPORT <a class="code" href="../../d0/df3/class_music_source_update_notify_widget.html">MusicSourceUpdateNotifyWidget</a> : <span class="keyword">public</span> <a class="code" href="../../d8/db5/class_music_abstract_move_single_widget.html">MusicAbstractMoveSingleWidget</a></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d0/df3/class_music_source_update_notify_widget.html">MusicSourceUpdateNotifyWidget</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    ~<a class="code" href="../../d0/df3/class_music_source_update_notify_widget.html">MusicSourceUpdateNotifyWidget</a>();</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> updateSourceClicked();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> downLoadFinished(<span class="keyword">const</span> QVariant &amp;data);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../d8/db5/class_music_abstract_move_single_widget.html#aeb8e8d280e97ff8d7130f29af714e1d8">getClassName</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> start();</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="../../d0/df3/class_music_source_update_notify_widget.html#ad9c51eeb24ee87209d87288706ea82f8">   57</a></span>&#160;    QLabel *<a class="code" href="../../d0/df3/class_music_source_update_notify_widget.html#ad9c51eeb24ee87209d87288706ea82f8">m_textLabel</a>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="../../d9/daf/class_music_source_update_widget.html">   65</a></span>&#160;<span class="keyword">class </span>MUSIC_WIDGET_EXPORT <a class="code" href="../../d9/daf/class_music_source_update_widget.html">MusicSourceUpdateWidget</a> : <span class="keyword">public</span> <a class="code" href="../../da/db2/class_music_abstract_move_dialog.html">MusicAbstractMoveDialog</a></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d9/daf/class_music_source_update_widget.html">MusicSourceUpdateWidget</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d9/daf/class_music_source_update_widget.html">MusicSourceUpdateWidget</a>();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../da/db2/class_music_abstract_move_dialog.html#a5ffbeacd6e9d019df169bb0608564954">getClassName</a>();</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> start();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> updateSourceClicked();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> downLoadFinished(<span class="keyword">const</span> QVariant &amp;data);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="../../d0/df3/class_music_source_update_notify_widget.html#ad9c51eeb24ee87209d87288706ea82f8">   67</a></span>&#160;    QLabel *<a class="code" href="../../d0/df3/class_music_source_update_notify_widget.html#ad9c51eeb24ee87209d87288706ea82f8">m_textLabel</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="../../d9/daf/class_music_source_update_widget.html">   75</a></span>&#160;<span class="keyword">class </span>MUSIC_WIDGET_EXPORT <a class="code" href="../../d9/daf/class_music_source_update_widget.html">MusicSourceUpdateWidget</a> : <span class="keyword">public</span> <a class="code" href="../../da/db2/class_music_abstract_move_dialog.html">MusicAbstractMoveDialog</a></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d9/daf/class_music_source_update_widget.html">MusicSourceUpdateWidget</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d9/daf/class_music_source_update_widget.html">MusicSourceUpdateWidget</a>();</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> upgradeButtonClicked();</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> upgradeFailedClicked();</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> downLoadFinished(<span class="keyword">const</span> QVariant &amp;data);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span> downloadSpeedLabelChanged(<span class="keyword">const</span> QString &amp;speed, qint64 timeLeft);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> downloadProgressChanged(<span class="keywordtype">float</span> percent, <span class="keyword">const</span> QString &amp;total);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">void</span> downloadProgressFinished();</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> exec();</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="../../d9/daf/class_music_source_update_widget.html#a682a8f11fbc37b84d72eaf18c70b050e">  117</a></span>&#160;    Ui::MusicSourceUpdateWidget *<a class="code" href="../../d9/daf/class_music_source_update_widget.html#a682a8f11fbc37b84d72eaf18c70b050e">m_ui</a>;</div>
-<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="../../d9/daf/class_music_source_update_widget.html#aa5062a0525c313b2a21b919fb04a7bb9">  118</a></span>&#160;    QString <a class="code" href="../../d9/daf/class_music_source_update_widget.html#aa5062a0525c313b2a21b919fb04a7bb9">m_newVersionStr</a>;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;};</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif // MUSICSOURCEUPDATEWIDGET_H</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../da/db2/class_music_abstract_move_dialog.html#a5ffbeacd6e9d019df169bb0608564954">getClassName</a>();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> start();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> upgradeButtonClicked();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> upgradeFailedClicked();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> downLoadFinished(<span class="keyword">const</span> QVariant &amp;data);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> downloadSpeedLabelChanged(<span class="keyword">const</span> QString &amp;speed, qint64 timeLeft);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">void</span> downloadProgressChanged(<span class="keywordtype">float</span> percent, <span class="keyword">const</span> QString &amp;total);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">void</span> downloadProgressFinished();</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> exec();</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="../../d9/daf/class_music_source_update_widget.html#a682a8f11fbc37b84d72eaf18c70b050e">  127</a></span>&#160;    Ui::MusicSourceUpdateWidget *<a class="code" href="../../d9/daf/class_music_source_update_widget.html#a682a8f11fbc37b84d72eaf18c70b050e">m_ui</a>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="../../d9/daf/class_music_source_update_widget.html#aa5062a0525c313b2a21b919fb04a7bb9">  128</a></span>&#160;    QString <a class="code" href="../../d9/daf/class_music_source_update_widget.html#aa5062a0525c313b2a21b919fb04a7bb9">m_newVersionStr</a>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;};</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif // MUSICSOURCEUPDATEWIDGET_H</span></div>
 <div class="ttc" id="musicabstractmovedialog_8h_html"><div class="ttname"><a href="../../da/d49/musicabstractmovedialog_8h.html">musicabstractmovedialog.h</a></div></div>
-<div class="ttc" id="namespace_ui_html"><div class="ttname"><a href="../../dc/df0/namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d24/musicapplication_8h_source.html#l00023">musicapplication.h:23</a></div></div>
-<div class="ttc" id="class_music_abstract_move_single_widget_html"><div class="ttname"><a href="../../d8/db5/class_music_abstract_move_single_widget.html">MusicAbstractMoveSingleWidget</a></div><div class="ttdoc">The class of the moving widget single without ui widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/ddc/musicabstractmovewidget_8h_source.html#l00081">musicabstractmovewidget.h:81</a></div></div>
+<div class="ttc" id="namespace_ui_html"><div class="ttname"><a href="../../dc/df0/namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d24/musicapplication_8h_source.html#l00033">musicapplication.h:33</a></div></div>
+<div class="ttc" id="class_music_abstract_move_single_widget_html"><div class="ttname"><a href="../../d8/db5/class_music_abstract_move_single_widget.html">MusicAbstractMoveSingleWidget</a></div><div class="ttdoc">The class of the moving widget single without ui widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/ddc/musicabstractmovewidget_8h_source.html#l00091">musicabstractmovewidget.h:91</a></div></div>
 <div class="ttc" id="class_music_abstract_move_dialog_html_a5ffbeacd6e9d019df169bb0608564954"><div class="ttname"><a href="../../da/db2/class_music_abstract_move_dialog.html#a5ffbeacd6e9d019df169bb0608564954">MusicAbstractMoveDialog::getClassName</a></div><div class="ttdeci">static QString getClassName()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de8/musicabstractmovedialog_8cpp_source.html#l00038">musicabstractmovedialog.cpp:38</a></div></div>
 <div class="ttc" id="musicabstractmovewidget_8h_html"><div class="ttname"><a href="../../d8/ddc/musicabstractmovewidget_8h.html">musicabstractmovewidget.h</a></div></div>
-<div class="ttc" id="class_music_source_update_notify_widget_html"><div class="ttname"><a href="../../d0/df3/class_music_source_update_notify_widget.html">MusicSourceUpdateNotifyWidget</a></div><div class="ttdoc">The class of the application upgrade notify widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/ddb/musicsourceupdatewidget_8h_source.html#l00025">musicsourceupdatewidget.h:25</a></div></div>
-<div class="ttc" id="class_music_source_update_notify_widget_html_ad9c51eeb24ee87209d87288706ea82f8"><div class="ttname"><a href="../../d0/df3/class_music_source_update_notify_widget.html#ad9c51eeb24ee87209d87288706ea82f8">MusicSourceUpdateNotifyWidget::m_textLabel</a></div><div class="ttdeci">QLabel * m_textLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/ddb/musicsourceupdatewidget_8h_source.html#l00057">musicsourceupdatewidget.h:57</a></div></div>
-<div class="ttc" id="class_music_abstract_move_dialog_html"><div class="ttname"><a href="../../da/db2/class_music_abstract_move_dialog.html">MusicAbstractMoveDialog</a></div><div class="ttdoc">The class of the moving dialog base. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d49/musicabstractmovedialog_8h_source.html#l00019">musicabstractmovedialog.h:19</a></div></div>
+<div class="ttc" id="class_music_source_update_notify_widget_html"><div class="ttname"><a href="../../d0/df3/class_music_source_update_notify_widget.html">MusicSourceUpdateNotifyWidget</a></div><div class="ttdoc">The class of the application upgrade notify widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/ddb/musicsourceupdatewidget_8h_source.html#l00035">musicsourceupdatewidget.h:35</a></div></div>
+<div class="ttc" id="class_music_source_update_notify_widget_html_ad9c51eeb24ee87209d87288706ea82f8"><div class="ttname"><a href="../../d0/df3/class_music_source_update_notify_widget.html#ad9c51eeb24ee87209d87288706ea82f8">MusicSourceUpdateNotifyWidget::m_textLabel</a></div><div class="ttdeci">QLabel * m_textLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/ddb/musicsourceupdatewidget_8h_source.html#l00067">musicsourceupdatewidget.h:67</a></div></div>
+<div class="ttc" id="class_music_abstract_move_dialog_html"><div class="ttname"><a href="../../da/db2/class_music_abstract_move_dialog.html">MusicAbstractMoveDialog</a></div><div class="ttdoc">The class of the moving dialog base. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d49/musicabstractmovedialog_8h_source.html#l00029">musicabstractmovedialog.h:29</a></div></div>
 <div class="ttc" id="class_music_abstract_move_single_widget_html_aeb8e8d280e97ff8d7130f29af714e1d8"><div class="ttname"><a href="../../d8/db5/class_music_abstract_move_single_widget.html#aeb8e8d280e97ff8d7130f29af714e1d8">MusicAbstractMoveSingleWidget::getClassName</a></div><div class="ttdeci">static QString getClassName()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/de6/musicabstractmovewidget_8cpp_source.html#l00149">musicabstractmovewidget.cpp:149</a></div></div>
-<div class="ttc" id="class_music_source_update_widget_html_a682a8f11fbc37b84d72eaf18c70b050e"><div class="ttname"><a href="../../d9/daf/class_music_source_update_widget.html#a682a8f11fbc37b84d72eaf18c70b050e">MusicSourceUpdateWidget::m_ui</a></div><div class="ttdeci">Ui::MusicSourceUpdateWidget * m_ui</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/ddb/musicsourceupdatewidget_8h_source.html#l00117">musicsourceupdatewidget.h:117</a></div></div>
-<div class="ttc" id="class_music_source_update_widget_html_aa5062a0525c313b2a21b919fb04a7bb9"><div class="ttname"><a href="../../d9/daf/class_music_source_update_widget.html#aa5062a0525c313b2a21b919fb04a7bb9">MusicSourceUpdateWidget::m_newVersionStr</a></div><div class="ttdeci">QString m_newVersionStr</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/ddb/musicsourceupdatewidget_8h_source.html#l00118">musicsourceupdatewidget.h:118</a></div></div>
-<div class="ttc" id="class_music_source_update_widget_html"><div class="ttname"><a href="../../d9/daf/class_music_source_update_widget.html">MusicSourceUpdateWidget</a></div><div class="ttdoc">The class of the application upgrade widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/ddb/musicsourceupdatewidget_8h_source.html#l00065">musicsourceupdatewidget.h:65</a></div></div>
+<div class="ttc" id="class_music_source_update_widget_html_a682a8f11fbc37b84d72eaf18c70b050e"><div class="ttname"><a href="../../d9/daf/class_music_source_update_widget.html#a682a8f11fbc37b84d72eaf18c70b050e">MusicSourceUpdateWidget::m_ui</a></div><div class="ttdeci">Ui::MusicSourceUpdateWidget * m_ui</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/ddb/musicsourceupdatewidget_8h_source.html#l00127">musicsourceupdatewidget.h:127</a></div></div>
+<div class="ttc" id="class_music_source_update_widget_html_aa5062a0525c313b2a21b919fb04a7bb9"><div class="ttname"><a href="../../d9/daf/class_music_source_update_widget.html#aa5062a0525c313b2a21b919fb04a7bb9">MusicSourceUpdateWidget::m_newVersionStr</a></div><div class="ttdeci">QString m_newVersionStr</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/ddb/musicsourceupdatewidget_8h_source.html#l00128">musicsourceupdatewidget.h:128</a></div></div>
+<div class="ttc" id="class_music_source_update_widget_html"><div class="ttname"><a href="../../d9/daf/class_music_source_update_widget.html">MusicSourceUpdateWidget</a></div><div class="ttdoc">The class of the application upgrade widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/ddb/musicsourceupdatewidget_8h_source.html#l00075">musicsourceupdatewidget.h:75</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 8 2017 21:55:58 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 11 2017 16:15:54 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
