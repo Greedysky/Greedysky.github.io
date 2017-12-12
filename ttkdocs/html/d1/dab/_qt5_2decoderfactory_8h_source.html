@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.2.0</span>
+   &#160;<span id="projectnumber">2.6.3.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -78,8 +78,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <a href="../../d1/dab/_qt5_2decoderfactory_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/***************************************************************************</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *   Copyright (C) 2006-2015 by Ilya Kotov                                 *</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *   forkotov02@hotmail.ru                                                 *</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *   Copyright (C) 2006-2017 by Ilya Kotov                                 *</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *   forkotov02@ya.ru                                                      *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *                                                                         *</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *   This program is free software; you can redistribute it and/or modify  *</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *   it under the terms of the GNU General Public License as published by  *</span></div>
@@ -121,50 +121,47 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        hasAbout = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        hasSettings = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        noInput = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        noOutput = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        priority = 0;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    QString name;             </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    QString shortName;        </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    QStringList filters;      </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    QString description;      </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    QStringList contentTypes; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    QStringList protocols;    </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">bool</span> hasAbout;            </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">bool</span> hasSettings;         </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">bool</span> noInput;             </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">bool</span> noOutput;            </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">int</span> priority;             </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">class </span>Q_DECL_EXPORT <a class="code" href="../../dc/d36/class_decoder_factory.html">DecoderFactory</a></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="../../dc/d36/class_decoder_factory.html#a262138497dc6a14e0144d31680927e9f">   76</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../dc/d36/class_decoder_factory.html#a262138497dc6a14e0144d31680927e9f">~DecoderFactory</a>() {}</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> supports(<span class="keyword">const</span> QString &amp;source) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> canDecode(QIODevice *d) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="../../da/dcb/class_decoder_properties.html">DecoderProperties</a> properties() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../da/d56/class_decoder.html">Decoder</a> *create(<span class="keyword">const</span> QString &amp;path, QIODevice *input = 0) = 0;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">virtual</span> QList&lt;FileInfo *&gt; createPlayList(<span class="keyword">const</span> QString &amp;fileName, <span class="keywordtype">bool</span> useMetaData, QStringList *ignoredPaths) = 0;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../df/dff/class_meta_data_model.html">MetaDataModel</a>* createMetaDataModel(<span class="keyword">const</span> QString &amp;path, QObject *parent = 0) = 0;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;};</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<a class="code" href="../../d0/d38/_qt4_2effectfactory_8h.html#ad8c3fa666c0e2bdffc9f14ac01655af5">Q_DECLARE_INTERFACE</a>(<a class="code" href="../../dc/d36/class_decoder_factory.html">DecoderFactory</a>, <span class="stringliteral">&quot;DecoderFactory/1.0&quot;</span>)</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        priority = 0;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    QString name;             </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    QString shortName;        </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    QStringList filters;      </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    QString description;      </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    QStringList contentTypes; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    QStringList protocols;    </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">bool</span> hasAbout;            </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">bool</span> hasSettings;         </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">bool</span> noInput;             </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">int</span> priority;             </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">class </span>Q_DECL_EXPORT <a class="code" href="../../dc/d36/class_decoder_factory.html">DecoderFactory</a></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="../../dc/d36/class_decoder_factory.html#a262138497dc6a14e0144d31680927e9f">   74</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../dc/d36/class_decoder_factory.html#a262138497dc6a14e0144d31680927e9f">~DecoderFactory</a>() {}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> canDecode(QIODevice *d) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="../../da/dcb/class_decoder_properties.html">DecoderProperties</a> properties() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../da/d56/class_decoder.html">Decoder</a> *create(<span class="keyword">const</span> QString &amp;path, QIODevice *input = 0) = 0;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">virtual</span> QList&lt;FileInfo *&gt; createPlayList(<span class="keyword">const</span> QString &amp;fileName, <span class="keywordtype">bool</span> useMetaData, QStringList *ignoredPaths) = 0;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../df/dff/class_meta_data_model.html">MetaDataModel</a>* createMetaDataModel(<span class="keyword">const</span> QString &amp;path, QObject *parent = 0) = 0;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;};</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<a class="code" href="../../d0/d38/_qt4_2effectfactory_8h.html#ad8c3fa666c0e2bdffc9f14ac01655af5">Q_DECLARE_INTERFACE</a>(<a class="code" href="../../dc/d36/class_decoder_factory.html">DecoderFactory</a>, <span class="stringliteral">&quot;DecoderFactory/1.0&quot;</span>)</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="class_decoder_properties_html_a59a0c00aeb5249f16461479f788c6eee"><div class="ttname"><a href="../../da/dcb/class_decoder_properties.html#a59a0c00aeb5249f16461479f788c6eee">DecoderProperties::DecoderProperties</a></div><div class="ttdeci">DecoderProperties()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dab/_qt5_2decoderfactory_8h_source.html#l00046">decoderfactory.h:46</a></div></div>
 <div class="ttc" id="class_file_info_html"><div class="ttname"><a href="../../d0/da1/class_file_info.html">FileInfo</a></div><div class="ttdoc">The FileInfo class stores metadata and audio information about media file or stream. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d83/_qt4_2fileinfo_8h_source.html#l00032">fileinfo.h:32</a></div></div>
 <div class="ttc" id="_qt4_2effectfactory_8h_html_ad8c3fa666c0e2bdffc9f14ac01655af5"><div class="ttname"><a href="../../d0/d38/_qt4_2effectfactory_8h.html#ad8c3fa666c0e2bdffc9f14ac01655af5">Q_DECLARE_INTERFACE</a></div><div class="ttdeci">Q_DECLARE_INTERFACE(EffectFactory,&quot;EffectFactory/1.0&quot;)</div></div>
-<div class="ttc" id="class_decoder_factory_html_a262138497dc6a14e0144d31680927e9f"><div class="ttname"><a href="../../dc/d36/class_decoder_factory.html#a262138497dc6a14e0144d31680927e9f">DecoderFactory::~DecoderFactory</a></div><div class="ttdeci">virtual ~DecoderFactory()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dab/_qt5_2decoderfactory_8h_source.html#l00076">decoderfactory.h:76</a></div></div>
-<div class="ttc" id="class_output_html"><div class="ttname"><a href="../../db/db4/class_output.html">Output</a></div><div class="ttdoc">The Output class provides the base interface class of audio outputs. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d4b/_qt4_2output_8h_source.html#l00025">output.h:25</a></div></div>
+<div class="ttc" id="class_decoder_factory_html_a262138497dc6a14e0144d31680927e9f"><div class="ttname"><a href="../../dc/d36/class_decoder_factory.html#a262138497dc6a14e0144d31680927e9f">DecoderFactory::~DecoderFactory</a></div><div class="ttdeci">virtual ~DecoderFactory()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dab/_qt5_2decoderfactory_8h_source.html#l00074">decoderfactory.h:74</a></div></div>
+<div class="ttc" id="class_output_html"><div class="ttname"><a href="../../db/db4/class_output.html">Output</a></div><div class="ttdoc">The Output class provides the base interface class of audio outputs. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d4b/_qt4_2output_8h_source.html#l00026">output.h:26</a></div></div>
 <div class="ttc" id="class_meta_data_model_html"><div class="ttname"><a href="../../df/dff/class_meta_data_model.html">MetaDataModel</a></div><div class="ttdoc">The MetaDataModel is the base interface class of metadata access. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/ddb/_qt4_2metadatamodel_8h_source.html#l00034">metadatamodel.h:34</a></div></div>
-<div class="ttc" id="class_decoder_factory_html"><div class="ttname"><a href="../../dc/d36/class_decoder_factory.html">DecoderFactory</a></div><div class="ttdoc">Input plugin interface (decoder factory). </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d0f/_qt4_2decoderfactory_8h_source.html#l00069">decoderfactory.h:69</a></div></div>
+<div class="ttc" id="class_decoder_factory_html"><div class="ttname"><a href="../../dc/d36/class_decoder_factory.html">DecoderFactory</a></div><div class="ttdoc">Input plugin interface (decoder factory). </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d0f/_qt4_2decoderfactory_8h_source.html#l00067">decoderfactory.h:67</a></div></div>
 <div class="ttc" id="class_decoder_html"><div class="ttname"><a href="../../da/d56/class_decoder.html">Decoder</a></div><div class="ttdoc">The Decoder class provides the base interface class of audio decoders. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d1f/_qt4_2decoder_8h_source.html#l00026">decoder.h:26</a></div></div>
 <div class="ttc" id="class_decoder_properties_html"><div class="ttname"><a href="../../da/dcb/class_decoder_properties.html">DecoderProperties</a></div><div class="ttdoc">Helper class to store input plugin properties. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d0f/_qt4_2decoderfactory_8h_source.html#l00039">decoderfactory.h:39</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 11 2017 16:15:48 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 12 2017 14:26:56 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

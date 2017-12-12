@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>TTKMusicplayer: TTKThirdParty/TTKExtras/qaes/qaeswrap.cpp Source File</title>
+<title>TTKMusicplayer: TTKThirdParty/TTKExtras/qalg/qaeswrap.cpp Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.2.0</span>
+   &#160;<span id="projectnumber">2.6.3.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_067ce75988948691583e31aaba2a9681.html">TTKThirdParty</a></li><li class="navelem"><a class="el" href="../../dir_000deb7bf21add7a83f03519491f6b69.html">TTKExtras</a></li><li class="navelem"><a class="el" href="../../dir_b6bb7c276c1dcd74c295ed74709b3168.html">qaes</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_067ce75988948691583e31aaba2a9681.html">TTKThirdParty</a></li><li class="navelem"><a class="el" href="../../dir_000deb7bf21add7a83f03519491f6b69.html">TTKExtras</a></li><li class="navelem"><a class="el" href="../../dir_0a150f358fc953d02fff5c0efe1b7d3f.html">qalg</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -81,65 +81,79 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/dcb/aes_8h.html">aes.h</a>&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;}</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="../../d7/ddc/class_q_aes_wrap.html#ace39f05a7ef94b14d5d7f38181c66547">    6</a></span>&#160;QByteArray <a class="code" href="../../d7/ddc/class_q_aes_wrap.html#ace39f05a7ef94b14d5d7f38181c66547">QAesWrap::encrypt</a>(<span class="keyword">const</span> QByteArray &amp;in, <span class="keyword">const</span> QByteArray &amp;<a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>, <span class="keyword">const</span> QByteArray &amp;iv)</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="../../d4/d24/structaes__key__st.html">AES_KEY</a> aes;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordtype">char</span> encrypt_string[1024] = {0};</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordtype">int</span> nLen = in.length();</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">int</span> nBei = nLen / <a class="code" href="../../db/dcb/aes_8h.html#af19ab913a847ad1e91c5291215116de1">AES_BLOCK_SIZE</a> + 1;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">int</span> nTotal = nBei * <a class="code" href="../../db/dcb/aes_8h.html#af19ab913a847ad1e91c5291215116de1">AES_BLOCK_SIZE</a>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">char</span> *enc_s = <span class="keyword">new</span> <span class="keywordtype">char</span>[nTotal + 1]();</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">int</span> nNumber = (nLen % 16 &gt; 0) ? nTotal - nLen :16;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    memset(enc_s, nNumber, nTotal);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    memcpy(enc_s, in.data(), nLen);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../db/dcb/aes_8h.html#af2a2a79bf29fae1cc93b4aa43c2b833c">AES_set_encrypt_key</a>((<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)key.data(), 128, &amp;aes) &lt; 0)</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">return</span> QByteArray();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="../../db/dcb/aes_8h.html#ab2d1e7f57f124bddd22a4d37fa79c6df">AES_cbc_encrypt</a>((<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)enc_s, (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)encrypt_string, nTotal,</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                    &amp;aes,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                    (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)iv.data(), <a class="code" href="../../db/dcb/aes_8h.html#a91e721bca5c6db6402fc3a4781d69b10">AES_ENCRYPT</a>);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">delete</span> enc_s;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">return</span> QByteArray(encrypt_string).toBase64();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../d7/ddc/class_q_aes_wrap.html#ac94d0217013de73724cfb0e22a09214a">   31</a></span>&#160;QByteArray <a class="code" href="../../d7/ddc/class_q_aes_wrap.html#ac94d0217013de73724cfb0e22a09214a">QAesWrap::decrypt</a>(<span class="keyword">const</span> QByteArray &amp;in, <span class="keyword">const</span> QByteArray &amp;<a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>, <span class="keyword">const</span> QByteArray &amp;iv)</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="../../d4/d24/structaes__key__st.html">AES_KEY</a> aes;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">char</span> encrypt_string[1024] = {0};</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *decode = QByteArray::fromBase64(in).data();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../db/dcb/aes_8h.html#a2091bfbf02d00a2f4ce67085d1a0d0ac">AES_set_decrypt_key</a>((<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)key.data(), 128, &amp;aes) &lt; 0)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">return</span> QByteArray();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="../../db/dcb/aes_8h.html#ab2d1e7f57f124bddd22a4d37fa79c6df">AES_cbc_encrypt</a>((<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)decode, (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)encrypt_string, strlen(decode),</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                    &amp;aes,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                    (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)iv.data(), <a class="code" href="../../db/dcb/aes_8h.html#a8a3cf36dc3c8860519f33907bad182c9">AES_DECRYPT</a>);</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d2/d6f/base64_8h.html">base64.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="../../d1/d0e/qaeswrap_8cpp.html#a8a6befd630ea1c2ab260266f7466540c">    7</a></span>&#160;<span class="preprocessor">#define CACHE_SIZE      1024</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="../../d7/ddc/class_q_aes_wrap.html#ace39f05a7ef94b14d5d7f38181c66547">    9</a></span>&#160;QByteArray <a class="code" href="../../d7/ddc/class_q_aes_wrap.html#ace39f05a7ef94b14d5d7f38181c66547">QAesWrap::encrypt</a>(<span class="keyword">const</span> QByteArray &amp;in, <span class="keyword">const</span> QByteArray &amp;<a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>, <span class="keyword">const</span> QByteArray &amp;iv)</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="../../d4/d24/structaes__key__st.html">AES_KEY</a> aes;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">char</span> encrypt_string[<a class="code" href="../../d1/d0e/qaeswrap_8cpp.html#a8a6befd630ea1c2ab260266f7466540c">CACHE_SIZE</a>] = {0};</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">int</span> nLen = in.length();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">int</span> nBei = nLen / <a class="code" href="../../db/dcb/aes_8h.html#af19ab913a847ad1e91c5291215116de1">AES_BLOCK_SIZE</a> + 1;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">int</span> nTotal = nBei * <a class="code" href="../../db/dcb/aes_8h.html#af19ab913a847ad1e91c5291215116de1">AES_BLOCK_SIZE</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">char</span> *enc_s = <span class="keyword">new</span> <span class="keywordtype">char</span>[nTotal + 1]();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">int</span> nNumber = (nLen % 16 &gt; 0) ? nTotal - nLen :16;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    memset(enc_s, nNumber, nTotal);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    memcpy(enc_s, in.data(), nLen);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../db/dcb/aes_8h.html#af2a2a79bf29fae1cc93b4aa43c2b833c">AES_set_encrypt_key</a>((<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)key.data(), 128, &amp;aes) &lt; 0)</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordflow">return</span> QByteArray();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="../../db/dcb/aes_8h.html#ab2d1e7f57f124bddd22a4d37fa79c6df">AES_cbc_encrypt</a>((<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)enc_s, (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)encrypt_string, nTotal,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                    &amp;aes,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                    (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)iv.data(), <a class="code" href="../../db/dcb/aes_8h.html#a91e721bca5c6db6402fc3a4781d69b10">AES_ENCRYPT</a>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">delete</span>[] enc_s;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    enc_s = <a class="code" href="../../d8/d58/base64_8cpp.html#ae71e3240649618989404058e82e45d99">Base64Encode</a>((<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)encrypt_string, nTotal);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    QByteArray data(enc_s);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    free(enc_s);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">return</span> data;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../d7/ddc/class_q_aes_wrap.html#ac94d0217013de73724cfb0e22a09214a">   39</a></span>&#160;QByteArray <a class="code" href="../../d7/ddc/class_q_aes_wrap.html#ac94d0217013de73724cfb0e22a09214a">QAesWrap::decrypt</a>(<span class="keyword">const</span> QByteArray &amp;in, <span class="keyword">const</span> QByteArray &amp;<a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>, <span class="keyword">const</span> QByteArray &amp;iv)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="../../d4/d24/structaes__key__st.html">AES_KEY</a> aes;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">char</span> encrypt_string[<a class="code" href="../../d1/d0e/qaeswrap_8cpp.html#a8a6befd630ea1c2ab260266f7466540c">CACHE_SIZE</a>] = {0};</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">char</span> *decode = <a class="code" href="../../d8/d58/base64_8cpp.html#a5cf9893673158231cd1aaf5f2d5ef19c">Base64Decode</a>((<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)in.data(), in.length());</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> QByteArray(QString(encrypt_string).<span class="keyword">remove</span>(<span class="stringliteral">&quot;\x0F&quot;</span>).<a class="code" href="../../d5/d84/namespace_music_utils_1_1_core.html#adb4fdd516e9dd1bc464a70421303a048">toUtf8</a>());</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../db/dcb/aes_8h.html#a2091bfbf02d00a2f4ce67085d1a0d0ac">AES_set_decrypt_key</a>((<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)key.data(), 128, &amp;aes) &lt; 0)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">return</span> QByteArray();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="../../db/dcb/aes_8h.html#ab2d1e7f57f124bddd22a4d37fa79c6df">AES_cbc_encrypt</a>((<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)decode, (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)encrypt_string, strlen(decode),</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                    &amp;aes,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                    (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)iv.data(), <a class="code" href="../../db/dcb/aes_8h.html#a8a3cf36dc3c8860519f33907bad182c9">AES_DECRYPT</a>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    free(decode);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">return</span> QByteArray(QString(encrypt_string).<span class="keyword">remove</span>(<span class="stringliteral">&quot;\x0F&quot;</span>).<a class="code" href="../../d5/d84/namespace_music_utils_1_1_core.html#adb4fdd516e9dd1bc464a70421303a048">toUtf8</a>());</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
 <div class="ttc" id="aes_8h_html_a2091bfbf02d00a2f4ce67085d1a0d0ac"><div class="ttname"><a href="../../db/dcb/aes_8h.html#a2091bfbf02d00a2f4ce67085d1a0d0ac">AES_set_decrypt_key</a></div><div class="ttdeci">int AES_set_decrypt_key(const unsigned char *userKey, const int bits, AES_KEY *key)</div><div class="ttdoc">Expand the cipher key into the decryption key schedule. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d07/aes__core_8cpp_source.html#l00732">aes_core.cpp:732</a></div></div>
 <div class="ttc" id="aes_8h_html_af2a2a79bf29fae1cc93b4aa43c2b833c"><div class="ttname"><a href="../../db/dcb/aes_8h.html#af2a2a79bf29fae1cc93b4aa43c2b833c">AES_set_encrypt_key</a></div><div class="ttdeci">int AES_set_encrypt_key(const unsigned char *userKey, const int bits, AES_KEY *key)</div><div class="ttdoc">Expand the cipher key into the encryption key schedule. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d07/aes__core_8cpp_source.html#l00631">aes_core.cpp:631</a></div></div>
 <div class="ttc" id="qaeswrap_8h_html"><div class="ttname"><a href="../../df/d47/qaeswrap_8h.html">qaeswrap.h</a></div></div>
+<div class="ttc" id="base64_8cpp_html_a5cf9893673158231cd1aaf5f2d5ef19c"><div class="ttname"><a href="../../d8/d58/base64_8cpp.html#a5cf9893673158231cd1aaf5f2d5ef19c">Base64Decode</a></div><div class="ttdeci">char * Base64Decode(const unsigned char *data, int data_len)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d58/base64_8cpp_source.html#l00077">base64.cpp:77</a></div></div>
 <div class="ttc" id="aes_8h_html_a8a3cf36dc3c8860519f33907bad182c9"><div class="ttname"><a href="../../db/dcb/aes_8h.html#a8a3cf36dc3c8860519f33907bad182c9">AES_DECRYPT</a></div><div class="ttdeci">#define AES_DECRYPT</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dcb/aes_8h_source.html#l00020">aes.h:20</a></div></div>
 <div class="ttc" id="musiclrcfromkrc_8cpp_html_ad706e4249347c1cd1381934a5691137d"><div class="ttname"><a href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a></div><div class="ttdeci">const wchar_t key[]</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d45/musiclrcfromkrc_8cpp_source.html#l00017">musiclrcfromkrc.cpp:17</a></div></div>
-<div class="ttc" id="class_q_aes_wrap_html_ace39f05a7ef94b14d5d7f38181c66547"><div class="ttname"><a href="../../d7/ddc/class_q_aes_wrap.html#ace39f05a7ef94b14d5d7f38181c66547">QAesWrap::encrypt</a></div><div class="ttdeci">static QByteArray encrypt(const QByteArray &amp;in, const QByteArray &amp;key, const QByteArray &amp;iv)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d0e/qaeswrap_8cpp_source.html#l00006">qaeswrap.cpp:6</a></div></div>
-<div class="ttc" id="class_q_aes_wrap_html_ac94d0217013de73724cfb0e22a09214a"><div class="ttname"><a href="../../d7/ddc/class_q_aes_wrap.html#ac94d0217013de73724cfb0e22a09214a">QAesWrap::decrypt</a></div><div class="ttdeci">static QByteArray decrypt(const QByteArray &amp;in, const QByteArray &amp;key, const QByteArray &amp;iv)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d0e/qaeswrap_8cpp_source.html#l00031">qaeswrap.cpp:31</a></div></div>
+<div class="ttc" id="class_q_aes_wrap_html_ace39f05a7ef94b14d5d7f38181c66547"><div class="ttname"><a href="../../d7/ddc/class_q_aes_wrap.html#ace39f05a7ef94b14d5d7f38181c66547">QAesWrap::encrypt</a></div><div class="ttdeci">static QByteArray encrypt(const QByteArray &amp;in, const QByteArray &amp;key, const QByteArray &amp;iv)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d0e/qaeswrap_8cpp_source.html#l00009">qaeswrap.cpp:9</a></div></div>
+<div class="ttc" id="class_q_aes_wrap_html_ac94d0217013de73724cfb0e22a09214a"><div class="ttname"><a href="../../d7/ddc/class_q_aes_wrap.html#ac94d0217013de73724cfb0e22a09214a">QAesWrap::decrypt</a></div><div class="ttdeci">static QByteArray decrypt(const QByteArray &amp;in, const QByteArray &amp;key, const QByteArray &amp;iv)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d0e/qaeswrap_8cpp_source.html#l00039">qaeswrap.cpp:39</a></div></div>
+<div class="ttc" id="base64_8cpp_html_ae71e3240649618989404058e82e45d99"><div class="ttname"><a href="../../d8/d58/base64_8cpp.html#ae71e3240649618989404058e82e45d99">Base64Encode</a></div><div class="ttdeci">char * Base64Encode(const unsigned char *data, int data_len)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d58/base64_8cpp_source.html#l00009">base64.cpp:9</a></div></div>
 <div class="ttc" id="structaes__key__st_html"><div class="ttname"><a href="../../d4/d24/structaes__key__st.html">aes_key_st</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/dcb/aes_8h_source.html#l00030">aes.h:30</a></div></div>
 <div class="ttc" id="aes_8h_html"><div class="ttname"><a href="../../db/dcb/aes_8h.html">aes.h</a></div></div>
+<div class="ttc" id="qaeswrap_8cpp_html_a8a6befd630ea1c2ab260266f7466540c"><div class="ttname"><a href="../../d1/d0e/qaeswrap_8cpp.html#a8a6befd630ea1c2ab260266f7466540c">CACHE_SIZE</a></div><div class="ttdeci">#define CACHE_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d0e/qaeswrap_8cpp_source.html#l00007">qaeswrap.cpp:7</a></div></div>
 <div class="ttc" id="aes_8h_html_ab2d1e7f57f124bddd22a4d37fa79c6df"><div class="ttname"><a href="../../db/dcb/aes_8h.html#ab2d1e7f57f124bddd22a4d37fa79c6df">AES_cbc_encrypt</a></div><div class="ttdeci">void AES_cbc_encrypt(const unsigned char *in, unsigned char *out, size_t length, const AES_KEY *key, unsigned char *ivec, const int enc)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d91/aes__cbc_8cpp_source.html#l00004">aes_cbc.cpp:4</a></div></div>
 <div class="ttc" id="aes_8h_html_a91e721bca5c6db6402fc3a4781d69b10"><div class="ttname"><a href="../../db/dcb/aes_8h.html#a91e721bca5c6db6402fc3a4781d69b10">AES_ENCRYPT</a></div><div class="ttdeci">#define AES_ENCRYPT</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dcb/aes_8h_source.html#l00019">aes.h:19</a></div></div>
+<div class="ttc" id="base64_8h_html"><div class="ttname"><a href="../../d2/d6f/base64_8h.html">base64.h</a></div></div>
 <div class="ttc" id="aes_8h_html_af19ab913a847ad1e91c5291215116de1"><div class="ttname"><a href="../../db/dcb/aes_8h.html#af19ab913a847ad1e91c5291215116de1">AES_BLOCK_SIZE</a></div><div class="ttdeci">#define AES_BLOCK_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dcb/aes_8h_source.html#l00027">aes.h:27</a></div></div>
-<div class="ttc" id="namespace_music_utils_1_1_core_html_adb4fdd516e9dd1bc464a70421303a048"><div class="ttname"><a href="../../d5/d84/namespace_music_utils_1_1_core.html#adb4fdd516e9dd1bc464a70421303a048">MusicUtils::Core::toUtf8</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT const char * toUtf8(const QString &amp;str)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d43/musiccoreutils_8cpp_source.html#l00185">musiccoreutils.cpp:185</a></div></div>
+<div class="ttc" id="namespace_music_utils_1_1_core_html_adb4fdd516e9dd1bc464a70421303a048"><div class="ttname"><a href="../../d5/d84/namespace_music_utils_1_1_core.html#adb4fdd516e9dd1bc464a70421303a048">MusicUtils::Core::toUtf8</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT const char * toUtf8(const QString &amp;str)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d43/musiccoreutils_8cpp_source.html#l00197">musiccoreutils.cpp:197</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 11 2017 16:15:54 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 12 2017 14:27:07 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.2.0</span>
+   &#160;<span id="projectnumber">2.6.3.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -133,44 +133,45 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> tabIndexChanged(<span class="keywordtype">int</span> index);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> spectrumTypeChanged(<span class="keywordtype">int</span> index);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> spectrumPlusTypeChanged(<span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> show();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> localFileButtonClicked();</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> openFileButtonClicked();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> closeEvent(QCloseEvent *event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> newSpectrumWidget(QCheckBox *box, <span class="keyword">const</span> QString &amp;name, QLayout *layout);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> newSpekWidget(QCheckBox *box, <span class="keyword">const</span> QString &amp;name, QLayout *layout);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> adjustWidgetLayout(<span class="keywordtype">int</span> <a class="code" href="../../d2/db7/ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> showSpectrum(<span class="keyword">const</span> QString &amp;name, <span class="keywordtype">bool</span> state);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">int</span> findSpectrumWidget(<span class="keyword">const</span> QString &amp;name);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">void</span> fspekStateChanged();</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="../../d3/d2e/class_music_spectrum_widget.html#aa08f10f031b6c70ec46c4f87ca66eedb">  123</a></span>&#160;    MusicSpectrums <a class="code" href="../../d3/d2e/class_music_spectrum_widget.html#aa08f10f031b6c70ec46c4f87ca66eedb">m_types</a>;</div>
-<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="../../d3/d2e/class_music_spectrum_widget.html#a9c26c6f9f6b9963b02b428337b6025e7">  124</a></span>&#160;    Ui::MusicSpectrumWidget *<a class="code" href="../../d3/d2e/class_music_spectrum_widget.html#a9c26c6f9f6b9963b02b428337b6025e7">m_ui</a>;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;};</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#endif // MUSICSPECTRUMWIDGET_H</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> spectrumDazzleTypeChanged(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> show();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> localFileButtonClicked();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> openFileButtonClicked();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> closeEvent(QCloseEvent *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> newSpectrumWidget(QCheckBox *box, <span class="keyword">const</span> QString &amp;name, QLayout *layout);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> newSpekWidget(QCheckBox *box, <span class="keyword">const</span> QString &amp;name, QLayout *layout);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> adjustWidgetLayout(<span class="keywordtype">int</span> <a class="code" href="../../d2/db7/ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">void</span> showSpectrum(<span class="keyword">const</span> QString &amp;name, <span class="keywordtype">bool</span> state);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">int</span> findSpectrumWidget(<span class="keyword">const</span> QString &amp;name);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">void</span> fspekStateChanged();</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="../../d3/d2e/class_music_spectrum_widget.html#aa08f10f031b6c70ec46c4f87ca66eedb">  127</a></span>&#160;    MusicSpectrums <a class="code" href="../../d3/d2e/class_music_spectrum_widget.html#aa08f10f031b6c70ec46c4f87ca66eedb">m_types</a>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="../../d3/d2e/class_music_spectrum_widget.html#a9c26c6f9f6b9963b02b428337b6025e7">  128</a></span>&#160;    Ui::MusicSpectrumWidget *<a class="code" href="../../d3/d2e/class_music_spectrum_widget.html#a9c26c6f9f6b9963b02b428337b6025e7">m_ui</a>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;};</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif // MUSICSPECTRUMWIDGET_H</span></div>
 <div class="ttc" id="struct_music_spectrum_html"><div class="ttname"><a href="../../de/d9e/struct_music_spectrum.html">MusicSpectrum</a></div><div class="ttdoc">The class of the music spectrum object. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d90/musicspectrumwidget_8h_source.html#l00035">musicspectrumwidget.h:35</a></div></div>
 <div class="ttc" id="namespace_music_object_html_a1a14ffa5d3251d93ec8b537f32d3b074"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#a1a14ffa5d3251d93ec8b537f32d3b074">MusicObject::ToolsType</a></div><div class="ttdeci">ToolsType</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00256">musicobject.h:256</a></div></div>
 <div class="ttc" id="musicglobal_8h_html_a4d238857fa9c278de1e80a4f427f6987"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a4d238857fa9c278de1e80a4f427f6987">MUSIC_DECLARE_LISTS</a></div><div class="ttdeci">#define MUSIC_DECLARE_LISTS(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00098">musicglobal.h:98</a></div></div>
-<div class="ttc" id="class_music_spectrum_widget_html_aa08f10f031b6c70ec46c4f87ca66eedb"><div class="ttname"><a href="../../d3/d2e/class_music_spectrum_widget.html#aa08f10f031b6c70ec46c4f87ca66eedb">MusicSpectrumWidget::m_types</a></div><div class="ttdeci">MusicSpectrums m_types</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d90/musicspectrumwidget_8h_source.html#l00123">musicspectrumwidget.h:123</a></div></div>
+<div class="ttc" id="class_music_spectrum_widget_html_aa08f10f031b6c70ec46c4f87ca66eedb"><div class="ttname"><a href="../../d3/d2e/class_music_spectrum_widget.html#aa08f10f031b6c70ec46c4f87ca66eedb">MusicSpectrumWidget::m_types</a></div><div class="ttdeci">MusicSpectrums m_types</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d90/musicspectrumwidget_8h_source.html#l00127">musicspectrumwidget.h:127</a></div></div>
 <div class="ttc" id="namespace_ui_html"><div class="ttname"><a href="../../dc/df0/namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d24/musicapplication_8h_source.html#l00033">musicapplication.h:33</a></div></div>
 <div class="ttc" id="musicspectrumwidget_8h_html_a9fb4a64db2dae5fc8db4991b9ea06f20"><div class="ttname"><a href="../../d5/d90/musicspectrumwidget_8h.html#a9fb4a64db2dae5fc8db4991b9ea06f20">MusicSpectrum</a></div><div class="ttdeci">struct MUSIC_TOOLSET_EXPORT MusicSpectrum MusicSpectrum</div><div class="ttdoc">The class of the music spectrum object. </div></div>
 <div class="ttc" id="ioapi_8h_html_a601c4660e8a1a14a1b87fe387e934d19"><div class="ttname"><a href="../../d2/db7/ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a></div><div class="ttdeci">voidpf uLong offset</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/db7/ioapi_8h_source.html#l00142">ioapi.h:142</a></div></div>
 <div class="ttc" id="class_music_spectrum_widget_html"><div class="ttname"><a href="../../d3/d2e/class_music_spectrum_widget.html">MusicSpectrumWidget</a></div><div class="ttdoc">The class of the music spectrum widget all. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d90/musicspectrumwidget_8h_source.html#l00045">musicspectrumwidget.h:45</a></div></div>
 <div class="ttc" id="musicobject_8h_html"><div class="ttname"><a href="../../d8/d07/musicobject_8h.html">musicobject.h</a></div></div>
 <div class="ttc" id="musicabstractmovewidget_8h_html"><div class="ttname"><a href="../../d8/ddc/musicabstractmovewidget_8h.html">musicabstractmovewidget.h</a></div></div>
-<div class="ttc" id="class_music_spectrum_widget_html_a9c26c6f9f6b9963b02b428337b6025e7"><div class="ttname"><a href="../../d3/d2e/class_music_spectrum_widget.html#a9c26c6f9f6b9963b02b428337b6025e7">MusicSpectrumWidget::m_ui</a></div><div class="ttdeci">Ui::MusicSpectrumWidget * m_ui</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d90/musicspectrumwidget_8h_source.html#l00124">musicspectrumwidget.h:124</a></div></div>
+<div class="ttc" id="class_music_spectrum_widget_html_a9c26c6f9f6b9963b02b428337b6025e7"><div class="ttname"><a href="../../d3/d2e/class_music_spectrum_widget.html#a9c26c6f9f6b9963b02b428337b6025e7">MusicSpectrumWidget::m_ui</a></div><div class="ttdeci">Ui::MusicSpectrumWidget * m_ui</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d90/musicspectrumwidget_8h_source.html#l00128">musicspectrumwidget.h:128</a></div></div>
 <div class="ttc" id="struct_music_spectrum_html_aaf14c5426441c8ee5b3e1cf0b83a8e41"><div class="ttname"><a href="../../de/d9e/struct_music_spectrum.html#aaf14c5426441c8ee5b3e1cf0b83a8e41">MusicSpectrum::m_name</a></div><div class="ttdeci">QString m_name</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d90/musicspectrumwidget_8h_source.html#l00037">musicspectrumwidget.h:37</a></div></div>
 <div class="ttc" id="struct_music_spectrum_html_a503a113982e80b18befd5dc2808929f9"><div class="ttname"><a href="../../de/d9e/struct_music_spectrum.html#a503a113982e80b18befd5dc2808929f9">MusicSpectrum::m_obj</a></div><div class="ttdeci">QWidget * m_obj</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d90/musicspectrumwidget_8h_source.html#l00038">musicspectrumwidget.h:38</a></div></div>
-<div class="ttc" id="class_spek_html"><div class="ttname"><a href="../../d8/deb/class_spek.html">Spek</a></div><div class="ttdoc">Helper class to spek widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7d/_qt4_2spekfactory_8h_source.html#l00027">spekfactory.h:27</a></div></div>
+<div class="ttc" id="class_spek_html"><div class="ttname"><a href="../../d8/deb/class_spek.html">Spek</a></div><div class="ttdoc">Helper class to spek widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7d/_qt4_2spekfactory_8h_source.html#l00016">spekfactory.h:16</a></div></div>
 <div class="ttc" id="class_music_abstract_move_widget_html"><div class="ttname"><a href="../../d5/d2d/class_music_abstract_move_widget.html">MusicAbstractMoveWidget</a></div><div class="ttdoc">The class of the moving widget base. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/ddc/musicabstractmovewidget_8h_source.html#l00029">musicabstractmovewidget.h:29</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 11 2017 16:15:52 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 12 2017 14:27:03 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

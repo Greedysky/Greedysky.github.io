@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.2.0</span>
+   &#160;<span id="projectnumber">2.6.3.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -129,7 +129,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">if</span> (GetEventClass(event) == kEventClassKeyboard &amp;&amp; GetEventKind(event) == kEventHotKeyPressed)</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        EventHotKeyID keyID;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        GetEventParameter(event, kEventParamDirectObject, typeEventHotKeyID, NULL, <span class="keyword">sizeof</span>(keyID), NULL, &amp;keyID);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        GetEventParameter(event, kEventParamDirectObject, typeEventHotKeyID, <span class="keyword">nullptr</span>, <span class="keyword">sizeof</span>(keyID), <span class="keyword">nullptr</span>, &amp;keyID);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="../../dd/de2/qxtglobalshortcut__mac_8cpp.html#a29e97a95ec25cafb6cb1494d44178717">Identifier</a> <span class="keywordtype">id</span> = <a class="code" href="../../dd/de2/qxtglobalshortcut__mac_8cpp.html#afdcc4878f9533b3f23e29347d97ac794">keyIDs</a>.key(keyID.id);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="../../db/d10/class_qxt_global_shortcut_private.html#aa9322fac1f86bbbb0ba82a1a150bc0a0">activateShortcut</a>(<span class="keywordtype">id</span>.second, <span class="keywordtype">id</span>.first);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
@@ -142,7 +142,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">if</span> (GetEventClass(event) == kEventClassKeyboard &amp;&amp; GetEventKind(event) == kEventHotKeyPressed)</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    {</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        EventHotKeyID keyID;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        GetEventParameter(event, kEventParamDirectObject, typeEventHotKeyID, NULL, <span class="keyword">sizeof</span>(keyID), NULL, &amp;keyID);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        GetEventParameter(event, kEventParamDirectObject, typeEventHotKeyID, <span class="keyword">nullptr</span>, <span class="keyword">sizeof</span>(keyID), <span class="keyword">nullptr</span>, &amp;keyID);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="../../dd/de2/qxtglobalshortcut__mac_8cpp.html#a29e97a95ec25cafb6cb1494d44178717">Identifier</a> <span class="keywordtype">id</span> = <a class="code" href="../../dd/de2/qxtglobalshortcut__mac_8cpp.html#afdcc4878f9533b3f23e29347d97ac794">keyIDs</a>.key(keyID.id);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="../../db/d10/class_qxt_global_shortcut_private.html#aa9322fac1f86bbbb0ba82a1a150bc0a0">activateShortcut</a>(<span class="keywordtype">id</span>.second, <span class="keywordtype">id</span>.first);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
@@ -270,7 +270,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        EventTypeSpec t;</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        t.eventClass = kEventClassKeyboard;</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        t.eventKind = kEventHotKeyPressed;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        InstallApplicationEventHandler(&amp;<a class="code" href="../../dd/de2/qxtglobalshortcut__mac_8cpp.html#a3a3b4947ba32ff05d24c310477784013">qxt_mac_handle_hot_key</a>, 1, &amp;t, NULL, NULL);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        InstallApplicationEventHandler(&amp;<a class="code" href="../../dd/de2/qxtglobalshortcut__mac_8cpp.html#a3a3b4947ba32ff05d24c310477784013">qxt_mac_handle_hot_key</a>, 1, &amp;t, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    }</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    EventHotKeyID keyID;</div>
@@ -316,7 +316,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 11 2017 16:15:55 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 12 2017 14:27:09 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

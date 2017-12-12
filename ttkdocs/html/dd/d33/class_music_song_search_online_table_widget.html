@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.2.0</span>
+   &#160;<span id="projectnumber">2.6.3.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -168,6 +168,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8eb31606212cad2673c696e0aec97805"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c679e2cd82c875c0676e2022480a9d9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d33/class_music_song_search_online_table_widget.html#a6c679e2cd82c875c0676e2022480a9d9">startSearchQuery</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;text) override</td></tr>
 <tr class="separator:a6c679e2cd82c875c0676e2022480a9d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a530678572dc71ba04b132ecdd805ade6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d33/class_music_song_search_online_table_widget.html#a530678572dc71ba04b132ecdd805ade6">startSearchSingleQuery</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;text)</td></tr>
+<tr class="separator:a530678572dc71ba04b132ecdd805ade6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92d10ba90d015db84836b464e91741b8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d33/class_music_song_search_online_table_widget.html#a92d10ba90d015db84836b464e91741b8">musicDownloadLocal</a> (<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> row) override</td></tr>
 <tr class="separator:a92d10ba90d015db84836b464e91741b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38b1bf9745780f69a2d9c53f0a041009"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d33/class_music_song_search_online_table_widget.html#a38b1bf9745780f69a2d9c53f0a041009">auditionStop</a> ()</td></tr>
@@ -307,7 +309,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00023">23</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00051">getClassName()</a>, <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html#l00026">M_CONNECTION_PTR</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00162">m_previousAuditionRow</a>, and <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00161">m_queryAllRecords</a>.</p>
+<p>References <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00051">getClassName()</a>, <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html#l00026">M_CONNECTION_PTR</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00166">m_previousAuditionRow</a>, and <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00165">m_queryAllRecords</a>.</p>
 
 </div>
 </div>
@@ -334,7 +336,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00044">44</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00108">auditionStop()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00225">clearAllItems()</a>, and <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00163">m_audition</a>.</p>
+<p>References <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00134">auditionStop()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00251">clearAllItems()</a>, and <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00167">m_audition</a>.</p>
 
 </div>
 </div>
@@ -362,9 +364,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Left context menu action group click by action. </p>
 
-<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00295">295</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00321">321</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../df/dd1/musicquerytablewidget_8cpp_source.html#l00089">MusicQueryItemTableWidget::actionGroupClick()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00366">addSearchMusicToPlayList()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00116">auditionToMusic()</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00151">MusicDownLoadQueryThreadAbstract::getMusicSongInfos()</a>, <a class="el" href="../../dc/d39/musicrightareawidget_8cpp_source.html#l00059">MusicRightAreaWidget::instance()</a>, <a class="el" href="../../db/d7f/musicquerytablewidget_8h_source.html#l00105">MusicQueryTableWidget::m_downLoadManager</a>, <a class="el" href="../../dc/d39/musicrightareawidget_8cpp_source.html#l00472">MusicRightAreaWidget::musicAlbumFound()</a>, and <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00330">musicSongDownload()</a>.</p>
+<p>References <a class="el" href="../../df/dd1/musicquerytablewidget_8cpp_source.html#l00089">MusicQueryItemTableWidget::actionGroupClick()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00392">addSearchMusicToPlayList()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00142">auditionToMusic()</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00165">MusicDownLoadQueryThreadAbstract::getMusicSongInfos()</a>, <a class="el" href="../../dc/d39/musicrightareawidget_8cpp_source.html#l00061">MusicRightAreaWidget::instance()</a>, <a class="el" href="../../db/d7f/musicquerytablewidget_8h_source.html#l00105">MusicQueryTableWidget::m_downLoadManager</a>, <a class="el" href="../../dc/d39/musicrightareawidget_8cpp_source.html#l00514">MusicRightAreaWidget::musicAlbumFound()</a>, and <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00356">musicSongDownload()</a>.</p>
 
 </div>
 </div>
@@ -392,11 +394,11 @@ Protected Attributes</h2></td></tr>
 <p>Add search music to play list by index. </p>
 <p>download big picture </p>
 
-<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00366">366</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00392">392</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d8/d63/musicalgorithmutils_8h_source.html#l00024">ALG_DOWNLOAD_KEY</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00121">ART_DIR_FULL</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00120">CACHE_DIR_FULL</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00037">MusicDownloadData::clear()</a>, <a class="el" href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00037">MusicDownLoadThreadAbstract::Download_Music</a>, <a class="el" href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00039">MusicDownLoadThreadAbstract::Download_SmlBG</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00239">MusicObject::DW_DisConnection</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00240">MusicObject::DW_DownLoading</a>, <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00098">MusicMessageBox::exec()</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00151">MusicDownLoadQueryThreadAbstract::getMusicSongInfos()</a>, <a class="el" href="../../d3/d73/musicdownloadqueryfactory_8h_source.html#l00025">M_DOWNLOAD_QUERY_PTR</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00164">m_downloadData</a>, <a class="el" href="../../db/d7f/musicquerytablewidget_8h_source.html#l00105">MusicQueryTableWidget::m_downLoadManager</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00035">MusicDownloadData::m_format</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00176">MusicObject::MusicSongAttribute::m_format</a>, <a class="el" href="../../df/d0e/musicnetworkthread_8h_source.html#l00025">M_NETWORK_PTR</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00033">MusicDownloadData::m_songName</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00034">MusicDownloadData::m_time</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00177">MusicObject::MusicSongAttribute::m_url</a>, <a class="el" href="../../d3/dfd/musicalgorithmutils_8cpp_source.html#l00042">MusicUtils::Algorithm::mdII()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00320">searchDataDwonloadFinished()</a>, <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00077">MusicMessageBox::setText()</a>, <a class="el" href="../../db/d8b/class_music_query_table_widget.html#a54049145a32c7a71bdee19e63700e6eb">MusicQueryTableWidget::showDownLoadInfoFor()</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00076">SKN_FILE</a>, and <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00020">MusicDataDownloadThread::startToDownload()</a>.</p>
+<p>References <a class="el" href="../../d8/d63/musicalgorithmutils_8h_source.html#l00024">ALG_DOWNLOAD_KEY</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00121">ART_DIR_FULL</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00120">CACHE_DIR_FULL</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00037">MusicDownloadData::clear()</a>, <a class="el" href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00037">MusicDownLoadThreadAbstract::Download_Music</a>, <a class="el" href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00039">MusicDownLoadThreadAbstract::Download_SmlBG</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00239">MusicObject::DW_DisConnection</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00240">MusicObject::DW_DownLoading</a>, <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00098">MusicMessageBox::exec()</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00165">MusicDownLoadQueryThreadAbstract::getMusicSongInfos()</a>, <a class="el" href="../../d3/d73/musicdownloadqueryfactory_8h_source.html#l00025">M_DOWNLOAD_QUERY_PTR</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00168">m_downloadData</a>, <a class="el" href="../../db/d7f/musicquerytablewidget_8h_source.html#l00105">MusicQueryTableWidget::m_downLoadManager</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00035">MusicDownloadData::m_format</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00176">MusicObject::MusicSongAttribute::m_format</a>, <a class="el" href="../../df/d0e/musicnetworkthread_8h_source.html#l00025">M_NETWORK_PTR</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00033">MusicDownloadData::m_songName</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00034">MusicDownloadData::m_time</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00177">MusicObject::MusicSongAttribute::m_url</a>, <a class="el" href="../../d3/dfd/musicalgorithmutils_8cpp_source.html#l00070">MusicUtils::Algorithm::mdII()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00346">searchDataDwonloadFinished()</a>, <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00077">MusicMessageBox::setText()</a>, <a class="el" href="../../db/d8b/class_music_query_table_widget.html#a54049145a32c7a71bdee19e63700e6eb">MusicQueryTableWidget::showDownLoadInfoFor()</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00076">SKN_FILE</a>, and <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00020">MusicDataDownloadThread::startToDownload()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00295">actionGroupClick()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00286">itemDoubleClicked()</a>, and <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00207">listCellClicked()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00321">actionGroupClick()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00312">itemDoubleClicked()</a>, and <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00233">listCellClicked()</a>.</p>
 
 </div>
 </div>
@@ -423,7 +425,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Check current audtion is playing or not. </p>
 
-<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00116">auditionToMusic()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00149">auditionToMusicStop()</a>, and <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00207">listCellClicked()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00142">auditionToMusic()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00175">auditionToMusicStop()</a>, and <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00233">listCellClicked()</a>.</p>
 
 </div>
 </div>
@@ -441,11 +443,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Stop current audtion. </p>
 
-<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00108">108</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00134">134</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00163">m_audition</a>, and <a class="el" href="../../df/dde/musiccoremplayer_8cpp_source.html#l00256">MusicCoreMPlayer::stop()</a>.</p>
+<p>References <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00167">m_audition</a>, and <a class="el" href="../../df/dde/musiccoremplayer_8cpp_source.html#l00256">MusicCoreMPlayer::stop()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00472">MusicSongSearchOnlineWidget::auditionStop()</a>, and <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00044">~MusicSongSearchOnlineTableWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00509">MusicSongSearchOnlineWidget::auditionStop()</a>, and <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00044">~MusicSongSearchOnlineTableWidget()</a>.</p>
 
 </div>
 </div>
@@ -465,11 +467,11 @@ Protected Attributes</h2></td></tr>
 <p>Start play audition to music by row. </p>
 <p>stop current media play while audition starts. </p>
 
-<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00116">116</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00142">142</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00025">AUDITION_PLAY</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00026">AUDITION_STOP</a>, <a class="el" href="../../dd/d33/class_music_song_search_online_table_widget.html#a2566ee59e5a7d4917f3af1a3459d5afe">auditionIsPlaying()</a>, <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00098">MusicMessageBox::exec()</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00151">MusicDownLoadQueryThreadAbstract::getMusicSongInfos()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00125">MusicApplication::instance()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00284">MusicApplication::isPlaying()</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00163">m_audition</a>, <a class="el" href="../../db/d7f/musicquerytablewidget_8h_source.html#l00105">MusicQueryTableWidget::m_downLoadManager</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00162">m_previousAuditionRow</a>, <a class="el" href="../../df/d13/musicitemdelegate_8h_source.html#l00028">MUSIC_AUDIT_ROLE</a>, <a class="el" href="../../da/d50/musiccoremplayer_8h_source.html#l00038">MusicCoreMPlayer::MusicCategory</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00395">MusicApplication::musicStatePlay()</a>, <a class="el" href="../../df/dde/musiccoremplayer_8cpp_source.html#l00032">MusicCoreMPlayer::setMedia()</a>, and <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00077">MusicMessageBox::setText()</a>.</p>
+<p>References <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00025">AUDITION_PLAY</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00026">AUDITION_STOP</a>, <a class="el" href="../../dd/d33/class_music_song_search_online_table_widget.html#a2566ee59e5a7d4917f3af1a3459d5afe">auditionIsPlaying()</a>, <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00098">MusicMessageBox::exec()</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00165">MusicDownLoadQueryThreadAbstract::getMusicSongInfos()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00125">MusicApplication::instance()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00287">MusicApplication::isPlaying()</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00167">m_audition</a>, <a class="el" href="../../db/d7f/musicquerytablewidget_8h_source.html#l00105">MusicQueryTableWidget::m_downLoadManager</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00166">m_previousAuditionRow</a>, <a class="el" href="../../df/d13/musicitemdelegate_8h_source.html#l00028">MUSIC_AUDIT_ROLE</a>, <a class="el" href="../../da/d50/musiccoremplayer_8h_source.html#l00038">MusicCoreMPlayer::MusicCategory</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00403">MusicApplication::musicStatePlay()</a>, <a class="el" href="../../df/dde/musiccoremplayer_8cpp_source.html#l00032">MusicCoreMPlayer::setMedia()</a>, and <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00077">MusicMessageBox::setText()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00295">actionGroupClick()</a>, and <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00477">MusicSongSearchOnlineWidget::buttonClicked()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00321">actionGroupClick()</a>, and <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00514">MusicSongSearchOnlineWidget::buttonClicked()</a>.</p>
 
 </div>
 </div>
@@ -488,11 +490,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Stop play audition to music by row. </p>
 
-<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00149">149</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00175">175</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00026">AUDITION_STOP</a>, <a class="el" href="../../dd/d33/class_music_song_search_online_table_widget.html#a2566ee59e5a7d4917f3af1a3459d5afe">auditionIsPlaying()</a>, <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00098">MusicMessageBox::exec()</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00163">m_audition</a>, <a class="el" href="../../df/d13/musicitemdelegate_8h_source.html#l00028">MUSIC_AUDIT_ROLE</a>, <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00077">MusicMessageBox::setText()</a>, and <a class="el" href="../../df/dde/musiccoremplayer_8cpp_source.html#l00256">MusicCoreMPlayer::stop()</a>.</p>
+<p>References <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00026">AUDITION_STOP</a>, <a class="el" href="../../dd/d33/class_music_song_search_online_table_widget.html#a2566ee59e5a7d4917f3af1a3459d5afe">auditionIsPlaying()</a>, <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00098">MusicMessageBox::exec()</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00167">m_audition</a>, <a class="el" href="../../df/d13/musicitemdelegate_8h_source.html#l00028">MUSIC_AUDIT_ROLE</a>, <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00077">MusicMessageBox::setText()</a>, and <a class="el" href="../../df/dde/musiccoremplayer_8cpp_source.html#l00256">MusicCoreMPlayer::stop()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00477">MusicSongSearchOnlineWidget::buttonClicked()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00514">MusicSongSearchOnlineWidget::buttonClicked()</a>.</p>
 
 </div>
 </div>
@@ -518,11 +520,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Clear All Items. </p>
 
-<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00225">225</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00251">251</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
 
 <p>References <a class="el" href="../../df/dd1/musicquerytablewidget_8cpp_source.html#l00080">MusicQueryItemTableWidget::clearAllItems()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00056">startSearchQuery()</a>, and <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00044">~MusicSongSearchOnlineTableWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00056">startSearchQuery()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00095">startSearchSingleQuery()</a>, and <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00044">~MusicSongSearchOnlineTableWidget()</a>.</p>
 
 </div>
 </div>
@@ -551,7 +553,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../db/d8b/class_music_query_table_widget.html#aa45df3cf7fc859b7f1760f2e64a801bb">MusicQueryTableWidget</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00349">349</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00375">375</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
 
 <p>References <a class="el" href="../../df/dd1/musicquerytablewidget_8cpp_source.html#l00043">MusicQueryTableWidget::contextMenuEvent()</a>, <a class="el" href="../../df/dd1/musicquerytablewidget_8cpp_source.html#l00130">MusicQueryItemTableWidget::createContextMenu()</a>, and <a class="el" href="../../db/d7f/musicquerytablewidget_8h_source.html#l00168">MusicQueryItemTableWidget::m_actionGroup</a>.</p>
 
@@ -580,7 +582,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Create searched items. </p>
 
-<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00231">231</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00257">257</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
 
 <p>References <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00026">AUDITION_STOP</a>, <a class="el" href="../../da/d90/musicwidgetutils_8cpp_source.html#l00033">MusicUtils::Widget::elidedText()</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00032">MusicSearchedItem::m_albumName</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00031">MusicSearchedItem::m_singerName</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00030">MusicSearchedItem::m_songName</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00033">MusicSearchedItem::m_time</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00034">MusicSearchedItem::m_type</a>, <a class="el" href="../../df/d13/musicitemdelegate_8h_source.html#l00028">MUSIC_AUDIT_ROLE</a>, <a class="el" href="../../df/d13/musicitemdelegate_8h_source.html#l00025">MUSIC_CHECK_ROLE</a>, and <a class="el" href="../../df/dd1/musicquerytablewidget_8cpp_source.html#l00152">MusicQueryItemTableWidget::randToGetStrength()</a>.</p>
 
@@ -647,9 +649,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Item has double clicked. </p>
 
-<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00286">286</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00312">312</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00366">addSearchMusicToPlayList()</a>.</p>
+<p>References <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00392">addSearchMusicToPlayList()</a>.</p>
 
 </div>
 </div>
@@ -686,11 +688,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Table widget list cell click. </p>
 
-<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00207">207</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00233">233</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00366">addSearchMusicToPlayList()</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00026">AUDITION_STOP</a>, <a class="el" href="../../dd/d33/class_music_song_search_online_table_widget.html#a2566ee59e5a7d4917f3af1a3459d5afe">auditionIsPlaying()</a>, <a class="el" href="../../d6/d89/musicfillitemtablewidget_8cpp_source.html#l00038">MusicFillItemTableWidget::listCellClicked()</a>, <a class="el" href="../../df/d13/musicitemdelegate_8h_source.html#l00028">MUSIC_AUDIT_ROLE</a>, and <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00095">musicDownloadLocal()</a>.</p>
+<p>References <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00392">addSearchMusicToPlayList()</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00026">AUDITION_STOP</a>, <a class="el" href="../../dd/d33/class_music_song_search_online_table_widget.html#a2566ee59e5a7d4917f3af1a3459d5afe">auditionIsPlaying()</a>, <a class="el" href="../../d6/d89/musicfillitemtablewidget_8cpp_source.html#l00038">MusicFillItemTableWidget::listCellClicked()</a>, <a class="el" href="../../df/d13/musicitemdelegate_8h_source.html#l00028">MUSIC_AUDIT_ROLE</a>, and <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00121">musicDownloadLocal()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00477">MusicSongSearchOnlineWidget::buttonClicked()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00514">MusicSongSearchOnlineWidget::buttonClicked()</a>.</p>
 
 </div>
 </div>
@@ -727,7 +729,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Table widget list cell enter. </p>
 
-<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00194">194</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00220">220</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
 
 <p>References <a class="el" href="../../d8/d08/musicabstracttablewidget_8cpp_source.html#l00061">MusicAbstractTableWidget::listCellEntered()</a>.</p>
 
@@ -758,11 +760,11 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../db/d8b/class_music_query_table_widget.html#a0aafaf081e87283726fea44457ddd813">MusicQueryTableWidget</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00095">95</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00121">121</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00151">MusicDownLoadQueryThreadAbstract::getMusicSongInfos()</a>, <a class="el" href="../../db/d7f/musicquerytablewidget_8h_source.html#l00105">MusicQueryTableWidget::m_downLoadManager</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00084">MusicDownLoadQueryThreadAbstract::MusicQuery</a>, <a class="el" href="../../d8/d0d/musicdownloadwidget_8cpp_source.html#l00188">MusicDownloadWidget::setSongName()</a>, and <a class="el" href="../../d8/d0d/musicdownloadwidget_8cpp_source.html#l00219">MusicDownloadWidget::show()</a>.</p>
+<p>References <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00165">MusicDownLoadQueryThreadAbstract::getMusicSongInfos()</a>, <a class="el" href="../../db/d7f/musicquerytablewidget_8h_source.html#l00105">MusicQueryTableWidget::m_downLoadManager</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00089">MusicDownLoadQueryThreadAbstract::MusicQuery</a>, <a class="el" href="../../d8/d0d/musicdownloadwidget_8cpp_source.html#l00190">MusicDownloadWidget::setSongName()</a>, and <a class="el" href="../../d8/d0d/musicdownloadwidget_8cpp_source.html#l00221">MusicDownloadWidget::show()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00207">listCellClicked()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00233">listCellClicked()</a>.</p>
 
 </div>
 </div>
@@ -789,11 +791,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Open music song download widget. </p>
 
-<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00330">330</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00356">356</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00151">MusicDownLoadQueryThreadAbstract::getMusicSongInfos()</a>, <a class="el" href="../../db/d7f/musicquerytablewidget_8h_source.html#l00105">MusicQueryTableWidget::m_downLoadManager</a>, and <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00084">MusicDownLoadQueryThreadAbstract::MusicQuery</a>.</p>
+<p>References <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00165">MusicDownLoadQueryThreadAbstract::getMusicSongInfos()</a>, <a class="el" href="../../db/d7f/musicquerytablewidget_8h_source.html#l00105">MusicQueryTableWidget::m_downLoadManager</a>, and <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00089">MusicDownLoadQueryThreadAbstract::MusicQuery</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00295">actionGroupClick()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00321">actionGroupClick()</a>.</p>
 
 </div>
 </div>
@@ -822,9 +824,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d5/ddc/class_music_query_item_table_widget.html#adbfe97c60044fca907c70c524abbd13b">MusicQueryItemTableWidget</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00343">343</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00369">369</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../df/dd1/musicquerytablewidget_8cpp_source.html#l00146">MusicQueryItemTableWidget::resizeEvent()</a>, and <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00173">resizeWindow()</a>.</p>
+<p>References <a class="el" href="../../df/dd1/musicquerytablewidget_8cpp_source.html#l00146">MusicQueryItemTableWidget::resizeEvent()</a>, and <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00199">resizeWindow()</a>.</p>
 
 </div>
 </div>
@@ -842,11 +844,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Resize window bound by widgte resize called. </p>
 
-<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00173">173</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00199">199</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
 
 <p>References <a class="el" href="../../da/d90/musicwidgetutils_8cpp_source.html#l00033">MusicUtils::Widget::elidedText()</a>, <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>, <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00041">MusicSettingManager::WidgetSize</a>, and <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00151">WINDOW_WIDTH_MIN</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00343">resizeEvent()</a>, and <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00466">MusicSongSearchOnlineWidget::resizeWindow()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00369">resizeEvent()</a>, and <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00503">MusicSongSearchOnlineWidget::resizeWindow()</a>.</p>
 
 </div>
 </div>
@@ -872,11 +874,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Search data dwonload finished. </p>
 
-<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00320">320</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00346">346</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00037">MusicDownloadData::clear()</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00044">MusicDownloadData::isValid()</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00164">m_downloadData</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00035">MusicDownloadData::m_format</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00033">MusicDownloadData::m_songName</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00034">MusicDownloadData::m_time</a>, and <a class="el" href="../../db/d8b/class_music_query_table_widget.html#a45f9e41a28326b6a9ace5bd7a8cbbd38">MusicQueryTableWidget::muiscSongToPlayListChanged()</a>.</p>
+<p>References <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00037">MusicDownloadData::clear()</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00044">MusicDownloadData::isValid()</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00168">m_downloadData</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00035">MusicDownloadData::m_format</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00033">MusicDownloadData::m_songName</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00034">MusicDownloadData::m_time</a>, and <a class="el" href="../../db/d8b/class_music_query_table_widget.html#a45f9e41a28326b6a9ace5bd7a8cbbd38">MusicQueryTableWidget::muiscSongToPlayListChanged()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00366">addSearchMusicToPlayList()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00392">addSearchMusicToPlayList()</a>.</p>
 
 </div>
 </div>
@@ -905,7 +907,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00078">78</a> of file <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html">musicsongsearchonlinewidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00449">MusicSongSearchOnlineWidget::startSearchQuery()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00475">MusicSongSearchOnlineWidget::startSearchQuery()</a>, and <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00486">MusicSongSearchOnlineWidget::startSearchSingleQuery()</a>.</p>
 
 </div>
 </div>
@@ -924,11 +926,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Set search data quality. </p>
 
-<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00167">167</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00193">193</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../db/d7f/musicquerytablewidget_8h_source.html#l00105">MusicQueryTableWidget::m_downLoadManager</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00111">MusicDownLoadQueryThreadAbstract::setSearchQuality()</a>, and <a class="el" href="../../df/dd1/musicquerytablewidget_8cpp_source.html#l00072">MusicQueryItemTableWidget::startSearchQuery()</a>.</p>
+<p>References <a class="el" href="../../db/d7f/musicquerytablewidget_8h_source.html#l00105">MusicQueryTableWidget::m_downLoadManager</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00121">MusicDownLoadQueryThreadAbstract::setSearchQuality()</a>, and <a class="el" href="../../df/dd1/musicquerytablewidget_8cpp_source.html#l00072">MusicQueryItemTableWidget::startSearchQuery()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00460">MusicSongSearchOnlineWidget::researchQueryByQuality()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00497">MusicSongSearchOnlineWidget::researchQueryByQuality()</a>.</p>
 
 </div>
 </div>
@@ -959,9 +961,32 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00056">56</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00225">clearAllItems()</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00239">MusicObject::DW_DisConnection</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00115">MusicDownLoadQueryThreadAbstract::getSearchQuality()</a>, <a class="el" href="../../db/d7f/musicquerytablewidget_8h_source.html#l00105">MusicQueryTableWidget::m_downLoadManager</a>, <a class="el" href="../../db/d7f/musicquerytablewidget_8h_source.html#l00167">MusicQueryItemTableWidget::m_loadingLabel</a>, <a class="el" href="../../de/db7/musiclocalsongsearchrecordconfigmanager_8h_source.html#l00029">MusicSearchRecord::m_name</a>, <a class="el" href="../../df/d0e/musicnetworkthread_8h_source.html#l00025">M_NETWORK_PTR</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00161">m_queryAllRecords</a>, <a class="el" href="../../de/db7/musiclocalsongsearchrecordconfigmanager_8h_source.html#l00030">MusicSearchRecord::m_time</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00084">MusicDownLoadQueryThreadAbstract::MusicQuery</a>, <a class="el" href="../../d3/deb/musiclocalsongsearchrecordconfigmanager_8cpp_source.html#l00036">MusicLocalSongSearchRecordConfigManager::readSearchConfig()</a>, <a class="el" href="../../de/db7/musiclocalsongsearchrecordconfigmanager_8h_source.html#l00053">MusicLocalSongSearchRecordConfigManager::readSearchXMLConfig()</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00119">MusicDownLoadQueryThreadAbstract::setQueryAllRecords()</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00111">MusicDownLoadQueryThreadAbstract::setSearchQuality()</a>, <a class="el" href="../../db/d8b/class_music_query_table_widget.html#a54049145a32c7a71bdee19e63700e6eb">MusicQueryTableWidget::showDownLoadInfoFor()</a>, <a class="el" href="../../dc/d06/musicgiflabelwidget_8cpp_source.html#l00085">MusicGifLabelWidget::start()</a>, <a class="el" href="../../df/dd1/musicquerytablewidget_8cpp_source.html#l00072">MusicQueryItemTableWidget::startSearchQuery()</a>, <a class="el" href="../../dc/de4/class_music_down_load_query_thread_abstract.html#ad712a3b3f5c1de3513edc512172f8758">MusicDownLoadQueryThreadAbstract::startToSearch()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00094">MusicTime::timeStamp()</a>, and <a class="el" href="../../d3/deb/musiclocalsongsearchrecordconfigmanager_8cpp_source.html#l00014">MusicLocalSongSearchRecordConfigManager::writeSearchConfig()</a>.</p>
+<p>References <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00251">clearAllItems()</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00239">MusicObject::DW_DisConnection</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00125">MusicDownLoadQueryThreadAbstract::getSearchQuality()</a>, <a class="el" href="../../db/d7f/musicquerytablewidget_8h_source.html#l00105">MusicQueryTableWidget::m_downLoadManager</a>, <a class="el" href="../../db/d7f/musicquerytablewidget_8h_source.html#l00167">MusicQueryItemTableWidget::m_loadingLabel</a>, <a class="el" href="../../de/db7/musiclocalsongsearchrecordconfigmanager_8h_source.html#l00029">MusicSearchRecord::m_name</a>, <a class="el" href="../../df/d0e/musicnetworkthread_8h_source.html#l00025">M_NETWORK_PTR</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00165">m_queryAllRecords</a>, <a class="el" href="../../de/db7/musiclocalsongsearchrecordconfigmanager_8h_source.html#l00030">MusicSearchRecord::m_time</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00089">MusicDownLoadQueryThreadAbstract::MusicQuery</a>, <a class="el" href="../../d3/deb/musiclocalsongsearchrecordconfigmanager_8cpp_source.html#l00036">MusicLocalSongSearchRecordConfigManager::readSearchConfig()</a>, <a class="el" href="../../de/db7/musiclocalsongsearchrecordconfigmanager_8h_source.html#l00053">MusicLocalSongSearchRecordConfigManager::readSearchXMLConfig()</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00129">MusicDownLoadQueryThreadAbstract::setQueryAllRecords()</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00121">MusicDownLoadQueryThreadAbstract::setSearchQuality()</a>, <a class="el" href="../../db/d8b/class_music_query_table_widget.html#a54049145a32c7a71bdee19e63700e6eb">MusicQueryTableWidget::showDownLoadInfoFor()</a>, <a class="el" href="../../dc/d06/musicgiflabelwidget_8cpp_source.html#l00085">MusicGifLabelWidget::start()</a>, <a class="el" href="../../df/dd1/musicquerytablewidget_8cpp_source.html#l00072">MusicQueryItemTableWidget::startSearchQuery()</a>, <a class="el" href="../../dc/de4/class_music_down_load_query_thread_abstract.html#ad712a3b3f5c1de3513edc512172f8758">MusicDownLoadQueryThreadAbstract::startToSearch()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00094">MusicTime::timeStamp()</a>, and <a class="el" href="../../d3/deb/musiclocalsongsearchrecordconfigmanager_8cpp_source.html#l00014">MusicLocalSongSearchRecordConfigManager::writeSearchConfig()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00449">MusicSongSearchOnlineWidget::startSearchQuery()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00475">MusicSongSearchOnlineWidget::startSearchQuery()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a530678572dc71ba04b132ecdd805ade6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MusicSongSearchOnlineTableWidget::startSearchSingleQuery </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Start search query by given id. </p>
+
+<p>Definition at line <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00095">95</a> of file <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html">musicsongsearchonlinewidget.cpp</a>.</p>
+
+<p>References <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00251">clearAllItems()</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00239">MusicObject::DW_DisConnection</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00125">MusicDownLoadQueryThreadAbstract::getSearchQuality()</a>, <a class="el" href="../../db/d7f/musicquerytablewidget_8h_source.html#l00105">MusicQueryTableWidget::m_downLoadManager</a>, <a class="el" href="../../db/d7f/musicquerytablewidget_8h_source.html#l00167">MusicQueryItemTableWidget::m_loadingLabel</a>, <a class="el" href="../../df/d0e/musicnetworkthread_8h_source.html#l00025">M_NETWORK_PTR</a>, <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00165">m_queryAllRecords</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00129">MusicDownLoadQueryThreadAbstract::setQueryAllRecords()</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00121">MusicDownLoadQueryThreadAbstract::setSearchQuality()</a>, <a class="el" href="../../db/d8b/class_music_query_table_widget.html#a54049145a32c7a71bdee19e63700e6eb">MusicQueryTableWidget::showDownLoadInfoFor()</a>, <a class="el" href="../../dc/d06/musicgiflabelwidget_8cpp_source.html#l00085">MusicGifLabelWidget::start()</a>, <a class="el" href="../../df/dd1/musicquerytablewidget_8cpp_source.html#l00072">MusicQueryItemTableWidget::startSearchQuery()</a>, and <a class="el" href="../../d7/db9/musicdownloadquerythreadabstract_8cpp_source.html#l00025">MusicDownLoadQueryThreadAbstract::startToSingleSearch()</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00486">MusicSongSearchOnlineWidget::startSearchSingleQuery()</a>.</p>
 
 </div>
 </div>
@@ -984,9 +1009,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00163">163</a> of file <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html">musicsongsearchonlinewidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00167">167</a> of file <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html">musicsongsearchonlinewidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00108">auditionStop()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00116">auditionToMusic()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00149">auditionToMusicStop()</a>, and <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00044">~MusicSongSearchOnlineTableWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00134">auditionStop()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00142">auditionToMusic()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00175">auditionToMusicStop()</a>, and <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00044">~MusicSongSearchOnlineTableWidget()</a>.</p>
 
 </div>
 </div>
@@ -1008,9 +1033,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00164">164</a> of file <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html">musicsongsearchonlinewidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00168">168</a> of file <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html">musicsongsearchonlinewidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00366">addSearchMusicToPlayList()</a>, and <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00320">searchDataDwonloadFinished()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00392">addSearchMusicToPlayList()</a>, and <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00346">searchDataDwonloadFinished()</a>.</p>
 
 </div>
 </div>
@@ -1032,9 +1057,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00162">162</a> of file <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html">musicsongsearchonlinewidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00166">166</a> of file <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html">musicsongsearchonlinewidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00116">auditionToMusic()</a>, and <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00023">MusicSongSearchOnlineTableWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00142">auditionToMusic()</a>, and <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00023">MusicSongSearchOnlineTableWidget()</a>.</p>
 
 </div>
 </div>
@@ -1056,9 +1081,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00161">161</a> of file <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html">musicsongsearchonlinewidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00165">165</a> of file <a class="el" href="../../de/d43/musicsongsearchonlinewidget_8h_source.html">musicsongsearchonlinewidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00023">MusicSongSearchOnlineTableWidget()</a>, and <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00056">startSearchQuery()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00023">MusicSongSearchOnlineTableWidget()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00056">startSearchQuery()</a>, and <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00095">startSearchSingleQuery()</a>.</p>
 
 </div>
 </div>
@@ -1069,7 +1094,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 11 2017 16:16:18 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 12 2017 14:27:48 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

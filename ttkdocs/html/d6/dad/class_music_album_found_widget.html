@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.2.0</span>
+   &#160;<span id="projectnumber">2.6.3.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -189,8 +189,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a608c045f4b32b4b7c6d5fbdd0dbfb4b1 inherit pro_attribs_class_music_found_abstract_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f7e3ac14e6cbfeafaa81349578e0fac inherit pro_attribs_class_music_found_abstract_widget"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/de4/class_music_down_load_query_thread_abstract.html">MusicDownLoadQueryThreadAbstract</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db7/class_music_found_abstract_widget.html#a2f7e3ac14e6cbfeafaa81349578e0fac">m_downloadThread</a></td></tr>
 <tr class="separator:a2f7e3ac14e6cbfeafaa81349578e0fac inherit pro_attribs_class_music_found_abstract_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a230bb7dc3135696468a2de97e86a1bbe inherit pro_attribs_class_music_found_abstract_widget"><td class="memItemLeft" align="right" valign="top">QList&lt; QLabel * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db7/class_music_found_abstract_widget.html#a230bb7dc3135696468a2de97e86a1bbe">m_resizeWidget</a></td></tr>
-<tr class="separator:a230bb7dc3135696468a2de97e86a1bbe inherit pro_attribs_class_music_found_abstract_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ddfdaa94e6d52faa25a76b2831839f0 inherit pro_attribs_class_music_found_abstract_widget"><td class="memItemLeft" align="right" valign="top">QList&lt; QLabel * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db7/class_music_found_abstract_widget.html#a1ddfdaa94e6d52faa25a76b2831839f0">m_resizeWidgets</a></td></tr>
+<tr class="separator:a1ddfdaa94e6d52faa25a76b2831839f0 inherit pro_attribs_class_music_found_abstract_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a581910dced7bb3a4fd9a238cf17b74 inherit pro_attribs_class_music_found_abstract_widget"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d68/class_music_song_sharing_widget.html#ae1c1cf26f16a97c8c6c7f2241200cd49">MusicSongSharingWidget::Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db7/class_music_found_abstract_widget.html#a6a581910dced7bb3a4fd9a238cf17b74">m_shareType</a></td></tr>
 <tr class="separator:a6a581910dced7bb3a4fd9a238cf17b74 inherit pro_attribs_class_music_found_abstract_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -225,7 +225,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00040">40</a> of file <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html">musicalbumfoundwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d6/d1e/musicsongsharingwidget_8h_source.html#l00075">MusicSongSharingWidget::Album</a>, <a class="el" href="../../d3/d73/musicdownloadqueryfactory_8h_source.html#l00025">M_DOWNLOAD_QUERY_PTR</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00124">MusicFoundAbstractWidget::m_downloadThread</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00123">MusicFoundAbstractWidget::m_foundTableWidget</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00126">MusicFoundAbstractWidget::m_shareType</a>, and <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00095">queryAllFinished()</a>.</p>
+<p>References <a class="el" href="../../d6/d1e/musicsongsharingwidget_8h_source.html#l00087">MusicSongSharingWidget::Album</a>, <a class="el" href="../../d3/d73/musicdownloadqueryfactory_8h_source.html#l00025">M_DOWNLOAD_QUERY_PTR</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00124">MusicFoundAbstractWidget::m_downloadThread</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00123">MusicFoundAbstractWidget::m_foundTableWidget</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00126">MusicFoundAbstractWidget::m_shareType</a>, and <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00096">queryAllFinished()</a>.</p>
 
 </div>
 </div>
@@ -253,11 +253,11 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Create the current album info item. </p>
 
-<p>Definition at line <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00135">135</a> of file <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html">musicalbumfoundwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00136">136</a> of file <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html">musicalbumfoundwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00189">createLabels()</a>, <a class="el" href="../../da/dbd/musicfoundabstractwidget_8cpp_source.html#l00065">MusicFoundAbstractWidget::downLoadFinished()</a>, <a class="el" href="../../da/d90/musicwidgetutils_8cpp_source.html#l00033">MusicUtils::Widget::elidedText()</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00055">MusicPlaylistItem::m_coverUrl</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00122">MusicFoundAbstractWidget::m_currentPlaylistItem</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00057">MusicPlaylistItem::m_description</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00053">MusicPlaylistItem::m_name</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00125">MusicFoundAbstractWidget::m_resizeWidget</a>, and <a class="el" href="../../dc/d66/musicdownloadsourcethread_8cpp_source.html#l00019">MusicDownloadSourceThread::startToDownload()</a>.</p>
+<p>References <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00190">createLabels()</a>, <a class="el" href="../../da/dbd/musicfoundabstractwidget_8cpp_source.html#l00065">MusicFoundAbstractWidget::downLoadFinished()</a>, <a class="el" href="../../da/d90/musicwidgetutils_8cpp_source.html#l00033">MusicUtils::Widget::elidedText()</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00055">MusicPlaylistItem::m_coverUrl</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00122">MusicFoundAbstractWidget::m_currentPlaylistItem</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00057">MusicPlaylistItem::m_description</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00053">MusicPlaylistItem::m_name</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00125">MusicFoundAbstractWidget::m_resizeWidgets</a>, and <a class="el" href="../../dc/d66/musicdownloadsourcethread_8cpp_source.html#l00019">MusicDownloadSourceThread::startToDownload()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00062">setSongNameById()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00063">setSongNameById()</a>.</p>
 
 </div>
 </div>
@@ -283,11 +283,11 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Create init interface lables. </p>
 
-<p>Definition at line <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00189">189</a> of file <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html">musicalbumfoundwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00190">190</a> of file <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html">musicalbumfoundwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../da/dbd/musicfoundabstractwidget_8cpp_source.html#l00133">MusicFoundAbstractWidget::initFirstWidget()</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00121">MusicFoundAbstractWidget::m_container</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00120">MusicFoundAbstractWidget::m_iconLabel</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00118">MusicFoundAbstractWidget::m_mainWindow</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00125">MusicFoundAbstractWidget::m_resizeWidget</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00119">MusicFoundAbstractWidget::m_songButton</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00120">MusicFoundAbstractWidget::m_statusLabel</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00288">MusicUIObject::MCheckBoxStyle01</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00040">MusicUIObject::MColorStyle04</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00043">MusicUIObject::MColorStyle05</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00163">MusicUIObject::MFontStyle01</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00169">MusicUIObject::MFontStyle03</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00178">MusicUIObject::MFontStyle06</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00226">MusicUIObject::MPushButtonStyle03</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00315">MusicUIObject::MScrollBarStyle01</a>, <a class="el" href="../../da/dbd/musicfoundabstractwidget_8cpp_source.html#l00075">MusicFoundAbstractWidget::playAllButtonClicked()</a>, <a class="el" href="../../d4/df2/qrcodewidget_8cpp_source.html#l00066">QRCodeQWidget::setIcon()</a>, <a class="el" href="../../d4/df2/qrcodewidget_8cpp_source.html#l00053">QRCodeQWidget::setMargin()</a>, <a class="el" href="../../da/dbd/musicfoundabstractwidget_8cpp_source.html#l00081">MusicFoundAbstractWidget::shareButtonClicked()</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00100">MusicTime::timeSRand()</a>.</p>
+<p>References <a class="el" href="../../da/dbd/musicfoundabstractwidget_8cpp_source.html#l00133">MusicFoundAbstractWidget::initFirstWidget()</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00121">MusicFoundAbstractWidget::m_container</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00120">MusicFoundAbstractWidget::m_iconLabel</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00118">MusicFoundAbstractWidget::m_mainWindow</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00125">MusicFoundAbstractWidget::m_resizeWidgets</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00119">MusicFoundAbstractWidget::m_songButton</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00120">MusicFoundAbstractWidget::m_statusLabel</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00288">MusicUIObject::MCheckBoxStyle01</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00040">MusicUIObject::MColorStyle04</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00043">MusicUIObject::MColorStyle05</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00163">MusicUIObject::MFontStyle01</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00169">MusicUIObject::MFontStyle03</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00178">MusicUIObject::MFontStyle06</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00226">MusicUIObject::MPushButtonStyle03</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00315">MusicUIObject::MScrollBarStyle01</a>, <a class="el" href="../../da/dbd/musicfoundabstractwidget_8cpp_source.html#l00075">MusicFoundAbstractWidget::playAllButtonClicked()</a>, <a class="el" href="../../d4/df2/qrcodewidget_8cpp_source.html#l00066">QRCodeQWidget::setIcon()</a>, <a class="el" href="../../d4/df2/qrcodewidget_8cpp_source.html#l00053">QRCodeQWidget::setMargin()</a>, <a class="el" href="../../da/dbd/musicfoundabstractwidget_8cpp_source.html#l00081">MusicFoundAbstractWidget::shareButtonClicked()</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00100">MusicTime::timeSRand()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00135">createAlbumInfoItem()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00136">createAlbumInfoItem()</a>.</p>
 
 </div>
 </div>
@@ -313,7 +313,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Get class object name. </p>
 
-<p>Definition at line <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00049">49</a> of file <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html">musicalbumfoundwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00050">50</a> of file <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html">musicalbumfoundwidget.cpp</a>.</p>
 
 </div>
 </div>
@@ -339,9 +339,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Query album musics is finished. </p>
 
-<p>Definition at line <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00122">122</a> of file <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html">musicalbumfoundwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00123">123</a> of file <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html">musicalbumfoundwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../df/dd1/musicquerytablewidget_8cpp_source.html#l00037">MusicQueryTableWidget::getMusicSongInfos()</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00123">MusicFoundAbstractWidget::m_foundTableWidget</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00120">MusicFoundAbstractWidget::m_statusLabel</a>, and <a class="el" href="../../da/dbd/musicfoundabstractwidget_8cpp_source.html#l00201">MusicFoundAbstractWidget::setSongCountText()</a>.</p>
+<p>References <a class="el" href="../../df/dd1/musicquerytablewidget_8cpp_source.html#l00037">MusicQueryTableWidget::getMusicSongInfos()</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00123">MusicFoundAbstractWidget::m_foundTableWidget</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00120">MusicFoundAbstractWidget::m_statusLabel</a>, and <a class="el" href="../../da/dbd/musicfoundabstractwidget_8cpp_source.html#l00202">MusicFoundAbstractWidget::setSongCountText()</a>.</p>
 
 </div>
 </div>
@@ -367,9 +367,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Query all quality musics is finished. </p>
 
-<p>Definition at line <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00095">95</a> of file <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html">musicalbumfoundwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00096">96</a> of file <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html">musicalbumfoundwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00151">MusicDownLoadQueryThreadAbstract::getMusicSongInfos()</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00208">MusicObject::MusicSongInformation::m_albumId</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00124">MusicFoundAbstractWidget::m_downloadThread</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00214">MusicObject::MusicSongInformation::m_songName</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00117">MusicFoundAbstractWidget::m_songNameFull</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00120">MusicFoundAbstractWidget::m_statusLabel</a>, and <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00062">setSongNameById()</a>.</p>
+<p>References <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00165">MusicDownLoadQueryThreadAbstract::getMusicSongInfos()</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00208">MusicObject::MusicSongInformation::m_albumId</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00124">MusicFoundAbstractWidget::m_downloadThread</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00214">MusicObject::MusicSongInformation::m_songName</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00117">MusicFoundAbstractWidget::m_songNameFull</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00120">MusicFoundAbstractWidget::m_statusLabel</a>, and <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00063">setSongNameById()</a>.</p>
 
 <p>Referenced by <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00040">MusicAlbumFoundWidget()</a>.</p>
 
@@ -399,9 +399,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../df/db7/class_music_found_abstract_widget.html#accd94ab352ce62770e0c68ff84f5a2bc">MusicFoundAbstractWidget</a>.</p>
 
-<p>Definition at line <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00070">70</a> of file <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html">musicalbumfoundwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00071">71</a> of file <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html">musicalbumfoundwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../da/d90/musicwidgetutils_8cpp_source.html#l00033">MusicUtils::Widget::elidedText()</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00123">MusicFoundAbstractWidget::m_foundTableWidget</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00125">MusicFoundAbstractWidget::m_resizeWidget</a>, <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>, <a class="el" href="../../d5/d6e/musicqueryfoundtablewidget_8cpp_source.html#l00118">MusicQueryFoundTableWidget::resizeWindow()</a>, <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00041">MusicSettingManager::WidgetSize</a>, and <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00151">WINDOW_WIDTH_MIN</a>.</p>
+<p>References <a class="el" href="../../da/d90/musicwidgetutils_8cpp_source.html#l00033">MusicUtils::Widget::elidedText()</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00123">MusicFoundAbstractWidget::m_foundTableWidget</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00125">MusicFoundAbstractWidget::m_resizeWidgets</a>, <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>, <a class="el" href="../../d5/d6e/musicqueryfoundtablewidget_8cpp_source.html#l00127">MusicQueryFoundTableWidget::resizeWindow()</a>, <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00041">MusicSettingManager::WidgetSize</a>, and <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00151">WINDOW_WIDTH_MIN</a>.</p>
 
 </div>
 </div>
@@ -430,11 +430,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../df/db7/class_music_found_abstract_widget.html#affe6211335d5acf4b886401641e5d103">MusicFoundAbstractWidget</a>.</p>
 
-<p>Definition at line <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00054">54</a> of file <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html">musicalbumfoundwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00055">55</a> of file <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html">musicalbumfoundwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../da/dca/musicstringutils_8cpp_source.html#l00027">MusicUtils::String::artistName()</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00124">MusicFoundAbstractWidget::m_downloadThread</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00084">MusicDownLoadQueryThreadAbstract::MusicQuery</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00119">MusicDownLoadQueryThreadAbstract::setQueryAllRecords()</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00127">MusicDownLoadQueryThreadAbstract::setQuerySimplify()</a>, <a class="el" href="../../da/dbd/musicfoundabstractwidget_8cpp_source.html#l00046">MusicFoundAbstractWidget::setSongName()</a>, and <a class="el" href="../../dc/de4/class_music_down_load_query_thread_abstract.html#ad712a3b3f5c1de3513edc512172f8758">MusicDownLoadQueryThreadAbstract::startToSearch()</a>.</p>
+<p>References <a class="el" href="../../da/dca/musicstringutils_8cpp_source.html#l00027">MusicUtils::String::artistName()</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00124">MusicFoundAbstractWidget::m_downloadThread</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00089">MusicDownLoadQueryThreadAbstract::MusicQuery</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00129">MusicDownLoadQueryThreadAbstract::setQueryAllRecords()</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00137">MusicDownLoadQueryThreadAbstract::setQuerySimplify()</a>, <a class="el" href="../../da/dbd/musicfoundabstractwidget_8cpp_source.html#l00046">MusicFoundAbstractWidget::setSongName()</a>, and <a class="el" href="../../dc/de4/class_music_down_load_query_thread_abstract.html#ad712a3b3f5c1de3513edc512172f8758">MusicDownLoadQueryThreadAbstract::startToSearch()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dc/d39/musicrightareawidget_8cpp_source.html#l00472">MusicRightAreaWidget::musicAlbumFound()</a>.</p>
+<p>Referenced by <a class="el" href="../../dc/d39/musicrightareawidget_8cpp_source.html#l00514">MusicRightAreaWidget::musicAlbumFound()</a>.</p>
 
 </div>
 </div>
@@ -463,11 +463,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../df/db7/class_music_found_abstract_widget.html#a28e3c632d7dfce09ccfdd24d21ea462c">MusicFoundAbstractWidget</a>.</p>
 
-<p>Definition at line <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00062">62</a> of file <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html">musicalbumfoundwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00063">63</a> of file <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html">musicalbumfoundwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00135">createAlbumInfoItem()</a>, <a class="el" href="../../d3/d73/musicdownloadqueryfactory_8h_source.html#l00025">M_DOWNLOAD_QUERY_PTR</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00123">MusicFoundAbstractWidget::m_foundTableWidget</a>, <a class="el" href="../../df/dd1/musicquerytablewidget_8cpp_source.html#l00024">MusicQueryTableWidget::setQueryInput()</a>, and <a class="el" href="../../d5/d6e/musicqueryfoundtablewidget_8cpp_source.html#l00045">MusicQueryFoundTableWidget::startSearchQuery()</a>.</p>
+<p>References <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00136">createAlbumInfoItem()</a>, <a class="el" href="../../d3/d73/musicdownloadqueryfactory_8h_source.html#l00025">M_DOWNLOAD_QUERY_PTR</a>, <a class="el" href="../../d6/d01/musicfoundabstractwidget_8h_source.html#l00123">MusicFoundAbstractWidget::m_foundTableWidget</a>, <a class="el" href="../../d5/d6e/musicqueryfoundtablewidget_8cpp_source.html#l00048">MusicQueryFoundTableWidget::setQueryInput()</a>, and <a class="el" href="../../d5/d6e/musicqueryfoundtablewidget_8cpp_source.html#l00054">MusicQueryFoundTableWidget::startSearchQuery()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dc/d39/musicrightareawidget_8cpp_source.html#l00472">MusicRightAreaWidget::musicAlbumFound()</a>, and <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00095">queryAllFinished()</a>.</p>
+<p>Referenced by <a class="el" href="../../dc/d39/musicrightareawidget_8cpp_source.html#l00514">MusicRightAreaWidget::musicAlbumFound()</a>, and <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00096">queryAllFinished()</a>.</p>
 
 </div>
 </div>
@@ -478,7 +478,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 11 2017 16:16:05 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 12 2017 14:27:28 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

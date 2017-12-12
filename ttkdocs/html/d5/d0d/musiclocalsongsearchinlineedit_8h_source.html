@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.2.0</span>
+   &#160;<span id="projectnumber">2.6.3.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -100,38 +100,52 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d1/d06/musiclocalsongsearchedit_8h.html">musiclocalsongsearchedit.h</a>&quot;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">class </span><a class="code" href="../../da/d7e/class_music_local_song_search_pop_widget.html">MusicLocalSongSearchPopWidget</a>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../d4/de5/class_music_local_song_search_inline_edit.html">   29</a></span>&#160;<span class="keyword">class </span>MUSIC_SEARCH_EXPORT <a class="code" href="../../d4/de5/class_music_local_song_search_inline_edit.html">MusicLocalSongSearchInlineEdit</a> : <span class="keyword">public</span> <a class="code" href="../../d6/de5/class_music_local_song_search_edit.html">MusicLocalSongSearchEdit</a></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d4/de5/class_music_local_song_search_inline_edit.html">MusicLocalSongSearchInlineEdit</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d4/de5/class_music_local_song_search_inline_edit.html">MusicLocalSongSearchInlineEdit</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">class </span><a class="code" href="../../da/d19/class_music_down_load_discover_list_thread.html">MusicDownLoadDiscoverListThread</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">class </span><a class="code" href="../../da/d7e/class_music_local_song_search_pop_widget.html">MusicLocalSongSearchPopWidget</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">class </span><a class="code" href="../../dc/de4/class_music_down_load_query_thread_abstract.html">MusicDownLoadQueryThreadAbstract</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../d4/de5/class_music_local_song_search_inline_edit.html">   31</a></span>&#160;<span class="keyword">class </span>MUSIC_SEARCH_EXPORT <a class="code" href="../../d4/de5/class_music_local_song_search_inline_edit.html">MusicLocalSongSearchInlineEdit</a> : <span class="keyword">public</span> <a class="code" href="../../d6/de5/class_music_local_song_search_edit.html">MusicLocalSongSearchEdit</a></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d4/de5/class_music_local_song_search_inline_edit.html">MusicLocalSongSearchInlineEdit</a>(QWidget *parent = 0);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../d6/de5/class_music_local_song_search_edit.html#a616eab20498c2dca4cb3ec36fcfd9eba">getClassName</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> initWidget(QWidget *parent);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> focusInEvent(QFocusEvent *event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> leaveEvent(QEvent *event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="../../d4/de5/class_music_local_song_search_inline_edit.html#a1b098c7a94a8bb276584b93cf8678411">   56</a></span>&#160;    <a class="code" href="../../da/d7e/class_music_local_song_search_pop_widget.html">MusicLocalSongSearchPopWidget</a> *<a class="code" href="../../d4/de5/class_music_local_song_search_inline_edit.html#a1b098c7a94a8bb276584b93cf8678411">m_popWidget</a>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif // MUSICLOCALSONGSEARCHINLINEEDIT_H</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d4/de5/class_music_local_song_search_inline_edit.html">MusicLocalSongSearchInlineEdit</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../d6/de5/class_music_local_song_search_edit.html#a616eab20498c2dca4cb3ec36fcfd9eba">getClassName</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> initWidget(QWidget *parent);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> textChanged(<span class="keyword">const</span> QString &amp;text);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> suggestDataChanged();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> searchTopListInfoFinished(<span class="keyword">const</span> QString &amp;data);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> popWidgetChanged(<span class="keyword">const</span> QString &amp;text);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> focusInEvent(QFocusEvent *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> leaveEvent(QEvent *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="../../d4/de5/class_music_local_song_search_inline_edit.html#a1b098c7a94a8bb276584b93cf8678411">   76</a></span>&#160;    <a class="code" href="../../da/d7e/class_music_local_song_search_pop_widget.html">MusicLocalSongSearchPopWidget</a> *<a class="code" href="../../d4/de5/class_music_local_song_search_inline_edit.html#a1b098c7a94a8bb276584b93cf8678411">m_popWidget</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="../../d4/de5/class_music_local_song_search_inline_edit.html#adadbdb08ca4aa7e311490519255ad580">   77</a></span>&#160;    <a class="code" href="../../da/d19/class_music_down_load_discover_list_thread.html">MusicDownLoadDiscoverListThread</a> *<a class="code" href="../../d4/de5/class_music_local_song_search_inline_edit.html#adadbdb08ca4aa7e311490519255ad580">m_discoverThread</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="../../d4/de5/class_music_local_song_search_inline_edit.html#a3459ae3cda183e40e58bc075d434c3dc">   78</a></span>&#160;    <a class="code" href="../../dc/de4/class_music_down_load_query_thread_abstract.html">MusicDownLoadQueryThreadAbstract</a> *<a class="code" href="../../d4/de5/class_music_local_song_search_inline_edit.html#a3459ae3cda183e40e58bc075d434c3dc">m_suggestThread</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif // MUSICLOCALSONGSEARCHINLINEEDIT_H</span></div>
 <div class="ttc" id="class_music_local_song_search_pop_widget_html"><div class="ttname"><a href="../../da/d7e/class_music_local_song_search_pop_widget.html">MusicLocalSongSearchPopWidget</a></div><div class="ttdoc">The class of the search history Config. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de7/musiclocalsongsearchpopwidget_8h_source.html#l00071">musiclocalsongsearchpopwidget.h:71</a></div></div>
-<div class="ttc" id="class_music_local_song_search_inline_edit_html"><div class="ttname"><a href="../../d4/de5/class_music_local_song_search_inline_edit.html">MusicLocalSongSearchInlineEdit</a></div><div class="ttdoc">The class of the net search line edit widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d0d/musiclocalsongsearchinlineedit_8h_source.html#l00029">musiclocalsongsearchinlineedit.h:29</a></div></div>
+<div class="ttc" id="class_music_local_song_search_inline_edit_html"><div class="ttname"><a href="../../d4/de5/class_music_local_song_search_inline_edit.html">MusicLocalSongSearchInlineEdit</a></div><div class="ttdoc">The class of the net search line edit widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d0d/musiclocalsongsearchinlineedit_8h_source.html#l00031">musiclocalsongsearchinlineedit.h:31</a></div></div>
+<div class="ttc" id="class_music_down_load_discover_list_thread_html"><div class="ttname"><a href="../../da/d19/class_music_down_load_discover_list_thread.html">MusicDownLoadDiscoverListThread</a></div><div class="ttdoc">The class to download discover toplist abstract thread. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/dfd/musicdownloaddiscoverlistthread_8h_source.html#l00027">musicdownloaddiscoverlistthread.h:27</a></div></div>
 <div class="ttc" id="class_music_local_song_search_edit_html_a616eab20498c2dca4cb3ec36fcfd9eba"><div class="ttname"><a href="../../d6/de5/class_music_local_song_search_edit.html#a616eab20498c2dca4cb3ec36fcfd9eba">MusicLocalSongSearchEdit::getClassName</a></div><div class="ttdeci">static QString getClassName()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dac/musiclocalsongsearchedit_8cpp_source.html#l00014">musiclocalsongsearchedit.cpp:14</a></div></div>
 <div class="ttc" id="musiclocalsongsearchedit_8h_html"><div class="ttname"><a href="../../d1/d06/musiclocalsongsearchedit_8h.html">musiclocalsongsearchedit.h</a></div></div>
-<div class="ttc" id="class_music_local_song_search_inline_edit_html_a1b098c7a94a8bb276584b93cf8678411"><div class="ttname"><a href="../../d4/de5/class_music_local_song_search_inline_edit.html#a1b098c7a94a8bb276584b93cf8678411">MusicLocalSongSearchInlineEdit::m_popWidget</a></div><div class="ttdeci">MusicLocalSongSearchPopWidget * m_popWidget</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d0d/musiclocalsongsearchinlineedit_8h_source.html#l00056">musiclocalsongsearchinlineedit.h:56</a></div></div>
+<div class="ttc" id="class_music_local_song_search_inline_edit_html_a1b098c7a94a8bb276584b93cf8678411"><div class="ttname"><a href="../../d4/de5/class_music_local_song_search_inline_edit.html#a1b098c7a94a8bb276584b93cf8678411">MusicLocalSongSearchInlineEdit::m_popWidget</a></div><div class="ttdeci">MusicLocalSongSearchPopWidget * m_popWidget</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d0d/musiclocalsongsearchinlineedit_8h_source.html#l00076">musiclocalsongsearchinlineedit.h:76</a></div></div>
+<div class="ttc" id="class_music_local_song_search_inline_edit_html_adadbdb08ca4aa7e311490519255ad580"><div class="ttname"><a href="../../d4/de5/class_music_local_song_search_inline_edit.html#adadbdb08ca4aa7e311490519255ad580">MusicLocalSongSearchInlineEdit::m_discoverThread</a></div><div class="ttdeci">MusicDownLoadDiscoverListThread * m_discoverThread</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d0d/musiclocalsongsearchinlineedit_8h_source.html#l00077">musiclocalsongsearchinlineedit.h:77</a></div></div>
+<div class="ttc" id="class_music_local_song_search_inline_edit_html_a3459ae3cda183e40e58bc075d434c3dc"><div class="ttname"><a href="../../d4/de5/class_music_local_song_search_inline_edit.html#a3459ae3cda183e40e58bc075d434c3dc">MusicLocalSongSearchInlineEdit::m_suggestThread</a></div><div class="ttdeci">MusicDownLoadQueryThreadAbstract * m_suggestThread</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d0d/musiclocalsongsearchinlineedit_8h_source.html#l00078">musiclocalsongsearchinlineedit.h:78</a></div></div>
+<div class="ttc" id="class_music_down_load_query_thread_abstract_html"><div class="ttname"><a href="../../dc/de4/class_music_down_load_query_thread_abstract.html">MusicDownLoadQueryThreadAbstract</a></div><div class="ttdoc">The class to abstract query download data from net. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00083">musicdownloadquerythreadabstract.h:83</a></div></div>
 <div class="ttc" id="class_music_local_song_search_edit_html"><div class="ttname"><a href="../../d6/de5/class_music_local_song_search_edit.html">MusicLocalSongSearchEdit</a></div><div class="ttdoc">The class of the local search line edit widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d06/musiclocalsongsearchedit_8h_source.html#l00027">musiclocalsongsearchedit.h:27</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 11 2017 16:15:52 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 12 2017 14:27:02 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

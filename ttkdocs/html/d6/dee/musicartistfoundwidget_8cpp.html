@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.2.0</span>
+   &#160;<span id="projectnumber">2.6.3.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -73,6 +73,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">musicartistfoundwidget.cpp File Reference</div>  </div>
 </div><!--header-->
@@ -80,6 +82,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="textblock"><code>#include &quot;<a class="el" href="../../d9/dbd/musicartistfoundwidget_8h_source.html">musicartistfoundwidget.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d3/d73/musicdownloadqueryfactory_8h_source.html">musicdownloadqueryfactory.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d1/de0/musicdownloadsourcethread_8h_source.html">musicdownloadsourcethread.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/d37/musicdownloadquerymoviethread_8h_source.html">musicdownloadquerymoviethread.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dc/d37/musicrightareawidget_8h_source.html">musicrightareawidget.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/dc2/musicpagingwidgetobject_8h_source.html">musicpagingwidgetobject.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/d37/musictinyuiobject_8h_source.html">musictinyuiobject.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d4/d50/musicstringutils_8h_source.html">musicstringutils.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d0/deb/musicuiobject_8h_source.html">musicuiobject.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>&quot;</code><br />
@@ -87,10 +93,51 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <code>#include &lt;qmath.h&gt;</code><br />
 </div>
 <p><a href="../../d6/dee/musicartistfoundwidget_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a36bd78eba784d422bfb590fc42ba7f12"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dee/musicartistfoundwidget_8cpp.html#a36bd78eba784d422bfb590fc42ba7f12">MIN_LABEL_SIZE</a>&#160;&#160;&#160;150</td></tr>
+<tr class="separator:a36bd78eba784d422bfb590fc42ba7f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96127aad3b7750628d041f17c8490726"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dee/musicartistfoundwidget_8cpp.html#a96127aad3b7750628d041f17c8490726">MAX_LABEL_SIZE</a>&#160;&#160;&#160;200</td></tr>
+<tr class="separator:a96127aad3b7750628d041f17c8490726"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a96127aad3b7750628d041f17c8490726"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_LABEL_SIZE&#160;&#160;&#160;200</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d6/dee/musicartistfoundwidget_8cpp_source.html#l00016">16</a> of file <a class="el" href="../../d6/dee/musicartistfoundwidget_8cpp_source.html">musicartistfoundwidget.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d6/dee/musicartistfoundwidget_8cpp_source.html#l00249">MusicArtistAlbumsFoundWidget::createArtistAlbumsItem()</a>, <a class="el" href="../../d6/dee/musicartistfoundwidget_8cpp_source.html#l00152">MusicArtistMvsFoundWidget::createArtistMvsItem()</a>, <a class="el" href="../../d6/dee/musicartistfoundwidget_8cpp_source.html#l00018">MusicArtistAlbumsItemWidget::MusicArtistAlbumsItemWidget()</a>, <a class="el" href="../../d6/dee/musicartistfoundwidget_8cpp_source.html#l00135">MusicArtistMvsFoundWidget::resizeWindow()</a>, and <a class="el" href="../../d6/dee/musicartistfoundwidget_8cpp_source.html#l00232">MusicArtistAlbumsFoundWidget::resizeWindow()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a36bd78eba784d422bfb590fc42ba7f12"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MIN_LABEL_SIZE&#160;&#160;&#160;150</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d6/dee/musicartistfoundwidget_8cpp_source.html#l00015">15</a> of file <a class="el" href="../../d6/dee/musicartistfoundwidget_8cpp_source.html">musicartistfoundwidget.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d6/dee/musicartistfoundwidget_8cpp_source.html#l00018">MusicArtistAlbumsItemWidget::MusicArtistAlbumsItemWidget()</a>, and <a class="el" href="../../d6/dee/musicartistfoundwidget_8cpp_source.html#l00058">MusicArtistAlbumsItemWidget::setMusicItem()</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 11 2017 16:15:59 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 12 2017 14:27:25 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

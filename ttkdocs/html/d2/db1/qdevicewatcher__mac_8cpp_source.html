@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.2.0</span>
+   &#160;<span id="projectnumber">2.6.3.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -136,8 +136,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">//FSGetVolumeInfo()</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    mSession = DASessionCreate(kCFAllocatorDefault);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    DARegisterDiskAppearedCallback(mSession, NULL, <a class="code" href="../../d2/db1/qdevicewatcher__mac_8cpp.html#adb6e014b7268a37d9a8f9f338cd7cd36">onDiskAppear</a>, <span class="keyword">this</span>);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    DARegisterDiskDisappearedCallback(mSession, NULL, <a class="code" href="../../d2/db1/qdevicewatcher__mac_8cpp.html#a7ef8068827e766d7b28ca49bdce156f8">onDiskDisappear</a>, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    DARegisterDiskAppearedCallback(mSession, <span class="keyword">nullptr</span>, <a class="code" href="../../d2/db1/qdevicewatcher__mac_8cpp.html#adb6e014b7268a37d9a8f9f338cd7cd36">onDiskAppear</a>, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    DARegisterDiskDisappearedCallback(mSession, <span class="keyword">nullptr</span>, <a class="code" href="../../d2/db1/qdevicewatcher__mac_8cpp.html#a7ef8068827e766d7b28ca49bdce156f8">onDiskDisappear</a>, <span class="keyword">this</span>);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
@@ -169,7 +169,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 11 2017 16:15:55 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 12 2017 14:27:10 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

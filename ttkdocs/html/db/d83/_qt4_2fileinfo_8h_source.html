@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.2.0</span>
+   &#160;<span id="projectnumber">2.6.3.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -78,8 +78,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <a href="../../db/d83/_qt4_2fileinfo_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/***************************************************************************</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *   Copyright (C) 2008-2009 by Ilya Kotov                                 *</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *   forkotov02@hotmail.ru                                                 *</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *   Copyright (C) 2008-2017 by Ilya Kotov                                 *</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *   forkotov02@ya.ru                                                      *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *                                                                         *</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *   This program is free software; you can redistribute it and/or modify  *</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *   it under the terms of the GNU General Public License as published by  *</span></div>
@@ -111,7 +111,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="../../d0/da1/class_file_info.html#ae7dea7b9a9d0023ce48a411847f7392f">FileInfo</a>(<span class="keyword">const</span> QString &amp;<a class="code" href="../../d0/da1/class_file_info.html#abcb13d9ec58faa57b984563695cf3b0f">path</a> = QString());</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="../../d0/da1/class_file_info.html#ae7dea7b9a9d0023ce48a411847f7392f">FileInfo</a>(<span class="keyword">const</span> <a class="code" href="../../d0/da1/class_file_info.html">FileInfo</a> &amp;info);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="../../d0/da1/class_file_info.html#ab771dfaca29680c93810af82a7a99958">~FileInfo</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d0/da1/class_file_info.html#a330ebd8436ebef59a60d40a126a3fd52">operator=</a>(<span class="keyword">const</span> <a class="code" href="../../d0/da1/class_file_info.html">FileInfo</a> &amp;info);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="../../d0/da1/class_file_info.html">FileInfo</a> &amp;<a class="code" href="../../d0/da1/class_file_info.html#a648f1a59b34acb035c8ca50b9a6d4bdb">operator=</a>(<span class="keyword">const</span> <a class="code" href="../../d0/da1/class_file_info.html">FileInfo</a> &amp;info);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d0/da1/class_file_info.html#a15bafb59a5dcfa11419508b9f5f0d098">operator==</a>(<span class="keyword">const</span> <a class="code" href="../../d0/da1/class_file_info.html">FileInfo</a> &amp;info);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d0/da1/class_file_info.html#ae168c6016f574b9d3a1a4a16807d94ec">operator!=</a>(<span class="keyword">const</span> <a class="code" href="../../d0/da1/class_file_info.html">FileInfo</a> &amp;info);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    qint64 <a class="code" href="../../d0/da1/class_file_info.html#a15c5049fcb149b9609df281b0e5f14dc">length</a> () <span class="keyword">const</span>;</div>
@@ -129,10 +129,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="../../d0/da1/class_file_info.html#ad99b5b67840d22897c38bbbd23e4af46">  101</a></span>&#160;    QMap &lt;Qmmp::MetaData, QString&gt; <a class="code" href="../../d0/da1/class_file_info.html#ad99b5b67840d22897c38bbbd23e4af46">m_metaData</a>;</div>
 <div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="../../d0/da1/class_file_info.html#a4c91e860363c2d4f95485dfc80fec62e">  102</a></span>&#160;    qint64 <a class="code" href="../../d0/da1/class_file_info.html#a4c91e860363c2d4f95485dfc80fec62e">m_length</a>;</div>
 <div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="../../d0/da1/class_file_info.html#a5086c6fc5c53eb9639ecae9d2795c667">  103</a></span>&#160;    QString <a class="code" href="../../d0/da1/class_file_info.html#a5086c6fc5c53eb9639ecae9d2795c667">m_path</a>;</div>
-<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="../../d0/da1/class_file_info.html#a7fb15a1c4e1e90c00aeadc93600e9746">  104</a></span>&#160;    QList&lt;QMap&lt;int, int&gt; &gt; <a class="code" href="../../d0/da1/class_file_info.html#a7fb15a1c4e1e90c00aeadc93600e9746">map</a>;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;};</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;};</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="class_file_info_html"><div class="ttname"><a href="../../d0/da1/class_file_info.html">FileInfo</a></div><div class="ttdoc">The FileInfo class stores metadata and audio information about media file or stream. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d83/_qt4_2fileinfo_8h_source.html#l00032">fileinfo.h:32</a></div></div>
 <div class="ttc" id="class_file_info_html_a4c91e860363c2d4f95485dfc80fec62e"><div class="ttname"><a href="../../d0/da1/class_file_info.html#a4c91e860363c2d4f95485dfc80fec62e">FileInfo::m_length</a></div><div class="ttdeci">qint64 m_length</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d83/_qt4_2fileinfo_8h_source.html#l00102">fileinfo.h:102</a></div></div>
 <div class="ttc" id="class_file_info_html_ac8ff05625e149841422f87bf1b591ed8"><div class="ttname"><a href="../../d0/da1/class_file_info.html#ac8ff05625e149841422f87bf1b591ed8">FileInfo::metaData</a></div><div class="ttdeci">const QMap&lt; Qmmp::MetaData, QString &gt; metaData() const </div></div>
@@ -145,18 +144,17 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_qmmp_html_aa4a16a069a893d4bf425a793b03d8291"><div class="ttname"><a href="../../d9/d95/class_qmmp.html#aa4a16a069a893d4bf425a793b03d8291">Qmmp::MetaData</a></div><div class="ttdeci">MetaData</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d23/_qt4_2qmmp_8h_source.html#l00063">qmmp.h:63</a></div></div>
 <div class="ttc" id="class_file_info_html_ae168c6016f574b9d3a1a4a16807d94ec"><div class="ttname"><a href="../../d0/da1/class_file_info.html#ae168c6016f574b9d3a1a4a16807d94ec">FileInfo::operator!=</a></div><div class="ttdeci">bool operator!=(const FileInfo &amp;info)</div></div>
 <div class="ttc" id="class_file_info_html_a15bafb59a5dcfa11419508b9f5f0d098"><div class="ttname"><a href="../../d0/da1/class_file_info.html#a15bafb59a5dcfa11419508b9f5f0d098">FileInfo::operator==</a></div><div class="ttdeci">bool operator==(const FileInfo &amp;info)</div></div>
-<div class="ttc" id="class_file_info_html_a330ebd8436ebef59a60d40a126a3fd52"><div class="ttname"><a href="../../d0/da1/class_file_info.html#a330ebd8436ebef59a60d40a126a3fd52">FileInfo::operator=</a></div><div class="ttdeci">void operator=(const FileInfo &amp;info)</div></div>
 <div class="ttc" id="class_file_info_html_ae7dea7b9a9d0023ce48a411847f7392f"><div class="ttname"><a href="../../d0/da1/class_file_info.html#ae7dea7b9a9d0023ce48a411847f7392f">FileInfo::FileInfo</a></div><div class="ttdeci">FileInfo(const QString &amp;path=QString())</div></div>
 <div class="ttc" id="class_file_info_html_a226e5ec62e4015f441b45af0c20c7f62"><div class="ttname"><a href="../../d0/da1/class_file_info.html#a226e5ec62e4015f441b45af0c20c7f62">FileInfo::setPath</a></div><div class="ttdeci">void setPath(const QString &amp;path)</div></div>
 <div class="ttc" id="class_file_info_html_abcb13d9ec58faa57b984563695cf3b0f"><div class="ttname"><a href="../../d0/da1/class_file_info.html#abcb13d9ec58faa57b984563695cf3b0f">FileInfo::path</a></div><div class="ttdeci">const QString path() const </div></div>
 <div class="ttc" id="class_file_info_html_a9495f4492698d760d1660c35054da308"><div class="ttname"><a href="../../d0/da1/class_file_info.html#a9495f4492698d760d1660c35054da308">FileInfo::setMetaData</a></div><div class="ttdeci">void setMetaData(Qmmp::MetaData key, const QString &amp;value)</div></div>
-<div class="ttc" id="class_file_info_html_a7fb15a1c4e1e90c00aeadc93600e9746"><div class="ttname"><a href="../../d0/da1/class_file_info.html#a7fb15a1c4e1e90c00aeadc93600e9746">FileInfo::map</a></div><div class="ttdeci">QList&lt; QMap&lt; int, int &gt; &gt; map</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d83/_qt4_2fileinfo_8h_source.html#l00104">fileinfo.h:104</a></div></div>
 <div class="ttc" id="_qt4_2qmmp_8h_html"><div class="ttname"><a href="../../d3/d23/_qt4_2qmmp_8h.html">qmmp.h</a></div></div>
 <div class="ttc" id="class_file_info_html_a15c5049fcb149b9609df281b0e5f14dc"><div class="ttname"><a href="../../d0/da1/class_file_info.html#a15c5049fcb149b9609df281b0e5f14dc">FileInfo::length</a></div><div class="ttdeci">qint64 length() const </div></div>
+<div class="ttc" id="class_file_info_html_a648f1a59b34acb035c8ca50b9a6d4bdb"><div class="ttname"><a href="../../d0/da1/class_file_info.html#a648f1a59b34acb035c8ca50b9a6d4bdb">FileInfo::operator=</a></div><div class="ttdeci">FileInfo &amp; operator=(const FileInfo &amp;info)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 11 2017 16:15:48 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 12 2017 14:26:56 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
