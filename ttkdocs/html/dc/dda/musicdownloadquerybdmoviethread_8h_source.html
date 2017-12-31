@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.3.0</span>
+   &#160;<span id="projectnumber">2.6.4.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -82,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">/* =================================================</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of the TTK Music Player project</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2017 Greedysky Studio</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2018 Greedysky Studio</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
@@ -121,14 +121,19 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> readFromMusicMVCount();</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> readFromMusicMVAttribute(<a class="code" href="../../d9/d32/struct_music_object_1_1_music_song_information.html">MusicObject::MusicSongInformation</a> *info, <span class="keywordtype">bool</span> more);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> readFromMusicMVAttribute(<a class="code" href="../../d9/d32/struct_music_object_1_1_music_song_information.html">MusicObject::MusicSongInformation</a> *info, <span class="keyword">const</span> QString &amp;<span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> readFromMusicMVAttribute(<a class="code" href="../../d9/d32/struct_music_object_1_1_music_song_information.html">MusicObject::MusicSongInformation</a> *info,</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                  <span class="keyword">const</span> QString &amp;url, <span class="keyword">const</span> QString &amp;duration);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;};</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif // MUSICDOWNLOADQUERYBDMOVIETHREAD_H</span></div>
-<div class="ttc" id="class_music_down_load_b_d_interface_html"><div class="ttname"><a href="../../da/d09/class_music_down_load_b_d_interface.html">MusicDownLoadBDInterface</a></div><div class="ttdoc">The class to baidu query download interface. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d23/musicdownloadbdinterface_8h_source.html#l00071">musicdownloadbdinterface.h:71</a></div></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> readFromMusicMVAttributeWeb(<a class="code" href="../../d9/d32/struct_music_object_1_1_music_song_information.html">MusicObject::MusicSongInformation</a> *info);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> readFromMusicMVAttributeYYT(<a class="code" href="../../d9/d32/struct_music_object_1_1_music_song_information.html">MusicObject::MusicSongInformation</a> *info, <span class="keyword">const</span> QString &amp;var,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                     <span class="keywordtype">bool</span> more);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> readFromMusicMVAttributeIQY(<a class="code" href="../../d9/d32/struct_music_object_1_1_music_song_information.html">MusicObject::MusicSongInformation</a> *info, <span class="keyword">const</span> QString &amp;var,</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                     <span class="keywordtype">bool</span> more);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> readFromMusicMVAttribute(<a class="code" href="../../d9/d32/struct_music_object_1_1_music_song_information.html">MusicObject::MusicSongInformation</a> *info, <span class="keyword">const</span> QVariantMap &amp;<a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>,</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                                  <span class="keywordtype">int</span> bitrate, <span class="keyword">const</span> QString &amp;duration);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;};</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#endif // MUSICDOWNLOADQUERYBDMOVIETHREAD_H</span></div>
+<div class="ttc" id="class_music_down_load_b_d_interface_html"><div class="ttname"><a href="../../da/d09/class_music_down_load_b_d_interface.html">MusicDownLoadBDInterface</a></div><div class="ttdoc">The class to baidu query download interface. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d23/musicdownloadbdinterface_8h_source.html#l00074">musicdownloadbdinterface.h:74</a></div></div>
+<div class="ttc" id="musiclrcfromkrc_8cpp_html_ad706e4249347c1cd1381934a5691137d"><div class="ttname"><a href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a></div><div class="ttdeci">const wchar_t key[]</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d45/musiclrcfromkrc_8cpp_source.html#l00017">musiclrcfromkrc.cpp:17</a></div></div>
 <div class="ttc" id="class_music_down_load_query_movie_thread_html_ada57384f133a370ec73f6f34303932a9"><div class="ttname"><a href="../../d6/d85/class_music_down_load_query_movie_thread.html#ada57384f133a370ec73f6f34303932a9">MusicDownLoadQueryMovieThread::startToSearch</a></div><div class="ttdeci">virtual void startToSearch(const QString &amp;movie)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/df2/musicdownloadquerymoviethread_8cpp_source.html#l00014">musicdownloadquerymoviethread.cpp:14</a></div></div>
 <div class="ttc" id="class_music_down_load_query_b_d_movie_thread_html"><div class="ttname"><a href="../../dc/dea/class_music_down_load_query_b_d_movie_thread.html">MusicDownLoadQueryBDMovieThread</a></div><div class="ttdoc">The class to baidu mv query download data from net. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dda/musicdownloadquerybdmoviethread_8h_source.html#l00028">musicdownloadquerybdmoviethread.h:28</a></div></div>
 <div class="ttc" id="class_music_down_load_query_movie_thread_html_af449b4910e61e49fc6c6dd1c024c49fa"><div class="ttname"><a href="../../d6/d85/class_music_down_load_query_movie_thread.html#af449b4910e61e49fc6c6dd1c024c49fa">MusicDownLoadQueryMovieThread::getClassName</a></div><div class="ttdeci">static QString getClassName()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/df2/musicdownloadquerymoviethread_8cpp_source.html#l00009">musicdownloadquerymoviethread.cpp:9</a></div></div>
@@ -144,7 +149,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 12 2017 14:26:57 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Dec 31 2017 22:16:20 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

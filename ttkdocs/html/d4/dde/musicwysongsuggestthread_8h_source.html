@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.3.0</span>
+   &#160;<span id="projectnumber">2.6.4.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -82,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">/* =================================================</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of the TTK Music Player project</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2017 Greedysky Studio</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2018 Greedysky Studio</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
@@ -99,18 +99,18 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> ================================================= */</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/d50/musicdownloadwyinterface_8h.html">musicdownloadwyinterface.h</a>&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dc/d3d/musicdownloadquerythreadabstract_8h.html">musicdownloadquerythreadabstract.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d7/dbf/musicdownloadsongsuggestthread_8h.html">musicdownloadsongsuggestthread.h</a>&quot;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../dc/d9a/class_music_w_y_song_suggest_thread.html">   28</a></span>&#160;<span class="keyword">class </span>MUSIC_NETWORK_EXPORT <a class="code" href="../../dc/d9a/class_music_w_y_song_suggest_thread.html">MusicWYSongSuggestThread</a> : <span class="keyword">public</span> <a class="code" href="../../dc/de4/class_music_down_load_query_thread_abstract.html">MusicDownLoadQueryThreadAbstract</a>,</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../dc/d9a/class_music_w_y_song_suggest_thread.html">   28</a></span>&#160;<span class="keyword">class </span>MUSIC_NETWORK_EXPORT <a class="code" href="../../dc/d9a/class_music_w_y_song_suggest_thread.html">MusicWYSongSuggestThread</a> : <span class="keyword">public</span> <a class="code" href="../../d9/d70/class_music_down_load_song_suggest_thread.html">MusicDownLoadSongSuggestThread</a>,</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                                      <span class="keyword">private</span> <a class="code" href="../../d1/dc3/class_music_down_load_w_y_interface.html">MusicDownLoadWYInterface</a></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../dc/d9a/class_music_w_y_song_suggest_thread.html">MusicWYSongSuggestThread</a>(QObject *parent = 0);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../dc/de4/class_music_down_load_query_thread_abstract.html#a322eb4df37b258365c203bb189e4cc79">getClassName</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../d9/d70/class_music_down_load_song_suggest_thread.html#a5f82dcefc488f9758a89aa61e9815cbd">getClassName</a>();</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../dc/de4/class_music_down_load_query_thread_abstract.html#ad712a3b3f5c1de3513edc512172f8758">startToSearch</a>(<a class="code" href="../../dc/de4/class_music_down_load_query_thread_abstract.html#a02a8296199ce895500ee46786781f2b2">QueryType</a> type, <span class="keyword">const</span> QString &amp;text) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d9/d70/class_music_down_load_song_suggest_thread.html#a4d3e3f4c37633627c295abdf18025bf4">startToSearch</a>(<span class="keyword">const</span> QString &amp;text) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d5/de6/class_music_network_abstract.html#a5633d328e4f80b91dde0113550d6e852">downLoadFinished</a>() <span class="keyword">override</span>;</div>
@@ -121,16 +121,15 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_w_y_song_suggest_thread_html"><div class="ttname"><a href="../../dc/d9a/class_music_w_y_song_suggest_thread.html">MusicWYSongSuggestThread</a></div><div class="ttdoc">The class to wangyi query suggest download data from net. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dde/musicwysongsuggestthread_8h_source.html#l00028">musicwysongsuggestthread.h:28</a></div></div>
 <div class="ttc" id="class_music_network_abstract_html_a5633d328e4f80b91dde0113550d6e852"><div class="ttname"><a href="../../d5/de6/class_music_network_abstract.html#a5633d328e4f80b91dde0113550d6e852">MusicNetworkAbstract::downLoadFinished</a></div><div class="ttdeci">virtual void downLoadFinished()=0</div></div>
 <div class="ttc" id="musicdownloadwyinterface_8h_html"><div class="ttname"><a href="../../df/d50/musicdownloadwyinterface_8h.html">musicdownloadwyinterface.h</a></div></div>
-<div class="ttc" id="class_music_down_load_w_y_interface_html"><div class="ttname"><a href="../../d1/dc3/class_music_down_load_w_y_interface.html">MusicDownLoadWYInterface</a></div><div class="ttdoc">The class to wangyi query download interface. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d50/musicdownloadwyinterface_8h_source.html#l00078">musicdownloadwyinterface.h:78</a></div></div>
-<div class="ttc" id="class_music_down_load_query_thread_abstract_html_ad712a3b3f5c1de3513edc512172f8758"><div class="ttname"><a href="../../dc/de4/class_music_down_load_query_thread_abstract.html#ad712a3b3f5c1de3513edc512172f8758">MusicDownLoadQueryThreadAbstract::startToSearch</a></div><div class="ttdeci">virtual void startToSearch(QueryType type, const QString &amp;text)=0</div></div>
-<div class="ttc" id="class_music_down_load_query_thread_abstract_html"><div class="ttname"><a href="../../dc/de4/class_music_down_load_query_thread_abstract.html">MusicDownLoadQueryThreadAbstract</a></div><div class="ttdoc">The class to abstract query download data from net. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00083">musicdownloadquerythreadabstract.h:83</a></div></div>
-<div class="ttc" id="musicdownloadquerythreadabstract_8h_html"><div class="ttname"><a href="../../dc/d3d/musicdownloadquerythreadabstract_8h.html">musicdownloadquerythreadabstract.h</a></div></div>
-<div class="ttc" id="class_music_down_load_query_thread_abstract_html_a322eb4df37b258365c203bb189e4cc79"><div class="ttname"><a href="../../dc/de4/class_music_down_load_query_thread_abstract.html#a322eb4df37b258365c203bb189e4cc79">MusicDownLoadQueryThreadAbstract::getClassName</a></div><div class="ttdeci">static QString getClassName()</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/db9/musicdownloadquerythreadabstract_8cpp_source.html#l00020">musicdownloadquerythreadabstract.cpp:20</a></div></div>
-<div class="ttc" id="class_music_down_load_query_thread_abstract_html_a02a8296199ce895500ee46786781f2b2"><div class="ttname"><a href="../../dc/de4/class_music_down_load_query_thread_abstract.html#a02a8296199ce895500ee46786781f2b2">MusicDownLoadQueryThreadAbstract::QueryType</a></div><div class="ttdeci">QueryType</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00087">musicdownloadquerythreadabstract.h:87</a></div></div>
+<div class="ttc" id="class_music_down_load_w_y_interface_html"><div class="ttname"><a href="../../d1/dc3/class_music_down_load_w_y_interface.html">MusicDownLoadWYInterface</a></div><div class="ttdoc">The class to wangyi query download interface. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d50/musicdownloadwyinterface_8h_source.html#l00081">musicdownloadwyinterface.h:81</a></div></div>
+<div class="ttc" id="class_music_down_load_song_suggest_thread_html_a5f82dcefc488f9758a89aa61e9815cbd"><div class="ttname"><a href="../../d9/d70/class_music_down_load_song_suggest_thread.html#a5f82dcefc488f9758a89aa61e9815cbd">MusicDownLoadSongSuggestThread::getClassName</a></div><div class="ttdeci">static QString getClassName()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dec/musicdownloadsongsuggestthread_8cpp_source.html#l00009">musicdownloadsongsuggestthread.cpp:9</a></div></div>
+<div class="ttc" id="musicdownloadsongsuggestthread_8h_html"><div class="ttname"><a href="../../d7/dbf/musicdownloadsongsuggestthread_8h.html">musicdownloadsongsuggestthread.h</a></div></div>
+<div class="ttc" id="class_music_down_load_song_suggest_thread_html"><div class="ttname"><a href="../../d9/d70/class_music_down_load_song_suggest_thread.html">MusicDownLoadSongSuggestThread</a></div><div class="ttdoc">The class to query suggest download data from net. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dbf/musicdownloadsongsuggestthread_8h_source.html#l00027">musicdownloadsongsuggestthread.h:27</a></div></div>
+<div class="ttc" id="class_music_down_load_song_suggest_thread_html_a4d3e3f4c37633627c295abdf18025bf4"><div class="ttname"><a href="../../d9/d70/class_music_down_load_song_suggest_thread.html#a4d3e3f4c37633627c295abdf18025bf4">MusicDownLoadSongSuggestThread::startToSearch</a></div><div class="ttdeci">virtual void startToSearch(const QString &amp;name)=0</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 12 2017 14:27:01 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Dec 31 2017 22:16:22 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.3.0</span>
+   &#160;<span id="projectnumber">2.6.4.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -99,7 +99,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="../../d2/d01/class_music_background_manager.html#afe5ea6aa6b4fce9b5bda8d53b9eba727">m_photos</a>.clear();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    QString <a class="code" href="../../d1/da4/namespacefilter.html">filter</a> = <a class="code" href="../../d8/d07/musicobject_8h.html#af07e00ccb50151280121629189e2239d">BACKGROUND_DIR_FULL</a> + (<a class="code" href="../../d2/d01/class_music_background_manager.html#a84c211443c57732f611ccafe1770b0b7">m_currentArtName</a> = sName) + <span class="stringliteral">&quot;%1&quot;</span> + <a class="code" href="../../d8/d07/musicobject_8h.html#a5390d0fe4db069c647d8c57f720ac944">SKN_FILE</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    QString filter = <a class="code" href="../../d8/d07/musicobject_8h.html#af07e00ccb50151280121629189e2239d">BACKGROUND_DIR_FULL</a> + (<a class="code" href="../../d2/d01/class_music_background_manager.html#a84c211443c57732f611ccafe1770b0b7">m_currentArtName</a> = sName) + <span class="stringliteral">&quot;%1&quot;</span> + <a class="code" href="../../d8/d07/musicobject_8h.html#a5390d0fe4db069c647d8c57f720ac944">SKN_FILE</a>;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;<a class="code" href="../../dc/dd8/musicbackgroundmanager_8h.html#aded4012e77ec37914723bec40a225e46">MAX_INDEX</a>; ++i)</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">if</span>(QFile::exists(filter.arg(i)))</div>
@@ -216,7 +216,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="musicbackgroundmanager_8h_html_aded4012e77ec37914723bec40a225e46"><div class="ttname"><a href="../../dc/dd8/musicbackgroundmanager_8h.html#aded4012e77ec37914723bec40a225e46">MAX_INDEX</a></div><div class="ttdeci">#define MAX_INDEX</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dd8/musicbackgroundmanager_8h_source.html#l00027">musicbackgroundmanager.h:27</a></div></div>
 <div class="ttc" id="class_music_background_manager_html_ae3d596040fdd4ddc50744c7ad6267838"><div class="ttname"><a href="../../d2/d01/class_music_background_manager.html#ae3d596040fdd4ddc50744c7ad6267838">MusicBackgroundManager::m_background</a></div><div class="ttdeci">QString m_background</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dd8/musicbackgroundmanager_8h_source.html#l00146">musicbackgroundmanager.h:146</a></div></div>
 <div class="ttc" id="class_music_background_manager_html_a84c211443c57732f611ccafe1770b0b7"><div class="ttname"><a href="../../d2/d01/class_music_background_manager.html#a84c211443c57732f611ccafe1770b0b7">MusicBackgroundManager::m_currentArtName</a></div><div class="ttdeci">QString m_currentArtName</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dd8/musicbackgroundmanager_8h_source.html#l00146">musicbackgroundmanager.h:146</a></div></div>
-<div class="ttc" id="namespacefilter_html"><div class="ttname"><a href="../../d1/da4/namespacefilter.html">filter</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d22/imagefilter_8h_source.html#l00014">imagefilter.h:14</a></div></div>
 <div class="ttc" id="musiclogger_8h_html_acb1153597589e0766a4e65aee968526e"><div class="ttname"><a href="../../d3/d77/musiclogger_8h.html#acb1153597589e0766a4e65aee968526e">M_LOGGER_ERROR</a></div><div class="ttdeci">#define M_LOGGER_ERROR(str)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d77/musiclogger_8h_source.html#l00051">musiclogger.h:51</a></div></div>
 <div class="ttc" id="class_music_background_manager_html_a9bb3b30413872ec6b2bdb12eb2a91137"><div class="ttname"><a href="../../d2/d01/class_music_background_manager.html#a9bb3b30413872ec6b2bdb12eb2a91137">MusicBackgroundManager::getArtPhotoPath</a></div><div class="ttdeci">QString getArtPhotoPath()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d66/musicbackgroundmanager_8cpp_source.html#l00049">musicbackgroundmanager.cpp:49</a></div></div>
 <div class="ttc" id="class_music_background_manager_html_aab9bd43d33c218c6f49868d7986aee56"><div class="ttname"><a href="../../d2/d01/class_music_background_manager.html#aab9bd43d33c218c6f49868d7986aee56">MusicBackgroundManager::setArtPhotoPathList</a></div><div class="ttdeci">void setArtPhotoPathList(const QStringList &amp;list)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d66/musicbackgroundmanager_8cpp_source.html#l00093">musicbackgroundmanager.cpp:93</a></div></div>
@@ -242,7 +241,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 12 2017 14:26:57 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Dec 31 2017 22:16:20 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

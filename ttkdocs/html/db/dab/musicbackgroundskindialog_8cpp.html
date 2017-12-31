@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.3.0</span>
+   &#160;<span id="projectnumber">2.6.4.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -73,6 +73,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">musicbackgroundskindialog.cpp File Reference</div>  </div>
 </div><!--header-->
@@ -93,10 +95,55 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <code>#include &lt;QScrollBar&gt;</code><br />
 </div>
 <p><a href="../../db/dab/musicbackgroundskindialog_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a4a196a425d3e8bca5462791fab1ff891"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dab/musicbackgroundskindialog_8cpp.html#a4a196a425d3e8bca5462791fab1ff891">NEW_OPERATOR</a>(ui,  list)</td></tr>
+<tr class="separator:a4a196a425d3e8bca5462791fab1ff891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a4a196a425d3e8bca5462791fab1ff891"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NEW_OPERATOR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ui, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">list&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">ui-&gt;setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff); \</div>
+<div class="line">    ui-&gt;setWidgetResizable(<span class="keyword">true</span>); \</div>
+<div class="line">    ui-&gt;setFrameShape(QFrame::NoFrame); \</div>
+<div class="line">    ui-&gt;setFrameShadow(QFrame::Plain); \</div>
+<div class="line">    ui-&gt;setAlignment(Qt::AlignVCenter); \</div>
+<div class="line">    ui-&gt;setWidget(list); \</div>
+<div class="line">    ui-&gt;verticalScrollBar()-&gt;setStyleSheet(<a class="code" href="../../d2/dc5/namespace_music_u_i_object.html#a25a6150e38ff77dc4c672b14160d4310">MusicUIObject::MScrollBarStyle03</a>);</div>
+<div class="ttc" id="namespace_music_u_i_object_html_a25a6150e38ff77dc4c672b14160d4310"><div class="ttname"><a href="../../d2/dc5/namespace_music_u_i_object.html#a25a6150e38ff77dc4c672b14160d4310">MusicUIObject::MScrollBarStyle03</a></div><div class="ttdeci">const QString MScrollBarStyle03</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/deb/musicuiobject_8h_source.html#l00331">musicuiobject.h:331</a></div></div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../db/dab/musicbackgroundskindialog_8cpp_source.html#l00017">17</a> of file <a class="el" href="../../db/dab/musicbackgroundskindialog_8cpp_source.html">musicbackgroundskindialog.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="../../db/dab/musicbackgroundskindialog_8cpp_source.html#l00027">MusicBackgroundSkinDialog::MusicBackgroundSkinDialog()</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 12 2017 14:27:25 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Dec 31 2017 22:16:33 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

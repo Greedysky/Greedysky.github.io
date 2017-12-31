@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.3.0</span>
+   &#160;<span id="projectnumber">2.6.4.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -134,7 +134,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="../../d1/d7f/class_music_similar_found_widget.html#ac77673db3d2ce183982f890ca6ed7bd0">   55</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d1/d7f/class_music_similar_found_widget.html#ac77673db3d2ce183982f890ca6ed7bd0">MusicSimilarFoundWidget::setSongName</a>(<span class="keyword">const</span> QString &amp;name)</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="../../df/db7/class_music_found_abstract_widget.html#affe6211335d5acf4b886401641e5d103">MusicFoundAbstractWidget::setSongName</a>(name);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="../../df/db7/class_music_found_abstract_widget.html#a608c045f4b32b4b7c6d5fbdd0dbfb4b1">m_foundTableWidget</a>-&gt;<a class="code" href="../../de/d9b/class_music_query_found_table_widget.html#a69e43c8e54ecbf1cbdd28f59dd28cdbe">setQueryInput</a>(<a class="code" href="../../d3/d73/musicdownloadqueryfactory_8h.html#af0e4dd2e431c1734645f26565541bdfb">M_DOWNLOAD_QUERY_PTR</a>-&gt;getQueryThread(<span class="keyword">this</span>));</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="../../df/db7/class_music_found_abstract_widget.html#a608c045f4b32b4b7c6d5fbdd0dbfb4b1">m_foundTableWidget</a>-&gt;<a class="code" href="../../de/d9b/class_music_query_found_table_widget.html#a69e43c8e54ecbf1cbdd28f59dd28cdbe">setQueryInput</a>(<a class="code" href="../../d3/d73/musicdownloadqueryfactory_8h.html#af0e4dd2e431c1734645f26565541bdfb">M_DOWNLOAD_QUERY_PTR</a>-&gt;getSimilarSongThread(<span class="keyword">this</span>));</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="../../df/db7/class_music_found_abstract_widget.html#a608c045f4b32b4b7c6d5fbdd0dbfb4b1">m_foundTableWidget</a>-&gt;<a class="code" href="../../de/d9b/class_music_query_found_table_widget.html#ae59c5b5cf8b70da1f8bcb65cf36d62d3">startSearchQuery</a>(<a class="code" href="../../d2/de2/namespace_music_utils_1_1_string.html#afea118893bdc84cbcb2f708d8d4690c1">MusicUtils::String::songName</a>(name));</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="../../d1/d7f/class_music_similar_found_widget.html#ab4143d6e471f7d70368ce85b75c936a1">createLabels</a>();</div>
@@ -225,7 +225,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 12 2017 14:27:05 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Dec 31 2017 22:16:26 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

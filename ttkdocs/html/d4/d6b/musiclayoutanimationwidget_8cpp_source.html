@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.3.0</span>
+   &#160;<span id="projectnumber">2.6.4.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -104,7 +104,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="../../dd/d53/class_music_layout_animation_widget.html#ad2c67c93cbccd88ce49524b8e1d28b74">m_animation</a> = <span class="keyword">new</span> QPropertyAnimation(<a class="code" href="../../dd/d53/class_music_layout_animation_widget.html#a432f8e3f316e7fdb9379f2fae647f2cf">m_mainWidget</a>, QByteArray(), <span class="keyword">this</span>);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="../../dd/d53/class_music_layout_animation_widget.html#ad2c67c93cbccd88ce49524b8e1d28b74">m_animation</a>-&gt;setDuration(500);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="../../dd/d53/class_music_layout_animation_widget.html#ad2c67c93cbccd88ce49524b8e1d28b74">m_animation</a>-&gt;setEasingCurve(<a class="code" href="../../d1/da4/namespacefilter.html#aba72c399b57756e64d9b774fdb330416">QEasingCurve::Linear</a>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="../../dd/d53/class_music_layout_animation_widget.html#ad2c67c93cbccd88ce49524b8e1d28b74">m_animation</a>-&gt;setEasingCurve(QEasingCurve::Linear);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="../../dd/d53/class_music_layout_animation_widget.html#ad2c67c93cbccd88ce49524b8e1d28b74">m_animation</a>-&gt;setStartValue(0.0f);</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="../../dd/d53/class_music_layout_animation_widget.html#ad2c67c93cbccd88ce49524b8e1d28b74">m_animation</a>-&gt;setEndValue(0.0f);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    connect(<a class="code" href="../../dd/d53/class_music_layout_animation_widget.html#ad2c67c93cbccd88ce49524b8e1d28b74">m_animation</a>, SIGNAL(<a class="code" href="../../dd/d53/class_music_layout_animation_widget.html#a4211fd086a828c4479457cf55b8ba50b">valueChanged</a>(QVariant)), SLOT(<a class="code" href="../../dd/d53/class_music_layout_animation_widget.html#a4211fd086a828c4479457cf55b8ba50b">valueChanged</a>(QVariant)));</div>
@@ -198,7 +198,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        QWidget::paintEvent(event);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    }</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
-<div class="ttc" id="namespacefilter_html_aba72c399b57756e64d9b774fdb330416"><div class="ttname"><a href="../../d1/da4/namespacefilter.html#aba72c399b57756e64d9b774fdb330416">filter::Linear</a></div><div class="ttdeci">void Linear(filter_t &amp;kernel, long radius)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d22/imagefilter_8h_source.html#l00253">imagefilter.h:253</a></div></div>
 <div class="ttc" id="class_music_layout_animation_widget_html_ad2c67c93cbccd88ce49524b8e1d28b74"><div class="ttname"><a href="../../dd/d53/class_music_layout_animation_widget.html#ad2c67c93cbccd88ce49524b8e1d28b74">MusicLayoutAnimationWidget::m_animation</a></div><div class="ttdeci">QPropertyAnimation * m_animation</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d3a/musiclayoutanimationwidget_8h_source.html#l00093">musiclayoutanimationwidget.h:93</a></div></div>
 <div class="ttc" id="class_music_layout_animation_widget_html_a6ec0a01146124bacc7c55d5d0ac74eff"><div class="ttname"><a href="../../dd/d53/class_music_layout_animation_widget.html#a6ec0a01146124bacc7c55d5d0ac74eff">MusicLayoutAnimationWidget::animationFinished</a></div><div class="ttdeci">void animationFinished()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d6b/musiclayoutanimationwidget_8cpp_source.html#l00095">musiclayoutanimationwidget.cpp:95</a></div></div>
 <div class="ttc" id="class_music_layout_animation_widget_html_acf2cbd1fb1a8864aa72185f02c0b5d7d"><div class="ttname"><a href="../../dd/d53/class_music_layout_animation_widget.html#acf2cbd1fb1a8864aa72185f02c0b5d7d">MusicLayoutAnimationWidget::m_currentValue</a></div><div class="ttdeci">float m_currentValue</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d3a/musiclayoutanimationwidget_8h_source.html#l00090">musiclayoutanimationwidget.h:90</a></div></div>
@@ -221,7 +220,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 12 2017 14:27:03 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Dec 31 2017 22:16:25 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

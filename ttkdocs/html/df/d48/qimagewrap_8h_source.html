@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>TTKMusicplayer: TTKThirdParty/TTKImage/qimagewrap.h Source File</title>
+<title>TTKMusicplayer: TTKThirdParty/TTKExtras/qimage/qimagewrap.h Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.3.0</span>
+   &#160;<span id="projectnumber">2.6.4.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_067ce75988948691583e31aaba2a9681.html">TTKThirdParty</a></li><li class="navelem"><a class="el" href="../../dir_12cef8d2eee78d60d6d56c310594134b.html">TTKImage</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_067ce75988948691583e31aaba2a9681.html">TTKThirdParty</a></li><li class="navelem"><a class="el" href="../../dir_000deb7bf21add7a83f03519491f6b69.html">TTKExtras</a></li><li class="navelem"><a class="el" href="../../dir_62bd53a418ae3d2dd88b1a0329a22d8d.html">qimage</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -82,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">/* =================================================</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of the TTK Music Player project</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2017 Greedysky Studio</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2018 Greedysky Studio</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
@@ -104,17 +104,18 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    QImage GaussFilter(<span class="keyword">const</span> QImage &amp;image, <span class="keywordtype">int</span> radius = 10);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif // QIMAGEWRAP_H</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> GaussFilter(QImage &amp;image, <span class="keywordtype">int</span> radius = 10);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif // QIMAGEWRAP_H</span></div>
 <div class="ttc" id="class_q_image_wrap_html"><div class="ttname"><a href="../../db/d62/class_q_image_wrap.html">QImageWrap</a></div><div class="ttdoc">The namespace of the image wrapper. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d48/qimagewrap_8h_source.html#l00027">qimagewrap.h:27</a></div></div>
 <div class="ttc" id="musicextrasglobaldefine_8h_html"><div class="ttname"><a href="../../d3/de6/musicextrasglobaldefine_8h.html">musicextrasglobaldefine.h</a></div></div>
 <div class="ttc" id="musicextrasglobaldefine_8h_html_a26f6db0b4db801cc546e000e046a2845"><div class="ttname"><a href="../../d3/de6/musicextrasglobaldefine_8h.html#a26f6db0b4db801cc546e000e046a2845">MUSIC_EXTRAS_EXPORT</a></div><div class="ttdeci">#define MUSIC_EXTRAS_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/de6/musicextrasglobaldefine_8h_source.html#l00031">musicextrasglobaldefine.h:31</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 12 2017 14:27:10 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Dec 31 2017 22:16:27 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

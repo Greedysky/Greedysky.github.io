@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.3.0</span>
+   &#160;<span id="projectnumber">2.6.4.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -150,8 +150,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a1b098c7a94a8bb276584b93cf8678411"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adadbdb08ca4aa7e311490519255ad580"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d19/class_music_down_load_discover_list_thread.html">MusicDownLoadDiscoverListThread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de5/class_music_local_song_search_inline_edit.html#adadbdb08ca4aa7e311490519255ad580">m_discoverThread</a></td></tr>
 <tr class="separator:adadbdb08ca4aa7e311490519255ad580"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3459ae3cda183e40e58bc075d434c3dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/de4/class_music_down_load_query_thread_abstract.html">MusicDownLoadQueryThreadAbstract</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de5/class_music_local_song_search_inline_edit.html#a3459ae3cda183e40e58bc075d434c3dc">m_suggestThread</a></td></tr>
-<tr class="separator:a3459ae3cda183e40e58bc075d434c3dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d0806e1c68cae4e57917a76a30203ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d70/class_music_down_load_song_suggest_thread.html">MusicDownLoadSongSuggestThread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de5/class_music_local_song_search_inline_edit.html#a0d0806e1c68cae4e57917a76a30203ae">m_suggestThread</a></td></tr>
+<tr class="separator:a0d0806e1c68cae4e57917a76a30203ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -408,7 +408,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d6/da7/musiclocalsongsearchinlineedit_8cpp_source.html#l00050">50</a> of file <a class="el" href="../../d6/da7/musiclocalsongsearchinlineedit_8cpp_source.html">musiclocalsongsearchinlineedit.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d25/musiclocalsongsearchpopwidget_8cpp_source.html#l00134">MusicLocalSongSearchPopWidget::createSuggestItems()</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00165">MusicDownLoadQueryThreadAbstract::getMusicSongInfos()</a>, <a class="el" href="../../d5/d0d/musiclocalsongsearchinlineedit_8h_source.html#l00076">m_popWidget</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00212">MusicObject::MusicSongInformation::m_singerName</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00214">MusicObject::MusicSongInformation::m_songName</a>, and <a class="el" href="../../d5/d0d/musiclocalsongsearchinlineedit_8h_source.html#l00078">m_suggestThread</a>.</p>
+<p>References <a class="el" href="../../dd/d25/musiclocalsongsearchpopwidget_8cpp_source.html#l00134">MusicLocalSongSearchPopWidget::createSuggestItems()</a>, <a class="el" href="../../d7/dbf/musicdownloadsongsuggestthread_8h_source.html#l00050">MusicDownLoadSongSuggestThread::getSearchedItems()</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00053">MusicPlaylistItem::m_name</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00054">MusicPlaylistItem::m_nickName</a>, <a class="el" href="../../d5/d0d/musiclocalsongsearchinlineedit_8h_source.html#l00076">m_popWidget</a>, and <a class="el" href="../../d5/d0d/musiclocalsongsearchinlineedit_8h_source.html#l00078">m_suggestThread</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d6/da7/musiclocalsongsearchinlineedit_8cpp_source.html#l00040">textChanged()</a>.</p>
 
@@ -439,7 +439,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d6/da7/musiclocalsongsearchinlineedit_8cpp_source.html#l00040">40</a> of file <a class="el" href="../../d6/da7/musiclocalsongsearchinlineedit_8cpp_source.html">musiclocalsongsearchinlineedit.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d3/d73/musicdownloadqueryfactory_8h_source.html#l00025">M_DOWNLOAD_QUERY_PTR</a>, <a class="el" href="../../d5/d0d/musiclocalsongsearchinlineedit_8h_source.html#l00078">m_suggestThread</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00092">MusicDownLoadQueryThreadAbstract::OtherQuery</a>, <a class="el" href="../../d6/da7/musiclocalsongsearchinlineedit_8cpp_source.html#l00079">popWidgetChanged()</a>, <a class="el" href="../../dc/de4/class_music_down_load_query_thread_abstract.html#ad712a3b3f5c1de3513edc512172f8758">MusicDownLoadQueryThreadAbstract::startToSearch()</a>, and <a class="el" href="../../d6/da7/musiclocalsongsearchinlineedit_8cpp_source.html#l00050">suggestDataChanged()</a>.</p>
+<p>References <a class="el" href="../../d3/d73/musicdownloadqueryfactory_8h_source.html#l00025">M_DOWNLOAD_QUERY_PTR</a>, <a class="el" href="../../d5/d0d/musiclocalsongsearchinlineedit_8h_source.html#l00078">m_suggestThread</a>, <a class="el" href="../../d6/da7/musiclocalsongsearchinlineedit_8cpp_source.html#l00079">popWidgetChanged()</a>, <a class="el" href="../../d9/d70/class_music_down_load_song_suggest_thread.html#a4d3e3f4c37633627c295abdf18025bf4">MusicDownLoadSongSuggestThread::startToSearch()</a>, and <a class="el" href="../../d6/da7/musiclocalsongsearchinlineedit_8cpp_source.html#l00050">suggestDataChanged()</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d6/da7/musiclocalsongsearchinlineedit_8cpp_source.html#l00007">MusicLocalSongSearchInlineEdit()</a>.</p>
 
@@ -494,7 +494,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3459ae3cda183e40e58bc075d434c3dc"></a>
+<a class="anchor" id="a0d0806e1c68cae4e57917a76a30203ae"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -502,7 +502,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../dc/de4/class_music_down_load_query_thread_abstract.html">MusicDownLoadQueryThreadAbstract</a>* MusicLocalSongSearchInlineEdit::m_suggestThread</td>
+          <td class="memname"><a class="el" href="../../d9/d70/class_music_down_load_song_suggest_thread.html">MusicDownLoadSongSuggestThread</a>* MusicLocalSongSearchInlineEdit::m_suggestThread</td>
         </tr>
       </table>
   </td>
@@ -525,7 +525,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 12 2017 14:27:38 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Dec 31 2017 22:16:43 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

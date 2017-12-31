@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>TTKMusicplayer: TTKThirdParty/TTKImage/qimagewrap.cpp Source File</title>
+<title>TTKMusicplayer: TTKThirdParty/TTKExtras/qimage/qimagewrap.cpp Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.3.0</span>
+   &#160;<span id="projectnumber">2.6.4.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_067ce75988948691583e31aaba2a9681.html">TTKThirdParty</a></li><li class="navelem"><a class="el" href="../../dir_12cef8d2eee78d60d6d56c310594134b.html">TTKImage</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_067ce75988948691583e31aaba2a9681.html">TTKThirdParty</a></li><li class="navelem"><a class="el" href="../../dir_000deb7bf21add7a83f03519491f6b69.html">TTKExtras</a></li><li class="navelem"><a class="el" href="../../dir_62bd53a418ae3d2dd88b1a0329a22d8d.html">qimage</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -78,56 +78,33 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <a href="../../dc/d5f/qimagewrap_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/d48/qimagewrap_8h.html">qimagewrap.h</a>&quot;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d2/d22/imagefilter_8h.html">imagefilter.h</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dc/d32/gaussianblur_8h.html">gaussianblur.h</a>&quot;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QImage&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
 <div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="../../db/d62/class_q_image_wrap.html#a5345f5fb52b44476754baeea87343f60">    6</a></span>&#160;QImage <a class="code" href="../../db/d62/class_q_image_wrap.html#a5345f5fb52b44476754baeea87343f60">QImageWrap::GaussFilter</a>(<span class="keyword">const</span> QImage &amp;image, <span class="keywordtype">int</span> radius)</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        QImage resultImage;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordflow">if</span>(image.isNull())</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                <span class="keywordflow">return</span> resultImage;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        }</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    resultImage = image.convertToFormat(QImage::Format_RGB888);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">static</span> <a class="code" href="../../db/da5/structfilter_1_1pair__t.html">filter::pair_t</a> pair[] =</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        { <a class="code" href="../../d1/da4/namespacefilter.html#a01d535aff9a67baed8f6c0ae2478270d">filter::Gauss</a>, <a class="code" href="../../d1/da4/namespacefilter.html#a0d1706fef4ce34b77842e8418cd2c93a">filter::Blur1D</a> },</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        { <a class="code" href="../../d1/da4/namespacefilter.html#a58bcf28217a9257a320bee730d9ad2e0">filter::Gauss2</a>, <a class="code" href="../../d1/da4/namespacefilter.html#ab49ca2826d08acb29f33892800d54bff">filter::Blur2D</a> },</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        { <a class="code" href="../../d1/da4/namespacefilter.html#aba72c399b57756e64d9b774fdb330416">filter::Linear</a>, <a class="code" href="../../d1/da4/namespacefilter.html#a0d1706fef4ce34b77842e8418cd2c93a">filter::Blur1D</a> },</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        { <a class="code" href="../../d1/da4/namespacefilter.html#aba72c399b57756e64d9b774fdb330416">filter::Linear</a>, <a class="code" href="../../d1/da4/namespacefilter.html#ab49ca2826d08acb29f33892800d54bff">filter::Blur2D</a> },</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        { <a class="code" href="../../d1/da4/namespacefilter.html#a5ac0109f9a12c969f318e9aa3e3420db">filter::Average</a>, <a class="code" href="../../d1/da4/namespacefilter.html#a0d1706fef4ce34b77842e8418cd2c93a">filter::Blur1D</a> },</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        { <a class="code" href="../../d1/da4/namespacefilter.html#a5ac0109f9a12c969f318e9aa3e3420db">filter::Average</a>, <a class="code" href="../../d1/da4/namespacefilter.html#ab49ca2826d08acb29f33892800d54bff">filter::Blur2D</a> }</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    };</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="../../db/d7b/classfilter_1_1bitmap__t.html">filter::bitmap_t</a> bmp;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    bmp.<a class="code" href="../../db/d7b/classfilter_1_1bitmap__t.html#afa5efa9f190c50653d867bfed9349cb3">set</a>((<a class="code" href="../../d5/d60/structfilter_1_1bitmap__t_1_1pixel__t.html">filter::bitmap_t::pixel_t</a>*)resultImage.bits(),</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                                        resultImage.width(),</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                        resultImage.height());</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="../../d1/da4/namespacefilter.html#a27f0d200de5fad44602e238e2e6aeb88">filter::Filter</a>(pair[4], bmp, radius);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">return</span> resultImage;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
-<div class="ttc" id="imagefilter_8h_html"><div class="ttname"><a href="../../d2/d22/imagefilter_8h.html">imagefilter.h</a></div></div>
-<div class="ttc" id="namespacefilter_html_a0d1706fef4ce34b77842e8418cd2c93a"><div class="ttname"><a href="../../d1/da4/namespacefilter.html#a0d1706fef4ce34b77842e8418cd2c93a">filter::Blur1D</a></div><div class="ttdeci">void Blur1D(bitmap_t &amp;bitmap, filter_t &amp;kernel)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d22/imagefilter_8h_source.html#l00166">imagefilter.h:166</a></div></div>
-<div class="ttc" id="namespacefilter_html_aba72c399b57756e64d9b774fdb330416"><div class="ttname"><a href="../../d1/da4/namespacefilter.html#aba72c399b57756e64d9b774fdb330416">filter::Linear</a></div><div class="ttdeci">void Linear(filter_t &amp;kernel, long radius)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d22/imagefilter_8h_source.html#l00253">imagefilter.h:253</a></div></div>
-<div class="ttc" id="namespacefilter_html_a27f0d200de5fad44602e238e2e6aeb88"><div class="ttname"><a href="../../d1/da4/namespacefilter.html#a27f0d200de5fad44602e238e2e6aeb88">filter::Filter</a></div><div class="ttdeci">bool Filter(mark_t mark, blur_t blur, bitmap_t &amp;bitmap, long radius)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d22/imagefilter_8h_source.html#l00300">imagefilter.h:300</a></div></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    QImage img = image.copy();</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="../../db/d62/class_q_image_wrap.html#a5345f5fb52b44476754baeea87343f60">GaussFilter</a>(img, radius);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordflow">return</span> img;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../db/d62/class_q_image_wrap.html#a1d92a2df2bc272567a25be01447abad2">   13</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../db/d62/class_q_image_wrap.html#a5345f5fb52b44476754baeea87343f60">QImageWrap::GaussFilter</a>(QImage &amp;image, <span class="keywordtype">int</span> radius)</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="../../d3/d0b/class_gaussian_blur.html">GaussianBlur</a>().<a class="code" href="../../d3/d0b/class_gaussian_blur.html#af00bcba04c27c5e5c6213c48a70f2ad3">gaussBlur1</a>((<span class="keywordtype">int</span>*)image.bits(),</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                              image.width(),</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                              image.height(),</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                              radius);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="ttc" id="gaussianblur_8h_html"><div class="ttname"><a href="../../dc/d32/gaussianblur_8h.html">gaussianblur.h</a></div></div>
 <div class="ttc" id="qimagewrap_8h_html"><div class="ttname"><a href="../../df/d48/qimagewrap_8h.html">qimagewrap.h</a></div></div>
-<div class="ttc" id="classfilter_1_1bitmap__t_html_afa5efa9f190c50653d867bfed9349cb3"><div class="ttname"><a href="../../db/d7b/classfilter_1_1bitmap__t.html#afa5efa9f190c50653d867bfed9349cb3">filter::bitmap_t::set</a></div><div class="ttdeci">void set(pixel_t *bits, long w, long h)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d22/imagefilter_8h_source.html#l00080">imagefilter.h:80</a></div></div>
-<div class="ttc" id="namespacefilter_html_a58bcf28217a9257a320bee730d9ad2e0"><div class="ttname"><a href="../../d1/da4/namespacefilter.html#a58bcf28217a9257a320bee730d9ad2e0">filter::Gauss2</a></div><div class="ttdeci">void Gauss2(filter_t &amp;kernel, long radius)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d22/imagefilter_8h_source.html#l00278">imagefilter.h:278</a></div></div>
-<div class="ttc" id="structfilter_1_1pair__t_html"><div class="ttname"><a href="../../db/da5/structfilter_1_1pair__t.html">filter::pair_t</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d22/imagefilter_8h_source.html#l00311">imagefilter.h:311</a></div></div>
-<div class="ttc" id="classfilter_1_1bitmap__t_html"><div class="ttname"><a href="../../db/d7b/classfilter_1_1bitmap__t.html">filter::bitmap_t</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d22/imagefilter_8h_source.html#l00056">imagefilter.h:56</a></div></div>
-<div class="ttc" id="namespacefilter_html_a01d535aff9a67baed8f6c0ae2478270d"><div class="ttname"><a href="../../d1/da4/namespacefilter.html#a01d535aff9a67baed8f6c0ae2478270d">filter::Gauss</a></div><div class="ttdeci">void Gauss(filter_t &amp;kernel, long radius)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d22/imagefilter_8h_source.html#l00264">imagefilter.h:264</a></div></div>
 <div class="ttc" id="class_q_image_wrap_html_a5345f5fb52b44476754baeea87343f60"><div class="ttname"><a href="../../db/d62/class_q_image_wrap.html#a5345f5fb52b44476754baeea87343f60">QImageWrap::GaussFilter</a></div><div class="ttdeci">QImage GaussFilter(const QImage &amp;image, int radius=10)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d5f/qimagewrap_8cpp_source.html#l00006">qimagewrap.cpp:6</a></div></div>
-<div class="ttc" id="namespacefilter_html_a5ac0109f9a12c969f318e9aa3e3420db"><div class="ttname"><a href="../../d1/da4/namespacefilter.html#a5ac0109f9a12c969f318e9aa3e3420db">filter::Average</a></div><div class="ttdeci">void Average(filter_t &amp;kernel, long radius)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d22/imagefilter_8h_source.html#l00243">imagefilter.h:243</a></div></div>
-<div class="ttc" id="structfilter_1_1bitmap__t_1_1pixel__t_html"><div class="ttname"><a href="../../d5/d60/structfilter_1_1bitmap__t_1_1pixel__t.html">filter::bitmap_t::pixel_t</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d22/imagefilter_8h_source.html#l00061">imagefilter.h:61</a></div></div>
-<div class="ttc" id="namespacefilter_html_ab49ca2826d08acb29f33892800d54bff"><div class="ttname"><a href="../../d1/da4/namespacefilter.html#ab49ca2826d08acb29f33892800d54bff">filter::Blur2D</a></div><div class="ttdeci">void Blur2D(bitmap_t &amp;bitmap, filter_t &amp;kernel)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d22/imagefilter_8h_source.html#l00208">imagefilter.h:208</a></div></div>
+<div class="ttc" id="class_gaussian_blur_html"><div class="ttname"><a href="../../d3/d0b/class_gaussian_blur.html">GaussianBlur</a></div><div class="ttdoc">The namespace of the Gaussian Blur. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d32/gaussianblur_8h_source.html#l00027">gaussianblur.h:27</a></div></div>
+<div class="ttc" id="class_gaussian_blur_html_af00bcba04c27c5e5c6213c48a70f2ad3"><div class="ttname"><a href="../../d3/d0b/class_gaussian_blur.html#af00bcba04c27c5e5c6213c48a70f2ad3">GaussianBlur::gaussBlur1</a></div><div class="ttdeci">void gaussBlur1(int *pix, int w, int h, int radius)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d8b/gaussianblur_8cpp_source.html#l00008">gaussianblur.cpp:8</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 12 2017 14:27:10 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Dec 31 2017 22:16:27 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

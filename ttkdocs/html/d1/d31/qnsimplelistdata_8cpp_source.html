@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.3.0</span>
+   &#160;<span id="projectnumber">2.6.4.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -141,7 +141,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                    item.<a class="code" href="../../d6/d30/struct_q_n_data_item.html#a1cacef2ee829de0e0d5c535a522a55ce">m_hash</a> = value[<span class="stringliteral">&quot;hash&quot;</span>].toString();</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                    item.<a class="code" href="../../d6/d30/struct_q_n_data_item.html#a0469105e3da339fd0a10ce4a9a71f144">m_mimeType</a> = value[<span class="stringliteral">&quot;mimeType&quot;</span>].toString();</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                    item.<a class="code" href="../../d6/d30/struct_q_n_data_item.html#abd00acf5aa5add7cd1a17d489dc25f77">m_size</a> = value[<span class="stringliteral">&quot;fsize&quot;</span>].toInt();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                    item.<a class="code" href="../../d6/d30/struct_q_n_data_item.html#a2e69bfb13f93065b52a5089d4c4d8098">m_putTime</a> = value[<span class="stringliteral">&quot;putTime&quot;</span>].toInt();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                    item.<a class="code" href="../../d6/d30/struct_q_n_data_item.html#a4292105ea00cf9832bf12cd01d2b23c5">m_putTime</a> = value[<span class="stringliteral">&quot;putTime&quot;</span>].toLongLong()/10000;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                    items &lt;&lt; item;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                }</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            }</div>
@@ -164,7 +164,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_q_n_simple_list_data_html_afad659363edee17a0302c2bcc7c24d5d"><div class="ttname"><a href="../../d5/d7e/class_q_n_simple_list_data.html#afad659363edee17a0302c2bcc7c24d5d">QNSimpleListData::QNSimpleListData</a></div><div class="ttdeci">QNSimpleListData(QNetworkAccessManager *networkManager, QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d31/qnsimplelistdata_8cpp_source.html#l00026">qnsimplelistdata.cpp:26</a></div></div>
 <div class="ttc" id="struct_q_n_data_item_html"><div class="ttname"><a href="../../d6/d30/struct_q_n_data_item.html">QNDataItem</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dd7/qnsimplelistdata_8h_source.html#l00028">qnsimplelistdata.h:28</a></div></div>
 <div class="ttc" id="musicglobal_8h_html_a039d9247f5c3141fcc2f8a00583f292f"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a039d9247f5c3141fcc2f8a00583f292f">MObject_cast</a></div><div class="ttdeci">#define MObject_cast(x, y)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00082">musicglobal.h:82</a></div></div>
-<div class="ttc" id="struct_q_n_data_item_html_a2e69bfb13f93065b52a5089d4c4d8098"><div class="ttname"><a href="../../d6/d30/struct_q_n_data_item.html#a2e69bfb13f93065b52a5089d4c4d8098">QNDataItem::m_putTime</a></div><div class="ttdeci">int m_putTime</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dd7/qnsimplelistdata_8h_source.html#l00034">qnsimplelistdata.h:34</a></div></div>
 <div class="ttc" id="class_q_n_simple_list_data_html_a424c551095553b8d6e9c047831a7aa30"><div class="ttname"><a href="../../d5/d7e/class_q_n_simple_list_data.html#a424c551095553b8d6e9c047831a7aa30">QNSimpleListData::handleError</a></div><div class="ttdeci">void handleError(QNetworkReply::NetworkError error)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d31/qnsimplelistdata_8cpp_source.html#l00082">qnsimplelistdata.cpp:82</a></div></div>
 <div class="ttc" id="class_q_n_simple_list_data_private_html_a81b731e1eec5afec535b17c297a24873"><div class="ttname"><a href="../../db/d18/class_q_n_simple_list_data_private.html#a81b731e1eec5afec535b17c297a24873">QNSimpleListDataPrivate::m_networkManager</a></div><div class="ttdeci">QNetworkAccessManager * m_networkManager</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d31/qnsimplelistdata_8cpp_source.html#l00014">qnsimplelistdata.cpp:14</a></div></div>
 <div class="ttc" id="struct_q_n_data_item_html_a0469105e3da339fd0a10ce4a9a71f144"><div class="ttname"><a href="../../d6/d30/struct_q_n_data_item.html#a0469105e3da339fd0a10ce4a9a71f144">QNDataItem::m_mimeType</a></div><div class="ttdeci">QString m_mimeType</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dd7/qnsimplelistdata_8h_source.html#l00032">qnsimplelistdata.h:32</a></div></div>
@@ -183,6 +182,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_q_n_mac_html"><div class="ttname"><a href="../../d1/dff/class_q_n_mac.html">QNMac</a></div><div class="ttdoc">The namespace of the qiniu mac. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de3/qnmac_8h_source.html#l00031">qnmac.h:31</a></div></div>
 <div class="ttc" id="class_q_n_simple_list_data_html_ac568dd89b4f6166bcd297155fc79fa94"><div class="ttname"><a href="../../d5/d7e/class_q_n_simple_list_data.html#ac568dd89b4f6166bcd297155fc79fa94">QNSimpleListData::receiveFinshed</a></div><div class="ttdeci">void receiveFinshed(const QNDataItems &amp;items)</div></div>
 <div class="ttc" id="class_q_json_1_1_parser_html"><div class="ttname"><a href="../../d0/dfe/class_q_json_1_1_parser.html">QJson::Parser</a></div><div class="ttdoc">Main class used to convert JSON data to QVariant objects. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d36/parser_8h_source.html#l00042">parser.h:42</a></div></div>
+<div class="ttc" id="struct_q_n_data_item_html_a4292105ea00cf9832bf12cd01d2b23c5"><div class="ttname"><a href="../../d6/d30/struct_q_n_data_item.html#a4292105ea00cf9832bf12cd01d2b23c5">QNDataItem::m_putTime</a></div><div class="ttdeci">qint64 m_putTime</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dd7/qnsimplelistdata_8h_source.html#l00034">qnsimplelistdata.h:34</a></div></div>
 <div class="ttc" id="class_q_n_simple_list_data_html_aa190ee630162126796c978721b08cc0b"><div class="ttname"><a href="../../d5/d7e/class_q_n_simple_list_data.html#aa190ee630162126796c978721b08cc0b">QNSimpleListData::receiveDataFromServer</a></div><div class="ttdeci">void receiveDataFromServer()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d31/qnsimplelistdata_8cpp_source.html#l00045">qnsimplelistdata.cpp:45</a></div></div>
 <div class="ttc" id="class_q_n_simple_list_data_html_a5ce600c68e561b6f46e12986ca1fd443"><div class="ttname"><a href="../../d5/d7e/class_q_n_simple_list_data.html#a5ce600c68e561b6f46e12986ca1fd443">QNSimpleListData::listDataToServer</a></div><div class="ttdeci">void listDataToServer(const QString &amp;bucket)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d31/qnsimplelistdata_8cpp_source.html#l00034">qnsimplelistdata.cpp:34</a></div></div>
 <div class="ttc" id="qniohelper_8h_html"><div class="ttname"><a href="../../db/d70/qniohelper_8h.html">qniohelper.h</a></div></div>
@@ -190,7 +190,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 12 2017 14:27:08 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Dec 31 2017 22:16:27 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

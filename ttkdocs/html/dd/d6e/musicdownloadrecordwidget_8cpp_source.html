@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.3.0</span>
+   &#160;<span id="projectnumber">2.6.4.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -232,7 +232,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <a class="code" href="../../df/df5/struct_music_download_record.html">MusicDownloadRecord</a> record;</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    record.<a class="code" href="../../df/df5/struct_music_download_record.html#a28d8bf09f71a5524101b4f295482c3a7">m_name</a> = musicName;</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    record.<a class="code" href="../../df/df5/struct_music_download_record.html#a613946d30a190b584aed693bcf745072">m_path</a> = QFileInfo(name).absoluteFilePath();</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    record.<a class="code" href="../../df/df5/struct_music_download_record.html#adb7800fffe36bb8a5396566aaa111d3d">m_size</a> = <span class="stringliteral">&quot;0.0M&quot;</span>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    record.<a class="code" href="../../df/df5/struct_music_download_record.html#adb7800fffe36bb8a5396566aaa111d3d">m_size</a> = <span class="stringliteral">&quot;0.00M&quot;</span>;</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <a class="code" href="../../d0/d02/class_music_download_record_widget.html#a4f45a2d197702dec9e2a3e1759612a21">m_musicRecords</a> &lt;&lt; record;</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <a class="code" href="../../d0/d02/class_music_download_record_widget.html#ac84a1185a52b6322b262b8fdafdb6929">createItem</a>(rowCount() - 1, record, time);</div>
@@ -282,7 +282,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                      item = <span class="keyword">new</span> QTableWidgetItem( record.<a class="code" href="../../df/df5/struct_music_download_record.html#adb7800fffe36bb8a5396566aaa111d3d">m_size</a> );</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    item-&gt;setTextColor(QColor(<a class="code" href="../../d2/dc5/namespace_music_u_i_object.html#ab1b20517a2506b470dfa692bb0f30002">MusicUIObject::MColorStyle12_S</a>));</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    item-&gt;setTextAlignment(Qt::AlignCenter);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    item-&gt;setTextAlignment(Qt::AlignRight | Qt::AlignVCenter);</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    item-&gt;setData(<a class="code" href="../../df/d13/musicitemdelegate_8h.html#a95ef4ab84a308953404717247dfc0219">MUSIC_TIMES_ROLE</a>, time);</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    setItem(index, 3, item);</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
@@ -314,7 +314,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_download_record_widget_html_afbcbd9a9319a4944b66ad8b6a7ed266f"><div class="ttname"><a href="../../d0/d02/class_music_download_record_widget.html#afbcbd9a9319a4944b66ad8b6a7ed266f">MusicDownloadRecordWidget::m_delegate</a></div><div class="ttdeci">MusicProgressBarDelegate * m_delegate</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dc0/musicdownloadrecordwidget_8h_source.html#l00096">musicdownloadrecordwidget.h:96</a></div></div>
 <div class="ttc" id="class_music_download_record_widget_html_aca3fd61f8ad22620a0d5dc7373cc35a3"><div class="ttname"><a href="../../d0/d02/class_music_download_record_widget.html#aca3fd61f8ad22620a0d5dc7373cc35a3">MusicDownloadRecordWidget::addSongToPlay</a></div><div class="ttdeci">void addSongToPlay(const QStringList &amp;list)</div></div>
 <div class="ttc" id="musicsongssummariziedwidget_8h_html"><div class="ttname"><a href="../../d7/db6/musicsongssummariziedwidget_8h.html">musicsongssummariziedwidget.h</a></div></div>
-<div class="ttc" id="namespace_music_utils_1_1_core_html_ae94bea94d0aa3c74709356655558f720"><div class="ttname"><a href="../../d5/d84/namespace_music_utils_1_1_core.html#ae94bea94d0aa3c74709356655558f720">MusicUtils::Core::musicPrefix</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT QString musicPrefix()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d43/musiccoreutils_8cpp_source.html#l00034">musiccoreutils.cpp:34</a></div></div>
+<div class="ttc" id="namespace_music_utils_1_1_core_html_ae94bea94d0aa3c74709356655558f720"><div class="ttname"><a href="../../d5/d84/namespace_music_utils_1_1_core.html#ae94bea94d0aa3c74709356655558f720">MusicUtils::Core::musicPrefix</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT QString musicPrefix()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d43/musiccoreutils_8cpp_source.html#l00035">musiccoreutils.cpp:35</a></div></div>
 <div class="ttc" id="class_music_download_record_widget_html_ab263939a725aff67a8d16e99a85fc9fc"><div class="ttname"><a href="../../d0/d02/class_music_download_record_widget.html#ab263939a725aff67a8d16e99a85fc9fc">MusicDownloadRecordWidget::clearAllItems</a></div><div class="ttdeci">void clearAllItems()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d6e/musicdownloadrecordwidget_8cpp_source.html#l00069">musicdownloadrecordwidget.cpp:69</a></div></div>
 <div class="ttc" id="class_music_download_record_widget_html_a812536d94781638df0530e4c24cd82e5"><div class="ttname"><a href="../../d0/d02/class_music_download_record_widget.html#a812536d94781638df0530e4c24cd82e5">MusicDownloadRecordWidget::MusicDownloadRecordWidget</a></div><div class="ttdeci">MusicDownloadRecordWidget(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d6e/musicdownloadrecordwidget_8cpp_source.html#l00011">musicdownloadrecordwidget.cpp:11</a></div></div>
 <div class="ttc" id="class_music_download_record_config_manager_html_a65c65784f47762930cc1fe264873cd52"><div class="ttname"><a href="../../da/d8d/class_music_download_record_config_manager.html#a65c65784f47762930cc1fe264873cd52">MusicDownloadRecordConfigManager::readDownloadXMLConfig</a></div><div class="ttdeci">bool readDownloadXMLConfig()</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d30/musicdownloadrecordconfigmanager_8h_source.html#l00068">musicdownloadrecordconfigmanager.h:68</a></div></div>
@@ -351,7 +351,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 12 2017 14:27:02 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Dec 31 2017 22:16:24 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

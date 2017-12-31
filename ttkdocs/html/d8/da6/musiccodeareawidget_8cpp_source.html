@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.3.0</span>
+   &#160;<span id="projectnumber">2.6.4.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -181,9 +181,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
 <div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="../../dd/d06/class_music_code_area_widget.html#afac62e0da79a29e35a240bcf4aa25959">  103</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../dd/d06/class_music_code_area_widget.html#afac62e0da79a29e35a240bcf4aa25959">MusicCodeAreaWidget::drawNoisyPoint</a>(QPainter &amp;painter)</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;{</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        painter.setPen(Qt::red);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        painter.setPen(Qt::DotLine);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        painter.setBrush(Qt::NoBrush);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    painter.setPen(Qt::red);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    painter.setPen(Qt::DotLine);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    painter.setBrush(Qt::NoBrush);</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;<a class="code" href="../../dd/d06/class_music_code_area_widget.html#a76227581d1ba5d552174c7c4b182c067">m_nNoisyPointCount</a>; i++)</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    {</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        painter.drawPoint(QPointF(qrand() % <a class="code" href="../../d2/db7/ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>().width(), qrand() % <a class="code" href="../../d2/db7/ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>().height()));</div>
@@ -194,16 +194,15 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;{</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">if</span>(qrand() % 2)</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                painter.rotate(qrand() % <a class="code" href="../../dd/d06/class_music_code_area_widget.html#a1d2771685f81ad737c92c78837fa71c4">m_nConverseRotate</a>);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        painter.rotate(qrand() % <a class="code" href="../../dd/d06/class_music_code_area_widget.html#a1d2771685f81ad737c92c78837fa71c4">m_nConverseRotate</a>);</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    {</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                painter.rotate(-(qrand() % <a class="code" href="../../dd/d06/class_music_code_area_widget.html#a1d2771685f81ad737c92c78837fa71c4">m_nConverseRotate</a>));</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        painter.rotate(-(qrand() % <a class="code" href="../../dd/d06/class_music_code_area_widget.html#a1d2771685f81ad737c92c78837fa71c4">m_nConverseRotate</a>));</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        painter.scale((qrand() % <a class="code" href="../../dd/d06/class_music_code_area_widget.html#a98f390e2f7a8b6b9e4ea8fe06b389435">m_nConverseScale</a> + (100 - <a class="code" href="../../dd/d06/class_music_code_area_widget.html#a98f390e2f7a8b6b9e4ea8fe06b389435">m_nConverseScale</a>)) / 100.0 , </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    painter.scale((qrand() % <a class="code" href="../../dd/d06/class_music_code_area_widget.html#a98f390e2f7a8b6b9e4ea8fe06b389435">m_nConverseScale</a> + (100 - <a class="code" href="../../dd/d06/class_music_code_area_widget.html#a98f390e2f7a8b6b9e4ea8fe06b389435">m_nConverseScale</a>)) / 100.0 , </div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                  (qrand() % <a class="code" href="../../dd/d06/class_music_code_area_widget.html#a98f390e2f7a8b6b9e4ea8fe06b389435">m_nConverseScale</a> + (100 - <a class="code" href="../../dd/d06/class_music_code_area_widget.html#a98f390e2f7a8b6b9e4ea8fe06b389435">m_nConverseScale</a>)) / 100.0);</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
 <div class="ttc" id="class_music_code_area_widget_html_a905ae3123bcd0f92f7017fa6cf9ebe0e"><div class="ttname"><a href="../../dd/d06/class_music_code_area_widget.html#a905ae3123bcd0f92f7017fa6cf9ebe0e">MusicCodeAreaWidget::drawOutline</a></div><div class="ttdeci">void drawOutline(QPainter &amp;painter)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/da6/musiccodeareawidget_8cpp_source.html#l00095">musiccodeareawidget.cpp:95</a></div></div>
 <div class="ttc" id="class_music_code_area_widget_html_a8743cfed608a725aa42701cd996110e3"><div class="ttname"><a href="../../dd/d06/class_music_code_area_widget.html#a8743cfed608a725aa42701cd996110e3">MusicCodeAreaWidget::m_sCode</a></div><div class="ttdeci">QString m_sCode</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d95/musiccodeareawidget_8h_source.html#l00087">musiccodeareawidget.h:87</a></div></div>
 <div class="ttc" id="class_music_code_area_widget_html_ad1e749369d90dacb488f4a5167fe142f"><div class="ttname"><a href="../../dd/d06/class_music_code_area_widget.html#ad1e749369d90dacb488f4a5167fe142f">MusicCodeAreaWidget::paintEvent</a></div><div class="ttdeci">virtual void paintEvent(QPaintEvent *event) override</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/da6/musiccodeareawidget_8cpp_source.html#l00072">musiccodeareawidget.cpp:72</a></div></div>
@@ -233,7 +232,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 12 2017 14:27:03 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Dec 31 2017 22:16:25 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

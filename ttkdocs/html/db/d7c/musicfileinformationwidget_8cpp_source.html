@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.3.0</span>
+   &#160;<span id="projectnumber">2.6.4.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -265,7 +265,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
 <div class="line"><a name="l00187"></a><span class="lineno"><a class="line" href="../../d5/d72/class_music_file_information_widget.html#acbb31861ab02bd45a30c3bf3f0aecba0">  187</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d5/d72/class_music_file_information_widget.html#acbb31861ab02bd45a30c3bf3f0aecba0">MusicFileInformationWidget::setFileInformation</a>(<span class="keyword">const</span> QString &amp;name)</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;{</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordflow">if</span>(name.contains(<span class="charliteral">&#39;=&#39;</span>))</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordflow">if</span>(name.contains(<a class="code" href="../../d8/d07/musicobject_8h.html#aab088b039c48a2ee47096823a45cac46">CACHE_DIR_FULL</a>))</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    {</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <a class="code" href="../../d5/d72/class_music_file_information_widget.html#a0e0ceb65275ca25d9b979e73e39c1084">m_ui</a>-&gt;viewButton-&gt;setEnabled(<span class="keyword">false</span>);</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    }</div>
@@ -316,6 +316,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_song_tag_html_a83dfe08b7ecd8777b2986bdf2d677488"><div class="ttname"><a href="../../dd/db7/class_music_song_tag.html#a83dfe08b7ecd8777b2986bdf2d677488">MusicSongTag::save</a></div><div class="ttdeci">bool save()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dc4/musicsongtag_8cpp_source.html#l00055">musicsongtag.cpp:55</a></div></div>
 <div class="ttc" id="musiccoreutils_8h_html"><div class="ttname"><a href="../../da/dde/musiccoreutils_8h.html">musiccoreutils.h</a></div></div>
 <div class="ttc" id="namespace_music_u_i_object_html_a0dcda3df2fc53ec0ddaa09f81a3bf58c"><div class="ttname"><a href="../../d2/dc5/namespace_music_u_i_object.html#a0dcda3df2fc53ec0ddaa09f81a3bf58c">MusicUIObject::MToolButtonStyle04</a></div><div class="ttdeci">const QString MToolButtonStyle04</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/deb/musicuiobject_8h_source.html#l00202">musicuiobject.h:202</a></div></div>
+<div class="ttc" id="musicobject_8h_html_aab088b039c48a2ee47096823a45cac46"><div class="ttname"><a href="../../d8/d07/musicobject_8h.html#aab088b039c48a2ee47096823a45cac46">CACHE_DIR_FULL</a></div><div class="ttdeci">#define CACHE_DIR_FULL</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00120">musicobject.h:120</a></div></div>
 <div class="ttc" id="class_music_message_box_html_a1d704a0d41e0d2a6c0933c3f008912fd"><div class="ttname"><a href="../../d8/d39/class_music_message_box.html#a1d704a0d41e0d2a6c0933c3f008912fd">MusicMessageBox::setText</a></div><div class="ttdeci">void setText(const QString &amp;text) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d24/musicmessagebox_8cpp_source.html#l00077">musicmessagebox.cpp:77</a></div></div>
 <div class="ttc" id="class_music_song_tag_html_a55b9a68062b7858e56e517b0cebff7a5"><div class="ttname"><a href="../../dd/db7/class_music_song_tag.html#a55b9a68062b7858e56e517b0cebff7a5">MusicSongTag::getCover</a></div><div class="ttdeci">QPixmap getCover() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dc4/musicsongtag_8cpp_source.html#l00197">musicsongtag.cpp:197</a></div></div>
 <div class="ttc" id="class_music_song_tag_html_a70d2cec82d78fb35cc12c20648499240"><div class="ttname"><a href="../../dd/db7/class_music_song_tag.html#a70d2cec82d78fb35cc12c20648499240">MusicSongTag::getTrackNum</a></div><div class="ttdeci">QString getTrackNum() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dc4/musicsongtag_8cpp_source.html#l00096">musicsongtag.cpp:96</a></div></div>
@@ -343,7 +344,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_file_information_widget_html"><div class="ttname"><a href="../../d5/d72/class_music_file_information_widget.html">MusicFileInformationWidget</a></div><div class="ttdoc">The class of the file information widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d7c/musicfileinformationwidget_8h_source.html#l00032">musicfileinformationwidget.h:32</a></div></div>
 <div class="ttc" id="class_music_song_tag_html_a14eef322a8e2c6966c7fa179691561c5"><div class="ttname"><a href="../../dd/db7/class_music_song_tag.html#a14eef322a8e2c6966c7fa179691561c5">MusicSongTag::getYear</a></div><div class="ttdeci">QString getYear() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dc4/musicsongtag_8cpp_source.html#l00091">musicsongtag.cpp:91</a></div></div>
 <div class="ttc" id="class_music_file_information_widget_html_a40dcc5a140f4c8ffd8da1f6eb70b2007"><div class="ttname"><a href="../../d5/d72/class_music_file_information_widget.html#a40dcc5a140f4c8ffd8da1f6eb70b2007">MusicFileInformationWidget::m_imagePath</a></div><div class="ttdeci">QString m_imagePath</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d7c/musicfileinformationwidget_8h_source.html#l00085">musicfileinformationwidget.h:85</a></div></div>
-<div class="ttc" id="namespace_music_utils_1_1_core_html_abe3feac9341a2936e114e5a1964ea733"><div class="ttname"><a href="../../d5/d84/namespace_music_utils_1_1_core.html#abe3feac9341a2936e114e5a1964ea733">MusicUtils::Core::openUrl</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT bool openUrl(const QString &amp;exe, const QString &amp;path)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d43/musiccoreutils_8cpp_source.html#l00131">musiccoreutils.cpp:131</a></div></div>
+<div class="ttc" id="namespace_music_utils_1_1_core_html_abe3feac9341a2936e114e5a1964ea733"><div class="ttname"><a href="../../d5/d84/namespace_music_utils_1_1_core.html#abe3feac9341a2936e114e5a1964ea733">MusicUtils::Core::openUrl</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT bool openUrl(const QString &amp;exe, const QString &amp;path)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d43/musiccoreutils_8cpp_source.html#l00183">musiccoreutils.cpp:183</a></div></div>
 <div class="ttc" id="musicnumberutils_8h_html"><div class="ttname"><a href="../../dc/d8f/musicnumberutils_8h.html">musicnumberutils.h</a></div></div>
 <div class="ttc" id="class_music_song_tag_html_ace3f1ca406e6c433eaab2023e843ac54"><div class="ttname"><a href="../../dd/db7/class_music_song_tag.html#ace3f1ca406e6c433eaab2023e843ac54">MusicSongTag::getSamplingRate</a></div><div class="ttdeci">QString getSamplingRate() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dc4/musicsongtag_8cpp_source.html#l00207">musicsongtag.cpp:207</a></div></div>
 <div class="ttc" id="namespace_music_u_i_object_html_aea2116411a7be10dc2d41ffdc1a6ee31"><div class="ttname"><a href="../../d2/dc5/namespace_music_u_i_object.html#aea2116411a7be10dc2d41ffdc1a6ee31">MusicUIObject::MPushButtonStyle04</a></div><div class="ttdeci">const QString MPushButtonStyle04</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/deb/musicuiobject_8h_source.html#l00229">musicuiobject.h:229</a></div></div>
@@ -375,7 +376,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 12 2017 14:27:02 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Dec 31 2017 22:16:24 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

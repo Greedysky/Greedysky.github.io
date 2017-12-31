@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.3.0</span>
+   &#160;<span id="projectnumber">2.6.4.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -119,7 +119,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../d1/d37/class_music_barrage_animation.html#a4d0366c13e3935f50b4a47556deeb774">   40</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d1/d37/class_music_barrage_animation.html#a4d0366c13e3935f50b4a47556deeb774">MusicBarrageAnimation::init</a>()</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    setDuration(qrand()%10000 + <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a26a0d68f658e1cfc3a2ae7b9d8c6cf76">MT_S2MS</a>);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    setEasingCurve(<a class="code" href="../../d1/da4/namespacefilter.html#aba72c399b57756e64d9b774fdb330416">QEasingCurve::Linear</a>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    setEasingCurve(QEasingCurve::Linear);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    connect(<span class="keyword">this</span>, SIGNAL(finished()), SLOT(<a class="code" href="../../d1/d37/class_music_barrage_animation.html#a164ced1790cc37a920f1a26c9430ccda">animationFinished</a>()));</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
@@ -286,7 +286,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;}</div>
 <div class="ttc" id="class_music_barrage_widget_html_afea799922e2dbf6ca40a27641aa62454"><div class="ttname"><a href="../../dc/d8d/class_music_barrage_widget.html#afea799922e2dbf6ca40a27641aa62454">MusicBarrageWidget::pause</a></div><div class="ttdeci">void pause()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d52/musicbarragewidget_8cpp_source.html#l00081">musicbarragewidget.cpp:81</a></div></div>
 <div class="ttc" id="class_music_barrage_animation_html_abaf5f7c7876eb2109182b58da39ceae5"><div class="ttname"><a href="../../d1/d37/class_music_barrage_animation.html#abaf5f7c7876eb2109182b58da39ceae5">MusicBarrageAnimation::setSize</a></div><div class="ttdeci">void setSize(const QSize &amp;size)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d52/musicbarragewidget_8cpp_source.html#l00032">musicbarragewidget.cpp:32</a></div></div>
-<div class="ttc" id="namespacefilter_html_aba72c399b57756e64d9b774fdb330416"><div class="ttname"><a href="../../d1/da4/namespacefilter.html#aba72c399b57756e64d9b774fdb330416">filter::Linear</a></div><div class="ttdeci">void Linear(filter_t &amp;kernel, long radius)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d22/imagefilter_8h_source.html#l00253">imagefilter.h:253</a></div></div>
 <div class="ttc" id="class_music_barrage_widget_html_a410c2e2de4cc22308eca7d01aab84855"><div class="ttname"><a href="../../dc/d8d/class_music_barrage_widget.html#a410c2e2de4cc22308eca7d01aab84855">MusicBarrageWidget::stop</a></div><div class="ttdeci">void stop()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d52/musicbarragewidget_8cpp_source.html#l00093">musicbarragewidget.cpp:93</a></div></div>
 <div class="ttc" id="class_music_barrage_widget_html_aaf634349e169a79e87d4211a607d4386"><div class="ttname"><a href="../../dc/d8d/class_music_barrage_widget.html#aaf634349e169a79e87d4211a607d4386">MusicBarrageWidget::addBarrage</a></div><div class="ttdeci">void addBarrage(const MusicBarrageRecord &amp;record)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d52/musicbarragewidget_8cpp_source.html#l00127">musicbarragewidget.cpp:127</a></div></div>
 <div class="ttc" id="struct_music_barrage_record_html_abbadffd6ae4a4247e81e797a06a937f5"><div class="ttname"><a href="../../d9/da2/struct_music_barrage_record.html#abbadffd6ae4a4247e81e797a06a937f5">MusicBarrageRecord::m_color</a></div><div class="ttdeci">QString m_color</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d73/musicbarragerecordconfigmanager_8h_source.html#l00030">musicbarragerecordconfigmanager.h:30</a></div></div>
@@ -332,7 +331,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 12 2017 14:27:01 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Dec 31 2017 22:16:23 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

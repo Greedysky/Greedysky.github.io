@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.3.0</span>
+   &#160;<span id="projectnumber">2.6.4.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -132,39 +132,40 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">bool</span> save = (<a class="code" href="../../dc/def/class_music_down_load_thread_abstract.html#af626870fcbd5d8d2bd0354c34b28ceef">m_file</a> != <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="../../d8/dfa/class_music_data_download_thread.html#aad8e51733f046f6306cea820cbe8fbf1">MusicDataDownloadThread::downLoadFinished</a>();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../d8/dfa/class_music_data_download_thread.html#ad832970b7165b07aa75c24f5ccd8f7ea">m_redirection</a>)</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">if</span>(save)</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="../../d9/dec/class_music_semaphore_loop.html">MusicSemaphoreLoop</a> loop;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="../../d0/d30/class_music_download_source_thread.html">MusicDownloadSourceThread</a> *download = <span class="keyword">new</span> <a class="code" href="../../d0/d30/class_music_download_source_thread.html">MusicDownloadSourceThread</a>(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        connect(download, SIGNAL(downLoadByteDataChanged(QByteArray)), SLOT(<a class="code" href="../../d4/d11/class_music_data_tag_download_thread.html#abaa0b13d67248136fe0063a156e08abc">downLoadFinished</a>(QByteArray)));</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        download-&gt;<a class="code" href="../../d0/d30/class_music_download_source_thread.html#a4059a328474db66b4e0590b3b5ae36e6">startToDownload</a>(<a class="code" href="../../d4/d11/class_music_data_tag_download_thread.html#a6162c77e82ee9210dcedf7669253142b">m_smallPicUrl</a>);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        connect(<span class="keyword">this</span>, SIGNAL(<a class="code" href="../../d4/d11/class_music_data_tag_download_thread.html#a4f29616447dade7addd48347bc04a25b">finished</a>()), &amp;loop, SLOT(quit()));</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        loop.<a class="code" href="../../d9/dec/class_music_semaphore_loop.html#a623bfa69d1adfcfa7153c32250998bb6">exec</a>();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    emit <a class="code" href="../../d5/de6/class_music_network_abstract.html#ae957b20ab1307ec7a7d0fdde4405f646">downLoadDataChanged</a>( <a class="code" href="../../dc/def/class_music_down_load_thread_abstract.html#abf4dcc59a2b6bc9cb44967d0a02439a5">transferData</a>() );</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="../../d3/d77/musiclogger_8h.html#a40ddce420b21f37a70b70ca5de3d879a">M_LOGGER_INFO</a>(<span class="stringliteral">&quot;data download has finished!&quot;</span>);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="../../d4/d11/class_music_data_tag_download_thread.html#a92687feea2efee99555aa70f0201b393">   75</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d4/d11/class_music_data_tag_download_thread.html#abaa0b13d67248136fe0063a156e08abc">MusicDataTagDownloadThread::downLoadFinished</a>(<span class="keyword">const</span> QByteArray &amp;data)</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="../../dd/db7/class_music_song_tag.html">MusicSongTag</a> tag;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">if</span>(tag.<a class="code" href="../../dd/db7/class_music_song_tag.html#a9a6d18260b35e465971cd9422322aa2a">read</a>(<a class="code" href="../../dc/def/class_music_down_load_thread_abstract.html#a0c91ba911c219289b80af2c35c3e0cc3">m_savePathName</a>))</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        tag.<a class="code" href="../../dd/db7/class_music_song_tag.html#afc6290a6e6877deb76db29aa2a4bc497">setTitle</a>(<a class="code" href="../../d4/d11/class_music_data_tag_download_thread.html#aee5c2884dbf1fd0f6951857efa454bd8">m_title</a>);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        tag.<a class="code" href="../../dd/db7/class_music_song_tag.html#a49f52b5ae0614a89c99d77c8abc0811d">setArtist</a>(<a class="code" href="../../d4/d11/class_music_data_tag_download_thread.html#a3a74cfa18390ee5166e41b8fd0ef3213">m_artist</a>);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        tag.<a class="code" href="../../dd/db7/class_music_song_tag.html#ac3c41da2dbf7397e9b4443cbcb4d0af4">setCover</a>(data);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        tag.<a class="code" href="../../dd/db7/class_music_song_tag.html#a83dfe08b7ecd8777b2986bdf2d677488">save</a>();</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <a class="code" href="../../d3/d77/musiclogger_8h.html#a40ddce420b21f37a70b70ca5de3d879a">M_LOGGER_INFO</a>(<span class="stringliteral">&quot;write tag has finished!&quot;</span>);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    emit <a class="code" href="../../d4/d11/class_music_data_tag_download_thread.html#a4f29616447dade7addd48347bc04a25b">finished</a>();</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../d8/dfa/class_music_data_download_thread.html#ad832970b7165b07aa75c24f5ccd8f7ea">m_redirection</a>)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">if</span>(save)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="../../d9/dec/class_music_semaphore_loop.html">MusicSemaphoreLoop</a> loop;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="../../d0/d30/class_music_download_source_thread.html">MusicDownloadSourceThread</a> *download = <span class="keyword">new</span> <a class="code" href="../../d0/d30/class_music_download_source_thread.html">MusicDownloadSourceThread</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        connect(download, SIGNAL(downLoadByteDataChanged(QByteArray)), SLOT(<a class="code" href="../../d4/d11/class_music_data_tag_download_thread.html#abaa0b13d67248136fe0063a156e08abc">downLoadFinished</a>(QByteArray)));</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        download-&gt;<a class="code" href="../../d0/d30/class_music_download_source_thread.html#a4059a328474db66b4e0590b3b5ae36e6">startToDownload</a>(<a class="code" href="../../d4/d11/class_music_data_tag_download_thread.html#a6162c77e82ee9210dcedf7669253142b">m_smallPicUrl</a>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        connect(<span class="keyword">this</span>, SIGNAL(<a class="code" href="../../d4/d11/class_music_data_tag_download_thread.html#a4f29616447dade7addd48347bc04a25b">finished</a>()), &amp;loop, SLOT(quit()));</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        loop.<a class="code" href="../../d9/dec/class_music_semaphore_loop.html#a623bfa69d1adfcfa7153c32250998bb6">exec</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    emit <a class="code" href="../../d5/de6/class_music_network_abstract.html#ae957b20ab1307ec7a7d0fdde4405f646">downLoadDataChanged</a>( <a class="code" href="../../dc/def/class_music_down_load_thread_abstract.html#abf4dcc59a2b6bc9cb44967d0a02439a5">transferData</a>() );</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="../../d3/d77/musiclogger_8h.html#a40ddce420b21f37a70b70ca5de3d879a">M_LOGGER_INFO</a>(<span class="stringliteral">&quot;data download has finished!&quot;</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="../../d4/d11/class_music_data_tag_download_thread.html#a92687feea2efee99555aa70f0201b393">   76</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d4/d11/class_music_data_tag_download_thread.html#abaa0b13d67248136fe0063a156e08abc">MusicDataTagDownloadThread::downLoadFinished</a>(<span class="keyword">const</span> QByteArray &amp;data)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="../../dd/db7/class_music_song_tag.html">MusicSongTag</a> tag;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">if</span>(tag.<a class="code" href="../../dd/db7/class_music_song_tag.html#a9a6d18260b35e465971cd9422322aa2a">read</a>(<a class="code" href="../../dc/def/class_music_down_load_thread_abstract.html#a0c91ba911c219289b80af2c35c3e0cc3">m_savePathName</a>))</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        tag.<a class="code" href="../../dd/db7/class_music_song_tag.html#afc6290a6e6877deb76db29aa2a4bc497">setTitle</a>(<a class="code" href="../../d4/d11/class_music_data_tag_download_thread.html#aee5c2884dbf1fd0f6951857efa454bd8">m_title</a>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        tag.<a class="code" href="../../dd/db7/class_music_song_tag.html#a49f52b5ae0614a89c99d77c8abc0811d">setArtist</a>(<a class="code" href="../../d4/d11/class_music_data_tag_download_thread.html#a3a74cfa18390ee5166e41b8fd0ef3213">m_artist</a>);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        tag.<a class="code" href="../../dd/db7/class_music_song_tag.html#ac3c41da2dbf7397e9b4443cbcb4d0af4">setCover</a>(data);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        tag.<a class="code" href="../../dd/db7/class_music_song_tag.html#a83dfe08b7ecd8777b2986bdf2d677488">save</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <a class="code" href="../../d3/d77/musiclogger_8h.html#a40ddce420b21f37a70b70ca5de3d879a">M_LOGGER_INFO</a>(<span class="stringliteral">&quot;write tag has finished!&quot;</span>);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    emit <a class="code" href="../../d4/d11/class_music_data_tag_download_thread.html#a4f29616447dade7addd48347bc04a25b">finished</a>();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
 <div class="ttc" id="class_music_song_tag_html_a83dfe08b7ecd8777b2986bdf2d677488"><div class="ttname"><a href="../../dd/db7/class_music_song_tag.html#a83dfe08b7ecd8777b2986bdf2d677488">MusicSongTag::save</a></div><div class="ttdeci">bool save()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dc4/musicsongtag_8cpp_source.html#l00055">musicsongtag.cpp:55</a></div></div>
 <div class="ttc" id="class_music_data_tag_download_thread_html_abaa0b13d67248136fe0063a156e08abc"><div class="ttname"><a href="../../d4/d11/class_music_data_tag_download_thread.html#abaa0b13d67248136fe0063a156e08abc">MusicDataTagDownloadThread::downLoadFinished</a></div><div class="ttdeci">virtual void downLoadFinished() override</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d88/musicdatatagdownloadthread_8cpp_source.html#l00052">musicdatatagdownloadthread.cpp:52</a></div></div>
 <div class="ttc" id="class_music_down_load_thread_abstract_html_abc64ac534fa59f5a85fc81e2d8506439"><div class="ttname"><a href="../../dc/def/class_music_down_load_thread_abstract.html#abc64ac534fa59f5a85fc81e2d8506439">MusicDownLoadThreadAbstract::Download_Type</a></div><div class="ttdeci">Download_Type</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00035">musicdownloadthreadabstract.h:35</a></div></div>
@@ -208,7 +209,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 12 2017 14:26:59 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Dec 31 2017 22:16:21 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

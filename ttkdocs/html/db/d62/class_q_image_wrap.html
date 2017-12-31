@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.3.0</span>
+   &#160;<span id="projectnumber">2.6.4.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -88,6 +88,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5345f5fb52b44476754baeea87343f60"><td class="memItemLeft" align="right" valign="top">QImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d62/class_q_image_wrap.html#a5345f5fb52b44476754baeea87343f60">GaussFilter</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QImage &amp;image, <a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> radius=10)</td></tr>
 <tr class="separator:a5345f5fb52b44476754baeea87343f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d92a2df2bc272567a25be01447abad2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d62/class_q_image_wrap.html#a1d92a2df2bc272567a25be01447abad2">GaussFilter</a> (QImage &amp;image, <a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> radius=10)</td></tr>
+<tr class="separator:a1d92a2df2bc272567a25be01447abad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The namespace of the image wrapper. </p>
@@ -122,20 +124,49 @@ Public Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../dc/d5f/qimagewrap_8cpp_source.html#l00006">6</a> of file <a class="el" href="../../dc/d5f/qimagewrap_8cpp_source.html">qimagewrap.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d2/d22/imagefilter_8h_source.html#l00243">filter::Average()</a>, <a class="el" href="../../d2/d22/imagefilter_8h_source.html#l00166">filter::Blur1D()</a>, <a class="el" href="../../d2/d22/imagefilter_8h_source.html#l00208">filter::Blur2D()</a>, <a class="el" href="../../d2/d22/imagefilter_8h_source.html#l00300">filter::Filter()</a>, <a class="el" href="../../d2/d22/imagefilter_8h_source.html#l00264">filter::Gauss()</a>, <a class="el" href="../../d2/d22/imagefilter_8h_source.html#l00278">filter::Gauss2()</a>, <a class="el" href="../../d2/d22/imagefilter_8h_source.html#l00253">filter::Linear()</a>, and <a class="el" href="../../d2/d22/imagefilter_8h_source.html#l00080">filter::bitmap_t::set()</a>.</p>
-
 <p>Referenced by <a class="el" href="../../d2/dc3/musiclrcposterwidget_8cpp_source.html#l00475">MusicLrcPosterItemWidget::drawTheme10()</a>.</p>
 
 </div>
 </div>
+<a class="anchor" id="a1d92a2df2bc272567a25be01447abad2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QImageWrap::GaussFilter </td>
+          <td>(</td>
+          <td class="paramtype">QImage &amp;&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramname"><em>radius</em> = <code>10</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Image gauss filter. </p>
+
+<p>Definition at line <a class="el" href="../../dc/d5f/qimagewrap_8cpp_source.html#l00013">13</a> of file <a class="el" href="../../dc/d5f/qimagewrap_8cpp_source.html">qimagewrap.cpp</a>.</p>
+
+<p>References <a class="el" href="../../d0/d8b/gaussianblur_8cpp_source.html#l00008">GaussianBlur::gaussBlur1()</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>TTKThirdParty/TTKImage/<a class="el" href="../../df/d48/qimagewrap_8h_source.html">qimagewrap.h</a></li>
-<li>TTKThirdParty/TTKImage/<a class="el" href="../../dc/d5f/qimagewrap_8cpp_source.html">qimagewrap.cpp</a></li>
+<li>TTKThirdParty/TTKExtras/qimage/<a class="el" href="../../df/d48/qimagewrap_8h_source.html">qimagewrap.h</a></li>
+<li>TTKThirdParty/TTKExtras/qimage/<a class="el" href="../../dc/d5f/qimagewrap_8cpp_source.html">qimagewrap.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 12 2017 14:27:54 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Dec 31 2017 22:16:56 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
