@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.4.0</span>
+   &#160;<span id="projectnumber">2.6.5.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -124,6 +124,10 @@ Public Slots</h2></td></tr>
 <tr class="separator:a58efe35198b872761384d413546c8bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44aaa1877afe2f5474d8708f13a1fa3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d93/class_music_songs_tool_box_top_widget.html#a44aaa1877afe2f5474d8708f13a1fa3a">showEnhanceLosslessDialog</a> ()</td></tr>
 <tr class="separator:a44aaa1877afe2f5474d8708f13a1fa3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a033e69e488270708e1e950660dd35302"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d93/class_music_songs_tool_box_top_widget.html#a033e69e488270708e1e950660dd35302">addToPlayLater</a> ()</td></tr>
+<tr class="separator:a033e69e488270708e1e950660dd35302"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e5d8135d56d599db12227e0f533c380"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d93/class_music_songs_tool_box_top_widget.html#a4e5d8135d56d599db12227e0f533c380">addToPlayedList</a> ()</td></tr>
+<tr class="separator:a4e5d8135d56d599db12227e0f533c380"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
 Signals</h2></td></tr>
@@ -145,6 +149,10 @@ Signals</h2></td></tr>
 <tr class="separator:a6241565293f8845ed235ad6ad123c80e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a022509d6d59a251129f9dbad19feddb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d93/class_music_songs_tool_box_top_widget.html#a022509d6d59a251129f9dbad19feddb0">swapDragItemIndex</a> (<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> before, <a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> after)</td></tr>
 <tr class="separator:a022509d6d59a251129f9dbad19feddb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bf9622b8cb7cb2cb24efd7f93d39d6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d93/class_music_songs_tool_box_top_widget.html#a4bf9622b8cb7cb2cb24efd7f93d39d6a">addToPlayLater</a> (<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> index)</td></tr>
+<tr class="separator:a4bf9622b8cb7cb2cb24efd7f93d39d6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8387cf21c9d413417dda417c8677c303"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d93/class_music_songs_tool_box_top_widget.html#a8387cf21c9d413417dda417c8677c303">addToPlayedList</a> (<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> index)</td></tr>
+<tr class="separator:a8387cf21c9d413417dda417c8677c303"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -261,9 +269,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Object contsructor. </p>
 
-<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00026">26</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00027">27</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00247">MusicObject::FT_Bold</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00181">m_index</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00187">m_isBlockMoveExpand</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00186">m_isDrawMoveState</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00186">m_isDrawTopState</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00183">m_labelIcon</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00183">m_labelText</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00190">m_musicSort</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00184">m_renameLine</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00058">MusicUIObject::MColorStyle10</a>, <a class="el" href="../../df/d37/musictinyuiobject_8h_source.html#l00182">MusicUIObject::MKGTinyBtnEnhanceLossless</a>, <a class="el" href="../../df/d37/musictinyuiobject_8h_source.html#l00187">MusicUIObject::MKGTinyBtnListMenu</a>, <a class="el" href="../../df/d37/musictinyuiobject_8h_source.html#l00177">MusicUIObject::MKGTinyBtnShare</a>, <a class="el" href="../../da/d90/musicwidgetutils_8cpp_source.html#l00016">MusicUtils::Widget::setLabelFontStyle()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00239">showEnhanceLosslessDialog()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00168">showMenu()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00234">showShareListDialog()</a>.</p>
+<p>References <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00247">MusicObject::FT_Bold</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00197">m_index</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00203">m_isBlockMoveExpand</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00202">m_isDrawMoveState</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00202">m_isDrawTopState</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00199">m_labelIcon</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00199">m_labelText</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00206">m_musicSort</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00200">m_renameLine</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00058">MusicUIObject::MColorStyle10</a>, <a class="el" href="../../df/d37/musictinyuiobject_8h_source.html#l00182">MusicUIObject::MKGTinyBtnEnhanceLossless</a>, <a class="el" href="../../df/d37/musictinyuiobject_8h_source.html#l00187">MusicUIObject::MKGTinyBtnListMenu</a>, <a class="el" href="../../df/d37/musictinyuiobject_8h_source.html#l00177">MusicUIObject::MKGTinyBtnShare</a>, <a class="el" href="../../da/d90/musicwidgetutils_8cpp_source.html#l00016">MusicUtils::Widget::setLabelFontStyle()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00240">showEnhanceLosslessDialog()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00169">showMenu()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00235">showShareListDialog()</a>.</p>
 
 </div>
 </div>
@@ -280,9 +288,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00083">83</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00084">84</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00183">m_labelIcon</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00183">m_labelText</a>, and <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00184">m_renameLine</a>.</p>
+<p>References <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00199">m_labelIcon</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00199">m_labelText</a>, and <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00200">m_renameLine</a>.</p>
 
 </div>
 </div>
@@ -334,11 +342,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Add new music dir to list. </p>
 
-<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00158">158</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00159">159</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00181">m_index</a>.</p>
+<p>References <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00197">m_index</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00168">showMenu()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00169">showMenu()</a>.</p>
 
 </div>
 </div>
@@ -389,11 +397,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Add new music file or files to list. </p>
 
-<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00153">153</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00154">154</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00181">m_index</a>.</p>
+<p>References <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00197">m_index</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00168">showMenu()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00169">showMenu()</a>.</p>
 
 </div>
 </div>
@@ -419,7 +427,117 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Add new play list item. </p>
 
-<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00168">showMenu()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00169">showMenu()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8387cf21c9d413417dda417c8677c303"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MusicSongsToolBoxTopWidget::addToPlayedList </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Add music to played list. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4e5d8135d56d599db12227e0f533c380"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MusicSongsToolBoxTopWidget::addToPlayedList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Add music to played list. </p>
+
+<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00250">250</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
+
+<p>References <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00197">m_index</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00169">showMenu()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4bf9622b8cb7cb2cb24efd7f93d39d6a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MusicSongsToolBoxTopWidget::addToPlayLater </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Add music to played list and play later. </p>
+
+</div>
+</div>
+<a class="anchor" id="a033e69e488270708e1e950660dd35302"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MusicSongsToolBoxTopWidget::addToPlayLater </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Add music to played list and play later. </p>
+
+<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00245">245</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
+
+<p>References <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00197">m_index</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00169">showMenu()</a>.</p>
 
 </div>
 </div>
@@ -480,11 +598,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Open rename selected play list item widget. </p>
 
-<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00132">132</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00134">134</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00110">getTitle()</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00183">m_labelIcon</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00184">m_renameLine</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00143">setChangItemName()</a>.</p>
+<p>References <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00112">getTitle()</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00199">m_labelIcon</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00200">m_renameLine</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00025">RENAME_WIDTH</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00145">setChangItemName()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00143">setChangItemName()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00168">showMenu()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00145">setChangItemName()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00169">showMenu()</a>.</p>
 
 </div>
 </div>
@@ -510,9 +628,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00351">351</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00362">362</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00168">showMenu()</a>.</p>
+<p>References <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00169">showMenu()</a>.</p>
 
 </div>
 </div>
@@ -563,11 +681,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Delete selected play list item. </p>
 
-<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00122">122</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00124">124</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00181">m_index</a>.</p>
+<p>References <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00197">m_index</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00168">showMenu()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00169">showMenu()</a>.</p>
 
 </div>
 </div>
@@ -618,11 +736,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Delete all items in play list item. </p>
 
-<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00127">127</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00129">129</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00181">m_index</a>.</p>
+<p>References <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00197">m_index</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00168">showMenu()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00169">showMenu()</a>.</p>
 
 </div>
 </div>
@@ -648,7 +766,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00268">268</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00279">279</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
 
 <p>References <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00024">DRAG_FORMAT</a>.</p>
 
@@ -677,9 +795,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Override the widget event. </p>
 
-<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00250">250</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00261">261</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00186">m_isDrawMoveState</a>, and <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00186">m_isDrawTopState</a>.</p>
+<p>References <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00202">m_isDrawMoveState</a>, and <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00202">m_isDrawTopState</a>.</p>
 
 </div>
 </div>
@@ -705,9 +823,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00258">258</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00269">269</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00024">DRAG_FORMAT</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00244">isItemEnable()</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00186">m_isDrawMoveState</a>, and <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00186">m_isDrawTopState</a>.</p>
+<p>References <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00024">DRAG_FORMAT</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00255">isItemEnable()</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00202">m_isDrawMoveState</a>, and <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00202">m_isDrawTopState</a>.</p>
 
 </div>
 </div>
@@ -733,9 +851,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00281">281</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00292">292</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00024">DRAG_FORMAT</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00244">isItemEnable()</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00181">m_index</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00186">m_isDrawMoveState</a>, and <a class="el" href="../../d7/d93/class_music_songs_tool_box_top_widget.html#a022509d6d59a251129f9dbad19feddb0">swapDragItemIndex()</a>.</p>
+<p>References <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00024">DRAG_FORMAT</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00255">isItemEnable()</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00197">m_index</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00202">m_isDrawMoveState</a>, and <a class="el" href="../../d7/d93/class_music_songs_tool_box_top_widget.html#a022509d6d59a251129f9dbad19feddb0">swapDragItemIndex()</a>.</p>
 
 </div>
 </div>
@@ -761,11 +879,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Export music songs by item list. </p>
 
-<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00163">163</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00164">164</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00125">MusicApplication::instance()</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00181">m_index</a>, and <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00584">MusicApplication::musicExportSongsItemList()</a>.</p>
+<p>References <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00125">MusicApplication::instance()</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00197">m_index</a>, and <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00583">MusicApplication::musicExportSongsItemList()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00168">showMenu()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00169">showMenu()</a>.</p>
 
 </div>
 </div>
@@ -791,7 +909,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Get class object name. </p>
 
-<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00090">90</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00091">91</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
 
 </div>
 </div>
@@ -819,7 +937,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00055">55</a> of file <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html">musicsongstoolboxwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00987">MusicSongsSummariziedWidget::setItemTitle()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l01018">MusicSongsSummariziedWidget::setItemTitle()</a>.</p>
 
 </div>
 </div>
@@ -838,11 +956,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Get top label title. </p>
 
-<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00110">110</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00112">112</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00183">m_labelText</a>, and <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00182">m_suffixString</a>.</p>
+<p>References <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00199">m_labelText</a>, and <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00198">m_suffixString</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00132">changRowItemName()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00466">MusicSongsToolBoxWidgetItem::getTitle()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00302">mouseMoveEvent()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00134">changRowItemName()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00479">MusicSongsToolBoxWidgetItem::getTitle()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00313">mouseMoveEvent()</a>.</p>
 
 </div>
 </div>
@@ -868,11 +986,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Check the item is enable or not. </p>
 
-<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00244">244</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00255">255</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00181">m_index</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00048">MUSIC_LOVEST_LIST</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00049">MUSIC_NETWORK_LIST</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00047">MUSIC_NORMAL_LIST</a>, and <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00050">MUSIC_RECENT_LIST</a>.</p>
+<p>References <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00197">m_index</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00049">MUSIC_LOVEST_LIST</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00050">MUSIC_NETWORK_LIST</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00048">MUSIC_NORMAL_LIST</a>, and <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00051">MUSIC_RECENT_LIST</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00258">dragMoveEvent()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00281">dropEvent()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00302">mouseMoveEvent()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00168">showMenu()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00269">dragMoveEvent()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00292">dropEvent()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00313">mouseMoveEvent()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00169">showMenu()</a>.</p>
 
 </div>
 </div>
@@ -890,11 +1008,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Get Item expand. </p>
 
-<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00100">100</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00101">101</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00183">m_labelIcon</a>.</p>
+<p>References <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00199">m_labelIcon</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00302">mouseMoveEvent()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00313">mouseMoveEvent()</a>.</p>
 
 </div>
 </div>
@@ -920,9 +1038,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00302">302</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00313">313</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00024">DRAG_FORMAT</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00110">getTitle()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00244">isItemEnable()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00100">isItemExpand()</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00181">m_index</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00187">m_isBlockMoveExpand</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00188">m_pressPosAt</a>, and <a class="el" href="../../d7/d93/class_music_songs_tool_box_top_widget.html#ad7451a1312d1d43ee7d32cd66cbc99bd">mousePressAt()</a>.</p>
+<p>References <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00024">DRAG_FORMAT</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00112">getTitle()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00255">isItemEnable()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00101">isItemExpand()</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00197">m_index</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00203">m_isBlockMoveExpand</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00204">m_pressPosAt</a>, and <a class="el" href="../../d7/d93/class_music_songs_tool_box_top_widget.html#ad7451a1312d1d43ee7d32cd66cbc99bd">mousePressAt()</a>.</p>
 
 </div>
 </div>
@@ -949,7 +1067,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Current top widget is pressed. </p>
 
-<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00302">mouseMoveEvent()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00292">mousePressEvent()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00313">mouseMoveEvent()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00303">mousePressEvent()</a>.</p>
 
 </div>
 </div>
@@ -975,9 +1093,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00292">292</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00303">303</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00181">m_index</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00188">m_pressPosAt</a>, and <a class="el" href="../../d7/d93/class_music_songs_tool_box_top_widget.html#ad7451a1312d1d43ee7d32cd66cbc99bd">mousePressAt()</a>.</p>
+<p>References <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00197">m_index</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00204">m_pressPosAt</a>, and <a class="el" href="../../d7/d93/class_music_songs_tool_box_top_widget.html#ad7451a1312d1d43ee7d32cd66cbc99bd">mousePressAt()</a>.</p>
 
 </div>
 </div>
@@ -1004,7 +1122,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Music list songs sort by type. </p>
 
-<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00214">musicListSongSortBy()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00168">showMenu()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00215">musicListSongSortBy()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00169">showMenu()</a>.</p>
 
 </div>
 </div>
@@ -1031,9 +1149,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Music list songs sort by type. </p>
 
-<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00214">214</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00215">215</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00167">MusicSort::m_index</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00181">m_index</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00190">m_musicSort</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00168">MusicSort::m_sortType</a>, and <a class="el" href="../../d7/d93/class_music_songs_tool_box_top_widget.html#a6241565293f8845ed235ad6ad123c80e">musicListSongSortBy()</a>.</p>
+<p>References <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00167">MusicSort::m_index</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00197">m_index</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00206">m_musicSort</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00168">MusicSort::m_sortType</a>, and <a class="el" href="../../d7/d93/class_music_songs_tool_box_top_widget.html#a6241565293f8845ed235ad6ad123c80e">musicListSongSortBy()</a>.</p>
 
 </div>
 </div>
@@ -1061,9 +1179,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../d2/d21/class_music_songs_tool_box_mask_widget.html#a1b4258d01cbcce898776e9353c876f0a">MusicSongsToolBoxMaskWidget</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00329">329</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00340">340</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00186">m_isDrawMoveState</a>, and <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00186">m_isDrawTopState</a>.</p>
+<p>References <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00202">m_isDrawMoveState</a>, and <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00202">m_isDrawTopState</a>.</p>
 
 </div>
 </div>
@@ -1090,11 +1208,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Rename item artist label is finised. </p>
 
-<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00143">143</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00145">145</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00132">changRowItemName()</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00181">m_index</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00183">m_labelText</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00184">m_renameLine</a>, and <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00182">m_suffixString</a>.</p>
+<p>References <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00134">changRowItemName()</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00197">m_index</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00200">m_renameLine</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00198">m_suffixString</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00106">setTitle()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00132">changRowItemName()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00134">changRowItemName()</a>.</p>
 
 </div>
 </div>
@@ -1113,11 +1231,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Set Item expand. </p>
 
-<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00095">95</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00096">96</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00183">m_labelIcon</a>.</p>
+<p>References <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00199">m_labelIcon</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00476">MusicSongsToolBoxWidgetItem::setItemExpand()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00894">MusicSongsSummariziedWidget::sliderValueChanaged()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00489">MusicSongsToolBoxWidgetItem::setItemExpand()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00925">MusicSongsSummariziedWidget::sliderValueChanaged()</a>.</p>
 
 </div>
 </div>
@@ -1146,7 +1264,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00051">51</a> of file <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html">musicsongstoolboxwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00894">MusicSongsSummariziedWidget::sliderValueChanaged()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00925">MusicSongsSummariziedWidget::sliderValueChanaged()</a>.</p>
 
 </div>
 </div>
@@ -1175,7 +1293,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00078">78</a> of file <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html">musicsongstoolboxwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00471">MusicSongsToolBoxWidgetItem::setMusicSort()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00894">MusicSongsSummariziedWidget::sliderValueChanaged()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00484">MusicSongsToolBoxWidgetItem::setMusicSort()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00925">MusicSongsSummariziedWidget::sliderValueChanaged()</a>.</p>
 
 </div>
 </div>
@@ -1194,11 +1312,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Set top label title. </p>
 
-<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00105">105</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00106">106</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00183">m_labelText</a>.</p>
+<p>References <a class="el" href="../../da/d90/musicwidgetutils_8cpp_source.html#l00033">MusicUtils::Widget::elidedText()</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00199">m_labelText</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00025">RENAME_WIDTH</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00987">MusicSongsSummariziedWidget::setItemTitle()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00461">MusicSongsToolBoxWidgetItem::setTitle()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00894">MusicSongsSummariziedWidget::sliderValueChanaged()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00145">setChangItemName()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l01018">MusicSongsSummariziedWidget::setItemTitle()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00474">MusicSongsToolBoxWidgetItem::setTitle()</a>, and <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00925">MusicSongsSummariziedWidget::sliderValueChanaged()</a>.</p>
 
 </div>
 </div>
@@ -1224,11 +1342,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Show enhance lossless dialog. </p>
 
-<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00239">239</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00240">240</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
 
 <p>References <a class="el" href="../../d1/dd3/musicsonglistenhancelosslesswidget_8cpp_source.html#l00027">MusicSongListEnhanceLosslessWidget::exec()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00026">MusicSongsToolBoxTopWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00027">MusicSongsToolBoxTopWidget()</a>.</p>
 
 </div>
 </div>
@@ -1254,11 +1372,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Show menu items. </p>
 
-<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00168">168</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00169">169</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00158">addNewDir()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00153">addNewFiles()</a>, <a class="el" href="../../d7/d93/class_music_songs_tool_box_top_widget.html#a202fa31f39821c1e93acb962384c3b31">addNewRowItem()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00132">changRowItemName()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00122">deleteRowItem()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00127">deleteRowItemAll()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00163">exportSongsItemList()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00244">isItemEnable()</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00167">MusicSort::m_index</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00181">m_index</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00190">m_musicSort</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00168">MusicSort::m_sortType</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00389">MusicUIObject::MMenuStyle02</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00048">MUSIC_LOVEST_LIST</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00049">MUSIC_NETWORK_LIST</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00050">MUSIC_RECENT_LIST</a>, and <a class="el" href="../../d7/d93/class_music_songs_tool_box_top_widget.html#a6241565293f8845ed235ad6ad123c80e">musicListSongSortBy()</a>.</p>
+<p>References <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00159">addNewDir()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00154">addNewFiles()</a>, <a class="el" href="../../d7/d93/class_music_songs_tool_box_top_widget.html#a202fa31f39821c1e93acb962384c3b31">addNewRowItem()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00250">addToPlayedList()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00245">addToPlayLater()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00134">changRowItemName()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00124">deleteRowItem()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00129">deleteRowItemAll()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00164">exportSongsItemList()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00255">isItemEnable()</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00167">MusicSort::m_index</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00197">m_index</a>, <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00206">m_musicSort</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00168">MusicSort::m_sortType</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00389">MusicUIObject::MMenuStyle02</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00049">MUSIC_LOVEST_LIST</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00050">MUSIC_NETWORK_LIST</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00051">MUSIC_RECENT_LIST</a>, and <a class="el" href="../../d7/d93/class_music_songs_tool_box_top_widget.html#a6241565293f8845ed235ad6ad123c80e">musicListSongSortBy()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00351">contextMenuEvent()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00026">MusicSongsToolBoxTopWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00362">contextMenuEvent()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00027">MusicSongsToolBoxTopWidget()</a>.</p>
 
 </div>
 </div>
@@ -1284,11 +1402,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Show share list dialog. </p>
 
-<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00234">234</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00235">235</a> of file <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html">musicsongstoolboxwidget.cpp</a>.</p>
 
 <p>References <a class="el" href="../../d8/d97/musicsonglistsharingwidget_8cpp_source.html#l00063">MusicSongListSharingWidget::exec()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00026">MusicSongsToolBoxTopWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00027">MusicSongsToolBoxTopWidget()</a>.</p>
 
 </div>
 </div>
@@ -1325,7 +1443,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Swap the item index by drag adn drop. </p>
 
-<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00281">dropEvent()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00292">dropEvent()</a>.</p>
 
 </div>
 </div>
@@ -1348,9 +1466,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00181">181</a> of file <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html">musicsongstoolboxwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00197">197</a> of file <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html">musicsongstoolboxwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00158">addNewDir()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00153">addNewFiles()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00122">deleteRowItem()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00127">deleteRowItemAll()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00281">dropEvent()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00163">exportSongsItemList()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00244">isItemEnable()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00302">mouseMoveEvent()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00292">mousePressEvent()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00214">musicListSongSortBy()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00026">MusicSongsToolBoxTopWidget()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00143">setChangItemName()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00168">showMenu()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00159">addNewDir()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00154">addNewFiles()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00250">addToPlayedList()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00245">addToPlayLater()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00124">deleteRowItem()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00129">deleteRowItemAll()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00292">dropEvent()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00164">exportSongsItemList()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00255">isItemEnable()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00313">mouseMoveEvent()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00303">mousePressEvent()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00215">musicListSongSortBy()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00027">MusicSongsToolBoxTopWidget()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00145">setChangItemName()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00169">showMenu()</a>.</p>
 
 </div>
 </div>
@@ -1372,9 +1490,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00187">187</a> of file <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html">musicsongstoolboxwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00203">203</a> of file <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html">musicsongstoolboxwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00302">mouseMoveEvent()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00359">MusicSongsToolBoxMaskWidget::MusicSongsToolBoxMaskWidget()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00026">MusicSongsToolBoxTopWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00313">mouseMoveEvent()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00370">MusicSongsToolBoxMaskWidget::MusicSongsToolBoxMaskWidget()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00027">MusicSongsToolBoxTopWidget()</a>.</p>
 
 </div>
 </div>
@@ -1396,9 +1514,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00186">186</a> of file <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html">musicsongstoolboxwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00202">202</a> of file <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html">musicsongstoolboxwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00250">dragLeaveEvent()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00258">dragMoveEvent()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00281">dropEvent()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00026">MusicSongsToolBoxTopWidget()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00329">paintEvent()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00261">dragLeaveEvent()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00269">dragMoveEvent()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00292">dropEvent()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00027">MusicSongsToolBoxTopWidget()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00340">paintEvent()</a>.</p>
 
 </div>
 </div>
@@ -1420,9 +1538,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00186">186</a> of file <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html">musicsongstoolboxwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00202">202</a> of file <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html">musicsongstoolboxwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00250">dragLeaveEvent()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00258">dragMoveEvent()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00026">MusicSongsToolBoxTopWidget()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00329">paintEvent()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00261">dragLeaveEvent()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00269">dragMoveEvent()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00027">MusicSongsToolBoxTopWidget()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00340">paintEvent()</a>.</p>
 
 </div>
 </div>
@@ -1444,9 +1562,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00183">183</a> of file <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html">musicsongstoolboxwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00199">199</a> of file <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html">musicsongstoolboxwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00132">changRowItemName()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00100">isItemExpand()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00026">MusicSongsToolBoxTopWidget()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00095">setItemExpand()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00083">~MusicSongsToolBoxTopWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00134">changRowItemName()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00101">isItemExpand()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00027">MusicSongsToolBoxTopWidget()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00096">setItemExpand()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00084">~MusicSongsToolBoxTopWidget()</a>.</p>
 
 </div>
 </div>
@@ -1468,9 +1586,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00183">183</a> of file <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html">musicsongstoolboxwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00199">199</a> of file <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html">musicsongstoolboxwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00110">getTitle()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00026">MusicSongsToolBoxTopWidget()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00143">setChangItemName()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00105">setTitle()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00083">~MusicSongsToolBoxTopWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00112">getTitle()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00027">MusicSongsToolBoxTopWidget()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00106">setTitle()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00084">~MusicSongsToolBoxTopWidget()</a>.</p>
 
 </div>
 </div>
@@ -1492,9 +1610,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00190">190</a> of file <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html">musicsongstoolboxwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00206">206</a> of file <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html">musicsongstoolboxwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00214">musicListSongSortBy()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00026">MusicSongsToolBoxTopWidget()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00168">showMenu()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00215">musicListSongSortBy()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00027">MusicSongsToolBoxTopWidget()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00169">showMenu()</a>.</p>
 
 </div>
 </div>
@@ -1516,9 +1634,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00188">188</a> of file <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html">musicsongstoolboxwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00204">204</a> of file <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html">musicsongstoolboxwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00302">mouseMoveEvent()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00292">mousePressEvent()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00313">mouseMoveEvent()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00303">mousePressEvent()</a>.</p>
 
 </div>
 </div>
@@ -1540,9 +1658,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00184">184</a> of file <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html">musicsongstoolboxwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00200">200</a> of file <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html">musicsongstoolboxwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00132">changRowItemName()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00026">MusicSongsToolBoxTopWidget()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00143">setChangItemName()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00083">~MusicSongsToolBoxTopWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00134">changRowItemName()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00027">MusicSongsToolBoxTopWidget()</a>, <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00145">setChangItemName()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00084">~MusicSongsToolBoxTopWidget()</a>.</p>
 
 </div>
 </div>
@@ -1564,9 +1682,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00182">182</a> of file <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html">musicsongstoolboxwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00198">198</a> of file <a class="el" href="../../df/d35/musicsongstoolboxwidget_8h_source.html">musicsongstoolboxwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00110">getTitle()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00143">setChangItemName()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00112">getTitle()</a>, and <a class="el" href="../../d9/df9/musicsongstoolboxwidget_8cpp_source.html#l00145">setChangItemName()</a>.</p>
 
 </div>
 </div>
@@ -1577,7 +1695,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 31 2017 22:16:49 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 2 2018 18:15:05 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

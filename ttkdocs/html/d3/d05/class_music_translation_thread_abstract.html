@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.4.0</span>
+   &#160;<span id="projectnumber">2.6.5.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -123,6 +123,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3dee83b45d7565ff174f3065799a2182 inherit pub_methods_class_music_network_abstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa807c77659d3d6a1f4ae119322d54c9 inherit pub_methods_class_music_network_abstract"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de6/class_music_network_abstract.html#afa807c77659d3d6a1f4ae119322d54c9">~MusicNetworkAbstract</a> ()</td></tr>
 <tr class="separator:afa807c77659d3d6a1f4ae119322d54c9 inherit pub_methods_class_music_network_abstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f716f33b3b1ca5113dfd48c286e2a84 inherit pub_methods_class_music_network_abstract"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de6/class_music_network_abstract.html#a0f716f33b3b1ca5113dfd48c286e2a84">setNetworkAbort</a> (bool a)</td></tr>
+<tr class="separator:a0f716f33b3b1ca5113dfd48c286e2a84 inherit pub_methods_class_music_network_abstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af45a63cb2f32e708d5d62df95a3c8189 inherit pub_methods_class_music_network_abstract"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de6/class_music_network_abstract.html#af45a63cb2f32e708d5d62df95a3c8189">networkAbort</a> ()</td></tr>
+<tr class="separator:af45a63cb2f32e708d5d62df95a3c8189 inherit pub_methods_class_music_network_abstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -166,6 +170,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:ab5e73bd758ed5fb3147f93797d75b0e4 inherit pub_slots_class_music_network_abstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affd39e692440dc4cc5e8e75db192ea5a inherit pub_slots_class_music_network_abstract"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de6/class_music_network_abstract.html#affd39e692440dc4cc5e8e75db192ea5a">sslErrorsString</a> (QNetworkReply *reply, <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QList&lt; QSslError &gt; &amp;errors)</td></tr>
 <tr class="separator:affd39e692440dc4cc5e8e75db192ea5a inherit pub_slots_class_music_network_abstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_music_network_abstract"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_music_network_abstract')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d5/de6/class_music_network_abstract.html">MusicNetworkAbstract</a></td></tr>
+<tr class="memitem:a893bd538615a7d0c38cbe4dcb82a27bb inherit pro_methods_class_music_network_abstract"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de6/class_music_network_abstract.html#a893bd538615a7d0c38cbe4dcb82a27bb">setSslConfiguration</a> (QNetworkRequest *request, QSslSocket::PeerVerifyMode m=QSslSocket::VerifyNone)</td></tr>
+<tr class="separator:a893bd538615a7d0c38cbe4dcb82a27bb inherit pro_methods_class_music_network_abstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The class of translation words abstract thread. </p>
@@ -198,7 +205,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d9/ded/musictranslationthreadabstract_8cpp_source.html#l00003">3</a> of file <a class="el" href="../../d9/ded/musictranslationthreadabstract_8cpp_source.html">musictranslationthreadabstract.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d1/dbf/musicnetworkabstract_8h_source.html#l00088">MusicNetworkAbstract::m_manager</a>, and <a class="el" href="../../d1/dbf/musicnetworkabstract_8h_source.html#l00087">MusicNetworkAbstract::m_reply</a>.</p>
+<p>References <a class="el" href="../../d1/dbf/musicnetworkabstract_8h_source.html#l00102">MusicNetworkAbstract::m_manager</a>, and <a class="el" href="../../d1/dbf/musicnetworkabstract_8h_source.html#l00101">MusicNetworkAbstract::m_reply</a>.</p>
 
 </div>
 </div>
@@ -229,9 +236,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d9/ded/musictranslationthreadabstract_8cpp_source.html#l00020">20</a> of file <a class="el" href="../../d9/ded/musictranslationthreadabstract_8cpp_source.html">musictranslationthreadabstract.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d1/dbf/musicnetworkabstract_8h_source.html#l00087">MusicNetworkAbstract::m_reply</a>.</p>
+<p>References <a class="el" href="../../d1/dbf/musicnetworkabstract_8h_source.html#l00101">MusicNetworkAbstract::m_reply</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/d07/musicwytranslationthread_8cpp_source.html#l00057">MusicWYTranslationThread::downLoadFinished()</a>, <a class="el" href="../../d7/dc3/musictranslationthread_8cpp_source.html#l00074">MusicTranslationThread::downLoadFinished()</a>, <a class="el" href="../../d7/dc3/musictranslationthread_8cpp_source.html#l00014">MusicTranslationThread::~MusicTranslationThread()</a>, and <a class="el" href="../../dd/d07/musicwytranslationthread_8cpp_source.html#l00014">MusicWYTranslationThread::~MusicWYTranslationThread()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/d07/musicwytranslationthread_8cpp_source.html#l00055">MusicWYTranslationThread::downLoadFinished()</a>, <a class="el" href="../../d7/dc3/musictranslationthread_8cpp_source.html#l00071">MusicTranslationThread::downLoadFinished()</a>, <a class="el" href="../../d7/dc3/musictranslationthread_8cpp_source.html#l00014">MusicTranslationThread::~MusicTranslationThread()</a>, and <a class="el" href="../../dd/d07/musicwytranslationthread_8cpp_source.html#l00014">MusicWYTranslationThread::~MusicWYTranslationThread()</a>.</p>
 
 </div>
 </div>
@@ -258,7 +265,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Send translated data from net. </p>
 
-<p>Referenced by <a class="el" href="../../dd/d07/musicwytranslationthread_8cpp_source.html#l00057">MusicWYTranslationThread::downLoadFinished()</a>, <a class="el" href="../../d7/dc3/musictranslationthread_8cpp_source.html#l00074">MusicTranslationThread::downLoadFinished()</a>, and <a class="el" href="../../dd/d07/musicwytranslationthread_8cpp_source.html#l00024">MusicWYTranslationThread::startToDownload()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/d07/musicwytranslationthread_8cpp_source.html#l00055">MusicWYTranslationThread::downLoadFinished()</a>, <a class="el" href="../../d7/dc3/musictranslationthread_8cpp_source.html#l00071">MusicTranslationThread::downLoadFinished()</a>, and <a class="el" href="../../dd/d07/musicwytranslationthread_8cpp_source.html#l00024">MusicWYTranslationThread::startToDownload()</a>.</p>
 
 </div>
 </div>
@@ -372,7 +379,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 31 2017 22:16:53 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 2 2018 18:15:06 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

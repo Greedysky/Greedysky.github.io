@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.4.0</span>
+   &#160;<span id="projectnumber">2.6.5.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -98,31 +98,34 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * with this program; If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> ================================================= */</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/de6/musicextrasglobaldefine_8h.html">musicextrasglobaldefine.h</a>&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../d3/d0b/class_gaussian_blur.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d3/de6/musicextrasglobaldefine_8h.html#a26f6db0b4db801cc546e000e046a2845">MUSIC_EXTRAS_EXPORT</a> <a class="code" href="../../d3/d0b/class_gaussian_blur.html">GaussianBlur</a></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> gaussBlur1(<span class="keywordtype">int</span>* pix, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h, <span class="keywordtype">int</span> radius);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> gaussBlur2(<span class="keywordtype">int</span>* pix, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h, <span class="keywordtype">int</span> radius);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> boxBlurH(<span class="keywordtype">int</span>* srcPix, <span class="keywordtype">int</span>* destPix, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h, <span class="keywordtype">int</span> radius);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> boxBlurV(<span class="keywordtype">int</span>* srcPix, <span class="keywordtype">int</span>* destPix, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h, <span class="keywordtype">int</span> radius);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> boxBlur(<span class="keywordtype">int</span>* srcPix, <span class="keywordtype">int</span>* destPix, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h, <span class="keywordtype">int</span> r);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> boxesForGauss(<span class="keywordtype">float</span> sigma, <span class="keywordtype">int</span>* <a class="code" href="../../d2/db7/ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, <span class="keywordtype">int</span> n);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif // GAUSSIANBLUR_H</span></div>
-<div class="ttc" id="ioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="../../d2/db7/ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/db7/ioapi_8h_source.html#l00136">ioapi.h:136</a></div></div>
-<div class="ttc" id="class_gaussian_blur_html"><div class="ttname"><a href="../../d3/d0b/class_gaussian_blur.html">GaussianBlur</a></div><div class="ttdoc">The namespace of the Gaussian Blur. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d32/gaussianblur_8h_source.html#l00027">gaussianblur.h:27</a></div></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/d85/musicprivate_8h.html">musicprivate.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/de6/musicextrasglobaldefine_8h.html">musicextrasglobaldefine.h</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">class </span><a class="code" href="../../d3/df6/class_gaussian_blur_private.html">GaussianBlurPrivate</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../d3/d0b/class_gaussian_blur.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d3/de6/musicextrasglobaldefine_8h.html#a26f6db0b4db801cc546e000e046a2845">MUSIC_EXTRAS_EXPORT</a> <a class="code" href="../../d3/d0b/class_gaussian_blur.html">GaussianBlur</a></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="../../d3/d0b/class_gaussian_blur.html">GaussianBlur</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> gaussBlur(<span class="keywordtype">int</span>* pix, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h, <span class="keywordtype">int</span> radius);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> gaussBlurPlus(<span class="keywordtype">int</span>* pix, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h, <span class="keywordtype">int</span> radius);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="../../d9/d85/musicprivate_8h.html#ac1baeedf9b10976e3c21a965868df1f5">MUSIC_DECLARE_PRIVATE</a>(<a class="code" href="../../d3/d0b/class_gaussian_blur.html">GaussianBlur</a>)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif // GAUSSIANBLUR_H</span></div>
+<div class="ttc" id="musicprivate_8h_html_ac1baeedf9b10976e3c21a965868df1f5"><div class="ttname"><a href="../../d9/d85/musicprivate_8h.html#ac1baeedf9b10976e3c21a965868df1f5">MUSIC_DECLARE_PRIVATE</a></div><div class="ttdeci">#define MUSIC_DECLARE_PRIVATE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d85/musicprivate_8h_source.html#l00023">musicprivate.h:23</a></div></div>
+<div class="ttc" id="class_gaussian_blur_private_html"><div class="ttname"><a href="../../d3/df6/class_gaussian_blur_private.html">GaussianBlurPrivate</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d8b/gaussianblur_8cpp_source.html#l00008">gaussianblur.cpp:8</a></div></div>
+<div class="ttc" id="musicprivate_8h_html"><div class="ttname"><a href="../../d9/d85/musicprivate_8h.html">musicprivate.h</a></div></div>
+<div class="ttc" id="class_gaussian_blur_html"><div class="ttname"><a href="../../d3/d0b/class_gaussian_blur.html">GaussianBlur</a></div><div class="ttdoc">The namespace of the Gaussian Blur. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d32/gaussianblur_8h_source.html#l00030">gaussianblur.h:30</a></div></div>
 <div class="ttc" id="musicextrasglobaldefine_8h_html"><div class="ttname"><a href="../../d3/de6/musicextrasglobaldefine_8h.html">musicextrasglobaldefine.h</a></div></div>
 <div class="ttc" id="musicextrasglobaldefine_8h_html_a26f6db0b4db801cc546e000e046a2845"><div class="ttname"><a href="../../d3/de6/musicextrasglobaldefine_8h.html#a26f6db0b4db801cc546e000e046a2845">MUSIC_EXTRAS_EXPORT</a></div><div class="ttdeci">#define MUSIC_EXTRAS_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/de6/musicextrasglobaldefine_8h_source.html#l00031">musicextrasglobaldefine.h:31</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 31 2017 22:16:27 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 2 2018 18:14:47 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

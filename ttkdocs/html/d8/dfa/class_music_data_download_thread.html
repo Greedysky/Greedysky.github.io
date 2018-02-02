@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.4.0</span>
+   &#160;<span id="projectnumber">2.6.5.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -163,6 +163,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3dee83b45d7565ff174f3065799a2182 inherit pub_methods_class_music_network_abstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa807c77659d3d6a1f4ae119322d54c9 inherit pub_methods_class_music_network_abstract"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de6/class_music_network_abstract.html#afa807c77659d3d6a1f4ae119322d54c9">~MusicNetworkAbstract</a> ()</td></tr>
 <tr class="separator:afa807c77659d3d6a1f4ae119322d54c9 inherit pub_methods_class_music_network_abstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f716f33b3b1ca5113dfd48c286e2a84 inherit pub_methods_class_music_network_abstract"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de6/class_music_network_abstract.html#a0f716f33b3b1ca5113dfd48c286e2a84">setNetworkAbort</a> (bool a)</td></tr>
+<tr class="separator:a0f716f33b3b1ca5113dfd48c286e2a84 inherit pub_methods_class_music_network_abstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af45a63cb2f32e708d5d62df95a3c8189 inherit pub_methods_class_music_network_abstract"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de6/class_music_network_abstract.html#af45a63cb2f32e708d5d62df95a3c8189">networkAbort</a> ()</td></tr>
+<tr class="separator:af45a63cb2f32e708d5d62df95a3c8189 inherit pub_methods_class_music_network_abstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -182,6 +186,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="inherit_header pro_methods_class_music_down_load_thread_abstract"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_music_down_load_thread_abstract')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../dc/def/class_music_down_load_thread_abstract.html">MusicDownLoadThreadAbstract</a></td></tr>
 <tr class="memitem:abf4dcc59a2b6bc9cb44967d0a02439a5 inherit pro_methods_class_music_down_load_thread_abstract"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/def/class_music_down_load_thread_abstract.html#abf4dcc59a2b6bc9cb44967d0a02439a5">transferData</a> () <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
 <tr class="separator:abf4dcc59a2b6bc9cb44967d0a02439a5 inherit pro_methods_class_music_down_load_thread_abstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_music_network_abstract"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_music_network_abstract')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d5/de6/class_music_network_abstract.html">MusicNetworkAbstract</a></td></tr>
+<tr class="memitem:a893bd538615a7d0c38cbe4dcb82a27bb inherit pro_methods_class_music_network_abstract"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de6/class_music_network_abstract.html#a893bd538615a7d0c38cbe4dcb82a27bb">setSslConfiguration</a> (QNetworkRequest *request, QSslSocket::PeerVerifyMode m=QSslSocket::VerifyNone)</td></tr>
+<tr class="separator:a893bd538615a7d0c38cbe4dcb82a27bb inherit pro_methods_class_music_network_abstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -351,11 +358,11 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Download data from net finished. </p>
 
-<p>Definition at line <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00072">72</a> of file <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html">musicdatadownloadthread.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00069">69</a> of file <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html">musicdatadownloadthread.cpp</a>.</p>
 
-<p>References <a class="el" href="../../de/d9b/musicdownloadthreadabstract_8cpp_source.html#l00044">MusicDownLoadThreadAbstract::deleteAll()</a>, <a class="el" href="../../d5/de6/class_music_network_abstract.html#ae957b20ab1307ec7a7d0fdde4405f646">MusicNetworkAbstract::downLoadDataChanged()</a>, <a class="el" href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00094">MusicDownLoadThreadAbstract::m_file</a>, <a class="el" href="../../d3/d77/musiclogger_8h_source.html#l00047">M_LOGGER_INFO</a>, <a class="el" href="../../d3/d51/musicdatadownloadthread_8h_source.html#l00089">m_needUpdate</a>, <a class="el" href="../../d3/d51/musicdatadownloadthread_8h_source.html#l00089">m_redirection</a>, <a class="el" href="../../d1/dbf/musicnetworkabstract_8h_source.html#l00087">MusicNetworkAbstract::m_reply</a>, <a class="el" href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00098">MusicDownLoadThreadAbstract::m_timer</a>, <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00043">startRequest()</a>, and <a class="el" href="../../de/d9b/musicdownloadthreadabstract_8cpp_source.html#l00099">MusicDownLoadThreadAbstract::transferData()</a>.</p>
+<p>References <a class="el" href="../../de/d9b/musicdownloadthreadabstract_8cpp_source.html#l00044">MusicDownLoadThreadAbstract::deleteAll()</a>, <a class="el" href="../../d5/de6/class_music_network_abstract.html#ae957b20ab1307ec7a7d0fdde4405f646">MusicNetworkAbstract::downLoadDataChanged()</a>, <a class="el" href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00094">MusicDownLoadThreadAbstract::m_file</a>, <a class="el" href="../../d3/d77/musiclogger_8h_source.html#l00047">M_LOGGER_INFO</a>, <a class="el" href="../../d3/d51/musicdatadownloadthread_8h_source.html#l00089">m_needUpdate</a>, <a class="el" href="../../d3/d51/musicdatadownloadthread_8h_source.html#l00089">m_redirection</a>, <a class="el" href="../../d1/dbf/musicnetworkabstract_8h_source.html#l00101">MusicNetworkAbstract::m_reply</a>, <a class="el" href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00098">MusicDownLoadThreadAbstract::m_timer</a>, <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00043">startRequest()</a>, and <a class="el" href="../../de/d9b/musicdownloadthreadabstract_8cpp_source.html#l00099">MusicDownLoadThreadAbstract::transferData()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d4/d88/musicdatatagdownloadthread_8cpp_source.html#l00052">MusicDataTagDownloadThread::downLoadFinished()</a>, and <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00043">startRequest()</a>.</p>
+<p>Referenced by <a class="el" href="../../d4/d88/musicdatatagdownloadthread_8cpp_source.html#l00054">MusicDataTagDownloadThread::downLoadFinished()</a>, and <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00043">startRequest()</a>.</p>
 
 </div>
 </div>
@@ -393,7 +400,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Get download received and total data. </p>
 <p>only download music data or oather type can that show progress </p>
 
-<p>Definition at line <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00117">117</a> of file <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html">musicdatadownloadthread.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00114">114</a> of file <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html">musicdatadownloadthread.cpp</a>.</p>
 
 <p>References <a class="el" href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00037">MusicDownLoadThreadAbstract::Download_Music</a>, <a class="el" href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00042">MusicDownLoadThreadAbstract::Download_Other</a>, <a class="el" href="../../de/d9b/musicdownloadthreadabstract_8cpp_source.html#l00071">MusicDownLoadThreadAbstract::downloadProgress()</a>, <a class="el" href="../../d8/dfa/class_music_data_download_thread.html#a0f47a667fb8268e2a34f8c7af0e0e7aa">downloadProgressChanged()</a>, <a class="el" href="../../d3/d51/musicdatadownloadthread_8h_source.html#l00088">m_createItemTime</a>, <a class="el" href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00096">MusicDownLoadThreadAbstract::m_downloadType</a>, and <a class="el" href="../../d4/da7/musicnumberutils_8cpp_source.html#l00041">MusicUtils::Number::size2Label()</a>.</p>
 
@@ -440,7 +447,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Update download percent\ total time and current time progress. </p>
 
-<p>Referenced by <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00117">downloadProgress()</a>.</p>
+<p>Referenced by <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00114">downloadProgress()</a>.</p>
 
 </div>
 </div>
@@ -466,9 +473,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Download received data ready. </p>
 
-<p>Definition at line <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00109">109</a> of file <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html">musicdatadownloadthread.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00106">106</a> of file <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html">musicdatadownloadthread.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00094">MusicDownLoadThreadAbstract::m_file</a>, and <a class="el" href="../../d1/dbf/musicnetworkabstract_8h_source.html#l00087">MusicNetworkAbstract::m_reply</a>.</p>
+<p>References <a class="el" href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00094">MusicDownLoadThreadAbstract::m_file</a>, and <a class="el" href="../../d1/dbf/musicnetworkabstract_8h_source.html#l00101">MusicNetworkAbstract::m_reply</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00043">startRequest()</a>.</p>
 
@@ -507,7 +514,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Update download speed label. </p>
 
-<p>Referenced by <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00128">updateDownloadSpeed()</a>.</p>
+<p>Referenced by <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00125">updateDownloadSpeed()</a>.</p>
 
 </div>
 </div>
@@ -590,9 +597,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00043">43</a> of file <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html">musicdatadownloadthread.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d8/dfa/class_music_data_download_thread.html#a9820e41e54263b5fcc2120f3b4b9fc91">createDownloadItem()</a>, <a class="el" href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00037">MusicDownLoadThreadAbstract::Download_Music</a>, <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00072">downLoadFinished()</a>, <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00117">downloadProgress()</a>, <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00109">downLoadReadyRead()</a>, <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html#l00026">M_CONNECTION_PTR</a>, <a class="el" href="../../d3/d51/musicdatadownloadthread_8h_source.html#l00088">m_createItemTime</a>, <a class="el" href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00096">MusicDownLoadThreadAbstract::m_downloadType</a>, <a class="el" href="../../d1/dbf/musicnetworkabstract_8h_source.html#l00088">MusicNetworkAbstract::m_manager</a>, <a class="el" href="../../d3/d51/musicdatadownloadthread_8h_source.html#l00089">m_redirection</a>, <a class="el" href="../../d1/dbf/musicnetworkabstract_8h_source.html#l00087">MusicNetworkAbstract::m_reply</a>, <a class="el" href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00095">MusicDownLoadThreadAbstract::m_savePathName</a>, <a class="el" href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00098">MusicDownLoadThreadAbstract::m_timer</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00029">MT_S2MS</a>, <a class="el" href="../../de/d9b/musicdownloadthreadabstract_8cpp_source.html#l00055">MusicDownLoadThreadAbstract::replyError()</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00094">MusicTime::timeStamp()</a>.</p>
+<p>References <a class="el" href="../../d8/dfa/class_music_data_download_thread.html#a9820e41e54263b5fcc2120f3b4b9fc91">createDownloadItem()</a>, <a class="el" href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00037">MusicDownLoadThreadAbstract::Download_Music</a>, <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00069">downLoadFinished()</a>, <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00114">downloadProgress()</a>, <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00106">downLoadReadyRead()</a>, <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html#l00026">M_CONNECTION_PTR</a>, <a class="el" href="../../d3/d51/musicdatadownloadthread_8h_source.html#l00088">m_createItemTime</a>, <a class="el" href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00096">MusicDownLoadThreadAbstract::m_downloadType</a>, <a class="el" href="../../d1/dbf/musicnetworkabstract_8h_source.html#l00102">MusicNetworkAbstract::m_manager</a>, <a class="el" href="../../d3/d51/musicdatadownloadthread_8h_source.html#l00089">m_redirection</a>, <a class="el" href="../../d1/dbf/musicnetworkabstract_8h_source.html#l00101">MusicNetworkAbstract::m_reply</a>, <a class="el" href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00095">MusicDownLoadThreadAbstract::m_savePathName</a>, <a class="el" href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00098">MusicDownLoadThreadAbstract::m_timer</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00029">MT_S2MS</a>, <a class="el" href="../../de/d9b/musicdownloadthreadabstract_8cpp_source.html#l00055">MusicDownLoadThreadAbstract::replyError()</a>, <a class="el" href="../../d9/d73/musicnetworkabstract_8cpp_source.html#l00069">MusicNetworkAbstract::setSslConfiguration()</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00094">MusicTime::timeStamp()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00072">downLoadFinished()</a>, <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00020">startToDownload()</a>, and <a class="el" href="../../d4/d88/musicdatatagdownloadthread_8cpp_source.html#l00027">MusicDataTagDownloadThread::startToDownload()</a>.</p>
+<p>Referenced by <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00069">downLoadFinished()</a>, <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00020">startToDownload()</a>, and <a class="el" href="../../d4/d88/musicdatatagdownloadthread_8cpp_source.html#l00029">MusicDataTagDownloadThread::startToDownload()</a>.</p>
 
 </div>
 </div>
@@ -624,9 +631,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00020">20</a> of file <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html">musicdatadownloadthread.cpp</a>.</p>
 
-<p>References <a class="el" href="../../de/d9b/musicdownloadthreadabstract_8cpp_source.html#l00044">MusicDownLoadThreadAbstract::deleteAll()</a>, <a class="el" href="../../d5/de6/class_music_network_abstract.html#ae957b20ab1307ec7a7d0fdde4405f646">MusicNetworkAbstract::downLoadDataChanged()</a>, <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00015">getClassName()</a>, <a class="el" href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00094">MusicDownLoadThreadAbstract::m_file</a>, <a class="el" href="../../d3/d77/musiclogger_8h_source.html#l00051">M_LOGGER_ERROR</a>, <a class="el" href="../../d3/d77/musiclogger_8h_source.html#l00047">M_LOGGER_INFO</a>, <a class="el" href="../../d1/dbf/musicnetworkabstract_8h_source.html#l00088">MusicNetworkAbstract::m_manager</a>, <a class="el" href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00095">MusicDownLoadThreadAbstract::m_url</a>, <a class="el" href="../../de/d9b/musicdownloadthreadabstract_8cpp_source.html#l00063">MusicDownLoadThreadAbstract::sslErrors()</a>, and <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00043">startRequest()</a>.</p>
+<p>References <a class="el" href="../../de/d9b/musicdownloadthreadabstract_8cpp_source.html#l00044">MusicDownLoadThreadAbstract::deleteAll()</a>, <a class="el" href="../../d5/de6/class_music_network_abstract.html#ae957b20ab1307ec7a7d0fdde4405f646">MusicNetworkAbstract::downLoadDataChanged()</a>, <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00015">getClassName()</a>, <a class="el" href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00094">MusicDownLoadThreadAbstract::m_file</a>, <a class="el" href="../../d3/d77/musiclogger_8h_source.html#l00051">M_LOGGER_ERROR</a>, <a class="el" href="../../d3/d77/musiclogger_8h_source.html#l00047">M_LOGGER_INFO</a>, <a class="el" href="../../d1/dbf/musicnetworkabstract_8h_source.html#l00102">MusicNetworkAbstract::m_manager</a>, <a class="el" href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00095">MusicDownLoadThreadAbstract::m_url</a>, <a class="el" href="../../de/d9b/musicdownloadthreadabstract_8cpp_source.html#l00063">MusicDownLoadThreadAbstract::sslErrors()</a>, and <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00043">startRequest()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00392">MusicSongSearchOnlineTableWidget::addSearchMusicToPlayList()</a>, <a class="el" href="../../d3/d72/musicdesktopwallpaperwidget_8cpp_source.html#l00180">MusicDesktopWallpaperWidget::confirmButtonPressed()</a>, <a class="el" href="../../d3/d4e/musicidentifysongswidget_8cpp_source.html#l00262">MusicIdentifySongsWidget::createDetectedSuccessedWidget()</a>, <a class="el" href="../../d0/d66/musickwbackgroundthread_8cpp_source.html#l00030">MusicKWBackgroundThread::downLoadDataFinished()</a>, <a class="el" href="../../d5/d6e/musicqueryfoundtablewidget_8cpp_source.html#l00323">MusicQueryFoundTableWidget::downloadDataFrom()</a>, <a class="el" href="../../d5/dde/musicqqbackgroundthread_8cpp_source.html#l00102">MusicQQBackgroundThread::downLoadUrlFinished()</a>, <a class="el" href="../../dd/d6b/musicnetworkspeedtestwidget_8cpp_source.html#l00127">MusicNetworkSpeedTestWidget::networkTestStart()</a>, <a class="el" href="../../d8/d0d/musicdownloadwidget_8cpp_source.html#l00528">MusicDownloadWidget::startToDownloadMovie()</a>, <a class="el" href="../../dc/d19/musicwebmusicradiowidget_8cpp_source.html#l00201">MusicWebMusicRadioWidget::startToPlay()</a>, and <a class="el" href="../../dd/dd4/musicsourceupdatewidget_8cpp_source.html#l00142">MusicSourceUpdateWidget::upgradeButtonClicked()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00392">MusicSongSearchOnlineTableWidget::addSearchMusicToPlayList()</a>, <a class="el" href="../../d3/d72/musicdesktopwallpaperwidget_8cpp_source.html#l00180">MusicDesktopWallpaperWidget::confirmButtonPressed()</a>, <a class="el" href="../../d3/d4e/musicidentifysongswidget_8cpp_source.html#l00262">MusicIdentifySongsWidget::createDetectedSuccessedWidget()</a>, <a class="el" href="../../d0/d66/musickwbackgroundthread_8cpp_source.html#l00030">MusicKWBackgroundThread::downLoadDataFinished()</a>, <a class="el" href="../../d5/d6e/musicqueryfoundtablewidget_8cpp_source.html#l00323">MusicQueryFoundTableWidget::downloadDataFrom()</a>, <a class="el" href="../../d5/dde/musicqqbackgroundthread_8cpp_source.html#l00099">MusicQQBackgroundThread::downLoadUrlFinished()</a>, <a class="el" href="../../dd/d6b/musicnetworkspeedtestwidget_8cpp_source.html#l00127">MusicNetworkSpeedTestWidget::networkTestStart()</a>, <a class="el" href="../../d8/d0d/musicdownloadwidget_8cpp_source.html#l00528">MusicDownloadWidget::startToDownloadMovie()</a>, <a class="el" href="../../dc/d19/musicwebmusicradiowidget_8cpp_source.html#l00206">MusicWebMusicRadioWidget::startToPlay()</a>, and <a class="el" href="../../dd/dd4/musicsourceupdatewidget_8cpp_source.html#l00143">MusicSourceUpdateWidget::upgradeButtonClicked()</a>.</p>
 
 </div>
 </div>
@@ -652,7 +659,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Updata download speed due the user mod the net speed limited. </p>
 
-<p>Definition at line <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00128">128</a> of file <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html">musicdatadownloadthread.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00125">125</a> of file <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html">musicdatadownloadthread.cpp</a>.</p>
 
 <p>References <a class="el" href="../../d8/dfa/class_music_data_download_thread.html#ae1061c41f5ada493a2e2deae0e8a09fb">downloadSpeedLabelChanged()</a>, <a class="el" href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00097">MusicDownLoadThreadAbstract::m_currentReceived</a>, <a class="el" href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00097">MusicDownLoadThreadAbstract::m_hasReceived</a>, <a class="el" href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00097">MusicDownLoadThreadAbstract::m_totalSize</a>, <a class="el" href="../../d4/da7/musicnumberutils_8cpp_source.html#l00071">MusicUtils::Number::speed2Label()</a>, and <a class="el" href="../../de/d9b/musicdownloadthreadabstract_8cpp_source.html#l00077">MusicDownLoadThreadAbstract::updateDownloadSpeed()</a>.</p>
 
@@ -679,7 +686,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d3/d51/musicdatadownloadthread_8h_source.html#l00088">88</a> of file <a class="el" href="../../d3/d51/musicdatadownloadthread_8h_source.html">musicdatadownloadthread.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00117">downloadProgress()</a>, <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00006">MusicDataDownloadThread()</a>, and <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00043">startRequest()</a>.</p>
+<p>Referenced by <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00114">downloadProgress()</a>, <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00006">MusicDataDownloadThread()</a>, and <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00043">startRequest()</a>.</p>
 
 </div>
 </div>
@@ -703,7 +710,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d3/d51/musicdatadownloadthread_8h_source.html#l00089">89</a> of file <a class="el" href="../../d3/d51/musicdatadownloadthread_8h_source.html">musicdatadownloadthread.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00072">downLoadFinished()</a>, <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00006">MusicDataDownloadThread()</a>, and <a class="el" href="../../d4/d88/musicdatatagdownloadthread_8cpp_source.html#l00008">MusicDataTagDownloadThread::MusicDataTagDownloadThread()</a>.</p>
+<p>Referenced by <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00069">downLoadFinished()</a>, <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00006">MusicDataDownloadThread()</a>, and <a class="el" href="../../d4/d88/musicdatatagdownloadthread_8cpp_source.html#l00009">MusicDataTagDownloadThread::MusicDataTagDownloadThread()</a>.</p>
 
 </div>
 </div>
@@ -727,7 +734,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d3/d51/musicdatadownloadthread_8h_source.html#l00089">89</a> of file <a class="el" href="../../d3/d51/musicdatadownloadthread_8h_source.html">musicdatadownloadthread.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d4/d88/musicdatatagdownloadthread_8cpp_source.html#l00052">MusicDataTagDownloadThread::downLoadFinished()</a>, <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00072">downLoadFinished()</a>, <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00006">MusicDataDownloadThread()</a>, and <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00043">startRequest()</a>.</p>
+<p>Referenced by <a class="el" href="../../d4/d88/musicdatatagdownloadthread_8cpp_source.html#l00054">MusicDataTagDownloadThread::downLoadFinished()</a>, <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00069">downLoadFinished()</a>, <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00006">MusicDataDownloadThread()</a>, and <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00043">startRequest()</a>.</p>
 
 </div>
 </div>
@@ -738,7 +745,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 31 2017 22:16:38 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 2 2018 18:14:55 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

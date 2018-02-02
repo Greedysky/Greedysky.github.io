@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.4.0</span>
+   &#160;<span id="projectnumber">2.6.5.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -100,9 +100,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;QMenu&gt;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/d03/musicsong_8h.html">musicsong.h</a>&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/df6/musicslowmovingtablewidget_8h.html">musicslowmovingtablewidget.h</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d2/d62/musicsmoothmovingtablewidget_8h.html">musicsmoothmovingtablewidget.h</a>&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html">   29</a></span>&#160;<span class="keyword">class </span>MUSIC_WIDGET_EXPORT <a class="code" href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html">MusicSongsListAbstractTableWidget</a> : <span class="keyword">public</span> <a class="code" href="../../d2/dfe/class_music_slow_moving_table_widget.html">MusicSlowMovingTableWidget</a></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html">   29</a></span>&#160;<span class="keyword">class </span>MUSIC_WIDGET_EXPORT <a class="code" href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html">MusicSongsListAbstractTableWidget</a> : <span class="keyword">public</span> <a class="code" href="../../de/daa/class_music_smooth_moving_table_widget.html">MusicSmoothMovingTableWidget</a></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
@@ -110,7 +110,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html">MusicSongsListAbstractTableWidget</a>();</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../d2/dfe/class_music_slow_moving_table_widget.html#a66d93807c1906074aa92f903da72ccb6">getClassName</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../de/daa/class_music_smooth_moving_table_widget.html#ab063dda2e2cf05d717a44f0ea4dfd496">getClassName</a>();</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> setSongsFileName(MusicSongs *songs);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> updateSongsFileName(<span class="keyword">const</span> MusicSongs &amp;songs);</div>
@@ -156,20 +156,20 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;};</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="preprocessor">#endif // MUSICSONGSLISTABSTRACTTABLEWIDGET_H</span></div>
-<div class="ttc" id="class_music_slow_moving_table_widget_html"><div class="ttname"><a href="../../d2/dfe/class_music_slow_moving_table_widget.html">MusicSlowMovingTableWidget</a></div><div class="ttdoc">The class of the slider slow moving table widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/df6/musicslowmovingtablewidget_8h_source.html#l00029">musicslowmovingtablewidget.h:29</a></div></div>
-<div class="ttc" id="musicslowmovingtablewidget_8h_html"><div class="ttname"><a href="../../d9/df6/musicslowmovingtablewidget_8h.html">musicslowmovingtablewidget.h</a></div></div>
+<div class="ttc" id="class_music_smooth_moving_table_widget_html_ab063dda2e2cf05d717a44f0ea4dfd496"><div class="ttname"><a href="../../de/daa/class_music_smooth_moving_table_widget.html#ab063dda2e2cf05d717a44f0ea4dfd496">MusicSmoothMovingTableWidget::getClassName</a></div><div class="ttdeci">static QString getClassName()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/db8/musicsmoothmovingtablewidget_8cpp_source.html#l00031">musicsmoothmovingtablewidget.cpp:31</a></div></div>
+<div class="ttc" id="musicsmoothmovingtablewidget_8h_html"><div class="ttname"><a href="../../d2/d62/musicsmoothmovingtablewidget_8h.html">musicsmoothmovingtablewidget.h</a></div></div>
 <div class="ttc" id="musicsong_8h_html"><div class="ttname"><a href="../../d4/d03/musicsong_8h.html">musicsong.h</a></div></div>
 <div class="ttc" id="class_music_songs_list_abstract_table_widget_html_ade1e8318013029d2f55abc375168c7fd"><div class="ttname"><a href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#ade1e8318013029d2f55abc375168c7fd">MusicSongsListAbstractTableWidget::getPlayRowIndex</a></div><div class="ttdeci">int getPlayRowIndex() const </div><div class="ttdef"><b>Definition:</b> <a href="../../da/dd8/musicsongslistabstracttablewidget_8h_source.html#l00073">musicsongslistabstracttablewidget.h:73</a></div></div>
 <div class="ttc" id="class_music_songs_list_abstract_table_widget_html_a92a9dc24ef45af2d7a1ad9f7b33b1525"><div class="ttname"><a href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#a92a9dc24ef45af2d7a1ad9f7b33b1525">MusicSongsListAbstractTableWidget::m_musicSongs</a></div><div class="ttdeci">MusicSongs * m_musicSongs</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dd8/musicsongslistabstracttablewidget_8h_source.html#l00170">musicsongslistabstracttablewidget.h:170</a></div></div>
-<div class="ttc" id="class_music_slow_moving_table_widget_html_a66d93807c1906074aa92f903da72ccb6"><div class="ttname"><a href="../../d2/dfe/class_music_slow_moving_table_widget.html#a66d93807c1906074aa92f903da72ccb6">MusicSlowMovingTableWidget::getClassName</a></div><div class="ttdeci">static QString getClassName()</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dc4/musicslowmovingtablewidget_8cpp_source.html#l00031">musicslowmovingtablewidget.cpp:31</a></div></div>
 <div class="ttc" id="class_music_songs_list_abstract_table_widget_html_ab1fc6a0628c41ba16bcd7bfed2501c34"><div class="ttname"><a href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#ab1fc6a0628c41ba16bcd7bfed2501c34">MusicSongsListAbstractTableWidget::setPlayRowIndex</a></div><div class="ttdeci">void setPlayRowIndex(int index)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dd8/musicsongslistabstracttablewidget_8h_source.html#l00069">musicsongslistabstracttablewidget.h:69</a></div></div>
+<div class="ttc" id="class_music_smooth_moving_table_widget_html"><div class="ttname"><a href="../../de/daa/class_music_smooth_moving_table_widget.html">MusicSmoothMovingTableWidget</a></div><div class="ttdoc">The class of the slider smooth moving table widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d62/musicsmoothmovingtablewidget_8h_source.html#l00029">musicsmoothmovingtablewidget.h:29</a></div></div>
 <div class="ttc" id="class_music_songs_list_abstract_table_widget_html_afd2147db363d290875e060e3567628ab"><div class="ttname"><a href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#afd2147db363d290875e060e3567628ab">MusicSongsListAbstractTableWidget::m_hasParentToolIndex</a></div><div class="ttdeci">bool m_hasParentToolIndex</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dd8/musicsongslistabstracttablewidget_8h_source.html#l00171">musicsongslistabstracttablewidget.h:171</a></div></div>
 <div class="ttc" id="class_music_songs_list_abstract_table_widget_html"><div class="ttname"><a href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html">MusicSongsListAbstractTableWidget</a></div><div class="ttdoc">The class of the songs list abstract table widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/dd8/musicsongslistabstracttablewidget_8h_source.html#l00029">musicsongslistabstracttablewidget.h:29</a></div></div>
 <div class="ttc" id="class_music_songs_list_abstract_table_widget_html_a74e5dafb19c7d91dce8665ddf2d22bca"><div class="ttname"><a href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#a74e5dafb19c7d91dce8665ddf2d22bca">MusicSongsListAbstractTableWidget::m_playRowIndex</a></div><div class="ttdeci">int m_playRowIndex</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dd8/musicsongslistabstracttablewidget_8h_source.html#l00169">musicsongslistabstracttablewidget.h:169</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 31 2017 22:16:25 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 2 2018 18:14:46 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

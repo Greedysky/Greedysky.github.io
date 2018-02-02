@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.4.0</span>
+   &#160;<span id="projectnumber">2.6.5.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -114,7 +114,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">static</span> QString getClassName();</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> createSearchedItems(<span class="keyword">const</span> <a class="code" href="../../da/df8/struct_music_playlist_item.html">MusicPlaylistItem</a> &amp;comments);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> createSearchedItems(<span class="keyword">const</span> <a class="code" href="../../d8/d62/struct_music_results_item.html">MusicResultsItem</a> &amp;comments);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">private</span> Q_SLOTS:</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> iconDataDownloadFinished(<span class="keyword">const</span> QByteArray &amp;data);</div>
@@ -140,7 +140,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> setCurrentSongName(<span class="keyword">const</span> QString &amp;name);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> createSearchedItems(<span class="keyword">const</span> <a class="code" href="../../da/df8/struct_music_playlist_item.html">MusicPlaylistItem</a> &amp;comments);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> createSearchedItems(<span class="keyword">const</span> <a class="code" href="../../d8/d62/struct_music_results_item.html">MusicResultsItem</a> &amp;comments);</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> buttonClicked(<span class="keywordtype">int</span> index);</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> createEMOJILabelWidget();</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> currentEMOJIchanged(<span class="keyword">const</span> QString &amp;data);</div>
@@ -178,12 +178,12 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_comments_widget_html_aebf9ee35399f9369fd0202b23c82d553"><div class="ttname"><a href="../../df/dfe/class_music_comments_widget.html#aebf9ee35399f9369fd0202b23c82d553">MusicCommentsWidget::m_messageComments</a></div><div class="ttdeci">QWidget * m_messageComments</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dfd/musiccommentswidget_8h_source.html#l00135">musiccommentswidget.h:135</a></div></div>
 <div class="ttc" id="class_music_comments_widget_html_a5c28bc74f46305dd6a7854143f8d04dc"><div class="ttname"><a href="../../df/dfe/class_music_comments_widget.html#a5c28bc74f46305dd6a7854143f8d04dc">MusicCommentsWidget::m_commentsThread</a></div><div class="ttdeci">MusicDownLoadCommentsThread * m_commentsThread</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dfd/musiccommentswidget_8h_source.html#l00136">musiccommentswidget.h:136</a></div></div>
 <div class="ttc" id="musicdownloadcommentsthread_8h_html"><div class="ttname"><a href="../../d7/d35/musicdownloadcommentsthread_8h.html">musicdownloadcommentsthread.h</a></div></div>
-<div class="ttc" id="struct_music_playlist_item_html"><div class="ttname"><a href="../../da/df8/struct_music_playlist_item.html">MusicPlaylistItem</a></div><div class="ttdoc">The class of the playlist data item. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00050">musicdownloadquerythreadabstract.h:50</a></div></div>
 <div class="ttc" id="class_music_down_load_comments_thread_html"><div class="ttname"><a href="../../d9/dc5/class_music_down_load_comments_thread.html">MusicDownLoadCommentsThread</a></div><div class="ttdoc">The class to query song comments download data from net. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d35/musicdownloadcommentsthread_8h_source.html#l00027">musicdownloadcommentsthread.h:27</a></div></div>
+<div class="ttc" id="struct_music_results_item_html"><div class="ttname"><a href="../../d8/d62/struct_music_results_item.html">MusicResultsItem</a></div><div class="ttdoc">The class of the search song results data item. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00050">musicdownloadquerythreadabstract.h:50</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 31 2017 22:16:25 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 2 2018 18:14:45 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

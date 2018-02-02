@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.4.0</span>
+   &#160;<span id="projectnumber">2.6.5.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -131,7 +131,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    free(decode);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">return</span> QByteArray(QString(encrypt_string).<span class="keyword">remove</span>(<span class="stringliteral">&quot;\x0F&quot;</span>).<a class="code" href="../../d5/d84/namespace_music_utils_1_1_core.html#adb4fdd516e9dd1bc464a70421303a048">toUtf8</a>());</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">return</span> QByteArray(QString(encrypt_string).<span class="keyword">remove</span>(<span class="stringliteral">&quot;\x0F&quot;</span>).<a class="code" href="../../d5/d67/namespace_music_utils_1_1_codec.html#aad54c82cfaa63b854d28f1fe1ba4d34c">toUtf8</a>());</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
 <div class="ttc" id="aes_8h_html_a2091bfbf02d00a2f4ce67085d1a0d0ac"><div class="ttname"><a href="../../db/dcb/aes_8h.html#a2091bfbf02d00a2f4ce67085d1a0d0ac">AES_set_decrypt_key</a></div><div class="ttdeci">int AES_set_decrypt_key(const unsigned char *userKey, const int bits, AES_KEY *key)</div><div class="ttdoc">Expand the cipher key into the decryption key schedule. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d07/aes__core_8cpp_source.html#l00732">aes_core.cpp:732</a></div></div>
 <div class="ttc" id="aes_8h_html_af2a2a79bf29fae1cc93b4aa43c2b833c"><div class="ttname"><a href="../../db/dcb/aes_8h.html#af2a2a79bf29fae1cc93b4aa43c2b833c">AES_set_encrypt_key</a></div><div class="ttdeci">int AES_set_encrypt_key(const unsigned char *userKey, const int bits, AES_KEY *key)</div><div class="ttdoc">Expand the cipher key into the encryption key schedule. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d07/aes__core_8cpp_source.html#l00631">aes_core.cpp:631</a></div></div>
@@ -149,11 +149,11 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="aes_8h_html_a91e721bca5c6db6402fc3a4781d69b10"><div class="ttname"><a href="../../db/dcb/aes_8h.html#a91e721bca5c6db6402fc3a4781d69b10">AES_ENCRYPT</a></div><div class="ttdeci">#define AES_ENCRYPT</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dcb/aes_8h_source.html#l00019">aes.h:19</a></div></div>
 <div class="ttc" id="base64_8h_html"><div class="ttname"><a href="../../d2/d6f/base64_8h.html">base64.h</a></div></div>
 <div class="ttc" id="aes_8h_html_af19ab913a847ad1e91c5291215116de1"><div class="ttname"><a href="../../db/dcb/aes_8h.html#af19ab913a847ad1e91c5291215116de1">AES_BLOCK_SIZE</a></div><div class="ttdeci">#define AES_BLOCK_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dcb/aes_8h_source.html#l00027">aes.h:27</a></div></div>
-<div class="ttc" id="namespace_music_utils_1_1_core_html_adb4fdd516e9dd1bc464a70421303a048"><div class="ttname"><a href="../../d5/d84/namespace_music_utils_1_1_core.html#adb4fdd516e9dd1bc464a70421303a048">MusicUtils::Core::toUtf8</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT const char * toUtf8(const QString &amp;str)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d43/musiccoreutils_8cpp_source.html#l00249">musiccoreutils.cpp:249</a></div></div>
+<div class="ttc" id="namespace_music_utils_1_1_codec_html_aad54c82cfaa63b854d28f1fe1ba4d34c"><div class="ttname"><a href="../../d5/d67/namespace_music_utils_1_1_codec.html#aad54c82cfaa63b854d28f1fe1ba4d34c">MusicUtils::Codec::toUtf8</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT const char * toUtf8(const QString &amp;str)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d48/musiccodecutils_8cpp_source.html#l00039">musiccodecutils.cpp:39</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 31 2017 22:16:27 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 2 2018 18:14:47 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

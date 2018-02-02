@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.4.0</span>
+   &#160;<span id="projectnumber">2.6.5.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -95,6 +95,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0976c0320794ce1baa857f4b664e3b92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e97389877b0fe28cef3d12afdbbde89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/de4/class_music_down_load_query_thread_abstract.html">MusicDownLoadQueryThreadAbstract</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d19/class_music_down_load_query_factory.html#a8e97389877b0fe28cef3d12afdbbde89">getArtistThread</a> (QObject *parent=0)</td></tr>
 <tr class="separator:a8e97389877b0fe28cef3d12afdbbde89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03f186df6172add96bc25480bccf0fc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/de4/class_music_down_load_query_thread_abstract.html">MusicDownLoadQueryThreadAbstract</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d19/class_music_down_load_query_factory.html#a03f186df6172add96bc25480bccf0fc5">getArtistListThread</a> (QObject *parent=0)</td></tr>
+<tr class="separator:a03f186df6172add96bc25480bccf0fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f2f0cd9434cee4c23ccae278757e2d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/de4/class_music_down_load_query_thread_abstract.html">MusicDownLoadQueryThreadAbstract</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d19/class_music_down_load_query_factory.html#a2f2f0cd9434cee4c23ccae278757e2d9">getToplistThread</a> (QObject *parent=0)</td></tr>
 <tr class="separator:a2f2f0cd9434cee4c23ccae278757e2d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55ca1b641240fc37ce019c07d14fe74a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/de4/class_music_down_load_query_thread_abstract.html">MusicDownLoadQueryThreadAbstract</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d19/class_music_down_load_query_factory.html#a55ca1b641240fc37ce019c07d14fe74a">getPlaylistThread</a> (QObject *parent=0)</td></tr>
@@ -148,9 +150,30 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Get album thread object by type. </p>
 
-<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00169">169</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00178">178</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00130">MusicSettingManager::DownloadServerChoiced</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00157">MusicDownLoadQueryThreadAbstract::getQueryServer()</a>, <a class="el" href="../../d3/d77/musiclogger_8h_source.html#l00047">M_LOGGER_INFO</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>.</p>
+<p>References <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00132">MusicSettingManager::DownloadServerChoiced</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00157">MusicDownLoadQueryThreadAbstract::getQueryServer()</a>, <a class="el" href="../../d3/d77/musiclogger_8h_source.html#l00047">M_LOGGER_INFO</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a03f186df6172add96bc25480bccf0fc5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/de4/class_music_down_load_query_thread_abstract.html">MusicDownLoadQueryThreadAbstract</a> * MusicDownLoadQueryFactory::getArtistListThread </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get artist category thread object by type. </p>
+
+<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00222">222</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
+
+<p>References <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00132">MusicSettingManager::DownloadServerChoiced</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00157">MusicDownLoadQueryThreadAbstract::getQueryServer()</a>, <a class="el" href="../../d3/d77/musiclogger_8h_source.html#l00047">M_LOGGER_INFO</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>.</p>
 
 </div>
 </div>
@@ -169,9 +192,9 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Get artist thread object by type. </p>
 
-<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00191">191</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00200">200</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00130">MusicSettingManager::DownloadServerChoiced</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00157">MusicDownLoadQueryThreadAbstract::getQueryServer()</a>, <a class="el" href="../../d3/d77/musiclogger_8h_source.html#l00047">M_LOGGER_INFO</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>.</p>
+<p>References <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00132">MusicSettingManager::DownloadServerChoiced</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00157">MusicDownLoadQueryThreadAbstract::getQueryServer()</a>, <a class="el" href="../../d3/d77/musiclogger_8h_source.html#l00047">M_LOGGER_INFO</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>.</p>
 
 </div>
 </div>
@@ -197,7 +220,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Get class object name. </p>
 
-<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00120">120</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00129">129</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
 
 </div>
 </div>
@@ -216,9 +239,9 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Get discover list thread object by type. </p>
 
-<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00368">368</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00399">399</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00130">MusicSettingManager::DownloadServerChoiced</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>.</p>
+<p>References <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00132">MusicSettingManager::DownloadServerChoiced</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>.</p>
 
 </div>
 </div>
@@ -253,7 +276,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Get download big picture object by type. </p>
 
-<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00448">448</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00479">479</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
 
 <p>References <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00062">MusicSettingManager::OtherBgLosslessChoiced</a>.</p>
 
@@ -296,9 +319,9 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Get download lrc object by type. </p>
 
-<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00427">427</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00458">458</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00130">MusicSettingManager::DownloadServerChoiced</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>.</p>
+<p>References <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00132">MusicSettingManager::DownloadServerChoiced</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>.</p>
 
 </div>
 </div>
@@ -339,9 +362,9 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Get download small picture object by type. </p>
 
-<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00410">410</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00441">441</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00130">MusicSettingManager::DownloadServerChoiced</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>.</p>
+<p>References <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00132">MusicSettingManager::DownloadServerChoiced</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>.</p>
 
 </div>
 </div>
@@ -360,9 +383,9 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Get movie thread object by type. </p>
 
-<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00147">147</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00156">156</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00130">MusicSettingManager::DownloadServerChoiced</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00157">MusicDownLoadQueryThreadAbstract::getQueryServer()</a>, <a class="el" href="../../d3/d77/musiclogger_8h_source.html#l00047">M_LOGGER_INFO</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>.</p>
+<p>References <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00132">MusicSettingManager::DownloadServerChoiced</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00157">MusicDownLoadQueryThreadAbstract::getQueryServer()</a>, <a class="el" href="../../d3/d77/musiclogger_8h_source.html#l00047">M_LOGGER_INFO</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>.</p>
 
 </div>
 </div>
@@ -381,9 +404,9 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Get playlist comment thread object by type. </p>
 
-<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00347">347</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00378">378</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00130">MusicSettingManager::DownloadServerChoiced</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>.</p>
+<p>References <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00132">MusicSettingManager::DownloadServerChoiced</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>.</p>
 
 </div>
 </div>
@@ -402,9 +425,9 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Get playlist thread object by type. </p>
 
-<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00235">235</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00266">266</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00130">MusicSettingManager::DownloadServerChoiced</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00157">MusicDownLoadQueryThreadAbstract::getQueryServer()</a>, <a class="el" href="../../d3/d77/musiclogger_8h_source.html#l00047">M_LOGGER_INFO</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>.</p>
+<p>References <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00132">MusicSettingManager::DownloadServerChoiced</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00157">MusicDownLoadQueryThreadAbstract::getQueryServer()</a>, <a class="el" href="../../d3/d77/musiclogger_8h_source.html#l00047">M_LOGGER_INFO</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>.</p>
 
 </div>
 </div>
@@ -423,11 +446,11 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Get query thread object by type. </p>
 
-<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00125">125</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00134">134</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00130">MusicSettingManager::DownloadServerChoiced</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00157">MusicDownLoadQueryThreadAbstract::getQueryServer()</a>, <a class="el" href="../../d3/d77/musiclogger_8h_source.html#l00047">M_LOGGER_INFO</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>.</p>
+<p>References <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00132">MusicSettingManager::DownloadServerChoiced</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00157">MusicDownLoadQueryThreadAbstract::getQueryServer()</a>, <a class="el" href="../../d3/d77/musiclogger_8h_source.html#l00047">M_LOGGER_INFO</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>.</p>
 
-<p>Referenced by <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00279">getSimilarSongThread()</a>.</p>
+<p>Referenced by <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00310">getSimilarSongThread()</a>.</p>
 
 </div>
 </div>
@@ -446,9 +469,9 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Get recommend thread object by type. </p>
 
-<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00257">257</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00288">288</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00130">MusicSettingManager::DownloadServerChoiced</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00157">MusicDownLoadQueryThreadAbstract::getQueryServer()</a>, <a class="el" href="../../d3/d77/musiclogger_8h_source.html#l00047">M_LOGGER_INFO</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>.</p>
+<p>References <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00132">MusicSettingManager::DownloadServerChoiced</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00157">MusicDownLoadQueryThreadAbstract::getQueryServer()</a>, <a class="el" href="../../d3/d77/musiclogger_8h_source.html#l00047">M_LOGGER_INFO</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>.</p>
 
 </div>
 </div>
@@ -467,9 +490,9 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Get similar query thread object by type. </p>
 
-<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00284">284</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00315">315</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00130">MusicSettingManager::DownloadServerChoiced</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>.</p>
+<p>References <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00132">MusicSettingManager::DownloadServerChoiced</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>.</p>
 
 </div>
 </div>
@@ -488,9 +511,9 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Get similar song query thread object by type. </p>
 
-<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00279">279</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00310">310</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
 
-<p>References <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00125">getQueryThread()</a>.</p>
+<p>References <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00134">getQueryThread()</a>.</p>
 
 </div>
 </div>
@@ -509,9 +532,9 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Get song comment thread object by type. </p>
 
-<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00326">326</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00357">357</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00130">MusicSettingManager::DownloadServerChoiced</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>.</p>
+<p>References <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00132">MusicSettingManager::DownloadServerChoiced</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>.</p>
 
 </div>
 </div>
@@ -530,9 +553,9 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Get suggest thread object by type. </p>
 
-<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00305">305</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00336">336</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00130">MusicSettingManager::DownloadServerChoiced</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>.</p>
+<p>References <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00132">MusicSettingManager::DownloadServerChoiced</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>.</p>
 
 </div>
 </div>
@@ -551,9 +574,9 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Get toplist thread object by type. </p>
 
-<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00213">213</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00244">244</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00130">MusicSettingManager::DownloadServerChoiced</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00157">MusicDownLoadQueryThreadAbstract::getQueryServer()</a>, <a class="el" href="../../d3/d77/musiclogger_8h_source.html#l00047">M_LOGGER_INFO</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>.</p>
+<p>References <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00132">MusicSettingManager::DownloadServerChoiced</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00157">MusicDownLoadQueryThreadAbstract::getQueryServer()</a>, <a class="el" href="../../d3/d77/musiclogger_8h_source.html#l00047">M_LOGGER_INFO</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>.</p>
 
 </div>
 </div>
@@ -572,9 +595,9 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Get translation object by type. </p>
 
-<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00389">389</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html#l00420">420</a> of file <a class="el" href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">musicdownloadqueryfactory.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00130">MusicSettingManager::DownloadServerChoiced</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>.</p>
+<p>References <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00132">MusicSettingManager::DownloadServerChoiced</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>.</p>
 
 </div>
 </div>
@@ -585,7 +608,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 31 2017 22:16:38 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 2 2018 18:14:57 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

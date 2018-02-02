@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.4.0</span>
+   &#160;<span id="projectnumber">2.6.5.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -144,8 +144,8 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a2a6f40b6ffd48dfc4fd12846c7209c31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1c/class_music_remote_widget_for_ripples.html#a2a6f40b6ffd48dfc4fd12846c7209c31">enableRipples</a> (bool enable)</td></tr>
-<tr class="separator:a2a6f40b6ffd48dfc4fd12846c7209c31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6463956ff68892a20ba7ee78c52ed8f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1c/class_music_remote_widget_for_ripples.html#a6463956ff68892a20ba7ee78c52ed8f1">enablePlugin</a> (bool enable)</td></tr>
+<tr class="separator:a6463956ff68892a20ba7ee78c52ed8f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_music_remote_widget"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_music_remote_widget')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d5/ddc/class_music_remote_widget.html">MusicRemoteWidget</a></td></tr>
 <tr class="memitem:a04a44daa2fc06173b616815e2aa92967 inherit pro_methods_class_music_remote_widget"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/class_music_remote_widget.html#a04a44daa2fc06173b616815e2aa92967">contextMenuEvent</a> (QContextMenuEvent *event) override</td></tr>
 <tr class="separator:a04a44daa2fc06173b616815e2aa92967 inherit pro_methods_class_music_remote_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -212,7 +212,9 @@ Additional Inherited Members</h2></td></tr>
 &#160;&#160;<a class="el" href="../../d5/ddc/class_music_remote_widget.html#a84e9b045ec2afb244ff51510bf37b94caf0d2fa2c6f8a9e8cd58363d09fbafb5c">SimpleStyle</a>, 
 <a class="el" href="../../d5/ddc/class_music_remote_widget.html#a84e9b045ec2afb244ff51510bf37b94ca1cfb97ec3c4b529194b77d3ff3e8825f">ComplexStyle</a>, 
 <a class="el" href="../../d5/ddc/class_music_remote_widget.html#a84e9b045ec2afb244ff51510bf37b94cab990d68e78333dcd190606a717c18056">Diamond</a>, 
-<a class="el" href="../../d5/ddc/class_music_remote_widget.html#a84e9b045ec2afb244ff51510bf37b94caf4b6512322465cec06a80a8943458f92">Ripples</a>
+<a class="el" href="../../d5/ddc/class_music_remote_widget.html#a84e9b045ec2afb244ff51510bf37b94caf4b6512322465cec06a80a8943458f92">Ripples</a>, 
+<br />
+&#160;&#160;<a class="el" href="../../d5/ddc/class_music_remote_widget.html#a84e9b045ec2afb244ff51510bf37b94ca3aa8ac033e2d87cf5e0ffa724f46490c">RaysWave</a>
 <br />
  }</td></tr>
 <tr class="separator:a84e9b045ec2afb244ff51510bf37b94c inherit pub_types_class_music_remote_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -275,7 +277,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d4/d5a/musicremotewidgetforripples_8cpp_source.html#l00009">9</a> of file <a class="el" href="../../d4/d5a/musicremotewidgetforripples_8cpp_source.html">musicremotewidgetforripples.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d3/d98/musicremotewidget_8cpp_source.html#l00214">MusicRemoteWidget::adjustPostion()</a>, <a class="el" href="../../d4/d5a/musicremotewidgetforripples_8cpp_source.html#l00071">enableRipples()</a>, <a class="el" href="../../d3/df6/musicremotewidget_8h_source.html#l00137">MusicRemoteWidget::m_mainWidget</a>, <a class="el" href="../../d3/df6/musicremotewidget_8h_source.html#l00135">MusicRemoteWidget::m_NextSongButton</a>, <a class="el" href="../../d3/df6/musicremotewidget_8h_source.html#l00135">MusicRemoteWidget::m_PlayButton</a>, <a class="el" href="../../d3/df6/musicremotewidget_8h_source.html#l00134">MusicRemoteWidget::m_PreSongButton</a>, <a class="el" href="../../d3/df6/musicremotewidget_8h_source.html#l00136">MusicRemoteWidget::m_SettingButton</a>, <a class="el" href="../../d3/df6/musicremotewidget_8h_source.html#l00134">MusicRemoteWidget::m_showMainWindow</a>, <a class="el" href="../../db/d7e/musicremotewidgetforripples_8h_source.html#l00055">m_songNameLabel</a>, <a class="el" href="../../d3/df6/musicremotewidget_8h_source.html#l00137">MusicRemoteWidget::m_volumeWidget</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00527">MusicUIObject::MWidgetStyle01</a>, and <a class="el" href="../../dc/d74/class_visual.html#a68319aafb47bb97e53e54841d9642d60">Visual::visuals()</a>.</p>
+<p>References <a class="el" href="../../d3/d98/musicremotewidget_8cpp_source.html#l00223">MusicRemoteWidget::adjustPostion()</a>, <a class="el" href="../../d4/d5a/musicremotewidgetforripples_8cpp_source.html#l00071">enablePlugin()</a>, <a class="el" href="../../d3/df6/musicremotewidget_8h_source.html#l00138">MusicRemoteWidget::m_mainWidget</a>, <a class="el" href="../../d3/df6/musicremotewidget_8h_source.html#l00136">MusicRemoteWidget::m_NextSongButton</a>, <a class="el" href="../../d3/df6/musicremotewidget_8h_source.html#l00136">MusicRemoteWidget::m_PlayButton</a>, <a class="el" href="../../d3/df6/musicremotewidget_8h_source.html#l00135">MusicRemoteWidget::m_PreSongButton</a>, <a class="el" href="../../d3/df6/musicremotewidget_8h_source.html#l00137">MusicRemoteWidget::m_SettingButton</a>, <a class="el" href="../../d3/df6/musicremotewidget_8h_source.html#l00135">MusicRemoteWidget::m_showMainWindow</a>, <a class="el" href="../../db/d7e/musicremotewidgetforripples_8h_source.html#l00055">m_songNameLabel</a>, <a class="el" href="../../d3/df6/musicremotewidget_8h_source.html#l00138">MusicRemoteWidget::m_volumeWidget</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00527">MusicUIObject::MWidgetStyle01</a>, and <a class="el" href="../../dc/d74/class_visual.html#a68319aafb47bb97e53e54841d9642d60">Visual::visuals()</a>.</p>
 
 </div>
 </div>
@@ -302,12 +304,12 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d4/d5a/musicremotewidgetforripples_8cpp_source.html#l00055">55</a> of file <a class="el" href="../../d4/d5a/musicremotewidgetforripples_8cpp_source.html">musicremotewidgetforripples.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/d5a/musicremotewidgetforripples_8cpp_source.html#l00071">enableRipples()</a>, and <a class="el" href="../../db/d7e/musicremotewidgetforripples_8h_source.html#l00055">m_songNameLabel</a>.</p>
+<p>References <a class="el" href="../../d4/d5a/musicremotewidgetforripples_8cpp_source.html#l00071">enablePlugin()</a>, and <a class="el" href="../../db/d7e/musicremotewidgetforripples_8h_source.html#l00055">m_songNameLabel</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a2a6f40b6ffd48dfc4fd12846c7209c31"></a>
+<a class="anchor" id="a6463956ff68892a20ba7ee78c52ed8f1"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -315,7 +317,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void MusicRemoteWidgetForRipples::enableRipples </td>
+          <td class="memname">void MusicRemoteWidgetForRipples::enablePlugin </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>enable</em></td><td>)</td>
@@ -427,7 +429,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 31 2017 22:16:48 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 2 2018 18:15:04 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
