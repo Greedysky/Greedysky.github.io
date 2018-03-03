@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.5.0</span>
+   &#160;<span id="projectnumber">2.6.6.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -246,7 +246,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <a class="code" href="../../df/de2/struct_q_rcode.html">QRcode</a> *qrcode = <a class="code" href="../../d0/d95/qrencode_8c.html#a4cebc3c670efe1b8866b14c42737fc8f">QRcode_encodeString</a>(d-&gt;m_text.constData(), 7,</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                                         d-&gt;m_level, d-&gt;m_mode, d-&gt;m_casesen);</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordflow">if</span>(qrcode != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordflow">if</span>(qrcode)</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    {</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *point = qrcode-&gt;<a class="code" href="../../df/de2/struct_q_rcode.html#ae6f826314cfb99f4926c4c5734997c35">data</a>;</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        painter.setPen(Qt::NoPen);</div>
@@ -335,7 +335,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 2 2018 18:14:48 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 3 2018 22:45:31 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.5.0</span>
+   &#160;<span id="projectnumber">2.6.6.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -75,6 +75,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a href="#pub-slots">Public Slots</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d7/d3d/class_music_download_batch_table_item-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -110,8 +111,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a098b554138b70ab790e393eedef5f70f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03de15973d6adee24867c418a5e425e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7d/class_music_download_batch_table_item.html#a03de15973d6adee24867c418a5e425e3">createItem</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="../../d9/d32/struct_music_object_1_1_music_song_information.html">MusicObject::MusicSongInformation</a> &amp;info)</td></tr>
 <tr class="separator:a03de15973d6adee24867c418a5e425e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb0a4ab0596ce41e14274afc98f0fabc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7d/class_music_download_batch_table_item.html#aeb0a4ab0596ce41e14274afc98f0fabc">startToDownload</a> ()</td></tr>
-<tr class="separator:aeb0a4ab0596ce41e14274afc98f0fabc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5a2fa999972ca7760db1dd10e1eeee8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7d/class_music_download_batch_table_item.html#ae5a2fa999972ca7760db1dd10e1eeee8">startToDownload</a> (<a class="el" href="../../dc/de4/class_music_down_load_query_thread_abstract.html#a02a8296199ce895500ee46786781f2b2">MusicDownLoadQueryThreadAbstract::QueryType</a> type)</td></tr>
+<tr class="separator:ae5a2fa999972ca7760db1dd10e1eeee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26ff7fc8eb00361e3303d01ef2b0c90f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7d/class_music_download_batch_table_item.html#a26ff7fc8eb00361e3303d01ef2b0c90f">setCurrentQuality</a> (<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> bitrate)</td></tr>
 <tr class="separator:a26ff7fc8eb00361e3303d01ef2b0c90f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -119,6 +120,13 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a8ef29e3cacf78f9fdaf069dcc0494680"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7d/class_music_download_batch_table_item.html#a8ef29e3cacf78f9fdaf069dcc0494680">getClassName</a> ()</td></tr>
 <tr class="separator:a8ef29e3cacf78f9fdaf069dcc0494680"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a01bf684b9892ea93b9938d1e812a288c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7d/class_music_download_batch_table_item.html#a01bf684b9892ea93b9938d1e812a288c">startToDownloadMusic</a> ()</td></tr>
+<tr class="separator:a01bf684b9892ea93b9938d1e812a288c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76c8caf0e7b6bbbe45dd5c3f3e2117c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7d/class_music_download_batch_table_item.html#a76c8caf0e7b6bbbe45dd5c3f3e2117c2">startToDownloadMovie</a> ()</td></tr>
+<tr class="separator:a76c8caf0e7b6bbbe45dd5c3f3e2117c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -141,7 +149,7 @@ Protected Attributes</h2></td></tr>
 <div class="textblock"><p>The class of the download batch table item. </p>
 <dl class="section author"><dt>Author</dt><dd>Greedysky <a href="#" onclick="location.href='mai'+'lto:'+'gre'+'ed'+'ysk'+'y@'+'163'+'.c'+'om'; return false;">greed<span style="display: none;">.nosp@m.</span>ysky<span style="display: none;">.nosp@m.</span>@163.<span style="display: none;">.nosp@m.</span>com</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00032">32</a> of file <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html">musicdownloadbatchwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00033">33</a> of file <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html">musicdownloadbatchwidget.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a10f89d559579b97ed2cb7aea9fae4022"></a>
 <div class="memitem">
@@ -168,7 +176,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00017">17</a> of file <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html">musicdownloadbatchwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00486">MusicUIObject::MComboBoxStyle02</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00564">MusicUIObject::MItemView01</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00315">MusicUIObject::MScrollBarStyle01</a>, and <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00014">ROW_HEIGHT</a>.</p>
+<p>References <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00490">MusicUIObject::MComboBoxStyle02</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00568">MusicUIObject::MItemView01</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00319">MusicUIObject::MScrollBarStyle01</a>, and <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00014">ROW_HEIGHT</a>.</p>
 
 </div>
 </div>
@@ -187,7 +195,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00038">38</a> of file <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html">musicdownloadbatchwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00070">m_information</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00068">m_qulity</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00070">m_singer</a>, and <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00070">m_songName</a>.</p>
+<p>References <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00080">m_information</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00078">m_qulity</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00080">m_singer</a>, and <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00080">m_songName</a>.</p>
 
 </div>
 </div>
@@ -214,9 +222,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00051">51</a> of file <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html">musicdownloadbatchwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../da/d90/musicwidgetutils_8cpp_source.html#l00033">MusicUtils::Widget::elidedText()</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00069">m_album</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00213">MusicObject::MusicSongInformation::m_albumName</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00174">MusicObject::MusicSongAttribute::m_bitrate</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00176">MusicObject::MusicSongAttribute::m_format</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00070">m_information</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00068">m_qulity</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00070">m_singer</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00212">MusicObject::MusicSongInformation::m_singerName</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00178">MusicObject::MusicSongAttribute::m_size</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00069">m_smallPicUrl</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00211">MusicObject::MusicSongInformation::m_smallPicUrl</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00206">MusicObject::MusicSongInformation::m_songAttrs</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00070">m_songName</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00214">MusicObject::MusicSongInformation::m_songName</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00091">MB_128</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00092">MB_192</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00088">MB_32</a>, and <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00094">MB_320</a>.</p>
+<p>References <a class="el" href="../../da/d90/musicwidgetutils_8cpp_source.html#l00033">MusicUtils::Widget::elidedText()</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00079">m_album</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00213">MusicObject::MusicSongInformation::m_albumName</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00174">MusicObject::MusicSongAttribute::m_bitrate</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00176">MusicObject::MusicSongAttribute::m_format</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00080">m_information</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00078">m_qulity</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00080">m_singer</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00212">MusicObject::MusicSongInformation::m_singerName</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00178">MusicObject::MusicSongAttribute::m_size</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00079">m_smallPicUrl</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00211">MusicObject::MusicSongInformation::m_smallPicUrl</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00206">MusicObject::MusicSongInformation::m_songAttrs</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00080">m_songName</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00214">MusicObject::MusicSongInformation::m_songName</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00091">MB_128</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00092">MB_192</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00088">MB_32</a>, and <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00094">MB_320</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00250">MusicDownloadBatchTableWidget::createItem()</a>.</p>
+<p>Referenced by <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00300">MusicDownloadBatchTableWidget::createItem()</a>.</p>
 
 </div>
 </div>
@@ -248,9 +256,9 @@ Protected Attributes</h2></td></tr>
 <p>sq</p>
 <p>cd </p>
 
-<p>Definition at line <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00178">178</a> of file <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html">musicdownloadbatchwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00143">143</a> of file <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html">musicdownloadbatchwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00174">MusicObject::MusicSongAttribute::m_bitrate</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00176">MusicObject::MusicSongAttribute::m_format</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00070">m_information</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00068">m_qulity</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00178">MusicObject::MusicSongAttribute::m_size</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00091">MB_128</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00092">MB_192</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00088">MB_32</a>, and <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00094">MB_320</a>.</p>
+<p>References <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00174">MusicObject::MusicSongAttribute::m_bitrate</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00176">MusicObject::MusicSongAttribute::m_format</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00080">m_information</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00078">m_qulity</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00178">MusicObject::MusicSongAttribute::m_size</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00091">MB_128</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00092">MB_192</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00088">MB_32</a>, and <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00094">MB_320</a>.</p>
 
 </div>
 </div>
@@ -295,33 +303,94 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Set current quality. </p>
 
-<p>Definition at line <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00154">154</a> of file <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html">musicdownloadbatchwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00119">119</a> of file <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html">musicdownloadbatchwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00174">MusicObject::MusicSongAttribute::m_bitrate</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00068">m_qulity</a>, and <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00094">MB_320</a>.</p>
+<p>References <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00174">MusicObject::MusicSongAttribute::m_bitrate</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00078">m_qulity</a>, and <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00094">MB_320</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00288">MusicDownloadBatchTableWidget::currentQualityChanged()</a>.</p>
+<p>Referenced by <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00338">MusicDownloadBatchTableWidget::currentQualityChanged()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aeb0a4ab0596ce41e14274afc98f0fabc"></a>
+<a class="anchor" id="ae5a2fa999972ca7760db1dd10e1eeee8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void MusicDownloadBatchTableItem::startToDownload </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../dc/de4/class_music_down_load_query_thread_abstract.html#a02a8296199ce895500ee46786781f2b2">MusicDownLoadQueryThreadAbstract::QueryType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Start to download music data. </p>
+<p>Start to download data. </p>
 
 <p>Definition at line <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00102">102</a> of file <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html">musicdownloadbatchwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00037">MusicDownLoadThreadAbstract::Download_Music</a>, <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00127">MusicSettingManager::DownloadMusicPathDirChoiced</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00069">m_album</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00176">MusicObject::MusicSongAttribute::m_format</a>, <a class="el" href="../../db/d30/musicdownloadrecordconfigmanager_8h_source.html#l00029">MusicDownloadRecord::m_name</a>, <a class="el" href="../../df/d0e/musicnetworkthread_8h_source.html#l00025">M_NETWORK_PTR</a>, <a class="el" href="../../db/d30/musicdownloadrecordconfigmanager_8h_source.html#l00030">MusicDownloadRecord::m_path</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00068">m_qulity</a>, <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00070">m_singer</a>, <a class="el" href="../../db/d30/musicdownloadrecordconfigmanager_8h_source.html#l00031">MusicDownloadRecord::m_size</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00178">MusicObject::MusicSongAttribute::m_size</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00069">m_smallPicUrl</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00070">m_songName</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00067">m_supperClass</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00177">MusicObject::MusicSongAttribute::m_url</a>, <a class="el" href="../../db/d30/musicdownloadrecordconfigmanager_8h_source.html#l00044">MusicDownloadRecordConfigManager::Normal</a>, <a class="el" href="../../d5/d4e/musicdownloadrecordconfigmanager_8cpp_source.html#l00036">MusicDownloadRecordConfigManager::readDownloadConfig()</a>, <a class="el" href="../../db/d30/musicdownloadrecordconfigmanager_8h_source.html#l00068">MusicDownloadRecordConfigManager::readDownloadXMLConfig()</a>, <a class="el" href="../../d4/d88/musicdatatagdownloadthread_8cpp_source.html#l00021">MusicDataTagDownloadThread::setTags()</a>, <a class="el" href="../../d4/d88/musicdatatagdownloadthread_8cpp_source.html#l00029">MusicDataTagDownloadThread::startToDownload()</a>, and <a class="el" href="../../d5/d4e/musicdownloadrecordconfigmanager_8cpp_source.html#l00014">MusicDownloadRecordConfigManager::writeDownloadConfig()</a>.</p>
+<p>References <a class="el" href="../../df/d0e/musicnetworkthread_8h_source.html#l00025">M_NETWORK_PTR</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00078">m_qulity</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00090">MusicDownLoadQueryThreadAbstract::MovieQuery</a>, <a class="el" href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00089">MusicDownLoadQueryThreadAbstract::MusicQuery</a>, <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00221">startToDownloadMovie()</a>, and <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00173">startToDownloadMusic()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00265">MusicDownloadBatchTableWidget::startToDownload()</a>.</p>
+<p>Referenced by <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00315">MusicDownloadBatchTableWidget::startToDownload()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a76c8caf0e7b6bbbe45dd5c3f3e2117c2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MusicDownloadBatchTableItem::startToDownloadMovie </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Start to download movie data. </p>
+
+<p>Definition at line <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00221">221</a> of file <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html">musicdownloadbatchwidget.cpp</a>.</p>
+
+<p>References <a class="el" href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00041">MusicDownLoadThreadAbstract::Download_Video</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00176">MusicObject::MusicSongAttribute::m_format</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00175">MusicObject::MusicSongAttribute::m_multiParts</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00078">m_qulity</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00080">m_singer</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00080">m_songName</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00177">MusicObject::MusicSongAttribute::m_url</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00118">MOVIE_DIR_FULL</a>, <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00020">MusicDataDownloadThread::startToDownload()</a>, and <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00161">STRING_SPLITER</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00102">startToDownload()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a01bf684b9892ea93b9938d1e812a288c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MusicDownloadBatchTableItem::startToDownloadMusic </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Start to download music data. </p>
+
+<p>Definition at line <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00173">173</a> of file <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html">musicdownloadbatchwidget.cpp</a>.</p>
+
+<p>References <a class="el" href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00037">MusicDownLoadThreadAbstract::Download_Music</a>, <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00127">MusicSettingManager::DownloadMusicPathDirChoiced</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00079">m_album</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00176">MusicObject::MusicSongAttribute::m_format</a>, <a class="el" href="../../db/d30/musicdownloadrecordconfigmanager_8h_source.html#l00029">MusicDownloadRecord::m_name</a>, <a class="el" href="../../db/d30/musicdownloadrecordconfigmanager_8h_source.html#l00030">MusicDownloadRecord::m_path</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00078">m_qulity</a>, <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00080">m_singer</a>, <a class="el" href="../../db/d30/musicdownloadrecordconfigmanager_8h_source.html#l00031">MusicDownloadRecord::m_size</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00178">MusicObject::MusicSongAttribute::m_size</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00079">m_smallPicUrl</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00080">m_songName</a>, <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00077">m_supperClass</a>, <a class="el" href="../../db/d30/musicdownloadrecordconfigmanager_8h_source.html#l00032">MusicDownloadRecord::m_time</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00177">MusicObject::MusicSongAttribute::m_url</a>, <a class="el" href="../../db/d30/musicdownloadrecordconfigmanager_8h_source.html#l00045">MusicDownloadRecordConfigManager::Normal</a>, <a class="el" href="../../d5/d4e/musicdownloadrecordconfigmanager_8cpp_source.html#l00037">MusicDownloadRecordConfigManager::readDownloadConfig()</a>, <a class="el" href="../../db/d30/musicdownloadrecordconfigmanager_8h_source.html#l00069">MusicDownloadRecordConfigManager::readDownloadXMLConfig()</a>, <a class="el" href="../../d4/d88/musicdatatagdownloadthread_8cpp_source.html#l00021">MusicDataTagDownloadThread::setTags()</a>, <a class="el" href="../../d4/d88/musicdatatagdownloadthread_8cpp_source.html#l00029">MusicDataTagDownloadThread::startToDownload()</a>, and <a class="el" href="../../d5/d4e/musicdownloadrecordconfigmanager_8cpp_source.html#l00014">MusicDownloadRecordConfigManager::writeDownloadConfig()</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00102">startToDownload()</a>.</p>
 
 </div>
 </div>
@@ -344,9 +413,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00069">69</a> of file <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html">musicdownloadbatchwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00079">79</a> of file <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html">musicdownloadbatchwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00051">createItem()</a>, and <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00102">startToDownload()</a>.</p>
+<p>Referenced by <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00051">createItem()</a>, and <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00173">startToDownloadMusic()</a>.</p>
 
 </div>
 </div>
@@ -368,9 +437,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00070">70</a> of file <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html">musicdownloadbatchwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00080">80</a> of file <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html">musicdownloadbatchwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00051">createItem()</a>, <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00178">currentQualityChanged()</a>, and <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00038">~MusicDownloadBatchTableItem()</a>.</p>
+<p>Referenced by <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00051">createItem()</a>, <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00143">currentQualityChanged()</a>, and <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00038">~MusicDownloadBatchTableItem()</a>.</p>
 
 </div>
 </div>
@@ -392,9 +461,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00068">68</a> of file <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html">musicdownloadbatchwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00078">78</a> of file <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html">musicdownloadbatchwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00051">createItem()</a>, <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00178">currentQualityChanged()</a>, <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00154">setCurrentQuality()</a>, <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00102">startToDownload()</a>, and <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00038">~MusicDownloadBatchTableItem()</a>.</p>
+<p>Referenced by <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00051">createItem()</a>, <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00143">currentQualityChanged()</a>, <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00119">setCurrentQuality()</a>, <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00102">startToDownload()</a>, <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00221">startToDownloadMovie()</a>, <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00173">startToDownloadMusic()</a>, and <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00038">~MusicDownloadBatchTableItem()</a>.</p>
 
 </div>
 </div>
@@ -416,9 +485,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00070">70</a> of file <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html">musicdownloadbatchwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00080">80</a> of file <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html">musicdownloadbatchwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00051">createItem()</a>, <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00102">startToDownload()</a>, and <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00038">~MusicDownloadBatchTableItem()</a>.</p>
+<p>Referenced by <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00051">createItem()</a>, <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00221">startToDownloadMovie()</a>, <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00173">startToDownloadMusic()</a>, and <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00038">~MusicDownloadBatchTableItem()</a>.</p>
 
 </div>
 </div>
@@ -440,9 +509,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00069">69</a> of file <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html">musicdownloadbatchwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00079">79</a> of file <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html">musicdownloadbatchwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00051">createItem()</a>, and <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00102">startToDownload()</a>.</p>
+<p>Referenced by <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00051">createItem()</a>, and <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00173">startToDownloadMusic()</a>.</p>
 
 </div>
 </div>
@@ -464,9 +533,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00070">70</a> of file <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html">musicdownloadbatchwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00080">80</a> of file <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html">musicdownloadbatchwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00051">createItem()</a>, <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00102">startToDownload()</a>, and <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00038">~MusicDownloadBatchTableItem()</a>.</p>
+<p>Referenced by <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00051">createItem()</a>, <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00221">startToDownloadMovie()</a>, <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00173">startToDownloadMusic()</a>, and <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00038">~MusicDownloadBatchTableItem()</a>.</p>
 
 </div>
 </div>
@@ -488,9 +557,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00067">67</a> of file <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html">musicdownloadbatchwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html#l00077">77</a> of file <a class="el" href="../../dd/d76/musicdownloadbatchwidget_8h_source.html">musicdownloadbatchwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00102">startToDownload()</a>.</p>
+<p>Referenced by <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00173">startToDownloadMusic()</a>.</p>
 
 </div>
 </div>
@@ -501,7 +570,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 2 2018 18:14:56 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 3 2018 22:45:42 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

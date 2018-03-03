@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.5.0</span>
+   &#160;<span id="projectnumber">2.6.6.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -354,7 +354,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00284"></a><span class="lineno"><a class="line" href="../../dd/de1/class_music_player.html#a950439b4307f3abc81648392f80632ab">  284</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../dd/de1/class_music_player.html#a950439b4307f3abc81648392f80632ab">MusicPlayer::getCurrentDuration</a>()</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;{</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    qint64 dur = <a class="code" href="../../dd/de1/class_music_player.html#a5020c1938ba350d14fa9a36342c0fe95">duration</a>();</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keywordflow">if</span>( (dur == 0 || <a class="code" href="../../dd/de1/class_music_player.html#ae6075ff2e8f606c7586a416e83279df2">m_duration</a> == dur) &amp;&amp; <a class="code" href="../../dd/de1/class_music_player.html#a1ad43841142f5d96d095ca4c5f4e6e18">m_tryTimes</a>++ &lt; 10 )</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keywordflow">if</span>((dur == 0 || <a class="code" href="../../dd/de1/class_music_player.html#ae6075ff2e8f606c7586a416e83279df2">m_duration</a> == dur) &amp;&amp; <a class="code" href="../../dd/de1/class_music_player.html#a1ad43841142f5d96d095ca4c5f4e6e18">m_tryTimes</a>++ &lt; 10)</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    {</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        QTimer::singleShot(50*<a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a43541d3fbed9208fda44164de1db7845">MT_MS</a>, <span class="keyword">this</span>, SLOT(<a class="code" href="../../dd/de1/class_music_player.html#a950439b4307f3abc81648392f80632ab">getCurrentDuration</a>()));</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    }</div>
@@ -388,7 +388,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_playedlist_html"><div class="ttname"><a href="../../d9/df3/class_music_playedlist.html">MusicPlayedlist</a></div><div class="ttdoc">The class of the music playedlist. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d1b/musicplayedlist_8h_source.html#l00060">musicplayedlist.h:60</a></div></div>
 <div class="ttc" id="class_sound_core_html_a9b7688bc3d0e42db516e1cf4ad227600"><div class="ttname"><a href="../../d4/d98/class_sound_core.html#a9b7688bc3d0e42db516e1cf4ad227600">SoundCore::elapsed</a></div><div class="ttdeci">qint64 elapsed() const </div></div>
 <div class="ttc" id="class_music_player_html_a9bfbfacbcc3d83786a4f269d54b8f360"><div class="ttname"><a href="../../dd/de1/class_music_player.html#a9bfbfacbcc3d83786a4f269d54b8f360">MusicPlayer::setPlaylist</a></div><div class="ttdeci">void setPlaylist(MusicPlayedlist *playlist)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d94/musicplayer_8cpp_source.html#l00050">musicplayer.cpp:50</a></div></div>
-<div class="ttc" id="class_music_playedlist_html_a6f3e9dec5465348c5103676a76888364"><div class="ttname"><a href="../../d9/df3/class_music_playedlist.html#a6f3e9dec5465348c5103676a76888364">MusicPlayedlist::setCurrentIndex</a></div><div class="ttdeci">void setCurrentIndex(int index=DEFAULT_INDEX_LEVEL1)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d09/musicplayedlist_8cpp_source.html#l00190">musicplayedlist.cpp:190</a></div></div>
+<div class="ttc" id="class_music_playedlist_html_a6f3e9dec5465348c5103676a76888364"><div class="ttname"><a href="../../d9/df3/class_music_playedlist.html#a6f3e9dec5465348c5103676a76888364">MusicPlayedlist::setCurrentIndex</a></div><div class="ttdeci">void setCurrentIndex(int index=DEFAULT_INDEX_LEVEL1)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d09/musicplayedlist_8cpp_source.html#l00191">musicplayedlist.cpp:191</a></div></div>
 <div class="ttc" id="class_music_player_html_a950439b4307f3abc81648392f80632ab"><div class="ttname"><a href="../../dd/de1/class_music_player.html#a950439b4307f3abc81648392f80632ab">MusicPlayer::getCurrentDuration</a></div><div class="ttdeci">void getCurrentDuration()</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d94/musicplayer_8cpp_source.html#l00284">musicplayer.cpp:284</a></div></div>
 <div class="ttc" id="class_music_player_html_a822d12c09b3e8d0218909ac4fff115b3"><div class="ttname"><a href="../../dd/de1/class_music_player.html#a822d12c09b3e8d0218909ac4fff115b3">MusicPlayer::setEqEffect</a></div><div class="ttdeci">void setEqEffect(const MusicObject::MIntList &amp;hz)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d94/musicplayer_8cpp_source.html#l00188">musicplayer.cpp:188</a></div></div>
 <div class="ttc" id="class_music_setting_manager_html_a146c66bf631250e49944cfbd221e29a5a8dfcbd272fbaa20da88c37940f08efd8"><div class="ttname"><a href="../../db/d01/class_music_setting_manager.html#a146c66bf631250e49944cfbd221e29a5a8dfcbd272fbaa20da88c37940f08efd8">MusicSettingManager::EqualizerValueChoiced</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2f/musicsettingmanager_8h_source.html#l00097">musicsettingmanager.h:97</a></div></div>
@@ -486,7 +486,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 2 2018 18:14:39 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 3 2018 22:45:24 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

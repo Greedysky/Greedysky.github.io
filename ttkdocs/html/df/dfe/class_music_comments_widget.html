@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.5.0</span>
+   &#160;<span id="projectnumber">2.6.6.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -102,8 +102,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
 Public Slots</h2></td></tr>
-<tr class="memitem:a9e266377242335fb739d62b9fd5a3a66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfe/class_music_comments_widget.html#a9e266377242335fb739d62b9fd5a3a66">createSearchedItems</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="../../d8/d62/struct_music_results_item.html">MusicResultsItem</a> &amp;comments)</td></tr>
-<tr class="separator:a9e266377242335fb739d62b9fd5a3a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afafba61b788efd8e25d7ca80fc306a44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfe/class_music_comments_widget.html#afafba61b788efd8e25d7ca80fc306a44">createSearchedItem</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="../../d8/d62/struct_music_results_item.html">MusicResultsItem</a> &amp;comments)</td></tr>
+<tr class="separator:afafba61b788efd8e25d7ca80fc306a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09f7e9dcf35d155d5fcbc2d6c60ce6b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfe/class_music_comments_widget.html#a09f7e9dcf35d155d5fcbc2d6c60ce6b4">buttonClicked</a> (<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> index)</td></tr>
 <tr class="separator:a09f7e9dcf35d155d5fcbc2d6c60ce6b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac68611419b041be00056fdaeb56d028"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfe/class_music_comments_widget.html#aac68611419b041be00056fdaeb56d028">createEMOJILabelWidget</a> ()</td></tr>
@@ -243,7 +243,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00334">334</a> of file <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html">musiccommentswidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00224">MusicPagingWidgetObject::currentIndex()</a>, <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00383">deleteCommentsItems()</a>, <a class="el" href="../../de/da1/musicdownloadpagingthread_8h_source.html#l00058">MusicDownLoadPagingThread::getPageSize()</a>, <a class="el" href="../../de/da1/musicdownloadpagingthread_8h_source.html#l00062">MusicDownLoadPagingThread::getPageTotal()</a>, <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html#l00136">m_commentsThread</a>, <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html#l00138">m_pagingWidgetObject</a>, <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00130">MusicPagingWidgetObject::paging()</a>, and <a class="el" href="../../d7/df9/musicdownloadpagingthread_8cpp_source.html#l00036">MusicDownLoadPagingThread::startToPage()</a>.</p>
+<p>References <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00224">MusicPagingWidgetObject::currentIndex()</a>, <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00383">deleteCommentsItems()</a>, <a class="el" href="../../de/da1/musicdownloadpagingthread_8h_source.html#l00054">MusicDownLoadPagingThread::getPageSize()</a>, <a class="el" href="../../de/da1/musicdownloadpagingthread_8h_source.html#l00058">MusicDownLoadPagingThread::getPageTotal()</a>, <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html#l00136">m_commentsThread</a>, <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html#l00138">m_pagingWidgetObject</a>, <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00130">MusicPagingWidgetObject::paging()</a>, and <a class="el" href="../../d7/df9/musicdownloadpagingthread_8cpp_source.html#l00036">MusicDownLoadPagingThread::startToPage()</a>.</p>
 
 <p>Referenced by <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00394">createPagingWidget()</a>.</p>
 
@@ -330,13 +330,13 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00394">394</a> of file <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html">musiccommentswidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00334">buttonClicked()</a>, <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00034">MusicPagingWidgetObject::createPagingWidget()</a>, <a class="el" href="../../de/da1/musicdownloadpagingthread_8h_source.html#l00058">MusicDownLoadPagingThread::getPageSize()</a>, <a class="el" href="../../de/da1/musicdownloadpagingthread_8h_source.html#l00062">MusicDownLoadPagingThread::getPageTotal()</a>, <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html#l00136">m_commentsThread</a>, <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html#l00135">m_messageComments</a>, and <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html#l00138">m_pagingWidgetObject</a>.</p>
+<p>References <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00334">buttonClicked()</a>, <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00034">MusicPagingWidgetObject::createPagingWidget()</a>, <a class="el" href="../../de/da1/musicdownloadpagingthread_8h_source.html#l00054">MusicDownLoadPagingThread::getPageSize()</a>, <a class="el" href="../../de/da1/musicdownloadpagingthread_8h_source.html#l00058">MusicDownLoadPagingThread::getPageTotal()</a>, <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html#l00136">m_commentsThread</a>, <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html#l00135">m_messageComments</a>, and <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html#l00138">m_pagingWidgetObject</a>.</p>
 
 <p>Referenced by <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00305">setCurrentSongName()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a9e266377242335fb739d62b9fd5a3a66"></a>
+<a class="anchor" id="afafba61b788efd8e25d7ca80fc306a44"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -344,7 +344,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void MusicCommentsWidget::createSearchedItems </td>
+          <td class="memname">void MusicCommentsWidget::createSearchedItem </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="../../d8/d62/struct_music_results_item.html">MusicResultsItem</a> &amp;&#160;</td>
           <td class="paramname"><em>comments</em></td><td>)</td>
@@ -361,7 +361,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00320">320</a> of file <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html">musiccommentswidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00127">MusicCommentsItem::createSearchedItems()</a>, <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html#l00137">m_commentsItems</a>, <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html#l00132">m_isPain</a>, <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html#l00135">m_messageComments</a>, and <a class="el" href="../../da/d4e/musicglobal_8h_source.html#l00076">MStatic_cast</a>.</p>
+<p>References <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00127">MusicCommentsItem::createSearchedItem()</a>, <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html#l00137">m_commentsItems</a>, <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html#l00132">m_isPain</a>, <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html#l00135">m_messageComments</a>, and <a class="el" href="../../da/d4e/musicglobal_8h_source.html#l00076">MStatic_cast</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d4/d71/musiclrccommentswidget_8cpp_source.html#l00015">MusicLrcCommentsWidget::initWidget()</a>, and <a class="el" href="../../d0/df0/musicplaylistfoundcommentswidget_8cpp_source.html#l00015">MusicPlaylistFoundCommentsWidget::initWidget()</a>.</p>
 
@@ -522,7 +522,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00179">179</a> of file <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html">musiccommentswidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00342">createEMOJILabelWidget()</a>, <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00375">initLabel()</a>, <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html#l00134">m_commentsLabel</a>, <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html#l00132">m_isPain</a>, <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html#l00135">m_messageComments</a>, <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html#l00133">m_messageEdit</a>, <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html#l00134">m_topLabel</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00072">MusicUIObject::MBackgroundStyle01</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00130">MusicUIObject::MBackgroundStyle19</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00142">MusicUIObject::MBorderStyle02</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00037">MusicUIObject::MColorStyle03</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00040">MusicUIObject::MColorStyle04</a>, <a class="el" href="../../d7/dec/musicfunctionuiobject_8h_source.html#l00078">MusicUIObject::MKGBtnPClose</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00226">MusicUIObject::MPushButtonStyle03</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00315">MusicUIObject::MScrollBarStyle01</a>, and <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00331">MusicUIObject::MScrollBarStyle03</a>.</p>
+<p>References <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00342">createEMOJILabelWidget()</a>, <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00375">initLabel()</a>, <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html#l00134">m_commentsLabel</a>, <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html#l00132">m_isPain</a>, <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html#l00135">m_messageComments</a>, <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html#l00133">m_messageEdit</a>, <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html#l00134">m_topLabel</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00072">MusicUIObject::MBackgroundStyle01</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00130">MusicUIObject::MBackgroundStyle19</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00142">MusicUIObject::MBorderStyle02</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00037">MusicUIObject::MColorStyle03</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00040">MusicUIObject::MColorStyle04</a>, <a class="el" href="../../d7/dec/musicfunctionuiobject_8h_source.html#l00078">MusicUIObject::MKGBtnPClose</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00230">MusicUIObject::MPushButtonStyle03</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00319">MusicUIObject::MScrollBarStyle01</a>, and <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00335">MusicUIObject::MScrollBarStyle03</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d4/d71/musiclrccommentswidget_8cpp_source.html#l00015">MusicLrcCommentsWidget::initWidget()</a>, and <a class="el" href="../../d0/df0/musicplaylistfoundcommentswidget_8cpp_source.html#l00015">MusicPlaylistFoundCommentsWidget::initWidget()</a>.</p>
 
@@ -623,7 +623,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00305">305</a> of file <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html">musiccommentswidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00394">createPagingWidget()</a>, <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00383">deleteCommentsItems()</a>, <a class="el" href="../../de/d32/musicsemaphoreloop_8cpp_source.html#l00022">MusicSemaphoreLoop::exec()</a>, <a class="el" href="../../de/da1/musicdownloadpagingthread_8h_source.html#l00062">MusicDownLoadPagingThread::getPageTotal()</a>, <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00375">initLabel()</a>, <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html#l00136">m_commentsThread</a>, <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html#l00135">m_messageComments</a>, <a class="el" href="../../da/d4e/musicglobal_8h_source.html#l00076">MStatic_cast</a>, and <a class="el" href="../../d9/dc5/class_music_down_load_comments_thread.html#ac8d9075d163470a711429ef418d50ded">MusicDownLoadCommentsThread::startToSearch()</a>.</p>
+<p>References <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00394">createPagingWidget()</a>, <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00383">deleteCommentsItems()</a>, <a class="el" href="../../de/d32/musicsemaphoreloop_8cpp_source.html#l00022">MusicSemaphoreLoop::exec()</a>, <a class="el" href="../../de/da1/musicdownloadpagingthread_8h_source.html#l00058">MusicDownLoadPagingThread::getPageTotal()</a>, <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00375">initLabel()</a>, <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html#l00136">m_commentsThread</a>, <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html#l00135">m_messageComments</a>, <a class="el" href="../../da/d4e/musicglobal_8h_source.html#l00076">MStatic_cast</a>, and <a class="el" href="../../d9/dc5/class_music_down_load_comments_thread.html#ac8d9075d163470a711429ef418d50ded">MusicDownLoadCommentsThread::startToSearch()</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d7/da4/musicplaylistfoundinfowidget_8cpp_source.html#l00292">MusicPlaylistFoundInfoWidget::initThirdWidget()</a>, and <a class="el" href="../../de/de4/musiclrccontainerforinline_8cpp_source.html#l00339">MusicLrcContainerForInline::showSongCommentsWidget()</a>.</p>
 
@@ -650,7 +650,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html#l00137">137</a> of file <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html">musiccommentswidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00320">createSearchedItems()</a>, and <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00383">deleteCommentsItems()</a>.</p>
+<p>Referenced by <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00320">createSearchedItem()</a>, and <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00383">deleteCommentsItems()</a>.</p>
 
 </div>
 </div>
@@ -722,7 +722,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html#l00132">132</a> of file <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html">musiccommentswidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00320">createSearchedItems()</a>, <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00383">deleteCommentsItems()</a>, <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00179">initWidget()</a>, and <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00150">MusicCommentsWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00320">createSearchedItem()</a>, <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00383">deleteCommentsItems()</a>, <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00179">initWidget()</a>, and <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00150">MusicCommentsWidget()</a>.</p>
 
 </div>
 </div>
@@ -746,7 +746,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html#l00135">135</a> of file <a class="el" href="../../de/dfd/musiccommentswidget_8h_source.html">musiccommentswidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00394">createPagingWidget()</a>, <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00320">createSearchedItems()</a>, <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00179">initWidget()</a>, <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00150">MusicCommentsWidget()</a>, <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00305">setCurrentSongName()</a>, and <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00163">~MusicCommentsWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00394">createPagingWidget()</a>, <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00320">createSearchedItem()</a>, <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00179">initWidget()</a>, <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00150">MusicCommentsWidget()</a>, <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00305">setCurrentSongName()</a>, and <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00163">~MusicCommentsWidget()</a>.</p>
 
 </div>
 </div>
@@ -829,7 +829,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 2 2018 18:14:55 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 3 2018 22:45:41 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

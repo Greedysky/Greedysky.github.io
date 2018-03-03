@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.5.0</span>
+   &#160;<span id="projectnumber">2.6.6.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -181,22 +181,23 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            }</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">if</span>(state)</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keyword">delete</span> item;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    }</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    {</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        item-&gt;<a class="code" href="../../dc/dde/struct_music_dispatch_item.html#a36e436b287896dd830c198380e4f9876">m_times</a>++;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordflow">if</span>(item-&gt;<a class="code" href="../../dc/dde/struct_music_dispatch_item.html#a5450467b510ffffb0db34e5a74aef5f2">isValid</a>())</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <a class="code" href="../../da/d80/class_music_dispatch_manager.html#af18353f00f983daab821f216a2aa1eff">m_observer</a> &lt;&lt; item;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        }</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="../../da/d80/class_music_dispatch_manager.html#a18e88b7242efb4df453ef1b2b319f857">m_mutex</a>.unlock();</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">default</span>: <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">if</span>(state)</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keyword">delete</span> item;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        item-&gt;<a class="code" href="../../dc/dde/struct_music_dispatch_item.html#a36e436b287896dd830c198380e4f9876">m_times</a>++;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">if</span>(item-&gt;<a class="code" href="../../dc/dde/struct_music_dispatch_item.html#a5450467b510ffffb0db34e5a74aef5f2">isValid</a>())</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <a class="code" href="../../da/d80/class_music_dispatch_manager.html#af18353f00f983daab821f216a2aa1eff">m_observer</a> &lt;&lt; item;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <a class="code" href="../../da/d80/class_music_dispatch_manager.html#a18e88b7242efb4df453ef1b2b319f857">m_mutex</a>.unlock();</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
 <div class="ttc" id="class_music_dispatch_manager_html_a047454839cc9320e9bd4a10cf57ece85"><div class="ttname"><a href="../../da/d80/class_music_dispatch_manager.html#a047454839cc9320e9bd4a10cf57ece85">MusicDispatchManager::~MusicDispatchManager</a></div><div class="ttdeci">~MusicDispatchManager()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d86/musicdispatchmanager_8cpp_source.html#l00014">musicdispatchmanager.cpp:14</a></div></div>
 <div class="ttc" id="class_music_dispatch_manager_html_a18e88b7242efb4df453ef1b2b319f857"><div class="ttname"><a href="../../da/d80/class_music_dispatch_manager.html#a18e88b7242efb4df453ef1b2b319f857">MusicDispatchManager::m_mutex</a></div><div class="ttdeci">QMutex m_mutex</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d08/musicdispatchmanager_8h_source.html#l00096">musicdispatchmanager.h:96</a></div></div>
 <div class="ttc" id="class_music_dispatch_manager_html_a9897eb939875d6c785cda1fe28292caa"><div class="ttname"><a href="../../da/d80/class_music_dispatch_manager.html#a9897eb939875d6c785cda1fe28292caa">MusicDispatchManager::dispatch</a></div><div class="ttdeci">void dispatch(int type)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d86/musicdispatchmanager_8cpp_source.html#l00026">musicdispatchmanager.cpp:26</a></div></div>
@@ -215,7 +216,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 2 2018 18:14:39 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 3 2018 22:45:24 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

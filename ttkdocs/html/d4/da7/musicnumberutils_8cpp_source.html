@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.5.0</span>
+   &#160;<span id="projectnumber">2.6.6.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -85,19 +85,19 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
 <div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="../../db/d96/namespace_music_utils_1_1_number.html#a220ced89c11a9419c71748aad6053336">    7</a></span>&#160;QString <a class="code" href="../../db/d96/namespace_music_utils_1_1_number.html#a220ced89c11a9419c71748aad6053336">MusicUtils::Number::size2Number</a>(qint64 <a class="code" href="../../d2/db7/ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>)</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordflow">if</span>( size &lt; <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#abbf4c4021f746cc44383f6eed4de5ab4">MH_KB2B</a>)</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordflow">if</span>(size &lt; <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#abbf4c4021f746cc44383f6eed4de5ab4">MH_KB2B</a>)</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="keywordflow">return</span> QString::number(size*1.0, <span class="charliteral">&#39;f&#39;</span>, 2);</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    }</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#abbf4c4021f746cc44383f6eed4de5ab4">MH_KB2B</a> &lt;= size &amp;&amp; size &lt; <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#ab042e2d0b1fc5941610689eca1edea7c">MH_MB2B</a>)</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="../../dd/d01/musicnumberdefine_8h.html#abbf4c4021f746cc44383f6eed4de5ab4">MH_KB2B</a> &lt;= size &amp;&amp; size &lt; <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#ab042e2d0b1fc5941610689eca1edea7c">MH_MB2B</a>)</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordflow">return</span> QString::number(size*1.0/<a class="code" href="../../dd/d01/musicnumberdefine_8h.html#abbf4c4021f746cc44383f6eed4de5ab4">MH_KB2B</a>, <span class="charliteral">&#39;f&#39;</span>, 2);</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    }</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#ab042e2d0b1fc5941610689eca1edea7c">MH_MB2B</a> &lt;= size &amp;&amp; size &lt; <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a735e57fcbd9510d427ac38ba71036eb4">MH_GB2B</a>)</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="../../dd/d01/musicnumberdefine_8h.html#ab042e2d0b1fc5941610689eca1edea7c">MH_MB2B</a> &lt;= size &amp;&amp; size &lt; <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a735e57fcbd9510d427ac38ba71036eb4">MH_GB2B</a>)</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">return</span> QString::number(size*1.0/<a class="code" href="../../dd/d01/musicnumberdefine_8h.html#ab042e2d0b1fc5941610689eca1edea7c">MH_MB2B</a>, <span class="charliteral">&#39;f&#39;</span>, 2);</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a735e57fcbd9510d427ac38ba71036eb4">MH_GB2B</a> &lt;= size &amp;&amp; size &lt; <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a1a77622b00afcb829bcfeddab4076924">MH_TB2B</a>)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a735e57fcbd9510d427ac38ba71036eb4">MH_GB2B</a> &lt;= size &amp;&amp; size &lt; <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a1a77622b00afcb829bcfeddab4076924">MH_TB2B</a>)</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    {</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">return</span> QString::number(size*1.0/<a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a735e57fcbd9510d427ac38ba71036eb4">MH_GB2B</a>, <span class="charliteral">&#39;f&#39;</span>, 2);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
@@ -125,19 +125,19 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    QString label = <a class="code" href="../../db/d96/namespace_music_utils_1_1_number.html#a220ced89c11a9419c71748aad6053336">size2Number</a>(size);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span>( size &lt; <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#abbf4c4021f746cc44383f6eed4de5ab4">MH_KB2B</a>)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span>(size &lt; <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#abbf4c4021f746cc44383f6eed4de5ab4">MH_KB2B</a>)</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;%1B&quot;</span>).arg(label);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#abbf4c4021f746cc44383f6eed4de5ab4">MH_KB2B</a> &lt;= size &amp;&amp; size &lt; <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#ab042e2d0b1fc5941610689eca1edea7c">MH_MB2B</a>)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="../../dd/d01/musicnumberdefine_8h.html#abbf4c4021f746cc44383f6eed4de5ab4">MH_KB2B</a> &lt;= size &amp;&amp; size &lt; <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#ab042e2d0b1fc5941610689eca1edea7c">MH_MB2B</a>)</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;%1K&quot;</span>).arg(label);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#ab042e2d0b1fc5941610689eca1edea7c">MH_MB2B</a> &lt;= size &amp;&amp; size &lt; <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a735e57fcbd9510d427ac38ba71036eb4">MH_GB2B</a>)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="../../dd/d01/musicnumberdefine_8h.html#ab042e2d0b1fc5941610689eca1edea7c">MH_MB2B</a> &lt;= size &amp;&amp; size &lt; <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a735e57fcbd9510d427ac38ba71036eb4">MH_GB2B</a>)</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;%1M&quot;</span>).arg(label);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a735e57fcbd9510d427ac38ba71036eb4">MH_GB2B</a> &lt;= size &amp;&amp; size &lt; <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a1a77622b00afcb829bcfeddab4076924">MH_TB2B</a>)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a735e57fcbd9510d427ac38ba71036eb4">MH_GB2B</a> &lt;= size &amp;&amp; size &lt; <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a1a77622b00afcb829bcfeddab4076924">MH_TB2B</a>)</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    {</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;%1G&quot;</span>).arg(label);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
@@ -174,19 +174,19 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
 <div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="../../db/d96/namespace_music_utils_1_1_number.html#a40fdb596eebfae151aa94ea12eb1baba">   96</a></span>&#160;QString <a class="code" href="../../db/d96/namespace_music_utils_1_1_number.html#a40fdb596eebfae151aa94ea12eb1baba">MusicUtils::Number::speed2LabelFromLabel</a>(qint64 <a class="code" href="../../d2/db7/ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, <span class="keyword">const</span> QString &amp;label)</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;{</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">if</span>( size &lt; <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#abbf4c4021f746cc44383f6eed4de5ab4">MH_KB2B</a>)</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">if</span>(size &lt; <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#abbf4c4021f746cc44383f6eed4de5ab4">MH_KB2B</a>)</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    {</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;%1B/s&quot;</span>).arg(label);</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#abbf4c4021f746cc44383f6eed4de5ab4">MH_KB2B</a> &lt;= size &amp;&amp; size &lt; <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#ab042e2d0b1fc5941610689eca1edea7c">MH_MB2B</a>)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="../../dd/d01/musicnumberdefine_8h.html#abbf4c4021f746cc44383f6eed4de5ab4">MH_KB2B</a> &lt;= size &amp;&amp; size &lt; <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#ab042e2d0b1fc5941610689eca1edea7c">MH_MB2B</a>)</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    {</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;%1K/s&quot;</span>).arg(label);</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#ab042e2d0b1fc5941610689eca1edea7c">MH_MB2B</a> &lt;= size &amp;&amp; size &lt; <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a735e57fcbd9510d427ac38ba71036eb4">MH_GB2B</a>)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="../../dd/d01/musicnumberdefine_8h.html#ab042e2d0b1fc5941610689eca1edea7c">MH_MB2B</a> &lt;= size &amp;&amp; size &lt; <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a735e57fcbd9510d427ac38ba71036eb4">MH_GB2B</a>)</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    {</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;%1M/s&quot;</span>).arg(label);</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a735e57fcbd9510d427ac38ba71036eb4">MH_GB2B</a> &lt;= size &amp;&amp; size &lt; <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a1a77622b00afcb829bcfeddab4076924">MH_TB2B</a>)</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a735e57fcbd9510d427ac38ba71036eb4">MH_GB2B</a> &lt;= size &amp;&amp; size &lt; <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a1a77622b00afcb829bcfeddab4076924">MH_TB2B</a>)</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    {</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;%1G/s&quot;</span>).arg(label);</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
@@ -325,7 +325,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 2 2018 18:14:43 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 3 2018 22:45:27 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

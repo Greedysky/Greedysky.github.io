@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.5.0</span>
+   &#160;<span id="projectnumber">2.6.6.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -107,12 +107,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a87d8d1dbfa1f2a7f22f605c58797fe5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a507975dfdf3dd39ec788aa060e3eda3a"><td class="memItemLeft" align="right" valign="top">QObject *&amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/class_music_connection_pool.html#a507975dfdf3dd39ec788aa060e3eda3a">operator[]</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;type)</td></tr>
 <tr class="separator:a507975dfdf3dd39ec788aa060e3eda3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a654bc476b666f8fe2e6d409ce39fb37b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/class_music_connection_pool.html#a654bc476b666f8fe2e6d409ce39fb37b">setNetworkMultiValue</a> (QObject *object)</td></tr>
-<tr class="separator:a654bc476b666f8fe2e6d409ce39fb37b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbf82fdb60ee25b37108d927acbfd947"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/class_music_connection_pool.html#adbf82fdb60ee25b37108d927acbfd947">removeNetworkMultiValue</a> (QObject *object)</td></tr>
-<tr class="separator:adbf82fdb60ee25b37108d927acbfd947"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9747a886553fe395dadbafe3b82ae992"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/class_music_connection_pool.html#a9747a886553fe395dadbafe3b82ae992">connectMusicDownload</a> (QObject *object)</td></tr>
-<tr class="separator:a9747a886553fe395dadbafe3b82ae992"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a087990465954f5c824214f2cadae2d78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/class_music_connection_pool.html#a087990465954f5c824214f2cadae2d78">poolConnect</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QObject *from, <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QObject *to)</td></tr>
 <tr class="separator:a087990465954f5c824214f2cadae2d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adac5d271bfc666e4e963c2c1e4b946d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/class_music_connection_pool.html#adac5d271bfc666e4e963c2c1e4b946d6">poolConnect</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;from, <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;to)</td></tr>
@@ -136,8 +130,6 @@ Protected Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a2b7da9f3faa581738f844b243b64d94d"><td class="memItemLeft" align="right" valign="top">QMap&lt; QString, QObject * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/class_music_connection_pool.html#a2b7da9f3faa581738f844b243b64d94d">m_para</a></td></tr>
 <tr class="separator:a2b7da9f3faa581738f844b243b64d94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67d5fbd85c7984c97b41f7bf97965a69"><td class="memItemLeft" align="right" valign="top">QList&lt; QObject * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/class_music_connection_pool.html#a67d5fbd85c7984c97b41f7bf97965a69">m_queueList</a></td></tr>
-<tr class="separator:a67d5fbd85c7984c97b41f7bf97965a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The class of the qt signal and slot connection pool. </p>
@@ -167,32 +159,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Object contsructor. </p>
 
-<p>Definition at line <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html#l00027">27</a> of file <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html">musicconnectionpool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html#l00026">26</a> of file <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html">musicconnectionpool.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a9747a886553fe395dadbafe3b82ae992"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MusicConnectionPool::connectMusicDownload </td>
-          <td>(</td>
-          <td class="paramtype">QObject *&#160;</td>
-          <td class="paramname"><em>object</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set music data network connection object. </p>
-
-<p>Definition at line <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html#l00048">48</a> of file <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html">musicconnectionpool.cpp</a>.</p>
-
-<p>References <a class="el" href="../../dd/d6e/musicdownloadrecordwidget_8cpp_source.html#l00046">MusicDownloadRecordWidget::getClassName()</a>, <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00082">MusicCloudDownloadTableWidget::getClassName()</a>, and <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html#l00099">m_para</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ac69510a3ee4f5a676d9ac03e61952bc2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -215,7 +186,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Get class object name. </p>
 
-<p>Definition at line <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html#l00033">33</a> of file <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html">musicconnectionpool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html#l00032">32</a> of file <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html">musicconnectionpool.cpp</a>.</p>
 
 </div>
 </div>
@@ -298,7 +269,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Set connection by two object. </p>
 
-<p>Definition at line <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html#l00144">144</a> of file <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html">musicconnectionpool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html#l00102">102</a> of file <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html">musicconnectionpool.cpp</a>.</p>
 
 </div>
 </div>
@@ -327,30 +298,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Set connection by two object type name. </p>
 
-<p>Definition at line <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html#l00078">78</a> of file <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html">musicconnectionpool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html#l00037">37</a> of file <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html">musicconnectionpool.cpp</a>.</p>
 
-<p>References <a class="el" href="../../db/d54/musicnetworkthread_8cpp_source.html#l00024">MusicNetworkThread::getClassName()</a>, <a class="el" href="../../d5/d6e/musicqueryfoundtablewidget_8cpp_source.html#l00043">MusicQueryFoundTableWidget::getClassName()</a>, <a class="el" href="../../df/d44/musicvideoqualitypopwidget_8cpp_source.html#l00027">MusicVideoQualityPopWidget::getClassName()</a>, <a class="el" href="../../d8/dc0/musicdownloadstatusobject_8cpp_source.html#l00035">MusicDownloadStatusObject::getClassName()</a>, <a class="el" href="../../dd/d6e/musicdownloadrecordwidget_8cpp_source.html#l00046">MusicDownloadRecordWidget::getClassName()</a>, <a class="el" href="../../d8/d4a/musicconnecttransferwidget_8cpp_source.html#l00083">MusicConnectTransferWidget::getClassName()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00057">MusicSongsSummariziedWidget::getClassName()</a>, <a class="el" href="../../df/d22/musicsongchecktoolswidget_8cpp_source.html#l00049">MusicSongCheckToolsWidget::getClassName()</a>, <a class="el" href="../../d8/dc3/musicequalizerdialog_8cpp_source.html#l00065">MusicEqualizerDialog::getClassName()</a>, <a class="el" href="../../d9/d47/musiclocalsongsmanagerwidget_8cpp_source.html#l00135">MusicLocalSongsManagerWidget::getClassName()</a>, <a class="el" href="../../dd/dbe/musicvideotablewidget_8cpp_source.html#l00026">MusicVideoTableWidget::getClassName()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00035">MusicPlayer::getClassName()</a>, <a class="el" href="../../d9/d0f/musicsongchecktoolstablewidget_8cpp_source.html#l00132">MusicSongCheckToolsDuplicateTableWidget::getClassName()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00051">MusicSongSearchOnlineTableWidget::getClassName()</a>, <a class="el" href="../../d6/dc2/musiccloudtablewidget_8cpp_source.html#l00082">MusicCloudDownloadTableWidget::getClassName()</a>, <a class="el" href="../../df/dbc/musiclrclocallinkwidget_8cpp_source.html#l00111">MusicLrcLocalLinkWidget::getClassName()</a>, <a class="el" href="../../d7/d89/musiclrcmakerwidget_8cpp_source.html#l00192">MusicLrcMakerWidget::getClassName()</a>, <a class="el" href="../../d9/d0f/musicsongchecktoolstablewidget_8cpp_source.html#l00268">MusicSongCheckToolsQualityTableWidget::getClassName()</a>, <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00245">MusicSoundEffectsWidget::getClassName()</a>, and <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html#l00099">m_para</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="adbf82fdb60ee25b37108d927acbfd947"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MusicConnectionPool::removeNetworkMultiValue </td>
-          <td>(</td>
-          <td class="paramtype">QObject *&#160;</td>
-          <td class="paramname"><em>object</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Remove mutiple network connection object. </p>
-
-<p>Definition at line <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html#l00069">69</a> of file <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html">musicconnectionpool.cpp</a>.</p>
-
-<p>References <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html#l00100">m_queueList</a>.</p>
+<p>References <a class="el" href="../../db/d54/musicnetworkthread_8cpp_source.html#l00024">MusicNetworkThread::getClassName()</a>, <a class="el" href="../../de/d8b/musicdownloadabstracttablewidget_8cpp_source.html#l00031">MusicDownloadAbstractTableWidget::getClassName()</a>, <a class="el" href="../../d5/d6e/musicqueryfoundtablewidget_8cpp_source.html#l00043">MusicQueryFoundTableWidget::getClassName()</a>, <a class="el" href="../../df/d44/musicvideoqualitypopwidget_8cpp_source.html#l00027">MusicVideoQualityPopWidget::getClassName()</a>, <a class="el" href="../../d8/dc0/musicdownloadstatusobject_8cpp_source.html#l00035">MusicDownloadStatusObject::getClassName()</a>, <a class="el" href="../../d8/d4a/musicconnecttransferwidget_8cpp_source.html#l00083">MusicConnectTransferWidget::getClassName()</a>, <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00057">MusicSongsSummariziedWidget::getClassName()</a>, <a class="el" href="../../df/d22/musicsongchecktoolswidget_8cpp_source.html#l00049">MusicSongCheckToolsWidget::getClassName()</a>, <a class="el" href="../../d8/dc3/musicequalizerdialog_8cpp_source.html#l00065">MusicEqualizerDialog::getClassName()</a>, <a class="el" href="../../d9/d47/musiclocalsongsmanagerwidget_8cpp_source.html#l00135">MusicLocalSongsManagerWidget::getClassName()</a>, <a class="el" href="../../dd/dbe/musicvideotablewidget_8cpp_source.html#l00028">MusicVideoTableWidget::getClassName()</a>, <a class="el" href="../../df/d94/musicplayer_8cpp_source.html#l00035">MusicPlayer::getClassName()</a>, <a class="el" href="../../d9/d0f/musicsongchecktoolstablewidget_8cpp_source.html#l00132">MusicSongCheckToolsDuplicateTableWidget::getClassName()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00051">MusicSongSearchOnlineTableWidget::getClassName()</a>, <a class="el" href="../../df/dbc/musiclrclocallinkwidget_8cpp_source.html#l00111">MusicLrcLocalLinkWidget::getClassName()</a>, <a class="el" href="../../d7/d89/musiclrcmakerwidget_8cpp_source.html#l00192">MusicLrcMakerWidget::getClassName()</a>, <a class="el" href="../../d9/d0f/musicsongchecktoolstablewidget_8cpp_source.html#l00269">MusicSongCheckToolsQualityTableWidget::getClassName()</a>, <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00245">MusicSoundEffectsWidget::getClassName()</a>, and <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html#l00086">m_para</a>.</p>
 
 </div>
 </div>
@@ -369,9 +319,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Remove connection object by object. </p>
 
-<p>Definition at line <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html#l00154">154</a> of file <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html">musicconnectionpool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html#l00112">112</a> of file <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html">musicconnectionpool.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html#l00099">m_para</a>.</p>
+<p>References <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html#l00086">m_para</a>.</p>
 
 </div>
 </div>
@@ -390,30 +340,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Remove connection object by object name. </p>
 
-<p>Definition at line <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html#l00149">149</a> of file <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html">musicconnectionpool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html#l00107">107</a> of file <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html">musicconnectionpool.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html#l00099">m_para</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a654bc476b666f8fe2e6d409ce39fb37b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MusicConnectionPool::setNetworkMultiValue </td>
-          <td>(</td>
-          <td class="paramtype">QObject *&#160;</td>
-          <td class="paramname"><em>object</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set mutiple network connection object. </p>
-
-<p>Definition at line <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html#l00038">38</a> of file <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html">musicconnectionpool.cpp</a>.</p>
-
-<p>References <a class="el" href="../../d8/dc0/musicdownloadstatusobject_8cpp_source.html#l00035">MusicDownloadStatusObject::getClassName()</a>, <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html#l00099">m_para</a>, and <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html#l00100">m_queueList</a>.</p>
+<p>References <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html#l00086">m_para</a>.</p>
 
 </div>
 </div>
@@ -500,33 +429,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html#l00099">99</a> of file <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html">musicconnectionpool.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html#l00086">86</a> of file <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html">musicconnectionpool.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html#l00048">connectMusicDownload()</a>, <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html#l00078">poolConnect()</a>, <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html#l00149">removeValue()</a>, and <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html#l00038">setNetworkMultiValue()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a67d5fbd85c7984c97b41f7bf97965a69"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">QList&lt;QObject*&gt; MusicConnectionPool::m_queueList</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html#l00100">100</a> of file <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html">musicconnectionpool.h</a>.</p>
-
-<p>Referenced by <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html#l00069">removeNetworkMultiValue()</a>, and <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html#l00038">setNetworkMultiValue()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html#l00037">poolConnect()</a>, and <a class="el" href="../../da/de4/musicconnectionpool_8cpp_source.html#l00107">removeValue()</a>.</p>
 
 </div>
 </div>
@@ -537,7 +442,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 2 2018 18:14:55 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 3 2018 22:45:41 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

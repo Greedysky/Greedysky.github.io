@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.5.0</span>
+   &#160;<span id="projectnumber">2.6.6.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -100,103 +100,106 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#ad0132e7ce2e999ea3b599f52a4ac7135">   24</a></span>&#160;<span class="preprocessor">#define MUSIC_DAILY_DIR             &quot;Bing&quot;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#ae62834dc202447b1c04f62a79ee88e48">   25</a></span>&#160;<span class="preprocessor">#define MUSIC_YYT_PREFIX            &quot;TTK_YYT_&quot;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a61c34894038965bfd1df2b2d37cd7ebf">   26</a></span>&#160;<span class="preprocessor">#define MUSIC_COLOR_FILE            &quot;color.jpg&quot;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a1cdee3fcaf366a7852ce8dcbb2f6084b">   27</a></span>&#160;<span class="preprocessor">#define MUSIC_IMAGE_FILE            &quot;image_cache&quot;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a70174ff88f17aaf62e64ea9a520aa2bc">   28</a></span>&#160;<span class="preprocessor">#define MUSIC_RECORD_FILE           &quot;record.raw&quot;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a61eb9499870cfe157d299dddeee34968">   29</a></span>&#160;<span class="preprocessor">#define MUSIC_RECORD_IN_FILE        &quot;record_input.wav&quot;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a72b564e514b787324716a4a53f419824">   30</a></span>&#160;<span class="preprocessor">#define MUSIC_RECORD_OUT_FILE       &quot;record_output.wav&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#adaa8c5ad8dacd7f10095a35a59060040">   31</a></span>&#160;<span class="preprocessor">#define MUSIC_NETWORK_TEST_FILE     &quot;netwotk_test.tt&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">//MusicLrcMakerWidget</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a3c34d92d55092494d8ebb4d08799ec96">   34</a></span>&#160;<span class="preprocessor">#define LRC_MAKER_INDEX_0           0</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a8fe701f5e449944a09441c3ac81a01aa">   35</a></span>&#160;<span class="preprocessor">#define LRC_MAKER_INDEX_1           1</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#ae544e71c1cc41636eeb5ec907a751ef2">   36</a></span>&#160;<span class="preprocessor">#define LRC_MAKER_INDEX_2           2</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#ac6f441ce43781fa8c2270a6065c00033">   37</a></span>&#160;<span class="preprocessor">#define LRC_MAKER_INDEX_3           3</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">//MusicCloudFileManagerDialog</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a4018513edc9f0106526e0b4a741cb055">   40</a></span>&#160;<span class="preprocessor">#define CLOUD_MANAGER_INDEX_0       0</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#af966916a301789305a0b90b1bfb29d44">   41</a></span>&#160;<span class="preprocessor">#define CLOUD_MANAGER_INDEX_1       1</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">//MusicConnectMobileWidget</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a9750fed88910d03ccc40b2bc3509edba">   44</a></span>&#160;<span class="preprocessor">#define CONNECT_MOBILE_INDEX_0      0</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a3b88c2a48c35b47892a10c08eb019719">   24</a></span>&#160;<span class="preprocessor">#define MUSIC_AUTHOR_NAME           &quot;Greedysky&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#ad0132e7ce2e999ea3b599f52a4ac7135">   26</a></span>&#160;<span class="preprocessor">#define MUSIC_DAILY_DIR             &quot;Bing&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#ae62834dc202447b1c04f62a79ee88e48">   27</a></span>&#160;<span class="preprocessor">#define MUSIC_YYT_PREFIX            &quot;TTK_YYT_&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a61c34894038965bfd1df2b2d37cd7ebf">   28</a></span>&#160;<span class="preprocessor">#define MUSIC_COLOR_FILE            &quot;color.jpg&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a1cdee3fcaf366a7852ce8dcbb2f6084b">   29</a></span>&#160;<span class="preprocessor">#define MUSIC_IMAGE_FILE            &quot;image_cache&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a70174ff88f17aaf62e64ea9a520aa2bc">   30</a></span>&#160;<span class="preprocessor">#define MUSIC_RECORD_FILE           &quot;record.raw&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a61eb9499870cfe157d299dddeee34968">   31</a></span>&#160;<span class="preprocessor">#define MUSIC_RECORD_IN_FILE        &quot;record_input.wav&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a72b564e514b787324716a4a53f419824">   32</a></span>&#160;<span class="preprocessor">#define MUSIC_RECORD_OUT_FILE       &quot;record_output.wav&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#adaa8c5ad8dacd7f10095a35a59060040">   33</a></span>&#160;<span class="preprocessor">#define MUSIC_NETWORK_TEST_FILE     &quot;netwotk_test.tt&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#ac5227c8ddaba13bbae5e367430df4012">   34</a></span>&#160;<span class="preprocessor">#define MUSIC_MOVIE_RADIO           &quot;Kugou&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">//MusicLrcMakerWidget</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a3c34d92d55092494d8ebb4d08799ec96">   37</a></span>&#160;<span class="preprocessor">#define LRC_MAKER_INDEX_0           0</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a8fe701f5e449944a09441c3ac81a01aa">   38</a></span>&#160;<span class="preprocessor">#define LRC_MAKER_INDEX_1           1</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#ae544e71c1cc41636eeb5ec907a751ef2">   39</a></span>&#160;<span class="preprocessor">#define LRC_MAKER_INDEX_2           2</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#ac6f441ce43781fa8c2270a6065c00033">   40</a></span>&#160;<span class="preprocessor">#define LRC_MAKER_INDEX_3           3</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">//MusicCloudFileManagerDialog</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a4018513edc9f0106526e0b4a741cb055">   43</a></span>&#160;<span class="preprocessor">#define CLOUD_MANAGER_INDEX_0       0</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#af966916a301789305a0b90b1bfb29d44">   44</a></span>&#160;<span class="preprocessor">#define CLOUD_MANAGER_INDEX_1       1</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">//MusicSongsSummariziedWidget</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#ifndef MUSIC_MOBILE</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#ae243afd119adf07c263cbb2ce42d6e8b">   48</a></span>&#160;<span class="preprocessor">#define MUSIC_NORMAL_LIST           0</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a76db4d3cab7dc35da0a463260bd35454">   49</a></span>&#160;<span class="preprocessor">#define MUSIC_LOVEST_LIST           1</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a22f11149d0b3f357cb10b1be700ff26a">   50</a></span>&#160;<span class="preprocessor">#define MUSIC_NETWORK_LIST          2</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a5b14c2eb8ef233d6440983e5fd97f24a">   51</a></span>&#160;<span class="preprocessor">#define MUSIC_RECENT_LIST           3</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#define MUSIC_NORMAL_LIST           0</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#define MUSIC_DOWNLOAD_LIST         1</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#define MUSIC_RECENT_LIST           2</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#define MUSIC_LOVEST_LIST           3</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#define MUSIC_DOWNMV_LIST           4</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#define MUSIC_MUSICRG_LIST          5</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">//MusicIdentifySongsWidget</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a54d100baa8918fc634baffa6428229c1">   62</a></span>&#160;<span class="preprocessor">#define IDENTIFY_SONGS_INDEX_0      0</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">//MusicConnectMobileWidget</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a9750fed88910d03ccc40b2bc3509edba">   47</a></span>&#160;<span class="preprocessor">#define CONNECT_MOBILE_INDEX_0      0</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">//MusicSongsSummariziedWidget</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#ifndef MUSIC_MOBILE</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#ae243afd119adf07c263cbb2ce42d6e8b">   51</a></span>&#160;<span class="preprocessor">#define MUSIC_NORMAL_LIST           0</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a76db4d3cab7dc35da0a463260bd35454">   52</a></span>&#160;<span class="preprocessor">#define MUSIC_LOVEST_LIST           1</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a22f11149d0b3f357cb10b1be700ff26a">   53</a></span>&#160;<span class="preprocessor">#define MUSIC_NETWORK_LIST          2</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a5b14c2eb8ef233d6440983e5fd97f24a">   54</a></span>&#160;<span class="preprocessor">#define MUSIC_RECENT_LIST           3</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#define MUSIC_NORMAL_LIST           0</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#define MUSIC_DOWNLOAD_LIST         1</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#define MUSIC_RECENT_LIST           2</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#define MUSIC_LOVEST_LIST           3</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#define MUSIC_DOWNMV_LIST           4</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#define MUSIC_MUSICRG_LIST          5</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">//MusicLocalSongsManagerWidget</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a813f10c7f33895d6f344ad8306be76aa">   65</a></span>&#160;<span class="preprocessor">#define LOCAL_MANAGER_INDEX_0       0</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a4745fb3947eefd1c864d5c7d0c3728a4">   66</a></span>&#160;<span class="preprocessor">#define LOCAL_MANAGER_INDEX_1       1</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">//MusicSoundKMicroWidget</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#ae39ebd6611dbe2dc25c1b39c0d24e7cf">   69</a></span>&#160;<span class="preprocessor">#define SOUND_KMICRO_INDEX_0        0</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a8a8de48c406ccdbf0c107d9b247849c0">   70</a></span>&#160;<span class="preprocessor">#define SOUND_KMICRO_INDEX_1        1</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">//MusicTimerWidget</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#ad6e76245fa2f64e03e75043defcbdcbf">   73</a></span>&#160;<span class="preprocessor">#define TIMER_MANAGER_INDEX_0       0</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a99c2ac496925c709573e0c0c23fc9fe7">   74</a></span>&#160;<span class="preprocessor">#define TIMER_MANAGER_INDEX_1       1</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a7820f8c21a4fadf353d320067f566350">   75</a></span>&#160;<span class="preprocessor">#define TIMER_MANAGER_INDEX_2       2</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">//MusicUserWindow</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a258c1413aebc424c99f22165e236c1de">   78</a></span>&#160;<span class="preprocessor">#define USER_WINDOW_INDEX_0         0</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a42d28d230f1a268ff5718c86f64c6269">   79</a></span>&#160;<span class="preprocessor">#define USER_WINDOW_INDEX_1         1</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">//MusicVideoPlayWidget</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a806716dfed0d83aa4e28e8f624735cb1">   82</a></span>&#160;<span class="preprocessor">#define VIDEO_WINDOW_INDEX_0        0</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a4e095b55461cced1e58fa6c63eeb9d21">   83</a></span>&#160;<span class="preprocessor">#define VIDEO_WINDOW_INDEX_1        1</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">//MusicPlaylistFoundWidget</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a365e2d8cebd2d947b196d65bd9f1bb08">   86</a></span>&#160;<span class="preprocessor">#define PLAYLIST_WINDOW_INDEX_0     0</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a187c55efb78e1f81ad59f81950e62554">   87</a></span>&#160;<span class="preprocessor">#define PLAYLIST_WINDOW_INDEX_1     1</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">//MusicSettingWidget</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a857347ca8f389494455f8b2a1dac9b75">   90</a></span>&#160;<span class="preprocessor">#define SETTING_WINDOW_INDEX_0      0</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a4b3161dbafeac19db135e37c81c67957">   91</a></span>&#160;<span class="preprocessor">#define SETTING_WINDOW_INDEX_1      1</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#ae364da4a92b74c6331beb2a0c4dcb689">   92</a></span>&#160;<span class="preprocessor">#define SETTING_WINDOW_INDEX_2      2</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#aba963f5bc5d8648e6820fd3785a077e5">   93</a></span>&#160;<span class="preprocessor">#define SETTING_WINDOW_INDEX_3      3</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a5703ab0fccd88d103f5fe8326e176119">   94</a></span>&#160;<span class="preprocessor">#define SETTING_WINDOW_INDEX_4      4</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a8f95d8606b828ab6af688afc5bbd9432">   95</a></span>&#160;<span class="preprocessor">#define SETTING_WINDOW_INDEX_5      5</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a0bffe5bd0d9fe1046fc8db582b413dd1">   96</a></span>&#160;<span class="preprocessor">#define SETTING_WINDOW_INDEX_6      6</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#ad4b4ceee16140b7e06721b7c31d55abe">   97</a></span>&#160;<span class="preprocessor">#define SETTING_WINDOW_INDEX_7      7</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a45a94a4deaad61d56fd28f9543c9c6bc">   98</a></span>&#160;<span class="preprocessor">#define SETTING_WINDOW_INDEX_8      8</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">//MusicSourceUpdateWidget</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a7fbc0984cf2a881463ed646461d159cd">  101</a></span>&#160;<span class="preprocessor">#define SOURCE_UPDATE_INDEX_0       0</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a6f836e78611da767ced4e1ea4bd353e5">  102</a></span>&#160;<span class="preprocessor">#define SOURCE_UPDATE_INDEX_1       1</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">//MusicApplication</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#af7c0803a965c45864a3b2a0c17c99db1">  105</a></span>&#160;<span class="preprocessor">#define APP_WINDOW_INDEX_0          0</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a7ee23dcd706c9598e63d930aff0487fa">  106</a></span>&#160;<span class="preprocessor">#define APP_WINDOW_INDEX_1          1</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a22be6e1ba62f2dd61062f0b605d752f2">  107</a></span>&#160;<span class="preprocessor">#define APP_WINDOW_INDEX_2          2</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a81303a31646db0cb23591daaf9a1b9bb">  108</a></span>&#160;<span class="preprocessor">#define APP_WINDOW_INDEX_3          3</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a8fe38e25aa05f447bf0d7ec467f7da4a">  109</a></span>&#160;<span class="preprocessor">#define APP_WINDOW_INDEX_4          4</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a69b71bb0da5a1fb30a6f76d42a649045">  110</a></span>&#160;<span class="preprocessor">#define APP_WINDOW_INDEX_5          5</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a59a93e009f9048b1cafe989a2acc2bd0">  111</a></span>&#160;<span class="preprocessor">#define APP_WINDOW_INDEX_6          6</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#ab1d8c4dc72437579f5da1ae26f942f23">  112</a></span>&#160;<span class="preprocessor">#define APP_WINDOW_INDEX_7          7</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a511fa22f3a34524396c5867774a5438d">  113</a></span>&#160;<span class="preprocessor">#define APP_WINDOW_INDEX_8          8</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#endif // MUSICOTHERDEFINE_H</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">//MusicIdentifySongsWidget</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a54d100baa8918fc634baffa6428229c1">   65</a></span>&#160;<span class="preprocessor">#define IDENTIFY_SONGS_INDEX_0      0</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">//MusicLocalSongsManagerWidget</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a813f10c7f33895d6f344ad8306be76aa">   68</a></span>&#160;<span class="preprocessor">#define LOCAL_MANAGER_INDEX_0       0</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a4745fb3947eefd1c864d5c7d0c3728a4">   69</a></span>&#160;<span class="preprocessor">#define LOCAL_MANAGER_INDEX_1       1</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">//MusicSoundKMicroWidget</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#ae39ebd6611dbe2dc25c1b39c0d24e7cf">   72</a></span>&#160;<span class="preprocessor">#define SOUND_KMICRO_INDEX_0        0</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a8a8de48c406ccdbf0c107d9b247849c0">   73</a></span>&#160;<span class="preprocessor">#define SOUND_KMICRO_INDEX_1        1</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">//MusicTimerWidget</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#ad6e76245fa2f64e03e75043defcbdcbf">   76</a></span>&#160;<span class="preprocessor">#define TIMER_MANAGER_INDEX_0       0</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a99c2ac496925c709573e0c0c23fc9fe7">   77</a></span>&#160;<span class="preprocessor">#define TIMER_MANAGER_INDEX_1       1</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a7820f8c21a4fadf353d320067f566350">   78</a></span>&#160;<span class="preprocessor">#define TIMER_MANAGER_INDEX_2       2</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">//MusicUserWindow</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a258c1413aebc424c99f22165e236c1de">   81</a></span>&#160;<span class="preprocessor">#define USER_WINDOW_INDEX_0         0</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a42d28d230f1a268ff5718c86f64c6269">   82</a></span>&#160;<span class="preprocessor">#define USER_WINDOW_INDEX_1         1</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">//MusicVideoPlayWidget</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a806716dfed0d83aa4e28e8f624735cb1">   85</a></span>&#160;<span class="preprocessor">#define VIDEO_WINDOW_INDEX_0        0</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a4e095b55461cced1e58fa6c63eeb9d21">   86</a></span>&#160;<span class="preprocessor">#define VIDEO_WINDOW_INDEX_1        1</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">//MusicPlaylistFoundWidget</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a365e2d8cebd2d947b196d65bd9f1bb08">   89</a></span>&#160;<span class="preprocessor">#define PLAYLIST_WINDOW_INDEX_0     0</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a187c55efb78e1f81ad59f81950e62554">   90</a></span>&#160;<span class="preprocessor">#define PLAYLIST_WINDOW_INDEX_1     1</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">//MusicSettingWidget</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a857347ca8f389494455f8b2a1dac9b75">   93</a></span>&#160;<span class="preprocessor">#define SETTING_WINDOW_INDEX_0      0</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a4b3161dbafeac19db135e37c81c67957">   94</a></span>&#160;<span class="preprocessor">#define SETTING_WINDOW_INDEX_1      1</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#ae364da4a92b74c6331beb2a0c4dcb689">   95</a></span>&#160;<span class="preprocessor">#define SETTING_WINDOW_INDEX_2      2</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#aba963f5bc5d8648e6820fd3785a077e5">   96</a></span>&#160;<span class="preprocessor">#define SETTING_WINDOW_INDEX_3      3</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a5703ab0fccd88d103f5fe8326e176119">   97</a></span>&#160;<span class="preprocessor">#define SETTING_WINDOW_INDEX_4      4</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a8f95d8606b828ab6af688afc5bbd9432">   98</a></span>&#160;<span class="preprocessor">#define SETTING_WINDOW_INDEX_5      5</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a0bffe5bd0d9fe1046fc8db582b413dd1">   99</a></span>&#160;<span class="preprocessor">#define SETTING_WINDOW_INDEX_6      6</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#ad4b4ceee16140b7e06721b7c31d55abe">  100</a></span>&#160;<span class="preprocessor">#define SETTING_WINDOW_INDEX_7      7</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a45a94a4deaad61d56fd28f9543c9c6bc">  101</a></span>&#160;<span class="preprocessor">#define SETTING_WINDOW_INDEX_8      8</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">//MusicSourceUpdateWidget</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a7fbc0984cf2a881463ed646461d159cd">  104</a></span>&#160;<span class="preprocessor">#define SOURCE_UPDATE_INDEX_0       0</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a6f836e78611da767ced4e1ea4bd353e5">  105</a></span>&#160;<span class="preprocessor">#define SOURCE_UPDATE_INDEX_1       1</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">//MusicApplication</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#af7c0803a965c45864a3b2a0c17c99db1">  108</a></span>&#160;<span class="preprocessor">#define APP_WINDOW_INDEX_0          0</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a7ee23dcd706c9598e63d930aff0487fa">  109</a></span>&#160;<span class="preprocessor">#define APP_WINDOW_INDEX_1          1</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a22be6e1ba62f2dd61062f0b605d752f2">  110</a></span>&#160;<span class="preprocessor">#define APP_WINDOW_INDEX_2          2</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a81303a31646db0cb23591daaf9a1b9bb">  111</a></span>&#160;<span class="preprocessor">#define APP_WINDOW_INDEX_3          3</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a8fe38e25aa05f447bf0d7ec467f7da4a">  112</a></span>&#160;<span class="preprocessor">#define APP_WINDOW_INDEX_4          4</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a69b71bb0da5a1fb30a6f76d42a649045">  113</a></span>&#160;<span class="preprocessor">#define APP_WINDOW_INDEX_5          5</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a59a93e009f9048b1cafe989a2acc2bd0">  114</a></span>&#160;<span class="preprocessor">#define APP_WINDOW_INDEX_6          6</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#ab1d8c4dc72437579f5da1ae26f942f23">  115</a></span>&#160;<span class="preprocessor">#define APP_WINDOW_INDEX_7          7</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="../../d2/d77/musicotherdefine_8h.html#a511fa22f3a34524396c5867774a5438d">  116</a></span>&#160;<span class="preprocessor">#define APP_WINDOW_INDEX_8          8</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif // MUSICOTHERDEFINE_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 2 2018 18:14:39 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 3 2018 22:45:24 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.5.0</span>
+   &#160;<span id="projectnumber">2.6.6.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -151,7 +151,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="../../de/d69/class_music_network_proxy.html#a17dd17170c06bcbc1bd1284a94212130">   73</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../de/d69/class_music_network_proxy.html#a17dd17170c06bcbc1bd1284a94212130">MusicNetworkProxy::testProxy</a>()</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">if</span>( !<a class="code" href="../../de/d69/class_music_network_proxy.html#a1e4ed57b4e8b388901dedfb5814cc210">m_testSocket</a> )</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="../../de/d69/class_music_network_proxy.html#a1e4ed57b4e8b388901dedfb5814cc210">m_testSocket</a>)</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    {</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <a class="code" href="../../de/d69/class_music_network_proxy.html#a1e4ed57b4e8b388901dedfb5814cc210">m_testSocket</a> = <span class="keyword">new</span> QTcpSocket(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        connect(<a class="code" href="../../de/d69/class_music_network_proxy.html#a1e4ed57b4e8b388901dedfb5814cc210">m_testSocket</a>, SIGNAL(stateChanged(QAbstractSocket::SocketState)),</div>
@@ -170,7 +170,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        proxy.setHostName(<a class="code" href="../../de/d69/class_music_network_proxy.html#a77b2fd7a648dd9298a7b34021622986e">m_hostName</a>);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">if</span>( <a class="code" href="../../de/d69/class_music_network_proxy.html#ac089329c94916270507736c460e1c4a8">m_port</a> != -1)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../de/d69/class_music_network_proxy.html#ac089329c94916270507736c460e1c4a8">m_port</a> != -1)</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    {</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        proxy.setPort(<a class="code" href="../../de/d69/class_music_network_proxy.html#ac089329c94916270507736c460e1c4a8">m_port</a>);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
@@ -227,7 +227,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 2 2018 18:14:42 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 3 2018 22:45:27 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

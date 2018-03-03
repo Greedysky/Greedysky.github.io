@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.5.0</span>
+   &#160;<span id="projectnumber">2.6.6.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -333,7 +333,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    {</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <span class="keywordtype">int</span> length = 0;</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <a class="code" href="../../df/dff/class_meta_data_model.html">MetaDataModel</a> *model = decoderfac-&gt;<a class="code" href="../../dc/d36/class_decoder_factory.html#ac75abde6b8e375a9e711084f0979647c">createMetaDataModel</a>(<a class="code" href="../../dd/db7/class_music_song_tag.html#afb67edcc7b5c555266967bb51d71a9b0">m_filePath</a>);</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <span class="keywordflow">if</span>(model != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <span class="keywordflow">if</span>(model)</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        {</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            QHash&lt;QString, QString&gt; datas = model-&gt;<a class="code" href="../../df/dff/class_meta_data_model.html#ac74aa718e486fe3b6d41e41d99d18602">audioProperties</a>();</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;            <a class="code" href="../../dc/d95/class_music_time.html">MusicTime</a> t = <a class="code" href="../../dc/d95/class_music_time.html#a8042e738c45cd7e542cdd4ba014780ec">MusicTime::fromString</a>(datas.value(<span class="stringliteral">&quot;Length&quot;</span>), QString(<span class="stringliteral">&quot;m:ss&quot;</span>));</div>
@@ -536,7 +536,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 2 2018 18:14:39 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 3 2018 22:45:25 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

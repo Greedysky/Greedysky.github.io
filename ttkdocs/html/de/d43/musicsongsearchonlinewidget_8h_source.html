@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.5.0</span>
+   &#160;<span id="projectnumber">2.6.6.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -158,7 +158,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> listCellEntered(<span class="keywordtype">int</span> row, <span class="keywordtype">int</span> column) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> listCellClicked(<span class="keywordtype">int</span> row, <span class="keywordtype">int</span> column) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> clearAllItems() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> createSearchedItems(<span class="keyword">const</span> <a class="code" href="../../d6/dc5/struct_music_searched_item.html">MusicSearchedItem</a> &amp;songItem) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> createSearchedItem(<span class="keyword">const</span> <a class="code" href="../../d6/dc5/struct_music_searched_item.html">MusicSearchedItem</a> &amp;songItem) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> itemDoubleClicked(<span class="keywordtype">int</span> row, <span class="keywordtype">int</span> column) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> actionGroupClick(QAction *action) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordtype">void</span> searchDataDwonloadFinished();</div>
@@ -222,7 +222,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_song_search_online_table_widget_html"><div class="ttname"><a href="../../dd/d33/class_music_song_search_online_table_widget.html">MusicSongSearchOnlineTableWidget</a></div><div class="ttdoc">The class of the song search online table widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00059">musicsongsearchonlinewidget.h:59</a></div></div>
 <div class="ttc" id="class_music_song_search_online_widget_html_ace6dd3bce74a56470030e9bec20f332d"><div class="ttname"><a href="../../d4/dd7/class_music_song_search_online_widget.html#ace6dd3bce74a56470030e9bec20f332d">MusicSongSearchOnlineWidget::m_textLabel</a></div><div class="ttdeci">QLabel * m_textLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00241">musicsongsearchonlinewidget.h:241</a></div></div>
 <div class="ttc" id="class_music_song_search_online_table_widget_html_a69ff2467733750901f5316154367bdcf"><div class="ttname"><a href="../../dd/d33/class_music_song_search_online_table_widget.html#a69ff2467733750901f5316154367bdcf">MusicSongSearchOnlineTableWidget::m_previousAuditionRow</a></div><div class="ttdeci">int m_previousAuditionRow</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00166">musicsongsearchonlinewidget.h:166</a></div></div>
-<div class="ttc" id="class_music_query_item_table_widget_html"><div class="ttname"><a href="../../d5/ddc/class_music_query_item_table_widget.html">MusicQueryItemTableWidget</a></div><div class="ttdoc">The class of the query item table widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7f/musicquerytablewidget_8h_source.html#l00114">musicquerytablewidget.h:114</a></div></div>
+<div class="ttc" id="class_music_query_item_table_widget_html"><div class="ttname"><a href="../../d5/ddc/class_music_query_item_table_widget.html">MusicQueryItemTableWidget</a></div><div class="ttdoc">The class of the query item table widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7f/musicquerytablewidget_8h_source.html#l00110">musicquerytablewidget.h:110</a></div></div>
 <div class="ttc" id="struct_music_download_data_html_a3e999eb645f8dd68deb4e50692a18566"><div class="ttname"><a href="../../d1/df2/struct_music_download_data.html#a3e999eb645f8dd68deb4e50692a18566">MusicDownloadData::m_time</a></div><div class="ttdeci">QString m_time</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d43/musicsongsearchonlinewidget_8h_source.html#l00034">musicsongsearchonlinewidget.h:34</a></div></div>
 <div class="ttc" id="struct_music_searched_item_html"><div class="ttname"><a href="../../d6/dc5/struct_music_searched_item.html">MusicSearchedItem</a></div><div class="ttdoc">The class of the searched data item. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00028">musicdownloadquerythreadabstract.h:28</a></div></div>
 <div class="ttc" id="class_music_core_m_player_html"><div class="ttname"><a href="../../d5/dad/class_music_core_m_player.html">MusicCoreMPlayer</a></div><div class="ttdoc">The class of the mplayer core. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d50/musiccoremplayer_8h_source.html#l00031">musiccoremplayer.h:31</a></div></div>
@@ -238,7 +238,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 2 2018 18:14:47 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 3 2018 22:45:30 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

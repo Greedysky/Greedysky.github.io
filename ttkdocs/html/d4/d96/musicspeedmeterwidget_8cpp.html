@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.5.0</span>
+   &#160;<span id="projectnumber">2.6.6.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -73,18 +73,117 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">musicspeedmeterwidget.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="../../d6/df7/musicspeedmeterwidget_8h_source.html">musicspeedmeterwidget.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html">musicnumberdefine.h</a>&quot;</code><br />
+<code>#include &lt;QTimer&gt;</code><br />
+<code>#include &lt;QPainter&gt;</code><br />
 </div>
 <p><a href="../../d4/d96/musicspeedmeterwidget_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a55515ec01eb181731c0358f46f12bc15"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d96/musicspeedmeterwidget_8cpp.html#a55515ec01eb181731c0358f46f12bc15">S_LONG</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a55515ec01eb181731c0358f46f12bc15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac584d348a3f6b4ac75f9823379ebbae1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d96/musicspeedmeterwidget_8cpp.html#ac584d348a3f6b4ac75f9823379ebbae1">S_SPAOK</a>&#160;&#160;&#160;7</td></tr>
+<tr class="separator:ac584d348a3f6b4ac75f9823379ebbae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45569816707a7c21e4ea505a62ad39cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d96/musicspeedmeterwidget_8cpp.html#a45569816707a7c21e4ea505a62ad39cf">S_SHORT</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:a45569816707a7c21e4ea505a62ad39cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4b2d48d50c82ae3433d33a554b7975f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d96/musicspeedmeterwidget_8cpp.html#ae4b2d48d50c82ae3433d33a554b7975f">S_SPACE</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:ae4b2d48d50c82ae3433d33a554b7975f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b33454f739be68fa90ccf4fb8a60082"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d96/musicspeedmeterwidget_8cpp.html#a0b33454f739be68fa90ccf4fb8a60082">S_ANGLE</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a0b33454f739be68fa90ccf4fb8a60082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a0b33454f739be68fa90ccf4fb8a60082"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define S_ANGLE&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d4/d96/musicspeedmeterwidget_8cpp_source.html#l00011">11</a> of file <a class="el" href="../../d4/d96/musicspeedmeterwidget_8cpp_source.html">musicspeedmeterwidget.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d4/d96/musicspeedmeterwidget_8cpp_source.html#l00222">MusicSpeedMeterWidget::drawTextRect()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a55515ec01eb181731c0358f46f12bc15"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define S_LONG&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d4/d96/musicspeedmeterwidget_8cpp_source.html#l00007">7</a> of file <a class="el" href="../../d4/d96/musicspeedmeterwidget_8cpp_source.html">musicspeedmeterwidget.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d4/d96/musicspeedmeterwidget_8cpp_source.html#l00281">MusicSpeedMeterWidget::drawIndicator()</a>, and <a class="el" href="../../d4/d96/musicspeedmeterwidget_8cpp_source.html#l00155">MusicSpeedMeterWidget::drawMark()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a45569816707a7c21e4ea505a62ad39cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define S_SHORT&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d4/d96/musicspeedmeterwidget_8cpp_source.html#l00009">9</a> of file <a class="el" href="../../d4/d96/musicspeedmeterwidget_8cpp_source.html">musicspeedmeterwidget.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d4/d96/musicspeedmeterwidget_8cpp_source.html#l00155">MusicSpeedMeterWidget::drawMark()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae4b2d48d50c82ae3433d33a554b7975f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define S_SPACE&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d4/d96/musicspeedmeterwidget_8cpp_source.html#l00010">10</a> of file <a class="el" href="../../d4/d96/musicspeedmeterwidget_8cpp_source.html">musicspeedmeterwidget.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d4/d96/musicspeedmeterwidget_8cpp_source.html#l00155">MusicSpeedMeterWidget::drawMark()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac584d348a3f6b4ac75f9823379ebbae1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define S_SPAOK&#160;&#160;&#160;7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d4/d96/musicspeedmeterwidget_8cpp_source.html#l00008">8</a> of file <a class="el" href="../../d4/d96/musicspeedmeterwidget_8cpp_source.html">musicspeedmeterwidget.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d4/d96/musicspeedmeterwidget_8cpp_source.html#l00155">MusicSpeedMeterWidget::drawMark()</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 2 2018 18:14:52 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 3 2018 22:45:35 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

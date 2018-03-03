@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.5.0</span>
+   &#160;<span id="projectnumber">2.6.6.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -94,9 +94,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../df/df8/class_music_w_s_text_down_load_thread.html#a13f350f5b4c448ec9ac5b53a68276f79">   16</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../df/df8/class_music_w_s_text_down_load_thread.html#a13f350f5b4c448ec9ac5b53a68276f79">MusicWSTextDownLoadThread::startToDownload</a>()</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">if</span>( <a class="code" href="../../dc/def/class_music_down_load_thread_abstract.html#af626870fcbd5d8d2bd0354c34b28ceef">m_file</a> &amp;&amp; (!<a class="code" href="../../dc/def/class_music_down_load_thread_abstract.html#af626870fcbd5d8d2bd0354c34b28ceef">m_file</a>-&gt;exists() || <a class="code" href="../../dc/def/class_music_down_load_thread_abstract.html#af626870fcbd5d8d2bd0354c34b28ceef">m_file</a>-&gt;size() &lt; 4) )</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../dc/def/class_music_down_load_thread_abstract.html#af626870fcbd5d8d2bd0354c34b28ceef">m_file</a> &amp;&amp; (!<a class="code" href="../../dc/def/class_music_down_load_thread_abstract.html#af626870fcbd5d8d2bd0354c34b28ceef">m_file</a>-&gt;exists() || <a class="code" href="../../dc/def/class_music_down_load_thread_abstract.html#af626870fcbd5d8d2bd0354c34b28ceef">m_file</a>-&gt;size() &lt; 4))</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordflow">if</span>( <a class="code" href="../../dc/def/class_music_down_load_thread_abstract.html#af626870fcbd5d8d2bd0354c34b28ceef">m_file</a>-&gt;open(QIODevice::WriteOnly | QIODevice::Truncate | QIODevice::Text) )</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="../../dc/def/class_music_down_load_thread_abstract.html#af626870fcbd5d8d2bd0354c34b28ceef">m_file</a>-&gt;open(QIODevice::WriteOnly | QIODevice::Truncate | QIODevice::Text))</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        {</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            QTextStream outstream(<a class="code" href="../../dc/def/class_music_down_load_thread_abstract.html#af626870fcbd5d8d2bd0354c34b28ceef">m_file</a>);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            outstream.setCodec(<span class="stringliteral">&quot;utf-8&quot;</span>);</div>
@@ -132,7 +132,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 2 2018 18:14:41 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 3 2018 22:45:26 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

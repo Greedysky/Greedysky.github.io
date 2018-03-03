@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.5.0</span>
+   &#160;<span id="projectnumber">2.6.6.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -123,7 +123,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    free(m_szDumpFilePath);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    m_szDumpFilePath = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">if</span>(szFilePath != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">if</span>(szFilePath)</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        m_szDumpFilePath = wcsdup(szFilePath);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
@@ -141,17 +141,17 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    HMODULE hDll = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    WCHAR szDbgHelpPath[_MAX_PATH];</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">if</span> (GetModuleFileNameW( <span class="keyword">nullptr</span>, szDbgHelpPath, _MAX_PATH))</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">if</span>(GetModuleFileNameW( <span class="keyword">nullptr</span>, szDbgHelpPath, _MAX_PATH))</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    {</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        WCHAR *pSlash = wcsrchr( szDbgHelpPath, L<span class="charliteral">&#39;\\&#39;</span>);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">if</span> (pSlash)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">if</span>(pSlash)</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        {</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            wcscpy( pSlash+1, L<span class="stringliteral">&quot;DBGHELP.DLL&quot;</span> );</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            hDll = ::LoadLibraryW( szDbgHelpPath );</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">if</span> (hDll == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">if</span>(hDll == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    {</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="comment">// load any version we can</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        hDll = ::LoadLibraryW( L<span class="stringliteral">&quot;DBGHELP.DLL&quot;</span>);</div>
@@ -159,10 +159,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    LPCWSTR szResult = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">if</span> (hDll)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">if</span>(hDll)</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    {</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        MINIDUMPWRITEDUMP pDump = (MINIDUMPWRITEDUMP)::GetProcAddress( hDll, <span class="stringliteral">&quot;MiniDumpWriteDump&quot;</span> );</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">if</span> (pDump)</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">if</span>(pDump)</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        {</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            WCHAR szDumpPath[_MAX_PATH];</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            WCHAR szDumpRootPath[_MAX_PATH];</div>
@@ -172,16 +172,16 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">if</span>(m_szDumpFilePath == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                <span class="keywordflow">if</span> (GetModuleFileNameW(<span class="keyword">nullptr</span>, szDbgHelpPath, _MAX_PATH))</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                <span class="keywordflow">if</span>(GetModuleFileNameW(<span class="keyword">nullptr</span>, szDbgHelpPath, _MAX_PATH))</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                {</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                    WCHAR *pSlash = wcsrchr(szDbgHelpPath, L<span class="charliteral">&#39;\\&#39;</span>);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                    <span class="keywordflow">if</span> (pSlash)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                    <span class="keywordflow">if</span>(pSlash)</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                    {</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                        wcscpy(pSlash + 1, L<span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                        wcscpy(szDumpPath, szDbgHelpPath);</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                    }</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!GetTempPathW( _MAX_PATH, szDumpPath ))</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!GetTempPathW( _MAX_PATH, szDumpPath ))</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                    wcscpy( szDumpPath, L<span class="stringliteral">&quot;c:\\temp\\&quot;</span> );</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            }</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keywordflow">else</span></div>
@@ -193,7 +193,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="comment">//PrintDebug(L&quot;[MiniDumper] Mini Dump file:[%s]&quot;,szDumpPath);</span></div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="comment">// ask the user if they want to save a dump file</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="comment">//if (::MessageBox( nullptr, _T(&quot;Something bad happened in your program, would you like to save a diagnostic file?&quot;), m_szAppName, MB_YESNO )==IDYES)</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="comment">//if(::MessageBox( nullptr, _T(&quot;Something bad happened in your program, would you like to save a diagnostic file?&quot;), m_szAppName, MB_YESNO )==IDYES)</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            {</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                HANDLE hFile = <a class="code" href="../../dc/d6f/iowin32_8c.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a>;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                <span class="keywordtype">int</span> i = 1;</div>
@@ -221,7 +221,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                }</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                <span class="comment">// create the file</span></div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                <span class="keywordflow">if</span> (hFile!=<a class="code" href="../../dc/d6f/iowin32_8c.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a>)</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                <span class="keywordflow">if</span>(hFile!=<a class="code" href="../../dc/d6f/iowin32_8c.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a>)</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                {</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                    _MINIDUMP_EXCEPTION_INFORMATION ExInfo;</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
@@ -231,7 +231,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                    <span class="comment">// write the dump</span></div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                    BOOL bOK = pDump( GetCurrentProcess(), GetCurrentProcessId(), hFile, MiniDumpNormal, &amp;ExInfo, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span> );</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                    <span class="keywordflow">if</span> (bOK)</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                    <span class="keywordflow">if</span>(bOK)</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                    {</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                        swprintf( szScratch, <span class="keyword">sizeof</span>(szScratch), L<span class="stringliteral">&quot;Saved dump file to &#39;%s&#39;&quot;</span>, szDumpPath );</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                        szResult = szScratch;</div>
@@ -292,7 +292,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 2 2018 18:14:47 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 3 2018 22:45:31 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
