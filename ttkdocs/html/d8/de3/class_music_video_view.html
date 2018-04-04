@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.6.0</span>
+   &#160;<span id="projectnumber">2.6.7.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -127,8 +127,6 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a6cbddc13b8ef79e373635de8961905f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de3/class_music_video_view.html#a6cbddc13b8ef79e373635de8961905f1">m_positionChanged</a></td></tr>
-<tr class="separator:a6cbddc13b8ef79e373635de8961905f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75f2bb29340033bece2eadfca36f9ef7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/db9/class_music_view_widget.html">MusicViewWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de3/class_music_video_view.html#a75f2bb29340033bece2eadfca36f9ef7">m_videoWidget</a></td></tr>
 <tr class="separator:a75f2bb29340033bece2eadfca36f9ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9ae0d9e8d5c08c85eb28db7c1feb9ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/dad/class_music_core_m_player.html">MusicCoreMPlayer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de3/class_music_video_view.html#ad9ae0d9e8d5c08c85eb28db7c1feb9ed">m_mediaPlayer</a></td></tr>
@@ -152,6 +150,8 @@ Private Slots</h2></td></tr>
 <tr class="separator:aab102ea2146466b143f12398a7938daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef09bb325bc58714382d77c93885dc8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de3/class_music_video_view.html#aef09bb325bc58714382d77c93885dc8b">mediaChanged</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;data)</td></tr>
 <tr class="separator:aef09bb325bc58714382d77c93885dc8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e75030f7132fe93654b3c0082b83fe8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de3/class_music_video_view.html#a3e75030f7132fe93654b3c0082b83fe8">mediaAutionPlayError</a> (<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> <a class="el" href="../../da/da8/structcode.html">code</a>)</td></tr>
+<tr class="separator:a3e75030f7132fe93654b3c0082b83fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae1d71d80d492483c6357011e7a83482"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de3/class_music_video_view.html#aae1d71d80d492483c6357011e7a83482">mediaIsPlaying</a> (bool &amp;<a class="el" href="../../d8/de3/class_music_video_view.html#a9b96d13f06af857ffdd709e6f77cd71b">play</a>)</td></tr>
 <tr class="separator:aae1d71d80d492483c6357011e7a83482"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d78bdc4cad2dec68e5a8b9da1596b15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de3/class_music_video_view.html#a6d78bdc4cad2dec68e5a8b9da1596b15">addBarrageChanged</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="../../d9/da2/struct_music_barrage_record.html">MusicBarrageRecord</a> &amp;record)</td></tr>
@@ -188,9 +188,9 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Object contsructor. </p>
 
-<p>Definition at line <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00056">56</a> of file <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html">musicvideoview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00055">55</a> of file <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html">musicvideoview.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00190">addBarrageChanged()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00165">durationChanged()</a>, <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00152">m_barrageCore</a>, <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00150">m_mediaPlayer</a>, <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00148">m_positionChanged</a>, <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00151">m_videoControl</a>, <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00149">m_videoWidget</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00079">MusicUIObject::MBackgroundStyle02</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00180">mediaChanged()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00185">mediaIsPlaying()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00125">play()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00156">positionChanged()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00195">pushBarrageChanged()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00118">resizeWindow()</a>, and <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00170">setPosition()</a>.</p>
+<p>References <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00190">addBarrageChanged()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00151">durationChanged()</a>, <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00155">m_barrageCore</a>, <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00153">m_mediaPlayer</a>, <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00154">m_videoControl</a>, <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00152">m_videoWidget</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00079">MusicUIObject::MBackgroundStyle02</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00171">mediaAutionPlayError()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00166">mediaChanged()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00185">mediaIsPlaying()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00123">play()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00146">positionChanged()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00195">pushBarrageChanged()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00116">resizeWindow()</a>, and <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00156">setPosition()</a>.</p>
 
 </div>
 </div>
@@ -207,9 +207,9 @@ Private Slots</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00084">84</a> of file <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html">musicvideoview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00083">83</a> of file <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html">musicvideoview.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00152">m_barrageCore</a>, <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00150">m_mediaPlayer</a>, <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00151">m_videoControl</a>, and <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00149">m_videoWidget</a>.</p>
+<p>References <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00155">m_barrageCore</a>, <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00153">m_mediaPlayer</a>, <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00154">m_videoControl</a>, and <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00152">m_videoWidget</a>.</p>
 
 </div>
 </div>
@@ -239,9 +239,9 @@ Private Slots</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00190">190</a> of file <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html">musicvideoview.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d2/d52/musicbarragewidget_8cpp_source.html#l00127">MusicBarrageWidget::addBarrage()</a>, and <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00152">m_barrageCore</a>.</p>
+<p>References <a class="el" href="../../d2/d52/musicbarragewidget_8cpp_source.html#l00127">MusicBarrageWidget::addBarrage()</a>, and <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00155">m_barrageCore</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00056">MusicVideoView()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00055">MusicVideoView()</a>.</p>
 
 </div>
 </div>
@@ -268,9 +268,9 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Override the widget event. </p>
 
-<p>Definition at line <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00097">97</a> of file <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html">musicvideoview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00096">96</a> of file <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html">musicvideoview.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00185">mediaIsPlaying()</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00393">MusicUIObject::MMenuStyle02</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00125">play()</a>, and <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00142">stop()</a>.</p>
+<p>References <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00185">mediaIsPlaying()</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00393">MusicUIObject::MMenuStyle02</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00123">play()</a>, and <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00140">stop()</a>.</p>
 
 </div>
 </div>
@@ -297,11 +297,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Current duration changed. </p>
 
-<p>Definition at line <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00165">165</a> of file <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html">musicvideoview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00151">151</a> of file <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html">musicvideoview.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/d60/musicvideocontrolwidget_8cpp_source.html#l00097">MusicVideoControlWidget::durationChanged()</a>, and <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00151">m_videoControl</a>.</p>
+<p>References <a class="el" href="../../d4/d60/musicvideocontrolwidget_8cpp_source.html#l00097">MusicVideoControlWidget::durationChanged()</a>, and <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00154">m_videoControl</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00056">MusicVideoView()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00055">MusicVideoView()</a>.</p>
 
 </div>
 </div>
@@ -327,7 +327,38 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Get class object name. </p>
 
-<p>Definition at line <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00092">92</a> of file <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html">musicvideoview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00091">91</a> of file <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html">musicvideoview.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3e75030f7132fe93654b3c0082b83fe8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MusicVideoView::mediaAutionPlayError </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramname"><em>code</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Media aution play error. </p>
+
+<p>Definition at line <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00171">171</a> of file <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html">musicvideoview.cpp</a>.</p>
+
+<p>References <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00183">DEFAULT_INDEX_LEVEL1</a>, <a class="el" href="../../d6/d11/musictoastlabel_8cpp_source.html#l00078">MusicToastLabel::popup()</a>, <a class="el" href="../../d6/d11/musictoastlabel_8cpp_source.html#l00038">MusicToastLabel::setFontMargin()</a>, <a class="el" href="../../d6/d11/musictoastlabel_8cpp_source.html#l00056">MusicToastLabel::setFontSize()</a>, <a class="el" href="../../d6/d11/musictoastlabel_8cpp_source.html#l00086">MusicToastLabel::setText()</a>, and <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00140">stop()</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00055">MusicVideoView()</a>.</p>
 
 </div>
 </div>
@@ -354,11 +385,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Current media changed. </p>
 
-<p>Definition at line <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00180">180</a> of file <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html">musicvideoview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00166">166</a> of file <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html">musicvideoview.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00151">m_videoControl</a>, and <a class="el" href="../../d4/d60/musicvideocontrolwidget_8cpp_source.html#l00109">MusicVideoControlWidget::mediaChanged()</a>.</p>
+<p>References <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00154">m_videoControl</a>, and <a class="el" href="../../d4/d60/musicvideocontrolwidget_8cpp_source.html#l00109">MusicVideoControlWidget::mediaChanged()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00056">MusicVideoView()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00055">MusicVideoView()</a>.</p>
 
 </div>
 </div>
@@ -387,9 +418,9 @@ Private Slots</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00185">185</a> of file <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html">musicvideoview.cpp</a>.</p>
 
-<p>References <a class="el" href="../../df/dde/musiccoremplayer_8cpp_source.html#l00155">MusicCoreMPlayer::isPlaying()</a>, and <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00150">m_mediaPlayer</a>.</p>
+<p>References <a class="el" href="../../df/dde/musiccoremplayer_8cpp_source.html#l00158">MusicCoreMPlayer::isPlaying()</a>, and <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00153">m_mediaPlayer</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00097">contextMenuEvent()</a>, and <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00056">MusicVideoView()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00096">contextMenuEvent()</a>, and <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00055">MusicVideoView()</a>.</p>
 
 </div>
 </div>
@@ -415,11 +446,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Player to play. </p>
 
-<p>Definition at line <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00125">125</a> of file <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html">musicvideoview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00123">123</a> of file <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html">musicvideoview.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00152">m_barrageCore</a>, <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00150">m_mediaPlayer</a>, <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00151">m_videoControl</a>, <a class="el" href="../../d2/d52/musicbarragewidget_8cpp_source.html#l00081">MusicBarrageWidget::pause()</a>, <a class="el" href="../../df/dde/musiccoremplayer_8cpp_source.html#l00160">MusicCoreMPlayer::play()</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00224">MusicObject::PS_PausedState</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00223">MusicObject::PS_PlayingState</a>, <a class="el" href="../../d4/d60/musicvideocontrolwidget_8cpp_source.html#l00103">MusicVideoControlWidget::setButtonStyle()</a>, <a class="el" href="../../d2/d52/musicbarragewidget_8cpp_source.html#l00069">MusicBarrageWidget::start()</a>, and <a class="el" href="../../da/d50/musiccoremplayer_8h_source.html#l00090">MusicCoreMPlayer::state()</a>.</p>
+<p>References <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00155">m_barrageCore</a>, <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00153">m_mediaPlayer</a>, <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00154">m_videoControl</a>, <a class="el" href="../../d2/d52/musicbarragewidget_8cpp_source.html#l00081">MusicBarrageWidget::pause()</a>, <a class="el" href="../../df/dde/musiccoremplayer_8cpp_source.html#l00163">MusicCoreMPlayer::play()</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00253">MusicObject::PS_PausedState</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00252">MusicObject::PS_PlayingState</a>, <a class="el" href="../../d4/d60/musicvideocontrolwidget_8cpp_source.html#l00103">MusicVideoControlWidget::setButtonStyle()</a>, <a class="el" href="../../d2/d52/musicbarragewidget_8cpp_source.html#l00069">MusicBarrageWidget::start()</a>, and <a class="el" href="../../da/d50/musiccoremplayer_8h_source.html#l00089">MusicCoreMPlayer::state()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00097">contextMenuEvent()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00056">MusicVideoView()</a>, and <a class="el" href="../../dd/d33/musicvideoplaywidget_8cpp_source.html#l00302">MusicVideoPlayWidget::mvURLChanged()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00096">contextMenuEvent()</a>, <a class="el" href="../../dd/d33/musicvideoplaywidget_8cpp_source.html#l00302">MusicVideoPlayWidget::mediaUrlChanged()</a>, and <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00055">MusicVideoView()</a>.</p>
 
 </div>
 </div>
@@ -446,11 +477,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Current position changed. </p>
 
-<p>Definition at line <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00156">156</a> of file <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html">musicvideoview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00146">146</a> of file <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html">musicvideoview.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00148">m_positionChanged</a>, <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00151">m_videoControl</a>, and <a class="el" href="../../d4/d60/musicvideocontrolwidget_8cpp_source.html#l00090">MusicVideoControlWidget::setValue()</a>.</p>
+<p>References <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00154">m_videoControl</a>, and <a class="el" href="../../d4/d60/musicvideocontrolwidget_8cpp_source.html#l00090">MusicVideoControlWidget::setValue()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00056">MusicVideoView()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00055">MusicVideoView()</a>.</p>
 
 </div>
 </div>
@@ -479,9 +510,9 @@ Private Slots</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00195">195</a> of file <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html">musicvideoview.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d2/d52/musicbarragewidget_8cpp_source.html#l00111">MusicBarrageWidget::barrageStateChanged()</a>, and <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00152">m_barrageCore</a>.</p>
+<p>References <a class="el" href="../../d2/d52/musicbarragewidget_8cpp_source.html#l00111">MusicBarrageWidget::barrageStateChanged()</a>, and <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00155">m_barrageCore</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00056">MusicVideoView()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00055">MusicVideoView()</a>.</p>
 
 </div>
 </div>
@@ -510,11 +541,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Resize widget size or not. </p>
 
-<p>Definition at line <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00118">118</a> of file <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html">musicvideoview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00116">116</a> of file <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html">musicvideoview.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00152">m_barrageCore</a>, <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00151">m_videoControl</a>, <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00149">m_videoWidget</a>, and <a class="el" href="../../d2/d52/musicbarragewidget_8cpp_source.html#l00102">MusicBarrageWidget::setSize()</a>.</p>
+<p>References <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00155">m_barrageCore</a>, <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00154">m_videoControl</a>, <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00152">m_videoWidget</a>, and <a class="el" href="../../d2/d52/musicbarragewidget_8cpp_source.html#l00102">MusicBarrageWidget::setSize()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00056">MusicVideoView()</a>, and <a class="el" href="../../dd/d33/musicvideoplaywidget_8cpp_source.html#l00213">MusicVideoPlayWidget::resizeWindow()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00055">MusicVideoView()</a>, and <a class="el" href="../../dd/d33/musicvideoplaywidget_8cpp_source.html#l00213">MusicVideoPlayWidget::resizeWindow()</a>.</p>
 
 </div>
 </div>
@@ -535,9 +566,9 @@ Private Slots</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00110">110</a> of file <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html">musicvideoview.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00150">m_mediaPlayer</a>, <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00151">m_videoControl</a>, <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00149">m_videoWidget</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00029">MT_S2MS</a>, <a class="el" href="../../df/dde/musiccoremplayer_8cpp_source.html#l00032">MusicCoreMPlayer::setMedia()</a>, <a class="el" href="../../d4/d60/musicvideocontrolwidget_8cpp_source.html#l00120">MusicVideoControlWidget::setQualityActionState()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00142">stop()</a>, and <a class="el" href="../../da/d50/musiccoremplayer_8h_source.html#l00040">MusicCoreMPlayer::VideoCategory</a>.</p>
+<p>References <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00153">m_mediaPlayer</a>, <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00154">m_videoControl</a>, <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00152">m_videoWidget</a>, <a class="el" href="../../df/dde/musiccoremplayer_8cpp_source.html#l00039">MusicCoreMPlayer::setMedia()</a>, <a class="el" href="../../d4/d60/musicvideocontrolwidget_8cpp_source.html#l00120">MusicVideoControlWidget::setQualityActionState()</a>, and <a class="el" href="../../da/d50/musiccoremplayer_8h_source.html#l00039">MusicCoreMPlayer::VideoCategory</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/d33/musicvideoplaywidget_8cpp_source.html#l00302">MusicVideoPlayWidget::mvURLChanged()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/d33/musicvideoplaywidget_8cpp_source.html#l00302">MusicVideoPlayWidget::mediaUrlChanged()</a>.</p>
 
 </div>
 </div>
@@ -564,11 +595,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Set current play pos. </p>
 
-<p>Definition at line <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00170">170</a> of file <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html">musicvideoview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00156">156</a> of file <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html">musicvideoview.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00150">m_mediaPlayer</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00029">MT_S2MS</a>, and <a class="el" href="../../df/dde/musiccoremplayer_8cpp_source.html#l00100">MusicCoreMPlayer::setPosition()</a>.</p>
+<p>References <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00153">m_mediaPlayer</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00029">MT_S2MS</a>, and <a class="el" href="../../df/dde/musiccoremplayer_8cpp_source.html#l00097">MusicCoreMPlayer::setPosition()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00056">MusicVideoView()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00055">MusicVideoView()</a>.</p>
 
 </div>
 </div>
@@ -594,11 +625,11 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Player to stop. </p>
 
-<p>Definition at line <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00142">142</a> of file <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html">musicvideoview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00140">140</a> of file <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html">musicvideoview.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00099">MusicMessageBox::exec()</a>, <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00152">m_barrageCore</a>, <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00150">m_mediaPlayer</a>, <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00148">m_positionChanged</a>, <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00077">MusicMessageBox::setText()</a>, <a class="el" href="../../d2/d52/musicbarragewidget_8cpp_source.html#l00093">MusicBarrageWidget::stop()</a>, and <a class="el" href="../../df/dde/musiccoremplayer_8cpp_source.html#l00256">MusicCoreMPlayer::stop()</a>.</p>
+<p>References <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00155">m_barrageCore</a>, <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00153">m_mediaPlayer</a>, <a class="el" href="../../d2/d52/musicbarragewidget_8cpp_source.html#l00093">MusicBarrageWidget::stop()</a>, and <a class="el" href="../../df/dde/musiccoremplayer_8cpp_source.html#l00189">MusicCoreMPlayer::stop()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00097">contextMenuEvent()</a>, and <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00110">setMedia()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00096">contextMenuEvent()</a>, and <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00171">mediaAutionPlayError()</a>.</p>
 
 </div>
 </div>
@@ -625,9 +656,9 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Current volume changed. </p>
 
-<p>Definition at line <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00175">175</a> of file <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html">musicvideoview.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00161">161</a> of file <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html">musicvideoview.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00150">m_mediaPlayer</a>, and <a class="el" href="../../df/dde/musiccoremplayer_8cpp_source.html#l00145">MusicCoreMPlayer::setVolume()</a>.</p>
+<p>References <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00153">m_mediaPlayer</a>, and <a class="el" href="../../df/dde/musiccoremplayer_8cpp_source.html#l00147">MusicCoreMPlayer::setVolume()</a>.</p>
 
 </div>
 </div>
@@ -650,9 +681,9 @@ Private Slots</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00152">152</a> of file <a class="el" href="../../d0/d87/musicvideoview_8h_source.html">musicvideoview.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00155">155</a> of file <a class="el" href="../../d0/d87/musicvideoview_8h_source.html">musicvideoview.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00190">addBarrageChanged()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00056">MusicVideoView()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00125">play()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00195">pushBarrageChanged()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00118">resizeWindow()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00142">stop()</a>, and <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00084">~MusicVideoView()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00190">addBarrageChanged()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00055">MusicVideoView()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00123">play()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00195">pushBarrageChanged()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00116">resizeWindow()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00140">stop()</a>, and <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00083">~MusicVideoView()</a>.</p>
 
 </div>
 </div>
@@ -674,33 +705,9 @@ Private Slots</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00150">150</a> of file <a class="el" href="../../d0/d87/musicvideoview_8h_source.html">musicvideoview.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00153">153</a> of file <a class="el" href="../../d0/d87/musicvideoview_8h_source.html">musicvideoview.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00185">mediaIsPlaying()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00056">MusicVideoView()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00125">play()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00110">setMedia()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00170">setPosition()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00142">stop()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00175">volumeChanged()</a>, and <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00084">~MusicVideoView()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a6cbddc13b8ef79e373635de8961905f1"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool MusicVideoView::m_positionChanged</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00148">148</a> of file <a class="el" href="../../d0/d87/musicvideoview_8h_source.html">musicvideoview.h</a>.</p>
-
-<p>Referenced by <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00056">MusicVideoView()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00156">positionChanged()</a>, and <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00142">stop()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00185">mediaIsPlaying()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00055">MusicVideoView()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00123">play()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00110">setMedia()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00156">setPosition()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00140">stop()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00161">volumeChanged()</a>, and <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00083">~MusicVideoView()</a>.</p>
 
 </div>
 </div>
@@ -722,9 +729,9 @@ Private Slots</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00151">151</a> of file <a class="el" href="../../d0/d87/musicvideoview_8h_source.html">musicvideoview.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00154">154</a> of file <a class="el" href="../../d0/d87/musicvideoview_8h_source.html">musicvideoview.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00165">durationChanged()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00180">mediaChanged()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00056">MusicVideoView()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00125">play()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00156">positionChanged()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00118">resizeWindow()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00110">setMedia()</a>, and <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00084">~MusicVideoView()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00151">durationChanged()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00166">mediaChanged()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00055">MusicVideoView()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00123">play()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00146">positionChanged()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00116">resizeWindow()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00110">setMedia()</a>, and <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00083">~MusicVideoView()</a>.</p>
 
 </div>
 </div>
@@ -746,9 +753,9 @@ Private Slots</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00149">149</a> of file <a class="el" href="../../d0/d87/musicvideoview_8h_source.html">musicvideoview.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d87/musicvideoview_8h_source.html#l00152">152</a> of file <a class="el" href="../../d0/d87/musicvideoview_8h_source.html">musicvideoview.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00056">MusicVideoView()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00118">resizeWindow()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00110">setMedia()</a>, and <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00084">~MusicVideoView()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00055">MusicVideoView()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00116">resizeWindow()</a>, <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00110">setMedia()</a>, and <a class="el" href="../../d0/dd3/musicvideoview_8cpp_source.html#l00083">~MusicVideoView()</a>.</p>
 
 </div>
 </div>
@@ -759,7 +766,7 @@ Private Slots</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 3 2018 22:45:53 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 4 2018 14:27:13 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

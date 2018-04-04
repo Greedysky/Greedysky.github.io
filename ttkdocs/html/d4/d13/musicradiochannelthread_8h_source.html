@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>TTKMusicplayer: TTKModule/TTKCore/musicNetworkKits/radio/musicradiochannelthread.h Source File</title>
+<title>TTKMusicplayer: TTKModule/TTKCore/musicNetworkKits/radio/fm/musicradiochannelthread.h Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.6.0</span>
+   &#160;<span id="projectnumber">2.6.7.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_a3dc49d95d9832a3f058c36369f57e9d.html">TTKModule</a></li><li class="navelem"><a class="el" href="../../dir_18d57a76ce51370551ab9b136ef02b09.html">TTKCore</a></li><li class="navelem"><a class="el" href="../../dir_dc05e37370f37b7f980133d958ead9ee.html">musicNetworkKits</a></li><li class="navelem"><a class="el" href="../../dir_ceb47adb2b2fb37a789bfa611cc940f8.html">radio</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_a3dc49d95d9832a3f058c36369f57e9d.html">TTKModule</a></li><li class="navelem"><a class="el" href="../../dir_18d57a76ce51370551ab9b136ef02b09.html">TTKCore</a></li><li class="navelem"><a class="el" href="../../dir_dc05e37370f37b7f980133d958ead9ee.html">musicNetworkKits</a></li><li class="navelem"><a class="el" href="../../dir_ceb47adb2b2fb37a789bfa611cc940f8.html">radio</a></li><li class="navelem"><a class="el" href="../../dir_c216cbdb6f35da7b556aa7343c0872a9.html">fm</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -77,8 +77,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="title">musicradiochannelthread.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d4/d13/musicradiochannelthread_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GETBAIDUCHANNEL_H</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define GETBAIDUCHANNEL_H</span></div>
+<a href="../../d4/d13/musicradiochannelthread_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MUSICRADIOCHANNELTHREAD_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MUSICRADIOCHANNELTHREAD_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">/* =================================================</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of the TTK Music Player project</span></div>
@@ -104,44 +104,47 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../de/da9/struct_music_radio_channel_info.html#ac0dc9d954e8edac4835374dd857425cf">   29</a></span>&#160;    QString <a class="code" href="../../de/da9/struct_music_radio_channel_info.html#ac0dc9d954e8edac4835374dd857425cf">m_id</a>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../de/da9/struct_music_radio_channel_info.html#a5b29cfc5ec29bb7620885e311a0a5478">   30</a></span>&#160;    QString <a class="code" href="../../de/da9/struct_music_radio_channel_info.html#a5b29cfc5ec29bb7620885e311a0a5478">m_name</a>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}<a class="code" href="../../d4/d13/musicradiochannelthread_8h.html#aa76638f10c1c4c82b13f6d4c316a3973">MusicRadioChannelInfo</a>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<a class="code" href="../../da/d4e/musicglobal_8h.html#a4d238857fa9c278de1e80a4f427f6987">MUSIC_DECLARE_LISTS</a>(<a class="code" href="../../de/da9/struct_music_radio_channel_info.html">MusicRadioChannelInfo</a>)</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../de/da9/struct_music_radio_channel_info.html#a3ec1b4383476941eeafae943dbf32204">   31</a></span>&#160;    QString <a class="code" href="../../de/da9/struct_music_radio_channel_info.html#a3ec1b4383476941eeafae943dbf32204">m_coverUrl</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}<a class="code" href="../../d4/d13/musicradiochannelthread_8h.html#aa76638f10c1c4c82b13f6d4c316a3973">MusicRadioChannelInfo</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<a class="code" href="../../da/d4e/musicglobal_8h.html#a4d238857fa9c278de1e80a4f427f6987">MUSIC_DECLARE_LISTS</a>(<a class="code" href="../../de/da9/struct_music_radio_channel_info.html">MusicRadioChannelInfo</a>)</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="../../d4/d35/class_music_radio_channel_thread.html">   37</a></span>&#160;class MUSIC_NETWORK_EXPORT <a class="code" href="../../d4/d35/class_music_radio_channel_thread.html">MusicRadioChannelThread</a> : public <a class="code" href="../../dc/d26/class_music_radio_thread_abstract.html">MusicRadioThreadAbstract</a></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d4/d35/class_music_radio_channel_thread.html">MusicRadioChannelThread</a>(QObject *parent = 0, QNetworkCookieJar *cookie = 0);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d4/d35/class_music_radio_channel_thread.html">MusicRadioChannelThread</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">static</span> QString getClassName();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> startToDownload(<span class="keyword">const</span> QString &amp;<span class="keywordtype">id</span>) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    MusicRadioChannelInfos getMusicChannel();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> downLoadFinished() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="../../d4/d35/class_music_radio_channel_thread.html#a029b189c926ddfc66549882df9e57dea">   68</a></span>&#160;    MusicRadioChannelInfos <a class="code" href="../../d4/d35/class_music_radio_channel_thread.html#a029b189c926ddfc66549882df9e57dea">m_channels</a>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif // GETBAIDUCHANNEL_H</span></div>
-<div class="ttc" id="class_music_radio_channel_thread_html"><div class="ttname"><a href="../../d4/d35/class_music_radio_channel_thread.html">MusicRadioChannelThread</a></div><div class="ttdoc">The class of music radio thread of song channel. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d13/musicradiochannelthread_8h_source.html#l00037">musicradiochannelthread.h:37</a></div></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="../../d4/d35/class_music_radio_channel_thread.html">   38</a></span>&#160;class MUSIC_NETWORK_EXPORT <a class="code" href="../../d4/d35/class_music_radio_channel_thread.html">MusicRadioChannelThread</a> : public <a class="code" href="../../dc/d26/class_music_radio_thread_abstract.html">MusicRadioThreadAbstract</a></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d4/d35/class_music_radio_channel_thread.html">MusicRadioChannelThread</a>(QObject *parent = 0, QNetworkCookieJar *cookie = 0);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d4/d35/class_music_radio_channel_thread.html">MusicRadioChannelThread</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">static</span> QString getClassName();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> startToDownload(<span class="keyword">const</span> QString &amp;<span class="keywordtype">id</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="../../d4/d35/class_music_radio_channel_thread.html#acb9a2005546b0d286a69e7c8d627a219">   60</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> MusicRadioChannelInfos&amp; <a class="code" href="../../d4/d35/class_music_radio_channel_thread.html#acb9a2005546b0d286a69e7c8d627a219">getMusicChannel</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_channels; }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> downLoadFinished() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="../../d4/d35/class_music_radio_channel_thread.html#a029b189c926ddfc66549882df9e57dea">   69</a></span>&#160;    MusicRadioChannelInfos <a class="code" href="../../d4/d35/class_music_radio_channel_thread.html#a029b189c926ddfc66549882df9e57dea">m_channels</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif // MUSICRADIOCHANNELTHREAD_H</span></div>
+<div class="ttc" id="struct_music_radio_channel_info_html_a3ec1b4383476941eeafae943dbf32204"><div class="ttname"><a href="../../de/da9/struct_music_radio_channel_info.html#a3ec1b4383476941eeafae943dbf32204">MusicRadioChannelInfo::m_coverUrl</a></div><div class="ttdeci">QString m_coverUrl</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d13/musicradiochannelthread_8h_source.html#l00031">musicradiochannelthread.h:31</a></div></div>
+<div class="ttc" id="class_music_radio_channel_thread_html"><div class="ttname"><a href="../../d4/d35/class_music_radio_channel_thread.html">MusicRadioChannelThread</a></div><div class="ttdoc">The class of music radio thread of song channel. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d13/musicradiochannelthread_8h_source.html#l00038">musicradiochannelthread.h:38</a></div></div>
 <div class="ttc" id="musicglobal_8h_html_a4d238857fa9c278de1e80a4f427f6987"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a4d238857fa9c278de1e80a4f427f6987">MUSIC_DECLARE_LISTS</a></div><div class="ttdeci">#define MUSIC_DECLARE_LISTS(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00098">musicglobal.h:98</a></div></div>
 <div class="ttc" id="struct_music_radio_channel_info_html"><div class="ttname"><a href="../../de/da9/struct_music_radio_channel_info.html">MusicRadioChannelInfo</a></div><div class="ttdoc">The class of the radio channel info item. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d13/musicradiochannelthread_8h_source.html#l00027">musicradiochannelthread.h:27</a></div></div>
-<div class="ttc" id="class_music_radio_channel_thread_html_a029b189c926ddfc66549882df9e57dea"><div class="ttname"><a href="../../d4/d35/class_music_radio_channel_thread.html#a029b189c926ddfc66549882df9e57dea">MusicRadioChannelThread::m_channels</a></div><div class="ttdeci">MusicRadioChannelInfos m_channels</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d13/musicradiochannelthread_8h_source.html#l00068">musicradiochannelthread.h:68</a></div></div>
+<div class="ttc" id="class_music_radio_channel_thread_html_a029b189c926ddfc66549882df9e57dea"><div class="ttname"><a href="../../d4/d35/class_music_radio_channel_thread.html#a029b189c926ddfc66549882df9e57dea">MusicRadioChannelThread::m_channels</a></div><div class="ttdeci">MusicRadioChannelInfos m_channels</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d13/musicradiochannelthread_8h_source.html#l00069">musicradiochannelthread.h:69</a></div></div>
 <div class="ttc" id="struct_music_radio_channel_info_html_a5b29cfc5ec29bb7620885e311a0a5478"><div class="ttname"><a href="../../de/da9/struct_music_radio_channel_info.html#a5b29cfc5ec29bb7620885e311a0a5478">MusicRadioChannelInfo::m_name</a></div><div class="ttdeci">QString m_name</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d13/musicradiochannelthread_8h_source.html#l00030">musicradiochannelthread.h:30</a></div></div>
 <div class="ttc" id="class_music_radio_thread_abstract_html"><div class="ttname"><a href="../../dc/d26/class_music_radio_thread_abstract.html">MusicRadioThreadAbstract</a></div><div class="ttdoc">The class of music radio thread base. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dfc/musicradiothreadabstract_8h_source.html#l00033">musicradiothreadabstract.h:33</a></div></div>
 <div class="ttc" id="musicradiochannelthread_8h_html_aa76638f10c1c4c82b13f6d4c316a3973"><div class="ttname"><a href="../../d4/d13/musicradiochannelthread_8h.html#aa76638f10c1c4c82b13f6d4c316a3973">MusicRadioChannelInfo</a></div><div class="ttdeci">struct MUSIC_NETWORK_EXPORT MusicRadioChannelInfo MusicRadioChannelInfo</div><div class="ttdoc">The class of the radio channel info item. </div></div>
 <div class="ttc" id="struct_music_radio_channel_info_html_ac0dc9d954e8edac4835374dd857425cf"><div class="ttname"><a href="../../de/da9/struct_music_radio_channel_info.html#ac0dc9d954e8edac4835374dd857425cf">MusicRadioChannelInfo::m_id</a></div><div class="ttdeci">QString m_id</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d13/musicradiochannelthread_8h_source.html#l00029">musicradiochannelthread.h:29</a></div></div>
+<div class="ttc" id="class_music_radio_channel_thread_html_acb9a2005546b0d286a69e7c8d627a219"><div class="ttname"><a href="../../d4/d35/class_music_radio_channel_thread.html#acb9a2005546b0d286a69e7c8d627a219">MusicRadioChannelThread::getMusicChannel</a></div><div class="ttdeci">const MusicRadioChannelInfos &amp; getMusicChannel() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d13/musicradiochannelthread_8h_source.html#l00060">musicradiochannelthread.h:60</a></div></div>
 <div class="ttc" id="musicradiothreadabstract_8h_html"><div class="ttname"><a href="../../d7/dfc/musicradiothreadabstract_8h.html">musicradiothreadabstract.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 3 2018 22:45:26 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 4 2018 14:26:37 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

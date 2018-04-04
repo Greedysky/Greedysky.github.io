@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.6.0</span>
+   &#160;<span id="projectnumber">2.6.7.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -102,7 +102,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="../../d3/d77/musiclogger_8h.html#a40ddce420b21f37a70b70ca5de3d879a">M_LOGGER_INFO</a>(QString(<span class="stringliteral">&quot;%1 startToSearch&quot;</span>).arg(<a class="code" href="../../dd/d73/class_music_k_w_discover_list_thread.html#afb38e706dbe6671fa2506d99a4979780">getClassName</a>()));</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="../../da/d19/class_music_down_load_discover_list_thread.html#a385577e4d1c46567f6f436c50396ba78">m_toplistInfo</a>.clear();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    QUrl musicUrl = <a class="code" href="../../d6/d11/namespace_music_utils_1_1_algorithm.html#a5e5f071a5bb196d53c48fb2be855da67">MusicUtils::Algorithm::mdII</a>(<a class="code" href="../../de/d34/musicdownloadkwinterface_8h.html#a9ed641014cd9f88f8dc3ff8d942b7bf3">KW_SONG_TOPLIST_URL</a>, <span class="keyword">false</span>).arg(93);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    QUrl musicUrl = <a class="code" href="../../d6/d11/namespace_music_utils_1_1_algorithm.html#a5e5f071a5bb196d53c48fb2be855da67">MusicUtils::Algorithm::mdII</a>(<a class="code" href="../../de/d34/musicdownloadkwinterface_8h.html#a9ed641014cd9f88f8dc3ff8d942b7bf3">KW_SONG_TOPLIST_URL</a>, <span class="keyword">false</span>).arg(16);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="../../de/d41/class_music_down_load_paging_thread.html#ac88d6ff22d9bbc03f06a1fdcc0d7ace4">deleteAll</a>();</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="../../d5/de6/class_music_network_abstract.html#a632d88a1d6967089707ab1ec87787d0f">m_interrupt</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
@@ -138,35 +138,34 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">if</span>(ok)</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        {</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            QVariantMap value = data.toMap();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordflow">if</span>(value[<span class="stringliteral">&quot;status&quot;</span>].toInt() == 200 &amp;&amp; value.contains(<span class="stringliteral">&quot;data&quot;</span>))</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordflow">if</span>(value.contains(<span class="stringliteral">&quot;musiclist&quot;</span>))</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                value = value[<span class="stringliteral">&quot;data&quot;</span>].toMap();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                QVariantList datas = value[<span class="stringliteral">&quot;musicList&quot;</span>].toList();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                <span class="keywordtype">int</span> where = datas.count();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                where = (where &gt; 0) ? qrand()%where : 0;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <span class="keywordtype">int</span> counter = 0;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                <span class="keywordflow">foreach</span>(<span class="keyword">const</span> QVariant &amp;var, datas)</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                    <span class="keywordflow">if</span>(<a class="code" href="../../d5/de6/class_music_network_abstract.html#a632d88a1d6967089707ab1ec87787d0f">m_interrupt</a>) <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                    <span class="keywordflow">if</span>((where != counter++) || var.isNull())</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                    {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                        <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                    }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                    QVariantMap value = var.toMap();</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                    <a class="code" href="../../da/d19/class_music_down_load_discover_list_thread.html#a385577e4d1c46567f6f436c50396ba78">m_toplistInfo</a> = QString(<span class="stringliteral">&quot;%1 - %2&quot;</span>).arg(value[<span class="stringliteral">&quot;artist&quot;</span>].toString())</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                                      .arg(value[<span class="stringliteral">&quot;songName&quot;</span>].toString());</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    emit <a class="code" href="../../d5/de6/class_music_network_abstract.html#ae957b20ab1307ec7a7d0fdde4405f646">downLoadDataChanged</a>(<a class="code" href="../../da/d19/class_music_down_load_discover_list_thread.html#a385577e4d1c46567f6f436c50396ba78">m_toplistInfo</a>);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="../../de/d41/class_music_down_load_paging_thread.html#ac88d6ff22d9bbc03f06a1fdcc0d7ace4">deleteAll</a>();</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="../../d3/d77/musiclogger_8h.html#a40ddce420b21f37a70b70ca5de3d879a">M_LOGGER_INFO</a>(QString(<span class="stringliteral">&quot;%1 searchToplistInfoFinished deleteAll&quot;</span>).arg(<a class="code" href="../../dd/d73/class_music_k_w_discover_list_thread.html#afb38e706dbe6671fa2506d99a4979780">getClassName</a>()));</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                QVariantList datas = value[<span class="stringliteral">&quot;musiclist&quot;</span>].toList();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                <span class="keywordtype">int</span> where = datas.count();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                where = (where &gt; 0) ? qrand()%where : 0;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                <span class="keywordtype">int</span> counter = 0;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <span class="keywordflow">foreach</span>(<span class="keyword">const</span> QVariant &amp;var, datas)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                    <span class="keywordflow">if</span>(<a class="code" href="../../d5/de6/class_music_network_abstract.html#a632d88a1d6967089707ab1ec87787d0f">m_interrupt</a>) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                    <span class="keywordflow">if</span>((where != counter++) || var.isNull())</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                    {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                        <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                    }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                    QVariantMap value = var.toMap();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                    <a class="code" href="../../da/d19/class_music_down_load_discover_list_thread.html#a385577e4d1c46567f6f436c50396ba78">m_toplistInfo</a> = QString(<span class="stringliteral">&quot;%1 - %2&quot;</span>).arg(value[<span class="stringliteral">&quot;artist&quot;</span>].toString())</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                                      .arg(value[<span class="stringliteral">&quot;name&quot;</span>].toString());</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    emit <a class="code" href="../../d5/de6/class_music_network_abstract.html#ae957b20ab1307ec7a7d0fdde4405f646">downLoadDataChanged</a>(<a class="code" href="../../da/d19/class_music_down_load_discover_list_thread.html#a385577e4d1c46567f6f436c50396ba78">m_toplistInfo</a>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="../../de/d41/class_music_down_load_paging_thread.html#ac88d6ff22d9bbc03f06a1fdcc0d7ace4">deleteAll</a>();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="../../d3/d77/musiclogger_8h.html#a40ddce420b21f37a70b70ca5de3d879a">M_LOGGER_INFO</a>(QString(<span class="stringliteral">&quot;%1 searchToplistInfoFinished deleteAll&quot;</span>).arg(<a class="code" href="../../dd/d73/class_music_k_w_discover_list_thread.html#afb38e706dbe6671fa2506d99a4979780">getClassName</a>()));</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
 <div class="ttc" id="class_music_down_load_discover_list_thread_html"><div class="ttname"><a href="../../da/d19/class_music_down_load_discover_list_thread.html">MusicDownLoadDiscoverListThread</a></div><div class="ttdoc">The class to download discover toplist abstract thread. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/dfd/musicdownloaddiscoverlistthread_8h_source.html#l00027">musicdownloaddiscoverlistthread.h:27</a></div></div>
 <div class="ttc" id="musiclogger_8h_html_a40ddce420b21f37a70b70ca5de3d879a"><div class="ttname"><a href="../../d3/d77/musiclogger_8h.html#a40ddce420b21f37a70b70ca5de3d879a">M_LOGGER_INFO</a></div><div class="ttdeci">#define M_LOGGER_INFO(str)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d77/musiclogger_8h_source.html#l00047">musiclogger.h:47</a></div></div>
 <div class="ttc" id="musicdownloadkwinterface_8h_html_a9cdd91a6e983c97a08f12344ea03fb12"><div class="ttname"><a href="../../de/d34/musicdownloadkwinterface_8h.html#a9cdd91a6e983c97a08f12344ea03fb12">KW_UA_URL_1</a></div><div class="ttdeci">const QString KW_UA_URL_1</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d34/musicdownloadkwinterface_8h_source.html#l00027">musicdownloadkwinterface.h:27</a></div></div>
@@ -193,7 +192,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 3 2018 22:45:25 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 4 2018 14:26:36 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

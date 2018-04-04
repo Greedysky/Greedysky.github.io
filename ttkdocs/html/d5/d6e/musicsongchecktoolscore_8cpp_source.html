@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.6.0</span>
+   &#160;<span id="projectnumber">2.6.7.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -162,7 +162,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                <span class="keyword">const</span> <a class="code" href="../../de/d90/struct_music_song_check_tools_rename.html">MusicSongCheckToolsRename</a> song = <a class="code" href="../../da/d1b/class_music_song_check_tools_rename_core.html#a262cf7c68f59c69d45371055523cde41">m_datas</a>[index];</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                QFileInfo info(song.<a class="code" href="../../de/d90/struct_music_song_check_tools_rename.html#a24fe51c041cafbbac825e43e2fe10315">m_filePath</a>);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                QFile::rename(song.<a class="code" href="../../de/d90/struct_music_song_check_tools_rename.html#a24fe51c041cafbbac825e43e2fe10315">m_filePath</a>, QString(<span class="stringliteral">&quot;%1%2%3.%4&quot;</span>).arg(info.absolutePath())</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                               .arg(QDir::separator()).arg(song.<a class="code" href="../../de/d90/struct_music_song_check_tools_rename.html#a168970bf05460d03400718d30e8f2268">m_RecommendName</a>)</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                               .arg(<span class="stringliteral">&quot;/&quot;</span>).arg(song.<a class="code" href="../../de/d90/struct_music_song_check_tools_rename.html#a168970bf05460d03400718d30e8f2268">m_RecommendName</a>)</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                               .arg(info.suffix()));</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            }</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div>
@@ -376,7 +376,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 3 2018 22:45:27 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 4 2018 14:26:38 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

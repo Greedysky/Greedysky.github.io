@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.6.0</span>
+   &#160;<span id="projectnumber">2.6.7.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -107,50 +107,49 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    request.setRawHeader(<span class="stringliteral">&quot;Referer&quot;</span>, <a class="code" href="../../d6/d11/namespace_music_utils_1_1_algorithm.html#a5e5f071a5bb196d53c48fb2be855da67">MusicUtils::Algorithm::mdII</a>(<a class="code" href="../../d8/d44/musicdownloadcounterpvthread_8h.html#acf6472c74f5d93d1fe5ac5af53a3ef31">REFER_URL</a>, <span class="keyword">false</span>).<a class="code" href="../../d5/d67/namespace_music_utils_1_1_codec.html#aad54c82cfaa63b854d28f1fe1ba4d34c">toUtf8</a>());</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    request.setRawHeader(<span class="stringliteral">&quot;Cookie&quot;</span>, <a class="code" href="../../d6/d11/namespace_music_utils_1_1_algorithm.html#a5e5f071a5bb196d53c48fb2be855da67">MusicUtils::Algorithm::mdII</a>(<a class="code" href="../../d8/d44/musicdownloadcounterpvthread_8h.html#a5a4dcb2f34d183a1ff2576ddb9e8d5fd">COOKIE_URL</a>, <span class="keyword">false</span>).<a class="code" href="../../d5/d67/namespace_music_utils_1_1_codec.html#aad54c82cfaa63b854d28f1fe1ba4d34c">toUtf8</a>());</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#ifndef QT_NO_SSL</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    connect(<a class="code" href="../../d5/de6/class_music_network_abstract.html#a488f80a1d87c2addfaf7ea1f63a31608">m_manager</a>, SIGNAL(<a class="code" href="../../d5/de6/class_music_network_abstract.html#ab5e73bd758ed5fb3147f93797d75b0e4">sslErrors</a>(QNetworkReply*,QList&lt;QSslError&gt;)),</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                       SLOT(<a class="code" href="../../d5/de6/class_music_network_abstract.html#ab5e73bd758ed5fb3147f93797d75b0e4">sslErrors</a>(QNetworkReply*,QList&lt;QSslError&gt;)));</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="../../d3/d77/musiclogger_8h.html#a40ddce420b21f37a70b70ca5de3d879a">M_LOGGER_INFO</a>(QString(<span class="stringliteral">&quot;%1 Support ssl: %2&quot;</span>).arg(<a class="code" href="../../dd/d34/class_music_download_counter_p_v_thread.html#a4fd66c5ba1427c5fd6735109f9d6f457">getClassName</a>()).arg(QSslSocket::supportsSsl()));</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="../../d5/de6/class_music_network_abstract.html#a893bd538615a7d0c38cbe4dcb82a27bb">setSslConfiguration</a>(&amp;request);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="../../d5/de6/class_music_network_abstract.html#a7353006f173d334882dd89b0b7a9bcef">m_reply</a> = <a class="code" href="../../d5/de6/class_music_network_abstract.html#a488f80a1d87c2addfaf7ea1f63a31608">m_manager</a>-&gt;get( request );</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    connect(<a class="code" href="../../d5/de6/class_music_network_abstract.html#a7353006f173d334882dd89b0b7a9bcef">m_reply</a>, SIGNAL(finished()), SLOT(<a class="code" href="../../dd/d34/class_music_download_counter_p_v_thread.html#a27815c8181bee10a7307872b6a9735ab">downLoadFinished</a>()));</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../dd/d34/class_music_download_counter_p_v_thread.html#a27815c8181bee10a7307872b6a9735ab">   41</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../dd/d34/class_music_download_counter_p_v_thread.html#a27815c8181bee10a7307872b6a9735ab">MusicDownloadCounterPVThread::downLoadFinished</a>()</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../d5/de6/class_music_network_abstract.html#a7353006f173d334882dd89b0b7a9bcef">m_reply</a> &amp;&amp; <a class="code" href="../../d5/de6/class_music_network_abstract.html#a7353006f173d334882dd89b0b7a9bcef">m_reply</a>-&gt;error() == QNetworkReply::NoError)</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        QByteArray bytes = <a class="code" href="../../d5/de6/class_music_network_abstract.html#a7353006f173d334882dd89b0b7a9bcef">m_reply</a>-&gt;readAll();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        QString value(bytes);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        value.remove(<span class="stringliteral">&quot;try{BusuanziCallback_850915854978(&quot;</span>);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        value.remove(<span class="stringliteral">&quot;);}catch(e){}&quot;</span>);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="../../d0/dfe/class_q_json_1_1_parser.html">QJson::Parser</a> parser;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">bool</span> ok;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        QVariant data = parser.<a class="code" href="../../d0/dfe/class_q_json_1_1_parser.html#a9d57257adc3638a8b992cf4dc39a30bf">parse</a>(value.toUtf8(), &amp;ok);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">if</span>(ok)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            QVariantMap valueMap = data.toMap();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            emit <a class="code" href="../../d5/de6/class_music_network_abstract.html#ae957b20ab1307ec7a7d0fdde4405f646">downLoadDataChanged</a>(valueMap[<span class="stringliteral">&quot;site_pv&quot;</span>].toString());</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            emit <a class="code" href="../../d5/de6/class_music_network_abstract.html#ae957b20ab1307ec7a7d0fdde4405f646">downLoadDataChanged</a>(QString());</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="../../d3/d77/musiclogger_8h.html#acb1153597589e0766a4e65aee968526e">M_LOGGER_ERROR</a>(<span class="stringliteral">&quot;Counter PV data error&quot;</span>);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        emit <a class="code" href="../../d5/de6/class_music_network_abstract.html#ae957b20ab1307ec7a7d0fdde4405f646">downLoadDataChanged</a>(QString());</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="../../d5/de6/class_music_network_abstract.html#adbbd392b6f9070c502fc8c2a083dd6d7">deleteAll</a>();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    connect(<a class="code" href="../../d5/de6/class_music_network_abstract.html#a488f80a1d87c2addfaf7ea1f63a31608">m_manager</a>, SIGNAL(<a class="code" href="../../d5/de6/class_music_network_abstract.html#ab5e73bd758ed5fb3147f93797d75b0e4">sslErrors</a>(QNetworkReply*,QList&lt;QSslError&gt;)), SLOT(<a class="code" href="../../d5/de6/class_music_network_abstract.html#ab5e73bd758ed5fb3147f93797d75b0e4">sslErrors</a>(QNetworkReply*,QList&lt;QSslError&gt;)));</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="../../d3/d77/musiclogger_8h.html#a40ddce420b21f37a70b70ca5de3d879a">M_LOGGER_INFO</a>(QString(<span class="stringliteral">&quot;%1 Support ssl: %2&quot;</span>).arg(<a class="code" href="../../dd/d34/class_music_download_counter_p_v_thread.html#a4fd66c5ba1427c5fd6735109f9d6f457">getClassName</a>()).arg(QSslSocket::supportsSsl()));</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="../../d5/de6/class_music_network_abstract.html#a893bd538615a7d0c38cbe4dcb82a27bb">setSslConfiguration</a>(&amp;request);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="../../d5/de6/class_music_network_abstract.html#a7353006f173d334882dd89b0b7a9bcef">m_reply</a> = <a class="code" href="../../d5/de6/class_music_network_abstract.html#a488f80a1d87c2addfaf7ea1f63a31608">m_manager</a>-&gt;get( request );</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    connect(<a class="code" href="../../d5/de6/class_music_network_abstract.html#a7353006f173d334882dd89b0b7a9bcef">m_reply</a>, SIGNAL(finished()), SLOT(<a class="code" href="../../dd/d34/class_music_download_counter_p_v_thread.html#a27815c8181bee10a7307872b6a9735ab">downLoadFinished</a>()));</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../dd/d34/class_music_download_counter_p_v_thread.html#a27815c8181bee10a7307872b6a9735ab">   40</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../dd/d34/class_music_download_counter_p_v_thread.html#a27815c8181bee10a7307872b6a9735ab">MusicDownloadCounterPVThread::downLoadFinished</a>()</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../d5/de6/class_music_network_abstract.html#a7353006f173d334882dd89b0b7a9bcef">m_reply</a> &amp;&amp; <a class="code" href="../../d5/de6/class_music_network_abstract.html#a7353006f173d334882dd89b0b7a9bcef">m_reply</a>-&gt;error() == QNetworkReply::NoError)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        QByteArray bytes = <a class="code" href="../../d5/de6/class_music_network_abstract.html#a7353006f173d334882dd89b0b7a9bcef">m_reply</a>-&gt;readAll();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        QString value(bytes);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        value.remove(<span class="stringliteral">&quot;try{BusuanziCallback_850915854978(&quot;</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        value.remove(<span class="stringliteral">&quot;);}catch(e){}&quot;</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="../../d0/dfe/class_q_json_1_1_parser.html">QJson::Parser</a> parser;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordtype">bool</span> ok;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        QVariant data = parser.<a class="code" href="../../d0/dfe/class_q_json_1_1_parser.html#a9d57257adc3638a8b992cf4dc39a30bf">parse</a>(value.toUtf8(), &amp;ok);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">if</span>(ok)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            QVariantMap valueMap = data.toMap();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            emit <a class="code" href="../../d5/de6/class_music_network_abstract.html#ae957b20ab1307ec7a7d0fdde4405f646">downLoadDataChanged</a>(valueMap[<span class="stringliteral">&quot;site_pv&quot;</span>].toString());</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            emit <a class="code" href="../../d5/de6/class_music_network_abstract.html#ae957b20ab1307ec7a7d0fdde4405f646">downLoadDataChanged</a>(QString());</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="../../d3/d77/musiclogger_8h.html#acb1153597589e0766a4e65aee968526e">M_LOGGER_ERROR</a>(<span class="stringliteral">&quot;Counter PV data error&quot;</span>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        emit <a class="code" href="../../d5/de6/class_music_network_abstract.html#ae957b20ab1307ec7a7d0fdde4405f646">downLoadDataChanged</a>(QString());</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="../../d5/de6/class_music_network_abstract.html#adbbd392b6f9070c502fc8c2a083dd6d7">deleteAll</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
 <div class="ttc" id="musiclogger_8h_html_a40ddce420b21f37a70b70ca5de3d879a"><div class="ttname"><a href="../../d3/d77/musiclogger_8h.html#a40ddce420b21f37a70b70ca5de3d879a">M_LOGGER_INFO</a></div><div class="ttdeci">#define M_LOGGER_INFO(str)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d77/musiclogger_8h_source.html#l00047">musiclogger.h:47</a></div></div>
 <div class="ttc" id="musicdownloadcounterpvthread_8h_html_a6ae2375af21460887cba54c5e03c357a"><div class="ttname"><a href="../../d8/d44/musicdownloadcounterpvthread_8h.html#a6ae2375af21460887cba54c5e03c357a">QURTY_URL</a></div><div class="ttdeci">const QString QURTY_URL</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d44/musicdownloadcounterpvthread_8h_source.html#l00024">musicdownloadcounterpvthread.h:24</a></div></div>
 <div class="ttc" id="class_music_network_abstract_html"><div class="ttname"><a href="../../d5/de6/class_music_network_abstract.html">MusicNetworkAbstract</a></div><div class="ttdoc">The class of abstract downloading data. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dbf/musicnetworkabstract_8h_source.html#l00029">musicnetworkabstract.h:29</a></div></div>
 <div class="ttc" id="class_music_download_counter_p_v_thread_html_addfecfe8c973709bb2ffcfd18dee7f8f"><div class="ttname"><a href="../../dd/d34/class_music_download_counter_p_v_thread.html#addfecfe8c973709bb2ffcfd18dee7f8f">MusicDownloadCounterPVThread::~MusicDownloadCounterPVThread</a></div><div class="ttdeci">virtual ~MusicDownloadCounterPVThread()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d81/musicdownloadcounterpvthread_8cpp_source.html#l00011">musicdownloadcounterpvthread.cpp:11</a></div></div>
-<div class="ttc" id="class_music_download_counter_p_v_thread_html_a27815c8181bee10a7307872b6a9735ab"><div class="ttname"><a href="../../dd/d34/class_music_download_counter_p_v_thread.html#a27815c8181bee10a7307872b6a9735ab">MusicDownloadCounterPVThread::downLoadFinished</a></div><div class="ttdeci">virtual void downLoadFinished()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d81/musicdownloadcounterpvthread_8cpp_source.html#l00041">musicdownloadcounterpvthread.cpp:41</a></div></div>
+<div class="ttc" id="class_music_download_counter_p_v_thread_html_a27815c8181bee10a7307872b6a9735ab"><div class="ttname"><a href="../../dd/d34/class_music_download_counter_p_v_thread.html#a27815c8181bee10a7307872b6a9735ab">MusicDownloadCounterPVThread::downLoadFinished</a></div><div class="ttdeci">virtual void downLoadFinished()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d81/musicdownloadcounterpvthread_8cpp_source.html#l00040">musicdownloadcounterpvthread.cpp:40</a></div></div>
 <div class="ttc" id="namespace_music_utils_1_1_algorithm_html_a5e5f071a5bb196d53c48fb2be855da67"><div class="ttname"><a href="../../d6/d11/namespace_music_utils_1_1_algorithm.html#a5e5f071a5bb196d53c48fb2be855da67">MusicUtils::Algorithm::mdII</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT QString mdII(const QString &amp;data, bool encode)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dfd/musicalgorithmutils_8cpp_source.html#l00042">musicalgorithmutils.cpp:42</a></div></div>
 <div class="ttc" id="class_music_download_counter_p_v_thread_html_ab8339656b187634b0028f6bb3e1dfa83"><div class="ttname"><a href="../../dd/d34/class_music_download_counter_p_v_thread.html#ab8339656b187634b0028f6bb3e1dfa83">MusicDownloadCounterPVThread::startToDownload</a></div><div class="ttdeci">void startToDownload()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d81/musicdownloadcounterpvthread_8cpp_source.html#l00021">musicdownloadcounterpvthread.cpp:21</a></div></div>
 <div class="ttc" id="class_music_network_abstract_html_adbbd392b6f9070c502fc8c2a083dd6d7"><div class="ttname"><a href="../../d5/de6/class_music_network_abstract.html#adbbd392b6f9070c502fc8c2a083dd6d7">MusicNetworkAbstract::deleteAll</a></div><div class="ttdeci">virtual void deleteAll()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d73/musicnetworkabstract_8cpp_source.html#l00023">musicnetworkabstract.cpp:23</a></div></div>
@@ -172,7 +171,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 3 2018 22:45:27 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 4 2018 14:26:37 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

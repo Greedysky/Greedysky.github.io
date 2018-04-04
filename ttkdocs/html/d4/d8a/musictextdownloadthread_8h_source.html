@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.6.0</span>
+   &#160;<span id="projectnumber">2.6.7.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -105,7 +105,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="../../d3/d0a/class_music_text_down_load_thread.html">MusicTextDownLoadThread</a>(<span class="keyword">const</span> QString &amp;url, <span class="keyword">const</span> QString &amp;save,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                            <a class="code" href="../../dc/def/class_music_down_load_thread_abstract.html#abc64ac534fa59f5a85fc81e2d8506439">Download_Type</a> type, QObject *parent = 0);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                            <a class="code" href="../../dc/def/class_music_down_load_thread_abstract.html#a5dbd48a8a54ae03597f0ce9141b7e678">DownloadType</a> type, QObject *parent = 0);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../dc/def/class_music_down_load_thread_abstract.html#af818068c83237b9fcff7eaa8e4ddf696">getClassName</a>();</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../dc/def/class_music_down_load_thread_abstract.html#a5a0f0694ed5b5fb8d48c988fe3802005">startToDownload</a>() <span class="keyword">override</span>;</div>
@@ -116,8 +116,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif // MUSICTEXTDOWNLOADTHREAD_H</span></div>
-<div class="ttc" id="class_music_down_load_thread_abstract_html_abc64ac534fa59f5a85fc81e2d8506439"><div class="ttname"><a href="../../dc/def/class_music_down_load_thread_abstract.html#abc64ac534fa59f5a85fc81e2d8506439">MusicDownLoadThreadAbstract::Download_Type</a></div><div class="ttdeci">Download_Type</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00035">musicdownloadthreadabstract.h:35</a></div></div>
 <div class="ttc" id="class_music_down_load_thread_abstract_html"><div class="ttname"><a href="../../dc/def/class_music_down_load_thread_abstract.html">MusicDownLoadThreadAbstract</a></div><div class="ttdoc">The class of abstract downloading data. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00031">musicdownloadthreadabstract.h:31</a></div></div>
+<div class="ttc" id="class_music_down_load_thread_abstract_html_a5dbd48a8a54ae03597f0ce9141b7e678"><div class="ttname"><a href="../../dc/def/class_music_down_load_thread_abstract.html#a5dbd48a8a54ae03597f0ce9141b7e678">MusicDownLoadThreadAbstract::DownloadType</a></div><div class="ttdeci">DownloadType</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00035">musicdownloadthreadabstract.h:35</a></div></div>
 <div class="ttc" id="musicdownloadthreadabstract_8h_html"><div class="ttname"><a href="../../d0/d4e/musicdownloadthreadabstract_8h.html">musicdownloadthreadabstract.h</a></div></div>
 <div class="ttc" id="class_music_network_abstract_html_a5633d328e4f80b91dde0113550d6e852"><div class="ttname"><a href="../../d5/de6/class_music_network_abstract.html#a5633d328e4f80b91dde0113550d6e852">MusicNetworkAbstract::downLoadFinished</a></div><div class="ttdeci">virtual void downLoadFinished()=0</div></div>
 <div class="ttc" id="class_music_down_load_thread_abstract_html_af818068c83237b9fcff7eaa8e4ddf696"><div class="ttname"><a href="../../dc/def/class_music_down_load_thread_abstract.html#af818068c83237b9fcff7eaa8e4ddf696">MusicDownLoadThreadAbstract::getClassName</a></div><div class="ttdeci">static QString getClassName()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d9b/musicdownloadthreadabstract_8cpp_source.html#l00039">musicdownloadthreadabstract.cpp:39</a></div></div>
@@ -126,7 +126,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 3 2018 22:45:26 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 4 2018 14:26:36 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
