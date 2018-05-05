@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.7.0</span>
+   &#160;<span id="projectnumber">2.6.8.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -109,6 +109,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0921d0a76ab3c9be363f9ffb0f1f73f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a448ba86d0f42902eb8a43ca79faed896"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d95/class_music_hot_key_manager.html#a448ba86d0f42902eb8a43ca79faed896">hotKey</a> (<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> index)</td></tr>
 <tr class="separator:a448ba86d0f42902eb8a43ca79faed896"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a284f2a728fa8c9a71012a6c7b376ceed"><td class="memItemLeft" align="right" valign="top">QObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d95/class_music_hot_key_manager.html#a284f2a728fa8c9a71012a6c7b376ceed">getHotKey</a> (<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> index)</td></tr>
+<tr class="separator:a284f2a728fa8c9a71012a6c7b376ceed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16d433312d5691e7e9a960d6c4333899"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d95/class_music_hot_key_manager.html#a16d433312d5691e7e9a960d6c4333899">addHotKey</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;<a class="el" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>)</td></tr>
+<tr class="separator:a16d433312d5691e7e9a960d6c4333899"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af384a08396ef6ee413541b5fb3def612"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d95/class_music_hot_key_manager.html#af384a08396ef6ee413541b5fb3def612">addHotKey</a> (<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> <a class="el" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>)</td></tr>
+<tr class="separator:af384a08396ef6ee413541b5fb3def612"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad271ff57e2c8bea54a500ab1017f0274"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d95/class_music_hot_key_manager.html#ad271ff57e2c8bea54a500ab1017f0274">setEnabled</a> (<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> index, bool <a class="el" href="../../d5/d95/class_music_hot_key_manager.html#afb98c24ee73c817ea552bd4fc3c22252">enabled</a>)</td></tr>
 <tr class="separator:ad271ff57e2c8bea54a500ab1017f0274"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb98c24ee73c817ea552bd4fc3c22252"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d95/class_music_hot_key_manager.html#afb98c24ee73c817ea552bd4fc3c22252">enabled</a> (<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> index)</td></tr>
@@ -145,6 +151,48 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d7/d7c/musichotkeymanager_8h_source.html#l00031">31</a> of file <a class="el" href="../../d7/d7c/musichotkeymanager_8h_source.html">musichotkeymanager.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a16d433312d5691e7e9a960d6c4333899"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MusicHotKeyManager::addHotKey </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Add hotKey by given index and string key. </p>
+
+<p>Definition at line <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00085">85</a> of file <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html">musichotkeymanager.cpp</a>.</p>
+
+<p>References <a class="el" href="../../d7/d7c/musichotkeymanager_8h_source.html#l00112">m_hotkeys</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af384a08396ef6ee413541b5fb3def612"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MusicHotKeyManager::addHotKey </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set hotKey by given index and virtual key. </p>
+
+<p>Definition at line <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00090">90</a> of file <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html">musichotkeymanager.cpp</a>.</p>
+
+<p>References <a class="el" href="../../d7/d7c/musichotkeymanager_8h_source.html#l00112">m_hotkeys</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a04fcd5e498dd70822c5b7a6e9271eee6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -162,7 +210,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00011">11</a> of file <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html">musichotkeymanager.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d7/d7c/musichotkeymanager_8h_source.html#l00099">m_hotkeys</a>, and <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00030">setDefaultKey()</a>.</p>
+<p>References <a class="el" href="../../d7/d7c/musichotkeymanager_8h_source.html#l00112">m_hotkeys</a>, and <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00030">setDefaultKey()</a>.</p>
 
 </div>
 </div>
@@ -180,9 +228,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Get hotkey count. </p>
 
-<p>Definition at line <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00125">125</a> of file <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html">musichotkeymanager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00144">144</a> of file <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html">musichotkeymanager.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d7/d7c/musichotkeymanager_8h_source.html#l00099">m_hotkeys</a>.</p>
+<p>References <a class="el" href="../../d7/d7c/musichotkeymanager_8h_source.html#l00112">m_hotkeys</a>.</p>
 
 </div>
 </div>
@@ -201,9 +249,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>check the given hotkey is enabled or not. </p>
 
-<p>Definition at line <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00085">85</a> of file <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html">musichotkeymanager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00104">104</a> of file <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html">musichotkeymanager.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d7/d7c/musichotkeymanager_8h_source.html#l00099">m_hotkeys</a>.</p>
+<p>References <a class="el" href="../../d7/d7c/musichotkeymanager_8h_source.html#l00112">m_hotkeys</a>.</p>
 
 </div>
 </div>
@@ -222,9 +270,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Enable or disable all hotkeys. </p>
 
-<p>Definition at line <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00094">94</a> of file <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html">musichotkeymanager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00113">113</a> of file <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html">musichotkeymanager.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d8/d45/musiclrcfromkrc_8cpp_source.html#l00017">key</a>, <a class="el" href="../../d7/d7c/musichotkeymanager_8h_source.html#l00099">m_hotkeys</a>, and <a class="el" href="../../d6/d30/qxtglobalshortcut_8cpp_source.html#l00192">QxtGlobalShortcut::setEnabled()</a>.</p>
+<p>References <a class="el" href="../../d8/d45/musiclrcfromkrc_8cpp_source.html#l00017">key</a>, <a class="el" href="../../d7/d7c/musichotkeymanager_8h_source.html#l00112">m_hotkeys</a>, and <a class="el" href="../../d6/d30/qxtglobalshortcut_8cpp_source.html#l00192">QxtGlobalShortcut::setEnabled()</a>.</p>
 
 </div>
 </div>
@@ -268,9 +316,30 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Get default key string. </p>
 
-<p>Definition at line <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00130">130</a> of file <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html">musichotkeymanager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00149">149</a> of file <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html">musichotkeymanager.cpp</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00030">setDefaultKey()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a284f2a728fa8c9a71012a6c7b376ceed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QObject * MusicHotKeyManager::getHotKey </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the object key by given hotKey index. </p>
+
+<p>Definition at line <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00076">76</a> of file <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html">musichotkeymanager.cpp</a>.</p>
+
+<p>References <a class="el" href="../../d7/d7c/musichotkeymanager_8h_source.html#l00112">m_hotkeys</a>.</p>
 
 </div>
 </div>
@@ -288,9 +357,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Get key string. </p>
 
-<p>Definition at line <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00138">138</a> of file <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html">musichotkeymanager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00157">157</a> of file <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html">musichotkeymanager.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d8/d45/musiclrcfromkrc_8cpp_source.html#l00017">key</a>, <a class="el" href="../../d7/d7c/musichotkeymanager_8h_source.html#l00099">m_hotkeys</a>, and <a class="el" href="../../d8/dd2/qxtglobalshortcut_8h_source.html#l00036">QxtGlobalShortcut::shortcut</a>.</p>
+<p>References <a class="el" href="../../d8/d45/musiclrcfromkrc_8cpp_source.html#l00017">key</a>, <a class="el" href="../../d7/d7c/musichotkeymanager_8h_source.html#l00112">m_hotkeys</a>, and <a class="el" href="../../d8/dd2/qxtglobalshortcut_8h_source.html#l00036">QxtGlobalShortcut::shortcut</a>.</p>
 
 </div>
 </div>
@@ -311,7 +380,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00067">67</a> of file <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html">musichotkeymanager.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d7/d7c/musichotkeymanager_8h_source.html#l00099">m_hotkeys</a>.</p>
+<p>References <a class="el" href="../../d7/d7c/musichotkeymanager_8h_source.html#l00112">m_hotkeys</a>.</p>
 
 </div>
 </div>
@@ -339,7 +408,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00030">30</a> of file <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html">musichotkeymanager.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00130">getDefaultKeys()</a>, <a class="el" href="../../d7/d7c/musichotkeymanager_8h_source.html#l00099">m_hotkeys</a>, <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00076">setEnabled()</a>, and <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00049">setHotKey()</a>.</p>
+<p>References <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00149">getDefaultKeys()</a>, <a class="el" href="../../d7/d7c/musichotkeymanager_8h_source.html#l00112">m_hotkeys</a>, <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00095">setEnabled()</a>, and <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00049">setHotKey()</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00011">connectParentObject()</a>.</p>
 
@@ -370,9 +439,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Enable or disable the hotkey by index. </p>
 
-<p>Definition at line <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00076">76</a> of file <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html">musichotkeymanager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00095">95</a> of file <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html">musichotkeymanager.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d7/d7c/musichotkeymanager_8h_source.html#l00099">m_hotkeys</a>.</p>
+<p>References <a class="el" href="../../d7/d7c/musichotkeymanager_8h_source.html#l00112">m_hotkeys</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00030">setDefaultKey()</a>, and <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00040">setHotKeys()</a>.</p>
 
@@ -405,7 +474,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00049">49</a> of file <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html">musichotkeymanager.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d7/d7c/musichotkeymanager_8h_source.html#l00099">m_hotkeys</a>.</p>
+<p>References <a class="el" href="../../d7/d7c/musichotkeymanager_8h_source.html#l00112">m_hotkeys</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00030">setDefaultKey()</a>, and <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00040">setHotKeys()</a>.</p>
 
@@ -438,7 +507,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00058">58</a> of file <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html">musichotkeymanager.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d7/d7c/musichotkeymanager_8h_source.html#l00099">m_hotkeys</a>.</p>
+<p>References <a class="el" href="../../d7/d7c/musichotkeymanager_8h_source.html#l00112">m_hotkeys</a>.</p>
 
 </div>
 </div>
@@ -459,7 +528,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00040">40</a> of file <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html">musichotkeymanager.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d7/d7c/musichotkeymanager_8h_source.html#l00099">m_hotkeys</a>, <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00076">setEnabled()</a>, and <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00049">setHotKey()</a>.</p>
+<p>References <a class="el" href="../../d7/d7c/musichotkeymanager_8h_source.html#l00112">m_hotkeys</a>, <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00095">setEnabled()</a>, and <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00049">setHotKey()</a>.</p>
 
 </div>
 </div>
@@ -488,7 +557,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Mapping the virtual key to string key. </p>
 
-<p>Definition at line <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00102">102</a> of file <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html">musichotkeymanager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00121">121</a> of file <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html">musichotkeymanager.cpp</a>.</p>
 
 </div>
 </div>
@@ -511,9 +580,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d7/d7c/musichotkeymanager_8h_source.html#l00099">99</a> of file <a class="el" href="../../d7/d7c/musichotkeymanager_8h_source.html">musichotkeymanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d7c/musichotkeymanager_8h_source.html#l00112">112</a> of file <a class="el" href="../../d7/d7c/musichotkeymanager_8h_source.html">musichotkeymanager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00011">connectParentObject()</a>, <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00125">count()</a>, <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00085">enabled()</a>, <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00094">enabledAll()</a>, <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00138">getKeys()</a>, <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00067">hotKey()</a>, <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00030">setDefaultKey()</a>, <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00076">setEnabled()</a>, <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00049">setHotKey()</a>, and <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00040">setHotKeys()</a>.</p>
+<p>Referenced by <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00085">addHotKey()</a>, <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00011">connectParentObject()</a>, <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00144">count()</a>, <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00104">enabled()</a>, <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00113">enabledAll()</a>, <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00076">getHotKey()</a>, <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00157">getKeys()</a>, <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00067">hotKey()</a>, <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00030">setDefaultKey()</a>, <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00095">setEnabled()</a>, <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00049">setHotKey()</a>, and <a class="el" href="../../d6/db4/musichotkeymanager_8cpp_source.html#l00040">setHotKeys()</a>.</p>
 
 </div>
 </div>
@@ -524,7 +593,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 4 2018 14:27:05 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat May 5 2018 12:29:42 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

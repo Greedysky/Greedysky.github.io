@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.7.0</span>
+   &#160;<span id="projectnumber">2.6.8.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -201,11 +201,11 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="../../de/d8c/class_music_download_background_thread.html#af184e2f2e237d188611a9b1110bc85f5">m_counter</a> &lt; 5)</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            {</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                <a class="code" href="../../d3/d77/musiclogger_8h.html#acb1153597589e0766a4e65aee968526e">M_LOGGER_ERROR</a>(url);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                <a class="code" href="../../d8/dfa/class_music_data_download_thread.html">MusicDataDownloadThread</a> *down = <span class="keyword">new</span> <a class="code" href="../../d8/dfa/class_music_data_download_thread.html">MusicDataDownloadThread</a>(url, QString(<span class="stringliteral">&quot;%1%2%3%4&quot;</span>).arg(<a class="code" href="../../d8/d07/musicobject_8h.html#af07e00ccb50151280121629189e2239d">BACKGROUND_DIR_FULL</a>)</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                                        .arg(<a class="code" href="../../de/d8c/class_music_download_background_thread.html#a912bdc6985894310896a5472d4a68b01">m_savePath</a>).arg(<a class="code" href="../../de/d8c/class_music_download_background_thread.html#af184e2f2e237d188611a9b1110bc85f5">m_counter</a>++).arg(<a class="code" href="../../d8/d07/musicobject_8h.html#a5390d0fe4db069c647d8c57f720ac944">SKN_FILE</a>),</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                                        <a class="code" href="../../dc/def/class_music_down_load_thread_abstract.html#a5dbd48a8a54ae03597f0ce9141b7e678a9302cd973c4bb70186c0ccc6b147df1e">MusicDownLoadThreadAbstract::DownloadBigBG</a>, <span class="keyword">this</span>);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                connect(down, SIGNAL(<a class="code" href="../../d5/de6/class_music_network_abstract.html#ae957b20ab1307ec7a7d0fdde4405f646">downLoadDataChanged</a>(QString)), SLOT(<a class="code" href="../../de/d8c/class_music_download_background_thread.html#aba9913162ea36f83ddf56d31ceae62ab">downLoadFinished</a>()));</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                down-&gt;<a class="code" href="../../d8/dfa/class_music_data_download_thread.html#ab1bfb54e10636694a01db1bb2ed4627a">startToDownload</a>();</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                <a class="code" href="../../d8/dfa/class_music_data_download_thread.html">MusicDataDownloadThread</a> *download = <span class="keyword">new</span> <a class="code" href="../../d8/dfa/class_music_data_download_thread.html">MusicDataDownloadThread</a>(url, QString(<span class="stringliteral">&quot;%1%2%3%4&quot;</span>).arg(<a class="code" href="../../d8/d07/musicobject_8h.html#af07e00ccb50151280121629189e2239d">BACKGROUND_DIR_FULL</a>)</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                                                        .arg(<a class="code" href="../../de/d8c/class_music_download_background_thread.html#a912bdc6985894310896a5472d4a68b01">m_savePath</a>).arg(<a class="code" href="../../de/d8c/class_music_download_background_thread.html#af184e2f2e237d188611a9b1110bc85f5">m_counter</a>++).arg(<a class="code" href="../../d8/d07/musicobject_8h.html#a5390d0fe4db069c647d8c57f720ac944">SKN_FILE</a>),</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                                                        <a class="code" href="../../dc/def/class_music_down_load_thread_abstract.html#a5dbd48a8a54ae03597f0ce9141b7e678a9302cd973c4bb70186c0ccc6b147df1e">MusicDownLoadThreadAbstract::DownloadBigBG</a>, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                connect(download, SIGNAL(<a class="code" href="../../d5/de6/class_music_network_abstract.html#ae957b20ab1307ec7a7d0fdde4405f646">downLoadDataChanged</a>(QString)), SLOT(<a class="code" href="../../de/d8c/class_music_download_background_thread.html#aba9913162ea36f83ddf56d31ceae62ab">downLoadFinished</a>()));</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                download-&gt;<a class="code" href="../../d8/dfa/class_music_data_download_thread.html#ab1bfb54e10636694a01db1bb2ed4627a">startToDownload</a>();</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            }</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        }</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
@@ -268,7 +268,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 4 2018 14:26:37 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat May 5 2018 12:29:27 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.7.0</span>
+   &#160;<span id="projectnumber">2.6.8.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -149,24 +149,26 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    QString getLengthString() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    QString findPluginPath() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordtype">bool</span> readOtherTaglib();</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordtype">bool</span> saveOtherTaglib();</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
-<div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="../../dd/db7/class_music_song_tag.html#afb67edcc7b5c555266967bb51d71a9b0">  192</a></span>&#160;    QString <a class="code" href="../../dd/db7/class_music_song_tag.html#afb67edcc7b5c555266967bb51d71a9b0">m_filePath</a>;</div>
-<div class="line"><a name="l00193"></a><span class="lineno"><a class="line" href="../../dd/db7/class_music_song_tag.html#a84918d64ed2ef74fa223058b1defc08e">  193</a></span>&#160;    QMap&lt;TagReadAndWrite::MusicTag, QVariant&gt; <a class="code" href="../../dd/db7/class_music_song_tag.html#a84918d64ed2ef74fa223058b1defc08e">m_parameters</a>;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;};</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="preprocessor">#endif // MUSICSONGTAG_H</span></div>
-<div class="ttc" id="class_music_song_tag_html_afb67edcc7b5c555266967bb51d71a9b0"><div class="ttname"><a href="../../dd/db7/class_music_song_tag.html#afb67edcc7b5c555266967bb51d71a9b0">MusicSongTag::m_filePath</a></div><div class="ttdeci">QString m_filePath</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dce/musicsongtag_8h_source.html#l00192">musicsongtag.h:192</a></div></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    QString findLegalDataString(<a class="code" href="../../dd/d2c/class_tag_read_and_write.html#a4153db34241a8406277e3afe56597b32">TagReadAndWrite::MusicTag</a> type) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    QString findPluginPath() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordtype">bool</span> readOtherTaglib();</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordtype">bool</span> saveOtherTaglib();</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno"><a class="line" href="../../dd/db7/class_music_song_tag.html#afb67edcc7b5c555266967bb51d71a9b0">  196</a></span>&#160;    QString <a class="code" href="../../dd/db7/class_music_song_tag.html#afb67edcc7b5c555266967bb51d71a9b0">m_filePath</a>;</div>
+<div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="../../dd/db7/class_music_song_tag.html#a84918d64ed2ef74fa223058b1defc08e">  197</a></span>&#160;    QMap&lt;TagReadAndWrite::MusicTag, QVariant&gt; <a class="code" href="../../dd/db7/class_music_song_tag.html#a84918d64ed2ef74fa223058b1defc08e">m_parameters</a>;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;};</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="preprocessor">#endif // MUSICSONGTAG_H</span></div>
+<div class="ttc" id="class_tag_read_and_write_html_a4153db34241a8406277e3afe56597b32"><div class="ttname"><a href="../../dd/d2c/class_tag_read_and_write.html#a4153db34241a8406277e3afe56597b32">TagReadAndWrite::MusicTag</a></div><div class="ttdeci">MusicTag</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da6/_qt4_2tagreadandwrite_8h_source.html#l00020">tagreadandwrite.h:20</a></div></div>
+<div class="ttc" id="class_music_song_tag_html_afb67edcc7b5c555266967bb51d71a9b0"><div class="ttname"><a href="../../dd/db7/class_music_song_tag.html#afb67edcc7b5c555266967bb51d71a9b0">MusicSongTag::m_filePath</a></div><div class="ttdeci">QString m_filePath</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dce/musicsongtag_8h_source.html#l00196">musicsongtag.h:196</a></div></div>
 <div class="ttc" id="class_music_song_tag_html"><div class="ttname"><a href="../../dd/db7/class_music_song_tag.html">MusicSongTag</a></div><div class="ttdoc">The class of the music song tag. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dce/musicsongtag_8h_source.html#l00030">musicsongtag.h:30</a></div></div>
-<div class="ttc" id="class_music_song_tag_html_a84918d64ed2ef74fa223058b1defc08e"><div class="ttname"><a href="../../dd/db7/class_music_song_tag.html#a84918d64ed2ef74fa223058b1defc08e">MusicSongTag::m_parameters</a></div><div class="ttdeci">QMap&lt; TagReadAndWrite::MusicTag, QVariant &gt; m_parameters</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dce/musicsongtag_8h_source.html#l00193">musicsongtag.h:193</a></div></div>
+<div class="ttc" id="class_music_song_tag_html_a84918d64ed2ef74fa223058b1defc08e"><div class="ttname"><a href="../../dd/db7/class_music_song_tag.html#a84918d64ed2ef74fa223058b1defc08e">MusicSongTag::m_parameters</a></div><div class="ttdeci">QMap&lt; TagReadAndWrite::MusicTag, QVariant &gt; m_parameters</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dce/musicsongtag_8h_source.html#l00197">musicsongtag.h:197</a></div></div>
 <div class="ttc" id="musicglobaldefine_8h_html"><div class="ttname"><a href="../../d6/d9b/musicglobaldefine_8h.html">musicglobaldefine.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 4 2018 14:26:35 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat May 5 2018 12:29:25 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

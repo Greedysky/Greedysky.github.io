@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.7.0</span>
+   &#160;<span id="projectnumber">2.6.8.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -117,35 +117,39 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> setHotKey(<span class="keywordtype">int</span> index, <span class="keywordtype">int</span> key);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    QString hotKey(<span class="keywordtype">int</span> index);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> setEnabled(<span class="keywordtype">int</span> index, <span class="keywordtype">bool</span> enabled);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">bool</span> enabled(<span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> enabledAll(<span class="keywordtype">bool</span> enabled);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    QObject* getHotKey(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> addHotKey(<span class="keyword">const</span> QString &amp;key);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> addHotKey(<span class="keywordtype">int</span> key);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    QString toString(<span class="keywordtype">int</span> key, <span class="keywordtype">int</span> modifiers);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">int</span> count() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    QStringList getDefaultKeys() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    QStringList getKeys() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> setDefaultKey();</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="../../d5/d95/class_music_hot_key_manager.html#ae321374a80a3d75d803a2031cf4ec5cd">   99</a></span>&#160;    QList&lt;QxtGlobalShortcut*&gt; <a class="code" href="../../d5/d95/class_music_hot_key_manager.html#ae321374a80a3d75d803a2031cf4ec5cd">m_hotkeys</a>;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="../../d7/d5f/musicsingleton_8h.html#a8d62f3ef8a22e40d7a4ff45f03d0ce0e">DECLARE_SINGLETON_CLASS</a>(<a class="code" href="../../d5/d95/class_music_hot_key_manager.html">MusicHotKeyManager</a>)</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;};</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif // MUSICHOTKEYMANAGER_H</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> setEnabled(<span class="keywordtype">int</span> index, <span class="keywordtype">bool</span> enabled);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">bool</span> enabled(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> enabledAll(<span class="keywordtype">bool</span> enabled);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    QString toString(<span class="keywordtype">int</span> key, <span class="keywordtype">int</span> modifiers);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">int</span> count() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    QStringList getDefaultKeys() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    QStringList getKeys() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">void</span> setDefaultKey();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="../../d5/d95/class_music_hot_key_manager.html#ae321374a80a3d75d803a2031cf4ec5cd">  112</a></span>&#160;    QList&lt;QxtGlobalShortcut*&gt; <a class="code" href="../../d5/d95/class_music_hot_key_manager.html#ae321374a80a3d75d803a2031cf4ec5cd">m_hotkeys</a>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <a class="code" href="../../d7/d5f/musicsingleton_8h.html#a8d62f3ef8a22e40d7a4ff45f03d0ce0e">DECLARE_SINGLETON_CLASS</a>(<a class="code" href="../../d5/d95/class_music_hot_key_manager.html">MusicHotKeyManager</a>)</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;};</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#endif // MUSICHOTKEYMANAGER_H</span></div>
 <div class="ttc" id="class_qxt_global_shortcut_html"><div class="ttname"><a href="../../d9/deb/class_qxt_global_shortcut.html">QxtGlobalShortcut</a></div><div class="ttdoc">The namespace of the qxt global shortcut. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dd2/qxtglobalshortcut_8h_source.html#l00031">qxtglobalshortcut.h:31</a></div></div>
 <div class="ttc" id="musiclrcfromkrc_8cpp_html_ad706e4249347c1cd1381934a5691137d"><div class="ttname"><a href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a></div><div class="ttdeci">const wchar_t key[]</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d45/musiclrcfromkrc_8cpp_source.html#l00017">musiclrcfromkrc.cpp:17</a></div></div>
 <div class="ttc" id="musicsingleton_8h_html"><div class="ttname"><a href="../../d7/d5f/musicsingleton_8h.html">musicsingleton.h</a></div></div>
-<div class="ttc" id="class_music_hot_key_manager_html_ae321374a80a3d75d803a2031cf4ec5cd"><div class="ttname"><a href="../../d5/d95/class_music_hot_key_manager.html#ae321374a80a3d75d803a2031cf4ec5cd">MusicHotKeyManager::m_hotkeys</a></div><div class="ttdeci">QList&lt; QxtGlobalShortcut * &gt; m_hotkeys</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d7c/musichotkeymanager_8h_source.html#l00099">musichotkeymanager.h:99</a></div></div>
+<div class="ttc" id="class_music_hot_key_manager_html_ae321374a80a3d75d803a2031cf4ec5cd"><div class="ttname"><a href="../../d5/d95/class_music_hot_key_manager.html#ae321374a80a3d75d803a2031cf4ec5cd">MusicHotKeyManager::m_hotkeys</a></div><div class="ttdeci">QList&lt; QxtGlobalShortcut * &gt; m_hotkeys</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d7c/musichotkeymanager_8h_source.html#l00112">musichotkeymanager.h:112</a></div></div>
 <div class="ttc" id="class_music_hot_key_manager_html"><div class="ttname"><a href="../../d5/d95/class_music_hot_key_manager.html">MusicHotKeyManager</a></div><div class="ttdoc">The class of the global hotkey setting manager. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d7c/musichotkeymanager_8h_source.html#l00031">musichotkeymanager.h:31</a></div></div>
 <div class="ttc" id="musicsingleton_8h_html_a8d62f3ef8a22e40d7a4ff45f03d0ce0e"><div class="ttname"><a href="../../d7/d5f/musicsingleton_8h.html#a8d62f3ef8a22e40d7a4ff45f03d0ce0e">DECLARE_SINGLETON_CLASS</a></div><div class="ttdeci">#define DECLARE_SINGLETON_CLASS(Class)</div><div class="ttdoc">                                         //  Singleton Macro // // </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5f/musicsingleton_8h_source.html#l00095">musicsingleton.h:95</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 4 2018 14:26:35 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat May 5 2018 12:29:25 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

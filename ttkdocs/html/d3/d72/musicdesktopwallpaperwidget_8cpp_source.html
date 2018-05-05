@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.7.0</span>
+   &#160;<span id="projectnumber">2.6.8.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -298,10 +298,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            imgs &lt;&lt; QString(<span class="stringliteral">&quot;%1%2&quot;</span>).arg(<a class="code" href="../../d8/d07/musicobject_8h.html#a30f51ba2c315b1a9e9f48ac0f1e27118">TEMPORARY_DIR</a>).arg(<a class="code" href="../../d8/d07/musicobject_8h.html#ab901b00c2ed598302fa4d0cf7a161c07">JPG_FILE</a>);</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            <a class="code" href="../../df/dc3/class_music_desktop_wallpaper_widget.html#acab5db21b7e186f37e17e6a0bd976c84">m_wallThread</a>-&gt;<a class="code" href="../../d7/d22/class_music_desktop_wallpaper_thread.html#a998b159a48415ec13d20c5898fec041b">setImagePath</a>(imgs);</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            <a class="code" href="../../d8/dfa/class_music_data_download_thread.html">MusicDataDownloadThread</a> *background = <span class="keyword">new</span> <a class="code" href="../../d8/dfa/class_music_data_download_thread.html">MusicDataDownloadThread</a>(<a class="code" href="../../df/dc3/class_music_desktop_wallpaper_widget.html#a5025eb260167e68b07b1c311d9b97cbf">m_ui</a>-&gt;urlLineEdit-&gt;text().trimmed(),</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                                                      imgs[0], <a class="code" href="../../dc/def/class_music_down_load_thread_abstract.html#a5dbd48a8a54ae03597f0ce9141b7e678a9302cd973c4bb70186c0ccc6b147df1e">MusicDownLoadThreadAbstract::DownloadBigBG</a>, <span class="keyword">this</span>);</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            connect(background, SIGNAL(downLoadDataChanged(QString)), SLOT(<a class="code" href="../../df/dc3/class_music_desktop_wallpaper_widget.html#afe64c195c329356f5c9683f0c3b59b6b">parameterFinished</a>()));</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            background-&gt;<a class="code" href="../../d8/dfa/class_music_data_download_thread.html#ab1bfb54e10636694a01db1bb2ed4627a">startToDownload</a>();</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            <a class="code" href="../../d8/dfa/class_music_data_download_thread.html">MusicDataDownloadThread</a> *download = <span class="keyword">new</span> <a class="code" href="../../d8/dfa/class_music_data_download_thread.html">MusicDataDownloadThread</a>(<a class="code" href="../../df/dc3/class_music_desktop_wallpaper_widget.html#a5025eb260167e68b07b1c311d9b97cbf">m_ui</a>-&gt;urlLineEdit-&gt;text().trimmed(), imgs[0],</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                                                                            <a class="code" href="../../dc/def/class_music_down_load_thread_abstract.html#a5dbd48a8a54ae03597f0ce9141b7e678a9302cd973c4bb70186c0ccc6b147df1e">MusicDownLoadThreadAbstract::DownloadBigBG</a>, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            connect(download, SIGNAL(downLoadDataChanged(QString)), SLOT(<a class="code" href="../../df/dc3/class_music_desktop_wallpaper_widget.html#afe64c195c329356f5c9683f0c3b59b6b">parameterFinished</a>()));</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            download-&gt;<a class="code" href="../../d8/dfa/class_music_data_download_thread.html#ab1bfb54e10636694a01db1bb2ed4627a">startToDownload</a>();</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        }</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="keywordflow">case</span> 1:</div>
@@ -433,7 +433,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 4 2018 14:26:39 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat May 5 2018 12:29:29 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

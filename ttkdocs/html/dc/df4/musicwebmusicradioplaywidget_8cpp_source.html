@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.7.0</span>
+   &#160;<span id="projectnumber">2.6.8.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -347,10 +347,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    name = <a class="code" href="../../d8/d07/musicobject_8h.html#a3feae9c4fa37cd2b42ef443dc6060f19">ART_DIR_FULL</a> + info.<a class="code" href="../../d9/d32/struct_music_object_1_1_music_song_information.html#abfe28d9c9fe913fcb5ac76ef3006d5ca">m_singerName</a> + <a class="code" href="../../d8/d07/musicobject_8h.html#a5390d0fe4db069c647d8c57f720ac944">SKN_FILE</a>;</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordflow">if</span>(!QFile::exists(name))</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    {</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <a class="code" href="../../d8/dfa/class_music_data_download_thread.html">MusicDataDownloadThread</a> *picDwonload = <span class="keyword">new</span> <a class="code" href="../../d8/dfa/class_music_data_download_thread.html">MusicDataDownloadThread</a>(info.<a class="code" href="../../d9/d32/struct_music_object_1_1_music_song_information.html#a92041eee0302c117983bf2cffdc2d12b">m_smallPicUrl</a>, name,</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                                 <a class="code" href="../../dc/def/class_music_down_load_thread_abstract.html#a5dbd48a8a54ae03597f0ce9141b7e678a070d8adee8e15f82bad084adec205299">MusicDownLoadThreadAbstract::DownloadSmallBG</a>, <span class="keyword">this</span>);</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        connect(picDwonload, SIGNAL(downLoadDataChanged(QString)), SLOT(<a class="code" href="../../d3/d0c/class_music_web_music_radio_play_widget.html#a889194e2ba7d112653a89ae7854303e1">picDownloadStateChanged</a>()));</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        picDwonload-&gt;<a class="code" href="../../d8/dfa/class_music_data_download_thread.html#ab1bfb54e10636694a01db1bb2ed4627a">startToDownload</a>();</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <a class="code" href="../../d8/dfa/class_music_data_download_thread.html">MusicDataDownloadThread</a> *download = <span class="keyword">new</span> <a class="code" href="../../d8/dfa/class_music_data_download_thread.html">MusicDataDownloadThread</a>(info.<a class="code" href="../../d9/d32/struct_music_object_1_1_music_song_information.html#a92041eee0302c117983bf2cffdc2d12b">m_smallPicUrl</a>, name,</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                                                <a class="code" href="../../dc/def/class_music_down_load_thread_abstract.html#a5dbd48a8a54ae03597f0ce9141b7e678a070d8adee8e15f82bad084adec205299">MusicDownLoadThreadAbstract::DownloadSmallBG</a>, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        connect(download, SIGNAL(downLoadDataChanged(QString)), SLOT(<a class="code" href="../../d3/d0c/class_music_web_music_radio_play_widget.html#a889194e2ba7d112653a89ae7854303e1">picDownloadStateChanged</a>()));</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        download-&gt;<a class="code" href="../../d8/dfa/class_music_data_download_thread.html#ab1bfb54e10636694a01db1bb2ed4627a">startToDownload</a>();</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    }</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    {</div>
@@ -483,7 +483,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_lrc_analysis_html_abe39814845aa25df6da7983c9eaa7bac"><div class="ttname"><a href="../../d3/d52/class_music_lrc_analysis.html#abe39814845aa25df6da7983c9eaa7bac">MusicLrcAnalysis::getLineMax</a></div><div class="ttdeci">int getLineMax() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d38/musiclrcanalysis_8h_source.html#l00082">musiclrcanalysis.h:82</a></div></div>
 <div class="ttc" id="musicwidgetutils_8h_html"><div class="ttname"><a href="../../d3/d4c/musicwidgetutils_8h.html">musicwidgetutils.h</a></div></div>
 <div class="ttc" id="class_music_web_music_radio_play_widget_html_a8fb05912cf95ac45176d015d28662c94"><div class="ttname"><a href="../../d3/d0c/class_music_web_music_radio_play_widget.html#a8fb05912cf95ac45176d015d28662c94">MusicWebMusicRadioPlayWidget::updateRadioList</a></div><div class="ttdeci">void updateRadioList(const QString &amp;category)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/df4/musicwebmusicradioplaywidget_8cpp_source.html#l00112">musicwebmusicradioplaywidget.cpp:112</a></div></div>
-<div class="ttc" id="class_music_down_load_query_thread_abstract_html_a02a8296199ce895500ee46786781f2b2a575e147776bc61570f5835c707372b02"><div class="ttname"><a href="../../dc/de4/class_music_down_load_query_thread_abstract.html#a02a8296199ce895500ee46786781f2b2a575e147776bc61570f5835c707372b02">MusicDownLoadQueryThreadAbstract::MusicQuery</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00089">musicdownloadquerythreadabstract.h:89</a></div></div>
+<div class="ttc" id="class_music_down_load_query_thread_abstract_html_a02a8296199ce895500ee46786781f2b2a575e147776bc61570f5835c707372b02"><div class="ttname"><a href="../../dc/de4/class_music_down_load_query_thread_abstract.html#a02a8296199ce895500ee46786781f2b2a575e147776bc61570f5835c707372b02">MusicDownLoadQueryThreadAbstract::MusicQuery</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00090">musicdownloadquerythreadabstract.h:90</a></div></div>
 <div class="ttc" id="class_music_core_m_player_html_a5a2054cde968e89feaa0ee03459b5f95"><div class="ttname"><a href="../../d5/dad/class_music_core_m_player.html#a5a2054cde968e89feaa0ee03459b5f95">MusicCoreMPlayer::setVolume</a></div><div class="ttdeci">void setVolume(int value)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dde/musiccoremplayer_8cpp_source.html#l00147">musiccoremplayer.cpp:147</a></div></div>
 <div class="ttc" id="musictime_8h_html"><div class="ttname"><a href="../../d9/dcc/musictime_8h.html">musictime.h</a></div></div>
 <div class="ttc" id="class_music_lrc_analysis_html_a2f804e35119a98f7c17872a5b2a73cd9"><div class="ttname"><a href="../../d3/d52/class_music_lrc_analysis.html#a2f804e35119a98f7c17872a5b2a73cd9">MusicLrcAnalysis::getMiddle</a></div><div class="ttdeci">int getMiddle() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d38/musiclrcanalysis_8h_source.html#l00086">musiclrcanalysis.h:86</a></div></div>
@@ -555,7 +555,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 4 2018 14:26:38 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat May 5 2018 12:29:29 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
