@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.8.0</span>
+   &#160;<span id="projectnumber">2.7.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -104,44 +104,43 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../dc/df8/class_music_video_quality_pop_widget.html">   28</a></span>&#160;<span class="keyword">class </span>MUSIC_VIDEO_EXPORT <a class="code" href="../../dc/df8/class_music_video_quality_pop_widget.html">MusicVideoQualityPopWidget</a> : <span class="keyword">public</span> <a class="code" href="../../dc/d29/class_music_tool_menu_widget.html">MusicToolMenuWidget</a></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../dc/df8/class_music_video_quality_pop_widget.html">MusicVideoQualityPopWidget</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../dc/df8/class_music_video_quality_pop_widget.html">MusicVideoQualityPopWidget</a>();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../dc/d29/class_music_tool_menu_widget.html#af9d355bf2630616291299db646231cb7">getClassName</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> setQualityActionState();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> setQualityText(<span class="keyword">const</span> QString &amp;url);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> getMusicMvInfo(MusicObject::MusicSongAttributes &amp;data);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> mediaUrlChanged(<span class="keyword">const</span> QString &amp;data);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> movieQualityChoiced(QAction *action);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> initWidget();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    QString findMVUrlByBitrate(<span class="keywordtype">int</span> bitrate);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">int</span> findMVBitrateByUrl(<span class="keyword">const</span> QString &amp;url);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">bool</span> findExistByBitrate(<span class="keywordtype">int</span> bitrate);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../dc/df8/class_music_video_quality_pop_widget.html">MusicVideoQualityPopWidget</a>)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../dc/df8/class_music_video_quality_pop_widget.html">MusicVideoQualityPopWidget</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../dc/df8/class_music_video_quality_pop_widget.html">MusicVideoQualityPopWidget</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> setQualityActionState();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> setQualityText(<span class="keyword">const</span> QString &amp;url);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> getMusicMvInfo(MusicObject::MusicSongAttributes &amp;data);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> mediaUrlChanged(<span class="keyword">const</span> QString &amp;data);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> movieQualityChoiced(QAction *action);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> initWidget();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    QString findMVUrlByBitrate(<span class="keywordtype">int</span> bitrate);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">int</span> findMVBitrateByUrl(<span class="keyword">const</span> QString &amp;url);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">bool</span> findExistByBitrate(<span class="keywordtype">int</span> bitrate);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="../../dc/df8/class_music_video_quality_pop_widget.html#a0a43cb130868919fa66d67e3c320bb6b">   83</a></span>&#160;    QActionGroup *<a class="code" href="../../dc/df8/class_music_video_quality_pop_widget.html#a0a43cb130868919fa66d67e3c320bb6b">m_actionGroup</a>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="../../dc/df8/class_music_video_quality_pop_widget.html#a0a43cb130868919fa66d67e3c320bb6b">   87</a></span>&#160;    QActionGroup *<a class="code" href="../../dc/df8/class_music_video_quality_pop_widget.html#a0a43cb130868919fa66d67e3c320bb6b">m_actionGroup</a>;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif // MUSICVIDEOQUALITYPOPWIDGET_H</span></div>
-<div class="ttc" id="class_music_video_quality_pop_widget_html_a0a43cb130868919fa66d67e3c320bb6b"><div class="ttname"><a href="../../dc/df8/class_music_video_quality_pop_widget.html#a0a43cb130868919fa66d67e3c320bb6b">MusicVideoQualityPopWidget::m_actionGroup</a></div><div class="ttdeci">QActionGroup * m_actionGroup</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/ddc/musicvideoqualitypopwidget_8h_source.html#l00087">musicvideoqualitypopwidget.h:87</a></div></div>
-<div class="ttc" id="class_music_tool_menu_widget_html"><div class="ttname"><a href="../../dc/d29/class_music_tool_menu_widget.html">MusicToolMenuWidget</a></div><div class="ttdoc">The class of the tool menu base widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd6/musictoolmenuwidget_8h_source.html#l00062">musictoolmenuwidget.h:62</a></div></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif // MUSICVIDEOQUALITYPOPWIDGET_H</span></div>
+<div class="ttc" id="class_music_video_quality_pop_widget_html_a0a43cb130868919fa66d67e3c320bb6b"><div class="ttname"><a href="../../dc/df8/class_music_video_quality_pop_widget.html#a0a43cb130868919fa66d67e3c320bb6b">MusicVideoQualityPopWidget::m_actionGroup</a></div><div class="ttdeci">QActionGroup * m_actionGroup</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/ddc/musicvideoqualitypopwidget_8h_source.html#l00083">musicvideoqualitypopwidget.h:83</a></div></div>
+<div class="ttc" id="class_music_tool_menu_widget_html"><div class="ttname"><a href="../../dc/d29/class_music_tool_menu_widget.html">MusicToolMenuWidget</a></div><div class="ttdoc">The class of the tool menu base widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd6/musictoolmenuwidget_8h_source.html#l00058">musictoolmenuwidget.h:58</a></div></div>
 <div class="ttc" id="musictoolmenuwidget_8h_html"><div class="ttname"><a href="../../d6/dd6/musictoolmenuwidget_8h.html">musictoolmenuwidget.h</a></div></div>
 <div class="ttc" id="class_music_video_quality_pop_widget_html"><div class="ttname"><a href="../../dc/df8/class_music_video_quality_pop_widget.html">MusicVideoQualityPopWidget</a></div><div class="ttdoc">The class of the video quality popup widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/ddc/musicvideoqualitypopwidget_8h_source.html#l00028">musicvideoqualitypopwidget.h:28</a></div></div>
-<div class="ttc" id="class_music_tool_menu_widget_html_af9d355bf2630616291299db646231cb7"><div class="ttname"><a href="../../dc/d29/class_music_tool_menu_widget.html#af9d355bf2630616291299db646231cb7">MusicToolMenuWidget::getClassName</a></div><div class="ttdeci">static QString getClassName()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dac/musictoolmenuwidget_8cpp_source.html#l00051">musictoolmenuwidget.cpp:51</a></div></div>
 <div class="ttc" id="musicobject_8h_html"><div class="ttname"><a href="../../d8/d07/musicobject_8h.html">musicobject.h</a></div></div>
+<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00113">musicglobal.h:113</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 5 2018 12:29:29 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 10:20:48 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

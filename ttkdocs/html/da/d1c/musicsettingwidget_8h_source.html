@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.8.0</span>
+   &#160;<span id="projectnumber">2.7.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -111,154 +111,157 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../d3/d03/struct_music_function_item.html">   36</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>MUSIC_WIDGET_EXPORT <a class="code" href="../../d3/d03/struct_music_function_item.html">MusicFunctionItem</a></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="../../d3/d03/struct_music_function_item.html#ad10261e393624a792ce3b5269500f475">   38</a></span>&#160;    <a class="code" href="../../d3/d03/struct_music_function_item.html#ad10261e393624a792ce3b5269500f475">MusicFunctionItem</a>() { }</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../d3/d03/struct_music_function_item.html#a7d284b73a54484d346de2f9c73951c7d">   39</a></span>&#160;    <a class="code" href="../../d3/d03/struct_music_function_item.html#a7d284b73a54484d346de2f9c73951c7d">MusicFunctionItem</a>(<span class="keyword">const</span> QString &amp;icon, <span class="keyword">const</span> QString &amp;name)</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        m_icon = icon;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        m_name = name;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="../../d3/d03/struct_music_function_item.html#a4386ded71302734647b2cbf9f743200e">   45</a></span>&#160;    QString <a class="code" href="../../d3/d03/struct_music_function_item.html#a4386ded71302734647b2cbf9f743200e">m_icon</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="../../d3/d03/struct_music_function_item.html#ac92b9a340eb16bf66b2f9f524c93577b">   46</a></span>&#160;    QString <a class="code" href="../../d3/d03/struct_music_function_item.html#ac92b9a340eb16bf66b2f9f524c93577b">m_name</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}<a class="code" href="../../da/d1c/musicsettingwidget_8h.html#af26396414bf5bce44ed1fdaacbb34e89">MusicFunctionItem</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<a class="code" href="../../da/d4e/musicglobal_8h.html#a4d238857fa9c278de1e80a4f427f6987">MUSIC_DECLARE_LISTS</a>(<a class="code" href="../../d3/d03/struct_music_function_item.html">MusicFunctionItem</a>)</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="../../d5/db1/class_music_function_table_widget.html">   53</a></span>&#160;class MUSIC_WIDGET_EXPORT <a class="code" href="../../d5/db1/class_music_function_table_widget.html">MusicFunctionTableWidget</a> : public <a class="code" href="../../d1/dab/class_music_abstract_table_widget.html">MusicAbstractTableWidget</a></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d5/db1/class_music_function_table_widget.html">MusicFunctionTableWidget</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">static</span> QString getClassName();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> addFunctionItems(<span class="keywordtype">int</span> index, <span class="keyword">const</span> MusicFunctionItems &amp;items);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> currentIndexChanged(<span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> listCellClicked(<span class="keywordtype">int</span> row, <span class="keywordtype">int</span> column) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> leaveEvent(QEvent *event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="../../d5/db1/class_music_function_table_widget.html#a4e8b13559fd2aea12a5cd8f7780105b9">   89</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d5/db1/class_music_function_table_widget.html#a4e8b13559fd2aea12a5cd8f7780105b9">m_listIndex</a>;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="../../d3/d03/struct_music_function_item.html#ad10261e393624a792ce3b5269500f475">   38</a></span>&#160;    <a class="code" href="../../d3/d03/struct_music_function_item.html#ad10261e393624a792ce3b5269500f475">MusicFunctionItem</a>()</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="../../d3/d03/struct_music_function_item.html#a7d284b73a54484d346de2f9c73951c7d">   43</a></span>&#160;    <a class="code" href="../../d3/d03/struct_music_function_item.html#a7d284b73a54484d346de2f9c73951c7d">MusicFunctionItem</a>(<span class="keyword">const</span> QString &amp;icon, <span class="keyword">const</span> QString &amp;name)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        m_icon = icon;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        m_name = name;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="../../d3/d03/struct_music_function_item.html#a4386ded71302734647b2cbf9f743200e">   49</a></span>&#160;    QString <a class="code" href="../../d3/d03/struct_music_function_item.html#a4386ded71302734647b2cbf9f743200e">m_icon</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="../../d3/d03/struct_music_function_item.html#ac92b9a340eb16bf66b2f9f524c93577b">   50</a></span>&#160;    QString <a class="code" href="../../d3/d03/struct_music_function_item.html#ac92b9a340eb16bf66b2f9f524c93577b">m_name</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}<a class="code" href="../../da/d1c/musicsettingwidget_8h.html#af26396414bf5bce44ed1fdaacbb34e89">MusicFunctionItem</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<a class="code" href="../../da/d4e/musicglobal_8h.html#a26874f3399a60d18f8f82ce4a546e0c9">TTK_DECLARE_LISTS</a>(<a class="code" href="../../d3/d03/struct_music_function_item.html">MusicFunctionItem</a>)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="../../d5/db1/class_music_function_table_widget.html">   57</a></span>&#160;class MUSIC_WIDGET_EXPORT <a class="code" href="../../d5/db1/class_music_function_table_widget.html">MusicFunctionTableWidget</a> : public <a class="code" href="../../d1/dab/class_music_abstract_table_widget.html">MusicAbstractTableWidget</a></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d5/db1/class_music_function_table_widget.html">MusicFunctionTableWidget</a>)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d5/db1/class_music_function_table_widget.html">MusicFunctionTableWidget</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> addFunctionItems(<span class="keywordtype">int</span> index, <span class="keyword">const</span> MusicFunctionItems &amp;items);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> currentIndexChanged(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> listCellClicked(<span class="keywordtype">int</span> row, <span class="keywordtype">int</span> column) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> leaveEvent(QEvent *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="../../d5/db1/class_music_function_table_widget.html#a4e8b13559fd2aea12a5cd8f7780105b9">   90</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d5/db1/class_music_function_table_widget.html#a4e8b13559fd2aea12a5cd8f7780105b9">m_listIndex</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;};</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="../../d0/d64/class_music_setting_widget.html">   96</a></span>&#160;<span class="keyword">class </span>MUSIC_WIDGET_EXPORT <a class="code" href="../../d0/d64/class_music_setting_widget.html">MusicSettingWidget</a> : <span class="keyword">public</span> <a class="code" href="../../da/db2/class_music_abstract_move_dialog.html">MusicAbstractMoveDialog</a></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;{</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="../../d0/d64/class_music_setting_widget.html#a79fe09f3da668f00f5e194f2c54a2856">  100</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="../../d0/d64/class_music_setting_widget.html#a79fe09f3da668f00f5e194f2c54a2856">Type</a></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    {</div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="../../d0/d64/class_music_setting_widget.html#a79fe09f3da668f00f5e194f2c54a2856aae0bbf3df205e0ffc93799d1fcce539a">  102</a></span>&#160;        <a class="code" href="../../d0/d64/class_music_setting_widget.html#a79fe09f3da668f00f5e194f2c54a2856aae0bbf3df205e0ffc93799d1fcce539a">Inline</a>, </div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="../../d0/d64/class_music_setting_widget.html#a79fe09f3da668f00f5e194f2c54a2856acf88514185cfd16439d4a6da666d9035">  103</a></span>&#160;        Desktop </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    };</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d0/d64/class_music_setting_widget.html">MusicSettingWidget</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d0/d64/class_music_setting_widget.html">MusicSettingWidget</a>();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="../../d0/d64/class_music_setting_widget.html">   97</a></span>&#160;<span class="keyword">class </span>MUSIC_WIDGET_EXPORT <a class="code" href="../../d0/d64/class_music_setting_widget.html">MusicSettingWidget</a> : <span class="keyword">public</span> <a class="code" href="../../da/db2/class_music_abstract_move_dialog.html">MusicAbstractMoveDialog</a></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d0/d64/class_music_setting_widget.html">MusicSettingWidget</a>)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="../../d0/d64/class_music_setting_widget.html#a79fe09f3da668f00f5e194f2c54a2856">  102</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="../../d0/d64/class_music_setting_widget.html#a79fe09f3da668f00f5e194f2c54a2856">Type</a></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    {</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="../../d0/d64/class_music_setting_widget.html#a79fe09f3da668f00f5e194f2c54a2856aae0bbf3df205e0ffc93799d1fcce539a">  104</a></span>&#160;        <a class="code" href="../../d0/d64/class_music_setting_widget.html#a79fe09f3da668f00f5e194f2c54a2856aae0bbf3df205e0ffc93799d1fcce539a">Inline</a>, </div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="../../d0/d64/class_music_setting_widget.html#a79fe09f3da668f00f5e194f2c54a2856acf88514185cfd16439d4a6da666d9035">  105</a></span>&#160;        Desktop </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    };</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d0/d64/class_music_setting_widget.html">MusicSettingWidget</a>(QWidget *parent = 0);</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../da/db2/class_music_abstract_move_dialog.html#a5ffbeacd6e9d019df169bb0608564954">getClassName</a>();</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">void</span> initControllerParameter();</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">void</span> parameterSettingChanged();</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordtype">void</span> clearFunctionTableSelection();</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordtype">void</span> globalHotkeyBoxChanged(<span class="keywordtype">bool</span> state);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordtype">void</span> downloadGroupCached(<span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordtype">void</span> downloadGroupSpeedLimit(<span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordtype">void</span> downloadDirSelected(<span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordtype">void</span> otherVersionUpdateChanged();</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordtype">void</span> changeDesktopLrcWidget();</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordtype">void</span> changeInlineLrcWidget();</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordtype">void</span> changeDownloadWidget();</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordtype">void</span> inlineLrcFgChanged();</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordtype">void</span> inlineLrcBgChanged();</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keywordtype">void</span> defaultLrcColorChanged(<span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordtype">void</span> inlineLrcTransChanged(<span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordtype">void</span> showInlineLrcDemo();</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordtype">void</span> resetInlineParameter();</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordtype">void</span> desktopFgChanged();</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordtype">void</span> desktopBgChanged();</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordtype">void</span> defaultDesktopLrcColorChanged(<span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordtype">void</span> desktopLrcTransChanged(<span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordtype">void</span> showDesktopLrcDemo();</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keywordtype">void</span> resetDesktopParameter();</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keywordtype">void</span> setNetworkProxyControl(<span class="keywordtype">int</span> enable);</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keywordtype">void</span> testNetworkProxy();</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordtype">void</span> testProxyStateChanged(<span class="keywordtype">bool</span> state);</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keywordtype">void</span> testNetworkConnection();</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordtype">void</span> checkNetworkConnection();</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keywordtype">void</span> testNetworkConnectionStateChanged(<span class="keyword">const</span> QString &amp;name);</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keywordtype">void</span> musicFadeInAndOutClicked(<span class="keywordtype">bool</span> state);</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keywordtype">void</span> commitTheResults();</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> exec();</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keywordtype">void</span> selectFunctionTableIndex(<span class="keywordtype">int</span> row, <span class="keywordtype">int</span> col);</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keywordtype">void</span> initNormalSettingWidget();</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keywordtype">void</span> initOtherSettingWidget();</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keywordtype">void</span> initDownloadWidget();</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keywordtype">void</span> initDesktopLrcWidget();</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="keywordtype">void</span> initInlineLrcWidget();</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keywordtype">void</span> initSoundEffectWidget();</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordtype">void</span> initAudioSettingWidget();</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keywordtype">void</span> initNetworkWidget();</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keywordtype">void</span> lcrColorValue(<a class="code" href="../../dd/d8a/namespace_program.html#ae207d83c4779d7c58e7d3c0dc161d487">Type</a> <a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>, <span class="keyword">const</span> QString &amp;type, QLabel *obj);</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keywordtype">void</span> lrcColorByDefault(<a class="code" href="../../dd/d8a/namespace_program.html#ae207d83c4779d7c58e7d3c0dc161d487">Type</a> <a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>, <span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="keywordtype">void</span> lrcTransparentValue(<a class="code" href="../../dd/d8a/namespace_program.html#ae207d83c4779d7c58e7d3c0dc161d487">Type</a> <a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>, <span class="keywordtype">int</span> value) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keywordtype">bool</span> applyNetworkProxy();</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="keywordtype">bool</span> setNetworkProxyByType(<span class="keywordtype">int</span> type);</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
-<div class="line"><a name="l00317"></a><span class="lineno"><a class="line" href="../../d0/d64/class_music_setting_widget.html#ac7cd4c2c48b1284e0a23c0e7d20bc26d">  317</a></span>&#160;    Ui::MusicSettingWidget *<a class="code" href="../../d0/d64/class_music_setting_widget.html#ac7cd4c2c48b1284e0a23c0e7d20bc26d">m_ui</a>;</div>
-<div class="line"><a name="l00318"></a><span class="lineno"><a class="line" href="../../d0/d64/class_music_setting_widget.html#a04dd1c48307b5f963d87e4668a29d3f2">  318</a></span>&#160;    QList&lt;QColor&gt; <a class="code" href="../../d0/d64/class_music_setting_widget.html#a04dd1c48307b5f963d87e4668a29d3f2">m_lrcSelectedFg</a>, m_lrcSelectedBg;</div>
-<div class="line"><a name="l00319"></a><span class="lineno"><a class="line" href="../../d0/d64/class_music_setting_widget.html#aa3ef611863430f82063ebcc08938bc98">  319</a></span>&#160;    QList&lt;QColor&gt; <a class="code" href="../../d0/d64/class_music_setting_widget.html#aa3ef611863430f82063ebcc08938bc98">m_DlrcSelectedFg</a>, m_DlrcSelectedBg;</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;};</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="preprocessor">#endif // MUSICSETTINGWIDGET_H</span></div>
-<div class="ttc" id="struct_music_function_item_html_a7d284b73a54484d346de2f9c73951c7d"><div class="ttname"><a href="../../d3/d03/struct_music_function_item.html#a7d284b73a54484d346de2f9c73951c7d">MusicFunctionItem::MusicFunctionItem</a></div><div class="ttdeci">MusicFunctionItem(const QString &amp;icon, const QString &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00039">musicsettingwidget.h:39</a></div></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d0/d64/class_music_setting_widget.html">MusicSettingWidget</a>();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">void</span> initControllerParameter();</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">void</span> parameterSettingChanged();</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordtype">void</span> clearFunctionTableSelection();</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">void</span> globalHotkeyBoxChanged(<span class="keywordtype">bool</span> state);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordtype">void</span> downloadGroupCached(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordtype">void</span> downloadGroupSpeedLimit(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordtype">void</span> downloadDirSelected(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordtype">void</span> otherVersionUpdateChanged();</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordtype">void</span> changeDesktopLrcWidget();</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordtype">void</span> changeInlineLrcWidget();</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordtype">void</span> changeDownloadWidget();</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordtype">void</span> inlineLrcFgChanged();</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordtype">void</span> inlineLrcBgChanged();</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordtype">void</span> defaultLrcColorChanged(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordtype">void</span> inlineLrcTransChanged(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordtype">void</span> showInlineLrcDemo();</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordtype">void</span> resetInlineParameter();</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordtype">void</span> desktopFgChanged();</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordtype">void</span> desktopBgChanged();</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keywordtype">void</span> defaultDesktopLrcColorChanged(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordtype">void</span> desktopLrcTransChanged(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordtype">void</span> showDesktopLrcDemo();</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="keywordtype">void</span> resetDesktopParameter();</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordtype">void</span> setNetworkProxyControl(<span class="keywordtype">int</span> enable);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordtype">void</span> testNetworkProxy();</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keywordtype">void</span> testProxyStateChanged(<span class="keywordtype">bool</span> state);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keywordtype">void</span> testNetworkConnection();</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keywordtype">void</span> checkNetworkConnection();</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keywordtype">void</span> testNetworkConnectionStateChanged(<span class="keyword">const</span> QString &amp;name);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="keywordtype">void</span> musicFadeInAndOutClicked(<span class="keywordtype">bool</span> state);</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keywordtype">void</span> commitTheResults();</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> exec();</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordtype">void</span> selectFunctionTableIndex(<span class="keywordtype">int</span> row, <span class="keywordtype">int</span> col);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keywordtype">void</span> initNormalSettingWidget();</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordtype">void</span> initOtherSettingWidget();</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordtype">void</span> initDownloadWidget();</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keywordtype">void</span> initDesktopLrcWidget();</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="keywordtype">void</span> initInlineLrcWidget();</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordtype">void</span> initSoundEffectWidget();</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keywordtype">void</span> initAudioSettingWidget();</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keywordtype">void</span> initNetworkWidget();</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordtype">void</span> lcrColorValue(<a class="code" href="../../dd/d8a/namespace_program.html#ae207d83c4779d7c58e7d3c0dc161d487">Type</a> <a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>, <span class="keyword">const</span> QString &amp;type, QLabel *obj);</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordtype">void</span> lrcColorByDefault(<a class="code" href="../../dd/d8a/namespace_program.html#ae207d83c4779d7c58e7d3c0dc161d487">Type</a> <a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>, <span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keywordtype">void</span> lrcTransparentValue(<a class="code" href="../../dd/d8a/namespace_program.html#ae207d83c4779d7c58e7d3c0dc161d487">Type</a> <a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>, <span class="keywordtype">int</span> value) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keywordtype">bool</span> applyNetworkProxy();</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keywordtype">bool</span> setNetworkProxyByType(<span class="keywordtype">int</span> type);</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
+<div class="line"><a name="l00314"></a><span class="lineno"><a class="line" href="../../d0/d64/class_music_setting_widget.html#ac7cd4c2c48b1284e0a23c0e7d20bc26d">  314</a></span>&#160;    Ui::MusicSettingWidget *<a class="code" href="../../d0/d64/class_music_setting_widget.html#ac7cd4c2c48b1284e0a23c0e7d20bc26d">m_ui</a>;</div>
+<div class="line"><a name="l00315"></a><span class="lineno"><a class="line" href="../../d0/d64/class_music_setting_widget.html#a04dd1c48307b5f963d87e4668a29d3f2">  315</a></span>&#160;    QList&lt;QColor&gt; <a class="code" href="../../d0/d64/class_music_setting_widget.html#a04dd1c48307b5f963d87e4668a29d3f2">m_lrcSelectedFg</a>, m_lrcSelectedBg;</div>
+<div class="line"><a name="l00316"></a><span class="lineno"><a class="line" href="../../d0/d64/class_music_setting_widget.html#aa3ef611863430f82063ebcc08938bc98">  316</a></span>&#160;    QList&lt;QColor&gt; <a class="code" href="../../d0/d64/class_music_setting_widget.html#aa3ef611863430f82063ebcc08938bc98">m_DlrcSelectedFg</a>, m_DlrcSelectedBg;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;};</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="preprocessor">#endif // MUSICSETTINGWIDGET_H</span></div>
+<div class="ttc" id="struct_music_function_item_html_a7d284b73a54484d346de2f9c73951c7d"><div class="ttname"><a href="../../d3/d03/struct_music_function_item.html#a7d284b73a54484d346de2f9c73951c7d">MusicFunctionItem::MusicFunctionItem</a></div><div class="ttdeci">MusicFunctionItem(const QString &amp;icon, const QString &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00043">musicsettingwidget.h:43</a></div></div>
 <div class="ttc" id="musicabstractmovedialog_8h_html"><div class="ttname"><a href="../../da/d49/musicabstractmovedialog_8h.html">musicabstractmovedialog.h</a></div></div>
-<div class="ttc" id="struct_music_function_item_html_ac92b9a340eb16bf66b2f9f524c93577b"><div class="ttname"><a href="../../d3/d03/struct_music_function_item.html#ac92b9a340eb16bf66b2f9f524c93577b">MusicFunctionItem::m_name</a></div><div class="ttdeci">QString m_name</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00046">musicsettingwidget.h:46</a></div></div>
-<div class="ttc" id="musicglobal_8h_html_a4d238857fa9c278de1e80a4f427f6987"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a4d238857fa9c278de1e80a4f427f6987">MUSIC_DECLARE_LISTS</a></div><div class="ttdeci">#define MUSIC_DECLARE_LISTS(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00098">musicglobal.h:98</a></div></div>
+<div class="ttc" id="struct_music_function_item_html_ac92b9a340eb16bf66b2f9f524c93577b"><div class="ttname"><a href="../../d3/d03/struct_music_function_item.html#ac92b9a340eb16bf66b2f9f524c93577b">MusicFunctionItem::m_name</a></div><div class="ttdeci">QString m_name</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00050">musicsettingwidget.h:50</a></div></div>
 <div class="ttc" id="musicabstracttablewidget_8h_html"><div class="ttname"><a href="../../da/db4/musicabstracttablewidget_8h.html">musicabstracttablewidget.h</a></div></div>
 <div class="ttc" id="musicuiobject_8h_html"><div class="ttname"><a href="../../d0/deb/musicuiobject_8h.html">musicuiobject.h</a></div></div>
 <div class="ttc" id="namespace_ui_html"><div class="ttname"><a href="../../dc/df0/namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d24/musicapplication_8h_source.html#l00033">musicapplication.h:33</a></div></div>
 <div class="ttc" id="class_music_abstract_table_widget_html"><div class="ttname"><a href="../../d1/dab/class_music_abstract_table_widget.html">MusicAbstractTableWidget</a></div><div class="ttdoc">The class of the table widget base. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/db4/musicabstracttablewidget_8h_source.html#l00033">musicabstracttablewidget.h:33</a></div></div>
-<div class="ttc" id="class_music_setting_widget_html_a04dd1c48307b5f963d87e4668a29d3f2"><div class="ttname"><a href="../../d0/d64/class_music_setting_widget.html#a04dd1c48307b5f963d87e4668a29d3f2">MusicSettingWidget::m_lrcSelectedFg</a></div><div class="ttdeci">QList&lt; QColor &gt; m_lrcSelectedFg</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00318">musicsettingwidget.h:318</a></div></div>
-<div class="ttc" id="class_music_setting_widget_html_ac7cd4c2c48b1284e0a23c0e7d20bc26d"><div class="ttname"><a href="../../d0/d64/class_music_setting_widget.html#ac7cd4c2c48b1284e0a23c0e7d20bc26d">MusicSettingWidget::m_ui</a></div><div class="ttdeci">Ui::MusicSettingWidget * m_ui</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00317">musicsettingwidget.h:317</a></div></div>
+<div class="ttc" id="class_music_setting_widget_html_a04dd1c48307b5f963d87e4668a29d3f2"><div class="ttname"><a href="../../d0/d64/class_music_setting_widget.html#a04dd1c48307b5f963d87e4668a29d3f2">MusicSettingWidget::m_lrcSelectedFg</a></div><div class="ttdeci">QList&lt; QColor &gt; m_lrcSelectedFg</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00315">musicsettingwidget.h:315</a></div></div>
+<div class="ttc" id="class_music_setting_widget_html_ac7cd4c2c48b1284e0a23c0e7d20bc26d"><div class="ttname"><a href="../../d0/d64/class_music_setting_widget.html#ac7cd4c2c48b1284e0a23c0e7d20bc26d">MusicSettingWidget::m_ui</a></div><div class="ttdeci">Ui::MusicSettingWidget * m_ui</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00314">musicsettingwidget.h:314</a></div></div>
 <div class="ttc" id="struct_music_function_item_html"><div class="ttname"><a href="../../d3/d03/struct_music_function_item.html">MusicFunctionItem</a></div><div class="ttdoc">The class of the function tool item. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00036">musicsettingwidget.h:36</a></div></div>
-<div class="ttc" id="class_music_function_table_widget_html_a4e8b13559fd2aea12a5cd8f7780105b9"><div class="ttname"><a href="../../d5/db1/class_music_function_table_widget.html#a4e8b13559fd2aea12a5cd8f7780105b9">MusicFunctionTableWidget::m_listIndex</a></div><div class="ttdeci">int m_listIndex</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00089">musicsettingwidget.h:89</a></div></div>
+<div class="ttc" id="class_music_function_table_widget_html_a4e8b13559fd2aea12a5cd8f7780105b9"><div class="ttname"><a href="../../d5/db1/class_music_function_table_widget.html#a4e8b13559fd2aea12a5cd8f7780105b9">MusicFunctionTableWidget::m_listIndex</a></div><div class="ttdeci">int m_listIndex</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00090">musicsettingwidget.h:90</a></div></div>
 <div class="ttc" id="musiclrcfromkrc_8cpp_html_ad706e4249347c1cd1381934a5691137d"><div class="ttname"><a href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a></div><div class="ttdeci">const wchar_t key[]</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d45/musiclrcfromkrc_8cpp_source.html#l00017">musiclrcfromkrc.cpp:17</a></div></div>
-<div class="ttc" id="class_music_function_table_widget_html"><div class="ttname"><a href="../../d5/db1/class_music_function_table_widget.html">MusicFunctionTableWidget</a></div><div class="ttdoc">The class of the list table widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00053">musicsettingwidget.h:53</a></div></div>
-<div class="ttc" id="class_music_abstract_move_dialog_html_a5ffbeacd6e9d019df169bb0608564954"><div class="ttname"><a href="../../da/db2/class_music_abstract_move_dialog.html#a5ffbeacd6e9d019df169bb0608564954">MusicAbstractMoveDialog::getClassName</a></div><div class="ttdeci">static QString getClassName()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de8/musicabstractmovedialog_8cpp_source.html#l00038">musicabstractmovedialog.cpp:38</a></div></div>
-<div class="ttc" id="class_music_setting_widget_html_aa3ef611863430f82063ebcc08938bc98"><div class="ttname"><a href="../../d0/d64/class_music_setting_widget.html#aa3ef611863430f82063ebcc08938bc98">MusicSettingWidget::m_DlrcSelectedFg</a></div><div class="ttdeci">QList&lt; QColor &gt; m_DlrcSelectedFg</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00319">musicsettingwidget.h:319</a></div></div>
-<div class="ttc" id="class_music_setting_widget_html_a79fe09f3da668f00f5e194f2c54a2856"><div class="ttname"><a href="../../d0/d64/class_music_setting_widget.html#a79fe09f3da668f00f5e194f2c54a2856">MusicSettingWidget::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00100">musicsettingwidget.h:100</a></div></div>
-<div class="ttc" id="class_music_setting_widget_html_a79fe09f3da668f00f5e194f2c54a2856aae0bbf3df205e0ffc93799d1fcce539a"><div class="ttname"><a href="../../d0/d64/class_music_setting_widget.html#a79fe09f3da668f00f5e194f2c54a2856aae0bbf3df205e0ffc93799d1fcce539a">MusicSettingWidget::Inline</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00102">musicsettingwidget.h:102</a></div></div>
-<div class="ttc" id="class_music_setting_widget_html"><div class="ttname"><a href="../../d0/d64/class_music_setting_widget.html">MusicSettingWidget</a></div><div class="ttdoc">The class of the setting parameters widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00096">musicsettingwidget.h:96</a></div></div>
+<div class="ttc" id="class_music_function_table_widget_html"><div class="ttname"><a href="../../d5/db1/class_music_function_table_widget.html">MusicFunctionTableWidget</a></div><div class="ttdoc">The class of the list table widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00057">musicsettingwidget.h:57</a></div></div>
+<div class="ttc" id="class_music_setting_widget_html_aa3ef611863430f82063ebcc08938bc98"><div class="ttname"><a href="../../d0/d64/class_music_setting_widget.html#aa3ef611863430f82063ebcc08938bc98">MusicSettingWidget::m_DlrcSelectedFg</a></div><div class="ttdeci">QList&lt; QColor &gt; m_DlrcSelectedFg</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00316">musicsettingwidget.h:316</a></div></div>
+<div class="ttc" id="musicglobal_8h_html_a26874f3399a60d18f8f82ce4a546e0c9"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a26874f3399a60d18f8f82ce4a546e0c9">TTK_DECLARE_LISTS</a></div><div class="ttdeci">#define TTK_DECLARE_LISTS(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00131">musicglobal.h:131</a></div></div>
+<div class="ttc" id="class_music_setting_widget_html_a79fe09f3da668f00f5e194f2c54a2856"><div class="ttname"><a href="../../d0/d64/class_music_setting_widget.html#a79fe09f3da668f00f5e194f2c54a2856">MusicSettingWidget::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00102">musicsettingwidget.h:102</a></div></div>
+<div class="ttc" id="class_music_setting_widget_html_a79fe09f3da668f00f5e194f2c54a2856aae0bbf3df205e0ffc93799d1fcce539a"><div class="ttname"><a href="../../d0/d64/class_music_setting_widget.html#a79fe09f3da668f00f5e194f2c54a2856aae0bbf3df205e0ffc93799d1fcce539a">MusicSettingWidget::Inline</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00104">musicsettingwidget.h:104</a></div></div>
+<div class="ttc" id="class_music_setting_widget_html"><div class="ttname"><a href="../../d0/d64/class_music_setting_widget.html">MusicSettingWidget</a></div><div class="ttdoc">The class of the setting parameters widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00097">musicsettingwidget.h:97</a></div></div>
 <div class="ttc" id="class_music_abstract_move_dialog_html"><div class="ttname"><a href="../../da/db2/class_music_abstract_move_dialog.html">MusicAbstractMoveDialog</a></div><div class="ttdoc">The class of the moving dialog base. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d49/musicabstractmovedialog_8h_source.html#l00029">musicabstractmovedialog.h:29</a></div></div>
 <div class="ttc" id="namespace_program_html_ae207d83c4779d7c58e7d3c0dc161d487"><div class="ttname"><a href="../../dd/d8a/namespace_program.html#ae207d83c4779d7c58e7d3c0dc161d487">Program::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dff/musicdjradioprogramthread_8h_source.html#l00029">musicdjradioprogramthread.h:29</a></div></div>
 <div class="ttc" id="musicsettingmanager_8h_html"><div class="ttname"><a href="../../dd/d2f/musicsettingmanager_8h.html">musicsettingmanager.h</a></div></div>
 <div class="ttc" id="struct_music_function_item_html_ad10261e393624a792ce3b5269500f475"><div class="ttname"><a href="../../d3/d03/struct_music_function_item.html#ad10261e393624a792ce3b5269500f475">MusicFunctionItem::MusicFunctionItem</a></div><div class="ttdeci">MusicFunctionItem()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00038">musicsettingwidget.h:38</a></div></div>
-<div class="ttc" id="struct_music_function_item_html_a4386ded71302734647b2cbf9f743200e"><div class="ttname"><a href="../../d3/d03/struct_music_function_item.html#a4386ded71302734647b2cbf9f743200e">MusicFunctionItem::m_icon</a></div><div class="ttdeci">QString m_icon</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00045">musicsettingwidget.h:45</a></div></div>
+<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00113">musicglobal.h:113</a></div></div>
+<div class="ttc" id="struct_music_function_item_html_a4386ded71302734647b2cbf9f743200e"><div class="ttname"><a href="../../d3/d03/struct_music_function_item.html#a4386ded71302734647b2cbf9f743200e">MusicFunctionItem::m_icon</a></div><div class="ttdeci">QString m_icon</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00049">musicsettingwidget.h:49</a></div></div>
 <div class="ttc" id="musicsettingwidget_8h_html_af26396414bf5bce44ed1fdaacbb34e89"><div class="ttname"><a href="../../da/d1c/musicsettingwidget_8h.html#af26396414bf5bce44ed1fdaacbb34e89">MusicFunctionItem</a></div><div class="ttdeci">struct MUSIC_WIDGET_EXPORT MusicFunctionItem MusicFunctionItem</div><div class="ttdoc">The class of the function tool item. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 5 2018 12:29:31 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 10:20:49 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

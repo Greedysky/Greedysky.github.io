@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.8.0</span>
+   &#160;<span id="projectnumber">2.7.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -103,59 +103,59 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../d7/d3e/class_music_photo_grab_item.html">   27</a></span>&#160;<span class="keyword">class </span>MUSIC_WIDGET_EXPORT <a class="code" href="../../d7/d3e/class_music_photo_grab_item.html">MusicPhotoGrabItem</a> : <span class="keyword">public</span> <a class="code" href="../../d4/d84/class_music_resize_grab_item_widget.html">MusicResizeGrabItemWidget</a></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d7/d3e/class_music_photo_grab_item.html">MusicPhotoGrabItem</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../d4/d84/class_music_resize_grab_item_widget.html#acd1a23abaa24496d36b5d05895a44a7e">getClassName</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d4/d84/class_music_resize_grab_item_widget.html#ac1580114f8c10ad3d54e50e5f8f04686">setBorderRect</a>(<span class="keyword">const</span> QRect &amp;rect) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d7/d3e/class_music_photo_grab_item.html">MusicPhotoGrabItem</a>)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d7/d3e/class_music_photo_grab_item.html">MusicPhotoGrabItem</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d4/d84/class_music_resize_grab_item_widget.html#ac1580114f8c10ad3d54e50e5f8f04686">setBorderRect</a>(<span class="keyword">const</span> QRect &amp;rect) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="../../d6/d0a/class_music_photo_grab_label.html">   52</a></span>&#160;<span class="keyword">class </span>MUSIC_WIDGET_EXPORT <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html">MusicPhotoGrabLabel</a> : <span class="keyword">public</span> QWidget</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html">MusicPhotoGrabLabel</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="../../d6/d0a/class_music_photo_grab_label.html">   49</a></span>&#160;<span class="keyword">class </span>MUSIC_WIDGET_EXPORT <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html">MusicPhotoGrabLabel</a> : <span class="keyword">public</span> QWidget</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d6/d0a/class_music_photo_grab_label.html">MusicPhotoGrabLabel</a>)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html">MusicPhotoGrabLabel</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    ~<a class="code" href="../../d6/d0a/class_music_photo_grab_label.html">MusicPhotoGrabLabel</a>();</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    ~<a class="code" href="../../d6/d0a/class_music_photo_grab_label.html">MusicPhotoGrabLabel</a>();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">static</span> QString getClassName();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> setImagePath(<span class="keyword">const</span> QString &amp;path);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    QPixmap pixmap();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> setImagePath(<span class="keyword">const</span> QString &amp;path);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    QPixmap pixmap();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> intersectedPixmap(<span class="keyword">const</span> QPixmap &amp;pix);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> intersectedPixmap(<span class="keyword">const</span> QPixmap &amp;pix);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> rectChanged();</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> rectChanged();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> paintEvent(QPaintEvent *event) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> paintEvent(QPaintEvent *event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="../../d6/d0a/class_music_photo_grab_label.html#ab93d35b15e94a74e51ab19224412a7ab">   94</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#ab93d35b15e94a74e51ab19224412a7ab">m_ratio</a>;</div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="../../d6/d0a/class_music_photo_grab_label.html#a5a849f7ea000df84393b5de32ac6d861">   95</a></span>&#160;    QString <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#a5a849f7ea000df84393b5de32ac6d861">m_path</a>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="../../d6/d0a/class_music_photo_grab_label.html#a5d967938362c48ab85e9210d3031aca8">   96</a></span>&#160;    QRect <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#a5d967938362c48ab85e9210d3031aca8">m_imgRect</a>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="../../d6/d0a/class_music_photo_grab_label.html#ad79521a3284be1acbb9794ecba3d8959">   97</a></span>&#160;    <a class="code" href="../../d7/d3e/class_music_photo_grab_item.html">MusicPhotoGrabItem</a> *<a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#ad79521a3284be1acbb9794ecba3d8959">m_grabItem</a>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;};</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif // MUSICPHOTOGRABLABEL_H</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="../../d6/d0a/class_music_photo_grab_label.html#ab93d35b15e94a74e51ab19224412a7ab">   88</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#ab93d35b15e94a74e51ab19224412a7ab">m_ratio</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="../../d6/d0a/class_music_photo_grab_label.html#a5a849f7ea000df84393b5de32ac6d861">   89</a></span>&#160;    QString <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#a5a849f7ea000df84393b5de32ac6d861">m_path</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="../../d6/d0a/class_music_photo_grab_label.html#a5d967938362c48ab85e9210d3031aca8">   90</a></span>&#160;    QRect <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#a5d967938362c48ab85e9210d3031aca8">m_imgRect</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="../../d6/d0a/class_music_photo_grab_label.html#ad79521a3284be1acbb9794ecba3d8959">   91</a></span>&#160;    <a class="code" href="../../d7/d3e/class_music_photo_grab_item.html">MusicPhotoGrabItem</a> *<a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#ad79521a3284be1acbb9794ecba3d8959">m_grabItem</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#endif // MUSICPHOTOGRABLABEL_H</span></div>
 <div class="ttc" id="class_music_photo_grab_item_html"><div class="ttname"><a href="../../d7/d3e/class_music_photo_grab_item.html">MusicPhotoGrabItem</a></div><div class="ttdoc">The class of the photo grab label item. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dcf/musicphotograblabel_8h_source.html#l00027">musicphotograblabel.h:27</a></div></div>
-<div class="ttc" id="class_music_resize_grab_item_widget_html_acd1a23abaa24496d36b5d05895a44a7e"><div class="ttname"><a href="../../d4/d84/class_music_resize_grab_item_widget.html#acd1a23abaa24496d36b5d05895a44a7e">MusicResizeGrabItemWidget::getClassName</a></div><div class="ttdeci">static QString getClassName()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d65/musicresizegrabitemwidget_8cpp_source.html#l00020">musicresizegrabitemwidget.cpp:20</a></div></div>
 <div class="ttc" id="musicresizegrabitemwidget_8h_html"><div class="ttname"><a href="../../d7/d7e/musicresizegrabitemwidget_8h.html">musicresizegrabitemwidget.h</a></div></div>
-<div class="ttc" id="class_music_photo_grab_label_html"><div class="ttname"><a href="../../d6/d0a/class_music_photo_grab_label.html">MusicPhotoGrabLabel</a></div><div class="ttdoc">The class of the photo grab label. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dcf/musicphotograblabel_8h_source.html#l00052">musicphotograblabel.h:52</a></div></div>
+<div class="ttc" id="class_music_photo_grab_label_html"><div class="ttname"><a href="../../d6/d0a/class_music_photo_grab_label.html">MusicPhotoGrabLabel</a></div><div class="ttdoc">The class of the photo grab label. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dcf/musicphotograblabel_8h_source.html#l00049">musicphotograblabel.h:49</a></div></div>
 <div class="ttc" id="class_music_resize_grab_item_widget_html"><div class="ttname"><a href="../../d4/d84/class_music_resize_grab_item_widget.html">MusicResizeGrabItemWidget</a></div><div class="ttdoc">The class of the resize grab label item widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d7e/musicresizegrabitemwidget_8h_source.html#l00028">musicresizegrabitemwidget.h:28</a></div></div>
-<div class="ttc" id="class_music_photo_grab_label_html_a5d967938362c48ab85e9210d3031aca8"><div class="ttname"><a href="../../d6/d0a/class_music_photo_grab_label.html#a5d967938362c48ab85e9210d3031aca8">MusicPhotoGrabLabel::m_imgRect</a></div><div class="ttdeci">QRect m_imgRect</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dcf/musicphotograblabel_8h_source.html#l00096">musicphotograblabel.h:96</a></div></div>
-<div class="ttc" id="class_music_photo_grab_label_html_a5a849f7ea000df84393b5de32ac6d861"><div class="ttname"><a href="../../d6/d0a/class_music_photo_grab_label.html#a5a849f7ea000df84393b5de32ac6d861">MusicPhotoGrabLabel::m_path</a></div><div class="ttdeci">QString m_path</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dcf/musicphotograblabel_8h_source.html#l00095">musicphotograblabel.h:95</a></div></div>
-<div class="ttc" id="class_music_photo_grab_label_html_ab93d35b15e94a74e51ab19224412a7ab"><div class="ttname"><a href="../../d6/d0a/class_music_photo_grab_label.html#ab93d35b15e94a74e51ab19224412a7ab">MusicPhotoGrabLabel::m_ratio</a></div><div class="ttdeci">float m_ratio</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dcf/musicphotograblabel_8h_source.html#l00094">musicphotograblabel.h:94</a></div></div>
-<div class="ttc" id="class_music_resize_grab_item_widget_html_ac1580114f8c10ad3d54e50e5f8f04686"><div class="ttname"><a href="../../d4/d84/class_music_resize_grab_item_widget.html#ac1580114f8c10ad3d54e50e5f8f04686">MusicResizeGrabItemWidget::setBorderRect</a></div><div class="ttdeci">virtual void setBorderRect(const QRect &amp;rect)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d65/musicresizegrabitemwidget_8cpp_source.html#l00025">musicresizegrabitemwidget.cpp:25</a></div></div>
-<div class="ttc" id="class_music_photo_grab_label_html_ad79521a3284be1acbb9794ecba3d8959"><div class="ttname"><a href="../../d6/d0a/class_music_photo_grab_label.html#ad79521a3284be1acbb9794ecba3d8959">MusicPhotoGrabLabel::m_grabItem</a></div><div class="ttdeci">MusicPhotoGrabItem * m_grabItem</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dcf/musicphotograblabel_8h_source.html#l00097">musicphotograblabel.h:97</a></div></div>
+<div class="ttc" id="class_music_photo_grab_label_html_a5d967938362c48ab85e9210d3031aca8"><div class="ttname"><a href="../../d6/d0a/class_music_photo_grab_label.html#a5d967938362c48ab85e9210d3031aca8">MusicPhotoGrabLabel::m_imgRect</a></div><div class="ttdeci">QRect m_imgRect</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dcf/musicphotograblabel_8h_source.html#l00090">musicphotograblabel.h:90</a></div></div>
+<div class="ttc" id="class_music_photo_grab_label_html_a5a849f7ea000df84393b5de32ac6d861"><div class="ttname"><a href="../../d6/d0a/class_music_photo_grab_label.html#a5a849f7ea000df84393b5de32ac6d861">MusicPhotoGrabLabel::m_path</a></div><div class="ttdeci">QString m_path</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dcf/musicphotograblabel_8h_source.html#l00089">musicphotograblabel.h:89</a></div></div>
+<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00113">musicglobal.h:113</a></div></div>
+<div class="ttc" id="class_music_photo_grab_label_html_ab93d35b15e94a74e51ab19224412a7ab"><div class="ttname"><a href="../../d6/d0a/class_music_photo_grab_label.html#ab93d35b15e94a74e51ab19224412a7ab">MusicPhotoGrabLabel::m_ratio</a></div><div class="ttdeci">float m_ratio</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dcf/musicphotograblabel_8h_source.html#l00088">musicphotograblabel.h:88</a></div></div>
+<div class="ttc" id="class_music_resize_grab_item_widget_html_ac1580114f8c10ad3d54e50e5f8f04686"><div class="ttname"><a href="../../d4/d84/class_music_resize_grab_item_widget.html#ac1580114f8c10ad3d54e50e5f8f04686">MusicResizeGrabItemWidget::setBorderRect</a></div><div class="ttdeci">virtual void setBorderRect(const QRect &amp;rect)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d65/musicresizegrabitemwidget_8cpp_source.html#l00020">musicresizegrabitemwidget.cpp:20</a></div></div>
+<div class="ttc" id="class_music_photo_grab_label_html_ad79521a3284be1acbb9794ecba3d8959"><div class="ttname"><a href="../../d6/d0a/class_music_photo_grab_label.html#ad79521a3284be1acbb9794ecba3d8959">MusicPhotoGrabLabel::m_grabItem</a></div><div class="ttdeci">MusicPhotoGrabItem * m_grabItem</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dcf/musicphotograblabel_8h_source.html#l00091">musicphotograblabel.h:91</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 5 2018 12:29:30 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 10:20:49 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

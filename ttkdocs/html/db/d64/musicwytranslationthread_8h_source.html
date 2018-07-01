@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.8.0</span>
+   &#160;<span id="projectnumber">2.7.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -103,30 +103,30 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../dd/df1/class_music_w_y_translation_thread.html">   27</a></span>&#160;<span class="keyword">class </span>MUSIC_NETWORK_EXPORT <a class="code" href="../../dd/df1/class_music_w_y_translation_thread.html">MusicWYTranslationThread</a> : <span class="keyword">public</span> <a class="code" href="../../d3/d05/class_music_translation_thread_abstract.html">MusicTranslationThreadAbstract</a></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../dd/df1/class_music_w_y_translation_thread.html">MusicWYTranslationThread</a>(QObject *parent = 0);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../dd/df1/class_music_w_y_translation_thread.html">MusicWYTranslationThread</a>();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../d3/d05/class_music_translation_thread_abstract.html#ab783fbb63c7c15d2da41d1500f923b3d">getClassName</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d3/d05/class_music_translation_thread_abstract.html#ade5b10787c4b72290d029bba0e45358f">startToDownload</a>(<span class="keyword">const</span> QString &amp;data) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d5/de6/class_music_network_abstract.html#a5633d328e4f80b91dde0113550d6e852">downLoadFinished</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif // MUSICWYTRANSLATIONTHREAD_H</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../dd/df1/class_music_w_y_translation_thread.html">MusicWYTranslationThread</a>)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../dd/df1/class_music_w_y_translation_thread.html">MusicWYTranslationThread</a>(QObject *parent = 0);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../dd/df1/class_music_w_y_translation_thread.html">MusicWYTranslationThread</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d3/d05/class_music_translation_thread_abstract.html#ade5b10787c4b72290d029bba0e45358f">startToDownload</a>(<span class="keyword">const</span> QString &amp;data) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d5/de6/class_music_network_abstract.html#a5633d328e4f80b91dde0113550d6e852">downLoadFinished</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif // MUSICWYTRANSLATIONTHREAD_H</span></div>
 <div class="ttc" id="musictranslationthreadabstract_8h_html"><div class="ttname"><a href="../../db/db0/musictranslationthreadabstract_8h.html">musictranslationthreadabstract.h</a></div></div>
-<div class="ttc" id="class_music_translation_thread_abstract_html_ab783fbb63c7c15d2da41d1500f923b3d"><div class="ttname"><a href="../../d3/d05/class_music_translation_thread_abstract.html#ab783fbb63c7c15d2da41d1500f923b3d">MusicTranslationThreadAbstract::getClassName</a></div><div class="ttdeci">static QString getClassName()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/ded/musictranslationthreadabstract_8cpp_source.html#l00014">musictranslationthreadabstract.cpp:14</a></div></div>
 <div class="ttc" id="class_music_network_abstract_html_a5633d328e4f80b91dde0113550d6e852"><div class="ttname"><a href="../../d5/de6/class_music_network_abstract.html#a5633d328e4f80b91dde0113550d6e852">MusicNetworkAbstract::downLoadFinished</a></div><div class="ttdeci">virtual void downLoadFinished()=0</div></div>
 <div class="ttc" id="class_music_translation_thread_abstract_html_ade5b10787c4b72290d029bba0e45358f"><div class="ttname"><a href="../../d3/d05/class_music_translation_thread_abstract.html#ade5b10787c4b72290d029bba0e45358f">MusicTranslationThreadAbstract::startToDownload</a></div><div class="ttdeci">virtual void startToDownload(const QString &amp;data)=0</div></div>
+<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00113">musicglobal.h:113</a></div></div>
 <div class="ttc" id="class_music_w_y_translation_thread_html"><div class="ttname"><a href="../../dd/df1/class_music_w_y_translation_thread.html">MusicWYTranslationThread</a></div><div class="ttdoc">The class of wangyi translation words thread. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d64/musicwytranslationthread_8h_source.html#l00027">musicwytranslationthread.h:27</a></div></div>
 <div class="ttc" id="class_music_translation_thread_abstract_html"><div class="ttname"><a href="../../d3/d05/class_music_translation_thread_abstract.html">MusicTranslationThreadAbstract</a></div><div class="ttdoc">The class of translation words abstract thread. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/db0/musictranslationthreadabstract_8h_source.html#l00027">musictranslationthreadabstract.h:27</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 5 2018 12:29:27 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 10:20:44 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

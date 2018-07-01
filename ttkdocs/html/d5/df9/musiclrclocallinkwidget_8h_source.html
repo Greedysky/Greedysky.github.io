@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.8.0</span>
+   &#160;<span id="projectnumber">2.7.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -106,79 +106,78 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../d5/d57/struct_music_local_data_item.html#ae1fcf0c4c7c0f5524bb5bc17900fd63d">   30</a></span>&#160;    QString <a class="code" href="../../d5/d57/struct_music_local_data_item.html#ae1fcf0c4c7c0f5524bb5bc17900fd63d">m_name</a>;</div>
 <div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../d5/d57/struct_music_local_data_item.html#acb8443d12c58c358380bb2cd9f8b9962">   31</a></span>&#160;    QString <a class="code" href="../../d5/d57/struct_music_local_data_item.html#acb8443d12c58c358380bb2cd9f8b9962">m_path</a>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}<a class="code" href="../../d5/df9/musiclrclocallinkwidget_8h.html#a4ff9cda5fbad11426967d7d96a590bca">MusicLocalDataItem</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<a class="code" href="../../da/d4e/musicglobal_8h.html#a4d238857fa9c278de1e80a4f427f6987">MUSIC_DECLARE_LISTS</a>(<a class="code" href="../../d5/d57/struct_music_local_data_item.html">MusicLocalDataItem</a>)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<a class="code" href="../../da/d4e/musicglobal_8h.html#a26874f3399a60d18f8f82ce4a546e0c9">TTK_DECLARE_LISTS</a>(<a class="code" href="../../d5/d57/struct_music_local_data_item.html">MusicLocalDataItem</a>)</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="../../d8/d6f/class_music_lrc_local_link_table_widget.html">   38</a></span>&#160;class MUSIC_LRC_EXPORT <a class="code" href="../../d8/d6f/class_music_lrc_local_link_table_widget.html">MusicLrcLocalLinkTableWidget</a> : public <a class="code" href="../../d1/dab/class_music_abstract_table_widget.html">MusicAbstractTableWidget</a></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d8/d6f/class_music_lrc_local_link_table_widget.html">MusicLrcLocalLinkTableWidget</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">static</span> QString getClassName();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">bool</span> contains(<span class="keyword">const</span> QString &amp;<span class="keywordtype">string</span>);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> createAllItems(<span class="keyword">const</span> MusicLocalDataItems &amp;items);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> listCellClicked(<span class="keywordtype">int</span> row, <span class="keywordtype">int</span> column) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d8/d6f/class_music_lrc_local_link_table_widget.html">MusicLrcLocalLinkTableWidget</a>)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d8/d6f/class_music_lrc_local_link_table_widget.html">MusicLrcLocalLinkTableWidget</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">bool</span> contains(<span class="keyword">const</span> QString &amp;<span class="keywordtype">string</span>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> createAllItems(<span class="keyword">const</span> MusicLocalDataItems &amp;items);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> listCellClicked(<span class="keywordtype">int</span> row, <span class="keywordtype">int</span> column) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dc/df0/namespace_ui.html">Ui</a> {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">class </span><a class="code" href="../../d2/d54/class_music_lrc_local_link_widget.html">MusicLrcLocalLinkWidget</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dc/df0/namespace_ui.html">Ui</a> {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">class </span><a class="code" href="../../d2/d54/class_music_lrc_local_link_widget.html">MusicLrcLocalLinkWidget</a>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="../../d2/d54/class_music_lrc_local_link_widget.html">   77</a></span>&#160;<span class="keyword">class </span>MUSIC_LRC_EXPORT <a class="code" href="../../d2/d54/class_music_lrc_local_link_widget.html">MusicLrcLocalLinkWidget</a> : <span class="keyword">public</span> <a class="code" href="../../da/db2/class_music_abstract_move_dialog.html">MusicAbstractMoveDialog</a></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d2/d54/class_music_lrc_local_link_widget.html">MusicLrcLocalLinkWidget</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d2/d54/class_music_lrc_local_link_widget.html">MusicLrcLocalLinkWidget</a>();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../da/db2/class_music_abstract_move_dialog.html#a5ffbeacd6e9d019df169bb0608564954">getClassName</a>();</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> setCurrentSongName(<span class="keyword">const</span> QString &amp;name);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> currentLrcChanged(<span class="keyword">const</span> QString &amp;data);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span> fuzzyStateChanged();</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">void</span> findInLocalFile();</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">void</span> deleteFoundLrc();</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">void</span> confirmButtonClicked();</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> exec();</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">void</span> searchInLocalMLrc();</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="../../d2/d54/class_music_lrc_local_link_widget.html#a05fba5ef2c499d0e7c572eb65a99f44d">  131</a></span>&#160;    QString <a class="code" href="../../d2/d54/class_music_lrc_local_link_widget.html#a05fba5ef2c499d0e7c572eb65a99f44d">m_currentName</a>;</div>
-<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="../../d2/d54/class_music_lrc_local_link_widget.html#a8c46236d974af13a29c6ccdb7da259a0">  132</a></span>&#160;    Ui::MusicLrcLocalLinkWidget *<a class="code" href="../../d2/d54/class_music_lrc_local_link_widget.html#a8c46236d974af13a29c6ccdb7da259a0">m_ui</a>;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;};</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#endif // MUSICLRCLOCALLINKWIDGET_H</span></div>
-<div class="ttc" id="class_music_lrc_local_link_widget_html"><div class="ttname"><a href="../../d2/d54/class_music_lrc_local_link_widget.html">MusicLrcLocalLinkWidget</a></div><div class="ttdoc">The class of the local lrc link widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/df9/musiclrclocallinkwidget_8h_source.html#l00077">musiclrclocallinkwidget.h:77</a></div></div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="../../d2/d54/class_music_lrc_local_link_widget.html">   73</a></span>&#160;<span class="keyword">class </span>MUSIC_LRC_EXPORT <a class="code" href="../../d2/d54/class_music_lrc_local_link_widget.html">MusicLrcLocalLinkWidget</a> : <span class="keyword">public</span> <a class="code" href="../../da/db2/class_music_abstract_move_dialog.html">MusicAbstractMoveDialog</a></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d2/d54/class_music_lrc_local_link_widget.html">MusicLrcLocalLinkWidget</a>)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d2/d54/class_music_lrc_local_link_widget.html">MusicLrcLocalLinkWidget</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d2/d54/class_music_lrc_local_link_widget.html">MusicLrcLocalLinkWidget</a>();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> setCurrentSongName(<span class="keyword">const</span> QString &amp;name);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> currentLrcChanged(<span class="keyword">const</span> QString &amp;data);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> fuzzyStateChanged();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> findInLocalFile();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> deleteFoundLrc();</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> confirmButtonClicked();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> exec();</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">void</span> searchInLocalMLrc();</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="../../d2/d54/class_music_lrc_local_link_widget.html#a05fba5ef2c499d0e7c572eb65a99f44d">  124</a></span>&#160;    QString <a class="code" href="../../d2/d54/class_music_lrc_local_link_widget.html#a05fba5ef2c499d0e7c572eb65a99f44d">m_currentName</a>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="../../d2/d54/class_music_lrc_local_link_widget.html#a8c46236d974af13a29c6ccdb7da259a0">  125</a></span>&#160;    Ui::MusicLrcLocalLinkWidget *<a class="code" href="../../d2/d54/class_music_lrc_local_link_widget.html#a8c46236d974af13a29c6ccdb7da259a0">m_ui</a>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;};</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#endif // MUSICLRCLOCALLINKWIDGET_H</span></div>
+<div class="ttc" id="class_music_lrc_local_link_widget_html"><div class="ttname"><a href="../../d2/d54/class_music_lrc_local_link_widget.html">MusicLrcLocalLinkWidget</a></div><div class="ttdoc">The class of the local lrc link widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/df9/musiclrclocallinkwidget_8h_source.html#l00073">musiclrclocallinkwidget.h:73</a></div></div>
 <div class="ttc" id="musicabstractmovedialog_8h_html"><div class="ttname"><a href="../../da/d49/musicabstractmovedialog_8h.html">musicabstractmovedialog.h</a></div></div>
 <div class="ttc" id="musiclrclocallinkwidget_8h_html_a4ff9cda5fbad11426967d7d96a590bca"><div class="ttname"><a href="../../d5/df9/musiclrclocallinkwidget_8h.html#a4ff9cda5fbad11426967d7d96a590bca">MusicLocalDataItem</a></div><div class="ttdeci">struct MUSIC_LRC_EXPORT MusicLocalDataItem MusicLocalDataItem</div><div class="ttdoc">The class of the local data item. </div></div>
-<div class="ttc" id="musicglobal_8h_html_a4d238857fa9c278de1e80a4f427f6987"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a4d238857fa9c278de1e80a4f427f6987">MUSIC_DECLARE_LISTS</a></div><div class="ttdeci">#define MUSIC_DECLARE_LISTS(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00098">musicglobal.h:98</a></div></div>
 <div class="ttc" id="musicabstracttablewidget_8h_html"><div class="ttname"><a href="../../da/db4/musicabstracttablewidget_8h.html">musicabstracttablewidget.h</a></div></div>
 <div class="ttc" id="namespace_ui_html"><div class="ttname"><a href="../../dc/df0/namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d24/musicapplication_8h_source.html#l00033">musicapplication.h:33</a></div></div>
 <div class="ttc" id="class_music_abstract_table_widget_html"><div class="ttname"><a href="../../d1/dab/class_music_abstract_table_widget.html">MusicAbstractTableWidget</a></div><div class="ttdoc">The class of the table widget base. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/db4/musicabstracttablewidget_8h_source.html#l00033">musicabstracttablewidget.h:33</a></div></div>
-<div class="ttc" id="class_music_lrc_local_link_widget_html_a05fba5ef2c499d0e7c572eb65a99f44d"><div class="ttname"><a href="../../d2/d54/class_music_lrc_local_link_widget.html#a05fba5ef2c499d0e7c572eb65a99f44d">MusicLrcLocalLinkWidget::m_currentName</a></div><div class="ttdeci">QString m_currentName</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/df9/musiclrclocallinkwidget_8h_source.html#l00131">musiclrclocallinkwidget.h:131</a></div></div>
-<div class="ttc" id="class_music_abstract_move_dialog_html_a5ffbeacd6e9d019df169bb0608564954"><div class="ttname"><a href="../../da/db2/class_music_abstract_move_dialog.html#a5ffbeacd6e9d019df169bb0608564954">MusicAbstractMoveDialog::getClassName</a></div><div class="ttdeci">static QString getClassName()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de8/musicabstractmovedialog_8cpp_source.html#l00038">musicabstractmovedialog.cpp:38</a></div></div>
-<div class="ttc" id="class_music_lrc_local_link_widget_html_a8c46236d974af13a29c6ccdb7da259a0"><div class="ttname"><a href="../../d2/d54/class_music_lrc_local_link_widget.html#a8c46236d974af13a29c6ccdb7da259a0">MusicLrcLocalLinkWidget::m_ui</a></div><div class="ttdeci">Ui::MusicLrcLocalLinkWidget * m_ui</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/df9/musiclrclocallinkwidget_8h_source.html#l00132">musiclrclocallinkwidget.h:132</a></div></div>
+<div class="ttc" id="class_music_lrc_local_link_widget_html_a05fba5ef2c499d0e7c572eb65a99f44d"><div class="ttname"><a href="../../d2/d54/class_music_lrc_local_link_widget.html#a05fba5ef2c499d0e7c572eb65a99f44d">MusicLrcLocalLinkWidget::m_currentName</a></div><div class="ttdeci">QString m_currentName</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/df9/musiclrclocallinkwidget_8h_source.html#l00124">musiclrclocallinkwidget.h:124</a></div></div>
+<div class="ttc" id="class_music_lrc_local_link_widget_html_a8c46236d974af13a29c6ccdb7da259a0"><div class="ttname"><a href="../../d2/d54/class_music_lrc_local_link_widget.html#a8c46236d974af13a29c6ccdb7da259a0">MusicLrcLocalLinkWidget::m_ui</a></div><div class="ttdeci">Ui::MusicLrcLocalLinkWidget * m_ui</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/df9/musiclrclocallinkwidget_8h_source.html#l00125">musiclrclocallinkwidget.h:125</a></div></div>
+<div class="ttc" id="musicglobal_8h_html_a26874f3399a60d18f8f82ce4a546e0c9"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a26874f3399a60d18f8f82ce4a546e0c9">TTK_DECLARE_LISTS</a></div><div class="ttdeci">#define TTK_DECLARE_LISTS(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00131">musicglobal.h:131</a></div></div>
 <div class="ttc" id="class_music_lrc_local_link_table_widget_html"><div class="ttname"><a href="../../d8/d6f/class_music_lrc_local_link_table_widget.html">MusicLrcLocalLinkTableWidget</a></div><div class="ttdoc">The class of the local lrc link table widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/df9/musiclrclocallinkwidget_8h_source.html#l00038">musiclrclocallinkwidget.h:38</a></div></div>
 <div class="ttc" id="struct_music_local_data_item_html_acb8443d12c58c358380bb2cd9f8b9962"><div class="ttname"><a href="../../d5/d57/struct_music_local_data_item.html#acb8443d12c58c358380bb2cd9f8b9962">MusicLocalDataItem::m_path</a></div><div class="ttdeci">QString m_path</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/df9/musiclrclocallinkwidget_8h_source.html#l00031">musiclrclocallinkwidget.h:31</a></div></div>
 <div class="ttc" id="class_music_abstract_move_dialog_html"><div class="ttname"><a href="../../da/db2/class_music_abstract_move_dialog.html">MusicAbstractMoveDialog</a></div><div class="ttdoc">The class of the moving dialog base. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d49/musicabstractmovedialog_8h_source.html#l00029">musicabstractmovedialog.h:29</a></div></div>
 <div class="ttc" id="struct_music_local_data_item_html_ae1fcf0c4c7c0f5524bb5bc17900fd63d"><div class="ttname"><a href="../../d5/d57/struct_music_local_data_item.html#ae1fcf0c4c7c0f5524bb5bc17900fd63d">MusicLocalDataItem::m_name</a></div><div class="ttdeci">QString m_name</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/df9/musiclrclocallinkwidget_8h_source.html#l00030">musiclrclocallinkwidget.h:30</a></div></div>
 <div class="ttc" id="struct_music_local_data_item_html"><div class="ttname"><a href="../../d5/d57/struct_music_local_data_item.html">MusicLocalDataItem</a></div><div class="ttdoc">The class of the local data item. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/df9/musiclrclocallinkwidget_8h_source.html#l00028">musiclrclocallinkwidget.h:28</a></div></div>
+<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00113">musicglobal.h:113</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 5 2018 12:29:28 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 10:20:46 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

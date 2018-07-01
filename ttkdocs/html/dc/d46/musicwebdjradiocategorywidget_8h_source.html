@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.8.0</span>
+   &#160;<span id="projectnumber">2.7.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -107,73 +107,71 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../da/d4b/class_music_web_d_j_radio_category_item_widget.html">   31</a></span>&#160;<span class="keyword">class </span>MUSIC_TOOL_EXPORT <a class="code" href="../../da/d4b/class_music_web_d_j_radio_category_item_widget.html">MusicWebDJRadioCategoryItemWidget</a> : <span class="keyword">public</span> <a class="code" href="../../d1/db0/class_music_clicked_label.html">MusicClickedLabel</a></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../da/d4b/class_music_web_d_j_radio_category_item_widget.html">MusicWebDJRadioCategoryItemWidget</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    ~<a class="code" href="../../da/d4b/class_music_web_d_j_radio_category_item_widget.html">MusicWebDJRadioCategoryItemWidget</a>();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../d1/db0/class_music_clicked_label.html#a00aa1c897c01afcf4266bab9fb8ba016">getClassName</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> setMusicResultsItem(<span class="keyword">const</span> <a class="code" href="../../d8/d62/struct_music_results_item.html">MusicResultsItem</a> &amp;item);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> currentItemClicked(<span class="keyword">const</span> <a class="code" href="../../d8/d62/struct_music_results_item.html">MusicResultsItem</a> &amp;item);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> downLoadFinished(<span class="keyword">const</span> QByteArray &amp;data);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> currentItemClicked();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../da/d4b/class_music_web_d_j_radio_category_item_widget.html">MusicWebDJRadioCategoryItemWidget</a>)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../da/d4b/class_music_web_d_j_radio_category_item_widget.html">MusicWebDJRadioCategoryItemWidget</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    ~<a class="code" href="../../da/d4b/class_music_web_d_j_radio_category_item_widget.html">MusicWebDJRadioCategoryItemWidget</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> setMusicResultsItem(<span class="keyword">const</span> <a class="code" href="../../d8/d62/struct_music_results_item.html">MusicResultsItem</a> &amp;item);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> currentItemClicked(<span class="keyword">const</span> <a class="code" href="../../d8/d62/struct_music_results_item.html">MusicResultsItem</a> &amp;item);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> downLoadFinished(<span class="keyword">const</span> QByteArray &amp;data);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> currentItemClicked();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="../../da/d4b/class_music_web_d_j_radio_category_item_widget.html#a6dd3ea41898e0fea61ea86e9b17e0df0">   65</a></span>&#160;    QLabel *m_iconLabel, *<a class="code" href="../../da/d4b/class_music_web_d_j_radio_category_item_widget.html#a6dd3ea41898e0fea61ea86e9b17e0df0">m_nameLabel</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="../../da/d4b/class_music_web_d_j_radio_category_item_widget.html#abb6ecd59342418a9d608f02dd5fce2b8">   66</a></span>&#160;    <a class="code" href="../../d8/d62/struct_music_results_item.html">MusicResultsItem</a> <a class="code" href="../../da/d4b/class_music_web_d_j_radio_category_item_widget.html#abb6ecd59342418a9d608f02dd5fce2b8">m_itemData</a>;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="../../da/d4b/class_music_web_d_j_radio_category_item_widget.html#a6dd3ea41898e0fea61ea86e9b17e0df0">   69</a></span>&#160;    QLabel *m_iconLabel, *<a class="code" href="../../da/d4b/class_music_web_d_j_radio_category_item_widget.html#a6dd3ea41898e0fea61ea86e9b17e0df0">m_nameLabel</a>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="../../da/d4b/class_music_web_d_j_radio_category_item_widget.html#abb6ecd59342418a9d608f02dd5fce2b8">   70</a></span>&#160;    <a class="code" href="../../d8/d62/struct_music_results_item.html">MusicResultsItem</a> <a class="code" href="../../da/d4b/class_music_web_d_j_radio_category_item_widget.html#abb6ecd59342418a9d608f02dd5fce2b8">m_itemData</a>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="../../d9/d85/class_music_web_d_j_radio_category_widget.html">   78</a></span>&#160;<span class="keyword">class </span>MUSIC_TOOL_EXPORT <a class="code" href="../../d9/d85/class_music_web_d_j_radio_category_widget.html">MusicWebDJRadioCategoryWidget</a> : <span class="keyword">public</span> QWidget</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d9/d85/class_music_web_d_j_radio_category_widget.html">MusicWebDJRadioCategoryWidget</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d9/d85/class_music_web_d_j_radio_category_widget.html">MusicWebDJRadioCategoryWidget</a>();</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">static</span> QString getClassName();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> init();</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> resizeWindow();</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span> currentCategoryClicked(<span class="keyword">const</span> <a class="code" href="../../d8/d62/struct_music_results_item.html">MusicResultsItem</a> &amp;item);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> createCategoryItems();</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="../../d9/d85/class_music_web_d_j_radio_category_widget.html#ab9b89779a0ee445af4bff6dff113cf14">  116</a></span>&#160;    QGridLayout *<a class="code" href="../../d9/d85/class_music_web_d_j_radio_category_widget.html#ab9b89779a0ee445af4bff6dff113cf14">m_gridLayout</a>;</div>
-<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="../../d9/d85/class_music_web_d_j_radio_category_widget.html#acb11d00239f1bf72d42b89f65762ad43">  117</a></span>&#160;    QList&lt;QLabel*&gt; <a class="code" href="../../d9/d85/class_music_web_d_j_radio_category_widget.html#acb11d00239f1bf72d42b89f65762ad43">m_resizeWidgets</a>;</div>
-<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="../../d9/d85/class_music_web_d_j_radio_category_widget.html#a3cd006a3f67bed66896b72de0955f478">  118</a></span>&#160;    <a class="code" href="../../d5/d47/class_music_d_j_radio_category_thread.html">MusicDJRadioCategoryThread</a> *<a class="code" href="../../d9/d85/class_music_web_d_j_radio_category_widget.html#a3cd006a3f67bed66896b72de0955f478">m_categoryThread</a>;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;};</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif // MUSICWEBDJRADIOCATEGORYWIDGET_H</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="../../d9/d85/class_music_web_d_j_radio_category_widget.html">   74</a></span>&#160;<span class="keyword">class </span>MUSIC_TOOL_EXPORT <a class="code" href="../../d9/d85/class_music_web_d_j_radio_category_widget.html">MusicWebDJRadioCategoryWidget</a> : <span class="keyword">public</span> QWidget</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d9/d85/class_music_web_d_j_radio_category_widget.html">MusicWebDJRadioCategoryWidget</a>)</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d9/d85/class_music_web_d_j_radio_category_widget.html">MusicWebDJRadioCategoryWidget</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d9/d85/class_music_web_d_j_radio_category_widget.html">MusicWebDJRadioCategoryWidget</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> init();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> resizeWindow();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> currentCategoryClicked(<span class="keyword">const</span> <a class="code" href="../../d8/d62/struct_music_results_item.html">MusicResultsItem</a> &amp;item);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> createCategoryItems();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="../../d9/d85/class_music_web_d_j_radio_category_widget.html#ab9b89779a0ee445af4bff6dff113cf14">  108</a></span>&#160;    QGridLayout *<a class="code" href="../../d9/d85/class_music_web_d_j_radio_category_widget.html#ab9b89779a0ee445af4bff6dff113cf14">m_gridLayout</a>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="../../d9/d85/class_music_web_d_j_radio_category_widget.html#acb11d00239f1bf72d42b89f65762ad43">  109</a></span>&#160;    QList&lt;QLabel*&gt; <a class="code" href="../../d9/d85/class_music_web_d_j_radio_category_widget.html#acb11d00239f1bf72d42b89f65762ad43">m_resizeWidgets</a>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="../../d9/d85/class_music_web_d_j_radio_category_widget.html#a3cd006a3f67bed66896b72de0955f478">  110</a></span>&#160;    <a class="code" href="../../d5/d47/class_music_d_j_radio_category_thread.html">MusicDJRadioCategoryThread</a> *<a class="code" href="../../d9/d85/class_music_web_d_j_radio_category_widget.html#a3cd006a3f67bed66896b72de0955f478">m_categoryThread</a>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;};</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif // MUSICWEBDJRADIOCATEGORYWIDGET_H</span></div>
 <div class="ttc" id="class_music_d_j_radio_category_thread_html"><div class="ttname"><a href="../../d5/d47/class_music_d_j_radio_category_thread.html">MusicDJRadioCategoryThread</a></div><div class="ttdoc">The class of music dj radio category thread. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d37/musicdjradiocategorythread_8h_source.html#l00027">musicdjradiocategorythread.h:27</a></div></div>
-<div class="ttc" id="class_music_web_d_j_radio_category_widget_html_a3cd006a3f67bed66896b72de0955f478"><div class="ttname"><a href="../../d9/d85/class_music_web_d_j_radio_category_widget.html#a3cd006a3f67bed66896b72de0955f478">MusicWebDJRadioCategoryWidget::m_categoryThread</a></div><div class="ttdeci">MusicDJRadioCategoryThread * m_categoryThread</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d46/musicwebdjradiocategorywidget_8h_source.html#l00118">musicwebdjradiocategorywidget.h:118</a></div></div>
+<div class="ttc" id="class_music_web_d_j_radio_category_widget_html_a3cd006a3f67bed66896b72de0955f478"><div class="ttname"><a href="../../d9/d85/class_music_web_d_j_radio_category_widget.html#a3cd006a3f67bed66896b72de0955f478">MusicWebDJRadioCategoryWidget::m_categoryThread</a></div><div class="ttdeci">MusicDJRadioCategoryThread * m_categoryThread</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d46/musicwebdjradiocategorywidget_8h_source.html#l00110">musicwebdjradiocategorywidget.h:110</a></div></div>
 <div class="ttc" id="class_music_web_d_j_radio_category_item_widget_html"><div class="ttname"><a href="../../da/d4b/class_music_web_d_j_radio_category_item_widget.html">MusicWebDJRadioCategoryItemWidget</a></div><div class="ttdoc">The class of music dj radio category item widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d46/musicwebdjradiocategorywidget_8h_source.html#l00031">musicwebdjradiocategorywidget.h:31</a></div></div>
-<div class="ttc" id="class_music_web_d_j_radio_category_widget_html_acb11d00239f1bf72d42b89f65762ad43"><div class="ttname"><a href="../../d9/d85/class_music_web_d_j_radio_category_widget.html#acb11d00239f1bf72d42b89f65762ad43">MusicWebDJRadioCategoryWidget::m_resizeWidgets</a></div><div class="ttdeci">QList&lt; QLabel * &gt; m_resizeWidgets</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d46/musicwebdjradiocategorywidget_8h_source.html#l00117">musicwebdjradiocategorywidget.h:117</a></div></div>
-<div class="ttc" id="class_music_web_d_j_radio_category_item_widget_html_abb6ecd59342418a9d608f02dd5fce2b8"><div class="ttname"><a href="../../da/d4b/class_music_web_d_j_radio_category_item_widget.html#abb6ecd59342418a9d608f02dd5fce2b8">MusicWebDJRadioCategoryItemWidget::m_itemData</a></div><div class="ttdeci">MusicResultsItem m_itemData</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d46/musicwebdjradiocategorywidget_8h_source.html#l00070">musicwebdjradiocategorywidget.h:70</a></div></div>
-<div class="ttc" id="class_music_clicked_label_html_a00aa1c897c01afcf4266bab9fb8ba016"><div class="ttname"><a href="../../d1/db0/class_music_clicked_label.html#a00aa1c897c01afcf4266bab9fb8ba016">MusicClickedLabel::getClassName</a></div><div class="ttdeci">static QString getClassName()</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/df5/musicclickedlabel_8cpp_source.html#l00017">musicclickedlabel.cpp:17</a></div></div>
-<div class="ttc" id="class_music_web_d_j_radio_category_item_widget_html_a6dd3ea41898e0fea61ea86e9b17e0df0"><div class="ttname"><a href="../../da/d4b/class_music_web_d_j_radio_category_item_widget.html#a6dd3ea41898e0fea61ea86e9b17e0df0">MusicWebDJRadioCategoryItemWidget::m_nameLabel</a></div><div class="ttdeci">QLabel * m_nameLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d46/musicwebdjradiocategorywidget_8h_source.html#l00069">musicwebdjradiocategorywidget.h:69</a></div></div>
-<div class="ttc" id="class_music_web_d_j_radio_category_widget_html"><div class="ttname"><a href="../../d9/d85/class_music_web_d_j_radio_category_widget.html">MusicWebDJRadioCategoryWidget</a></div><div class="ttdoc">The class of music dj radio category widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d46/musicwebdjradiocategorywidget_8h_source.html#l00078">musicwebdjradiocategorywidget.h:78</a></div></div>
+<div class="ttc" id="class_music_web_d_j_radio_category_widget_html_acb11d00239f1bf72d42b89f65762ad43"><div class="ttname"><a href="../../d9/d85/class_music_web_d_j_radio_category_widget.html#acb11d00239f1bf72d42b89f65762ad43">MusicWebDJRadioCategoryWidget::m_resizeWidgets</a></div><div class="ttdeci">QList&lt; QLabel * &gt; m_resizeWidgets</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d46/musicwebdjradiocategorywidget_8h_source.html#l00109">musicwebdjradiocategorywidget.h:109</a></div></div>
+<div class="ttc" id="class_music_web_d_j_radio_category_item_widget_html_abb6ecd59342418a9d608f02dd5fce2b8"><div class="ttname"><a href="../../da/d4b/class_music_web_d_j_radio_category_item_widget.html#abb6ecd59342418a9d608f02dd5fce2b8">MusicWebDJRadioCategoryItemWidget::m_itemData</a></div><div class="ttdeci">MusicResultsItem m_itemData</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d46/musicwebdjradiocategorywidget_8h_source.html#l00066">musicwebdjradiocategorywidget.h:66</a></div></div>
+<div class="ttc" id="class_music_web_d_j_radio_category_item_widget_html_a6dd3ea41898e0fea61ea86e9b17e0df0"><div class="ttname"><a href="../../da/d4b/class_music_web_d_j_radio_category_item_widget.html#a6dd3ea41898e0fea61ea86e9b17e0df0">MusicWebDJRadioCategoryItemWidget::m_nameLabel</a></div><div class="ttdeci">QLabel * m_nameLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d46/musicwebdjradiocategorywidget_8h_source.html#l00065">musicwebdjradiocategorywidget.h:65</a></div></div>
+<div class="ttc" id="class_music_web_d_j_radio_category_widget_html"><div class="ttname"><a href="../../d9/d85/class_music_web_d_j_radio_category_widget.html">MusicWebDJRadioCategoryWidget</a></div><div class="ttdoc">The class of music dj radio category widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d46/musicwebdjradiocategorywidget_8h_source.html#l00074">musicwebdjradiocategorywidget.h:74</a></div></div>
 <div class="ttc" id="class_music_clicked_label_html"><div class="ttname"><a href="../../d1/db0/class_music_clicked_label.html">MusicClickedLabel</a></div><div class="ttdoc">The class of the label widget that can click. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d22/musicclickedlabel_8h_source.html#l00028">musicclickedlabel.h:28</a></div></div>
+<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00113">musicglobal.h:113</a></div></div>
 <div class="ttc" id="musicfoundabstractwidget_8h_html"><div class="ttname"><a href="../../d6/d01/musicfoundabstractwidget_8h.html">musicfoundabstractwidget.h</a></div></div>
-<div class="ttc" id="class_music_web_d_j_radio_category_widget_html_ab9b89779a0ee445af4bff6dff113cf14"><div class="ttname"><a href="../../d9/d85/class_music_web_d_j_radio_category_widget.html#ab9b89779a0ee445af4bff6dff113cf14">MusicWebDJRadioCategoryWidget::m_gridLayout</a></div><div class="ttdeci">QGridLayout * m_gridLayout</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d46/musicwebdjradiocategorywidget_8h_source.html#l00116">musicwebdjradiocategorywidget.h:116</a></div></div>
+<div class="ttc" id="class_music_web_d_j_radio_category_widget_html_ab9b89779a0ee445af4bff6dff113cf14"><div class="ttname"><a href="../../d9/d85/class_music_web_d_j_radio_category_widget.html#ab9b89779a0ee445af4bff6dff113cf14">MusicWebDJRadioCategoryWidget::m_gridLayout</a></div><div class="ttdeci">QGridLayout * m_gridLayout</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d46/musicwebdjradiocategorywidget_8h_source.html#l00108">musicwebdjradiocategorywidget.h:108</a></div></div>
 <div class="ttc" id="struct_music_results_item_html"><div class="ttname"><a href="../../d8/d62/struct_music_results_item.html">MusicResultsItem</a></div><div class="ttdoc">The class of the search song results data item. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00051">musicdownloadquerythreadabstract.h:51</a></div></div>
 <div class="ttc" id="musicclickedlabel_8h_html"><div class="ttname"><a href="../../da/d22/musicclickedlabel_8h.html">musicclickedlabel.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 5 2018 12:29:29 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 10:20:47 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.8.0</span>
+   &#160;<span id="projectnumber">2.7.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -99,7 +99,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> ================================================= */</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;QtNetwork/QNetworkReply&gt;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/d85/musicprivate_8h.html">musicprivate.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dd/d24/ttkprivate_8h.html">ttkprivate.h</a>&quot;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/de6/musicextrasglobaldefine_8h.html">musicextrasglobaldefine.h</a>&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">class </span><a class="code" href="../../d6/d89/class_q_n_simple_upload_data_private.html">QNSimpleUploadDataPrivate</a>;</div>
@@ -111,34 +111,36 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../dd/df7/class_q_n_simple_upload_data.html">QNSimpleUploadData</a>(QNetworkAccessManager *networkManager,</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                QObject *parent = 0);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> uploadDataToServer(<span class="keyword">const</span> QByteArray &amp;data, <span class="keyword">const</span> QString &amp;bucket,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> uploadDataToServer(<span class="keyword">const</span> QString &amp;time, <span class="keyword">const</span> QByteArray &amp;data, <span class="keyword">const</span> QString &amp;bucket,</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                            <span class="keyword">const</span> QString &amp;<a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>, <span class="keyword">const</span> QString &amp;name);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    QString getDownloadUrl(<span class="keyword">const</span> QString &amp;domain, <span class="keyword">const</span> QString &amp;key);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> uploadFileFinished(<span class="keyword">const</span> QString &amp;name);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">private</span> Q_SLOTS:</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> receiveDataFromServer();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> handleError(QNetworkReply::NetworkError error);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="../../d9/d85/musicprivate_8h.html#ac1baeedf9b10976e3c21a965868df1f5">MUSIC_DECLARE_PRIVATE</a>(<a class="code" href="../../dd/df7/class_q_n_simple_upload_data.html">QNSimpleUploadData</a>)</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif // QNSIMPLEUPLOADDATA_H</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> uploadFileFinished(<span class="keyword">const</span> QString &amp;time);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> uploadProgressChanged(<span class="keyword">const</span> QString &amp;time, qint64 bytesSent, qint64 bytesTotal);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">private</span> Q_SLOTS:</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> receiveDataFromServer();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> handleError(QNetworkReply::NetworkError error);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> uploadProgress(qint64 bytesSent, qint64 bytesTotal);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="../../dd/d24/ttkprivate_8h.html#a6a4c0fd17818d8e869c93fa7155c9dc4">TTK_DECLARE_PRIVATE</a>(<a class="code" href="../../dd/df7/class_q_n_simple_upload_data.html">QNSimpleUploadData</a>)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif // QNSIMPLEUPLOADDATA_H</span></div>
 <div class="ttc" id="musiclrcfromkrc_8cpp_html_ad706e4249347c1cd1381934a5691137d"><div class="ttname"><a href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a></div><div class="ttdeci">const wchar_t key[]</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d45/musiclrcfromkrc_8cpp_source.html#l00017">musiclrcfromkrc.cpp:17</a></div></div>
-<div class="ttc" id="musicprivate_8h_html_ac1baeedf9b10976e3c21a965868df1f5"><div class="ttname"><a href="../../d9/d85/musicprivate_8h.html#ac1baeedf9b10976e3c21a965868df1f5">MUSIC_DECLARE_PRIVATE</a></div><div class="ttdeci">#define MUSIC_DECLARE_PRIVATE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d85/musicprivate_8h_source.html#l00023">musicprivate.h:23</a></div></div>
 <div class="ttc" id="class_q_n_simple_upload_data_html"><div class="ttname"><a href="../../dd/df7/class_q_n_simple_upload_data.html">QNSimpleUploadData</a></div><div class="ttdoc">The namespace of the qiniu simple upload data. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dfd/qnsimpleuploaddata_8h_source.html#l00031">qnsimpleuploaddata.h:31</a></div></div>
-<div class="ttc" id="musicprivate_8h_html"><div class="ttname"><a href="../../d9/d85/musicprivate_8h.html">musicprivate.h</a></div></div>
+<div class="ttc" id="ttkprivate_8h_html_a6a4c0fd17818d8e869c93fa7155c9dc4"><div class="ttname"><a href="../../dd/d24/ttkprivate_8h.html#a6a4c0fd17818d8e869c93fa7155c9dc4">TTK_DECLARE_PRIVATE</a></div><div class="ttdeci">#define TTK_DECLARE_PRIVATE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00023">ttkprivate.h:23</a></div></div>
 <div class="ttc" id="class_q_n_simple_upload_data_private_html"><div class="ttname"><a href="../../d6/d89/class_q_n_simple_upload_data_private.html">QNSimpleUploadDataPrivate</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d1f/qnsimpleuploaddata_8cpp_source.html#l00013">qnsimpleuploaddata.cpp:13</a></div></div>
 <div class="ttc" id="musicextrasglobaldefine_8h_html"><div class="ttname"><a href="../../d3/de6/musicextrasglobaldefine_8h.html">musicextrasglobaldefine.h</a></div></div>
 <div class="ttc" id="musicextrasglobaldefine_8h_html_a26f6db0b4db801cc546e000e046a2845"><div class="ttname"><a href="../../d3/de6/musicextrasglobaldefine_8h.html#a26f6db0b4db801cc546e000e046a2845">MUSIC_EXTRAS_EXPORT</a></div><div class="ttdeci">#define MUSIC_EXTRAS_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/de6/musicextrasglobaldefine_8h_source.html#l00031">musicextrasglobaldefine.h:31</a></div></div>
+<div class="ttc" id="ttkprivate_8h_html"><div class="ttname"><a href="../../dd/d24/ttkprivate_8h.html">ttkprivate.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 5 2018 12:29:31 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 10:20:51 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

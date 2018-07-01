@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.8.0</span>
+   &#160;<span id="projectnumber">2.7.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -81,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;qjson/parser.h&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="../../d9/d77/class_q_n_put_ret_private.html">    5</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d9/d77/class_q_n_put_ret_private.html">QNPutRetPrivate</a> : <span class="keyword">public</span> <a class="code" href="../../de/d9e/class_music_private.html">MusicPrivate</a>&lt;QNPutRet&gt;</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="../../d9/d77/class_q_n_put_ret_private.html">    5</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d9/d77/class_q_n_put_ret_private.html">QNPutRetPrivate</a> : <span class="keyword">public</span> <a class="code" href="../../d1/d29/class_t_t_k_private.html">TTKPrivate</a>&lt;QNPutRet&gt;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="../../d9/d77/class_q_n_put_ret_private.html#a0a877003f946e8371cca759ccd51f42a">QNPutRetPrivate</a>();</div>
@@ -97,7 +97,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../da/d0e/class_q_n_put_ret.html#ac9bc27c4ebb49a2e3917af25c23f1d65">   22</a></span>&#160;<a class="code" href="../../da/d0e/class_q_n_put_ret.html#ac9bc27c4ebb49a2e3917af25c23f1d65">QNPutRet::QNPutRet</a>()</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="../../d9/d85/musicprivate_8h.html#ab79df3e70bf1a795d99ea1dd3c8dd68c">MUSIC_INIT_PRIVATE</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="../../dd/d24/ttkprivate_8h.html#a16e697408c6ce0f129db3559d3a79514">TTK_INIT_PRIVATE</a>;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
 <div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../da/d0e/class_q_n_put_ret.html#ada53bcb06843e8b00a704c5cf2688fc9">   27</a></span>&#160;<a class="code" href="../../da/d0e/class_q_n_put_ret.html">QNPutRet</a>* <a class="code" href="../../da/d0e/class_q_n_put_ret.html#ada53bcb06843e8b00a704c5cf2688fc9">QNPutRet::fromJSON</a>(<span class="keyword">const</span> QByteArray &amp;jsonData)</div>
@@ -117,35 +117,33 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../da/d0e/class_q_n_put_ret.html#a0f86340bdbb25206db5719501e97bad1">   42</a></span>&#160;QString <a class="code" href="../../da/d0e/class_q_n_put_ret.html#a0f86340bdbb25206db5719501e97bad1">QNPutRet::getHash</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="../../d9/d85/musicprivate_8h.html#a45cec4ed72299c88941a1b165d6c512d">MUSIC_D</a>(<a class="code" href="../../da/d0e/class_q_n_put_ret.html">QNPutRet</a>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="../../dd/d24/ttkprivate_8h.html#a8eedd09c47b53d5e42ca132295c5e1ef">TTK_D</a>(<a class="code" href="../../da/d0e/class_q_n_put_ret.html">QNPutRet</a>);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> d-&gt;m_hash;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
 <div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="../../da/d0e/class_q_n_put_ret.html#a03c872735fae1d49c3450d2b605c8056">   48</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../da/d0e/class_q_n_put_ret.html#a03c872735fae1d49c3450d2b605c8056">QNPutRet::setHash</a>(<span class="keyword">const</span> QString &amp;value)</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="../../d9/d85/musicprivate_8h.html#a45cec4ed72299c88941a1b165d6c512d">MUSIC_D</a>(<a class="code" href="../../da/d0e/class_q_n_put_ret.html">QNPutRet</a>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="../../dd/d24/ttkprivate_8h.html#a8eedd09c47b53d5e42ca132295c5e1ef">TTK_D</a>(<a class="code" href="../../da/d0e/class_q_n_put_ret.html">QNPutRet</a>);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    d-&gt;m_hash = value;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="../../da/d0e/class_q_n_put_ret.html#a2ed903ed6d9676ba9db84d35981d9379">   54</a></span>&#160;QString <a class="code" href="../../da/d0e/class_q_n_put_ret.html#a2ed903ed6d9676ba9db84d35981d9379">QNPutRet::getKey</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="../../d9/d85/musicprivate_8h.html#a45cec4ed72299c88941a1b165d6c512d">MUSIC_D</a>(<a class="code" href="../../da/d0e/class_q_n_put_ret.html">QNPutRet</a>);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="../../dd/d24/ttkprivate_8h.html#a8eedd09c47b53d5e42ca132295c5e1ef">TTK_D</a>(<a class="code" href="../../da/d0e/class_q_n_put_ret.html">QNPutRet</a>);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> d-&gt;m_key;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="../../da/d0e/class_q_n_put_ret.html#ae159e5b850e48e895d3b5bafd9ca12ca">   60</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../da/d0e/class_q_n_put_ret.html#ae159e5b850e48e895d3b5bafd9ca12ca">QNPutRet::setKey</a>(<span class="keyword">const</span> QString &amp;value)</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="../../d9/d85/musicprivate_8h.html#a45cec4ed72299c88941a1b165d6c512d">MUSIC_D</a>(<a class="code" href="../../da/d0e/class_q_n_put_ret.html">QNPutRet</a>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="../../dd/d24/ttkprivate_8h.html#a8eedd09c47b53d5e42ca132295c5e1ef">TTK_D</a>(<a class="code" href="../../da/d0e/class_q_n_put_ret.html">QNPutRet</a>);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    d-&gt;m_key = value;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
-<div class="ttc" id="musicprivate_8h_html_ab79df3e70bf1a795d99ea1dd3c8dd68c"><div class="ttname"><a href="../../d9/d85/musicprivate_8h.html#ab79df3e70bf1a795d99ea1dd3c8dd68c">MUSIC_INIT_PRIVATE</a></div><div class="ttdeci">#define MUSIC_INIT_PRIVATE</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d85/musicprivate_8h_source.html#l00030">musicprivate.h:30</a></div></div>
 <div class="ttc" id="class_q_n_put_ret_html_a03c872735fae1d49c3450d2b605c8056"><div class="ttname"><a href="../../da/d0e/class_q_n_put_ret.html#a03c872735fae1d49c3450d2b605c8056">QNPutRet::setHash</a></div><div class="ttdeci">void setHash(const QString &amp;value)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/de2/qnputret_8cpp_source.html#l00048">qnputret.cpp:48</a></div></div>
 <div class="ttc" id="class_q_n_put_ret_private_html_a8d27678402429001690f16e593dd0178"><div class="ttname"><a href="../../d9/d77/class_q_n_put_ret_private.html#a8d27678402429001690f16e593dd0178">QNPutRetPrivate::m_hash</a></div><div class="ttdeci">QString m_hash</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/de2/qnputret_8cpp_source.html#l00010">qnputret.cpp:10</a></div></div>
 <div class="ttc" id="class_q_n_put_ret_html_ae159e5b850e48e895d3b5bafd9ca12ca"><div class="ttname"><a href="../../da/d0e/class_q_n_put_ret.html#ae159e5b850e48e895d3b5bafd9ca12ca">QNPutRet::setKey</a></div><div class="ttdeci">void setKey(const QString &amp;value)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/de2/qnputret_8cpp_source.html#l00060">qnputret.cpp:60</a></div></div>
 <div class="ttc" id="class_q_n_put_ret_private_html_afb74dc7d0171c6e601493c2174257f16"><div class="ttname"><a href="../../d9/d77/class_q_n_put_ret_private.html#afb74dc7d0171c6e601493c2174257f16">QNPutRetPrivate::m_error</a></div><div class="ttdeci">QString m_error</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/de2/qnputret_8cpp_source.html#l00010">qnputret.cpp:10</a></div></div>
 <div class="ttc" id="class_q_n_put_ret_html"><div class="ttname"><a href="../../da/d0e/class_q_n_put_ret.html">QNPutRet</a></div><div class="ttdoc">The namespace of the qiniu put return. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d5b/qnputret_8h_source.html#l00031">qnputret.h:31</a></div></div>
-<div class="ttc" id="class_music_private_html"><div class="ttname"><a href="../../de/d9e/class_music_private.html">MusicPrivate</a></div><div class="ttdoc">The class of the music private base. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d85/musicprivate_8h_source.html#l00040">musicprivate.h:40</a></div></div>
-<div class="ttc" id="musicprivate_8h_html_a45cec4ed72299c88941a1b165d6c512d"><div class="ttname"><a href="../../d9/d85/musicprivate_8h.html#a45cec4ed72299c88941a1b165d6c512d">MUSIC_D</a></div><div class="ttdeci">#define MUSIC_D(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d85/musicprivate_8h_source.html#l00033">musicprivate.h:33</a></div></div>
+<div class="ttc" id="ttkprivate_8h_html_a16e697408c6ce0f129db3559d3a79514"><div class="ttname"><a href="../../dd/d24/ttkprivate_8h.html#a16e697408c6ce0f129db3559d3a79514">TTK_INIT_PRIVATE</a></div><div class="ttdeci">#define TTK_INIT_PRIVATE</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00030">ttkprivate.h:30</a></div></div>
 <div class="ttc" id="class_q_json_1_1_parser_html_a9d57257adc3638a8b992cf4dc39a30bf"><div class="ttname"><a href="../../d0/dfe/class_q_json_1_1_parser.html#a9d57257adc3638a8b992cf4dc39a30bf">QJson::Parser::parse</a></div><div class="ttdeci">QVariant parse(QIODevice *io, bool *ok=0)</div><div class="ttdoc">Read JSON string from the I/O Device and converts it to a QVariant object. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/ddd/parser_8cpp_source.html#l00069">parser.cpp:69</a></div></div>
 <div class="ttc" id="class_q_n_put_ret_private_html_a0a877003f946e8371cca759ccd51f42a"><div class="ttname"><a href="../../d9/d77/class_q_n_put_ret_private.html#a0a877003f946e8371cca759ccd51f42a">QNPutRetPrivate::QNPutRetPrivate</a></div><div class="ttdeci">QNPutRetPrivate()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/de2/qnputret_8cpp_source.html#l00014">qnputret.cpp:14</a></div></div>
 <div class="ttc" id="class_q_n_put_ret_html_a2ed903ed6d9676ba9db84d35981d9379"><div class="ttname"><a href="../../da/d0e/class_q_n_put_ret.html#a2ed903ed6d9676ba9db84d35981d9379">QNPutRet::getKey</a></div><div class="ttdeci">QString getKey() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/de2/qnputret_8cpp_source.html#l00054">qnputret.cpp:54</a></div></div>
@@ -155,11 +153,13 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_q_n_put_ret_private_html_a6542b5743d18a57733bd907204c712cf"><div class="ttname"><a href="../../d9/d77/class_q_n_put_ret_private.html#a6542b5743d18a57733bd907204c712cf">QNPutRetPrivate::m_key</a></div><div class="ttdeci">QString m_key</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/de2/qnputret_8cpp_source.html#l00010">qnputret.cpp:10</a></div></div>
 <div class="ttc" id="class_q_n_put_ret_private_html"><div class="ttname"><a href="../../d9/d77/class_q_n_put_ret_private.html">QNPutRetPrivate</a></div><div class="ttdoc">QJson import. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/de2/qnputret_8cpp_source.html#l00005">qnputret.cpp:5</a></div></div>
 <div class="ttc" id="class_q_json_1_1_parser_html"><div class="ttname"><a href="../../d0/dfe/class_q_json_1_1_parser.html">QJson::Parser</a></div><div class="ttdoc">Main class used to convert JSON data to QVariant objects. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d36/parser_8h_source.html#l00042">parser.h:42</a></div></div>
+<div class="ttc" id="class_t_t_k_private_html"><div class="ttname"><a href="../../d1/d29/class_t_t_k_private.html">TTKPrivate</a></div><div class="ttdoc">The class of the ttk private base. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00040">ttkprivate.h:40</a></div></div>
 <div class="ttc" id="class_q_n_put_ret_html_a0f86340bdbb25206db5719501e97bad1"><div class="ttname"><a href="../../da/d0e/class_q_n_put_ret.html#a0f86340bdbb25206db5719501e97bad1">QNPutRet::getHash</a></div><div class="ttdeci">QString getHash() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/de2/qnputret_8cpp_source.html#l00042">qnputret.cpp:42</a></div></div>
+<div class="ttc" id="ttkprivate_8h_html_a8eedd09c47b53d5e42ca132295c5e1ef"><div class="ttname"><a href="../../dd/d24/ttkprivate_8h.html#a8eedd09c47b53d5e42ca132295c5e1ef">TTK_D</a></div><div class="ttdeci">#define TTK_D(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00033">ttkprivate.h:33</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 5 2018 12:29:31 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 10:20:51 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

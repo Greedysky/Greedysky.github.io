@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.8.0</span>
+   &#160;<span id="projectnumber">2.7.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -105,40 +105,40 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../db/de2/class_music_paging_widget_object.html">   29</a></span>&#160;<span class="keyword">class </span>MUSIC_WIDGET_EXPORT <a class="code" href="../../db/de2/class_music_paging_widget_object.html">MusicPagingWidgetObject</a> : <span class="keyword">public</span> QObject</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../db/de2/class_music_paging_widget_object.html">MusicPagingWidgetObject</a>(QObject *parent = 0);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../db/de2/class_music_paging_widget_object.html">MusicPagingWidgetObject</a>();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">static</span> QString getClassName();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    QWidget* getCreatePagingWidget();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    QWidget* createPagingWidget(QWidget *parent, <span class="keywordtype">int</span> total);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> reset(<span class="keywordtype">int</span> total);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> paging(<span class="keywordtype">int</span> index, <span class="keywordtype">int</span> total);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">int</span> currentIndex() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> mapped(<span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="../../db/de2/class_music_paging_widget_object.html#a13fcfb88405453b8bf12d9769238a1d4">   73</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../db/de2/class_music_paging_widget_object.html#a13fcfb88405453b8bf12d9769238a1d4">m_currentPage</a>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="../../db/de2/class_music_paging_widget_object.html#af3901d8f4df2557acb3565ca4eab909b">   74</a></span>&#160;    QWidget *<a class="code" href="../../db/de2/class_music_paging_widget_object.html#af3901d8f4df2557acb3565ca4eab909b">m_pagingWidget</a>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="../../db/de2/class_music_paging_widget_object.html#a178b4931cb9bfe61470b394f0bcfcc0c">   75</a></span>&#160;    QList&lt;MusicClickedLabel*&gt; <a class="code" href="../../db/de2/class_music_paging_widget_object.html#a178b4931cb9bfe61470b394f0bcfcc0c">m_pagingItems</a>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif // MUSICPAGINGWIDGETOBJECT_H</span></div>
-<div class="ttc" id="class_music_paging_widget_object_html_af3901d8f4df2557acb3565ca4eab909b"><div class="ttname"><a href="../../db/de2/class_music_paging_widget_object.html#af3901d8f4df2557acb3565ca4eab909b">MusicPagingWidgetObject::m_pagingWidget</a></div><div class="ttdeci">QWidget * m_pagingWidget</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc2/musicpagingwidgetobject_8h_source.html#l00074">musicpagingwidgetobject.h:74</a></div></div>
-<div class="ttc" id="class_music_paging_widget_object_html_a13fcfb88405453b8bf12d9769238a1d4"><div class="ttname"><a href="../../db/de2/class_music_paging_widget_object.html#a13fcfb88405453b8bf12d9769238a1d4">MusicPagingWidgetObject::m_currentPage</a></div><div class="ttdeci">int m_currentPage</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc2/musicpagingwidgetobject_8h_source.html#l00073">musicpagingwidgetobject.h:73</a></div></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../db/de2/class_music_paging_widget_object.html">MusicPagingWidgetObject</a>)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../db/de2/class_music_paging_widget_object.html">MusicPagingWidgetObject</a>(QObject *parent = 0);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../db/de2/class_music_paging_widget_object.html">MusicPagingWidgetObject</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    QWidget* getCreatePagingWidget();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    QWidget* createPagingWidget(QWidget *parent, <span class="keywordtype">int</span> total);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> reset(<span class="keywordtype">int</span> total);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> paging(<span class="keywordtype">int</span> index, <span class="keywordtype">int</span> total);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">int</span> currentIndex() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> mapped(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="../../db/de2/class_music_paging_widget_object.html#a13fcfb88405453b8bf12d9769238a1d4">   69</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../db/de2/class_music_paging_widget_object.html#a13fcfb88405453b8bf12d9769238a1d4">m_currentPage</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="../../db/de2/class_music_paging_widget_object.html#af3901d8f4df2557acb3565ca4eab909b">   70</a></span>&#160;    QWidget *<a class="code" href="../../db/de2/class_music_paging_widget_object.html#af3901d8f4df2557acb3565ca4eab909b">m_pagingWidget</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="../../db/de2/class_music_paging_widget_object.html#a178b4931cb9bfe61470b394f0bcfcc0c">   71</a></span>&#160;    QList&lt;MusicClickedLabel*&gt; <a class="code" href="../../db/de2/class_music_paging_widget_object.html#a178b4931cb9bfe61470b394f0bcfcc0c">m_pagingItems</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif // MUSICPAGINGWIDGETOBJECT_H</span></div>
+<div class="ttc" id="class_music_paging_widget_object_html_af3901d8f4df2557acb3565ca4eab909b"><div class="ttname"><a href="../../db/de2/class_music_paging_widget_object.html#af3901d8f4df2557acb3565ca4eab909b">MusicPagingWidgetObject::m_pagingWidget</a></div><div class="ttdeci">QWidget * m_pagingWidget</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc2/musicpagingwidgetobject_8h_source.html#l00070">musicpagingwidgetobject.h:70</a></div></div>
+<div class="ttc" id="class_music_paging_widget_object_html_a13fcfb88405453b8bf12d9769238a1d4"><div class="ttname"><a href="../../db/de2/class_music_paging_widget_object.html#a13fcfb88405453b8bf12d9769238a1d4">MusicPagingWidgetObject::m_currentPage</a></div><div class="ttdeci">int m_currentPage</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc2/musicpagingwidgetobject_8h_source.html#l00069">musicpagingwidgetobject.h:69</a></div></div>
 <div class="ttc" id="class_music_paging_widget_object_html"><div class="ttname"><a href="../../db/de2/class_music_paging_widget_object.html">MusicPagingWidgetObject</a></div><div class="ttdoc">The class of the paging widget object. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc2/musicpagingwidgetobject_8h_source.html#l00029">musicpagingwidgetobject.h:29</a></div></div>
 <div class="ttc" id="musicglobaldefine_8h_html"><div class="ttname"><a href="../../d6/d9b/musicglobaldefine_8h.html">musicglobaldefine.h</a></div></div>
 <div class="ttc" id="class_music_clicked_label_html"><div class="ttname"><a href="../../d1/db0/class_music_clicked_label.html">MusicClickedLabel</a></div><div class="ttdoc">The class of the label widget that can click. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d22/musicclickedlabel_8h_source.html#l00028">musicclickedlabel.h:28</a></div></div>
-<div class="ttc" id="class_music_paging_widget_object_html_a178b4931cb9bfe61470b394f0bcfcc0c"><div class="ttname"><a href="../../db/de2/class_music_paging_widget_object.html#a178b4931cb9bfe61470b394f0bcfcc0c">MusicPagingWidgetObject::m_pagingItems</a></div><div class="ttdeci">QList&lt; MusicClickedLabel * &gt; m_pagingItems</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc2/musicpagingwidgetobject_8h_source.html#l00075">musicpagingwidgetobject.h:75</a></div></div>
+<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00113">musicglobal.h:113</a></div></div>
+<div class="ttc" id="class_music_paging_widget_object_html_a178b4931cb9bfe61470b394f0bcfcc0c"><div class="ttname"><a href="../../db/de2/class_music_paging_widget_object.html#a178b4931cb9bfe61470b394f0bcfcc0c">MusicPagingWidgetObject::m_pagingItems</a></div><div class="ttdeci">QList&lt; MusicClickedLabel * &gt; m_pagingItems</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc2/musicpagingwidgetobject_8h_source.html#l00071">musicpagingwidgetobject.h:71</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 5 2018 12:29:30 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 10:20:49 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

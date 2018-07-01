@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.8.0</span>
+   &#160;<span id="projectnumber">2.7.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -83,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#  pragma GCC diagnostic ignored &quot;-Wmultichar&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="../../dc/d04/class_chinese_helper_private.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../dc/d04/class_chinese_helper_private.html">ChineseHelperPrivate</a> : <span class="keyword">public</span> <a class="code" href="../../de/d9e/class_music_private.html">MusicPrivate</a>&lt;ChineseHelper&gt;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="../../dc/d04/class_chinese_helper_private.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../dc/d04/class_chinese_helper_private.html">ChineseHelperPrivate</a> : <span class="keyword">public</span> <a class="code" href="../../d1/d29/class_t_t_k_private.html">TTKPrivate</a>&lt;ChineseHelper&gt;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="../../dc/d04/class_chinese_helper_private.html#a16d7549ddf3ee5151b42b9bc3ecf3c74">ChineseHelperPrivate</a>();</div>
@@ -99,19 +99,19 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="../../d1/d81/class_chinese_helper.html#af81afc37d101cc5720b3195a6a4237ac">   24</a></span>&#160;<a class="code" href="../../d1/d81/class_chinese_helper.html#af81afc37d101cc5720b3195a6a4237ac">ChineseHelper::ChineseHelper</a>()</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="../../d9/d85/musicprivate_8h.html#ab79df3e70bf1a795d99ea1dd3c8dd68c">MUSIC_INIT_PRIVATE</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="../../dd/d24/ttkprivate_8h.html#a16e697408c6ce0f129db3559d3a79514">TTK_INIT_PRIVATE</a>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../d1/d81/class_chinese_helper.html#a49ce51d8a6c7b4cdea28adc22b99ed2e">   29</a></span>&#160;QChar <a class="code" href="../../d1/d81/class_chinese_helper.html#a49ce51d8a6c7b4cdea28adc22b99ed2e">ChineseHelper::convertToSimplifiedChinese</a>(<span class="keyword">const</span> QChar &amp;c)</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="../../d9/d85/musicprivate_8h.html#a45cec4ed72299c88941a1b165d6c512d">MUSIC_D</a>(<a class="code" href="../../d1/d81/class_chinese_helper.html">ChineseHelper</a>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="../../dd/d24/ttkprivate_8h.html#a8eedd09c47b53d5e42ca132295c5e1ef">TTK_D</a>(<a class="code" href="../../d1/d81/class_chinese_helper.html">ChineseHelper</a>);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    QString simplifiedChinese = d-&gt;m_data.value(c);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> simplifiedChinese.isEmpty() ? c : simplifiedChinese.at(0);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../d1/d81/class_chinese_helper.html#ad237e2e1c2341f03d56d2aabf7952db3">   36</a></span>&#160;QChar <a class="code" href="../../d1/d81/class_chinese_helper.html#ad237e2e1c2341f03d56d2aabf7952db3">ChineseHelper::convertToTraditionalChinese</a>(<span class="keyword">const</span> QChar &amp;c)</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="../../d9/d85/musicprivate_8h.html#a45cec4ed72299c88941a1b165d6c512d">MUSIC_D</a>(<a class="code" href="../../d1/d81/class_chinese_helper.html">ChineseHelper</a>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="../../dd/d24/ttkprivate_8h.html#a8eedd09c47b53d5e42ca132295c5e1ef">TTK_D</a>(<a class="code" href="../../d1/d81/class_chinese_helper.html">ChineseHelper</a>);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    QString simpTraditionaChinese = d-&gt;m_data.key(c);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> simpTraditionaChinese.isEmpty() ? c : simpTraditionaChinese.at(0);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
@@ -138,7 +138,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
 <div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="../../d1/d81/class_chinese_helper.html#ad67c0c8366d9c2a32fbb983fcd1402dd">   63</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d1/d81/class_chinese_helper.html#ad67c0c8366d9c2a32fbb983fcd1402dd">ChineseHelper::isTraditionalChinese</a>(<span class="keyword">const</span> QChar &amp;c)</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="../../d9/d85/musicprivate_8h.html#a45cec4ed72299c88941a1b165d6c512d">MUSIC_D</a>(<a class="code" href="../../d1/d81/class_chinese_helper.html">ChineseHelper</a>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="../../dd/d24/ttkprivate_8h.html#a8eedd09c47b53d5e42ca132295c5e1ef">TTK_D</a>(<a class="code" href="../../d1/d81/class_chinese_helper.html">ChineseHelper</a>);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> d-&gt;m_data.keys().indexOf(c) != -1;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
@@ -162,7 +162,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
-<div class="ttc" id="musicprivate_8h_html_ab79df3e70bf1a795d99ea1dd3c8dd68c"><div class="ttname"><a href="../../d9/d85/musicprivate_8h.html#ab79df3e70bf1a795d99ea1dd3c8dd68c">MUSIC_INIT_PRIVATE</a></div><div class="ttdeci">#define MUSIC_INIT_PRIVATE</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d85/musicprivate_8h_source.html#l00030">musicprivate.h:30</a></div></div>
 <div class="ttc" id="class_chinese_helper_private_html_a16d7549ddf3ee5151b42b9bc3ecf3c74"><div class="ttname"><a href="../../dc/d04/class_chinese_helper_private.html#a16d7549ddf3ee5151b42b9bc3ecf3c74">ChineseHelperPrivate::ChineseHelperPrivate</a></div><div class="ttdeci">ChineseHelperPrivate()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dec/chinesehelper_8cpp_source.html#l00016">chinesehelper.cpp:16</a></div></div>
 <div class="ttc" id="class_chinese_helper_private_html_aa7ed204055ec721e78c0d56a1f3de7c8"><div class="ttname"><a href="../../dc/d04/class_chinese_helper_private.html#aa7ed204055ec721e78c0d56a1f3de7c8">ChineseHelperPrivate::m_data</a></div><div class="ttdeci">QMap&lt; QString, QString &gt; m_data</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dec/chinesehelper_8cpp_source.html#l00012">chinesehelper.cpp:12</a></div></div>
 <div class="ttc" id="class_chinese_helper_html_ad237e2e1c2341f03d56d2aabf7952db3"><div class="ttname"><a href="../../d1/d81/class_chinese_helper.html#ad237e2e1c2341f03d56d2aabf7952db3">ChineseHelper::convertToTraditionalChinese</a></div><div class="ttdeci">QChar convertToTraditionalChinese(const QChar &amp;c)</div><div class="ttdoc">The individual characters converted to traditional Chinese characters. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dec/chinesehelper_8cpp_source.html#l00036">chinesehelper.cpp:36</a></div></div>
@@ -170,17 +169,18 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_chinese_helper_html_a49ce51d8a6c7b4cdea28adc22b99ed2e"><div class="ttname"><a href="../../d1/d81/class_chinese_helper.html#a49ce51d8a6c7b4cdea28adc22b99ed2e">ChineseHelper::convertToSimplifiedChinese</a></div><div class="ttdeci">QChar convertToSimplifiedChinese(const QChar &amp;c)</div><div class="ttdoc">The single traditional Chinese characters into simplified Chinese characters. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dec/chinesehelper_8cpp_source.html#l00029">chinesehelper.cpp:29</a></div></div>
 <div class="ttc" id="chinesehelper_8h_html"><div class="ttname"><a href="../../dd/d31/chinesehelper_8h.html">chinesehelper.h</a></div></div>
 <div class="ttc" id="class_chinese_helper_html_ae7580fda9bf86543b56bce8b0c06595a"><div class="ttname"><a href="../../d1/d81/class_chinese_helper.html#ae7580fda9bf86543b56bce8b0c06595a">ChineseHelper::containsChinese</a></div><div class="ttdeci">bool containsChinese(const QString &amp;str)</div><div class="ttdoc">Determine whether the string contains Chinese. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dec/chinesehelper_8cpp_source.html#l00078">chinesehelper.cpp:78</a></div></div>
-<div class="ttc" id="class_music_private_html"><div class="ttname"><a href="../../de/d9e/class_music_private.html">MusicPrivate</a></div><div class="ttdoc">The class of the music private base. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d85/musicprivate_8h_source.html#l00040">musicprivate.h:40</a></div></div>
-<div class="ttc" id="musicprivate_8h_html_a45cec4ed72299c88941a1b165d6c512d"><div class="ttname"><a href="../../d9/d85/musicprivate_8h.html#a45cec4ed72299c88941a1b165d6c512d">MUSIC_D</a></div><div class="ttdeci">#define MUSIC_D(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d85/musicprivate_8h_source.html#l00033">musicprivate.h:33</a></div></div>
+<div class="ttc" id="ttkprivate_8h_html_a16e697408c6ce0f129db3559d3a79514"><div class="ttname"><a href="../../dd/d24/ttkprivate_8h.html#a16e697408c6ce0f129db3559d3a79514">TTK_INIT_PRIVATE</a></div><div class="ttdeci">#define TTK_INIT_PRIVATE</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00030">ttkprivate.h:30</a></div></div>
 <div class="ttc" id="class_chinese_helper_html_ad67c0c8366d9c2a32fbb983fcd1402dd"><div class="ttname"><a href="../../d1/d81/class_chinese_helper.html#ad67c0c8366d9c2a32fbb983fcd1402dd">ChineseHelper::isTraditionalChinese</a></div><div class="ttdeci">bool isTraditionalChinese(const QChar &amp;c)</div><div class="ttdoc">To determine whether a character is a traditional character. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dec/chinesehelper_8cpp_source.html#l00063">chinesehelper.cpp:63</a></div></div>
 <div class="ttc" id="class_chinese_helper_private_html"><div class="ttname"><a href="../../dc/d04/class_chinese_helper_private.html">ChineseHelperPrivate</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dec/chinesehelper_8cpp_source.html#l00007">chinesehelper.cpp:7</a></div></div>
 <div class="ttc" id="class_chinese_helper_html_a282767e41715b3270c74b09d69a96e54"><div class="ttname"><a href="../../d1/d81/class_chinese_helper.html#a282767e41715b3270c74b09d69a96e54">ChineseHelper::isChinese</a></div><div class="ttdeci">bool isChinese(const QChar &amp;c)</div><div class="ttdoc">To determine whether a character is a Chinese character. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dec/chinesehelper_8cpp_source.html#l00069">chinesehelper.cpp:69</a></div></div>
 <div class="ttc" id="class_chinese_helper_html"><div class="ttname"><a href="../../d1/d81/class_chinese_helper.html">ChineseHelper</a></div><div class="ttdoc">The class of the simple and traditional chinese characters. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d31/chinesehelper_8h_source.html#l00029">chinesehelper.h:29</a></div></div>
 <div class="ttc" id="class_pinyin_resource_html_a3852dd6463ffb7e1a81323a93904cdcb"><div class="ttname"><a href="../../d5/d1c/class_pinyin_resource.html#a3852dd6463ffb7e1a81323a93904cdcb">PinyinResource::getChineseResource</a></div><div class="ttdeci">static QMap&lt; QString, QString &gt; getChineseResource()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dc1/pinyinresource_8cpp_source.html#l00016">pinyinresource.cpp:16</a></div></div>
+<div class="ttc" id="class_t_t_k_private_html"><div class="ttname"><a href="../../d1/d29/class_t_t_k_private.html">TTKPrivate</a></div><div class="ttdoc">The class of the ttk private base. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00040">ttkprivate.h:40</a></div></div>
+<div class="ttc" id="ttkprivate_8h_html_a8eedd09c47b53d5e42ca132295c5e1ef"><div class="ttname"><a href="../../dd/d24/ttkprivate_8h.html#a8eedd09c47b53d5e42ca132295c5e1ef">TTK_D</a></div><div class="ttdeci">#define TTK_D(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00033">ttkprivate.h:33</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 5 2018 12:29:31 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 10:20:50 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

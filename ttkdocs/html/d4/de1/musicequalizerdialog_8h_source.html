@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.8.0</span>
+   &#160;<span id="projectnumber">2.7.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -113,58 +113,57 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="../../df/d8b/class_music_equalizer_dialog.html">   37</a></span>&#160;<span class="keyword">class </span>MUSIC_WIDGET_EXPORT <a class="code" href="../../df/d8b/class_music_equalizer_dialog.html">MusicEqualizerDialog</a> : <span class="keyword">public</span> <a class="code" href="../../da/db2/class_music_abstract_move_dialog.html">MusicAbstractMoveDialog</a></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../df/d8b/class_music_equalizer_dialog.html">MusicEqualizerDialog</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../df/d8b/class_music_equalizer_dialog.html">MusicEqualizerDialog</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../da/db2/class_music_abstract_move_dialog.html#a5ffbeacd6e9d019df169bb0608564954">getClassName</a>();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> setEqEffect(<span class="keyword">const</span> <a class="code" href="../../df/dbc/namespace_music_object.html#ac51ddc3036afae45ef265630cb9718be">MusicObject::MIntList</a> &amp;effect);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> setEnaleEffect(<span class="keywordtype">bool</span> enable);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> setEqEnable();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> resetEq();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> verticalSliderChanged(<span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> eqChoiceIndexChanged(<span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> exec();</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> init();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> initSlider(QSlider *slider, <span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> setControlEnable(<span class="keywordtype">bool</span> enable) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> readEqInformation();</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> writeEqInformation() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> initEqualizeValue();</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> emitParameter();</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="../../df/d8b/class_music_equalizer_dialog.html#a1cf7199b4022c0760eb49a71496fad4f">  115</a></span>&#160;    Ui::MusicEqualizerDialog *<a class="code" href="../../df/d8b/class_music_equalizer_dialog.html#a1cf7199b4022c0760eb49a71496fad4f">m_ui</a>;</div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="../../df/d8b/class_music_equalizer_dialog.html#a11678cc0cf4487dde5ccbbfb676cd928">  116</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../df/d8b/class_music_equalizer_dialog.html#a11678cc0cf4487dde5ccbbfb676cd928">m_eable</a>;</div>
-<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="../../df/d8b/class_music_equalizer_dialog.html#a1c995ad3b67d2828b1ab05679a0a7860">  117</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../df/d8b/class_music_equalizer_dialog.html#a1c995ad3b67d2828b1ab05679a0a7860">m_eqChoiceSelected</a>;</div>
-<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="../../df/d8b/class_music_equalizer_dialog.html#a907a66810ccebe9afb1289399b53c5cf">  118</a></span>&#160;    <a class="code" href="../../df/dbc/namespace_music_object.html#ac51ddc3036afae45ef265630cb9718be">MusicObject::MIntList</a> <a class="code" href="../../df/d8b/class_music_equalizer_dialog.html#a907a66810ccebe9afb1289399b53c5cf">m_equalizeValue</a>;</div>
-<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="../../df/d8b/class_music_equalizer_dialog.html#adb5d14756127373aaee0a9c65c9ed656">  119</a></span>&#160;    QSignalMapper *<a class="code" href="../../df/d8b/class_music_equalizer_dialog.html#adb5d14756127373aaee0a9c65c9ed656">m_signalMapper</a>;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;};</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#endif // MUSICEQUALIZERDIALOG_H</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../df/d8b/class_music_equalizer_dialog.html">MusicEqualizerDialog</a>)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../df/d8b/class_music_equalizer_dialog.html">MusicEqualizerDialog</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../df/d8b/class_music_equalizer_dialog.html">MusicEqualizerDialog</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> setEqEffect(<span class="keyword">const</span> <a class="code" href="../../df/dbc/namespace_music_object.html#ac51ddc3036afae45ef265630cb9718be">MusicObject::MIntList</a> &amp;effect);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> setEnaleEffect(<span class="keywordtype">bool</span> enable);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> setEqEnable();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> resetEq();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> verticalSliderChanged(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> eqChoiceIndexChanged(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> exec();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> init();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> initSlider(QSlider *slider, <span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> setControlEnable(<span class="keywordtype">bool</span> enable) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> readEqInformation();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> writeEqInformation() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> initEqualizeValue();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> emitParameter();</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="../../df/d8b/class_music_equalizer_dialog.html#a1cf7199b4022c0760eb49a71496fad4f">  111</a></span>&#160;    Ui::MusicEqualizerDialog *<a class="code" href="../../df/d8b/class_music_equalizer_dialog.html#a1cf7199b4022c0760eb49a71496fad4f">m_ui</a>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="../../df/d8b/class_music_equalizer_dialog.html#a11678cc0cf4487dde5ccbbfb676cd928">  112</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../df/d8b/class_music_equalizer_dialog.html#a11678cc0cf4487dde5ccbbfb676cd928">m_eable</a>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="../../df/d8b/class_music_equalizer_dialog.html#a1c995ad3b67d2828b1ab05679a0a7860">  113</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../df/d8b/class_music_equalizer_dialog.html#a1c995ad3b67d2828b1ab05679a0a7860">m_eqChoiceSelected</a>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="../../df/d8b/class_music_equalizer_dialog.html#a907a66810ccebe9afb1289399b53c5cf">  114</a></span>&#160;    <a class="code" href="../../df/dbc/namespace_music_object.html#ac51ddc3036afae45ef265630cb9718be">MusicObject::MIntList</a> <a class="code" href="../../df/d8b/class_music_equalizer_dialog.html#a907a66810ccebe9afb1289399b53c5cf">m_equalizeValue</a>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="../../df/d8b/class_music_equalizer_dialog.html#adb5d14756127373aaee0a9c65c9ed656">  115</a></span>&#160;    QSignalMapper *<a class="code" href="../../df/d8b/class_music_equalizer_dialog.html#adb5d14756127373aaee0a9c65c9ed656">m_signalMapper</a>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;};</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif // MUSICEQUALIZERDIALOG_H</span></div>
 <div class="ttc" id="musicabstractmovedialog_8h_html"><div class="ttname"><a href="../../da/d49/musicabstractmovedialog_8h.html">musicabstractmovedialog.h</a></div></div>
 <div class="ttc" id="namespace_ui_html"><div class="ttname"><a href="../../dc/df0/namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d24/musicapplication_8h_source.html#l00033">musicapplication.h:33</a></div></div>
-<div class="ttc" id="class_music_equalizer_dialog_html_adb5d14756127373aaee0a9c65c9ed656"><div class="ttname"><a href="../../df/d8b/class_music_equalizer_dialog.html#adb5d14756127373aaee0a9c65c9ed656">MusicEqualizerDialog::m_signalMapper</a></div><div class="ttdeci">QSignalMapper * m_signalMapper</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de1/musicequalizerdialog_8h_source.html#l00119">musicequalizerdialog.h:119</a></div></div>
-<div class="ttc" id="class_music_abstract_move_dialog_html_a5ffbeacd6e9d019df169bb0608564954"><div class="ttname"><a href="../../da/db2/class_music_abstract_move_dialog.html#a5ffbeacd6e9d019df169bb0608564954">MusicAbstractMoveDialog::getClassName</a></div><div class="ttdeci">static QString getClassName()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de8/musicabstractmovedialog_8cpp_source.html#l00038">musicabstractmovedialog.cpp:38</a></div></div>
+<div class="ttc" id="class_music_equalizer_dialog_html_adb5d14756127373aaee0a9c65c9ed656"><div class="ttname"><a href="../../df/d8b/class_music_equalizer_dialog.html#adb5d14756127373aaee0a9c65c9ed656">MusicEqualizerDialog::m_signalMapper</a></div><div class="ttdeci">QSignalMapper * m_signalMapper</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de1/musicequalizerdialog_8h_source.html#l00115">musicequalizerdialog.h:115</a></div></div>
 <div class="ttc" id="class_music_equalizer_dialog_html"><div class="ttname"><a href="../../df/d8b/class_music_equalizer_dialog.html">MusicEqualizerDialog</a></div><div class="ttdoc">The class of the equalizer widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de1/musicequalizerdialog_8h_source.html#l00037">musicequalizerdialog.h:37</a></div></div>
 <div class="ttc" id="musicobject_8h_html"><div class="ttname"><a href="../../d8/d07/musicobject_8h.html">musicobject.h</a></div></div>
-<div class="ttc" id="class_music_equalizer_dialog_html_a1c995ad3b67d2828b1ab05679a0a7860"><div class="ttname"><a href="../../df/d8b/class_music_equalizer_dialog.html#a1c995ad3b67d2828b1ab05679a0a7860">MusicEqualizerDialog::m_eqChoiceSelected</a></div><div class="ttdeci">bool m_eqChoiceSelected</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de1/musicequalizerdialog_8h_source.html#l00117">musicequalizerdialog.h:117</a></div></div>
+<div class="ttc" id="class_music_equalizer_dialog_html_a1c995ad3b67d2828b1ab05679a0a7860"><div class="ttname"><a href="../../df/d8b/class_music_equalizer_dialog.html#a1c995ad3b67d2828b1ab05679a0a7860">MusicEqualizerDialog::m_eqChoiceSelected</a></div><div class="ttdeci">bool m_eqChoiceSelected</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de1/musicequalizerdialog_8h_source.html#l00113">musicequalizerdialog.h:113</a></div></div>
 <div class="ttc" id="class_music_abstract_move_dialog_html"><div class="ttname"><a href="../../da/db2/class_music_abstract_move_dialog.html">MusicAbstractMoveDialog</a></div><div class="ttdoc">The class of the moving dialog base. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d49/musicabstractmovedialog_8h_source.html#l00029">musicabstractmovedialog.h:29</a></div></div>
-<div class="ttc" id="namespace_music_object_html_ac51ddc3036afae45ef265630cb9718be"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#ac51ddc3036afae45ef265630cb9718be">MusicObject::MIntList</a></div><div class="ttdeci">QList&lt; int &gt; MIntList</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00148">musicglobal.h:148</a></div></div>
-<div class="ttc" id="class_music_equalizer_dialog_html_a1cf7199b4022c0760eb49a71496fad4f"><div class="ttname"><a href="../../df/d8b/class_music_equalizer_dialog.html#a1cf7199b4022c0760eb49a71496fad4f">MusicEqualizerDialog::m_ui</a></div><div class="ttdeci">Ui::MusicEqualizerDialog * m_ui</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de1/musicequalizerdialog_8h_source.html#l00115">musicequalizerdialog.h:115</a></div></div>
-<div class="ttc" id="class_music_equalizer_dialog_html_a907a66810ccebe9afb1289399b53c5cf"><div class="ttname"><a href="../../df/d8b/class_music_equalizer_dialog.html#a907a66810ccebe9afb1289399b53c5cf">MusicEqualizerDialog::m_equalizeValue</a></div><div class="ttdeci">MusicObject::MIntList m_equalizeValue</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de1/musicequalizerdialog_8h_source.html#l00118">musicequalizerdialog.h:118</a></div></div>
-<div class="ttc" id="class_music_equalizer_dialog_html_a11678cc0cf4487dde5ccbbfb676cd928"><div class="ttname"><a href="../../df/d8b/class_music_equalizer_dialog.html#a11678cc0cf4487dde5ccbbfb676cd928">MusicEqualizerDialog::m_eable</a></div><div class="ttdeci">bool m_eable</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de1/musicequalizerdialog_8h_source.html#l00116">musicequalizerdialog.h:116</a></div></div>
+<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00113">musicglobal.h:113</a></div></div>
+<div class="ttc" id="namespace_music_object_html_ac51ddc3036afae45ef265630cb9718be"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#ac51ddc3036afae45ef265630cb9718be">MusicObject::MIntList</a></div><div class="ttdeci">QList&lt; int &gt; MIntList</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00181">musicglobal.h:181</a></div></div>
+<div class="ttc" id="class_music_equalizer_dialog_html_a1cf7199b4022c0760eb49a71496fad4f"><div class="ttname"><a href="../../df/d8b/class_music_equalizer_dialog.html#a1cf7199b4022c0760eb49a71496fad4f">MusicEqualizerDialog::m_ui</a></div><div class="ttdeci">Ui::MusicEqualizerDialog * m_ui</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de1/musicequalizerdialog_8h_source.html#l00111">musicequalizerdialog.h:111</a></div></div>
+<div class="ttc" id="class_music_equalizer_dialog_html_a907a66810ccebe9afb1289399b53c5cf"><div class="ttname"><a href="../../df/d8b/class_music_equalizer_dialog.html#a907a66810ccebe9afb1289399b53c5cf">MusicEqualizerDialog::m_equalizeValue</a></div><div class="ttdeci">MusicObject::MIntList m_equalizeValue</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de1/musicequalizerdialog_8h_source.html#l00114">musicequalizerdialog.h:114</a></div></div>
+<div class="ttc" id="class_music_equalizer_dialog_html_a11678cc0cf4487dde5ccbbfb676cd928"><div class="ttname"><a href="../../df/d8b/class_music_equalizer_dialog.html#a11678cc0cf4487dde5ccbbfb676cd928">MusicEqualizerDialog::m_eable</a></div><div class="ttdeci">bool m_eable</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de1/musicequalizerdialog_8h_source.html#l00112">musicequalizerdialog.h:112</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 5 2018 12:29:30 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 10:20:49 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

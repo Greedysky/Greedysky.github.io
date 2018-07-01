@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.8.0</span>
+   &#160;<span id="projectnumber">2.7.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -107,52 +107,53 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../d5/d19/class_music_connection_pool.html">   31</a></span>&#160;<span class="keyword">class </span>MUSIC_CORE_EXPORT <a class="code" href="../../d5/d19/class_music_connection_pool.html">MusicConnectionPool</a> : <span class="keyword">public</span> QObject</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">static</span> QString getClassName();</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../d5/d19/class_music_connection_pool.html#ac65507a009572206720614f1df0c6d41">   42</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="../../d5/d19/class_music_connection_pool.html#ac65507a009572206720614f1df0c6d41">setValue</a>(<span class="keyword">const</span> QString &amp;type, QObject *<span class="keywordtype">object</span>)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        m_para[type] = object;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="../../d5/d19/class_music_connection_pool.html#af9364e6a677da6360b1ebfcc94642d17">   49</a></span>&#160;    <span class="keyword">inline</span> QObject* <a class="code" href="../../d5/d19/class_music_connection_pool.html#af9364e6a677da6360b1ebfcc94642d17">value</a>(<span class="keyword">const</span> QString &amp;type)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span> m_para[type];</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="../../d5/d19/class_music_connection_pool.html#a87d8d1dbfa1f2a7f22f605c58797fe5f">   56</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> QObject* <a class="code" href="../../d5/d19/class_music_connection_pool.html#a87d8d1dbfa1f2a7f22f605c58797fe5f">operator[]</a>(<span class="keyword">const</span> QString &amp;type)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">return</span> value(type);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="../../d5/d19/class_music_connection_pool.html#a507975dfdf3dd39ec788aa060e3eda3a">   63</a></span>&#160;    <span class="keyword">inline</span> QObject* &amp;<a class="code" href="../../d5/d19/class_music_connection_pool.html#a507975dfdf3dd39ec788aa060e3eda3a">operator[]</a>(<span class="keyword">const</span> QString &amp;type)</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">return</span> m_para[type];</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> poolConnect(<span class="keyword">const</span> QObject *from, <span class="keyword">const</span> QObject *to);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> poolConnect(<span class="keyword">const</span> QString &amp;from, <span class="keyword">const</span> QString &amp;to);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> removeValue(<span class="keyword">const</span> QObject *<span class="keywordtype">object</span>);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> removeValue(<span class="keyword">const</span> QString &amp;name);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d5/d19/class_music_connection_pool.html">MusicConnectionPool</a>)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../d5/d19/class_music_connection_pool.html#ac65507a009572206720614f1df0c6d41">   39</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="../../d5/d19/class_music_connection_pool.html#ac65507a009572206720614f1df0c6d41">setValue</a>(<span class="keyword">const</span> QString &amp;type, QObject *<span class="keywordtype">object</span>)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        m_para[type] = object;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="../../d5/d19/class_music_connection_pool.html#af9364e6a677da6360b1ebfcc94642d17">   46</a></span>&#160;    <span class="keyword">inline</span> QObject* <a class="code" href="../../d5/d19/class_music_connection_pool.html#af9364e6a677da6360b1ebfcc94642d17">value</a>(<span class="keyword">const</span> QString &amp;type)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">return</span> m_para[type];</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="../../d5/d19/class_music_connection_pool.html#a87d8d1dbfa1f2a7f22f605c58797fe5f">   53</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> QObject* <a class="code" href="../../d5/d19/class_music_connection_pool.html#a87d8d1dbfa1f2a7f22f605c58797fe5f">operator[]</a>(<span class="keyword">const</span> QString &amp;type)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">return</span> value(type);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="../../d5/d19/class_music_connection_pool.html#a507975dfdf3dd39ec788aa060e3eda3a">   60</a></span>&#160;    <span class="keyword">inline</span> QObject* &amp;<a class="code" href="../../d5/d19/class_music_connection_pool.html#a507975dfdf3dd39ec788aa060e3eda3a">operator[]</a>(<span class="keyword">const</span> QString &amp;type)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">return</span> m_para[type];</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> poolConnect(<span class="keyword">const</span> QObject *from, <span class="keyword">const</span> QObject *to);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> poolConnect(<span class="keyword">const</span> QString &amp;from, <span class="keyword">const</span> QString &amp;to);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> removeValue(<span class="keyword">const</span> QObject *<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> removeValue(<span class="keyword">const</span> QString &amp;name);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="../../d5/d19/class_music_connection_pool.html#a2b7da9f3faa581738f844b243b64d94d">   83</a></span>&#160;    QMap&lt;QString, QObject*&gt; <a class="code" href="../../d5/d19/class_music_connection_pool.html#a2b7da9f3faa581738f844b243b64d94d">m_para</a>;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="../../d5/d19/class_music_connection_pool.html#a2b7da9f3faa581738f844b243b64d94d">   86</a></span>&#160;    QMap&lt;QString, QObject*&gt; <a class="code" href="../../d5/d19/class_music_connection_pool.html#a2b7da9f3faa581738f844b243b64d94d">m_para</a>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="../../d5/d19/class_music_connection_pool.html">MusicConnectionPool</a>();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="../../d7/d5f/musicsingleton_8h.html#a8d62f3ef8a22e40d7a4ff45f03d0ce0e">DECLARE_SINGLETON_CLASS</a>(<a class="code" href="../../d5/d19/class_music_connection_pool.html">MusicConnectionPool</a>)</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif // MUSICCONNECTIONPOOL_H</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="../../d5/d19/class_music_connection_pool.html">MusicConnectionPool</a>();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="../../d7/d5f/musicsingleton_8h.html#a8d62f3ef8a22e40d7a4ff45f03d0ce0e">DECLARE_SINGLETON_CLASS</a>(<a class="code" href="../../d5/d19/class_music_connection_pool.html">MusicConnectionPool</a>)</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;};</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#endif // MUSICCONNECTIONPOOL_H</span></div>
 <div class="ttc" id="class_music_connection_pool_html"><div class="ttname"><a href="../../d5/d19/class_music_connection_pool.html">MusicConnectionPool</a></div><div class="ttdoc">The class of the qt signal and slot connection pool. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dcd/musicconnectionpool_8h_source.html#l00031">musicconnectionpool.h:31</a></div></div>
 <div class="ttc" id="musicsingleton_8h_html"><div class="ttname"><a href="../../d7/d5f/musicsingleton_8h.html">musicsingleton.h</a></div></div>
-<div class="ttc" id="class_music_connection_pool_html_a87d8d1dbfa1f2a7f22f605c58797fe5f"><div class="ttname"><a href="../../d5/d19/class_music_connection_pool.html#a87d8d1dbfa1f2a7f22f605c58797fe5f">MusicConnectionPool::operator[]</a></div><div class="ttdeci">const QObject * operator[](const QString &amp;type) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dcd/musicconnectionpool_8h_source.html#l00056">musicconnectionpool.h:56</a></div></div>
-<div class="ttc" id="class_music_connection_pool_html_a507975dfdf3dd39ec788aa060e3eda3a"><div class="ttname"><a href="../../d5/d19/class_music_connection_pool.html#a507975dfdf3dd39ec788aa060e3eda3a">MusicConnectionPool::operator[]</a></div><div class="ttdeci">QObject *&amp; operator[](const QString &amp;type)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dcd/musicconnectionpool_8h_source.html#l00063">musicconnectionpool.h:63</a></div></div>
-<div class="ttc" id="class_music_connection_pool_html_a2b7da9f3faa581738f844b243b64d94d"><div class="ttname"><a href="../../d5/d19/class_music_connection_pool.html#a2b7da9f3faa581738f844b243b64d94d">MusicConnectionPool::m_para</a></div><div class="ttdeci">QMap&lt; QString, QObject * &gt; m_para</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dcd/musicconnectionpool_8h_source.html#l00086">musicconnectionpool.h:86</a></div></div>
-<div class="ttc" id="class_music_connection_pool_html_af9364e6a677da6360b1ebfcc94642d17"><div class="ttname"><a href="../../d5/d19/class_music_connection_pool.html#af9364e6a677da6360b1ebfcc94642d17">MusicConnectionPool::value</a></div><div class="ttdeci">QObject * value(const QString &amp;type) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dcd/musicconnectionpool_8h_source.html#l00049">musicconnectionpool.h:49</a></div></div>
-<div class="ttc" id="class_music_connection_pool_html_ac65507a009572206720614f1df0c6d41"><div class="ttname"><a href="../../d5/d19/class_music_connection_pool.html#ac65507a009572206720614f1df0c6d41">MusicConnectionPool::setValue</a></div><div class="ttdeci">void setValue(const QString &amp;type, QObject *object)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dcd/musicconnectionpool_8h_source.html#l00042">musicconnectionpool.h:42</a></div></div>
-<div class="ttc" id="musicsingleton_8h_html_a8d62f3ef8a22e40d7a4ff45f03d0ce0e"><div class="ttname"><a href="../../d7/d5f/musicsingleton_8h.html#a8d62f3ef8a22e40d7a4ff45f03d0ce0e">DECLARE_SINGLETON_CLASS</a></div><div class="ttdeci">#define DECLARE_SINGLETON_CLASS(Class)</div><div class="ttdoc">                                         //  Singleton Macro // // </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5f/musicsingleton_8h_source.html#l00095">musicsingleton.h:95</a></div></div>
+<div class="ttc" id="class_music_connection_pool_html_a87d8d1dbfa1f2a7f22f605c58797fe5f"><div class="ttname"><a href="../../d5/d19/class_music_connection_pool.html#a87d8d1dbfa1f2a7f22f605c58797fe5f">MusicConnectionPool::operator[]</a></div><div class="ttdeci">const QObject * operator[](const QString &amp;type) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dcd/musicconnectionpool_8h_source.html#l00053">musicconnectionpool.h:53</a></div></div>
+<div class="ttc" id="class_music_connection_pool_html_a507975dfdf3dd39ec788aa060e3eda3a"><div class="ttname"><a href="../../d5/d19/class_music_connection_pool.html#a507975dfdf3dd39ec788aa060e3eda3a">MusicConnectionPool::operator[]</a></div><div class="ttdeci">QObject *&amp; operator[](const QString &amp;type)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dcd/musicconnectionpool_8h_source.html#l00060">musicconnectionpool.h:60</a></div></div>
+<div class="ttc" id="class_music_connection_pool_html_a2b7da9f3faa581738f844b243b64d94d"><div class="ttname"><a href="../../d5/d19/class_music_connection_pool.html#a2b7da9f3faa581738f844b243b64d94d">MusicConnectionPool::m_para</a></div><div class="ttdeci">QMap&lt; QString, QObject * &gt; m_para</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dcd/musicconnectionpool_8h_source.html#l00083">musicconnectionpool.h:83</a></div></div>
+<div class="ttc" id="class_music_connection_pool_html_af9364e6a677da6360b1ebfcc94642d17"><div class="ttname"><a href="../../d5/d19/class_music_connection_pool.html#af9364e6a677da6360b1ebfcc94642d17">MusicConnectionPool::value</a></div><div class="ttdeci">QObject * value(const QString &amp;type) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dcd/musicconnectionpool_8h_source.html#l00046">musicconnectionpool.h:46</a></div></div>
+<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00113">musicglobal.h:113</a></div></div>
+<div class="ttc" id="class_music_connection_pool_html_ac65507a009572206720614f1df0c6d41"><div class="ttname"><a href="../../d5/d19/class_music_connection_pool.html#ac65507a009572206720614f1df0c6d41">MusicConnectionPool::setValue</a></div><div class="ttdeci">void setValue(const QString &amp;type, QObject *object)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dcd/musicconnectionpool_8h_source.html#l00039">musicconnectionpool.h:39</a></div></div>
+<div class="ttc" id="musicsingleton_8h_html_a8d62f3ef8a22e40d7a4ff45f03d0ce0e"><div class="ttname"><a href="../../d7/d5f/musicsingleton_8h.html#a8d62f3ef8a22e40d7a4ff45f03d0ce0e">DECLARE_SINGLETON_CLASS</a></div><div class="ttdeci">#define DECLARE_SINGLETON_CLASS(Class)</div><div class="ttdoc">                                         //  Singleton Macro // // </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5f/musicsingleton_8h_source.html#l00086">musicsingleton.h:86</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 5 2018 12:29:25 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 10:20:42 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

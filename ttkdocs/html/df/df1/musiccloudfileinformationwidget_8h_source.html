@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.8.0</span>
+   &#160;<span id="projectnumber">2.7.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -109,34 +109,34 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="../../d7/d37/class_music_cloud_file_information_widget.html">   33</a></span>&#160;<span class="keyword">class </span>MUSIC_TOOL_EXPORT <a class="code" href="../../d7/d37/class_music_cloud_file_information_widget.html">MusicCloudFileInformationWidget</a> : <span class="keyword">public</span> <a class="code" href="../../da/db2/class_music_abstract_move_dialog.html">MusicAbstractMoveDialog</a></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d7/d37/class_music_cloud_file_information_widget.html">MusicCloudFileInformationWidget</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d7/d37/class_music_cloud_file_information_widget.html">MusicCloudFileInformationWidget</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../da/db2/class_music_abstract_move_dialog.html#a5ffbeacd6e9d019df169bb0608564954">getClassName</a>();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> setFileInformation(<a class="code" href="../../d6/d30/struct_q_n_data_item.html">QNDataItem</a> *data);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> exec();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d7/d37/class_music_cloud_file_information_widget.html">MusicCloudFileInformationWidget</a>)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d7/d37/class_music_cloud_file_information_widget.html">MusicCloudFileInformationWidget</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d7/d37/class_music_cloud_file_information_widget.html">MusicCloudFileInformationWidget</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> setFileInformation(<a class="code" href="../../d6/d30/struct_q_n_data_item.html">QNDataItem</a> *data);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> exec();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="../../d7/d37/class_music_cloud_file_information_widget.html#a570151e09f89ee1aa5af891886eef09d">   57</a></span>&#160;    Ui::MusicCloudFileInformationWidget *<a class="code" href="../../d7/d37/class_music_cloud_file_information_widget.html#a570151e09f89ee1aa5af891886eef09d">m_ui</a>;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="../../d7/d37/class_music_cloud_file_information_widget.html#a570151e09f89ee1aa5af891886eef09d">   60</a></span>&#160;    Ui::MusicCloudFileInformationWidget *<a class="code" href="../../d7/d37/class_music_cloud_file_information_widget.html#a570151e09f89ee1aa5af891886eef09d">m_ui</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif // MUSICCLOUDFILEINFORMATIONWIDGET_H</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif // MUSICCLOUDFILEINFORMATIONWIDGET_H</span></div>
 <div class="ttc" id="musicabstractmovedialog_8h_html"><div class="ttname"><a href="../../da/d49/musicabstractmovedialog_8h.html">musicabstractmovedialog.h</a></div></div>
-<div class="ttc" id="struct_q_n_data_item_html"><div class="ttname"><a href="../../d6/d30/struct_q_n_data_item.html">QNDataItem</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dd7/qnsimplelistdata_8h_source.html#l00028">qnsimplelistdata.h:28</a></div></div>
+<div class="ttc" id="struct_q_n_data_item_html"><div class="ttname"><a href="../../d6/d30/struct_q_n_data_item.html">QNDataItem</a></div><div class="ttdoc">The class of the qiniu cloud data item. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/de8/qndataitem_8h_source.html#l00027">qndataitem.h:27</a></div></div>
 <div class="ttc" id="namespace_ui_html"><div class="ttname"><a href="../../dc/df0/namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d24/musicapplication_8h_source.html#l00033">musicapplication.h:33</a></div></div>
-<div class="ttc" id="class_music_cloud_file_information_widget_html_a570151e09f89ee1aa5af891886eef09d"><div class="ttname"><a href="../../d7/d37/class_music_cloud_file_information_widget.html#a570151e09f89ee1aa5af891886eef09d">MusicCloudFileInformationWidget::m_ui</a></div><div class="ttdeci">Ui::MusicCloudFileInformationWidget * m_ui</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df1/musiccloudfileinformationwidget_8h_source.html#l00060">musiccloudfileinformationwidget.h:60</a></div></div>
-<div class="ttc" id="class_music_abstract_move_dialog_html_a5ffbeacd6e9d019df169bb0608564954"><div class="ttname"><a href="../../da/db2/class_music_abstract_move_dialog.html#a5ffbeacd6e9d019df169bb0608564954">MusicAbstractMoveDialog::getClassName</a></div><div class="ttdeci">static QString getClassName()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de8/musicabstractmovedialog_8cpp_source.html#l00038">musicabstractmovedialog.cpp:38</a></div></div>
+<div class="ttc" id="class_music_cloud_file_information_widget_html_a570151e09f89ee1aa5af891886eef09d"><div class="ttname"><a href="../../d7/d37/class_music_cloud_file_information_widget.html#a570151e09f89ee1aa5af891886eef09d">MusicCloudFileInformationWidget::m_ui</a></div><div class="ttdeci">Ui::MusicCloudFileInformationWidget * m_ui</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df1/musiccloudfileinformationwidget_8h_source.html#l00057">musiccloudfileinformationwidget.h:57</a></div></div>
 <div class="ttc" id="class_music_cloud_file_information_widget_html"><div class="ttname"><a href="../../d7/d37/class_music_cloud_file_information_widget.html">MusicCloudFileInformationWidget</a></div><div class="ttdoc">The class of the cloud file information widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/df1/musiccloudfileinformationwidget_8h_source.html#l00033">musiccloudfileinformationwidget.h:33</a></div></div>
 <div class="ttc" id="class_music_abstract_move_dialog_html"><div class="ttname"><a href="../../da/db2/class_music_abstract_move_dialog.html">MusicAbstractMoveDialog</a></div><div class="ttdoc">The class of the moving dialog base. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d49/musicabstractmovedialog_8h_source.html#l00029">musicabstractmovedialog.h:29</a></div></div>
+<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00113">musicglobal.h:113</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 5 2018 12:29:28 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 10:20:47 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

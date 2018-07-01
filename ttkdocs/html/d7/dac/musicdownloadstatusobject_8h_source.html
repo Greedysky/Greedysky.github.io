@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.8.0</span>
+   &#160;<span id="projectnumber">2.7.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -105,42 +105,42 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../d6/d7b/class_music_download_status_object.html">   29</a></span>&#160;<span class="keyword">class </span>MUSIC_WIDGET_EXPORT <a class="code" href="../../d6/d7b/class_music_download_status_object.html">MusicDownloadStatusObject</a> : <span class="keyword">public</span> QObject</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d6/d7b/class_music_download_status_object.html">MusicDownloadStatusObject</a>(QObject *parent);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    ~<a class="code" href="../../d6/d7b/class_music_download_status_object.html">MusicDownloadStatusObject</a>();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">static</span> QString getClassName();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> musicCheckHasLrcAlready();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">bool</span> checkSettingParameterValue() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> musicHaveNoLrcAlready();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> showDownLoadInfoFor(<a class="code" href="../../df/dbc/namespace_music_object.html#a91224ed5c1591572d5a52bd6744e817a">MusicObject::DownLoadMode</a> type);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> showDownLoadInfoFinished(<span class="keyword">const</span> QString &amp;type);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> networkConnectionStateChanged(<span class="keywordtype">bool</span> state);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="../../d6/d7b/class_music_download_status_object.html#ae3e7752e8cb8dab1f5686640e8a5c871">   76</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d6/d7b/class_music_download_status_object.html#ae3e7752e8cb8dab1f5686640e8a5c871">m_previousState</a>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="../../d6/d7b/class_music_download_status_object.html#a18211cb0508f47aa41b35e20deea506b">   77</a></span>&#160;    <a class="code" href="../../db/def/class_music_application.html">MusicApplication</a> *<a class="code" href="../../d6/d7b/class_music_download_status_object.html#a18211cb0508f47aa41b35e20deea506b">m_parentWidget</a>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="../../d6/d7b/class_music_download_status_object.html#ab23fe2d57e45b83cc2ab3825b4393de6">   78</a></span>&#160;    <a class="code" href="../../dc/de4/class_music_down_load_query_thread_abstract.html">MusicDownLoadQueryThreadAbstract</a> *<a class="code" href="../../d6/d7b/class_music_download_status_object.html#ab23fe2d57e45b83cc2ab3825b4393de6">m_downloadLrcThread</a>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif // MUSICDOWNLOADSTATUSOBJECT_H</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d6/d7b/class_music_download_status_object.html">MusicDownloadStatusObject</a>)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d6/d7b/class_music_download_status_object.html">MusicDownloadStatusObject</a>(QObject *parent);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    ~<a class="code" href="../../d6/d7b/class_music_download_status_object.html">MusicDownloadStatusObject</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> musicCheckHasLrcAlready();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">bool</span> checkSettingParameterValue() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> musicHaveNoLrcAlready();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> showDownLoadInfoFor(<a class="code" href="../../df/dbc/namespace_music_object.html#a91224ed5c1591572d5a52bd6744e817a">MusicObject::DownLoadMode</a> type);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> showDownLoadInfoFinished(<span class="keyword">const</span> QString &amp;type);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> networkConnectionStateChanged(<span class="keywordtype">bool</span> state);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="../../d6/d7b/class_music_download_status_object.html#ae3e7752e8cb8dab1f5686640e8a5c871">   72</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d6/d7b/class_music_download_status_object.html#ae3e7752e8cb8dab1f5686640e8a5c871">m_previousState</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="../../d6/d7b/class_music_download_status_object.html#a18211cb0508f47aa41b35e20deea506b">   73</a></span>&#160;    <a class="code" href="../../db/def/class_music_application.html">MusicApplication</a> *<a class="code" href="../../d6/d7b/class_music_download_status_object.html#a18211cb0508f47aa41b35e20deea506b">m_parentWidget</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="../../d6/d7b/class_music_download_status_object.html#ab23fe2d57e45b83cc2ab3825b4393de6">   74</a></span>&#160;    <a class="code" href="../../dc/de4/class_music_down_load_query_thread_abstract.html">MusicDownLoadQueryThreadAbstract</a> *<a class="code" href="../../d6/d7b/class_music_download_status_object.html#ab23fe2d57e45b83cc2ab3825b4393de6">m_downloadLrcThread</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif // MUSICDOWNLOADSTATUSOBJECT_H</span></div>
 <div class="ttc" id="class_music_download_status_object_html"><div class="ttname"><a href="../../d6/d7b/class_music_download_status_object.html">MusicDownloadStatusObject</a></div><div class="ttdoc">The class of the show download state object. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dac/musicdownloadstatusobject_8h_source.html#l00029">musicdownloadstatusobject.h:29</a></div></div>
 <div class="ttc" id="class_music_application_html"><div class="ttname"><a href="../../db/def/class_music_application.html">MusicApplication</a></div><div class="ttdoc">The class of the app main widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d24/musicapplication_8h_source.html#l00040">musicapplication.h:40</a></div></div>
-<div class="ttc" id="class_music_download_status_object_html_ae3e7752e8cb8dab1f5686640e8a5c871"><div class="ttname"><a href="../../d6/d7b/class_music_download_status_object.html#ae3e7752e8cb8dab1f5686640e8a5c871">MusicDownloadStatusObject::m_previousState</a></div><div class="ttdeci">bool m_previousState</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dac/musicdownloadstatusobject_8h_source.html#l00076">musicdownloadstatusobject.h:76</a></div></div>
-<div class="ttc" id="class_music_download_status_object_html_a18211cb0508f47aa41b35e20deea506b"><div class="ttname"><a href="../../d6/d7b/class_music_download_status_object.html#a18211cb0508f47aa41b35e20deea506b">MusicDownloadStatusObject::m_parentWidget</a></div><div class="ttdeci">MusicApplication * m_parentWidget</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dac/musicdownloadstatusobject_8h_source.html#l00077">musicdownloadstatusobject.h:77</a></div></div>
+<div class="ttc" id="class_music_download_status_object_html_ae3e7752e8cb8dab1f5686640e8a5c871"><div class="ttname"><a href="../../d6/d7b/class_music_download_status_object.html#ae3e7752e8cb8dab1f5686640e8a5c871">MusicDownloadStatusObject::m_previousState</a></div><div class="ttdeci">bool m_previousState</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dac/musicdownloadstatusobject_8h_source.html#l00072">musicdownloadstatusobject.h:72</a></div></div>
+<div class="ttc" id="class_music_download_status_object_html_a18211cb0508f47aa41b35e20deea506b"><div class="ttname"><a href="../../d6/d7b/class_music_download_status_object.html#a18211cb0508f47aa41b35e20deea506b">MusicDownloadStatusObject::m_parentWidget</a></div><div class="ttdeci">MusicApplication * m_parentWidget</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dac/musicdownloadstatusobject_8h_source.html#l00073">musicdownloadstatusobject.h:73</a></div></div>
 <div class="ttc" id="class_music_down_load_query_thread_abstract_html"><div class="ttname"><a href="../../dc/de4/class_music_down_load_query_thread_abstract.html">MusicDownLoadQueryThreadAbstract</a></div><div class="ttdoc">The class to abstract query download data from net. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00084">musicdownloadquerythreadabstract.h:84</a></div></div>
+<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00113">musicglobal.h:113</a></div></div>
 <div class="ttc" id="musicdownloadquerythreadabstract_8h_html"><div class="ttname"><a href="../../dc/d3d/musicdownloadquerythreadabstract_8h.html">musicdownloadquerythreadabstract.h</a></div></div>
-<div class="ttc" id="class_music_download_status_object_html_ab23fe2d57e45b83cc2ab3825b4393de6"><div class="ttname"><a href="../../d6/d7b/class_music_download_status_object.html#ab23fe2d57e45b83cc2ab3825b4393de6">MusicDownloadStatusObject::m_downloadLrcThread</a></div><div class="ttdeci">MusicDownLoadQueryThreadAbstract * m_downloadLrcThread</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dac/musicdownloadstatusobject_8h_source.html#l00078">musicdownloadstatusobject.h:78</a></div></div>
-<div class="ttc" id="namespace_music_object_html_a91224ed5c1591572d5a52bd6744e817a"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#a91224ed5c1591572d5a52bd6744e817a">MusicObject::DownLoadMode</a></div><div class="ttdeci">DownLoadMode</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00265">musicobject.h:265</a></div></div>
+<div class="ttc" id="class_music_download_status_object_html_ab23fe2d57e45b83cc2ab3825b4393de6"><div class="ttname"><a href="../../d6/d7b/class_music_download_status_object.html#ab23fe2d57e45b83cc2ab3825b4393de6">MusicDownloadStatusObject::m_downloadLrcThread</a></div><div class="ttdeci">MusicDownLoadQueryThreadAbstract * m_downloadLrcThread</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dac/musicdownloadstatusobject_8h_source.html#l00074">musicdownloadstatusobject.h:74</a></div></div>
+<div class="ttc" id="namespace_music_object_html_a91224ed5c1591572d5a52bd6744e817a"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#a91224ed5c1591572d5a52bd6744e817a">MusicObject::DownLoadMode</a></div><div class="ttdeci">DownLoadMode</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00261">musicobject.h:261</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 5 2018 12:29:30 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 10:20:49 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

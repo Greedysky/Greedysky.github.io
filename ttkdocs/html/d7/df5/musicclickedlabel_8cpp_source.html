@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.8.0</span>
+   &#160;<span id="projectnumber">2.7.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -93,28 +93,22 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    setCursor(Qt::PointingHandCursor);</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../d1/db0/class_music_clicked_label.html#a00aa1c897c01afcf4266bab9fb8ba016">   17</a></span>&#160;QString <a class="code" href="../../d1/db0/class_music_clicked_label.html#a00aa1c897c01afcf4266bab9fb8ba016">MusicClickedLabel::getClassName</a>()</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../d1/db0/class_music_clicked_label.html#a7828efe864650ae6f5752f4cd9d1062a">   17</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d1/db0/class_music_clicked_label.html#a7828efe864650ae6f5752f4cd9d1062a">MusicClickedLabel::mousePressEvent</a>(QMouseEvent *event)</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> staticMetaObject.className();</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../d1/db0/class_music_clicked_label.html#a7828efe864650ae6f5752f4cd9d1062a">   22</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d1/db0/class_music_clicked_label.html#a7828efe864650ae6f5752f4cd9d1062a">MusicClickedLabel::mousePressEvent</a>(QMouseEvent *event)</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">//    QLabel::mousePressEvent(event);</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">if</span>(event-&gt;button() == Qt::LeftButton)</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;       emit <a class="code" href="../../d1/db0/class_music_clicked_label.html#aded4cc80b30750360b3344a67b3a1fc0">clicked</a>();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//    QLabel::mousePressEvent(event);</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">if</span>(event-&gt;button() == Qt::LeftButton)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;       emit <a class="code" href="../../d1/db0/class_music_clicked_label.html#aded4cc80b30750360b3344a67b3a1fc0">clicked</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
 <div class="ttc" id="class_music_clicked_label_html_aded4cc80b30750360b3344a67b3a1fc0"><div class="ttname"><a href="../../d1/db0/class_music_clicked_label.html#aded4cc80b30750360b3344a67b3a1fc0">MusicClickedLabel::clicked</a></div><div class="ttdeci">void clicked()</div></div>
-<div class="ttc" id="class_music_clicked_label_html_a7828efe864650ae6f5752f4cd9d1062a"><div class="ttname"><a href="../../d1/db0/class_music_clicked_label.html#a7828efe864650ae6f5752f4cd9d1062a">MusicClickedLabel::mousePressEvent</a></div><div class="ttdeci">virtual void mousePressEvent(QMouseEvent *event) override</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/df5/musicclickedlabel_8cpp_source.html#l00022">musicclickedlabel.cpp:22</a></div></div>
-<div class="ttc" id="class_music_clicked_label_html_a00aa1c897c01afcf4266bab9fb8ba016"><div class="ttname"><a href="../../d1/db0/class_music_clicked_label.html#a00aa1c897c01afcf4266bab9fb8ba016">MusicClickedLabel::getClassName</a></div><div class="ttdeci">static QString getClassName()</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/df5/musicclickedlabel_8cpp_source.html#l00017">musicclickedlabel.cpp:17</a></div></div>
+<div class="ttc" id="class_music_clicked_label_html_a7828efe864650ae6f5752f4cd9d1062a"><div class="ttname"><a href="../../d1/db0/class_music_clicked_label.html#a7828efe864650ae6f5752f4cd9d1062a">MusicClickedLabel::mousePressEvent</a></div><div class="ttdeci">virtual void mousePressEvent(QMouseEvent *event) override</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/df5/musicclickedlabel_8cpp_source.html#l00017">musicclickedlabel.cpp:17</a></div></div>
 <div class="ttc" id="class_music_clicked_label_html_a56b0bccbf5bb1cbd9f6207613af8989b"><div class="ttname"><a href="../../d1/db0/class_music_clicked_label.html#a56b0bccbf5bb1cbd9f6207613af8989b">MusicClickedLabel::MusicClickedLabel</a></div><div class="ttdeci">MusicClickedLabel(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/df5/musicclickedlabel_8cpp_source.html#l00005">musicclickedlabel.cpp:5</a></div></div>
 <div class="ttc" id="musicclickedlabel_8h_html"><div class="ttname"><a href="../../da/d22/musicclickedlabel_8h.html">musicclickedlabel.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 5 2018 12:29:29 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 10:20:48 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

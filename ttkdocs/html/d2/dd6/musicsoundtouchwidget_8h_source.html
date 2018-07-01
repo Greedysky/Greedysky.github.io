@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.8.0</span>
+   &#160;<span id="projectnumber">2.7.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -110,59 +110,58 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="../../dc/d3f/class_music_sound_touch_widget.html">   34</a></span>&#160;<span class="keyword">class </span>MUSIC_TOOLSET_EXPORT <a class="code" href="../../dc/d3f/class_music_sound_touch_widget.html">MusicSoundTouchWidget</a> : <span class="keyword">public</span> <a class="code" href="../../d5/d2d/class_music_abstract_move_widget.html">MusicAbstractMoveWidget</a></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../dc/d3f/class_music_sound_touch_widget.html">MusicSoundTouchWidget</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../dc/d3f/class_music_sound_touch_widget.html">MusicSoundTouchWidget</a>();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../d5/d2d/class_music_abstract_move_widget.html#adf129b027d906c36d605238a27043ede">getClassName</a>();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> resetFlag(<a class="code" href="../../df/dbc/namespace_music_object.html#a1a14ffa5d3251d93ec8b537f32d3b074">MusicObject::ToolsType</a> flag);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> show();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">private</span> Q_SLOTS:</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> analysisOutput();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> onRecordStart();</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> onRecordStop();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> onRecordPlay();</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> tempoSliderValueChanged(<span class="keywordtype">int</span> value);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> pitchSliderValueChanged(<span class="keywordtype">int</span> value);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> rateSliderValueChanged(<span class="keywordtype">int</span> value);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> openWavButtonClicked();</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> transformButtonClicked();</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> finished(<span class="keywordtype">int</span> <a class="code" href="../../da/da8/structcode.html">code</a>);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> closeEvent(QCloseEvent *event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> setText(<span class="keyword">const</span> QString &amp;text);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../dc/d3f/class_music_sound_touch_widget.html">MusicSoundTouchWidget</a>)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../dc/d3f/class_music_sound_touch_widget.html">MusicSoundTouchWidget</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../dc/d3f/class_music_sound_touch_widget.html">MusicSoundTouchWidget</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> resetFlag(<a class="code" href="../../df/dbc/namespace_music_object.html#a1a14ffa5d3251d93ec8b537f32d3b074">MusicObject::ToolsType</a> flag);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> show();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">private</span> Q_SLOTS:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> analysisOutput();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> onRecordStart();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> onRecordStop();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> onRecordPlay();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> tempoSliderValueChanged(<span class="keywordtype">int</span> value);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> pitchSliderValueChanged(<span class="keywordtype">int</span> value);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> rateSliderValueChanged(<span class="keywordtype">int</span> value);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> openWavButtonClicked();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> transformButtonClicked();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> finished(<span class="keywordtype">int</span> <a class="code" href="../../da/da8/structcode.html">code</a>);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> closeEvent(QCloseEvent *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> setText(<span class="keyword">const</span> QString &amp;text);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="../../dc/d3f/class_music_sound_touch_widget.html#a54c2b1f7f201d3c293ea52386120e2ce">  111</a></span>&#160;    Ui::MusicSoundTouchWidget *<a class="code" href="../../dc/d3f/class_music_sound_touch_widget.html#a54c2b1f7f201d3c293ea52386120e2ce">m_ui</a>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="../../dc/d3f/class_music_sound_touch_widget.html#aefc234e0bb6c3539a7f749046e873fe9">  112</a></span>&#160;    QProcess *<a class="code" href="../../dc/d3f/class_music_sound_touch_widget.html#aefc234e0bb6c3539a7f749046e873fe9">m_process</a>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="../../dc/d3f/class_music_sound_touch_widget.html#a2d40e2583baf7da2197654885ee63091">  113</a></span>&#160;    <a class="code" href="../../d5/d00/class_music_audio_recorder_core.html">MusicAudioRecorderCore</a> *<a class="code" href="../../dc/d3f/class_music_sound_touch_widget.html#a2d40e2583baf7da2197654885ee63091">m_recordCore</a>;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="../../dc/d3f/class_music_sound_touch_widget.html#a54c2b1f7f201d3c293ea52386120e2ce">  115</a></span>&#160;    Ui::MusicSoundTouchWidget *<a class="code" href="../../dc/d3f/class_music_sound_touch_widget.html#a54c2b1f7f201d3c293ea52386120e2ce">m_ui</a>;</div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="../../dc/d3f/class_music_sound_touch_widget.html#aefc234e0bb6c3539a7f749046e873fe9">  116</a></span>&#160;    QProcess *<a class="code" href="../../dc/d3f/class_music_sound_touch_widget.html#aefc234e0bb6c3539a7f749046e873fe9">m_process</a>;</div>
-<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="../../dc/d3f/class_music_sound_touch_widget.html#a2d40e2583baf7da2197654885ee63091">  117</a></span>&#160;    <a class="code" href="../../d5/d00/class_music_audio_recorder_core.html">MusicAudioRecorderCore</a> *<a class="code" href="../../dc/d3f/class_music_sound_touch_widget.html#a2d40e2583baf7da2197654885ee63091">m_recordCore</a>;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;};</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif // MUSICSOUNDTOUCHWIDGET_H</span></div>
-<div class="ttc" id="namespace_music_object_html_a1a14ffa5d3251d93ec8b537f32d3b074"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#a1a14ffa5d3251d93ec8b537f32d3b074">MusicObject::ToolsType</a></div><div class="ttdeci">ToolsType</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00285">musicobject.h:285</a></div></div>
-<div class="ttc" id="class_music_sound_touch_widget_html_a54c2b1f7f201d3c293ea52386120e2ce"><div class="ttname"><a href="../../dc/d3f/class_music_sound_touch_widget.html#a54c2b1f7f201d3c293ea52386120e2ce">MusicSoundTouchWidget::m_ui</a></div><div class="ttdeci">Ui::MusicSoundTouchWidget * m_ui</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dd6/musicsoundtouchwidget_8h_source.html#l00115">musicsoundtouchwidget.h:115</a></div></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;};</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#endif // MUSICSOUNDTOUCHWIDGET_H</span></div>
+<div class="ttc" id="namespace_music_object_html_a1a14ffa5d3251d93ec8b537f32d3b074"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#a1a14ffa5d3251d93ec8b537f32d3b074">MusicObject::ToolsType</a></div><div class="ttdeci">ToolsType</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00281">musicobject.h:281</a></div></div>
+<div class="ttc" id="class_music_sound_touch_widget_html_a54c2b1f7f201d3c293ea52386120e2ce"><div class="ttname"><a href="../../dc/d3f/class_music_sound_touch_widget.html#a54c2b1f7f201d3c293ea52386120e2ce">MusicSoundTouchWidget::m_ui</a></div><div class="ttdeci">Ui::MusicSoundTouchWidget * m_ui</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dd6/musicsoundtouchwidget_8h_source.html#l00111">musicsoundtouchwidget.h:111</a></div></div>
 <div class="ttc" id="class_music_audio_recorder_core_html"><div class="ttname"><a href="../../d5/d00/class_music_audio_recorder_core.html">MusicAudioRecorderCore</a></div><div class="ttdoc">The class of the audio recorder core. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d6b/musicaudiorecordercore_8h_source.html#l00032">musicaudiorecordercore.h:32</a></div></div>
 <div class="ttc" id="namespace_ui_html"><div class="ttname"><a href="../../dc/df0/namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d24/musicapplication_8h_source.html#l00033">musicapplication.h:33</a></div></div>
-<div class="ttc" id="class_music_sound_touch_widget_html_aefc234e0bb6c3539a7f749046e873fe9"><div class="ttname"><a href="../../dc/d3f/class_music_sound_touch_widget.html#aefc234e0bb6c3539a7f749046e873fe9">MusicSoundTouchWidget::m_process</a></div><div class="ttdeci">QProcess * m_process</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dd6/musicsoundtouchwidget_8h_source.html#l00116">musicsoundtouchwidget.h:116</a></div></div>
-<div class="ttc" id="class_music_sound_touch_widget_html_a2d40e2583baf7da2197654885ee63091"><div class="ttname"><a href="../../dc/d3f/class_music_sound_touch_widget.html#a2d40e2583baf7da2197654885ee63091">MusicSoundTouchWidget::m_recordCore</a></div><div class="ttdeci">MusicAudioRecorderCore * m_recordCore</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dd6/musicsoundtouchwidget_8h_source.html#l00117">musicsoundtouchwidget.h:117</a></div></div>
+<div class="ttc" id="class_music_sound_touch_widget_html_aefc234e0bb6c3539a7f749046e873fe9"><div class="ttname"><a href="../../dc/d3f/class_music_sound_touch_widget.html#aefc234e0bb6c3539a7f749046e873fe9">MusicSoundTouchWidget::m_process</a></div><div class="ttdeci">QProcess * m_process</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dd6/musicsoundtouchwidget_8h_source.html#l00112">musicsoundtouchwidget.h:112</a></div></div>
+<div class="ttc" id="class_music_sound_touch_widget_html_a2d40e2583baf7da2197654885ee63091"><div class="ttname"><a href="../../dc/d3f/class_music_sound_touch_widget.html#a2d40e2583baf7da2197654885ee63091">MusicSoundTouchWidget::m_recordCore</a></div><div class="ttdeci">MusicAudioRecorderCore * m_recordCore</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dd6/musicsoundtouchwidget_8h_source.html#l00113">musicsoundtouchwidget.h:113</a></div></div>
 <div class="ttc" id="musicobject_8h_html"><div class="ttname"><a href="../../d8/d07/musicobject_8h.html">musicobject.h</a></div></div>
 <div class="ttc" id="musicabstractmovewidget_8h_html"><div class="ttname"><a href="../../d8/ddc/musicabstractmovewidget_8h.html">musicabstractmovewidget.h</a></div></div>
 <div class="ttc" id="structcode_html"><div class="ttname"><a href="../../da/da8/structcode.html">code</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d0d/inftrees_8h_source.html#l00024">inftrees.h:24</a></div></div>
-<div class="ttc" id="class_music_abstract_move_widget_html_adf129b027d906c36d605238a27043ede"><div class="ttname"><a href="../../d5/d2d/class_music_abstract_move_widget.html#adf129b027d906c36d605238a27043ede">MusicAbstractMoveWidget::getClassName</a></div><div class="ttdeci">static QString getClassName()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/de6/musicabstractmovewidget_8cpp_source.html#l00038">musicabstractmovewidget.cpp:38</a></div></div>
+<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00113">musicglobal.h:113</a></div></div>
 <div class="ttc" id="class_music_sound_touch_widget_html"><div class="ttname"><a href="../../dc/d3f/class_music_sound_touch_widget.html">MusicSoundTouchWidget</a></div><div class="ttdoc">The class of the sound touch widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dd6/musicsoundtouchwidget_8h_source.html#l00034">musicsoundtouchwidget.h:34</a></div></div>
 <div class="ttc" id="class_music_abstract_move_widget_html"><div class="ttname"><a href="../../d5/d2d/class_music_abstract_move_widget.html">MusicAbstractMoveWidget</a></div><div class="ttdoc">The class of the moving widget base. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/ddc/musicabstractmovewidget_8h_source.html#l00029">musicabstractmovewidget.h:29</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 5 2018 12:29:29 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 10:20:48 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

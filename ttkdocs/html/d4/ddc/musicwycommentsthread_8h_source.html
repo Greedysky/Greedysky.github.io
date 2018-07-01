@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.8.0</span>
+   &#160;<span id="projectnumber">2.7.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -105,53 +105,51 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                                       <span class="keyword">private</span> <a class="code" href="../../d1/dc3/class_music_down_load_w_y_interface.html">MusicDownLoadWYInterface</a></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../de/d68/class_music_w_y_song_comments_thread.html">MusicWYSongCommentsThread</a>(QObject *parent = 0);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../d9/dc5/class_music_down_load_comments_thread.html#ac873bf549cb2a019747707e00b4ef139">getClassName</a>();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d9/dc5/class_music_down_load_comments_thread.html#ac8d9075d163470a711429ef418d50ded">startToSearch</a>(<span class="keyword">const</span> QString &amp;name) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../de/d41/class_music_down_load_paging_thread.html#a2019d56a8bc00aea478c7aac417aaf5a">startToPage</a>(<span class="keywordtype">int</span> <a class="code" href="../../d2/db7/ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d5/de6/class_music_network_abstract.html#a5633d328e4f80b91dde0113550d6e852">downLoadFinished</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="../../d9/d6a/class_music_w_y_playlist_comments_thread.html">   64</a></span>&#160;<span class="keyword">class </span>MUSIC_NETWORK_EXPORT <a class="code" href="../../d9/d6a/class_music_w_y_playlist_comments_thread.html">MusicWYPlaylistCommentsThread</a> : <span class="keyword">public</span> <a class="code" href="../../d9/dc5/class_music_down_load_comments_thread.html">MusicDownLoadCommentsThread</a>,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                                           <span class="keyword">private</span> <a class="code" href="../../d1/dc3/class_music_down_load_w_y_interface.html">MusicDownLoadWYInterface</a></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d9/d6a/class_music_w_y_playlist_comments_thread.html">MusicWYPlaylistCommentsThread</a>(QObject *parent = 0);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../d9/dc5/class_music_down_load_comments_thread.html#ac873bf549cb2a019747707e00b4ef139">getClassName</a>();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d9/dc5/class_music_down_load_comments_thread.html#ac8d9075d163470a711429ef418d50ded">startToSearch</a>(<span class="keyword">const</span> QString &amp;name) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../de/d41/class_music_down_load_paging_thread.html#a2019d56a8bc00aea478c7aac417aaf5a">startToPage</a>(<span class="keywordtype">int</span> <a class="code" href="../../d2/db7/ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../de/d68/class_music_w_y_song_comments_thread.html">MusicWYSongCommentsThread</a>)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../de/d68/class_music_w_y_song_comments_thread.html">MusicWYSongCommentsThread</a>(QObject *parent = 0);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d9/dc5/class_music_down_load_comments_thread.html#ac8d9075d163470a711429ef418d50ded">startToSearch</a>(<span class="keyword">const</span> QString &amp;name) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../de/d41/class_music_down_load_paging_thread.html#a2019d56a8bc00aea478c7aac417aaf5a">startToPage</a>(<span class="keywordtype">int</span> <a class="code" href="../../d2/db7/ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d5/de6/class_music_network_abstract.html#a5633d328e4f80b91dde0113550d6e852">downLoadFinished</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="../../d9/d6a/class_music_w_y_playlist_comments_thread.html">   60</a></span>&#160;<span class="keyword">class </span>MUSIC_NETWORK_EXPORT <a class="code" href="../../d9/d6a/class_music_w_y_playlist_comments_thread.html">MusicWYPlaylistCommentsThread</a> : <span class="keyword">public</span> <a class="code" href="../../d9/dc5/class_music_down_load_comments_thread.html">MusicDownLoadCommentsThread</a>,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                                           <span class="keyword">private</span> <a class="code" href="../../d1/dc3/class_music_down_load_w_y_interface.html">MusicDownLoadWYInterface</a></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d9/d6a/class_music_w_y_playlist_comments_thread.html">MusicWYPlaylistCommentsThread</a>)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d9/d6a/class_music_w_y_playlist_comments_thread.html">MusicWYPlaylistCommentsThread</a>(QObject *parent = 0);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d9/dc5/class_music_down_load_comments_thread.html#ac8d9075d163470a711429ef418d50ded">startToSearch</a>(<span class="keyword">const</span> QString &amp;name) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../de/d41/class_music_down_load_paging_thread.html#a2019d56a8bc00aea478c7aac417aaf5a">startToPage</a>(<span class="keywordtype">int</span> <a class="code" href="../../d2/db7/ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d5/de6/class_music_network_abstract.html#a5633d328e4f80b91dde0113550d6e852">downLoadFinished</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;};</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d5/de6/class_music_network_abstract.html#a5633d328e4f80b91dde0113550d6e852">downLoadFinished</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;};</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#endif // MUSICWYCOMMENTSTHREAD_H</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif // MUSICWYCOMMENTSTHREAD_H</span></div>
 <div class="ttc" id="class_music_w_y_song_comments_thread_html"><div class="ttname"><a href="../../de/d68/class_music_w_y_song_comments_thread.html">MusicWYSongCommentsThread</a></div><div class="ttdoc">The class to wangyi query song comments download data from net. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/ddc/musicwycommentsthread_8h_source.html#l00028">musicwycommentsthread.h:28</a></div></div>
 <div class="ttc" id="class_music_down_load_comments_thread_html_ac8d9075d163470a711429ef418d50ded"><div class="ttname"><a href="../../d9/dc5/class_music_down_load_comments_thread.html#ac8d9075d163470a711429ef418d50ded">MusicDownLoadCommentsThread::startToSearch</a></div><div class="ttdeci">virtual void startToSearch(const QString &amp;name)=0</div></div>
-<div class="ttc" id="class_music_w_y_playlist_comments_thread_html"><div class="ttname"><a href="../../d9/d6a/class_music_w_y_playlist_comments_thread.html">MusicWYPlaylistCommentsThread</a></div><div class="ttdoc">The class to wangyi query playlist comments download data from net. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/ddc/musicwycommentsthread_8h_source.html#l00064">musicwycommentsthread.h:64</a></div></div>
+<div class="ttc" id="class_music_w_y_playlist_comments_thread_html"><div class="ttname"><a href="../../d9/d6a/class_music_w_y_playlist_comments_thread.html">MusicWYPlaylistCommentsThread</a></div><div class="ttdoc">The class to wangyi query playlist comments download data from net. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/ddc/musicwycommentsthread_8h_source.html#l00060">musicwycommentsthread.h:60</a></div></div>
 <div class="ttc" id="ioapi_8h_html_a601c4660e8a1a14a1b87fe387e934d19"><div class="ttname"><a href="../../d2/db7/ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a></div><div class="ttdeci">voidpf uLong offset</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/db7/ioapi_8h_source.html#l00142">ioapi.h:142</a></div></div>
 <div class="ttc" id="class_music_network_abstract_html_a5633d328e4f80b91dde0113550d6e852"><div class="ttname"><a href="../../d5/de6/class_music_network_abstract.html#a5633d328e4f80b91dde0113550d6e852">MusicNetworkAbstract::downLoadFinished</a></div><div class="ttdeci">virtual void downLoadFinished()=0</div></div>
 <div class="ttc" id="musicdownloadwyinterface_8h_html"><div class="ttname"><a href="../../df/d50/musicdownloadwyinterface_8h.html">musicdownloadwyinterface.h</a></div></div>
 <div class="ttc" id="class_music_down_load_w_y_interface_html"><div class="ttname"><a href="../../d1/dc3/class_music_down_load_w_y_interface.html">MusicDownLoadWYInterface</a></div><div class="ttdoc">The class to wangyi query download interface. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d50/musicdownloadwyinterface_8h_source.html#l00085">musicdownloadwyinterface.h:85</a></div></div>
-<div class="ttc" id="class_music_down_load_comments_thread_html_ac873bf549cb2a019747707e00b4ef139"><div class="ttname"><a href="../../d9/dc5/class_music_down_load_comments_thread.html#ac873bf549cb2a019747707e00b4ef139">MusicDownLoadCommentsThread::getClassName</a></div><div class="ttdeci">static QString getClassName()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d51/musicdownloadcommentsthread_8cpp_source.html#l00009">musicdownloadcommentsthread.cpp:9</a></div></div>
+<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00113">musicglobal.h:113</a></div></div>
 <div class="ttc" id="musicdownloadcommentsthread_8h_html"><div class="ttname"><a href="../../d7/d35/musicdownloadcommentsthread_8h.html">musicdownloadcommentsthread.h</a></div></div>
 <div class="ttc" id="class_music_down_load_comments_thread_html"><div class="ttname"><a href="../../d9/dc5/class_music_down_load_comments_thread.html">MusicDownLoadCommentsThread</a></div><div class="ttdoc">The class to query song comments download data from net. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d35/musicdownloadcommentsthread_8h_source.html#l00027">musicdownloadcommentsthread.h:27</a></div></div>
-<div class="ttc" id="class_music_down_load_paging_thread_html_a2019d56a8bc00aea478c7aac417aaf5a"><div class="ttname"><a href="../../de/d41/class_music_down_load_paging_thread.html#a2019d56a8bc00aea478c7aac417aaf5a">MusicDownLoadPagingThread::startToPage</a></div><div class="ttdeci">virtual void startToPage(int offset)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/df9/musicdownloadpagingthread_8cpp_source.html#l00036">musicdownloadpagingthread.cpp:36</a></div></div>
+<div class="ttc" id="class_music_down_load_paging_thread_html_a2019d56a8bc00aea478c7aac417aaf5a"><div class="ttname"><a href="../../de/d41/class_music_down_load_paging_thread.html#a2019d56a8bc00aea478c7aac417aaf5a">MusicDownLoadPagingThread::startToPage</a></div><div class="ttdeci">virtual void startToPage(int offset)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/df9/musicdownloadpagingthread_8cpp_source.html#l00031">musicdownloadpagingthread.cpp:31</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 5 2018 12:29:27 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 10:20:44 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

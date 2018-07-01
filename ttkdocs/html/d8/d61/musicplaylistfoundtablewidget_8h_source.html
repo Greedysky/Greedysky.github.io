@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.8.0</span>
+   &#160;<span id="projectnumber">2.7.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -102,29 +102,28 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../d5/d24/class_music_playlist_found_table_widget.html">   26</a></span>&#160;<span class="keyword">class </span>MUSIC_WIDGET_EXPORT <a class="code" href="../../d5/d24/class_music_playlist_found_table_widget.html">MusicPlaylistFoundTableWidget</a> : <span class="keyword">public</span> <a class="code" href="../../de/d9b/class_music_query_found_table_widget.html">MusicQueryFoundTableWidget</a></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d5/d24/class_music_playlist_found_table_widget.html">MusicPlaylistFoundTableWidget</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d5/d24/class_music_playlist_found_table_widget.html">MusicPlaylistFoundTableWidget</a>();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../de/d9b/class_music_query_found_table_widget.html#a22e95ea2eb7e159e0306b7cc475a1828">getClassName</a>();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../de/d9b/class_music_query_found_table_widget.html#a69e43c8e54ecbf1cbdd28f59dd28cdbe">setQueryInput</a>(<a class="code" href="../../dc/de4/class_music_down_load_query_thread_abstract.html">MusicDownLoadQueryThreadAbstract</a> *query) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> setConnectObject(QObject *obj);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif // MUSICPLAYLISTFOUNDTABLEWIDGET_H</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d5/d24/class_music_playlist_found_table_widget.html">MusicPlaylistFoundTableWidget</a>)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d5/d24/class_music_playlist_found_table_widget.html">MusicPlaylistFoundTableWidget</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d5/d24/class_music_playlist_found_table_widget.html">MusicPlaylistFoundTableWidget</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../de/d9b/class_music_query_found_table_widget.html#a69e43c8e54ecbf1cbdd28f59dd28cdbe">setQueryInput</a>(<a class="code" href="../../dc/de4/class_music_down_load_query_thread_abstract.html">MusicDownLoadQueryThreadAbstract</a> *query) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> setConnectObject(QObject *obj);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif // MUSICPLAYLISTFOUNDTABLEWIDGET_H</span></div>
 <div class="ttc" id="class_music_playlist_found_table_widget_html"><div class="ttname"><a href="../../d5/d24/class_music_playlist_found_table_widget.html">MusicPlaylistFoundTableWidget</a></div><div class="ttdoc">The class of the playlist music found table widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d61/musicplaylistfoundtablewidget_8h_source.html#l00026">musicplaylistfoundtablewidget.h:26</a></div></div>
 <div class="ttc" id="class_music_query_found_table_widget_html"><div class="ttname"><a href="../../de/d9b/class_music_query_found_table_widget.html">MusicQueryFoundTableWidget</a></div><div class="ttdoc">The class of the query found table widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d11/musicqueryfoundtablewidget_8h_source.html#l00027">musicqueryfoundtablewidget.h:27</a></div></div>
-<div class="ttc" id="class_music_query_found_table_widget_html_a22e95ea2eb7e159e0306b7cc475a1828"><div class="ttname"><a href="../../de/d9b/class_music_query_found_table_widget.html#a22e95ea2eb7e159e0306b7cc475a1828">MusicQueryFoundTableWidget::getClassName</a></div><div class="ttdeci">static QString getClassName()</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d6e/musicqueryfoundtablewidget_8cpp_source.html#l00043">musicqueryfoundtablewidget.cpp:43</a></div></div>
 <div class="ttc" id="class_music_down_load_query_thread_abstract_html"><div class="ttname"><a href="../../dc/de4/class_music_down_load_query_thread_abstract.html">MusicDownLoadQueryThreadAbstract</a></div><div class="ttdoc">The class to abstract query download data from net. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00084">musicdownloadquerythreadabstract.h:84</a></div></div>
 <div class="ttc" id="musicqueryfoundtablewidget_8h_html"><div class="ttname"><a href="../../d8/d11/musicqueryfoundtablewidget_8h.html">musicqueryfoundtablewidget.h</a></div></div>
-<div class="ttc" id="class_music_query_found_table_widget_html_a69e43c8e54ecbf1cbdd28f59dd28cdbe"><div class="ttname"><a href="../../de/d9b/class_music_query_found_table_widget.html#a69e43c8e54ecbf1cbdd28f59dd28cdbe">MusicQueryFoundTableWidget::setQueryInput</a></div><div class="ttdeci">virtual void setQueryInput(MusicDownLoadQueryThreadAbstract *query)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d6e/musicqueryfoundtablewidget_8cpp_source.html#l00048">musicqueryfoundtablewidget.cpp:48</a></div></div>
+<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00113">musicglobal.h:113</a></div></div>
+<div class="ttc" id="class_music_query_found_table_widget_html_a69e43c8e54ecbf1cbdd28f59dd28cdbe"><div class="ttname"><a href="../../de/d9b/class_music_query_found_table_widget.html#a69e43c8e54ecbf1cbdd28f59dd28cdbe">MusicQueryFoundTableWidget::setQueryInput</a></div><div class="ttdeci">virtual void setQueryInput(MusicDownLoadQueryThreadAbstract *query)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d6e/musicqueryfoundtablewidget_8cpp_source.html#l00043">musicqueryfoundtablewidget.cpp:43</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 5 2018 12:29:31 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 10:20:49 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

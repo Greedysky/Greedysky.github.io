@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.8.0</span>
+   &#160;<span id="projectnumber">2.7.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -103,53 +103,49 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../d8/dd3/class_music_lrc_manager_for_desktop.html">   27</a></span>&#160;<span class="keyword">class </span>MUSIC_LRC_EXPORT <a class="code" href="../../d8/dd3/class_music_lrc_manager_for_desktop.html">MusicLrcManagerForDesktop</a> : <span class="keyword">public</span> <a class="code" href="../../d6/d4a/class_music_lrc_manager.html">MusicLrcManager</a></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d8/dd3/class_music_lrc_manager_for_desktop.html">MusicLrcManagerForDesktop</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../d6/d4a/class_music_lrc_manager.html#adfb1d80f58da5492a7601c77ce54c53d">getClassName</a>();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../d6/d1f/class_music_lrc_manager_horizontal_desktop.html">   47</a></span>&#160;<span class="keyword">class </span>MUSIC_LRC_EXPORT <a class="code" href="../../d6/d1f/class_music_lrc_manager_horizontal_desktop.html">MusicLrcManagerHorizontalDesktop</a> : <span class="keyword">public</span> <a class="code" href="../../d8/dd3/class_music_lrc_manager_for_desktop.html">MusicLrcManagerForDesktop</a></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d6/d1f/class_music_lrc_manager_horizontal_desktop.html">MusicLrcManagerHorizontalDesktop</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../d8/dd3/class_music_lrc_manager_for_desktop.html#aad7e2003507dcc65fe5c521cff307139">getClassName</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d8/dd3/class_music_lrc_manager_for_desktop.html">MusicLrcManagerForDesktop</a>)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d8/dd3/class_music_lrc_manager_for_desktop.html">MusicLrcManagerForDesktop</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="../../d6/d1f/class_music_lrc_manager_horizontal_desktop.html">   43</a></span>&#160;<span class="keyword">class </span>MUSIC_LRC_EXPORT <a class="code" href="../../d6/d1f/class_music_lrc_manager_horizontal_desktop.html">MusicLrcManagerHorizontalDesktop</a> : <span class="keyword">public</span> <a class="code" href="../../d8/dd3/class_music_lrc_manager_for_desktop.html">MusicLrcManagerForDesktop</a></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d6/d1f/class_music_lrc_manager_horizontal_desktop.html">MusicLrcManagerHorizontalDesktop</a>)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d6/d1f/class_music_lrc_manager_horizontal_desktop.html">MusicLrcManagerHorizontalDesktop</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> paintEvent(QPaintEvent *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> paintEvent(QPaintEvent *event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="../../d2/d83/class_music_lrc_manager_vertical_desktop.html">   73</a></span>&#160;<span class="keyword">class </span>MUSIC_LRC_EXPORT <a class="code" href="../../d2/d83/class_music_lrc_manager_vertical_desktop.html">MusicLrcManagerVerticalDesktop</a> : <span class="keyword">public</span> <a class="code" href="../../d8/dd3/class_music_lrc_manager_for_desktop.html">MusicLrcManagerForDesktop</a></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d2/d83/class_music_lrc_manager_vertical_desktop.html">MusicLrcManagerVerticalDesktop</a>(QWidget *parent = 0);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../d8/dd3/class_music_lrc_manager_for_desktop.html#aad7e2003507dcc65fe5c521cff307139">getClassName</a>();</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> paintEvent(QPaintEvent *event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#endif // MUSICLRCMANAGERFORDESKTOP_H</span></div>
-<div class="ttc" id="class_music_lrc_manager_html"><div class="ttname"><a href="../../d6/d4a/class_music_lrc_manager.html">MusicLrcManager</a></div><div class="ttdoc">The class of the lrc manager base. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d52/musiclrcmanager_8h_source.html#l00087">musiclrcmanager.h:87</a></div></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="../../d2/d83/class_music_lrc_manager_vertical_desktop.html">   65</a></span>&#160;<span class="keyword">class </span>MUSIC_LRC_EXPORT <a class="code" href="../../d2/d83/class_music_lrc_manager_vertical_desktop.html">MusicLrcManagerVerticalDesktop</a> : <span class="keyword">public</span> <a class="code" href="../../d8/dd3/class_music_lrc_manager_for_desktop.html">MusicLrcManagerForDesktop</a></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d2/d83/class_music_lrc_manager_vertical_desktop.html">MusicLrcManagerVerticalDesktop</a>)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d2/d83/class_music_lrc_manager_vertical_desktop.html">MusicLrcManagerVerticalDesktop</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> paintEvent(QPaintEvent *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif // MUSICLRCMANAGERFORDESKTOP_H</span></div>
+<div class="ttc" id="class_music_lrc_manager_html"><div class="ttname"><a href="../../d6/d4a/class_music_lrc_manager.html">MusicLrcManager</a></div><div class="ttdoc">The class of the lrc manager base. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d52/musiclrcmanager_8h_source.html#l00086">musiclrcmanager.h:86</a></div></div>
 <div class="ttc" id="musiclrcmanager_8h_html"><div class="ttname"><a href="../../d1/d52/musiclrcmanager_8h.html">musiclrcmanager.h</a></div></div>
-<div class="ttc" id="class_music_lrc_manager_html_adfb1d80f58da5492a7601c77ce54c53d"><div class="ttname"><a href="../../d6/d4a/class_music_lrc_manager.html#adfb1d80f58da5492a7601c77ce54c53d">MusicLrcManager::getClassName</a></div><div class="ttdeci">static QString getClassName()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d4d/musiclrcmanager_8cpp_source.html#l00153">musiclrcmanager.cpp:153</a></div></div>
 <div class="ttc" id="class_music_lrc_manager_for_desktop_html"><div class="ttname"><a href="../../d8/dd3/class_music_lrc_manager_for_desktop.html">MusicLrcManagerForDesktop</a></div><div class="ttdoc">The class of the desktop lrc manager. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d10/musiclrcmanagerfordesktop_8h_source.html#l00027">musiclrcmanagerfordesktop.h:27</a></div></div>
-<div class="ttc" id="class_music_lrc_manager_horizontal_desktop_html"><div class="ttname"><a href="../../d6/d1f/class_music_lrc_manager_horizontal_desktop.html">MusicLrcManagerHorizontalDesktop</a></div><div class="ttdoc">The class of the desktop horizontal lrc manager. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d10/musiclrcmanagerfordesktop_8h_source.html#l00047">musiclrcmanagerfordesktop.h:47</a></div></div>
-<div class="ttc" id="class_music_lrc_manager_vertical_desktop_html"><div class="ttname"><a href="../../d2/d83/class_music_lrc_manager_vertical_desktop.html">MusicLrcManagerVerticalDesktop</a></div><div class="ttdoc">The class of the desktop vertical lrc manager. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d10/musiclrcmanagerfordesktop_8h_source.html#l00073">musiclrcmanagerfordesktop.h:73</a></div></div>
-<div class="ttc" id="class_music_lrc_manager_for_desktop_html_aad7e2003507dcc65fe5c521cff307139"><div class="ttname"><a href="../../d8/dd3/class_music_lrc_manager_for_desktop.html#aad7e2003507dcc65fe5c521cff307139">MusicLrcManagerForDesktop::getClassName</a></div><div class="ttdeci">static QString getClassName()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dc0/musiclrcmanagerfordesktop_8cpp_source.html#l00012">musiclrcmanagerfordesktop.cpp:12</a></div></div>
+<div class="ttc" id="class_music_lrc_manager_horizontal_desktop_html"><div class="ttname"><a href="../../d6/d1f/class_music_lrc_manager_horizontal_desktop.html">MusicLrcManagerHorizontalDesktop</a></div><div class="ttdoc">The class of the desktop horizontal lrc manager. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d10/musiclrcmanagerfordesktop_8h_source.html#l00043">musiclrcmanagerfordesktop.h:43</a></div></div>
+<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00113">musicglobal.h:113</a></div></div>
+<div class="ttc" id="class_music_lrc_manager_vertical_desktop_html"><div class="ttname"><a href="../../d2/d83/class_music_lrc_manager_vertical_desktop.html">MusicLrcManagerVerticalDesktop</a></div><div class="ttdoc">The class of the desktop vertical lrc manager. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d10/musiclrcmanagerfordesktop_8h_source.html#l00065">musiclrcmanagerfordesktop.h:65</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 5 2018 12:29:28 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 10:20:46 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.6.8.0</span>
+   &#160;<span id="projectnumber">2.7.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -107,28 +107,36 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;QPixmap&gt;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../da/dc4/_qt5_2tagmodel_8h.html">tagmodel.h</a>&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">class </span>Q_DECL_EXPORT <a class="code" href="../../df/dff/class_meta_data_model.html">MetaDataModel</a> : <span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">class </span><a class="code" href="../../df/dff/class_meta_data_model.html">MetaDataModel</a> : <span class="keyword">public</span> QObject</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;Q_OBJECT</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="../../df/dff/class_meta_data_model.html">MetaDataModel</a>(QObject *parent = 0);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../df/dff/class_meta_data_model.html">MetaDataModel</a>();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">virtual</span> QHash&lt;QString, QString&gt; audioProperties();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">virtual</span> QHash&lt;QString, QString&gt; descriptions();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">virtual</span> QList&lt;TagModel* &gt; tags();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">virtual</span> QPixmap cover();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">virtual</span> QString coverPath();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> setCover(<span class="keyword">const</span> QByteArray &amp;data);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="../../df/dff/class_meta_data_model.html#af63d1c5963f31fd163fcda43058b6979">MetaDataModel</a>(QObject *parent = 0);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../df/dff/class_meta_data_model.html#ad11428a68d14305ce1a13e4bcfef818a">~MetaDataModel</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">virtual</span> QHash&lt;QString, QString&gt; <a class="code" href="../../df/dff/class_meta_data_model.html#ac74aa718e486fe3b6d41e41d99d18602">audioProperties</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">virtual</span> QHash&lt;QString, QString&gt; <a class="code" href="../../df/dff/class_meta_data_model.html#a769a14b39084831b22ad3cd4fa0559cd">descriptions</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">virtual</span> QList&lt;TagModel* &gt; <a class="code" href="../../df/dff/class_meta_data_model.html#a7f926ef250a7edbee7b7c927735b1ee1">tags</a>();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">virtual</span> QPixmap <a class="code" href="../../df/dff/class_meta_data_model.html#a6bf8da4a6580f873255f08b1935e630e">cover</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">virtual</span> QString <a class="code" href="../../df/dff/class_meta_data_model.html#a4aa61ffa95444085a2ecdf18b54fc3b8">coverPath</a>();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="../../df/dff/class_meta_data_model.html#a8577689f78435ebc3db45e2ba9928705">setCover</a>(<span class="keyword">const</span> QByteArray &amp;data);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif // METADATAMODEL_H</span></div>
+<div class="ttc" id="class_meta_data_model_html_ad11428a68d14305ce1a13e4bcfef818a"><div class="ttname"><a href="../../df/dff/class_meta_data_model.html#ad11428a68d14305ce1a13e4bcfef818a">MetaDataModel::~MetaDataModel</a></div><div class="ttdeci">virtual ~MetaDataModel()</div></div>
+<div class="ttc" id="class_meta_data_model_html_a6bf8da4a6580f873255f08b1935e630e"><div class="ttname"><a href="../../df/dff/class_meta_data_model.html#a6bf8da4a6580f873255f08b1935e630e">MetaDataModel::cover</a></div><div class="ttdeci">virtual QPixmap cover()</div></div>
+<div class="ttc" id="class_meta_data_model_html_a8577689f78435ebc3db45e2ba9928705"><div class="ttname"><a href="../../df/dff/class_meta_data_model.html#a8577689f78435ebc3db45e2ba9928705">MetaDataModel::setCover</a></div><div class="ttdeci">virtual bool setCover(const QByteArray &amp;data)</div></div>
+<div class="ttc" id="class_meta_data_model_html_af63d1c5963f31fd163fcda43058b6979"><div class="ttname"><a href="../../df/dff/class_meta_data_model.html#af63d1c5963f31fd163fcda43058b6979">MetaDataModel::MetaDataModel</a></div><div class="ttdeci">MetaDataModel(QObject *parent=0)</div></div>
 <div class="ttc" id="class_meta_data_model_html"><div class="ttname"><a href="../../df/dff/class_meta_data_model.html">MetaDataModel</a></div><div class="ttdoc">The MetaDataModel is the base interface class of metadata access. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/ddb/_qt4_2metadatamodel_8h_source.html#l00034">metadatamodel.h:34</a></div></div>
+<div class="ttc" id="class_meta_data_model_html_a4aa61ffa95444085a2ecdf18b54fc3b8"><div class="ttname"><a href="../../df/dff/class_meta_data_model.html#a4aa61ffa95444085a2ecdf18b54fc3b8">MetaDataModel::coverPath</a></div><div class="ttdeci">virtual QString coverPath()</div></div>
 <div class="ttc" id="_qt5_2tagmodel_8h_html"><div class="ttname"><a href="../../da/dc4/_qt5_2tagmodel_8h.html">tagmodel.h</a></div></div>
+<div class="ttc" id="class_meta_data_model_html_ac74aa718e486fe3b6d41e41d99d18602"><div class="ttname"><a href="../../df/dff/class_meta_data_model.html#ac74aa718e486fe3b6d41e41d99d18602">MetaDataModel::audioProperties</a></div><div class="ttdeci">virtual QHash&lt; QString, QString &gt; audioProperties()</div></div>
+<div class="ttc" id="class_meta_data_model_html_a769a14b39084831b22ad3cd4fa0559cd"><div class="ttname"><a href="../../df/dff/class_meta_data_model.html#a769a14b39084831b22ad3cd4fa0559cd">MetaDataModel::descriptions</a></div><div class="ttdeci">virtual QHash&lt; QString, QString &gt; descriptions()</div></div>
+<div class="ttc" id="class_meta_data_model_html_a7f926ef250a7edbee7b7c927735b1ee1"><div class="ttname"><a href="../../df/dff/class_meta_data_model.html#a7f926ef250a7edbee7b7c927735b1ee1">MetaDataModel::tags</a></div><div class="ttdeci">virtual QList&lt; TagModel * &gt; tags()</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 5 2018 12:29:24 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 10:20:42 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
