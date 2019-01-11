@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.7.0.0</span>
+   &#160;<span id="projectnumber">2.8.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -133,8 +133,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span>(QFileInfo(dirName).isDir())</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    {</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        QDir dir(dirName);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        QFileInfoList list = dir.entryInfoList(QDir::Files | QDir::Dirs |  QDir::Hidden |</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                               QDir::NoSymLinks | QDir::NoDotAndDotDot);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">const</span> QFileInfoList &amp;list = dir.entryInfoList(QDir::Files | QDir::Dirs |  QDir::Hidden |</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                                      QDir::NoSymLinks | QDir::NoDotAndDotDot);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">foreach</span>(<span class="keyword">const</span> QFileInfo &amp;fileInfo, list)</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        {</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordflow">if</span>(fileInfo.isDir())</div>
@@ -157,7 +157,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        quint64 <a class="code" href="../../d2/db7/ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = <a class="code" href="../../d5/d84/namespace_music_utils_1_1_core.html#aeae164d2aad1afbe2565744b02407589">dirSize</a>( path );</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">if</span>(size &gt; cacheSize)</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            QFileInfoList fileList = QDir(path).entryInfoList(QDir::Dirs | QDir::NoDotAndDotDot);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keyword">const</span> QFileInfoList &amp;fileList = QDir(path).entryInfoList(QDir::Dirs | QDir::NoDotAndDotDot);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordflow">foreach</span>(<span class="keyword">const</span> QFileInfo &amp;fileInfo, fileList)</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            {</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                size -= fileInfo.size();</div>
@@ -187,7 +187,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    QFileInfoList fileList = dir.entryInfoList(filter, QDir::Files | QDir::Hidden | QDir::NoSymLinks);</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">if</span>(recursively)</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    {</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        QFileInfoList folderList = dir.entryInfoList(QDir::Dirs | QDir::NoDotAndDotDot);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keyword">const</span> QFileInfoList&amp; folderList = dir.entryInfoList(QDir::Dirs | QDir::NoDotAndDotDot);</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">foreach</span>(<span class="keyword">const</span> QFileInfo &amp;fileInfo, folderList)</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        {</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            fileList.append( <a class="code" href="../../d5/d84/namespace_music_utils_1_1_core.html#a6a1bf7308392a9e557846db6c9617150">getFileListByDir</a>(fileInfo.absoluteFilePath(), filter, recursively) );</div>
@@ -206,7 +206,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">bool</span> success = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keyword">const</span> QString dirPath = dr.path();</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keyword">const</span> QString &amp;dirPath = dr.path();</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="comment">// not empty -- we must empty it first</span></div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    QDirIterator di(dirPath, QDir::AllEntries | QDir::Hidden | QDir::System | QDir::NoDotAndDotDot);</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">while</span>(di.hasNext())</div>
@@ -286,8 +286,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
 <div class="line"><a name="l00208"></a><span class="lineno"><a class="line" href="../../d5/d84/namespace_music_utils_1_1_core.html#a69f71fc4066d1f74c041b66364a62f5f">  208</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d5/d84/namespace_music_utils_1_1_core.html#af7b373da4b84c9e469dadff071cedcf8">MusicUtils::Core::appVersionCheck</a>(<span class="keyword">const</span> QString &amp;o, <span class="keyword">const</span> QString &amp;d)</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;{</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    QStringList ol = o.split(<span class="stringliteral">&quot;.&quot;</span>);</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    QStringList dl = d.split(<span class="stringliteral">&quot;.&quot;</span>);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keyword">const</span> QStringList &amp;ol = o.split(<span class="stringliteral">&quot;.&quot;</span>);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keyword">const</span> QStringList &amp;dl = d.split(<span class="stringliteral">&quot;.&quot;</span>);</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keywordflow">if</span>(ol.isEmpty() || dl.isEmpty() || ol.count() != dl.count())</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    {</div>
@@ -318,7 +318,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 1 2018 10:20:46 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 11 2019 14:01:48 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

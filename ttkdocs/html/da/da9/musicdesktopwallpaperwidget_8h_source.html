@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.7.0.0</span>
+   &#160;<span id="projectnumber">2.8.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -82,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">/* =================================================</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of the TTK Music Player project</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2018 Greedysky Studio</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2019 Greedysky Studio</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
@@ -113,7 +113,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d2/d0e/class_music_desktop_wallpaper_item.html">MusicDesktopWallpaperItem</a>)</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d2/d0e/class_music_desktop_wallpaper_item.html">MusicDesktopWallpaperItem</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d2/d0e/class_music_desktop_wallpaper_item.html">MusicDesktopWallpaperItem</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    ~<a class="code" href="../../d2/d0e/class_music_desktop_wallpaper_item.html">MusicDesktopWallpaperItem</a>();</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
@@ -131,56 +131,51 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../df/dc3/class_music_desktop_wallpaper_widget.html">MusicDesktopWallpaperWidget</a>)</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../df/dc3/class_music_desktop_wallpaper_widget.html">MusicDesktopWallpaperWidget</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../df/dc3/class_music_desktop_wallpaper_widget.html">MusicDesktopWallpaperWidget</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    ~<a class="code" href="../../df/dc3/class_music_desktop_wallpaper_widget.html">MusicDesktopWallpaperWidget</a>();</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> resetFlag(<a class="code" href="../../df/dbc/namespace_music_object.html#a1a14ffa5d3251d93ec8b537f32d3b074">MusicObject::ToolsType</a> flag);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> netRadioButtonPressed();</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> localRadioButtonPressed();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> playRadioButtonPressed();</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> viewButtonPressed();</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> confirmButtonPressed();</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> stopButtonPressed();</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> cancelButtonPressed();</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> parameterFinished();</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">void</span> show();</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> closeEvent(QCloseEvent *event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">void</span> initWidgetStyle() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordtype">void</span> initParameters() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="../../df/dc3/class_music_desktop_wallpaper_widget.html#a5025eb260167e68b07b1c311d9b97cbf">  132</a></span>&#160;    Ui::MusicDesktopWallpaperWidget *<a class="code" href="../../df/dc3/class_music_desktop_wallpaper_widget.html#a5025eb260167e68b07b1c311d9b97cbf">m_ui</a>;</div>
-<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="../../df/dc3/class_music_desktop_wallpaper_widget.html#a413d0ac8094ca41a0ff6f9bb17cad470">  133</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../df/dc3/class_music_desktop_wallpaper_widget.html#a413d0ac8094ca41a0ff6f9bb17cad470">m_currentMode</a>;</div>
-<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="../../df/dc3/class_music_desktop_wallpaper_widget.html#a20cf8c1ad1014bcb09a81ebad87f6668">  134</a></span>&#160;    <a class="code" href="../../d2/d0e/class_music_desktop_wallpaper_item.html">MusicDesktopWallpaperItem</a> *<a class="code" href="../../df/dc3/class_music_desktop_wallpaper_widget.html#a20cf8c1ad1014bcb09a81ebad87f6668">m_wallItem</a>;</div>
-<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="../../df/dc3/class_music_desktop_wallpaper_widget.html#acab5db21b7e186f37e17e6a0bd976c84">  135</a></span>&#160;    <a class="code" href="../../d7/d22/class_music_desktop_wallpaper_thread.html">MusicDesktopWallpaperThread</a> *<a class="code" href="../../df/dc3/class_music_desktop_wallpaper_widget.html#acab5db21b7e186f37e17e6a0bd976c84">m_wallThread</a>;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;};</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor">#endif // MUSICDESKTOPWALLPAPERWIDGET_H</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> netRadioButtonPressed();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> localRadioButtonPressed();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> playRadioButtonPressed();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> viewButtonPressed();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> confirmButtonPressed();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> stopButtonPressed();</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span> cancelButtonPressed();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> parameterFinished();</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">void</span> show();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">void</span> initWidgetStyle() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">void</span> initParameters() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="../../df/dc3/class_music_desktop_wallpaper_widget.html#a5025eb260167e68b07b1c311d9b97cbf">  122</a></span>&#160;    Ui::MusicDesktopWallpaperWidget *<a class="code" href="../../df/dc3/class_music_desktop_wallpaper_widget.html#a5025eb260167e68b07b1c311d9b97cbf">m_ui</a>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="../../df/dc3/class_music_desktop_wallpaper_widget.html#a413d0ac8094ca41a0ff6f9bb17cad470">  123</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../df/dc3/class_music_desktop_wallpaper_widget.html#a413d0ac8094ca41a0ff6f9bb17cad470">m_currentMode</a>;</div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="../../df/dc3/class_music_desktop_wallpaper_widget.html#a20cf8c1ad1014bcb09a81ebad87f6668">  124</a></span>&#160;    <a class="code" href="../../d2/d0e/class_music_desktop_wallpaper_item.html">MusicDesktopWallpaperItem</a> *<a class="code" href="../../df/dc3/class_music_desktop_wallpaper_widget.html#a20cf8c1ad1014bcb09a81ebad87f6668">m_wallItem</a>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="../../df/dc3/class_music_desktop_wallpaper_widget.html#acab5db21b7e186f37e17e6a0bd976c84">  125</a></span>&#160;    <a class="code" href="../../d7/d22/class_music_desktop_wallpaper_thread.html">MusicDesktopWallpaperThread</a> *<a class="code" href="../../df/dc3/class_music_desktop_wallpaper_widget.html#acab5db21b7e186f37e17e6a0bd976c84">m_wallThread</a>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;};</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#endif // MUSICDESKTOPWALLPAPERWIDGET_H</span></div>
 <div class="ttc" id="class_music_desktop_wallpaper_item_html_a1d2ac7d8582cb6babe94f0b4544fb1ae"><div class="ttname"><a href="../../d2/d0e/class_music_desktop_wallpaper_item.html#a1d2ac7d8582cb6babe94f0b4544fb1ae">MusicDesktopWallpaperItem::m_background</a></div><div class="ttdeci">MusicTransitionAnimationLabel * m_background</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da9/musicdesktopwallpaperwidget_8h_source.html#l00054">musicdesktopwallpaperwidget.h:54</a></div></div>
-<div class="ttc" id="namespace_music_object_html_a1a14ffa5d3251d93ec8b537f32d3b074"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#a1a14ffa5d3251d93ec8b537f32d3b074">MusicObject::ToolsType</a></div><div class="ttdeci">ToolsType</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00281">musicobject.h:281</a></div></div>
 <div class="ttc" id="namespace_ui_html"><div class="ttname"><a href="../../dc/df0/namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d24/musicapplication_8h_source.html#l00033">musicapplication.h:33</a></div></div>
-<div class="ttc" id="class_music_desktop_wallpaper_widget_html_a413d0ac8094ca41a0ff6f9bb17cad470"><div class="ttname"><a href="../../df/dc3/class_music_desktop_wallpaper_widget.html#a413d0ac8094ca41a0ff6f9bb17cad470">MusicDesktopWallpaperWidget::m_currentMode</a></div><div class="ttdeci">int m_currentMode</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da9/musicdesktopwallpaperwidget_8h_source.html#l00133">musicdesktopwallpaperwidget.h:133</a></div></div>
+<div class="ttc" id="class_music_desktop_wallpaper_widget_html_a413d0ac8094ca41a0ff6f9bb17cad470"><div class="ttname"><a href="../../df/dc3/class_music_desktop_wallpaper_widget.html#a413d0ac8094ca41a0ff6f9bb17cad470">MusicDesktopWallpaperWidget::m_currentMode</a></div><div class="ttdeci">int m_currentMode</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da9/musicdesktopwallpaperwidget_8h_source.html#l00123">musicdesktopwallpaperwidget.h:123</a></div></div>
 <div class="ttc" id="class_music_desktop_wallpaper_thread_html"><div class="ttname"><a href="../../d7/d22/class_music_desktop_wallpaper_thread.html">MusicDesktopWallpaperThread</a></div><div class="ttdoc">The class of the desktop wallpaper thread. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dce/musicdesktopwallpaperthread_8h_source.html#l00036">musicdesktopwallpaperthread.h:36</a></div></div>
 <div class="ttc" id="class_music_transition_animation_label_html"><div class="ttname"><a href="../../d4/de8/class_music_transition_animation_label.html">MusicTransitionAnimationLabel</a></div><div class="ttdoc">The class of the label transition animation. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d5c/musictransitionanimationlabel_8h_source.html#l00030">musictransitionanimationlabel.h:30</a></div></div>
 <div class="ttc" id="musicobject_8h_html"><div class="ttname"><a href="../../d8/d07/musicobject_8h.html">musicobject.h</a></div></div>
 <div class="ttc" id="musicabstractmovewidget_8h_html"><div class="ttname"><a href="../../d8/ddc/musicabstractmovewidget_8h.html">musicabstractmovewidget.h</a></div></div>
 <div class="ttc" id="class_music_desktop_wallpaper_item_html"><div class="ttname"><a href="../../d2/d0e/class_music_desktop_wallpaper_item.html">MusicDesktopWallpaperItem</a></div><div class="ttdoc">The class of the desktop wallpaper item. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/da9/musicdesktopwallpaperwidget_8h_source.html#l00035">musicdesktopwallpaperwidget.h:35</a></div></div>
-<div class="ttc" id="class_music_desktop_wallpaper_widget_html_a20cf8c1ad1014bcb09a81ebad87f6668"><div class="ttname"><a href="../../df/dc3/class_music_desktop_wallpaper_widget.html#a20cf8c1ad1014bcb09a81ebad87f6668">MusicDesktopWallpaperWidget::m_wallItem</a></div><div class="ttdeci">MusicDesktopWallpaperItem * m_wallItem</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da9/musicdesktopwallpaperwidget_8h_source.html#l00134">musicdesktopwallpaperwidget.h:134</a></div></div>
-<div class="ttc" id="class_music_desktop_wallpaper_widget_html_a5025eb260167e68b07b1c311d9b97cbf"><div class="ttname"><a href="../../df/dc3/class_music_desktop_wallpaper_widget.html#a5025eb260167e68b07b1c311d9b97cbf">MusicDesktopWallpaperWidget::m_ui</a></div><div class="ttdeci">Ui::MusicDesktopWallpaperWidget * m_ui</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da9/musicdesktopwallpaperwidget_8h_source.html#l00132">musicdesktopwallpaperwidget.h:132</a></div></div>
-<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00113">musicglobal.h:113</a></div></div>
-<div class="ttc" id="class_music_desktop_wallpaper_widget_html_acab5db21b7e186f37e17e6a0bd976c84"><div class="ttname"><a href="../../df/dc3/class_music_desktop_wallpaper_widget.html#acab5db21b7e186f37e17e6a0bd976c84">MusicDesktopWallpaperWidget::m_wallThread</a></div><div class="ttdeci">MusicDesktopWallpaperThread * m_wallThread</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da9/musicdesktopwallpaperwidget_8h_source.html#l00135">musicdesktopwallpaperwidget.h:135</a></div></div>
+<div class="ttc" id="class_music_desktop_wallpaper_widget_html_a20cf8c1ad1014bcb09a81ebad87f6668"><div class="ttname"><a href="../../df/dc3/class_music_desktop_wallpaper_widget.html#a20cf8c1ad1014bcb09a81ebad87f6668">MusicDesktopWallpaperWidget::m_wallItem</a></div><div class="ttdeci">MusicDesktopWallpaperItem * m_wallItem</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da9/musicdesktopwallpaperwidget_8h_source.html#l00124">musicdesktopwallpaperwidget.h:124</a></div></div>
+<div class="ttc" id="class_music_desktop_wallpaper_widget_html_a5025eb260167e68b07b1c311d9b97cbf"><div class="ttname"><a href="../../df/dc3/class_music_desktop_wallpaper_widget.html#a5025eb260167e68b07b1c311d9b97cbf">MusicDesktopWallpaperWidget::m_ui</a></div><div class="ttdeci">Ui::MusicDesktopWallpaperWidget * m_ui</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da9/musicdesktopwallpaperwidget_8h_source.html#l00122">musicdesktopwallpaperwidget.h:122</a></div></div>
+<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00149">musicglobal.h:149</a></div></div>
+<div class="ttc" id="class_music_desktop_wallpaper_widget_html_acab5db21b7e186f37e17e6a0bd976c84"><div class="ttname"><a href="../../df/dc3/class_music_desktop_wallpaper_widget.html#acab5db21b7e186f37e17e6a0bd976c84">MusicDesktopWallpaperWidget::m_wallThread</a></div><div class="ttdeci">MusicDesktopWallpaperThread * m_wallThread</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da9/musicdesktopwallpaperwidget_8h_source.html#l00125">musicdesktopwallpaperwidget.h:125</a></div></div>
 <div class="ttc" id="class_music_abstract_move_widget_html"><div class="ttname"><a href="../../d5/d2d/class_music_abstract_move_widget.html">MusicAbstractMoveWidget</a></div><div class="ttdoc">The class of the moving widget base. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/ddc/musicabstractmovewidget_8h_source.html#l00029">musicabstractmovewidget.h:29</a></div></div>
 <div class="ttc" id="class_music_desktop_wallpaper_widget_html"><div class="ttname"><a href="../../df/dc3/class_music_desktop_wallpaper_widget.html">MusicDesktopWallpaperWidget</a></div><div class="ttdoc">The class of the desktop wallpaper widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/da9/musicdesktopwallpaperwidget_8h_source.html#l00062">musicdesktopwallpaperwidget.h:62</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 1 2018 10:20:47 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 11 2019 14:01:49 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

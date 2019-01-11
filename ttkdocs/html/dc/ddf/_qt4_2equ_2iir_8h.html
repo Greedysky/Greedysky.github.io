@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.7.0.0</span>
+   &#160;<span id="projectnumber">2.8.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -131,6 +131,8 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../dc/ddf/_qt4_2equ_2iir_8h_source.html#l00078">78</a> of file <a class="el" href="../../dc/ddf/_qt4_2equ_2iir_8h_source.html">iir.h</a>.</p>
 
+<p>Referenced by <a class="el" href="../../d8/da5/_qt4_2equ_2iir__fpu_8c_source.html#l00048">clean_history()</a>, and <a class="el" href="../../d8/da5/_qt4_2equ_2iir__fpu_8c_source.html#l00062">iir()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aeb4a074c33c72a2e80f8df238e8dd762"></a>
@@ -144,6 +146,8 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="../../dc/ddf/_qt4_2equ_2iir_8h_source.html#l00079">79</a> of file <a class="el" href="../../dc/ddf/_qt4_2equ_2iir_8h_source.html">iir.h</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d8/da5/_qt4_2equ_2iir__fpu_8c_source.html#l00048">clean_history()</a>.</p>
 
 </div>
 </div>
@@ -189,6 +193,10 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="../../d8/da5/_qt4_2equ_2iir__fpu_8c_source.html#l00048">48</a> of file <a class="el" href="../../d8/da5/_qt4_2equ_2iir__fpu_8c_source.html">iir_fpu.c</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d8/db3/_qt4_2equ_2iir_8c_source.html#l00061">init_iir()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a1e94732f486cd10139685bd18fd75c62"></a>
@@ -220,6 +228,14 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>IIR filter equation is y[n] = 2 * (alpha*(x[n]-x[n-2]) + gamma*y[n-1] - beta*y[n-2])</p>
+<p>NOTE: The 2 factor was introduced in the coefficients to save a multiplication</p>
+<p>This algorithm cascades two filters to get nice filtering at the expense of extra CPU cycles</p>
+<p>IIR filter equation is y[n] = 2 * (alpha*(x[n]-x[n-2]) + gamma*y[n-1] - beta*y[n-2])</p>
+<p>NOTE: The 2 factor was introduced in the coefficients to save a multiplication</p>
+<p>This algorithm cascades two filters to get nice filtering at the expense of extra CPU cycles</p>
+
+<p>Definition at line <a class="el" href="../../d8/da5/_qt4_2equ_2iir__fpu_8c_source.html#l00062">62</a> of file <a class="el" href="../../d8/da5/_qt4_2equ_2iir__fpu_8c_source.html">iir_fpu.c</a>.</p>
 
 </div>
 </div>
@@ -246,6 +262,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d8/db3/_qt4_2equ_2iir_8c_source.html#l00061">61</a> of file <a class="el" href="../../d8/db3/_qt4_2equ_2iir_8c_source.html">iir.c</a>.</p>
 
 </div>
 </div>
@@ -279,6 +297,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="../../d8/da5/_qt4_2equ_2iir__fpu_8c_source.html#l00043">43</a> of file <a class="el" href="../../d8/da5/_qt4_2equ_2iir__fpu_8c_source.html">iir_fpu.c</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a32b55d6e32ed81fb8e4e751c7e912b7b"></a>
@@ -305,6 +325,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="../../d8/db3/_qt4_2equ_2iir_8c_source.html#l00055">55</a> of file <a class="el" href="../../d8/db3/_qt4_2equ_2iir_8c_source.html">iir.c</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
@@ -318,6 +340,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="../../d8/db3/_qt4_2equ_2iir_8c_source.html#l00053">53</a> of file <a class="el" href="../../d8/db3/_qt4_2equ_2iir_8c_source.html">iir.c</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a62177adb4ba00d7633ca7b3eae077207"></a>
@@ -329,6 +353,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d8/db3/_qt4_2equ_2iir_8c_source.html#l00034">34</a> of file <a class="el" href="../../d8/db3/_qt4_2equ_2iir_8c_source.html">iir.c</a>.</p>
 
 </div>
 </div>
@@ -342,12 +368,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="../../d8/db3/_qt4_2equ_2iir_8c_source.html#l00040">40</a> of file <a class="el" href="../../d8/db3/_qt4_2equ_2iir_8c_source.html">iir.c</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 1 2018 10:20:52 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 11 2019 14:02:04 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.7.0.0</span>
+   &#160;<span id="projectnumber">2.8.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -82,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">/* =================================================</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of the TTK Music Player project</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2018 Greedysky Studio</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2019 Greedysky Studio</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
@@ -116,7 +116,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../d5/ddc/class_music_remote_widget.html#a84e9b045ec2afb244ff51510bf37b94c">   41</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="../../d5/ddc/class_music_remote_widget.html#a84e9b045ec2afb244ff51510bf37b94c">RemoteType</a></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="../../d5/ddc/class_music_remote_widget.html#a84e9b045ec2afb244ff51510bf37b94ca4c0dbbe94dabd2c35529aa33a2c3b99b">   43</a></span>&#160;        <a class="code" href="../../d5/d28/namespace_music_network.html#a7f6ae86275c9da4b7d3609b53b9f9a78a9999fc7fce560d114cc84d0b8959897a">Null</a> = 0,       </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="../../d5/ddc/class_music_remote_widget.html#a84e9b045ec2afb244ff51510bf37b94ca4c0dbbe94dabd2c35529aa33a2c3b99b">   43</a></span>&#160;        Null = 0,       </div>
 <div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="../../d5/ddc/class_music_remote_widget.html#a84e9b045ec2afb244ff51510bf37b94ca68d88d58b66800590305f52328000c94">   44</a></span>&#160;        <a class="code" href="../../d5/ddc/class_music_remote_widget.html#a84e9b045ec2afb244ff51510bf37b94ca68d88d58b66800590305f52328000c94">Circle</a>,         </div>
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="../../d5/ddc/class_music_remote_widget.html#a84e9b045ec2afb244ff51510bf37b94cae5120bab1d64f3f5570b76c586f64715">   45</a></span>&#160;        <a class="code" href="../../d5/ddc/class_music_remote_widget.html#a84e9b045ec2afb244ff51510bf37b94cae5120bab1d64f3f5570b76c586f64715">Square</a>,         </div>
 <div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="../../d5/ddc/class_music_remote_widget.html#a84e9b045ec2afb244ff51510bf37b94ca3372d10f6f9f4d8dbe221ab62a1d37ca">   46</a></span>&#160;        <a class="code" href="../../d5/ddc/class_music_remote_widget.html#a84e9b045ec2afb244ff51510bf37b94ca3372d10f6f9f4d8dbe221ab62a1d37ca">Rectangle</a>,      </div>
@@ -127,7 +127,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="../../d5/ddc/class_music_remote_widget.html#a84e9b045ec2afb244ff51510bf37b94ca3aa8ac033e2d87cf5e0ffa724f46490c">   51</a></span>&#160;        RaysWave        </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    };</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d5/ddc/class_music_remote_widget.html">MusicRemoteWidget</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d5/ddc/class_music_remote_widget.html">MusicRemoteWidget</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d5/ddc/class_music_remote_widget.html">MusicRemoteWidget</a>();</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
@@ -165,7 +165,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="preprocessor">#endif // MUSICREMOTEWIDGET_H</span></div>
 <div class="ttc" id="class_music_remote_widget_html_a317c34b798a7a23aa88bbbcafecac4e4"><div class="ttname"><a href="../../d5/ddc/class_music_remote_widget.html#a317c34b798a7a23aa88bbbcafecac4e4">MusicRemoteWidget::m_showMainWindow</a></div><div class="ttdeci">QPushButton * m_showMainWindow</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/df6/musicremotewidget_8h_source.html#l00132">musicremotewidget.h:132</a></div></div>
-<div class="ttc" id="namespace_music_network_html_a7f6ae86275c9da4b7d3609b53b9f9a78a9999fc7fce560d114cc84d0b8959897a"><div class="ttname"><a href="../../d5/d28/namespace_music_network.html#a7f6ae86275c9da4b7d3609b53b9f9a78a9999fc7fce560d114cc84d0b8959897a">MusicNetwork::Null</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/de0/musicnetworkdefines_8h_source.html#l00047">musicnetworkdefines.h:47</a></div></div>
 <div class="ttc" id="class_music_remote_widget_html_a84e9b045ec2afb244ff51510bf37b94ca1cfb97ec3c4b529194b77d3ff3e8825f"><div class="ttname"><a href="../../d5/ddc/class_music_remote_widget.html#a84e9b045ec2afb244ff51510bf37b94ca1cfb97ec3c4b529194b77d3ff3e8825f">MusicRemoteWidget::ComplexStyle</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/df6/musicremotewidget_8h_source.html#l00048">musicremotewidget.h:48</a></div></div>
 <div class="ttc" id="musicuiobject_8h_html"><div class="ttname"><a href="../../d0/deb/musicuiobject_8h.html">musicuiobject.h</a></div></div>
 <div class="ttc" id="class_music_remote_widget_html_a84e9b045ec2afb244ff51510bf37b94caf4b6512322465cec06a80a8943458f92"><div class="ttname"><a href="../../d5/ddc/class_music_remote_widget.html#a84e9b045ec2afb244ff51510bf37b94caf4b6512322465cec06a80a8943458f92">MusicRemoteWidget::Ripples</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/df6/musicremotewidget_8h_source.html#l00050">musicremotewidget.h:50</a></div></div>
@@ -179,7 +178,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="musicabstractmovewidget_8h_html"><div class="ttname"><a href="../../d8/ddc/musicabstractmovewidget_8h.html">musicabstractmovewidget.h</a></div></div>
 <div class="ttc" id="class_music_remote_widget_html"><div class="ttname"><a href="../../d5/ddc/class_music_remote_widget.html">MusicRemoteWidget</a></div><div class="ttdoc">The class of the desktop remote widget base. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/df6/musicremotewidget_8h_source.html#l00036">musicremotewidget.h:36</a></div></div>
 <div class="ttc" id="class_music_remote_widget_html_ac328a447b8bd3f9f4b48aa96341e3277"><div class="ttname"><a href="../../d5/ddc/class_music_remote_widget.html#ac328a447b8bd3f9f4b48aa96341e3277">MusicRemoteWidget::m_PlayButton</a></div><div class="ttdeci">QPushButton * m_PlayButton</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/df6/musicremotewidget_8h_source.html#l00133">musicremotewidget.h:133</a></div></div>
-<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00113">musicglobal.h:113</a></div></div>
+<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00149">musicglobal.h:149</a></div></div>
 <div class="ttc" id="class_music_remote_widget_html_a84e9b045ec2afb244ff51510bf37b94caf0d2fa2c6f8a9e8cd58363d09fbafb5c"><div class="ttname"><a href="../../d5/ddc/class_music_remote_widget.html#a84e9b045ec2afb244ff51510bf37b94caf0d2fa2c6f8a9e8cd58363d09fbafb5c">MusicRemoteWidget::SimpleStyle</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/df6/musicremotewidget_8h_source.html#l00047">musicremotewidget.h:47</a></div></div>
 <div class="ttc" id="class_music_remote_widget_html_a84e9b045ec2afb244ff51510bf37b94cab990d68e78333dcd190606a717c18056"><div class="ttname"><a href="../../d5/ddc/class_music_remote_widget.html#a84e9b045ec2afb244ff51510bf37b94cab990d68e78333dcd190606a717c18056">MusicRemoteWidget::Diamond</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/df6/musicremotewidget_8h_source.html#l00049">musicremotewidget.h:49</a></div></div>
 <div class="ttc" id="class_music_remote_widget_html_a84e9b045ec2afb244ff51510bf37b94cae5120bab1d64f3f5570b76c586f64715"><div class="ttname"><a href="../../d5/ddc/class_music_remote_widget.html#a84e9b045ec2afb244ff51510bf37b94cae5120bab1d64f3f5570b76c586f64715">MusicRemoteWidget::Square</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/df6/musicremotewidget_8h_source.html#l00045">musicremotewidget.h:45</a></div></div>
@@ -189,7 +188,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 1 2018 10:20:47 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 11 2019 14:01:48 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

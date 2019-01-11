@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.7.0.0</span>
+   &#160;<span id="projectnumber">2.8.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -82,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">/* =================================================</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of the TTK Music Player project</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2018 Greedysky Studio</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2019 Greedysky Studio</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
@@ -108,7 +108,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d0/d44/class_music_network_connection_item.html">MusicNetworkConnectionItem</a>)</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d0/d44/class_music_network_connection_item.html">MusicNetworkConnectionItem</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d0/d44/class_music_network_connection_item.html">MusicNetworkConnectionItem</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    ~<a class="code" href="../../d0/d44/class_music_network_connection_item.html">MusicNetworkConnectionItem</a>();</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
@@ -140,46 +140,40 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../da/d03/class_music_network_connection_test_widget.html">MusicNetworkConnectionTestWidget</a>)</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../da/d03/class_music_network_connection_test_widget.html">MusicNetworkConnectionTestWidget</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../da/d03/class_music_network_connection_test_widget.html">MusicNetworkConnectionTestWidget</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../da/d03/class_music_network_connection_test_widget.html">MusicNetworkConnectionTestWidget</a>();</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span> resetFlag(<a class="code" href="../../df/dbc/namespace_music_object.html#a1a14ffa5d3251d93ec8b537f32d3b074">MusicObject::ToolsType</a> flag);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> show();</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> buttonStateChanged();</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">void</span> testFinshed();</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> closeEvent(QCloseEvent *event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="../../da/d03/class_music_network_connection_test_widget.html#ab5bcf8f572e44d122cb393410999f54e">  124</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../da/d03/class_music_network_connection_test_widget.html#ab5bcf8f572e44d122cb393410999f54e">m_countIndex</a>;</div>
-<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="../../da/d03/class_music_network_connection_test_widget.html#aad42a217f996fe7ed40aa305e9f0391b">  125</a></span>&#160;    Ui::MusicNetworkConnectionTestWidget *<a class="code" href="../../da/d03/class_music_network_connection_test_widget.html#aad42a217f996fe7ed40aa305e9f0391b">m_ui</a>;</div>
-<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="../../da/d03/class_music_network_connection_test_widget.html#a980f927f9c289a4eaa3b3335492c2bdc">  126</a></span>&#160;    QList&lt;MusicNetworkConnectionItem*&gt; <a class="code" href="../../da/d03/class_music_network_connection_test_widget.html#a980f927f9c289a4eaa3b3335492c2bdc">m_connectionItems</a>;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;};</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif // MUSICNETWORKCONNECTIONTESTWIDGET_H</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span> show();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> buttonStateChanged();</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">void</span> testFinshed();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="../../da/d03/class_music_network_connection_test_widget.html#ab5bcf8f572e44d122cb393410999f54e">  113</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../da/d03/class_music_network_connection_test_widget.html#ab5bcf8f572e44d122cb393410999f54e">m_countIndex</a>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="../../da/d03/class_music_network_connection_test_widget.html#aad42a217f996fe7ed40aa305e9f0391b">  114</a></span>&#160;    Ui::MusicNetworkConnectionTestWidget *<a class="code" href="../../da/d03/class_music_network_connection_test_widget.html#aad42a217f996fe7ed40aa305e9f0391b">m_ui</a>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="../../da/d03/class_music_network_connection_test_widget.html#a980f927f9c289a4eaa3b3335492c2bdc">  115</a></span>&#160;    QList&lt;MusicNetworkConnectionItem*&gt; <a class="code" href="../../da/d03/class_music_network_connection_test_widget.html#a980f927f9c289a4eaa3b3335492c2bdc">m_connectionItems</a>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;};</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif // MUSICNETWORKCONNECTIONTESTWIDGET_H</span></div>
 <div class="ttc" id="class_music_network_connection_item_html_a2734ad512c63f24dfff87e7a627ca1d3"><div class="ttname"><a href="../../d0/d44/class_music_network_connection_item.html#a2734ad512c63f24dfff87e7a627ca1d3">MusicNetworkConnectionItem::m_stateText</a></div><div class="ttdeci">QLabel * m_stateText</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/def/musicnetworkconnectiontestwidget_8h_source.html#l00074">musicnetworkconnectiontestwidget.h:74</a></div></div>
-<div class="ttc" id="namespace_music_object_html_a1a14ffa5d3251d93ec8b537f32d3b074"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#a1a14ffa5d3251d93ec8b537f32d3b074">MusicObject::ToolsType</a></div><div class="ttdeci">ToolsType</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00281">musicobject.h:281</a></div></div>
 <div class="ttc" id="namespace_ui_html"><div class="ttname"><a href="../../dc/df0/namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d24/musicapplication_8h_source.html#l00033">musicapplication.h:33</a></div></div>
-<div class="ttc" id="class_music_network_connection_test_widget_html_ab5bcf8f572e44d122cb393410999f54e"><div class="ttname"><a href="../../da/d03/class_music_network_connection_test_widget.html#ab5bcf8f572e44d122cb393410999f54e">MusicNetworkConnectionTestWidget::m_countIndex</a></div><div class="ttdeci">int m_countIndex</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/def/musicnetworkconnectiontestwidget_8h_source.html#l00124">musicnetworkconnectiontestwidget.h:124</a></div></div>
+<div class="ttc" id="class_music_network_connection_test_widget_html_ab5bcf8f572e44d122cb393410999f54e"><div class="ttname"><a href="../../da/d03/class_music_network_connection_test_widget.html#ab5bcf8f572e44d122cb393410999f54e">MusicNetworkConnectionTestWidget::m_countIndex</a></div><div class="ttdeci">int m_countIndex</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/def/musicnetworkconnectiontestwidget_8h_source.html#l00113">musicnetworkconnectiontestwidget.h:113</a></div></div>
 <div class="ttc" id="class_music_network_test_thread_html"><div class="ttname"><a href="../../df/d55/class_music_network_test_thread.html">MusicNetworkTestThread</a></div><div class="ttdoc">The class of thread to test input url network. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d11/musicnetworktestthread_8h_source.html#l00010">musicnetworktestthread.h:10</a></div></div>
 <div class="ttc" id="class_music_network_connection_item_html"><div class="ttname"><a href="../../d0/d44/class_music_network_connection_item.html">MusicNetworkConnectionItem</a></div><div class="ttdoc">The class of the network connection item Widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/def/musicnetworkconnectiontestwidget_8h_source.html#l00030">musicnetworkconnectiontestwidget.h:30</a></div></div>
 <div class="ttc" id="musicobject_8h_html"><div class="ttname"><a href="../../d8/d07/musicobject_8h.html">musicobject.h</a></div></div>
 <div class="ttc" id="class_music_network_connection_test_widget_html"><div class="ttname"><a href="../../da/d03/class_music_network_connection_test_widget.html">MusicNetworkConnectionTestWidget</a></div><div class="ttdoc">The class of the network connection test widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/def/musicnetworkconnectiontestwidget_8h_source.html#l00086">musicnetworkconnectiontestwidget.h:86</a></div></div>
 <div class="ttc" id="musicabstractmovewidget_8h_html"><div class="ttname"><a href="../../d8/ddc/musicabstractmovewidget_8h.html">musicabstractmovewidget.h</a></div></div>
-<div class="ttc" id="class_music_network_connection_test_widget_html_aad42a217f996fe7ed40aa305e9f0391b"><div class="ttname"><a href="../../da/d03/class_music_network_connection_test_widget.html#aad42a217f996fe7ed40aa305e9f0391b">MusicNetworkConnectionTestWidget::m_ui</a></div><div class="ttdeci">Ui::MusicNetworkConnectionTestWidget * m_ui</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/def/musicnetworkconnectiontestwidget_8h_source.html#l00125">musicnetworkconnectiontestwidget.h:125</a></div></div>
-<div class="ttc" id="class_music_network_connection_test_widget_html_a980f927f9c289a4eaa3b3335492c2bdc"><div class="ttname"><a href="../../da/d03/class_music_network_connection_test_widget.html#a980f927f9c289a4eaa3b3335492c2bdc">MusicNetworkConnectionTestWidget::m_connectionItems</a></div><div class="ttdeci">QList&lt; MusicNetworkConnectionItem * &gt; m_connectionItems</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/def/musicnetworkconnectiontestwidget_8h_source.html#l00126">musicnetworkconnectiontestwidget.h:126</a></div></div>
-<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00113">musicglobal.h:113</a></div></div>
+<div class="ttc" id="class_music_network_connection_test_widget_html_aad42a217f996fe7ed40aa305e9f0391b"><div class="ttname"><a href="../../da/d03/class_music_network_connection_test_widget.html#aad42a217f996fe7ed40aa305e9f0391b">MusicNetworkConnectionTestWidget::m_ui</a></div><div class="ttdeci">Ui::MusicNetworkConnectionTestWidget * m_ui</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/def/musicnetworkconnectiontestwidget_8h_source.html#l00114">musicnetworkconnectiontestwidget.h:114</a></div></div>
+<div class="ttc" id="class_music_network_connection_test_widget_html_a980f927f9c289a4eaa3b3335492c2bdc"><div class="ttname"><a href="../../da/d03/class_music_network_connection_test_widget.html#a980f927f9c289a4eaa3b3335492c2bdc">MusicNetworkConnectionTestWidget::m_connectionItems</a></div><div class="ttdeci">QList&lt; MusicNetworkConnectionItem * &gt; m_connectionItems</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/def/musicnetworkconnectiontestwidget_8h_source.html#l00115">musicnetworkconnectiontestwidget.h:115</a></div></div>
+<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00149">musicglobal.h:149</a></div></div>
 <div class="ttc" id="class_music_network_connection_item_html_af8dc4c0191c23d18da6d6c080bd2981c"><div class="ttname"><a href="../../d0/d44/class_music_network_connection_item.html#af8dc4c0191c23d18da6d6c080bd2981c">MusicNetworkConnectionItem::m_testThread</a></div><div class="ttdeci">MusicNetworkTestThread * m_testThread</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/def/musicnetworkconnectiontestwidget_8h_source.html#l00073">musicnetworkconnectiontestwidget.h:73</a></div></div>
 <div class="ttc" id="class_music_abstract_move_widget_html"><div class="ttname"><a href="../../d5/d2d/class_music_abstract_move_widget.html">MusicAbstractMoveWidget</a></div><div class="ttdoc">The class of the moving widget base. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/ddc/musicabstractmovewidget_8h_source.html#l00029">musicabstractmovewidget.h:29</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 1 2018 10:20:48 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 11 2019 14:01:49 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

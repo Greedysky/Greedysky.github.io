@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.7.0.0</span>
+   &#160;<span id="projectnumber">2.8.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -82,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QKeyEvent&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="../../d6/de5/class_music_local_song_search_edit.html#a3d95e382cbd112e1b3ebd1c11db2f36c">    6</a></span>&#160;<a class="code" href="../../d6/de5/class_music_local_song_search_edit.html#a3d95e382cbd112e1b3ebd1c11db2f36c">MusicLocalSongSearchEdit::MusicLocalSongSearchEdit</a>(QWidget *parent)</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="../../d6/de5/class_music_local_song_search_edit.html#a382ef679e63787abe161e6be115d07d1">    6</a></span>&#160;<a class="code" href="../../d6/de5/class_music_local_song_search_edit.html#a382ef679e63787abe161e6be115d07d1">MusicLocalSongSearchEdit::MusicLocalSongSearchEdit</a>(QWidget *parent)</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    : QLineEdit(parent)</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    setStyleSheet(<a class="code" href="../../d2/dc5/namespace_music_u_i_object.html#ab48db1eff08992d513a064e2fd9b43a8">MusicUIObject::MLineEditStyle03</a>);</div>
@@ -103,7 +103,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    rightClickMenu.addSeparator();</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    QAction *selectM = rightClickMenu.addAction(tr(<span class="stringliteral">&quot;SelectAll&quot;</span>), <span class="keyword">this</span>, SLOT(selectAll()));</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">bool</span> state = hasSelectedText();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> state = hasSelectedText();</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    shearM-&gt;setEnabled(state);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    copyM-&gt;setEnabled(state);</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    deleteM-&gt;setEnabled(state);</div>
@@ -132,7 +132,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">default</span>: <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
-<div class="ttc" id="class_music_local_song_search_edit_html_a3d95e382cbd112e1b3ebd1c11db2f36c"><div class="ttname"><a href="../../d6/de5/class_music_local_song_search_edit.html#a3d95e382cbd112e1b3ebd1c11db2f36c">MusicLocalSongSearchEdit::MusicLocalSongSearchEdit</a></div><div class="ttdeci">MusicLocalSongSearchEdit(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dac/musiclocalsongsearchedit_8cpp_source.html#l00006">musiclocalsongsearchedit.cpp:6</a></div></div>
 <div class="ttc" id="class_music_local_song_search_edit_html_ae1b44c559fcc8e33d8a2cb49fe9d49b7"><div class="ttname"><a href="../../d6/de5/class_music_local_song_search_edit.html#ae1b44c559fcc8e33d8a2cb49fe9d49b7">MusicLocalSongSearchEdit::contextMenuEvent</a></div><div class="ttdeci">virtual void contextMenuEvent(QContextMenuEvent *event) override</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dac/musiclocalsongsearchedit_8cpp_source.html#l00013">musiclocalsongsearchedit.cpp:13</a></div></div>
 <div class="ttc" id="class_music_local_song_search_edit_html_af39041195d19b580001c2e8bd8513a98"><div class="ttname"><a href="../../d6/de5/class_music_local_song_search_edit.html#af39041195d19b580001c2e8bd8513a98">MusicLocalSongSearchEdit::keyReleaseEvent</a></div><div class="ttdeci">virtual void keyReleaseEvent(QKeyEvent *event) override</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dac/musiclocalsongsearchedit_8cpp_source.html#l00041">musiclocalsongsearchedit.cpp:41</a></div></div>
 <div class="ttc" id="musicuiobject_8h_html"><div class="ttname"><a href="../../d0/deb/musicuiobject_8h.html">musicuiobject.h</a></div></div>
@@ -141,10 +140,11 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="namespace_music_u_i_object_html_ab48db1eff08992d513a064e2fd9b43a8"><div class="ttname"><a href="../../d2/dc5/namespace_music_u_i_object.html#ab48db1eff08992d513a064e2fd9b43a8">MusicUIObject::MLineEditStyle03</a></div><div class="ttdeci">const QString MLineEditStyle03</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/deb/musicuiobject_8h_source.html#l00370">musicuiobject.h:370</a></div></div>
 <div class="ttc" id="namespace_music_u_i_object_html_a8c0229bc93f6fe600485660a39d3dbe9"><div class="ttname"><a href="../../d2/dc5/namespace_music_u_i_object.html#a8c0229bc93f6fe600485660a39d3dbe9">MusicUIObject::MMenuStyle02</a></div><div class="ttdeci">const QString MMenuStyle02</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/deb/musicuiobject_8h_source.html#l00395">musicuiobject.h:395</a></div></div>
 <div class="ttc" id="class_music_local_song_search_edit_html_a29c58e55030166121b883dc7be941d80"><div class="ttname"><a href="../../d6/de5/class_music_local_song_search_edit.html#a29c58e55030166121b883dc7be941d80">MusicLocalSongSearchEdit::keyPressEvent</a></div><div class="ttdeci">virtual void keyPressEvent(QKeyEvent *event) override</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dac/musiclocalsongsearchedit_8cpp_source.html#l00036">musiclocalsongsearchedit.cpp:36</a></div></div>
+<div class="ttc" id="class_music_local_song_search_edit_html_a382ef679e63787abe161e6be115d07d1"><div class="ttname"><a href="../../d6/de5/class_music_local_song_search_edit.html#a382ef679e63787abe161e6be115d07d1">MusicLocalSongSearchEdit::MusicLocalSongSearchEdit</a></div><div class="ttdeci">MusicLocalSongSearchEdit(QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dac/musiclocalsongsearchedit_8cpp_source.html#l00006">musiclocalsongsearchedit.cpp:6</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 1 2018 10:20:47 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 11 2019 14:01:48 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

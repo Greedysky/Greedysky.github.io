@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.7.0.0</span>
+   &#160;<span id="projectnumber">2.8.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -115,7 +115,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../d9/d16/class_serializer_runnable_1_1_serializer_runnable_private.html#a378910c9c4b889768b5f1583d469d92f">   36</a></span>&#160;  QVariant <a class="code" href="../../d9/d16/class_serializer_runnable_1_1_serializer_runnable_private.html#a378910c9c4b889768b5f1583d469d92f">json</a>;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../db/db1/class_q_json_1_1_serializer_runnable.html#a56b2cc310d7447025338bead1a0af22a">   39</a></span>&#160;<a class="code" href="../../db/db1/class_q_json_1_1_serializer_runnable.html#a56b2cc310d7447025338bead1a0af22a">SerializerRunnable::SerializerRunnable</a>(QObject* parent)</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../db/db1/class_q_json_1_1_serializer_runnable.html#aa8854e15a3f09dfafb07f4a68e6b952d">   39</a></span>&#160;<a class="code" href="../../db/db1/class_q_json_1_1_serializer_runnable.html#aa8854e15a3f09dfafb07f4a68e6b952d">SerializerRunnable::SerializerRunnable</a>(QObject* parent)</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    : QObject(parent),</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      QRunnable()</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
@@ -123,7 +123,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  qRegisterMetaType&lt;QVariant&gt;(<span class="stringliteral">&quot;QVariant&quot;</span>);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../db/db1/class_q_json_1_1_serializer_runnable.html#a879799f56b568f95835f952b6bbd12c3">   47</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../db/db1/class_q_json_1_1_serializer_runnable.html#a879799f56b568f95835f952b6bbd12c3">SerializerRunnable::setJsonObject</a>( <span class="keyword">const</span> QVariant&amp; json )</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../db/db1/class_q_json_1_1_serializer_runnable.html#a879799f56b568f95835f952b6bbd12c3">   47</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../db/db1/class_q_json_1_1_serializer_runnable.html#a879799f56b568f95835f952b6bbd12c3">SerializerRunnable::setJsonObject</a>( <span class="keyword">const</span> QVariant &amp;json )</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="../../dd/d24/ttkprivate_8h.html#a8eedd09c47b53d5e42ca132295c5e1ef">TTK_D</a>(<a class="code" href="../../db/db1/class_q_json_1_1_serializer_runnable.html">SerializerRunnable</a>);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  d-&gt;json = json;</div>
@@ -138,7 +138,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  emit <a class="code" href="../../db/db1/class_q_json_1_1_serializer_runnable.html#ad1269213d1dc85522dcfccef77edf4e2">parsingFinished</a>( serialized, ok, serializer.<a class="code" href="../../d8/d59/class_q_json_1_1_serializer.html#ae8ab6d3f9ab7f6e627ee3fcb73a2e0b1">errorMessage</a>() );</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
 <div class="ttc" id="class_q_json_1_1_serializer_runnable_html_ad1269213d1dc85522dcfccef77edf4e2"><div class="ttname"><a href="../../db/db1/class_q_json_1_1_serializer_runnable.html#ad1269213d1dc85522dcfccef77edf4e2">QJson::SerializerRunnable::parsingFinished</a></div><div class="ttdeci">void parsingFinished(const QByteArray &amp;serialized, bool ok, const QString &amp;error_msg)</div><div class="ttdoc">This signal is emitted when the serialization process has been completed. </div></div>
-<div class="ttc" id="class_q_json_1_1_serializer_runnable_html_a56b2cc310d7447025338bead1a0af22a"><div class="ttname"><a href="../../db/db1/class_q_json_1_1_serializer_runnable.html#a56b2cc310d7447025338bead1a0af22a">QJson::SerializerRunnable::SerializerRunnable</a></div><div class="ttdeci">SerializerRunnable(QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d80/serializerrunnable_8cpp_source.html#l00039">serializerrunnable.cpp:39</a></div></div>
 <div class="ttc" id="class_q_json_1_1_serializer_runnable_html"><div class="ttname"><a href="../../db/db1/class_q_json_1_1_serializer_runnable.html">QJson::SerializerRunnable</a></div><div class="ttdoc">Convenience class for converting JSON data to QVariant objects using a dedicated thread. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d95/serializerrunnable_8h_source.html#l00040">serializerrunnable.h:40</a></div></div>
 <div class="ttc" id="serializer_8h_html"><div class="ttname"><a href="../../dd/d5f/serializer_8h.html">serializer.h</a></div></div>
 <div class="ttc" id="parserrunnable_8h_html"><div class="ttname"><a href="../../db/de2/parserrunnable_8h.html">parserrunnable.h</a></div></div>
@@ -147,6 +146,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="ttkprivate_8h_html_a16e697408c6ce0f129db3559d3a79514"><div class="ttname"><a href="../../dd/d24/ttkprivate_8h.html#a16e697408c6ce0f129db3559d3a79514">TTK_INIT_PRIVATE</a></div><div class="ttdeci">#define TTK_INIT_PRIVATE</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00030">ttkprivate.h:30</a></div></div>
 <div class="ttc" id="class_serializer_runnable_1_1_serializer_runnable_private_html_a378910c9c4b889768b5f1583d469d92f"><div class="ttname"><a href="../../d9/d16/class_serializer_runnable_1_1_serializer_runnable_private.html#a378910c9c4b889768b5f1583d469d92f">QJson::SerializerRunnable::SerializerRunnablePrivate::json</a></div><div class="ttdeci">QVariant json</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d80/serializerrunnable_8cpp_source.html#l00036">serializerrunnable.cpp:36</a></div></div>
 <div class="ttc" id="namespace_q_json_html"><div class="ttname"><a href="../../d3/d7b/namespace_q_json.html">QJson</a></div><div class="ttdoc">Namespace used by QJson. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d36/parser_8h_source.html#l00035">parser.h:35</a></div></div>
+<div class="ttc" id="class_q_json_1_1_serializer_runnable_html_aa8854e15a3f09dfafb07f4a68e6b952d"><div class="ttname"><a href="../../db/db1/class_q_json_1_1_serializer_runnable.html#aa8854e15a3f09dfafb07f4a68e6b952d">QJson::SerializerRunnable::SerializerRunnable</a></div><div class="ttdeci">SerializerRunnable(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d80/serializerrunnable_8cpp_source.html#l00039">serializerrunnable.cpp:39</a></div></div>
 <div class="ttc" id="class_q_json_1_1_serializer_runnable_html_adb31237601a355f2c3a95a9a4b56a576"><div class="ttname"><a href="../../db/db1/class_q_json_1_1_serializer_runnable.html#adb31237601a355f2c3a95a9a4b56a576">QJson::SerializerRunnable::run</a></div><div class="ttdeci">void run()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d80/serializerrunnable_8cpp_source.html#l00053">serializerrunnable.cpp:53</a></div></div>
 <div class="ttc" id="class_serializer_runnable_1_1_serializer_runnable_private_html"><div class="ttname"><a href="../../d9/d16/class_serializer_runnable_1_1_serializer_runnable_private.html">QJson::SerializerRunnable::SerializerRunnablePrivate</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d80/serializerrunnable_8cpp_source.html#l00032">serializerrunnable.cpp:32</a></div></div>
 <div class="ttc" id="class_q_json_1_1_serializer_html_ae8ab6d3f9ab7f6e627ee3fcb73a2e0b1"><div class="ttname"><a href="../../d8/d59/class_q_json_1_1_serializer.html#ae8ab6d3f9ab7f6e627ee3fcb73a2e0b1">QJson::Serializer::errorMessage</a></div><div class="ttdeci">QString errorMessage() const </div><div class="ttdoc">Returns the error message. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d74/serializer_8cpp_source.html#l00478">serializer.cpp:478</a></div></div>
@@ -157,7 +157,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 1 2018 10:20:51 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 11 2019 14:01:59 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

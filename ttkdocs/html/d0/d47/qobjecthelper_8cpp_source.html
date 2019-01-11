@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.7.0.0</span>
+   &#160;<span id="projectnumber">2.8.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -136,7 +136,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="../../d8/d58/class_q_json_1_1_q_object_helper.html#a69dd8a0be3fbc682f0f418882ec1337b">   60</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d8/d58/class_q_json_1_1_q_object_helper.html#a69dd8a0be3fbc682f0f418882ec1337b">QObjectHelper::qvariant2qobject</a>(<span class="keyword">const</span> QVariantMap&amp; variant, QObject* <span class="keywordtype">object</span>)</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="../../d8/d58/class_q_json_1_1_q_object_helper.html#a69dd8a0be3fbc682f0f418882ec1337b">   60</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d8/d58/class_q_json_1_1_q_object_helper.html#a69dd8a0be3fbc682f0f418882ec1337b">QObjectHelper::qvariant2qobject</a>(<span class="keyword">const</span> QVariantMap &amp;variant, QObject* <span class="keywordtype">object</span>)</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">const</span> QMetaObject *metaobject = <span class="keywordtype">object</span>-&gt;metaObject();</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
@@ -149,7 +149,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    QMetaProperty metaproperty = metaobject-&gt;property( pIdx );</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="../../dd/d8a/namespace_program.html#ae207d83c4779d7c58e7d3c0dc161d487">QVariant::Type</a> type = metaproperty.type();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    QVariant::Type type = metaproperty.type();</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    QVariant v( iter.value() );</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">if</span> ( v.canConvert( type ) ) {</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      v.convert( type );</div>
@@ -164,14 +164,13 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="ttkprivate_8h_html_a16e697408c6ce0f129db3559d3a79514"><div class="ttname"><a href="../../dd/d24/ttkprivate_8h.html#a16e697408c6ce0f129db3559d3a79514">TTK_INIT_PRIVATE</a></div><div class="ttdeci">#define TTK_INIT_PRIVATE</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00030">ttkprivate.h:30</a></div></div>
 <div class="ttc" id="class_q_object_helper_1_1_q_object_helper_private_html"><div class="ttname"><a href="../../d9/d35/class_q_object_helper_1_1_q_object_helper_private.html">QJson::QObjectHelper::QObjectHelperPrivate</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d47/qobjecthelper_8cpp_source.html#l00032">qobjecthelper.cpp:32</a></div></div>
 <div class="ttc" id="namespace_q_json_html"><div class="ttname"><a href="../../d3/d7b/namespace_q_json.html">QJson</a></div><div class="ttdoc">Namespace used by QJson. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d36/parser_8h_source.html#l00035">parser.h:35</a></div></div>
-<div class="ttc" id="namespace_program_html_ae207d83c4779d7c58e7d3c0dc161d487"><div class="ttname"><a href="../../dd/d8a/namespace_program.html#ae207d83c4779d7c58e7d3c0dc161d487">Program::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dff/musicdjradioprogramthread_8h_source.html#l00029">musicdjradioprogramthread.h:29</a></div></div>
 <div class="ttc" id="class_q_json_1_1_q_object_helper_html_a69dd8a0be3fbc682f0f418882ec1337b"><div class="ttname"><a href="../../d8/d58/class_q_json_1_1_q_object_helper.html#a69dd8a0be3fbc682f0f418882ec1337b">QJson::QObjectHelper::qvariant2qobject</a></div><div class="ttdeci">static void qvariant2qobject(const QVariantMap &amp;variant, QObject *object)</div><div class="ttdoc">This method converts a QVariantMap instance into a QObject. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d47/qobjecthelper_8cpp_source.html#l00060">qobjecthelper.cpp:60</a></div></div>
 <div class="ttc" id="class_q_json_1_1_q_object_helper_html_ac5fd74ad328752d47e62e1ac4a50df58"><div class="ttname"><a href="../../d8/d58/class_q_json_1_1_q_object_helper.html#ac5fd74ad328752d47e62e1ac4a50df58">QJson::QObjectHelper::qobject2qvariant</a></div><div class="ttdeci">static QVariantMap qobject2qvariant(const QObject *object, const QStringList &amp;ignoredProperties=QStringList(QString(QLatin1String(&quot;objectName&quot;))))</div><div class="ttdoc">This method converts a QObject instance into a QVariantMap. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d47/qobjecthelper_8cpp_source.html#l00041">qobjecthelper.cpp:41</a></div></div>
 <div class="ttc" id="class_t_t_k_private_html"><div class="ttname"><a href="../../d1/d29/class_t_t_k_private.html">TTKPrivate</a></div><div class="ttdoc">The class of the ttk private base. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00040">ttkprivate.h:40</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 1 2018 10:20:51 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 11 2019 14:01:59 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

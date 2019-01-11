@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.7.0.0</span>
+   &#160;<span id="projectnumber">2.8.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -92,7 +92,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../db/d29/class_q_n_utils.html#a3c2757f7ca6be53e7bb3ef211e78819b">   13</a></span>&#160;QString <a class="code" href="../../db/d29/class_q_n_utils.html#a3c2757f7ca6be53e7bb3ef211e78819b">QNUtils::urlSafeBase64Encode</a>(<span class="keyword">const</span> QByteArray &amp;data)</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#if (defined MUSIC_GREATER_NEW &amp;&amp; !defined MUSIC_NO_WINEXTRAS)</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    QByteArray encodedData = data.toBase64(QByteArray::Base64UrlEncoding);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">const</span> QByteArray &amp;encodedData = data.toBase64(QByteArray::Base64UrlEncoding);</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    QByteArray encodedData = data.toBase64();</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    encodedData.replace(<span class="charliteral">&#39;+&#39;</span>, <span class="charliteral">&#39;-&#39;</span>);</div>
@@ -121,7 +121,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">// Hmac sha1 hash using secret key</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="../../db/d29/class_q_n_utils.html#a5a4a83e79bca40eff55908042312590a">   43</a></span>&#160;QByteArray <a class="code" href="../../db/d29/class_q_n_utils.html#a5a4a83e79bca40eff55908042312590a">QNUtils::hmacSha1</a>(<span class="keyword">const</span> QByteArray &amp;data, <span class="keyword">const</span> QByteArray &amp;secretKey)</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">int</span> blockSize = 64;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> blockSize = 64;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    QByteArray newSecretKey = secretKey;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">if</span>(newSecretKey.length() &gt; blockSize)</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
@@ -141,99 +141,97 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    QByteArray part = innerPadding;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    part.append(data);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    total.append(QCryptographicHash::hash(part, QCryptographicHash::Sha1));</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    QByteArray hashed = QCryptographicHash::hash(total, QCryptographicHash::Sha1);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> hashed;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">// Url escaped key</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">// @see http://kb.qiniu.com/52slk76w</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">// @see http://en.wikipedia.org/wiki/Percent-encoding</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="../../db/d29/class_q_n_utils.html#aee3ef45f5b9c3c1f9e49382c319e1f83">   72</a></span>&#160;QString <a class="code" href="../../db/d29/class_q_n_utils.html#aee3ef45f5b9c3c1f9e49382c319e1f83">QNUtils::escapeKey</a>(<span class="keyword">const</span> QString &amp;<a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>)</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">return</span> QUrl::toPercentEncoding(key, <a class="code" href="../../db/d29/class_q_n_utils.html#aeaa121217604c79e4a249f27b13a2294">QNUtils::KEY_ESCAPE_UNRESERVE_BYTES</a>,</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                        <a class="code" href="../../db/d29/class_q_n_utils.html#aeeb35766a250db441496c1be9932dba0">QNUtils::KEY_ESCAPE_RESERVE_BYTES</a>);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">// Check QString not null and not empty</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="../../db/d29/class_q_n_utils.html#aab0fa330cb96d733a092013de42cffb0">   79</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../db/d29/class_q_n_utils.html#aab0fa330cb96d733a092013de42cffb0">QNUtils::isParamValid</a>(<span class="keyword">const</span> QString &amp;param)</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">return</span> (!param.isEmpty());</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">// A quick way to get a deadline timestamp</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="../../db/d29/class_q_n_utils.html#a85a28633bd4c9c3251e163e06f3eef91">   85</a></span>&#160;uint <a class="code" href="../../db/d29/class_q_n_utils.html#a85a28633bd4c9c3251e163e06f3eef91">QNUtils::expireInSeconds</a>(<span class="keyword">const</span> uint seconds)</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    QDateTime now = QDateTime::currentDateTime();</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">//qiniu server timezone is utc+8</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment"></span>    <span class="comment">//default time span is one hour</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    now = now.addSecs(seconds);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> now.toTime_t();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">// Calculate the crc32 for data bytes</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="../../db/d29/class_q_n_utils.html#abc99ca0fae391b48ae5a6ff58dcfa215">   96</a></span>&#160;uint <a class="code" href="../../db/d29/class_q_n_utils.html#abc99ca0fae391b48ae5a6ff58dcfa215">QNUtils::crc32</a>(<span class="keyword">const</span> QByteArray &amp;data)</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;{</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    QByteArray temp;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> crc=0xffff;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> a,j,k;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">for</span>(a=0; a&lt;data.size(); a++)</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        crc =crc ^ ( (<a class="code" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)data[a]&gt;=0 ? data[a] : (data[a]+256) );</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">for</span>(j=0;j&lt;8;j++)</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        {</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            k=crc &amp; 01;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            crc=crc &gt;&gt; 1;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keywordflow">if</span> (k==0) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            crc =crc ^ 0xA001;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        }</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    temp[1] = crc/256;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    temp[0] = crc%256;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">return</span> temp.toUInt();</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">// Create a random file name</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="../../db/d29/class_q_n_utils.html#a3a41dd0afb2281b1fd334293bd5e3b3a">  120</a></span>&#160;QString <a class="code" href="../../db/d29/class_q_n_utils.html#a3a41dd0afb2281b1fd334293bd5e3b3a">QNUtils::randomFileName</a>()</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;{</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    QDateTime now = QDateTime::currentDateTime();</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    QString randFileName(<span class="stringliteral">&quot;Qiniu_Random_File_&quot;</span>);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    randFileName.append(now.toTime_t());</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">return</span> randFileName;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="../../db/d29/class_q_n_utils.html#a4db777a1f8e02f46c2b3a032f32c4534">  129</a></span>&#160;QString <a class="code" href="../../db/d29/class_q_n_utils.html#a4db777a1f8e02f46c2b3a032f32c4534">QNUtils::urlQuery</a>(<span class="keyword">const</span> QString &amp;url)</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;{</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordtype">int</span> count = 0;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;url.count(); ++i)</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    {</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keywordflow">if</span>(url[i] == <span class="charliteral">&#39;?&#39;</span>)</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        {</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            ++count;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        }</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    }</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordflow">return</span> (count == 1) ? url.split(<span class="charliteral">&#39;?&#39;</span>).last() : QString();</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">return</span> QCryptographicHash::hash(total, QCryptographicHash::Sha1);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">// Url escaped key</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">// @see http://kb.qiniu.com/52slk76w</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">// @see http://en.wikipedia.org/wiki/Percent-encoding</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="../../db/d29/class_q_n_utils.html#aee3ef45f5b9c3c1f9e49382c319e1f83">   71</a></span>&#160;QString <a class="code" href="../../db/d29/class_q_n_utils.html#aee3ef45f5b9c3c1f9e49382c319e1f83">QNUtils::escapeKey</a>(<span class="keyword">const</span> QString &amp;<a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> QUrl::toPercentEncoding(key, <a class="code" href="../../db/d29/class_q_n_utils.html#aeaa121217604c79e4a249f27b13a2294">QNUtils::KEY_ESCAPE_UNRESERVE_BYTES</a>, <a class="code" href="../../db/d29/class_q_n_utils.html#aeeb35766a250db441496c1be9932dba0">QNUtils::KEY_ESCAPE_RESERVE_BYTES</a>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">// Check QString not null and not empty</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="../../db/d29/class_q_n_utils.html#aab0fa330cb96d733a092013de42cffb0">   77</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../db/d29/class_q_n_utils.html#aab0fa330cb96d733a092013de42cffb0">QNUtils::isParamValid</a>(<span class="keyword">const</span> QString &amp;param)</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">return</span> !param.isEmpty();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">// A quick way to get a deadline timestamp</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="../../db/d29/class_q_n_utils.html#a85a28633bd4c9c3251e163e06f3eef91">   83</a></span>&#160;uint <a class="code" href="../../db/d29/class_q_n_utils.html#a85a28633bd4c9c3251e163e06f3eef91">QNUtils::expireInSeconds</a>(<span class="keyword">const</span> uint seconds)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    QDateTime now = QDateTime::currentDateTime();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">//qiniu server timezone is utc+8</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"></span>    <span class="comment">//default time span is one hour</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    now = now.addSecs(seconds);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> now.toTime_t();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">// Calculate the crc32 for data bytes</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="../../db/d29/class_q_n_utils.html#abc99ca0fae391b48ae5a6ff58dcfa215">   94</a></span>&#160;uint <a class="code" href="../../db/d29/class_q_n_utils.html#abc99ca0fae391b48ae5a6ff58dcfa215">QNUtils::crc32</a>(<span class="keyword">const</span> QByteArray &amp;data)</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;{</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    QByteArray temp;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> crc = 0xffff;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> a,j,k;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">for</span>(a=0; a&lt;data.size(); a++)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        crc = crc ^ ( (<a class="code" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)data[a]&gt;=0 ? data[a] : (data[a]+256) );</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">for</span>(j=0; j&lt;8; j++)</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            k = crc &amp; 01;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            crc = crc &gt;&gt; 1;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keywordflow">if</span> (k == 0) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            crc = crc ^ 0xA001;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    temp[1] = crc/256;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    temp[0] = crc%256;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">return</span> temp.toUInt();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">// Create a random file name</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="../../db/d29/class_q_n_utils.html#a3a41dd0afb2281b1fd334293bd5e3b3a">  118</a></span>&#160;QString <a class="code" href="../../db/d29/class_q_n_utils.html#a3a41dd0afb2281b1fd334293bd5e3b3a">QNUtils::randomFileName</a>()</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;{</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    QDateTime now = QDateTime::currentDateTime();</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    QString randFileName(<span class="stringliteral">&quot;Qiniu_Random_File_&quot;</span>);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    randFileName.append(now.toTime_t());</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">return</span> randFileName;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="../../db/d29/class_q_n_utils.html#a4db777a1f8e02f46c2b3a032f32c4534">  127</a></span>&#160;QString <a class="code" href="../../db/d29/class_q_n_utils.html#a4db777a1f8e02f46c2b3a032f32c4534">QNUtils::urlQuery</a>(<span class="keyword">const</span> QString &amp;url)</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;{</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">int</span> count = 0;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;url.count(); ++i)</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    {</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">if</span>(url[i] == <span class="charliteral">&#39;?&#39;</span>)</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            ++count;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        }</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    }</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordflow">return</span> (count == 1) ? url.split(<span class="charliteral">&#39;?&#39;</span>).last() : QString();</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;}</div>
 <div class="ttc" id="qnutils_8h_html"><div class="ttname"><a href="../../d4/df0/qnutils_8h.html">qnutils.h</a></div></div>
-<div class="ttc" id="class_q_n_utils_html_a85a28633bd4c9c3251e163e06f3eef91"><div class="ttname"><a href="../../db/d29/class_q_n_utils.html#a85a28633bd4c9c3251e163e06f3eef91">QNUtils::expireInSeconds</a></div><div class="ttdeci">static uint expireInSeconds(const uint seconds)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfe/qnutils_8cpp_source.html#l00085">qnutils.cpp:85</a></div></div>
+<div class="ttc" id="class_q_n_utils_html_a85a28633bd4c9c3251e163e06f3eef91"><div class="ttname"><a href="../../db/d29/class_q_n_utils.html#a85a28633bd4c9c3251e163e06f3eef91">QNUtils::expireInSeconds</a></div><div class="ttdeci">static uint expireInSeconds(const uint seconds)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfe/qnutils_8cpp_source.html#l00083">qnutils.cpp:83</a></div></div>
 <div class="ttc" id="musiclrcfromkrc_8cpp_html_ad706e4249347c1cd1381934a5691137d"><div class="ttname"><a href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a></div><div class="ttdeci">const wchar_t key[]</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d45/musiclrcfromkrc_8cpp_source.html#l00017">musiclrcfromkrc.cpp:17</a></div></div>
 <div class="ttc" id="ioapi_8h_html_a787fa3cf048117ba7123753c1e74fcd6"><div class="ttname"><a href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a></div><div class="ttdeci">typedef int(ZCALLBACK *close_file_func) OF((voidpf opaque</div></div>
 <div class="ttc" id="class_q_n_utils_html_a69899030c671c2dbe1eef72bd4a9c33b"><div class="ttname"><a href="../../db/d29/class_q_n_utils.html#a69899030c671c2dbe1eef72bd4a9c33b">QNUtils::urlSafeBase64Decode</a></div><div class="ttdeci">static QByteArray urlSafeBase64Decode(const QString &amp;data)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfe/qnutils_8cpp_source.html#l00026">qnutils.cpp:26</a></div></div>
-<div class="ttc" id="class_q_n_utils_html_abc99ca0fae391b48ae5a6ff58dcfa215"><div class="ttname"><a href="../../db/d29/class_q_n_utils.html#abc99ca0fae391b48ae5a6ff58dcfa215">QNUtils::crc32</a></div><div class="ttdeci">static uint crc32(const QByteArray &amp;data)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfe/qnutils_8cpp_source.html#l00096">qnutils.cpp:96</a></div></div>
+<div class="ttc" id="class_q_n_utils_html_abc99ca0fae391b48ae5a6ff58dcfa215"><div class="ttname"><a href="../../db/d29/class_q_n_utils.html#abc99ca0fae391b48ae5a6ff58dcfa215">QNUtils::crc32</a></div><div class="ttdeci">static uint crc32(const QByteArray &amp;data)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfe/qnutils_8cpp_source.html#l00094">qnutils.cpp:94</a></div></div>
 <div class="ttc" id="class_q_n_utils_html_aeaa121217604c79e4a249f27b13a2294"><div class="ttname"><a href="../../db/d29/class_q_n_utils.html#aeaa121217604c79e4a249f27b13a2294">QNUtils::KEY_ESCAPE_UNRESERVE_BYTES</a></div><div class="ttdeci">static const char KEY_ESCAPE_UNRESERVE_BYTES[]</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/df0/qnutils_8h_source.html#l00073">qnutils.h:73</a></div></div>
 <div class="ttc" id="class_q_n_utils_html_a3c2757f7ca6be53e7bb3ef211e78819b"><div class="ttname"><a href="../../db/d29/class_q_n_utils.html#a3c2757f7ca6be53e7bb3ef211e78819b">QNUtils::urlSafeBase64Encode</a></div><div class="ttdeci">static QString urlSafeBase64Encode(const QByteArray &amp;data)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfe/qnutils_8cpp_source.html#l00013">qnutils.cpp:13</a></div></div>
 <div class="ttc" id="class_q_n_utils_html_aeeb35766a250db441496c1be9932dba0"><div class="ttname"><a href="../../db/d29/class_q_n_utils.html#aeeb35766a250db441496c1be9932dba0">QNUtils::KEY_ESCAPE_RESERVE_BYTES</a></div><div class="ttdeci">static const char KEY_ESCAPE_RESERVE_BYTES[]</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/df0/qnutils_8h_source.html#l00072">qnutils.h:72</a></div></div>
 <div class="ttc" id="class_q_n_utils_html_a5a4a83e79bca40eff55908042312590a"><div class="ttname"><a href="../../db/d29/class_q_n_utils.html#a5a4a83e79bca40eff55908042312590a">QNUtils::hmacSha1</a></div><div class="ttdeci">static QByteArray hmacSha1(const QByteArray &amp;data, const QByteArray &amp;secretKey)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfe/qnutils_8cpp_source.html#l00043">qnutils.cpp:43</a></div></div>
-<div class="ttc" id="class_q_n_utils_html_a3a41dd0afb2281b1fd334293bd5e3b3a"><div class="ttname"><a href="../../db/d29/class_q_n_utils.html#a3a41dd0afb2281b1fd334293bd5e3b3a">QNUtils::randomFileName</a></div><div class="ttdeci">static QString randomFileName()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfe/qnutils_8cpp_source.html#l00120">qnutils.cpp:120</a></div></div>
-<div class="ttc" id="class_q_n_utils_html_aee3ef45f5b9c3c1f9e49382c319e1f83"><div class="ttname"><a href="../../db/d29/class_q_n_utils.html#aee3ef45f5b9c3c1f9e49382c319e1f83">QNUtils::escapeKey</a></div><div class="ttdeci">static QString escapeKey(const QString &amp;key)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfe/qnutils_8cpp_source.html#l00072">qnutils.cpp:72</a></div></div>
-<div class="ttc" id="class_q_n_utils_html_a4db777a1f8e02f46c2b3a032f32c4534"><div class="ttname"><a href="../../db/d29/class_q_n_utils.html#a4db777a1f8e02f46c2b3a032f32c4534">QNUtils::urlQuery</a></div><div class="ttdeci">static QString urlQuery(const QString &amp;url)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfe/qnutils_8cpp_source.html#l00129">qnutils.cpp:129</a></div></div>
-<div class="ttc" id="class_q_n_utils_html_aab0fa330cb96d733a092013de42cffb0"><div class="ttname"><a href="../../db/d29/class_q_n_utils.html#aab0fa330cb96d733a092013de42cffb0">QNUtils::isParamValid</a></div><div class="ttdeci">static bool isParamValid(const QString &amp;param)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfe/qnutils_8cpp_source.html#l00079">qnutils.cpp:79</a></div></div>
+<div class="ttc" id="class_q_n_utils_html_a3a41dd0afb2281b1fd334293bd5e3b3a"><div class="ttname"><a href="../../db/d29/class_q_n_utils.html#a3a41dd0afb2281b1fd334293bd5e3b3a">QNUtils::randomFileName</a></div><div class="ttdeci">static QString randomFileName()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfe/qnutils_8cpp_source.html#l00118">qnutils.cpp:118</a></div></div>
+<div class="ttc" id="class_q_n_utils_html_aee3ef45f5b9c3c1f9e49382c319e1f83"><div class="ttname"><a href="../../db/d29/class_q_n_utils.html#aee3ef45f5b9c3c1f9e49382c319e1f83">QNUtils::escapeKey</a></div><div class="ttdeci">static QString escapeKey(const QString &amp;key)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfe/qnutils_8cpp_source.html#l00071">qnutils.cpp:71</a></div></div>
+<div class="ttc" id="class_q_n_utils_html_a4db777a1f8e02f46c2b3a032f32c4534"><div class="ttname"><a href="../../db/d29/class_q_n_utils.html#a4db777a1f8e02f46c2b3a032f32c4534">QNUtils::urlQuery</a></div><div class="ttdeci">static QString urlQuery(const QString &amp;url)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfe/qnutils_8cpp_source.html#l00127">qnutils.cpp:127</a></div></div>
+<div class="ttc" id="class_q_n_utils_html_aab0fa330cb96d733a092013de42cffb0"><div class="ttname"><a href="../../db/d29/class_q_n_utils.html#aab0fa330cb96d733a092013de42cffb0">QNUtils::isParamValid</a></div><div class="ttdeci">static bool isParamValid(const QString &amp;param)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfe/qnutils_8cpp_source.html#l00077">qnutils.cpp:77</a></div></div>
 <div class="ttc" id="class_q_n_utils_html_a35c4c771fd60424486e886ef3b127a30"><div class="ttname"><a href="../../db/d29/class_q_n_utils.html#a35c4c771fd60424486e886ef3b127a30">QNUtils::sha1</a></div><div class="ttdeci">static QByteArray sha1(const QByteArray &amp;data)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfe/qnutils_8cpp_source.html#l00035">qnutils.cpp:35</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 1 2018 10:20:51 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 11 2019 14:01:59 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

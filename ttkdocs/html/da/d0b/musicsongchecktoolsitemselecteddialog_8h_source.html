@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.7.0.0</span>
+   &#160;<span id="projectnumber">2.8.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -89,10 +89,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../db/dad/class_music_song_check_tools_item_selected_table_widget.html">MusicSongCheckToolsItemSelectedTableWidget</a>)</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../db/dad/class_music_song_check_tools_item_selected_table_widget.html">MusicSongCheckToolsItemSelectedTableWidget</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../db/dad/class_music_song_check_tools_item_selected_table_widget.html">MusicSongCheckToolsItemSelectedTableWidget</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> createAllItems(MusicSongItems *items);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="../../df/dbc/namespace_music_object.html#ac51ddc3036afae45ef265630cb9718be">MusicObject::MIntList</a> <a class="code" href="../../dc/d4c/class_music_fill_item_table_widget.html#ad0c5c7cab74b64aea34d7e29250afd82">getSelectedItems</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a9f4d18f8fe671d865cf80b3beef064c2">MIntList</a> <a class="code" href="../../dc/d4c/class_music_fill_item_table_widget.html#a0a4297abfe6c4340301ebf4e1db12051">getSelectedItems</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> selectedAllItems(<span class="keywordtype">bool</span> check);</div>
@@ -109,14 +109,14 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../da/de4/class_music_song_check_tools_item_selected_dialog.html">MusicSongCheckToolsItemSelectedDialog</a>)</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../da/de4/class_music_song_check_tools_item_selected_dialog.html">MusicSongCheckToolsItemSelectedDialog</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../da/de4/class_music_song_check_tools_item_selected_dialog.html">MusicSongCheckToolsItemSelectedDialog</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../da/de4/class_music_song_check_tools_item_selected_dialog.html">MusicSongCheckToolsItemSelectedDialog</a>();</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> createAllItems(MusicSongItems *items);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> itemListsChanged(<span class="keyword">const</span> <a class="code" href="../../df/dbc/namespace_music_object.html#ac51ddc3036afae45ef265630cb9718be">MusicObject::MIntList</a> &amp;items);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> itemListsChanged(<span class="keyword">const</span> <a class="code" href="../../da/d4e/musicglobal_8h.html#a9f4d18f8fe671d865cf80b3beef064c2">MIntList</a> &amp;items);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> confirmButtonClicked();</div>
@@ -128,22 +128,22 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif // MUSICSONGCHECKTOOLSITEMSELECTEDDIALOG_H</span></div>
-<div class="ttc" id="class_music_fill_item_table_widget_html_ad0c5c7cab74b64aea34d7e29250afd82"><div class="ttname"><a href="../../dc/d4c/class_music_fill_item_table_widget.html#ad0c5c7cab74b64aea34d7e29250afd82">MusicFillItemTableWidget::getSelectedItems</a></div><div class="ttdeci">MusicObject::MIntList getSelectedItems() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d89/musicfillitemtablewidget_8cpp_source.html#l00020">musicfillitemtablewidget.cpp:20</a></div></div>
 <div class="ttc" id="musicabstractmovedialog_8h_html"><div class="ttname"><a href="../../da/d49/musicabstractmovedialog_8h.html">musicabstractmovedialog.h</a></div></div>
+<div class="ttc" id="musicglobal_8h_html_a9f4d18f8fe671d865cf80b3beef064c2"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a9f4d18f8fe671d865cf80b3beef064c2">MIntList</a></div><div class="ttdeci">QList&lt; int &gt; MIntList</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00210">musicglobal.h:210</a></div></div>
 <div class="ttc" id="class_music_song_check_tools_item_selected_dialog_html"><div class="ttname"><a href="../../da/de4/class_music_song_check_tools_item_selected_dialog.html">MusicSongCheckToolsItemSelectedDialog</a></div><div class="ttdoc">The class of the song check tools item selected dialog widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d0b/musicsongchecktoolsitemselecteddialog_8h_source.html#l00046">musicsongchecktoolsitemselecteddialog.h:46</a></div></div>
 <div class="ttc" id="namespace_ui_html"><div class="ttname"><a href="../../dc/df0/namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d24/musicapplication_8h_source.html#l00033">musicapplication.h:33</a></div></div>
+<div class="ttc" id="class_music_fill_item_table_widget_html_a0a4297abfe6c4340301ebf4e1db12051"><div class="ttname"><a href="../../dc/d4c/class_music_fill_item_table_widget.html#a0a4297abfe6c4340301ebf4e1db12051">MusicFillItemTableWidget::getSelectedItems</a></div><div class="ttdeci">MIntList getSelectedItems() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d89/musicfillitemtablewidget_8cpp_source.html#l00020">musicfillitemtablewidget.cpp:20</a></div></div>
 <div class="ttc" id="class_music_fill_item_table_widget_html"><div class="ttname"><a href="../../dc/d4c/class_music_fill_item_table_widget.html">MusicFillItemTableWidget</a></div><div class="ttdoc">The class of the fill item table widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d42/musicfillitemtablewidget_8h_source.html#l00029">musicfillitemtablewidget.h:29</a></div></div>
 <div class="ttc" id="class_music_song_check_tools_item_selected_table_widget_html"><div class="ttname"><a href="../../db/dad/class_music_song_check_tools_item_selected_table_widget.html">MusicSongCheckToolsItemSelectedTableWidget</a></div><div class="ttdoc">The class of the song check tools item selected table widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d0b/musicsongchecktoolsitemselecteddialog_8h_source.html#l00011">musicsongchecktoolsitemselecteddialog.h:11</a></div></div>
 <div class="ttc" id="musicsong_8h_html"><div class="ttname"><a href="../../d4/d03/musicsong_8h.html">musicsong.h</a></div></div>
 <div class="ttc" id="musicfillitemtablewidget_8h_html"><div class="ttname"><a href="../../d9/d42/musicfillitemtablewidget_8h.html">musicfillitemtablewidget.h</a></div></div>
 <div class="ttc" id="class_music_abstract_move_dialog_html"><div class="ttname"><a href="../../da/db2/class_music_abstract_move_dialog.html">MusicAbstractMoveDialog</a></div><div class="ttdoc">The class of the moving dialog base. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d49/musicabstractmovedialog_8h_source.html#l00029">musicabstractmovedialog.h:29</a></div></div>
 <div class="ttc" id="class_music_song_check_tools_item_selected_dialog_html_a5f6a292c2fce194536f98130b467437b"><div class="ttname"><a href="../../da/de4/class_music_song_check_tools_item_selected_dialog.html#a5f6a292c2fce194536f98130b467437b">MusicSongCheckToolsItemSelectedDialog::m_ui</a></div><div class="ttdeci">Ui::MusicSongCheckToolsItemSelectedDialog * m_ui</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d0b/musicsongchecktoolsitemselecteddialog_8h_source.html#l00080">musicsongchecktoolsitemselecteddialog.h:80</a></div></div>
-<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00113">musicglobal.h:113</a></div></div>
-<div class="ttc" id="namespace_music_object_html_ac51ddc3036afae45ef265630cb9718be"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#ac51ddc3036afae45ef265630cb9718be">MusicObject::MIntList</a></div><div class="ttdeci">QList&lt; int &gt; MIntList</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00181">musicglobal.h:181</a></div></div>
+<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00149">musicglobal.h:149</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 1 2018 10:20:48 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 11 2019 14:01:49 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

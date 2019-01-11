@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.7.0.0</span>
+   &#160;<span id="projectnumber">2.8.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -93,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor"># include &lt;arpa/inet.h&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../db/d91/class_music_network_speed_test_thread.html#ac9f3560646bf077ac650461114510d0c">   17</a></span>&#160;<a class="code" href="../../db/d91/class_music_network_speed_test_thread.html#ac9f3560646bf077ac650461114510d0c">MusicNetworkSpeedTestThread::MusicNetworkSpeedTestThread</a>(QObject *parent)</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../db/d91/class_music_network_speed_test_thread.html#a92e350b96797f5478a3da28c42829d7d">   17</a></span>&#160;<a class="code" href="../../db/d91/class_music_network_speed_test_thread.html#a92e350b96797f5478a3da28c42829d7d">MusicNetworkSpeedTestThread::MusicNetworkSpeedTestThread</a>(QObject *parent)</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    : QThread(parent)</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="../../db/d91/class_music_network_speed_test_thread.html#a7e36e9714517bdb878bb6b078122ee44">m_run</a> = <span class="keyword">false</span>;</div>
@@ -167,9 +167,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    GetIfTable(pTable, &amp;dwAdapters, TRUE);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">for</span>(UINT i = 0; i &lt; pTable-&gt;dwNumEntries; i++)</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        MIB_IFROW Row = pTable-&gt;table[i];</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keyword">const</span> MIB_IFROW Row = pTable-&gt;table[i];</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        std::string s(<a class="code" href="../../da/d4e/musicglobal_8h.html#ab9fa4780baf237ce23b3e43f81c8fa44">MReinterpret_cast</a>(<span class="keywordtype">char</span> <span class="keyword">const</span>*, Row.bDescr));</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        QString qs = QString::fromStdString(s);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keyword">const</span> QString &amp;qs = QString::fromStdString(s);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">if</span>((Row.dwType == 71 || Row.dwType == 6) &amp;&amp; !names.contains(qs))</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        {</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            names &lt;&lt; qs;</div>
@@ -200,8 +200,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#ifdef Q_OS_UNIX</span></div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">while</span>(<a class="code" href="../../db/d91/class_music_network_speed_test_thread.html#a6876e39fb4adc4a334a816c84851d917">m_process</a>-&gt;canReadLine())</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    {</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        QByteArray datas = <a class="code" href="../../db/d91/class_music_network_speed_test_thread.html#a6876e39fb4adc4a334a816c84851d917">m_process</a>-&gt;readLine();</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        QStringList lists = QString(datas).split(<span class="stringliteral">&quot;|&quot;</span>);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keyword">const</span> QByteArray &amp;datas = <a class="code" href="../../db/d91/class_music_network_speed_test_thread.html#a6876e39fb4adc4a334a816c84851d917">m_process</a>-&gt;readLine();</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keyword">const</span> QStringList &amp;lists = QString(datas).split(<span class="stringliteral">&quot;|&quot;</span>);</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        ulong upload = 0, download = 0;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordflow">if</span>(lists.count() == 3)</div>
@@ -225,7 +225,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">#ifdef Q_OS_WIN</span></div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    PMIB_IFTABLE pTable = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    DWORD dwAdapters = 0;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    ULONG uRetCode = GetIfTable(pTable, &amp;dwAdapters, TRUE);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keyword">const</span> ULONG uRetCode = GetIfTable(pTable, &amp;dwAdapters, TRUE);</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordflow">if</span>(uRetCode == ERROR_NOT_SUPPORTED)</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    {</div>
@@ -247,8 +247,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordflow">for</span>(UINT i = 0; i &lt; pTable-&gt;dwNumEntries; i++)</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        {</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            MIB_IFROW Row = pTable-&gt;table[i];</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            std::string s(<a class="code" href="../../da/d4e/musicglobal_8h.html#ab9fa4780baf237ce23b3e43f81c8fa44">MReinterpret_cast</a>(<span class="keywordtype">char</span> <span class="keyword">const</span>*, Row.bDescr));</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <span class="keyword">const</span> MIB_IFROW&amp; Row = pTable-&gt;table[i];</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            <span class="keyword">const</span> std::string s(<a class="code" href="../../da/d4e/musicglobal_8h.html#ab9fa4780baf237ce23b3e43f81c8fa44">MReinterpret_cast</a>(<span class="keywordtype">char</span> <span class="keyword">const</span>*, Row.bDescr));</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            <span class="keywordflow">if</span>((Row.dwType == 71 || Row.dwType == 6) &amp;&amp;</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;               <a class="code" href="../../db/d91/class_music_network_speed_test_thread.html#a1ab2bf4d70bb6223ef9fb3a9439b993a">m_names</a>.contains(QString::fromStdString(s)))</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            {</div>
@@ -279,10 +279,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keyword">delete</span>[] pTable;</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;}</div>
-<div class="ttc" id="class_music_network_speed_test_thread_html_ac9f3560646bf077ac650461114510d0c"><div class="ttname"><a href="../../db/d91/class_music_network_speed_test_thread.html#ac9f3560646bf077ac650461114510d0c">MusicNetworkSpeedTestThread::MusicNetworkSpeedTestThread</a></div><div class="ttdeci">MusicNetworkSpeedTestThread(QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d69/musicnetworkspeedtestthread_8cpp_source.html#l00017">musicnetworkspeedtestthread.cpp:17</a></div></div>
 <div class="ttc" id="musicnetworkspeedtestthread_8h_html"><div class="ttname"><a href="../../d4/d5b/musicnetworkspeedtestthread_8h.html">musicnetworkspeedtestthread.h</a></div></div>
 <div class="ttc" id="class_music_network_speed_test_thread_html_a1ab2bf4d70bb6223ef9fb3a9439b993a"><div class="ttname"><a href="../../db/d91/class_music_network_speed_test_thread.html#a1ab2bf4d70bb6223ef9fb3a9439b993a">MusicNetworkSpeedTestThread::m_names</a></div><div class="ttdeci">QStringList m_names</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d5b/musicnetworkspeedtestthread_8h_source.html#l00084">musicnetworkspeedtestthread.h:84</a></div></div>
 <div class="ttc" id="class_music_network_speed_test_thread_html_aa32f7586a51896d35cb4a553b6fac783"><div class="ttname"><a href="../../db/d91/class_music_network_speed_test_thread.html#aa32f7586a51896d35cb4a553b6fac783">MusicNetworkSpeedTestThread::networkData</a></div><div class="ttdeci">void networkData(ulong upload, ulong download)</div></div>
+<div class="ttc" id="class_music_network_speed_test_thread_html_a92e350b96797f5478a3da28c42829d7d"><div class="ttname"><a href="../../db/d91/class_music_network_speed_test_thread.html#a92e350b96797f5478a3da28c42829d7d">MusicNetworkSpeedTestThread::MusicNetworkSpeedTestThread</a></div><div class="ttdeci">MusicNetworkSpeedTestThread(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d69/musicnetworkspeedtestthread_8cpp_source.html#l00017">musicnetworkspeedtestthread.cpp:17</a></div></div>
 <div class="ttc" id="musicobject_8h_html"><div class="ttname"><a href="../../d8/d07/musicobject_8h.html">musicobject.h</a></div></div>
 <div class="ttc" id="class_music_network_speed_test_thread_html_aadbf80ac8d02429584cbc7163b87cfc1"><div class="ttname"><a href="../../db/d91/class_music_network_speed_test_thread.html#aadbf80ac8d02429584cbc7163b87cfc1">MusicNetworkSpeedTestThread::start</a></div><div class="ttdeci">void start()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d69/musicnetworkspeedtestthread_8cpp_source.html#l00138">musicnetworkspeedtestthread.cpp:138</a></div></div>
 <div class="ttc" id="class_music_network_speed_test_thread_html_a237239d05068d85804cd45088fb6f4a7"><div class="ttname"><a href="../../db/d91/class_music_network_speed_test_thread.html#a237239d05068d85804cd45088fb6f4a7">MusicNetworkSpeedTestThread::outputRecieved</a></div><div class="ttdeci">void outputRecieved()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d69/musicnetworkspeedtestthread_8cpp_source.html#l00119">musicnetworkspeedtestthread.cpp:119</a></div></div>
@@ -298,7 +298,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 1 2018 10:20:46 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 11 2019 14:01:48 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.7.0.0</span>
+   &#160;<span id="projectnumber">2.8.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -82,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">/* =================================================</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of the TTK Music Player project</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2018 Greedysky Studio</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2019 Greedysky Studio</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
@@ -123,7 +123,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../dd/de1/class_music_player.html#a076e78b0ea35321bbb37c0a84793c9e6a88e44fd13f2f5808dd50cbba79f52c4b">   47</a></span>&#160;        EnhancedVocal      </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    };</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../dd/de1/class_music_player.html">MusicPlayer</a>(QObject *parent = 0);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../dd/de1/class_music_player.html">MusicPlayer</a>(QObject *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    ~<a class="code" href="../../dd/de1/class_music_player.html">MusicPlayer</a>();</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
@@ -158,7 +158,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordtype">void</span> play();</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordtype">void</span> pause();</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordtype">void</span> stop();</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordtype">void</span> setEqEffect(<span class="keyword">const</span> <a class="code" href="../../df/dbc/namespace_music_object.html#ac51ddc3036afae45ef265630cb9718be">MusicObject::MIntList</a> &amp;hz);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordtype">void</span> setEqEffect(<span class="keyword">const</span> <a class="code" href="../../da/d4e/musicglobal_8h.html#a9f4d18f8fe671d865cf80b3beef064c2">MIntList</a> &amp;hz);</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordtype">void</span> setEnaleEffect(<span class="keywordtype">bool</span> enable);</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordtype">void</span> setEqInformation();</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordtype">void</span> setSoundEffectVolume(<span class="keywordtype">int</span> value);</div>
@@ -187,6 +187,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="preprocessor">#endif // MUSICPLAYER_H</span></div>
 <div class="ttc" id="class_music_playedlist_html"><div class="ttname"><a href="../../d9/df3/class_music_playedlist.html">MusicPlayedlist</a></div><div class="ttdoc">The class of the music playedlist. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d1b/musicplayedlist_8h_source.html#l00060">musicplayedlist.h:60</a></div></div>
+<div class="ttc" id="musicglobal_8h_html_a9f4d18f8fe671d865cf80b3beef064c2"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a9f4d18f8fe671d865cf80b3beef064c2">MIntList</a></div><div class="ttdeci">QList&lt; int &gt; MIntList</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00210">musicglobal.h:210</a></div></div>
 <div class="ttc" id="class_music_player_html_a076e78b0ea35321bbb37c0a84793c9e6a5aeacdd194dc475221acaba953f06550"><div class="ttname"><a href="../../dd/de1/class_music_player.html#a076e78b0ea35321bbb37c0a84793c9e6a5aeacdd194dc475221acaba953f06550">MusicPlayer::Enhanced3D</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d60/musicplayer_8h_source.html#l00044">musicplayer.h:44</a></div></div>
 <div class="ttc" id="class_music_player_html_abfee67bc093cf6ac617f016137aa1fb6"><div class="ttname"><a href="../../dd/de1/class_music_player.html#abfee67bc093cf6ac617f016137aa1fb6">MusicPlayer::m_posOnCircle</a></div><div class="ttdeci">float m_posOnCircle</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d60/musicplayer_8h_source.html#l00204">musicplayer.h:204</a></div></div>
 <div class="ttc" id="class_music_player_html_a6dc88fc61f26d597da869856d9cd9d83"><div class="ttname"><a href="../../dd/de1/class_music_player.html#a6dc88fc61f26d597da869856d9cd9d83">MusicPlayer::m_state</a></div><div class="ttdeci">MusicObject::PlayState m_state</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d60/musicplayer_8h_source.html#l00195">musicplayer.h:195</a></div></div>
@@ -202,17 +203,16 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="musicglobaldefine_8h_html"><div class="ttname"><a href="../../d6/d9b/musicglobaldefine_8h.html">musicglobaldefine.h</a></div></div>
 <div class="ttc" id="class_music_player_html_a1ad43841142f5d96d095ca4c5f4e6e18"><div class="ttname"><a href="../../dd/de1/class_music_player.html#a1ad43841142f5d96d095ca4c5f4e6e18">MusicPlayer::m_tryTimes</a></div><div class="ttdeci">int m_tryTimes</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d60/musicplayer_8h_source.html#l00202">musicplayer.h:202</a></div></div>
 <div class="ttc" id="class_music_player_html_a55ee18c87103941d2625127fc62e9cb1"><div class="ttname"><a href="../../dd/de1/class_music_player.html#a55ee18c87103941d2625127fc62e9cb1">MusicPlayer::m_music</a></div><div class="ttdeci">SoundCore * m_music</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d60/musicplayer_8h_source.html#l00196">musicplayer.h:196</a></div></div>
-<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00113">musicglobal.h:113</a></div></div>
+<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00149">musicglobal.h:149</a></div></div>
 <div class="ttc" id="class_music_player_html_a076e78b0ea35321bbb37c0a84793c9e6"><div class="ttname"><a href="../../dd/de1/class_music_player.html#a076e78b0ea35321bbb37c0a84793c9e6">MusicPlayer::Enhanced</a></div><div class="ttdeci">Enhanced</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d60/musicplayer_8h_source.html#l00041">musicplayer.h:41</a></div></div>
-<div class="ttc" id="namespace_music_object_html_ac51ddc3036afae45ef265630cb9718be"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#ac51ddc3036afae45ef265630cb9718be">MusicObject::MIntList</a></div><div class="ttdeci">QList&lt; int &gt; MIntList</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00181">musicglobal.h:181</a></div></div>
 <div class="ttc" id="class_music_player_html_aecf3e6b038907020174d59088f4e1777"><div class="ttname"><a href="../../dd/de1/class_music_player.html#aecf3e6b038907020174d59088f4e1777">MusicPlayer::m_playlist</a></div><div class="ttdeci">MusicPlayedlist * m_playlist</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d60/musicplayer_8h_source.html#l00194">musicplayer.h:194</a></div></div>
-<div class="ttc" id="namespace_music_object_html_a85dbc7f8359cfda6504c7f64d5349217"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#a85dbc7f8359cfda6504c7f64d5349217">MusicObject::PlayState</a></div><div class="ttdeci">PlayState</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00245">musicobject.h:245</a></div></div>
+<div class="ttc" id="namespace_music_object_html_a85dbc7f8359cfda6504c7f64d5349217"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#a85dbc7f8359cfda6504c7f64d5349217">MusicObject::PlayState</a></div><div class="ttdeci">PlayState</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00247">musicobject.h:247</a></div></div>
 <div class="ttc" id="class_music_player_html_a119e5b2ff8838c32f7b4d068738b4bb5"><div class="ttname"><a href="../../dd/de1/class_music_player.html#a119e5b2ff8838c32f7b4d068738b4bb5">MusicPlayer::m_currentMedia</a></div><div class="ttdeci">QString m_currentMedia</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d60/musicplayer_8h_source.html#l00198">musicplayer.h:198</a></div></div>
 <div class="ttc" id="class_sound_core_html"><div class="ttname"><a href="../../d4/d98/class_sound_core.html">SoundCore</a></div><div class="ttdoc">The SoundCore class provides a simple interface for audio playback. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de2/_qt4_2soundcore_8h_source.html#l00043">soundcore.h:43</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 1 2018 10:20:42 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 11 2019 14:01:44 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

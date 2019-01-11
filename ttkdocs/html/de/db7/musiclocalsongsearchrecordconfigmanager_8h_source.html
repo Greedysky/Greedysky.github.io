@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.7.0.0</span>
+   &#160;<span id="projectnumber">2.8.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -82,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">/* =================================================</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of the TTK Music Player project</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2018 Greedysky Studio</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2019 Greedysky Studio</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
@@ -113,7 +113,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d5/d4d/class_music_local_song_search_record_config_manager.html">MusicLocalSongSearchRecordConfigManager</a>)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d5/d4d/class_music_local_song_search_record_config_manager.html">MusicLocalSongSearchRecordConfigManager</a>(QObject *parent = 0);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d5/d4d/class_music_local_song_search_record_config_manager.html">MusicLocalSongSearchRecordConfigManager</a>(QObject *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="../../d5/d4d/class_music_local_song_search_record_config_manager.html#a30bf433a0c353b406e8baded0c32eea5">   50</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../d5/d4d/class_music_local_song_search_record_config_manager.html#a30bf433a0c353b406e8baded0c32eea5">readSearchXMLConfig</a>(){ <span class="keywordflow">return</span> readConfig(<a class="code" href="../../d8/d07/musicobject_8h.html#a085eb5829e6bf57b0885321852e62761">MUSICSEARCH_FULL</a>); }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> writeSearchConfig(<span class="keyword">const</span> MusicSearchRecords &amp;records);</div>
@@ -126,9 +126,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="musiclocalsongsearchrecordconfigmanager_8h_html_acfcd871ac7fdce26c6c96e93f5ef09cc"><div class="ttname"><a href="../../de/db7/musiclocalsongsearchrecordconfigmanager_8h.html#acfcd871ac7fdce26c6c96e93f5ef09cc">MusicSearchRecord</a></div><div class="ttdeci">struct MUSIC_SEARCH_EXPORT MusicSearchRecord MusicSearchRecord</div><div class="ttdoc">The class of the local searched record item. </div></div>
 <div class="ttc" id="musicobject_8h_html_a085eb5829e6bf57b0885321852e62761"><div class="ttname"><a href="../../d8/d07/musicobject_8h.html#a085eb5829e6bf57b0885321852e62761">MUSICSEARCH_FULL</a></div><div class="ttdeci">#define MUSICSEARCH_FULL</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00156">musicobject.h:156</a></div></div>
 <div class="ttc" id="class_music_local_song_search_record_config_manager_html_a30bf433a0c353b406e8baded0c32eea5"><div class="ttname"><a href="../../d5/d4d/class_music_local_song_search_record_config_manager.html#a30bf433a0c353b406e8baded0c32eea5">MusicLocalSongSearchRecordConfigManager::readSearchXMLConfig</a></div><div class="ttdeci">bool readSearchXMLConfig()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/db7/musiclocalsongsearchrecordconfigmanager_8h_source.html#l00050">musiclocalsongsearchrecordconfigmanager.h:50</a></div></div>
-<div class="ttc" id="musicglobal_8h_html_a26874f3399a60d18f8f82ce4a546e0c9"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a26874f3399a60d18f8f82ce4a546e0c9">TTK_DECLARE_LISTS</a></div><div class="ttdeci">#define TTK_DECLARE_LISTS(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00131">musicglobal.h:131</a></div></div>
+<div class="ttc" id="musicglobal_8h_html_a26874f3399a60d18f8f82ce4a546e0c9"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a26874f3399a60d18f8f82ce4a546e0c9">TTK_DECLARE_LISTS</a></div><div class="ttdeci">#define TTK_DECLARE_LISTS(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00167">musicglobal.h:167</a></div></div>
 <div class="ttc" id="class_music_local_song_search_record_config_manager_html"><div class="ttname"><a href="../../d5/d4d/class_music_local_song_search_record_config_manager.html">MusicLocalSongSearchRecordConfigManager</a></div><div class="ttdoc">The class of the search history Config. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/db7/musiclocalsongsearchrecordconfigmanager_8h_source.html#l00037">musiclocalsongsearchrecordconfigmanager.h:37</a></div></div>
-<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00113">musicglobal.h:113</a></div></div>
+<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00149">musicglobal.h:149</a></div></div>
 <div class="ttc" id="struct_music_search_record_html_a407cd2c8fecd929a80feb217187c0242"><div class="ttname"><a href="../../d9/dd1/struct_music_search_record.html#a407cd2c8fecd929a80feb217187c0242">MusicSearchRecord::m_name</a></div><div class="ttdeci">QString m_name</div><div class="ttdef"><b>Definition:</b> <a href="../../de/db7/musiclocalsongsearchrecordconfigmanager_8h_source.html#l00029">musiclocalsongsearchrecordconfigmanager.h:29</a></div></div>
 <div class="ttc" id="struct_music_search_record_html"><div class="ttname"><a href="../../d9/dd1/struct_music_search_record.html">MusicSearchRecord</a></div><div class="ttdoc">The class of the local searched record item. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/db7/musiclocalsongsearchrecordconfigmanager_8h_source.html#l00027">musiclocalsongsearchrecordconfigmanager.h:27</a></div></div>
 <div class="ttc" id="musicabstractxml_8h_html"><div class="ttname"><a href="../../d5/d83/musicabstractxml_8h.html">musicabstractxml.h</a></div></div>
@@ -136,7 +136,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 1 2018 10:20:46 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 11 2019 14:01:48 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

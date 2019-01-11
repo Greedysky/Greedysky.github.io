@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.7.0.0</span>
+   &#160;<span id="projectnumber">2.8.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -82,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">/* =================================================</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of the TTK Music Player project</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2018 Greedysky Studio</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2019 Greedysky Studio</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
@@ -139,18 +139,15 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="../../d6/d8a/class_music_down_load_q_q_interface.html">   74</a></span>&#160;<span class="keyword">class </span>MUSIC_NETWORK_EXPORT <a class="code" href="../../d6/d8a/class_music_down_load_q_q_interface.html">MusicDownLoadQQInterface</a></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> readFromMusicSongAttribute(<a class="code" href="../../d9/d32/struct_music_object_1_1_music_song_information.html">MusicObject::MusicSongInformation</a> *info, <span class="keyword">const</span> QVariantMap &amp;<a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>,</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                    <span class="keywordtype">int</span> bitrate);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> readFromMusicSongAttribute(<a class="code" href="../../d9/d32/struct_music_object_1_1_music_song_information.html">MusicObject::MusicSongInformation</a> *info, <span class="keyword">const</span> QVariantMap &amp;key,</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                    <span class="keyword">const</span> QString &amp;quality, <span class="keywordtype">bool</span> all);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> readFromMusicSongAttributePlus(<a class="code" href="../../d9/d32/struct_music_object_1_1_music_song_information.html">MusicObject::MusicSongInformation</a> *info, <span class="keyword">const</span> QVariantMap &amp;key,</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                        <span class="keywordtype">int</span> bitrate);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> readFromMusicSongAttributePlus(<a class="code" href="../../d9/d32/struct_music_object_1_1_music_song_information.html">MusicObject::MusicSongInformation</a> *info, <span class="keyword">const</span> QVariantMap &amp;key);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    QString getMusicKey(<span class="keyword">const</span> QString &amp;time);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif // MUSICDOWNLOADQQINTERFACE_H</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> readFromMusicSongAttribute(<a class="code" href="../../d9/d32/struct_music_object_1_1_music_song_information.html">MusicObject::MusicSongInformation</a> *info, <span class="keyword">const</span> QVariantMap &amp;<a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>, <span class="keywordtype">int</span> bitrate);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> readFromMusicSongAttribute(<a class="code" href="../../d9/d32/struct_music_object_1_1_music_song_information.html">MusicObject::MusicSongInformation</a> *info, <span class="keyword">const</span> QVariantMap &amp;key, <span class="keyword">const</span> QString &amp;quality, <span class="keywordtype">bool</span> all);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> readFromMusicSongAttributePlus(<a class="code" href="../../d9/d32/struct_music_object_1_1_music_song_information.html">MusicObject::MusicSongInformation</a> *info, <span class="keyword">const</span> QVariantMap &amp;key, <span class="keywordtype">int</span> bitrate);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> readFromMusicSongAttributePlus(<a class="code" href="../../d9/d32/struct_music_object_1_1_music_song_information.html">MusicObject::MusicSongInformation</a> *info, <span class="keyword">const</span> QVariantMap &amp;key);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    QString getMusicKey(<span class="keyword">const</span> QString &amp;time);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;};</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#endif // MUSICDOWNLOADQQINTERFACE_H</span></div>
 <div class="ttc" id="musicdownloadqqinterface_8h_html_a6261c77fe55f382a4a13468ff0304bd2"><div class="ttname"><a href="../../d4/ddc/musicdownloadqqinterface_8h.html#a6261c77fe55f382a4a13468ff0304bd2">QQ_COMMIT_URL</a></div><div class="ttdeci">const QString QQ_COMMIT_URL</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/ddc/musicdownloadqqinterface_8h_source.html#l00055">musicdownloadqqinterface.h:55</a></div></div>
 <div class="ttc" id="class_music_down_load_q_q_interface_html"><div class="ttname"><a href="../../d6/d8a/class_music_down_load_q_q_interface.html">MusicDownLoadQQInterface</a></div><div class="ttdoc">The class to qq query download interface. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/ddc/musicdownloadqqinterface_8h_source.html#l00074">musicdownloadqqinterface.h:74</a></div></div>
 <div class="ttc" id="musicdownloadqqinterface_8h_html_a36932bacc20acebc2ebde239f09632de"><div class="ttname"><a href="../../d4/ddc/musicdownloadqqinterface_8h.html#a36932bacc20acebc2ebde239f09632de">QQ_AR_LIST_URL</a></div><div class="ttdeci">const QString QQ_AR_LIST_URL</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/ddc/musicdownloadqqinterface_8h_source.html#l00047">musicdownloadqqinterface.h:47</a></div></div>
@@ -183,13 +180,13 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="musicdownloadqqinterface_8h_html_a692cf810b29face4e91d02d9d3a9bcb1"><div class="ttname"><a href="../../d4/ddc/musicdownloadqqinterface_8h.html#a692cf810b29face4e91d02d9d3a9bcb1">QQ_SONG_TOPLIST_C_URL</a></div><div class="ttdeci">const QString QQ_SONG_TOPLIST_C_URL</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/ddc/musicdownloadqqinterface_8h_source.html#l00049">musicdownloadqqinterface.h:49</a></div></div>
 <div class="ttc" id="musicdownloadqqinterface_8h_html_a510fb9f5152c975aeb202fde68289ca2"><div class="ttname"><a href="../../d4/ddc/musicdownloadqqinterface_8h.html#a510fb9f5152c975aeb202fde68289ca2">QQ_SG_COMMIT_DATA_URL</a></div><div class="ttdeci">const QString QQ_SG_COMMIT_DATA_URL</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/ddc/musicdownloadqqinterface_8h_source.html#l00056">musicdownloadqqinterface.h:56</a></div></div>
 <div class="ttc" id="musicdownloadqqinterface_8h_html_a796f4101e7362e625d97df87402644d5"><div class="ttname"><a href="../../d4/ddc/musicdownloadqqinterface_8h.html#a796f4101e7362e625d97df87402644d5">QQ_SONG_FLAC_URL</a></div><div class="ttdeci">const QString QQ_SONG_FLAC_URL</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/ddc/musicdownloadqqinterface_8h_source.html#l00039">musicdownloadqqinterface.h:39</a></div></div>
-<div class="ttc" id="struct_music_object_1_1_music_song_information_html"><div class="ttname"><a href="../../d9/d32/struct_music_object_1_1_music_song_information.html">MusicObject::MusicSongInformation</a></div><div class="ttdoc">The class of the music song information. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00226">musicobject.h:226</a></div></div>
+<div class="ttc" id="struct_music_object_1_1_music_song_information_html"><div class="ttname"><a href="../../d9/d32/struct_music_object_1_1_music_song_information.html">MusicObject::MusicSongInformation</a></div><div class="ttdoc">The class of the music song information. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00228">musicobject.h:228</a></div></div>
 <div class="ttc" id="musicdownloadqqinterface_8h_html_a5413d16b95c4e0756c9ead3e6bcf662d"><div class="ttname"><a href="../../d4/ddc/musicdownloadqqinterface_8h.html#a5413d16b95c4e0756c9ead3e6bcf662d">QQ_MV_INFO_URL</a></div><div class="ttdeci">const QString QQ_MV_INFO_URL</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/ddc/musicdownloadqqinterface_8h_source.html#l00052">musicdownloadqqinterface.h:52</a></div></div>
 <div class="ttc" id="musicdownloadqqinterface_8h_html_a6ef14b9e42aaf79f509556e30f11d2d0"><div class="ttname"><a href="../../d4/ddc/musicdownloadqqinterface_8h.html#a6ef14b9e42aaf79f509556e30f11d2d0">QQ_ARTIST_INFO_URL</a></div><div class="ttdeci">const QString QQ_ARTIST_INFO_URL</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/ddc/musicdownloadqqinterface_8h_source.html#l00043">musicdownloadqqinterface.h:43</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 1 2018 10:20:43 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 11 2019 14:01:46 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.7.0.0</span>
+   &#160;<span id="projectnumber">2.8.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -325,6 +325,8 @@ Macros</h2></td></tr>
 <tr class="separator:ad2895e76b2d6926246c57cdb09ea1f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3c8f2f598f8fb59cf9cacdc361fff57"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d07/musicobject_8h.html#ab3c8f2f598f8fb59cf9cacdc361fff57">WINDOW_HEIGHT_MIN</a>&#160;&#160;&#160;690</td></tr>
 <tr class="separator:ab3c8f2f598f8fb59cf9cacdc361fff57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39ef656ca5a6b53773e27332f4844ddc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d07/musicobject_8h.html#a39ef656ca5a6b53773e27332f4844ddc">COVER_URL_NULL</a>&#160;&#160;&#160;&quot;null&quot;</td></tr>
+<tr class="separator:a39ef656ca5a6b53773e27332f4844ddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -374,28 +376,6 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a0d8f8dd6eee2cdaf8348979c6dbf2753"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a14ffa5d3251d93ec8b537f32d3b074"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dbc/namespace_music_object.html#a1a14ffa5d3251d93ec8b537f32d3b074">MusicObject::ToolsType</a> { <br />
-&#160;&#160;<a class="el" href="../../df/dbc/namespace_music_object.html#a1a14ffa5d3251d93ec8b537f32d3b074a94e81d7987c8ff9104ef169340321668">MusicObject::TT_LocalManager</a> = 0x00001, 
-<a class="el" href="../../df/dbc/namespace_music_object.html#a1a14ffa5d3251d93ec8b537f32d3b074aa7e483e20bc461e24c24be733ec517ad">MusicObject::TT_AudioRecord</a> = 0x00002, 
-<a class="el" href="../../df/dbc/namespace_music_object.html#a1a14ffa5d3251d93ec8b537f32d3b074a3d9fa3a4f6474b2e4a1993250c40753d">MusicObject::TT_RingTone</a> = 0x00004, 
-<a class="el" href="../../df/dbc/namespace_music_object.html#a1a14ffa5d3251d93ec8b537f32d3b074af0e681759b956d476a442925f739cc98">MusicObject::TT_Timer</a> = 0x00008, 
-<br />
-&#160;&#160;<a class="el" href="../../df/dbc/namespace_music_object.html#a1a14ffa5d3251d93ec8b537f32d3b074aa9611ff4981fdc44ab6ee8b5c2b24a7b">MusicObject::TT_Transform</a> = 0x00010, 
-<a class="el" href="../../df/dbc/namespace_music_object.html#a1a14ffa5d3251d93ec8b537f32d3b074ada1eb301e92fb58975bdab699f3c926d">MusicObject::TT_Spectrum</a> = 0x00020, 
-<a class="el" href="../../df/dbc/namespace_music_object.html#a1a14ffa5d3251d93ec8b537f32d3b074a6c11ad96479f33791d4945f4d4e58704">MusicObject::TT_Wallpaper</a> = 0x00040, 
-<a class="el" href="../../df/dbc/namespace_music_object.html#a1a14ffa5d3251d93ec8b537f32d3b074aa875a01c32fbdff8948a68057c4584e7">MusicObject::TT_Mobile</a> = 0x00080, 
-<br />
-&#160;&#160;<a class="el" href="../../df/dbc/namespace_music_object.html#a1a14ffa5d3251d93ec8b537f32d3b074a7aca530bda681c9f24d62e33cd43a429">MusicObject::TT_ConnectionTest</a> = 0x00100, 
-<a class="el" href="../../df/dbc/namespace_music_object.html#a1a14ffa5d3251d93ec8b537f32d3b074a50e263a5dc3b620dc02d406911989f00">MusicObject::TT_SoundGain</a> = 0x00200, 
-<a class="el" href="../../df/dbc/namespace_music_object.html#a1a14ffa5d3251d93ec8b537f32d3b074ac733e08bdf292e75c32041092d181fd3">MusicObject::TT_Identify</a> = 0x00400, 
-<a class="el" href="../../df/dbc/namespace_music_object.html#a1a14ffa5d3251d93ec8b537f32d3b074a3063f9578e1378d9cfc7114a03fd06df">MusicObject::TT_SoundTouch</a> = 0x00800, 
-<br />
-&#160;&#160;<a class="el" href="../../df/dbc/namespace_music_object.html#a1a14ffa5d3251d93ec8b537f32d3b074a08bcea0c2ba96830e5adc421dacd84d5">MusicObject::TT_GrabWindow</a> = 0x01000, 
-<a class="el" href="../../df/dbc/namespace_music_object.html#a1a14ffa5d3251d93ec8b537f32d3b074abd9dbacf3bd3fbfa6f0631d09f54b686">MusicObject::TT_SoundKMicro</a> = 0x02000, 
-<a class="el" href="../../df/dbc/namespace_music_object.html#a1a14ffa5d3251d93ec8b537f32d3b074a2fda93a154b6521826ae2bbc7705f837">MusicObject::TT_WebRadio</a> = 0x04000
-<br />
- }</td></tr>
-<tr class="separator:a1a14ffa5d3251d93ec8b537f32d3b074"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -459,7 +439,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00075">75</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dc/d60/musicdownloadkwinterface_8cpp_source.html#l00072">MusicDownLoadKWInterface::readFromMusicSongAttribute()</a>, <a class="el" href="../../db/da3/musicdownloadqqinterface_8cpp_source.html#l00017">MusicDownLoadQQInterface::readFromMusicSongAttribute()</a>, <a class="el" href="../../dc/d60/musicdownloadkwinterface_8cpp_source.html#l00112">MusicDownLoadKWInterface::readFromMusicSongAttributePlus()</a>, and <a class="el" href="../../db/da3/musicdownloadqqinterface_8cpp_source.html#l00142">MusicDownLoadQQInterface::readFromMusicSongAttributePlus()</a>.</p>
+<p>Referenced by <a class="el" href="../../dc/d60/musicdownloadkwinterface_8cpp_source.html#l00069">MusicDownLoadKWInterface::readFromMusicSongAttribute()</a>, <a class="el" href="../../db/da3/musicdownloadqqinterface_8cpp_source.html#l00018">MusicDownLoadQQInterface::readFromMusicSongAttribute()</a>, <a class="el" href="../../dc/d60/musicdownloadkwinterface_8cpp_source.html#l00108">MusicDownLoadKWInterface::readFromMusicSongAttributePlus()</a>, and <a class="el" href="../../db/da3/musicdownloadqqinterface_8cpp_source.html#l00141">MusicDownLoadQQInterface::readFromMusicSongAttributePlus()</a>.</p>
 
 </div>
 </div>
@@ -519,7 +499,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00034">34</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d19/musicregeditmanager_8cpp_source.html#l00180">MusicRegeditManager::createMusicRegedit()</a>, and <a class="el" href="../../d8/d19/musicregeditmanager_8cpp_source.html#l00162">MusicRegeditManager::currentNodeHasExist()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d19/musicregeditmanager_8cpp_source.html#l00178">MusicRegeditManager::createMusicRegedit()</a>, and <a class="el" href="../../d8/d19/musicregeditmanager_8cpp_source.html#l00160">MusicRegeditManager::currentNodeHasExist()</a>.</p>
 
 </div>
 </div>
@@ -535,7 +515,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00036">36</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dc/d19/musicwebmusicradiowidget_8cpp_source.html#l00187">MusicWebMusicRadioWidget::sendToDesktopLink()</a>.</p>
+<p>Referenced by <a class="el" href="../../dc/d19/musicwebmusicradiowidget_8cpp_source.html#l00186">MusicWebMusicRadioWidget::sendToDesktopLink()</a>.</p>
 
 </div>
 </div>
@@ -551,7 +531,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00033">33</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d04/ttkrunmain_8cpp_source.html#l00005">main()</a>, <a class="el" href="../../d2/d4c/musicplaylistmanager_8cpp_source.html#l00276">MusicASXConfigManager::readASXXMLConfig()</a>, <a class="el" href="../../d2/d4c/musicplaylistmanager_8cpp_source.html#l00058">MusicWPLConfigManager::readWPLXMLConfig()</a>, <a class="el" href="../../d2/d4c/musicplaylistmanager_8cpp_source.html#l00166">MusicXSPFConfigManager::readXSPFXMLConfig()</a>, <a class="el" href="../../dd/dc9/ttkrunobject_8cpp_source.html#l00047">TTKRunObject::run()</a>, <a class="el" href="../../dd/d07/musiclrcanalysis_8cpp_source.html#l00435">MusicLrcAnalysis::saveLrcTimeChanged()</a>, <a class="el" href="../../dc/d19/musicwebmusicradiowidget_8cpp_source.html#l00187">MusicWebMusicRadioWidget::sendToDesktopLink()</a>, <a class="el" href="../../d2/d4c/musicplaylistmanager_8cpp_source.html#l00232">MusicASXConfigManager::writeASXXMLConfig()</a>, <a class="el" href="../../db/d04/musicbarragerecordconfigmanager_8cpp_source.html#l00009">MusicBarrageRecordConfigManager::writeBarrageConfig()</a>, <a class="el" href="../../d5/d4e/musicdownloadrecordconfigmanager_8cpp_source.html#l00009">MusicDownloadRecordConfigManager::writeDownloadConfig()</a>, <a class="el" href="../../d4/d7d/musiclistconfigmanager_8cpp_source.html#l00014">MusicListConfigManager::writeMusicSongsConfig()</a>, <a class="el" href="../../d3/deb/musiclocalsongsearchrecordconfigmanager_8cpp_source.html#l00009">MusicLocalSongSearchRecordConfigManager::writeSearchConfig()</a>, <a class="el" href="../../da/deb/musicbackgroundconfigmanager_8cpp_source.html#l00009">MusicSkinConfigManager::writeSkinXMLConfig()</a>, <a class="el" href="../../d0/dc3/musicuserconfigmanager_8cpp_source.html#l00009">MusicUserConfigManager::writeUserXMLConfig()</a>, <a class="el" href="../../d2/d4c/musicplaylistmanager_8cpp_source.html#l00015">MusicWPLConfigManager::writeWPLXMLConfig()</a>, <a class="el" href="../../d2/df3/musicsysconfigmanager_8cpp_source.html#l00013">MusicSysConfigManager::writeXMLConfig()</a>, and <a class="el" href="../../d2/d4c/musicplaylistmanager_8cpp_source.html#l00120">MusicXSPFConfigManager::writeXSPFXMLConfig()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d04/ttkrunmain_8cpp_source.html#l00005">main()</a>, <a class="el" href="../../d2/d4c/musicplaylistmanager_8cpp_source.html#l00278">MusicASXConfigManager::readASXXMLConfig()</a>, <a class="el" href="../../d2/d4c/musicplaylistmanager_8cpp_source.html#l00058">MusicWPLConfigManager::readWPLXMLConfig()</a>, <a class="el" href="../../d2/d4c/musicplaylistmanager_8cpp_source.html#l00167">MusicXSPFConfigManager::readXSPFXMLConfig()</a>, <a class="el" href="../../dd/dc9/ttkrunobject_8cpp_source.html#l00047">TTKRunObject::run()</a>, <a class="el" href="../../dd/d07/musiclrcanalysis_8cpp_source.html#l00438">MusicLrcAnalysis::saveLrcTimeChanged()</a>, <a class="el" href="../../dc/d19/musicwebmusicradiowidget_8cpp_source.html#l00186">MusicWebMusicRadioWidget::sendToDesktopLink()</a>, <a class="el" href="../../d2/d4c/musicplaylistmanager_8cpp_source.html#l00234">MusicASXConfigManager::writeASXXMLConfig()</a>, <a class="el" href="../../db/d04/musicbarragerecordconfigmanager_8cpp_source.html#l00009">MusicBarrageRecordConfigManager::writeBarrageConfig()</a>, <a class="el" href="../../d5/d4e/musicdownloadrecordconfigmanager_8cpp_source.html#l00009">MusicDownloadRecordConfigManager::writeDownloadConfig()</a>, <a class="el" href="../../d4/d7d/musiclistconfigmanager_8cpp_source.html#l00014">MusicListConfigManager::writeMusicSongsConfig()</a>, <a class="el" href="../../d3/deb/musiclocalsongsearchrecordconfigmanager_8cpp_source.html#l00009">MusicLocalSongSearchRecordConfigManager::writeSearchConfig()</a>, <a class="el" href="../../da/deb/musicbackgroundconfigmanager_8cpp_source.html#l00009">MusicSkinConfigManager::writeSkinXMLConfig()</a>, <a class="el" href="../../d0/dc3/musicuserconfigmanager_8cpp_source.html#l00009">MusicUserConfigManager::writeUserXMLConfig()</a>, <a class="el" href="../../d2/d4c/musicplaylistmanager_8cpp_source.html#l00015">MusicWPLConfigManager::writeWPLXMLConfig()</a>, <a class="el" href="../../d2/df3/musicsysconfigmanager_8cpp_source.html#l00013">MusicSysConfigManager::writeXMLConfig()</a>, and <a class="el" href="../../d2/d4c/musicplaylistmanager_8cpp_source.html#l00121">MusicXSPFConfigManager::writeXSPFXMLConfig()</a>.</p>
 
 </div>
 </div>
@@ -581,7 +561,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00146">146</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d22/musiclocalsongstablewidget_8cpp_source.html#l00122">MusicLocalSongsInfoTableWidget::addItems()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00413">MusicSongSearchOnlineTableWidget::addSearchMusicToPlayList()</a>, <a class="el" href="../../d9/d96/musicsongsharingwidget_8cpp_source.html#l00301">MusicSongSharingWidget::close()</a>, <a class="el" href="../../d3/d4e/musicidentifysongswidget_8cpp_source.html#l00252">MusicIdentifySongsWidget::createDetectedSuccessedWidget()</a>, <a class="el" href="../../d8/dc0/musicdownloadstatusobject_8cpp_source.html#l00132">MusicDownloadStatusObject::musicHaveNoLrcAlready()</a>, <a class="el" href="../../dc/df4/musicwebmusicradioplaywidget_8cpp_source.html#l00300">MusicWebMusicRadioPlayWidget::picDownloadStateChanged()</a>, <a class="el" href="../../d9/d96/musicsongsharingwidget_8cpp_source.html#l00060">MusicSongSharingWidget::setData()</a>, <a class="el" href="../../de/dbe/musicremotewidgetforcomplexstyle_8cpp_source.html#l00071">MusicRemoteWidgetForComplexStyle::showArtPicture()</a>, <a class="el" href="../../d1/d8c/musicsongslistiteminfowidget_8cpp_source.html#l00030">MusicSongsListItemInfoWidget::showArtPicture()</a>, <a class="el" href="../../d3/d94/musicsongslistplaywidget_8cpp_source.html#l00164">MusicSongsListPlayWidget::showArtPicture()</a>, and <a class="el" href="../../dc/df4/musicwebmusicradioplaywidget_8cpp_source.html#l00228">MusicWebMusicRadioPlayWidget::startToPlay()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d22/musiclocalsongstablewidget_8cpp_source.html#l00123">MusicLocalSongsInfoTableWidget::addItems()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00412">MusicSongSearchTableWidget::addSearchMusicToPlayList()</a>, <a class="el" href="../../d9/d96/musicsongsharingwidget_8cpp_source.html#l00296">MusicSongSharingWidget::close()</a>, <a class="el" href="../../d3/d4e/musicidentifysongswidget_8cpp_source.html#l00254">MusicIdentifySongsWidget::createDetectedSuccessedWidget()</a>, <a class="el" href="../../d8/dc0/musicdownloadstatusobject_8cpp_source.html#l00128">MusicDownloadStatusObject::musicHaveNoLrcAlready()</a>, <a class="el" href="../../dc/df4/musicwebmusicradioplaywidget_8cpp_source.html#l00297">MusicWebMusicRadioPlayWidget::picDownloadStateChanged()</a>, <a class="el" href="../../d9/d96/musicsongsharingwidget_8cpp_source.html#l00060">MusicSongSharingWidget::setData()</a>, <a class="el" href="../../de/dbe/musicremotewidgetforcomplexstyle_8cpp_source.html#l00071">MusicRemoteWidgetForComplexStyle::showArtPicture()</a>, <a class="el" href="../../d1/d8c/musicsongslistiteminfowidget_8cpp_source.html#l00030">MusicSongsListItemInfoWidget::showArtPicture()</a>, <a class="el" href="../../d3/d94/musicsongslistplaywidget_8cpp_source.html#l00163">MusicSongsListPlayWidget::showArtPicture()</a>, and <a class="el" href="../../dc/df4/musicwebmusicradioplaywidget_8cpp_source.html#l00228">MusicWebMusicRadioPlayWidget::startToPlay()</a>.</p>
 
 </div>
 </div>
@@ -641,7 +621,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00147">147</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d66/musickwbackgroundthread_8cpp_source.html#l00025">MusicKWBackgroundThread::downLoadDataFinished()</a>, <a class="el" href="../../de/d4d/musicdownloadbackgroundthread_8cpp_source.html#l00014">MusicDownloadBackgroundThread::downLoadFinished()</a>, <a class="el" href="../../d5/dde/musicqqbackgroundthread_8cpp_source.html#l00093">MusicQQBackgroundThread::downLoadUrlFinished()</a>, <a class="el" href="../../d9/d66/musicbackgroundmanager_8cpp_source.html#l00009">MusicBackgroundManager::setArtName()</a>, and <a class="el" href="../../d6/d65/musiclrcartphotouploadwidget_8cpp_source.html#l00084">MusicLrcArtPhotoUploadWidget::uploadButtonClicked()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d66/musickwbackgroundthread_8cpp_source.html#l00024">MusicKWBackgroundThread::downLoadDataFinished()</a>, <a class="el" href="../../de/d4d/musicdownloadbackgroundthread_8cpp_source.html#l00013">MusicDownloadBackgroundThread::downLoadFinished()</a>, <a class="el" href="../../d5/dde/musicqqbackgroundthread_8cpp_source.html#l00092">MusicQQBackgroundThread::downLoadUrlFinished()</a>, <a class="el" href="../../d9/d66/musicbackgroundmanager_8cpp_source.html#l00009">MusicBackgroundManager::setArtName()</a>, and <a class="el" href="../../d6/d65/musiclrcartphotouploadwidget_8cpp_source.html#l00084">MusicLrcArtPhotoUploadWidget::uploadButtonClicked()</a>.</p>
 
 </div>
 </div>
@@ -729,7 +709,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00145">145</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00652">MusicSongsSummariziedWidget::addNetMusicSongToList()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00413">MusicSongSearchOnlineTableWidget::addSearchMusicToPlayList()</a>, <a class="el" href="../../d5/d7d/musicapplicationobject_8cpp_source.html#l00398">MusicApplicationObject::cleanUp()</a>, <a class="el" href="../../d5/d6e/musicqueryfoundtablewidget_8cpp_source.html#l00329">MusicQueryFoundTableWidget::downloadDataFrom()</a>, <a class="el" href="../../db/d7c/musicfileinformationwidget_8cpp_source.html#l00182">MusicFileInformationWidget::setFileInformation()</a>, and <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html#l00062">MusicBackgroundRemoteWidget::startToDownload()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d6b/musicsongssummariziedwidget_8cpp_source.html#l00651">MusicSongsSummariziedWidget::addNetMusicSongToList()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00412">MusicSongSearchTableWidget::addSearchMusicToPlayList()</a>, <a class="el" href="../../d5/d7d/musicapplicationobject_8cpp_source.html#l00413">MusicApplicationObject::cleanUp()</a>, <a class="el" href="../../d5/d6e/musicqueryfoundtablewidget_8cpp_source.html#l00329">MusicQueryFoundTableWidget::downloadDataFrom()</a>, <a class="el" href="../../db/d7c/musicfileinformationwidget_8cpp_source.html#l00183">MusicFileInformationWidget::setFileInformation()</a>, and <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html#l00062">MusicBackgroundRemoteWidget::startToDownload()</a>.</p>
 
 </div>
 </div>
@@ -787,7 +767,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00154">154</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/d4e/musicdownloadrecordconfigmanager_8cpp_source.html#l00047">MusicDownloadRecordConfigManager::mappingFilePathFromEnum()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/d4e/musicdownloadrecordconfigmanager_8cpp_source.html#l00046">MusicDownloadRecordConfigManager::mappingFilePathFromEnum()</a>.</p>
 
 </div>
 </div>
@@ -817,7 +797,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00155">155</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/d4e/musicdownloadrecordconfigmanager_8cpp_source.html#l00047">MusicDownloadRecordConfigManager::mappingFilePathFromEnum()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/d4e/musicdownloadrecordconfigmanager_8cpp_source.html#l00046">MusicDownloadRecordConfigManager::mappingFilePathFromEnum()</a>.</p>
 
 </div>
 </div>
@@ -848,6 +828,22 @@ Functions</h2></td></tr>
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00151">151</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d9/d89/musicsysconfigmanager_8h_source.html#l00041">MusicSysConfigManager::readXMLConfig()</a>, and <a class="el" href="../../d2/df3/musicsysconfigmanager_8cpp_source.html#l00013">MusicSysConfigManager::writeXMLConfig()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a39ef656ca5a6b53773e27332f4844ddc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define COVER_URL_NULL&#160;&#160;&#160;&quot;null&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00184">184</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
+
+<p>Referenced by <a class="el" href="../../dc/d19/musicwebmusicradiowidget_8cpp_source.html#l00119">MusicWebMusicRadioWidget::addListWidgetItem()</a>, <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00132">MusicAlbumFoundWidget::createAlbumInfoItem()</a>, <a class="el" href="../../d6/dee/musicartistfoundwidget_8cpp_source.html#l00437">MusicArtistFoundWidget::createArtistInfoItem()</a>, <a class="el" href="../../d0/d2e/musicwebdjradioinfowidget_8cpp_source.html#l00087">MusicWebDJRadioInfoWidget::createCategoryInfoItem()</a>, <a class="el" href="../../d5/dab/musicwebmvradioinfowidget_8cpp_source.html#l00121">MusicWebMVRadioInfoWidget::createCategoryInfoItem()</a>, <a class="el" href="../../da/dba/musicwebdjradiowidget_8cpp_source.html#l00085">MusicWebDJRadioProgramTableWidget::createProgramItem()</a>, <a class="el" href="../../d0/dc5/musictoplistfoundwidget_8cpp_source.html#l00190">MusicToplistFoundWidget::createToplistInfoItem()</a>, <a class="el" href="../../dd/d30/musicdownloadquerykwalbumthread_8cpp_source.html#l00058">MusicDownLoadQueryKWAlbumThread::downLoadFinished()</a>, <a class="el" href="../../d0/dc7/musicdownloadquerykwmoviethread_8cpp_source.html#l00162">MusicDownLoadQueryKWMovieThread::pageDownLoadFinished()</a>, <a class="el" href="../../dc/d60/musicdownloadkwinterface_8cpp_source.html#l00215">MusicDownLoadKWInterface::readFromMusicSongPic()</a>, <a class="el" href="../../d9/d96/musicsongsharingwidget_8cpp_source.html#l00060">MusicSongSharingWidget::setData()</a>, <a class="el" href="../../d6/dee/musicartistfoundwidget_8cpp_source.html#l00055">MusicArtistAlbumsItemWidget::setMusicResultsItem()</a>, <a class="el" href="../../d1/df4/musicwebdjradiofoundwidget_8cpp_source.html#l00052">MusicWebDJRadioFoundItemWidget::setMusicResultsItem()</a>, <a class="el" href="../../d6/d40/musicwebmvradiofoundwidget_8cpp_source.html#l00045">MusicWebMVRadioFoundItemWidget::setMusicResultsItem()</a>, <a class="el" href="../../d4/d1b/musicwebdjradiocategorywidget_8cpp_source.html#l00032">MusicWebDJRadioCategoryItemWidget::setMusicResultsItem()</a>, <a class="el" href="../../d6/d2d/musicplaylistfoundwidget_8cpp_source.html#l00061">MusicPlaylistFoundItemWidget::setMusicResultsItem()</a>, <a class="el" href="../../d7/da4/musicplaylistfoundinfowidget_8cpp_source.html#l00060">MusicPlaylistFoundInfoWidget::setMusicResultsItem()</a>, and <a class="el" href="../../dd/d30/musicdownloadquerykwalbumthread_8cpp_source.html#l00161">MusicDownLoadQueryKWAlbumThread::singleDownLoadFinished()</a>.</p>
 
 </div>
 </div>
@@ -935,7 +931,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00096">96</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd4/musicsourceupdatewidget_8cpp_source.html#l00192">MusicSourceUpdateWidget::downloadProgressFinished()</a>, and <a class="el" href="../../dd/dd4/musicsourceupdatewidget_8cpp_source.html#l00134">MusicSourceUpdateWidget::upgradeButtonClicked()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd4/musicsourceupdatewidget_8cpp_source.html#l00191">MusicSourceUpdateWidget::downloadProgressFinished()</a>, and <a class="el" href="../../dd/dd4/musicsourceupdatewidget_8cpp_source.html#l00132">MusicSourceUpdateWidget::upgradeButtonClicked()</a>.</p>
 
 </div>
 </div>
@@ -979,7 +975,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00076">76</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dc/d60/musicdownloadkwinterface_8cpp_source.html#l00072">MusicDownLoadKWInterface::readFromMusicSongAttribute()</a>, <a class="el" href="../../db/da3/musicdownloadqqinterface_8cpp_source.html#l00017">MusicDownLoadQQInterface::readFromMusicSongAttribute()</a>, <a class="el" href="../../d4/d31/musicdownloadbdinterface_8cpp_source.html#l00097">MusicDownLoadBDInterface::readFromMusicSongAttribute()</a>, <a class="el" href="../../dc/d60/musicdownloadkwinterface_8cpp_source.html#l00112">MusicDownLoadKWInterface::readFromMusicSongAttributePlus()</a>, and <a class="el" href="../../db/da3/musicdownloadqqinterface_8cpp_source.html#l00142">MusicDownLoadQQInterface::readFromMusicSongAttributePlus()</a>.</p>
+<p>Referenced by <a class="el" href="../../dc/d60/musicdownloadkwinterface_8cpp_source.html#l00069">MusicDownLoadKWInterface::readFromMusicSongAttribute()</a>, <a class="el" href="../../db/da3/musicdownloadqqinterface_8cpp_source.html#l00018">MusicDownLoadQQInterface::readFromMusicSongAttribute()</a>, <a class="el" href="../../d4/d31/musicdownloadbdinterface_8cpp_source.html#l00098">MusicDownLoadBDInterface::readFromMusicSongAttribute()</a>, <a class="el" href="../../dc/d60/musicdownloadkwinterface_8cpp_source.html#l00108">MusicDownLoadKWInterface::readFromMusicSongAttributePlus()</a>, and <a class="el" href="../../db/da3/musicdownloadqqinterface_8cpp_source.html#l00141">MusicDownLoadQQInterface::readFromMusicSongAttributePlus()</a>.</p>
 
 </div>
 </div>
@@ -995,7 +991,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00088">88</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d22/musicuserrecordwidget_8cpp_source.html#l00035">MusicUserRecordWidget::avatarPixmapRender()</a>, <a class="el" href="../../d3/d72/musicdesktopwallpaperwidget_8cpp_source.html#l00193">MusicDesktopWallpaperWidget::confirmButtonPressed()</a>, <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html#l00297">MusicBackgroundDailyWidget::downLoadDataChanged()</a>, <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html#l00265">MusicBackgroundDailyWidget::init()</a>, <a class="el" href="../../d5/da5/musicgrabwidget_8cpp_source.html#l00134">MusicGrabWidget::keyPressEvent()</a>, <a class="el" href="../../d6/d65/musiclrcartphotouploadwidget_8cpp_source.html#l00084">MusicLrcArtPhotoUploadWidget::uploadButtonClicked()</a>, and <a class="el" href="../../d3/d72/musicdesktopwallpaperwidget_8cpp_source.html#l00080">MusicDesktopWallpaperWidget::~MusicDesktopWallpaperWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d22/musicuserrecordwidget_8cpp_source.html#l00035">MusicUserRecordWidget::avatarPixmapRender()</a>, <a class="el" href="../../d3/d72/musicdesktopwallpaperwidget_8cpp_source.html#l00189">MusicDesktopWallpaperWidget::confirmButtonPressed()</a>, <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html#l00297">MusicBackgroundDailyWidget::downLoadDataChanged()</a>, <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html#l00265">MusicBackgroundDailyWidget::init()</a>, <a class="el" href="../../d5/da5/musicgrabwidget_8cpp_source.html#l00132">MusicGrabWidget::keyPressEvent()</a>, <a class="el" href="../../d6/d65/musiclrcartphotouploadwidget_8cpp_source.html#l00084">MusicLrcArtPhotoUploadWidget::uploadButtonClicked()</a>, and <a class="el" href="../../d3/d72/musicdesktopwallpaperwidget_8cpp_source.html#l00081">MusicDesktopWallpaperWidget::~MusicDesktopWallpaperWidget()</a>.</p>
 
 </div>
 </div>
@@ -1011,7 +1007,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00060">60</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d57/musiclrcfloatphotowidget_8cpp_source.html#l00083">MusicLrcFloatPhotoItem::exportArtPixmap()</a>, <a class="el" href="../../da/d90/musicwidgetutils_8cpp_source.html#l00125">MusicUtils::Widget::getPixmapData()</a>, and <a class="el" href="../../d2/dc3/musiclrcposterwidget_8cpp_source.html#l01055">MusicLrcPosterWidget::saveButtonClicked()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d57/musiclrcfloatphotowidget_8cpp_source.html#l00083">MusicLrcFloatPhotoItem::exportArtPixmap()</a>, <a class="el" href="../../da/d90/musicwidgetutils_8cpp_source.html#l00124">MusicUtils::Widget::getPixmapData()</a>, and <a class="el" href="../../d2/dc3/musiclrcposterwidget_8cpp_source.html#l01056">MusicLrcPosterWidget::saveButtonClicked()</a>.</p>
 
 </div>
 </div>
@@ -1027,7 +1023,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00092">92</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/dc0/musicdownloadstatusobject_8cpp_source.html#l00096">MusicDownloadStatusObject::musicCheckHasLrcAlready()</a>, and <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00164">MusicApplication::musicLoadCurrentSongLrc()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/dc0/musicdownloadstatusobject_8cpp_source.html#l00093">MusicDownloadStatusObject::musicCheckHasLrcAlready()</a>, and <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00164">MusicApplication::musicLoadCurrentSongLrc()</a>.</p>
 
 </div>
 </div>
@@ -1101,7 +1097,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00141">141</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d2c/musicsettingwidget_8cpp_source.html#l00693">MusicSettingWidget::initDownloadWidget()</a>, and <a class="el" href="../../d3/d43/musiccoreutils_8cpp_source.html#l00007">MusicUtils::Core::lrcPrefix()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d2c/musicsettingwidget_8cpp_source.html#l00692">MusicSettingWidget::initDownloadWidget()</a>, and <a class="el" href="../../d3/d43/musiccoreutils_8cpp_source.html#l00007">MusicUtils::Core::lrcPrefix()</a>.</p>
 
 </div>
 </div>
@@ -1117,7 +1113,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00091">91</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../df/dbc/musiclrclocallinkwidget_8cpp_source.html#l00174">MusicLrcLocalLinkWidget::confirmButtonClicked()</a>, <a class="el" href="../../d3/d4e/musicidentifysongswidget_8cpp_source.html#l00252">MusicIdentifySongsWidget::createDetectedSuccessedWidget()</a>, <a class="el" href="../../dc/df4/musicwebmusicradioplaywidget_8cpp_source.html#l00281">MusicWebMusicRadioPlayWidget::lrcDownloadStateChanged()</a>, <a class="el" href="../../d8/dc0/musicdownloadstatusobject_8cpp_source.html#l00096">MusicDownloadStatusObject::musicCheckHasLrcAlready()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00966">MusicApplication::musicCurrentLrcUpdated()</a>, <a class="el" href="../../d2/da8/musiclrcsearchtablewidget_8cpp_source.html#l00042">MusicLrcSearchTableWidget::musicDownloadLocal()</a>, <a class="el" href="../../d8/dc0/musicdownloadstatusobject_8cpp_source.html#l00132">MusicDownloadStatusObject::musicHaveNoLrcAlready()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00164">MusicApplication::musicLoadCurrentSongLrc()</a>, <a class="el" href="../../d2/d76/musictransformwidget_8cpp_source.html#l00193">MusicTransformWidget::processTransform()</a>, <a class="el" href="../../d7/d89/musiclrcmakerwidget_8cpp_source.html#l00187">MusicLrcMakerWidget::setCurrentSongName()</a>, and <a class="el" href="../../dc/df4/musicwebmusicradioplaywidget_8cpp_source.html#l00228">MusicWebMusicRadioPlayWidget::startToPlay()</a>.</p>
+<p>Referenced by <a class="el" href="../../df/dbc/musiclrclocallinkwidget_8cpp_source.html#l00174">MusicLrcLocalLinkWidget::confirmButtonClicked()</a>, <a class="el" href="../../d3/d4e/musicidentifysongswidget_8cpp_source.html#l00254">MusicIdentifySongsWidget::createDetectedSuccessedWidget()</a>, <a class="el" href="../../dc/df4/musicwebmusicradioplaywidget_8cpp_source.html#l00279">MusicWebMusicRadioPlayWidget::lrcDownloadStateChanged()</a>, <a class="el" href="../../d8/dc0/musicdownloadstatusobject_8cpp_source.html#l00093">MusicDownloadStatusObject::musicCheckHasLrcAlready()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00969">MusicApplication::musicCurrentLrcUpdated()</a>, <a class="el" href="../../d2/da8/musiclrcsearchtablewidget_8cpp_source.html#l00042">MusicLrcSearchTableWidget::musicDownloadLocal()</a>, <a class="el" href="../../d8/dc0/musicdownloadstatusobject_8cpp_source.html#l00128">MusicDownloadStatusObject::musicHaveNoLrcAlready()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00164">MusicApplication::musicLoadCurrentSongLrc()</a>, <a class="el" href="../../d2/d76/musictransformwidget_8cpp_source.html#l00191">MusicTransformWidget::processTransform()</a>, <a class="el" href="../../d7/d89/musiclrcmakerwidget_8cpp_source.html#l00190">MusicLrcMakerWidget::setCurrentSongName()</a>, and <a class="el" href="../../dc/df4/musicwebmusicradioplaywidget_8cpp_source.html#l00228">MusicWebMusicRadioPlayWidget::startToPlay()</a>.</p>
 
 </div>
 </div>
@@ -1175,7 +1171,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00135">135</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dc/d19/musicwebmusicradiowidget_8cpp_source.html#l00187">MusicWebMusicRadioWidget::sendToDesktopLink()</a>.</p>
+<p>Referenced by <a class="el" href="../../dc/d19/musicwebmusicradiowidget_8cpp_source.html#l00186">MusicWebMusicRadioWidget::sendToDesktopLink()</a>.</p>
 
 </div>
 </div>
@@ -1235,7 +1231,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00173">173</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d22/musicvolumegainwidget_8cpp_source.html#l00167">MusicVolumeGainWidget::addFileButtonClicked()</a>, <a class="el" href="../../d8/d22/musicvolumegainwidget_8cpp_source.html#l00196">MusicVolumeGainWidget::addFilesButtonClicked()</a>, <a class="el" href="../../d8/d22/musicvolumegainwidget_8cpp_source.html#l00246">MusicVolumeGainWidget::applyButtonClicked()</a>, and <a class="el" href="../../d8/d22/musicvolumegainwidget_8cpp_source.html#l00339">MusicVolumeGainWidget::show()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d22/musicvolumegainwidget_8cpp_source.html#l00163">MusicVolumeGainWidget::addFileButtonClicked()</a>, <a class="el" href="../../d8/d22/musicvolumegainwidget_8cpp_source.html#l00192">MusicVolumeGainWidget::addFilesButtonClicked()</a>, <a class="el" href="../../d8/d22/musicvolumegainwidget_8cpp_source.html#l00242">MusicVolumeGainWidget::applyButtonClicked()</a>, and <a class="el" href="../../d8/d22/musicvolumegainwidget_8cpp_source.html#l00334">MusicVolumeGainWidget::show()</a>.</p>
 
 </div>
 </div>
@@ -1279,7 +1275,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00171">171</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d76/musictransformwidget_8cpp_source.html#l00290">MusicTransformWidget::exec()</a>, <a class="el" href="../../d2/d76/musictransformwidget_8cpp_source.html#l00243">MusicTransformWidget::startTransform()</a>, and <a class="el" href="../../d2/d76/musictransformwidget_8cpp_source.html#l00161">MusicTransformWidget::transformFinish()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d76/musictransformwidget_8cpp_source.html#l00284">MusicTransformWidget::exec()</a>, <a class="el" href="../../d2/d76/musictransformwidget_8cpp_source.html#l00237">MusicTransformWidget::startTransform()</a>, and <a class="el" href="../../d2/d76/musictransformwidget_8cpp_source.html#l00159">MusicTransformWidget::transformFinish()</a>.</p>
 
 </div>
 </div>
@@ -1367,7 +1363,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00174">174</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/d97/musicsoundtouchwidget_8cpp_source.html#l00083">MusicSoundTouchWidget::show()</a>, and <a class="el" href="../../d3/d97/musicsoundtouchwidget_8cpp_source.html#l00157">MusicSoundTouchWidget::transformButtonClicked()</a>.</p>
+<p>Referenced by <a class="el" href="../../d3/d97/musicsoundtouchwidget_8cpp_source.html#l00084">MusicSoundTouchWidget::show()</a>, and <a class="el" href="../../d3/d97/musicsoundtouchwidget_8cpp_source.html#l00150">MusicSoundTouchWidget::transformButtonClicked()</a>.</p>
 
 </div>
 </div>
@@ -1411,7 +1407,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00170">170</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/db0/musicsongringtonemakerwidget_8cpp_source.html#l00190">MusicSongRingtoneMaker::exec()</a>, <a class="el" href="../../d2/d76/musictransformwidget_8cpp_source.html#l00290">MusicTransformWidget::exec()</a>, <a class="el" href="../../db/db0/musicsongringtonemakerwidget_8cpp_source.html#l00122">MusicSongRingtoneMaker::initOutputPath()</a>, <a class="el" href="../../d2/d76/musictransformwidget_8cpp_source.html#l00243">MusicTransformWidget::startTransform()</a>, and <a class="el" href="../../d2/d76/musictransformwidget_8cpp_source.html#l00161">MusicTransformWidget::transformFinish()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/db0/musicsongringtonemakerwidget_8cpp_source.html#l00188">MusicSongRingtoneMaker::exec()</a>, <a class="el" href="../../d2/d76/musictransformwidget_8cpp_source.html#l00284">MusicTransformWidget::exec()</a>, <a class="el" href="../../db/db0/musicsongringtonemakerwidget_8cpp_source.html#l00121">MusicSongRingtoneMaker::initOutputPath()</a>, <a class="el" href="../../d2/d76/musictransformwidget_8cpp_source.html#l00237">MusicTransformWidget::startTransform()</a>, and <a class="el" href="../../d2/d76/musictransformwidget_8cpp_source.html#l00159">MusicTransformWidget::transformFinish()</a>.</p>
 
 </div>
 </div>
@@ -1455,7 +1451,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00143">143</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d0d/musicdownloadwidget_8cpp_source.html#l00154">MusicDownloadWidget::initWidget()</a>, <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00222">MusicDownloadBatchTableItem::startToDownloadMovie()</a>, and <a class="el" href="../../d8/d0d/musicdownloadwidget_8cpp_source.html#l00528">MusicDownloadWidget::startToDownloadMovie()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d0d/musicdownloadwidget_8cpp_source.html#l00154">MusicDownloadWidget::initWidget()</a>, <a class="el" href="../../d6/dcf/musicdownloadbatchwidget_8cpp_source.html#l00221">MusicDownloadBatchTableItem::startToDownloadMovie()</a>, and <a class="el" href="../../d8/d0d/musicdownloadwidget_8cpp_source.html#l00526">MusicDownloadWidget::startToDownloadMovie()</a>.</p>
 
 </div>
 </div>
@@ -1499,7 +1495,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00073">73</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d22/musicvolumegainwidget_8cpp_source.html#l00196">MusicVolumeGainWidget::addFilesButtonClicked()</a>, <a class="el" href="../../d8/d19/musicregeditmanager_8cpp_source.html#l00016">MusicRegeditManager::isFileAssociate()</a>, <a class="el" href="../../d3/d08/musicdownloadquerybdlearnthread_8cpp_source.html#l00113">MusicDownLoadQueryBDLearnThread::readFromMusicSongAttribute()</a>, <a class="el" href="../../dc/d60/musicdownloadkwinterface_8cpp_source.html#l00072">MusicDownLoadKWInterface::readFromMusicSongAttribute()</a>, <a class="el" href="../../db/da3/musicdownloadqqinterface_8cpp_source.html#l00017">MusicDownLoadQQInterface::readFromMusicSongAttribute()</a>, <a class="el" href="../../d8/d78/musicdownloadwyinterface_8cpp_source.html#l00100">MusicDownLoadWYInterface::readFromMusicSongAttribute()</a>, <a class="el" href="../../d8/d78/musicdownloadwyinterface_8cpp_source.html#l00240">MusicDownLoadWYInterface::readFromMusicSongAttributeNew()</a>, <a class="el" href="../../dc/d60/musicdownloadkwinterface_8cpp_source.html#l00112">MusicDownLoadKWInterface::readFromMusicSongAttributePlus()</a>, <a class="el" href="../../db/da3/musicdownloadqqinterface_8cpp_source.html#l00142">MusicDownLoadQQInterface::readFromMusicSongAttributePlus()</a>, and <a class="el" href="../../d5/d15/musicdownloadquerykwthread_8cpp_source.html#l00013">MusicKWMusicInfoConfigManager::readMusicInfoConfig()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d22/musicvolumegainwidget_8cpp_source.html#l00192">MusicVolumeGainWidget::addFilesButtonClicked()</a>, <a class="el" href="../../d8/d19/musicregeditmanager_8cpp_source.html#l00016">MusicRegeditManager::isFileAssociate()</a>, <a class="el" href="../../d3/d08/musicdownloadquerybdlearnthread_8cpp_source.html#l00113">MusicDownLoadQueryBDLearnThread::readFromMusicSongAttribute()</a>, <a class="el" href="../../dc/d60/musicdownloadkwinterface_8cpp_source.html#l00069">MusicDownLoadKWInterface::readFromMusicSongAttribute()</a>, <a class="el" href="../../db/da3/musicdownloadqqinterface_8cpp_source.html#l00018">MusicDownLoadQQInterface::readFromMusicSongAttribute()</a>, <a class="el" href="../../d8/d78/musicdownloadwyinterface_8cpp_source.html#l00101">MusicDownLoadWYInterface::readFromMusicSongAttribute()</a>, <a class="el" href="../../d8/d78/musicdownloadwyinterface_8cpp_source.html#l00235">MusicDownLoadWYInterface::readFromMusicSongAttributeNew()</a>, <a class="el" href="../../dc/d60/musicdownloadkwinterface_8cpp_source.html#l00108">MusicDownLoadKWInterface::readFromMusicSongAttributePlus()</a>, <a class="el" href="../../db/da3/musicdownloadqqinterface_8cpp_source.html#l00141">MusicDownLoadQQInterface::readFromMusicSongAttributePlus()</a>, and <a class="el" href="../../d5/d15/musicdownloadquerykwthread_8cpp_source.html#l00013">MusicKWMusicInfoConfigManager::readMusicInfoConfig()</a>.</p>
 
 </div>
 </div>
@@ -1529,7 +1525,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00142">142</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d2c/musicsettingwidget_8cpp_source.html#l00693">MusicSettingWidget::initDownloadWidget()</a>, <a class="el" href="../../d3/d43/musiccoreutils_8cpp_source.html#l00024">MusicUtils::Core::musicPrefix()</a>, and <a class="el" href="../../d8/d0d/musicdownloadwidget_8cpp_source.html#l00449">MusicDownloadWidget::startToDownloadMusic()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d2c/musicsettingwidget_8cpp_source.html#l00692">MusicSettingWidget::initDownloadWidget()</a>, <a class="el" href="../../d3/d43/musiccoreutils_8cpp_source.html#l00024">MusicUtils::Core::musicPrefix()</a>, and <a class="el" href="../../d8/d0d/musicdownloadwidget_8cpp_source.html#l00448">MusicDownloadWidget::startToDownloadMusic()</a>.</p>
 
 </div>
 </div>
@@ -1619,7 +1615,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00153">153</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/d4e/musicdownloadrecordconfigmanager_8cpp_source.html#l00047">MusicDownloadRecordConfigManager::mappingFilePathFromEnum()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/d4e/musicdownloadrecordconfigmanager_8cpp_source.html#l00046">MusicDownloadRecordConfigManager::mappingFilePathFromEnum()</a>.</p>
 
 </div>
 </div>
@@ -1649,7 +1645,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00074">74</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/da3/musicdownloadqqinterface_8cpp_source.html#l00017">MusicDownLoadQQInterface::readFromMusicSongAttribute()</a>, and <a class="el" href="../../db/da3/musicdownloadqqinterface_8cpp_source.html#l00142">MusicDownLoadQQInterface::readFromMusicSongAttributePlus()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/da3/musicdownloadqqinterface_8cpp_source.html#l00018">MusicDownLoadQQInterface::readFromMusicSongAttribute()</a>, and <a class="el" href="../../db/da3/musicdownloadqqinterface_8cpp_source.html#l00141">MusicDownLoadQQInterface::readFromMusicSongAttributePlus()</a>.</p>
 
 </div>
 </div>
@@ -1679,7 +1675,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00165">165</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../de/d2b/musicwebradioobject_8cpp_source.html#l00044">MusicWebRadioObject::dataDownloadFinished()</a>, and <a class="el" href="../../de/d2b/musicwebradioobject_8cpp_source.html#l00027">MusicWebRadioObject::show()</a>.</p>
+<p>Referenced by <a class="el" href="../../de/d2b/musicwebradioobject_8cpp_source.html#l00040">MusicWebRadioObject::dataDownloadFinished()</a>, and <a class="el" href="../../de/d2b/musicwebradioobject_8cpp_source.html#l00023">MusicWebRadioObject::start()</a>.</p>
 
 </div>
 </div>
@@ -1737,7 +1733,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00087">87</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/d22/musiclocalsongstablewidget_8cpp_source.html#l00122">MusicLocalSongsInfoTableWidget::addItems()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00413">MusicSongSearchOnlineTableWidget::addSearchMusicToPlayList()</a>, <a class="el" href="../../d3/d4e/musicidentifysongswidget_8cpp_source.html#l00252">MusicIdentifySongsWidget::createDetectedSuccessedWidget()</a>, <a class="el" href="../../d0/d66/musickwbackgroundthread_8cpp_source.html#l00025">MusicKWBackgroundThread::downLoadDataFinished()</a>, <a class="el" href="../../de/d4d/musicdownloadbackgroundthread_8cpp_source.html#l00014">MusicDownloadBackgroundThread::downLoadFinished()</a>, <a class="el" href="../../d5/dde/musicqqbackgroundthread_8cpp_source.html#l00093">MusicQQBackgroundThread::downLoadUrlFinished()</a>, <a class="el" href="../../dd/d39/musicextractwrap_8cpp_source.html#l00235">MusicExtractWrap::inputSkin()</a>, <a class="el" href="../../d8/dc0/musicdownloadstatusobject_8cpp_source.html#l00132">MusicDownloadStatusObject::musicHaveNoLrcAlready()</a>, <a class="el" href="../../dd/d39/musicextractwrap_8cpp_source.html#l00150">MusicExtractWrap::outputSkin()</a>, <a class="el" href="../../dc/df4/musicwebmusicradioplaywidget_8cpp_source.html#l00300">MusicWebMusicRadioPlayWidget::picDownloadStateChanged()</a>, <a class="el" href="../../d9/d66/musicbackgroundmanager_8cpp_source.html#l00009">MusicBackgroundManager::setArtName()</a>, <a class="el" href="../../d9/d96/musicsongsharingwidget_8cpp_source.html#l00060">MusicSongSharingWidget::setData()</a>, <a class="el" href="../../de/dbe/musicremotewidgetforcomplexstyle_8cpp_source.html#l00071">MusicRemoteWidgetForComplexStyle::showArtPicture()</a>, <a class="el" href="../../d1/d8c/musicsongslistiteminfowidget_8cpp_source.html#l00030">MusicSongsListItemInfoWidget::showArtPicture()</a>, <a class="el" href="../../d3/d94/musicsongslistplaywidget_8cpp_source.html#l00164">MusicSongsListPlayWidget::showArtPicture()</a>, <a class="el" href="../../dc/df4/musicwebmusicradioplaywidget_8cpp_source.html#l00228">MusicWebMusicRadioPlayWidget::startToPlay()</a>, and <a class="el" href="../../d6/d65/musiclrcartphotouploadwidget_8cpp_source.html#l00084">MusicLrcArtPhotoUploadWidget::uploadButtonClicked()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/d22/musiclocalsongstablewidget_8cpp_source.html#l00123">MusicLocalSongsInfoTableWidget::addItems()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00412">MusicSongSearchTableWidget::addSearchMusicToPlayList()</a>, <a class="el" href="../../d3/d4e/musicidentifysongswidget_8cpp_source.html#l00254">MusicIdentifySongsWidget::createDetectedSuccessedWidget()</a>, <a class="el" href="../../d0/d66/musickwbackgroundthread_8cpp_source.html#l00024">MusicKWBackgroundThread::downLoadDataFinished()</a>, <a class="el" href="../../de/d4d/musicdownloadbackgroundthread_8cpp_source.html#l00013">MusicDownloadBackgroundThread::downLoadFinished()</a>, <a class="el" href="../../d5/dde/musicqqbackgroundthread_8cpp_source.html#l00092">MusicQQBackgroundThread::downLoadUrlFinished()</a>, <a class="el" href="../../dd/d39/musicextractwrap_8cpp_source.html#l00235">MusicExtractWrap::inputSkin()</a>, <a class="el" href="../../d8/dc0/musicdownloadstatusobject_8cpp_source.html#l00128">MusicDownloadStatusObject::musicHaveNoLrcAlready()</a>, <a class="el" href="../../dd/d39/musicextractwrap_8cpp_source.html#l00150">MusicExtractWrap::outputSkin()</a>, <a class="el" href="../../dc/df4/musicwebmusicradioplaywidget_8cpp_source.html#l00297">MusicWebMusicRadioPlayWidget::picDownloadStateChanged()</a>, <a class="el" href="../../d9/d66/musicbackgroundmanager_8cpp_source.html#l00009">MusicBackgroundManager::setArtName()</a>, <a class="el" href="../../d9/d96/musicsongsharingwidget_8cpp_source.html#l00060">MusicSongSharingWidget::setData()</a>, <a class="el" href="../../de/dbe/musicremotewidgetforcomplexstyle_8cpp_source.html#l00071">MusicRemoteWidgetForComplexStyle::showArtPicture()</a>, <a class="el" href="../../d1/d8c/musicsongslistiteminfowidget_8cpp_source.html#l00030">MusicSongsListItemInfoWidget::showArtPicture()</a>, <a class="el" href="../../d3/d94/musicsongslistplaywidget_8cpp_source.html#l00163">MusicSongsListPlayWidget::showArtPicture()</a>, <a class="el" href="../../dc/df4/musicwebmusicradioplaywidget_8cpp_source.html#l00228">MusicWebMusicRadioPlayWidget::startToPlay()</a>, and <a class="el" href="../../d6/d65/musiclrcartphotouploadwidget_8cpp_source.html#l00084">MusicLrcArtPhotoUploadWidget::uploadButtonClicked()</a>.</p>
 
 </div>
 </div>
@@ -1767,7 +1763,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00055">55</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/d7d/musicapplicationobject_8cpp_source.html#l00398">MusicApplicationObject::cleanUp()</a>, <a class="el" href="../../d9/d96/musicsongsharingwidget_8cpp_source.html#l00301">MusicSongSharingWidget::close()</a>, <a class="el" href="../../d3/d72/musicdesktopwallpaperwidget_8cpp_source.html#l00193">MusicDesktopWallpaperWidget::confirmButtonPressed()</a>, and <a class="el" href="../../d3/d72/musicdesktopwallpaperwidget_8cpp_source.html#l00080">MusicDesktopWallpaperWidget::~MusicDesktopWallpaperWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/d7d/musicapplicationobject_8cpp_source.html#l00413">MusicApplicationObject::cleanUp()</a>, <a class="el" href="../../d9/d96/musicsongsharingwidget_8cpp_source.html#l00296">MusicSongSharingWidget::close()</a>, <a class="el" href="../../d3/d72/musicdesktopwallpaperwidget_8cpp_source.html#l00189">MusicDesktopWallpaperWidget::confirmButtonPressed()</a>, and <a class="el" href="../../d3/d72/musicdesktopwallpaperwidget_8cpp_source.html#l00081">MusicDesktopWallpaperWidget::~MusicDesktopWallpaperWidget()</a>.</p>
 
 </div>
 </div>
@@ -1827,7 +1823,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00086">86</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/dab/musicbackgroundskindialog_8cpp_source.html#l00350">MusicBackgroundSkinDialog::addThemeListWidgetItem()</a>, <a class="el" href="../../db/dab/musicbackgroundskindialog_8cpp_source.html#l00244">MusicBackgroundSkinDialog::backgroundListWidgetItemClicked()</a>, <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html#l00196">MusicBackgroundThunderWidget::buttonClicked()</a>, <a class="el" href="../../db/dab/musicbackgroundskindialog_8cpp_source.html#l00369">MusicBackgroundSkinDialog::cpoyFileFromLocal()</a>, <a class="el" href="../../db/dab/musicbackgroundskindialog_8cpp_source.html#l00405">MusicBackgroundSkinDialog::cpoyFileToLocal()</a>, <a class="el" href="../../db/dab/musicbackgroundskindialog_8cpp_source.html#l00301">MusicBackgroundSkinDialog::listWidgetItemClicked()</a>, <a class="el" href="../../db/dab/musicbackgroundskindialog_8cpp_source.html#l00096">MusicBackgroundSkinDialog::setBackgroundUrl()</a>, <a class="el" href="../../db/dab/musicbackgroundskindialog_8cpp_source.html#l00188">MusicBackgroundSkinDialog::showCustomSkinDialog()</a>, <a class="el" href="../../db/dab/musicbackgroundskindialog_8cpp_source.html#l00106">MusicBackgroundSkinDialog::themeValidCheck()</a>, and <a class="el" href="../../db/dab/musicbackgroundskindialog_8cpp_source.html#l00132">MusicBackgroundSkinDialog::updateArtFileTheme()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/dab/musicbackgroundskindialog_8cpp_source.html#l00350">MusicBackgroundSkinDialog::addThemeListWidgetItem()</a>, <a class="el" href="../../db/dab/musicbackgroundskindialog_8cpp_source.html#l00244">MusicBackgroundSkinDialog::backgroundListWidgetItemClicked()</a>, <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html#l00197">MusicBackgroundThunderWidget::buttonClicked()</a>, <a class="el" href="../../db/dab/musicbackgroundskindialog_8cpp_source.html#l00369">MusicBackgroundSkinDialog::cpoyFileFromLocal()</a>, <a class="el" href="../../db/dab/musicbackgroundskindialog_8cpp_source.html#l00405">MusicBackgroundSkinDialog::cpoyFileToLocal()</a>, <a class="el" href="../../db/dab/musicbackgroundskindialog_8cpp_source.html#l00301">MusicBackgroundSkinDialog::listWidgetItemClicked()</a>, <a class="el" href="../../db/dab/musicbackgroundskindialog_8cpp_source.html#l00096">MusicBackgroundSkinDialog::setBackgroundUrl()</a>, <a class="el" href="../../db/dab/musicbackgroundskindialog_8cpp_source.html#l00188">MusicBackgroundSkinDialog::showCustomSkinDialog()</a>, <a class="el" href="../../db/dab/musicbackgroundskindialog_8cpp_source.html#l00106">MusicBackgroundSkinDialog::themeValidCheck()</a>, and <a class="el" href="../../db/dab/musicbackgroundskindialog_8cpp_source.html#l00132">MusicBackgroundSkinDialog::updateArtFileTheme()</a>.</p>
 
 </div>
 </div>
@@ -1873,7 +1869,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00148">148</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd4/musicsourceupdatewidget_8cpp_source.html#l00192">MusicSourceUpdateWidget::downloadProgressFinished()</a>, and <a class="el" href="../../dd/dd4/musicsourceupdatewidget_8cpp_source.html#l00134">MusicSourceUpdateWidget::upgradeButtonClicked()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd4/musicsourceupdatewidget_8cpp_source.html#l00191">MusicSourceUpdateWidget::downloadProgressFinished()</a>, and <a class="el" href="../../dd/dd4/musicsourceupdatewidget_8cpp_source.html#l00132">MusicSourceUpdateWidget::upgradeButtonClicked()</a>.</p>
 
 </div>
 </div>
@@ -1949,7 +1945,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00182">182</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00034">MusicApplication::MusicApplication()</a>, <a class="el" href="../../d5/d7d/musicapplicationobject_8cpp_source.html#l00275">MusicApplicationObject::musicResetWindow()</a>, <a class="el" href="../../d2/df3/musicsysconfigmanager_8cpp_source.html#l00270">MusicSysConfigManager::readWindowGeometry()</a>, <a class="el" href="../../dd/d33/musicvideoplaywidget_8cpp_source.html#l00167">MusicVideoPlayWidget::resizeWindow()</a>, <a class="el" href="../../de/de4/musiclrccontainerforinline_8cpp_source.html#l00213">MusicLrcContainerForInline::resizeWindow()</a>, <a class="el" href="../../d6/d65/musiclrcartphotouploadwidget_8cpp_source.html#l00058">MusicLrcArtPhotoUploadWidget::selectButtonClicked()</a>, and <a class="el" href="../../d2/dc2/musicbottomareawidget_8cpp_source.html#l00119">MusicBottomAreaWidget::setWindowConcise()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00034">MusicApplication::MusicApplication()</a>, <a class="el" href="../../d5/d7d/musicapplicationobject_8cpp_source.html#l00290">MusicApplicationObject::musicResetWindow()</a>, <a class="el" href="../../d2/df3/musicsysconfigmanager_8cpp_source.html#l00281">MusicSysConfigManager::readWindowGeometry()</a>, <a class="el" href="../../dd/d33/musicvideoplaywidget_8cpp_source.html#l00164">MusicVideoPlayWidget::resizeWindow()</a>, <a class="el" href="../../de/de4/musiclrccontainerforinline_8cpp_source.html#l00213">MusicLrcContainerForInline::resizeWindow()</a>, <a class="el" href="../../d6/d65/musiclrcartphotouploadwidget_8cpp_source.html#l00058">MusicLrcArtPhotoUploadWidget::selectButtonClicked()</a>, and <a class="el" href="../../d2/dc2/musicbottomareawidget_8cpp_source.html#l00118">MusicBottomAreaWidget::setWindowConcise()</a>.</p>
 
 </div>
 </div>
@@ -1965,7 +1961,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00181">181</a> of file <a class="el" href="../../d8/d07/musicobject_8h_source.html">musicobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00034">MusicApplication::MusicApplication()</a>, <a class="el" href="../../d5/d7d/musicapplicationobject_8cpp_source.html#l00275">MusicApplicationObject::musicResetWindow()</a>, <a class="el" href="../../d2/df3/musicsysconfigmanager_8cpp_source.html#l00270">MusicSysConfigManager::readWindowGeometry()</a>, <a class="el" href="../../d7/da4/musicplaylistfoundinfowidget_8cpp_source.html#l00033">MusicPlaylistFoundInfoWidget::resizeWindow()</a>, <a class="el" href="../../da/dba/musicwebdjradiowidget_8cpp_source.html#l00041">MusicWebDJRadioProgramTableWidget::resizeWindow()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00095">MusicCloudManagerTableWidget::resizeWindow()</a>, <a class="el" href="../../dd/d33/musicvideoplaywidget_8cpp_source.html#l00167">MusicVideoPlayWidget::resizeWindow()</a>, <a class="el" href="../../d5/d6e/musicqueryfoundtablewidget_8cpp_source.html#l00123">MusicQueryFoundTableWidget::resizeWindow()</a>, <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00061">MusicAlbumFoundWidget::resizeWindow()</a>, <a class="el" href="../../d0/dc5/musictoplistfoundwidget_8cpp_source.html#l00064">MusicToplistFoundWidget::resizeWindow()</a>, <a class="el" href="../../d0/d2e/musicwebdjradioinfowidget_8cpp_source.html#l00060">MusicWebDJRadioInfoWidget::resizeWindow()</a>, <a class="el" href="../../d5/dab/musicwebmvradioinfowidget_8cpp_source.html#l00101">MusicWebMVRadioInfoWidget::resizeWindow()</a>, <a class="el" href="../../de/de4/musiclrccontainerforinline_8cpp_source.html#l00213">MusicLrcContainerForInline::resizeWindow()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00199">MusicSongSearchOnlineTableWidget::resizeWindow()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00666">MusicCloudManagerWidget::resizeWindow()</a>, <a class="el" href="../../d6/d65/musiclrcartphotouploadwidget_8cpp_source.html#l00058">MusicLrcArtPhotoUploadWidget::selectButtonClicked()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00692">MusicSongSearchOnlineWidget::setResizeLabelText()</a>, <a class="el" href="../../de/de6/musicmarqueewidget_8cpp_source.html#l00014">MusicMarqueeWidget::setText()</a>, and <a class="el" href="../../d2/dc2/musicbottomareawidget_8cpp_source.html#l00119">MusicBottomAreaWidget::setWindowConcise()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00034">MusicApplication::MusicApplication()</a>, <a class="el" href="../../d5/d7d/musicapplicationobject_8cpp_source.html#l00290">MusicApplicationObject::musicResetWindow()</a>, <a class="el" href="../../d2/df3/musicsysconfigmanager_8cpp_source.html#l00281">MusicSysConfigManager::readWindowGeometry()</a>, <a class="el" href="../../d7/da4/musicplaylistfoundinfowidget_8cpp_source.html#l00033">MusicPlaylistFoundInfoWidget::resizeWindow()</a>, <a class="el" href="../../da/dba/musicwebdjradiowidget_8cpp_source.html#l00041">MusicWebDJRadioProgramTableWidget::resizeWindow()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00096">MusicCloudManagerTableWidget::resizeWindow()</a>, <a class="el" href="../../dd/d33/musicvideoplaywidget_8cpp_source.html#l00164">MusicVideoPlayWidget::resizeWindow()</a>, <a class="el" href="../../d5/d6e/musicqueryfoundtablewidget_8cpp_source.html#l00123">MusicQueryFoundTableWidget::resizeWindow()</a>, <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00061">MusicAlbumFoundWidget::resizeWindow()</a>, <a class="el" href="../../d0/dc5/musictoplistfoundwidget_8cpp_source.html#l00064">MusicToplistFoundWidget::resizeWindow()</a>, <a class="el" href="../../d0/d2e/musicwebdjradioinfowidget_8cpp_source.html#l00060">MusicWebDJRadioInfoWidget::resizeWindow()</a>, <a class="el" href="../../d5/dab/musicwebmvradioinfowidget_8cpp_source.html#l00100">MusicWebMVRadioInfoWidget::resizeWindow()</a>, <a class="el" href="../../de/de4/musiclrccontainerforinline_8cpp_source.html#l00213">MusicLrcContainerForInline::resizeWindow()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00199">MusicSongSearchTableWidget::resizeWindow()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00668">MusicCloudManagerWidget::resizeWindow()</a>, <a class="el" href="../../d6/d65/musiclrcartphotouploadwidget_8cpp_source.html#l00058">MusicLrcArtPhotoUploadWidget::selectButtonClicked()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00691">MusicSongSearchOnlineWidget::setResizeLabelText()</a>, <a class="el" href="../../de/de6/musicmarqueewidget_8cpp_source.html#l00014">MusicMarqueeWidget::setText()</a>, and <a class="el" href="../../d2/dc2/musicbottomareawidget_8cpp_source.html#l00118">MusicBottomAreaWidget::setWindowConcise()</a>.</p>
 
 </div>
 </div>
@@ -2032,7 +2028,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 1 2018 10:20:53 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 11 2019 14:02:04 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

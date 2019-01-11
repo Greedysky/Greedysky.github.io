@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.7.0.0</span>
+   &#160;<span id="projectnumber">2.8.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -142,13 +142,13 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">static</span> QByteArray <a class="code" href="../../d5/de4/class_serializer_1_1_serializer_private.html#a12102f15133855fb335f4c96d5663a5d">buildIndent</a>(<span class="keywordtype">int</span> spaces);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">static</span> QByteArray <a class="code" href="../../d5/de4/class_serializer_1_1_serializer_private.html#ab03173255afdddcd8f0efc9c9738b5af">escapeString</a>( <span class="keyword">const</span> QString&amp; str );</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">static</span> QByteArray <a class="code" href="../../d5/de4/class_serializer_1_1_serializer_private.html#a4baf39a2230bd42cb2134712c24e41f9">join</a>( <span class="keyword">const</span> QList&lt;QByteArray&gt;&amp; list, <span class="keyword">const</span> QByteArray&amp; sep );</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">static</span> QByteArray <a class="code" href="../../d5/de4/class_serializer_1_1_serializer_private.html#a4baf39a2230bd42cb2134712c24e41f9">join</a>( <span class="keyword">const</span> QList&lt;QByteArray&gt;&amp; list, <span class="keyword">const</span> QByteArray &amp;sep );</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">static</span> QByteArray <a class="code" href="../../d5/de4/class_serializer_1_1_serializer_private.html#a4baf39a2230bd42cb2134712c24e41f9">join</a>( <span class="keyword">const</span> QList&lt;QByteArray&gt;&amp; list, <span class="keywordtype">char</span> sep );</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="../../d5/de4/class_serializer_1_1_serializer_private.html#a4baf39a2230bd42cb2134712c24e41f9">   70</a></span>&#160;QByteArray <a class="code" href="../../d5/de4/class_serializer_1_1_serializer_private.html#a4baf39a2230bd42cb2134712c24e41f9">Serializer::SerializerPrivate::join</a>( <span class="keyword">const</span> QList&lt;QByteArray&gt;&amp; list, <span class="keyword">const</span> QByteArray&amp; sep ) {</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="../../d5/de4/class_serializer_1_1_serializer_private.html#a4baf39a2230bd42cb2134712c24e41f9">   70</a></span>&#160;QByteArray <a class="code" href="../../d5/de4/class_serializer_1_1_serializer_private.html#a4baf39a2230bd42cb2134712c24e41f9">Serializer::SerializerPrivate::join</a>( <span class="keyword">const</span> QList&lt;QByteArray&gt;&amp; list, <span class="keyword">const</span> QByteArray &amp;sep ) {</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  QByteArray res;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  Q_FOREACH( <span class="keyword">const</span> QByteArray&amp; i, list ) {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  Q_FOREACH( <span class="keyword">const</span> QByteArray &amp;i, list ) {</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">if</span> ( !res.isEmpty() )</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      res += sep;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    res += i;</div>
@@ -158,7 +158,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="../../d5/de4/class_serializer_1_1_serializer_private.html#a3f58bfb410170950cd424a9f0b00f99f">   80</a></span>&#160;QByteArray <a class="code" href="../../d5/de4/class_serializer_1_1_serializer_private.html#a4baf39a2230bd42cb2134712c24e41f9">Serializer::SerializerPrivate::join</a>( <span class="keyword">const</span> QList&lt;QByteArray&gt;&amp; list, <span class="keywordtype">char</span> sep ) {</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  QByteArray res;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  Q_FOREACH( <span class="keyword">const</span> QByteArray&amp; i, list ) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  Q_FOREACH( <span class="keyword">const</span> QByteArray &amp;i, list ) {</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">if</span> ( !res.isEmpty() )</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      res += sep;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    res += i;</div>
@@ -169,14 +169,14 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="../../d5/de4/class_serializer_1_1_serializer_private.html#ac96c4c19eb76c9f58096fadbf5679d97">   90</a></span>&#160;QByteArray <a class="code" href="../../d5/de4/class_serializer_1_1_serializer_private.html#ac96c4c19eb76c9f58096fadbf5679d97">Serializer::SerializerPrivate::serialize</a>( <span class="keyword">const</span> QVariant &amp;v, <span class="keywordtype">bool</span> *ok, <span class="keywordtype">int</span> indentLevel)</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  QByteArray str;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../dd/d8a/namespace_program.html#ae207d83c4779d7c58e7d3c0dc161d487">QVariant::Type</a> type = v.type();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keyword">const</span> QVariant::Type type = v.type();</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordflow">if</span> ( ! v.isValid() ) { <span class="comment">// invalid or null?</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    str = <span class="stringliteral">&quot;null&quot;</span>;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (( type == QVariant::List ) || ( type == QVariant::StringList )) { <span class="comment">// an array or a stringlist?</span></div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">const</span> QVariantList list = v.toList();</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    QList&lt;QByteArray&gt; values;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    Q_FOREACH( <span class="keyword">const</span> QVariant&amp; var, list )</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    Q_FOREACH( <span class="keyword">const</span> QVariant &amp;var, list )</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    {</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      QByteArray serializedValue;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
@@ -345,7 +345,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keywordflow">if</span> (( type == QVariant::String ) ||  ( type == QVariant::ByteArray )) { <span class="comment">// a string or a byte array?</span></div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;      str += escapeString( v.toString() );</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (( type == QVariant::Double) || ((<a class="code" href="../../dd/d8a/namespace_program.html#ae207d83c4779d7c58e7d3c0dc161d487">QMetaType::Type</a>)type == QMetaType::Float)) { <span class="comment">// a double or a float?</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (( type == QVariant::Double) || ((QMetaType::Type)type == QMetaType::Float)) { <span class="comment">// a double or a float?</span></div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">double</span> value = v.toDouble();</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="comment">//  #if defined _WIN32 &amp;&amp; !defined(Q_OS_SYMBIAN)</span></div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="comment"></span><span class="comment">//      const bool special = std::isnan(value) || std::isinf(value);</span></div>
@@ -472,7 +472,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;  <a class="code" href="../../dd/d24/ttkprivate_8h.html#a16e697408c6ce0f129db3559d3a79514">TTK_INIT_PRIVATE</a>;</div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;}</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;</div>
-<div class="line"><a name="l00397"></a><span class="lineno"><a class="line" href="../../d8/d59/class_q_json_1_1_serializer.html#aa92d60f9b4b503a44511611eed50f548">  397</a></span>&#160;<span class="keywordtype">void</span> Serializer::serialize( <span class="keyword">const</span> QVariant&amp; v, QIODevice* io, <span class="keywordtype">bool</span>* ok)</div>
+<div class="line"><a name="l00397"></a><span class="lineno"><a class="line" href="../../d8/d59/class_q_json_1_1_serializer.html#aa92d60f9b4b503a44511611eed50f548">  397</a></span>&#160;<span class="keywordtype">void</span> Serializer::serialize( <span class="keyword">const</span> QVariant &amp;v, QIODevice* io, <span class="keywordtype">bool</span>* ok)</div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;{</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;  Q_ASSERT( io );</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;  <a class="code" href="../../dd/d24/ttkprivate_8h.html#a8eedd09c47b53d5e42ca132295c5e1ef">TTK_D</a>(<a class="code" href="../../d8/d59/class_q_json_1_1_serializer.html">Serializer</a>);</div>
@@ -576,7 +576,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_serializer_1_1_serializer_private_html_ac96c4c19eb76c9f58096fadbf5679d97"><div class="ttname"><a href="../../d5/de4/class_serializer_1_1_serializer_private.html#ac96c4c19eb76c9f58096fadbf5679d97">QJson::Serializer::SerializerPrivate::serialize</a></div><div class="ttdeci">QByteArray serialize(const QVariant &amp;v, bool *ok, int indentLevel=0)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d74/serializer_8cpp_source.html#l00090">serializer.cpp:90</a></div></div>
 <div class="ttc" id="class_serializer_1_1_serializer_private_html_a4baf39a2230bd42cb2134712c24e41f9"><div class="ttname"><a href="../../d5/de4/class_serializer_1_1_serializer_private.html#a4baf39a2230bd42cb2134712c24e41f9">QJson::Serializer::SerializerPrivate::join</a></div><div class="ttdeci">static QByteArray join(const QList&lt; QByteArray &gt; &amp;list, const QByteArray &amp;sep)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d74/serializer_8cpp_source.html#l00070">serializer.cpp:70</a></div></div>
 <div class="ttc" id="namespace_q_json_html_aa0f1b9f563c1f7c12564fce3aae93738aaf423d61e313052c085906145de30db7"><div class="ttname"><a href="../../d3/d7b/namespace_q_json.html#aa0f1b9f563c1f7c12564fce3aae93738aaf423d61e313052c085906145de30db7">QJson::IndentMedium</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d5f/serializer_8h_source.html#l00108">serializer.h:108</a></div></div>
-<div class="ttc" id="namespace_program_html_ae207d83c4779d7c58e7d3c0dc161d487"><div class="ttname"><a href="../../dd/d8a/namespace_program.html#ae207d83c4779d7c58e7d3c0dc161d487">Program::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dff/musicdjradioprogramthread_8h_source.html#l00029">musicdjradioprogramthread.h:29</a></div></div>
 <div class="ttc" id="class_q_json_1_1_serializer_html_aa8ce25d9eb17e083e9c6a4ca84a8b031"><div class="ttname"><a href="../../d8/d59/class_q_json_1_1_serializer.html#aa8ce25d9eb17e083e9c6a4ca84a8b031">QJson::Serializer::setDoublePrecision</a></div><div class="ttdeci">void setDoublePrecision(int precision)</div><div class="ttdoc">set double precision used while converting Double </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d74/serializer_8cpp_source.html#l00466">serializer.cpp:466</a></div></div>
 <div class="ttc" id="namespace_q_json_html_aa0f1b9f563c1f7c12564fce3aae93738a5361611d52ca462ff4730a15b79a1c7b"><div class="ttname"><a href="../../d3/d7b/namespace_q_json.html#aa0f1b9f563c1f7c12564fce3aae93738a5361611d52ca462ff4730a15b79a1c7b">QJson::IndentCompact</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d5f/serializer_8h_source.html#l00106">serializer.h:106</a></div></div>
 <div class="ttc" id="class_serializer_1_1_serializer_private_html_a98520e783962ca3fdfc395d8a6b91182"><div class="ttname"><a href="../../d5/de4/class_serializer_1_1_serializer_private.html#a98520e783962ca3fdfc395d8a6b91182">QJson::Serializer::SerializerPrivate::indentMode</a></div><div class="ttdeci">IndentMode indentMode</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d74/serializer_8cpp_source.html#l00059">serializer.cpp:59</a></div></div>
@@ -593,7 +592,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 1 2018 10:20:51 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 11 2019 14:01:59 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

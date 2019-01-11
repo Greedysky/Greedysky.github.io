@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.7.0.0</span>
+   &#160;<span id="projectnumber">2.8.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -82,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QPainter&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="../../d8/d84/class_music_round_animation_label.html#a5b9add2816bf1de41eb2b6636f6048c1">    6</a></span>&#160;<a class="code" href="../../d8/d84/class_music_round_animation_label.html#a5b9add2816bf1de41eb2b6636f6048c1">MusicRoundAnimationLabel::MusicRoundAnimationLabel</a>(QWidget *parent)</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="../../d8/d84/class_music_round_animation_label.html#af58710129653590220aaf3f9c85245d4">    6</a></span>&#160;<a class="code" href="../../d8/d84/class_music_round_animation_label.html#af58710129653590220aaf3f9c85245d4">MusicRoundAnimationLabel::MusicRoundAnimationLabel</a>(QWidget *parent)</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    : QWidget(parent)</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="../../d8/d84/class_music_round_animation_label.html#ad4b0e5996dd07693f4ca7b530d72cb56">m_rotateAngle</a> = 0;</div>
@@ -121,10 +121,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    QWidget::paintEvent(event);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    QPainter painter(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    QSize <span class="keyword">self</span> = <a class="code" href="../../d2/db7/ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    QRect rotatedRect(-<span class="keyword">self</span>.width()/2, -<span class="keyword">self</span>.height()/2, <span class="keyword">self</span>.width(), <span class="keyword">self</span>.height());</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">int</span> cx = <span class="keyword">self</span>.width() / 2;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">int</span> cy = <span class="keyword">self</span>.height() / 2;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">const</span> QSize &amp;<span class="keyword">self</span> = <a class="code" href="../../d2/db7/ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">const</span> QRect rotatedRect(-<span class="keyword">self</span>.width()/2, -<span class="keyword">self</span>.height()/2, <span class="keyword">self</span>.width(), <span class="keyword">self</span>.height());</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> cx = <span class="keyword">self</span>.width() / 2;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> cy = <span class="keyword">self</span>.height() / 2;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">if</span>(++<a class="code" href="../../d8/d84/class_music_round_animation_label.html#ad4b0e5996dd07693f4ca7b530d72cb56">m_rotateAngle</a> &gt;= <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a0733fd1c27b2c750235dad1185338e80">MA_360</a>)</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div>
@@ -147,15 +147,15 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="musicnumberdefine_8h_html"><div class="ttname"><a href="../../dd/d01/musicnumberdefine_8h.html">musicnumberdefine.h</a></div></div>
 <div class="ttc" id="class_music_round_animation_label_html_a0eb02bd685c5ccbbc48257feb25af27a"><div class="ttname"><a href="../../d8/d84/class_music_round_animation_label.html#a0eb02bd685c5ccbbc48257feb25af27a">MusicRoundAnimationLabel::~MusicRoundAnimationLabel</a></div><div class="ttdeci">~MusicRoundAnimationLabel()</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd2/musicroundanimationlabel_8cpp_source.html#l00015">musicroundanimationlabel.cpp:15</a></div></div>
 <div class="ttc" id="class_music_round_animation_label_html_ad4b0e5996dd07693f4ca7b530d72cb56"><div class="ttname"><a href="../../d8/d84/class_music_round_animation_label.html#ad4b0e5996dd07693f4ca7b530d72cb56">MusicRoundAnimationLabel::m_rotateAngle</a></div><div class="ttdeci">int m_rotateAngle</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d72/musicroundanimationlabel_8h_source.html#l00068">musicroundanimationlabel.h:68</a></div></div>
+<div class="ttc" id="class_music_round_animation_label_html_af58710129653590220aaf3f9c85245d4"><div class="ttname"><a href="../../d8/d84/class_music_round_animation_label.html#af58710129653590220aaf3f9c85245d4">MusicRoundAnimationLabel::MusicRoundAnimationLabel</a></div><div class="ttdeci">MusicRoundAnimationLabel(QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd2/musicroundanimationlabel_8cpp_source.html#l00006">musicroundanimationlabel.cpp:6</a></div></div>
 <div class="ttc" id="class_music_round_animation_label_html_a81121b43d1609701a45f0a384f2df6dc"><div class="ttname"><a href="../../d8/d84/class_music_round_animation_label.html#a81121b43d1609701a45f0a384f2df6dc">MusicRoundAnimationLabel::m_timer</a></div><div class="ttdeci">QTimer m_timer</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d72/musicroundanimationlabel_8h_source.html#l00067">musicroundanimationlabel.h:67</a></div></div>
 <div class="ttc" id="class_music_round_animation_label_html_af5919d4172599a9906a2ee30d0c8d0c3"><div class="ttname"><a href="../../d8/d84/class_music_round_animation_label.html#af5919d4172599a9906a2ee30d0c8d0c3">MusicRoundAnimationLabel::start</a></div><div class="ttdeci">void start()</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd2/musicroundanimationlabel_8cpp_source.html#l00030">musicroundanimationlabel.cpp:30</a></div></div>
 <div class="ttc" id="class_music_round_animation_label_html_a5c83da5bcd03da9d87e440cdc821bef7"><div class="ttname"><a href="../../d8/d84/class_music_round_animation_label.html#a5c83da5bcd03da9d87e440cdc821bef7">MusicRoundAnimationLabel::setInterval</a></div><div class="ttdeci">void setInterval(int value)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd2/musicroundanimationlabel_8cpp_source.html#l00025">musicroundanimationlabel.cpp:25</a></div></div>
-<div class="ttc" id="class_music_round_animation_label_html_a5b9add2816bf1de41eb2b6636f6048c1"><div class="ttname"><a href="../../d8/d84/class_music_round_animation_label.html#a5b9add2816bf1de41eb2b6636f6048c1">MusicRoundAnimationLabel::MusicRoundAnimationLabel</a></div><div class="ttdeci">MusicRoundAnimationLabel(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd2/musicroundanimationlabel_8cpp_source.html#l00006">musicroundanimationlabel.cpp:6</a></div></div>
 <div class="ttc" id="class_music_round_animation_label_html_ac168d473cd290cb72b3e8aeeb51e43a2"><div class="ttname"><a href="../../d8/d84/class_music_round_animation_label.html#ac168d473cd290cb72b3e8aeeb51e43a2">MusicRoundAnimationLabel::stop</a></div><div class="ttdeci">void stop()</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd2/musicroundanimationlabel_8cpp_source.html#l00035">musicroundanimationlabel.cpp:35</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 1 2018 10:20:49 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 11 2019 14:01:54 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

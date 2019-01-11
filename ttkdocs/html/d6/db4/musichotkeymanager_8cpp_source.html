@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.7.0.0</span>
+   &#160;<span id="projectnumber">2.8.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -103,7 +103,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../d5/d95/class_music_hot_key_manager.html#a0783348866606dc770df3413fa22caf3">   25</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d5/d95/class_music_hot_key_manager.html#a0783348866606dc770df3413fa22caf3">MusicHotKeyManager::setDefaultKey</a>()</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    QStringList keys(<a class="code" href="../../d5/d95/class_music_hot_key_manager.html#a6b9cdde249be48b5088304f2f094ee83">getDefaultKeys</a>());</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">const</span> QStringList &amp;keys = <a class="code" href="../../d5/d95/class_music_hot_key_manager.html#a6b9cdde249be48b5088304f2f094ee83">getDefaultKeys</a>();</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;<a class="code" href="../../d5/d95/class_music_hot_key_manager.html#ae321374a80a3d75d803a2031cf4ec5cd">m_hotkeys</a>.count(); ++i)</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    {</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="../../d5/d95/class_music_hot_key_manager.html#ac7de6717239f0308f46e9bbb8c3d4f95">setHotKey</a>(i, keys[i]);</div>
@@ -194,8 +194,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
 <div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="../../d5/d95/class_music_hot_key_manager.html#a8901c79415e202cb432994de12a599c6">  116</a></span>&#160;QString <a class="code" href="../../d5/d95/class_music_hot_key_manager.html#a8901c79415e202cb432994de12a599c6">MusicHotKeyManager::toString</a>(<span class="keywordtype">int</span> <a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>, <span class="keywordtype">int</span> modifiers)</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;{</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    QString strModList[] = { <span class="stringliteral">&quot;Ctrl&quot;</span>, <span class="stringliteral">&quot;Shift&quot;</span>, <span class="stringliteral">&quot;Alt&quot;</span>};</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    quint32 modList[] = { Qt::ControlModifier, Qt::ShiftModifier, Qt::AltModifier};</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keyword">const</span> QString strModList[] = { <span class="stringliteral">&quot;Ctrl&quot;</span>, <span class="stringliteral">&quot;Shift&quot;</span>, <span class="stringliteral">&quot;Alt&quot;</span>};</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keyword">const</span> quint32 modList[] = { Qt::ControlModifier, Qt::ShiftModifier, Qt::AltModifier};</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    QString keyStr;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;3; j++)</div>
@@ -261,7 +261,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 1 2018 10:20:42 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 11 2019 14:01:44 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

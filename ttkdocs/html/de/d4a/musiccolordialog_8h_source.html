@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.7.0.0</span>
+   &#160;<span id="projectnumber">2.8.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -82,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">/* =================================================</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of the TTK Music Player project</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2018 Greedysky Studio</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2019 Greedysky Studio</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
@@ -105,7 +105,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../da/d5b/class_music_hl_palette.html">MusicHlPalette</a>)</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../da/d5b/class_music_hl_palette.html">MusicHlPalette</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../da/d5b/class_music_hl_palette.html">MusicHlPalette</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    QColor color() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> init();</div>
@@ -136,7 +136,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d8/dc9/class_music_hl_saturation_palette.html">MusicHlSaturationPalette</a>)</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d8/dc9/class_music_hl_saturation_palette.html">MusicHlSaturationPalette</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d8/dc9/class_music_hl_saturation_palette.html">MusicHlSaturationPalette</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">double</span> saturation() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
@@ -168,11 +168,11 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../da/d61/class_music_color_dialog.html">MusicColorDialog</a>)</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../da/d61/class_music_color_dialog.html">MusicColorDialog</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../da/d61/class_music_color_dialog.html">MusicColorDialog</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../da/d61/class_music_color_dialog.html">MusicColorDialog</a>();</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keyword">static</span> QColor getColor(QWidget *parent = 0);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keyword">static</span> QColor getColor(QWidget *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    QColor color() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
@@ -202,13 +202,13 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_hl_palette_html"><div class="ttname"><a href="../../da/d5b/class_music_hl_palette.html">MusicHlPalette</a></div><div class="ttdoc">The class of the color hl palette. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d4a/musiccolordialog_8h_source.html#l00027">musiccolordialog.h:27</a></div></div>
 <div class="ttc" id="class_music_hl_palette_html_a1cc4f7ccca63d16300d301b83452f9f9"><div class="ttname"><a href="../../da/d5b/class_music_hl_palette.html#a1cc4f7ccca63d16300d301b83452f9f9">MusicHlPalette::m_ptfVernierPercentPos</a></div><div class="ttdeci">QPointF m_ptfVernierPercentPos</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d4a/musiccolordialog_8h_source.html#l00072">musiccolordialog.h:72</a></div></div>
 <div class="ttc" id="class_music_color_dialog_html_a0c10e3b6ddbc8c414772aab4a925563d"><div class="ttname"><a href="../../da/d61/class_music_color_dialog.html#a0c10e3b6ddbc8c414772aab4a925563d">MusicColorDialog::m_status</a></div><div class="ttdeci">int m_status</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d4a/musiccolordialog_8h_source.html#l00173">musiccolordialog.h:173</a></div></div>
-<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00113">musicglobal.h:113</a></div></div>
+<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00149">musicglobal.h:149</a></div></div>
 <div class="ttc" id="class_music_color_dialog_html"><div class="ttname"><a href="../../da/d61/class_music_color_dialog.html">MusicColorDialog</a></div><div class="ttdoc">The class of the get color table widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d4a/musiccolordialog_8h_source.html#l00135">musiccolordialog.h:135</a></div></div>
 <div class="ttc" id="class_music_hl_saturation_palette_html_ab009d99e40b1b06677dc0a10628ef03f"><div class="ttname"><a href="../../d8/dc9/class_music_hl_saturation_palette.html#ab009d99e40b1b06677dc0a10628ef03f">MusicHlSaturationPalette::m_dblVernierX</a></div><div class="ttdeci">double m_dblVernierX</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d4a/musiccolordialog_8h_source.html#l00123">musiccolordialog.h:123</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 1 2018 10:20:48 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 11 2019 14:01:51 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

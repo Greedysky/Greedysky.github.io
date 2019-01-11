@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.7.0.0</span>
+   &#160;<span id="projectnumber">2.8.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -82,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">/* =================================================</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of the TTK Music Player project</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2018 Greedysky Studio</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2019 Greedysky Studio</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
@@ -114,7 +114,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="../../dc/d95/class_music_time.html">MusicTime</a>();</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="../../dc/d95/class_music_time.html">MusicTime</a>(<span class="keyword">const</span> <a class="code" href="../../dc/d95/class_music_time.html">MusicTime</a> &amp;other);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="../../dc/d95/class_music_time.html">MusicTime</a>(qint64 value, <a class="code" href="../../dd/d8a/namespace_program.html#ae207d83c4779d7c58e7d3c0dc161d487">Type</a> type);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="../../dc/d95/class_music_time.html">MusicTime</a>(qint64 value, Type type);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="../../dc/d95/class_music_time.html">MusicTime</a>(<span class="keywordtype">int</span> day, <span class="keywordtype">int</span> hour, <span class="keywordtype">int</span> min, <span class="keywordtype">int</span> sec, <span class="keywordtype">int</span> msec);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> setHMSM(<span class="keywordtype">int</span> day, <span class="keywordtype">int</span> hour, <span class="keywordtype">int</span> min, <span class="keywordtype">int</span> sec, <span class="keywordtype">int</span> msec = 0);</div>
@@ -139,9 +139,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="../../dc/d95/class_music_time.html#ad932eb496326afee3a6024cf81989522">  126</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="../../dc/d95/class_music_time.html#ad932eb496326afee3a6024cf81989522">getMillionSecond</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_msec; }</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keyword">static</span> <a class="code" href="../../dc/d95/class_music_time.html">MusicTime</a> fromString(<span class="keyword">const</span> QString &amp;s, <span class="keyword">const</span> QString &amp;format);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keyword">static</span> QString toString(qint64 value, <a class="code" href="../../dd/d8a/namespace_program.html#ae207d83c4779d7c58e7d3c0dc161d487">Type</a> type, <span class="keyword">const</span> QString &amp;format);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keyword">static</span> QString toString(qint64 value, Type type, <span class="keyword">const</span> QString &amp;format);</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    QString toString(<span class="keyword">const</span> QString &amp;format);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    QString toString(<span class="keyword">const</span> QString &amp;format) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="comment">//    h the hour without a leading zero (0 to 23 or 1 to 12 if AM/PM display)</span></div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="comment">//    hh        the hour with a leading zero (00 to 23 or 01 to 12 if AM/PM display)</span></div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="comment">//    H the hour without a leading zero (0 to 23, even with AM/PM display)</span></div>
@@ -156,7 +156,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment">//    ap or a   use am/pm display. a/ap will be replaced by either &quot;am&quot; or &quot;pm&quot;.</span></div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment">//    t the timezone (for example &quot;CEST&quot;)</span></div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    qint64 getTimeStamp(<a class="code" href="../../dd/d8a/namespace_program.html#ae207d83c4779d7c58e7d3c0dc161d487">Type</a> type) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    qint64 getTimeStamp(Type type) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keyword">static</span> qint64 timeStamp(<span class="keywordtype">bool</span> ms = <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> timeSRand();</div>
@@ -232,10 +232,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_time_html_a6f0b1667c9929bace58d8e366e95e4ad"><div class="ttname"><a href="../../dc/d95/class_music_time.html#a6f0b1667c9929bace58d8e366e95e4ad">MusicTime::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dcc/musictime_8h_source.html#l00033">musictime.h:33</a></div></div>
 <div class="ttc" id="ioapi_8h_html_a4ed0a20697a8c37f8af699a8ec6d76a8"><div class="ttname"><a href="../../d2/db7/ioapi_8h.html#a4ed0a20697a8c37f8af699a8ec6d76a8">stream</a></div><div class="ttdeci">voidpf stream</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/db7/ioapi_8h_source.html#l00136">ioapi.h:136</a></div></div>
 <div class="ttc" id="musicglobaldefine_8h_html"><div class="ttname"><a href="../../d6/d9b/musicglobaldefine_8h.html">musicglobaldefine.h</a></div></div>
-<div class="ttc" id="namespace_program_html_ae207d83c4779d7c58e7d3c0dc161d487"><div class="ttname"><a href="../../dd/d8a/namespace_program.html#ae207d83c4779d7c58e7d3c0dc161d487">Program::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dff/musicdjradioprogramthread_8h_source.html#l00029">musicdjradioprogramthread.h:29</a></div></div>
 <div class="ttc" id="class_music_time_html_a1ded125b70d851f1bb9d18b4d99b7850"><div class="ttname"><a href="../../dc/d95/class_music_time.html#a1ded125b70d851f1bb9d18b4d99b7850">MusicTime::m_hour</a></div><div class="ttdeci">int m_hour</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dcc/musictime_8h_source.html#l00236">musictime.h:236</a></div></div>
 <div class="ttc" id="class_music_time_html_a455712e30c7544f2d6d5b2c29092bdb3"><div class="ttname"><a href="../../dc/d95/class_music_time.html#a455712e30c7544f2d6d5b2c29092bdb3">MusicTime::setMillionSecond</a></div><div class="ttdeci">void setMillionSecond(int msec)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dcc/musictime_8h_source.html#l00106">musictime.h:106</a></div></div>
-<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00113">musicglobal.h:113</a></div></div>
+<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00149">musicglobal.h:149</a></div></div>
 <div class="ttc" id="ioapi_8h_html_a7e43d41c2fe013a373b540cba02505cf"><div class="ttname"><a href="../../d2/db7/ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a></div><div class="ttdeci">const char int mode</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/db7/ioapi_8h_source.html#l00135">ioapi.h:135</a></div></div>
 <div class="ttc" id="class_music_time_html_aed4a7572d8bd8f2a957de1d699cfcad8"><div class="ttname"><a href="../../dc/d95/class_music_time.html#aed4a7572d8bd8f2a957de1d699cfcad8">MusicTime::getSecond</a></div><div class="ttdeci">int getSecond() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dcc/musictime_8h_source.html#l00122">musictime.h:122</a></div></div>
 <div class="ttc" id="class_music_time_html_a455c734a0fb0afbabc234a3a3c935ea7"><div class="ttname"><a href="../../dc/d95/class_music_time.html#a455c734a0fb0afbabc234a3a3c935ea7">MusicTime::setType</a></div><div class="ttdeci">void setType(Type type)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dcc/musictime_8h_source.html#l00072">musictime.h:72</a></div></div>
@@ -245,7 +244,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 1 2018 10:20:43 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 11 2019 14:01:44 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.7.0.0</span>
+   &#160;<span id="projectnumber">2.8.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -84,7 +84,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QWheelEvent&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QPropertyAnimation&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="../../de/daa/class_music_smooth_moving_table_widget.html#ac4efadb8c6b31f5d63d3bb122f4330f2">    8</a></span>&#160;<a class="code" href="../../de/daa/class_music_smooth_moving_table_widget.html#ac4efadb8c6b31f5d63d3bb122f4330f2">MusicSmoothMovingTableWidget::MusicSmoothMovingTableWidget</a>(QWidget *parent)</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="../../de/daa/class_music_smooth_moving_table_widget.html#af94c617bdc446b56c7ed6f76f6851066">    8</a></span>&#160;<a class="code" href="../../de/daa/class_music_smooth_moving_table_widget.html#af94c617bdc446b56c7ed6f76f6851066">MusicSmoothMovingTableWidget::MusicSmoothMovingTableWidget</a>(QWidget *parent)</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    : <a class="code" href="../../d1/dab/class_music_abstract_table_widget.html">MusicAbstractTableWidget</a>(parent)</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="../../de/daa/class_music_smooth_moving_table_widget.html#a61c9241a9f63380f89eb067958145560">m_deltaValue</a> = 0;</div>
@@ -126,7 +126,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="../../de/daa/class_music_smooth_moving_table_widget.html#a1dd2c577d4db5ecae04714314ec913c6">m_isFirstInit</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="../../de/daa/class_music_smooth_moving_table_widget.html#aa9a1c4cd027584e69a57d21dd83a7446">m_animationTimer</a>-&gt;stop();</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">float</span> delta = (rowCount() &gt; 0) ? (height()*1.0/rowCount()) : 0;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> delta = (rowCount() &gt; 0) ? (height()*1.0/rowCount()) : 0;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="../../de/daa/class_music_smooth_moving_table_widget.html#a61c9241a9f63380f89eb067958145560">m_deltaValue</a> = (<a class="code" href="../../de/daa/class_music_smooth_moving_table_widget.html#a61c9241a9f63380f89eb067958145560">m_deltaValue</a>/480.0)*(<a class="code" href="../../de/daa/class_music_smooth_moving_table_widget.html#a61c9241a9f63380f89eb067958145560">m_deltaValue</a> &lt; 0 ? <a class="code" href="../../de/daa/class_music_smooth_moving_table_widget.html#a61c9241a9f63380f89eb067958145560">m_deltaValue</a> + 120 : -<a class="code" href="../../de/daa/class_music_smooth_moving_table_widget.html#a61c9241a9f63380f89eb067958145560">m_deltaValue</a> + 120);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="../../de/daa/class_music_smooth_moving_table_widget.html#a62b3637dce337ead9bb4c46874db52d5">m_slowAnimation</a>-&gt;setStartValue(<a class="code" href="../../de/daa/class_music_smooth_moving_table_widget.html#a7a8fff09331269384f311235a845d7ef">m_previousValue</a>);</div>
@@ -175,12 +175,12 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_smooth_moving_table_widget_html_aa633d7280f61a127a658415c3096167a"><div class="ttname"><a href="../../de/daa/class_music_smooth_moving_table_widget.html#aa633d7280f61a127a658415c3096167a">MusicSmoothMovingTableWidget::setMovedScrollBar</a></div><div class="ttdeci">void setMovedScrollBar(QScrollBar *bar)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/db8/musicsmoothmovingtablewidget_8cpp_source.html#l00031">musicsmoothmovingtablewidget.cpp:31</a></div></div>
 <div class="ttc" id="class_music_smooth_moving_table_widget_html_ad56e4a6a9072b963ffa9e6e0e9107824"><div class="ttname"><a href="../../de/daa/class_music_smooth_moving_table_widget.html#ad56e4a6a9072b963ffa9e6e0e9107824">MusicSmoothMovingTableWidget::wheelEvent</a></div><div class="ttdeci">virtual void wheelEvent(QWheelEvent *event) override</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/db8/musicsmoothmovingtablewidget_8cpp_source.html#l00063">musicsmoothmovingtablewidget.cpp:63</a></div></div>
 <div class="ttc" id="class_music_smooth_moving_table_widget_html_a61c9241a9f63380f89eb067958145560"><div class="ttname"><a href="../../de/daa/class_music_smooth_moving_table_widget.html#a61c9241a9f63380f89eb067958145560">MusicSmoothMovingTableWidget::m_deltaValue</a></div><div class="ttdeci">int m_deltaValue</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d62/musicsmoothmovingtablewidget_8h_source.html#l00063">musicsmoothmovingtablewidget.h:63</a></div></div>
-<div class="ttc" id="class_music_smooth_moving_table_widget_html_ac4efadb8c6b31f5d63d3bb122f4330f2"><div class="ttname"><a href="../../de/daa/class_music_smooth_moving_table_widget.html#ac4efadb8c6b31f5d63d3bb122f4330f2">MusicSmoothMovingTableWidget::MusicSmoothMovingTableWidget</a></div><div class="ttdeci">MusicSmoothMovingTableWidget(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/db8/musicsmoothmovingtablewidget_8cpp_source.html#l00008">musicsmoothmovingtablewidget.cpp:8</a></div></div>
+<div class="ttc" id="class_music_smooth_moving_table_widget_html_af94c617bdc446b56c7ed6f76f6851066"><div class="ttname"><a href="../../de/daa/class_music_smooth_moving_table_widget.html#af94c617bdc446b56c7ed6f76f6851066">MusicSmoothMovingTableWidget::MusicSmoothMovingTableWidget</a></div><div class="ttdeci">MusicSmoothMovingTableWidget(QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/db8/musicsmoothmovingtablewidget_8cpp_source.html#l00008">musicsmoothmovingtablewidget.cpp:8</a></div></div>
 <div class="ttc" id="class_music_smooth_moving_table_widget_html_a97b65d7366453a3339d91337caa97636"><div class="ttname"><a href="../../de/daa/class_music_smooth_moving_table_widget.html#a97b65d7366453a3339d91337caa97636">MusicSmoothMovingTableWidget::valueChanged</a></div><div class="ttdeci">void valueChanged(int value)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/db8/musicsmoothmovingtablewidget_8cpp_source.html#l00058">musicsmoothmovingtablewidget.cpp:58</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 1 2018 10:20:49 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 11 2019 14:01:54 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

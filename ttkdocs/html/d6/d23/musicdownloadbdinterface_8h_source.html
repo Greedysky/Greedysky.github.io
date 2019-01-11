@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.7.0.0</span>
+   &#160;<span id="projectnumber">2.8.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -82,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">/* =================================================</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of the TTK Music Player project</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2018 Greedysky Studio</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2019 Greedysky Studio</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
@@ -141,14 +141,13 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> makeTokenQueryUrl(QNetworkRequest *request, <span class="keyword">const</span> QString &amp;<span class="keywordtype">id</span>);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> readFromMusicSongAttribute(<a class="code" href="../../d9/d32/struct_music_object_1_1_music_song_information.html">MusicObject::MusicSongInformation</a> *info, <span class="keyword">const</span> QString &amp;bit);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> readFromMusicSongAttribute(<a class="code" href="../../d9/d32/struct_music_object_1_1_music_song_information.html">MusicObject::MusicSongInformation</a> *info, <span class="keyword">const</span> QString &amp;format,</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                                    <span class="keyword">const</span> QString &amp;quality, <span class="keywordtype">bool</span> all);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> readFromMusicLLAttribute(<a class="code" href="../../d9/d32/struct_music_object_1_1_music_song_information.html">MusicObject::MusicSongInformation</a> *info);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> readFromMusicPayAttribute(<a class="code" href="../../d9/d32/struct_music_object_1_1_music_song_information.html">MusicObject::MusicSongInformation</a> *info);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;};</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#endif // MUSICDOWNLOADBDINTERFACE_H</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> readFromMusicSongAttribute(<a class="code" href="../../d9/d32/struct_music_object_1_1_music_song_information.html">MusicObject::MusicSongInformation</a> *info, <span class="keyword">const</span> QString &amp;format, <span class="keyword">const</span> QString &amp;quality, <span class="keywordtype">bool</span> all);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> readFromMusicLLAttribute(<a class="code" href="../../d9/d32/struct_music_object_1_1_music_song_information.html">MusicObject::MusicSongInformation</a> *info);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> readFromMusicPayAttribute(<a class="code" href="../../d9/d32/struct_music_object_1_1_music_song_information.html">MusicObject::MusicSongInformation</a> *info);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;};</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif // MUSICDOWNLOADBDINTERFACE_H</span></div>
 <div class="ttc" id="musicdownloadbdinterface_8h_html_a1aca71a89e4bc63cc1b260770a86a352"><div class="ttname"><a href="../../d6/d23/musicdownloadbdinterface_8h.html#a1aca71a89e4bc63cc1b260770a86a352">BD_SONG_ATTR_PA_URL</a></div><div class="ttdeci">const QString BD_SONG_ATTR_PA_URL</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d23/musicdownloadbdinterface_8h_source.html#l00034">musicdownloadbdinterface.h:34</a></div></div>
 <div class="ttc" id="musicdownloadbdinterface_8h_html_a6e0d4fe447d2809004af42765ad261fb"><div class="ttname"><a href="../../d6/d23/musicdownloadbdinterface_8h.html#a6e0d4fe447d2809004af42765ad261fb">BD_PLAYLIST_ATTR_URL</a></div><div class="ttdeci">const QString BD_PLAYLIST_ATTR_URL</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d23/musicdownloadbdinterface_8h_source.html#l00064">musicdownloadbdinterface.h:64</a></div></div>
 <div class="ttc" id="class_music_down_load_b_d_interface_html"><div class="ttname"><a href="../../da/d09/class_music_down_load_b_d_interface.html">MusicDownLoadBDInterface</a></div><div class="ttdoc">The class to baidu query download interface. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d23/musicdownloadbdinterface_8h_source.html#l00075">musicdownloadbdinterface.h:75</a></div></div>
@@ -181,13 +180,13 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="musicdownloadbdinterface_8h_html_a1ad75bddef04522d10d7412b4e271371"><div class="ttname"><a href="../../d6/d23/musicdownloadbdinterface_8h.html#a1ad75bddef04522d10d7412b4e271371">BD_PL_COMMIT_DATA_URL</a></div><div class="ttdeci">const QString BD_PL_COMMIT_DATA_URL</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d23/musicdownloadbdinterface_8h_source.html#l00062">musicdownloadbdinterface.h:62</a></div></div>
 <div class="ttc" id="musicdownloadbdinterface_8h_html_a2b0f04696cdeea3e26aaaf3599359988"><div class="ttname"><a href="../../d6/d23/musicdownloadbdinterface_8h.html#a2b0f04696cdeea3e26aaaf3599359988">BD_MV_INFO_ATTR_I_URL</a></div><div class="ttdeci">const QString BD_MV_INFO_ATTR_I_URL</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d23/musicdownloadbdinterface_8h_source.html#l00049">musicdownloadbdinterface.h:49</a></div></div>
 <div class="ttc" id="musicdownloadbdinterface_8h_html_aa8737abc042dbf36b9728f52e7cd7d54"><div class="ttname"><a href="../../d6/d23/musicdownloadbdinterface_8h.html#aa8737abc042dbf36b9728f52e7cd7d54">BD_SONG_SSDOWN_URL</a></div><div class="ttdeci">const QString BD_SONG_SSDOWN_URL</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d23/musicdownloadbdinterface_8h_source.html#l00038">musicdownloadbdinterface.h:38</a></div></div>
-<div class="ttc" id="struct_music_object_1_1_music_song_information_html"><div class="ttname"><a href="../../d9/d32/struct_music_object_1_1_music_song_information.html">MusicObject::MusicSongInformation</a></div><div class="ttdoc">The class of the music song information. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00226">musicobject.h:226</a></div></div>
+<div class="ttc" id="struct_music_object_1_1_music_song_information_html"><div class="ttname"><a href="../../d9/d32/struct_music_object_1_1_music_song_information.html">MusicObject::MusicSongInformation</a></div><div class="ttdoc">The class of the music song information. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00228">musicobject.h:228</a></div></div>
 <div class="ttc" id="musicdownloadbdinterface_8h_html_a8159bf46ba1897247095cde0d4bec306"><div class="ttname"><a href="../../d6/d23/musicdownloadbdinterface_8h.html#a8159bf46ba1897247095cde0d4bec306">BD_SG_LEAEN_URL</a></div><div class="ttdeci">const QString BD_SG_LEAEN_URL</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d23/musicdownloadbdinterface_8h_source.html#l00054">musicdownloadbdinterface.h:54</a></div></div>
 <div class="ttc" id="musicdownloadbdinterface_8h_html_a9273a49be4dd5a9d18e9d3b5063ee94e"><div class="ttname"><a href="../../d6/d23/musicdownloadbdinterface_8h.html#a9273a49be4dd5a9d18e9d3b5063ee94e">BD_SG_LEAEN_PA_URL</a></div><div class="ttdeci">const QString BD_SG_LEAEN_PA_URL</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d23/musicdownloadbdinterface_8h_source.html#l00053">musicdownloadbdinterface.h:53</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 1 2018 10:20:43 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 11 2019 14:01:45 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

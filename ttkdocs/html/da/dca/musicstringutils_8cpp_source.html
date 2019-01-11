@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.7.0.0</span>
+   &#160;<span id="projectnumber">2.8.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -105,17 +105,17 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
 <div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../d2/de2/namespace_music_utils_1_1_string.html#aa138104871b8f7b7902cbbb5696b899e">   27</a></span>&#160;QString <a class="code" href="../../d2/de2/namespace_music_utils_1_1_string.html#aa138104871b8f7b7902cbbb5696b899e">MusicUtils::String::artistName</a>(<span class="keyword">const</span> QString &amp;value, <span class="keyword">const</span> QString &amp;<a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>)</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    QStringList s = <a class="code" href="../../d2/de2/namespace_music_utils_1_1_string.html#ad3e77e8b3aeedd106cadc4daba0bcfda">splitString</a>(value);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">const</span> QStringList &amp;s = <a class="code" href="../../d2/de2/namespace_music_utils_1_1_string.html#ad3e77e8b3aeedd106cadc4daba0bcfda">splitString</a>(value);</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">if</span>(s.count() &gt;= 2)</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="../../dd/d2f/musicsettingmanager_8h.html#a82234057ccded2024a02b92f47d0c86b">M_SETTING_PTR</a>-&gt;value(<a class="code" href="../../db/d01/class_music_setting_manager.html#a146c66bf631250e49944cfbd221e29a5aad022e8ab999762c6a211c6af0d43d1f">MusicSettingManager::OtherSongFormat</a>).toInt() == 0)</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordtype">int</span> index = value.indexOf(key);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span> index = value.indexOf(key);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordflow">return</span> value.left(index).trimmed();</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordtype">int</span> index = value.indexOf(key) + 1;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span> index = value.indexOf(key) + 1;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordflow">return</span> value.right(value.length() - index).trimmed();</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
@@ -124,17 +124,17 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="../../d2/de2/namespace_music_utils_1_1_string.html#afea118893bdc84cbcb2f708d8d4690c1">   46</a></span>&#160;QString <a class="code" href="../../d2/de2/namespace_music_utils_1_1_string.html#afea118893bdc84cbcb2f708d8d4690c1">MusicUtils::String::songName</a>(<span class="keyword">const</span> QString &amp;value, <span class="keyword">const</span> QString &amp;<a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>)</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    QStringList s = <a class="code" href="../../d2/de2/namespace_music_utils_1_1_string.html#ad3e77e8b3aeedd106cadc4daba0bcfda">splitString</a>(value);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">const</span> QStringList &amp;s = <a class="code" href="../../d2/de2/namespace_music_utils_1_1_string.html#ad3e77e8b3aeedd106cadc4daba0bcfda">splitString</a>(value);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span>(s.count() &gt;= 2)</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="../../dd/d2f/musicsettingmanager_8h.html#a82234057ccded2024a02b92f47d0c86b">M_SETTING_PTR</a>-&gt;value(<a class="code" href="../../db/d01/class_music_setting_manager.html#a146c66bf631250e49944cfbd221e29a5aad022e8ab999762c6a211c6af0d43d1f">MusicSettingManager::OtherSongFormat</a>).toInt() == 0)</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordtype">int</span> index = value.indexOf(key) + 1;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span> index = value.indexOf(key) + 1;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordflow">return</span> value.right(value.length() - index).trimmed();</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordtype">int</span> index = value.indexOf(key);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span> index = value.indexOf(key);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">return</span> value.left(index).trimmed();</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
@@ -150,7 +150,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
 <div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="../../d2/de2/namespace_music_utils_1_1_string.html#aa2ca8afba5f2a122e1d3ca84b7f8bdb5">   72</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d2/de2/namespace_music_utils_1_1_string.html#aa2ca8afba5f2a122e1d3ca84b7f8bdb5">MusicUtils::String::illegalCharactersCheck</a>(<span class="keyword">const</span> QString &amp;value)</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    QStringList acs(<a class="code" href="../../d2/de2/namespace_music_utils_1_1_string.html#ac4f5c7e34076111e961ec85d262764b4">illegalCharacters</a>());</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">const</span> QStringList acs(<a class="code" href="../../d2/de2/namespace_music_utils_1_1_string.html#ac4f5c7e34076111e961ec85d262764b4">illegalCharacters</a>());</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">foreach</span>(<span class="keyword">const</span> QString &amp;ac, acs)</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    {</div>
@@ -165,7 +165,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
 <div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="../../d2/de2/namespace_music_utils_1_1_string.html#a5cd41d983ed668e4cd7d7d019b438834">   87</a></span>&#160;QString <a class="code" href="../../d2/de2/namespace_music_utils_1_1_string.html#a5cd41d983ed668e4cd7d7d019b438834">MusicUtils::String::illegalCharactersReplaced</a>(<span class="keyword">const</span> QString &amp;value)</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    QStringList acs(<a class="code" href="../../d2/de2/namespace_music_utils_1_1_string.html#ac4f5c7e34076111e961ec85d262764b4">illegalCharacters</a>());</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">const</span> QStringList acs(<a class="code" href="../../d2/de2/namespace_music_utils_1_1_string.html#ac4f5c7e34076111e961ec85d262764b4">illegalCharacters</a>());</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    QString s(value);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">foreach</span>(<span class="keyword">const</span> QString &amp;ac, acs)</div>
@@ -182,10 +182,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="../../d2/de2/namespace_music_utils_1_1_string.html#a28f0099cab5846c67ea5fd75027eb017">  103</a></span>&#160;QList&lt;QColor&gt; <a class="code" href="../../d2/de2/namespace_music_utils_1_1_string.html#a28f0099cab5846c67ea5fd75027eb017">MusicUtils::String::readColorConfig</a>(<span class="keyword">const</span> QString &amp;value)</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;{</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    QList&lt;QColor&gt; colors;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    QStringList rgbs = value.split(<span class="charliteral">&#39;;&#39;</span>, QString::SkipEmptyParts);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keyword">const</span> QStringList &amp;rgbs = value.split(<span class="charliteral">&#39;;&#39;</span>, QString::SkipEmptyParts);</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">foreach</span>(<span class="keyword">const</span> QString &amp;rgb, rgbs)</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        QStringList var = rgb.split(<span class="charliteral">&#39;,&#39;</span>);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keyword">const</span> QStringList &amp;var = rgb.split(<span class="charliteral">&#39;,&#39;</span>);</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">if</span>(var.count() != 3)</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        {</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keywordflow">continue</span>;</div>
@@ -197,20 +197,18 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
 <div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="../../d2/de2/namespace_music_utils_1_1_string.html#af2ce978f8a74103411ebb09fc8b779b1">  119</a></span>&#160;QString <a class="code" href="../../d2/de2/namespace_music_utils_1_1_string.html#af2ce978f8a74103411ebb09fc8b779b1">MusicUtils::String::writeColorConfig</a>(<span class="keyword">const</span> QColor &amp;color)</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;{</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    QString value;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    value.append(QString(<span class="stringliteral">&quot;%1,%2,%3&quot;</span>).arg(color.red()).arg(color.green()).arg(color.blue()));</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">return</span> value;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="../../d2/de2/namespace_music_utils_1_1_string.html#aaa9e09868c23fbc33002d1e505baf71c">  126</a></span>&#160;QString <a class="code" href="../../d2/de2/namespace_music_utils_1_1_string.html#af2ce978f8a74103411ebb09fc8b779b1">MusicUtils::String::writeColorConfig</a>(<span class="keyword">const</span> QList&lt;QColor&gt; &amp;colors)</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;{</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    QString value;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">foreach</span>(<span class="keyword">const</span> QColor &amp;rgb, colors)</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    {</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        value.append(<a class="code" href="../../d2/de2/namespace_music_utils_1_1_string.html#af2ce978f8a74103411ebb09fc8b779b1">writeColorConfig</a>(rgb) + <span class="stringliteral">&quot;;&quot;</span>);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">return</span> value;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;%1,%2,%3&quot;</span>).arg(color.red()).arg(color.green()).arg(color.blue());</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="../../d2/de2/namespace_music_utils_1_1_string.html#aaa9e09868c23fbc33002d1e505baf71c">  124</a></span>&#160;QString <a class="code" href="../../d2/de2/namespace_music_utils_1_1_string.html#af2ce978f8a74103411ebb09fc8b779b1">MusicUtils::String::writeColorConfig</a>(<span class="keyword">const</span> QList&lt;QColor&gt; &amp;colors)</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;{</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    QString value;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">foreach</span>(<span class="keyword">const</span> QColor &amp;rgb, colors)</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        value.append(<a class="code" href="../../d2/de2/namespace_music_utils_1_1_string.html#af2ce978f8a74103411ebb09fc8b779b1">writeColorConfig</a>(rgb) + <span class="stringliteral">&quot;;&quot;</span>);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    }</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordflow">return</span> value;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
 <div class="ttc" id="namespace_music_utils_1_1_string_html_a28f0099cab5846c67ea5fd75027eb017"><div class="ttname"><a href="../../d2/de2/namespace_music_utils_1_1_string.html#a28f0099cab5846c67ea5fd75027eb017">MusicUtils::String::readColorConfig</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT QList&lt; QColor &gt; readColorConfig(const QString &amp;value)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dca/musicstringutils_8cpp_source.html#l00103">musicstringutils.cpp:103</a></div></div>
 <div class="ttc" id="musicstringutils_8h_html"><div class="ttname"><a href="../../d4/d50/musicstringutils_8h.html">musicstringutils.h</a></div></div>
 <div class="ttc" id="namespace_music_utils_1_1_string_html_af2ce978f8a74103411ebb09fc8b779b1"><div class="ttname"><a href="../../d2/de2/namespace_music_utils_1_1_string.html#af2ce978f8a74103411ebb09fc8b779b1">MusicUtils::String::writeColorConfig</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT QString writeColorConfig(const QColor &amp;color)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dca/musicstringutils_8cpp_source.html#l00119">musicstringutils.cpp:119</a></div></div>
@@ -228,7 +226,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 1 2018 10:20:46 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 11 2019 14:01:48 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

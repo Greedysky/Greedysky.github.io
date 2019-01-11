@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.7.0.0</span>
+   &#160;<span id="projectnumber">2.8.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -105,10 +105,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="../../da/d0e/class_q_n_put_ret.html">QNPutRet</a> *putRet = <span class="keyword">new</span> <a class="code" href="../../da/d0e/class_q_n_put_ret.html#ac9bc27c4ebb49a2e3917af25c23f1d65">QNPutRet</a>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="../../d0/dfe/class_q_json_1_1_parser.html">QJson::Parser</a> parser;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">bool</span> ok;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    QVariant data = parser.<a class="code" href="../../d0/dfe/class_q_json_1_1_parser.html#a9d57257adc3638a8b992cf4dc39a30bf">parse</a>(jsonData, &amp;ok);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">const</span> QVariant &amp;data = parser.<a class="code" href="../../d0/dfe/class_q_json_1_1_parser.html#a9d57257adc3638a8b992cf4dc39a30bf">parse</a>(jsonData, &amp;ok);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">if</span>(ok)</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        QVariantMap value = data.toMap();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">const</span> QVariantMap &amp;value = data.toMap();</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        putRet-&gt;<a class="code" href="../../da/d0e/class_q_n_put_ret.html#a03c872735fae1d49c3450d2b605c8056">setHash</a>(value[<span class="stringliteral">&quot;hash&quot;</span>].toString());</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        putRet-&gt;<a class="code" href="../../da/d0e/class_q_n_put_ret.html#ae159e5b850e48e895d3b5bafd9ca12ca">setKey</a>(value[<span class="stringliteral">&quot;key&quot;</span>].toString());</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
@@ -159,7 +159,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 1 2018 10:20:51 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 11 2019 14:01:59 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

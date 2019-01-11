@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.7.0.0</span>
+   &#160;<span id="projectnumber">2.8.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -82,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">/* =================================================</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of the TTK Music Player project</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2018 Greedysky Studio</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2019 Greedysky Studio</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
@@ -108,33 +108,33 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d5/d7e/class_q_n_simple_list_data.html">QNSimpleListData</a>(QNetworkAccessManager *networkManager,</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                              QObject *parent = 0);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> listDataToServer(<span class="keyword">const</span> QString &amp;bucket);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> receiveFinshed(<span class="keyword">const</span> QNDataItems &amp;items);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">private</span> Q_SLOTS:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> receiveDataFromServer();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> handleError(QNetworkReply::NetworkError error);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="../../dd/d24/ttkprivate_8h.html#a6a4c0fd17818d8e869c93fa7155c9dc4">TTK_DECLARE_PRIVATE</a>(<a class="code" href="../../d5/d7e/class_q_n_simple_list_data.html">QNSimpleListData</a>)</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif // QNSIMPLELISTDATA_H</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d5/d7e/class_q_n_simple_list_data.html">QNSimpleListData</a>(QNetworkAccessManager *networkManager, QObject *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> listDataToServer(<span class="keyword">const</span> QString &amp;bucket);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> receiveFinshed(<span class="keyword">const</span> QNDataItems &amp;items);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">private</span> Q_SLOTS:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> receiveDataFromServer();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> handleError(<a class="code" href="../../df/dbc/namespace_music_object.html#a739090443491193d34585a1956fa3daca0a95e1345ae0e36c86067c5cc867f809">QNetworkReply::NetworkError</a> error);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="../../dd/d24/ttkprivate_8h.html#a6a4c0fd17818d8e869c93fa7155c9dc4">TTK_DECLARE_PRIVATE</a>(<a class="code" href="../../d5/d7e/class_q_n_simple_list_data.html">QNSimpleListData</a>)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif // QNSIMPLELISTDATA_H</span></div>
 <div class="ttc" id="qndataitem_8h_html"><div class="ttname"><a href="../../de/de8/qndataitem_8h.html">qndataitem.h</a></div></div>
 <div class="ttc" id="class_q_n_simple_list_data_html"><div class="ttname"><a href="../../d5/d7e/class_q_n_simple_list_data.html">QNSimpleListData</a></div><div class="ttdoc">The namespace of the qiniu simple list data. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dd7/qnsimplelistdata_8h_source.html#l00031">qnsimplelistdata.h:31</a></div></div>
 <div class="ttc" id="ttkprivate_8h_html_a6a4c0fd17818d8e869c93fa7155c9dc4"><div class="ttname"><a href="../../dd/d24/ttkprivate_8h.html#a6a4c0fd17818d8e869c93fa7155c9dc4">TTK_DECLARE_PRIVATE</a></div><div class="ttdeci">#define TTK_DECLARE_PRIVATE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00023">ttkprivate.h:23</a></div></div>
 <div class="ttc" id="class_q_n_simple_list_data_private_html"><div class="ttname"><a href="../../db/d18/class_q_n_simple_list_data_private.html">QNSimpleListDataPrivate</a></div><div class="ttdoc">QJson import. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d31/qnsimplelistdata_8cpp_source.html#l00009">qnsimplelistdata.cpp:9</a></div></div>
 <div class="ttc" id="musicextrasglobaldefine_8h_html_a26f6db0b4db801cc546e000e046a2845"><div class="ttname"><a href="../../d3/de6/musicextrasglobaldefine_8h.html#a26f6db0b4db801cc546e000e046a2845">MUSIC_EXTRAS_EXPORT</a></div><div class="ttdeci">#define MUSIC_EXTRAS_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/de6/musicextrasglobaldefine_8h_source.html#l00031">musicextrasglobaldefine.h:31</a></div></div>
+<div class="ttc" id="namespace_music_object_html_a739090443491193d34585a1956fa3daca0a95e1345ae0e36c86067c5cc867f809"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#a739090443491193d34585a1956fa3daca0a95e1345ae0e36c86067c5cc867f809">MusicObject::NetworkError</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/de0/musicnetworkdefines_8h_source.html#l00031">musicnetworkdefines.h:31</a></div></div>
 <div class="ttc" id="ttkprivate_8h_html"><div class="ttname"><a href="../../dd/d24/ttkprivate_8h.html">ttkprivate.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 1 2018 10:20:51 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 11 2019 14:01:59 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

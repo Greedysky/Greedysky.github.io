@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.7.0.0</span>
+   &#160;<span id="projectnumber">2.8.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -267,7 +267,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
 <div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="../../d3/df6/class_gaussian_blur_private.html#aa8adce3d05ece8604218468b5dcfa3c4">  189</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d3/df6/class_gaussian_blur_private.html#aa8adce3d05ece8604218468b5dcfa3c4">GaussianBlurPrivate::boxesForGauss</a>(<span class="keywordtype">float</span> sigma, <span class="keywordtype">int</span>* <a class="code" href="../../d2/db7/ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, <span class="keywordtype">int</span> n)</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;{</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordtype">float</span> wIdeal = sqrt(12.0 * sigma * sigma / n + 1.0);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> wIdeal = sqrt(12.0 * sigma * sigma / n + 1.0);</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordtype">int</span> wl = floor(wIdeal);</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordflow">if</span> (0 == wl % 2)</div>
@@ -275,10 +275,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        wl--;</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    }</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordtype">int</span> wu = wl + 2;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> wu = wl + 2;</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordtype">float</span> mIdeal = (12.0 * sigma * sigma - n * wl * wl - 4 * n * wl - 3 * n) / (-4 * wl - 4);</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordtype">int</span> m = round(mIdeal);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> mIdeal = (12.0 * sigma * sigma - n * wl * wl - 4 * n * wl - 3 * n) / (-4 * wl - 4);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> m = round(mIdeal);</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; ++i)</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    {</div>
@@ -295,9 +295,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
 <div class="line"><a name="l00217"></a><span class="lineno"><a class="line" href="../../d3/d0b/class_gaussian_blur.html#a3da18ec9de8bc9b336c215af44e736e7">  217</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d3/d0b/class_gaussian_blur.html#a3da18ec9de8bc9b336c215af44e736e7">GaussianBlur::gaussBlur</a>(<span class="keywordtype">int</span>* pix, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h, <span class="keywordtype">int</span> radius)</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;{</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keywordtype">float</span> sigma =  1.0 * radius / 2.57;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordtype">float</span> deno  =  1.0 / (sigma * sqrt(2.0 * <a class="code" href="../../d0/d8b/gaussianblur_8cpp.html#a598a3330b3c21701223ee0ca14316eca">PI</a>));</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordtype">float</span> nume  = -1.0 / (2.0 * sigma * sigma);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> sigma =  1.0 * radius / 2.57;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> deno  =  1.0 / (sigma * sqrt(2.0 * <a class="code" href="../../d0/d8b/gaussianblur_8cpp.html#a598a3330b3c21701223ee0ca14316eca">PI</a>));</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> nume  = -1.0 / (2.0 * sigma * sigma);</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keywordtype">float</span>* gaussMatrix = (<span class="keywordtype">float</span>*)malloc(<span class="keyword">sizeof</span>(<span class="keywordtype">float</span>)* (radius + radius + 1));</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordtype">float</span> gaussSum = 0.0;</div>
@@ -309,7 +309,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        gaussSum += g;</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    }</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keywordtype">int</span> len = radius + radius + 1;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> len = radius + radius + 1;</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; len; ++i)</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    {</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        gaussMatrix[i] /= gaussSum;</div>
@@ -402,9 +402,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00323"></a><span class="lineno"><a class="line" href="../../d3/d0b/class_gaussian_blur.html#a8209cd773f927d208c65af961db0de2d">  323</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d3/d0b/class_gaussian_blur.html#a8209cd773f927d208c65af961db0de2d">GaussianBlur::gaussBlurPlus</a>(<span class="keywordtype">int</span>* pix, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h, <span class="keywordtype">int</span> radius)</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;{</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <a class="code" href="../../dd/d24/ttkprivate_8h.html#a8eedd09c47b53d5e42ca132295c5e1ef">TTK_D</a>(<a class="code" href="../../d3/d0b/class_gaussian_blur.html">GaussianBlur</a>);</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="keywordtype">float</span> sigma = 1.0 * radius / 2.57;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> sigma = 1.0 * radius / 2.57;</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="keywordtype">int</span> boxSize = 3;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> boxSize = 3;</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="keywordtype">int</span>* boxR = (<span class="keywordtype">int</span>*)malloc(<span class="keyword">sizeof</span>(<span class="keywordtype">int</span>) * boxSize);</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    d-&gt;boxesForGauss(sigma, boxR, boxSize);</div>
@@ -437,7 +437,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 1 2018 10:20:50 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 11 2019 14:01:59 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

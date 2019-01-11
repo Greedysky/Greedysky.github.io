@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.7.0.0</span>
+   &#160;<span id="projectnumber">2.8.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -87,7 +87,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor"># include &lt;unistd.h&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="../../df/d55/class_music_network_test_thread.html#a9e5fd177b26c030b1cdf68abb907d3da">   11</a></span>&#160;<a class="code" href="../../df/d55/class_music_network_test_thread.html#a9e5fd177b26c030b1cdf68abb907d3da">MusicNetworkTestThread::MusicNetworkTestThread</a>(QObject *parent)</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="../../df/d55/class_music_network_test_thread.html#a9256e46bb133e7bd6a150bde038fb611">   11</a></span>&#160;<a class="code" href="../../df/d55/class_music_network_test_thread.html#a9256e46bb133e7bd6a150bde038fb611">MusicNetworkTestThread::MusicNetworkTestThread</a>(QObject *parent)</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    : QThread(parent)</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="../../dc/d95/class_music_time.html#a3b5223020d6958229fda29c6a940764b">MusicTime::timeSRand</a>();</div>
@@ -122,8 +122,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="../../df/d55/class_music_network_test_thread.html#a18eaf4661a521c6ad4da84314eef5aaf">   44</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../df/d55/class_music_network_test_thread.html#a18eaf4661a521c6ad4da84314eef5aaf">MusicNetworkTestThread::run</a>()</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    QHostInfo info = QHostInfo::fromName(<a class="code" href="../../df/d55/class_music_network_test_thread.html#a66a0a8e751e5bfe8512f886a008841cd">m_currentUrl</a>);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">int</span> rand = qrand()%8 + 1;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">const</span> QHostInfo &amp;info = QHostInfo::fromName(<a class="code" href="../../df/d55/class_music_network_test_thread.html#a66a0a8e751e5bfe8512f886a008841cd">m_currentUrl</a>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> rand = qrand()%8 + 1;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#if defined Q_OS_WIN &amp;&amp; defined MUSIC_GREATER_NEW</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    QThread::msleep(rand*<a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a26a0d68f658e1cfc3a2ae7b9d8c6cf76">MT_S2MS</a>);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#else</span></div>
@@ -142,18 +142,18 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="musicnumberdefine_8h_html_a74dfdb47f40e540db771ae29b8204802"><div class="ttname"><a href="../../dd/d01/musicnumberdefine_8h.html#a74dfdb47f40e540db771ae29b8204802">MT_S2US</a></div><div class="ttdeci">#define MT_S2US</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d01/musicnumberdefine_8h_source.html#l00030">musicnumberdefine.h:30</a></div></div>
 <div class="ttc" id="musicnumberdefine_8h_html"><div class="ttname"><a href="../../dd/d01/musicnumberdefine_8h.html">musicnumberdefine.h</a></div></div>
 <div class="ttc" id="musicobject_8h_html"><div class="ttname"><a href="../../d8/d07/musicobject_8h.html">musicobject.h</a></div></div>
-<div class="ttc" id="class_music_network_test_thread_html_a9e5fd177b26c030b1cdf68abb907d3da"><div class="ttname"><a href="../../df/d55/class_music_network_test_thread.html#a9e5fd177b26c030b1cdf68abb907d3da">MusicNetworkTestThread::MusicNetworkTestThread</a></div><div class="ttdeci">MusicNetworkTestThread(QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d83/musicnetworktestthread_8cpp_source.html#l00011">musicnetworktestthread.cpp:11</a></div></div>
 <div class="ttc" id="musicnumberdefine_8h_html_a26a0d68f658e1cfc3a2ae7b9d8c6cf76"><div class="ttname"><a href="../../dd/d01/musicnumberdefine_8h.html#a26a0d68f658e1cfc3a2ae7b9d8c6cf76">MT_S2MS</a></div><div class="ttdeci">#define MT_S2MS</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d01/musicnumberdefine_8h_source.html#l00028">musicnumberdefine.h:28</a></div></div>
 <div class="ttc" id="class_music_network_test_thread_html_a039701e9e32a512bd4456482f88df020"><div class="ttname"><a href="../../df/d55/class_music_network_test_thread.html#a039701e9e32a512bd4456482f88df020">MusicNetworkTestThread::~MusicNetworkTestThread</a></div><div class="ttdeci">~MusicNetworkTestThread()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d83/musicnetworktestthread_8cpp_source.html#l00018">musicnetworktestthread.cpp:18</a></div></div>
 <div class="ttc" id="class_music_time_html_a3b5223020d6958229fda29c6a940764b"><div class="ttname"><a href="../../dc/d95/class_music_time.html#a3b5223020d6958229fda29c6a940764b">MusicTime::timeSRand</a></div><div class="ttdeci">static void timeSRand()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dac/musictime_8cpp_source.html#l00095">musictime.cpp:95</a></div></div>
 <div class="ttc" id="class_music_network_test_thread_html_a116c5c0f3067f55b7d55387ad4be7e73"><div class="ttname"><a href="../../df/d55/class_music_network_test_thread.html#a116c5c0f3067f55b7d55387ad4be7e73">MusicNetworkTestThread::stopAndQuitThread</a></div><div class="ttdeci">void stopAndQuitThread()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d83/musicnetworktestthread_8cpp_source.html#l00023">musicnetworktestthread.cpp:23</a></div></div>
+<div class="ttc" id="class_music_network_test_thread_html_a9256e46bb133e7bd6a150bde038fb611"><div class="ttname"><a href="../../df/d55/class_music_network_test_thread.html#a9256e46bb133e7bd6a150bde038fb611">MusicNetworkTestThread::MusicNetworkTestThread</a></div><div class="ttdeci">MusicNetworkTestThread(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d83/musicnetworktestthread_8cpp_source.html#l00011">musicnetworktestthread.cpp:11</a></div></div>
 <div class="ttc" id="class_music_network_test_thread_html_a66a0a8e751e5bfe8512f886a008841cd"><div class="ttname"><a href="../../df/d55/class_music_network_test_thread.html#a66a0a8e751e5bfe8512f886a008841cd">MusicNetworkTestThread::m_currentUrl</a></div><div class="ttdeci">QString m_currentUrl</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d11/musicnetworktestthread_8h_source.html#l00048">musicnetworktestthread.h:48</a></div></div>
 <div class="ttc" id="class_music_network_test_thread_html_aff4445d168fa806a47ba4aa12fd387dc"><div class="ttname"><a href="../../df/d55/class_music_network_test_thread.html#aff4445d168fa806a47ba4aa12fd387dc">MusicNetworkTestThread::setUrl</a></div><div class="ttdeci">void setUrl(const QString &amp;url)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d83/musicnetworktestthread_8cpp_source.html#l00033">musicnetworktestthread.cpp:33</a></div></div>
 <div class="ttc" id="class_music_network_test_thread_html_a18eaf4661a521c6ad4da84314eef5aaf"><div class="ttname"><a href="../../df/d55/class_music_network_test_thread.html#a18eaf4661a521c6ad4da84314eef5aaf">MusicNetworkTestThread::run</a></div><div class="ttdeci">virtual void run() override</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d83/musicnetworktestthread_8cpp_source.html#l00044">musicnetworktestthread.cpp:44</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 1 2018 10:20:46 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 11 2019 14:01:48 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.7.0.0</span>
+   &#160;<span id="projectnumber">2.8.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -81,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;QPainter&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="../../da/d41/class_music_color_preview_label.html#acd9c4d0aee277ffb61d72c4180749644">    5</a></span>&#160;<a class="code" href="../../da/d41/class_music_color_preview_label.html#acd9c4d0aee277ffb61d72c4180749644">MusicColorPreviewLabel::MusicColorPreviewLabel</a>(QWidget *parent)</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="../../da/d41/class_music_color_preview_label.html#a22ed963f8e66df653ca6401c959892b0">    5</a></span>&#160;<a class="code" href="../../da/d41/class_music_color_preview_label.html#a22ed963f8e66df653ca6401c959892b0">MusicColorPreviewLabel::MusicColorPreviewLabel</a>(QWidget *parent)</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    : <a class="code" href="../../d1/db0/class_music_clicked_label.html">MusicClickedLabel</a>(parent)</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="../../da/d41/class_music_color_preview_label.html#a4f141a06cc14b8e6d0beed7454688a42">m_linearGradient</a>.setStart(0, 0);</div>
@@ -102,7 +102,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    QPainter painter(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">int</span> h = height() - 4*2;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> h = height() - 4*2;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="../../da/d41/class_music_color_preview_label.html#a4f141a06cc14b8e6d0beed7454688a42">m_linearGradient</a>.setFinalStop(0, height());</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    painter.setFont(font());</div>
@@ -123,7 +123,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../d6/de0/class_music_preview_label.html#aef555e2ac7aa59d932983c4636936ed2">   47</a></span>&#160;<a class="code" href="../../d6/de0/class_music_preview_label.html#aef555e2ac7aa59d932983c4636936ed2">MusicPreviewLabel::MusicPreviewLabel</a>(QWidget *parent)</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../d6/de0/class_music_preview_label.html#a3747d7e6e4926099d8ed60eea0fb1942">   47</a></span>&#160;<a class="code" href="../../d6/de0/class_music_preview_label.html#a3747d7e6e4926099d8ed60eea0fb1942">MusicPreviewLabel::MusicPreviewLabel</a>(QWidget *parent)</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    : QLabel(parent)</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="../../d6/de0/class_music_preview_label.html#a67b519d68868058b60f6f548203d98a9">m_transparent</a> = 255;</div>
@@ -164,8 +164,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    QPainter painter(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">int</span> h = QFontMetrics(<a class="code" href="../../d6/de0/class_music_preview_label.html#ace11f498b20671c16c16285d897be920">m_font</a>).height();</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">int</span> begin = (rect().height() - h)/2;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> h = QFontMetrics(<a class="code" href="../../d6/de0/class_music_preview_label.html#ace11f498b20671c16c16285d897be920">m_font</a>).height();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> begin = (rect().height() - h)/2;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="../../d6/de0/class_music_preview_label.html#af08f71c0e18ac49f79529bbe4a0df3e0">m_linearGradient</a>.setFinalStop(0, h + begin);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="../../d6/de0/class_music_preview_label.html#a6e99b6ccfda06d917623b7e1c7228a78">m_maskLinearGradient</a>.setFinalStop(0, h + begin);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
@@ -187,7 +187,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="struct_music_preview_label_item_html_aa6b2ab60fcb6f11a9fd22e1ad8ce4d0d"><div class="ttname"><a href="../../d9/ded/struct_music_preview_label_item.html#aa6b2ab60fcb6f11a9fd22e1ad8ce4d0d">MusicPreviewLabelItem::m_size</a></div><div class="ttdeci">int m_size</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dd6/musicpreviewlabel_8h_source.html#l00058">musicpreviewlabel.h:58</a></div></div>
 <div class="ttc" id="class_music_preview_label_html_a67b519d68868058b60f6f548203d98a9"><div class="ttname"><a href="../../d6/de0/class_music_preview_label.html#a67b519d68868058b60f6f548203d98a9">MusicPreviewLabel::m_transparent</a></div><div class="ttdeci">int m_transparent</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dd6/musicpreviewlabel_8h_source.html#l00099">musicpreviewlabel.h:99</a></div></div>
 <div class="ttc" id="struct_music_preview_label_item_html_aba92dc11519b42e9e47e5ca2e40f2018"><div class="ttname"><a href="../../d9/ded/struct_music_preview_label_item.html#aba92dc11519b42e9e47e5ca2e40f2018">MusicPreviewLabelItem::m_type</a></div><div class="ttdeci">int m_type</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dd6/musicpreviewlabel_8h_source.html#l00059">musicpreviewlabel.h:59</a></div></div>
-<div class="ttc" id="class_music_color_preview_label_html_acd9c4d0aee277ffb61d72c4180749644"><div class="ttname"><a href="../../da/d41/class_music_color_preview_label.html#acd9c4d0aee277ffb61d72c4180749644">MusicColorPreviewLabel::MusicColorPreviewLabel</a></div><div class="ttdeci">MusicColorPreviewLabel(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d10/musicpreviewlabel_8cpp_source.html#l00005">musicpreviewlabel.cpp:5</a></div></div>
 <div class="ttc" id="musicpreviewlabel_8h_html"><div class="ttname"><a href="../../d3/dd6/musicpreviewlabel_8h.html">musicpreviewlabel.h</a></div></div>
 <div class="ttc" id="class_music_preview_label_html_ace11f498b20671c16c16285d897be920"><div class="ttname"><a href="../../d6/de0/class_music_preview_label.html#ace11f498b20671c16c16285d897be920">MusicPreviewLabel::m_font</a></div><div class="ttdeci">QFont m_font</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dd6/musicpreviewlabel_8h_source.html#l00096">musicpreviewlabel.h:96</a></div></div>
 <div class="ttc" id="class_music_color_preview_label_html_aa32e5dac23b4fa7b4f0e4eddcbef4f5b"><div class="ttname"><a href="../../da/d41/class_music_color_preview_label.html#aa32e5dac23b4fa7b4f0e4eddcbef4f5b">MusicColorPreviewLabel::paintEvent</a></div><div class="ttdeci">virtual void paintEvent(QPaintEvent *event) override</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d10/musicpreviewlabel_8cpp_source.html#l00022">musicpreviewlabel.cpp:22</a></div></div>
@@ -195,16 +194,17 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_color_preview_label_html_a9ef6b2e83e096bd94f6be957974f540d"><div class="ttname"><a href="../../da/d41/class_music_color_preview_label.html#a9ef6b2e83e096bd94f6be957974f540d">MusicColorPreviewLabel::setLinearGradient</a></div><div class="ttdeci">void setLinearGradient(const QList&lt; QColor &gt; &amp;colors)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d10/musicpreviewlabel_8cpp_source.html#l00011">musicpreviewlabel.cpp:11</a></div></div>
 <div class="ttc" id="class_music_preview_label_html_af08f71c0e18ac49f79529bbe4a0df3e0"><div class="ttname"><a href="../../d6/de0/class_music_preview_label.html#af08f71c0e18ac49f79529bbe4a0df3e0">MusicPreviewLabel::m_linearGradient</a></div><div class="ttdeci">QLinearGradient m_linearGradient</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dd6/musicpreviewlabel_8h_source.html#l00097">musicpreviewlabel.h:97</a></div></div>
 <div class="ttc" id="struct_music_preview_label_item_html_a0a92a46ef35777b85b7a810d897034f9"><div class="ttname"><a href="../../d9/ded/struct_music_preview_label_item.html#a0a92a46ef35777b85b7a810d897034f9">MusicPreviewLabelItem::m_family</a></div><div class="ttdeci">QString m_family</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dd6/musicpreviewlabel_8h_source.html#l00057">musicpreviewlabel.h:57</a></div></div>
-<div class="ttc" id="class_music_preview_label_html_aef555e2ac7aa59d932983c4636936ed2"><div class="ttname"><a href="../../d6/de0/class_music_preview_label.html#aef555e2ac7aa59d932983c4636936ed2">MusicPreviewLabel::MusicPreviewLabel</a></div><div class="ttdeci">MusicPreviewLabel(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d10/musicpreviewlabel_8cpp_source.html#l00047">musicpreviewlabel.cpp:47</a></div></div>
 <div class="ttc" id="class_music_clicked_label_html"><div class="ttname"><a href="../../d1/db0/class_music_clicked_label.html">MusicClickedLabel</a></div><div class="ttdoc">The class of the label widget that can click. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d22/musicclickedlabel_8h_source.html#l00028">musicclickedlabel.h:28</a></div></div>
 <div class="ttc" id="class_music_color_preview_label_html_a4f141a06cc14b8e6d0beed7454688a42"><div class="ttname"><a href="../../da/d41/class_music_color_preview_label.html#a4f141a06cc14b8e6d0beed7454688a42">MusicColorPreviewLabel::m_linearGradient</a></div><div class="ttdeci">QLinearGradient m_linearGradient</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dd6/musicpreviewlabel_8h_source.html#l00048">musicpreviewlabel.h:48</a></div></div>
 <div class="ttc" id="class_music_preview_label_html_a87ccf4c967e284149d6700df10792219"><div class="ttname"><a href="../../d6/de0/class_music_preview_label.html#a87ccf4c967e284149d6700df10792219">MusicPreviewLabel::setLinearGradient</a></div><div class="ttdeci">void setLinearGradient(const MusicPreviewLabelItem &amp;item)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d10/musicpreviewlabel_8cpp_source.html#l00055">musicpreviewlabel.cpp:55</a></div></div>
 <div class="ttc" id="struct_music_preview_label_item_html_a606858a292002142cb1d1b9bbac7a661"><div class="ttname"><a href="../../d9/ded/struct_music_preview_label_item.html#a606858a292002142cb1d1b9bbac7a661">MusicPreviewLabelItem::m_bg</a></div><div class="ttdeci">QList&lt; QColor &gt; m_bg</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dd6/musicpreviewlabel_8h_source.html#l00061">musicpreviewlabel.h:61</a></div></div>
+<div class="ttc" id="class_music_preview_label_html_a3747d7e6e4926099d8ed60eea0fb1942"><div class="ttname"><a href="../../d6/de0/class_music_preview_label.html#a3747d7e6e4926099d8ed60eea0fb1942">MusicPreviewLabel::MusicPreviewLabel</a></div><div class="ttdeci">MusicPreviewLabel(QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d10/musicpreviewlabel_8cpp_source.html#l00047">musicpreviewlabel.cpp:47</a></div></div>
 <div class="ttc" id="class_music_preview_label_html_a157790a21e71caf998d39472f93400fc"><div class="ttname"><a href="../../d6/de0/class_music_preview_label.html#a157790a21e71caf998d39472f93400fc">MusicPreviewLabel::paintEvent</a></div><div class="ttdeci">virtual void paintEvent(QPaintEvent *event) override</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d10/musicpreviewlabel_8cpp_source.html#l00084">musicpreviewlabel.cpp:84</a></div></div>
+<div class="ttc" id="class_music_color_preview_label_html_a22ed963f8e66df653ca6401c959892b0"><div class="ttname"><a href="../../da/d41/class_music_color_preview_label.html#a22ed963f8e66df653ca6401c959892b0">MusicColorPreviewLabel::MusicColorPreviewLabel</a></div><div class="ttdeci">MusicColorPreviewLabel(QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d10/musicpreviewlabel_8cpp_source.html#l00005">musicpreviewlabel.cpp:5</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 1 2018 10:20:49 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 11 2019 14:01:54 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.7.0.0</span>
+   &#160;<span id="projectnumber">2.8.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -82,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">/* =================================================</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of the TTK Music Player project</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2018 Greedysky Studio</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2019 Greedysky Studio</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
@@ -133,7 +133,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d5/db1/class_music_function_table_widget.html">MusicFunctionTableWidget</a>)</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d5/db1/class_music_function_table_widget.html">MusicFunctionTableWidget</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d5/db1/class_music_function_table_widget.html">MusicFunctionTableWidget</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> addFunctionItems(<span class="keywordtype">int</span> index, <span class="keyword">const</span> MusicFunctionItems &amp;items);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
@@ -161,7 +161,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="../../d0/d64/class_music_setting_widget.html#a79fe09f3da668f00f5e194f2c54a2856acf88514185cfd16439d4a6da666d9035">  105</a></span>&#160;        Desktop </div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    };</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d0/d64/class_music_setting_widget.html">MusicSettingWidget</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d0/d64/class_music_setting_widget.html">MusicSettingWidget</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d0/d64/class_music_setting_widget.html">MusicSettingWidget</a>();</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
@@ -220,9 +220,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordtype">void</span> initSoundEffectWidget();</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keywordtype">void</span> initAudioSettingWidget();</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keywordtype">void</span> initNetworkWidget();</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordtype">void</span> lcrColorValue(<a class="code" href="../../dd/d8a/namespace_program.html#ae207d83c4779d7c58e7d3c0dc161d487">Type</a> <a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>, <span class="keyword">const</span> QString &amp;type, QLabel *obj);</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordtype">void</span> lrcColorByDefault(<a class="code" href="../../dd/d8a/namespace_program.html#ae207d83c4779d7c58e7d3c0dc161d487">Type</a> <a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>, <span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keywordtype">void</span> lrcTransparentValue(<a class="code" href="../../dd/d8a/namespace_program.html#ae207d83c4779d7c58e7d3c0dc161d487">Type</a> <a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>, <span class="keywordtype">int</span> value) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordtype">void</span> lcrColorValue(Type <a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>, <span class="keyword">const</span> QString &amp;type, QLabel *obj);</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordtype">void</span> lrcColorByDefault(Type <a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>, <span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keywordtype">void</span> lrcTransparentValue(Type <a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>, <span class="keywordtype">int</span> value) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keywordtype">bool</span> applyNetworkProxy();</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keywordtype">bool</span> setNetworkProxyByType(<span class="keywordtype">int</span> type);</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
@@ -247,21 +247,20 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="musiclrcfromkrc_8cpp_html_ad706e4249347c1cd1381934a5691137d"><div class="ttname"><a href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a></div><div class="ttdeci">const wchar_t key[]</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d45/musiclrcfromkrc_8cpp_source.html#l00017">musiclrcfromkrc.cpp:17</a></div></div>
 <div class="ttc" id="class_music_function_table_widget_html"><div class="ttname"><a href="../../d5/db1/class_music_function_table_widget.html">MusicFunctionTableWidget</a></div><div class="ttdoc">The class of the list table widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00057">musicsettingwidget.h:57</a></div></div>
 <div class="ttc" id="class_music_setting_widget_html_aa3ef611863430f82063ebcc08938bc98"><div class="ttname"><a href="../../d0/d64/class_music_setting_widget.html#aa3ef611863430f82063ebcc08938bc98">MusicSettingWidget::m_DlrcSelectedFg</a></div><div class="ttdeci">QList&lt; QColor &gt; m_DlrcSelectedFg</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00316">musicsettingwidget.h:316</a></div></div>
-<div class="ttc" id="musicglobal_8h_html_a26874f3399a60d18f8f82ce4a546e0c9"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a26874f3399a60d18f8f82ce4a546e0c9">TTK_DECLARE_LISTS</a></div><div class="ttdeci">#define TTK_DECLARE_LISTS(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00131">musicglobal.h:131</a></div></div>
+<div class="ttc" id="musicglobal_8h_html_a26874f3399a60d18f8f82ce4a546e0c9"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a26874f3399a60d18f8f82ce4a546e0c9">TTK_DECLARE_LISTS</a></div><div class="ttdeci">#define TTK_DECLARE_LISTS(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00167">musicglobal.h:167</a></div></div>
 <div class="ttc" id="class_music_setting_widget_html_a79fe09f3da668f00f5e194f2c54a2856"><div class="ttname"><a href="../../d0/d64/class_music_setting_widget.html#a79fe09f3da668f00f5e194f2c54a2856">MusicSettingWidget::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00102">musicsettingwidget.h:102</a></div></div>
 <div class="ttc" id="class_music_setting_widget_html_a79fe09f3da668f00f5e194f2c54a2856aae0bbf3df205e0ffc93799d1fcce539a"><div class="ttname"><a href="../../d0/d64/class_music_setting_widget.html#a79fe09f3da668f00f5e194f2c54a2856aae0bbf3df205e0ffc93799d1fcce539a">MusicSettingWidget::Inline</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00104">musicsettingwidget.h:104</a></div></div>
 <div class="ttc" id="class_music_setting_widget_html"><div class="ttname"><a href="../../d0/d64/class_music_setting_widget.html">MusicSettingWidget</a></div><div class="ttdoc">The class of the setting parameters widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00097">musicsettingwidget.h:97</a></div></div>
 <div class="ttc" id="class_music_abstract_move_dialog_html"><div class="ttname"><a href="../../da/db2/class_music_abstract_move_dialog.html">MusicAbstractMoveDialog</a></div><div class="ttdoc">The class of the moving dialog base. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d49/musicabstractmovedialog_8h_source.html#l00029">musicabstractmovedialog.h:29</a></div></div>
-<div class="ttc" id="namespace_program_html_ae207d83c4779d7c58e7d3c0dc161d487"><div class="ttname"><a href="../../dd/d8a/namespace_program.html#ae207d83c4779d7c58e7d3c0dc161d487">Program::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dff/musicdjradioprogramthread_8h_source.html#l00029">musicdjradioprogramthread.h:29</a></div></div>
 <div class="ttc" id="musicsettingmanager_8h_html"><div class="ttname"><a href="../../dd/d2f/musicsettingmanager_8h.html">musicsettingmanager.h</a></div></div>
 <div class="ttc" id="struct_music_function_item_html_ad10261e393624a792ce3b5269500f475"><div class="ttname"><a href="../../d3/d03/struct_music_function_item.html#ad10261e393624a792ce3b5269500f475">MusicFunctionItem::MusicFunctionItem</a></div><div class="ttdeci">MusicFunctionItem()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00038">musicsettingwidget.h:38</a></div></div>
-<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00113">musicglobal.h:113</a></div></div>
+<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00149">musicglobal.h:149</a></div></div>
 <div class="ttc" id="struct_music_function_item_html_a4386ded71302734647b2cbf9f743200e"><div class="ttname"><a href="../../d3/d03/struct_music_function_item.html#a4386ded71302734647b2cbf9f743200e">MusicFunctionItem::m_icon</a></div><div class="ttdeci">QString m_icon</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00049">musicsettingwidget.h:49</a></div></div>
 <div class="ttc" id="musicsettingwidget_8h_html_af26396414bf5bce44ed1fdaacbb34e89"><div class="ttname"><a href="../../da/d1c/musicsettingwidget_8h.html#af26396414bf5bce44ed1fdaacbb34e89">MusicFunctionItem</a></div><div class="ttdeci">struct MUSIC_WIDGET_EXPORT MusicFunctionItem MusicFunctionItem</div><div class="ttdoc">The class of the function tool item. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 1 2018 10:20:49 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 11 2019 14:01:57 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
