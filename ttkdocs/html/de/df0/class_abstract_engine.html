@@ -24,10 +24,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.8.0.0</span>
+   &#160;<span id="projectnumber">2.9.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -74,6 +74,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
@@ -118,10 +119,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8ffc889ed8d2285f7f460f4370e8ad99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d8c9387614f3f688b2cc98bc399b0d9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/class_abstract_engine.html#a3d8c9387614f3f688b2cc98bc399b0d9">setMuted</a> (bool muted)=0</td></tr>
 <tr class="separator:a3d8c9387614f3f688b2cc98bc399b0d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fbb724d03698c3e3f9cba1451010264"><td class="memItemLeft" align="right" valign="top">QMutex *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/class_abstract_engine.html#a2fbb724d03698c3e3f9cba1451010264">mutex</a> ()</td></tr>
-<tr class="separator:a2fbb724d03698c3e3f9cba1451010264"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1955355e20b9f1dc56be4cefb1eeaf5b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/class_abstract_engine.html#a1955355e20b9f1dc56be4cefb1eeaf5b">AbstractEngine</a> (QObject *parent=0)</td></tr>
-<tr class="separator:a1955355e20b9f1dc56be4cefb1eeaf5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cae4fd452a84d3b98f37ff699683107"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/class_abstract_engine.html#a8cae4fd452a84d3b98f37ff699683107">AbstractEngine</a> (QObject *parent=nullptr)</td></tr>
+<tr class="separator:a8cae4fd452a84d3b98f37ff699683107"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66d2f0118ed09bb634a8156ce610f443"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/class_abstract_engine.html#a66d2f0118ed09bb634a8156ce610f443">~AbstractEngine</a> ()</td></tr>
 <tr class="separator:a66d2f0118ed09bb634a8156ce610f443"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f2bdf8da8b5dea3808b6196fa2259c8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/class_abstract_engine.html#a1f2bdf8da8b5dea3808b6196fa2259c8">enqueue</a> (<a class="el" href="../../dc/d3d/class_input_source.html">InputSource</a> *source)=0</td></tr>
@@ -136,8 +135,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8ffc889ed8d2285f7f460f4370e8ad99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d8c9387614f3f688b2cc98bc399b0d9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/class_abstract_engine.html#a3d8c9387614f3f688b2cc98bc399b0d9">setMuted</a> (bool muted)=0</td></tr>
 <tr class="separator:a3d8c9387614f3f688b2cc98bc399b0d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fbb724d03698c3e3f9cba1451010264"><td class="memItemLeft" align="right" valign="top">QMutex *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/class_abstract_engine.html#a2fbb724d03698c3e3f9cba1451010264">mutex</a> ()</td></tr>
-<tr class="separator:a2fbb724d03698c3e3f9cba1451010264"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -153,12 +150,14 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ac99cdf5d0f8074b69d419794fb4c15b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a305cd98b2d5c0923f4410614e21e5ee2"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/class_abstract_engine.html#a305cd98b2d5c0923f4410614e21e5ee2">isEnabled</a> (<a class="el" href="../../dd/d27/class_engine_factory.html">EngineFactory</a> *factory)</td></tr>
 <tr class="separator:a305cd98b2d5c0923f4410614e21e5ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a200cd014cf017feb037bf2a41dcf1050"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/class_abstract_engine.html#a200cd014cf017feb037bf2a41dcf1050">isEnabled</a> (<a class="el" href="../../de/df0/class_abstract_engine.html">AbstractEngine</a> *engine)</td></tr>
+<tr class="separator:a200cd014cf017feb037bf2a41dcf1050"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8969734e6f36e138e4cdec5fb3486cee"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/class_abstract_engine.html#a8969734e6f36e138e4cdec5fb3486cee">file</a> (<a class="el" href="../../dd/d27/class_engine_factory.html">EngineFactory</a> *factory)</td></tr>
 <tr class="separator:a8969734e6f36e138e4cdec5fb3486cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5cca76c6d68957d5312103e8203448e"><td class="memItemLeft" align="right" valign="top">static QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/class_abstract_engine.html#af5cca76c6d68957d5312103e8203448e">protocols</a> ()</td></tr>
 <tr class="separator:af5cca76c6d68957d5312103e8203448e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bde4ad37d5960c3f6f3e29c45d0a61c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../de/df0/class_abstract_engine.html">AbstractEngine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/class_abstract_engine.html#a4bde4ad37d5960c3f6f3e29c45d0a61c">create</a> (<a class="el" href="../../dc/d3d/class_input_source.html">InputSource</a> *s, QObject *parent=0)</td></tr>
-<tr class="separator:a4bde4ad37d5960c3f6f3e29c45d0a61c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b06bdc088478dbac1ae20b64c9f1fdb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../de/df0/class_abstract_engine.html">AbstractEngine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/class_abstract_engine.html#a9b06bdc088478dbac1ae20b64c9f1fdb">create</a> (<a class="el" href="../../dc/d3d/class_input_source.html">InputSource</a> *s, QObject *parent=nullptr)</td></tr>
+<tr class="separator:a9b06bdc088478dbac1ae20b64c9f1fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1e672f82fb0f365822d69c81ead704a"><td class="memItemLeft" align="right" valign="top">static QList&lt; <a class="el" href="../../dd/d27/class_engine_factory.html">EngineFactory</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/class_abstract_engine.html#ad1e672f82fb0f365822d69c81ead704a">factories</a> ()</td></tr>
 <tr class="separator:ad1e672f82fb0f365822d69c81ead704a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a417d13e12a27ab5ad3b662ae53fa41f9"><td class="memItemLeft" align="right" valign="top">static QList&lt; <a class="el" href="../../dd/d27/class_engine_factory.html">EngineFactory</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/class_abstract_engine.html#a417d13e12a27ab5ad3b662ae53fa41f9">enabledFactories</a> ()</td></tr>
@@ -169,10 +168,19 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ac99cdf5d0f8074b69d419794fb4c15b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a305cd98b2d5c0923f4410614e21e5ee2"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/class_abstract_engine.html#a305cd98b2d5c0923f4410614e21e5ee2">isEnabled</a> (<a class="el" href="../../dd/d27/class_engine_factory.html">EngineFactory</a> *factory)</td></tr>
 <tr class="separator:a305cd98b2d5c0923f4410614e21e5ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a200cd014cf017feb037bf2a41dcf1050"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/class_abstract_engine.html#a200cd014cf017feb037bf2a41dcf1050">isEnabled</a> (<a class="el" href="../../de/df0/class_abstract_engine.html">AbstractEngine</a> *engine)</td></tr>
+<tr class="separator:a200cd014cf017feb037bf2a41dcf1050"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8969734e6f36e138e4cdec5fb3486cee"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/class_abstract_engine.html#a8969734e6f36e138e4cdec5fb3486cee">file</a> (<a class="el" href="../../dd/d27/class_engine_factory.html">EngineFactory</a> *factory)</td></tr>
 <tr class="separator:a8969734e6f36e138e4cdec5fb3486cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5cca76c6d68957d5312103e8203448e"><td class="memItemLeft" align="right" valign="top">static QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/class_abstract_engine.html#af5cca76c6d68957d5312103e8203448e">protocols</a> ()</td></tr>
 <tr class="separator:af5cca76c6d68957d5312103e8203448e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a2fbb724d03698c3e3f9cba1451010264"><td class="memItemLeft" align="right" valign="top">QMutex *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/class_abstract_engine.html#a2fbb724d03698c3e3f9cba1451010264">mutex</a> ()</td></tr>
+<tr class="separator:a2fbb724d03698c3e3f9cba1451010264"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fbb724d03698c3e3f9cba1451010264"><td class="memItemLeft" align="right" valign="top">QMutex *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/class_abstract_engine.html#a2fbb724d03698c3e3f9cba1451010264">mutex</a> ()</td></tr>
+<tr class="separator:a2fbb724d03698c3e3f9cba1451010264"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
@@ -245,7 +253,7 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1955355e20b9f1dc56be4cefb1eeaf5b"></a>
+<a class="anchor" id="a8cae4fd452a84d3b98f37ff699683107"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -253,7 +261,7 @@ Static Private Attributes</h2></td></tr>
           <td class="memname">AbstractEngine::AbstractEngine </td>
           <td>(</td>
           <td class="paramtype">QObject *&#160;</td>
-          <td class="paramname"><em>parent</em> = <code>0</code></td><td>)</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -333,7 +341,7 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4bde4ad37d5960c3f6f3e29c45d0a61c"></a>
+<a class="anchor" id="a9b06bdc088478dbac1ae20b64c9f1fdb"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -350,7 +358,7 @@ Static Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">QObject *&#160;</td>
-          <td class="paramname"><em>parent</em> = <code>0</code>&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -445,7 +453,7 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Prepares decoder for usage. Subclass should reimplement this function. </p>
 
-<p>Implemented in <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#ae9d9eb36ec030bef80f08b70bd807132">QmmpAudioEngine</a>, and <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#ae9d9eb36ec030bef80f08b70bd807132">QmmpAudioEngine</a>.</p>
+<p>Implemented in <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a8010b11a009ae0ca558e8754bbe52f76">QmmpAudioEngine</a>, and <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#ae9d9eb36ec030bef80f08b70bd807132">QmmpAudioEngine</a>.</p>
 
 </div>
 </div>
@@ -472,7 +480,7 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Prepares decoder for usage. Subclass should reimplement this function. </p>
 
-<p>Implemented in <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#ae9d9eb36ec030bef80f08b70bd807132">QmmpAudioEngine</a>, and <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#ae9d9eb36ec030bef80f08b70bd807132">QmmpAudioEngine</a>.</p>
+<p>Implemented in <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a8010b11a009ae0ca558e8754bbe52f76">QmmpAudioEngine</a>, and <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#ae9d9eb36ec030bef80f08b70bd807132">QmmpAudioEngine</a>.</p>
 
 </div>
 </div>
@@ -605,7 +613,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns <a class="el" href="../../dd/d27/class_engine_factory.html" title="Engine plugin interface. ">EngineFactory</a> pointer which supports file <b>path</b> or 0 if file <b>path</b> is unsupported </p>
+<p>Returns <a class="el" href="../../dd/d27/class_engine_factory.html" title="Engine plugin interface. ">EngineFactory</a> pointer which supports file <b>path</b> or 0 if file <b>path</b> is unsupported. </p>
 
 </div>
 </div>
@@ -630,7 +638,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns <a class="el" href="../../dd/d27/class_engine_factory.html" title="Engine plugin interface. ">EngineFactory</a> pointer which supports file <b>path</b> or 0 if file <b>path</b> is unsupported </p>
+<p>Returns <a class="el" href="../../dd/d27/class_engine_factory.html" title="Engine plugin interface. ">EngineFactory</a> pointer which supports file <b>path</b> or 0 if file <b>path</b> is unsupported. </p>
 
 </div>
 </div>
@@ -655,7 +663,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns <b>true</b> if engine is enabled, otherwise returns <b>false</b> </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Returns <b>true</b> if engine is enabled, otherwise returns <b>false</b> This function uses <b>QObject::objectName()</b> function. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">factory</td><td>Engine plugin factory. </td></tr>
   </table>
@@ -685,9 +693,69 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns <b>true</b> if engine is enabled, otherwise returns <b>false</b> </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Returns <b>true</b> if engine is enabled, otherwise returns <b>false</b> This function uses <b>QObject::objectName()</b> function. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">factory</td><td>Engine plugin factory. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a200cd014cf017feb037bf2a41dcf1050"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool AbstractEngine::isEnabled </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df0/class_abstract_engine.html">AbstractEngine</a> *&#160;</td>
+          <td class="paramname"><em>engine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns <b>true</b> if engine is enabled, otherwise returns <b>false</b> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">engine</td><td>Engine object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a200cd014cf017feb037bf2a41dcf1050"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool AbstractEngine::isEnabled </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/df0/class_abstract_engine.html">AbstractEngine</a> *&#160;</td>
+          <td class="paramname"><em>engine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns <b>true</b> if engine is enabled, otherwise returns <b>false</b> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">engine</td><td>Engine object. </td></tr>
   </table>
   </dd>
 </dl>
@@ -743,6 +811,9 @@ Static Private Attributes</h2></td></tr>
 <a class="anchor" id="a2fbb724d03698c3e3f9cba1451010264"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">QMutex* AbstractEngine::mutex </td>
@@ -751,6 +822,11 @@ Static Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Returns mutex pointer. </p>
 
@@ -759,6 +835,9 @@ Static Private Attributes</h2></td></tr>
 <a class="anchor" id="a2fbb724d03698c3e3f9cba1451010264"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">QMutex* AbstractEngine::mutex </td>
@@ -767,6 +846,11 @@ Static Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Returns mutex pointer. </p>
 
@@ -794,7 +878,7 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Pauses/resumes playback </p>
 
-<p>Implemented in <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a4743a5a1b1f0a8c4666c7b694898d800">QmmpAudioEngine</a>, and <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a4743a5a1b1f0a8c4666c7b694898d800">QmmpAudioEngine</a>.</p>
+<p>Implemented in <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#ae7eaf548cedbd31d34e8c543701d106d">QmmpAudioEngine</a>, and <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a4743a5a1b1f0a8c4666c7b694898d800">QmmpAudioEngine</a>.</p>
 
 </div>
 </div>
@@ -820,7 +904,7 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Pauses/resumes playback </p>
 
-<p>Implemented in <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a4743a5a1b1f0a8c4666c7b694898d800">QmmpAudioEngine</a>, and <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a4743a5a1b1f0a8c4666c7b694898d800">QmmpAudioEngine</a>.</p>
+<p>Implemented in <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#ae7eaf548cedbd31d34e8c543701d106d">QmmpAudioEngine</a>, and <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a4743a5a1b1f0a8c4666c7b694898d800">QmmpAudioEngine</a>.</p>
 
 </div>
 </div>
@@ -846,7 +930,7 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Starts playback. Returns <b>true</b> if playback has been started successful, otherwise returns <b>false</b>. </p>
 
-<p>Implemented in <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a421665e754492541cacef5667fe72f53">QmmpAudioEngine</a>, and <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a421665e754492541cacef5667fe72f53">QmmpAudioEngine</a>.</p>
+<p>Implemented in <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a749a8a604c407bb8e908eb2f456c637e">QmmpAudioEngine</a>, and <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a421665e754492541cacef5667fe72f53">QmmpAudioEngine</a>.</p>
 
 </div>
 </div>
@@ -872,7 +956,7 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Starts playback. Returns <b>true</b> if playback has been started successful, otherwise returns <b>false</b>. </p>
 
-<p>Implemented in <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a421665e754492541cacef5667fe72f53">QmmpAudioEngine</a>, and <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a421665e754492541cacef5667fe72f53">QmmpAudioEngine</a>.</p>
+<p>Implemented in <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a749a8a604c407bb8e908eb2f456c637e">QmmpAudioEngine</a>, and <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a421665e754492541cacef5667fe72f53">QmmpAudioEngine</a>.</p>
 
 </div>
 </div>
@@ -947,7 +1031,7 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Requests a seek to the time <b>time</b> indicated, specified in milliseconds. </p>
 
-<p>Implemented in <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a08e633014675dae2c41da0715f73453c">QmmpAudioEngine</a>, and <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a08e633014675dae2c41da0715f73453c">QmmpAudioEngine</a>.</p>
+<p>Implemented in <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#ab0b305afc6985eb823a19af19dffc6ef">QmmpAudioEngine</a>, and <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a08e633014675dae2c41da0715f73453c">QmmpAudioEngine</a>.</p>
 
 </div>
 </div>
@@ -974,7 +1058,7 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Requests a seek to the time <b>time</b> indicated, specified in milliseconds. </p>
 
-<p>Implemented in <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a08e633014675dae2c41da0715f73453c">QmmpAudioEngine</a>, and <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a08e633014675dae2c41da0715f73453c">QmmpAudioEngine</a>.</p>
+<p>Implemented in <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#ab0b305afc6985eb823a19af19dffc6ef">QmmpAudioEngine</a>, and <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a08e633014675dae2c41da0715f73453c">QmmpAudioEngine</a>.</p>
 
 </div>
 </div>
@@ -1088,7 +1172,7 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a66c640a7765e98be9267ae98070fc808">QmmpAudioEngine</a>, and <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a66c640a7765e98be9267ae98070fc808">QmmpAudioEngine</a>.</p>
+<p>Implemented in <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a413c6dfeffcc9b8d0ad3491fc8b62acc">QmmpAudioEngine</a>, and <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a66c640a7765e98be9267ae98070fc808">QmmpAudioEngine</a>.</p>
 
 </div>
 </div>
@@ -1120,7 +1204,7 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a66c640a7765e98be9267ae98070fc808">QmmpAudioEngine</a>, and <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a66c640a7765e98be9267ae98070fc808">QmmpAudioEngine</a>.</p>
+<p>Implemented in <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a413c6dfeffcc9b8d0ad3491fc8b62acc">QmmpAudioEngine</a>, and <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a66c640a7765e98be9267ae98070fc808">QmmpAudioEngine</a>.</p>
 
 </div>
 </div>
@@ -1146,7 +1230,7 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Requests playback to stop </p>
 
-<p>Implemented in <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a3f90160cf841313c9de99adb454e4ca7">QmmpAudioEngine</a>, and <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a3f90160cf841313c9de99adb454e4ca7">QmmpAudioEngine</a>.</p>
+<p>Implemented in <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#afdc3f5d123993b72394d9cf571bccaa2">QmmpAudioEngine</a>, and <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a3f90160cf841313c9de99adb454e4ca7">QmmpAudioEngine</a>.</p>
 
 </div>
 </div>
@@ -1172,7 +1256,7 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Requests playback to stop </p>
 
-<p>Implemented in <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a3f90160cf841313c9de99adb454e4ca7">QmmpAudioEngine</a>, and <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a3f90160cf841313c9de99adb454e4ca7">QmmpAudioEngine</a>.</p>
+<p>Implemented in <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#afdc3f5d123993b72394d9cf571bccaa2">QmmpAudioEngine</a>, and <a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a3f90160cf841313c9de99adb454e4ca7">QmmpAudioEngine</a>.</p>
 
 </div>
 </div>
@@ -1195,7 +1279,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d99/_qt4_2abstractengine_8h_source.html#l00126">126</a> of file <a class="el" href="../../db/d99/_qt4_2abstractengine_8h_source.html">abstractengine.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d99/_qt4_2abstractengine_8h_source.html#l00134">134</a> of file <a class="el" href="../../db/d99/_qt4_2abstractengine_8h_source.html">abstractengine.h</a>.</p>
 
 </div>
 </div>
@@ -1217,7 +1301,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d99/_qt4_2abstractengine_8h_source.html#l00127">127</a> of file <a class="el" href="../../db/d99/_qt4_2abstractengine_8h_source.html">abstractengine.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d99/_qt4_2abstractengine_8h_source.html#l00135">135</a> of file <a class="el" href="../../db/d99/_qt4_2abstractengine_8h_source.html">abstractengine.h</a>.</p>
 
 </div>
 </div>
@@ -1239,7 +1323,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d99/_qt4_2abstractengine_8h_source.html#l00124">124</a> of file <a class="el" href="../../db/d99/_qt4_2abstractengine_8h_source.html">abstractengine.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d99/_qt4_2abstractengine_8h_source.html#l00132">132</a> of file <a class="el" href="../../db/d99/_qt4_2abstractengine_8h_source.html">abstractengine.h</a>.</p>
 
 </div>
 </div>
@@ -1249,7 +1333,7 @@ Static Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 11 2019 14:02:19 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 29 2019 16:09:13 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

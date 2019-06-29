@@ -24,10 +24,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.8.0.0</span>
+   &#160;<span id="projectnumber">2.9.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -455,7 +455,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;      <span class="keywordflow">default</span>:</div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        <span class="keywordflow">if</span> ( unicode &gt; 0x1F &amp;&amp; unicode &lt; 128 ) {</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;          result.append(<a class="code" href="../../da/d4e/musicglobal_8h.html#a21888f51ce9cbd49f45fc9c3868d47b8">MStatic_cast</a>(<span class="keywordtype">char</span>, unicode));</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;          result.append(<a class="code" href="../../df/d7f/ttkglobal_8h.html#a21888f51ce9cbd49f45fc9c3868d47b8">MStatic_cast</a>(<span class="keywordtype">char</span>, unicode));</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;          <span class="keywordtype">char</span> escaped[7];</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;          qsnprintf(escaped, <span class="keyword">sizeof</span>(escaped)/<span class="keyword">sizeof</span>(<span class="keywordtype">char</span>), <span class="stringliteral">&quot;\\u%04x&quot;</span>, unicode);</div>
@@ -569,10 +569,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_q_json_1_1_serializer_html"><div class="ttname"><a href="../../d8/d59/class_q_json_1_1_serializer.html">QJson::Serializer</a></div><div class="ttdoc">Main class used to convert QVariant objects to JSON data. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d5f/serializer_8h_source.html#l00152">serializer.h:152</a></div></div>
 <div class="ttc" id="class_serializer_1_1_serializer_private_html_aed990e3ca06cde5cbb45f22e707bae95"><div class="ttname"><a href="../../d5/de4/class_serializer_1_1_serializer_private.html#aed990e3ca06cde5cbb45f22e707bae95">QJson::Serializer::SerializerPrivate::errorMessage</a></div><div class="ttdeci">QString errorMessage</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d74/serializer_8cpp_source.html#l00057">serializer.cpp:57</a></div></div>
 <div class="ttc" id="namespace_q_json_html_aa0f1b9f563c1f7c12564fce3aae93738"><div class="ttname"><a href="../../d3/d7b/namespace_q_json.html#aa0f1b9f563c1f7c12564fce3aae93738">QJson::IndentMode</a></div><div class="ttdeci">IndentMode</div><div class="ttdoc">How the indentation should work. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d5f/serializer_8h_source.html#l00104">serializer.h:104</a></div></div>
+<div class="ttc" id="ttkglobal_8h_html_a21888f51ce9cbd49f45fc9c3868d47b8"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#a21888f51ce9cbd49f45fc9c3868d47b8">MStatic_cast</a></div><div class="ttdeci">#define MStatic_cast(x, y)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00075">ttkglobal.h:75</a></div></div>
 <div class="ttc" id="class_q_json_1_1_serializer_html_a57046237d41e2e5d07b9a8185979a256"><div class="ttname"><a href="../../d8/d59/class_q_json_1_1_serializer.html#a57046237d41e2e5d07b9a8185979a256">QJson::Serializer::setIndentMode</a></div><div class="ttdeci">void setIndentMode(IndentMode mode=QJson::IndentNone)</div><div class="ttdoc">set output indentation mode as defined in QJson::IndentMode </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d74/serializer_8cpp_source.html#l00460">serializer.cpp:460</a></div></div>
 <div class="ttc" id="ttkprivate_8h_html_a16e697408c6ce0f129db3559d3a79514"><div class="ttname"><a href="../../dd/d24/ttkprivate_8h.html#a16e697408c6ce0f129db3559d3a79514">TTK_INIT_PRIVATE</a></div><div class="ttdeci">#define TTK_INIT_PRIVATE</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00030">ttkprivate.h:30</a></div></div>
 <div class="ttc" id="namespace_q_json_html"><div class="ttname"><a href="../../d3/d7b/namespace_q_json.html">QJson</a></div><div class="ttdoc">Namespace used by QJson. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d36/parser_8h_source.html#l00035">parser.h:35</a></div></div>
-<div class="ttc" id="musicglobal_8h_html_a21888f51ce9cbd49f45fc9c3868d47b8"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a21888f51ce9cbd49f45fc9c3868d47b8">MStatic_cast</a></div><div class="ttdeci">#define MStatic_cast(x, y)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00076">musicglobal.h:76</a></div></div>
 <div class="ttc" id="class_serializer_1_1_serializer_private_html_ac96c4c19eb76c9f58096fadbf5679d97"><div class="ttname"><a href="../../d5/de4/class_serializer_1_1_serializer_private.html#ac96c4c19eb76c9f58096fadbf5679d97">QJson::Serializer::SerializerPrivate::serialize</a></div><div class="ttdeci">QByteArray serialize(const QVariant &amp;v, bool *ok, int indentLevel=0)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d74/serializer_8cpp_source.html#l00090">serializer.cpp:90</a></div></div>
 <div class="ttc" id="class_serializer_1_1_serializer_private_html_a4baf39a2230bd42cb2134712c24e41f9"><div class="ttname"><a href="../../d5/de4/class_serializer_1_1_serializer_private.html#a4baf39a2230bd42cb2134712c24e41f9">QJson::Serializer::SerializerPrivate::join</a></div><div class="ttdeci">static QByteArray join(const QList&lt; QByteArray &gt; &amp;list, const QByteArray &amp;sep)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d74/serializer_8cpp_source.html#l00070">serializer.cpp:70</a></div></div>
 <div class="ttc" id="namespace_q_json_html_aa0f1b9f563c1f7c12564fce3aae93738aaf423d61e313052c085906145de30db7"><div class="ttname"><a href="../../d3/d7b/namespace_q_json.html#aa0f1b9f563c1f7c12564fce3aae93738aaf423d61e313052c085906145de30db7">QJson::IndentMedium</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d5f/serializer_8h_source.html#l00108">serializer.h:108</a></div></div>
@@ -592,7 +592,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 11 2019 14:01:59 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 29 2019 16:08:20 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

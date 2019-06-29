@@ -24,10 +24,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.8.0.0</span>
+   &#160;<span id="projectnumber">2.9.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -132,7 +132,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="../../da/d80/class_music_dispatch_manager.html">   59</a></span>&#160;<span class="keyword">class </span>MUSIC_CORE_EXPORT <a class="code" href="../../da/d80/class_music_dispatch_manager.html">MusicDispatchManager</a> : <span class="keyword">public</span> QObject</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../da/d80/class_music_dispatch_manager.html">MusicDispatchManager</a>)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../da/d80/class_music_dispatch_manager.html">MusicDispatchManager</a>)</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> dispatch(<span class="keywordtype">int</span> type);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> dispatch(<span class="keywordtype">int</span> type, <span class="keyword">const</span> QVariant &amp;arg1);</div>
@@ -162,6 +162,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif // MUSICDISPATCHMANAGER_H</span></div>
 <div class="ttc" id="class_music_dispatch_manager_html"><div class="ttname"><a href="../../da/d80/class_music_dispatch_manager.html">MusicDispatchManager</a></div><div class="ttdoc">The class of the functions dispatch manager. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d08/musicdispatchmanager_8h_source.html#l00059">musicdispatchmanager.h:59</a></div></div>
 <div class="ttc" id="class_music_dispatch_manager_html_a18e88b7242efb4df453ef1b2b319f857"><div class="ttname"><a href="../../da/d80/class_music_dispatch_manager.html#a18e88b7242efb4df453ef1b2b319f857">MusicDispatchManager::m_mutex</a></div><div class="ttdeci">QMutex m_mutex</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d08/musicdispatchmanager_8h_source.html#l00090">musicdispatchmanager.h:90</a></div></div>
+<div class="ttc" id="ttkglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00143">ttkglobal.h:143</a></div></div>
 <div class="ttc" id="struct_music_dispatch_item_html_a1d700f8281f5ebafdf8a12d29be36c8c"><div class="ttname"><a href="../../dc/dde/struct_music_dispatch_item.html#a1d700f8281f5ebafdf8a12d29be36c8c">MusicDispatchItem::m_type</a></div><div class="ttdeci">int m_type</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d08/musicdispatchmanager_8h_source.html#l00034">musicdispatchmanager.h:34</a></div></div>
 <div class="ttc" id="musicsingleton_8h_html"><div class="ttname"><a href="../../d7/d5f/musicsingleton_8h.html">musicsingleton.h</a></div></div>
 <div class="ttc" id="class_music_dispatch_manager_html_af18353f00f983daab821f216a2aa1eff"><div class="ttname"><a href="../../da/d80/class_music_dispatch_manager.html#af18353f00f983daab821f216a2aa1eff">MusicDispatchManager::m_observer</a></div><div class="ttdeci">QList&lt; MusicDispatchItem * &gt; m_observer</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d08/musicdispatchmanager_8h_source.html#l00092">musicdispatchmanager.h:92</a></div></div>
@@ -170,7 +171,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="struct_music_dispatch_item_html_a20defed61af061401805f5548869752e"><div class="ttname"><a href="../../dc/dde/struct_music_dispatch_item.html#a20defed61af061401805f5548869752e">MusicDispatchItem::m_args</a></div><div class="ttdeci">QList&lt; QVariant &gt; m_args</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d08/musicdispatchmanager_8h_source.html#l00036">musicdispatchmanager.h:36</a></div></div>
 <div class="ttc" id="struct_music_dispatch_item_html_a9202a9dcd52f1fd5ad0be9b3e3291dd8"><div class="ttname"><a href="../../dc/dde/struct_music_dispatch_item.html#a9202a9dcd52f1fd5ad0be9b3e3291dd8">MusicDispatchItem::MusicDispatchItem</a></div><div class="ttdeci">MusicDispatchItem()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d08/musicdispatchmanager_8h_source.html#l00037">musicdispatchmanager.h:37</a></div></div>
 <div class="ttc" id="musicdispatchmanager_8h_html_a6f8566eaa1e2a2b96cfb542ae89f8015"><div class="ttname"><a href="../../d1/d08/musicdispatchmanager_8h.html#a6f8566eaa1e2a2b96cfb542ae89f8015">MusicDispatchItem</a></div><div class="ttdeci">struct MUSIC_CORE_EXPORT MusicDispatchItem MusicDispatchItem</div><div class="ttdoc">The class of the functions dispatch item. </div></div>
-<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00149">musicglobal.h:149</a></div></div>
 <div class="ttc" id="class_music_dispatch_manager_html_a97d7af61a05ae1c6ca7d0175bf5d7448"><div class="ttname"><a href="../../da/d80/class_music_dispatch_manager.html#a97d7af61a05ae1c6ca7d0175bf5d7448">MusicDispatchManager::m_timer</a></div><div class="ttdeci">QTimer * m_timer</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d08/musicdispatchmanager_8h_source.html#l00091">musicdispatchmanager.h:91</a></div></div>
 <div class="ttc" id="musicsingleton_8h_html_a8d62f3ef8a22e40d7a4ff45f03d0ce0e"><div class="ttname"><a href="../../d7/d5f/musicsingleton_8h.html#a8d62f3ef8a22e40d7a4ff45f03d0ce0e">DECLARE_SINGLETON_CLASS</a></div><div class="ttdeci">#define DECLARE_SINGLETON_CLASS(Class)</div><div class="ttdoc">                                         //  Singleton Macro // // </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5f/musicsingleton_8h_source.html#l00086">musicsingleton.h:86</a></div></div>
 <div class="ttc" id="struct_music_dispatch_item_html_a36e436b287896dd830c198380e4f9876"><div class="ttname"><a href="../../dc/dde/struct_music_dispatch_item.html#a36e436b287896dd830c198380e4f9876">MusicDispatchItem::m_times</a></div><div class="ttdeci">int m_times</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d08/musicdispatchmanager_8h_source.html#l00035">musicdispatchmanager.h:35</a></div></div>
@@ -178,7 +178,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 11 2019 14:01:44 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 29 2019 16:07:49 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

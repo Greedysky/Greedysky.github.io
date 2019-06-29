@@ -24,10 +24,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.8.0.0</span>
+   &#160;<span id="projectnumber">2.9.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -106,7 +106,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../dd/dda/class_music_user_model.html">   30</a></span>&#160;<span class="keyword">class </span>MUSIC_USER_EXPORT <a class="code" href="../../dd/dda/class_music_user_model.html">MusicUserModel</a> : <span class="keyword">public</span> QSqlTableModel</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../dd/dda/class_music_user_model.html">MusicUserModel</a>)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../dd/dda/class_music_user_model.html">MusicUserModel</a>)</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../dd/dda/class_music_user_model.html">MusicUserModel</a>(QObject *parent = <span class="keyword">nullptr</span>, QSqlDatabase db = QSqlDatabase::database(<span class="stringliteral">&quot;user-data&quot;</span>));</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
@@ -144,7 +144,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    QString getRecordData(<span class="keyword">const</span> <a class="code" href="../../df/dc7/struct_music_user_u_i_d_item.html">MusicUserUIDItem</a> &amp;uid, <span class="keyword">const</span> QString &amp;field);</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordtype">bool</span> updateRecordData(<span class="keyword">const</span> <a class="code" href="../../df/dc7/struct_music_user_u_i_d_item.html">MusicUserUIDItem</a> &amp;uid, <span class="keyword">const</span> <a class="code" href="../../da/d4e/musicglobal_8h.html#a37c27877c663434df02d0aa4dd4d3ce2">MStriantMap</a> &amp;data);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordtype">bool</span> updateRecordData(<span class="keyword">const</span> <a class="code" href="../../df/dc7/struct_music_user_u_i_d_item.html">MusicUserUIDItem</a> &amp;uid, <span class="keyword">const</span> <a class="code" href="../../df/d7f/ttkglobal_8h.html#ad31968ff5bad4e7ad7691bb14c6419c0">MVariantMap</a> &amp;data);</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordtype">bool</span> databaseSelectedFilter(<span class="keyword">const</span> <a class="code" href="../../df/dc7/struct_music_user_u_i_d_item.html">MusicUserUIDItem</a> &amp;uid);</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;};</div>
@@ -152,6 +152,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">#endif // MUSICUSERMODEL_H</span></div>
 <div class="ttc" id="class_music_user_model_html"><div class="ttname"><a href="../../dd/dda/class_music_user_model.html">MusicUserModel</a></div><div class="ttdoc">The class of the user data model. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d09/musicusermodel_8h_source.html#l00030">musicusermodel.h:30</a></div></div>
 <div class="ttc" id="class_music_user_model_html_a8dbf5f38e3124cce5c31d06ab74b360a"><div class="ttname"><a href="../../dd/dda/class_music_user_model.html#a8dbf5f38e3124cce5c31d06ab74b360a">MusicUserModel::getUserSignature</a></div><div class="ttdeci">QString getUserSignature(const MusicUserUIDItem &amp;uid)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d09/musicusermodel_8h_source.html#l00115">musicusermodel.h:115</a></div></div>
+<div class="ttc" id="ttkglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00143">ttkglobal.h:143</a></div></div>
+<div class="ttc" id="ttkglobal_8h_html_ad31968ff5bad4e7ad7691bb14c6419c0"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#ad31968ff5bad4e7ad7691bb14c6419c0">MVariantMap</a></div><div class="ttdeci">QMap&lt; QString, QVariant &gt; MVariantMap</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00187">ttkglobal.h:187</a></div></div>
 <div class="ttc" id="class_music_user_model_html_a9ebcd7adb1a4c4f29c47f7bc0778cadd"><div class="ttname"><a href="../../dd/dda/class_music_user_model.html#a9ebcd7adb1a4c4f29c47f7bc0778cadd">MusicUserModel::getUserCountry</a></div><div class="ttdeci">QString getUserCountry(const MusicUserUIDItem &amp;uid)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d09/musicusermodel_8h_source.html#l00107">musicusermodel.h:107</a></div></div>
 <div class="ttc" id="class_music_user_model_html_a5f00cca7c15438a07784991bebcf7400"><div class="ttname"><a href="../../dd/dda/class_music_user_model.html#a5f00cca7c15438a07784991bebcf7400">MusicUserModel::getUserLogTime</a></div><div class="ttdeci">QString getUserLogTime(const MusicUserUIDItem &amp;uid)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d09/musicusermodel_8h_source.html#l00091">musicusermodel.h:91</a></div></div>
 <div class="ttc" id="musicdatabaseobject_8h_html"><div class="ttname"><a href="../../da/df5/musicdatabaseobject_8h.html">musicdatabaseobject.h</a></div></div>
@@ -162,14 +164,12 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="struct_music_user_u_i_d_item_html"><div class="ttname"><a href="../../df/dc7/struct_music_user_u_i_d_item.html">MusicUserUIDItem</a></div><div class="ttdoc">The class of the user uid item. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/df5/musicdatabaseobject_8h_source.html#l00043">musicdatabaseobject.h:43</a></div></div>
 <div class="ttc" id="class_music_user_model_html_af060998f6535f758f561120d51ded569"><div class="ttname"><a href="../../dd/dda/class_music_user_model.html#af060998f6535f758f561120d51ded569">MusicUserModel::getUserSex</a></div><div class="ttdeci">QString getUserSex(const MusicUserUIDItem &amp;uid)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d09/musicusermodel_8h_source.html#l00099">musicusermodel.h:99</a></div></div>
 <div class="ttc" id="class_music_user_model_html_a13659da387e28245c0f5cb1cf67bbb77"><div class="ttname"><a href="../../dd/dda/class_music_user_model.html#a13659da387e28245c0f5cb1cf67bbb77">MusicUserModel::getUserIcon</a></div><div class="ttdeci">QString getUserIcon(const MusicUserUIDItem &amp;uid)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d09/musicusermodel_8h_source.html#l00123">musicusermodel.h:123</a></div></div>
-<div class="ttc" id="musicglobal_8h_html_a37c27877c663434df02d0aa4dd4d3ce2"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a37c27877c663434df02d0aa4dd4d3ce2">MStriantMap</a></div><div class="ttdeci">QMap&lt; QString, QVariant &gt; MStriantMap</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00216">musicglobal.h:216</a></div></div>
-<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00149">musicglobal.h:149</a></div></div>
 <div class="ttc" id="class_music_user_model_html_af337562637cc51ffb35e46094f36d4fe"><div class="ttname"><a href="../../dd/dda/class_music_user_model.html#af337562637cc51ffb35e46094f36d4fe">MusicUserModel::getUserName</a></div><div class="ttdeci">QString getUserName(const MusicUserUIDItem &amp;uid)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d09/musicusermodel_8h_source.html#l00095">musicusermodel.h:95</a></div></div>
 <div class="ttc" id="class_music_user_model_html_abee65bad9dab30209a15c72d554b86fa"><div class="ttname"><a href="../../dd/dda/class_music_user_model.html#abee65bad9dab30209a15c72d554b86fa">MusicUserModel::getUserBirthday</a></div><div class="ttdeci">QString getUserBirthday(const MusicUserUIDItem &amp;uid)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d09/musicusermodel_8h_source.html#l00111">musicusermodel.h:111</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 11 2019 14:01:48 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 29 2019 16:07:55 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

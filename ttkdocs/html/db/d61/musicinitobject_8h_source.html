@@ -24,10 +24,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.8.0.0</span>
+   &#160;<span id="projectnumber">2.9.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -100,78 +100,83 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;QDebug&gt;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/d07/musicobject_8h.html">musicobject.h</a>&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d0/dfc/musicversion_8h.html">musicversion.h</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/da6/ttkversion_8h.html">ttkversion.h</a>&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/d98/musicrunglobaldefine_8h.html">musicrunglobaldefine.h</a>&quot;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a6fcc6b07f8ffaa8f6584d92775c4779c">   27</a></span>&#160;<span class="preprocessor">#define S_APPDATA_DIR_FULL        MusicObject::getAppDir() + APPDATA_DIR</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a343cc36b7bc88d69ef74a9b18371c74b">   28</a></span>&#160;<span class="preprocessor">#define S_DOWNLOADS_DIR_FULL      MusicObject::getAppDir() + DOWNLOADS_DIR</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#afbf0fe796b9eeb08f98870fd30d82c31">   30</a></span>&#160;<span class="preprocessor">#define S_LRC_DIR_FULL            S_DOWNLOADS_DIR_FULL + LRC_DIR</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#acd4451af819802a71be1135a0b34d16d">   31</a></span>&#160;<span class="preprocessor">#define S_MUSIC_DIR_FULL          S_DOWNLOADS_DIR_FULL + MUSIC_DIR</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a7e58aa4c1d2f4524ebadda275d5c043e">   32</a></span>&#160;<span class="preprocessor">#define S_MOVIE_DIR_FULL          S_DOWNLOADS_DIR_FULL + MOVIE_DIR</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a0d84f2643142360e30898f8afff71960">   33</a></span>&#160;<span class="preprocessor">#define S_TEMPORARY_DIR_FULL      S_DOWNLOADS_DIR_FULL + TEMPORARY_DIR</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a33560316ad666debf80ab70ecc30dc48">   34</a></span>&#160;<span class="preprocessor">#define S_CACHE_DIR_FULL          S_DOWNLOADS_DIR_FULL + CACHE_DIR</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#aced707a79bf3d4c03c75bfc2f52db419">   35</a></span>&#160;<span class="preprocessor">#define S_ART_DIR_FULL            S_DOWNLOADS_DIR_FULL + ART_DIR</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a95242abefdc7748cbdec621cc5904d0a">   36</a></span>&#160;<span class="preprocessor">#define S_BACKGROUND_DIR_FULL     S_DOWNLOADS_DIR_FULL + BACKGROUND_DIR</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a2680011110d67c63abf2eb458407a512">   37</a></span>&#160;<span class="preprocessor">#define S_UPDATE_DIR_FULL         S_DOWNLOADS_DIR_FULL + UPDATE_DIR</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a2ee515a90611a9bcc0ed7548a78e5b4b">   39</a></span>&#160;<span class="preprocessor">#define S_COFIGPATH_FULL          S_APPDATA_DIR_FULL + COFIGPATH</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#ad13d6f0c7d4453120e1b1a4bf40f8288">   40</a></span>&#160;<span class="preprocessor">#define S_MUSICPATH_FULL          S_APPDATA_DIR_FULL + MUSICPATH</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a6a752a36196f6038943bc9ae4aa0409c">   41</a></span>&#160;<span class="preprocessor">#define S_NORMALDOWNPATH_FULL     S_APPDATA_DIR_FULL + NORMALDOWNPATH</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a71cac2a897d54a722b03020d13301ea9">   42</a></span>&#160;<span class="preprocessor">#define S_CLOUDDOWNPATH_FULL      S_APPDATA_DIR_FULL + CLOUDDOWNPATH</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a9b5ebec6a7a8cea208094839ce870a34">   43</a></span>&#160;<span class="preprocessor">#define S_CLOUDUPPATH_FULL        S_APPDATA_DIR_FULL + CLOUDUPPATH</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#aa94bbf88d4c2bfaed0643fd7828b05d5">   44</a></span>&#160;<span class="preprocessor">#define S_MUSICSEARCH_FULL        S_APPDATA_DIR_FULL + MUSICSEARCH</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#ad21362d1ceb289f161f4b1754cbfdd8a">   45</a></span>&#160;<span class="preprocessor">#define S_DARABASEPATH_FULL       S_APPDATA_DIR_FULL + DARABASEPATH</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#ad18d1f3c37dbff886ab6dd105df7a21a">   46</a></span>&#160;<span class="preprocessor">#define S_USERPATH_FULL           S_APPDATA_DIR_FULL + USERPATH</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#ae39c18e09d7e5cb3d930e3c8b84a74f9">   47</a></span>&#160;<span class="preprocessor">#define S_BARRAGEPATH_FULL        S_APPDATA_DIR_FULL + BARRAGEPATH</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a60c19b93864218985a5bc8423ea42174">   48</a></span>&#160;<span class="preprocessor">#define S_AVATAR_DIR_FULL         S_APPDATA_DIR_FULL + AVATAR_DIR</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#add2e44264a66f58596a81e56a3dc321a">   49</a></span>&#160;<span class="preprocessor">#define S_USER_THEME_DIR_FULL     S_APPDATA_DIR_FULL + USER_THEME_DIR</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#adf781796020fb0bdac485f82f9d646e6">   51</a></span>&#160;<span class="preprocessor">#define S_THEME_DIR_FULL          MusicObject::getAppDir() + TTKMUSIC_VERSION_STR + &quot;/&quot; + THEME_DIR</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a46c6e34ba5261b8ca1448fb4ce69e507">   52</a></span>&#160;<span class="preprocessor">#define S_PLUGINS_DIR_FULL        MusicObject::getAppDir() + TTKMUSIC_VERSION_STR + &quot;/&quot; + PLUGINS_DIR</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a00005dcf78cc0ed8a9dd81ab8203766e">   53</a></span>&#160;<span class="preprocessor">#define S_LANGUAGE_DIR_FULL       MusicObject::getAppDir() + TTKMUSIC_VERSION_STR + &quot;/&quot; + LANGUAGE_DIR</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#ifdef Q_OS_WIN</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#define S_TTKSERVICE_FULL         MusicObject::getAppDir() + TTKMUSIC_VERSION_STR + &quot;/TTKService.exe&quot;</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a2affe0687170c2f9981386880657671a">   58</a></span>&#160;<span class="preprocessor">#define S_TTKINIT_FULL            MusicObject::getAppDir() + &quot;TTKInit.sh&quot;</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#acc2f7d10b92b91b32bfad3f70032b541">   59</a></span>&#160;<span class="preprocessor">#define S_TTKMUSICPLAYER_FULL     MusicObject::getAppDir() + &quot;TTKMusicPlayer.sh&quot;</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a540671189727edab502963a912bbaab4">   60</a></span>&#160;<span class="preprocessor">#define S_TTKROUTINE_FULL         MusicObject::getAppDir() + &quot;TTKRoutine.sh&quot;</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#aad11356c0bab994c8206af65b4c4273d">   61</a></span>&#160;<span class="preprocessor">#define S_TTKCONSOLE_FULL         MusicObject::getAppDir() + TTKMUSIC_VERSION_STR + &quot;/TTKConsole.sh&quot;</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a2937faf8aace228ec651287dd6db27c2">   62</a></span>&#160;<span class="preprocessor">#define S_TTKSERVICE_FULL         MusicObject::getAppDir() + TTKMUSIC_VERSION_STR + &quot;/TTKService.sh&quot;</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a3abed8868e0eeabbb261d920802c3fd9">   63</a></span>&#160;<span class="preprocessor">#define S_TTKROUTINECOPY_FULL     MusicObject::getAppDir() + TTKMUSIC_VERSION_STR + &quot;/TTKRoutineCopy.sh&quot;</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="../../d1/d41/class_music_init_object.html">   70</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d3/d98/musicrunglobaldefine_8h.html#aea27712b48c33c128659ff5608edeff4">MUSIC_RUN_EXPORT</a> <a class="code" href="../../d1/d41/class_music_init_object.html">MusicInitObject</a> : <span class="keyword">public</span> QObject</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d1/d41/class_music_init_object.html">MusicInitObject</a>(QObject *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> checkValid();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a6fcc6b07f8ffaa8f6584d92775c4779c">   28</a></span>&#160;<span class="preprocessor">#define S_APPDATA_DIR_FULL        MusicObject::getAppDir() + APPDATA_DIR</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a343cc36b7bc88d69ef74a9b18371c74b">   29</a></span>&#160;<span class="preprocessor">#define S_DOWNLOADS_DIR_FULL      MusicObject::getAppDir() + DOWNLOADS_DIR</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#afbf0fe796b9eeb08f98870fd30d82c31">   32</a></span>&#160;<span class="preprocessor">#define S_LRC_DIR_FULL            S_DOWNLOADS_DIR_FULL + LRC_DIR</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#acd4451af819802a71be1135a0b34d16d">   33</a></span>&#160;<span class="preprocessor">#define S_MUSIC_DIR_FULL          S_DOWNLOADS_DIR_FULL + MUSIC_DIR</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a7e58aa4c1d2f4524ebadda275d5c043e">   34</a></span>&#160;<span class="preprocessor">#define S_MOVIE_DIR_FULL          S_DOWNLOADS_DIR_FULL + MOVIE_DIR</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a33560316ad666debf80ab70ecc30dc48">   35</a></span>&#160;<span class="preprocessor">#define S_CACHE_DIR_FULL          S_DOWNLOADS_DIR_FULL + CACHE_DIR</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#aced707a79bf3d4c03c75bfc2f52db419">   36</a></span>&#160;<span class="preprocessor">#define S_ART_DIR_FULL            S_DOWNLOADS_DIR_FULL + ART_DIR</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a95242abefdc7748cbdec621cc5904d0a">   37</a></span>&#160;<span class="preprocessor">#define S_BACKGROUND_DIR_FULL     S_DOWNLOADS_DIR_FULL + BACKGROUND_DIR</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a2680011110d67c63abf2eb458407a512">   38</a></span>&#160;<span class="preprocessor">#define S_UPDATE_DIR_FULL         S_DOWNLOADS_DIR_FULL + UPDATE_DIR</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a2ee515a90611a9bcc0ed7548a78e5b4b">   41</a></span>&#160;<span class="preprocessor">#define S_COFIGPATH_FULL          S_APPDATA_DIR_FULL + COFIGPATH</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#ad13d6f0c7d4453120e1b1a4bf40f8288">   42</a></span>&#160;<span class="preprocessor">#define S_MUSICPATH_FULL          S_APPDATA_DIR_FULL + MUSICPATH</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a6a752a36196f6038943bc9ae4aa0409c">   43</a></span>&#160;<span class="preprocessor">#define S_NORMALDOWNPATH_FULL     S_APPDATA_DIR_FULL + NORMALDOWNPATH</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a71cac2a897d54a722b03020d13301ea9">   44</a></span>&#160;<span class="preprocessor">#define S_CLOUDDOWNPATH_FULL      S_APPDATA_DIR_FULL + CLOUDDOWNPATH</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a9b5ebec6a7a8cea208094839ce870a34">   45</a></span>&#160;<span class="preprocessor">#define S_CLOUDUPPATH_FULL        S_APPDATA_DIR_FULL + CLOUDUPPATH</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#aa94bbf88d4c2bfaed0643fd7828b05d5">   46</a></span>&#160;<span class="preprocessor">#define S_MUSICSEARCH_FULL        S_APPDATA_DIR_FULL + MUSICSEARCH</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#ad21362d1ceb289f161f4b1754cbfdd8a">   47</a></span>&#160;<span class="preprocessor">#define S_DARABASEPATH_FULL       S_APPDATA_DIR_FULL + DARABASEPATH</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#ad18d1f3c37dbff886ab6dd105df7a21a">   48</a></span>&#160;<span class="preprocessor">#define S_USERPATH_FULL           S_APPDATA_DIR_FULL + USERPATH</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#ae39c18e09d7e5cb3d930e3c8b84a74f9">   49</a></span>&#160;<span class="preprocessor">#define S_BARRAGEPATH_FULL        S_APPDATA_DIR_FULL + BARRAGEPATH</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a60c19b93864218985a5bc8423ea42174">   50</a></span>&#160;<span class="preprocessor">#define S_AVATAR_DIR_FULL         S_APPDATA_DIR_FULL + AVATAR_DIR</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#add2e44264a66f58596a81e56a3dc321a">   51</a></span>&#160;<span class="preprocessor">#define S_USER_THEME_DIR_FULL     S_APPDATA_DIR_FULL + USER_THEME_DIR</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a00cd076aeb49a793d31ba26e384cdc15">   54</a></span>&#160;<span class="preprocessor">#define S_TEMPPATH_FULL           MusicObject::getAppDir() + TEMPPATH</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#adf781796020fb0bdac485f82f9d646e6">   55</a></span>&#160;<span class="preprocessor">#define S_THEME_DIR_FULL          MusicObject::getAppDir() + TTKMUSIC_VERSION_STR + &quot;/&quot; + THEME_DIR</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a46c6e34ba5261b8ca1448fb4ce69e507">   56</a></span>&#160;<span class="preprocessor">#define S_PLUGINS_DIR_FULL        MusicObject::getAppDir() + TTKMUSIC_VERSION_STR + &quot;/&quot; + PLUGINS_DIR</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a00005dcf78cc0ed8a9dd81ab8203766e">   57</a></span>&#160;<span class="preprocessor">#define S_LANGUAGE_DIR_FULL       MusicObject::getAppDir() + TTKMUSIC_VERSION_STR + &quot;/&quot; + LANGUAGE_DIR</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#ifdef Q_OS_WIN</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#define S_TTKSERVICE_FULL         MusicObject::getAppDir() + TTKMUSIC_VERSION_STR + &quot;/TTKService.exe&quot;</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a2affe0687170c2f9981386880657671a">   63</a></span>&#160;<span class="preprocessor">#define S_TTKINIT_FULL            MusicObject::getAppDir() + &quot;TTKInit.sh&quot;</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#acc2f7d10b92b91b32bfad3f70032b541">   64</a></span>&#160;<span class="preprocessor">#define S_TTKMUSICPLAYER_FULL     MusicObject::getAppDir() + &quot;TTKMusicPlayer.sh&quot;</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a540671189727edab502963a912bbaab4">   65</a></span>&#160;<span class="preprocessor">#define S_TTKROUTINE_FULL         MusicObject::getAppDir() + &quot;TTKRoutine.sh&quot;</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#aad11356c0bab994c8206af65b4c4273d">   66</a></span>&#160;<span class="preprocessor">#define S_TTKCONSOLE_FULL         MusicObject::getAppDir() + TTKMUSIC_VERSION_STR + &quot;/TTKConsole.sh&quot;</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a2937faf8aace228ec651287dd6db27c2">   67</a></span>&#160;<span class="preprocessor">#define S_TTKSERVICE_FULL         MusicObject::getAppDir() + TTKMUSIC_VERSION_STR + &quot;/TTKService.sh&quot;</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="../../db/d61/musicinitobject_8h.html#a3abed8868e0eeabbb261d920802c3fd9">   68</a></span>&#160;<span class="preprocessor">#define S_TTKROUTINECOPY_FULL     MusicObject::getAppDir() + TTKMUSIC_VERSION_STR + &quot;/TTKRoutineCopy.sh&quot;</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="../../d1/d41/class_music_init_object.html">   75</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d3/d98/musicrunglobaldefine_8h.html#aea27712b48c33c128659ff5608edeff4">MUSIC_RUN_EXPORT</a> <a class="code" href="../../d1/d41/class_music_init_object.html">MusicInitObject</a> : <span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d1/d41/class_music_init_object.html">MusicInitObject</a>(QObject *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> init();</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> dirIsExist(<span class="keyword">const</span> QString &amp;name);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> checkTheDirectoryExist();</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> checkTheFileNeededExist();</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> copyFileOverwrite(<span class="keyword">const</span> QString &amp;<a class="code" href="../../d2/db7/ioapi_8h.html#a5f189a59b66f135978bce54f9d0fcade">origin</a>, <span class="keyword">const</span> QString &amp;des);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span> copyFile(<span class="keyword">const</span> QString &amp;origin, <span class="keyword">const</span> QString &amp;des);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">void</span> copyLinuxShellFile(<span class="keyword">const</span> QString &amp;name, <span class="keyword">const</span> QString &amp;path);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;};</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif // MUSICINITOBJECT_H</span></div>
-<div class="ttc" id="musicversion_8h_html"><div class="ttname"><a href="../../d0/dfc/musicversion_8h.html">musicversion.h</a></div></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> checkValid();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> init();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> dirIsExist(<span class="keyword">const</span> QString &amp;name);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> checkTheDirectoryExist();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> checkTheFileNeededExist();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> copyFileOverwrite(<span class="keyword">const</span> QString &amp;<a class="code" href="../../d2/db7/ioapi_8h.html#a5f189a59b66f135978bce54f9d0fcade">origin</a>, <span class="keyword">const</span> QString &amp;des);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> copyFile(<span class="keyword">const</span> QString &amp;origin, <span class="keyword">const</span> QString &amp;des);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">void</span> copyLinuxShellFile(<span class="keyword">const</span> QString &amp;name, <span class="keyword">const</span> QString &amp;path);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;};</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#endif // MUSICINITOBJECT_H</span></div>
 <div class="ttc" id="ioapi_8h_html_a5f189a59b66f135978bce54f9d0fcade"><div class="ttname"><a href="../../d2/db7/ioapi_8h.html#a5f189a59b66f135978bce54f9d0fcade">origin</a></div><div class="ttdeci">voidpf uLong int origin</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/db7/ioapi_8h_source.html#l00142">ioapi.h:142</a></div></div>
-<div class="ttc" id="musicrunglobaldefine_8h_html_aea27712b48c33c128659ff5608edeff4"><div class="ttname"><a href="../../d3/d98/musicrunglobaldefine_8h.html#aea27712b48c33c128659ff5608edeff4">MUSIC_RUN_EXPORT</a></div><div class="ttdeci">#define MUSIC_RUN_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d98/musicrunglobaldefine_8h_source.html#l00031">musicrunglobaldefine.h:31</a></div></div>
+<div class="ttc" id="musicrunglobaldefine_8h_html_aea27712b48c33c128659ff5608edeff4"><div class="ttname"><a href="../../d3/d98/musicrunglobaldefine_8h.html#aea27712b48c33c128659ff5608edeff4">MUSIC_RUN_EXPORT</a></div><div class="ttdeci">#define MUSIC_RUN_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d98/musicrunglobaldefine_8h_source.html#l00028">musicrunglobaldefine.h:28</a></div></div>
+<div class="ttc" id="ttkversion_8h_html"><div class="ttname"><a href="../../d4/da6/ttkversion_8h.html">ttkversion.h</a></div></div>
 <div class="ttc" id="musicobject_8h_html"><div class="ttname"><a href="../../d8/d07/musicobject_8h.html">musicobject.h</a></div></div>
-<div class="ttc" id="class_music_init_object_html"><div class="ttname"><a href="../../d1/d41/class_music_init_object.html">MusicInitObject</a></div><div class="ttdoc">The class of the music init object. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d61/musicinitobject_8h_source.html#l00070">musicinitobject.h:70</a></div></div>
+<div class="ttc" id="class_music_init_object_html"><div class="ttname"><a href="../../d1/d41/class_music_init_object.html">MusicInitObject</a></div><div class="ttdoc">The class of the music init object. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d61/musicinitobject_8h_source.html#l00075">musicinitobject.h:75</a></div></div>
 <div class="ttc" id="musicrunglobaldefine_8h_html"><div class="ttname"><a href="../../d3/d98/musicrunglobaldefine_8h.html">musicrunglobaldefine.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 11 2019 14:01:59 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 29 2019 16:08:18 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

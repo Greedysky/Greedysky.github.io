@@ -24,10 +24,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.8.0.0</span>
+   &#160;<span id="projectnumber">2.9.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -104,33 +104,34 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../d9/d67/class_music_sys_config_manager.html">   28</a></span>&#160;<span class="keyword">class </span>MUSIC_CORE_EXPORT <a class="code" href="../../d9/d67/class_music_sys_config_manager.html">MusicSysConfigManager</a> : <span class="keyword">public</span> <a class="code" href="../../d7/d53/class_music_abstract_xml.html">MusicAbstractXml</a></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d9/d67/class_music_sys_config_manager.html">MusicSysConfigManager</a>)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d9/d67/class_music_sys_config_manager.html">MusicSysConfigManager</a>)</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d9/d67/class_music_sys_config_manager.html">MusicSysConfigManager</a>(QObject *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../d9/d67/class_music_sys_config_manager.html#a0ab9f744e7c1b667c7cb9d1904dd332d">   41</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../d9/d67/class_music_sys_config_manager.html#a0ab9f744e7c1b667c7cb9d1904dd332d">readXMLConfig</a>() { <span class="keywordflow">return</span> <a class="code" href="../../d7/d53/class_music_abstract_xml.html#a96f1c201e1324fd6c40c93537d8ae628">readConfig</a>(<a class="code" href="../../d8/d07/musicobject_8h.html#ab917bb409284346ca263a9affefff7b0">COFIGPATH_FULL</a>); }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> writeXMLConfig();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> readSystemLastPlayIndexConfig(QStringList &amp;<a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    QRect readWindowGeometry() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    QPoint readShowDLrcGeometry() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> readSysLoadConfig() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif // MUSICSYSCONFIGMANAGER_H</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../d9/d67/class_music_sys_config_manager.html#aaf2482c2bafe30f565cc66eb1000415e">   41</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../d9/d67/class_music_sys_config_manager.html#aaf2482c2bafe30f565cc66eb1000415e">readConfig</a>() { <span class="keywordflow">return</span> <a class="code" href="../../d7/d53/class_music_abstract_xml.html#a96f1c201e1324fd6c40c93537d8ae628">MusicAbstractXml::readConfig</a>(<a class="code" href="../../d8/d07/musicobject_8h.html#ab917bb409284346ca263a9affefff7b0">COFIGPATH_FULL</a>); }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> readSysConfigData() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> writeSysConfigData();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> readSystemLastPlayIndexConfig(QStringList &amp;<a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    QRect readWindowGeometry() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    QPoint readShowDLrcGeometry() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif // MUSICSYSCONFIGMANAGER_H</span></div>
 <div class="ttc" id="class_music_abstract_xml_html_a96f1c201e1324fd6c40c93537d8ae628"><div class="ttname"><a href="../../d7/d53/class_music_abstract_xml.html#a96f1c201e1324fd6c40c93537d8ae628">MusicAbstractXml::readConfig</a></div><div class="ttdeci">bool readConfig(const QString &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d4d/musicabstractxml_8cpp_source.html#l00020">musicabstractxml.cpp:20</a></div></div>
-<div class="ttc" id="class_music_abstract_xml_html"><div class="ttname"><a href="../../d7/d53/class_music_abstract_xml.html">MusicAbstractXml</a></div><div class="ttdoc">The class of the base class of xml interface. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d83/musicabstractxml_8h_source.html#l00049">musicabstractxml.h:49</a></div></div>
+<div class="ttc" id="class_music_abstract_xml_html"><div class="ttname"><a href="../../d7/d53/class_music_abstract_xml.html">MusicAbstractXml</a></div><div class="ttdoc">The class of the base class of xml interface. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d83/musicabstractxml_8h_source.html#l00047">musicabstractxml.h:47</a></div></div>
 <div class="ttc" id="musiclrcfromkrc_8cpp_html_ad706e4249347c1cd1381934a5691137d"><div class="ttname"><a href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a></div><div class="ttdeci">const wchar_t key[]</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d45/musiclrcfromkrc_8cpp_source.html#l00017">musiclrcfromkrc.cpp:17</a></div></div>
-<div class="ttc" id="class_music_sys_config_manager_html_a0ab9f744e7c1b667c7cb9d1904dd332d"><div class="ttname"><a href="../../d9/d67/class_music_sys_config_manager.html#a0ab9f744e7c1b667c7cb9d1904dd332d">MusicSysConfigManager::readXMLConfig</a></div><div class="ttdeci">bool readXMLConfig()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d89/musicsysconfigmanager_8h_source.html#l00041">musicsysconfigmanager.h:41</a></div></div>
-<div class="ttc" id="musicobject_8h_html_ab917bb409284346ca263a9affefff7b0"><div class="ttname"><a href="../../d8/d07/musicobject_8h.html#ab917bb409284346ca263a9affefff7b0">COFIGPATH_FULL</a></div><div class="ttdeci">#define COFIGPATH_FULL</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00151">musicobject.h:151</a></div></div>
+<div class="ttc" id="ttkglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00143">ttkglobal.h:143</a></div></div>
+<div class="ttc" id="musicobject_8h_html_ab917bb409284346ca263a9affefff7b0"><div class="ttname"><a href="../../d8/d07/musicobject_8h.html#ab917bb409284346ca263a9affefff7b0">COFIGPATH_FULL</a></div><div class="ttdeci">#define COFIGPATH_FULL</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00166">musicobject.h:166</a></div></div>
 <div class="ttc" id="class_music_sys_config_manager_html"><div class="ttname"><a href="../../d9/d67/class_music_sys_config_manager.html">MusicSysConfigManager</a></div><div class="ttdoc">The class of the sys xml config manager. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d89/musicsysconfigmanager_8h_source.html#l00028">musicsysconfigmanager.h:28</a></div></div>
-<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00149">musicglobal.h:149</a></div></div>
+<div class="ttc" id="class_music_sys_config_manager_html_aaf2482c2bafe30f565cc66eb1000415e"><div class="ttname"><a href="../../d9/d67/class_music_sys_config_manager.html#aaf2482c2bafe30f565cc66eb1000415e">MusicSysConfigManager::readConfig</a></div><div class="ttdeci">bool readConfig()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d89/musicsysconfigmanager_8h_source.html#l00041">musicsysconfigmanager.h:41</a></div></div>
 <div class="ttc" id="musicabstractxml_8h_html"><div class="ttname"><a href="../../d5/d83/musicabstractxml_8h.html">musicabstractxml.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 11 2019 14:01:44 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 29 2019 16:07:50 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

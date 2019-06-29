@@ -24,10 +24,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.8.0.0</span>
+   &#160;<span id="projectnumber">2.9.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -101,7 +101,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/d07/musicobject_8h.html">musicobject.h</a>&quot;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d0/deb/musicuiobject_8h.html">musicuiobject.h</a>&quot;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/ddc/musicabstractmovewidget_8h.html">musicabstractmovewidget.h</a>&quot;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#ifdef MUSIC_GREATER_NEW</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#ifdef TTK_GREATER_NEW</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#   include &lt;QtWidgets&gt;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#   include &lt;QtGui&gt;</span></div>
@@ -112,7 +112,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../d5/ddc/class_music_remote_widget.html">   36</a></span>&#160;<span class="keyword">class </span>MUSIC_REMOTE_EXPORT <a class="code" href="../../d5/ddc/class_music_remote_widget.html">MusicRemoteWidget</a> : <span class="keyword">public</span> <a class="code" href="../../d5/d2d/class_music_abstract_move_widget.html">MusicAbstractMoveWidget</a></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d5/ddc/class_music_remote_widget.html">MusicRemoteWidget</a>)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d5/ddc/class_music_remote_widget.html">MusicRemoteWidget</a>)</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../d5/ddc/class_music_remote_widget.html#a84e9b045ec2afb244ff51510bf37b94c">   41</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="../../d5/ddc/class_music_remote_widget.html#a84e9b045ec2afb244ff51510bf37b94c">RemoteType</a></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
@@ -169,6 +169,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="musicuiobject_8h_html"><div class="ttname"><a href="../../d0/deb/musicuiobject_8h.html">musicuiobject.h</a></div></div>
 <div class="ttc" id="class_music_remote_widget_html_a84e9b045ec2afb244ff51510bf37b94caf4b6512322465cec06a80a8943458f92"><div class="ttname"><a href="../../d5/ddc/class_music_remote_widget.html#a84e9b045ec2afb244ff51510bf37b94caf4b6512322465cec06a80a8943458f92">MusicRemoteWidget::Ripples</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/df6/musicremotewidget_8h_source.html#l00050">musicremotewidget.h:50</a></div></div>
 <div class="ttc" id="class_music_remote_widget_html_ac9a8ddf4da5abd2e90761d8876187547"><div class="ttname"><a href="../../d5/ddc/class_music_remote_widget.html#ac9a8ddf4da5abd2e90761d8876187547">MusicRemoteWidget::m_volumeSlider</a></div><div class="ttdeci">MusicClickedSlider * m_volumeSlider</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/df6/musicremotewidget_8h_source.html#l00137">musicremotewidget.h:137</a></div></div>
+<div class="ttc" id="ttkglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00143">ttkglobal.h:143</a></div></div>
 <div class="ttc" id="class_music_remote_widget_html_a84e9b045ec2afb244ff51510bf37b94ca3372d10f6f9f4d8dbe221ab62a1d37ca"><div class="ttname"><a href="../../d5/ddc/class_music_remote_widget.html#a84e9b045ec2afb244ff51510bf37b94ca3372d10f6f9f4d8dbe221ab62a1d37ca">MusicRemoteWidget::Rectangle</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/df6/musicremotewidget_8h_source.html#l00046">musicremotewidget.h:46</a></div></div>
 <div class="ttc" id="class_music_remote_widget_html_a11536932f0db6774ad4c29a6e4cb819b"><div class="ttname"><a href="../../d5/ddc/class_music_remote_widget.html#a11536932f0db6774ad4c29a6e4cb819b">MusicRemoteWidget::m_volumeButton</a></div><div class="ttdeci">QToolButton * m_volumeButton</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/df6/musicremotewidget_8h_source.html#l00136">musicremotewidget.h:136</a></div></div>
 <div class="ttc" id="class_music_remote_widget_html_a84e9b045ec2afb244ff51510bf37b94ca68d88d58b66800590305f52328000c94"><div class="ttname"><a href="../../d5/ddc/class_music_remote_widget.html#a84e9b045ec2afb244ff51510bf37b94ca68d88d58b66800590305f52328000c94">MusicRemoteWidget::Circle</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/df6/musicremotewidget_8h_source.html#l00044">musicremotewidget.h:44</a></div></div>
@@ -178,7 +179,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="musicabstractmovewidget_8h_html"><div class="ttname"><a href="../../d8/ddc/musicabstractmovewidget_8h.html">musicabstractmovewidget.h</a></div></div>
 <div class="ttc" id="class_music_remote_widget_html"><div class="ttname"><a href="../../d5/ddc/class_music_remote_widget.html">MusicRemoteWidget</a></div><div class="ttdoc">The class of the desktop remote widget base. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/df6/musicremotewidget_8h_source.html#l00036">musicremotewidget.h:36</a></div></div>
 <div class="ttc" id="class_music_remote_widget_html_ac328a447b8bd3f9f4b48aa96341e3277"><div class="ttname"><a href="../../d5/ddc/class_music_remote_widget.html#ac328a447b8bd3f9f4b48aa96341e3277">MusicRemoteWidget::m_PlayButton</a></div><div class="ttdeci">QPushButton * m_PlayButton</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/df6/musicremotewidget_8h_source.html#l00133">musicremotewidget.h:133</a></div></div>
-<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00149">musicglobal.h:149</a></div></div>
 <div class="ttc" id="class_music_remote_widget_html_a84e9b045ec2afb244ff51510bf37b94caf0d2fa2c6f8a9e8cd58363d09fbafb5c"><div class="ttname"><a href="../../d5/ddc/class_music_remote_widget.html#a84e9b045ec2afb244ff51510bf37b94caf0d2fa2c6f8a9e8cd58363d09fbafb5c">MusicRemoteWidget::SimpleStyle</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/df6/musicremotewidget_8h_source.html#l00047">musicremotewidget.h:47</a></div></div>
 <div class="ttc" id="class_music_remote_widget_html_a84e9b045ec2afb244ff51510bf37b94cab990d68e78333dcd190606a717c18056"><div class="ttname"><a href="../../d5/ddc/class_music_remote_widget.html#a84e9b045ec2afb244ff51510bf37b94cab990d68e78333dcd190606a717c18056">MusicRemoteWidget::Diamond</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/df6/musicremotewidget_8h_source.html#l00049">musicremotewidget.h:49</a></div></div>
 <div class="ttc" id="class_music_remote_widget_html_a84e9b045ec2afb244ff51510bf37b94cae5120bab1d64f3f5570b76c586f64715"><div class="ttname"><a href="../../d5/ddc/class_music_remote_widget.html#a84e9b045ec2afb244ff51510bf37b94cae5120bab1d64f3f5570b76c586f64715">MusicRemoteWidget::Square</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/df6/musicremotewidget_8h_source.html#l00045">musicremotewidget.h:45</a></div></div>
@@ -188,7 +188,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 11 2019 14:01:48 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 29 2019 16:07:57 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

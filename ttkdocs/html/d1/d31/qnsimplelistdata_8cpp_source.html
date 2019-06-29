@@ -24,10 +24,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.8.0.0</span>
+   &#160;<span id="projectnumber">2.9.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -99,76 +99,78 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../d5/d7e/class_q_n_simple_list_data.html#a6d4a3015d338e729737729ca8304ee22">   26</a></span>&#160;<a class="code" href="../../d5/d7e/class_q_n_simple_list_data.html#a6d4a3015d338e729737729ca8304ee22">QNSimpleListData::QNSimpleListData</a>(QNetworkAccessManager *networkManager, QObject *parent)</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    : QObject(parent)</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="../../dd/d24/ttkprivate_8h.html#a16e697408c6ce0f129db3559d3a79514">TTK_INIT_PRIVATE</a>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="../../dd/d24/ttkprivate_8h.html#a8eedd09c47b53d5e42ca132295c5e1ef">TTK_D</a>(<a class="code" href="../../d5/d7e/class_q_n_simple_list_data.html">QNSimpleListData</a>);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    d-&gt;m_networkManager = networkManager;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="../../d5/d7e/class_q_n_simple_list_data.html#a5ce600c68e561b6f46e12986ca1fd443">   34</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d5/d7e/class_q_n_simple_list_data.html#a5ce600c68e561b6f46e12986ca1fd443">QNSimpleListData::listDataToServer</a>(<span class="keyword">const</span> QString &amp;bucket)</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="../../dd/d24/ttkprivate_8h.html#a8eedd09c47b53d5e42ca132295c5e1ef">TTK_D</a>(<a class="code" href="../../d5/d7e/class_q_n_simple_list_data.html">QNSimpleListData</a>);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d1/dff/class_q_n_mac.html">QNMac</a> mac(<a class="code" href="../../d8/dbf/class_q_n_conf.html#ac0fa7f5860d47e989e49f0c08588adb7">QNConf::ACCESS_KEY</a>, <a class="code" href="../../d8/dbf/class_q_n_conf.html#a0f6ff4f5523206acb8538ece2195477f">QNConf::SECRET_KEY</a>);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    QNetworkRequest request = <a class="code" href="../../da/da7/class_q_n_i_o_helper.html#a86fb11742afce91384648b80b54667cf">QNIOHelper::listRequest</a>(bucket, &amp;mac);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    QNetworkReply *reply = d-&gt;m_networkManager-&gt;get(request);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    connect(reply, SIGNAL(finished()), SLOT(<a class="code" href="../../d5/d7e/class_q_n_simple_list_data.html#aa190ee630162126796c978721b08cc0b">receiveDataFromServer</a>()));</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    connect(reply, SIGNAL(error(<a class="code" href="../../df/dbc/namespace_music_object.html#a739090443491193d34585a1956fa3daca0a95e1345ae0e36c86067c5cc867f809">QNetworkReply::NetworkError</a>)), SLOT(<a class="code" href="../../d5/d7e/class_q_n_simple_list_data.html#a424c551095553b8d6e9c047831a7aa30">handleError</a>(<a class="code" href="../../df/dbc/namespace_music_object.html#a739090443491193d34585a1956fa3daca0a95e1345ae0e36c86067c5cc867f809">QNetworkReply::NetworkError</a>)));</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="../../d5/d7e/class_q_n_simple_list_data.html#aa190ee630162126796c978721b08cc0b">   44</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d5/d7e/class_q_n_simple_list_data.html#aa190ee630162126796c978721b08cc0b">QNSimpleListData::receiveDataFromServer</a>()</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    QNetworkReply *reply = <a class="code" href="../../da/d4e/musicglobal_8h.html#a039d9247f5c3141fcc2f8a00583f292f">MObject_cast</a>(QNetworkReply*, QObject::sender());</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">if</span>(reply)</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        QNDataItems items;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">if</span>(reply-&gt;attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt() == 200)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <a class="code" href="../../d0/dfe/class_q_json_1_1_parser.html">QJson::Parser</a> parser;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordtype">bool</span> ok;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keyword">const</span> QVariant &amp;data = parser.<a class="code" href="../../d0/dfe/class_q_json_1_1_parser.html#a9d57257adc3638a8b992cf4dc39a30bf">parse</a>(reply-&gt;readAll(), &amp;ok);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keywordflow">if</span>(ok)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                QVariantMap value = data.toMap();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <span class="keyword">const</span> QVariantList &amp;array = value[<span class="stringliteral">&quot;items&quot;</span>].toList();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                <span class="keywordflow">foreach</span>(<span class="keyword">const</span> QVariant &amp;var, array)</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                    value = var.toMap();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                    <a class="code" href="../../d6/d30/struct_q_n_data_item.html">QNDataItem</a> item;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                    item.<a class="code" href="../../d6/d30/struct_q_n_data_item.html#a34fb36751032ae9a764f60b2e8a9379f">m_name</a> = value[<span class="stringliteral">&quot;key&quot;</span>].toString();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                    item.<a class="code" href="../../d6/d30/struct_q_n_data_item.html#a1cacef2ee829de0e0d5c535a522a55ce">m_hash</a> = value[<span class="stringliteral">&quot;hash&quot;</span>].toString();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                    item.<a class="code" href="../../d6/d30/struct_q_n_data_item.html#a0469105e3da339fd0a10ce4a9a71f144">m_mimeType</a> = value[<span class="stringliteral">&quot;mimeType&quot;</span>].toString();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                    item.<a class="code" href="../../d6/d30/struct_q_n_data_item.html#abd00acf5aa5add7cd1a17d489dc25f77">m_size</a> = value[<span class="stringliteral">&quot;fsize&quot;</span>].toInt();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                    item.<a class="code" href="../../d6/d30/struct_q_n_data_item.html#a4292105ea00cf9832bf12cd01d2b23c5">m_putTime</a> = value[<span class="stringliteral">&quot;putTime&quot;</span>].toLongLong()/10000;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                    items &lt;&lt; item;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        reply-&gt;deleteLater();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        emit <a class="code" href="../../d5/d7e/class_q_n_simple_list_data.html#ac568dd89b4f6166bcd297155fc79fa94">receiveFinshed</a>( items );</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        emit <a class="code" href="../../d5/d7e/class_q_n_simple_list_data.html#ac568dd89b4f6166bcd297155fc79fa94">receiveFinshed</a>( QNDataItems() );</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="../../d5/d7e/class_q_n_simple_list_data.html#a424c551095553b8d6e9c047831a7aa30">   81</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d5/d7e/class_q_n_simple_list_data.html#a424c551095553b8d6e9c047831a7aa30">QNSimpleListData::handleError</a>(<a class="code" href="../../df/dbc/namespace_music_object.html#a739090443491193d34585a1956fa3daca0a95e1345ae0e36c86067c5cc867f809">QNetworkReply::NetworkError</a> error)</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    qDebug() &lt;&lt; <span class="stringliteral">&quot;error&quot;</span> &lt;&lt; error;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../d5/d7e/class_q_n_simple_list_data.html#a6d4a3015d338e729737729ca8304ee22">   25</a></span>&#160;<a class="code" href="../../d5/d7e/class_q_n_simple_list_data.html#a6d4a3015d338e729737729ca8304ee22">QNSimpleListData::QNSimpleListData</a>(QNetworkAccessManager *networkManager, QObject *parent)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    : QObject(parent)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="../../dd/d24/ttkprivate_8h.html#a16e697408c6ce0f129db3559d3a79514">TTK_INIT_PRIVATE</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="../../dd/d24/ttkprivate_8h.html#a8eedd09c47b53d5e42ca132295c5e1ef">TTK_D</a>(<a class="code" href="../../d5/d7e/class_q_n_simple_list_data.html">QNSimpleListData</a>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    d-&gt;m_networkManager = networkManager;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="../../d5/d7e/class_q_n_simple_list_data.html#a5ce600c68e561b6f46e12986ca1fd443">   33</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d5/d7e/class_q_n_simple_list_data.html#a5ce600c68e561b6f46e12986ca1fd443">QNSimpleListData::listDataToServer</a>(<span class="keyword">const</span> QString &amp;bucket)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="../../dd/d24/ttkprivate_8h.html#a8eedd09c47b53d5e42ca132295c5e1ef">TTK_D</a>(<a class="code" href="../../d5/d7e/class_q_n_simple_list_data.html">QNSimpleListData</a>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d1/dff/class_q_n_mac.html">QNMac</a> mac(<a class="code" href="../../d8/dbf/class_q_n_conf.html#ac0fa7f5860d47e989e49f0c08588adb7">QNConf::ACCESS_KEY</a>, <a class="code" href="../../d8/dbf/class_q_n_conf.html#a0f6ff4f5523206acb8538ece2195477f">QNConf::SECRET_KEY</a>);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    QNetworkRequest request = <a class="code" href="../../da/da7/class_q_n_i_o_helper.html#a86fb11742afce91384648b80b54667cf">QNIOHelper::listRequest</a>(bucket, &amp;mac);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    QNetworkReply *reply = d-&gt;m_networkManager-&gt;get(request);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    connect(reply, SIGNAL(finished()), SLOT(<a class="code" href="../../d5/d7e/class_q_n_simple_list_data.html#aa190ee630162126796c978721b08cc0b">receiveDataFromServer</a>()));</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    connect(reply, SIGNAL(error(<a class="code" href="../../df/dbc/namespace_music_object.html#a739090443491193d34585a1956fa3daca0a95e1345ae0e36c86067c5cc867f809">QNetworkReply::NetworkError</a>)), SLOT(<a class="code" href="../../d5/d7e/class_q_n_simple_list_data.html#a424c551095553b8d6e9c047831a7aa30">handleError</a>(<a class="code" href="../../df/dbc/namespace_music_object.html#a739090443491193d34585a1956fa3daca0a95e1345ae0e36c86067c5cc867f809">QNetworkReply::NetworkError</a>)));</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="../../d5/d7e/class_q_n_simple_list_data.html#aa190ee630162126796c978721b08cc0b">   43</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d5/d7e/class_q_n_simple_list_data.html#aa190ee630162126796c978721b08cc0b">QNSimpleListData::receiveDataFromServer</a>()</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    QNetworkReply *reply = <a class="code" href="../../df/d7f/ttkglobal_8h.html#a039d9247f5c3141fcc2f8a00583f292f">MObject_cast</a>(QNetworkReply*, QObject::sender());</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">if</span>(reply)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        QNDataItems items;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">if</span>(reply-&gt;attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt() == 200)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <a class="code" href="../../d0/dfe/class_q_json_1_1_parser.html">QJson::Parser</a> parser;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordtype">bool</span> ok;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keyword">const</span> QVariant &amp;data = parser.<a class="code" href="../../d0/dfe/class_q_json_1_1_parser.html#a9d57257adc3638a8b992cf4dc39a30bf">parse</a>(reply-&gt;readAll(), &amp;ok);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordflow">if</span>(ok)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                QVariantMap value = data.toMap();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <span class="keyword">const</span> QVariantList &amp;array = value[<span class="stringliteral">&quot;items&quot;</span>].toList();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <span class="keywordflow">foreach</span>(<span class="keyword">const</span> QVariant &amp;var, array)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                    value = var.toMap();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                    <a class="code" href="../../d6/d30/struct_q_n_data_item.html">QNDataItem</a> item;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                    item.<a class="code" href="../../d6/d30/struct_q_n_data_item.html#a34fb36751032ae9a764f60b2e8a9379f">m_name</a> = value[<span class="stringliteral">&quot;key&quot;</span>].toString();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                    item.<a class="code" href="../../d6/d30/struct_q_n_data_item.html#a1cacef2ee829de0e0d5c535a522a55ce">m_hash</a> = value[<span class="stringliteral">&quot;hash&quot;</span>].toString();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                    item.<a class="code" href="../../d6/d30/struct_q_n_data_item.html#a0469105e3da339fd0a10ce4a9a71f144">m_mimeType</a> = value[<span class="stringliteral">&quot;mimeType&quot;</span>].toString();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                    item.<a class="code" href="../../d6/d30/struct_q_n_data_item.html#abd00acf5aa5add7cd1a17d489dc25f77">m_size</a> = value[<span class="stringliteral">&quot;fsize&quot;</span>].toInt();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                    item.<a class="code" href="../../d6/d30/struct_q_n_data_item.html#a4292105ea00cf9832bf12cd01d2b23c5">m_putTime</a> = value[<span class="stringliteral">&quot;putTime&quot;</span>].toLongLong()/10000;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                    items &lt;&lt; item;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        reply-&gt;deleteLater();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        emit <a class="code" href="../../d5/d7e/class_q_n_simple_list_data.html#ac568dd89b4f6166bcd297155fc79fa94">receiveFinshed</a>( items );</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        emit <a class="code" href="../../d5/d7e/class_q_n_simple_list_data.html#ac568dd89b4f6166bcd297155fc79fa94">receiveFinshed</a>( QNDataItems() );</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="../../d5/d7e/class_q_n_simple_list_data.html#a424c551095553b8d6e9c047831a7aa30">   80</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d5/d7e/class_q_n_simple_list_data.html#a424c551095553b8d6e9c047831a7aa30">QNSimpleListData::handleError</a>(<a class="code" href="../../df/dbc/namespace_music_object.html#a739090443491193d34585a1956fa3daca0a95e1345ae0e36c86067c5cc867f809">QNetworkReply::NetworkError</a> error)</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    qDebug() &lt;&lt; <span class="stringliteral">&quot;error&quot;</span> &lt;&lt; error;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
 <div class="ttc" id="qnmac_8h_html"><div class="ttname"><a href="../../d5/de3/qnmac_8h.html">qnmac.h</a></div></div>
 <div class="ttc" id="struct_q_n_data_item_html"><div class="ttname"><a href="../../d6/d30/struct_q_n_data_item.html">QNDataItem</a></div><div class="ttdoc">The class of the qiniu cloud data item. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/de8/qndataitem_8h_source.html#l00027">qndataitem.h:27</a></div></div>
-<div class="ttc" id="musicglobal_8h_html_a039d9247f5c3141fcc2f8a00583f292f"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a039d9247f5c3141fcc2f8a00583f292f">MObject_cast</a></div><div class="ttdeci">#define MObject_cast(x, y)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00082">musicglobal.h:82</a></div></div>
-<div class="ttc" id="class_q_n_simple_list_data_html_a424c551095553b8d6e9c047831a7aa30"><div class="ttname"><a href="../../d5/d7e/class_q_n_simple_list_data.html#a424c551095553b8d6e9c047831a7aa30">QNSimpleListData::handleError</a></div><div class="ttdeci">void handleError(QNetworkReply::NetworkError error)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d31/qnsimplelistdata_8cpp_source.html#l00081">qnsimplelistdata.cpp:81</a></div></div>
+<div class="ttc" id="class_q_n_simple_list_data_html_a424c551095553b8d6e9c047831a7aa30"><div class="ttname"><a href="../../d5/d7e/class_q_n_simple_list_data.html#a424c551095553b8d6e9c047831a7aa30">QNSimpleListData::handleError</a></div><div class="ttdeci">void handleError(QNetworkReply::NetworkError error)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d31/qnsimplelistdata_8cpp_source.html#l00080">qnsimplelistdata.cpp:80</a></div></div>
 <div class="ttc" id="class_q_n_simple_list_data_private_html_a81b731e1eec5afec535b17c297a24873"><div class="ttname"><a href="../../db/d18/class_q_n_simple_list_data_private.html#a81b731e1eec5afec535b17c297a24873">QNSimpleListDataPrivate::m_networkManager</a></div><div class="ttdeci">QNetworkAccessManager * m_networkManager</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d31/qnsimplelistdata_8cpp_source.html#l00014">qnsimplelistdata.cpp:14</a></div></div>
 <div class="ttc" id="struct_q_n_data_item_html_a0469105e3da339fd0a10ce4a9a71f144"><div class="ttname"><a href="../../d6/d30/struct_q_n_data_item.html#a0469105e3da339fd0a10ce4a9a71f144">QNDataItem::m_mimeType</a></div><div class="ttdeci">QString m_mimeType</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de8/qndataitem_8h_source.html#l00031">qndataitem.h:31</a></div></div>
 <div class="ttc" id="class_q_n_conf_html_ac0fa7f5860d47e989e49f0c08588adb7"><div class="ttname"><a href="../../d8/dbf/class_q_n_conf.html#ac0fa7f5860d47e989e49f0c08588adb7">QNConf::ACCESS_KEY</a></div><div class="ttdeci">static QString ACCESS_KEY</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d91/qnconf_8h_source.html#l00036">qnconf.h:36</a></div></div>
 <div class="ttc" id="class_q_n_simple_list_data_private_html_a75e91b94f3fb1bff3dee3b547b606b8a"><div class="ttname"><a href="../../db/d18/class_q_n_simple_list_data_private.html#a75e91b94f3fb1bff3dee3b547b606b8a">QNSimpleListDataPrivate::QNSimpleListDataPrivate</a></div><div class="ttdeci">QNSimpleListDataPrivate()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d31/qnsimplelistdata_8cpp_source.html#l00018">qnsimplelistdata.cpp:18</a></div></div>
 <div class="ttc" id="class_q_n_simple_list_data_html"><div class="ttname"><a href="../../d5/d7e/class_q_n_simple_list_data.html">QNSimpleListData</a></div><div class="ttdoc">The namespace of the qiniu simple list data. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dd7/qnsimplelistdata_8h_source.html#l00031">qnsimplelistdata.h:31</a></div></div>
 <div class="ttc" id="struct_q_n_data_item_html_a34fb36751032ae9a764f60b2e8a9379f"><div class="ttname"><a href="../../d6/d30/struct_q_n_data_item.html#a34fb36751032ae9a764f60b2e8a9379f">QNDataItem::m_name</a></div><div class="ttdeci">QString m_name</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de8/qndataitem_8h_source.html#l00029">qndataitem.h:29</a></div></div>
-<div class="ttc" id="class_q_n_simple_list_data_html_a6d4a3015d338e729737729ca8304ee22"><div class="ttname"><a href="../../d5/d7e/class_q_n_simple_list_data.html#a6d4a3015d338e729737729ca8304ee22">QNSimpleListData::QNSimpleListData</a></div><div class="ttdeci">QNSimpleListData(QNetworkAccessManager *networkManager, QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d31/qnsimplelistdata_8cpp_source.html#l00026">qnsimplelistdata.cpp:26</a></div></div>
+<div class="ttc" id="ttkglobal_8h_html_a039d9247f5c3141fcc2f8a00583f292f"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#a039d9247f5c3141fcc2f8a00583f292f">MObject_cast</a></div><div class="ttdeci">#define MObject_cast(x, y)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00081">ttkglobal.h:81</a></div></div>
+<div class="ttc" id="class_q_n_simple_list_data_html_a6d4a3015d338e729737729ca8304ee22"><div class="ttname"><a href="../../d5/d7e/class_q_n_simple_list_data.html#a6d4a3015d338e729737729ca8304ee22">QNSimpleListData::QNSimpleListData</a></div><div class="ttdeci">QNSimpleListData(QNetworkAccessManager *networkManager, QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d31/qnsimplelistdata_8cpp_source.html#l00025">qnsimplelistdata.cpp:25</a></div></div>
 <div class="ttc" id="ttkprivate_8h_html_a16e697408c6ce0f129db3559d3a79514"><div class="ttname"><a href="../../dd/d24/ttkprivate_8h.html#a16e697408c6ce0f129db3559d3a79514">TTK_INIT_PRIVATE</a></div><div class="ttdeci">#define TTK_INIT_PRIVATE</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00030">ttkprivate.h:30</a></div></div>
 <div class="ttc" id="struct_q_n_data_item_html_a1cacef2ee829de0e0d5c535a522a55ce"><div class="ttname"><a href="../../d6/d30/struct_q_n_data_item.html#a1cacef2ee829de0e0d5c535a522a55ce">QNDataItem::m_hash</a></div><div class="ttdeci">QString m_hash</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de8/qndataitem_8h_source.html#l00030">qndataitem.h:30</a></div></div>
 <div class="ttc" id="class_q_json_1_1_parser_html_a9d57257adc3638a8b992cf4dc39a30bf"><div class="ttname"><a href="../../d0/dfe/class_q_json_1_1_parser.html#a9d57257adc3638a8b992cf4dc39a30bf">QJson::Parser::parse</a></div><div class="ttdeci">QVariant parse(QIODevice *io, bool *ok=0)</div><div class="ttdoc">Read JSON string from the I/O Device and converts it to a QVariant object. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/ddd/parser_8cpp_source.html#l00069">parser.cpp:69</a></div></div>
@@ -181,8 +183,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_q_json_1_1_parser_html"><div class="ttname"><a href="../../d0/dfe/class_q_json_1_1_parser.html">QJson::Parser</a></div><div class="ttdoc">Main class used to convert JSON data to QVariant objects. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d36/parser_8h_source.html#l00042">parser.h:42</a></div></div>
 <div class="ttc" id="class_q_n_i_o_helper_html_a86fb11742afce91384648b80b54667cf"><div class="ttname"><a href="../../da/da7/class_q_n_i_o_helper.html#a86fb11742afce91384648b80b54667cf">QNIOHelper::listRequest</a></div><div class="ttdeci">static QNetworkRequest listRequest(const QString &amp;bucket, const QNMac *mac=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dce/qniohelper_8cpp_source.html#l00067">qniohelper.cpp:67</a></div></div>
 <div class="ttc" id="struct_q_n_data_item_html_a4292105ea00cf9832bf12cd01d2b23c5"><div class="ttname"><a href="../../d6/d30/struct_q_n_data_item.html#a4292105ea00cf9832bf12cd01d2b23c5">QNDataItem::m_putTime</a></div><div class="ttdeci">qint64 m_putTime</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de8/qndataitem_8h_source.html#l00033">qndataitem.h:33</a></div></div>
-<div class="ttc" id="class_q_n_simple_list_data_html_aa190ee630162126796c978721b08cc0b"><div class="ttname"><a href="../../d5/d7e/class_q_n_simple_list_data.html#aa190ee630162126796c978721b08cc0b">QNSimpleListData::receiveDataFromServer</a></div><div class="ttdeci">void receiveDataFromServer()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d31/qnsimplelistdata_8cpp_source.html#l00044">qnsimplelistdata.cpp:44</a></div></div>
-<div class="ttc" id="class_q_n_simple_list_data_html_a5ce600c68e561b6f46e12986ca1fd443"><div class="ttname"><a href="../../d5/d7e/class_q_n_simple_list_data.html#a5ce600c68e561b6f46e12986ca1fd443">QNSimpleListData::listDataToServer</a></div><div class="ttdeci">void listDataToServer(const QString &amp;bucket)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d31/qnsimplelistdata_8cpp_source.html#l00034">qnsimplelistdata.cpp:34</a></div></div>
+<div class="ttc" id="class_q_n_simple_list_data_html_aa190ee630162126796c978721b08cc0b"><div class="ttname"><a href="../../d5/d7e/class_q_n_simple_list_data.html#aa190ee630162126796c978721b08cc0b">QNSimpleListData::receiveDataFromServer</a></div><div class="ttdeci">void receiveDataFromServer()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d31/qnsimplelistdata_8cpp_source.html#l00043">qnsimplelistdata.cpp:43</a></div></div>
+<div class="ttc" id="class_q_n_simple_list_data_html_a5ce600c68e561b6f46e12986ca1fd443"><div class="ttname"><a href="../../d5/d7e/class_q_n_simple_list_data.html#a5ce600c68e561b6f46e12986ca1fd443">QNSimpleListData::listDataToServer</a></div><div class="ttdeci">void listDataToServer(const QString &amp;bucket)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d31/qnsimplelistdata_8cpp_source.html#l00033">qnsimplelistdata.cpp:33</a></div></div>
 <div class="ttc" id="class_t_t_k_private_html"><div class="ttname"><a href="../../d1/d29/class_t_t_k_private.html">TTKPrivate</a></div><div class="ttdoc">The class of the ttk private base. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00040">ttkprivate.h:40</a></div></div>
 <div class="ttc" id="qniohelper_8h_html"><div class="ttname"><a href="../../db/d70/qniohelper_8h.html">qniohelper.h</a></div></div>
 <div class="ttc" id="class_q_n_conf_html_a0f6ff4f5523206acb8538ece2195477f"><div class="ttname"><a href="../../d8/dbf/class_q_n_conf.html#a0f6ff4f5523206acb8538ece2195477f">QNConf::SECRET_KEY</a></div><div class="ttdeci">static QByteArray SECRET_KEY</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d91/qnconf_8h_source.html#l00037">qnconf.h:37</a></div></div>
@@ -190,7 +192,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 11 2019 14:01:59 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 29 2019 16:08:20 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

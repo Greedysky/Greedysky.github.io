@@ -24,10 +24,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.8.0.0</span>
+   &#160;<span id="projectnumber">2.9.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -83,6 +83,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="textblock"><code>#include &lt;QMap&gt;</code><br />
 <code>#include &lt;QHash&gt;</code><br />
 <code>#include &lt;QEvent&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d8/df4/_qt5_2trackinfo_8h_source.html">trackinfo.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../dd/dd4/_qt5_2qmmp_8h_source.html">qmmp.h</a>&quot;</code><br />
 </div>
 <p><a href="../../d3/d3a/_qt5_2qmmpevents__p_8h_source.html">Go to the source code of this file.</a></p>
@@ -91,9 +92,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d40/class_state_changed_event.html">StateChangedEvent</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d78/class_meta_data_changed_event.html">MetaDataChangedEvent</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d81/class_stream_info_changed_event.html">StreamInfoChangedEvent</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/class_track_info_event.html">TrackInfoEvent</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -104,8 +105,8 @@ Macros</h2></td></tr>
 <tr class="separator:a388fbfeb877bc20fc0b4733885b37305"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c6afe95c86d71ace7f6989d105d6001"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d3a/_qt5_2qmmpevents__p_8h.html#a8c6afe95c86d71ace7f6989d105d6001">EVENT_FINISHED</a>&#160;&#160;&#160;(QEvent::Type(QEvent::User + 2))</td></tr>
 <tr class="separator:a8c6afe95c86d71ace7f6989d105d6001"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab625339c793747f3e2f30d0ad636a912"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d3a/_qt5_2qmmpevents__p_8h.html#ab625339c793747f3e2f30d0ad636a912">EVENT_METADATA_CHANGED</a>&#160;&#160;&#160;(QEvent::Type(QEvent::User + 3))</td></tr>
-<tr class="separator:ab625339c793747f3e2f30d0ad636a912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ba943e45626a3d82baea2fed8821682"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d3a/_qt5_2qmmpevents__p_8h.html#a7ba943e45626a3d82baea2fed8821682">EVENT_TRACK_INFO_CHANGED</a>&#160;&#160;&#160;(QEvent::Type(QEvent::User + 3))</td></tr>
+<tr class="separator:a7ba943e45626a3d82baea2fed8821682"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c029cc10bf2f5bb7fbd9d9af7f6ce06"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d3a/_qt5_2qmmpevents__p_8h.html#a9c029cc10bf2f5bb7fbd9d9af7f6ce06">EVENT_STREAM_INFO_CHANGED</a>&#160;&#160;&#160;(QEvent::Type(QEvent::User + 4))</td></tr>
 <tr class="separator:a9c029cc10bf2f5bb7fbd9d9af7f6ce06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -116,20 +117,6 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define EVENT_FINISHED&#160;&#160;&#160;(QEvent::Type(QEvent::User + 2))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../d3/d3a/_qt5_2qmmpevents__p_8h_source.html#l00031">31</a> of file <a class="el" href="../../d3/d3a/_qt5_2qmmpevents__p_8h_source.html">qmmpevents_p.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab625339c793747f3e2f30d0ad636a912"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define EVENT_METADATA_CHANGED&#160;&#160;&#160;(QEvent::Type(QEvent::User + 3))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -148,7 +135,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/d3a/_qt5_2qmmpevents__p_8h_source.html#l00030">30</a> of file <a class="el" href="../../d3/d3a/_qt5_2qmmpevents__p_8h_source.html">qmmpevents_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d3a/_qt5_2qmmpevents__p_8h_source.html#l00031">31</a> of file <a class="el" href="../../d3/d3a/_qt5_2qmmpevents__p_8h_source.html">qmmpevents_p.h</a>.</p>
 
 </div>
 </div>
@@ -162,7 +149,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/d3a/_qt5_2qmmpevents__p_8h_source.html#l00029">29</a> of file <a class="el" href="../../d3/d3a/_qt5_2qmmpevents__p_8h_source.html">qmmpevents_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d3a/_qt5_2qmmpevents__p_8h_source.html#l00030">30</a> of file <a class="el" href="../../d3/d3a/_qt5_2qmmpevents__p_8h_source.html">qmmpevents_p.h</a>.</p>
 
 </div>
 </div>
@@ -176,6 +163,20 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="../../d3/d3a/_qt5_2qmmpevents__p_8h_source.html#l00034">34</a> of file <a class="el" href="../../d3/d3a/_qt5_2qmmpevents__p_8h_source.html">qmmpevents_p.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7ba943e45626a3d82baea2fed8821682"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EVENT_TRACK_INFO_CHANGED&#160;&#160;&#160;(QEvent::Type(QEvent::User + 3))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 <p>Definition at line <a class="el" href="../../d3/d3a/_qt5_2qmmpevents__p_8h_source.html#l00033">33</a> of file <a class="el" href="../../d3/d3a/_qt5_2qmmpevents__p_8h_source.html">qmmpevents_p.h</a>.</p>
 
 </div>
@@ -183,7 +184,7 @@ Macros</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 11 2019 14:02:04 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 29 2019 16:08:30 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -24,10 +24,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.8.0.0</span>
+   &#160;<span id="projectnumber">2.9.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -91,7 +91,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// Url safe base64 encode</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../db/d29/class_q_n_utils.html#a3c2757f7ca6be53e7bb3ef211e78819b">   13</a></span>&#160;QString <a class="code" href="../../db/d29/class_q_n_utils.html#a3c2757f7ca6be53e7bb3ef211e78819b">QNUtils::urlSafeBase64Encode</a>(<span class="keyword">const</span> QByteArray &amp;data)</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#if (defined MUSIC_GREATER_NEW &amp;&amp; !defined MUSIC_NO_WINEXTRAS)</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#if (defined TTK_GREATER_NEW &amp;&amp; !defined TTK_NO_WINEXTRAS)</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">const</span> QByteArray &amp;encodedData = data.toBase64(QByteArray::Base64UrlEncoding);</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    QByteArray encodedData = data.toBase64();</div>
@@ -231,7 +231,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 11 2019 14:01:59 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 29 2019 16:08:20 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

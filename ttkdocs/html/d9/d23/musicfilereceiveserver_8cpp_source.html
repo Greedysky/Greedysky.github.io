@@ -24,10 +24,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.8.0.0</span>
+   &#160;<span id="projectnumber">2.9.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -115,7 +115,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="../../d0/d12/class_music_file_receive_server.html#a47ddf6e02ea5076d0504fef28112d59d">m_receiveSocket</a>-&gt;readDatagram(datagram.data(), datagram.size(),</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                      &amp;sender, &amp;senderPort);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">if</span>(datagram.contains(<a class="code" href="../../da/d4e/musicglobal_8h.html#a9689647bf07881341dde2a2f3d9ec2bc">TTK_STR_SPLITER</a>))</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">if</span>(datagram.contains(<a class="code" href="../../df/d7f/ttkglobal_8h.html#a9689647bf07881341dde2a2f3d9ec2bc">TTK_STR_SPLITER</a>))</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="../../d0/d12/class_music_file_receive_server.html#a3da0ec464717ed466b6cfbb50915c152">m_saveDir</a>.isEmpty())</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            {</div>
@@ -123,7 +123,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            }</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keyword">const</span> QString &amp;path = QString(datagram).split(<a class="code" href="../../da/d4e/musicglobal_8h.html#a9689647bf07881341dde2a2f3d9ec2bc">TTK_STR_SPLITER</a>).first();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keyword">const</span> QString &amp;path = QString(datagram).split(<a class="code" href="../../df/d7f/ttkglobal_8h.html#a9689647bf07881341dde2a2f3d9ec2bc">TTK_STR_SPLITER</a>).first();</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <a class="code" href="../../d0/d12/class_music_file_receive_server.html#a94e3c00f3f56f57241e3e74a4a1c55e1">m_file</a>-&gt;close();</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <a class="code" href="../../d0/d12/class_music_file_receive_server.html#a94e3c00f3f56f57241e3e74a4a1c55e1">m_file</a>-&gt;setFileName(<a class="code" href="../../d0/d12/class_music_file_receive_server.html#a3da0ec464717ed466b6cfbb50915c152">m_saveDir</a> + <span class="stringliteral">&quot;/&quot;</span> + QFileInfo(path).fileName() );</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <a class="code" href="../../d0/d12/class_music_file_receive_server.html#a94e3c00f3f56f57241e3e74a4a1c55e1">m_file</a>-&gt;open(QIODevice::WriteOnly | QIODevice::Append | QIODevice::Unbuffered);</div>
@@ -143,18 +143,18 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="musiclogger_8h_html_acb1153597589e0766a4e65aee968526e"><div class="ttname"><a href="../../d3/d77/musiclogger_8h.html#acb1153597589e0766a4e65aee968526e">M_LOGGER_ERROR</a></div><div class="ttdeci">#define M_LOGGER_ERROR(str)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d77/musiclogger_8h_source.html#l00051">musiclogger.h:51</a></div></div>
 <div class="ttc" id="musicfilereceiveserver_8h_html"><div class="ttname"><a href="../../dc/d5b/musicfilereceiveserver_8h.html">musicfilereceiveserver.h</a></div></div>
 <div class="ttc" id="class_music_file_receive_server_html_ad608564276d503da70a258f8897a2291"><div class="ttname"><a href="../../d0/d12/class_music_file_receive_server.html#ad608564276d503da70a258f8897a2291">MusicFileReceiveServer::~MusicFileReceiveServer</a></div><div class="ttdeci">~MusicFileReceiveServer()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d23/musicfilereceiveserver_8cpp_source.html#l00016">musicfilereceiveserver.cpp:16</a></div></div>
+<div class="ttc" id="ttkglobal_8h_html_a9689647bf07881341dde2a2f3d9ec2bc"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#a9689647bf07881341dde2a2f3d9ec2bc">TTK_STR_SPLITER</a></div><div class="ttdeci">#define TTK_STR_SPLITER</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00128">ttkglobal.h:128</a></div></div>
 <div class="ttc" id="class_music_file_receive_server_html_a3da0ec464717ed466b6cfbb50915c152"><div class="ttname"><a href="../../d0/d12/class_music_file_receive_server.html#a3da0ec464717ed466b6cfbb50915c152">MusicFileReceiveServer::m_saveDir</a></div><div class="ttdeci">QString m_saveDir</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d5b/musicfilereceiveserver_8h_source.html#l00053">musicfilereceiveserver.h:53</a></div></div>
 <div class="ttc" id="musicobject_8h_html"><div class="ttname"><a href="../../d8/d07/musicobject_8h.html">musicobject.h</a></div></div>
 <div class="ttc" id="musicfilesenderserver_8h_html_a4a3bc56e8cf840e638aaa5422663e81e"><div class="ttname"><a href="../../d5/d4f/musicfilesenderserver_8h.html#a4a3bc56e8cf840e638aaa5422663e81e">DATAGRAM</a></div><div class="ttdeci">#define DATAGRAM</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d4f/musicfilesenderserver_8h_source.html#l00030">musicfilesenderserver.h:30</a></div></div>
 <div class="ttc" id="class_music_file_receive_server_html_a00268f86274e44697e7e52847b65ed1a"><div class="ttname"><a href="../../d0/d12/class_music_file_receive_server.html#a00268f86274e44697e7e52847b65ed1a">MusicFileReceiveServer::setSavePathDir</a></div><div class="ttdeci">void setSavePathDir(const QString &amp;dir)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d23/musicfilereceiveserver_8cpp_source.html#l00022">musicfilereceiveserver.cpp:22</a></div></div>
 <div class="ttc" id="class_music_file_receive_server_html_a829d1cccdea005df98c21477021fbaa4"><div class="ttname"><a href="../../d0/d12/class_music_file_receive_server.html#a829d1cccdea005df98c21477021fbaa4">MusicFileReceiveServer::MusicFileReceiveServer</a></div><div class="ttdeci">MusicFileReceiveServer(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d23/musicfilereceiveserver_8cpp_source.html#l00006">musicfilereceiveserver.cpp:6</a></div></div>
 <div class="ttc" id="class_music_file_receive_server_html_a7497ac671c0dd702c08485019f5583b6"><div class="ttname"><a href="../../d0/d12/class_music_file_receive_server.html#a7497ac671c0dd702c08485019f5583b6">MusicFileReceiveServer::readPendingDatagrams</a></div><div class="ttdeci">void readPendingDatagrams()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d23/musicfilereceiveserver_8cpp_source.html#l00027">musicfilereceiveserver.cpp:27</a></div></div>
-<div class="ttc" id="musicglobal_8h_html_a9689647bf07881341dde2a2f3d9ec2bc"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a9689647bf07881341dde2a2f3d9ec2bc">TTK_STR_SPLITER</a></div><div class="ttdeci">#define TTK_STR_SPLITER</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00128">musicglobal.h:128</a></div></div>
 <div class="ttc" id="class_music_file_receive_server_html_a47ddf6e02ea5076d0504fef28112d59d"><div class="ttname"><a href="../../d0/d12/class_music_file_receive_server.html#a47ddf6e02ea5076d0504fef28112d59d">MusicFileReceiveServer::m_receiveSocket</a></div><div class="ttdeci">QUdpSocket * m_receiveSocket</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d5b/musicfilereceiveserver_8h_source.html#l00052">musicfilereceiveserver.h:52</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 11 2019 14:01:48 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 29 2019 16:07:55 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

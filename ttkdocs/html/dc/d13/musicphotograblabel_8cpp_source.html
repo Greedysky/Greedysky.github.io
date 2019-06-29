@@ -24,10 +24,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.8.0.0</span>
+   &#160;<span id="projectnumber">2.9.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -156,19 +156,18 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    QWidget::paintEvent(event);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    QPainter painter(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    QPixmap bgPix(<span class="stringliteral">&quot;:/lrc/lb_transparent&quot;</span>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    QPixmap pix(<span class="stringliteral">&quot;:/lrc/lb_transparent&quot;</span>);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;ceil(width()/<a class="code" href="../../dc/d13/musicphotograblabel_8cpp.html#a0f78f92367d8496b133bfc4621b23a16">PIX_WIDTH</a>); ++i)</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    {</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;=ceil(height()/<a class="code" href="../../dc/d13/musicphotograblabel_8cpp.html#afd235386a5c0475e77cc6fa2141edd91">PIX_HEIGHT</a>); ++j)</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            painter.drawPixmap(i*<a class="code" href="../../dc/d13/musicphotograblabel_8cpp.html#a0f78f92367d8496b133bfc4621b23a16">PIX_WIDTH</a>, j*<a class="code" href="../../dc/d13/musicphotograblabel_8cpp.html#afd235386a5c0475e77cc6fa2141edd91">PIX_HEIGHT</a>, PIX_WIDTH, PIX_HEIGHT, bgPix);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            painter.drawPixmap(i*<a class="code" href="../../dc/d13/musicphotograblabel_8cpp.html#a0f78f92367d8496b133bfc4621b23a16">PIX_WIDTH</a>, j*<a class="code" href="../../dc/d13/musicphotograblabel_8cpp.html#afd235386a5c0475e77cc6fa2141edd91">PIX_HEIGHT</a>, PIX_WIDTH, PIX_HEIGHT, pix);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    QPixmap img(<a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#a5a849f7ea000df84393b5de32ac6d861">m_path</a>);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    painter.drawPixmap(<a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#a5d967938362c48ab85e9210d3031aca8">m_imgRect</a>, img);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    painter.end();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
 <div class="ttc" id="class_music_photo_grab_item_html"><div class="ttname"><a href="../../d7/d3e/class_music_photo_grab_item.html">MusicPhotoGrabItem</a></div><div class="ttdoc">The class of the photo grab label item. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dcf/musicphotograblabel_8h_source.html#l00027">musicphotograblabel.h:27</a></div></div>
 <div class="ttc" id="musicphotograblabel_8h_html"><div class="ttname"><a href="../../d0/dcf/musicphotograblabel_8h.html">musicphotograblabel.h</a></div></div>
 <div class="ttc" id="musicphotograblabel_8cpp_html_afd235386a5c0475e77cc6fa2141edd91"><div class="ttname"><a href="../../dc/d13/musicphotograblabel_8cpp.html#afd235386a5c0475e77cc6fa2141edd91">PIX_HEIGHT</a></div><div class="ttdeci">#define PIX_HEIGHT</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d13/musicphotograblabel_8cpp_source.html#l00007">musicphotograblabel.cpp:7</a></div></div>
@@ -193,7 +192,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 11 2019 14:01:54 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 29 2019 16:08:05 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

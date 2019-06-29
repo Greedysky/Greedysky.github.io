@@ -24,10 +24,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.8.0.0</span>
+   &#160;<span id="projectnumber">2.9.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -78,7 +78,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <a href="../../d3/d3a/_qt5_2qmmpevents__p_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/***************************************************************************</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *   Copyright (C) 2011-2012 by Ilya Kotov                                 *</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *   Copyright (C) 2011-2019 by Ilya Kotov                                 *</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *   forkotov02@ya.ru                                                      *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *                                                                         *</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *   This program is free software; you can redistribute it and/or modify  *</span></div>
@@ -103,71 +103,65 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;QMap&gt;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;QHash&gt;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;QEvent&gt;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dd/dd4/_qt5_2qmmp_8h.html">qmmp.h</a>&quot;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../d3/d3a/_qt5_2qmmpevents__p_8h.html#a71eb6fddfb2346c44d7a12683d63b6af">   29</a></span>&#160;<span class="preprocessor">#define EVENT_STATE_CHANGED (QEvent::Type(QEvent::User)) </span></div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../d3/d3a/_qt5_2qmmpevents__p_8h.html#a388fbfeb877bc20fc0b4733885b37305">   30</a></span>&#160;<span class="preprocessor">#define EVENT_NEXT_TRACK_REQUEST (QEvent::Type(QEvent::User + 1)) </span></div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../d3/d3a/_qt5_2qmmpevents__p_8h.html#a8c6afe95c86d71ace7f6989d105d6001">   31</a></span>&#160;<span class="preprocessor">#define EVENT_FINISHED (QEvent::Type(QEvent::User + 2)) </span></div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../d3/d3a/_qt5_2qmmpevents__p_8h.html#ab625339c793747f3e2f30d0ad636a912">   32</a></span>&#160;<span class="preprocessor">#define EVENT_METADATA_CHANGED (QEvent::Type(QEvent::User + 3)) </span></div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="../../d3/d3a/_qt5_2qmmpevents__p_8h.html#a9c029cc10bf2f5bb7fbd9d9af7f6ce06">   33</a></span>&#160;<span class="preprocessor">#define EVENT_STREAM_INFO_CHANGED (QEvent::Type(QEvent::User + 4)) </span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">class StateChangedEvent : public QEvent</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="../../d2/d40/class_state_changed_event.html">StateChangedEvent</a>(<a class="code" href="../../d9/d95/class_qmmp.html#a2626102dc08b87b2a880725327dd867e">Qmmp::State</a> currentState, <a class="code" href="../../d9/d95/class_qmmp.html#a2626102dc08b87b2a880725327dd867e">Qmmp::State</a> previousState);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d2/d40/class_state_changed_event.html">StateChangedEvent</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="../../d9/d95/class_qmmp.html#a2626102dc08b87b2a880725327dd867e">Qmmp::State</a> currentState() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="../../d9/d95/class_qmmp.html#a2626102dc08b87b2a880725327dd867e">Qmmp::State</a> previousState() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="../../d9/d95/class_qmmp.html#a2626102dc08b87b2a880725327dd867e">Qmmp::State</a> m_state;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="../../d9/d95/class_qmmp.html#a2626102dc08b87b2a880725327dd867e">Qmmp::State</a> m_prevState;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">class </span><a class="code" href="../../d4/d78/class_meta_data_changed_event.html">MetaDataChangedEvent</a> : <span class="keyword">public</span> QEvent</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="../../d4/d78/class_meta_data_changed_event.html#a2a2fa6707803acb7dbe25dcc33c4bc32">MetaDataChangedEvent</a>(<span class="keyword">const</span> QMap&lt;Qmmp::MetaData, QString&gt; &amp;<a class="code" href="../../d4/d78/class_meta_data_changed_event.html#a87ab8ac8574d98a97fc5ba155e7e43d7">metaData</a>);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../d4/d78/class_meta_data_changed_event.html#adc990b2a1dbefc508f6adf6f0dd38b69">~MetaDataChangedEvent</a>();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    QMap &lt;Qmmp::MetaData, QString&gt; <a class="code" href="../../d4/d78/class_meta_data_changed_event.html#a87ab8ac8574d98a97fc5ba155e7e43d7">metaData</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    QString <a class="code" href="../../d4/d78/class_meta_data_changed_event.html#a87ab8ac8574d98a97fc5ba155e7e43d7">metaData</a>(<a class="code" href="../../d9/d95/class_qmmp.html#aa4a16a069a893d4bf425a793b03d8291">Qmmp::MetaData</a> <a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    QMap&lt;Qmmp::MetaData, QString&gt; <a class="code" href="../../d4/d78/class_meta_data_changed_event.html#af6eef363398fe6de5868b3713b12c671">m_metaData</a>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">class </span><a class="code" href="../../dd/d81/class_stream_info_changed_event.html">StreamInfoChangedEvent</a> : <span class="keyword">public</span> QEvent</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="../../dd/d81/class_stream_info_changed_event.html#af50aa2fc9d032ab1a1f5ec7e7d45fca8">StreamInfoChangedEvent</a>(<span class="keyword">const</span> QHash&lt;QString, QString&gt; &amp;info);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../dd/d81/class_stream_info_changed_event.html#a2d36942caa548fbc896a44fe4591778d">~StreamInfoChangedEvent</a>();</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    QHash &lt;QString, QString&gt; <a class="code" href="../../dd/d81/class_stream_info_changed_event.html#a13ecb161cbbaaf89ab7aba39334979ff">streamInfo</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    QHash&lt;QString, QString&gt; <a class="code" href="../../dd/d81/class_stream_info_changed_event.html#a0fc759ec87150bd697e85987c4d31eff">m_streamInfo</a>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif // QMMPEVENTS_P_H</span></div>
-<div class="ttc" id="class_meta_data_changed_event_html"><div class="ttname"><a href="../../d4/d78/class_meta_data_changed_event.html">MetaDataChangedEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d76/_qt4_2qmmpevents__p_8h_source.html#l00056">qmmpevents_p.h:56</a></div></div>
-<div class="ttc" id="class_stream_info_changed_event_html"><div class="ttname"><a href="../../dd/d81/class_stream_info_changed_event.html">StreamInfoChangedEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d76/_qt4_2qmmpevents__p_8h_source.html#l00077">qmmpevents_p.h:77</a></div></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/df4/_qt5_2trackinfo_8h.html">trackinfo.h</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dd/dd4/_qt5_2qmmp_8h.html">qmmp.h</a>&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../d3/d3a/_qt5_2qmmpevents__p_8h.html#a71eb6fddfb2346c44d7a12683d63b6af">   30</a></span>&#160;<span class="preprocessor">#define EVENT_STATE_CHANGED (QEvent::Type(QEvent::User)) </span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../d3/d3a/_qt5_2qmmpevents__p_8h.html#a388fbfeb877bc20fc0b4733885b37305">   31</a></span>&#160;<span class="preprocessor">#define EVENT_NEXT_TRACK_REQUEST (QEvent::Type(QEvent::User + 1)) </span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../d3/d3a/_qt5_2qmmpevents__p_8h.html#a8c6afe95c86d71ace7f6989d105d6001">   32</a></span>&#160;<span class="preprocessor">#define EVENT_FINISHED (QEvent::Type(QEvent::User + 2)) </span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="../../d3/d3a/_qt5_2qmmpevents__p_8h.html#a7ba943e45626a3d82baea2fed8821682">   33</a></span>&#160;<span class="preprocessor">#define EVENT_TRACK_INFO_CHANGED (QEvent::Type(QEvent::User + 3)) </span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="../../d3/d3a/_qt5_2qmmpevents__p_8h.html#a9c029cc10bf2f5bb7fbd9d9af7f6ce06">   34</a></span>&#160;<span class="preprocessor">#define EVENT_STREAM_INFO_CHANGED (QEvent::Type(QEvent::User + 4)) </span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">class QMMP_EXPORT StateChangedEvent : public QEvent</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="../../d2/d40/class_state_changed_event.html">StateChangedEvent</a>(<a class="code" href="../../d9/d95/class_qmmp.html#a2626102dc08b87b2a880725327dd867e">Qmmp::State</a> currentState, <a class="code" href="../../d9/d95/class_qmmp.html#a2626102dc08b87b2a880725327dd867e">Qmmp::State</a> previousState);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d2/d40/class_state_changed_event.html">StateChangedEvent</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="../../d9/d95/class_qmmp.html#a2626102dc08b87b2a880725327dd867e">Qmmp::State</a> currentState() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="../../d9/d95/class_qmmp.html#a2626102dc08b87b2a880725327dd867e">Qmmp::State</a> previousState() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="../../d9/d95/class_qmmp.html#a2626102dc08b87b2a880725327dd867e">Qmmp::State</a> m_state;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="../../d9/d95/class_qmmp.html#a2626102dc08b87b2a880725327dd867e">Qmmp::State</a> m_prevState;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">class </span><a class="code" href="../../dd/d7e/_qt4_2qmmp__export_8h.html#ae57db6e0c0f040f03506ccfc59947d30">QMMP_EXPORT</a> <a class="code" href="../../dd/d81/class_stream_info_changed_event.html">StreamInfoChangedEvent</a> : <span class="keyword">public</span> QEvent</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="../../dd/d81/class_stream_info_changed_event.html">StreamInfoChangedEvent</a>(<span class="keyword">const</span> QHash&lt;QString, QString&gt; &amp;info);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../dd/d81/class_stream_info_changed_event.html">StreamInfoChangedEvent</a>();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    QHash &lt;QString, QString&gt; streamInfo() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    QHash&lt;QString, QString&gt; m_streamInfo;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">class </span><a class="code" href="../../dd/d7e/_qt4_2qmmp__export_8h.html#ae57db6e0c0f040f03506ccfc59947d30">QMMP_EXPORT</a> <a class="code" href="../../d5/dfa/class_track_info_event.html">TrackInfoEvent</a> : <span class="keyword">public</span> QEvent</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="../../d5/dfa/class_track_info_event.html">TrackInfoEvent</a>(<span class="keyword">const</span> <a class="code" href="../../d1/dc5/class_track_info.html">TrackInfo</a> &amp;info);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d5/dfa/class_track_info_event.html">TrackInfoEvent</a>();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d1/dc5/class_track_info.html">TrackInfo</a> &amp;trackInfo() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="../../d1/dc5/class_track_info.html">TrackInfo</a> m_info;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif // QMMPEVENTS_P_H</span></div>
+<div class="ttc" id="class_stream_info_changed_event_html"><div class="ttname"><a href="../../dd/d81/class_stream_info_changed_event.html">StreamInfoChangedEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d76/_qt4_2qmmpevents__p_8h_source.html#l00057">qmmpevents_p.h:57</a></div></div>
 <div class="ttc" id="_qt5_2qmmp_8h_html"><div class="ttname"><a href="../../dd/dd4/_qt5_2qmmp_8h.html">qmmp.h</a></div></div>
-<div class="ttc" id="class_stream_info_changed_event_html_af50aa2fc9d032ab1a1f5ec7e7d45fca8"><div class="ttname"><a href="../../dd/d81/class_stream_info_changed_event.html#af50aa2fc9d032ab1a1f5ec7e7d45fca8">StreamInfoChangedEvent::StreamInfoChangedEvent</a></div><div class="ttdeci">StreamInfoChangedEvent(const QHash&lt; QString, QString &gt; &amp;info)</div></div>
-<div class="ttc" id="musiclrcfromkrc_8cpp_html_ad706e4249347c1cd1381934a5691137d"><div class="ttname"><a href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a></div><div class="ttdeci">const wchar_t key[]</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d45/musiclrcfromkrc_8cpp_source.html#l00017">musiclrcfromkrc.cpp:17</a></div></div>
-<div class="ttc" id="class_stream_info_changed_event_html_a0fc759ec87150bd697e85987c4d31eff"><div class="ttname"><a href="../../dd/d81/class_stream_info_changed_event.html#a0fc759ec87150bd697e85987c4d31eff">StreamInfoChangedEvent::m_streamInfo</a></div><div class="ttdeci">QHash&lt; QString, QString &gt; m_streamInfo</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d76/_qt4_2qmmpevents__p_8h_source.html#l00088">qmmpevents_p.h:88</a></div></div>
-<div class="ttc" id="class_qmmp_html_aa4a16a069a893d4bf425a793b03d8291"><div class="ttname"><a href="../../d9/d95/class_qmmp.html#aa4a16a069a893d4bf425a793b03d8291">Qmmp::MetaData</a></div><div class="ttdeci">MetaData</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d23/_qt4_2qmmp_8h_source.html#l00063">qmmp.h:63</a></div></div>
-<div class="ttc" id="class_meta_data_changed_event_html_a87ab8ac8574d98a97fc5ba155e7e43d7"><div class="ttname"><a href="../../d4/d78/class_meta_data_changed_event.html#a87ab8ac8574d98a97fc5ba155e7e43d7">MetaDataChangedEvent::metaData</a></div><div class="ttdeci">QMap&lt; Qmmp::MetaData, QString &gt; metaData() const </div></div>
-<div class="ttc" id="class_stream_info_changed_event_html_a13ecb161cbbaaf89ab7aba39334979ff"><div class="ttname"><a href="../../dd/d81/class_stream_info_changed_event.html#a13ecb161cbbaaf89ab7aba39334979ff">StreamInfoChangedEvent::streamInfo</a></div><div class="ttdeci">QHash&lt; QString, QString &gt; streamInfo() const </div></div>
-<div class="ttc" id="class_qmmp_html_a2626102dc08b87b2a880725327dd867e"><div class="ttname"><a href="../../d9/d95/class_qmmp.html#a2626102dc08b87b2a880725327dd867e">Qmmp::State</a></div><div class="ttdeci">State</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d23/_qt4_2qmmp_8h_source.html#l00051">qmmp.h:51</a></div></div>
-<div class="ttc" id="class_meta_data_changed_event_html_adc990b2a1dbefc508f6adf6f0dd38b69"><div class="ttname"><a href="../../d4/d78/class_meta_data_changed_event.html#adc990b2a1dbefc508f6adf6f0dd38b69">MetaDataChangedEvent::~MetaDataChangedEvent</a></div><div class="ttdeci">virtual ~MetaDataChangedEvent()</div></div>
-<div class="ttc" id="class_meta_data_changed_event_html_a2a2fa6707803acb7dbe25dcc33c4bc32"><div class="ttname"><a href="../../d4/d78/class_meta_data_changed_event.html#a2a2fa6707803acb7dbe25dcc33c4bc32">MetaDataChangedEvent::MetaDataChangedEvent</a></div><div class="ttdeci">MetaDataChangedEvent(const QMap&lt; Qmmp::MetaData, QString &gt; &amp;metaData)</div></div>
-<div class="ttc" id="class_stream_info_changed_event_html_a2d36942caa548fbc896a44fe4591778d"><div class="ttname"><a href="../../dd/d81/class_stream_info_changed_event.html#a2d36942caa548fbc896a44fe4591778d">StreamInfoChangedEvent::~StreamInfoChangedEvent</a></div><div class="ttdeci">virtual ~StreamInfoChangedEvent()</div></div>
-<div class="ttc" id="class_meta_data_changed_event_html_af6eef363398fe6de5868b3713b12c671"><div class="ttname"><a href="../../d4/d78/class_meta_data_changed_event.html#af6eef363398fe6de5868b3713b12c671">MetaDataChangedEvent::m_metaData</a></div><div class="ttdeci">QMap&lt; Qmmp::MetaData, QString &gt; m_metaData</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d76/_qt4_2qmmpevents__p_8h_source.html#l00071">qmmpevents_p.h:71</a></div></div>
-<div class="ttc" id="class_state_changed_event_html"><div class="ttname"><a href="../../d2/d40/class_state_changed_event.html">StateChangedEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d76/_qt4_2qmmpevents__p_8h_source.html#l00038">qmmpevents_p.h:38</a></div></div>
+<div class="ttc" id="_qt5_2trackinfo_8h_html"><div class="ttname"><a href="../../d8/df4/_qt5_2trackinfo_8h.html">trackinfo.h</a></div></div>
+<div class="ttc" id="class_track_info_html"><div class="ttname"><a href="../../d1/dc5/class_track_info.html">TrackInfo</a></div><div class="ttdoc">The TrackInfo class stores metadata and other information about track. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d12/_qt4_2trackinfo_8h_source.html#l00031">trackinfo.h:31</a></div></div>
+<div class="ttc" id="class_qmmp_html_a2626102dc08b87b2a880725327dd867e"><div class="ttname"><a href="../../d9/d95/class_qmmp.html#a2626102dc08b87b2a880725327dd867e">Qmmp::State</a></div><div class="ttdeci">State</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d23/_qt4_2qmmp_8h_source.html#l00053">qmmp.h:53</a></div></div>
+<div class="ttc" id="class_track_info_event_html"><div class="ttname"><a href="../../d5/dfa/class_track_info_event.html">TrackInfoEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d76/_qt4_2qmmpevents__p_8h_source.html#l00074">qmmpevents_p.h:74</a></div></div>
+<div class="ttc" id="_qt4_2qmmp__export_8h_html_ae57db6e0c0f040f03506ccfc59947d30"><div class="ttname"><a href="../../dd/d7e/_qt4_2qmmp__export_8h.html#ae57db6e0c0f040f03506ccfc59947d30">QMMP_EXPORT</a></div><div class="ttdeci">#define QMMP_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d7e/_qt4_2qmmp__export_8h_source.html#l00029">qmmp_export.h:29</a></div></div>
+<div class="ttc" id="class_state_changed_event_html"><div class="ttname"><a href="../../d2/d40/class_state_changed_event.html">StateChangedEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d76/_qt4_2qmmpevents__p_8h_source.html#l00039">qmmpevents_p.h:39</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 11 2019 14:01:44 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 29 2019 16:07:48 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

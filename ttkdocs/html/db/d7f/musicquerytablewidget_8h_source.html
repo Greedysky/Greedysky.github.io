@@ -24,10 +24,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.8.0.0</span>
+   &#160;<span id="projectnumber">2.9.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -109,7 +109,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="../../db/d8b/class_music_query_table_widget.html">   33</a></span>&#160;<span class="keyword">class </span>MUSIC_WIDGET_EXPORT <a class="code" href="../../db/d8b/class_music_query_table_widget.html">MusicQueryTableWidget</a> : <span class="keyword">public</span> <a class="code" href="../../dc/d4c/class_music_fill_item_table_widget.html">MusicFillItemTableWidget</a></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../db/d8b/class_music_query_table_widget.html">MusicQueryTableWidget</a>)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../db/d8b/class_music_query_table_widget.html">MusicQueryTableWidget</a>)</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../db/d8b/class_music_query_table_widget.html">MusicQueryTableWidget</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
@@ -121,7 +121,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> musicDownloadLocal(<span class="keywordtype">int</span> row) = 0;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> musicSongToPlayListChanged(<span class="keyword">const</span> QString &amp;name, <span class="keyword">const</span> QString &amp;time, <span class="keyword">const</span> QString &amp;format, <span class="keywordtype">bool</span> play);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> musicSongToPlaylistChanged(<span class="keyword">const</span> QString &amp;name, <span class="keyword">const</span> QString &amp;time, <span class="keyword">const</span> QString &amp;format, <span class="keywordtype">bool</span> play);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> showDownLoadInfoFor(<a class="code" href="../../df/dbc/namespace_music_object.html#a91224ed5c1591572d5a52bd6744e817a">MusicObject::DownLoadMode</a> type);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> restartSearchQuery(<span class="keyword">const</span> QString &amp;name);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
@@ -141,7 +141,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="../../d5/ddc/class_music_query_item_table_widget.html">  105</a></span>&#160;<span class="keyword">class </span>MUSIC_WIDGET_EXPORT <a class="code" href="../../d5/ddc/class_music_query_item_table_widget.html">MusicQueryItemTableWidget</a> : <span class="keyword">public</span> <a class="code" href="../../db/d8b/class_music_query_table_widget.html">MusicQueryTableWidget</a></div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;{</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <a class="code" href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d5/ddc/class_music_query_item_table_widget.html">MusicQueryItemTableWidget</a>)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d5/ddc/class_music_query_item_table_widget.html">MusicQueryItemTableWidget</a>)</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d5/ddc/class_music_query_item_table_widget.html">MusicQueryItemTableWidget</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
@@ -169,6 +169,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor">#endif // MUSICQUERYITEMTABLEWIDGET_H</span></div>
 <div class="ttc" id="class_music_query_table_widget_html_a70737e9e24ed0f4cc135ac81bd47297a"><div class="ttname"><a href="../../db/d8b/class_music_query_table_widget.html#a70737e9e24ed0f4cc135ac81bd47297a">MusicQueryTableWidget::startSearchQuery</a></div><div class="ttdeci">virtual void startSearchQuery(const QString &amp;text)=0</div></div>
+<div class="ttc" id="ttkglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00143">ttkglobal.h:143</a></div></div>
 <div class="ttc" id="class_music_query_item_table_widget_html_a3ff1a2b9649b8390e385332ed95ff411"><div class="ttname"><a href="../../d5/ddc/class_music_query_item_table_widget.html#a3ff1a2b9649b8390e385332ed95ff411">MusicQueryItemTableWidget::m_actionGroup</a></div><div class="ttdeci">QActionGroup * m_actionGroup</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7f/musicquerytablewidget_8h_source.html#l00160">musicquerytablewidget.h:160</a></div></div>
 <div class="ttc" id="class_music_fill_item_table_widget_html"><div class="ttname"><a href="../../dc/d4c/class_music_fill_item_table_widget.html">MusicFillItemTableWidget</a></div><div class="ttdoc">The class of the fill item table widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d42/musicfillitemtablewidget_8h_source.html#l00029">musicfillitemtablewidget.h:29</a></div></div>
 <div class="ttc" id="class_music_fill_item_table_widget_html_a439f0b18bf055cf1ce9a2e9819289eb4"><div class="ttname"><a href="../../dc/d4c/class_music_fill_item_table_widget.html#a439f0b18bf055cf1ce9a2e9819289eb4">MusicFillItemTableWidget::listCellClicked</a></div><div class="ttdeci">virtual void listCellClicked(int row, int column) override</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d89/musicfillitemtablewidget_8cpp_source.html#l00033">musicfillitemtablewidget.cpp:33</a></div></div>
@@ -177,20 +178,19 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="musicnetworkthread_8h_html"><div class="ttname"><a href="../../df/d0e/musicnetworkthread_8h.html">musicnetworkthread.h</a></div></div>
 <div class="ttc" id="class_music_query_item_table_widget_html"><div class="ttname"><a href="../../d5/ddc/class_music_query_item_table_widget.html">MusicQueryItemTableWidget</a></div><div class="ttdoc">The class of the query item table widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7f/musicquerytablewidget_8h_source.html#l00105">musicquerytablewidget.h:105</a></div></div>
 <div class="ttc" id="musicfillitemtablewidget_8h_html"><div class="ttname"><a href="../../d9/d42/musicfillitemtablewidget_8h.html">musicfillitemtablewidget.h</a></div></div>
-<div class="ttc" id="class_music_down_load_query_thread_abstract_html"><div class="ttname"><a href="../../dc/de4/class_music_down_load_query_thread_abstract.html">MusicDownLoadQueryThreadAbstract</a></div><div class="ttdoc">The class to abstract query download data from net. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00091">musicdownloadquerythreadabstract.h:91</a></div></div>
+<div class="ttc" id="class_music_down_load_query_thread_abstract_html"><div class="ttname"><a href="../../dc/de4/class_music_down_load_query_thread_abstract.html">MusicDownLoadQueryThreadAbstract</a></div><div class="ttdoc">The class to abstract query download data from net. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00092">musicdownloadquerythreadabstract.h:92</a></div></div>
 <div class="ttc" id="struct_music_searched_item_html"><div class="ttname"><a href="../../d6/dc5/struct_music_searched_item.html">MusicSearchedItem</a></div><div class="ttdoc">The class of the searched data item. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00029">musicdownloadquerythreadabstract.h:29</a></div></div>
 <div class="ttc" id="class_music_label_delegate_html"><div class="ttname"><a href="../../d0/dcf/class_music_label_delegate.html">MusicLabelDelegate</a></div><div class="ttdoc">The class of the label item delegate. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/musicitemdelegate_8h_source.html#l00168">musicitemdelegate.h:168</a></div></div>
-<div class="ttc" id="musicglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4e/musicglobal_8h_source.html#l00149">musicglobal.h:149</a></div></div>
 <div class="ttc" id="class_music_query_table_widget_html_a08e27b131a6d432a2b191c5f99bf3204"><div class="ttname"><a href="../../db/d8b/class_music_query_table_widget.html#a08e27b131a6d432a2b191c5f99bf3204">MusicQueryTableWidget::clearAllItems</a></div><div class="ttdeci">virtual void clearAllItems()=0</div></div>
 <div class="ttc" id="class_music_gif_label_widget_html"><div class="ttname"><a href="../../d3/dfb/class_music_gif_label_widget.html">MusicGifLabelWidget</a></div><div class="ttdoc">The class of the float gif label widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d69/musicgiflabelwidget_8h_source.html#l00030">musicgiflabelwidget.h:30</a></div></div>
 <div class="ttc" id="class_music_query_table_widget_html"><div class="ttname"><a href="../../db/d8b/class_music_query_table_widget.html">MusicQueryTableWidget</a></div><div class="ttdoc">The class of the query table widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7f/musicquerytablewidget_8h_source.html#l00033">musicquerytablewidget.h:33</a></div></div>
 <div class="ttc" id="musicdownloadquerythreadabstract_8h_html"><div class="ttname"><a href="../../dc/d3d/musicdownloadquerythreadabstract_8h.html">musicdownloadquerythreadabstract.h</a></div></div>
 <div class="ttc" id="class_music_query_table_widget_html_a9b9754bb12f4fdf903b03cac375feeec"><div class="ttname"><a href="../../db/d8b/class_music_query_table_widget.html#a9b9754bb12f4fdf903b03cac375feeec">MusicQueryTableWidget::m_downLoadManager</a></div><div class="ttdeci">MusicDownLoadQueryThreadAbstract * m_downLoadManager</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7f/musicquerytablewidget_8h_source.html#l00096">musicquerytablewidget.h:96</a></div></div>
-<div class="ttc" id="namespace_music_object_html_a91224ed5c1591572d5a52bd6744e817a"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#a91224ed5c1591572d5a52bd6744e817a">MusicObject::DownLoadMode</a></div><div class="ttdeci">DownLoadMode</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00263">musicobject.h:263</a></div></div>
+<div class="ttc" id="namespace_music_object_html_a91224ed5c1591572d5a52bd6744e817a"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#a91224ed5c1591572d5a52bd6744e817a">MusicObject::DownLoadMode</a></div><div class="ttdeci">DownLoadMode</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00279">musicobject.h:279</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 11 2019 14:01:54 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 29 2019 16:08:05 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

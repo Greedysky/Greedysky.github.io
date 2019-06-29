@@ -24,10 +24,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.8.0.0</span>
+   &#160;<span id="projectnumber">2.9.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -85,29 +85,44 @@ Functions</h2></td></tr>
 <tr class="memitem:a91e3ecc272fb204668934f3c1b555665"><td class="memItemLeft" align="right" valign="top">MUSIC_UTILS_EXPORT QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d03/namespace_music_utils_1_1_q_m_m_p.html#a91e3ecc272fb204668934f3c1b555665">pluginPath</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;module, <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;format)</td></tr>
 <tr class="memdesc:a91e3ecc272fb204668934f3c1b555665"><td class="mdescLeft">&#160;</td><td class="mdescRight">qmmp incldue  <a href="#a91e3ecc272fb204668934f3c1b555665">More...</a><br /></td></tr>
 <tr class="separator:a91e3ecc272fb204668934f3c1b555665"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1a780efe759222ad85b9b12477266da"><td class="memItemLeft" align="right" valign="top">MUSIC_UTILS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d03/namespace_music_utils_1_1_q_m_m_p.html#af1a780efe759222ad85b9b12477266da">midTransferFile</a> ()</td></tr>
-<tr class="separator:af1a780efe759222ad85b9b12477266da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67b718732b9ee484fd37115536cafd17"><td class="memItemLeft" align="right" valign="top">MUSIC_UTILS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d03/namespace_music_utils_1_1_q_m_m_p.html#a67b718732b9ee484fd37115536cafd17">updateMidConfigFile</a> ()</td></tr>
+<tr class="separator:a67b718732b9ee484fd37115536cafd17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf74a93386d12a0ff7b4254a4b8b21c4"><td class="memItemLeft" align="right" valign="top">MUSIC_UTILS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d03/namespace_music_utils_1_1_q_m_m_p.html#acf74a93386d12a0ff7b4254a4b8b21c4">enableVisualPlugin</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;name, bool enable)</td></tr>
+<tr class="separator:acf74a93386d12a0ff7b4254a4b8b21c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad59e4308682139cf1d6e932483d27196"><td class="memItemLeft" align="right" valign="top">MUSIC_UTILS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d03/namespace_music_utils_1_1_q_m_m_p.html#ad59e4308682139cf1d6e932483d27196">updateRippleSpectrumConfigFile</a> ()</td></tr>
+<tr class="separator:ad59e4308682139cf1d6e932483d27196"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="af1a780efe759222ad85b9b12477266da"></a>
+<a class="anchor" id="acf74a93386d12a0ff7b4254a4b8b21c4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void MusicUtils::QMMP::midTransferFile </td>
+          <td class="memname">void MusicUtils::QMMP::enableVisualPlugin </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Mid config file transfer operator. </p>
+<p>Enable visual wave control. </p>
 
-<p>Definition at line <a class="el" href="../../dd/d26/musicqmmputils_8cpp_source.html#l00019">19</a> of file <a class="el" href="../../dd/d26/musicqmmputils_8cpp_source.html">musicqmmputils.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d26/musicqmmputils_8cpp_source.html#l00047">47</a> of file <a class="el" href="../../dd/d26/musicqmmputils_8cpp_source.html">musicqmmputils.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/d95/class_qmmp.html#abc0ddf40018431c3c185e4596abc28de">Qmmp::configFile()</a>, and <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00169">MAKE_CONFIG_DIR_FULL</a>.</p>
+<p>References <a class="el" href="../../dc/d74/class_visual.html#a603132988bfcff866882d568b7850f36">Visual::factories()</a>, <a class="el" href="../../dd/d52/class_visual_factory.html#af541b64c2ecb999861b3980f64ea22de">VisualFactory::properties()</a>, <a class="el" href="../../dc/d74/class_visual.html#a53ef32117764cf98c8bd87a084079cec">Visual::setEnabled()</a>, and <a class="el" href="../../d6/d0a/_qt4_2visualfactory_8h_source.html#l00045">VisualProperties::shortName</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/d15/musicruntimemanager_8cpp_source.html#l00012">MusicRunTimeManager::run()</a>.</p>
+<p>Referenced by <a class="el" href="../../dc/d09/musicspectrumwidget_8cpp_source.html#l00379">MusicSpectrumWidget::createFloridWidget()</a>, <a class="el" href="../../dc/d09/musicspectrumwidget_8cpp_source.html#l00304">MusicSpectrumWidget::createSpectrumWidget()</a>, <a class="el" href="../../d5/d3c/musicremotewidgetforrayswave_8cpp_source.html#l00010">MusicRemoteWidgetForRaysWave::MusicRemoteWidgetForRaysWave()</a>, <a class="el" href="../../d4/d5a/musicremotewidgetforripples_8cpp_source.html#l00010">MusicRemoteWidgetForRipples::MusicRemoteWidgetForRipples()</a>, <a class="el" href="../../dd/d9c/musicripplespecturmobject_8cpp_source.html#l00093">MusicRippleSpecturmObject::removeSpectrum()</a>, <a class="el" href="../../dd/d9c/musicripplespecturmobject_8cpp_source.html#l00030">MusicRippleSpecturmObject::show()</a>, <a class="el" href="../../d5/d3c/musicremotewidgetforrayswave_8cpp_source.html#l00057">MusicRemoteWidgetForRaysWave::~MusicRemoteWidgetForRaysWave()</a>, <a class="el" href="../../d4/d5a/musicremotewidgetforripples_8cpp_source.html#l00057">MusicRemoteWidgetForRipples::~MusicRemoteWidgetForRipples()</a>, and <a class="el" href="../../dc/d09/musicspectrumwidget_8cpp_source.html#l00139">MusicSpectrumWidget::~MusicSpectrumWidget()</a>.</p>
 
 </div>
 </div>
@@ -138,18 +153,62 @@ Functions</h2></td></tr>
 <p>qmmp incldue </p>
 <p>Get qmmp plugin dir path. </p>
 
-<p>Definition at line <a class="el" href="../../dd/d26/musicqmmputils_8cpp_source.html#l00008">8</a> of file <a class="el" href="../../dd/d26/musicqmmputils_8cpp_source.html">musicqmmputils.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d26/musicqmmputils_8cpp_source.html#l00012">12</a> of file <a class="el" href="../../dd/d26/musicqmmputils_8cpp_source.html">musicqmmputils.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00286">MusicObject::getAppDir()</a>.</p>
+<p>References <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00302">MusicObject::getAppDir()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d3/dc4/musicsongtag_8cpp_source.html#l00235">MusicSongTag::findPluginPath()</a>, and <a class="el" href="../../dc/d09/musicspectrumwidget_8cpp_source.html#l00291">MusicSpectrumWidget::newSpekWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../dc/d09/musicspectrumwidget_8cpp_source.html#l00342">MusicSpectrumWidget::createLightWidget()</a>, and <a class="el" href="../../d3/dc4/musicsongtag_8cpp_source.html#l00229">MusicSongTag::findPluginPath()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a67b718732b9ee484fd37115536cafd17"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MusicUtils::QMMP::updateMidConfigFile </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Update mid config file transfer. </p>
+
+<p>Definition at line <a class="el" href="../../dd/d26/musicqmmputils_8cpp_source.html#l00023">23</a> of file <a class="el" href="../../dd/d26/musicqmmputils_8cpp_source.html">musicqmmputils.cpp</a>.</p>
+
+<p>References <a class="el" href="../../d9/d95/class_qmmp.html#a4b0da0542ad8345720ae4a24b2c5e37c">Qmmp::configFile()</a>, and <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00185">MAKE_CONFIG_DIR_FULL</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d5/d15/musicruntimemanager_8cpp_source.html#l00012">MusicRunTimeManager::run()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad59e4308682139cf1d6e932483d27196"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MusicUtils::QMMP::updateRippleSpectrumConfigFile </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Update ripple spectrum config file transfer. </p>
+
+<p>Definition at line <a class="el" href="../../dd/d26/musicqmmputils_8cpp_source.html#l00059">59</a> of file <a class="el" href="../../dd/d26/musicqmmputils_8cpp_source.html">musicqmmputils.cpp</a>.</p>
+
+<p>References <a class="el" href="../../d9/d95/class_qmmp.html#a4b0da0542ad8345720ae4a24b2c5e37c">Qmmp::configFile()</a>, <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>, <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00075">MusicSettingManager::OtherRippleSpectrumColorChoiced</a>, and <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00076">MusicSettingManager::OtherRippleSpectrumOpacityChoiced</a>.</p>
+
+<p>Referenced by <a class="el" href="../../dd/d9c/musicripplespecturmobject_8cpp_source.html#l00071">MusicRippleSpecturmObject::update()</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 11 2019 14:03:13 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 29 2019 16:10:32 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

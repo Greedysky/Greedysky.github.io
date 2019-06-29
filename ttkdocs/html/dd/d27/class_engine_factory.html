@@ -24,10 +24,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="../../lb_player_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.8.0.0</span>
+   &#160;<span id="projectnumber">2.9.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -90,26 +90,26 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac789fcc29cf6ed75e497cfc19c71670a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86d8f31395e29296665499b7ac5c5c0c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d27/class_engine_factory.html#a86d8f31395e29296665499b7ac5c5c0c">supports</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;source) <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> =0</td></tr>
 <tr class="separator:a86d8f31395e29296665499b7ac5c5c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c61933bac52133cf9aa6119c81ff46e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="../../d1/d50/class_engine_properties.html">EngineProperties</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d27/class_engine_factory.html#a6c61933bac52133cf9aa6119c81ff46e">properties</a> () <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> =0</td></tr>
-<tr class="separator:a6c61933bac52133cf9aa6119c81ff46e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accd50d5b12152c085b5948276e4a625a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d1/d50/class_engine_properties.html">EngineProperties</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d27/class_engine_factory.html#accd50d5b12152c085b5948276e4a625a">properties</a> () <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> =0</td></tr>
+<tr class="separator:accd50d5b12152c085b5948276e4a625a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5cc73a2bf06f6f74ec997f1ceaa977a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../de/df0/class_abstract_engine.html">AbstractEngine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d27/class_engine_factory.html#ab5cc73a2bf06f6f74ec997f1ceaa977a">create</a> (QObject *parent=0)=0</td></tr>
 <tr class="separator:ab5cc73a2bf06f6f74ec997f1ceaa977a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ac725006f66aa4d24e41f15222c9752"><td class="memItemLeft" align="right" valign="top">virtual QList&lt; <a class="el" href="../../d0/da1/class_file_info.html">FileInfo</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d27/class_engine_factory.html#a9ac725006f66aa4d24e41f15222c9752">createPlayList</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;fileName, bool useMetaData, QStringList *ignoredPaths)=0</td></tr>
-<tr class="separator:a9ac725006f66aa4d24e41f15222c9752"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e3e37abf8631b67a5386bf5867341be"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/dff/class_meta_data_model.html">MetaDataModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d27/class_engine_factory.html#a9e3e37abf8631b67a5386bf5867341be">createMetaDataModel</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;path, QObject *parent=0)=0</td></tr>
-<tr class="separator:a9e3e37abf8631b67a5386bf5867341be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37b1bd627e96fbfdbdffcf873ac74ed9"><td class="memItemLeft" align="right" valign="top">virtual QList&lt; <a class="el" href="../../d1/dc5/class_track_info.html">TrackInfo</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d27/class_engine_factory.html#a37b1bd627e96fbfdbdffcf873ac74ed9">createPlayList</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;fileName, TrackInfo::Parts parts, QStringList *ignoredPaths)=0</td></tr>
+<tr class="separator:a37b1bd627e96fbfdbdffcf873ac74ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad1f685d81c336f4c0d70d3ab6c4c4f5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/dff/class_meta_data_model.html">MetaDataModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d27/class_engine_factory.html#aad1f685d81c336f4c0d70d3ab6c4c4f5">createMetaDataModel</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;path, bool readOnly)=0</td></tr>
+<tr class="separator:aad1f685d81c336f4c0d70d3ab6c4c4f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac789fcc29cf6ed75e497cfc19c71670a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d27/class_engine_factory.html#ac789fcc29cf6ed75e497cfc19c71670a">~EngineFactory</a> ()</td></tr>
 <tr class="separator:ac789fcc29cf6ed75e497cfc19c71670a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86d8f31395e29296665499b7ac5c5c0c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d27/class_engine_factory.html#a86d8f31395e29296665499b7ac5c5c0c">supports</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;source) <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> =0</td></tr>
 <tr class="separator:a86d8f31395e29296665499b7ac5c5c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c61933bac52133cf9aa6119c81ff46e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="../../d1/d50/class_engine_properties.html">EngineProperties</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d27/class_engine_factory.html#a6c61933bac52133cf9aa6119c81ff46e">properties</a> () <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> =0</td></tr>
-<tr class="separator:a6c61933bac52133cf9aa6119c81ff46e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5cc73a2bf06f6f74ec997f1ceaa977a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../de/df0/class_abstract_engine.html">AbstractEngine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d27/class_engine_factory.html#ab5cc73a2bf06f6f74ec997f1ceaa977a">create</a> (QObject *parent=0)=0</td></tr>
-<tr class="separator:ab5cc73a2bf06f6f74ec997f1ceaa977a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ac725006f66aa4d24e41f15222c9752"><td class="memItemLeft" align="right" valign="top">virtual QList&lt; <a class="el" href="../../d0/da1/class_file_info.html">FileInfo</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d27/class_engine_factory.html#a9ac725006f66aa4d24e41f15222c9752">createPlayList</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;fileName, bool useMetaData, QStringList *ignoredPaths)=0</td></tr>
-<tr class="separator:a9ac725006f66aa4d24e41f15222c9752"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e3e37abf8631b67a5386bf5867341be"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/dff/class_meta_data_model.html">MetaDataModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d27/class_engine_factory.html#a9e3e37abf8631b67a5386bf5867341be">createMetaDataModel</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;path, QObject *parent=0)=0</td></tr>
-<tr class="separator:a9e3e37abf8631b67a5386bf5867341be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accd50d5b12152c085b5948276e4a625a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d1/d50/class_engine_properties.html">EngineProperties</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d27/class_engine_factory.html#accd50d5b12152c085b5948276e4a625a">properties</a> () <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> =0</td></tr>
+<tr class="separator:accd50d5b12152c085b5948276e4a625a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d55944c9f40d0170f6c50cff3e82a59"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../de/df0/class_abstract_engine.html">AbstractEngine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d27/class_engine_factory.html#a1d55944c9f40d0170f6c50cff3e82a59">create</a> (QObject *parent=nullptr)=0</td></tr>
+<tr class="separator:a1d55944c9f40d0170f6c50cff3e82a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37b1bd627e96fbfdbdffcf873ac74ed9"><td class="memItemLeft" align="right" valign="top">virtual QList&lt; <a class="el" href="../../d1/dc5/class_track_info.html">TrackInfo</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d27/class_engine_factory.html#a37b1bd627e96fbfdbdffcf873ac74ed9">createPlayList</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;fileName, TrackInfo::Parts parts, QStringList *ignoredPaths)=0</td></tr>
+<tr class="separator:a37b1bd627e96fbfdbdffcf873ac74ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad1f685d81c336f4c0d70d3ab6c4c4f5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/dff/class_meta_data_model.html">MetaDataModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d27/class_engine_factory.html#aad1f685d81c336f4c0d70d3ab6c4c4f5">createMetaDataModel</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;path, bool readOnly)=0</td></tr>
+<tr class="separator:aad1f685d81c336f4c0d70d3ab6c4c4f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Engine plugin interface. </p>
@@ -200,7 +200,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab5cc73a2bf06f6f74ec997f1ceaa977a"></a>
+<a class="anchor" id="a1d55944c9f40d0170f6c50cff3e82a59"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -211,7 +211,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual <a class="el" href="../../de/df0/class_abstract_engine.html">AbstractEngine</a>* EngineFactory::create </td>
           <td>(</td>
           <td class="paramtype">QObject *&#160;</td>
-          <td class="paramname"><em>parent</em> = <code>0</code></td><td>)</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -230,7 +230,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9e3e37abf8631b67a5386bf5867341be"></a>
+<a class="anchor" id="aad1f685d81c336f4c0d70d3ab6c4c4f5"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -246,8 +246,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">QObject *&#160;</td>
-          <td class="paramname"><em>parent</em> = <code>0</code>&#160;</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>readOnly</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -264,7 +264,7 @@ Public Member Functions</h2></td></tr>
 <p>Creats metadata object, which provides full access to file tags. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>File path. </td></tr>
-    <tr><td class="paramname">parent</td><td>Parent object. </td></tr>
+    <tr><td class="paramname">readOnly</td><td>Open file in read-only mode (<b>true</b> - enabled, <b>false</b> - disable). </td></tr>
   </table>
   </dd>
 </dl>
@@ -272,7 +272,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9e3e37abf8631b67a5386bf5867341be"></a>
+<a class="anchor" id="aad1f685d81c336f4c0d70d3ab6c4c4f5"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -288,8 +288,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">QObject *&#160;</td>
-          <td class="paramname"><em>parent</em> = <code>0</code>&#160;</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>readOnly</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -306,7 +306,7 @@ Public Member Functions</h2></td></tr>
 <p>Creats metadata object, which provides full access to file tags. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>File path. </td></tr>
-    <tr><td class="paramname">parent</td><td>Parent object. </td></tr>
+    <tr><td class="paramname">readOnly</td><td>Open file in read-only mode (<b>true</b> - enabled, <b>false</b> - disable). </td></tr>
   </table>
   </dd>
 </dl>
@@ -314,7 +314,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9ac725006f66aa4d24e41f15222c9752"></a>
+<a class="anchor" id="a37b1bd627e96fbfdbdffcf873ac74ed9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -322,7 +322,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual QList&lt;<a class="el" href="../../d0/da1/class_file_info.html">FileInfo</a> *&gt; EngineFactory::createPlayList </td>
+          <td class="memname">virtual QList&lt;<a class="el" href="../../d1/dc5/class_track_info.html">TrackInfo</a> *&gt; EngineFactory::createPlayList </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;&#160;</td>
           <td class="paramname"><em>fileName</em>, </td>
@@ -330,8 +330,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>useMetaData</em>, </td>
+          <td class="paramtype">TrackInfo::Parts&#160;</td>
+          <td class="paramname"><em>parts</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -351,18 +351,18 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Extracts metadata and audio information from file <b>path</b> and returns a list of <a class="el" href="../../d0/da1/class_file_info.html" title="The FileInfo class stores metadata and audio information about media file or stream. ">FileInfo</a> items. One file may contain several playlist items (for example: cda disk or flac with embedded cue) </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Extracts metadata and audio information from file <b>path</b> and returns a list of FileInfo items. One file may contain several playlist items (for example: cda disk or flac with embedded cue). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fileName</td><td>File path. </td></tr>
-    <tr><td class="paramname">useMetaData</td><td>Metadata usage (<b>true</b> - use, <b>-</b> do not use) </td></tr>
-    <tr><td class="paramname">ignoredPaths</td><td>Pointer to a list of the files which should be ignored by the recursive search (useful to exclude cue data files from playlist) </td></tr>
+    <tr><td class="paramname">ignoredPaths</td><td>Pointer to a list of the files which should be ignored by the recursive search. </td></tr>
+    <tr><td class="paramname">parts</td><td>parts of metadata which should be extracted from file. (useful to exclude cue data files from playlist). </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="a9ac725006f66aa4d24e41f15222c9752"></a>
+<a class="anchor" id="a37b1bd627e96fbfdbdffcf873ac74ed9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -370,7 +370,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual QList&lt;<a class="el" href="../../d0/da1/class_file_info.html">FileInfo</a> *&gt; EngineFactory::createPlayList </td>
+          <td class="memname">virtual QList&lt;<a class="el" href="../../d1/dc5/class_track_info.html">TrackInfo</a> *&gt; EngineFactory::createPlayList </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;&#160;</td>
           <td class="paramname"><em>fileName</em>, </td>
@@ -378,8 +378,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>useMetaData</em>, </td>
+          <td class="paramtype">TrackInfo::Parts&#160;</td>
+          <td class="paramname"><em>parts</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -399,18 +399,18 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Extracts metadata and audio information from file <b>path</b> and returns a list of <a class="el" href="../../d0/da1/class_file_info.html" title="The FileInfo class stores metadata and audio information about media file or stream. ">FileInfo</a> items. One file may contain several playlist items (for example: cda disk or flac with embedded cue) </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Extracts metadata and audio information from file <b>path</b> and returns a list of FileInfo items. One file may contain several playlist items (for example: cda disk or flac with embedded cue). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fileName</td><td>File path. </td></tr>
-    <tr><td class="paramname">useMetaData</td><td>Metadata usage (<b>true</b> - use, <b>-</b> do not use) </td></tr>
-    <tr><td class="paramname">ignoredPaths</td><td>Pointer to a list of the files which should be ignored by the recursive search (useful to exclude cue data files from playlist) </td></tr>
+    <tr><td class="paramname">ignoredPaths</td><td>Pointer to a list of the files which should be ignored by the recursive search. </td></tr>
+    <tr><td class="paramname">parts</td><td>parts of metadata which should be extracted from file. (useful to exclude cue data files from playlist). </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="a6c61933bac52133cf9aa6119c81ff46e"></a>
+<a class="anchor" id="accd50d5b12152c085b5948276e4a625a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -418,7 +418,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="../../d1/d50/class_engine_properties.html">EngineProperties</a> EngineFactory::properties </td>
+          <td class="memname">virtual <a class="el" href="../../d1/d50/class_engine_properties.html">EngineProperties</a> EngineFactory::properties </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -434,7 +434,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6c61933bac52133cf9aa6119c81ff46e"></a>
+<a class="anchor" id="accd50d5b12152c085b5948276e4a625a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -442,7 +442,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="../../d1/d50/class_engine_properties.html">EngineProperties</a> EngineFactory::properties </td>
+          <td class="memname">virtual <a class="el" href="../../d1/d50/class_engine_properties.html">EngineProperties</a> EngineFactory::properties </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -514,7 +514,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 11 2019 14:02:20 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 29 2019 16:09:14 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
