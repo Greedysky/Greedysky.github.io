@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.9.0.0</span>
+   &#160;<span id="projectnumber">2.10.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -81,142 +81,63 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="../../d2/d6f/base64_8h_source.html">base64.h</a>&quot;</code><br />
-<code>#include &lt;stdio.h&gt;</code><br />
-<code>#include &lt;stdlib.h&gt;</code><br />
-<code>#include &lt;string.h&gt;</code><br />
 </div>
 <p><a href="../../d8/d58/base64_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae71e3240649618989404058e82e45d99"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d58/base64_8cpp.html#ae71e3240649618989404058e82e45d99">Base64Encode</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *data, <a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> data_len)</td></tr>
-<tr class="separator:ae71e3240649618989404058e82e45d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5374f2c03f15d2c1e2742081f62b234"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d58/base64_8cpp.html#ac5374f2c03f15d2c1e2742081f62b234">find_pos</a> (char ch)</td></tr>
-<tr class="separator:ac5374f2c03f15d2c1e2742081f62b234"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cf9893673158231cd1aaf5f2d5ef19c"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d58/base64_8cpp.html#a5cf9893673158231cd1aaf5f2d5ef19c">Base64Decode</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *data, <a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> data_len)</td></tr>
-<tr class="separator:a5cf9893673158231cd1aaf5f2d5ef19c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62b147d85a179d83e7b15956b1c1cc3e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d58/base64_8cpp.html#a62b147d85a179d83e7b15956b1c1cc3e">isBase64</a> (unsigned char c)</td></tr>
+<tr class="separator:a62b147d85a179d83e7b15956b1c1cc3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:afe0ea5a757fd6f7ba16f3f68945260ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d58/base64_8cpp.html#afe0ea5a757fd6f7ba16f3f68945260ed">base</a> [] = &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=&quot;</td></tr>
-<tr class="separator:afe0ea5a757fd6f7ba16f3f68945260ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afacd58bf72ada31670f59541c2743643"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d58/base64_8cpp.html#afacd58bf72ada31670f59541c2743643">base64_chars</a> = &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/&quot;</td></tr>
+<tr class="separator:afacd58bf72ada31670f59541c2743643"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a5cf9893673158231cd1aaf5f2d5ef19c"></a>
+<a class="anchor" id="a62b147d85a179d83e7b15956b1c1cc3e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char* Base64Decode </td>
+          <td class="memname">bool isBase64 </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
-          <td class="paramname"><em>data_len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d58/base64_8cpp_source.html#l00077">77</a> of file <a class="el" href="../../d8/d58/base64_8cpp_source.html">base64.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d58/base64_8cpp_source.html#l00005">5</a> of file <a class="el" href="../../d8/d58/base64_8cpp_source.html">base64.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d8/d58/base64_8cpp_source.html#l00070">find_pos()</a>.</p>
+<p>References <a class="el" href="../../d7/de7/split_8c_source.html#l00038">isalnum</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d7/d96/qdeswrap_8cpp_source.html#l00358">QDesWrap::decrypt()</a>, <a class="el" href="../../d1/d0e/qaeswrap_8cpp_source.html#l00091">QAesWrap::decryptCBC()</a>, and <a class="el" href="../../d1/d0e/qaeswrap_8cpp_source.html#l00044">QAesWrap::decryptECB()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae71e3240649618989404058e82e45d99"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char* Base64Encode </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
-          <td class="paramname"><em>data_len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../d8/d58/base64_8cpp_source.html#l00009">9</a> of file <a class="el" href="../../d8/d58/base64_8cpp_source.html">base64.cpp</a>.</p>
-
-<p>References <a class="el" href="../../d8/d58/base64_8cpp_source.html#l00007">base</a>, and <a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int()</a>.</p>
-
-<p>Referenced by <a class="el" href="../../d7/d96/qdeswrap_8cpp_source.html#l00344">QDesWrap::encrypt()</a>, <a class="el" href="../../d1/d0e/qaeswrap_8cpp_source.html#l00061">QAesWrap::encryptCBC()</a>, and <a class="el" href="../../d1/d0e/qaeswrap_8cpp_source.html#l00014">QAesWrap::encryptECB()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac5374f2c03f15d2c1e2742081f62b234"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static char find_pos </td>
-          <td>(</td>
-          <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>ch</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../d8/d58/base64_8cpp_source.html#l00070">70</a> of file <a class="el" href="../../d8/d58/base64_8cpp_source.html">base64.cpp</a>.</p>
-
-<p>References <a class="el" href="../../d8/d58/base64_8cpp_source.html#l00007">base</a>.</p>
-
-<p>Referenced by <a class="el" href="../../d8/d58/base64_8cpp_source.html#l00077">Base64Decode()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d58/base64_8cpp_source.html#l00060">Base64::base64Decode()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="afe0ea5a757fd6f7ba16f3f68945260ed"></a>
+<a class="anchor" id="afacd58bf72ada31670f59541c2743643"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char base[] = &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=&quot;</td>
+          <td class="memname"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string base64_chars = &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d58/base64_8cpp_source.html#l00007">7</a> of file <a class="el" href="../../d8/d58/base64_8cpp_source.html">base64.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d58/base64_8cpp_source.html#l00003">3</a> of file <a class="el" href="../../d8/d58/base64_8cpp_source.html">base64.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d58/base64_8cpp_source.html#l00009">Base64Encode()</a>, <a class="el" href="../../d8/d58/base64_8cpp_source.html#l00070">find_pos()</a>, <a class="el" href="../../d0/d90/trees_8c_source.html#l00486">gen_bitlen()</a>, <a class="el" href="../../d9/d95/inftrees_8c_source.html#l00032">inflate_table()</a>, and <a class="el" href="../../d4/d90/musicdownloadxminterface_8cpp_source.html#l00016">MusicDownLoadXMInterface::makeTokenQueryCookies()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d58/base64_8cpp_source.html#l00060">Base64::base64Decode()</a>, and <a class="el" href="../../d8/d58/base64_8cpp_source.html#l00010">Base64::base64Encode()</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 29 2019 16:40:28 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 30 2019 15:33:48 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

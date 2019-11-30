@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.9.0.0</span>
+   &#160;<span id="projectnumber">2.10.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -134,12 +134,12 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="../../d0/d12/class_music_w_p_l_config_manager.html#a5277ebb5289f8b19cf1a8b33f6234895">   56</a></span>&#160;MusicSongs <a class="code" href="../../d0/d12/class_music_w_p_l_config_manager.html#a5277ebb5289f8b19cf1a8b33f6234895">MusicWPLConfigManager::readMusicFilePath</a>(<span class="keyword">const</span> QDomNode &amp;node)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">const</span> QDomNodeList &amp;nodelist = node.childNodes();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">const</span> QDomNodeList &amp;nodeList = node.childNodes();</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    MusicSongs songs;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;nodelist.count(); i++)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;nodeList.count(); i++)</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keyword">const</span> QDomElement &amp;element = nodelist.at(i).toElement();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keyword">const</span> QDomElement &amp;element = nodeList.at(i).toElement();</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        songs &lt;&lt; <a class="code" href="../../d6/de4/class_music_song.html">MusicSong</a>(element.attribute(<span class="stringliteral">&quot;src&quot;</span>), 0, QString(), QString());</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> songs;</div>
@@ -149,7 +149,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="ttkversion_8h_html_afe555b76f3d75cdb97648e7ddeb7b0dd"><div class="ttname"><a href="../../d4/da6/ttkversion_8h.html#afe555b76f3d75cdb97648e7ddeb7b0dd">TTKMUSIC_VERSION_STR</a></div><div class="ttdeci">#define TTKMUSIC_VERSION_STR</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/da6/ttkversion_8h_source.html#l00109">ttkversion.h:109</a></div></div>
 <div class="ttc" id="musicwplconfigmanager_8h_html"><div class="ttname"><a href="../../d0/d89/musicwplconfigmanager_8h.html">musicwplconfigmanager.h</a></div></div>
 <div class="ttc" id="class_music_abstract_xml_html"><div class="ttname"><a href="../../d7/d53/class_music_abstract_xml.html">MusicAbstractXml</a></div><div class="ttdoc">The class of the base class of xml interface. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d83/musicabstractxml_8h_source.html#l00047">musicabstractxml.h:47</a></div></div>
-<div class="ttc" id="musicobject_8h_html_af0b5cfa4242ae7f98ba80fd23ef8afa9"><div class="ttname"><a href="../../d8/d07/musicobject_8h.html#af0b5cfa4242ae7f98ba80fd23ef8afa9">APP_NAME</a></div><div class="ttdeci">#define APP_NAME</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00090">musicobject.h:90</a></div></div>
+<div class="ttc" id="musicobject_8h_html_af0b5cfa4242ae7f98ba80fd23ef8afa9"><div class="ttname"><a href="../../d8/d07/musicobject_8h.html#af0b5cfa4242ae7f98ba80fd23ef8afa9">APP_NAME</a></div><div class="ttdeci">#define APP_NAME</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00095">musicobject.h:95</a></div></div>
 <div class="ttc" id="ttkversion_8h_html"><div class="ttname"><a href="../../d4/da6/ttkversion_8h.html">ttkversion.h</a></div></div>
 <div class="ttc" id="struct_music_song_item_html_adfd79c10fd52b31c1b4ffe39143d9ab9"><div class="ttname"><a href="../../d3/d40/struct_music_song_item.html#adfd79c10fd52b31c1b4ffe39143d9ab9">MusicSongItem::m_songs</a></div><div class="ttdeci">MusicSongs m_songs</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d03/musicsong_8h_source.html#l00203">musicsong.h:203</a></div></div>
 <div class="ttc" id="class_music_w_p_l_config_manager_html_a9df7cf7bd79101bade8d9083fdc9c0a5"><div class="ttname"><a href="../../d0/d12/class_music_w_p_l_config_manager.html#a9df7cf7bd79101bade8d9083fdc9c0a5">MusicWPLConfigManager::readPlaylistData</a></div><div class="ttdeci">virtual void readPlaylistData(MusicSongItems &amp;items) override</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/db1/musicwplconfigmanager_8cpp_source.html#l00011">musicwplconfigmanager.cpp:11</a></div></div>
@@ -166,11 +166,11 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="struct_music_song_item_html_a6cb400779ddad9caf5196d329f2c60b4"><div class="ttname"><a href="../../d3/d40/struct_music_song_item.html#a6cb400779ddad9caf5196d329f2c60b4">MusicSongItem::m_itemName</a></div><div class="ttdeci">QString m_itemName</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d03/musicsong_8h_source.html#l00201">musicsong.h:201</a></div></div>
 <div class="ttc" id="class_music_abstract_xml_html_a6f1e9e0075f3431244fb0cd01f9823b7"><div class="ttname"><a href="../../d7/d53/class_music_abstract_xml.html#a6f1e9e0075f3431244fb0cd01f9823b7">MusicAbstractXml::m_file</a></div><div class="ttdeci">QFile * m_file</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d83/musicabstractxml_8h_source.html#l00147">musicabstractxml.h:147</a></div></div>
 <div class="ttc" id="class_music_song_html"><div class="ttname"><a href="../../d6/de4/class_music_song.html">MusicSong</a></div><div class="ttdoc">The class of the music song info. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d03/musicsong_8h_source.html#l00028">musicsong.h:28</a></div></div>
-<div class="ttc" id="musicobject_8h_html_af9ff8417edbf25600567d9f7eff873d8"><div class="ttname"><a href="../../d8/d07/musicobject_8h.html#af9ff8417edbf25600567d9f7eff873d8">WPL_FILE_PREFIX</a></div><div class="ttdeci">#define WPL_FILE_PREFIX</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00050">musicobject.h:50</a></div></div>
+<div class="ttc" id="musicobject_8h_html_af9ff8417edbf25600567d9f7eff873d8"><div class="ttname"><a href="../../d8/d07/musicobject_8h.html#af9ff8417edbf25600567d9f7eff873d8">WPL_FILE_PREFIX</a></div><div class="ttdeci">#define WPL_FILE_PREFIX</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00053">musicobject.h:53</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 29 2019 16:40:14 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 30 2019 15:33:06 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

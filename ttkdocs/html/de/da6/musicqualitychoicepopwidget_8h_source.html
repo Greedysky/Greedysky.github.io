@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.9.0.0</span>
+   &#160;<span id="projectnumber">2.10.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -111,8 +111,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d1/dab/class_music_quality_choice_table_widget.html">MusicQualityChoiceTableWidget</a>();</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d1/dab/class_music_abstract_table_widget.html#ae44f9823a70195fd53cda4d7b47a40be">listCellEntered</a>(<span class="keywordtype">int</span> row, <span class="keywordtype">int</span> column);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d1/dab/class_music_abstract_table_widget.html#a01ba3eac2062cb7fb5fe22753594f4f3">listCellClicked</a>(<span class="keywordtype">int</span> row, <span class="keywordtype">int</span> column) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d1/dab/class_music_abstract_table_widget.html#a53ee6cc49c2ca8593091c3a10b931245">itemCellEntered</a>(<span class="keywordtype">int</span> row, <span class="keywordtype">int</span> column);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d1/dab/class_music_abstract_table_widget.html#a889b12c661d22d4115ebaf8cff0e7ffb">itemCellClicked</a>(<span class="keywordtype">int</span> row, <span class="keywordtype">int</span> column) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> createItems();</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
@@ -129,7 +129,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> researchQueryByQuality(<span class="keyword">const</span> QString &amp;quality);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> listCellClicked(<span class="keywordtype">int</span> row);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> itemCellClicked(<span class="keywordtype">int</span> row);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> initWidget();</div>
@@ -144,15 +144,15 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_quality_choice_table_widget_html"><div class="ttname"><a href="../../d1/dab/class_music_quality_choice_table_widget.html">MusicQualityChoiceTableWidget</a></div><div class="ttdoc">The class of the quality choice table widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/da6/musicqualitychoicepopwidget_8h_source.html#l00028">musicqualitychoicepopwidget.h:28</a></div></div>
 <div class="ttc" id="class_music_quality_choice_pop_widget_html_a17dd2356f1921cd2bee90cedbf76da7b"><div class="ttname"><a href="../../d2/dbe/class_music_quality_choice_pop_widget.html#a17dd2356f1921cd2bee90cedbf76da7b">MusicQualityChoicePopWidget::m_currentQuality</a></div><div class="ttdeci">QString m_currentQuality</div><div class="ttdef"><b>Definition:</b> <a href="../../de/da6/musicqualitychoicepopwidget_8h_source.html#l00088">musicqualitychoicepopwidget.h:88</a></div></div>
 <div class="ttc" id="class_music_abstract_table_widget_html"><div class="ttname"><a href="../../d1/dab/class_music_abstract_table_widget.html">MusicAbstractTableWidget</a></div><div class="ttdoc">The class of the table widget base. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/db4/musicabstracttablewidget_8h_source.html#l00038">musicabstracttablewidget.h:38</a></div></div>
-<div class="ttc" id="class_music_abstract_table_widget_html_a01ba3eac2062cb7fb5fe22753594f4f3"><div class="ttname"><a href="../../d1/dab/class_music_abstract_table_widget.html#a01ba3eac2062cb7fb5fe22753594f4f3">MusicAbstractTableWidget::listCellClicked</a></div><div class="ttdeci">virtual void listCellClicked(int row, int column)=0</div></div>
 <div class="ttc" id="ttkglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00143">ttkglobal.h:143</a></div></div>
 <div class="ttc" id="musictoolmenuwidget_8h_html"><div class="ttname"><a href="../../d6/dd6/musictoolmenuwidget_8h.html">musictoolmenuwidget.h</a></div></div>
-<div class="ttc" id="class_music_abstract_table_widget_html_ae44f9823a70195fd53cda4d7b47a40be"><div class="ttname"><a href="../../d1/dab/class_music_abstract_table_widget.html#ae44f9823a70195fd53cda4d7b47a40be">MusicAbstractTableWidget::listCellEntered</a></div><div class="ttdeci">virtual void listCellEntered(int row, int column)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d08/musicabstracttablewidget_8cpp_source.html#l00054">musicabstracttablewidget.cpp:54</a></div></div>
+<div class="ttc" id="class_music_abstract_table_widget_html_a53ee6cc49c2ca8593091c3a10b931245"><div class="ttname"><a href="../../d1/dab/class_music_abstract_table_widget.html#a53ee6cc49c2ca8593091c3a10b931245">MusicAbstractTableWidget::itemCellEntered</a></div><div class="ttdeci">virtual void itemCellEntered(int row, int column)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d08/musicabstracttablewidget_8cpp_source.html#l00070">musicabstracttablewidget.cpp:70</a></div></div>
+<div class="ttc" id="class_music_abstract_table_widget_html_a889b12c661d22d4115ebaf8cff0e7ffb"><div class="ttname"><a href="../../d1/dab/class_music_abstract_table_widget.html#a889b12c661d22d4115ebaf8cff0e7ffb">MusicAbstractTableWidget::itemCellClicked</a></div><div class="ttdeci">virtual void itemCellClicked(int row, int column)=0</div></div>
 <div class="ttc" id="class_music_quality_choice_pop_widget_html"><div class="ttname"><a href="../../d2/dbe/class_music_quality_choice_pop_widget.html">MusicQualityChoicePopWidget</a></div><div class="ttdoc">The class of the quality choice pop widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/da6/musicqualitychoicepopwidget_8h_source.html#l00060">musicqualitychoicepopwidget.h:60</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 29 2019 16:40:18 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 30 2019 15:33:25 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

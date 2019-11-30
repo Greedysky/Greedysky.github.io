@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.9.0.0</span>
+   &#160;<span id="projectnumber">2.10.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -73,6 +73,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">musicurlutils.cpp File Reference</div>  </div>
 </div><!--header-->
@@ -83,10 +85,89 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <code>#include &lt;QDesktopServices&gt;</code><br />
 </div>
 <p><a href="../../d5/dfa/musicurlutils_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a3d5422c20c0c9ad18e3d37616b559583"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="../../df/d7f/ttkglobal_8h.html#a50b041cdbb076940a7f4cc550a36d97b">MString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/musicurlutils_8cpp.html#a3d5422c20c0c9ad18e3d37616b559583">ASCII_MAP</a> (R&quot;(&quot;%&lt;&gt;[\]^_`{|})&quot;)</td></tr>
+<tr class="separator:a3d5422c20c0c9ad18e3d37616b559583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb91d4ebffbdb3882407cb59cd3bcf33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="../../df/d7f/ttkglobal_8h.html#a50b041cdbb076940a7f4cc550a36d97b">MString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/musicurlutils_8cpp.html#adb91d4ebffbdb3882407cb59cd3bcf33">HEX_NUM_MAP</a> (&quot;0123456789ABCDEF&quot;)</td></tr>
+<tr class="separator:adb91d4ebffbdb3882407cb59cd3bcf33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a146aead14be53117c40d81620e028e61"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/musicurlutils_8cpp.html#a146aead14be53117c40d81620e028e61">number2Char</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char h, <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char l)</td></tr>
+<tr class="separator:a146aead14be53117c40d81620e028e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a3d5422c20c0c9ad18e3d37616b559583"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="../../df/d7f/ttkglobal_8h.html#a50b041cdbb076940a7f4cc550a36d97b">MString</a> ASCII_MAP </td>
+          <td>(</td>
+          <td class="paramtype">R&quot;(&quot;%&lt;&gt;[\]^_`{|})&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Referenced by <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html#l00082">MusicUtils::Url::urlPrettyEncode()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adb91d4ebffbdb3882407cb59cd3bcf33"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="../../df/d7f/ttkglobal_8h.html#a50b041cdbb076940a7f4cc550a36d97b">MString</a> HEX_NUM_MAP </td>
+          <td>(</td>
+          <td class="paramtype">&quot;0123456789ABCDEF&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Referenced by <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html#l00014">number2Char()</a>, and <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html#l00082">MusicUtils::Url::urlPrettyEncode()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a146aead14be53117c40d81620e028e61"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char number2Char </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char&#160;</td>
+          <td class="paramname"><em>l</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html#l00014">14</a> of file <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html">musicurlutils.cpp</a>.</p>
+
+<p>References <a class="el" href="../../d5/dfa/musicurlutils_8cpp.html#adb91d4ebffbdb3882407cb59cd3bcf33">HEX_NUM_MAP()</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html#l00102">MusicUtils::Url::urlPrettyDecode()</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 29 2019 16:40:26 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 30 2019 15:33:47 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

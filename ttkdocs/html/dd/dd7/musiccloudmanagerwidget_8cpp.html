@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.9.0.0</span>
+   &#160;<span id="projectnumber">2.10.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -90,48 +90,30 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <code>#include &quot;<a class="el" href="../../df/df1/musiccloudfileinformationwidget_8h_source.html">musiccloudfileinformationwidget.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d3/d51/musicdatadownloadthread_8h_source.html">musicdatadownloadthread.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../da/dde/musiccoreutils_8h_source.html">musiccoreutils.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d7/de5/musicfileutils_8h_source.html">musicfileutils.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/d50/musicstringutils_8h_source.html">musicstringutils.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d3/d12/musicformats_8h_source.html">musicformats.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d8/dbd/musicmessagebox_8h_source.html">musicmessagebox.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html">musicconnectionpool.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../dd/dbf/musiccloudtablewidget_8h_source.html">musiccloudtablewidget.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d4/d56/musicsourceupdatethread_8h_source.html">musicsourceupdatethread.h</a>&quot;</code><br />
-<code>#include &lt;QThread&gt;</code><br />
-<code>#include &quot;<a class="el" href="../../d7/d91/qnconf_8h_source.html">qiniu/qnconf.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../dd/dd7/qnsimplelistdata_8h_source.html">qiniu/qnsimplelistdata.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d1/dfd/qnsimpleuploaddata_8h_source.html">qiniu/qnsimpleuploaddata.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../da/df7/qnsimpledeletedata_8h_source.html">qiniu/qnsimpledeletedata.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d7/dff/ossconf_8h_source.html">qoss/ossconf.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d7/db8/osslistdata_8h_source.html">qoss/osslistdata.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/d2a/ossuploaddata_8h_source.html">qoss/ossuploaddata.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d7/d9a/ossdeletedata_8h_source.html">qoss/ossdeletedata.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/db4/ossdownloaddata_8h_source.html">qoss/ossdownloaddata.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d5/d36/parser_8h_source.html">qjson/parser.h</a>&quot;</code><br />
 </div>
 <p><a href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a3f4560930bf26deeb7844bacf9c34a8e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp.html#a3f4560930bf26deeb7844bacf9c34a8e">QN_BUCKET</a>&#160;&#160;&#160;&quot;music&quot;</td></tr>
-<tr class="memdesc:a3f4560930bf26deeb7844bacf9c34a8e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d3/d7b/namespace_q_json.html" title="Namespace used by QJson. ">QJson</a> import.  <a href="#a3f4560930bf26deeb7844bacf9c34a8e">More...</a><br /></td></tr>
-<tr class="separator:a3f4560930bf26deeb7844bacf9c34a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acad6fe5353d2e25090fbe765fe99e3a2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp.html#acad6fe5353d2e25090fbe765fe99e3a2">QN_CLOUD</a>&#160;&#160;&#160;&quot;cloud&quot;</td></tr>
+<tr class="memdesc:acad6fe5353d2e25090fbe765fe99e3a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Oss import.  <a href="#acad6fe5353d2e25090fbe765fe99e3a2">More...</a><br /></td></tr>
 <tr class="separator:acad6fe5353d2e25090fbe765fe99e3a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a3f4560930bf26deeb7844bacf9c34a8e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define QN_BUCKET&#160;&#160;&#160;&quot;music&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p><a class="el" href="../../d3/d7b/namespace_q_json.html" title="Namespace used by QJson. ">QJson</a> import. </p>
-
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00030">30</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
-
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00227">MusicCloudManagerTableWidget::deleteFilesToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00202">MusicCloudManagerTableWidget::deleteFileToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00441">MusicCloudManagerTableWidget::startToUploadFile()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00196">MusicCloudManagerTableWidget::updateListToServer()</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="acad6fe5353d2e25090fbe765fe99e3a2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -142,16 +124,19 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00031">31</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+<p>Oss import. </p>
+<p><a class="el" href="../../d3/d7b/namespace_q_json.html" title="Namespace used by QJson. ">QJson</a> import </p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00080">MusicCloudManagerTableWidget::getKey()</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00029">29</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00081">MusicCloudManagerTableWidget::getKey()</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 29 2019 16:40:26 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 30 2019 15:33:48 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

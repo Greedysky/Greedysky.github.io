@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.9.0.0</span>
+   &#160;<span id="projectnumber">2.10.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -118,9 +118,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_h"></a>- h -</h3><ul>
 <li>handleError()
-: <a class="el" href="db/d69/class_q_n_simple_delete_data.html#a5943f5d316cdc1aef660e5a76a229b21">QNSimpleDeleteData</a>
-, <a class="el" href="d5/d7e/class_q_n_simple_list_data.html#a424c551095553b8d6e9c047831a7aa30">QNSimpleListData</a>
-, <a class="el" href="dd/df7/class_q_n_simple_upload_data.html#a807d88bcf1c2321df888762ba22168e3">QNSimpleUploadData</a>
+: <a class="el" href="d3/da7/class_o_s_s_data_interface.html#ac0061c9ccc59dfd6d80033d1dba02e6d">OSSDataInterface</a>
+</li>
+<li>handleRequest()
+: <a class="el" href="d9/d23/class_dlna_file_server.html#a45dacb32a257cd25030cab68a9d8a9c1">DlnaFileServer</a>
 </li>
 <li>hasError()
 : <a class="el" href="dc/db2/class_qmmp_plugin_cache.html#a020c9203b7b8d0c13a11695ec954b4d1">QmmpPluginCache</a>
@@ -140,9 +141,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>hasMetaData()
 : <a class="el" href="da/d56/class_decoder.html#af2cda7bd89a9f127a1a0742f01daed6a">Decoder</a>
 , <a class="el" href="dc/d3d/class_input_source.html#a27993a094d39e61fcf1c8d2970ebc503">InputSource</a>
-</li>
-<li>hasMultiPinyin()
-: <a class="el" href="dc/d86/class_pinyin_helper.html#ab5c6ebeb4c66766c3f0a8e86bf5f494d">PinyinHelper</a>
 </li>
 <li>hasNotifySignal()
 : <a class="el" href="d7/d83/class_volume.html#a960c9ecb4cf6331b4a5d0c43bc250dd6">Volume</a>
@@ -179,7 +177,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="d3/d8d/structinternal__state.html#aafd9ba338599f15de29386ff7a0218f4">internal_state</a>
 </li>
 <li>HEADER
-: <a class="el" href="d5/d00/class_music_audio_recorder_core.html#a21a1b31a4904f64ce71bac56b5ca3ecc">MusicAudioRecorderCore</a>
+: <a class="el" href="d4/d41/class_music_audio_recorder_object.html#a0789edc82104a269b7dfdf2d7fba8701">MusicAudioRecorderObject</a>
+</li>
+<li>header()
+: <a class="el" href="d1/de7/class_q_http_request.html#aef0728ba36a1868dd27ecce6fa0b7959">QHttpRequest</a>
+</li>
+<li>header_state
+: <a class="el" href="d1/d04/structhttp__parser.html#ac5b254b99c6472ca19ae1f426758ce75">http_parser</a>
+</li>
+<li>HeaderField()
+: <a class="el" href="d5/dd8/class_q_http_connection_private.html#a1b5243507df7d329b2b78c6fab018002">QHttpConnectionPrivate</a>
+</li>
+<li>headers
+: <a class="el" href="d1/de7/class_q_http_request.html#a0695214751f7a6d97121f12b36da7db9">QHttpRequest</a>
+</li>
+<li>HeadersComplete()
+: <a class="el" href="d5/dd8/class_q_http_connection_private.html#ad6beb59d31e1e64380c7780c97869809">QHttpConnectionPrivate</a>
+</li>
+<li>HeaderValue()
+: <a class="el" href="d5/dd8/class_q_http_connection_private.html#a902e3dfb42bbe4ffa8cf9ca6c71770cc">QHttpConnectionPrivate</a>
 </li>
 <li>heap
 : <a class="el" href="d3/d8d/structinternal__state.html#ad7edb9b1d387e631bc6fde1cad0af758">internal_state</a>
@@ -203,9 +219,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>high_water
 : <a class="el" href="d3/d8d/structinternal__state.html#a85439cd585435b2590039339139d25cb">internal_state</a>
 </li>
-<li>hmacSha1()
-: <a class="el" href="db/d29/class_q_n_utils.html#a5a4a83e79bca40eff55908042312590a">QNUtils</a>
-</li>
 <li>hold
 : <a class="el" href="d4/d4e/structinflate__state.html#a5a91b1c59e52f1aa7eda75b86b05b843">inflate_state</a>
 </li>
@@ -215,20 +228,113 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>hotKey()
 : <a class="el" href="d5/d95/class_music_hot_key_manager.html#a448ba86d0f42902eb8a43ca79faed896">MusicHotKeyManager</a>
 </li>
-<li>HotkeyEnableChoiced
-: <a class="el" href="db/d01/class_music_setting_manager.html#a146c66bf631250e49944cfbd221e29a5a94c002236fba4518fdfc9425c3eb2f2c">MusicSettingManager</a>
+<li>HotkeyEnable
+: <a class="el" href="db/d01/class_music_setting_manager.html#a146c66bf631250e49944cfbd221e29a5a3989cf930e3d32abbd2a9184b551ff1b">MusicSettingManager</a>
 </li>
-<li>HotkeyStringChoiced
-: <a class="el" href="db/d01/class_music_setting_manager.html#a146c66bf631250e49944cfbd221e29a5a9461400395baa515ba590e9b9e400399">MusicSettingManager</a>
+<li>HotkeyString
+: <a class="el" href="db/d01/class_music_setting_manager.html#a146c66bf631250e49944cfbd221e29a5aac0c0032e1f717464283199a2a971072">MusicSettingManager</a>
 </li>
 <li>how
 : <a class="el" href="d1/d4f/structgz__state.html#ac6e4b7db699aacd089f6d55b01483d6f">gz_state</a>
+</li>
+<li>HTTP_CHECKOUT
+: <a class="el" href="d1/de7/class_q_http_request.html#a107e6e86fad49626a3fb5bd0306f32c9a5e67193ed04258503fc2f5a509f7efcd">QHttpRequest</a>
+</li>
+<li>HTTP_CONNECT
+: <a class="el" href="d1/de7/class_q_http_request.html#a107e6e86fad49626a3fb5bd0306f32c9a17621b5bcd01229b630fc23f79aba8b3">QHttpRequest</a>
+</li>
+<li>HTTP_COPY
+: <a class="el" href="d1/de7/class_q_http_request.html#a107e6e86fad49626a3fb5bd0306f32c9a95b729f45a2b3dec707b2cd82e103a69">QHttpRequest</a>
+</li>
+<li>HTTP_DELETE
+: <a class="el" href="d1/de7/class_q_http_request.html#a107e6e86fad49626a3fb5bd0306f32c9a59324225dd8d5c1e97cf9cd82da787ec">QHttpRequest</a>
+</li>
+<li>http_errno
+: <a class="el" href="d1/d04/structhttp__parser.html#ab8638d65fa174bc1925d77e2533117fa">http_parser</a>
+</li>
+<li>HTTP_GET
+: <a class="el" href="d1/de7/class_q_http_request.html#a107e6e86fad49626a3fb5bd0306f32c9a631118671ebb13510edaf45ec56d1ed3">QHttpRequest</a>
+</li>
+<li>HTTP_HEAD
+: <a class="el" href="d1/de7/class_q_http_request.html#a107e6e86fad49626a3fb5bd0306f32c9ae400d07e1036c46656fec10b77ca16eb">QHttpRequest</a>
+</li>
+<li>HTTP_LOCK
+: <a class="el" href="d1/de7/class_q_http_request.html#a107e6e86fad49626a3fb5bd0306f32c9a85e792edc0225259d99697ef7648a95b">QHttpRequest</a>
+</li>
+<li>http_major
+: <a class="el" href="d1/d04/structhttp__parser.html#ac994a4a8268652f5ce82de5bde5c3f9d">http_parser</a>
+</li>
+<li>HTTP_MERGE
+: <a class="el" href="d1/de7/class_q_http_request.html#a107e6e86fad49626a3fb5bd0306f32c9a143651b053422507cb47e96af98f479f">QHttpRequest</a>
+</li>
+<li>http_minor
+: <a class="el" href="d1/d04/structhttp__parser.html#ae8af6433c824f5348773842db62ad4ab">http_parser</a>
+</li>
+<li>HTTP_MKACTIVITY
+: <a class="el" href="d1/de7/class_q_http_request.html#a107e6e86fad49626a3fb5bd0306f32c9a31c97ebaf29d07887b73502c00d8c740">QHttpRequest</a>
+</li>
+<li>HTTP_MKCOL
+: <a class="el" href="d1/de7/class_q_http_request.html#a107e6e86fad49626a3fb5bd0306f32c9a4644604dc8aed11cca21114c43ebc5f5">QHttpRequest</a>
+</li>
+<li>HTTP_MOVE
+: <a class="el" href="d1/de7/class_q_http_request.html#a107e6e86fad49626a3fb5bd0306f32c9ad99bc3f135730b530c949c5640974e60">QHttpRequest</a>
+</li>
+<li>HTTP_MSEARCH
+: <a class="el" href="d1/de7/class_q_http_request.html#a107e6e86fad49626a3fb5bd0306f32c9a070e4f19b92565c2121ae9075b560417">QHttpRequest</a>
+</li>
+<li>HTTP_NOTIFY
+: <a class="el" href="d1/de7/class_q_http_request.html#a107e6e86fad49626a3fb5bd0306f32c9aeb3793a6c02ef90640a23daf6c68e6a9">QHttpRequest</a>
+</li>
+<li>HTTP_OPTIONS
+: <a class="el" href="d1/de7/class_q_http_request.html#a107e6e86fad49626a3fb5bd0306f32c9abda1798246c32359e9581591419103fa">QHttpRequest</a>
+</li>
+<li>HTTP_PATCH
+: <a class="el" href="d1/de7/class_q_http_request.html#a107e6e86fad49626a3fb5bd0306f32c9a3632750fcd9d03c173a0b920a69d90de">QHttpRequest</a>
+</li>
+<li>HTTP_POST
+: <a class="el" href="d1/de7/class_q_http_request.html#a107e6e86fad49626a3fb5bd0306f32c9a6e9797c0f1c734982de2a65c61ac83d2">QHttpRequest</a>
+</li>
+<li>HTTP_PROPFIND
+: <a class="el" href="d1/de7/class_q_http_request.html#a107e6e86fad49626a3fb5bd0306f32c9a6797b9e1e8b46263be41e74435539862">QHttpRequest</a>
+</li>
+<li>HTTP_PROPPATCH
+: <a class="el" href="d1/de7/class_q_http_request.html#a107e6e86fad49626a3fb5bd0306f32c9a0d1bf8c7664f7868eb56a362d4e88afc">QHttpRequest</a>
+</li>
+<li>HTTP_PURGE
+: <a class="el" href="d1/de7/class_q_http_request.html#a107e6e86fad49626a3fb5bd0306f32c9a074569c58606b8b57e49da4229d0064d">QHttpRequest</a>
+</li>
+<li>HTTP_PUT
+: <a class="el" href="d1/de7/class_q_http_request.html#a107e6e86fad49626a3fb5bd0306f32c9a0b186a2c2d2ffccc79f781dec479f653">QHttpRequest</a>
+</li>
+<li>HTTP_REPORT
+: <a class="el" href="d1/de7/class_q_http_request.html#a107e6e86fad49626a3fb5bd0306f32c9acf899a0de03766b0a378b7f6c5172249">QHttpRequest</a>
+</li>
+<li>HTTP_SEARCH
+: <a class="el" href="d1/de7/class_q_http_request.html#a107e6e86fad49626a3fb5bd0306f32c9a6d7303fa4f820ab5c24a7278f28fb254">QHttpRequest</a>
+</li>
+<li>HTTP_SUBSCRIBE
+: <a class="el" href="d1/de7/class_q_http_request.html#a107e6e86fad49626a3fb5bd0306f32c9a5703d844919c2d92d36a81e008cb8c90">QHttpRequest</a>
+</li>
+<li>HTTP_TRACE
+: <a class="el" href="d1/de7/class_q_http_request.html#a107e6e86fad49626a3fb5bd0306f32c9a288a62878b19f7592c1024c5e8582adc">QHttpRequest</a>
+</li>
+<li>HTTP_UNLOCK
+: <a class="el" href="d1/de7/class_q_http_request.html#a107e6e86fad49626a3fb5bd0306f32c9a5fc34526adfbbc52475c726d68888a25">QHttpRequest</a>
+</li>
+<li>HTTP_UNSUBSCRIBE
+: <a class="el" href="d1/de7/class_q_http_request.html#a107e6e86fad49626a3fb5bd0306f32c9a91d45a2a69dd13f39c404e3ffc2ec505">QHttpRequest</a>
+</li>
+<li>HttpMethod
+: <a class="el" href="d1/de7/class_q_http_request.html#a107e6e86fad49626a3fb5bd0306f32c9">QHttpRequest</a>
+</li>
+<li>httpVersion
+: <a class="el" href="d1/de7/class_q_http_request.html#ac337f3560e53c16e4b6a9594ac761cc9">QHttpRequest</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 29 2019 16:40:42 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 30 2019 15:34:49 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

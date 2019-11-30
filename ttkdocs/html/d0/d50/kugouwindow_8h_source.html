@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.9.0.0</span>
+   &#160;<span id="projectnumber">2.10.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -100,67 +100,65 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;QWidget&gt;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dc/dbe/kugouurl_8h.html">kugouurl.h</a>&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dd/d24/ttkprivate_8h.html">ttkprivate.h</a>&quot;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">class </span><a class="code" href="../../dd/d3f/class_kugou_window_private.html">KugouWindowPrivate</a>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../dc/d05/class_kugou_window.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d3/de6/musicextrasglobaldefine_8h.html#a26f6db0b4db801cc546e000e046a2845">MUSIC_EXTRAS_EXPORT</a> <a class="code" href="../../dc/d05/class_kugou_window.html">KugouWindow</a> : <span class="keyword">public</span> QWidget</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31">   35</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31">KuGouType</a></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31a20dc4ff250f77066df9e120fb888b076">   37</a></span>&#160;        <a class="code" href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31a20dc4ff250f77066df9e120fb888b076">KuGouSong</a>,      </div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31a59f8759e42011f2a42152a68d7c83421">   38</a></span>&#160;        <a class="code" href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31a59f8759e42011f2a42152a68d7c83421">KuGouRadio</a>,     </div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31a62777a7f751f1ecad6ac43788aeb896a">   39</a></span>&#160;        <a class="code" href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31a62777a7f751f1ecad6ac43788aeb896a">KuGouList</a>,      </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31ab4863dc4a007c62eace2f0e615960360">   40</a></span>&#160;        <a class="code" href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31ab4863dc4a007c62eace2f0e615960360">KugouMv</a>,        </div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31acfeb0983009c5fa3e2cd5c4a4a48f35f">   41</a></span>&#160;        <a class="code" href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31acfeb0983009c5fa3e2cd5c4a4a48f35f">KuGouLive</a>,      </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31a6f58fc67e6d73ea7e89d209d50d82e2f">   42</a></span>&#160;        <a class="code" href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31a6f58fc67e6d73ea7e89d209d50d82e2f">KuGouLrc</a>,       </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31ac6504f6445ccd224bd085e78c9a5cb73">   43</a></span>&#160;        KuGouSingle     </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    };</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../dc/d05/class_kugou_window.html">KugouWindow</a>(KuGouType type, QWidget *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> setUrl(<span class="keyword">const</span> QString &amp;url);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> goBack();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> kugouSongIndexChanged(<span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> kugouRadioIndexChanged(<span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> kugouMVIndexChanged(<span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> createWebViewer();</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> createKugouSongWidget();</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> createKugouRadioWidget();</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> createKugouListWidget();</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> createKugouMVWidget();</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> createKugouSingleWidget();</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span> changeClickedButtonStyle(<span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="../../dd/d24/ttkprivate_8h.html#a6a4c0fd17818d8e869c93fa7155c9dc4">TTK_DECLARE_PRIVATE</a>(<a class="code" href="../../dc/d05/class_kugou_window.html">KugouWindow</a>)</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;};</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif // KUGOUWINDOW_H</span></div>
-<div class="ttc" id="class_kugou_window_html_a070c701078c551843146dbc88d239c31"><div class="ttname"><a href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31">KugouWindow::KuGouType</a></div><div class="ttdeci">KuGouType</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d50/kugouwindow_8h_source.html#l00035">kugouwindow.h:35</a></div></div>
-<div class="ttc" id="class_kugou_window_html_a070c701078c551843146dbc88d239c31a6f58fc67e6d73ea7e89d209d50d82e2f"><div class="ttname"><a href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31a6f58fc67e6d73ea7e89d209d50d82e2f">KugouWindow::KuGouLrc</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d50/kugouwindow_8h_source.html#l00042">kugouwindow.h:42</a></div></div>
-<div class="ttc" id="class_kugou_window_html_a070c701078c551843146dbc88d239c31a59f8759e42011f2a42152a68d7c83421"><div class="ttname"><a href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31a59f8759e42011f2a42152a68d7c83421">KugouWindow::KuGouRadio</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d50/kugouwindow_8h_source.html#l00038">kugouwindow.h:38</a></div></div>
-<div class="ttc" id="class_kugou_window_html_a070c701078c551843146dbc88d239c31a62777a7f751f1ecad6ac43788aeb896a"><div class="ttname"><a href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31a62777a7f751f1ecad6ac43788aeb896a">KugouWindow::KuGouList</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d50/kugouwindow_8h_source.html#l00039">kugouwindow.h:39</a></div></div>
-<div class="ttc" id="class_kugou_window_html_a070c701078c551843146dbc88d239c31a20dc4ff250f77066df9e120fb888b076"><div class="ttname"><a href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31a20dc4ff250f77066df9e120fb888b076">KugouWindow::KuGouSong</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d50/kugouwindow_8h_source.html#l00037">kugouwindow.h:37</a></div></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">class </span><a class="code" href="../../dd/d3f/class_kugou_window_private.html">KugouWindowPrivate</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../dc/d05/class_kugou_window.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d3/de6/musicextrasglobaldefine_8h.html#a26f6db0b4db801cc546e000e046a2845">MUSIC_EXTRAS_EXPORT</a> <a class="code" href="../../dc/d05/class_kugou_window.html">KugouWindow</a> : <span class="keyword">public</span> QWidget</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31">   34</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31">KuGouType</a></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31a20dc4ff250f77066df9e120fb888b076">   36</a></span>&#160;        <a class="code" href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31a20dc4ff250f77066df9e120fb888b076">KuGouSong</a>,      </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31a59f8759e42011f2a42152a68d7c83421">   37</a></span>&#160;        <a class="code" href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31a59f8759e42011f2a42152a68d7c83421">KuGouRadio</a>,     </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31a62777a7f751f1ecad6ac43788aeb896a">   38</a></span>&#160;        <a class="code" href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31a62777a7f751f1ecad6ac43788aeb896a">KuGouList</a>,      </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31ab4863dc4a007c62eace2f0e615960360">   39</a></span>&#160;        <a class="code" href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31ab4863dc4a007c62eace2f0e615960360">KugouMv</a>,        </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31acfeb0983009c5fa3e2cd5c4a4a48f35f">   40</a></span>&#160;        <a class="code" href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31acfeb0983009c5fa3e2cd5c4a4a48f35f">KuGouLive</a>,      </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31a6f58fc67e6d73ea7e89d209d50d82e2f">   41</a></span>&#160;        <a class="code" href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31a6f58fc67e6d73ea7e89d209d50d82e2f">KuGouLrc</a>,       </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31ac6504f6445ccd224bd085e78c9a5cb73">   42</a></span>&#160;        KuGouSingle     </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    };</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../dc/d05/class_kugou_window.html">KugouWindow</a>(KuGouType type, QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> setUrl(<span class="keyword">const</span> QString &amp;url);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> goBack();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> kugouSongIndexChanged(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> kugouRadioIndexChanged(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> kugouMVIndexChanged(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> createWebViewer();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> createKugouSongWidget();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> createKugouRadioWidget();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> createKugouListWidget();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> createKugouMVWidget();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> createKugouSingleWidget();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> changeClickedButtonStyle(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="../../dd/d24/ttkprivate_8h.html#a6a4c0fd17818d8e869c93fa7155c9dc4">TTK_DECLARE_PRIVATE</a>(<a class="code" href="../../dc/d05/class_kugou_window.html">KugouWindow</a>)</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;};</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif // KUGOUWINDOW_H</span></div>
+<div class="ttc" id="class_kugou_window_html_a070c701078c551843146dbc88d239c31"><div class="ttname"><a href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31">KugouWindow::KuGouType</a></div><div class="ttdeci">KuGouType</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d50/kugouwindow_8h_source.html#l00034">kugouwindow.h:34</a></div></div>
+<div class="ttc" id="class_kugou_window_html_a070c701078c551843146dbc88d239c31a6f58fc67e6d73ea7e89d209d50d82e2f"><div class="ttname"><a href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31a6f58fc67e6d73ea7e89d209d50d82e2f">KugouWindow::KuGouLrc</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d50/kugouwindow_8h_source.html#l00041">kugouwindow.h:41</a></div></div>
+<div class="ttc" id="class_kugou_window_html_a070c701078c551843146dbc88d239c31a59f8759e42011f2a42152a68d7c83421"><div class="ttname"><a href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31a59f8759e42011f2a42152a68d7c83421">KugouWindow::KuGouRadio</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d50/kugouwindow_8h_source.html#l00037">kugouwindow.h:37</a></div></div>
+<div class="ttc" id="class_kugou_window_html_a070c701078c551843146dbc88d239c31a62777a7f751f1ecad6ac43788aeb896a"><div class="ttname"><a href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31a62777a7f751f1ecad6ac43788aeb896a">KugouWindow::KuGouList</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d50/kugouwindow_8h_source.html#l00038">kugouwindow.h:38</a></div></div>
+<div class="ttc" id="class_kugou_window_html_a070c701078c551843146dbc88d239c31a20dc4ff250f77066df9e120fb888b076"><div class="ttname"><a href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31a20dc4ff250f77066df9e120fb888b076">KugouWindow::KuGouSong</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d50/kugouwindow_8h_source.html#l00036">kugouwindow.h:36</a></div></div>
 <div class="ttc" id="kugouurl_8h_html"><div class="ttname"><a href="../../dc/dbe/kugouurl_8h.html">kugouurl.h</a></div></div>
-<div class="ttc" id="class_kugou_window_html"><div class="ttname"><a href="../../dc/d05/class_kugou_window.html">KugouWindow</a></div><div class="ttdoc">The namespace of the kugou window widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d50/kugouwindow_8h_source.html#l00031">kugouwindow.h:31</a></div></div>
+<div class="ttc" id="class_kugou_window_html"><div class="ttname"><a href="../../dc/d05/class_kugou_window.html">KugouWindow</a></div><div class="ttdoc">The namespace of the kugou window widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d50/kugouwindow_8h_source.html#l00030">kugouwindow.h:30</a></div></div>
 <div class="ttc" id="ttkprivate_8h_html_a6a4c0fd17818d8e869c93fa7155c9dc4"><div class="ttname"><a href="../../dd/d24/ttkprivate_8h.html#a6a4c0fd17818d8e869c93fa7155c9dc4">TTK_DECLARE_PRIVATE</a></div><div class="ttdeci">#define TTK_DECLARE_PRIVATE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00023">ttkprivate.h:23</a></div></div>
-<div class="ttc" id="class_kugou_window_html_a070c701078c551843146dbc88d239c31ab4863dc4a007c62eace2f0e615960360"><div class="ttname"><a href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31ab4863dc4a007c62eace2f0e615960360">KugouWindow::KugouMv</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d50/kugouwindow_8h_source.html#l00040">kugouwindow.h:40</a></div></div>
+<div class="ttc" id="class_kugou_window_html_a070c701078c551843146dbc88d239c31ab4863dc4a007c62eace2f0e615960360"><div class="ttname"><a href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31ab4863dc4a007c62eace2f0e615960360">KugouWindow::KugouMv</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d50/kugouwindow_8h_source.html#l00039">kugouwindow.h:39</a></div></div>
 <div class="ttc" id="class_kugou_window_private_html"><div class="ttname"><a href="../../dd/d3f/class_kugou_window_private.html">KugouWindowPrivate</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/df4/kugouwindow_8cpp_source.html#l00026">kugouwindow.cpp:26</a></div></div>
-<div class="ttc" id="musicextrasglobaldefine_8h_html_a26f6db0b4db801cc546e000e046a2845"><div class="ttname"><a href="../../d3/de6/musicextrasglobaldefine_8h.html#a26f6db0b4db801cc546e000e046a2845">MUSIC_EXTRAS_EXPORT</a></div><div class="ttdeci">#define MUSIC_EXTRAS_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/de6/musicextrasglobaldefine_8h_source.html#l00028">musicextrasglobaldefine.h:28</a></div></div>
-<div class="ttc" id="ttkprivate_8h_html"><div class="ttname"><a href="../../dd/d24/ttkprivate_8h.html">ttkprivate.h</a></div></div>
-<div class="ttc" id="class_kugou_window_html_a070c701078c551843146dbc88d239c31acfeb0983009c5fa3e2cd5c4a4a48f35f"><div class="ttname"><a href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31acfeb0983009c5fa3e2cd5c4a4a48f35f">KugouWindow::KuGouLive</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d50/kugouwindow_8h_source.html#l00041">kugouwindow.h:41</a></div></div>
+<div class="ttc" id="musicextrasglobaldefine_8h_html_a26f6db0b4db801cc546e000e046a2845"><div class="ttname"><a href="../../d3/de6/musicextrasglobaldefine_8h.html#a26f6db0b4db801cc546e000e046a2845">MUSIC_EXTRAS_EXPORT</a></div><div class="ttdeci">#define MUSIC_EXTRAS_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/de6/musicextrasglobaldefine_8h_source.html#l00029">musicextrasglobaldefine.h:29</a></div></div>
+<div class="ttc" id="class_kugou_window_html_a070c701078c551843146dbc88d239c31acfeb0983009c5fa3e2cd5c4a4a48f35f"><div class="ttname"><a href="../../dc/d05/class_kugou_window.html#a070c701078c551843146dbc88d239c31acfeb0983009c5fa3e2cd5c4a4a48f35f">KugouWindow::KuGouLive</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d50/kugouwindow_8h_source.html#l00040">kugouwindow.h:40</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 29 2019 16:40:18 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 30 2019 15:33:33 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

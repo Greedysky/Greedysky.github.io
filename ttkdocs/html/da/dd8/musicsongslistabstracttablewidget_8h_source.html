@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>TTKMusicplayer: TTKModule/TTKWidget/musicWidgetCoreKits/musicsongslistabstracttablewidget.h Source File</title>
+<title>TTKMusicplayer: TTKModule/TTKWidget/musicCoreKits/musicsongslistabstracttablewidget.h Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.9.0.0</span>
+   &#160;<span id="projectnumber">2.10.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_a3dc49d95d9832a3f058c36369f57e9d.html">TTKModule</a></li><li class="navelem"><a class="el" href="../../dir_65d7ee83374af28447a36a0a45a26393.html">TTKWidget</a></li><li class="navelem"><a class="el" href="../../dir_1b3bf921b7186cb87b3d60efaf280c0d.html">musicWidgetCoreKits</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_a3dc49d95d9832a3f058c36369f57e9d.html">TTKModule</a></li><li class="navelem"><a class="el" href="../../dir_65d7ee83374af28447a36a0a45a26393.html">TTKWidget</a></li><li class="navelem"><a class="el" href="../../dir_c36a2cd76853ec286b00ea90fb1340dc.html">musicCoreKits</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -121,7 +121,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#ade1e8318013029d2f55abc375168c7fd">   69</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#ade1e8318013029d2f55abc375168c7fd">getPlayRowIndex</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_playRowIndex; }</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> isCurrentIndex(<span class="keywordtype">bool</span> &amp;state);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> isCurrentIndex(<span class="keywordtype">bool</span> &amp;<a class="code" href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> musicPlayClicked();</div>
@@ -133,42 +133,41 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> musicAlbumFoundWidget();</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> musicSimilarFoundWidget();</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> musicSongSharedWidget();</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">void</span> musicSongKMicroWidget();</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">void</span> musicSongTransferWidget();</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">void</span> musicSongDownload();</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">void</span> musicSongMovieFoundPy();</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordtype">void</span> musicSimilarFoundWidgetPy();</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordtype">void</span> musicSongSharedWidgetPy();</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordtype">void</span> musicSongKMicroWidgetPy();</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordtype">void</span> createMoreMenu(QMenu *menu);</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    QString getCurrentSongPath() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    QString getSongPath(<span class="keywordtype">int</span> index) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    QString getCurrentSongName() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    QString getSongName(<span class="keywordtype">int</span> index) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
-<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#a74e5dafb19c7d91dce8665ddf2d22bca">  165</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#a74e5dafb19c7d91dce8665ddf2d22bca">m_playRowIndex</a>, m_parentToolIndex;</div>
-<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#a92a9dc24ef45af2d7a1ad9f7b33b1525">  166</a></span>&#160;    MusicSongs *<a class="code" href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#a92a9dc24ef45af2d7a1ad9f7b33b1525">m_musicSongs</a>;</div>
-<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#afd2147db363d290875e060e3567628ab">  167</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#afd2147db363d290875e060e3567628ab">m_hasParentToolIndex</a>;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;};</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor">#endif // MUSICSONGSLISTABSTRACTTABLEWIDGET_H</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">void</span> musicSongDownload();</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">void</span> musicSongPlayedMovieFound();</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">void</span> musicPlayedSimilarFoundWidget();</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">void</span> musicSongPlayedSharedWidget();</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordtype">void</span> musicSongPlayedKMicroWidget();</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordtype">void</span> createMoreMenu(QMenu *menu);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    QString getCurrentSongPath() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    QString getSongPath(<span class="keywordtype">int</span> index) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    QString getCurrentSongName() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    QString getSongName(<span class="keywordtype">int</span> index) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#a74e5dafb19c7d91dce8665ddf2d22bca">  157</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#a74e5dafb19c7d91dce8665ddf2d22bca">m_playRowIndex</a>, m_parentToolIndex;</div>
+<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#a92a9dc24ef45af2d7a1ad9f7b33b1525">  158</a></span>&#160;    MusicSongs *<a class="code" href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#a92a9dc24ef45af2d7a1ad9f7b33b1525">m_musicSongs</a>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#afd2147db363d290875e060e3567628ab">  159</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#afd2147db363d290875e060e3567628ab">m_hasParentToolIndex</a>;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;};</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">#endif // MUSICSONGSLISTABSTRACTTABLEWIDGET_H</span></div>
 <div class="ttc" id="ttkglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00143">ttkglobal.h:143</a></div></div>
 <div class="ttc" id="musicsong_8h_html"><div class="ttname"><a href="../../d4/d03/musicsong_8h.html">musicsong.h</a></div></div>
 <div class="ttc" id="class_music_songs_list_abstract_table_widget_html_ade1e8318013029d2f55abc375168c7fd"><div class="ttname"><a href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#ade1e8318013029d2f55abc375168c7fd">MusicSongsListAbstractTableWidget::getPlayRowIndex</a></div><div class="ttdeci">int getPlayRowIndex() const </div><div class="ttdef"><b>Definition:</b> <a href="../../da/dd8/musicsongslistabstracttablewidget_8h_source.html#l00069">musicsongslistabstracttablewidget.h:69</a></div></div>
-<div class="ttc" id="class_music_songs_list_abstract_table_widget_html_a92a9dc24ef45af2d7a1ad9f7b33b1525"><div class="ttname"><a href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#a92a9dc24ef45af2d7a1ad9f7b33b1525">MusicSongsListAbstractTableWidget::m_musicSongs</a></div><div class="ttdeci">MusicSongs * m_musicSongs</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dd8/musicsongslistabstracttablewidget_8h_source.html#l00166">musicsongslistabstracttablewidget.h:166</a></div></div>
+<div class="ttc" id="class_music_songs_list_abstract_table_widget_html_a92a9dc24ef45af2d7a1ad9f7b33b1525"><div class="ttname"><a href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#a92a9dc24ef45af2d7a1ad9f7b33b1525">MusicSongsListAbstractTableWidget::m_musicSongs</a></div><div class="ttdeci">MusicSongs * m_musicSongs</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dd8/musicsongslistabstracttablewidget_8h_source.html#l00158">musicsongslistabstracttablewidget.h:158</a></div></div>
 <div class="ttc" id="musicsmoothmovingwidget_8h_html"><div class="ttname"><a href="../../dd/d51/musicsmoothmovingwidget_8h.html">musicsmoothmovingwidget.h</a></div></div>
 <div class="ttc" id="class_music_songs_list_abstract_table_widget_html_ab1fc6a0628c41ba16bcd7bfed2501c34"><div class="ttname"><a href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#ab1fc6a0628c41ba16bcd7bfed2501c34">MusicSongsListAbstractTableWidget::setPlayRowIndex</a></div><div class="ttdeci">void setPlayRowIndex(int index)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dd8/musicsongslistabstracttablewidget_8h_source.html#l00065">musicsongslistabstracttablewidget.h:65</a></div></div>
 <div class="ttc" id="class_music_smooth_moving_table_widget_html"><div class="ttname"><a href="../../de/daa/class_music_smooth_moving_table_widget.html">MusicSmoothMovingTableWidget</a></div><div class="ttdoc">The class of the slider smooth moving table widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d51/musicsmoothmovingwidget_8h_source.html#l00030">musicsmoothmovingwidget.h:30</a></div></div>
-<div class="ttc" id="class_music_songs_list_abstract_table_widget_html_afd2147db363d290875e060e3567628ab"><div class="ttname"><a href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#afd2147db363d290875e060e3567628ab">MusicSongsListAbstractTableWidget::m_hasParentToolIndex</a></div><div class="ttdeci">bool m_hasParentToolIndex</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dd8/musicsongslistabstracttablewidget_8h_source.html#l00167">musicsongslistabstracttablewidget.h:167</a></div></div>
+<div class="ttc" id="class_music_songs_list_abstract_table_widget_html_afd2147db363d290875e060e3567628ab"><div class="ttname"><a href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#afd2147db363d290875e060e3567628ab">MusicSongsListAbstractTableWidget::m_hasParentToolIndex</a></div><div class="ttdeci">bool m_hasParentToolIndex</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dd8/musicsongslistabstracttablewidget_8h_source.html#l00159">musicsongslistabstracttablewidget.h:159</a></div></div>
 <div class="ttc" id="class_music_songs_list_abstract_table_widget_html"><div class="ttname"><a href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html">MusicSongsListAbstractTableWidget</a></div><div class="ttdoc">The class of the songs list abstract table widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/dd8/musicsongslistabstracttablewidget_8h_source.html#l00029">musicsongslistabstracttablewidget.h:29</a></div></div>
-<div class="ttc" id="class_music_songs_list_abstract_table_widget_html_a74e5dafb19c7d91dce8665ddf2d22bca"><div class="ttname"><a href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#a74e5dafb19c7d91dce8665ddf2d22bca">MusicSongsListAbstractTableWidget::m_playRowIndex</a></div><div class="ttdeci">int m_playRowIndex</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dd8/musicsongslistabstracttablewidget_8h_source.html#l00165">musicsongslistabstracttablewidget.h:165</a></div></div>
+<div class="ttc" id="class_music_songs_list_abstract_table_widget_html_a74e5dafb19c7d91dce8665ddf2d22bca"><div class="ttname"><a href="../../d8/d5b/class_music_songs_list_abstract_table_widget.html#a74e5dafb19c7d91dce8665ddf2d22bca">MusicSongsListAbstractTableWidget::m_playRowIndex</a></div><div class="ttdeci">int m_playRowIndex</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dd8/musicsongslistabstracttablewidget_8h_source.html#l00157">musicsongslistabstracttablewidget.h:157</a></div></div>
+<div class="ttc" id="http__parser_8c_html_adc6e5733fc3c22f0a7b2914188c49c90"><div class="ttname"><a href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a></div><div class="ttdeci">state</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d70/http__parser_8c_source.html#l00279">http_parser.c:279</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 29 2019 16:40:17 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 30 2019 15:33:13 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

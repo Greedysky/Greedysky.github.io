@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.9.0.0</span>
+   &#160;<span id="projectnumber">2.10.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -105,8 +105,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../dd/d24/ttkprivate_8h.html#a16e697408c6ce0f129db3559d3a79514">   30</a></span>&#160;<span class="preprocessor">#define TTK_INIT_PRIVATE \</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">    ttk_d.setPublic(this);</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="../../dd/d24/ttkprivate_8h.html#a8eedd09c47b53d5e42ca132295c5e1ef">   33</a></span>&#160;<span class="preprocessor">#define TTK_D(Class) Class##Private *const d = ttk_d()</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="../../dd/d24/ttkprivate_8h.html#a9351e183c807bfeb527cb03567e7ef41">   34</a></span>&#160;<span class="preprocessor">#define TTK_Q(Class) Class *const q = ttk_q()</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="../../dd/d24/ttkprivate_8h.html#a8eedd09c47b53d5e42ca132295c5e1ef">   33</a></span>&#160;<span class="preprocessor">#define TTK_D(Class) Class##Private *const d = static_cast&lt;Class##Private *&gt;(ttk_d())</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="../../dd/d24/ttkprivate_8h.html#a9351e183c807bfeb527cb03567e7ef41">   34</a></span>&#160;<span class="preprocessor">#define TTK_Q(Class) Class *const q = static_cast&lt;Class *&gt;(ttk_q())</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> PUB&gt;</div>
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../d1/d29/class_t_t_k_private.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d1/d29/class_t_t_k_private.html">TTKPrivate</a></div>
@@ -159,7 +159,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 29 2019 16:40:18 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 30 2019 15:33:27 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

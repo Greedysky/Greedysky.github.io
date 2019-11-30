@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.9.0.0</span>
+   &#160;<span id="projectnumber">2.10.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -570,7 +570,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    <span class="keywordtype">int</span> max_code         = desc-&gt;<a class="code" href="../../dc/d2c/structtree__desc__s.html#a11f42f2c0464693def462dcfdd871002">max_code</a>;</div>
 <div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d6/d3b/structct__data__s.html">ct_data</a> *stree = desc-&gt;<a class="code" href="../../dc/d2c/structtree__desc__s.html#afc69be1c7b75c748e6b0bf1969a9560f">stat_desc</a>-&gt;<a class="code" href="../../d1/d0f/structstatic__tree__desc__s.html#a56265073858de4ffe99e32d0f9d38545">static_tree</a>;</div>
 <div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../de/d95/zconf_8h.html#aa857123283d7630b35e9b1d427dd6438">intf</a> *extra    = desc-&gt;<a class="code" href="../../dc/d2c/structtree__desc__s.html#afc69be1c7b75c748e6b0bf1969a9560f">stat_desc</a>-&gt;<a class="code" href="../../d1/d0f/structstatic__tree__desc__s.html#a4ec9abd624cbf2bfcc48dfb786925986">extra_bits</a>;</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d8/d58/base64_8cpp.html#afe0ea5a757fd6f7ba16f3f68945260ed">base</a>             = desc-&gt;<a class="code" href="../../dc/d2c/structtree__desc__s.html#afc69be1c7b75c748e6b0bf1969a9560f">stat_desc</a>-&gt;<a class="code" href="../../d1/d0f/structstatic__tree__desc__s.html#a1051cc83d9d410ccf21427df9bd85201">extra_base</a>;</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    <span class="keywordtype">int</span> base             = desc-&gt;<a class="code" href="../../dc/d2c/structtree__desc__s.html#afc69be1c7b75c748e6b0bf1969a9560f">stat_desc</a>-&gt;<a class="code" href="../../d1/d0f/structstatic__tree__desc__s.html#a1051cc83d9d410ccf21427df9bd85201">extra_base</a>;</div>
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    <span class="keywordtype">int</span> max_length       = desc-&gt;<a class="code" href="../../dc/d2c/structtree__desc__s.html#afc69be1c7b75c748e6b0bf1969a9560f">stat_desc</a>-&gt;<a class="code" href="../../d1/d0f/structstatic__tree__desc__s.html#ae767848725194f63fa9cf08142767ad4">max_length</a>;</div>
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    <span class="keywordtype">int</span> h;              <span class="comment">/* heap index */</span></div>
 <div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    <span class="keywordtype">int</span> n, m;           <span class="comment">/* iterate over the tree elements */</span></div>
@@ -597,7 +597,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;</div>
 <div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;        s-&gt;bl_count[bits]++;</div>
 <div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;        xbits = 0;</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;        <span class="keywordflow">if</span> (n &gt;= base) xbits = extra[n-<a class="code" href="../../d8/d58/base64_8cpp.html#afe0ea5a757fd6f7ba16f3f68945260ed">base</a>];</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;        <span class="keywordflow">if</span> (n &gt;= base) xbits = extra[n-base];</div>
 <div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;        f = tree[n].Freq;</div>
 <div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;        s-&gt;opt_len += (<a class="code" href="../../d6/dba/zutil_8h.html#abd6f60bf9450af2ecb94097a32c19a64">ulg</a>)f * (<span class="keywordtype">unsigned</span>)(bits + xbits);</div>
 <div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;        <span class="keywordflow">if</span> (stree) s-&gt;static_len += (<a class="code" href="../../d6/dba/zutil_8h.html#abd6f60bf9450af2ecb94097a32c19a64">ulg</a>)f * (<span class="keywordtype">unsigned</span>)(stree[n].Len + xbits);</div>
@@ -1289,7 +1289,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="structstatic__tree__desc__s_html_a4ec9abd624cbf2bfcc48dfb786925986"><div class="ttname"><a href="../../d1/d0f/structstatic__tree__desc__s.html#a4ec9abd624cbf2bfcc48dfb786925986">static_tree_desc_s::extra_bits</a></div><div class="ttdeci">const intf * extra_bits</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d90/trees_8c_source.html#l00119">trees.c:119</a></div></div>
 <div class="ttc" id="zutil_8h_html_a9f650bc9c1fbd9499098e3a70d295b8a"><div class="ttname"><a href="../../d6/dba/zutil_8h.html#a9f650bc9c1fbd9499098e3a70d295b8a">STORED_BLOCK</a></div><div class="ttdeci">#define STORED_BLOCK</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dba/zutil_8h_source.html#l00072">zutil.h:72</a></div></div>
 <div class="ttc" id="deflate_8h_html_a9e19158a493307d4f211cdf223da8319"><div class="ttname"><a href="../../d8/dee/deflate_8h.html#a9e19158a493307d4f211cdf223da8319">BL_CODES</a></div><div class="ttdeci">#define BL_CODES</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dee/deflate_8h_source.html#l00042">deflate.h:42</a></div></div>
-<div class="ttc" id="base64_8cpp_html_afe0ea5a757fd6f7ba16f3f68945260ed"><div class="ttname"><a href="../../d8/d58/base64_8cpp.html#afe0ea5a757fd6f7ba16f3f68945260ed">base</a></div><div class="ttdeci">const char base[]</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d58/base64_8cpp_source.html#l00007">base64.cpp:7</a></div></div>
 <div class="ttc" id="zconf_8h_html_ae3a497195d617519e5353ea7b417940f"><div class="ttname"><a href="../../de/d95/zconf_8h.html#ae3a497195d617519e5353ea7b417940f">Byte</a></div><div class="ttdeci">unsigned char Byte</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d95/zconf_8h_source.html#l00391">zconf.h:391</a></div></div>
 <div class="ttc" id="zutil_8h_html_a7984ceb1ff48ac91172976b91ed43f60"><div class="ttname"><a href="../../d6/dba/zutil_8h.html#a7984ceb1ff48ac91172976b91ed43f60">MIN_MATCH</a></div><div class="ttdeci">#define MIN_MATCH</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dba/zutil_8h_source.html#l00077">zutil.h:77</a></div></div>
 <div class="ttc" id="trees_8c_html_aba5a443f39dc6a62117f7bbe268e60b5"><div class="ttname"><a href="../../d0/d90/trees_8c.html#aba5a443f39dc6a62117f7bbe268e60b5">detect_data_type</a></div><div class="ttdeci">local int detect_data_type(deflate_state *s)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d90/trees_8c_source.html#l01124">trees.c:1124</a></div></div>
@@ -1391,7 +1390,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 29 2019 16:40:25 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 30 2019 15:33:36 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

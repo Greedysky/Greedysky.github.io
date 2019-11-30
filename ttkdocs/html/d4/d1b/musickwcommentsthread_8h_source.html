@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.9.0.0</span>
+   &#160;<span id="projectnumber">2.10.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -107,7 +107,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d2/de6/class_music_k_w_song_comments_thread.html">MusicKWSongCommentsThread</a>(QObject *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d9/dc5/class_music_down_load_comments_thread.html#ac8d9075d163470a711429ef418d50ded">startToSearch</a>(<span class="keyword">const</span> QString &amp;name) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d9/dc5/class_music_down_load_comments_thread.html#ac8d9075d163470a711429ef418d50ded">startToSearch</a>(<span class="keyword">const</span> QString &amp;<a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../de/d41/class_music_down_load_paging_thread.html#a2019d56a8bc00aea478c7aac417aaf5a">startToPage</a>(<span class="keywordtype">int</span> <a class="code" href="../../d2/db7/ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
@@ -123,7 +123,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d8/dae/class_music_k_w_playlist_comments_thread.html">MusicKWPlaylistCommentsThread</a>(QObject *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d9/dc5/class_music_down_load_comments_thread.html#ac8d9075d163470a711429ef418d50ded">startToSearch</a>(<span class="keyword">const</span> QString &amp;name) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d9/dc5/class_music_down_load_comments_thread.html#ac8d9075d163470a711429ef418d50ded">startToSearch</a>(<span class="keyword">const</span> QString &amp;<a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../de/d41/class_music_down_load_paging_thread.html#a2019d56a8bc00aea478c7aac417aaf5a">startToPage</a>(<span class="keywordtype">int</span> <a class="code" href="../../d2/db7/ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
@@ -137,14 +137,15 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="ttkglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00143">ttkglobal.h:143</a></div></div>
 <div class="ttc" id="ioapi_8h_html_a601c4660e8a1a14a1b87fe387e934d19"><div class="ttname"><a href="../../d2/db7/ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a></div><div class="ttdeci">voidpf uLong offset</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/db7/ioapi_8h_source.html#l00142">ioapi.h:142</a></div></div>
 <div class="ttc" id="class_music_network_abstract_html_a5633d328e4f80b91dde0113550d6e852"><div class="ttname"><a href="../../d5/de6/class_music_network_abstract.html#a5633d328e4f80b91dde0113550d6e852">MusicNetworkAbstract::downLoadFinished</a></div><div class="ttdeci">virtual void downLoadFinished()=0</div></div>
+<div class="ttc" id="http__parser_8c_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d70/http__parser_8c_source.html#l00458">http_parser.c:458</a></div></div>
 <div class="ttc" id="class_music_k_w_song_comments_thread_html"><div class="ttname"><a href="../../d2/de6/class_music_k_w_song_comments_thread.html">MusicKWSongCommentsThread</a></div><div class="ttdoc">The class to kuwo query song comments download data from net. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d1b/musickwcommentsthread_8h_source.html#l00027">musickwcommentsthread.h:27</a></div></div>
 <div class="ttc" id="musicdownloadcommentsthread_8h_html"><div class="ttname"><a href="../../d7/d35/musicdownloadcommentsthread_8h.html">musicdownloadcommentsthread.h</a></div></div>
 <div class="ttc" id="class_music_down_load_comments_thread_html"><div class="ttname"><a href="../../d9/dc5/class_music_down_load_comments_thread.html">MusicDownLoadCommentsThread</a></div><div class="ttdoc">The class to query song comments download data from net. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d35/musicdownloadcommentsthread_8h_source.html#l00027">musicdownloadcommentsthread.h:27</a></div></div>
-<div class="ttc" id="class_music_down_load_paging_thread_html_a2019d56a8bc00aea478c7aac417aaf5a"><div class="ttname"><a href="../../de/d41/class_music_down_load_paging_thread.html#a2019d56a8bc00aea478c7aac417aaf5a">MusicDownLoadPagingThread::startToPage</a></div><div class="ttdeci">virtual void startToPage(int offset)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/df9/musicdownloadpagingthread_8cpp_source.html#l00031">musicdownloadpagingthread.cpp:31</a></div></div>
+<div class="ttc" id="class_music_down_load_paging_thread_html_a2019d56a8bc00aea478c7aac417aaf5a"><div class="ttname"><a href="../../de/d41/class_music_down_load_paging_thread.html#a2019d56a8bc00aea478c7aac417aaf5a">MusicDownLoadPagingThread::startToPage</a></div><div class="ttdeci">virtual void startToPage(int offset)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/df9/musicdownloadpagingthread_8cpp_source.html#l00030">musicdownloadpagingthread.cpp:30</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 29 2019 16:40:11 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 30 2019 15:33:00 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

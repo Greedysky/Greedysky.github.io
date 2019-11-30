@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.9.0.0</span>
+   &#160;<span id="projectnumber">2.10.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -118,7 +118,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    Q_DECLARE_FLAGS(ModelCaps, ModelCap)</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="../../dc/d29/class_tag_model.html">TagModel</a>(ModelCaps f = DefaultCaps);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    virtual ~<a class="code" href="../../dc/d29/class_tag_model.html">TagModel</a>();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    virtual QString name() <a class="code" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> = 0;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    virtual QString <a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>() <a class="code" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> = 0;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    virtual QList&lt;<a class="code" href="../../d9/d95/class_qmmp.html">Qmmp</a>::MetaData&gt; keys() const;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    virtual QString value(<a class="code" href="../../d9/d95/class_qmmp.html">Qmmp</a>::MetaData <a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>) const = 0;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    virtual <span class="keywordtype">void</span> setValue(<a class="code" href="../../d9/d95/class_qmmp.html">Qmmp</a>::MetaData <a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>, const QString &amp;value) = 0;</div>
@@ -139,6 +139,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="_qt5_2qmmp_8h_html"><div class="ttname"><a href="../../dd/dd4/_qt5_2qmmp_8h.html">qmmp.h</a></div></div>
 <div class="ttc" id="musiclrcfromkrc_8cpp_html_ad706e4249347c1cd1381934a5691137d"><div class="ttname"><a href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a></div><div class="ttdeci">const wchar_t key[]</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d45/musiclrcfromkrc_8cpp_source.html#l00017">musiclrcfromkrc.cpp:17</a></div></div>
 <div class="ttc" id="class_tag_model_html"><div class="ttname"><a href="../../dc/d29/class_tag_model.html">TagModel</a></div><div class="ttdoc">The StateHandler class provides is the base interface class of tag editor. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d2f/_qt4_2tagmodel_8h_source.html#l00032">tagmodel.h:32</a></div></div>
+<div class="ttc" id="http__parser_8c_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d70/http__parser_8c_source.html#l00458">http_parser.c:458</a></div></div>
 <div class="ttc" id="zconf_8h_html_a2c212835823e3c54a8ab6d95c652660e"><div class="ttname"><a href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a></div><div class="ttdeci">#define const</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d95/zconf_8h_source.html#l00230">zconf.h:230</a></div></div>
 <div class="ttc" id="class_tag_model_html_a5d8aa3bd7d8874b93644f9fd04b8ab3e"><div class="ttname"><a href="../../dc/d29/class_tag_model.html#a5d8aa3bd7d8874b93644f9fd04b8ab3e">TagModel::ModelCap</a></div><div class="ttdeci">ModelCap</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d2f/_qt4_2tagmodel_8h_source.html#l00038">tagmodel.h:38</a></div></div>
 <div class="ttc" id="_qt4_2qmmp__export_8h_html_ae57db6e0c0f040f03506ccfc59947d30"><div class="ttname"><a href="../../dd/d7e/_qt4_2qmmp__export_8h.html#ae57db6e0c0f040f03506ccfc59947d30">QMMP_EXPORT</a></div><div class="ttdeci">#define QMMP_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d7e/_qt4_2qmmp__export_8h_source.html#l00029">qmmp_export.h:29</a></div></div>
@@ -146,7 +147,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 29 2019 16:40:10 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 30 2019 15:32:51 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

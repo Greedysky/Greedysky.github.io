@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.9.0.0</span>
+   &#160;<span id="projectnumber">2.10.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -95,11 +95,11 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../d9/d2b/class_music_skin_thunder_config_manager.html#aa84c883dbab2ea7c90f96f6e63d4985c">   17</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d9/d2b/class_music_skin_thunder_config_manager.html#aa84c883dbab2ea7c90f96f6e63d4985c">MusicSkinThunderConfigManager::readSkinRemoteData</a>(MusicSkinRemoteGroups &amp;items)</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">const</span> QDomNodeList &amp;nodelist = <a class="code" href="../../d7/d53/class_music_abstract_xml.html#ab974135c04f057f389b2cd946e3979ea">m_document</a>-&gt;elementsByTagName(<span class="stringliteral">&quot;group&quot;</span>);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;nodelist.count(); ++i)</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">const</span> QDomNodeList &amp;nodeList = <a class="code" href="../../d7/d53/class_music_abstract_xml.html#ab974135c04f057f389b2cd946e3979ea">m_document</a>-&gt;elementsByTagName(<span class="stringliteral">&quot;group&quot;</span>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;nodeList.count(); ++i)</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="../../d4/da7/struct_music_skin_remote_group.html">MusicSkinRemoteGroup</a> group;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        QDomNode node = nodelist.at(i);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        QDomNode node = nodeList.at(i);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        group.<a class="code" href="../../d4/da7/struct_music_skin_remote_group.html#a9f9eb8122c81c87a9200a5d5d521159d">m_group</a> = node.toElement().attribute(<span class="stringliteral">&quot;name&quot;</span>);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">const</span> QDomNodeList &amp;grouplist = node.childNodes();</div>
@@ -108,10 +108,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            node = grouplist.at(j);</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <a class="code" href="../../dc/dad/struct_music_skin_remote_item.html">MusicSkinRemoteItem</a> item;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keyword">const</span> QDomNodeList &amp;packagelist = node.childNodes();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> k=0; k&lt;packagelist.count(); ++k)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keyword">const</span> QDomNodeList &amp;packageList = node.childNodes();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> k=0; k&lt;packageList.count(); ++k)</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <span class="keyword">const</span> QDomElement &amp;element = packagelist.at(k).toElement();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <span class="keyword">const</span> QDomElement &amp;element = packageList.at(k).toElement();</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                <span class="keywordflow">if</span>(element.nodeName() == <span class="stringliteral">&quot;name&quot;</span>)</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                    item.<a class="code" href="../../dc/dad/struct_music_skin_remote_item.html#a335447c781e9715b0c01a806d3360d3b">m_name</a> = element.text();</div>
@@ -263,7 +263,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_download_background_remote_thread_html"><div class="ttname"><a href="../../dd/dfc/class_music_download_background_remote_thread.html">MusicDownloadBackgroundRemoteThread</a></div><div class="ttdoc">The class of download skin remote background. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/db8/musicdownloadbackgroundremotethread_8h_source.html#l00089">musicdownloadbackgroundremotethread.h:89</a></div></div>
 <div class="ttc" id="class_music_download_source_thread_html"><div class="ttname"><a href="../../d0/d30/class_music_download_source_thread.html">MusicDownloadSourceThread</a></div><div class="ttdoc">The class of source data download thread. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/de0/musicdownloadsourcethread_8h_source.html#l00026">musicdownloadsourcethread.h:26</a></div></div>
 <div class="ttc" id="class_music_download_background_thunder_thread_html_a17f45c84c0976be7749e983847cf41e7"><div class="ttname"><a href="../../d9/d11/class_music_download_background_thunder_thread.html#a17f45c84c0976be7749e983847cf41e7">MusicDownloadBackgroundThunderThread::startToDownload</a></div><div class="ttdeci">virtual void startToDownload() override</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d1d/musicdownloadbackgroundremotethread_8cpp_source.html#l00079">musicdownloadbackgroundremotethread.cpp:79</a></div></div>
-<div class="ttc" id="class_q_json_1_1_parser_html"><div class="ttname"><a href="../../d0/dfe/class_q_json_1_1_parser.html">QJson::Parser</a></div><div class="ttdoc">Main class used to convert JSON data to QVariant objects. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d36/parser_8h_source.html#l00042">parser.h:42</a></div></div>
+<div class="ttc" id="class_q_json_1_1_parser_html"><div class="ttname"><a href="../../d0/dfe/class_q_json_1_1_parser.html">QJson::Parser</a></div><div class="ttdoc">Main class used to convert JSON data to QVariant objects. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d36/parser_8h_source.html#l00041">parser.h:41</a></div></div>
 <div class="ttc" id="class_music_download_background_thunder_thread_html_a4681e3921a62b33164373518317c50b3"><div class="ttname"><a href="../../d9/d11/class_music_download_background_thunder_thread.html#a4681e3921a62b33164373518317c50b3">MusicDownloadBackgroundThunderThread::MusicDownloadBackgroundThunderThread</a></div><div class="ttdeci">MusicDownloadBackgroundThunderThread(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d1d/musicdownloadbackgroundremotethread_8cpp_source.html#l00073">musicdownloadbackgroundremotethread.cpp:73</a></div></div>
 <div class="ttc" id="class_music_abstract_xml_html_a7fbd6bb0e247266f8fede87b064959ea"><div class="ttname"><a href="../../d7/d53/class_music_abstract_xml.html#a7fbd6bb0e247266f8fede87b064959ea">MusicAbstractXml::fromByteArray</a></div><div class="ttdeci">bool fromByteArray(const QByteArray &amp;data)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d4d/musicabstractxml_8cpp_source.html#l00069">musicabstractxml.cpp:69</a></div></div>
 <div class="ttc" id="struct_music_skin_remote_item_html_a335447c781e9715b0c01a806d3360d3b"><div class="ttname"><a href="../../dc/dad/struct_music_skin_remote_item.html#a335447c781e9715b0c01a806d3360d3b">MusicSkinRemoteItem::m_name</a></div><div class="ttdeci">QString m_name</div><div class="ttdef"><b>Definition:</b> <a href="../../da/db8/musicdownloadbackgroundremotethread_8h_source.html#l00030">musicdownloadbackgroundremotethread.h:30</a></div></div>
@@ -271,7 +271,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 29 2019 16:40:14 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 30 2019 15:33:05 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

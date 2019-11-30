@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.9.0.0</span>
+   &#160;<span id="projectnumber">2.10.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -131,7 +131,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">unsigned</span> mask;              <span class="comment">/* mask for low root bits */</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="../../da/da8/structcode.html">code</a> here;                  <span class="comment">/* table entry for duplication */</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="../../da/da8/structcode.html">code</a> <a class="code" href="../../de/d95/zconf_8h.html#aef060b3456fdcc093a7210a762d5f2ed">FAR</a> *next;             <span class="comment">/* next available space in table */</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="../../de/d95/zconf_8h.html#aef060b3456fdcc093a7210a762d5f2ed">FAR</a> *<a class="code" href="../../d8/d58/base64_8cpp.html#afe0ea5a757fd6f7ba16f3f68945260ed">base</a>;     <span class="comment">/* base value table to use */</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="../../de/d95/zconf_8h.html#aef060b3456fdcc093a7210a762d5f2ed">FAR</a> *base;     <span class="comment">/* base value table to use */</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="../../de/d95/zconf_8h.html#aef060b3456fdcc093a7210a762d5f2ed">FAR</a> *extra;    <span class="comment">/* extra bits table to use */</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">unsigned</span> match;             <span class="comment">/* use base and extra for symbol &gt;= match */</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> count[<a class="code" href="../../d9/d95/inftrees_8c.html#a6fcad31e688110d9d61bdcc99b2a59d7">MAXBITS</a>+1];    <span class="comment">/* number of codes of each length */</span></div>
@@ -382,7 +382,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;}</div>
 <div class="ttc" id="structcode_html_a6f9c73627997e8fc6df02e620cf9a6f5"><div class="ttname"><a href="../../da/da8/structcode.html#a6f9c73627997e8fc6df02e620cf9a6f5">code::val</a></div><div class="ttdeci">unsigned short val</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d0d/inftrees_8h_source.html#l00027">inftrees.h:27</a></div></div>
-<div class="ttc" id="base64_8cpp_html_afe0ea5a757fd6f7ba16f3f68945260ed"><div class="ttname"><a href="../../d8/d58/base64_8cpp.html#afe0ea5a757fd6f7ba16f3f68945260ed">base</a></div><div class="ttdeci">const char base[]</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d58/base64_8cpp_source.html#l00007">base64.cpp:7</a></div></div>
 <div class="ttc" id="inftrees_8h_html_a0f33f5acf9079ff1f054fa235df2443bafd7fbb659c736b26e79316ef09a2a9a1"><div class="ttname"><a href="../../d4/d0d/inftrees_8h.html#a0f33f5acf9079ff1f054fa235df2443bafd7fbb659c736b26e79316ef09a2a9a1">DISTS</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d0d/inftrees_8h_source.html#l00057">inftrees.h:57</a></div></div>
 <div class="ttc" id="compress_8c_html_a59d4d7ef4d73655c759211ec33a5d44f"><div class="ttname"><a href="../../d0/d6b/compress_8c.html#a59d4d7ef4d73655c759211ec33a5d44f">ZLIB_INTERNAL</a></div><div class="ttdeci">#define ZLIB_INTERNAL</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d6b/compress_8c_source.html#l00008">compress.c:8</a></div></div>
 <div class="ttc" id="ioapi_8h_html_a787fa3cf048117ba7123753c1e74fcd6"><div class="ttname"><a href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a></div><div class="ttdeci">typedef int(ZCALLBACK *close_file_func) OF((voidpf opaque</div></div>
@@ -403,7 +402,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 29 2019 16:40:25 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 30 2019 15:33:36 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

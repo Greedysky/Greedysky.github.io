@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>TTKMusicplayer: TTKModule/TTKWidget/musicWidgetCoreKits/musicfunctiontoolboxwidget.cpp Source File</title>
+<title>TTKMusicplayer: TTKModule/TTKWidget/musicCoreKits/musicfunctiontoolboxwidget.cpp Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.9.0.0</span>
+   &#160;<span id="projectnumber">2.10.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_a3dc49d95d9832a3f058c36369f57e9d.html">TTKModule</a></li><li class="navelem"><a class="el" href="../../dir_65d7ee83374af28447a36a0a45a26393.html">TTKWidget</a></li><li class="navelem"><a class="el" href="../../dir_1b3bf921b7186cb87b3d60efaf280c0d.html">musicWidgetCoreKits</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_a3dc49d95d9832a3f058c36369f57e9d.html">TTKModule</a></li><li class="navelem"><a class="el" href="../../dir_65d7ee83374af28447a36a0a45a26393.html">TTKWidget</a></li><li class="navelem"><a class="el" href="../../dir_c36a2cd76853ec286b00ea90fb1340dc.html">musicCoreKits</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -383,7 +383,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <a class="code" href="../../d2/d05/class_music_function_tool_box_widget.html#adc6b8291e79c0ab5d048854dd8007639">m_contentsWidget</a> = <span class="keyword">new</span> QWidget(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <a class="code" href="../../d2/d05/class_music_function_tool_box_widget.html#adc6b8291e79c0ab5d048854dd8007639">m_contentsWidget</a>-&gt;setObjectName(<span class="stringliteral">&quot;contentsWidget&quot;</span>);</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <a class="code" href="../../d2/d05/class_music_function_tool_box_widget.html#adc6b8291e79c0ab5d048854dd8007639">m_contentsWidget</a>-&gt;setStyleSheet(<span class="stringliteral">&quot;#contentsWidget{background-color:transparent;}&quot;</span>);</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <a class="code" href="../../d2/d05/class_music_function_tool_box_widget.html#adc6b8291e79c0ab5d048854dd8007639">m_contentsWidget</a>-&gt;setStyleSheet(<span class="stringliteral">&quot;#contentsWidget{background-color:transparent; }&quot;</span>);</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <a class="code" href="../../d2/d05/class_music_function_tool_box_widget.html#add7481cca0e0ea503cd73207bb4e186d">m_layout</a> = <span class="keyword">new</span> QVBoxLayout(<a class="code" href="../../d2/d05/class_music_function_tool_box_widget.html#adc6b8291e79c0ab5d048854dd8007639">m_contentsWidget</a>);</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <a class="code" href="../../d2/d05/class_music_function_tool_box_widget.html#add7481cca0e0ea503cd73207bb4e186d">m_layout</a>-&gt;setContentsMargins(0, 0, 0 ,0);</div>
@@ -551,12 +551,12 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;    view-&gt;setStyleSheet(QString(<span class="stringliteral">&quot;#viewport{%1}&quot;</span>).arg(alphaStr));</div>
 <div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;</div>
 <div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;    <a class="code" href="../../d2/d05/class_music_function_tool_box_widget.html#aa85cbf564963891d007f929bc7a4e630">m_scrollArea</a>-&gt;verticalScrollBar()-&gt;setStyleSheet(<span class="stringliteral">&quot; \</span></div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;<span class="stringliteral">            QScrollBar{ background:transparent; width:8px; padding-top:0px; padding-bottom:0px;} \</span></div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;<span class="stringliteral">            QScrollBar::handle:vertical{ border-radius:4px; background:#CFCFCF; min-height: 30px;} \</span></div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;<span class="stringliteral">            QScrollBar::handle:vertical::disabled{ background:#DBDBDB;} \</span></div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;<span class="stringliteral">            QScrollBar::handle:vertical:hover{ background:#BBBBBB;} \</span></div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;<span class="stringliteral">            QScrollBar::add-line, QScrollBar::sub-line{ background:none; border:none;} \</span></div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;<span class="stringliteral">            QScrollBar::add-page, QScrollBar::sub-page{ background:none;}&quot;</span>);</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;<span class="stringliteral">            QScrollBar{ background:transparent; width:8px; padding-top:0px; padding-bottom:0px; } \</span></div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;<span class="stringliteral">            QScrollBar::handle:vertical{ border-radius:4px; background:#CFCFCF; min-height: 30px; } \</span></div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;<span class="stringliteral">            QScrollBar::handle:vertical::disabled{ background:#DBDBDB; } \</span></div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;<span class="stringliteral">            QScrollBar::handle:vertical:hover{ background:#BBBBBB; } \</span></div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;<span class="stringliteral">            QScrollBar::add-line, QScrollBar::sub-line{ background:none; border:none; } \</span></div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;<span class="stringliteral">            QScrollBar::add-page, QScrollBar::sub-page{ background:none; }&quot;</span>);</div>
 <div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;}</div>
 <div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;</div>
 <div class="line"><a name="l00483"></a><span class="lineno"><a class="line" href="../../d2/d05/class_music_function_tool_box_widget.html#ac0ad4f5982d7001943cc43b169ee28cc">  483</a></span>&#160;<a class="code" href="../../d7/deb/class_music_function_tool_box_widget_item.html">MusicFunctionToolBoxWidgetItem</a> *<a class="code" href="../../d2/d05/class_music_function_tool_box_widget.html#ac0ad4f5982d7001943cc43b169ee28cc">MusicFunctionToolBoxWidget::createItem</a>(QWidget *item, <span class="keyword">const</span> QString &amp;text)</div>
@@ -619,7 +619,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_function_tool_box_top_widget_html_a9fa618612cd37fe9e444295b93c73e52"><div class="ttname"><a href="../../d8/d24/class_music_function_tool_box_top_widget.html#a9fa618612cd37fe9e444295b93c73e52">MusicFunctionToolBoxTopWidget::paintEvent</a></div><div class="ttdeci">virtual void paintEvent(QPaintEvent *event) override</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/da2/musicfunctiontoolboxwidget_8cpp_source.html#l00161">musicfunctiontoolboxwidget.cpp:161</a></div></div>
 <div class="ttc" id="class_music_function_tool_box_widget_item_html_a8f70183b50233b924960391e78e39543"><div class="ttname"><a href="../../d7/deb/class_music_function_tool_box_widget_item.html#a8f70183b50233b924960391e78e39543">MusicFunctionToolBoxWidgetItem::setItemExpand</a></div><div class="ttdeci">void setItemExpand(bool expand)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/da2/musicfunctiontoolboxwidget_8cpp_source.html#l00236">musicfunctiontoolboxwidget.cpp:236</a></div></div>
 <div class="ttc" id="class_music_function_tool_box_top_widget_html_ac2a47fb6bbadd87dd7c67901ce0f1fc8"><div class="ttname"><a href="../../d8/d24/class_music_function_tool_box_top_widget.html#ac2a47fb6bbadd87dd7c67901ce0f1fc8">MusicFunctionToolBoxTopWidget::isItemEnable</a></div><div class="ttdeci">virtual bool isItemEnable() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/da2/musicfunctiontoolboxwidget_8cpp_source.html#l00076">musicfunctiontoolboxwidget.cpp:76</a></div></div>
-<div class="ttc" id="namespace_music_object_html_a0d8f8dd6eee2cdaf8348979c6dbf2753a5065f542343b38ecc21860c7ab546b90"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#a0d8f8dd6eee2cdaf8348979c6dbf2753a5065f542343b38ecc21860c7ab546b90">MusicObject::FT_Bold</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00290">musicobject.h:290</a></div></div>
+<div class="ttc" id="namespace_music_object_html_a0d8f8dd6eee2cdaf8348979c6dbf2753a5065f542343b38ecc21860c7ab546b90"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#a0d8f8dd6eee2cdaf8348979c6dbf2753a5065f542343b38ecc21860c7ab546b90">MusicObject::FT_Bold</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00286">musicobject.h:286</a></div></div>
 <div class="ttc" id="class_music_function_tool_box_top_widget_html_a9bffcf4aa06f786b028de4df03474096"><div class="ttname"><a href="../../d8/d24/class_music_function_tool_box_top_widget.html#a9bffcf4aa06f786b028de4df03474096">MusicFunctionToolBoxTopWidget::isItemExpand</a></div><div class="ttdeci">bool isItemExpand() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/da2/musicfunctiontoolboxwidget_8cpp_source.html#l00053">musicfunctiontoolboxwidget.cpp:53</a></div></div>
 <div class="ttc" id="struct_music_tool_box_widget_item_html"><div class="ttname"><a href="../../d6/de2/struct_music_tool_box_widget_item.html">MusicToolBoxWidgetItem</a></div><div class="ttdoc">The class of the tool box widget item. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d0d/musicfunctiontoolboxwidget_8h_source.html#l00204">musicfunctiontoolboxwidget.h:204</a></div></div>
 <div class="ttc" id="class_music_function_tool_box_widget_html_a49de0350fb3812622ff9033519bd40af"><div class="ttname"><a href="../../d2/d05/class_music_function_tool_box_widget.html#a49de0350fb3812622ff9033519bd40af">MusicFunctionToolBoxWidget::m_itemList</a></div><div class="ttdeci">QList&lt; MusicToolBoxWidgetItem &gt; m_itemList</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d0d/musicfunctiontoolboxwidget_8h_source.html#l00300">musicfunctiontoolboxwidget.h:300</a></div></div>
@@ -672,7 +672,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 29 2019 16:40:17 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 30 2019 15:33:10 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

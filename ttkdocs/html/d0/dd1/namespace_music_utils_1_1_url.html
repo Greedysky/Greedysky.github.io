@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.9.0.0</span>
+   &#160;<span id="projectnumber">2.10.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -94,6 +94,14 @@ Functions</h2></td></tr>
 <tr class="separator:a5e08d6a8b497639d6987e483acdb6ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dcfce55fafcc3614c0ab708002e2da7"><td class="memItemLeft" align="right" valign="top">MUSIC_UTILS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dd1/namespace_music_utils_1_1_url.html#a9dcfce55fafcc3614c0ab708002e2da7">urlDecode</a> (QByteArray &amp;data)</td></tr>
 <tr class="separator:a9dcfce55fafcc3614c0ab708002e2da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6bff51ac509a2271a4faa209516064d"><td class="memItemLeft" align="right" valign="top">MUSIC_UTILS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dd1/namespace_music_utils_1_1_url.html#ad6bff51ac509a2271a4faa209516064d">urlPrettyEncode</a> (QString &amp;data)</td></tr>
+<tr class="separator:ad6bff51ac509a2271a4faa209516064d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2237eb588c5b3dcd950b3e5d0ee1d84"><td class="memItemLeft" align="right" valign="top">MUSIC_UTILS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dd1/namespace_music_utils_1_1_url.html#ab2237eb588c5b3dcd950b3e5d0ee1d84">urlPrettyDecode</a> (QString &amp;data)</td></tr>
+<tr class="separator:ab2237eb588c5b3dcd950b3e5d0ee1d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a004f4907f5b0c4d747a38c9000fa51b2"><td class="memItemLeft" align="right" valign="top">MUSIC_UTILS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dd1/namespace_music_utils_1_1_url.html#a004f4907f5b0c4d747a38c9000fa51b2">urlPrettyEncode</a> (QByteArray &amp;data)</td></tr>
+<tr class="separator:a004f4907f5b0c4d747a38c9000fa51b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3f0d1eb0cd99d53f740b4057f7d4f36"><td class="memItemLeft" align="right" valign="top">MUSIC_UTILS_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dd1/namespace_music_utils_1_1_url.html#ac3f0d1eb0cd99d53f740b4057f7d4f36">urlPrettyDecode</a> (QByteArray &amp;data)</td></tr>
+<tr class="separator:ac3f0d1eb0cd99d53f740b4057f7d4f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a6f7e2695f4c9934a746cf28a13fe3f30"></a>
@@ -121,9 +129,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Open file from local by path or net url. </p>
 
-<p>Definition at line <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html#l00011">11</a> of file <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html">musicurlutils.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html#l00021">21</a> of file <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html">musicurlutils.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/d96/musicsongsharingwidget_8cpp_source.html#l00256">MusicSongSharingWidget::downLoadDataChanged()</a>, <a class="el" href="../../dd/dd4/musicsourceupdatewidget_8cpp_source.html#l00191">MusicSourceUpdateWidget::downloadProgressFinished()</a>, <a class="el" href="../../de/de4/musiclrccontainerforinline_8cpp_source.html#l00316">MusicLrcContainerForInline::lrcOpenFileDir()</a>, <a class="el" href="../../d5/d7d/musicapplicationobject_8cpp_source.html#l00258">MusicApplicationObject::musicBugReportView()</a>, <a class="el" href="../../db/d7c/musicfileinformationwidget_8cpp_source.html#l00057">MusicFileInformationWidget::musicOpenFileDir()</a>, <a class="el" href="../../df/dce/musicsongslistabstracttablewidget_8cpp_source.html#l00088">MusicSongsListAbstractTableWidget::musicOpenFileDir()</a>, <a class="el" href="../../d1/d10/musicdownloadmgmtwidget_8cpp_source.html#l00072">MusicDownloadResetWidget::openFileLocation()</a>, <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html#l00022">openUrl()</a>, and <a class="el" href="../../dd/dd4/musicsourceupdatewidget_8cpp_source.html#l00151">MusicSourceUpdateWidget::upgradeFailedClicked()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/d96/musicsongsharingwidget_8cpp_source.html#l00256">MusicSongSharingWidget::downLoadDataChanged()</a>, <a class="el" href="../../dd/dd4/musicsourceupdatewidget_8cpp_source.html#l00192">MusicSourceUpdateWidget::downloadProgressFinished()</a>, <a class="el" href="../../d1/d29/musiclrccontainerforinterior_8cpp_source.html#l00292">MusicLrcContainerForInterior::lrcOpenFileDir()</a>, <a class="el" href="../../d5/d7d/musicapplicationobject_8cpp_source.html#l00263">MusicApplicationObject::musicBugReportView()</a>, <a class="el" href="../../db/d7c/musicfileinformationwidget_8cpp_source.html#l00057">MusicFileInformationWidget::musicOpenFileDir()</a>, <a class="el" href="../../df/dce/musicsongslistabstracttablewidget_8cpp_source.html#l00085">MusicSongsListAbstractTableWidget::musicOpenFileDir()</a>, <a class="el" href="../../d1/d10/musicdownloadmgmtwidget_8cpp_source.html#l00072">MusicDownloadResetWidget::openFileLocation()</a>, <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html#l00032">openUrl()</a>, and <a class="el" href="../../dd/dd4/musicsourceupdatewidget_8cpp_source.html#l00152">MusicSourceUpdateWidget::upgradeFailedClicked()</a>.</p>
 
 </div>
 </div>
@@ -152,9 +160,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Open file from local by path or net url. </p>
 
-<p>Definition at line <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html#l00022">22</a> of file <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html">musicurlutils.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html#l00032">32</a> of file <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html">musicurlutils.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html#l00011">openUrl()</a>.</p>
+<p>References <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html#l00021">openUrl()</a>.</p>
 
 </div>
 </div>
@@ -173,7 +181,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Decode the data into url. </p>
 
-<p>Definition at line <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html#l00051">51</a> of file <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html">musicurlutils.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html#l00061">61</a> of file <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html">musicurlutils.cpp</a>.</p>
 
 </div>
 </div>
@@ -192,7 +200,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Decode the data into url. </p>
 
-<p>Definition at line <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html#l00065">65</a> of file <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html">musicurlutils.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html#l00075">75</a> of file <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html">musicurlutils.cpp</a>.</p>
 
 </div>
 </div>
@@ -211,9 +219,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Encode the data into url. </p>
 
-<p>Definition at line <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html#l00044">44</a> of file <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html">musicurlutils.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html#l00054">54</a> of file <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html">musicurlutils.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d4/d31/musicdownloadbdinterface_8cpp_source.html#l00017">MusicDownLoadBDInterface::makeTokenQueryUrl()</a>, <a class="el" href="../../d8/d78/musicdownloadwyinterface_8cpp_source.html#l00032">MusicDownLoadWYInterface::makeTokenQueryUrl()</a>, <a class="el" href="../../d3/d08/musicdownloadquerybdlearnthread_8cpp_source.html#l00113">MusicDownLoadQueryBDLearnThread::readFromMusicSongAttribute()</a>, and <a class="el" href="../../d9/d5e/musicbdcommentsthread_8cpp_source.html#l00036">MusicBDSongCommentsThread::startToPage()</a>.</p>
+<p>Referenced by <a class="el" href="../../d4/d31/musicdownloadbdinterface_8cpp_source.html#l00017">MusicDownLoadBDInterface::makeTokenQueryUrl()</a>, <a class="el" href="../../d8/d78/musicdownloadwyinterface_8cpp_source.html#l00032">MusicDownLoadWYInterface::makeTokenQueryUrl()</a>, <a class="el" href="../../d3/d08/musicdownloadquerybdlearnthread_8cpp_source.html#l00112">MusicDownLoadQueryBDLearnThread::readFromMusicSongAttribute()</a>, and <a class="el" href="../../d9/d5e/musicbdcommentsthread_8cpp_source.html#l00036">MusicBDSongCommentsThread::startToPage()</a>.</p>
 
 </div>
 </div>
@@ -232,14 +240,98 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Encode the data into url. </p>
 
-<p>Definition at line <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html#l00058">58</a> of file <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html">musicurlutils.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html#l00068">68</a> of file <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html">musicurlutils.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab2237eb588c5b3dcd950b3e5d0ee1d84"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MusicUtils::Url::urlPrettyDecode </td>
+          <td>(</td>
+          <td class="paramtype">QString &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pretty decode the data into url. </p>
+
+<p>Definition at line <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html#l00102">102</a> of file <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html">musicurlutils.cpp</a>.</p>
+
+<p>References <a class="el" href="../../d5/d2b/ttklogger_8h_source.html#l00050">M_LOGGER_ERROR</a>, and <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html#l00014">number2Char()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac3f0d1eb0cd99d53f740b4057f7d4f36"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MusicUtils::Url::urlPrettyDecode </td>
+          <td>(</td>
+          <td class="paramtype">QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pretty decode the data into url. </p>
+
+<p>Definition at line <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html#l00151">151</a> of file <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html">musicurlutils.cpp</a>.</p>
+
+<p>References <a class="el" href="../../d5/d2b/ttklogger_8h_source.html#l00050">M_LOGGER_ERROR</a>, and <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html#l00014">number2Char()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad6bff51ac509a2271a4faa209516064d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MusicUtils::Url::urlPrettyEncode </td>
+          <td>(</td>
+          <td class="paramtype">QString &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pretty encode the data into url. </p>
+
+<p>Definition at line <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html#l00082">82</a> of file <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html">musicurlutils.cpp</a>.</p>
+
+<p>References <a class="el" href="../../d5/dfa/musicurlutils_8cpp.html#a3d5422c20c0c9ad18e3d37616b559583">ASCII_MAP()</a>, and <a class="el" href="../../d5/dfa/musicurlutils_8cpp.html#adb91d4ebffbdb3882407cb59cd3bcf33">HEX_NUM_MAP()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a004f4907f5b0c4d747a38c9000fa51b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MusicUtils::Url::urlPrettyEncode </td>
+          <td>(</td>
+          <td class="paramtype">QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pretty encode the data into url. </p>
+
+<p>Definition at line <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html#l00131">131</a> of file <a class="el" href="../../d5/dfa/musicurlutils_8cpp_source.html">musicurlutils.cpp</a>.</p>
+
+<p>References <a class="el" href="../../d5/dfa/musicurlutils_8cpp.html#a3d5422c20c0c9ad18e3d37616b559583">ASCII_MAP()</a>, and <a class="el" href="../../d5/dfa/musicurlutils_8cpp.html#adb91d4ebffbdb3882407cb59cd3bcf33">HEX_NUM_MAP()</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 29 2019 16:40:41 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 30 2019 15:34:47 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

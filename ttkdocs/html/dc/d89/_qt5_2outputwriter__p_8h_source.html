@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.9.0.0</span>
+   &#160;<span id="projectnumber">2.10.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -137,7 +137,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d2/ddb/namespace_music_auto_test.html#a0f15fc05ab583e87d58f0a9da5cede66">run</a>() <span class="keyword">override</span>; <span class="comment">//thread run function</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> status();</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> dispatch(qint64 elapsed, <span class="keywordtype">int</span> bitrate);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> dispatch(<span class="keyword">const</span> <a class="code" href="../../d9/d95/class_qmmp.html#a2626102dc08b87b2a880725327dd867e">Qmmp::State</a> &amp;state);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> dispatch(<span class="keyword">const</span> <a class="code" href="../../d9/d95/class_qmmp.html#a2626102dc08b87b2a880725327dd867e">Qmmp::State</a> &amp;<a class="code" href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> dispatch(<span class="keyword">const</span> <a class="code" href="../../d2/d77/class_audio_parameters.html">AudioParameters</a> &amp;p);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> dispatchVisual(<a class="code" href="../../d5/d2a/class_buffer.html">Buffer</a> *buffer);</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">bool</span> prepareConverters();</div>
@@ -154,7 +154,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="code" href="../../d9/d95/class_qmmp.html#aae85042846160153e83c605bae56f1cb">Qmmp::AudioFormat</a> m_format;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    qint64 m_bytesPerMillisecond;</div>
 <div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="../../d1/d3f/class_output_writer.html#a03ec4cd1c48efd2338b5635c70293a6b">  114</a></span>&#160;    std::atomic_bool <a class="code" href="../../d1/d3f/class_output_writer.html#a03ec4cd1c48efd2338b5635c70293a6b">m_user_stop</a>, m_pause;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">bool</span> m_prev_pause;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">bool</span> m_paused;</div>
 <div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="../../d1/d3f/class_output_writer.html#a3dca0ec328447322904198e65c8a8cbc">  116</a></span>&#160;    std::atomic_bool <a class="code" href="../../d1/d3f/class_output_writer.html#a3dca0ec328447322904198e65c8a8cbc">m_finish</a>;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">bool</span> m_useEq;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    qint64 m_totalWritten, m_currentMilliseconds;</div>
@@ -185,15 +185,16 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_channel_converter_html"><div class="ttname"><a href="../../da/dbf/class_channel_converter.html">ChannelConverter</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dcb/_qt4_2channelconverter__p_8h_source.html#l00029">channelconverter_p.h:29</a></div></div>
 <div class="ttc" id="_qt5_2audioparameters_8h_html"><div class="ttname"><a href="../../da/d43/_qt5_2audioparameters_8h.html">audioparameters.h</a></div></div>
 <div class="ttc" id="class_buffer_html"><div class="ttname"><a href="../../d5/d2a/class_buffer.html">Buffer</a></div><div class="ttdoc">Audio buffer class. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dc6/_qt4_2buffer_8h_source.html#l00034">buffer.h:34</a></div></div>
-<div class="ttc" id="namespace_music_auto_test_html_a0f15fc05ab583e87d58f0a9da5cede66"><div class="ttname"><a href="../../d2/ddb/namespace_music_auto_test.html#a0f15fc05ab583e87d58f0a9da5cede66">MusicAutoTest::run</a></div><div class="ttdeci">int run(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d59/musicautotest_8h_source.html#l00063">musicautotest.h:63</a></div></div>
+<div class="ttc" id="namespace_music_auto_test_html_a0f15fc05ab583e87d58f0a9da5cede66"><div class="ttname"><a href="../../d2/ddb/namespace_music_auto_test.html#a0f15fc05ab583e87d58f0a9da5cede66">MusicAutoTest::run</a></div><div class="ttdeci">int run(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d59/musicautotest_8h_source.html#l00062">musicautotest.h:62</a></div></div>
 <div class="ttc" id="class_qmmp_html_aae85042846160153e83c605bae56f1cb"><div class="ttname"><a href="../../d9/d95/class_qmmp.html#aae85042846160153e83c605bae56f1cb">Qmmp::AudioFormat</a></div><div class="ttdeci">AudioFormat</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d23/_qt4_2qmmp_8h_source.html#l00106">qmmp.h:106</a></div></div>
 <div class="ttc" id="_qt5_2channelmap_8h_html"><div class="ttname"><a href="../../df/d91/_qt5_2channelmap_8h.html">channelmap.h</a></div></div>
 <div class="ttc" id="_qt4_2qmmp__export_8h_html_ae57db6e0c0f040f03506ccfc59947d30"><div class="ttname"><a href="../../dd/d7e/_qt4_2qmmp__export_8h.html#ae57db6e0c0f040f03506ccfc59947d30">QMMP_EXPORT</a></div><div class="ttdeci">#define QMMP_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d7e/_qt4_2qmmp__export_8h_source.html#l00029">qmmp_export.h:29</a></div></div>
 <div class="ttc" id="class_output_writer_html_a643dac1fdcdbd5244601bcf53f5e8533"><div class="ttname"><a href="../../d1/d3f/class_output_writer.html#a643dac1fdcdbd5244601bcf53f5e8533">OutputWriter::m_muted</a></div><div class="ttdeci">std::atomic_bool m_muted</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d89/_qt5_2outputwriter__p_8h_source.html#l00121">outputwriter_p.h:121</a></div></div>
+<div class="ttc" id="http__parser_8c_html_adc6e5733fc3c22f0a7b2914188c49c90"><div class="ttname"><a href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a></div><div class="ttdeci">state</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d70/http__parser_8c_source.html#l00279">http_parser.c:279</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 29 2019 16:40:09 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 30 2019 15:32:50 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

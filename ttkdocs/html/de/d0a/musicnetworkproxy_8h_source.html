@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.9.0.0</span>
+   &#160;<span id="projectnumber">2.10.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -110,7 +110,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    ~<a class="code" href="../../de/d69/class_music_network_proxy.html">MusicNetworkProxy</a>();</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> setHostName(<span class="keyword">const</span> QString &amp;name);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> setHostName(<span class="keyword">const</span> QString &amp;<a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    QString hostName() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> setPort(<span class="keywordtype">int</span> port);</div>
@@ -129,7 +129,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> applyProxy();</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> testProxyStateChanged(<span class="keywordtype">bool</span> state);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> testProxyStateChanged(<span class="keywordtype">bool</span> <a class="code" href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">private</span> Q_SLOTS:</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> testProxyChanged(QAbstractSocket::SocketState state);</div>
@@ -143,15 +143,17 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif // MUSICNETWORKPROXY_H</span></div>
 <div class="ttc" id="ttkglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00143">ttkglobal.h:143</a></div></div>
+<div class="ttc" id="http__parser_8c_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d70/http__parser_8c_source.html#l00458">http_parser.c:458</a></div></div>
 <div class="ttc" id="class_music_network_proxy_html"><div class="ttname"><a href="../../de/d69/class_music_network_proxy.html">MusicNetworkProxy</a></div><div class="ttdoc">The class of set music network proxy. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0a/musicnetworkproxy_8h_source.html#l00028">musicnetworkproxy.h:28</a></div></div>
 <div class="ttc" id="class_music_network_proxy_html_a5c6306f952783b5ab8e4dcb134f75034"><div class="ttname"><a href="../../de/d69/class_music_network_proxy.html#a5c6306f952783b5ab8e4dcb134f75034">MusicNetworkProxy::m_type</a></div><div class="ttdeci">int m_type</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0a/musicnetworkproxy_8h_source.html#l00107">musicnetworkproxy.h:107</a></div></div>
 <div class="ttc" id="class_music_network_proxy_html_a5c898512b90911718040238136f08ff4"><div class="ttname"><a href="../../de/d69/class_music_network_proxy.html#a5c898512b90911718040238136f08ff4">MusicNetworkProxy::m_user</a></div><div class="ttdeci">QString m_user</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0a/musicnetworkproxy_8h_source.html#l00108">musicnetworkproxy.h:108</a></div></div>
 <div class="ttc" id="musicglobaldefine_8h_html"><div class="ttname"><a href="../../d6/d9b/musicglobaldefine_8h.html">musicglobaldefine.h</a></div></div>
 <div class="ttc" id="class_music_network_proxy_html_a1e4ed57b4e8b388901dedfb5814cc210"><div class="ttname"><a href="../../de/d69/class_music_network_proxy.html#a1e4ed57b4e8b388901dedfb5814cc210">MusicNetworkProxy::m_testSocket</a></div><div class="ttdeci">QTcpSocket * m_testSocket</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0a/musicnetworkproxy_8h_source.html#l00109">musicnetworkproxy.h:109</a></div></div>
+<div class="ttc" id="http__parser_8c_html_adc6e5733fc3c22f0a7b2914188c49c90"><div class="ttname"><a href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a></div><div class="ttdeci">state</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d70/http__parser_8c_source.html#l00279">http_parser.c:279</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 29 2019 16:40:14 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 30 2019 15:33:05 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

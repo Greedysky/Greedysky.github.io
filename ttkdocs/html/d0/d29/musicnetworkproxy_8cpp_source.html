@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.9.0.0</span>
+   &#160;<span id="projectnumber">2.10.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -94,9 +94,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">delete</span> <a class="code" href="../../de/d69/class_music_network_proxy.html#a1e4ed57b4e8b388901dedfb5814cc210">m_testSocket</a>;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../de/d69/class_music_network_proxy.html#aaa161a4a16214bd065397034bed3b7f0">   18</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../de/d69/class_music_network_proxy.html#aaa161a4a16214bd065397034bed3b7f0">MusicNetworkProxy::setHostName</a>(<span class="keyword">const</span> QString &amp;name)</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../de/d69/class_music_network_proxy.html#aaa161a4a16214bd065397034bed3b7f0">   18</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../de/d69/class_music_network_proxy.html#aaa161a4a16214bd065397034bed3b7f0">MusicNetworkProxy::setHostName</a>(<span class="keyword">const</span> QString &amp;<a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="../../de/d69/class_music_network_proxy.html#a77b2fd7a648dd9298a7b34021622986e">m_hostName</a> = name;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="../../de/d69/class_music_network_proxy.html#a77b2fd7a648dd9298a7b34021622986e">m_hostName</a> = <a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
 <div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../de/d69/class_music_network_proxy.html#af62243533061cc41636ec03a09bf8809">   23</a></span>&#160;QString <a class="code" href="../../de/d69/class_music_network_proxy.html#af62243533061cc41636ec03a09bf8809">MusicNetworkProxy::hostName</a>()<span class="keyword"> const</span></div>
@@ -182,7 +182,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    QNetworkProxy::setApplicationProxy(proxy);</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="../../de/d69/class_music_network_proxy.html#a8054e75a963354c1b92a7e253b2c8a0f">  106</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../de/d69/class_music_network_proxy.html#a8054e75a963354c1b92a7e253b2c8a0f">MusicNetworkProxy::testProxyChanged</a>(QAbstractSocket::SocketState state)</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="../../de/d69/class_music_network_proxy.html#a8054e75a963354c1b92a7e253b2c8a0f">  106</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../de/d69/class_music_network_proxy.html#a8054e75a963354c1b92a7e253b2c8a0f">MusicNetworkProxy::testProxyChanged</a>(QAbstractSocket::SocketState <a class="code" href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>)</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">if</span>(state == QAbstractSocket::UnconnectedState)</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    {</div>
@@ -196,6 +196,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_network_proxy_html_a390dc03c723f1fa0d7d21f604f0e22ea"><div class="ttname"><a href="../../de/d69/class_music_network_proxy.html#a390dc03c723f1fa0d7d21f604f0e22ea">MusicNetworkProxy::MusicNetworkProxy</a></div><div class="ttdeci">MusicNetworkProxy(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d29/musicnetworkproxy_8cpp_source.html#l00006">musicnetworkproxy.cpp:6</a></div></div>
 <div class="ttc" id="class_music_network_proxy_html_a91d9b7f26c036f141654e632fbc73238"><div class="ttname"><a href="../../de/d69/class_music_network_proxy.html#a91d9b7f26c036f141654e632fbc73238">MusicNetworkProxy::port</a></div><div class="ttdeci">int port() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d29/musicnetworkproxy_8cpp_source.html#l00043">musicnetworkproxy.cpp:43</a></div></div>
 <div class="ttc" id="class_music_network_proxy_html_a77b2fd7a648dd9298a7b34021622986e"><div class="ttname"><a href="../../de/d69/class_music_network_proxy.html#a77b2fd7a648dd9298a7b34021622986e">MusicNetworkProxy::m_hostName</a></div><div class="ttdeci">QString m_hostName</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0a/musicnetworkproxy_8h_source.html#l00108">musicnetworkproxy.h:108</a></div></div>
+<div class="ttc" id="http__parser_8c_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d70/http__parser_8c_source.html#l00458">http_parser.c:458</a></div></div>
 <div class="ttc" id="ttkglobal_8h_html_a21888f51ce9cbd49f45fc9c3868d47b8"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#a21888f51ce9cbd49f45fc9c3868d47b8">MStatic_cast</a></div><div class="ttdeci">#define MStatic_cast(x, y)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00075">ttkglobal.h:75</a></div></div>
 <div class="ttc" id="class_music_network_proxy_html_a9595762b48df6e04c6a4dc987fa41d77"><div class="ttname"><a href="../../de/d69/class_music_network_proxy.html#a9595762b48df6e04c6a4dc987fa41d77">MusicNetworkProxy::m_pwd</a></div><div class="ttdeci">QString m_pwd</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0a/musicnetworkproxy_8h_source.html#l00108">musicnetworkproxy.h:108</a></div></div>
 <div class="ttc" id="class_music_network_proxy_html_aaa161a4a16214bd065397034bed3b7f0"><div class="ttname"><a href="../../de/d69/class_music_network_proxy.html#aaa161a4a16214bd065397034bed3b7f0">MusicNetworkProxy::setHostName</a></div><div class="ttdeci">void setHostName(const QString &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d29/musicnetworkproxy_8cpp_source.html#l00018">musicnetworkproxy.cpp:18</a></div></div>
@@ -217,11 +218,12 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_network_proxy_html_a684427f5ddad2f763433eca27b232667"><div class="ttname"><a href="../../de/d69/class_music_network_proxy.html#a684427f5ddad2f763433eca27b232667">MusicNetworkProxy::user</a></div><div class="ttdeci">QString user() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d29/musicnetworkproxy_8cpp_source.html#l00053">musicnetworkproxy.cpp:53</a></div></div>
 <div class="ttc" id="class_music_network_proxy_html_ac089329c94916270507736c460e1c4a8"><div class="ttname"><a href="../../de/d69/class_music_network_proxy.html#ac089329c94916270507736c460e1c4a8">MusicNetworkProxy::m_port</a></div><div class="ttdeci">int m_port</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0a/musicnetworkproxy_8h_source.html#l00107">musicnetworkproxy.h:107</a></div></div>
 <div class="ttc" id="class_music_network_proxy_html_ac493536c6851c97e15c44068fcce45d7"><div class="ttname"><a href="../../de/d69/class_music_network_proxy.html#ac493536c6851c97e15c44068fcce45d7">MusicNetworkProxy::password</a></div><div class="ttdeci">QString password() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d29/musicnetworkproxy_8cpp_source.html#l00063">musicnetworkproxy.cpp:63</a></div></div>
+<div class="ttc" id="http__parser_8c_html_adc6e5733fc3c22f0a7b2914188c49c90"><div class="ttname"><a href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a></div><div class="ttdeci">state</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d70/http__parser_8c_source.html#l00279">http_parser.c:279</a></div></div>
 <div class="ttc" id="class_music_network_proxy_html_af62243533061cc41636ec03a09bf8809"><div class="ttname"><a href="../../de/d69/class_music_network_proxy.html#af62243533061cc41636ec03a09bf8809">MusicNetworkProxy::hostName</a></div><div class="ttdeci">QString hostName() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d29/musicnetworkproxy_8cpp_source.html#l00023">musicnetworkproxy.cpp:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 29 2019 16:40:14 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 30 2019 15:33:05 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

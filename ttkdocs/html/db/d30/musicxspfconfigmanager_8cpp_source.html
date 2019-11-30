@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.9.0.0</span>
+   &#160;<span id="projectnumber">2.10.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -152,12 +152,12 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
 <div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="../../da/daf/class_music_x_s_p_f_config_manager.html#a433152c400315bc6be459a87a640665f">   74</a></span>&#160;MusicSongs <a class="code" href="../../da/daf/class_music_x_s_p_f_config_manager.html#a433152c400315bc6be459a87a640665f">MusicXSPFConfigManager::readMusicFilePath</a>(<span class="keyword">const</span> QDomNode &amp;node)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">const</span> QDomNodeList &amp;nodelist = node.childNodes();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">const</span> QDomNodeList &amp;nodeList = node.childNodes();</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    MusicSongs songs;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;nodelist.count(); i++)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;nodeList.count(); i++)</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keyword">const</span> QDomElement &amp;element = nodelist.at(i).toElement();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keyword">const</span> QDomElement &amp;element = nodeList.at(i).toElement();</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        songs &lt;&lt; <a class="code" href="../../d6/de4/class_music_song.html">MusicSong</a>(element.attribute(<span class="stringliteral">&quot;src&quot;</span>),</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                           element.attribute(<span class="stringliteral">&quot;playCount&quot;</span>).toInt(),</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                           element.attribute(<span class="stringliteral">&quot;time&quot;</span>),</div>
@@ -169,7 +169,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_abstract_xml_html_a70c15a3f4ecf3459b6d55f00cc03ae25"><div class="ttname"><a href="../../d7/d53/class_music_abstract_xml.html#a70c15a3f4ecf3459b6d55f00cc03ae25">MusicAbstractXml::createRoot</a></div><div class="ttdeci">QDomElement createRoot(const QString &amp;node)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d4d/musicabstractxml_8cpp_source.html#l00150">musicabstractxml.cpp:150</a></div></div>
 <div class="ttc" id="struct_music_xml_attribute_html"><div class="ttname"><a href="../../df/d70/struct_music_xml_attribute.html">MusicXmlAttribute</a></div><div class="ttdoc">The class of the xml attribute. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d83/musicabstractxml_8h_source.html#l00031">musicabstractxml.h:31</a></div></div>
 <div class="ttc" id="class_music_abstract_xml_html"><div class="ttname"><a href="../../d7/d53/class_music_abstract_xml.html">MusicAbstractXml</a></div><div class="ttdoc">The class of the base class of xml interface. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d83/musicabstractxml_8h_source.html#l00047">musicabstractxml.h:47</a></div></div>
-<div class="ttc" id="musicobject_8h_html_af0b5cfa4242ae7f98ba80fd23ef8afa9"><div class="ttname"><a href="../../d8/d07/musicobject_8h.html#af0b5cfa4242ae7f98ba80fd23ef8afa9">APP_NAME</a></div><div class="ttdeci">#define APP_NAME</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00090">musicobject.h:90</a></div></div>
+<div class="ttc" id="musicobject_8h_html_af0b5cfa4242ae7f98ba80fd23ef8afa9"><div class="ttname"><a href="../../d8/d07/musicobject_8h.html#af0b5cfa4242ae7f98ba80fd23ef8afa9">APP_NAME</a></div><div class="ttdeci">#define APP_NAME</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00095">musicobject.h:95</a></div></div>
 <div class="ttc" id="class_music_x_s_p_f_config_manager_html_aa034d4eb69848ff2c4ce28e5207bda40"><div class="ttname"><a href="../../da/daf/class_music_x_s_p_f_config_manager.html#aa034d4eb69848ff2c4ce28e5207bda40">MusicXSPFConfigManager::writePlaylistData</a></div><div class="ttdeci">virtual void writePlaylistData(const MusicSongItems &amp;items, const QString &amp;path) override</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d30/musicxspfconfigmanager_8cpp_source.html#l00030">musicxspfconfigmanager.cpp:30</a></div></div>
 <div class="ttc" id="class_music_abstract_xml_html_afa6e29a4034982c58888bbf1e77438a9"><div class="ttname"><a href="../../d7/d53/class_music_abstract_xml.html#afa6e29a4034982c58888bbf1e77438a9">MusicAbstractXml::writeDomText</a></div><div class="ttdeci">QDomElement writeDomText(QDomElement &amp;element, const QString &amp;node, const QString &amp;text)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d4d/musicabstractxml_8cpp_source.html#l00246">musicabstractxml.cpp:246</a></div></div>
 <div class="ttc" id="struct_music_sort_html_a9d558737ac0ccdfb130a023c9c7f23b2"><div class="ttname"><a href="../../d0/d16/struct_music_sort.html#a9d558737ac0ccdfb130a023c9c7f23b2">MusicSort::m_index</a></div><div class="ttdeci">int m_index</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d03/musicsong_8h_source.html#l00185">musicsong.h:185</a></div></div>
@@ -201,7 +201,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 29 2019 16:40:14 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 30 2019 15:33:07 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

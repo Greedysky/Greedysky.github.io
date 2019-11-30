@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.9.0.0</span>
+   &#160;<span id="projectnumber">2.10.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -97,8 +97,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">   state-&gt;fd, and update state-&gt;eof, state-&gt;err, and state-&gt;msg as appropriate.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">   This function needs to loop on read(), since read() is not guaranteed to</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">   read the number of bytes requested, depending on the type of descriptor. */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="../../d0/df1/gzread_8c.html#af7f3ad614b7059314f1673da8950df3f">   21</a></span>&#160;<a class="code" href="../../d6/da7/unzip_8c.html#a08023ea6765c99d60a6a3840cd07156e">local</a> <span class="keywordtype">int</span> <a class="code" href="../../d0/df1/gzread_8c.html#af7f3ad614b7059314f1673da8950df3f">gz_load</a>(state, <a class="code" href="../../d2/db7/ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, len, <a class="code" href="../../df/db6/structgz_file__s.html#abb96e208e17a991c09b4df6cefcc1c04">have</a>)</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="../../d5/d6d/gzguts_8h.html#a15adc208a26903dbfe8c57720cf401c8">gz_statep</a> state;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="../../d0/df1/gzread_8c.html#af7f3ad614b7059314f1673da8950df3f">   21</a></span>&#160;<a class="code" href="../../d6/da7/unzip_8c.html#a08023ea6765c99d60a6a3840cd07156e">local</a> <span class="keywordtype">int</span> <a class="code" href="../../d0/df1/gzread_8c.html#af7f3ad614b7059314f1673da8950df3f">gz_load</a>(<a class="code" href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>, <a class="code" href="../../d2/db7/ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, len, <a class="code" href="../../df/db6/structgz_file__s.html#abb96e208e17a991c09b4df6cefcc1c04">have</a>)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="../../d5/d6d/gzguts_8h.html#a15adc208a26903dbfe8c57720cf401c8">gz_statep</a> <a class="code" href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *<a class="code" href="../../d2/db7/ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">unsigned</span> len;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">unsigned</span> *<a class="code" href="../../df/db6/structgz_file__s.html#abb96e208e17a991c09b4df6cefcc1c04">have</a>;</div>
@@ -132,8 +132,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">   If strm-&gt;avail_in != 0, then the current data is moved to the beginning of</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">   the input buffer, and then the remainder of the buffer is loaded with the</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">   available data from the input file. */</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="../../d0/df1/gzread_8c.html#a880d9d0c2827714cd40d8ba7f3637294">   56</a></span>&#160;<a class="code" href="../../d6/da7/unzip_8c.html#a08023ea6765c99d60a6a3840cd07156e">local</a> <span class="keywordtype">int</span> <a class="code" href="../../d0/df1/gzread_8c.html#a880d9d0c2827714cd40d8ba7f3637294">gz_avail</a>(state)</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="../../d5/d6d/gzguts_8h.html#a15adc208a26903dbfe8c57720cf401c8">gz_statep</a> state;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="../../d0/df1/gzread_8c.html#a880d9d0c2827714cd40d8ba7f3637294">   56</a></span>&#160;<a class="code" href="../../d6/da7/unzip_8c.html#a08023ea6765c99d60a6a3840cd07156e">local</a> <span class="keywordtype">int</span> <a class="code" href="../../d0/df1/gzread_8c.html#a880d9d0c2827714cd40d8ba7f3637294">gz_avail</a>(<a class="code" href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="../../d5/d6d/gzguts_8h.html#a15adc208a26903dbfe8c57720cf401c8">gz_statep</a> <a class="code" href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">unsigned</span> got;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="../../d4/dae/zlib_8h.html#a6ede25c84d3c9f8632305866acffb1d6">z_streamp</a> strm = &amp;(state-&gt;strm);</div>
@@ -167,8 +167,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">   case, all further file reads will be directly to either the output buffer or</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">   a user buffer.  If decompressing, the inflate state will be initialized.</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">   gz_look() will return 0 on success or -1 on failure. */</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="../../d0/df1/gzread_8c.html#a2335993758928a1328423a4c3cd8f5a5">   91</a></span>&#160;<a class="code" href="../../d6/da7/unzip_8c.html#a08023ea6765c99d60a6a3840cd07156e">local</a> <span class="keywordtype">int</span> <a class="code" href="../../d0/df1/gzread_8c.html#a2335993758928a1328423a4c3cd8f5a5">gz_look</a>(state)</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="../../d5/d6d/gzguts_8h.html#a15adc208a26903dbfe8c57720cf401c8">gz_statep</a> state;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="../../d0/df1/gzread_8c.html#a2335993758928a1328423a4c3cd8f5a5">   91</a></span>&#160;<a class="code" href="../../d6/da7/unzip_8c.html#a08023ea6765c99d60a6a3840cd07156e">local</a> <span class="keywordtype">int</span> <a class="code" href="../../d0/df1/gzread_8c.html#a2335993758928a1328423a4c3cd8f5a5">gz_look</a>(<a class="code" href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="../../d5/d6d/gzguts_8h.html#a15adc208a26903dbfe8c57720cf401c8">gz_statep</a> <a class="code" href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="../../d4/dae/zlib_8h.html#a6ede25c84d3c9f8632305866acffb1d6">z_streamp</a> strm = &amp;(state-&gt;strm);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
@@ -251,8 +251,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment">   data.  If the gzip stream completes, state-&gt;how is reset to LOOK to look for</span></div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment">   the next gzip stream or raw data, once state-&gt;x.have is depleted.  Returns 0</span></div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="comment">   on success, -1 on failure. */</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="../../d0/df1/gzread_8c.html#a4b2cb72f18826fd5410e1cbdd9cf3941">  175</a></span>&#160;<a class="code" href="../../d6/da7/unzip_8c.html#a08023ea6765c99d60a6a3840cd07156e">local</a> <span class="keywordtype">int</span> <a class="code" href="../../d0/df1/gzread_8c.html#a4b2cb72f18826fd5410e1cbdd9cf3941">gz_decomp</a>(state)</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <a class="code" href="../../d5/d6d/gzguts_8h.html#a15adc208a26903dbfe8c57720cf401c8">gz_statep</a> state;</div>
+<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="../../d0/df1/gzread_8c.html#a4b2cb72f18826fd5410e1cbdd9cf3941">  175</a></span>&#160;<a class="code" href="../../d6/da7/unzip_8c.html#a08023ea6765c99d60a6a3840cd07156e">local</a> <span class="keywordtype">int</span> <a class="code" href="../../d0/df1/gzread_8c.html#a4b2cb72f18826fd5410e1cbdd9cf3941">gz_decomp</a>(<a class="code" href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>)</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <a class="code" href="../../d5/d6d/gzguts_8h.html#a15adc208a26903dbfe8c57720cf401c8">gz_statep</a> <a class="code" href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>;</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;{</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordtype">int</span> ret = <a class="code" href="../../d4/dae/zlib_8h.html#a8cb802b6a11e926478dc6547c514c65c">Z_OK</a>;</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordtype">unsigned</span> had;</div>
@@ -305,8 +305,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="comment">   looked for to determine whether to copy or decompress.  Returns -1 on error,</span></div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="comment">   otherwise 0.  gz_fetch() will leave state-&gt;how as COPY or GZIP unless the</span></div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="comment">   end of the input file has been reached and all data has been processed.  */</span></div>
-<div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="../../d0/df1/gzread_8c.html#a221059506dd52a3dc6fa990f0e191ba8">  229</a></span>&#160;<a class="code" href="../../d6/da7/unzip_8c.html#a08023ea6765c99d60a6a3840cd07156e">local</a> <span class="keywordtype">int</span> <a class="code" href="../../d0/df1/gzread_8c.html#a221059506dd52a3dc6fa990f0e191ba8">gz_fetch</a>(state)</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <a class="code" href="../../d5/d6d/gzguts_8h.html#a15adc208a26903dbfe8c57720cf401c8">gz_statep</a> state;</div>
+<div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="../../d0/df1/gzread_8c.html#a221059506dd52a3dc6fa990f0e191ba8">  229</a></span>&#160;<a class="code" href="../../d6/da7/unzip_8c.html#a08023ea6765c99d60a6a3840cd07156e">local</a> <span class="keywordtype">int</span> <a class="code" href="../../d0/df1/gzread_8c.html#a221059506dd52a3dc6fa990f0e191ba8">gz_fetch</a>(<a class="code" href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>)</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <a class="code" href="../../d5/d6d/gzguts_8h.html#a15adc208a26903dbfe8c57720cf401c8">gz_statep</a> <a class="code" href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>;</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;{</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <a class="code" href="../../d4/dae/zlib_8h.html#a6ede25c84d3c9f8632305866acffb1d6">z_streamp</a> strm = &amp;(state-&gt;strm);</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
@@ -335,8 +335,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;}</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="comment">/* Skip len uncompressed bytes of output.  Return -1 on error, 0 on success. */</span></div>
-<div class="line"><a name="l00259"></a><span class="lineno"><a class="line" href="../../d0/df1/gzread_8c.html#aa3f15e560c3c56fc5d845afd2c5c0b56">  259</a></span>&#160;<a class="code" href="../../d6/da7/unzip_8c.html#a08023ea6765c99d60a6a3840cd07156e">local</a> <span class="keywordtype">int</span> <a class="code" href="../../d0/df1/gzread_8c.html#aa3f15e560c3c56fc5d845afd2c5c0b56">gz_skip</a>(state, len)</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <a class="code" href="../../d5/d6d/gzguts_8h.html#a15adc208a26903dbfe8c57720cf401c8">gz_statep</a> state;</div>
+<div class="line"><a name="l00259"></a><span class="lineno"><a class="line" href="../../d0/df1/gzread_8c.html#aa3f15e560c3c56fc5d845afd2c5c0b56">  259</a></span>&#160;<a class="code" href="../../d6/da7/unzip_8c.html#a08023ea6765c99d60a6a3840cd07156e">local</a> <span class="keywordtype">int</span> <a class="code" href="../../d0/df1/gzread_8c.html#aa3f15e560c3c56fc5d845afd2c5c0b56">gz_skip</a>(<a class="code" href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>, len)</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <a class="code" href="../../d5/d6d/gzguts_8h.html#a15adc208a26903dbfe8c57720cf401c8">gz_statep</a> <a class="code" href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>;</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <a class="code" href="../../de/d95/zconf_8h.html#ab9923767082c7a76924b31493e60d42c">z_off64_t</a> len;</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;{</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keywordtype">unsigned</span> n;</div>
@@ -370,8 +370,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="comment">   input.  Return the number of bytes read.  If zero is returned, either the</span></div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="comment">   end of file was reached, or there was an error.  state-&gt;err must be</span></div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="comment">   consulted in that case to determine which. */</span></div>
-<div class="line"><a name="l00294"></a><span class="lineno"><a class="line" href="../../d0/df1/gzread_8c.html#a2e7c20ac97b2f2d7cd21c3e0399999b5">  294</a></span>&#160;<a class="code" href="../../d6/da7/unzip_8c.html#a08023ea6765c99d60a6a3840cd07156e">local</a> <a class="code" href="../../de/d95/zconf_8h.html#ac049a4b91bbe1112841d2890b206b890">z_size_t</a> <a class="code" href="../../d0/df1/gzread_8c.html#a2e7c20ac97b2f2d7cd21c3e0399999b5">gz_read</a>(state, <a class="code" href="../../d2/db7/ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, len)</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <a class="code" href="../../d5/d6d/gzguts_8h.html#a15adc208a26903dbfe8c57720cf401c8">gz_statep</a> state;</div>
+<div class="line"><a name="l00294"></a><span class="lineno"><a class="line" href="../../d0/df1/gzread_8c.html#a2e7c20ac97b2f2d7cd21c3e0399999b5">  294</a></span>&#160;<a class="code" href="../../d6/da7/unzip_8c.html#a08023ea6765c99d60a6a3840cd07156e">local</a> <a class="code" href="../../de/d95/zconf_8h.html#ac049a4b91bbe1112841d2890b206b890">z_size_t</a> <a class="code" href="../../d0/df1/gzread_8c.html#a2e7c20ac97b2f2d7cd21c3e0399999b5">gz_read</a>(<a class="code" href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>, <a class="code" href="../../d2/db7/ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, len)</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <a class="code" href="../../d5/d6d/gzguts_8h.html#a15adc208a26903dbfe8c57720cf401c8">gz_statep</a> <a class="code" href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>;</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <a class="code" href="../../de/d95/zconf_8h.html#aa3397ff439b5e076528b04bc9b8b086a">voidp</a> <a class="code" href="../../d2/db7/ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>;</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <a class="code" href="../../de/d95/zconf_8h.html#ac049a4b91bbe1112841d2890b206b890">z_size_t</a> len;</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;{</div>
@@ -456,7 +456,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    <a class="code" href="../../de/d95/zconf_8h.html#aa3397ff439b5e076528b04bc9b8b086a">voidp</a> <a class="code" href="../../d2/db7/ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>;</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <span class="keywordtype">unsigned</span> len;</div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;{</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <a class="code" href="../../d5/d6d/gzguts_8h.html#a15adc208a26903dbfe8c57720cf401c8">gz_statep</a> state;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <a class="code" href="../../d5/d6d/gzguts_8h.html#a15adc208a26903dbfe8c57720cf401c8">gz_statep</a> <a class="code" href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>;</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;</div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <span class="comment">/* get internal structure */</span></div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <span class="keywordflow">if</span> (file == NULL)</div>
@@ -494,7 +494,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <a class="code" href="../../df/db6/structgz_file__s.html">gzFile</a> file;</div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;{</div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    <a class="code" href="../../de/d95/zconf_8h.html#ac049a4b91bbe1112841d2890b206b890">z_size_t</a> len;</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    <a class="code" href="../../d5/d6d/gzguts_8h.html#a15adc208a26903dbfe8c57720cf401c8">gz_statep</a> state;</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    <a class="code" href="../../d5/d6d/gzguts_8h.html#a15adc208a26903dbfe8c57720cf401c8">gz_statep</a> <a class="code" href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>;</div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;</div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    <span class="comment">/* get internal structure */</span></div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    <span class="keywordflow">if</span> (file == NULL)</div>
@@ -528,7 +528,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;{</div>
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    <span class="keywordtype">int</span> ret;</div>
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="../../d2/db7/ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[1];</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    <a class="code" href="../../d5/d6d/gzguts_8h.html#a15adc208a26903dbfe8c57720cf401c8">gz_statep</a> state;</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    <a class="code" href="../../d5/d6d/gzguts_8h.html#a15adc208a26903dbfe8c57720cf401c8">gz_statep</a> <a class="code" href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>;</div>
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    <span class="comment">/* get internal structure */</span></div>
 <div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    <span class="keywordflow">if</span> (file == NULL)</div>
@@ -542,7 +542,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;</div>
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;    <span class="comment">/* try output buffer (no need to check for skip request) */</span></div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    <span class="keywordflow">if</span> (state-&gt;x.have) {</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;        state-&gt;x.<a class="code" href="../../df/db6/structgz_file__s.html#abb96e208e17a991c09b4df6cefcc1c04">have</a>--;</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;        state-&gt;x.have--;</div>
 <div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;        state-&gt;x.pos++;</div>
 <div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;        <span class="keywordflow">return</span> *(state-&gt;x.next)++;</div>
 <div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;    }</div>
@@ -563,7 +563,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;    <a class="code" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> c;</div>
 <div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;    <a class="code" href="../../df/db6/structgz_file__s.html">gzFile</a> file;</div>
 <div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;{</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    <a class="code" href="../../d5/d6d/gzguts_8h.html#a15adc208a26903dbfe8c57720cf401c8">gz_statep</a> state;</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    <a class="code" href="../../d5/d6d/gzguts_8h.html#a15adc208a26903dbfe8c57720cf401c8">gz_statep</a> <a class="code" href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>;</div>
 <div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;</div>
 <div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    <span class="comment">/* get internal structure */</span></div>
 <div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    <span class="keywordflow">if</span> (file == NULL)</div>
@@ -627,7 +627,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;    <span class="keywordtype">unsigned</span> left, n;</div>
 <div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;    <span class="keywordtype">char</span> *str;</div>
 <div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *eol;</div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    <a class="code" href="../../d5/d6d/gzguts_8h.html#a15adc208a26903dbfe8c57720cf401c8">gz_statep</a> state;</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    <a class="code" href="../../d5/d6d/gzguts_8h.html#a15adc208a26903dbfe8c57720cf401c8">gz_statep</a> <a class="code" href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>;</div>
 <div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;</div>
 <div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;    <span class="comment">/* check parameters and get internal structure */</span></div>
 <div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;    <span class="keywordflow">if</span> (file == NULL || buf == NULL || len &lt; 1)</div>
@@ -686,7 +686,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00607"></a><span class="lineno"><a class="line" href="../../d0/df1/gzread_8c.html#a1f049b9405deb0e7dad1fe97ed4dd8c2">  607</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../de/d95/zconf_8h.html#a181415878f03b95a7094309d824a14b6">ZEXPORT</a> <a class="code" href="../../d0/df1/gzread_8c.html#a1f049b9405deb0e7dad1fe97ed4dd8c2">gzdirect</a>(file)</div>
 <div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;    <a class="code" href="../../df/db6/structgz_file__s.html">gzFile</a> file;</div>
 <div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;{</div>
-<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;    <a class="code" href="../../d5/d6d/gzguts_8h.html#a15adc208a26903dbfe8c57720cf401c8">gz_statep</a> state;</div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;    <a class="code" href="../../d5/d6d/gzguts_8h.html#a15adc208a26903dbfe8c57720cf401c8">gz_statep</a> <a class="code" href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>;</div>
 <div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;</div>
 <div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;    <span class="comment">/* get internal structure */</span></div>
 <div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;    <span class="keywordflow">if</span> (file == NULL)</div>
@@ -707,7 +707,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;    <a class="code" href="../../df/db6/structgz_file__s.html">gzFile</a> file;</div>
 <div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;{</div>
 <div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;    <span class="keywordtype">int</span> ret, err;</div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;    <a class="code" href="../../d5/d6d/gzguts_8h.html#a15adc208a26903dbfe8c57720cf401c8">gz_statep</a> state;</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;    <a class="code" href="../../d5/d6d/gzguts_8h.html#a15adc208a26903dbfe8c57720cf401c8">gz_statep</a> <a class="code" href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>;</div>
 <div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;</div>
 <div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;    <span class="comment">/* get internal structure */</span></div>
 <div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;    <span class="keywordflow">if</span> (file == NULL)</div>
@@ -779,12 +779,13 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="gzread_8c_html_a2d0d971b446b67bbc4261fa5fef622bd"><div class="ttname"><a href="../../d0/df1/gzread_8c.html#a2d0d971b446b67bbc4261fa5fef622bd">gzread</a></div><div class="ttdeci">int ZEXPORT gzread(gzFile file, voidp buf, unsigned len)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df1/gzread_8c_source.html#l00375">gzread.c:375</a></div></div>
 <div class="ttc" id="zconf_8h_html_a181415878f03b95a7094309d824a14b6"><div class="ttname"><a href="../../de/d95/zconf_8h.html#a181415878f03b95a7094309d824a14b6">ZEXPORT</a></div><div class="ttdeci">#define ZEXPORT</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d95/zconf_8h_source.html#l00380">zconf.h:380</a></div></div>
 <div class="ttc" id="inflate_8c_html_aed3136bc8afc3ef309b731b4ad724534"><div class="ttname"><a href="../../d5/d6a/inflate_8c.html#aed3136bc8afc3ef309b731b4ad724534">inflateEnd</a></div><div class="ttdeci">int ZEXPORT inflateEnd(z_streamp strm)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d6a/inflate_8c_source.html#l01277">inflate.c:1277</a></div></div>
+<div class="ttc" id="http__parser_8c_html_adc6e5733fc3c22f0a7b2914188c49c90"><div class="ttname"><a href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a></div><div class="ttdeci">state</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d70/http__parser_8c_source.html#l00279">http_parser.c:279</a></div></div>
 <div class="ttc" id="gzread_8c_html_a6ccd5c126388fb6a0fd12130b905049c"><div class="ttname"><a href="../../d0/df1/gzread_8c.html#a6ccd5c126388fb6a0fd12130b905049c">OF</a></div><div class="ttdeci">local int gz_load OF((gz_statep, unsigned char *, unsigned, unsigned *))</div></div>
 <div class="ttc" id="deflate_8h_html_a9564352992f7a4001386d1c8e2977571"><div class="ttname"><a href="../../d8/dee/deflate_8h.html#a9564352992f7a4001386d1c8e2977571">GZIP</a></div><div class="ttdeci">#define GZIP</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dee/deflate_8h_source.html#l00023">deflate.h:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 29 2019 16:40:24 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 30 2019 15:33:36 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

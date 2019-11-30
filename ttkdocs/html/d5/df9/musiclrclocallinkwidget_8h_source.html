@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.9.0.0</span>
+   &#160;<span id="projectnumber">2.10.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -120,7 +120,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> createAllItems(<span class="keyword">const</span> MusicLocalDataItems &amp;items);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> listCellClicked(<span class="keywordtype">int</span> row, <span class="keywordtype">int</span> column) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> itemCellClicked(<span class="keywordtype">int</span> row, <span class="keywordtype">int</span> column) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
@@ -138,7 +138,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d2/d54/class_music_lrc_local_link_widget.html">MusicLrcLocalLinkWidget</a>();</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> setCurrentSongName(<span class="keyword">const</span> QString &amp;name);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> setCurrentSongName(<span class="keyword">const</span> QString &amp;<a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;Q_SIGNALS:</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> currentLrcChanged(<span class="keyword">const</span> QString &amp;data);</div>
@@ -169,6 +169,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_lrc_local_link_widget_html_a05fba5ef2c499d0e7c572eb65a99f44d"><div class="ttname"><a href="../../d2/d54/class_music_lrc_local_link_widget.html#a05fba5ef2c499d0e7c572eb65a99f44d">MusicLrcLocalLinkWidget::m_currentName</a></div><div class="ttdeci">QString m_currentName</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/df9/musiclrclocallinkwidget_8h_source.html#l00124">musiclrclocallinkwidget.h:124</a></div></div>
 <div class="ttc" id="ttkglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00143">ttkglobal.h:143</a></div></div>
 <div class="ttc" id="class_music_lrc_local_link_widget_html_a8c46236d974af13a29c6ccdb7da259a0"><div class="ttname"><a href="../../d2/d54/class_music_lrc_local_link_widget.html#a8c46236d974af13a29c6ccdb7da259a0">MusicLrcLocalLinkWidget::m_ui</a></div><div class="ttdeci">Ui::MusicLrcLocalLinkWidget * m_ui</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/df9/musiclrclocallinkwidget_8h_source.html#l00125">musiclrclocallinkwidget.h:125</a></div></div>
+<div class="ttc" id="http__parser_8c_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d70/http__parser_8c_source.html#l00458">http_parser.c:458</a></div></div>
 <div class="ttc" id="class_music_lrc_local_link_table_widget_html"><div class="ttname"><a href="../../d8/d6f/class_music_lrc_local_link_table_widget.html">MusicLrcLocalLinkTableWidget</a></div><div class="ttdoc">The class of the local lrc link table widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/df9/musiclrclocallinkwidget_8h_source.html#l00038">musiclrclocallinkwidget.h:38</a></div></div>
 <div class="ttc" id="struct_music_local_data_item_html_acb8443d12c58c358380bb2cd9f8b9962"><div class="ttname"><a href="../../d5/d57/struct_music_local_data_item.html#acb8443d12c58c358380bb2cd9f8b9962">MusicLocalDataItem::m_path</a></div><div class="ttdeci">QString m_path</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/df9/musiclrclocallinkwidget_8h_source.html#l00031">musiclrclocallinkwidget.h:31</a></div></div>
 <div class="ttc" id="class_music_abstract_move_dialog_html"><div class="ttname"><a href="../../da/db2/class_music_abstract_move_dialog.html">MusicAbstractMoveDialog</a></div><div class="ttdoc">The class of the moving dialog base. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d49/musicabstractmovedialog_8h_source.html#l00029">musicabstractmovedialog.h:29</a></div></div>
@@ -177,7 +178,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 29 2019 16:40:15 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 30 2019 15:33:15 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

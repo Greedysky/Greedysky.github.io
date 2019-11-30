@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.9.0.0</span>
+   &#160;<span id="projectnumber">2.10.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -100,46 +100,63 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/d9b/musicglobaldefine_8h.html">musicglobaldefine.h</a>&quot;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dc/d17/musicwidgetheaders_8h.html">musicwidgetheaders.h</a>&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">class </span><a class="code" href="../../d6/d89/class_music_animation_stacked_widget.html">MusicAnimationStackedWidget</a>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../df/de7/class_music_connect_mobile_widget.html">   30</a></span>&#160;<span class="keyword">class </span>MUSIC_TOOL_EXPORT <a class="code" href="../../df/de7/class_music_connect_mobile_widget.html">MusicConnectMobileWidget</a> : <span class="keyword">public</span> QWidget</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../df/de7/class_music_connect_mobile_widget.html">MusicConnectMobileWidget</a>)</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../df/de7/class_music_connect_mobile_widget.html">MusicConnectMobileWidget</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    ~<a class="code" href="../../df/de7/class_music_connect_mobile_widget.html">MusicConnectMobileWidget</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../da/df2/musicdeviceinfoobject_8h.html">musicdeviceinfoobject.h</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">class </span><a class="code" href="../../dd/d47/class_music_text_slider_widget.html">MusicTextSliderWidget</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">class </span><a class="code" href="../../d6/d89/class_music_animation_stacked_widget.html">MusicAnimationStackedWidget</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../df/de7/class_music_connect_mobile_widget.html">   32</a></span>&#160;<span class="keyword">class </span>MUSIC_TOOL_EXPORT <a class="code" href="../../df/de7/class_music_connect_mobile_widget.html">MusicConnectMobileWidget</a> : <span class="keyword">public</span> QWidget</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../df/de7/class_music_connect_mobile_widget.html">MusicConnectMobileWidget</a>)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../df/de7/class_music_connect_mobile_widget.html">MusicConnectMobileWidget</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">private</span> Q_SLOTS:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> changeStatckedWidgetFirst();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> changeStatckedWidgetSecond();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> changeStatckedWidgetThird();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> openTransferFiles2Mobile();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> openTransferFiles2Wifi();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> contextMenuEvent(QContextMenuEvent *event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> initFirstWidget();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> initSecondWidget();</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> initThirdWidget();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="../../df/de7/class_music_connect_mobile_widget.html#afd181e37cce83eb23d226f058bb4f05e">   82</a></span>&#160;    <a class="code" href="../../d6/d89/class_music_animation_stacked_widget.html">MusicAnimationStackedWidget</a> *<a class="code" href="../../df/de7/class_music_connect_mobile_widget.html#afd181e37cce83eb23d226f058bb4f05e">m_stackedWidget</a>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif // MUSICCONNECTMOBILEWIDGET_H</span></div>
-<div class="ttc" id="class_music_connect_mobile_widget_html"><div class="ttname"><a href="../../df/de7/class_music_connect_mobile_widget.html">MusicConnectMobileWidget</a></div><div class="ttdoc">The class of the connect mobile widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/dba/musicconnectmobilewidget_8h_source.html#l00030">musicconnectmobilewidget.h:30</a></div></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    ~<a class="code" href="../../df/de7/class_music_connect_mobile_widget.html">MusicConnectMobileWidget</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">private</span> Q_SLOTS:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> changeStatckedWidgetFirst();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> changeStatckedWidgetSecond();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> changeStatckedWidgetThird();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> openTransferFiles2Mobile();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> deviceTypeChanged(QAction *action);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> updateDeviceInfo();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> contextMenuEvent(QContextMenuEvent *event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> initFirstWidget();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> initSecondWidget();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> initThirdWidget();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="../../df/de7/class_music_connect_mobile_widget.html#a65e3430308eedafc3b1ccad2afa30928">   88</a></span>&#160;    QMenu <a class="code" href="../../df/de7/class_music_connect_mobile_widget.html#a65e3430308eedafc3b1ccad2afa30928">m_popMenu</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="../../df/de7/class_music_connect_mobile_widget.html#a9ccb39b746fe89cfa7d4423780db3ec3">   89</a></span>&#160;    QLabel *<a class="code" href="../../df/de7/class_music_connect_mobile_widget.html#a9ccb39b746fe89cfa7d4423780db3ec3">m_deviceInfoLabel</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="../../df/de7/class_music_connect_mobile_widget.html#a243f0635d47865304116aa06069c4a96">   90</a></span>&#160;    <a class="code" href="../../dd/d47/class_music_text_slider_widget.html">MusicTextSliderWidget</a> *<a class="code" href="../../df/de7/class_music_connect_mobile_widget.html#a243f0635d47865304116aa06069c4a96">m_deviceSizeLabel</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="../../df/de7/class_music_connect_mobile_widget.html#a578670aebe67624f2642c4498dc392ba">   91</a></span>&#160;    <a class="code" href="../../d6/d92/struct_music_device_info_item.html">MusicDeviceInfoItem</a> <a class="code" href="../../df/de7/class_music_connect_mobile_widget.html#a578670aebe67624f2642c4498dc392ba">m_currentDeviceItem</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="../../df/de7/class_music_connect_mobile_widget.html#a018e9f0c9539b544df9bb741def3580d">   92</a></span>&#160;    <a class="code" href="../../da/db0/class_music_device_info_object.html">MusicDeviceInfoObject</a> *<a class="code" href="../../df/de7/class_music_connect_mobile_widget.html#a018e9f0c9539b544df9bb741def3580d">m_deviceInfo</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="../../df/de7/class_music_connect_mobile_widget.html#afd181e37cce83eb23d226f058bb4f05e">   93</a></span>&#160;    <a class="code" href="../../d6/d89/class_music_animation_stacked_widget.html">MusicAnimationStackedWidget</a> *<a class="code" href="../../df/de7/class_music_connect_mobile_widget.html#afd181e37cce83eb23d226f058bb4f05e">m_stackedWidget</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif // MUSICCONNECTMOBILEWIDGET_H</span></div>
+<div class="ttc" id="musicdeviceinfoobject_8h_html"><div class="ttname"><a href="../../da/df2/musicdeviceinfoobject_8h.html">musicdeviceinfoobject.h</a></div></div>
+<div class="ttc" id="class_music_connect_mobile_widget_html_a243f0635d47865304116aa06069c4a96"><div class="ttname"><a href="../../df/de7/class_music_connect_mobile_widget.html#a243f0635d47865304116aa06069c4a96">MusicConnectMobileWidget::m_deviceSizeLabel</a></div><div class="ttdeci">MusicTextSliderWidget * m_deviceSizeLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dba/musicconnectmobilewidget_8h_source.html#l00090">musicconnectmobilewidget.h:90</a></div></div>
+<div class="ttc" id="class_music_connect_mobile_widget_html"><div class="ttname"><a href="../../df/de7/class_music_connect_mobile_widget.html">MusicConnectMobileWidget</a></div><div class="ttdoc">The class of the connect mobile widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/dba/musicconnectmobilewidget_8h_source.html#l00032">musicconnectmobilewidget.h:32</a></div></div>
+<div class="ttc" id="class_music_connect_mobile_widget_html_a9ccb39b746fe89cfa7d4423780db3ec3"><div class="ttname"><a href="../../df/de7/class_music_connect_mobile_widget.html#a9ccb39b746fe89cfa7d4423780db3ec3">MusicConnectMobileWidget::m_deviceInfoLabel</a></div><div class="ttdeci">QLabel * m_deviceInfoLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dba/musicconnectmobilewidget_8h_source.html#l00089">musicconnectmobilewidget.h:89</a></div></div>
 <div class="ttc" id="ttkglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00143">ttkglobal.h:143</a></div></div>
+<div class="ttc" id="struct_music_device_info_item_html"><div class="ttname"><a href="../../d6/d92/struct_music_device_info_item.html">MusicDeviceInfoItem</a></div><div class="ttdoc">The class of the system device info item. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/df2/musicdeviceinfoobject_8h_source.html#l00028">musicdeviceinfoobject.h:28</a></div></div>
+<div class="ttc" id="class_music_connect_mobile_widget_html_a018e9f0c9539b544df9bb741def3580d"><div class="ttname"><a href="../../df/de7/class_music_connect_mobile_widget.html#a018e9f0c9539b544df9bb741def3580d">MusicConnectMobileWidget::m_deviceInfo</a></div><div class="ttdeci">MusicDeviceInfoObject * m_deviceInfo</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dba/musicconnectmobilewidget_8h_source.html#l00092">musicconnectmobilewidget.h:92</a></div></div>
 <div class="ttc" id="musicwidgetheaders_8h_html"><div class="ttname"><a href="../../dc/d17/musicwidgetheaders_8h.html">musicwidgetheaders.h</a></div></div>
+<div class="ttc" id="class_music_device_info_object_html"><div class="ttname"><a href="../../da/db0/class_music_device_info_object.html">MusicDeviceInfoObject</a></div><div class="ttdoc">The class of the system device info. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/df2/musicdeviceinfoobject_8h_source.html#l00041">musicdeviceinfoobject.h:41</a></div></div>
+<div class="ttc" id="class_music_text_slider_widget_html"><div class="ttname"><a href="../../dd/d47/class_music_text_slider_widget.html">MusicTextSliderWidget</a></div><div class="ttdoc">The class of the text slider widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/db5/musictextsliderwidget_8h_source.html#l00028">musictextsliderwidget.h:28</a></div></div>
 <div class="ttc" id="musicglobaldefine_8h_html"><div class="ttname"><a href="../../d6/d9b/musicglobaldefine_8h.html">musicglobaldefine.h</a></div></div>
-<div class="ttc" id="class_music_connect_mobile_widget_html_afd181e37cce83eb23d226f058bb4f05e"><div class="ttname"><a href="../../df/de7/class_music_connect_mobile_widget.html#afd181e37cce83eb23d226f058bb4f05e">MusicConnectMobileWidget::m_stackedWidget</a></div><div class="ttdeci">MusicAnimationStackedWidget * m_stackedWidget</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dba/musicconnectmobilewidget_8h_source.html#l00082">musicconnectmobilewidget.h:82</a></div></div>
+<div class="ttc" id="class_music_connect_mobile_widget_html_afd181e37cce83eb23d226f058bb4f05e"><div class="ttname"><a href="../../df/de7/class_music_connect_mobile_widget.html#afd181e37cce83eb23d226f058bb4f05e">MusicConnectMobileWidget::m_stackedWidget</a></div><div class="ttdeci">MusicAnimationStackedWidget * m_stackedWidget</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dba/musicconnectmobilewidget_8h_source.html#l00093">musicconnectmobilewidget.h:93</a></div></div>
+<div class="ttc" id="class_music_connect_mobile_widget_html_a65e3430308eedafc3b1ccad2afa30928"><div class="ttname"><a href="../../df/de7/class_music_connect_mobile_widget.html#a65e3430308eedafc3b1ccad2afa30928">MusicConnectMobileWidget::m_popMenu</a></div><div class="ttdeci">QMenu m_popMenu</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dba/musicconnectmobilewidget_8h_source.html#l00088">musicconnectmobilewidget.h:88</a></div></div>
 <div class="ttc" id="class_music_animation_stacked_widget_html"><div class="ttname"><a href="../../d6/d89/class_music_animation_stacked_widget.html">MusicAnimationStackedWidget</a></div><div class="ttdoc">The class of the statckwidget switch animation. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d68/musicanimationstackedwidget_8h_source.html#l00030">musicanimationstackedwidget.h:30</a></div></div>
+<div class="ttc" id="class_music_connect_mobile_widget_html_a578670aebe67624f2642c4498dc392ba"><div class="ttname"><a href="../../df/de7/class_music_connect_mobile_widget.html#a578670aebe67624f2642c4498dc392ba">MusicConnectMobileWidget::m_currentDeviceItem</a></div><div class="ttdeci">MusicDeviceInfoItem m_currentDeviceItem</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dba/musicconnectmobilewidget_8h_source.html#l00091">musicconnectmobilewidget.h:91</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 29 2019 16:40:15 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 30 2019 15:33:16 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
