@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.10.0.0</span>
+   &#160;<span id="projectnumber">2.11.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -93,6 +93,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8c61de11dc21b5a2a453e62cdd99c536"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a80c0903333798571d3647ea3e62eee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8d/class_t_t_k_private_interface.html#a7a80c0903333798571d3647ea3e62eee">~TTKPrivateInterface</a> ()</td></tr>
 <tr class="separator:a7a80c0903333798571d3647ea3e62eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96ab1725b9123d9b37660bf80d6dd64a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8d/class_t_t_k_private_interface.html#a96ab1725b9123d9b37660bf80d6dd64a">setPrivate</a> (PVT *pvt)</td></tr>
+<tr class="separator:a96ab1725b9123d9b37660bf80d6dd64a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed10a9db4d497de3bcc2c51b8afc84b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8d/class_t_t_k_private_interface.html#aed10a9db4d497de3bcc2c51b8afc84b5">setPublic</a> (PUB *pub)</td></tr>
 <tr class="separator:aed10a9db4d497de3bcc2c51b8afc84b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a821c426707a7346459a487892fa11593"><td class="memItemLeft" align="right" valign="top">PVT *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8d/class_t_t_k_private_interface.html#a821c426707a7346459a487892fa11593">operator()</a> () <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
@@ -107,8 +109,8 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a2ff20b5eb6c59e65431a3cb9afe62080"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d29/class_t_t_k_private.html">TTKPrivate</a>&lt; PUB &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8d/class_t_t_k_private_interface.html#a2ff20b5eb6c59e65431a3cb9afe62080">pvt</a></td></tr>
-<tr class="separator:a2ff20b5eb6c59e65431a3cb9afe62080"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af78e0220b9835d47958da88a0baf32a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d29/class_t_t_k_private.html">TTKPrivate</a>&lt; PUB &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8d/class_t_t_k_private_interface.html#af78e0220b9835d47958da88a0baf32a6">pvt_ptr</a></td></tr>
+<tr class="separator:af78e0220b9835d47958da88a0baf32a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -122,7 +124,7 @@ class TTKPrivateInterface&lt; PUB, PVT &gt;</h3>
 <p>The class of the ttk private interface. </p>
 <dl class="section author"><dt>Author</dt><dd>Greedysky <a href="#" onclick="location.href='mai'+'lto:'+'gre'+'ed'+'ysk'+'y@'+'163'+'.c'+'om'; return false;">greed<span style="display: none;">.nosp@m.</span>ysky<span style="display: none;">.nosp@m.</span>@163.<span style="display: none;">.nosp@m.</span>com</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00058">58</a> of file <a class="el" href="../../dd/d24/ttkprivate_8h_source.html">ttkprivate.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00062">62</a> of file <a class="el" href="../../dd/d24/ttkprivate_8h_source.html">ttkprivate.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a8c61de11dc21b5a2a453e62cdd99c536"></a>
 <div class="memitem">
@@ -147,9 +149,9 @@ template&lt;typename PUB , typename PVT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00062">62</a> of file <a class="el" href="../../dd/d24/ttkprivate_8h_source.html">ttkprivate.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00066">66</a> of file <a class="el" href="../../dd/d24/ttkprivate_8h_source.html">ttkprivate.h</a>.</p>
 
-<p>References <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00071">TTKPrivateInterface&lt; PUB, PVT &gt;::pvt</a>.</p>
+<p>References <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00076">TTKPrivateInterface&lt; PUB, PVT &gt;::pvt_ptr</a>.</p>
 
 </div>
 </div>
@@ -176,9 +178,9 @@ template&lt;typename PUB , typename PVT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00063">63</a> of file <a class="el" href="../../dd/d24/ttkprivate_8h_source.html">ttkprivate.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00067">67</a> of file <a class="el" href="../../dd/d24/ttkprivate_8h_source.html">ttkprivate.h</a>.</p>
 
-<p>References <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00071">TTKPrivateInterface&lt; PUB, PVT &gt;::pvt</a>.</p>
+<p>References <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00076">TTKPrivateInterface&lt; PUB, PVT &gt;::pvt_ptr</a>.</p>
 
 </div>
 </div>
@@ -206,7 +208,7 @@ template&lt;typename PUB , typename PVT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00069">69</a> of file <a class="el" href="../../dd/d24/ttkprivate_8h_source.html">ttkprivate.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00074">74</a> of file <a class="el" href="../../dd/d24/ttkprivate_8h_source.html">ttkprivate.h</a>.</p>
 
 </div>
 </div>
@@ -234,9 +236,9 @@ template&lt;typename PUB , typename PVT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00066">66</a> of file <a class="el" href="../../dd/d24/ttkprivate_8h_source.html">ttkprivate.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00071">71</a> of file <a class="el" href="../../dd/d24/ttkprivate_8h_source.html">ttkprivate.h</a>.</p>
 
-<p>References <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00071">TTKPrivateInterface&lt; PUB, PVT &gt;::pvt</a>.</p>
+<p>References <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00076">TTKPrivateInterface&lt; PUB, PVT &gt;::pvt_ptr</a>.</p>
 
 </div>
 </div>
@@ -264,7 +266,37 @@ template&lt;typename PUB , typename PVT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00070">70</a> of file <a class="el" href="../../dd/d24/ttkprivate_8h_source.html">ttkprivate.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00075">75</a> of file <a class="el" href="../../dd/d24/ttkprivate_8h_source.html">ttkprivate.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a96ab1725b9123d9b37660bf80d6dd64a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename PUB , typename PVT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../dd/d8d/class_t_t_k_private_interface.html">TTKPrivateInterface</a>&lt; PUB, PVT &gt;::setPrivate </td>
+          <td>(</td>
+          <td class="paramtype">PVT *&#160;</td>
+          <td class="paramname"><em>pvt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00069">69</a> of file <a class="el" href="../../dd/d24/ttkprivate_8h_source.html">ttkprivate.h</a>.</p>
+
+<p>References <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00076">TTKPrivateInterface&lt; PUB, PVT &gt;::pvt_ptr</a>.</p>
 
 </div>
 </div>
@@ -292,9 +324,9 @@ template&lt;typename PUB , typename PVT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00065">65</a> of file <a class="el" href="../../dd/d24/ttkprivate_8h_source.html">ttkprivate.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00070">70</a> of file <a class="el" href="../../dd/d24/ttkprivate_8h_source.html">ttkprivate.h</a>.</p>
 
-<p>References <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00071">TTKPrivateInterface&lt; PUB, PVT &gt;::pvt</a>.</p>
+<p>References <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00076">TTKPrivateInterface&lt; PUB, PVT &gt;::pvt_ptr</a>.</p>
 
 </div>
 </div>
@@ -319,12 +351,12 @@ template&lt;typename PUB , typename PVT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00060">60</a> of file <a class="el" href="../../dd/d24/ttkprivate_8h_source.html">ttkprivate.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00064">64</a> of file <a class="el" href="../../dd/d24/ttkprivate_8h_source.html">ttkprivate.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a2ff20b5eb6c59e65431a3cb9afe62080"></a>
+<a class="anchor" id="af78e0220b9835d47958da88a0baf32a6"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -334,7 +366,7 @@ template&lt;typename PUB , typename PVT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d1/d29/class_t_t_k_private.html">TTKPrivate</a>&lt;PUB&gt;* <a class="el" href="../../dd/d8d/class_t_t_k_private_interface.html">TTKPrivateInterface</a>&lt; PUB, PVT &gt;::pvt</td>
+          <td class="memname"><a class="el" href="../../d1/d29/class_t_t_k_private.html">TTKPrivate</a>&lt;PUB&gt;* <a class="el" href="../../dd/d8d/class_t_t_k_private_interface.html">TTKPrivateInterface</a>&lt; PUB, PVT &gt;::pvt_ptr</td>
         </tr>
       </table>
   </td>
@@ -344,9 +376,9 @@ template&lt;typename PUB , typename PVT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00071">71</a> of file <a class="el" href="../../dd/d24/ttkprivate_8h_source.html">ttkprivate.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00076">76</a> of file <a class="el" href="../../dd/d24/ttkprivate_8h_source.html">ttkprivate.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00066">TTKPrivateInterface&lt; PUB, PVT &gt;::operator()()</a>, <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00065">TTKPrivateInterface&lt; PUB, PVT &gt;::setPublic()</a>, <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00062">TTKPrivateInterface&lt; PUB, PVT &gt;::TTKPrivateInterface()</a>, and <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00063">TTKPrivateInterface&lt; PUB, PVT &gt;::~TTKPrivateInterface()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00071">TTKPrivateInterface&lt; PUB, PVT &gt;::operator()()</a>, <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00069">TTKPrivateInterface&lt; PUB, PVT &gt;::setPrivate()</a>, <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00070">TTKPrivateInterface&lt; PUB, PVT &gt;::setPublic()</a>, <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00066">TTKPrivateInterface&lt; PUB, PVT &gt;::TTKPrivateInterface()</a>, and <a class="el" href="../../dd/d24/ttkprivate_8h_source.html#l00067">TTKPrivateInterface&lt; PUB, PVT &gt;::~TTKPrivateInterface()</a>.</p>
 
 </div>
 </div>
@@ -356,7 +388,7 @@ template&lt;typename PUB , typename PVT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 30 2019 15:34:40 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 18 2020 15:07:37 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

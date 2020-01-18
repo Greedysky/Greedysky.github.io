@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.10.0.0</span>
+   &#160;<span id="projectnumber">2.11.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -119,6 +119,8 @@ Public Slots</h2></td></tr>
 <tr class="separator:a062c1650c55d3937be420fe8982d222c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6849da0c770676607090e73875d3460"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d36/class_music_cloud_manager_table_widget.html#ad6849da0c770676607090e73875d3460">downloadFileToServer</a> ()</td></tr>
 <tr class="separator:ad6849da0c770676607090e73875d3460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af98946a1b0d9f8c5dd61d62c20c680d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d36/class_music_cloud_manager_table_widget.html#af98946a1b0d9f8c5dd61d62c20c680d3">cancelUploadFilesToServer</a> ()</td></tr>
+<tr class="separator:af98946a1b0d9f8c5dd61d62c20c680d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a446cb6e684a84bc59fa1fcf2da0ad3a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d36/class_music_cloud_manager_table_widget.html#a446cb6e684a84bc59fa1fcf2da0ad3a9">uploadFilesToServer</a> ()</td></tr>
 <tr class="separator:a446cb6e684a84bc59fa1fcf2da0ad3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f883211a15e9595d18f4318cfcdbeef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d36/class_music_cloud_manager_table_widget.html#a1f883211a15e9595d18f4318cfcdbeef">uploadFileDirToServer</a> ()</td></tr>
@@ -192,6 +194,8 @@ Protected Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a70efa860849c51aee6b2723b51467772"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d36/class_music_cloud_manager_table_widget.html#a70efa860849c51aee6b2723b51467772">m_uploading</a></td></tr>
 <tr class="separator:a70efa860849c51aee6b2723b51467772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b60d6538ac58212cb81536497165e54"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d36/class_music_cloud_manager_table_widget.html#a7b60d6538ac58212cb81536497165e54">m_cancel</a></td></tr>
+<tr class="separator:a7b60d6538ac58212cb81536497165e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74f0abcd5c47d1533c7b779a94fd4a16"><td class="memItemLeft" align="right" valign="top">qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d36/class_music_cloud_manager_table_widget.html#a74f0abcd5c47d1533c7b779a94fd4a16">m_totalFileSzie</a></td></tr>
 <tr class="separator:a74f0abcd5c47d1533c7b779a94fd4a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6feb4c4997c58e8023efd3073a40657a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/dc4/class_o_s_s_list_data.html">OSSListData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d36/class_music_cloud_manager_table_widget.html#a6feb4c4997c58e8023efd3073a40657a">m_ossListData</a></td></tr>
@@ -249,7 +253,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00033">33</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html#l00025">M_CONNECTION_PTR</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00327">MusicUIObject::MScrollBarStyle03</a>, and <a class="el" href="../../da/d90/musicwidgetutils_8cpp_source.html#l00038">MusicUtils::Widget::setTransparent()</a>.</p>
+<p>References <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html#l00025">M_CONNECTION_PTR</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00327">MusicUIObject::MScrollBarStyle03</a>, and <a class="el" href="../../da/d90/musicwidgetutils_8cpp_source.html#l00067">MusicUtils::Widget::setTransparent()</a>.</p>
 
 </div>
 </div>
@@ -274,13 +278,43 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00069">69</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00070">70</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html#l00025">M_CONNECTION_PTR</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00177">m_networkManager</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00178">m_openFileWidget</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00174">m_ossDeleteData</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00176">m_ossDownloadData</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00173">m_ossListData</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00175">m_ossUploadData</a>, and <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00180">m_progressBarDelegate</a>.</p>
+<p>References <a class="el" href="../../d8/dcd/musicconnectionpool_8h_source.html#l00025">M_CONNECTION_PTR</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00182">m_networkManager</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00183">m_openFileWidget</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00179">m_ossDeleteData</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00181">m_ossDownloadData</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00178">m_ossListData</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00180">m_ossUploadData</a>, and <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00185">m_progressBarDelegate</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="af98946a1b0d9f8c5dd61d62c20c680d3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MusicCloudManagerTableWidget::cancelUploadFilesToServer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Cancel upload files to server. </p>
+
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00280">280</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+
+<p>References <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00176">m_cancel</a>.</p>
+
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00370">contextMenuEvent()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ade369b16d258478755877234b374780a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -304,9 +338,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Override the widget event. </p>
 
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00364">364</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00370">370</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00227">deleteFilesToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00202">deleteFileToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00255">downloadFileToServer()</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00171">m_uploading</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00382">MusicUIObject::MMenuStyle02</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00345">showFileInformationWidget()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00196">updateListToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00286">uploadFileDirToServer()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00279">uploadFilesToServer()</a>.</p>
+<p>References <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00280">cancelUploadFilesToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00228">deleteFilesToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00203">deleteFileToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00256">downloadFileToServer()</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00044">MusicCloudDataItem::isValid()</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00184">m_currentDataItem</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00041">MusicCloudDataItem::m_state</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00175">m_uploading</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00387">MusicUIObject::MMenuStyle02</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00351">showFileInformationWidget()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00197">updateListToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00292">uploadFileDirToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00285">uploadFilesToServer()</a>, and <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00033">MusicCloudDataItem::Waited</a>.</p>
 
 </div>
 </div>
@@ -333,11 +367,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Create table item. </p>
 
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00455">455</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00472">472</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../da/d90/musicwidgetutils_8cpp_source.html#l00032">MusicUtils::Widget::elidedText()</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00042">MusicCloudDataItem::m_dataItem</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00030">OSSDataItem::m_hash</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00029">OSSDataItem::m_name</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00032">OSSDataItem::m_putTime</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00033">OSSDataItem::m_size</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00066">MusicUIObject::MColorStyle12_S</a>, <a class="el" href="../../df/d13/musicitemdelegate_8h_source.html#l00031">MUSIC_DATAS_ROLE</a>, <a class="el" href="../../df/d13/musicitemdelegate_8h_source.html#l00027">MUSIC_PROCS_ROLE</a>, and <a class="el" href="../../d4/da7/musicnumberutils_8cpp_source.html#l00041">MusicUtils::Number::size2Label()</a>.</p>
+<p>References <a class="el" href="../../da/d90/musicwidgetutils_8cpp_source.html#l00035">MusicUtils::Widget::elidedText()</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00042">MusicCloudDataItem::m_dataItem</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00030">OSSDataItem::m_hash</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00029">OSSDataItem::m_name</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00032">OSSDataItem::m_putTime</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00033">OSSDataItem::m_size</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00066">MusicUIObject::MColorStyle12_S</a>, <a class="el" href="../../df/d13/musicitemdelegate_8h_source.html#l00031">MUSIC_DATAS_ROLE</a>, <a class="el" href="../../df/d13/musicitemdelegate_8h_source.html#l00027">MUSIC_PROCS_ROLE</a>, and <a class="el" href="../../d4/da7/musicnumberutils_8cpp_source.html#l00041">MusicUtils::Number::size2Label()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00134">receiveDataFinshed()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00286">uploadFileDirToServer()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00388">uploadFilesToServer()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00135">receiveDataFinshed()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00292">uploadFileDirToServer()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00398">uploadFilesToServer()</a>.</p>
 
 </div>
 </div>
@@ -363,11 +397,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Create upload file widget. </p>
 
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00420">420</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00430">430</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d0/db1/musicopenfilewidget_8cpp_source.html#l00035">MusicOpenFileWidget::adjustRect()</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00178">m_openFileWidget</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00286">uploadFileDirToServer()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00279">uploadFilesToServer()</a>.</p>
+<p>References <a class="el" href="../../d0/db1/musicopenfilewidget_8cpp_source.html#l00035">MusicOpenFileWidget::adjustRect()</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00183">m_openFileWidget</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00292">uploadFileDirToServer()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00285">uploadFilesToServer()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00202">deleteFileToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00134">receiveDataFinshed()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00286">uploadFileDirToServer()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00203">deleteFileToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00135">receiveDataFinshed()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00292">uploadFileDirToServer()</a>.</p>
 
 </div>
 </div>
@@ -394,7 +428,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Delete data to alioss finshed. </p>
 
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00191">191</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00192">192</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
 
 <p>References <a class="el" href="../../d7/d36/class_music_cloud_manager_table_widget.html#a16edd6e15bb5a1c5b28131a33ec0472a">updateLabelMessage()</a>.</p>
 
@@ -422,11 +456,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Delete files to server. </p>
 
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00227">227</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00228">228</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d1/d7a/ossdeletedata_8cpp_source.html#l00010">OSSDeleteData::deleteDataOperator()</a>, <a class="el" href="../../d8/d08/musicabstracttablewidget_8cpp_source.html#l00056">MusicAbstractTableWidget::getMultiSelectedIndexs()</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00042">MusicCloudDataItem::m_dataItem</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00029">OSSDataItem::m_name</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00174">m_ossDeleteData</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00033">OSSDataItem::m_size</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00172">m_totalFileSzie</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00171">m_uploading</a>, <a class="el" href="../../d7/dff/ossconf_8h_source.html#l00026">MUSIC_BUCKET</a>, <a class="el" href="../../df/d13/musicitemdelegate_8h_source.html#l00031">MUSIC_DATAS_ROLE</a>, and <a class="el" href="../../d7/d36/class_music_cloud_manager_table_widget.html#a356c1b260e6ba90cbb04256cd7fdc9bf">updataSizeLabel()</a>.</p>
+<p>References <a class="el" href="../../d1/d7a/ossdeletedata_8cpp_source.html#l00010">OSSDeleteData::deleteDataOperator()</a>, <a class="el" href="../../d8/d08/musicabstracttablewidget_8cpp_source.html#l00056">MusicAbstractTableWidget::getMultiSelectedIndexs()</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00042">MusicCloudDataItem::m_dataItem</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00029">OSSDataItem::m_name</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00179">m_ossDeleteData</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00033">OSSDataItem::m_size</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00177">m_totalFileSzie</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00175">m_uploading</a>, <a class="el" href="../../d7/dff/ossconf_8h_source.html#l00026">MUSIC_BUCKET</a>, <a class="el" href="../../df/d13/musicitemdelegate_8h_source.html#l00031">MUSIC_DATAS_ROLE</a>, and <a class="el" href="../../d7/d36/class_music_cloud_manager_table_widget.html#a356c1b260e6ba90cbb04256cd7fdc9bf">updataSizeLabel()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00364">contextMenuEvent()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00370">contextMenuEvent()</a>.</p>
 
 </div>
 </div>
@@ -452,11 +486,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Delete file to server. </p>
 
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00202">202</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00203">203</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00420">createUploadFileWidget()</a>, <a class="el" href="../../d1/d7a/ossdeletedata_8cpp_source.html#l00010">OSSDeleteData::deleteDataOperator()</a>, <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00092">MusicMessageBox::exec()</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00042">MusicCloudDataItem::m_dataItem</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00029">OSSDataItem::m_name</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00174">m_ossDeleteData</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00033">OSSDataItem::m_size</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00172">m_totalFileSzie</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00171">m_uploading</a>, <a class="el" href="../../d7/dff/ossconf_8h_source.html#l00026">MUSIC_BUCKET</a>, <a class="el" href="../../df/d13/musicitemdelegate_8h_source.html#l00031">MUSIC_DATAS_ROLE</a>, <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00070">MusicMessageBox::setText()</a>, and <a class="el" href="../../d7/d36/class_music_cloud_manager_table_widget.html#a356c1b260e6ba90cbb04256cd7fdc9bf">updataSizeLabel()</a>.</p>
+<p>References <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00430">createUploadFileWidget()</a>, <a class="el" href="../../d1/d7a/ossdeletedata_8cpp_source.html#l00010">OSSDeleteData::deleteDataOperator()</a>, <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00092">MusicMessageBox::exec()</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00042">MusicCloudDataItem::m_dataItem</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00029">OSSDataItem::m_name</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00179">m_ossDeleteData</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00033">OSSDataItem::m_size</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00177">m_totalFileSzie</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00175">m_uploading</a>, <a class="el" href="../../d7/dff/ossconf_8h_source.html#l00026">MUSIC_BUCKET</a>, <a class="el" href="../../df/d13/musicitemdelegate_8h_source.html#l00031">MUSIC_DATAS_ROLE</a>, <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00070">MusicMessageBox::setText()</a>, and <a class="el" href="../../d7/d36/class_music_cloud_manager_table_widget.html#a356c1b260e6ba90cbb04256cd7fdc9bf">updataSizeLabel()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00364">contextMenuEvent()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00679">MusicCloudManagerWidget::deleteFileToServer()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00370">contextMenuEvent()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00708">MusicCloudManagerWidget::deleteFileToServer()</a>.</p>
 
 </div>
 </div>
@@ -482,11 +516,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Download file to server. </p>
 
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00255">255</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00256">256</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../de/de0/musicnetworkdefines_8h_source.html#l00037">MusicObject::DownloadMusic</a>, <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00092">MusicMessageBox::exec()</a>, <a class="el" href="../../d4/d38/ossdownloaddata_8cpp_source.html#l00064">OSSDownloadData::getDownloadUrl()</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00042">MusicCloudDataItem::m_dataItem</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00029">OSSDataItem::m_name</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00176">m_ossDownloadData</a>, <a class="el" href="../../d7/dff/ossconf_8h_source.html#l00026">MUSIC_BUCKET</a>, <a class="el" href="../../df/d13/musicitemdelegate_8h_source.html#l00031">MUSIC_DATAS_ROLE</a>, <a class="el" href="../../da/dca/musicstringutils_8cpp_source.html#l00023">MusicUtils::String::musicPrefix()</a>, <a class="el" href="../../de/de0/musicnetworkdefines_8h_source.html#l00049">MusicObject::RecordCloudDownload</a>, <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00036">MusicDataDownloadThread::setRecordType()</a>, <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00070">MusicMessageBox::setText()</a>, and <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00015">MusicDataDownloadThread::startToDownload()</a>.</p>
+<p>References <a class="el" href="../../de/de0/musicnetworkdefines_8h_source.html#l00037">MusicObject::DownloadMusic</a>, <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00092">MusicMessageBox::exec()</a>, <a class="el" href="../../d4/d38/ossdownloaddata_8cpp_source.html#l00067">OSSDownloadData::getDownloadUrl()</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00042">MusicCloudDataItem::m_dataItem</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00029">OSSDataItem::m_name</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00181">m_ossDownloadData</a>, <a class="el" href="../../d7/dff/ossconf_8h_source.html#l00026">MUSIC_BUCKET</a>, <a class="el" href="../../df/d13/musicitemdelegate_8h_source.html#l00031">MUSIC_DATAS_ROLE</a>, <a class="el" href="../../da/dca/musicstringutils_8cpp_source.html#l00023">MusicUtils::String::musicPrefix()</a>, <a class="el" href="../../de/de0/musicnetworkdefines_8h_source.html#l00049">MusicObject::RecordCloudDownload</a>, <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00036">MusicDataDownloadThread::setRecordType()</a>, <a class="el" href="../../d4/d24/musicmessagebox_8cpp_source.html#l00070">MusicMessageBox::setText()</a>, and <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00015">MusicDataDownloadThread::startToDownload()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00364">contextMenuEvent()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00674">MusicCloudManagerWidget::downloadFileToServer()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00370">contextMenuEvent()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00703">MusicCloudManagerWidget::downloadFileToServer()</a>.</p>
 
 </div>
 </div>
@@ -513,11 +547,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Find upload item row. </p>
 
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00492">492</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00521">521</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
 
 <p>References <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00039">MusicCloudDataItem::m_id</a>, and <a class="el" href="../../df/d13/musicitemdelegate_8h_source.html#l00031">MUSIC_DATAS_ROLE</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00163">uploadFileFinished()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00321">uploadProgress()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00164">uploadFileFinished()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00327">uploadProgress()</a>.</p>
 
 </div>
 </div>
@@ -543,11 +577,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Find waited item row. </p>
 
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00511">511</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00540">540</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
 
 <p>References <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00041">MusicCloudDataItem::m_state</a>, <a class="el" href="../../df/d13/musicitemdelegate_8h_source.html#l00031">MUSIC_DATAS_ROLE</a>, and <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00033">MusicCloudDataItem::Waited</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00438">startToUploadFile()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00448">startToUploadFile()</a>.</p>
 
 </div>
 </div>
@@ -565,11 +599,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Get query cloud id keys. </p>
 
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00081">81</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00082">82</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d7/dff/ossconf_8h_source.html#l00035">OSSConf::ACCESS_KEY</a>, <a class="el" href="../../de/d32/musicsemaphoreloop_8cpp_source.html#l00017">MusicSemaphoreLoop::exec()</a>, <a class="el" href="../../d2/db7/ossconf_8cpp_source.html#l00014">OSSConf::generateDataBucketUrl()</a>, <a class="el" href="../../d7/d36/class_music_cloud_manager_table_widget.html#a3b0e45619583e302971dad955285279a">getKeyFinished()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00120">keyDownLoadFinished()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00029">QN_CLOUD</a>, <a class="el" href="../../d7/dff/ossconf_8h_source.html#l00036">OSSConf::SECRET_KEY</a>, <a class="el" href="../../dc/d66/musicdownloadsourcethread_8cpp_source.html#l00014">MusicDownloadSourceThread::startToDownload()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00196">updateListToServer()</a>.</p>
+<p>References <a class="el" href="../../d7/dff/ossconf_8h_source.html#l00035">OSSConf::ACCESS_KEY</a>, <a class="el" href="../../de/d32/musicsemaphoreloop_8cpp_source.html#l00017">MusicSemaphoreLoop::exec()</a>, <a class="el" href="../../d2/db7/ossconf_8cpp_source.html#l00014">OSSConf::generateDataBucketUrl()</a>, <a class="el" href="../../d7/d36/class_music_cloud_manager_table_widget.html#a3b0e45619583e302971dad955285279a">getKeyFinished()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00121">keyDownLoadFinished()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00029">QN_CLOUD</a>, <a class="el" href="../../d7/dff/ossconf_8h_source.html#l00036">OSSConf::SECRET_KEY</a>, <a class="el" href="../../dc/d66/musicdownloadsourcethread_8cpp_source.html#l00014">MusicDownloadSourceThread::startToDownload()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00197">updateListToServer()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00532">MusicCloudManagerWidget::MusicCloudManagerWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00561">MusicCloudManagerWidget::MusicCloudManagerWidget()</a>.</p>
 
 </div>
 </div>
@@ -595,7 +629,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Get key data from net finished. </p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00081">getKey()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00120">keyDownLoadFinished()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00082">getKey()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00121">keyDownLoadFinished()</a>.</p>
 
 </div>
 </div>
@@ -632,7 +666,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Table widget item cell click. </p>
 
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00114">114</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00115">115</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
 
 </div>
 </div>
@@ -659,11 +693,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Download key data from net finished. </p>
 
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00120">120</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00121">121</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
 
 <p>References <a class="el" href="../../d7/dff/ossconf_8h_source.html#l00035">OSSConf::ACCESS_KEY</a>, <a class="el" href="../../d7/d36/class_music_cloud_manager_table_widget.html#a3b0e45619583e302971dad955285279a">getKeyFinished()</a>, <a class="el" href="../../dc/ddd/parser_8cpp_source.html#l00069">QJson::Parser::parse()</a>, and <a class="el" href="../../d7/dff/ossconf_8h_source.html#l00036">OSSConf::SECRET_KEY</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00081">getKey()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00082">getKey()</a>.</p>
 
 </div>
 </div>
@@ -690,9 +724,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Receive data from alioss finshed. </p>
 
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00134">134</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00135">135</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d8/d08/musicabstracttablewidget_8cpp_source.html#l00050">MusicAbstractTableWidget::clear()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00455">createItem()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00420">createUploadFileWidget()</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00042">MusicCloudDataItem::m_dataItem</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00039">MusicCloudDataItem::m_id</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00029">OSSDataItem::m_name</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00040">MusicCloudDataItem::m_path</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00033">OSSDataItem::m_size</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00041">MusicCloudDataItem::m_state</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00172">m_totalFileSzie</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00035">MusicCloudDataItem::Successed</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00089">MusicTime::timeStamp()</a>, <a class="el" href="../../d7/d36/class_music_cloud_manager_table_widget.html#a356c1b260e6ba90cbb04256cd7fdc9bf">updataSizeLabel()</a>, and <a class="el" href="../../d7/d36/class_music_cloud_manager_table_widget.html#a16edd6e15bb5a1c5b28131a33ec0472a">updateLabelMessage()</a>.</p>
+<p>References <a class="el" href="../../d8/d08/musicabstracttablewidget_8cpp_source.html#l00050">MusicAbstractTableWidget::clear()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00472">createItem()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00430">createUploadFileWidget()</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00042">MusicCloudDataItem::m_dataItem</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00039">MusicCloudDataItem::m_id</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00029">OSSDataItem::m_name</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00040">MusicCloudDataItem::m_path</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00033">OSSDataItem::m_size</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00041">MusicCloudDataItem::m_state</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00177">m_totalFileSzie</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00035">MusicCloudDataItem::Successed</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00089">MusicTime::timeStamp()</a>, <a class="el" href="../../d7/d36/class_music_cloud_manager_table_widget.html#a356c1b260e6ba90cbb04256cd7fdc9bf">updataSizeLabel()</a>, and <a class="el" href="../../d7/d36/class_music_cloud_manager_table_widget.html#a16edd6e15bb5a1c5b28131a33ec0472a">updateLabelMessage()</a>.</p>
 
 </div>
 </div>
@@ -710,11 +744,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Resize window bound by widgte resize called. </p>
 
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00096">96</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00097">97</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d0/db1/musicopenfilewidget_8cpp_source.html#l00035">MusicOpenFileWidget::adjustRect()</a>, <a class="el" href="../../da/d90/musicwidgetutils_8cpp_source.html#l00032">MusicUtils::Widget::elidedText()</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00178">m_openFileWidget</a>, <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>, <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00042">MusicSettingManager::WidgetSize</a>, and <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00193">WINDOW_WIDTH_MIN</a>.</p>
+<p>References <a class="el" href="../../d0/db1/musicopenfilewidget_8cpp_source.html#l00035">MusicOpenFileWidget::adjustRect()</a>, <a class="el" href="../../da/d90/musicwidgetutils_8cpp_source.html#l00035">MusicUtils::Widget::elidedText()</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00183">m_openFileWidget</a>, <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>, <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00042">MusicSettingManager::WidgetSize</a>, and <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00194">WINDOW_WIDTH_MIN</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00658">MusicCloudManagerWidget::resizeWindow()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00687">MusicCloudManagerWidget::resizeWindow()</a>.</p>
 
 </div>
 </div>
@@ -741,9 +775,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Reupload files to server. </p>
 
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00316">316</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00322">322</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00279">uploadFilesToServer()</a>.</p>
+<p>References <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00285">uploadFilesToServer()</a>.</p>
 
 </div>
 </div>
@@ -769,11 +803,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Show file information widget. </p>
 
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00345">345</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00351">351</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
 
 <p>References <a class="el" href="../../d4/d65/musiccloudfileinformationwidget_8cpp_source.html#l00035">MusicCloudFileInformationWidget::exec()</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00042">MusicCloudDataItem::m_dataItem</a>, <a class="el" href="../../df/d13/musicitemdelegate_8h_source.html#l00031">MUSIC_DATAS_ROLE</a>, and <a class="el" href="../../d4/d65/musiccloudfileinformationwidget_8cpp_source.html#l00026">MusicCloudFileInformationWidget::setFileInformation()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00364">contextMenuEvent()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00370">contextMenuEvent()</a>.</p>
 
 </div>
 </div>
@@ -799,11 +833,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Start to upload files to server. </p>
 
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00438">438</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00448">448</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00511">FindWaitedItemRow()</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00044">MusicCloudDataItem::isValid()</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00179">m_currentDataItem</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00042">MusicCloudDataItem::m_dataItem</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00039">MusicCloudDataItem::m_id</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00029">OSSDataItem::m_name</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00175">m_ossUploadData</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00040">MusicCloudDataItem::m_path</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00171">m_uploading</a>, <a class="el" href="../../d7/dff/ossconf_8h_source.html#l00026">MUSIC_BUCKET</a>, <a class="el" href="../../d7/d36/class_music_cloud_manager_table_widget.html#a16edd6e15bb5a1c5b28131a33ec0472a">updateLabelMessage()</a>, <a class="el" href="../../d7/d5f/ossuploaddata_8cpp_source.html#l00024">OSSUploadData::uploadDataOperator()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00338">uploadDone()</a>.</p>
+<p>References <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00540">FindWaitedItemRow()</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00044">MusicCloudDataItem::isValid()</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00176">m_cancel</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00184">m_currentDataItem</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00042">MusicCloudDataItem::m_dataItem</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00039">MusicCloudDataItem::m_id</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00029">OSSDataItem::m_name</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00180">m_ossUploadData</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00040">MusicCloudDataItem::m_path</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00175">m_uploading</a>, <a class="el" href="../../d7/dff/ossconf_8h_source.html#l00026">MUSIC_BUCKET</a>, <a class="el" href="../../d7/d36/class_music_cloud_manager_table_widget.html#a16edd6e15bb5a1c5b28131a33ec0472a">updateLabelMessage()</a>, <a class="el" href="../../d7/d5f/ossuploaddata_8cpp_source.html#l00027">OSSUploadData::uploadDataOperator()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00344">uploadDone()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00286">uploadFileDirToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00163">uploadFileFinished()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00388">uploadFilesToServer()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00292">uploadFileDirToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00164">uploadFileFinished()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00398">uploadFilesToServer()</a>.</p>
 
 </div>
 </div>
@@ -830,7 +864,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Update size label. </p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00227">deleteFilesToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00202">deleteFileToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00134">receiveDataFinshed()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00163">uploadFileFinished()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00228">deleteFilesToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00203">deleteFileToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00135">receiveDataFinshed()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00164">uploadFileFinished()</a>.</p>
 
 </div>
 </div>
@@ -857,7 +891,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>To update message label text. </p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00191">deleteFileFinished()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00134">receiveDataFinshed()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00438">startToUploadFile()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00196">updateListToServer()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00192">deleteFileFinished()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00135">receiveDataFinshed()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00448">startToUploadFile()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00197">updateListToServer()</a>.</p>
 
 </div>
 </div>
@@ -883,11 +917,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Update list to server. </p>
 
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00196">196</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00197">197</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dc/d53/osslistdata_8cpp_source.html#l00013">OSSListData::listDataOperator()</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00173">m_ossListData</a>, <a class="el" href="../../d7/dff/ossconf_8h_source.html#l00026">MUSIC_BUCKET</a>, and <a class="el" href="../../d7/d36/class_music_cloud_manager_table_widget.html#a16edd6e15bb5a1c5b28131a33ec0472a">updateLabelMessage()</a>.</p>
+<p>References <a class="el" href="../../dc/d53/osslistdata_8cpp_source.html#l00013">OSSListData::listDataOperator()</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00178">m_ossListData</a>, <a class="el" href="../../d7/dff/ossconf_8h_source.html#l00026">MUSIC_BUCKET</a>, and <a class="el" href="../../d7/d36/class_music_cloud_manager_table_widget.html#a16edd6e15bb5a1c5b28131a33ec0472a">updateLabelMessage()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00364">contextMenuEvent()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00081">getKey()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00338">uploadDone()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00370">contextMenuEvent()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00082">getKey()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00344">uploadDone()</a>.</p>
 
 </div>
 </div>
@@ -913,11 +947,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>All files upload finsihed. </p>
 
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00338">338</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00344">344</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00049">MusicCloudDataItem::clear()</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00179">m_currentDataItem</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00171">m_uploading</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00196">updateListToServer()</a>.</p>
+<p>References <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00049">MusicCloudDataItem::clear()</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00184">m_currentDataItem</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00175">m_uploading</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00197">updateListToServer()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00438">startToUploadFile()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00448">startToUploadFile()</a>.</p>
 
 </div>
 </div>
@@ -943,11 +977,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Upload file dir to server. </p>
 
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00286">286</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00292">292</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00455">createItem()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00420">createUploadFileWidget()</a>, <a class="el" href="../../d0/d4c/musicfileutils_8cpp_source.html#l00050">MusicUtils::File::getFileListByDir()</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00042">MusicCloudDataItem::m_dataItem</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00039">MusicCloudDataItem::m_id</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00029">OSSDataItem::m_name</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00178">m_openFileWidget</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00040">MusicCloudDataItem::m_path</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00032">OSSDataItem::m_putTime</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00033">OSSDataItem::m_size</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00041">MusicCloudDataItem::m_state</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00171">m_uploading</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00046">MUSIC_YEAR_TIME_FORMAT</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00438">startToUploadFile()</a>, <a class="el" href="../../d4/d9c/musicformats_8cpp_source.html#l00048">MusicFormats::supportFormatsFilterString()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00089">MusicTime::timeStamp()</a>, and <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00033">MusicCloudDataItem::Waited</a>.</p>
+<p>References <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00472">createItem()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00430">createUploadFileWidget()</a>, <a class="el" href="../../d0/d4c/musicfileutils_8cpp_source.html#l00050">MusicUtils::File::getFileListByDir()</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00042">MusicCloudDataItem::m_dataItem</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00039">MusicCloudDataItem::m_id</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00029">OSSDataItem::m_name</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00183">m_openFileWidget</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00040">MusicCloudDataItem::m_path</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00032">OSSDataItem::m_putTime</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00033">OSSDataItem::m_size</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00041">MusicCloudDataItem::m_state</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00175">m_uploading</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00046">MUSIC_YEAR_TIME_FORMAT</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00448">startToUploadFile()</a>, <a class="el" href="../../d4/d9c/musicformats_8cpp_source.html#l00052">MusicFormats::supportFormatsFilterString()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00089">MusicTime::timeStamp()</a>, and <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00033">MusicCloudDataItem::Waited</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00364">contextMenuEvent()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00420">createUploadFileWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00370">contextMenuEvent()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00430">createUploadFileWidget()</a>.</p>
 
 </div>
 </div>
@@ -974,7 +1008,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Upload file error occurred. </p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00163">uploadFileFinished()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00164">uploadFileFinished()</a>.</p>
 
 </div>
 </div>
@@ -1001,9 +1035,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Upload data to alioss finshed. </p>
 
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00163">163</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00164">164</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00492">FindUploadItemRow()</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00179">m_currentDataItem</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00042">MusicCloudDataItem::m_dataItem</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00033">OSSDataItem::m_size</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00041">MusicCloudDataItem::m_state</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00172">m_totalFileSzie</a>, <a class="el" href="../../df/d13/musicitemdelegate_8h_source.html#l00031">MUSIC_DATAS_ROLE</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00438">startToUploadFile()</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00035">MusicCloudDataItem::Successed</a>, <a class="el" href="../../df/d7f/ttkglobal_8h_source.html#l00127">TTK_ERROR_STR</a>, <a class="el" href="../../d7/d36/class_music_cloud_manager_table_widget.html#a356c1b260e6ba90cbb04256cd7fdc9bf">updataSizeLabel()</a>, and <a class="el" href="../../d7/d36/class_music_cloud_manager_table_widget.html#a5050ff55ab1065ec268378734d655645">uploadFileError()</a>.</p>
+<p>References <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00521">FindUploadItemRow()</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00184">m_currentDataItem</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00042">MusicCloudDataItem::m_dataItem</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00033">OSSDataItem::m_size</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00041">MusicCloudDataItem::m_state</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00177">m_totalFileSzie</a>, <a class="el" href="../../df/d13/musicitemdelegate_8h_source.html#l00031">MUSIC_DATAS_ROLE</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00448">startToUploadFile()</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00035">MusicCloudDataItem::Successed</a>, <a class="el" href="../../df/d7f/ttkglobal_8h_source.html#l00128">TTK_ERROR_STR</a>, <a class="el" href="../../d7/d36/class_music_cloud_manager_table_widget.html#a356c1b260e6ba90cbb04256cd7fdc9bf">updataSizeLabel()</a>, and <a class="el" href="../../d7/d36/class_music_cloud_manager_table_widget.html#a5050ff55ab1065ec268378734d655645">uploadFileError()</a>.</p>
 
 </div>
 </div>
@@ -1029,11 +1063,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Upload files to server. </p>
 
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00279">279</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00285">285</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d0/d4c/musicfileutils_8cpp_source.html#l00142">MusicUtils::File::getOpenFilesDialog()</a>, and <a class="el" href="../../d4/d9c/musicformats_8cpp_source.html#l00065">MusicFormats::supportFormatsFilterDialogString()</a>.</p>
+<p>References <a class="el" href="../../d0/d4c/musicfileutils_8cpp_source.html#l00142">MusicUtils::File::getOpenFilesDialog()</a>, and <a class="el" href="../../d4/d9c/musicformats_8cpp_source.html#l00070">MusicFormats::supportFormatsFilterDialogString()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00364">contextMenuEvent()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00420">createUploadFileWidget()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00316">reuploadFilesToServer()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00684">MusicCloudManagerWidget::uploadFilesToServer()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00370">contextMenuEvent()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00430">createUploadFileWidget()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00322">reuploadFilesToServer()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00713">MusicCloudManagerWidget::uploadFilesToServer()</a>.</p>
 
 </div>
 </div>
@@ -1060,9 +1094,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Upload files to server. </p>
 
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00388">388</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00398">398</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00455">createItem()</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00042">MusicCloudDataItem::m_dataItem</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00039">MusicCloudDataItem::m_id</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00029">OSSDataItem::m_name</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00178">m_openFileWidget</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00040">MusicCloudDataItem::m_path</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00032">OSSDataItem::m_putTime</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00033">OSSDataItem::m_size</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00041">MusicCloudDataItem::m_state</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00171">m_uploading</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00025">MT_MS</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00046">MUSIC_YEAR_TIME_FORMAT</a>, <a class="el" href="../../d3/d43/musiccoreutils_8cpp_source.html#l00008">MusicUtils::Core::sleep()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00438">startToUploadFile()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00089">MusicTime::timeStamp()</a>, and <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00033">MusicCloudDataItem::Waited</a>.</p>
+<p>References <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00472">createItem()</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00042">MusicCloudDataItem::m_dataItem</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00039">MusicCloudDataItem::m_id</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00029">OSSDataItem::m_name</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00183">m_openFileWidget</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00040">MusicCloudDataItem::m_path</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00032">OSSDataItem::m_putTime</a>, <a class="el" href="../../d6/db6/ossdataitem_8h_source.html#l00033">OSSDataItem::m_size</a>, <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00041">MusicCloudDataItem::m_state</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00175">m_uploading</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00025">MT_MS</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00046">MUSIC_YEAR_TIME_FORMAT</a>, <a class="el" href="../../d3/d43/musiccoreutils_8cpp_source.html#l00008">MusicUtils::Core::sleep()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00448">startToUploadFile()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00089">MusicTime::timeStamp()</a>, and <a class="el" href="../../df/dd1/musicclouddataitem_8h_source.html#l00033">MusicCloudDataItem::Waited</a>.</p>
 
 </div>
 </div>
@@ -1105,13 +1139,37 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Show upload progress. </p>
 
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00321">321</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00327">327</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00492">FindUploadItemRow()</a>, <a class="el" href="../../df/d7f/ttkglobal_8h_source.html#l00075">MStatic_cast</a>, and <a class="el" href="../../df/d13/musicitemdelegate_8h_source.html#l00027">MUSIC_PROCS_ROLE</a>.</p>
+<p>References <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00521">FindUploadItemRow()</a>, <a class="el" href="../../df/d7f/ttkglobal_8h_source.html#l00076">MStatic_cast</a>, and <a class="el" href="../../df/d13/musicitemdelegate_8h_source.html#l00027">MUSIC_PROCS_ROLE</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a7b60d6538ac58212cb81536497165e54"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MusicCloudManagerTableWidget::m_cancel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00176">176</a> of file <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html">musiccloudmanagerwidget.h</a>.</p>
+
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00280">cancelUploadFilesToServer()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00448">startToUploadFile()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a223f43ad0cf763232376eaf30c1e2a85"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1130,9 +1188,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00179">179</a> of file <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html">musiccloudmanagerwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00184">184</a> of file <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html">musiccloudmanagerwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00438">startToUploadFile()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00338">uploadDone()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00163">uploadFileFinished()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00370">contextMenuEvent()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00448">startToUploadFile()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00344">uploadDone()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00164">uploadFileFinished()</a>.</p>
 
 </div>
 </div>
@@ -1154,9 +1212,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00177">177</a> of file <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html">musiccloudmanagerwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00182">182</a> of file <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html">musiccloudmanagerwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00069">~MusicCloudManagerTableWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00070">~MusicCloudManagerTableWidget()</a>.</p>
 
 </div>
 </div>
@@ -1178,9 +1236,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00178">178</a> of file <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html">musiccloudmanagerwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00183">183</a> of file <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html">musiccloudmanagerwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00420">createUploadFileWidget()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00096">resizeWindow()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00286">uploadFileDirToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00388">uploadFilesToServer()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00069">~MusicCloudManagerTableWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00430">createUploadFileWidget()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00097">resizeWindow()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00292">uploadFileDirToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00398">uploadFilesToServer()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00070">~MusicCloudManagerTableWidget()</a>.</p>
 
 </div>
 </div>
@@ -1202,9 +1260,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00174">174</a> of file <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html">musiccloudmanagerwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00179">179</a> of file <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html">musiccloudmanagerwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00227">deleteFilesToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00202">deleteFileToServer()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00069">~MusicCloudManagerTableWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00228">deleteFilesToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00203">deleteFileToServer()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00070">~MusicCloudManagerTableWidget()</a>.</p>
 
 </div>
 </div>
@@ -1226,9 +1284,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00176">176</a> of file <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html">musiccloudmanagerwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00181">181</a> of file <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html">musiccloudmanagerwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00255">downloadFileToServer()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00069">~MusicCloudManagerTableWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00256">downloadFileToServer()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00070">~MusicCloudManagerTableWidget()</a>.</p>
 
 </div>
 </div>
@@ -1250,9 +1308,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00173">173</a> of file <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html">musiccloudmanagerwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00178">178</a> of file <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html">musiccloudmanagerwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00196">updateListToServer()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00069">~MusicCloudManagerTableWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00197">updateListToServer()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00070">~MusicCloudManagerTableWidget()</a>.</p>
 
 </div>
 </div>
@@ -1274,9 +1332,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00175">175</a> of file <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html">musiccloudmanagerwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00180">180</a> of file <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html">musiccloudmanagerwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00438">startToUploadFile()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00069">~MusicCloudManagerTableWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00448">startToUploadFile()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00070">~MusicCloudManagerTableWidget()</a>.</p>
 
 </div>
 </div>
@@ -1298,9 +1356,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00180">180</a> of file <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html">musiccloudmanagerwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00185">185</a> of file <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html">musiccloudmanagerwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00069">~MusicCloudManagerTableWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00070">~MusicCloudManagerTableWidget()</a>.</p>
 
 </div>
 </div>
@@ -1322,9 +1380,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00172">172</a> of file <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html">musiccloudmanagerwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00177">177</a> of file <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html">musiccloudmanagerwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00227">deleteFilesToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00202">deleteFileToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00134">receiveDataFinshed()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00163">uploadFileFinished()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00228">deleteFilesToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00203">deleteFileToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00135">receiveDataFinshed()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00164">uploadFileFinished()</a>.</p>
 
 </div>
 </div>
@@ -1346,9 +1404,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00171">171</a> of file <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html">musiccloudmanagerwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00175">175</a> of file <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html">musiccloudmanagerwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00364">contextMenuEvent()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00227">deleteFilesToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00202">deleteFileToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00438">startToUploadFile()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00338">uploadDone()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00286">uploadFileDirToServer()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00388">uploadFilesToServer()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00370">contextMenuEvent()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00228">deleteFilesToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00203">deleteFileToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00448">startToUploadFile()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00344">uploadDone()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00292">uploadFileDirToServer()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00398">uploadFilesToServer()</a>.</p>
 
 </div>
 </div>
@@ -1359,7 +1417,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 30 2019 15:33:58 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 18 2020 15:07:09 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

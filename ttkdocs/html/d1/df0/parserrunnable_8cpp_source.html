@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.10.0.0</span>
+   &#160;<span id="projectnumber">2.11.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -135,11 +135,11 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  QVariant result = parser.<a class="code" href="../../d0/dfe/class_q_json_1_1_parser.html#a9d57257adc3638a8b992cf4dc39a30bf">parse</a> (d-&gt;m_data, &amp;ok);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordflow">if</span> (ok) {</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="../../d5/d2b/ttklogger_8h.html#a40ddce420b21f37a70b70ca5de3d879a">M_LOGGER_INFO</a>(<span class="stringliteral">&quot;successfully converted json item to QVariant object&quot;</span>);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    emit <a class="code" href="../../d5/d47/class_q_json_1_1_parser_runnable.html#ad54987d36a557e0a38e28a41df46afc0">parsingFinished</a>(result, <span class="keyword">true</span>, QString());</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    Q_EMIT <a class="code" href="../../d5/d47/class_q_json_1_1_parser_runnable.html#ad54987d36a557e0a38e28a41df46afc0">parsingFinished</a>(result, <span class="keyword">true</span>, QString());</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">const</span> QString errorText = tr(<span class="stringliteral">&quot;An error occurred while parsing json: %1&quot;</span>).arg(parser.<a class="code" href="../../d0/dfe/class_q_json_1_1_parser.html#af335bd91b58c265d1fd95c89bdb1ea65">errorString</a>());</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="../../d5/d2b/ttklogger_8h.html#acb1153597589e0766a4e65aee968526e">M_LOGGER_ERROR</a>(errorText);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    emit <a class="code" href="../../d5/d47/class_q_json_1_1_parser_runnable.html#ad54987d36a557e0a38e28a41df46afc0">parsingFinished</a>(QVariant(), <span class="keyword">false</span>, errorText);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    Q_EMIT <a class="code" href="../../d5/d47/class_q_json_1_1_parser_runnable.html#ad54987d36a557e0a38e28a41df46afc0">parsingFinished</a>(QVariant(), <span class="keyword">false</span>, errorText);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  }</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
 <div class="ttc" id="class_q_json_1_1_parser_runnable_html_a8a763697ba5511b0dfa99cc5262495e8"><div class="ttname"><a href="../../d5/d47/class_q_json_1_1_parser_runnable.html#a8a763697ba5511b0dfa99cc5262495e8">QJson::ParserRunnable::run</a></div><div class="ttdeci">void run()</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df0/parserrunnable_8cpp_source.html#l00049">parserrunnable.cpp:49</a></div></div>
@@ -158,12 +158,12 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_q_json_1_1_parser_runnable_1_1_parser_runnable_private_html"><div class="ttname"><a href="../../d2/dbb/class_q_json_1_1_parser_runnable_1_1_parser_runnable_private.html">QJson::ParserRunnable::ParserRunnablePrivate</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df0/parserrunnable_8cpp_source.html#l00029">parserrunnable.cpp:29</a></div></div>
 <div class="ttc" id="class_q_json_1_1_parser_runnable_html_abd48aa7ef3cea83c1cddc72ead4fbf4f"><div class="ttname"><a href="../../d5/d47/class_q_json_1_1_parser_runnable.html#abd48aa7ef3cea83c1cddc72ead4fbf4f">QJson::ParserRunnable::ParserRunnable</a></div><div class="ttdeci">ParserRunnable(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df0/parserrunnable_8cpp_source.html#l00035">parserrunnable.cpp:35</a></div></div>
 <div class="ttc" id="class_q_json_1_1_parser_html"><div class="ttname"><a href="../../d0/dfe/class_q_json_1_1_parser.html">QJson::Parser</a></div><div class="ttdoc">Main class used to convert JSON data to QVariant objects. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d36/parser_8h_source.html#l00041">parser.h:41</a></div></div>
-<div class="ttc" id="class_t_t_k_private_html"><div class="ttname"><a href="../../d1/d29/class_t_t_k_private.html">TTKPrivate</a></div><div class="ttdoc">The class of the ttk private base. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00040">ttkprivate.h:40</a></div></div>
-<div class="ttc" id="ttkprivate_8h_html_a8eedd09c47b53d5e42ca132295c5e1ef"><div class="ttname"><a href="../../dd/d24/ttkprivate_8h.html#a8eedd09c47b53d5e42ca132295c5e1ef">TTK_D</a></div><div class="ttdeci">#define TTK_D(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00033">ttkprivate.h:33</a></div></div>
+<div class="ttc" id="class_t_t_k_private_html"><div class="ttname"><a href="../../d1/d29/class_t_t_k_private.html">TTKPrivate</a></div><div class="ttdoc">The class of the ttk private base. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00043">ttkprivate.h:43</a></div></div>
+<div class="ttc" id="ttkprivate_8h_html_a8eedd09c47b53d5e42ca132295c5e1ef"><div class="ttname"><a href="../../dd/d24/ttkprivate_8h.html#a8eedd09c47b53d5e42ca132295c5e1ef">TTK_D</a></div><div class="ttdeci">#define TTK_D(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00036">ttkprivate.h:36</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 30 2019 15:33:32 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 18 2020 15:06:49 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.10.0.0</span>
+   &#160;<span id="projectnumber">2.11.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -195,7 +195,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <a class="code" href="../../da/d5b/class_music_hl_palette.html#a1cc4f7ccca63d16300d301b83452f9f9">m_ptfVernierPercentPos</a>.setX(<a class="code" href="../../da/d5b/class_music_hl_palette.html#a477a4166348b5eb37f45ca29df71d957">m_ptVernierPos</a>.x() / <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(rect().right()));</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="../../da/d5b/class_music_hl_palette.html#a1cc4f7ccca63d16300d301b83452f9f9">m_ptfVernierPercentPos</a>.setY(<a class="code" href="../../da/d5b/class_music_hl_palette.html#a477a4166348b5eb37f45ca29df71d957">m_ptVernierPos</a>.y() / <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(rect().bottom()));</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="code" href="../../da/d5b/class_music_hl_palette.html#aa52b290c92e4808e1642d176b7a2b047">m_color</a>.setHslF(<a class="code" href="../../da/d5b/class_music_hl_palette.html#a1cc4f7ccca63d16300d301b83452f9f9">m_ptfVernierPercentPos</a>.rx(), <a class="code" href="../../da/d5b/class_music_hl_palette.html#a807d81ba02c6bdcb10f599397f805de3">m_dblSaturation</a>, 1 - <a class="code" href="../../da/d5b/class_music_hl_palette.html#a1cc4f7ccca63d16300d301b83452f9f9">m_ptfVernierPercentPos</a>.ry());</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    emit <a class="code" href="../../da/d5b/class_music_hl_palette.html#a843d25f4029632d59a7962ce870ff9b5">colorChanged</a>(<a class="code" href="../../da/d5b/class_music_hl_palette.html#aa52b290c92e4808e1642d176b7a2b047">m_color</a>);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    Q_EMIT <a class="code" href="../../da/d5b/class_music_hl_palette.html#a843d25f4029632d59a7962ce870ff9b5">colorChanged</a>(<a class="code" href="../../da/d5b/class_music_hl_palette.html#aa52b290c92e4808e1642d176b7a2b047">m_color</a>);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
@@ -304,7 +304,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <a class="code" href="../../d8/dc9/class_music_hl_saturation_palette.html#a410a75b4c376f584390388e1ca6dbc91">m_dblSaturation</a> = 1- <a class="code" href="../../d8/dc9/class_music_hl_saturation_palette.html#a2e08545cc23bbbe01038e3ec9cf51716">m_dblVernierPercentX</a>;</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <a class="code" href="../../d8/dc9/class_music_hl_saturation_palette.html#a13dcbd61262be1f5e721a839835b5307">m_color</a>.setHslF(<a class="code" href="../../d8/dc9/class_music_hl_saturation_palette.html#a13dcbd61262be1f5e721a839835b5307">m_color</a>.hslHueF(), <a class="code" href="../../d8/dc9/class_music_hl_saturation_palette.html#a410a75b4c376f584390388e1ca6dbc91">m_dblSaturation</a>, <a class="code" href="../../d8/dc9/class_music_hl_saturation_palette.html#a13dcbd61262be1f5e721a839835b5307">m_color</a>.lightnessF());</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    emit <a class="code" href="../../d8/dc9/class_music_hl_saturation_palette.html#a84d45452fbe8443abb8f368bdff2adb2">saturationChanged</a>(<a class="code" href="../../d8/dc9/class_music_hl_saturation_palette.html#a410a75b4c376f584390388e1ca6dbc91">m_dblSaturation</a>);</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    Q_EMIT <a class="code" href="../../d8/dc9/class_music_hl_saturation_palette.html#a84d45452fbe8443abb8f368bdff2adb2">saturationChanged</a>(<a class="code" href="../../d8/dc9/class_music_hl_saturation_palette.html#a410a75b4c376f584390388e1ca6dbc91">m_dblSaturation</a>);</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;}</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
@@ -432,7 +432,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 30 2019 15:33:10 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 18 2020 15:06:29 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.10.0.0</span>
+   &#160;<span id="projectnumber">2.11.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -101,7 +101,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
 <div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../d8/d12/class_dlna_finder_private.html#a0b9a41b0e39a90b220f42cb31348b116">   23</a></span>&#160;<a class="code" href="../../d8/d12/class_dlna_finder_private.html#a0b9a41b0e39a90b220f42cb31348b116">DlnaFinderPrivate::DlnaFinderPrivate</a>()</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="../../d8/d12/class_dlna_finder_private.html#ab97f03303c33124927e4cd6ed0703d97">m_udpSock</a> = <span class="keyword">new</span> QUdpSocket(<a class="code" href="../../d1/d29/class_t_t_k_private.html#a554e4829d3f279d939a08c6ef8fb5b7e">ttk_q</a>());</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="../../d8/d12/class_dlna_finder_private.html#ab97f03303c33124927e4cd6ed0703d97">m_udpSock</a> = <span class="keyword">new</span> QUdpSocket;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="../../d8/d12/class_dlna_finder_private.html#ab97f03303c33124927e4cd6ed0703d97">m_udpSock</a>-&gt;bind(QHostAddress(QHostAddress::Any), 6000);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
@@ -211,10 +211,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        }<span class="keywordflow">while</span>(!client-&gt;<a class="code" href="../../d2/d68/class_dlna_client.html#acb8010f339aa129102cc2746058474c3">isConnected</a>() &amp;&amp; tryTimes &gt; 0);</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        d-&gt;m_clients.push_back(client);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        emit <a class="code" href="../../db/df5/class_dlna_finder.html#ad9f290b4ba6f093b877d2236a2e2dd7e">finished</a>();</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        Q_EMIT <a class="code" href="../../db/df5/class_dlna_finder.html#ad9f290b4ba6f093b877d2236a2e2dd7e">finished</a>();</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    }</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}</div>
-<div class="ttc" id="class_t_t_k_private_html_a554e4829d3f279d939a08c6ef8fb5b7e"><div class="ttname"><a href="../../d1/d29/class_t_t_k_private.html#a554e4829d3f279d939a08c6ef8fb5b7e">TTKPrivate&lt; DlnaFinder &gt;::ttk_q</a></div><div class="ttdeci">DlnaFinder * ttk_q() const</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00047">ttkprivate.h:47</a></div></div>
 <div class="ttc" id="class_dlna_finder_private_html_ab97f03303c33124927e4cd6ed0703d97"><div class="ttname"><a href="../../d8/d12/class_dlna_finder_private.html#ab97f03303c33124927e4cd6ed0703d97">DlnaFinderPrivate::m_udpSock</a></div><div class="ttdeci">QUdpSocket * m_udpSock</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dff/dlnafinder_8cpp_source.html#l00018">dlnafinder.cpp:18</a></div></div>
 <div class="ttc" id="class_dlna_finder_html_a6ba4c2d494649faa2e33be7426c50845"><div class="ttname"><a href="../../db/df5/class_dlna_finder.html#a6ba4c2d494649faa2e33be7426c50845">DlnaFinder::readResponse</a></div><div class="ttdeci">void readResponse()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dff/dlnafinder_8cpp_source.html#l00110">dlnafinder.cpp:110</a></div></div>
 <div class="ttc" id="class_dlna_finder_private_html_a542b0262f792f2eee5f6a2ad87103717"><div class="ttname"><a href="../../d8/d12/class_dlna_finder_private.html#a542b0262f792f2eee5f6a2ad87103717">DlnaFinderPrivate::find</a></div><div class="ttdeci">void find()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dff/dlnafinder_8cpp_source.html#l00035">dlnafinder.cpp:35</a></div></div>
@@ -239,14 +238,14 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_dlna_finder_html_ad9f290b4ba6f093b877d2236a2e2dd7e"><div class="ttname"><a href="../../db/df5/class_dlna_finder.html#ad9f290b4ba6f093b877d2236a2e2dd7e">DlnaFinder::finished</a></div><div class="ttdeci">void finished()</div></div>
 <div class="ttc" id="class_dlna_finder_html"><div class="ttname"><a href="../../db/df5/class_dlna_finder.html">DlnaFinder</a></div><div class="ttdoc">The class of the dlna finder. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/de1/dlnafinder_8h_source.html#l00031">dlnafinder.h:31</a></div></div>
 <div class="ttc" id="class_dlna_finder_private_html_a0b9a41b0e39a90b220f42cb31348b116"><div class="ttname"><a href="../../d8/d12/class_dlna_finder_private.html#a0b9a41b0e39a90b220f42cb31348b116">DlnaFinderPrivate::DlnaFinderPrivate</a></div><div class="ttdeci">DlnaFinderPrivate()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dff/dlnafinder_8cpp_source.html#l00023">dlnafinder.cpp:23</a></div></div>
-<div class="ttc" id="class_t_t_k_private_html"><div class="ttname"><a href="../../d1/d29/class_t_t_k_private.html">TTKPrivate</a></div><div class="ttdoc">The class of the ttk private base. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00040">ttkprivate.h:40</a></div></div>
+<div class="ttc" id="class_t_t_k_private_html"><div class="ttname"><a href="../../d1/d29/class_t_t_k_private.html">TTKPrivate</a></div><div class="ttdoc">The class of the ttk private base. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00043">ttkprivate.h:43</a></div></div>
 <div class="ttc" id="class_dlna_finder_private_html"><div class="ttname"><a href="../../d8/d12/class_dlna_finder_private.html">DlnaFinderPrivate</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dff/dlnafinder_8cpp_source.html#l00008">dlnafinder.cpp:8</a></div></div>
 <div class="ttc" id="dlnafinder_8cpp_html_a7c389172d3a3e5e333cec44ae3f22169"><div class="ttname"><a href="../../d0/dff/dlnafinder_8cpp.html#a7c389172d3a3e5e333cec44ae3f22169">DEFAULT_ROUTER_IP</a></div><div class="ttdeci">#define DEFAULT_ROUTER_IP</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dff/dlnafinder_8cpp_source.html#l00006">dlnafinder.cpp:6</a></div></div>
-<div class="ttc" id="ttkprivate_8h_html_a8eedd09c47b53d5e42ca132295c5e1ef"><div class="ttname"><a href="../../dd/d24/ttkprivate_8h.html#a8eedd09c47b53d5e42ca132295c5e1ef">TTK_D</a></div><div class="ttdeci">#define TTK_D(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00033">ttkprivate.h:33</a></div></div>
+<div class="ttc" id="ttkprivate_8h_html_a8eedd09c47b53d5e42ca132295c5e1ef"><div class="ttname"><a href="../../dd/d24/ttkprivate_8h.html#a8eedd09c47b53d5e42ca132295c5e1ef">TTK_D</a></div><div class="ttdeci">#define TTK_D(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00036">ttkprivate.h:36</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 30 2019 15:33:31 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 18 2020 15:06:48 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

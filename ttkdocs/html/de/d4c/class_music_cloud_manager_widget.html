@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.10.0.0</span>
+   &#160;<span id="projectnumber">2.11.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -74,6 +74,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <div class="summary">
 <a href="#pub-slots">Public Slots</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../da/d49/class_music_cloud_manager_widget-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -116,6 +117,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5e832208f87788bb0498183f1e4d7bc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d4c/class_music_cloud_manager_widget.html#a5e832208f87788bb0498183f1e4d7bc4">resizeWindow</a> ()</td></tr>
 <tr class="separator:a5e832208f87788bb0498183f1e4d7bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a8ebc42a672bc1c9e78ff7259aa6d6db0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d4c/class_music_cloud_manager_widget.html#a8ebc42a672bc1c9e78ff7259aa6d6db0">resizeEvent</a> (QResizeEvent *event) override</td></tr>
+<tr class="separator:a8ebc42a672bc1c9e78ff7259aa6d6db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad61e436294bf785d9fd877fc91d8c201"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d4c/class_music_cloud_manager_widget.html#ad61e436294bf785d9fd877fc91d8c201">contextMenuEvent</a> (QContextMenuEvent *event) override</td></tr>
+<tr class="separator:ad61e436294bf785d9fd877fc91d8c201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a3208e457f53da154902e93ba891cb2e0"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d4c/class_music_cloud_manager_widget.html#a3208e457f53da154902e93ba891cb2e0">m_sizeValueLabel</a></td></tr>
@@ -131,7 +139,7 @@ Protected Attributes</h2></td></tr>
 <div class="textblock"><p>The class of the cloud manager widget. </p>
 <dl class="section author"><dt>Author</dt><dd>Greedysky <a href="#" onclick="location.href='mai'+'lto:'+'gre'+'ed'+'ysk'+'y@'+'163'+'.c'+'om'; return false;">greed<span style="display: none;">.nosp@m.</span>ysky<span style="display: none;">.nosp@m.</span>@163.<span style="display: none;">.nosp@m.</span>com</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00189">189</a> of file <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html">musiccloudmanagerwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00194">194</a> of file <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html">musiccloudmanagerwidget.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a294daef41589f36d1cd703527faa340f"></a>
 <div class="memitem">
@@ -156,9 +164,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Object contsructor. </p>
 
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00532">532</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00561">561</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00679">deleteFileToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00674">downloadFileToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00081">MusicCloudManagerTableWidget::getKey()</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00228">m_managerTableWidget</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00227">m_resizeLabels</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00226">m_sizeValueBar</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00225">m_sizeValueLabel</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00082">MusicUIObject::MBackgroundStyle03</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00124">MusicUIObject::MBackgroundStyle17</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00054">MusicUIObject::MColorStyle09</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00068">MusicUIObject::MColorStyle13</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00161">MusicUIObject::MFontStyle01</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00544">MusicUIObject::MProgressBar01</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00225">MusicUIObject::MPushButtonStyle03</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00668">updataSizeLabel()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00684">uploadFilesToServer()</a>.</p>
+<p>References <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00708">deleteFileToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00703">downloadFileToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00082">MusicCloudManagerTableWidget::getKey()</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00240">m_managerTableWidget</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00239">m_resizeLabels</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00238">m_sizeValueBar</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00237">m_sizeValueLabel</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00082">MusicUIObject::MBackgroundStyle03</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00124">MusicUIObject::MBackgroundStyle17</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00054">MusicUIObject::MColorStyle09</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00068">MusicUIObject::MColorStyle13</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00161">MusicUIObject::MFontStyle01</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00549">MusicUIObject::MProgressBar01</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00225">MusicUIObject::MPushButtonStyle03</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00697">updataSizeLabel()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00713">uploadFilesToServer()</a>.</p>
 
 </div>
 </div>
@@ -175,13 +183,39 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00651">651</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00680">680</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00228">m_managerTableWidget</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00226">m_sizeValueBar</a>, and <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00225">m_sizeValueLabel</a>.</p>
+<p>References <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00240">m_managerTableWidget</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00238">m_sizeValueBar</a>, and <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00237">m_sizeValueLabel</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ad61e436294bf785d9fd877fc91d8c201"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MusicCloudManagerWidget::contextMenuEvent </td>
+          <td>(</td>
+          <td class="paramtype">QContextMenuEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00724">724</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ab73711a34854e16ccd50afaf6585d86c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -204,11 +238,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Delete file to server. </p>
 
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00679">679</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00708">708</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00202">MusicCloudManagerTableWidget::deleteFileToServer()</a>, and <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00228">m_managerTableWidget</a>.</p>
+<p>References <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00203">MusicCloudManagerTableWidget::deleteFileToServer()</a>, and <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00240">m_managerTableWidget</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00532">MusicCloudManagerWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00561">MusicCloudManagerWidget()</a>.</p>
 
 </div>
 </div>
@@ -234,11 +268,40 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Download file to server. </p>
 
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00674">674</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00703">703</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00255">MusicCloudManagerTableWidget::downloadFileToServer()</a>, and <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00228">m_managerTableWidget</a>.</p>
+<p>References <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00256">MusicCloudManagerTableWidget::downloadFileToServer()</a>, and <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00240">m_managerTableWidget</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00532">MusicCloudManagerWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00561">MusicCloudManagerWidget()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8ebc42a672bc1c9e78ff7259aa6d6db0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MusicCloudManagerWidget::resizeEvent </td>
+          <td>(</td>
+          <td class="paramtype">QResizeEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Override the widget event. </p>
+
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00718">718</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+
+<p>References <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00687">resizeWindow()</a>.</p>
 
 </div>
 </div>
@@ -256,9 +319,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Resize window bound by widgte resize called. </p>
 
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00658">658</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00687">687</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00228">m_managerTableWidget</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00227">m_resizeLabels</a>, <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00096">MusicCloudManagerTableWidget::resizeWindow()</a>, <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00042">MusicSettingManager::WidgetSize</a>, and <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00193">WINDOW_WIDTH_MIN</a>.</p>
+<p>References <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00240">m_managerTableWidget</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00239">m_resizeLabels</a>, <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00026">M_SETTING_PTR</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00097">MusicCloudManagerTableWidget::resizeWindow()</a>, <a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html#l00042">MusicSettingManager::WidgetSize</a>, and <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00194">WINDOW_WIDTH_MIN</a>.</p>
+
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00718">resizeEvent()</a>.</p>
 
 </div>
 </div>
@@ -285,11 +350,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Update size label. </p>
 
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00668">668</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00697">697</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00226">m_sizeValueBar</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00225">m_sizeValueLabel</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00065">MH_GB2B</a>, and <a class="el" href="../../d4/da7/musicnumberutils_8cpp_source.html#l00041">MusicUtils::Number::size2Label()</a>.</p>
+<p>References <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00238">m_sizeValueBar</a>, <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00237">m_sizeValueLabel</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00065">MH_GB2B</a>, and <a class="el" href="../../d4/da7/musicnumberutils_8cpp_source.html#l00041">MusicUtils::Number::size2Label()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00532">MusicCloudManagerWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00561">MusicCloudManagerWidget()</a>.</p>
 
 </div>
 </div>
@@ -315,11 +380,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Upload files to server. </p>
 
-<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00684">684</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00713">713</a> of file <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html">musiccloudmanagerwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00228">m_managerTableWidget</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00279">MusicCloudManagerTableWidget::uploadFilesToServer()</a>.</p>
+<p>References <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00240">m_managerTableWidget</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00285">MusicCloudManagerTableWidget::uploadFilesToServer()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00532">MusicCloudManagerWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00561">MusicCloudManagerWidget()</a>.</p>
 
 </div>
 </div>
@@ -342,9 +407,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00228">228</a> of file <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html">musiccloudmanagerwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00240">240</a> of file <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html">musiccloudmanagerwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00679">deleteFileToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00674">downloadFileToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00532">MusicCloudManagerWidget()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00658">resizeWindow()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00684">uploadFilesToServer()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00651">~MusicCloudManagerWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00708">deleteFileToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00703">downloadFileToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00561">MusicCloudManagerWidget()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00687">resizeWindow()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00713">uploadFilesToServer()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00680">~MusicCloudManagerWidget()</a>.</p>
 
 </div>
 </div>
@@ -366,9 +431,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00227">227</a> of file <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html">musiccloudmanagerwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00239">239</a> of file <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html">musiccloudmanagerwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00532">MusicCloudManagerWidget()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00658">resizeWindow()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00561">MusicCloudManagerWidget()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00687">resizeWindow()</a>.</p>
 
 </div>
 </div>
@@ -390,9 +455,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00226">226</a> of file <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html">musiccloudmanagerwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00238">238</a> of file <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html">musiccloudmanagerwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00532">MusicCloudManagerWidget()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00668">updataSizeLabel()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00651">~MusicCloudManagerWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00561">MusicCloudManagerWidget()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00697">updataSizeLabel()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00680">~MusicCloudManagerWidget()</a>.</p>
 
 </div>
 </div>
@@ -414,9 +479,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00225">225</a> of file <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html">musiccloudmanagerwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00237">237</a> of file <a class="el" href="../../da/d28/musiccloudmanagerwidget_8h_source.html">musiccloudmanagerwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00532">MusicCloudManagerWidget()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00668">updataSizeLabel()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00651">~MusicCloudManagerWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00561">MusicCloudManagerWidget()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00697">updataSizeLabel()</a>, and <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00680">~MusicCloudManagerWidget()</a>.</p>
 
 </div>
 </div>
@@ -427,7 +492,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 30 2019 15:33:58 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 18 2020 15:07:09 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

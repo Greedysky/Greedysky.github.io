@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.10.0.0</span>
+   &#160;<span id="projectnumber">2.11.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -148,14 +148,14 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
 <div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="../../d4/d2b/class_music_lrc_float_photo_item.html#a31c9719fd10607a607e6322e224eb2ee">   70</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d4/d2b/class_music_lrc_float_photo_item.html#a31c9719fd10607a607e6322e224eb2ee">MusicLrcFloatPhotoItem::sendUserBoxClicked</a>()</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    emit <a class="code" href="../../d4/d2b/class_music_lrc_float_photo_item.html#ad9158db53eb2650192b4eea690c06505">boxClicked</a>(<a class="code" href="../../d4/d2b/class_music_lrc_float_photo_item.html#a73bba41acf7dd25db898287d640135d9">m_index</a>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    Q_EMIT <a class="code" href="../../d4/d2b/class_music_lrc_float_photo_item.html#ad9158db53eb2650192b4eea690c06505">boxClicked</a>(<a class="code" href="../../d4/d2b/class_music_lrc_float_photo_item.html#a73bba41acf7dd25db898287d640135d9">m_index</a>);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
 <div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="../../d4/d2b/class_music_lrc_float_photo_item.html#af99cf78c192eeffd2a50f65ec8c01d26">   75</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d4/d2b/class_music_lrc_float_photo_item.html#af99cf78c192eeffd2a50f65ec8c01d26">MusicLrcFloatPhotoItem::sendUserSelectArt</a>()</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">if</span>(!pixmap()-&gt;isNull())</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        emit <a class="code" href="../../d4/d2b/class_music_lrc_float_photo_item.html#ab1f921a5233b825ef5a5b9f93658c995">itemClicked</a>(<a class="code" href="../../d4/d2b/class_music_lrc_float_photo_item.html#a73bba41acf7dd25db898287d640135d9">m_index</a>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        Q_EMIT <a class="code" href="../../d4/d2b/class_music_lrc_float_photo_item.html#ab1f921a5233b825ef5a5b9f93658c995">itemClicked</a>(<a class="code" href="../../d4/d2b/class_music_lrc_float_photo_item.html#a73bba41acf7dd25db898287d640135d9">m_index</a>);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
@@ -468,7 +468,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="namespace_music_utils_1_1_file_html_a3dfdd4a4419408b253c4141f0584e73f"><div class="ttname"><a href="../../df/dea/namespace_music_utils_1_1_file.html#a3dfdd4a4419408b253c4141f0584e73f">MusicUtils::File::getSaveFileDialog</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT QString getSaveFileDialog(QWidget *obj, const QString &amp;title, const QString &amp;filter)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d4c/musicfileutils_8cpp_source.html#l00157">musicfileutils.cpp:157</a></div></div>
 <div class="ttc" id="musiclrcfloatphotowidget_8cpp_html_a8ea58487a2088a4fae68d174b55e7afd"><div class="ttname"><a href="../../d8/d57/musiclrcfloatphotowidget_8cpp.html#a8ea58487a2088a4fae68d174b55e7afd">PHOTO_WIDTH</a></div><div class="ttdeci">#define PHOTO_WIDTH</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d57/musiclrcfloatphotowidget_8cpp_source.html#l00011">musiclrcfloatphotowidget.cpp:11</a></div></div>
 <div class="ttc" id="musiclrcfloatphotowidget_8cpp_html_a8dc941eb99775507f5a0e5738bc238b1"><div class="ttname"><a href="../../d8/d57/musiclrcfloatphotowidget_8cpp.html#a8dc941eb99775507f5a0e5738bc238b1">PHOTO_PERLINE</a></div><div class="ttdeci">#define PHOTO_PERLINE</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d57/musiclrcfloatphotowidget_8cpp_source.html#l00013">musiclrcfloatphotowidget.cpp:13</a></div></div>
-<div class="ttc" id="namespace_music_u_i_object_html_a8c0229bc93f6fe600485660a39d3dbe9"><div class="ttname"><a href="../../d2/dc5/namespace_music_u_i_object.html#a8c0229bc93f6fe600485660a39d3dbe9">MusicUIObject::MMenuStyle02</a></div><div class="ttdeci">const QString MMenuStyle02</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/deb/musicuiobject_8h_source.html#l00382">musicuiobject.h:382</a></div></div>
+<div class="ttc" id="namespace_music_u_i_object_html_a8c0229bc93f6fe600485660a39d3dbe9"><div class="ttname"><a href="../../d2/dc5/namespace_music_u_i_object.html#a8c0229bc93f6fe600485660a39d3dbe9">MusicUIObject::MMenuStyle02</a></div><div class="ttdeci">const QString MMenuStyle02</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/deb/musicuiobject_8h_source.html#l00387">musicuiobject.h:387</a></div></div>
 <div class="ttc" id="musicinteriorfloatuiobject_8h_html"><div class="ttname"><a href="../../d5/d18/musicinteriorfloatuiobject_8h.html">musicinteriorfloatuiobject.h</a></div></div>
 <div class="ttc" id="class_music_lrc_float_photo_widget_html_af10238faa2159982350b6272df881175"><div class="ttname"><a href="../../d0/df7/class_music_lrc_float_photo_widget.html#af10238faa2159982350b6272df881175">MusicLrcFloatPhotoWidget::m_selectNum</a></div><div class="ttdeci">MIntSet m_selectNum</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d84/musiclrcfloatphotowidget_8h_source.html#l00173">musiclrcfloatphotowidget.h:173</a></div></div>
 <div class="ttc" id="namespace_music_u_i_object_html_a303b32c8e491ea9af0cba35cd9205f58"><div class="ttname"><a href="../../d2/dc5/namespace_music_u_i_object.html#a303b32c8e491ea9af0cba35cd9205f58">MusicUIObject::MBackgroundStyle10</a></div><div class="ttdeci">const QString MBackgroundStyle10</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/deb/musicuiobject_8h_source.html#l00103">musicuiobject.h:103</a></div></div>
@@ -494,7 +494,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 30 2019 15:33:14 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 18 2020 15:06:34 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

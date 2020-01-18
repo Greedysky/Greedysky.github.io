@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.10.0.0</span>
+   &#160;<span id="projectnumber">2.11.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -99,7 +99,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">const</span> QString &amp;path = QString(<span class="stringliteral">&quot;%1%2%3%4&quot;</span>).arg(<a class="code" href="../../d8/d07/musicobject_8h.html#af07e00ccb50151280121629189e2239d">BACKGROUND_DIR_FULL</a>).arg(<a class="code" href="../../de/d8c/class_music_download_background_thread.html#a912bdc6985894310896a5472d4a68b01">m_savePath</a>).arg(0).arg(<a class="code" href="../../d8/d07/musicobject_8h.html#a5390d0fe4db069c647d8c57f720ac944">SKN_FILE</a>);</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="../../dc/dd8/musicbackgroundmanager_8h.html#a85b4073d9371e0ee808f3f719fe3436e">M_BACKGROUND_PTR</a>-&gt;setMBackground(path);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        emit <a class="code" href="../../dc/dd8/musicbackgroundmanager_8h.html#a85b4073d9371e0ee808f3f719fe3436e">M_BACKGROUND_PTR</a>-&gt;setUserSelectArtistIndex(0);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        Q_EMIT <a class="code" href="../../dc/dd8/musicbackgroundmanager_8h.html#a85b4073d9371e0ee808f3f719fe3436e">M_BACKGROUND_PTR</a>-&gt;setUserSelectArtistIndex(0);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        deleteLater();</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
@@ -114,16 +114,16 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_download_background_thread_html_a7cb02be973a357fcdf14a269534f90fc"><div class="ttname"><a href="../../de/d8c/class_music_download_background_thread.html#a7cb02be973a357fcdf14a269534f90fc">MusicDownloadBackgroundThread::m_artName</a></div><div class="ttdeci">QString m_artName</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/df2/musicdownloadbackgroundthread_8h_source.html#l00052">musicdownloadbackgroundthread.h:52</a></div></div>
 <div class="ttc" id="musictopareawidget_8h_html"><div class="ttname"><a href="../../d6/d18/musictopareawidget_8h.html">musictopareawidget.h</a></div></div>
 <div class="ttc" id="musicdownloadbackgroundthread_8h_html"><div class="ttname"><a href="../../d4/df2/musicdownloadbackgroundthread_8h.html">musicdownloadbackgroundthread.h</a></div></div>
-<div class="ttc" id="musicobject_8h_html_af07e00ccb50151280121629189e2239d"><div class="ttname"><a href="../../d8/d07/musicobject_8h.html#af07e00ccb50151280121629189e2239d">BACKGROUND_DIR_FULL</a></div><div class="ttdeci">#define BACKGROUND_DIR_FULL</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00162">musicobject.h:162</a></div></div>
+<div class="ttc" id="musicobject_8h_html_af07e00ccb50151280121629189e2239d"><div class="ttname"><a href="../../d8/d07/musicobject_8h.html#af07e00ccb50151280121629189e2239d">BACKGROUND_DIR_FULL</a></div><div class="ttdeci">#define BACKGROUND_DIR_FULL</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00163">musicobject.h:163</a></div></div>
 <div class="ttc" id="class_music_download_background_thread_html_ab8ad1384f2b222b6333f2c548dd24aae"><div class="ttname"><a href="../../de/d8c/class_music_download_background_thread.html#ab8ad1384f2b222b6333f2c548dd24aae">MusicDownloadBackgroundThread::m_index</a></div><div class="ttdeci">int m_index</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/df2/musicdownloadbackgroundthread_8h_source.html#l00051">musicdownloadbackgroundthread.h:51</a></div></div>
 <div class="ttc" id="musicbackgroundmanager_8h_html"><div class="ttname"><a href="../../dc/dd8/musicbackgroundmanager_8h.html">musicbackgroundmanager.h</a></div></div>
-<div class="ttc" id="musicobject_8h_html_a5390d0fe4db069c647d8c57f720ac944"><div class="ttname"><a href="../../d8/d07/musicobject_8h.html#a5390d0fe4db069c647d8c57f720ac944">SKN_FILE</a></div><div class="ttdeci">#define SKN_FILE</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00073">musicobject.h:73</a></div></div>
-<div class="ttc" id="class_music_top_area_widget_html_a487c05e4fd1c5f74d986fe136205056a"><div class="ttname"><a href="../../d3/d96/class_music_top_area_widget.html#a487c05e4fd1c5f74d986fe136205056a">MusicTopAreaWidget::instance</a></div><div class="ttdeci">static MusicTopAreaWidget * instance()</div><div class="ttdef"><b>Definition:</b> <a href="../../db/da6/musictopareawidget_8cpp_source.html#l00053">musictopareawidget.cpp:53</a></div></div>
-<div class="ttc" id="class_music_top_area_widget_html_a6e73568e9a7cd7524b9f65c51120a521"><div class="ttname"><a href="../../d3/d96/class_music_top_area_widget.html#a6e73568e9a7cd7524b9f65c51120a521">MusicTopAreaWidget::musicBackgroundThemeDownloadFinished</a></div><div class="ttdeci">void musicBackgroundThemeDownloadFinished()</div><div class="ttdef"><b>Definition:</b> <a href="../../db/da6/musictopareawidget_8cpp_source.html#l00277">musictopareawidget.cpp:277</a></div></div>
+<div class="ttc" id="musicobject_8h_html_a5390d0fe4db069c647d8c57f720ac944"><div class="ttname"><a href="../../d8/d07/musicobject_8h.html#a5390d0fe4db069c647d8c57f720ac944">SKN_FILE</a></div><div class="ttdeci">#define SKN_FILE</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00074">musicobject.h:74</a></div></div>
+<div class="ttc" id="class_music_top_area_widget_html_a487c05e4fd1c5f74d986fe136205056a"><div class="ttname"><a href="../../d3/d96/class_music_top_area_widget.html#a487c05e4fd1c5f74d986fe136205056a">MusicTopAreaWidget::instance</a></div><div class="ttdeci">static MusicTopAreaWidget * instance()</div><div class="ttdef"><b>Definition:</b> <a href="../../db/da6/musictopareawidget_8cpp_source.html#l00052">musictopareawidget.cpp:52</a></div></div>
+<div class="ttc" id="class_music_top_area_widget_html_a6e73568e9a7cd7524b9f65c51120a521"><div class="ttname"><a href="../../d3/d96/class_music_top_area_widget.html#a6e73568e9a7cd7524b9f65c51120a521">MusicTopAreaWidget::musicBackgroundThemeDownloadFinished</a></div><div class="ttdeci">void musicBackgroundThemeDownloadFinished()</div><div class="ttdef"><b>Definition:</b> <a href="../../db/da6/musictopareawidget_8cpp_source.html#l00276">musictopareawidget.cpp:276</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 30 2019 15:33:05 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 18 2020 15:06:26 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

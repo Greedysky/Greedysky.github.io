@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.10.0.0</span>
+   &#160;<span id="projectnumber">2.11.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -82,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">/* =================================================</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of the TTK Music Player project</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2019 Greedysky Studio</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2020 Greedysky Studio</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
@@ -155,7 +155,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">void</span> resizeWindow();</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../dc/d29/class_music_tool_menu_widget.html#a6f67fb052efe57ab426dbd9b50eb2e19">popupMenu</a>();</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../dc/d29/class_music_tool_menu_widget.html#a6f67fb052efe57ab426dbd9b50eb2e19">popupMenu</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordtype">void</span> setDeleteItemAt(<span class="keywordtype">int</span> index);</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordtype">void</span> setDeleteItemAll();</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordtype">void</span> cellDoubleClicked(<span class="keywordtype">int</span> row, <span class="keywordtype">int</span> column);</div>
@@ -177,12 +177,12 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;};</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="preprocessor">#endif // MUSICPLAYEDLISTPOPWIDGET_H</span></div>
-<div class="ttc" id="class_music_tool_menu_widget_html_a6f67fb052efe57ab426dbd9b50eb2e19"><div class="ttname"><a href="../../dc/d29/class_music_tool_menu_widget.html#a6f67fb052efe57ab426dbd9b50eb2e19">MusicToolMenuWidget::popupMenu</a></div><div class="ttdeci">void popupMenu()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dac/musictoolmenuwidget_8cpp_source.html#l00053">musictoolmenuwidget.cpp:53</a></div></div>
+<div class="ttc" id="class_music_tool_menu_widget_html_a6f67fb052efe57ab426dbd9b50eb2e19"><div class="ttname"><a href="../../dc/d29/class_music_tool_menu_widget.html#a6f67fb052efe57ab426dbd9b50eb2e19">MusicToolMenuWidget::popupMenu</a></div><div class="ttdeci">virtual void popupMenu()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dac/musictoolmenuwidget_8cpp_source.html#l00053">musictoolmenuwidget.cpp:53</a></div></div>
 <div class="ttc" id="class_music_played_list_top_container_widget_html"><div class="ttname"><a href="../../de/dfe/class_music_played_list_top_container_widget.html">MusicPlayedListTopContainerWidget</a></div><div class="ttdoc">The class of the played list top container widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d94/musicplayedlistpopwidget_8h_source.html#l00037">musicplayedlistpopwidget.h:37</a></div></div>
 <div class="ttc" id="class_music_played_list_pop_widget_html_aa71a39d481aa196833dadc9b8c91892c"><div class="ttname"><a href="../../d8/d64/class_music_played_list_pop_widget.html#aa71a39d481aa196833dadc9b8c91892c">MusicPlayedListPopWidget::m_instance</a></div><div class="ttdeci">static MusicPlayedListPopWidget * m_instance</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d94/musicplayedlistpopwidget_8h_source.html#l00184">musicplayedlistpopwidget.h:184</a></div></div>
 <div class="ttc" id="class_music_tool_menu_widget_html"><div class="ttname"><a href="../../dc/d29/class_music_tool_menu_widget.html">MusicToolMenuWidget</a></div><div class="ttdoc">The class of the tool menu base widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd6/musictoolmenuwidget_8h_source.html#l00058">musictoolmenuwidget.h:58</a></div></div>
 <div class="ttc" id="class_music_played_list_pop_widget_html_ac9e9e7aa4ff1dfe567590844f23c9a13"><div class="ttname"><a href="../../d8/d64/class_music_played_list_pop_widget.html#ac9e9e7aa4ff1dfe567590844f23c9a13">MusicPlayedListPopWidget::m_playlist</a></div><div class="ttdeci">MusicPlaylist * m_playlist</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d94/musicplayedlistpopwidget_8h_source.html#l00179">musicplayedlistpopwidget.h:179</a></div></div>
-<div class="ttc" id="ttkglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00143">ttkglobal.h:143</a></div></div>
+<div class="ttc" id="ttkglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00144">ttkglobal.h:144</a></div></div>
 <div class="ttc" id="musicplayedlistpopwidget_8h_html_a4f1164e34357c691663f877ff64f9df1"><div class="ttname"><a href="../../d1/d94/musicplayedlistpopwidget_8h.html#a4f1164e34357c691663f877ff64f9df1">PlayedPairList</a></div><div class="ttdeci">QList&lt; std::pair&lt; int, int &gt; &gt; PlayedPairList</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d94/musicplayedlistpopwidget_8h_source.html#l00031">musicplayedlistpopwidget.h:31</a></div></div>
 <div class="ttc" id="musictoolmenuwidget_8h_html"><div class="ttname"><a href="../../d6/dd6/musictoolmenuwidget_8h.html">musictoolmenuwidget.h</a></div></div>
 <div class="ttc" id="class_music_played_list_pop_widget_html_ab4ebd007191f6f1feb700ff500253882"><div class="ttname"><a href="../../d8/d64/class_music_played_list_pop_widget.html#ab4ebd007191f6f1feb700ff500253882">MusicPlayedListPopWidget::m_songLists</a></div><div class="ttdeci">MusicSongs m_songLists</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d94/musicplayedlistpopwidget_8h_source.html#l00180">musicplayedlistpopwidget.h:180</a></div></div>
@@ -197,7 +197,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 30 2019 15:33:24 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 18 2020 15:06:42 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

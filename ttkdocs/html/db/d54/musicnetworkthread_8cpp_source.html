@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.10.0.0</span>
+   &#160;<span id="projectnumber">2.11.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -119,7 +119,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">const</span> QHostInfo &amp;info = QHostInfo::fromName(<a class="code" href="../../df/d0e/musicnetworkthread_8h.html#a1d9f59043481eaacc0287061b1cafcb5">NETWORK_REQUEST_ADDRESS</a>);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="../../db/d5e/class_music_network_thread.html#a631fc422b30f7a1a6e5adf67f7c16615">m_networkState</a> = !info.addresses().isEmpty();</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="../../db/d5e/class_music_network_thread.html#a631fc422b30f7a1a6e5adf67f7c16615">m_networkState</a> = block ? <span class="keyword">false</span> : <a class="code" href="../../db/d5e/class_music_network_thread.html#a631fc422b30f7a1a6e5adf67f7c16615">m_networkState</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        emit <a class="code" href="../../db/d5e/class_music_network_thread.html#a4f7313914c9ff99a2dc3b5fe688a2b3d">networkConnectionStateChanged</a>(<a class="code" href="../../db/d5e/class_music_network_thread.html#a631fc422b30f7a1a6e5adf67f7c16615">m_networkState</a>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        Q_EMIT <a class="code" href="../../db/d5e/class_music_network_thread.html#a4f7313914c9ff99a2dc3b5fe688a2b3d">networkConnectionStateChanged</a>(<a class="code" href="../../db/d5e/class_music_network_thread.html#a631fc422b30f7a1a6e5adf67f7c16615">m_networkState</a>);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    });</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
 <div class="ttc" id="musicnetworkthread_8h_html_a1d9f59043481eaacc0287061b1cafcb5"><div class="ttname"><a href="../../df/d0e/musicnetworkthread_8h.html#a1d9f59043481eaacc0287061b1cafcb5">NETWORK_REQUEST_ADDRESS</a></div><div class="ttdeci">#define NETWORK_REQUEST_ADDRESS</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0e/musicnetworkthread_8h_source.html#l00027">musicnetworkthread.h:27</a></div></div>
@@ -143,7 +143,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 30 2019 15:33:05 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 18 2020 15:06:26 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

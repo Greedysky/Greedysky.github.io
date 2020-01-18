@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.10.0.0</span>
+   &#160;<span id="projectnumber">2.11.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -120,7 +120,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../d2/d95/class_music_songs_tool_item_renamed_widget.html#aae54c3bed823691e0e3c0b7349f1c1f5">   42</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d95/class_music_songs_tool_item_renamed_widget.html#aae54c3bed823691e0e3c0b7349f1c1f5">MusicSongsToolItemRenamedWidget::renameFinished</a>()</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    emit <a class="code" href="../../d2/d95/class_music_songs_tool_item_renamed_widget.html#aae54c3bed823691e0e3c0b7349f1c1f5">renameFinished</a>(text());</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    Q_EMIT <a class="code" href="../../d2/d95/class_music_songs_tool_item_renamed_widget.html#aae54c3bed823691e0e3c0b7349f1c1f5">renameFinished</a>(text());</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../d2/d95/class_music_songs_tool_item_renamed_widget.html#a9fc91626f22e9d8b9b2871685c679be6">   47</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d95/class_music_songs_tool_item_renamed_widget.html#a9fc91626f22e9d8b9b2871685c679be6">MusicSongsToolItemRenamedWidget::animationCloseChanged</a>()</div>
@@ -134,7 +134,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="../../d2/d95/class_music_songs_tool_item_renamed_widget.html#ac4739513adaf0f0c90d086289dcbbf65">m_focusBlock</a>)</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        QLineEdit::focusOutEvent(event);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        emit <a class="code" href="../../d2/d95/class_music_songs_tool_item_renamed_widget.html#aae54c3bed823691e0e3c0b7349f1c1f5">renameFinished</a>(text());</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        Q_EMIT <a class="code" href="../../d2/d95/class_music_songs_tool_item_renamed_widget.html#aae54c3bed823691e0e3c0b7349f1c1f5">renameFinished</a>(text());</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        close();</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">else</span></div>
@@ -150,7 +150,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
 <div class="ttc" id="musicsongstoolitemrenamedwidget_8h_html"><div class="ttname"><a href="../../df/d18/musicsongstoolitemrenamedwidget_8h.html">musicsongstoolitemrenamedwidget.h</a></div></div>
 <div class="ttc" id="class_music_songs_tool_item_renamed_widget_html_a9fc91626f22e9d8b9b2871685c679be6"><div class="ttname"><a href="../../d2/d95/class_music_songs_tool_item_renamed_widget.html#a9fc91626f22e9d8b9b2871685c679be6">MusicSongsToolItemRenamedWidget::animationCloseChanged</a></div><div class="ttdeci">void animationCloseChanged()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d68/musicsongstoolitemrenamedwidget_8cpp_source.html#l00047">musicsongstoolitemrenamedwidget.cpp:47</a></div></div>
-<div class="ttc" id="class_music_application_html_ae136c193d051f02d052da8ac7951c69a"><div class="ttname"><a href="../../db/def/class_music_application.html#ae136c193d051f02d052da8ac7951c69a">MusicApplication::instance</a></div><div class="ttdeci">static MusicApplication * instance()</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d25/musicapplication_8cpp_source.html#l00121">musicapplication.cpp:121</a></div></div>
+<div class="ttc" id="class_music_application_html_ae136c193d051f02d052da8ac7951c69a"><div class="ttname"><a href="../../db/def/class_music_application.html#ae136c193d051f02d052da8ac7951c69a">MusicApplication::instance</a></div><div class="ttdeci">static MusicApplication * instance()</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d25/musicapplication_8cpp_source.html#l00122">musicapplication.cpp:122</a></div></div>
 <div class="ttc" id="musicstringutils_8h_html"><div class="ttname"><a href="../../d4/d50/musicstringutils_8h.html">musicstringutils.h</a></div></div>
 <div class="ttc" id="musicuiobject_8h_html"><div class="ttname"><a href="../../d0/deb/musicuiobject_8h.html">musicuiobject.h</a></div></div>
 <div class="ttc" id="class_music_songs_tool_item_renamed_widget_html_a8c8f01007199c669d7ef8b8437070e05"><div class="ttname"><a href="../../d2/d95/class_music_songs_tool_item_renamed_widget.html#a8c8f01007199c669d7ef8b8437070e05">MusicSongsToolItemRenamedWidget::contextMenuEvent</a></div><div class="ttdeci">virtual void contextMenuEvent(QContextMenuEvent *event) override</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d68/musicsongstoolitemrenamedwidget_8cpp_source.html#l00067">musicsongstoolitemrenamedwidget.cpp:67</a></div></div>
@@ -160,7 +160,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_songs_tool_item_renamed_widget_html_a27b5a3b96723237c1962510bcc642f99"><div class="ttname"><a href="../../d2/d95/class_music_songs_tool_item_renamed_widget.html#a27b5a3b96723237c1962510bcc642f99">MusicSongsToolItemRenamedWidget::textChanged</a></div><div class="ttdeci">void textChanged(const QString &amp;text)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d68/musicsongstoolitemrenamedwidget_8cpp_source.html#l00029">musicsongstoolitemrenamedwidget.cpp:29</a></div></div>
 <div class="ttc" id="class_music_songs_tool_item_renamed_widget_html_a0430e0b2812749a6c62a0591fb987528"><div class="ttname"><a href="../../d2/d95/class_music_songs_tool_item_renamed_widget.html#a0430e0b2812749a6c62a0591fb987528">MusicSongsToolItemRenamedWidget::MusicSongsToolItemRenamedWidget</a></div><div class="ttdeci">MusicSongsToolItemRenamedWidget(QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d68/musicsongstoolitemrenamedwidget_8cpp_source.html#l00007">musicsongstoolitemrenamedwidget.cpp:7</a></div></div>
 <div class="ttc" id="class_music_songs_tool_item_renamed_widget_html"><div class="ttname"><a href="../../d2/d95/class_music_songs_tool_item_renamed_widget.html">MusicSongsToolItemRenamedWidget</a></div><div class="ttdoc">The class of the song tool item rename widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d18/musicsongstoolitemrenamedwidget_8h_source.html#l00028">musicsongstoolitemrenamedwidget.h:28</a></div></div>
-<div class="ttc" id="class_music_toast_label_html_a39f3c575c312b661bb4bf9d84814bf50"><div class="ttname"><a href="../../d2/d6f/class_music_toast_label.html#a39f3c575c312b661bb4bf9d84814bf50">MusicToastLabel::defaultLabel</a></div><div class="ttdeci">void defaultLabel(QWidget *parent, const QString &amp;text)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d11/musictoastlabel_8cpp_source.html#l00033">musictoastlabel.cpp:33</a></div></div>
+<div class="ttc" id="class_music_toast_label_html_a39f3c575c312b661bb4bf9d84814bf50"><div class="ttname"><a href="../../d2/d6f/class_music_toast_label.html#a39f3c575c312b661bb4bf9d84814bf50">MusicToastLabel::defaultLabel</a></div><div class="ttdeci">void defaultLabel(QWidget *parent, const QString &amp;text)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d11/musictoastlabel_8cpp_source.html#l00034">musictoastlabel.cpp:34</a></div></div>
 <div class="ttc" id="class_music_songs_tool_item_renamed_widget_html_ac4739513adaf0f0c90d086289dcbbf65"><div class="ttname"><a href="../../d2/d95/class_music_songs_tool_item_renamed_widget.html#ac4739513adaf0f0c90d086289dcbbf65">MusicSongsToolItemRenamedWidget::m_focusBlock</a></div><div class="ttdeci">bool m_focusBlock</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d18/musicsongstoolitemrenamedwidget_8h_source.html#l00066">musicsongstoolitemrenamedwidget.h:66</a></div></div>
 <div class="ttc" id="musictoastlabel_8h_html"><div class="ttname"><a href="../../d0/de1/musictoastlabel_8h.html">musictoastlabel.h</a></div></div>
 <div class="ttc" id="class_music_songs_tool_item_renamed_widget_html_aae54c3bed823691e0e3c0b7349f1c1f5"><div class="ttname"><a href="../../d2/d95/class_music_songs_tool_item_renamed_widget.html#aae54c3bed823691e0e3c0b7349f1c1f5">MusicSongsToolItemRenamedWidget::renameFinished</a></div><div class="ttdeci">void renameFinished()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d68/musicsongstoolitemrenamedwidget_8cpp_source.html#l00042">musicsongstoolitemrenamedwidget.cpp:42</a></div></div>
@@ -170,7 +170,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 30 2019 15:33:26 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 18 2020 15:06:46 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

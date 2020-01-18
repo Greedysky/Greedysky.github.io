@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.10.0.0</span>
+   &#160;<span id="projectnumber">2.11.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -81,9 +81,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../da/d22/musicclickedlabel_8h.html">musicclickedlabel.h</a>&quot;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d0/deb/musicuiobject_8h.html">musicuiobject.h</a>&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dc/d17/musicwidgetheaders_8h.html">musicwidgetheaders.h</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QSignalMapper&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QFontMetrics&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/d4c/musicwidgetutils_8h.html">musicwidgetutils.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QSignalMapper&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="../../d9/d6b/musicpagingwidgetobject_8cpp.html#a7d467c1d283fdfa1f2081ba1e0d01b6e">    9</a></span>&#160;<span class="preprocessor">#define PAGE_SIZE   10</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
@@ -128,7 +128,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        font.setPixelSize(17);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        w-&gt;setFont(font);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        w-&gt;setStyleSheet(<a class="code" href="../../d2/dc5/namespace_music_u_i_object.html#a8f3b97d0ec72ceee48c6d8858d98d9c0">MusicUIObject::MColorStyle04</a>);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        w-&gt;setFixedWidth(QFontMetrics(font).width(w-&gt;text()));</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        w-&gt;setFixedWidth(<a class="code" href="../../d2/d69/namespace_music_utils_1_1_widget.html#a01c384aa6781270e7fed39404f6b44dc">MusicUtils::Widget::fontTextWidth</a>(font, w-&gt;text()));</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        connect(w, SIGNAL(clicked()), group, SLOT(map()));</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        group-&gt;setMapping(w, i++);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
@@ -286,7 +286,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;<a class="code" href="../../db/de2/class_music_paging_widget_object.html#a178b4931cb9bfe61470b394f0bcfcc0c">m_pagingItems</a>.count() - 2; ++i)</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    {</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <a class="code" href="../../d1/db0/class_music_clicked_label.html">MusicClickedLabel</a> *w = <a class="code" href="../../db/de2/class_music_paging_widget_object.html#a178b4931cb9bfe61470b394f0bcfcc0c">m_pagingItems</a>[i];</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        w-&gt;setFixedWidth(QFontMetrics(w-&gt;font()).width(w-&gt;text()));</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        w-&gt;setFixedWidth(<a class="code" href="../../d2/d69/namespace_music_utils_1_1_widget.html#a01c384aa6781270e7fed39404f6b44dc">MusicUtils::Widget::fontTextWidth</a>(w-&gt;font(), w-&gt;text()));</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    }</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <a class="code" href="../../d1/db0/class_music_clicked_label.html">MusicClickedLabel</a> *w = <a class="code" href="../../db/de2/class_music_paging_widget_object.html#a178b4931cb9bfe61470b394f0bcfcc0c">m_pagingItems</a>[<a class="code" href="../../db/de2/class_music_paging_widget_object.html#a13fcfb88405453b8bf12d9769238a1d4">m_currentPage</a>];</div>
@@ -299,11 +299,13 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../db/de2/class_music_paging_widget_object.html#a178b4931cb9bfe61470b394f0bcfcc0c">m_pagingItems</a>[<a class="code" href="../../db/de2/class_music_paging_widget_object.html#a13fcfb88405453b8bf12d9769238a1d4">m_currentPage</a>]-&gt;text().toInt();</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;}</div>
 <div class="ttc" id="namespace_music_u_i_object_html_a61916a5040ff772ef2dd4fa88a8307b2"><div class="ttname"><a href="../../d2/dc5/namespace_music_u_i_object.html#a61916a5040ff772ef2dd4fa88a8307b2">MusicUIObject::MFontStyle05</a></div><div class="ttdeci">const QString MFontStyle05</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/deb/musicuiobject_8h_source.html#l00173">musicuiobject.h:173</a></div></div>
+<div class="ttc" id="namespace_music_utils_1_1_widget_html_a01c384aa6781270e7fed39404f6b44dc"><div class="ttname"><a href="../../d2/d69/namespace_music_utils_1_1_widget.html#a01c384aa6781270e7fed39404f6b44dc">MusicUtils::Widget::fontTextWidth</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT int fontTextWidth(const QFont &amp;font, const QString &amp;text)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d90/musicwidgetutils_8cpp_source.html#l00041">musicwidgetutils.cpp:41</a></div></div>
 <div class="ttc" id="namespace_music_u_i_object_html_aa6491d954ca8cad669475714773977de"><div class="ttname"><a href="../../d2/dc5/namespace_music_u_i_object.html#aa6491d954ca8cad669475714773977de">MusicUIObject::MFontStyle01</a></div><div class="ttdeci">const QString MFontStyle01</div><div class="ttdoc">Font. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/deb/musicuiobject_8h_source.html#l00161">musicuiobject.h:161</a></div></div>
 <div class="ttc" id="namespace_music_u_i_object_html_a8f3b97d0ec72ceee48c6d8858d98d9c0"><div class="ttname"><a href="../../d2/dc5/namespace_music_u_i_object.html#a8f3b97d0ec72ceee48c6d8858d98d9c0">MusicUIObject::MColorStyle04</a></div><div class="ttdeci">const QString MColorStyle04</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/deb/musicuiobject_8h_source.html#l00039">musicuiobject.h:39</a></div></div>
 <div class="ttc" id="musicuiobject_8h_html"><div class="ttname"><a href="../../d0/deb/musicuiobject_8h.html">musicuiobject.h</a></div></div>
 <div class="ttc" id="class_music_paging_widget_object_html_af3901d8f4df2557acb3565ca4eab909b"><div class="ttname"><a href="../../db/de2/class_music_paging_widget_object.html#af3901d8f4df2557acb3565ca4eab909b">MusicPagingWidgetObject::m_pagingWidget</a></div><div class="ttdeci">QWidget * m_pagingWidget</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc2/musicpagingwidgetobject_8h_source.html#l00070">musicpagingwidgetobject.h:70</a></div></div>
 <div class="ttc" id="class_music_paging_widget_object_html_a13fcfb88405453b8bf12d9769238a1d4"><div class="ttname"><a href="../../db/de2/class_music_paging_widget_object.html#a13fcfb88405453b8bf12d9769238a1d4">MusicPagingWidgetObject::m_currentPage</a></div><div class="ttdeci">int m_currentPage</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc2/musicpagingwidgetobject_8h_source.html#l00069">musicpagingwidgetobject.h:69</a></div></div>
+<div class="ttc" id="musicwidgetutils_8h_html"><div class="ttname"><a href="../../d3/d4c/musicwidgetutils_8h.html">musicwidgetutils.h</a></div></div>
 <div class="ttc" id="class_music_paging_widget_object_html_afa8b574425d22a68eb1e4c2365e559e5"><div class="ttname"><a href="../../db/de2/class_music_paging_widget_object.html#afa8b574425d22a68eb1e4c2365e559e5">MusicPagingWidgetObject::getCreatePagingWidget</a></div><div class="ttdeci">QWidget * getCreatePagingWidget()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00024">musicpagingwidgetobject.cpp:24</a></div></div>
 <div class="ttc" id="class_music_paging_widget_object_html_a5ef978d7d041916db224d6b25cc55ce2"><div class="ttname"><a href="../../db/de2/class_music_paging_widget_object.html#a5ef978d7d041916db224d6b25cc55ce2">MusicPagingWidgetObject::paging</a></div><div class="ttdeci">void paging(int index, int total)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00124">musicpagingwidgetobject.cpp:124</a></div></div>
 <div class="ttc" id="class_music_paging_widget_object_html_a92cf6452bae1f92a38c8bfc06d3afcfe"><div class="ttname"><a href="../../db/de2/class_music_paging_widget_object.html#a92cf6452bae1f92a38c8bfc06d3afcfe">MusicPagingWidgetObject::~MusicPagingWidgetObject</a></div><div class="ttdeci">virtual ~MusicPagingWidgetObject()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00018">musicpagingwidgetobject.cpp:18</a></div></div>
@@ -321,7 +323,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 30 2019 15:33:24 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 18 2020 15:06:41 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

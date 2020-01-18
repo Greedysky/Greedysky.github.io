@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.10.0.0</span>
+   &#160;<span id="projectnumber">2.11.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -135,7 +135,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="../../d8/d59/class_q_json_1_1_serializer.html">Serializer</a> serializer;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">bool</span> ok;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">const</span> QByteArray serialized = serializer.<a class="code" href="../../d8/d59/class_q_json_1_1_serializer.html#aa92d60f9b4b503a44511611eed50f548">serialize</a>( d-&gt;json, &amp;ok);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  emit <a class="code" href="../../db/db1/class_q_json_1_1_serializer_runnable.html#ad1269213d1dc85522dcfccef77edf4e2">parsingFinished</a>( serialized, ok, serializer.<a class="code" href="../../d8/d59/class_q_json_1_1_serializer.html#ae8ab6d3f9ab7f6e627ee3fcb73a2e0b1">errorMessage</a>() );</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  Q_EMIT <a class="code" href="../../db/db1/class_q_json_1_1_serializer_runnable.html#ad1269213d1dc85522dcfccef77edf4e2">parsingFinished</a>( serialized, ok, serializer.<a class="code" href="../../d8/d59/class_q_json_1_1_serializer.html#ae8ab6d3f9ab7f6e627ee3fcb73a2e0b1">errorMessage</a>() );</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
 <div class="ttc" id="class_q_json_1_1_serializer_runnable_html_ad1269213d1dc85522dcfccef77edf4e2"><div class="ttname"><a href="../../db/db1/class_q_json_1_1_serializer_runnable.html#ad1269213d1dc85522dcfccef77edf4e2">QJson::SerializerRunnable::parsingFinished</a></div><div class="ttdeci">void parsingFinished(const QByteArray &amp;serialized, bool ok, const QString &amp;error_msg)</div><div class="ttdoc">This signal is emitted when the serialization process has been completed. </div></div>
 <div class="ttc" id="class_q_json_1_1_serializer_runnable_html"><div class="ttname"><a href="../../db/db1/class_q_json_1_1_serializer_runnable.html">QJson::SerializerRunnable</a></div><div class="ttdoc">Convenience class for converting JSON data to QVariant objects using a dedicated thread. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d95/serializerrunnable_8h_source.html#l00039">serializerrunnable.h:39</a></div></div>
@@ -151,13 +151,13 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_serializer_runnable_1_1_serializer_runnable_private_html"><div class="ttname"><a href="../../d9/d16/class_serializer_runnable_1_1_serializer_runnable_private.html">QJson::SerializerRunnable::SerializerRunnablePrivate</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d80/serializerrunnable_8cpp_source.html#l00032">serializerrunnable.cpp:32</a></div></div>
 <div class="ttc" id="class_q_json_1_1_serializer_html_ae8ab6d3f9ab7f6e627ee3fcb73a2e0b1"><div class="ttname"><a href="../../d8/d59/class_q_json_1_1_serializer.html#ae8ab6d3f9ab7f6e627ee3fcb73a2e0b1">QJson::Serializer::errorMessage</a></div><div class="ttdeci">QString errorMessage() const </div><div class="ttdoc">Returns the error message. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d74/serializer_8cpp_source.html#l00478">serializer.cpp:478</a></div></div>
 <div class="ttc" id="serializerrunnable_8h_html"><div class="ttname"><a href="../../d9/d95/serializerrunnable_8h.html">serializerrunnable.h</a></div></div>
-<div class="ttc" id="class_t_t_k_private_html"><div class="ttname"><a href="../../d1/d29/class_t_t_k_private.html">TTKPrivate</a></div><div class="ttdoc">The class of the ttk private base. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00040">ttkprivate.h:40</a></div></div>
+<div class="ttc" id="class_t_t_k_private_html"><div class="ttname"><a href="../../d1/d29/class_t_t_k_private.html">TTKPrivate</a></div><div class="ttdoc">The class of the ttk private base. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00043">ttkprivate.h:43</a></div></div>
 <div class="ttc" id="class_q_json_1_1_serializer_html_aa92d60f9b4b503a44511611eed50f548"><div class="ttname"><a href="../../d8/d59/class_q_json_1_1_serializer.html#aa92d60f9b4b503a44511611eed50f548">QJson::Serializer::serialize</a></div><div class="ttdeci">void serialize(const QVariant &amp;variant, QIODevice *out, bool *ok)</div><div class="ttdoc">This method generates a textual JSON representation and outputs it to the passed in I/O Device...</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d74/serializer_8cpp_source.html#l00397">serializer.cpp:397</a></div></div>
-<div class="ttc" id="ttkprivate_8h_html_a8eedd09c47b53d5e42ca132295c5e1ef"><div class="ttname"><a href="../../dd/d24/ttkprivate_8h.html#a8eedd09c47b53d5e42ca132295c5e1ef">TTK_D</a></div><div class="ttdeci">#define TTK_D(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00033">ttkprivate.h:33</a></div></div>
+<div class="ttc" id="ttkprivate_8h_html_a8eedd09c47b53d5e42ca132295c5e1ef"><div class="ttname"><a href="../../dd/d24/ttkprivate_8h.html#a8eedd09c47b53d5e42ca132295c5e1ef">TTK_D</a></div><div class="ttdeci">#define TTK_D(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00036">ttkprivate.h:36</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 30 2019 15:33:33 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 18 2020 15:06:49 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

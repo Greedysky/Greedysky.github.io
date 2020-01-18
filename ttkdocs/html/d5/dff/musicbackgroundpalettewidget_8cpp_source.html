@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.10.0.0</span>
+   &#160;<span id="projectnumber">2.11.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -116,7 +116,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    image.fill(color);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">if</span>(image.save( <a class="code" href="../../d2/d77/musicotherdefine_8h.html#a61c34894038965bfd1df2b2d37cd7ebf">MUSIC_COLOR_FILE</a> ))</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        emit <a class="code" href="../../dc/d9d/class_music_background_palette.html#a919eca1ecda8136a64d7762d7b355d7f">currentColorToMemoryChanged</a>( <a class="code" href="../../d2/d77/musicotherdefine_8h.html#a61c34894038965bfd1df2b2d37cd7ebf">MUSIC_COLOR_FILE</a> );</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        Q_EMIT <a class="code" href="../../dc/d9d/class_music_background_palette.html#a919eca1ecda8136a64d7762d7b355d7f">currentColorToMemoryChanged</a>( <a class="code" href="../../d2/d77/musicotherdefine_8h.html#a61c34894038965bfd1df2b2d37cd7ebf">MUSIC_COLOR_FILE</a> );</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
@@ -131,7 +131,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">//    QLabel::mousePressEvent(event);</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">if</span>(event-&gt;button() == Qt::LeftButton)</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        emit <a class="code" href="../../dc/d9d/class_music_background_palette.html#ace1522d0465d2c7290255c2aaccc55f3">currentColorToFileChanged</a>(<a class="code" href="../../dc/d9d/class_music_background_palette.html#a9fef9db716e647f67bcf2c37e3673279">m_color</a>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        Q_EMIT <a class="code" href="../../dc/d9d/class_music_background_palette.html#ace1522d0465d2c7290255c2aaccc55f3">currentColorToFileChanged</a>(<a class="code" href="../../dc/d9d/class_music_background_palette.html#a9fef9db716e647f67bcf2c37e3673279">m_color</a>);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
@@ -251,7 +251,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    QFile::remove(<a class="code" href="../../d2/d77/musicotherdefine_8h.html#a61c34894038965bfd1df2b2d37cd7ebf">MUSIC_COLOR_FILE</a>);</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="../../d6/d10/class_music_background_palette_widget.html#a34d66c7d0d903f7a04d34748335aa6f8">m_confirmButtonClicked</a>)</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    {</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        emit <a class="code" href="../../d6/d10/class_music_background_palette_widget.html#a96a6378ffdcc269d9966f5e4ffb26c2f">currentColorToMemoryChanged</a>(<a class="code" href="../../d6/d10/class_music_background_palette_widget.html#a238c297c72389371501a957f9b15ce65">m_previousBackground</a>);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        Q_EMIT <a class="code" href="../../d6/d10/class_music_background_palette_widget.html#a96a6378ffdcc269d9966f5e4ffb26c2f">currentColorToMemoryChanged</a>(<a class="code" href="../../d6/d10/class_music_background_palette_widget.html#a238c297c72389371501a957f9b15ce65">m_previousBackground</a>);</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    }</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    qDeleteAll(<a class="code" href="../../d6/d10/class_music_background_palette_widget.html#a15372cd5b189d51a87e20cc36dca6e5f">m_widgets</a>);</div>
@@ -280,7 +280,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        image.fill(<a class="code" href="../../d6/d10/class_music_background_palette_widget.html#a4da106dd291e8bd6dbce571da401958d">m_currentColor</a>);</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="keywordflow">if</span>(image.save( <a class="code" href="../../d2/d77/musicotherdefine_8h.html#a61c34894038965bfd1df2b2d37cd7ebf">MUSIC_COLOR_FILE</a> ))</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        {</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            emit <a class="code" href="../../d6/d10/class_music_background_palette_widget.html#a29154ee6cfc4ebe5977e5c1811a0d8fe">currentColorToFileChanged</a>( <a class="code" href="../../d2/d77/musicotherdefine_8h.html#a61c34894038965bfd1df2b2d37cd7ebf">MUSIC_COLOR_FILE</a> );</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            Q_EMIT <a class="code" href="../../d6/d10/class_music_background_palette_widget.html#a29154ee6cfc4ebe5977e5c1811a0d8fe">currentColorToFileChanged</a>( <a class="code" href="../../d2/d77/musicotherdefine_8h.html#a61c34894038965bfd1df2b2d37cd7ebf">MUSIC_COLOR_FILE</a> );</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        }</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    }</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    close();</div>
@@ -313,7 +313,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00234"></a><span class="lineno"><a class="line" href="../../d6/d10/class_music_background_palette_widget.html#a05ef734bd0e3aaed9c9d2614f467238d">  234</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d6/d10/class_music_background_palette_widget.html#a05ef734bd0e3aaed9c9d2614f467238d">MusicBackgroundPaletteWidget::currentColorToMemory</a>(<span class="keyword">const</span> QString &amp;path)</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;{</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <a class="code" href="../../d6/d10/class_music_background_palette_widget.html#a9117d76c527337dddfb66cf737682851">updateBackground</a>(path);</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    emit <a class="code" href="../../d6/d10/class_music_background_palette_widget.html#a96a6378ffdcc269d9966f5e4ffb26c2f">currentColorToMemoryChanged</a>( path );</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    Q_EMIT <a class="code" href="../../d6/d10/class_music_background_palette_widget.html#a96a6378ffdcc269d9966f5e4ffb26c2f">currentColorToMemoryChanged</a>( path );</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;}</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
 <div class="line"><a name="l00240"></a><span class="lineno"><a class="line" href="../../d6/d10/class_music_background_palette_widget.html#a33997d4d2bcdaf038c30bbe6d39b9506">  240</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d6/d10/class_music_background_palette_widget.html#a33997d4d2bcdaf038c30bbe6d39b9506">MusicBackgroundPaletteWidget::exec</a>()</div>
@@ -372,7 +372,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 30 2019 15:33:22 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 18 2020 15:06:40 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

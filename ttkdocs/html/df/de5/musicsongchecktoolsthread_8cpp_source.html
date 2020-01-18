@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.10.0.0</span>
+   &#160;<span id="projectnumber">2.11.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -106,7 +106,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            {</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <span class="keywordflow">if</span>(!<a class="code" href="../../d5/d46/class_music_abstract_thread.html#a935989414ec25e3dc18d9148531a9a2c">m_run</a>)</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                    emit <a class="code" href="../../d4/db8/class_music_song_check_tools_rename_thread.html#aa8f5957ef5b26174e791b7e62bf0b1f3">finished</a>(MusicSongCheckToolsRenames());</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                    Q_EMIT <a class="code" href="../../d4/db8/class_music_song_check_tools_rename_thread.html#aa8f5957ef5b26174e791b7e62bf0b1f3">finished</a>(MusicSongCheckToolsRenames());</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                }</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
@@ -129,7 +129,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            {</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                <span class="keywordflow">if</span>(!<a class="code" href="../../d5/d46/class_music_abstract_thread.html#a935989414ec25e3dc18d9148531a9a2c">m_run</a>)</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                    emit <a class="code" href="../../d4/db8/class_music_song_check_tools_rename_thread.html#aa8f5957ef5b26174e791b7e62bf0b1f3">finished</a>(MusicSongCheckToolsRenames());</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                    Q_EMIT <a class="code" href="../../d4/db8/class_music_song_check_tools_rename_thread.html#aa8f5957ef5b26174e791b7e62bf0b1f3">finished</a>(MusicSongCheckToolsRenames());</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
@@ -139,7 +139,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        }</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    emit <a class="code" href="../../d4/db8/class_music_song_check_tools_rename_thread.html#aa8f5957ef5b26174e791b7e62bf0b1f3">finished</a>(<a class="code" href="../../d4/db8/class_music_song_check_tools_rename_thread.html#a8015ea7bf1af6d10b0fbe1f058eef2df">m_datas</a>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    Q_EMIT <a class="code" href="../../d4/db8/class_music_song_check_tools_rename_thread.html#aa8f5957ef5b26174e791b7e62bf0b1f3">finished</a>(<a class="code" href="../../d4/db8/class_music_song_check_tools_rename_thread.html#a8015ea7bf1af6d10b0fbe1f058eef2df">m_datas</a>);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
@@ -169,7 +169,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            {</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <span class="keywordflow">if</span>(!<a class="code" href="../../dc/d23/class_music_song_check_tools_duplicate_thread.html#ad48491d15bfbc014b48c0138a9df24e6">m_run</a>)</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                    emit <a class="code" href="../../dc/d23/class_music_song_check_tools_duplicate_thread.html#ac182f5c4c482ee99f01ab92887a22774">finished</a>(MusicSongCheckToolsDuplicates());</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                    Q_EMIT <a class="code" href="../../dc/d23/class_music_song_check_tools_duplicate_thread.html#ac182f5c4c482ee99f01ab92887a22774">finished</a>(MusicSongCheckToolsDuplicates());</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                }</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
@@ -187,7 +187,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            {</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                <span class="keywordflow">if</span>(!<a class="code" href="../../dc/d23/class_music_song_check_tools_duplicate_thread.html#ad48491d15bfbc014b48c0138a9df24e6">m_run</a>)</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                {</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                    emit <a class="code" href="../../dc/d23/class_music_song_check_tools_duplicate_thread.html#ac182f5c4c482ee99f01ab92887a22774">finished</a>(MusicSongCheckToolsDuplicates());</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                    Q_EMIT <a class="code" href="../../dc/d23/class_music_song_check_tools_duplicate_thread.html#ac182f5c4c482ee99f01ab92887a22774">finished</a>(MusicSongCheckToolsDuplicates());</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                }</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
@@ -196,7 +196,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            }</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        }</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    emit <a class="code" href="../../dc/d23/class_music_song_check_tools_duplicate_thread.html#ac182f5c4c482ee99f01ab92887a22774">finished</a>(<a class="code" href="../../dc/d23/class_music_song_check_tools_duplicate_thread.html#ad4291473c16d93bcc6789abd627a3a1e">m_datas</a>);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    Q_EMIT <a class="code" href="../../dc/d23/class_music_song_check_tools_duplicate_thread.html#ac182f5c4c482ee99f01ab92887a22774">finished</a>(<a class="code" href="../../dc/d23/class_music_song_check_tools_duplicate_thread.html#ad4291473c16d93bcc6789abd627a3a1e">m_datas</a>);</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
@@ -224,7 +224,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        {</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <span class="keywordflow">if</span>(!<a class="code" href="../../d5/d46/class_music_abstract_thread.html#a935989414ec25e3dc18d9148531a9a2c">m_run</a>)</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            {</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                emit <a class="code" href="../../d0/dff/class_music_song_check_tools_quality_thread.html#ac309f644f11419787050c0ef55d5ab1c">finished</a>(MusicSongCheckToolsQualitys());</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                Q_EMIT <a class="code" href="../../d0/dff/class_music_song_check_tools_quality_thread.html#ac309f644f11419787050c0ef55d5ab1c">finished</a>(MusicSongCheckToolsQualitys());</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            }</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
@@ -236,7 +236,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            items &lt;&lt; <a class="code" href="../../df/d61/musicsongchecktoolsunit_8h.html#aa7227028b8000e961d9dd8757c64ddd9">MusicSongCheckToolsQuality</a>(song, tag.<a class="code" href="../../dd/db7/class_music_song_tag.html#a3a4eecae0c9a6e878e781a5ff31a086e">getBitrate</a>());</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        }</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    }</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    emit <a class="code" href="../../d0/dff/class_music_song_check_tools_quality_thread.html#ac309f644f11419787050c0ef55d5ab1c">finished</a>(items);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    Q_EMIT <a class="code" href="../../d0/dff/class_music_song_check_tools_quality_thread.html#ac309f644f11419787050c0ef55d5ab1c">finished</a>(items);</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;}</div>
 <div class="ttc" id="class_music_song_check_tools_rename_thread_html_ae7fd7e669fdf37758940ee03c442ea27"><div class="ttname"><a href="../../d4/db8/class_music_song_check_tools_rename_thread.html#ae7fd7e669fdf37758940ee03c442ea27">MusicSongCheckToolsRenameThread::m_songItems</a></div><div class="ttdeci">MusicSongs * m_songItems</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d8a/musicsongchecktoolsthread_8h_source.html#l00052">musicsongchecktoolsthread.h:52</a></div></div>
 <div class="ttc" id="class_music_song_check_tools_quality_thread_html_ac309f644f11419787050c0ef55d5ab1c"><div class="ttname"><a href="../../d0/dff/class_music_song_check_tools_quality_thread.html#ac309f644f11419787050c0ef55d5ab1c">MusicSongCheckToolsQualityThread::finished</a></div><div class="ttdeci">void finished(const MusicSongCheckToolsQualitys &amp;items)</div></div>
@@ -287,7 +287,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 30 2019 15:33:07 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 18 2020 15:06:28 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
