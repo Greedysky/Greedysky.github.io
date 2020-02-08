@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.11.0.0</span>
+   &#160;<span id="projectnumber">2.11.1.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -100,77 +100,78 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#a1d92c9aa068427d034d356585a819866">MStringMap</a> headers;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    headers.insert(<span class="stringliteral">&quot;Date&quot;</span>, <a class="code" href="../../d6/d60/class_o_s_s_utils.html#aa7c4bbb4a0b6344449f713709d2042f7">OSSUtils::getGMT</a>());</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    headers.insert(<span class="stringliteral">&quot;Host&quot;</span>, host);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    d-&gt;insertAuthorization(method, headers, resource);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    QNetworkRequest request;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    request.setUrl(QUrl(<span class="stringliteral">&quot;http://&quot;</span> + host + url));</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#a601d610bf4fce7b151e820ec0ebe1dc8">MStringMapterator</a> it(headers);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">while</span>(it.hasNext())</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        it.next();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        request.setRawHeader(it.key().toUtf8(), it.value().toUtf8());</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    QNetworkReply *reply = d-&gt;m_networkManager-&gt;get(request);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    connect(reply, SIGNAL(finished()), SLOT(<a class="code" href="../../d3/dc4/class_o_s_s_list_data.html#abd11b8930f7a8a9ebe2d6011f354f1a3">receiveDataFromServer</a>()));</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    connect(reply, SIGNAL(error(<a class="code" href="../../df/dbc/namespace_music_object.html#a739090443491193d34585a1956fa3daca0a95e1345ae0e36c86067c5cc867f809">QNetworkReply::NetworkError</a>)), SLOT(<a class="code" href="../../d3/da7/class_o_s_s_data_interface.html#ac0061c9ccc59dfd6d80033d1dba02e6d">handleError</a>(<a class="code" href="../../df/dbc/namespace_music_object.html#a739090443491193d34585a1956fa3daca0a95e1345ae0e36c86067c5cc867f809">QNetworkReply::NetworkError</a>)));</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../d3/dc4/class_o_s_s_list_data.html#abd11b8930f7a8a9ebe2d6011f354f1a3">   42</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d3/dc4/class_o_s_s_list_data.html#abd11b8930f7a8a9ebe2d6011f354f1a3">OSSListData::receiveDataFromServer</a>()</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    OSSDataItems items;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    QNetworkReply *reply = <a class="code" href="../../df/d7f/ttkglobal_8h.html#a039d9247f5c3141fcc2f8a00583f292f">MObject_cast</a>(QNetworkReply*, QObject::sender());</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">if</span>(reply &amp;&amp; reply-&gt;attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt() == 200)</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        QDomDocument docment;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">if</span>(docment.setContent(reply-&gt;readAll()))</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keyword">const</span> QDomNodeList &amp;nodeList = docment.elementsByTagName(<span class="stringliteral">&quot;Contents&quot;</span>);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;nodeList.count(); ++i)</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <a class="code" href="../../da/d27/struct_o_s_s_data_item.html">OSSDataItem</a> item;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <span class="keyword">const</span> QDomNodeList &amp;childList = nodeList.at(i).childNodes();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;childList.count(); ++j)</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                     <span class="keyword">const</span> QDomNode &amp;node = childList.at(j);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                     <span class="keywordflow">if</span>(node.nodeName() == <span class="stringliteral">&quot;Key&quot;</span>)</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                     {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                         item.<a class="code" href="../../da/d27/struct_o_s_s_data_item.html#accce2f2b324047294527906b27ffe27a">m_name</a> = node.toElement().text();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                     }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                     <span class="keywordflow">else</span> <span class="keywordflow">if</span>(node.nodeName() == <span class="stringliteral">&quot;LastModified&quot;</span>)</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                     {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                         QDateTime date = QDateTime::fromString(node.toElement().text(), <span class="stringliteral">&quot;yyyy-MM-ddThh:mm:ss.zzzZ&quot;</span>);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                         date = date.addSecs(8*60*60);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                         item.<a class="code" href="../../da/d27/struct_o_s_s_data_item.html#af9f588e584e760b8121734c07f4697b2">m_putTime</a> = date.toString(<span class="stringliteral">&quot;yyyy-MM-dd hh:mm&quot;</span>);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                     }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                     <span class="keywordflow">else</span> <span class="keywordflow">if</span>(node.nodeName() == <span class="stringliteral">&quot;ETag&quot;</span>)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                     {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                         item.<a class="code" href="../../da/d27/struct_o_s_s_data_item.html#aaf2cde9f2350908c822e32e766b98c9f">m_hash</a> = node.toElement().text();</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                         item.<a class="code" href="../../da/d27/struct_o_s_s_data_item.html#aaf2cde9f2350908c822e32e766b98c9f">m_hash</a>.remove(0, 1);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                         item.<a class="code" href="../../da/d27/struct_o_s_s_data_item.html#aaf2cde9f2350908c822e32e766b98c9f">m_hash</a>.chop(1);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                     }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                     <span class="keywordflow">else</span> <span class="keywordflow">if</span>(node.nodeName() == <span class="stringliteral">&quot;Size&quot;</span>)</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                     {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                         item.<a class="code" href="../../da/d27/struct_o_s_s_data_item.html#a64fad46b5ccc5605a3f22be90d0ee66b">m_size</a> = node.toElement().text().toInt();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                     }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                     <span class="keywordflow">else</span> <span class="keywordflow">if</span>(node.nodeName() == <span class="stringliteral">&quot;Type&quot;</span>)</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                     {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                         item.<a class="code" href="../../da/d27/struct_o_s_s_data_item.html#a4b9611e8b76e59b074ffb97cedee0eee">m_mimeType</a> = node.toElement().text();</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                     }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                     <span class="keywordflow">else</span> <span class="keywordflow">if</span>(node.nodeName() == <span class="stringliteral">&quot;Owner&quot;</span>)</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                     {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                         items &lt;&lt; item;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                         item.<a class="code" href="../../da/d27/struct_o_s_s_data_item.html#aa1a2effd0464652d623a49253ef39338">clear</a>();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                     }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        }</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        reply-&gt;deleteLater();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    Q_EMIT <a class="code" href="../../d3/dc4/class_o_s_s_list_data.html#ac1fde20802e92ad4b2dfdfc057b7167c">receiveFinshed</a>(items);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    headers.insert(<span class="stringliteral">&quot;Content-Type&quot;</span>, <span class="stringliteral">&quot;charset=utf-8&quot;</span>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    d-&gt;insertAuthorization(method, headers, resource);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    QNetworkRequest request;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    request.setUrl(QUrl(<span class="stringliteral">&quot;http://&quot;</span> + host + url));</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#a601d610bf4fce7b151e820ec0ebe1dc8">MStringMapterator</a> it(headers);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">while</span>(it.hasNext())</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        it.next();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        request.setRawHeader(it.key().toUtf8(), it.value().toUtf8());</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    QNetworkReply *reply = d-&gt;m_networkManager-&gt;get(request);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    connect(reply, SIGNAL(finished()), SLOT(<a class="code" href="../../d3/dc4/class_o_s_s_list_data.html#abd11b8930f7a8a9ebe2d6011f354f1a3">receiveDataFromServer</a>()));</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    connect(reply, SIGNAL(error(<a class="code" href="../../df/dbc/namespace_music_object.html#a739090443491193d34585a1956fa3daca0a95e1345ae0e36c86067c5cc867f809">QNetworkReply::NetworkError</a>)), SLOT(<a class="code" href="../../d3/da7/class_o_s_s_data_interface.html#ac0061c9ccc59dfd6d80033d1dba02e6d">handleError</a>(<a class="code" href="../../df/dbc/namespace_music_object.html#a739090443491193d34585a1956fa3daca0a95e1345ae0e36c86067c5cc867f809">QNetworkReply::NetworkError</a>)));</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="../../d3/dc4/class_o_s_s_list_data.html#abd11b8930f7a8a9ebe2d6011f354f1a3">   43</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d3/dc4/class_o_s_s_list_data.html#abd11b8930f7a8a9ebe2d6011f354f1a3">OSSListData::receiveDataFromServer</a>()</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    OSSDataItems items;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    QNetworkReply *reply = <a class="code" href="../../df/d7f/ttkglobal_8h.html#a039d9247f5c3141fcc2f8a00583f292f">MObject_cast</a>(QNetworkReply*, QObject::sender());</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">if</span>(reply &amp;&amp; reply-&gt;attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt() == 200)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        QDomDocument docment;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">if</span>(docment.setContent(reply-&gt;readAll()))</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keyword">const</span> QDomNodeList &amp;nodeList = docment.elementsByTagName(<span class="stringliteral">&quot;Contents&quot;</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;nodeList.count(); ++i)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <a class="code" href="../../da/d27/struct_o_s_s_data_item.html">OSSDataItem</a> item;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                <span class="keyword">const</span> QDomNodeList &amp;childList = nodeList.at(i).childNodes();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;childList.count(); ++j)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                     <span class="keyword">const</span> QDomNode &amp;node = childList.at(j);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                     <span class="keywordflow">if</span>(node.nodeName() == <span class="stringliteral">&quot;Key&quot;</span>)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                     {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                         item.<a class="code" href="../../da/d27/struct_o_s_s_data_item.html#accce2f2b324047294527906b27ffe27a">m_name</a> = node.toElement().text();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                     }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                     <span class="keywordflow">else</span> <span class="keywordflow">if</span>(node.nodeName() == <span class="stringliteral">&quot;LastModified&quot;</span>)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                     {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                         QDateTime date = QDateTime::fromString(node.toElement().text(), <span class="stringliteral">&quot;yyyy-MM-ddThh:mm:ss.zzzZ&quot;</span>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                         date = date.addSecs(8*60*60);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                         item.<a class="code" href="../../da/d27/struct_o_s_s_data_item.html#af9f588e584e760b8121734c07f4697b2">m_putTime</a> = date.toString(<span class="stringliteral">&quot;yyyy-MM-dd hh:mm&quot;</span>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                     }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                     <span class="keywordflow">else</span> <span class="keywordflow">if</span>(node.nodeName() == <span class="stringliteral">&quot;ETag&quot;</span>)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                     {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                         item.<a class="code" href="../../da/d27/struct_o_s_s_data_item.html#aaf2cde9f2350908c822e32e766b98c9f">m_hash</a> = node.toElement().text();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                         item.<a class="code" href="../../da/d27/struct_o_s_s_data_item.html#aaf2cde9f2350908c822e32e766b98c9f">m_hash</a>.remove(0, 1);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                         item.<a class="code" href="../../da/d27/struct_o_s_s_data_item.html#aaf2cde9f2350908c822e32e766b98c9f">m_hash</a>.chop(1);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                     }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                     <span class="keywordflow">else</span> <span class="keywordflow">if</span>(node.nodeName() == <span class="stringliteral">&quot;Size&quot;</span>)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                     {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                         item.<a class="code" href="../../da/d27/struct_o_s_s_data_item.html#a64fad46b5ccc5605a3f22be90d0ee66b">m_size</a> = node.toElement().text().toInt();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                     }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                     <span class="keywordflow">else</span> <span class="keywordflow">if</span>(node.nodeName() == <span class="stringliteral">&quot;Type&quot;</span>)</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                     {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                         item.<a class="code" href="../../da/d27/struct_o_s_s_data_item.html#a4b9611e8b76e59b074ffb97cedee0eee">m_mimeType</a> = node.toElement().text();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                     }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                     <span class="keywordflow">else</span> <span class="keywordflow">if</span>(node.nodeName() == <span class="stringliteral">&quot;Owner&quot;</span>)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                     {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                         items &lt;&lt; item;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                         item.<a class="code" href="../../da/d27/struct_o_s_s_data_item.html#aa1a2effd0464652d623a49253ef39338">clear</a>();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                     }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        reply-&gt;deleteLater();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    Q_EMIT <a class="code" href="../../d3/dc4/class_o_s_s_list_data.html#ac1fde20802e92ad4b2dfdfc057b7167c">receiveFinshed</a>(items);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
 <div class="ttc" id="struct_o_s_s_data_item_html_aa1a2effd0464652d623a49253ef39338"><div class="ttname"><a href="../../da/d27/struct_o_s_s_data_item.html#aa1a2effd0464652d623a49253ef39338">OSSDataItem::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db6/ossdataitem_8h_source.html#l00040">ossdataitem.h:40</a></div></div>
 <div class="ttc" id="ttkglobal_8h_html_a601d610bf4fce7b151e820ec0ebe1dc8"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#a601d610bf4fce7b151e820ec0ebe1dc8">MStringMapterator</a></div><div class="ttdeci">QMapIterator&lt; QString, QString &gt; MStringMapterator</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00194">ttkglobal.h:194</a></div></div>
 <div class="ttc" id="class_o_s_s_data_interface_html"><div class="ttname"><a href="../../d3/da7/class_o_s_s_data_interface.html">OSSDataInterface</a></div><div class="ttdoc">The class of the alioss cloud data item. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d69/ossdatainterface_8h_source.html#l00032">ossdatainterface.h:32</a></div></div>
@@ -181,7 +182,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="struct_o_s_s_data_item_html"><div class="ttname"><a href="../../da/d27/struct_o_s_s_data_item.html">OSSDataItem</a></div><div class="ttdoc">The class of the alioss data item. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db6/ossdataitem_8h_source.html#l00027">ossdataitem.h:27</a></div></div>
 <div class="ttc" id="class_o_s_s_list_data_html_a735080519251a97ad40a22e8115e8ea6"><div class="ttname"><a href="../../d3/dc4/class_o_s_s_list_data.html#a735080519251a97ad40a22e8115e8ea6">OSSListData::listDataOperator</a></div><div class="ttdeci">void listDataOperator(const QString &amp;bucket)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d53/osslistdata_8cpp_source.html#l00013">osslistdata.cpp:13</a></div></div>
 <div class="ttc" id="ttkglobal_8h_html_a039d9247f5c3141fcc2f8a00583f292f"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#a039d9247f5c3141fcc2f8a00583f292f">MObject_cast</a></div><div class="ttdeci">#define MObject_cast(x, y)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00082">ttkglobal.h:82</a></div></div>
-<div class="ttc" id="class_o_s_s_list_data_html_abd11b8930f7a8a9ebe2d6011f354f1a3"><div class="ttname"><a href="../../d3/dc4/class_o_s_s_list_data.html#abd11b8930f7a8a9ebe2d6011f354f1a3">OSSListData::receiveDataFromServer</a></div><div class="ttdeci">virtual void receiveDataFromServer() override</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d53/osslistdata_8cpp_source.html#l00042">osslistdata.cpp:42</a></div></div>
+<div class="ttc" id="class_o_s_s_list_data_html_abd11b8930f7a8a9ebe2d6011f354f1a3"><div class="ttname"><a href="../../d3/dc4/class_o_s_s_list_data.html#abd11b8930f7a8a9ebe2d6011f354f1a3">OSSListData::receiveDataFromServer</a></div><div class="ttdeci">virtual void receiveDataFromServer() override</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d53/osslistdata_8cpp_source.html#l00043">osslistdata.cpp:43</a></div></div>
 <div class="ttc" id="struct_o_s_s_data_item_html_af9f588e584e760b8121734c07f4697b2"><div class="ttname"><a href="../../da/d27/struct_o_s_s_data_item.html#af9f588e584e760b8121734c07f4697b2">OSSDataItem::m_putTime</a></div><div class="ttdeci">QString m_putTime</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db6/ossdataitem_8h_source.html#l00032">ossdataitem.h:32</a></div></div>
 <div class="ttc" id="struct_o_s_s_data_item_html_aaf2cde9f2350908c822e32e766b98c9f"><div class="ttname"><a href="../../da/d27/struct_o_s_s_data_item.html#aaf2cde9f2350908c822e32e766b98c9f">OSSDataItem::m_hash</a></div><div class="ttdeci">QString m_hash</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db6/ossdataitem_8h_source.html#l00030">ossdataitem.h:30</a></div></div>
 <div class="ttc" id="ttkglobal_8h_html_a1d92c9aa068427d034d356585a819866"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#a1d92c9aa068427d034d356585a819866">MStringMap</a></div><div class="ttdeci">QMap&lt; QString, QString &gt; MStringMap</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00189">ttkglobal.h:189</a></div></div>
@@ -196,7 +197,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 18 2020 15:06:49 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 8 2020 13:51:27 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

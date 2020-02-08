@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.11.0.0</span>
+   &#160;<span id="projectnumber">2.11.1.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -178,9 +178,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordtype">void</span> downloadGroupSpeedLimit(<span class="keywordtype">int</span> index);</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordtype">void</span> downloadDirSelected(<span class="keywordtype">int</span> index);</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordtype">void</span> otherVersionUpdateChanged();</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordtype">void</span> ripplesSpectrumColorChanged();</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordtype">void</span> ripplesSpectrumOpacityEnableClicked(<span class="keywordtype">bool</span> <a class="code" href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordtype">void</span> rippleVersionUpdateChanged();</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordtype">void</span> rippleSpectrumColorChanged();</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordtype">void</span> rippleSpectrumOpacityEnableClicked(<span class="keywordtype">bool</span> <a class="code" href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>);</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordtype">void</span> changeDesktopLrcWidget();</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordtype">void</span> changeInteriorLrcWidget();</div>
@@ -220,24 +220,25 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="keywordtype">void</span> selectFunctionTableIndex(<span class="keywordtype">int</span> row, <span class="keywordtype">int</span> col);</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keywordtype">void</span> initScrollWidgetPage();</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keywordtype">void</span> initNormalSettingWidget();</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keywordtype">void</span> initOtherSettingWidget();</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keywordtype">void</span> initDownloadWidget();</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordtype">void</span> initDesktopLrcWidget();</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keywordtype">void</span> initInteriorLrcWidget();</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordtype">void</span> initSoundEffectWidget();</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordtype">void</span> initAudioSettingWidget();</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="keywordtype">void</span> initNetworkWidget();</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keywordtype">void</span> lcrColorValue(Type <a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>, <span class="keyword">const</span> QString &amp;type, QLabel *obj);</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keywordtype">void</span> lrcColorByDefault(Type <a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>, <span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="keywordtype">void</span> lrcTransparentValue(Type <a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>, <span class="keywordtype">int</span> value) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keywordtype">bool</span> applyNetworkProxy();</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keywordtype">bool</span> setNetworkProxyByType(<span class="keywordtype">int</span> type);</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
-<div class="line"><a name="l00336"></a><span class="lineno"><a class="line" href="../../d0/d64/class_music_setting_widget.html#ac7cd4c2c48b1284e0a23c0e7d20bc26d">  336</a></span>&#160;    Ui::MusicSettingWidget *<a class="code" href="../../d0/d64/class_music_setting_widget.html#ac7cd4c2c48b1284e0a23c0e7d20bc26d">m_ui</a>;</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;};</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keywordtype">void</span> initSpectrumSettingWidget();</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keywordtype">void</span> initOtherSettingWidget();</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordtype">void</span> initDownloadWidget();</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keywordtype">void</span> initDesktopLrcWidget();</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordtype">void</span> initInteriorLrcWidget();</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordtype">void</span> initSoundEffectWidget();</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="keywordtype">void</span> initAudioSettingWidget();</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keywordtype">void</span> initNetworkWidget();</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keywordtype">void</span> lcrColorValue(Type <a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>, <span class="keyword">const</span> QString &amp;type, QLabel *obj);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="keywordtype">void</span> lrcColorByDefault(Type <a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>, <span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keywordtype">void</span> lrcTransparentValue(Type <a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>, <span class="keywordtype">int</span> value) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keywordtype">bool</span> applyNetworkProxy();</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keywordtype">bool</span> setNetworkProxyByType(<span class="keywordtype">int</span> type);</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="preprocessor">#endif // MUSICSETTINGWIDGET_H</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno"><a class="line" href="../../d0/d64/class_music_setting_widget.html#ac7cd4c2c48b1284e0a23c0e7d20bc26d">  340</a></span>&#160;    Ui::MusicSettingWidget *<a class="code" href="../../d0/d64/class_music_setting_widget.html#ac7cd4c2c48b1284e0a23c0e7d20bc26d">m_ui</a>;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;};</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="preprocessor">#endif // MUSICSETTINGWIDGET_H</span></div>
 <div class="ttc" id="struct_music_function_item_html_a7d284b73a54484d346de2f9c73951c7d"><div class="ttname"><a href="../../d3/d03/struct_music_function_item.html#a7d284b73a54484d346de2f9c73951c7d">MusicFunctionItem::MusicFunctionItem</a></div><div class="ttdeci">MusicFunctionItem(const QString &amp;icon, const QString &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00043">musicsettingwidget.h:43</a></div></div>
 <div class="ttc" id="ttkglobal_8h_html_a26874f3399a60d18f8f82ce4a546e0c9"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#a26874f3399a60d18f8f82ce4a546e0c9">TTK_DECLARE_LISTS</a></div><div class="ttdeci">#define TTK_DECLARE_LISTS(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00161">ttkglobal.h:161</a></div></div>
 <div class="ttc" id="musicabstractmovedialog_8h_html"><div class="ttname"><a href="../../da/d49/musicabstractmovedialog_8h.html">musicabstractmovedialog.h</a></div></div>
@@ -246,7 +247,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="musicuiobject_8h_html"><div class="ttname"><a href="../../d0/deb/musicuiobject_8h.html">musicuiobject.h</a></div></div>
 <div class="ttc" id="namespace_ui_html"><div class="ttname"><a href="../../dc/df0/namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d24/musicapplication_8h_source.html#l00033">musicapplication.h:33</a></div></div>
 <div class="ttc" id="class_music_abstract_table_widget_html"><div class="ttname"><a href="../../d1/dab/class_music_abstract_table_widget.html">MusicAbstractTableWidget</a></div><div class="ttdoc">The class of the table widget base. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/db4/musicabstracttablewidget_8h_source.html#l00038">musicabstracttablewidget.h:38</a></div></div>
-<div class="ttc" id="class_music_setting_widget_html_ac7cd4c2c48b1284e0a23c0e7d20bc26d"><div class="ttname"><a href="../../d0/d64/class_music_setting_widget.html#ac7cd4c2c48b1284e0a23c0e7d20bc26d">MusicSettingWidget::m_ui</a></div><div class="ttdeci">Ui::MusicSettingWidget * m_ui</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00336">musicsettingwidget.h:336</a></div></div>
+<div class="ttc" id="class_music_setting_widget_html_ac7cd4c2c48b1284e0a23c0e7d20bc26d"><div class="ttname"><a href="../../d0/d64/class_music_setting_widget.html#ac7cd4c2c48b1284e0a23c0e7d20bc26d">MusicSettingWidget::m_ui</a></div><div class="ttdeci">Ui::MusicSettingWidget * m_ui</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00340">musicsettingwidget.h:340</a></div></div>
 <div class="ttc" id="class_music_setting_widget_html_a79fe09f3da668f00f5e194f2c54a2856aaa18cacc9d56d0704792f8140060f454"><div class="ttname"><a href="../../d0/d64/class_music_setting_widget.html#a79fe09f3da668f00f5e194f2c54a2856aaa18cacc9d56d0704792f8140060f454">MusicSettingWidget::Interior</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00104">musicsettingwidget.h:104</a></div></div>
 <div class="ttc" id="struct_music_function_item_html"><div class="ttname"><a href="../../d3/d03/struct_music_function_item.html">MusicFunctionItem</a></div><div class="ttdoc">The class of the function tool item. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00036">musicsettingwidget.h:36</a></div></div>
 <div class="ttc" id="class_music_function_table_widget_html_a4e8b13559fd2aea12a5cd8f7780105b9"><div class="ttname"><a href="../../d5/db1/class_music_function_table_widget.html#a4e8b13559fd2aea12a5cd8f7780105b9">MusicFunctionTableWidget::m_listIndex</a></div><div class="ttdeci">int m_listIndex</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1c/musicsettingwidget_8h_source.html#l00090">musicsettingwidget.h:90</a></div></div>
@@ -265,7 +266,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 18 2020 15:06:43 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 8 2020 13:51:23 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

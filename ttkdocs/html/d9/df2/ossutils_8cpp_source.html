@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.11.0.0</span>
+   &#160;<span id="projectnumber">2.11.1.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -157,7 +157,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">const</span> QString &amp;sign = method + <span class="stringliteral">&quot;\n&quot;</span> + content_md5 + <span class="stringliteral">&quot;\n&quot;</span> + content_type + <span class="stringliteral">&quot;\n&quot;</span> + date + <span class="stringliteral">&quot;\n&quot;</span> + canonicalized_oss_headers + canonicalized_resource;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d9/df2/ossutils_8cpp.html#afa40c2185953ec80a37b5445fed6974a">hmacSha1</a>(key.toLocal8Bit(), sign.toLocal8Bit());</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d9/df2/ossutils_8cpp.html#afa40c2185953ec80a37b5445fed6974a">hmacSha1</a>(key.toUtf8(), sign.toUtf8());</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
 <div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="../../d6/d60/class_o_s_s_utils.html#ad574c91f30654ae1b1448d85999ec735">   84</a></span>&#160;QString <a class="code" href="../../d6/d60/class_o_s_s_utils.html#ad574c91f30654ae1b1448d85999ec735">OSSUtils::createSignForNormalAuth</a>(<span class="keyword">const</span> QString &amp;method,  <span class="keyword">const</span> QString &amp;access, <span class="keyword">const</span> QString &amp;secret,</div>
@@ -185,7 +185,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 18 2020 15:06:49 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 8 2020 13:51:27 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

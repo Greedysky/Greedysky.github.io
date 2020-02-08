@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.11.0.0</span>
+   &#160;<span id="projectnumber">2.11.1.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -110,7 +110,9 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="../../d0/d42/class_music_sound_effects_item_widget.html#af5680a8b5e22ab84bd512b3d36304e58a476c5dd64faab1a222100fdf8fe32c4e">LADSPA</a>, 
 <a class="el" href="../../d0/d42/class_music_sound_effects_item_widget.html#af5680a8b5e22ab84bd512b3d36304e58a2af04c6b263f75a10a747c666dd350e8">Soxr</a>, 
 <a class="el" href="../../d0/d42/class_music_sound_effects_item_widget.html#af5680a8b5e22ab84bd512b3d36304e58a7bfbe312e42b1273bbcda81c314cb84f">SrcConverter</a>, 
-<a class="el" href="../../d0/d42/class_music_sound_effects_item_widget.html#af5680a8b5e22ab84bd512b3d36304e58aa3ff3e26d664326e4da8eb6a58b25d50">MonoStereo</a>
+<a class="el" href="../../d0/d42/class_music_sound_effects_item_widget.html#af5680a8b5e22ab84bd512b3d36304e58aa3ff3e26d664326e4da8eb6a58b25d50">MonoStereo</a>, 
+<br />
+&#160;&#160;<a class="el" href="../../d0/d42/class_music_sound_effects_item_widget.html#af5680a8b5e22ab84bd512b3d36304e58a0202d8334b07a8b3b742c21c79c33ad9">Mono</a>
 <br />
  }</td></tr>
 <tr class="separator:af5680a8b5e22ab84bd512b3d36304e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,8 +121,6 @@ Public Types</h2></td></tr>
 Public Slots</h2></td></tr>
 <tr class="memitem:a2af2fd218b36c18cbe7a1928f44ba5aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d42/class_music_sound_effects_item_widget.html#a2af2fd218b36c18cbe7a1928f44ba5aa">setPluginEnable</a> ()</td></tr>
 <tr class="separator:a2af2fd218b36c18cbe7a1928f44ba5aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab306dde99c37fb0eb0496c2cc5474f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d42/class_music_sound_effects_item_widget.html#aab306dde99c37fb0eb0496c2cc5474f4">soundEffectCheckBoxChanged</a> (bool <a class="el" href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>)</td></tr>
-<tr class="separator:aab306dde99c37fb0eb0496c2cc5474f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace2d16c883d32051586f34ced4bc490b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d42/class_music_sound_effects_item_widget.html#ace2d16c883d32051586f34ced4bc490b">soundEffectValueChanged</a> ()</td></tr>
 <tr class="separator:ace2d16c883d32051586f34ced4bc490b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -202,6 +202,9 @@ Protected Attributes</h2></td></tr>
 <tr><td class="fieldname"><a class="anchor" id="af5680a8b5e22ab84bd512b3d36304e58aa3ff3e26d664326e4da8eb6a58b25d50"></a>MonoStereo&#160;</td><td class="fielddoc">
 <p>sound mono stereo effect </p>
 </td></tr>
+<tr><td class="fieldname"><a class="anchor" id="af5680a8b5e22ab84bd512b3d36304e58a0202d8334b07a8b3b742c21c79c33ad9"></a>Mono&#160;</td><td class="fielddoc">
+<p>sound mono effect </p>
+</td></tr>
 </table>
 
 <p>Definition at line <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00036">36</a> of file <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html">musicsoundeffectswidget.h</a>.</p>
@@ -234,7 +237,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00012">12</a> of file <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html">musicsoundeffectswidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00098">m_enable</a>, <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00100">m_openButton</a>, <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00100">m_settingButton</a>, <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00099">m_textLabel</a>, <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00097">m_type</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00072">MusicUIObject::MBackgroundStyle01</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00085">MusicUIObject::MBackgroundStyle04</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00097">MusicUIObject::MBackgroundStyle08</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00215">MusicUIObject::MPushButtonStyle01</a>, <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00038">Null</a>, <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00104">setPluginEnable()</a>, <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00077">setText()</a>, and <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00129">soundEffectValueChanged()</a>.</p>
+<p>References <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00096">m_enable</a>, <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00098">m_openButton</a>, <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00098">m_settingButton</a>, <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00097">m_textLabel</a>, <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00095">m_type</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00072">MusicUIObject::MBackgroundStyle01</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00085">MusicUIObject::MBackgroundStyle04</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00097">MusicUIObject::MBackgroundStyle08</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00215">MusicUIObject::MPushButtonStyle01</a>, <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00038">Null</a>, <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00104">setPluginEnable()</a>, <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00077">setText()</a>, and <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00126">soundEffectValueChanged()</a>.</p>
 
 </div>
 </div>
@@ -253,7 +256,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00070">70</a> of file <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html">musicsoundeffectswidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00100">m_openButton</a>, <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00100">m_settingButton</a>, and <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00099">m_textLabel</a>.</p>
+<p>References <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00098">m_openButton</a>, <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00098">m_settingButton</a>, and <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00097">m_textLabel</a>.</p>
 
 </div>
 </div>
@@ -274,7 +277,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00093">93</a> of file <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html">musicsoundeffectswidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00098">m_enable</a>.</p>
+<p>References <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00096">m_enable</a>.</p>
 
 </div>
 </div>
@@ -295,7 +298,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00087">87</a> of file <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html">musicsoundeffectswidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00098">m_enable</a>, and <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00104">setPluginEnable()</a>.</p>
+<p>References <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00096">m_enable</a>, and <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00104">setPluginEnable()</a>.</p>
 
 </div>
 </div>
@@ -323,7 +326,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00104">104</a> of file <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html">musicsoundeffectswidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00098">m_enable</a>, <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00100">m_openButton</a>, <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00100">m_settingButton</a>, and <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00124">soundEffectCheckBoxChanged()</a>.</p>
+<p>References <a class="el" href="../../dd/d26/musicqmmputils_8cpp_source.html#l00073">MusicUtils::QMMP::effectHasSetting()</a>, <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00096">m_enable</a>, <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00098">m_openButton</a>, <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00098">m_settingButton</a>, <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00095">m_type</a>, <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00098">soundEffectChanged()</a>, and <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00132">transformQStringFromEnum()</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00012">MusicSoundEffectsItemWidget()</a>, and <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00087">setPluginEnable()</a>.</p>
 
@@ -346,7 +349,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00077">77</a> of file <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html">musicsoundeffectswidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00099">m_textLabel</a>.</p>
+<p>References <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00097">m_textLabel</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00012">MusicSoundEffectsItemWidget()</a>.</p>
 
@@ -369,7 +372,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00082">82</a> of file <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html">musicsoundeffectswidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00097">m_type</a>.</p>
+<p>References <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00095">m_type</a>.</p>
 
 </div>
 </div>
@@ -408,40 +411,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00098">98</a> of file <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html">musicsoundeffectswidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d26/musicqmmputils_8cpp_source.html#l00061">MusicUtils::QMMP::enableEffectPlugin()</a>, and <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00135">transformQStringFromEnum()</a>.</p>
+<p>References <a class="el" href="../../dd/d26/musicqmmputils_8cpp_source.html#l00061">MusicUtils::QMMP::enableEffectPlugin()</a>, and <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00132">transformQStringFromEnum()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/d7d/musicapplicationobject_8cpp_source.html#l00370">MusicApplicationObject::musicEffectChanged()</a>, and <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00124">soundEffectCheckBoxChanged()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aab306dde99c37fb0eb0496c2cc5474f4"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MusicSoundEffectsItemWidget::soundEffectCheckBoxChanged </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>state</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Sound effect checkBox changed. </p>
-
-<p>Definition at line <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00124">124</a> of file <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html">musicsoundeffectswidget.cpp</a>.</p>
-
-<p>References <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00097">m_type</a>, and <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00098">soundEffectChanged()</a>.</p>
-
-<p>Referenced by <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00104">setPluginEnable()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/d7d/musicapplicationobject_8cpp_source.html#l00381">MusicApplicationObject::musicEffectChanged()</a>, and <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00104">setPluginEnable()</a>.</p>
 
 </div>
 </div>
@@ -467,9 +439,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Sound effect button value changed. </p>
 
-<p>Definition at line <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00129">129</a> of file <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html">musicsoundeffectswidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00126">126</a> of file <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html">musicsoundeffectswidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../dd/d26/musicqmmputils_8cpp_source.html#l00073">MusicUtils::QMMP::enableEffectSetting()</a>, <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00097">m_type</a>, and <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00135">transformQStringFromEnum()</a>.</p>
+<p>References <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00095">m_type</a>, <a class="el" href="../../dd/d26/musicqmmputils_8cpp_source.html#l00086">MusicUtils::QMMP::showEffectSetting()</a>, and <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00132">transformQStringFromEnum()</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00012">MusicSoundEffectsItemWidget()</a>.</p>
 
@@ -498,11 +470,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Transform string from enum. </p>
 
-<p>Definition at line <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00135">135</a> of file <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html">musicsoundeffectswidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00132">132</a> of file <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html">musicsoundeffectswidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00039">BS2B</a>, <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00040">Crossfade</a>, <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00042">LADSPA</a>, <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00045">MonoStereo</a>, <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00043">Soxr</a>, <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00044">SrcConverter</a>, and <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00041">Stereo</a>.</p>
+<p>References <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00039">BS2B</a>, <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00040">Crossfade</a>, <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00042">LADSPA</a>, <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00046">Mono</a>, <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00045">MonoStereo</a>, <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00043">Soxr</a>, <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00044">SrcConverter</a>, and <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00041">Stereo</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00098">soundEffectChanged()</a>, and <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00129">soundEffectValueChanged()</a>.</p>
+<p>Referenced by <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00104">setPluginEnable()</a>, <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00098">soundEffectChanged()</a>, and <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00126">soundEffectValueChanged()</a>.</p>
 
 </div>
 </div>
@@ -525,7 +497,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00098">98</a> of file <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html">musicsoundeffectswidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00096">96</a> of file <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html">musicsoundeffectswidget.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00012">MusicSoundEffectsItemWidget()</a>, <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00093">pluginEnable()</a>, and <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00087">setPluginEnable()</a>.</p>
 
@@ -549,7 +521,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00100">100</a> of file <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html">musicsoundeffectswidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00098">98</a> of file <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html">musicsoundeffectswidget.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00012">MusicSoundEffectsItemWidget()</a>, <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00104">setPluginEnable()</a>, and <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00070">~MusicSoundEffectsItemWidget()</a>.</p>
 
@@ -573,7 +545,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00100">100</a> of file <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html">musicsoundeffectswidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00098">98</a> of file <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html">musicsoundeffectswidget.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00012">MusicSoundEffectsItemWidget()</a>, <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00104">setPluginEnable()</a>, and <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00070">~MusicSoundEffectsItemWidget()</a>.</p>
 
@@ -597,7 +569,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00099">99</a> of file <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html">musicsoundeffectswidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00097">97</a> of file <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html">musicsoundeffectswidget.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00012">MusicSoundEffectsItemWidget()</a>, <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00077">setText()</a>, and <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00070">~MusicSoundEffectsItemWidget()</a>.</p>
 
@@ -621,9 +593,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00097">97</a> of file <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html">musicsoundeffectswidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html#l00095">95</a> of file <a class="el" href="../../d2/dc0/musicsoundeffectswidget_8h_source.html">musicsoundeffectswidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00012">MusicSoundEffectsItemWidget()</a>, <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00082">setType()</a>, <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00124">soundEffectCheckBoxChanged()</a>, and <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00129">soundEffectValueChanged()</a>.</p>
+<p>Referenced by <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00012">MusicSoundEffectsItemWidget()</a>, <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00104">setPluginEnable()</a>, <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00082">setType()</a>, and <a class="el" href="../../d7/dd2/musicsoundeffectswidget_8cpp_source.html#l00126">soundEffectValueChanged()</a>.</p>
 
 </div>
 </div>
@@ -634,7 +606,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 18 2020 15:07:30 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 8 2020 13:53:03 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.11.0.0</span>
+   &#160;<span id="projectnumber">2.11.1.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -74,6 +74,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-slots">Protected Slots</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="../../d4/d90/class_o_s_s_data_interface-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">OSSDataInterface Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -110,6 +111,13 @@ Protected Slots</h2></td></tr>
 <tr class="separator:a30e8b3b15cbf2cc86dd275b853edf178"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0061c9ccc59dfd6d80033d1dba02e6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/da7/class_o_s_s_data_interface.html#ac0061c9ccc59dfd6d80033d1dba02e6d">handleError</a> (QNetworkReply::NetworkError error)</td></tr>
 <tr class="separator:ac0061c9ccc59dfd6d80033d1dba02e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a150f2712bd870beff221f5def7cc1ece"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/da7/class_o_s_s_data_interface.html#a150f2712bd870beff221f5def7cc1ece">pathEncode</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;data) <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a150f2712bd870beff221f5def7cc1ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a553d178cf57e1c0e1c1490ecb295b9c6"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/da7/class_o_s_s_data_interface.html#a553d178cf57e1c0e1c1490ecb295b9c6">pathDecode</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;data) <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a553d178cf57e1c0e1c1490ecb295b9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The class of the alioss cloud data item. </p>
@@ -188,6 +196,62 @@ Protected Slots</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a553d178cf57e1c0e1c1490ecb295b9c6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString OSSDataInterface::pathDecode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Pretty decode the data into url. </p>
+
+<p>Definition at line <a class="el" href="../../d9/d35/ossdatainterface_8cpp_source.html#l00026">26</a> of file <a class="el" href="../../d9/d35/ossdatainterface_8cpp_source.html">ossdatainterface.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a150f2712bd870beff221f5def7cc1ece"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString OSSDataInterface::pathEncode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Pretty encode the data into url. </p>
+
+<p>Definition at line <a class="el" href="../../d9/d35/ossdatainterface_8cpp_source.html#l00017">17</a> of file <a class="el" href="../../d9/d35/ossdatainterface_8cpp_source.html">ossdatainterface.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d4/d38/ossdownloaddata_8cpp_source.html#l00073">OSSDownloadData::getDownloadUrl()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a30e8b3b15cbf2cc86dd275b853edf178"></a>
 <div class="memitem">
 <div class="memproto">
@@ -219,7 +283,7 @@ Protected Slots</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 18 2020 15:07:34 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 8 2020 13:53:12 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

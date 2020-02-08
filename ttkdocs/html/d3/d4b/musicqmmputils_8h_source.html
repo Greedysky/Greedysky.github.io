@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.11.0.0</span>
+   &#160;<span id="projectnumber">2.11.1.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -108,16 +108,18 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        MUSIC_UTILS_EXPORT <span class="keywordtype">void</span> <a class="code" href="../../dc/d03/namespace_music_utils_1_1_q_m_m_p.html#a67b718732b9ee484fd37115536cafd17">updateMidConfigFile</a>();</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        MUSIC_UTILS_EXPORT <span class="keywordtype">void</span> <a class="code" href="../../dc/d03/namespace_music_utils_1_1_q_m_m_p.html#acf74a93386d12a0ff7b4254a4b8b21c4">enableVisualPlugin</a>(<span class="keyword">const</span> QString &amp;<a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, <span class="keywordtype">bool</span> enable);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        MUSIC_UTILS_EXPORT <span class="keywordtype">void</span> <a class="code" href="../../dc/d03/namespace_music_utils_1_1_q_m_m_p.html#a40c53702e590a66311c8f726d1eaddd6">enableEffectPlugin</a>(<span class="keyword">const</span> QString &amp;name, <span class="keywordtype">bool</span> enable);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        MUSIC_UTILS_EXPORT <span class="keywordtype">void</span> <a class="code" href="../../dc/d03/namespace_music_utils_1_1_q_m_m_p.html#a3f6351df4e3732dfc267fe2d6bb1b0fb">enableEffectSetting</a>(<span class="keyword">const</span> QString &amp;name, QWidget *parent);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        MUSIC_UTILS_EXPORT <span class="keywordtype">void</span> <a class="code" href="../../dc/d03/namespace_music_utils_1_1_q_m_m_p.html#ad59e4308682139cf1d6e932483d27196">updateRippleSpectrumConfigFile</a>();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif // MUSICQMMPUTILS_H</span></div>
-<div class="ttc" id="namespace_music_utils_1_1_q_m_m_p_html_a3f6351df4e3732dfc267fe2d6bb1b0fb"><div class="ttname"><a href="../../dc/d03/namespace_music_utils_1_1_q_m_m_p.html#a3f6351df4e3732dfc267fe2d6bb1b0fb">MusicUtils::QMMP::enableEffectSetting</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT void enableEffectSetting(const QString &amp;name, QWidget *parent)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d26/musicqmmputils_8cpp_source.html#l00073">musicqmmputils.cpp:73</a></div></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        MUSIC_UTILS_EXPORT <span class="keywordtype">bool</span> <a class="code" href="../../dc/d03/namespace_music_utils_1_1_q_m_m_p.html#a4b21147fd30a60412ef2054836d8c182">effectHasSetting</a>(<span class="keyword">const</span> QString &amp;name);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        MUSIC_UTILS_EXPORT <span class="keywordtype">void</span> <a class="code" href="../../dc/d03/namespace_music_utils_1_1_q_m_m_p.html#a54b837f8213bc5869b39b23bf640538f">showEffectSetting</a>(<span class="keyword">const</span> QString &amp;name, QWidget *parent);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        MUSIC_UTILS_EXPORT <span class="keywordtype">void</span> <a class="code" href="../../dc/d03/namespace_music_utils_1_1_q_m_m_p.html#ad59e4308682139cf1d6e932483d27196">updateRippleSpectrumConfigFile</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif // MUSICQMMPUTILS_H</span></div>
 <div class="ttc" id="namespace_music_utils_1_1_q_m_m_p_html_a40c53702e590a66311c8f726d1eaddd6"><div class="ttname"><a href="../../dc/d03/namespace_music_utils_1_1_q_m_m_p.html#a40c53702e590a66311c8f726d1eaddd6">MusicUtils::QMMP::enableEffectPlugin</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT void enableEffectPlugin(const QString &amp;name, bool enable)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d26/musicqmmputils_8cpp_source.html#l00061">musicqmmputils.cpp:61</a></div></div>
+<div class="ttc" id="namespace_music_utils_1_1_q_m_m_p_html_a4b21147fd30a60412ef2054836d8c182"><div class="ttname"><a href="../../dc/d03/namespace_music_utils_1_1_q_m_m_p.html#a4b21147fd30a60412ef2054836d8c182">MusicUtils::QMMP::effectHasSetting</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT bool effectHasSetting(const QString &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d26/musicqmmputils_8cpp_source.html#l00073">musicqmmputils.cpp:73</a></div></div>
+<div class="ttc" id="namespace_music_utils_1_1_q_m_m_p_html_a54b837f8213bc5869b39b23bf640538f"><div class="ttname"><a href="../../dc/d03/namespace_music_utils_1_1_q_m_m_p.html#a54b837f8213bc5869b39b23bf640538f">MusicUtils::QMMP::showEffectSetting</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT void showEffectSetting(const QString &amp;name, QWidget *parent)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d26/musicqmmputils_8cpp_source.html#l00086">musicqmmputils.cpp:86</a></div></div>
 <div class="ttc" id="namespace_music_utils_html"><div class="ttname"><a href="../../d9/d28/namespace_music_utils.html">MusicUtils</a></div><div class="ttdoc">The namespace of the utils algorithm. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d63/musicalgorithmutils_8h_source.html#l00033">musicalgorithmutils.h:33</a></div></div>
-<div class="ttc" id="namespace_music_utils_1_1_q_m_m_p_html_ad59e4308682139cf1d6e932483d27196"><div class="ttname"><a href="../../dc/d03/namespace_music_utils_1_1_q_m_m_p.html#ad59e4308682139cf1d6e932483d27196">MusicUtils::QMMP::updateRippleSpectrumConfigFile</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT void updateRippleSpectrumConfigFile()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d26/musicqmmputils_8cpp_source.html#l00085">musicqmmputils.cpp:85</a></div></div>
+<div class="ttc" id="namespace_music_utils_1_1_q_m_m_p_html_ad59e4308682139cf1d6e932483d27196"><div class="ttname"><a href="../../dc/d03/namespace_music_utils_1_1_q_m_m_p.html#ad59e4308682139cf1d6e932483d27196">MusicUtils::QMMP::updateRippleSpectrumConfigFile</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT void updateRippleSpectrumConfigFile()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d26/musicqmmputils_8cpp_source.html#l00098">musicqmmputils.cpp:98</a></div></div>
 <div class="ttc" id="http__parser_8c_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d70/http__parser_8c_source.html#l00458">http_parser.c:458</a></div></div>
 <div class="ttc" id="namespace_music_utils_1_1_q_m_m_p_html_a67b718732b9ee484fd37115536cafd17"><div class="ttname"><a href="../../dc/d03/namespace_music_utils_1_1_q_m_m_p.html#a67b718732b9ee484fd37115536cafd17">MusicUtils::QMMP::updateMidConfigFile</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT void updateMidConfigFile()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d26/musicqmmputils_8cpp_source.html#l00025">musicqmmputils.cpp:25</a></div></div>
 <div class="ttc" id="musicglobaldefine_8h_html"><div class="ttname"><a href="../../d6/d9b/musicglobaldefine_8h.html">musicglobaldefine.h</a></div></div>
@@ -126,7 +128,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 18 2020 15:06:28 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 8 2020 13:51:12 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
