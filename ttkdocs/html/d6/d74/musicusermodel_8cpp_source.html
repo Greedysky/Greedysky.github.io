@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.11.1.0</span>
+   &#160;<span id="projectnumber">2.12.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -113,12 +113,12 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">if</span>(submitAll())</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        database().commit();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="../../d5/d2b/ttklogger_8h.html#a40ddce420b21f37a70b70ca5de3d879a">M_LOGGER_INFO</a>(<span class="stringliteral">&quot;submit successfully&quot;</span>);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="../../d5/d2b/ttklogger_8h.html#ae2a8797595daafbcb53f440f5aca9c8d">TTK_LOGGER_INFO</a>(<span class="stringliteral">&quot;submit successfully&quot;</span>);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="../../d5/d2b/ttklogger_8h.html#a40ddce420b21f37a70b70ca5de3d879a">M_LOGGER_INFO</a>(<span class="stringliteral">&quot;submit failed&quot;</span>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="../../d5/d2b/ttklogger_8h.html#ae2a8797595daafbcb53f440f5aca9c8d">TTK_LOGGER_INFO</a>(<span class="stringliteral">&quot;submit failed&quot;</span>);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        database().rollback();</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
@@ -145,12 +145,12 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">if</span>(submitAll())</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    {</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        database().commit();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="../../d5/d2b/ttklogger_8h.html#a40ddce420b21f37a70b70ca5de3d879a">M_LOGGER_INFO</a>(<span class="stringliteral">&quot;submit successfully&quot;</span>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="../../d5/d2b/ttklogger_8h.html#ae2a8797595daafbcb53f440f5aca9c8d">TTK_LOGGER_INFO</a>(<span class="stringliteral">&quot;submit successfully&quot;</span>);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="../../d5/d2b/ttklogger_8h.html#a40ddce420b21f37a70b70ca5de3d879a">M_LOGGER_INFO</a>(<span class="stringliteral">&quot;submit failed&quot;</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="../../d5/d2b/ttklogger_8h.html#ae2a8797595daafbcb53f440f5aca9c8d">TTK_LOGGER_INFO</a>(<span class="stringliteral">&quot;submit failed&quot;</span>);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        database().rollback();</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
@@ -158,45 +158,45 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="../../dd/dda/class_music_user_model.html#a37a4933914f41d041627f5742571b02a">   80</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../dd/dda/class_music_user_model.html#a37a4933914f41d041627f5742571b02a">MusicUserModel::updateUser</a>(<span class="keyword">const</span> <a class="code" href="../../df/dc7/struct_music_user_u_i_d_item.html">MusicUserUIDItem</a> &amp;uid, <span class="keyword">const</span> QString &amp;pwd, <span class="keyword">const</span> QString &amp;mail, <span class="keyword">const</span> QString &amp;<a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, <span class="keyword">const</span> QString &amp;time, <span class="keywordtype">bool</span> pwdMask)</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#ad31968ff5bad4e7ad7691bb14c6419c0">MVariantMap</a> map;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#aac81f9642d9fc2479074bffd3cd3a6e1">TTKVariantMap</a> map;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    map[<span class="stringliteral">&quot;USERNAME&quot;</span>] = <a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    map[<span class="stringliteral">&quot;PASSWD&quot;</span>] = pwd.isEmpty() ? QString() : (pwdMask ? pwd : <a class="code" href="../../dd/dda/class_music_user_model.html#a0afdbc7b3e3ea5ff82ff6584191d9faf">userPasswordEncryption</a>(pwd));</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    map[<span class="stringliteral">&quot;EMAIL&quot;</span>] = mail;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    map[<span class="stringliteral">&quot;LOGINTIME&quot;</span>] = time;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dd/dda/class_music_user_model.html#a65af2ec401df75c6b1e5c6e2871139b8">updateRecordData</a>(uid, map);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dd/dda/class_music_user_model.html#a6fac8d020c70e3f4111b4759495643bf">updateRecordData</a>(uid, map);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
 <div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="../../dd/dda/class_music_user_model.html#a443f45f6b4327d5d317263819df28d1b">   90</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../dd/dda/class_music_user_model.html#a37a4933914f41d041627f5742571b02a">MusicUserModel::updateUser</a>(<span class="keyword">const</span> <a class="code" href="../../df/dc7/struct_music_user_u_i_d_item.html">MusicUserUIDItem</a> &amp;uid, <span class="keyword">const</span> QString &amp;<a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, <span class="keyword">const</span> QString &amp;sex, <span class="keyword">const</span> QString &amp;birth, <span class="keyword">const</span> QString &amp;city, <span class="keyword">const</span> QString &amp;country, <span class="keyword">const</span> QString &amp;sign)</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#ad31968ff5bad4e7ad7691bb14c6419c0">MVariantMap</a> map;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#aac81f9642d9fc2479074bffd3cd3a6e1">TTKVariantMap</a> map;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    map[<span class="stringliteral">&quot;USERNAME&quot;</span>] = <a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    map[<span class="stringliteral">&quot;SEX&quot;</span>] = sex;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    map[<span class="stringliteral">&quot;BIRTHDAY&quot;</span>] = birth;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    map[<span class="stringliteral">&quot;CITY&quot;</span>] = city;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    map[<span class="stringliteral">&quot;COUNTRY&quot;</span>] = country;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    map[<span class="stringliteral">&quot;SIGNATURE&quot;</span>] = sign;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dd/dda/class_music_user_model.html#a65af2ec401df75c6b1e5c6e2871139b8">updateRecordData</a>(uid, map);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dd/dda/class_music_user_model.html#a6fac8d020c70e3f4111b4759495643bf">updateRecordData</a>(uid, map);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
 <div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="../../dd/dda/class_music_user_model.html#a5d06cacd8434da9b04a52656d3791f16">  102</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../dd/dda/class_music_user_model.html#a37a4933914f41d041627f5742571b02a">MusicUserModel::updateUser</a>(<span class="keyword">const</span> <a class="code" href="../../de/d39/struct_music_user_info_record.html">MusicUserInfoRecord</a> &amp;info)</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;{</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#ad31968ff5bad4e7ad7691bb14c6419c0">MVariantMap</a> map;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#aac81f9642d9fc2479074bffd3cd3a6e1">TTKVariantMap</a> map;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    map[<span class="stringliteral">&quot;USERNAME&quot;</span>] = info.<a class="code" href="../../de/d39/struct_music_user_info_record.html#a63fffd8d84803a4110a405f83db66acc">m_nickName</a>;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dd/dda/class_music_user_model.html#a65af2ec401df75c6b1e5c6e2871139b8">updateRecordData</a>(info.<a class="code" href="../../de/d39/struct_music_user_info_record.html#abab266efeb3b86995c3c273662cfd8cb">m_item</a>, map);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dd/dda/class_music_user_model.html#a6fac8d020c70e3f4111b4759495643bf">updateRecordData</a>(info.<a class="code" href="../../de/d39/struct_music_user_info_record.html#abab266efeb3b86995c3c273662cfd8cb">m_item</a>, map);</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
 <div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="../../dd/dda/class_music_user_model.html#adffc29589012cfc615920c7931eeeb45">  109</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../dd/dda/class_music_user_model.html#adffc29589012cfc615920c7931eeeb45">MusicUserModel::updateUserIcon</a>(<span class="keyword">const</span> <a class="code" href="../../df/dc7/struct_music_user_u_i_d_item.html">MusicUserUIDItem</a> &amp;uid, <span class="keyword">const</span> QString &amp;icon)</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;{</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#ad31968ff5bad4e7ad7691bb14c6419c0">MVariantMap</a> map;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#aac81f9642d9fc2479074bffd3cd3a6e1">TTKVariantMap</a> map;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    map[<span class="stringliteral">&quot;ICON&quot;</span>] = icon;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dd/dda/class_music_user_model.html#a65af2ec401df75c6b1e5c6e2871139b8">updateRecordData</a>(uid, map);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dd/dda/class_music_user_model.html#a6fac8d020c70e3f4111b4759495643bf">updateRecordData</a>(uid, map);</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
 <div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="../../dd/dda/class_music_user_model.html#ab28f2f86b20990aaa08acebc7cffd9b5">  116</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../dd/dda/class_music_user_model.html#ab28f2f86b20990aaa08acebc7cffd9b5">MusicUserModel::updateUserPwd</a>(<span class="keyword">const</span> <a class="code" href="../../df/dc7/struct_music_user_u_i_d_item.html">MusicUserUIDItem</a> &amp;uid, <span class="keyword">const</span> QString &amp;pwd, <span class="keywordtype">bool</span> pwdMask)</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;{</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#ad31968ff5bad4e7ad7691bb14c6419c0">MVariantMap</a> map;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#aac81f9642d9fc2479074bffd3cd3a6e1">TTKVariantMap</a> map;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    map[<span class="stringliteral">&quot;PASSWD&quot;</span>] = pwd.isEmpty() ? QString() : (pwdMask ? pwd : <a class="code" href="../../dd/dda/class_music_user_model.html#a0afdbc7b3e3ea5ff82ff6584191d9faf">userPasswordEncryption</a>(pwd));</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dd/dda/class_music_user_model.html#a65af2ec401df75c6b1e5c6e2871139b8">updateRecordData</a>(uid, map);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dd/dda/class_music_user_model.html#a6fac8d020c70e3f4111b4759495643bf">updateRecordData</a>(uid, map);</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
 <div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="../../dd/dda/class_music_user_model.html#a85bbd08c0e8f208a8db401aad2abf13d">  123</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../dd/dda/class_music_user_model.html#a85bbd08c0e8f208a8db401aad2abf13d">MusicUserModel::deleteUser</a>(<span class="keyword">const</span> <a class="code" href="../../df/dc7/struct_music_user_u_i_d_item.html">MusicUserUIDItem</a> &amp;uid)</div>
@@ -245,92 +245,93 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    {</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        users.insert(record(i).value(<span class="stringliteral">&quot;USERID&quot;</span>).toString());</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    }</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">return</span> users.toList();</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;}</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
-<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="../../dd/dda/class_music_user_model.html#a5092468dde23f27faf2e716710441518">  172</a></span>&#160;QStringList <a class="code" href="../../dd/dda/class_music_user_model.html#a5092468dde23f27faf2e716710441518">MusicUserModel::getAllCities</a>()</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;{</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    setTable(<span class="stringliteral">&quot;MusicCountry&quot;</span>);</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    select();</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    QSet&lt;QString&gt; cities;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;rowCount(); ++i)</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    {</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        cities &lt;&lt; record(i).value(<span class="stringliteral">&quot;CITYNAME&quot;</span>).toString();</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    }</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keywordflow">return</span> cities.toList();</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;}</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
-<div class="line"><a name="l00186"></a><span class="lineno"><a class="line" href="../../dd/dda/class_music_user_model.html#a1f0013f7481351572c8ee1fc8b40caaf">  186</a></span>&#160;QStringList <a class="code" href="../../dd/dda/class_music_user_model.html#a1f0013f7481351572c8ee1fc8b40caaf">MusicUserModel::getAllCountries</a>(<span class="keyword">const</span> QString &amp;city)</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;{</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    setTable(<span class="stringliteral">&quot;MusicCountry&quot;</span>);</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    setFilter(QString(<span class="stringliteral">&quot;CITYNAME=&#39;%1&#39;&quot;</span>).arg(city));</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    select();</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    QStringList cities;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;rowCount(); ++i)</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    {</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        cities &lt;&lt; record(i).value(<span class="stringliteral">&quot;COUNTRYNAME&quot;</span>).toString();</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    }</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordflow">return</span> cities;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;}</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
-<div class="line"><a name="l00201"></a><span class="lineno"><a class="line" href="../../dd/dda/class_music_user_model.html#a9fb9a0cd5c5b687c5e0e9ad6793e3508">  201</a></span>&#160;QString <a class="code" href="../../dd/dda/class_music_user_model.html#a9fb9a0cd5c5b687c5e0e9ad6793e3508">MusicUserModel::getRecordData</a>(<span class="keyword">const</span> <a class="code" href="../../df/dc7/struct_music_user_u_i_d_item.html">MusicUserUIDItem</a> &amp;uid, <span class="keyword">const</span> QString &amp;field)</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;{</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../dd/dda/class_music_user_model.html#a9bc9915edd5d3ff0367ca0ebe02f2683">databaseSelectedFilter</a>(uid))</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    {</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <span class="keywordflow">return</span> QString();</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    }</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordflow">return</span> record(0).value(field).toString();</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;}</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
-<div class="line"><a name="l00210"></a><span class="lineno"><a class="line" href="../../dd/dda/class_music_user_model.html#a65af2ec401df75c6b1e5c6e2871139b8">  210</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../dd/dda/class_music_user_model.html#a65af2ec401df75c6b1e5c6e2871139b8">MusicUserModel::updateRecordData</a>(<span class="keyword">const</span> <a class="code" href="../../df/dc7/struct_music_user_u_i_d_item.html">MusicUserUIDItem</a> &amp;uid, <span class="keyword">const</span> <a class="code" href="../../df/d7f/ttkglobal_8h.html#ad31968ff5bad4e7ad7691bb14c6419c0">MVariantMap</a> &amp;data)</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;{</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../dd/dda/class_music_user_model.html#a9bc9915edd5d3ff0367ca0ebe02f2683">databaseSelectedFilter</a>(uid))</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    {</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    }</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keyword">const</span> QStringList &amp;keys = data.keys();</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keywordflow">foreach</span>(<span class="keyword">const</span> QString &amp;<a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>, keys)</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    {</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keyword">const</span> QString &amp;var = data[<a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>].toString();</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="keywordflow">if</span>(!var.isEmpty())</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        {</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            setData(index(0, fieldIndex(key)), var);</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        }</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    }</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keywordflow">return</span> submitAll();</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;}</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
-<div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="../../dd/dda/class_music_user_model.html#a9bc9915edd5d3ff0367ca0ebe02f2683">  230</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../dd/dda/class_music_user_model.html#a9bc9915edd5d3ff0367ca0ebe02f2683">MusicUserModel::databaseSelectedFilter</a>(<span class="keyword">const</span> <a class="code" href="../../df/dc7/struct_music_user_u_i_d_item.html">MusicUserUIDItem</a> &amp;uid)</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;{</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    setTable(<span class="stringliteral">&quot;MusicUser&quot;</span>);</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    setFilter(QString(<span class="stringliteral">&quot;USERID=&#39;%1&#39; and SERVER=&#39;%2&#39;&quot;</span>).arg(uid.<a class="code" href="../../df/dc7/struct_music_user_u_i_d_item.html#a714837cede39f62937ac8d94fc8e7948">m_uid</a>).arg(uid.<a class="code" href="../../df/dc7/struct_music_user_u_i_d_item.html#aac757562def0acb65d776a910402ada4">m_server</a>));</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    select();</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keywordflow">return</span> (rowCount() == 0);</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;}</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordflow">return</span> users.values();</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;}</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="../../dd/dda/class_music_user_model.html#a5092468dde23f27faf2e716710441518">  173</a></span>&#160;QStringList <a class="code" href="../../dd/dda/class_music_user_model.html#a5092468dde23f27faf2e716710441518">MusicUserModel::getAllCities</a>()</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;{</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    setTable(<span class="stringliteral">&quot;MusicCountry&quot;</span>);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    select();</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    QSet&lt;QString&gt; cities;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;rowCount(); ++i)</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    {</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        cities &lt;&lt; record(i).value(<span class="stringliteral">&quot;CITYNAME&quot;</span>).toString();</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    }</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordflow">return</span> cities.values();</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;}</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno"><a class="line" href="../../dd/dda/class_music_user_model.html#a1f0013f7481351572c8ee1fc8b40caaf">  187</a></span>&#160;QStringList <a class="code" href="../../dd/dda/class_music_user_model.html#a1f0013f7481351572c8ee1fc8b40caaf">MusicUserModel::getAllCountries</a>(<span class="keyword">const</span> QString &amp;city)</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;{</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    setTable(<span class="stringliteral">&quot;MusicCountry&quot;</span>);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    setFilter(QString(<span class="stringliteral">&quot;CITYNAME=&#39;%1&#39;&quot;</span>).arg(city));</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    select();</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    QStringList cities;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;rowCount(); ++i)</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    {</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        cities &lt;&lt; record(i).value(<span class="stringliteral">&quot;COUNTRYNAME&quot;</span>).toString();</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    }</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordflow">return</span> cities;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;}</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00202"></a><span class="lineno"><a class="line" href="../../dd/dda/class_music_user_model.html#a9fb9a0cd5c5b687c5e0e9ad6793e3508">  202</a></span>&#160;QString <a class="code" href="../../dd/dda/class_music_user_model.html#a9fb9a0cd5c5b687c5e0e9ad6793e3508">MusicUserModel::getRecordData</a>(<span class="keyword">const</span> <a class="code" href="../../df/dc7/struct_music_user_u_i_d_item.html">MusicUserUIDItem</a> &amp;uid, <span class="keyword">const</span> QString &amp;field)</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;{</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../dd/dda/class_music_user_model.html#a9bc9915edd5d3ff0367ca0ebe02f2683">databaseSelectedFilter</a>(uid))</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    {</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <span class="keywordflow">return</span> QString();</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    }</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordflow">return</span> record(0).value(field).toString();</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;}</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
+<div class="line"><a name="l00211"></a><span class="lineno"><a class="line" href="../../dd/dda/class_music_user_model.html#a6fac8d020c70e3f4111b4759495643bf">  211</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../dd/dda/class_music_user_model.html#a6fac8d020c70e3f4111b4759495643bf">MusicUserModel::updateRecordData</a>(<span class="keyword">const</span> <a class="code" href="../../df/dc7/struct_music_user_u_i_d_item.html">MusicUserUIDItem</a> &amp;uid, <span class="keyword">const</span> <a class="code" href="../../df/d7f/ttkglobal_8h.html#aac81f9642d9fc2479074bffd3cd3a6e1">TTKVariantMap</a> &amp;data)</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;{</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../dd/dda/class_music_user_model.html#a9bc9915edd5d3ff0367ca0ebe02f2683">databaseSelectedFilter</a>(uid))</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    {</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    }</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keyword">const</span> QStringList &amp;keys = data.keys();</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keywordflow">foreach</span>(<span class="keyword">const</span> QString &amp;<a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>, keys)</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    {</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="keyword">const</span> QString &amp;var = data[<a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>].toString();</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <span class="keywordflow">if</span>(!var.isEmpty())</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        {</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            setData(index(0, fieldIndex(key)), var);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        }</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    }</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keywordflow">return</span> submitAll();</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;}</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
+<div class="line"><a name="l00231"></a><span class="lineno"><a class="line" href="../../dd/dda/class_music_user_model.html#a9bc9915edd5d3ff0367ca0ebe02f2683">  231</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../dd/dda/class_music_user_model.html#a9bc9915edd5d3ff0367ca0ebe02f2683">MusicUserModel::databaseSelectedFilter</a>(<span class="keyword">const</span> <a class="code" href="../../df/dc7/struct_music_user_u_i_d_item.html">MusicUserUIDItem</a> &amp;uid)</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;{</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    setTable(<span class="stringliteral">&quot;MusicUser&quot;</span>);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    setFilter(QString(<span class="stringliteral">&quot;USERID=&#39;%1&#39; and SERVER=&#39;%2&#39;&quot;</span>).arg(uid.<a class="code" href="../../df/dc7/struct_music_user_u_i_d_item.html#a714837cede39f62937ac8d94fc8e7948">m_uid</a>).arg(uid.<a class="code" href="../../df/dc7/struct_music_user_u_i_d_item.html#aac757562def0acb65d776a910402ada4">m_server</a>));</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    select();</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keywordflow">return</span> (rowCount() == 0);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;}</div>
 <div class="ttc" id="struct_music_user_info_record_html_a63fffd8d84803a4110a405f83db66acc"><div class="ttname"><a href="../../de/d39/struct_music_user_info_record.html#a63fffd8d84803a4110a405f83db66acc">MusicUserInfoRecord::m_nickName</a></div><div class="ttdeci">QString m_nickName</div><div class="ttdef"><b>Definition:</b> <a href="../../da/df5/musicdatabaseobject_8h_source.html#l00075">musicdatabaseobject.h:75</a></div></div>
 <div class="ttc" id="class_music_user_model_html_a1c7dcd119fbf926b62d6d61455fb0a01"><div class="ttname"><a href="../../dd/dda/class_music_user_model.html#a1c7dcd119fbf926b62d6d61455fb0a01">MusicUserModel::passwordCheck</a></div><div class="ttdeci">bool passwordCheck(const MusicUserUIDItem &amp;uid, const QString &amp;pwd, bool pwdMask=false)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d74/musicusermodel_8cpp_source.html#l00134">musicusermodel.cpp:134</a></div></div>
-<div class="ttc" id="musiclrcfromkrc_8cpp_html_ad706e4249347c1cd1381934a5691137d"><div class="ttname"><a href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a></div><div class="ttdeci">const wchar_t key[]</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d45/musiclrcfromkrc_8cpp_source.html#l00017">musiclrcfromkrc.cpp:17</a></div></div>
-<div class="ttc" id="ttkglobal_8h_html_ad31968ff5bad4e7ad7691bb14c6419c0"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#ad31968ff5bad4e7ad7691bb14c6419c0">MVariantMap</a></div><div class="ttdeci">QMap&lt; QString, QVariant &gt; MVariantMap</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00188">ttkglobal.h:188</a></div></div>
-<div class="ttc" id="ttklogger_8h_html_a40ddce420b21f37a70b70ca5de3d879a"><div class="ttname"><a href="../../d5/d2b/ttklogger_8h.html#a40ddce420b21f37a70b70ca5de3d879a">M_LOGGER_INFO</a></div><div class="ttdeci">#define M_LOGGER_INFO(str)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d2b/ttklogger_8h_source.html#l00046">ttklogger.h:46</a></div></div>
+<div class="ttc" id="musiclrcfromkrc_8cpp_html_ad706e4249347c1cd1381934a5691137d"><div class="ttname"><a href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a></div><div class="ttdeci">const wchar_t key[]</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d45/musiclrcfromkrc_8cpp_source.html#l00016">musiclrcfromkrc.cpp:16</a></div></div>
 <div class="ttc" id="class_music_user_model_html_a37a4933914f41d041627f5742571b02a"><div class="ttname"><a href="../../dd/dda/class_music_user_model.html#a37a4933914f41d041627f5742571b02a">MusicUserModel::updateUser</a></div><div class="ttdeci">bool updateUser(const MusicUserUIDItem &amp;uid, const QString &amp;pwd, const QString &amp;mail, const QString &amp;name, const QString &amp;time, bool pwdMask=false)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d74/musicusermodel_8cpp_source.html#l00080">musicusermodel.cpp:80</a></div></div>
 <div class="ttc" id="http__parser_8c_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d70/http__parser_8c_source.html#l00458">http_parser.c:458</a></div></div>
 <div class="ttc" id="class_music_user_model_html_adffc29589012cfc615920c7931eeeb45"><div class="ttname"><a href="../../dd/dda/class_music_user_model.html#adffc29589012cfc615920c7931eeeb45">MusicUserModel::updateUserIcon</a></div><div class="ttdeci">bool updateUserIcon(const MusicUserUIDItem &amp;uid, const QString &amp;icon)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d74/musicusermodel_8cpp_source.html#l00109">musicusermodel.cpp:109</a></div></div>
-<div class="ttc" id="class_music_user_model_html_a9bc9915edd5d3ff0367ca0ebe02f2683"><div class="ttname"><a href="../../dd/dda/class_music_user_model.html#a9bc9915edd5d3ff0367ca0ebe02f2683">MusicUserModel::databaseSelectedFilter</a></div><div class="ttdeci">bool databaseSelectedFilter(const MusicUserUIDItem &amp;uid)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d74/musicusermodel_8cpp_source.html#l00230">musicusermodel.cpp:230</a></div></div>
-<div class="ttc" id="class_music_user_model_html_a9fb9a0cd5c5b687c5e0e9ad6793e3508"><div class="ttname"><a href="../../dd/dda/class_music_user_model.html#a9fb9a0cd5c5b687c5e0e9ad6793e3508">MusicUserModel::getRecordData</a></div><div class="ttdeci">QString getRecordData(const MusicUserUIDItem &amp;uid, const QString &amp;field)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d74/musicusermodel_8cpp_source.html#l00201">musicusermodel.cpp:201</a></div></div>
+<div class="ttc" id="class_music_user_model_html_a9bc9915edd5d3ff0367ca0ebe02f2683"><div class="ttname"><a href="../../dd/dda/class_music_user_model.html#a9bc9915edd5d3ff0367ca0ebe02f2683">MusicUserModel::databaseSelectedFilter</a></div><div class="ttdeci">bool databaseSelectedFilter(const MusicUserUIDItem &amp;uid)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d74/musicusermodel_8cpp_source.html#l00231">musicusermodel.cpp:231</a></div></div>
+<div class="ttc" id="class_music_user_model_html_a9fb9a0cd5c5b687c5e0e9ad6793e3508"><div class="ttname"><a href="../../dd/dda/class_music_user_model.html#a9fb9a0cd5c5b687c5e0e9ad6793e3508">MusicUserModel::getRecordData</a></div><div class="ttdeci">QString getRecordData(const MusicUserUIDItem &amp;uid, const QString &amp;field)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d74/musicusermodel_8cpp_source.html#l00202">musicusermodel.cpp:202</a></div></div>
 <div class="ttc" id="class_music_user_model_html_a0afdbc7b3e3ea5ff82ff6584191d9faf"><div class="ttname"><a href="../../dd/dda/class_music_user_model.html#a0afdbc7b3e3ea5ff82ff6584191d9faf">MusicUserModel::userPasswordEncryption</a></div><div class="ttdeci">QString userPasswordEncryption(const QString &amp;pwd) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d74/musicusermodel_8cpp_source.html#l00154">musicusermodel.cpp:154</a></div></div>
 <div class="ttc" id="struct_music_user_info_record_html"><div class="ttname"><a href="../../de/d39/struct_music_user_info_record.html">MusicUserInfoRecord</a></div><div class="ttdoc">The class of the user info record item. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/df5/musicdatabaseobject_8h_source.html#l00070">musicdatabaseobject.h:70</a></div></div>
-<div class="ttc" id="class_music_user_model_html_a5092468dde23f27faf2e716710441518"><div class="ttname"><a href="../../dd/dda/class_music_user_model.html#a5092468dde23f27faf2e716710441518">MusicUserModel::getAllCities</a></div><div class="ttdeci">QStringList getAllCities()</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d74/musicusermodel_8cpp_source.html#l00172">musicusermodel.cpp:172</a></div></div>
+<div class="ttc" id="class_music_user_model_html_a5092468dde23f27faf2e716710441518"><div class="ttname"><a href="../../dd/dda/class_music_user_model.html#a5092468dde23f27faf2e716710441518">MusicUserModel::getAllCities</a></div><div class="ttdeci">QStringList getAllCities()</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d74/musicusermodel_8cpp_source.html#l00173">musicusermodel.cpp:173</a></div></div>
 <div class="ttc" id="class_music_user_model_html_ab28f2f86b20990aaa08acebc7cffd9b5"><div class="ttname"><a href="../../dd/dda/class_music_user_model.html#ab28f2f86b20990aaa08acebc7cffd9b5">MusicUserModel::updateUserPwd</a></div><div class="ttdeci">bool updateUserPwd(const MusicUserUIDItem &amp;uid, const QString &amp;pwd, bool pwdMask=false)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d74/musicusermodel_8cpp_source.html#l00116">musicusermodel.cpp:116</a></div></div>
-<div class="ttc" id="class_music_user_model_html_a65af2ec401df75c6b1e5c6e2871139b8"><div class="ttname"><a href="../../dd/dda/class_music_user_model.html#a65af2ec401df75c6b1e5c6e2871139b8">MusicUserModel::updateRecordData</a></div><div class="ttdeci">bool updateRecordData(const MusicUserUIDItem &amp;uid, const MVariantMap &amp;data)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d74/musicusermodel_8cpp_source.html#l00210">musicusermodel.cpp:210</a></div></div>
+<div class="ttc" id="ttklogger_8h_html_ae2a8797595daafbcb53f440f5aca9c8d"><div class="ttname"><a href="../../d5/d2b/ttklogger_8h.html#ae2a8797595daafbcb53f440f5aca9c8d">TTK_LOGGER_INFO</a></div><div class="ttdeci">#define TTK_LOGGER_INFO(str)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d2b/ttklogger_8h_source.html#l00046">ttklogger.h:46</a></div></div>
 <div class="ttc" id="class_music_user_model_html_ad6c97a8f193797c4c0a771eb16c108e7"><div class="ttname"><a href="../../dd/dda/class_music_user_model.html#ad6c97a8f193797c4c0a771eb16c108e7">MusicUserModel::mailCheck</a></div><div class="ttdeci">bool mailCheck(const MusicUserUIDItem &amp;uid, const QString &amp;mail)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d74/musicusermodel_8cpp_source.html#l00144">musicusermodel.cpp:144</a></div></div>
+<div class="ttc" id="ttkglobal_8h_html_aac81f9642d9fc2479074bffd3cd3a6e1"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#aac81f9642d9fc2479074bffd3cd3a6e1">TTKVariantMap</a></div><div class="ttdeci">QMap&lt; QString, QVariant &gt; TTKVariantMap</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00188">ttkglobal.h:188</a></div></div>
 <div class="ttc" id="struct_music_user_info_record_html_abab266efeb3b86995c3c273662cfd8cb"><div class="ttname"><a href="../../de/d39/struct_music_user_info_record.html#abab266efeb3b86995c3c273662cfd8cb">MusicUserInfoRecord::m_item</a></div><div class="ttdeci">MusicUserUIDItem m_item</div><div class="ttdef"><b>Definition:</b> <a href="../../da/df5/musicdatabaseobject_8h_source.html#l00072">musicdatabaseobject.h:72</a></div></div>
 <div class="ttc" id="namespace_music_utils_1_1_algorithm_html_ab282be1c91dde9f8f37029c376f4020f"><div class="ttname"><a href="../../d6/d11/namespace_music_utils_1_1_algorithm.html#ab282be1c91dde9f8f37029c376f4020f">MusicUtils::Algorithm::md5</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT QByteArray md5(const QByteArray &amp;data)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dfd/musicalgorithmutils_8cpp_source.html#l00006">musicalgorithmutils.cpp:6</a></div></div>
+<div class="ttc" id="class_music_user_model_html_a6fac8d020c70e3f4111b4759495643bf"><div class="ttname"><a href="../../dd/dda/class_music_user_model.html#a6fac8d020c70e3f4111b4759495643bf">MusicUserModel::updateRecordData</a></div><div class="ttdeci">bool updateRecordData(const MusicUserUIDItem &amp;uid, const TTKVariantMap &amp;data)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d74/musicusermodel_8cpp_source.html#l00211">musicusermodel.cpp:211</a></div></div>
 <div class="ttc" id="struct_music_user_u_i_d_item_html"><div class="ttname"><a href="../../df/dc7/struct_music_user_u_i_d_item.html">MusicUserUIDItem</a></div><div class="ttdoc">The class of the user uid item. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/df5/musicdatabaseobject_8h_source.html#l00043">musicdatabaseobject.h:43</a></div></div>
 <div class="ttc" id="musicusermodel_8h_html"><div class="ttname"><a href="../../d4/d09/musicusermodel_8h.html">musicusermodel.h</a></div></div>
 <div class="ttc" id="struct_music_user_u_i_d_item_html_a714837cede39f62937ac8d94fc8e7948"><div class="ttname"><a href="../../df/dc7/struct_music_user_u_i_d_item.html#a714837cede39f62937ac8d94fc8e7948">MusicUserUIDItem::m_uid</a></div><div class="ttdeci">QString m_uid</div><div class="ttdef"><b>Definition:</b> <a href="../../da/df5/musicdatabaseobject_8h_source.html#l00045">musicdatabaseobject.h:45</a></div></div>
@@ -341,11 +342,11 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="struct_music_user_info_record_html_a0b10d8f3c8f60907fdd7c7e3f0f787bb"><div class="ttname"><a href="../../de/d39/struct_music_user_info_record.html#a0b10d8f3c8f60907fdd7c7e3f0f787bb">MusicUserInfoRecord::m_password</a></div><div class="ttdeci">QString m_password</div><div class="ttdef"><b>Definition:</b> <a href="../../da/df5/musicdatabaseobject_8h_source.html#l00074">musicdatabaseobject.h:74</a></div></div>
 <div class="ttc" id="struct_music_user_u_i_d_item_html_aac757562def0acb65d776a910402ada4"><div class="ttname"><a href="../../df/dc7/struct_music_user_u_i_d_item.html#aac757562def0acb65d776a910402ada4">MusicUserUIDItem::m_server</a></div><div class="ttdeci">int m_server</div><div class="ttdef"><b>Definition:</b> <a href="../../da/df5/musicdatabaseobject_8h_source.html#l00046">musicdatabaseobject.h:46</a></div></div>
 <div class="ttc" id="class_music_user_model_html_a78427f93045da239742bd21e4c1eed59"><div class="ttname"><a href="../../dd/dda/class_music_user_model.html#a78427f93045da239742bd21e4c1eed59">MusicUserModel::MusicUserModel</a></div><div class="ttdeci">MusicUserModel(QObject *parent=nullptr, QSqlDatabase db=QSqlDatabase::database(&quot;user-data&quot;))</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d74/musicusermodel_8cpp_source.html#l00009">musicusermodel.cpp:9</a></div></div>
-<div class="ttc" id="class_music_user_model_html_a1f0013f7481351572c8ee1fc8b40caaf"><div class="ttname"><a href="../../dd/dda/class_music_user_model.html#a1f0013f7481351572c8ee1fc8b40caaf">MusicUserModel::getAllCountries</a></div><div class="ttdeci">QStringList getAllCountries(const QString &amp;city)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d74/musicusermodel_8cpp_source.html#l00186">musicusermodel.cpp:186</a></div></div>
+<div class="ttc" id="class_music_user_model_html_a1f0013f7481351572c8ee1fc8b40caaf"><div class="ttname"><a href="../../dd/dda/class_music_user_model.html#a1f0013f7481351572c8ee1fc8b40caaf">MusicUserModel::getAllCountries</a></div><div class="ttdeci">QStringList getAllCountries(const QString &amp;city)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d74/musicusermodel_8cpp_source.html#l00187">musicusermodel.cpp:187</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 8 2020 13:51:12 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 25 2020 12:46:30 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

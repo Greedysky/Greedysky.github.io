@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.11.1.0</span>
+   &#160;<span id="projectnumber">2.12.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -144,16 +144,18 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a4220fa935557c0759b5f8bcd22ad1a87"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbf/class_channel_converter.html#a4220fa935557c0759b5f8bcd22ad1a87">m_disabled</a></td></tr>
+<tr class="memitem:a4220fa935557c0759b5f8bcd22ad1a87"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbf/class_channel_converter.html#a4220fa935557c0759b5f8bcd22ad1a87">m_disabled</a> = true</td></tr>
 <tr class="separator:a4220fa935557c0759b5f8bcd22ad1a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afedc0999cf2f36ccee80d9dc6440219b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbf/class_channel_converter.html#afedc0999cf2f36ccee80d9dc6440219b">m_reorder_array</a> [9]</td></tr>
+<tr class="memitem:afedc0999cf2f36ccee80d9dc6440219b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbf/class_channel_converter.html#afedc0999cf2f36ccee80d9dc6440219b">m_reorder_array</a> [9] = { 0 }</td></tr>
 <tr class="separator:afedc0999cf2f36ccee80d9dc6440219b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add2172b474830ce9ae0acac50277c910"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbf/class_channel_converter.html#add2172b474830ce9ae0acac50277c910">m_tmp_buf</a></td></tr>
+<tr class="memitem:add2172b474830ce9ae0acac50277c910"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbf/class_channel_converter.html#add2172b474830ce9ae0acac50277c910">m_tmp_buf</a> = nullptr</td></tr>
 <tr class="separator:add2172b474830ce9ae0acac50277c910"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dd9671e741da7344090746c566d06bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbf/class_channel_converter.html#a1dd9671e741da7344090746c566d06bf">m_channels</a></td></tr>
-<tr class="separator:a1dd9671e741da7344090746c566d06bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc14f861ffd69e00616535d79c07ef2b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbf/class_channel_converter.html#adc14f861ffd69e00616535d79c07ef2b">m_tmp_size</a> = 0</td></tr>
+<tr class="separator:adc14f861ffd69e00616535d79c07ef2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77844ce418567f0d1c6a56e8d02dc1e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d72/class_channel_map.html">ChannelMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbf/class_channel_converter.html#a77844ce418567f0d1c6a56e8d02dc1e6">m_out_map</a></td></tr>
 <tr class="separator:a77844ce418567f0d1c6a56e8d02dc1e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af67ffd551a44d32aa64352ad1029f525"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d72/class_channel_map.html">ChannelMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbf/class_channel_converter.html#af67ffd551a44d32aa64352ad1029f525">m_in_map</a></td></tr>
+<tr class="separator:af67ffd551a44d32aa64352ad1029f525"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -395,28 +397,6 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a1dd9671e741da7344090746c566d06bf"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> ChannelConverter::m_channels</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../d9/dcb/_qt4_2channelconverter__p_8h_source.html#l00042">42</a> of file <a class="el" href="../../d9/dcb/_qt4_2channelconverter__p_8h_source.html">channelconverter_p.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a4220fa935557c0759b5f8bcd22ad1a87"></a>
 <div class="memitem">
 <div class="memproto">
@@ -425,7 +405,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool ChannelConverter::m_disabled</td>
+          <td class="memname">bool ChannelConverter::m_disabled = true</td>
         </tr>
       </table>
   </td>
@@ -436,6 +416,28 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="../../d9/dcb/_qt4_2channelconverter__p_8h_source.html#l00039">39</a> of file <a class="el" href="../../d9/dcb/_qt4_2channelconverter__p_8h_source.html">channelconverter_p.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af67ffd551a44d32aa64352ad1029f525"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d72/class_channel_map.html">ChannelMap</a> ChannelConverter::m_in_map</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d9/dcb/_qt4_2channelconverter__p_8h_source.html#l00043">43</a> of file <a class="el" href="../../d9/dcb/_qt4_2channelconverter__p_8h_source.html">channelconverter_p.h</a>.</p>
 
 </div>
 </div>
@@ -469,7 +471,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> ChannelConverter::m_reorder_array</td>
+          <td class="memname"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> ChannelConverter::m_reorder_array = { 0 }</td>
         </tr>
       </table>
   </td>
@@ -491,7 +493,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float * ChannelConverter::m_tmp_buf</td>
+          <td class="memname">float * ChannelConverter::m_tmp_buf = nullptr</td>
         </tr>
       </table>
   </td>
@@ -505,13 +507,35 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="adc14f861ffd69e00616535d79c07ef2b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t ChannelConverter::m_tmp_size = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d9/dcb/_qt4_2channelconverter__p_8h_source.html#l00042">42</a> of file <a class="el" href="../../d9/dcb/_qt4_2channelconverter__p_8h_source.html">channelconverter_p.h</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>TTKExtra/Qt4/<a class="el" href="../../d9/dcb/_qt4_2channelconverter__p_8h_source.html">channelconverter_p.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 8 2020 13:52:22 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 25 2020 12:47:04 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

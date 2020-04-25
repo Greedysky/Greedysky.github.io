@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.11.1.0</span>
+   &#160;<span id="projectnumber">2.12.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -79,35 +79,50 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="contents">
 <a href="../../db/d3b/musicglobalhotkeyedit_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dd/dae/musicglobalhotkeyedit_8h.html">musicglobalhotkeyedit.h</a>&quot;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d7/d7c/musichotkeymanager_8h.html">musichotkeymanager.h</a>&quot;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QKeyEvent&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="../../d4/db6/class_music_global_hot_key_edit.html#add966c044a71861e2be8709989164dd9">    6</a></span>&#160;<a class="code" href="../../d4/db6/class_music_global_hot_key_edit.html#add966c044a71861e2be8709989164dd9">MusicGlobalHotKeyEdit::MusicGlobalHotKeyEdit</a>(QWidget *parent)</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    : QLineEdit(parent)</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    setReadOnly(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../d4/db6/class_music_global_hot_key_edit.html#ab838a4f21b94185b72f22ea32fae0891">   12</a></span>&#160;<a class="code" href="../../d4/db6/class_music_global_hot_key_edit.html#ab838a4f21b94185b72f22ea32fae0891">MusicGlobalHotKeyEdit::~MusicGlobalHotKeyEdit</a>()</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../d4/db6/class_music_global_hot_key_edit.html#a76fbd9d4b62789ebf7fb9f0e91fb8dc8">   17</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d4/db6/class_music_global_hot_key_edit.html#a76fbd9d4b62789ebf7fb9f0e91fb8dc8">MusicGlobalHotKeyEdit::keyPressEvent</a>(QKeyEvent *event)</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    setText( <a class="code" href="../../d7/d7c/musichotkeymanager_8h.html#a844c8c9bc8bea1a31c416043534b2600">M_HOTKEY_PTR</a>-&gt;toString(event-&gt;key(), <span class="keyword">event</span>-&gt;modifiers()) );</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    QLineEdit::keyPressEvent(event);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d0/deb/musicuiobject_8h.html">musicuiobject.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QKeyEvent&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="../../d4/db6/class_music_global_hot_key_edit.html#add966c044a71861e2be8709989164dd9">    7</a></span>&#160;<a class="code" href="../../d4/db6/class_music_global_hot_key_edit.html#add966c044a71861e2be8709989164dd9">MusicGlobalHotKeyEdit::MusicGlobalHotKeyEdit</a>(QWidget *parent)</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    : QLineEdit(parent)</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    setReadOnly(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../d4/db6/class_music_global_hot_key_edit.html#ab838a4f21b94185b72f22ea32fae0891">   13</a></span>&#160;<a class="code" href="../../d4/db6/class_music_global_hot_key_edit.html#ab838a4f21b94185b72f22ea32fae0891">MusicGlobalHotKeyEdit::~MusicGlobalHotKeyEdit</a>()</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../d4/db6/class_music_global_hot_key_edit.html#ac0fd8e6f02e3da1ac8c8ddfda49dae06">   18</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d4/db6/class_music_global_hot_key_edit.html#ac0fd8e6f02e3da1ac8c8ddfda49dae06">MusicGlobalHotKeyEdit::setHotKeyEnabled</a>(<span class="keywordtype">bool</span> <a class="code" href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>)</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    setEnabled(state);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    setReadOnly(!state);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    setStyleSheet(state ? <a class="code" href="../../d2/dc5/namespace_music_u_i_object.html#af348385f532ecda67ed120d00d9d1516">MusicUIObject::MQSSColorStyle10</a> + <a class="code" href="../../d2/dc5/namespace_music_u_i_object.html#a950005ed3e6b5f4cbdf3fd888fd08215">MusicUIObject::MQSSBackgroundStyle05</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                        : <a class="code" href="../../d2/dc5/namespace_music_u_i_object.html#af9ab9d1b50f61fbd44e4ef8facda12d6">MusicUIObject::MQSSColorStyle01</a> + <a class="code" href="../../d2/dc5/namespace_music_u_i_object.html#a937a117cb09976e3cc06e10ffdac8a56">MusicUIObject::MQSSBackgroundStyle08</a>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../d4/db6/class_music_global_hot_key_edit.html#a76fbd9d4b62789ebf7fb9f0e91fb8dc8">   26</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d4/db6/class_music_global_hot_key_edit.html#a76fbd9d4b62789ebf7fb9f0e91fb8dc8">MusicGlobalHotKeyEdit::keyPressEvent</a>(QKeyEvent *event)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    setText(<a class="code" href="../../d7/d7c/musichotkeymanager_8h.html#a844c8c9bc8bea1a31c416043534b2600">M_HOTKEY_PTR</a>-&gt;toString(event-&gt;key(), <span class="keyword">event</span>-&gt;modifiers()));</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
 <div class="ttc" id="musichotkeymanager_8h_html_a844c8c9bc8bea1a31c416043534b2600"><div class="ttname"><a href="../../d7/d7c/musichotkeymanager_8h.html#a844c8c9bc8bea1a31c416043534b2600">M_HOTKEY_PTR</a></div><div class="ttdeci">#define M_HOTKEY_PTR</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d7c/musichotkeymanager_8h_source.html#l00024">musichotkeymanager.h:24</a></div></div>
-<div class="ttc" id="class_music_global_hot_key_edit_html_add966c044a71861e2be8709989164dd9"><div class="ttname"><a href="../../d4/db6/class_music_global_hot_key_edit.html#add966c044a71861e2be8709989164dd9">MusicGlobalHotKeyEdit::MusicGlobalHotKeyEdit</a></div><div class="ttdeci">MusicGlobalHotKeyEdit(QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d3b/musicglobalhotkeyedit_8cpp_source.html#l00006">musicglobalhotkeyedit.cpp:6</a></div></div>
-<div class="ttc" id="class_music_global_hot_key_edit_html_a76fbd9d4b62789ebf7fb9f0e91fb8dc8"><div class="ttname"><a href="../../d4/db6/class_music_global_hot_key_edit.html#a76fbd9d4b62789ebf7fb9f0e91fb8dc8">MusicGlobalHotKeyEdit::keyPressEvent</a></div><div class="ttdeci">void keyPressEvent(QKeyEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d3b/musicglobalhotkeyedit_8cpp_source.html#l00017">musicglobalhotkeyedit.cpp:17</a></div></div>
+<div class="ttc" id="namespace_music_u_i_object_html_af348385f532ecda67ed120d00d9d1516"><div class="ttname"><a href="../../d2/dc5/namespace_music_u_i_object.html#af348385f532ecda67ed120d00d9d1516">MusicUIObject::MQSSColorStyle10</a></div><div class="ttdeci">const QString MQSSColorStyle10</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/deb/musicuiobject_8h_source.html#l00057">musicuiobject.h:57</a></div></div>
+<div class="ttc" id="musicuiobject_8h_html"><div class="ttname"><a href="../../d0/deb/musicuiobject_8h.html">musicuiobject.h</a></div></div>
+<div class="ttc" id="class_music_global_hot_key_edit_html_add966c044a71861e2be8709989164dd9"><div class="ttname"><a href="../../d4/db6/class_music_global_hot_key_edit.html#add966c044a71861e2be8709989164dd9">MusicGlobalHotKeyEdit::MusicGlobalHotKeyEdit</a></div><div class="ttdeci">MusicGlobalHotKeyEdit(QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d3b/musicglobalhotkeyedit_8cpp_source.html#l00007">musicglobalhotkeyedit.cpp:7</a></div></div>
+<div class="ttc" id="class_music_global_hot_key_edit_html_a76fbd9d4b62789ebf7fb9f0e91fb8dc8"><div class="ttname"><a href="../../d4/db6/class_music_global_hot_key_edit.html#a76fbd9d4b62789ebf7fb9f0e91fb8dc8">MusicGlobalHotKeyEdit::keyPressEvent</a></div><div class="ttdeci">void keyPressEvent(QKeyEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d3b/musicglobalhotkeyedit_8cpp_source.html#l00026">musicglobalhotkeyedit.cpp:26</a></div></div>
 <div class="ttc" id="musichotkeymanager_8h_html"><div class="ttname"><a href="../../d7/d7c/musichotkeymanager_8h.html">musichotkeymanager.h</a></div></div>
-<div class="ttc" id="class_music_global_hot_key_edit_html_ab838a4f21b94185b72f22ea32fae0891"><div class="ttname"><a href="../../d4/db6/class_music_global_hot_key_edit.html#ab838a4f21b94185b72f22ea32fae0891">MusicGlobalHotKeyEdit::~MusicGlobalHotKeyEdit</a></div><div class="ttdeci">~MusicGlobalHotKeyEdit()</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d3b/musicglobalhotkeyedit_8cpp_source.html#l00012">musicglobalhotkeyedit.cpp:12</a></div></div>
+<div class="ttc" id="namespace_music_u_i_object_html_a950005ed3e6b5f4cbdf3fd888fd08215"><div class="ttname"><a href="../../d2/dc5/namespace_music_u_i_object.html#a950005ed3e6b5f4cbdf3fd888fd08215">MusicUIObject::MQSSBackgroundStyle05</a></div><div class="ttdeci">const QString MQSSBackgroundStyle05</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/deb/musicuiobject_8h_source.html#l00093">musicuiobject.h:93</a></div></div>
+<div class="ttc" id="namespace_music_u_i_object_html_a937a117cb09976e3cc06e10ffdac8a56"><div class="ttname"><a href="../../d2/dc5/namespace_music_u_i_object.html#a937a117cb09976e3cc06e10ffdac8a56">MusicUIObject::MQSSBackgroundStyle08</a></div><div class="ttdeci">const QString MQSSBackgroundStyle08</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/deb/musicuiobject_8h_source.html#l00102">musicuiobject.h:102</a></div></div>
+<div class="ttc" id="class_music_global_hot_key_edit_html_ab838a4f21b94185b72f22ea32fae0891"><div class="ttname"><a href="../../d4/db6/class_music_global_hot_key_edit.html#ab838a4f21b94185b72f22ea32fae0891">MusicGlobalHotKeyEdit::~MusicGlobalHotKeyEdit</a></div><div class="ttdeci">~MusicGlobalHotKeyEdit()</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d3b/musicglobalhotkeyedit_8cpp_source.html#l00013">musicglobalhotkeyedit.cpp:13</a></div></div>
 <div class="ttc" id="musicglobalhotkeyedit_8h_html"><div class="ttname"><a href="../../dd/dae/musicglobalhotkeyedit_8h.html">musicglobalhotkeyedit.h</a></div></div>
+<div class="ttc" id="namespace_music_u_i_object_html_af9ab9d1b50f61fbd44e4ef8facda12d6"><div class="ttname"><a href="../../d2/dc5/namespace_music_u_i_object.html#af9ab9d1b50f61fbd44e4ef8facda12d6">MusicUIObject::MQSSColorStyle01</a></div><div class="ttdeci">const QString MQSSColorStyle01</div><div class="ttdoc">Color. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/deb/musicuiobject_8h_source.html#l00030">musicuiobject.h:30</a></div></div>
+<div class="ttc" id="class_music_global_hot_key_edit_html_ac0fd8e6f02e3da1ac8c8ddfda49dae06"><div class="ttname"><a href="../../d4/db6/class_music_global_hot_key_edit.html#ac0fd8e6f02e3da1ac8c8ddfda49dae06">MusicGlobalHotKeyEdit::setHotKeyEnabled</a></div><div class="ttdeci">void setHotKeyEnabled(bool state)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d3b/musicglobalhotkeyedit_8cpp_source.html#l00018">musicglobalhotkeyedit.cpp:18</a></div></div>
+<div class="ttc" id="http__parser_8c_html_adc6e5733fc3c22f0a7b2914188c49c90"><div class="ttname"><a href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a></div><div class="ttdeci">state</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d70/http__parser_8c_source.html#l00279">http_parser.c:279</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 8 2020 13:51:23 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 25 2020 12:46:36 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

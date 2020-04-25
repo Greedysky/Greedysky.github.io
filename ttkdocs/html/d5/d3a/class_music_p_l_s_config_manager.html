@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.11.1.0</span>
+   &#160;<span id="projectnumber">2.12.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -102,10 +102,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a47cd47fd5bdb402e79d768f14028c7f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f232452c1f66c68519c7fbcf226410c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3a/class_music_p_l_s_config_manager.html#a6f232452c1f66c68519c7fbcf226410c">readConfig</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;<a class="el" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)</td></tr>
 <tr class="separator:a6f232452c1f66c68519c7fbcf226410c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f2702f7b265ab5ef3a1166353416a90"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3a/class_music_p_l_s_config_manager.html#a0f2702f7b265ab5ef3a1166353416a90">readPlaylistData</a> (MusicSongItems &amp;items) override</td></tr>
-<tr class="separator:a0f2702f7b265ab5ef3a1166353416a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a393c8eebca723bc5fae1c67fa12c317d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3a/class_music_p_l_s_config_manager.html#a393c8eebca723bc5fae1c67fa12c317d">writePlaylistData</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> MusicSongItems &amp;items, <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;path) override</td></tr>
-<tr class="separator:a393c8eebca723bc5fae1c67fa12c317d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d959d1b5caf1e3d2aab422f34b7ac9b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3a/class_music_p_l_s_config_manager.html#a4d959d1b5caf1e3d2aab422f34b7ac9b">readPlaylistData</a> (MusicSongItems &amp;items) override</td></tr>
+<tr class="separator:a4d959d1b5caf1e3d2aab422f34b7ac9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ebe6edc8117e1dff3d7224b545aae55"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3a/class_music_p_l_s_config_manager.html#a1ebe6edc8117e1dff3d7224b545aae55">writePlaylistData</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> MusicSongItems &amp;items, <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;path) override</td></tr>
+<tr class="separator:a1ebe6edc8117e1dff3d7224b545aae55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_music_playlist_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_music_playlist_interface')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../dd/d56/class_music_playlist_interface.html">MusicPlaylistInterface</a></td></tr>
 <tr class="memitem:ab935f6d7720a02201fd4b19734c0d788 inherit pub_methods_class_music_playlist_interface"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d56/class_music_playlist_interface.html#ab935f6d7720a02201fd4b19734c0d788">MusicPlaylistInterface</a> ()</td></tr>
 <tr class="separator:ab935f6d7720a02201fd4b19734c0d788 inherit pub_methods_class_music_playlist_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,11 +169,11 @@ Private Attributes</h2></td></tr>
 
 <p>References <a class="el" href="../../d6/d81/musicplsconfigmanager_8h_source.html#l00051">m_file</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d4c/musicplaylistmanager_8cpp_source.html#l00129">MusicPlaylistManager::readPLSList()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d4c/musicplaylistmanager_8cpp_source.html#l00145">MusicPlaylistManager::readPLSList()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a0f2702f7b265ab5ef3a1166353416a90"></a>
+<a class="anchor" id="a4d959d1b5caf1e3d2aab422f34b7ac9b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -181,7 +181,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void MusicPLSConfigManager::readPlaylistData </td>
+          <td class="memname">bool MusicPLSConfigManager::readPlaylistData </td>
           <td>(</td>
           <td class="paramtype">MusicSongItems &amp;&#160;</td>
           <td class="paramname"><em>items</em></td><td>)</td>
@@ -196,17 +196,17 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Read datas from config file. </p>
 
-<p>Implements <a class="el" href="../../dd/d56/class_music_playlist_interface.html#aced54c394eb1f6da5d428d73991763e0">MusicPlaylistInterface</a>.</p>
+<p>Implements <a class="el" href="../../dd/d56/class_music_playlist_interface.html#a71143520c7320d54709f626acc8ea366">MusicPlaylistInterface</a>.</p>
 
 <p>Definition at line <a class="el" href="../../d7/d99/musicplsconfigmanager_8cpp_source.html#l00016">16</a> of file <a class="el" href="../../d7/d99/musicplsconfigmanager_8cpp_source.html">musicplsconfigmanager.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d6/d81/musicplsconfigmanager_8h_source.html#l00051">m_file</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00205">MusicSongItem::m_itemName</a>, <a class="el" href="../../d5/d2b/ttklogger_8h_source.html#l00050">M_LOGGER_ERROR</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00207">MusicSongItem::m_songs</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00106">MusicTime::msecTime2LabelJustified()</a>.</p>
+<p>References <a class="el" href="../../d6/d81/musicplsconfigmanager_8h_source.html#l00051">m_file</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00205">MusicSongItem::m_itemName</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00207">MusicSongItem::m_songs</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00106">MusicTime::msecTime2LabelJustified()</a>, and <a class="el" href="../../d5/d2b/ttklogger_8h_source.html#l00050">TTK_LOGGER_ERROR</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d4c/musicplaylistmanager_8cpp_source.html#l00129">MusicPlaylistManager::readPLSList()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d4c/musicplaylistmanager_8cpp_source.html#l00145">MusicPlaylistManager::readPLSList()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a393c8eebca723bc5fae1c67fa12c317d"></a>
+<a class="anchor" id="a1ebe6edc8117e1dff3d7224b545aae55"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -214,7 +214,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void MusicPLSConfigManager::writePlaylistData </td>
+          <td class="memname">bool MusicPLSConfigManager::writePlaylistData </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> MusicSongItems &amp;&#160;</td>
           <td class="paramname"><em>items</em>, </td>
@@ -239,13 +239,13 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Write datas into config file. </p>
 
-<p>Implements <a class="el" href="../../dd/d56/class_music_playlist_interface.html#a5e4611d966232da771384384b292344b">MusicPlaylistInterface</a>.</p>
+<p>Implements <a class="el" href="../../dd/d56/class_music_playlist_interface.html#a4d366a1d76f3fb19fc6978aece0ef493">MusicPlaylistInterface</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d7/d99/musicplsconfigmanager_8cpp_source.html#l00077">77</a> of file <a class="el" href="../../d7/d99/musicplsconfigmanager_8cpp_source.html">musicplsconfigmanager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d99/musicplsconfigmanager_8cpp_source.html#l00078">78</a> of file <a class="el" href="../../d7/d99/musicplsconfigmanager_8cpp_source.html">musicplsconfigmanager.cpp</a>.</p>
 
 <p>References <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00101">MusicSong::getMusicName()</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00109">MusicSong::getMusicPath()</a>, <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00125">MusicSong::getMusicPlayTime()</a>, <a class="el" href="../../d6/d81/musicplsconfigmanager_8h_source.html#l00051">m_file</a>, and <a class="el" href="../../d4/d03/musicsong_8h_source.html#l00207">MusicSongItem::m_songs</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d4c/musicplaylistmanager_8cpp_source.html#l00138">MusicPlaylistManager::writePLSList()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d4c/musicplaylistmanager_8cpp_source.html#l00155">MusicPlaylistManager::writePLSList()</a>.</p>
 
 </div>
 </div>
@@ -270,7 +270,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d6/d81/musicplsconfigmanager_8h_source.html#l00051">51</a> of file <a class="el" href="../../d6/d81/musicplsconfigmanager_8h_source.html">musicplsconfigmanager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d7/d99/musicplsconfigmanager_8cpp_source.html#l00010">readConfig()</a>, <a class="el" href="../../d7/d99/musicplsconfigmanager_8cpp_source.html#l00016">readPlaylistData()</a>, and <a class="el" href="../../d7/d99/musicplsconfigmanager_8cpp_source.html#l00077">writePlaylistData()</a>.</p>
+<p>Referenced by <a class="el" href="../../d7/d99/musicplsconfigmanager_8cpp_source.html#l00010">readConfig()</a>, <a class="el" href="../../d7/d99/musicplsconfigmanager_8cpp_source.html#l00016">readPlaylistData()</a>, and <a class="el" href="../../d7/d99/musicplsconfigmanager_8cpp_source.html#l00078">writePlaylistData()</a>.</p>
 
 </div>
 </div>
@@ -281,7 +281,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 8 2020 13:52:54 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 25 2020 12:47:55 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

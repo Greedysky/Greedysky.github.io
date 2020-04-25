@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.11.1.0</span>
+   &#160;<span id="projectnumber">2.12.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -107,160 +107,171 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../df/d13/musicitemdelegate_8h.html#aeec9db215af9a350d6d46f9247f8f174">   28</a></span>&#160;<span class="preprocessor">#define MUSIC_AUDIT_ROLE Qt::UserRole + 4</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../df/d13/musicitemdelegate_8h.html#a0e95096d1ade2675c192c7cb59d04fd6">   29</a></span>&#160;<span class="preprocessor">#define MUSIC_TEXTS_ROLE Qt::UserRole + 5</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../df/d13/musicitemdelegate_8h.html#a95ef4ab84a308953404717247dfc0219">   30</a></span>&#160;<span class="preprocessor">#define MUSIC_TIMES_ROLE Qt::UserRole + 6</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../df/d13/musicitemdelegate_8h.html#a81d22a0ac0fc6fb078973b51ec747bad">   31</a></span>&#160;<span class="preprocessor">#define MUSIC_DATAS_ROLE Qt::UserRole + 100</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">class </span>QLabel;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">class </span>QCheckBox;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">class </span>QRadioButton;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">class </span>QProgressBar;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">class </span>QPushButton;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../dc/d47/class_music_radio_button_delegate.html">   42</a></span>&#160;<span class="keyword">class </span>MUSIC_WIDGET_EXPORT <a class="code" href="../../dc/d47/class_music_radio_button_delegate.html">MusicRadioButtonDelegate</a> : <span class="keyword">public</span> QItemDelegate</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../dc/d47/class_music_radio_button_delegate.html">MusicRadioButtonDelegate</a>)</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../dc/d47/class_music_radio_button_delegate.html">MusicRadioButtonDelegate</a>(QObject* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../dc/d47/class_music_radio_button_delegate.html">MusicRadioButtonDelegate</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../df/d13/musicitemdelegate_8h.html#aab18a5568a4b37998ac69b7bab0879b9">   31</a></span>&#160;<span class="preprocessor">#define MUSIC_ENABL_ROLE Qt::UserRole + 7</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../df/d13/musicitemdelegate_8h.html#a91591072ae1ce55389ff702981a7df49">   32</a></span>&#160;<span class="preprocessor">#define MUSIC_SHOWN_ROLE Qt::UserRole + 8</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="../../df/d13/musicitemdelegate_8h.html#a81d22a0ac0fc6fb078973b51ec747bad">   33</a></span>&#160;<span class="preprocessor">#define MUSIC_DATAS_ROLE Qt::UserRole + 100</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">class </span>QLabel;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">class </span>QCheckBox;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">class </span>QRadioButton;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">class </span>QProgressBar;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">class </span>QPushButton;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="../../dc/d47/class_music_radio_button_delegate.html">   44</a></span>&#160;<span class="keyword">class </span>MUSIC_WIDGET_EXPORT <a class="code" href="../../dc/d47/class_music_radio_button_delegate.html">MusicRadioButtonDelegate</a> : <span class="keyword">public</span> QItemDelegate</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../dc/d47/class_music_radio_button_delegate.html">MusicRadioButtonDelegate</a>)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../dc/d47/class_music_radio_button_delegate.html">MusicRadioButtonDelegate</a>(QObject* parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> setStyleSheet(<span class="keyword">const</span> QString &amp;style);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">virtual</span> QSize sizeHint(<span class="keyword">const</span> QStyleOptionViewItem &amp;option, <span class="keyword">const</span> QModelIndex &amp;) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> paint(QPainter *painter, <span class="keyword">const</span> QStyleOptionViewItem &amp;option, <span class="keyword">const</span> QModelIndex &amp;index) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="../../dc/d47/class_music_radio_button_delegate.html#a301677e1c459d32afaf38738c038d3ca">   68</a></span>&#160;    QRadioButton *<a class="code" href="../../dc/d47/class_music_radio_button_delegate.html#a301677e1c459d32afaf38738c038d3ca">m_radioButton</a>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="../../dd/d51/class_music_check_box_delegate.html">   76</a></span>&#160;<span class="keyword">class </span>MUSIC_WIDGET_EXPORT <a class="code" href="../../dd/d51/class_music_check_box_delegate.html">MusicCheckBoxDelegate</a> : <span class="keyword">public</span> QItemDelegate</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../dd/d51/class_music_check_box_delegate.html">MusicCheckBoxDelegate</a>)</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../dd/d51/class_music_check_box_delegate.html">MusicCheckBoxDelegate</a>(QObject* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../dd/d51/class_music_check_box_delegate.html">MusicCheckBoxDelegate</a>();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> setStyleSheet(<span class="keyword">const</span> QString &amp;style);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">virtual</span> QSize sizeHint(<span class="keyword">const</span> QStyleOptionViewItem &amp;option, <span class="keyword">const</span> QModelIndex &amp;) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> paint(QPainter *painter, <span class="keyword">const</span> QStyleOptionViewItem &amp;option, <span class="keyword">const</span> QModelIndex &amp;index) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> buttonChecked();</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="../../dd/d51/class_music_check_box_delegate.html#af99096f0073257ae52d5dfefcfd00845">  108</a></span>&#160;    QCheckBox *<a class="code" href="../../dd/d51/class_music_check_box_delegate.html#af99096f0073257ae52d5dfefcfd00845">m_checkBox</a>;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;};</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../dc/d47/class_music_radio_button_delegate.html">MusicRadioButtonDelegate</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> setStyleSheet(<span class="keyword">const</span> QString &amp;style);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> setTreeModel(<span class="keywordtype">bool</span> tree);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">virtual</span> QSize sizeHint(<span class="keyword">const</span> QStyleOptionViewItem &amp;option, <span class="keyword">const</span> QModelIndex &amp;) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> paint(QPainter *painter, <span class="keyword">const</span> QStyleOptionViewItem &amp;option, <span class="keyword">const</span> QModelIndex &amp;index) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="../../dc/d47/class_music_radio_button_delegate.html#aa918e29024a13375f9e965f5b6af3d7a">   75</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../dc/d47/class_music_radio_button_delegate.html#aa918e29024a13375f9e965f5b6af3d7a">m_treeMode</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="../../dc/d47/class_music_radio_button_delegate.html#a301677e1c459d32afaf38738c038d3ca">   76</a></span>&#160;    QRadioButton *<a class="code" href="../../dc/d47/class_music_radio_button_delegate.html#a301677e1c459d32afaf38738c038d3ca">m_radioButton</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="../../dd/d51/class_music_check_box_delegate.html">   84</a></span>&#160;<span class="keyword">class </span>MUSIC_WIDGET_EXPORT <a class="code" href="../../dd/d51/class_music_check_box_delegate.html">MusicCheckBoxDelegate</a> : <span class="keyword">public</span> QItemDelegate</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../dd/d51/class_music_check_box_delegate.html">MusicCheckBoxDelegate</a>)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../dd/d51/class_music_check_box_delegate.html">MusicCheckBoxDelegate</a>(QObject* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../dd/d51/class_music_check_box_delegate.html">MusicCheckBoxDelegate</a>();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> setStyleSheet(<span class="keyword">const</span> QString &amp;style);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> setFillBackground(<span class="keywordtype">bool</span> fill);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span> showTextMode(<span class="keywordtype">bool</span> <a class="code" href="../../d2/db7/ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">void</span> setTreeModel(<span class="keywordtype">bool</span> tree);</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="../../db/d2c/class_music_query_table_delegate.html">  116</a></span>&#160;<span class="keyword">class </span>MUSIC_WIDGET_EXPORT <a class="code" href="../../db/d2c/class_music_query_table_delegate.html">MusicQueryTableDelegate</a> : <span class="keyword">public</span> <a class="code" href="../../dd/d51/class_music_check_box_delegate.html">MusicCheckBoxDelegate</a></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;{</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../db/d2c/class_music_query_table_delegate.html">MusicQueryTableDelegate</a>)</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../db/d2c/class_music_query_table_delegate.html">MusicQueryTableDelegate</a>(QObject* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../db/d2c/class_music_query_table_delegate.html">MusicQueryTableDelegate</a>();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keyword">virtual</span> QSize sizeHint(<span class="keyword">const</span> QStyleOptionViewItem &amp;option, <span class="keyword">const</span> QModelIndex &amp;) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> paint(QPainter *painter, <span class="keyword">const</span> QStyleOptionViewItem &amp;option, <span class="keyword">const</span> QModelIndex &amp;index) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">void</span> buttonChecked();</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../dd/d51/class_music_check_box_delegate.html#a9c9d2ddf5baca2e592c9da7fd5ab9172">paint</a>(QPainter *painter, <span class="keyword">const</span> QStyleOptionViewItem &amp;option, <span class="keyword">const</span> QModelIndex &amp;index) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;};</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="../../dd/d51/class_music_check_box_delegate.html#adc5fe15d50f2940d20fcd3b17544e754">  129</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../dd/d51/class_music_check_box_delegate.html#adc5fe15d50f2940d20fcd3b17544e754">m_textMode</a>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="../../dd/d51/class_music_check_box_delegate.html#a60759b1827a2e31d1281a3411274e206">  130</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../dd/d51/class_music_check_box_delegate.html#a60759b1827a2e31d1281a3411274e206">m_treeMode</a>;</div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="../../dd/d51/class_music_check_box_delegate.html#a03e65e36998cd3ffbb82b688c25e5025">  131</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../dd/d51/class_music_check_box_delegate.html#a03e65e36998cd3ffbb82b688c25e5025">m_background</a>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="../../dd/d51/class_music_check_box_delegate.html#af99096f0073257ae52d5dfefcfd00845">  132</a></span>&#160;    QCheckBox *<a class="code" href="../../dd/d51/class_music_check_box_delegate.html#af99096f0073257ae52d5dfefcfd00845">m_checkBox</a>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;};</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="../../df/d5c/class_music_progress_bar_delegate.html">  139</a></span>&#160;<span class="keyword">class </span>MUSIC_WIDGET_EXPORT <a class="code" href="../../df/d5c/class_music_progress_bar_delegate.html">MusicProgressBarDelegate</a> : <span class="keyword">public</span> QItemDelegate</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;{</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../df/d5c/class_music_progress_bar_delegate.html">MusicProgressBarDelegate</a>)</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../df/d5c/class_music_progress_bar_delegate.html">MusicProgressBarDelegate</a>(QObject* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    ~<a class="code" href="../../df/d5c/class_music_progress_bar_delegate.html">MusicProgressBarDelegate</a>();</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordtype">void</span> setStyleSheet(<span class="keyword">const</span> QString &amp;style);</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keyword">virtual</span> QSize sizeHint(<span class="keyword">const</span> QStyleOptionViewItem &amp;option, <span class="keyword">const</span> QModelIndex &amp;) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> paint(QPainter *painter, <span class="keyword">const</span> QStyleOptionViewItem &amp;option, <span class="keyword">const</span> QModelIndex &amp;index) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="../../df/d5c/class_music_progress_bar_delegate.html#a2ba51b489fff73277d8fff3fd4dfa9fa">  166</a></span>&#160;    QProgressBar *<a class="code" href="../../df/d5c/class_music_progress_bar_delegate.html#a2ba51b489fff73277d8fff3fd4dfa9fa">m_progress</a>;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;};</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="../../df/d5c/class_music_progress_bar_delegate.html">  140</a></span>&#160;<span class="keyword">class </span>MUSIC_WIDGET_EXPORT <a class="code" href="../../df/d5c/class_music_progress_bar_delegate.html">MusicProgressBarDelegate</a> : <span class="keyword">public</span> QItemDelegate</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;{</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../df/d5c/class_music_progress_bar_delegate.html">MusicProgressBarDelegate</a>)</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../df/d5c/class_music_progress_bar_delegate.html">MusicProgressBarDelegate</a>(QObject* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    ~<a class="code" href="../../df/d5c/class_music_progress_bar_delegate.html">MusicProgressBarDelegate</a>();</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordtype">void</span> setStyleSheet(<span class="keyword">const</span> QString &amp;style);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">void</span> setTreeModel(<span class="keywordtype">bool</span> tree);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keyword">virtual</span> QSize sizeHint(<span class="keyword">const</span> QStyleOptionViewItem &amp;option, <span class="keyword">const</span> QModelIndex &amp;) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> paint(QPainter *painter, <span class="keyword">const</span> QStyleOptionViewItem &amp;option, <span class="keyword">const</span> QModelIndex &amp;index) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="../../d0/dcf/class_music_label_delegate.html">  174</a></span>&#160;<span class="keyword">class </span>MUSIC_WIDGET_EXPORT <a class="code" href="../../d0/dcf/class_music_label_delegate.html">MusicLabelDelegate</a> : <span class="keyword">public</span> QItemDelegate</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;{</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d0/dcf/class_music_label_delegate.html">MusicLabelDelegate</a>)</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d0/dcf/class_music_label_delegate.html">MusicLabelDelegate</a>(QObject* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d0/dcf/class_music_label_delegate.html">MusicLabelDelegate</a>();</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordtype">void</span> setStyleSheet(<span class="keyword">const</span> QString &amp;style);</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keyword">virtual</span> QSize sizeHint(<span class="keyword">const</span> QStyleOptionViewItem &amp;option, <span class="keyword">const</span> QModelIndex &amp;) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> paint(QPainter *painter, <span class="keyword">const</span> QStyleOptionViewItem &amp;option, <span class="keyword">const</span> QModelIndex &amp;index) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00201"></a><span class="lineno"><a class="line" href="../../d0/dcf/class_music_label_delegate.html#af50b32899f8d48b958238ae7d51dde21">  201</a></span>&#160;    QLabel *<a class="code" href="../../d0/dcf/class_music_label_delegate.html#af50b32899f8d48b958238ae7d51dde21">m_label</a>;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;};</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="../../df/d5c/class_music_progress_bar_delegate.html#acbd8b83f8e5a2049b38bfc5251c69ec9">  171</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../df/d5c/class_music_progress_bar_delegate.html#acbd8b83f8e5a2049b38bfc5251c69ec9">m_treeMode</a>;</div>
+<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="../../df/d5c/class_music_progress_bar_delegate.html#a2ba51b489fff73277d8fff3fd4dfa9fa">  172</a></span>&#160;    QProgressBar *<a class="code" href="../../df/d5c/class_music_progress_bar_delegate.html#a2ba51b489fff73277d8fff3fd4dfa9fa">m_progress</a>;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;};</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="../../d0/dcf/class_music_label_delegate.html">  180</a></span>&#160;<span class="keyword">class </span>MUSIC_WIDGET_EXPORT <a class="code" href="../../d0/dcf/class_music_label_delegate.html">MusicLabelDelegate</a> : <span class="keyword">public</span> QItemDelegate</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;{</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d0/dcf/class_music_label_delegate.html">MusicLabelDelegate</a>)</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d0/dcf/class_music_label_delegate.html">MusicLabelDelegate</a>(QObject* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d0/dcf/class_music_label_delegate.html">MusicLabelDelegate</a>();</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordtype">void</span> setStyleSheet(<span class="keyword">const</span> QString &amp;style);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordtype">void</span> setAlignment(Qt::Alignment alignment);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keywordtype">void</span> setTreeModel(<span class="keywordtype">bool</span> tree);</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
-<div class="line"><a name="l00209"></a><span class="lineno"><a class="line" href="../../d5/d3a/class_music_push_button_delegate.html">  209</a></span>&#160;<span class="keyword">class </span>MUSIC_WIDGET_EXPORT <a class="code" href="../../d5/d3a/class_music_push_button_delegate.html">MusicPushButtonDelegate</a> : <span class="keyword">public</span> QItemDelegate</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;{</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d5/d3a/class_music_push_button_delegate.html">MusicPushButtonDelegate</a>)</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d5/d3a/class_music_push_button_delegate.html">MusicPushButtonDelegate</a>(QObject* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d5/d3a/class_music_push_button_delegate.html">MusicPushButtonDelegate</a>();</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keyword">virtual</span> QSize sizeHint(<span class="keyword">const</span> QStyleOptionViewItem &amp;option, <span class="keyword">const</span> QModelIndex &amp;) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> paint(QPainter *painter, <span class="keyword">const</span> QStyleOptionViewItem &amp;option, <span class="keyword">const</span> QModelIndex &amp;index) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00215"></a><span class="lineno"><a class="line" href="../../d0/dcf/class_music_label_delegate.html#aa55e35a9844d9aeb111c93dea619fa21">  215</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d0/dcf/class_music_label_delegate.html#aa55e35a9844d9aeb111c93dea619fa21">m_treeMode</a>;</div>
+<div class="line"><a name="l00216"></a><span class="lineno"><a class="line" href="../../d0/dcf/class_music_label_delegate.html#af50b32899f8d48b958238ae7d51dde21">  216</a></span>&#160;    QLabel *<a class="code" href="../../d0/dcf/class_music_label_delegate.html#af50b32899f8d48b958238ae7d51dde21">m_label</a>;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;};</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordtype">void</span> setStyleSheet(<span class="keyword">const</span> QString &amp;style);</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keyword">virtual</span> QSize sizeHint(<span class="keyword">const</span> QStyleOptionViewItem &amp;option, <span class="keyword">const</span> QModelIndex &amp;) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> paint(QPainter *painter, <span class="keyword">const</span> QStyleOptionViewItem &amp;option, <span class="keyword">const</span> QModelIndex &amp;index) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00236"></a><span class="lineno"><a class="line" href="../../d5/d3a/class_music_push_button_delegate.html#ab06dca20c9fc349f3536ae69f40305a3">  236</a></span>&#160;    QPushButton *<a class="code" href="../../d5/d3a/class_music_push_button_delegate.html#ab06dca20c9fc349f3536ae69f40305a3">m_pushButton</a>;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;};</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
-<div class="line"><a name="l00244"></a><span class="lineno"><a class="line" href="../../d7/dd1/class_music_rename_line_edit_delegate.html">  244</a></span>&#160;<span class="keyword">class </span>MUSIC_WIDGET_EXPORT <a class="code" href="../../d7/dd1/class_music_rename_line_edit_delegate.html">MusicRenameLineEditDelegate</a> : <span class="keyword">public</span> QItemDelegate</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;{</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d7/dd1/class_music_rename_line_edit_delegate.html">MusicRenameLineEditDelegate</a>)</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d7/dd1/class_music_rename_line_edit_delegate.html">MusicRenameLineEditDelegate</a>(QObject *parent);</div>
+<div class="line"><a name="l00224"></a><span class="lineno"><a class="line" href="../../d5/d3a/class_music_push_button_delegate.html">  224</a></span>&#160;<span class="keyword">class </span>MUSIC_WIDGET_EXPORT <a class="code" href="../../d5/d3a/class_music_push_button_delegate.html">MusicPushButtonDelegate</a> : <span class="keyword">public</span> QItemDelegate</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;{</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d5/d3a/class_music_push_button_delegate.html">MusicPushButtonDelegate</a>)</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d5/d3a/class_music_push_button_delegate.html">MusicPushButtonDelegate</a>(QObject* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d5/d3a/class_music_push_button_delegate.html">MusicPushButtonDelegate</a>();</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordtype">void</span> setStyleSheet(<span class="keyword">const</span> QString &amp;style);</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keywordtype">void</span> setTreeModel(<span class="keywordtype">bool</span> tree);</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keyword">virtual</span> QSize sizeHint(<span class="keyword">const</span> QStyleOptionViewItem &amp;option, <span class="keyword">const</span> QModelIndex &amp;) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> paint(QPainter *painter, <span class="keyword">const</span> QStyleOptionViewItem &amp;option, <span class="keyword">const</span> QModelIndex &amp;index) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keyword">virtual</span> QWidget *createEditor(QWidget *parent, <span class="keyword">const</span> QStyleOptionViewItem &amp;option, <span class="keyword">const</span> QModelIndex &amp;index) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;};</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00255"></a><span class="lineno"><a class="line" href="../../d5/d3a/class_music_push_button_delegate.html#a3e43ec0b1d6502a4ebe13c627b34b2e8">  255</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d5/d3a/class_music_push_button_delegate.html#a3e43ec0b1d6502a4ebe13c627b34b2e8">m_treeMode</a>;</div>
+<div class="line"><a name="l00256"></a><span class="lineno"><a class="line" href="../../d5/d3a/class_music_push_button_delegate.html#ab06dca20c9fc349f3536ae69f40305a3">  256</a></span>&#160;    QPushButton *<a class="code" href="../../d5/d3a/class_music_push_button_delegate.html#ab06dca20c9fc349f3536ae69f40305a3">m_pushButton</a>;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;};</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="preprocessor">#endif // MUSICITEMDELEGATE_H</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="../../d7/dd1/class_music_rename_line_edit_delegate.html">  264</a></span>&#160;<span class="keyword">class </span>MUSIC_WIDGET_EXPORT <a class="code" href="../../d7/dd1/class_music_rename_line_edit_delegate.html">MusicRenameLineEditDelegate</a> : <span class="keyword">public</span> QItemDelegate</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;{</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d7/dd1/class_music_rename_line_edit_delegate.html">MusicRenameLineEditDelegate</a>)</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d7/dd1/class_music_rename_line_edit_delegate.html">MusicRenameLineEditDelegate</a>(QObject *parent);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keyword">virtual</span> QWidget *createEditor(QWidget *parent, <span class="keyword">const</span> QStyleOptionViewItem &amp;option, <span class="keyword">const</span> QModelIndex &amp;index) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;};</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="preprocessor">#endif // MUSICITEMDELEGATE_H</span></div>
+<div class="ttc" id="class_music_check_box_delegate_html_adc5fe15d50f2940d20fcd3b17544e754"><div class="ttname"><a href="../../dd/d51/class_music_check_box_delegate.html#adc5fe15d50f2940d20fcd3b17544e754">MusicCheckBoxDelegate::m_textMode</a></div><div class="ttdeci">bool m_textMode</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/musicitemdelegate_8h_source.html#l00129">musicitemdelegate.h:129</a></div></div>
+<div class="ttc" id="class_music_progress_bar_delegate_html_acbd8b83f8e5a2049b38bfc5251c69ec9"><div class="ttname"><a href="../../df/d5c/class_music_progress_bar_delegate.html#acbd8b83f8e5a2049b38bfc5251c69ec9">MusicProgressBarDelegate::m_treeMode</a></div><div class="ttdeci">bool m_treeMode</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/musicitemdelegate_8h_source.html#l00171">musicitemdelegate.h:171</a></div></div>
+<div class="ttc" id="class_music_label_delegate_html_aa55e35a9844d9aeb111c93dea619fa21"><div class="ttname"><a href="../../d0/dcf/class_music_label_delegate.html#aa55e35a9844d9aeb111c93dea619fa21">MusicLabelDelegate::m_treeMode</a></div><div class="ttdeci">bool m_treeMode</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/musicitemdelegate_8h_source.html#l00215">musicitemdelegate.h:215</a></div></div>
+<div class="ttc" id="class_music_radio_button_delegate_html_aa918e29024a13375f9e965f5b6af3d7a"><div class="ttname"><a href="../../dc/d47/class_music_radio_button_delegate.html#aa918e29024a13375f9e965f5b6af3d7a">MusicRadioButtonDelegate::m_treeMode</a></div><div class="ttdeci">bool m_treeMode</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/musicitemdelegate_8h_source.html#l00075">musicitemdelegate.h:75</a></div></div>
 <div class="ttc" id="ttkglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00144">ttkglobal.h:144</a></div></div>
-<div class="ttc" id="class_music_label_delegate_html_af50b32899f8d48b958238ae7d51dde21"><div class="ttname"><a href="../../d0/dcf/class_music_label_delegate.html#af50b32899f8d48b958238ae7d51dde21">MusicLabelDelegate::m_label</a></div><div class="ttdeci">QLabel * m_label</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/musicitemdelegate_8h_source.html#l00201">musicitemdelegate.h:201</a></div></div>
-<div class="ttc" id="class_music_check_box_delegate_html"><div class="ttname"><a href="../../dd/d51/class_music_check_box_delegate.html">MusicCheckBoxDelegate</a></div><div class="ttdoc">The class of the checkbox item delegate. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/musicitemdelegate_8h_source.html#l00076">musicitemdelegate.h:76</a></div></div>
-<div class="ttc" id="class_music_query_table_delegate_html"><div class="ttname"><a href="../../db/d2c/class_music_query_table_delegate.html">MusicQueryTableDelegate</a></div><div class="ttdoc">The class of the color item delegate. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/musicitemdelegate_8h_source.html#l00116">musicitemdelegate.h:116</a></div></div>
-<div class="ttc" id="class_music_check_box_delegate_html_af99096f0073257ae52d5dfefcfd00845"><div class="ttname"><a href="../../dd/d51/class_music_check_box_delegate.html#af99096f0073257ae52d5dfefcfd00845">MusicCheckBoxDelegate::m_checkBox</a></div><div class="ttdeci">QCheckBox * m_checkBox</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/musicitemdelegate_8h_source.html#l00108">musicitemdelegate.h:108</a></div></div>
-<div class="ttc" id="class_music_progress_bar_delegate_html_a2ba51b489fff73277d8fff3fd4dfa9fa"><div class="ttname"><a href="../../df/d5c/class_music_progress_bar_delegate.html#a2ba51b489fff73277d8fff3fd4dfa9fa">MusicProgressBarDelegate::m_progress</a></div><div class="ttdeci">QProgressBar * m_progress</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/musicitemdelegate_8h_source.html#l00166">musicitemdelegate.h:166</a></div></div>
-<div class="ttc" id="class_music_push_button_delegate_html"><div class="ttname"><a href="../../d5/d3a/class_music_push_button_delegate.html">MusicPushButtonDelegate</a></div><div class="ttdoc">The class of the push button item delegate. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/musicitemdelegate_8h_source.html#l00209">musicitemdelegate.h:209</a></div></div>
-<div class="ttc" id="class_music_progress_bar_delegate_html"><div class="ttname"><a href="../../df/d5c/class_music_progress_bar_delegate.html">MusicProgressBarDelegate</a></div><div class="ttdoc">The class of the progress bar item delegate. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/musicitemdelegate_8h_source.html#l00139">musicitemdelegate.h:139</a></div></div>
-<div class="ttc" id="class_music_push_button_delegate_html_ab06dca20c9fc349f3536ae69f40305a3"><div class="ttname"><a href="../../d5/d3a/class_music_push_button_delegate.html#ab06dca20c9fc349f3536ae69f40305a3">MusicPushButtonDelegate::m_pushButton</a></div><div class="ttdeci">QPushButton * m_pushButton</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/musicitemdelegate_8h_source.html#l00236">musicitemdelegate.h:236</a></div></div>
+<div class="ttc" id="class_music_label_delegate_html_af50b32899f8d48b958238ae7d51dde21"><div class="ttname"><a href="../../d0/dcf/class_music_label_delegate.html#af50b32899f8d48b958238ae7d51dde21">MusicLabelDelegate::m_label</a></div><div class="ttdeci">QLabel * m_label</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/musicitemdelegate_8h_source.html#l00216">musicitemdelegate.h:216</a></div></div>
+<div class="ttc" id="class_music_check_box_delegate_html_a03e65e36998cd3ffbb82b688c25e5025"><div class="ttname"><a href="../../dd/d51/class_music_check_box_delegate.html#a03e65e36998cd3ffbb82b688c25e5025">MusicCheckBoxDelegate::m_background</a></div><div class="ttdeci">bool m_background</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/musicitemdelegate_8h_source.html#l00131">musicitemdelegate.h:131</a></div></div>
+<div class="ttc" id="class_music_check_box_delegate_html"><div class="ttname"><a href="../../dd/d51/class_music_check_box_delegate.html">MusicCheckBoxDelegate</a></div><div class="ttdoc">The class of the checkbox item delegate. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/musicitemdelegate_8h_source.html#l00084">musicitemdelegate.h:84</a></div></div>
+<div class="ttc" id="class_music_check_box_delegate_html_af99096f0073257ae52d5dfefcfd00845"><div class="ttname"><a href="../../dd/d51/class_music_check_box_delegate.html#af99096f0073257ae52d5dfefcfd00845">MusicCheckBoxDelegate::m_checkBox</a></div><div class="ttdeci">QCheckBox * m_checkBox</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/musicitemdelegate_8h_source.html#l00132">musicitemdelegate.h:132</a></div></div>
+<div class="ttc" id="class_music_progress_bar_delegate_html_a2ba51b489fff73277d8fff3fd4dfa9fa"><div class="ttname"><a href="../../df/d5c/class_music_progress_bar_delegate.html#a2ba51b489fff73277d8fff3fd4dfa9fa">MusicProgressBarDelegate::m_progress</a></div><div class="ttdeci">QProgressBar * m_progress</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/musicitemdelegate_8h_source.html#l00172">musicitemdelegate.h:172</a></div></div>
+<div class="ttc" id="class_music_push_button_delegate_html"><div class="ttname"><a href="../../d5/d3a/class_music_push_button_delegate.html">MusicPushButtonDelegate</a></div><div class="ttdoc">The class of the push button item delegate. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/musicitemdelegate_8h_source.html#l00224">musicitemdelegate.h:224</a></div></div>
+<div class="ttc" id="class_music_push_button_delegate_html_a3e43ec0b1d6502a4ebe13c627b34b2e8"><div class="ttname"><a href="../../d5/d3a/class_music_push_button_delegate.html#a3e43ec0b1d6502a4ebe13c627b34b2e8">MusicPushButtonDelegate::m_treeMode</a></div><div class="ttdeci">bool m_treeMode</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/musicitemdelegate_8h_source.html#l00255">musicitemdelegate.h:255</a></div></div>
+<div class="ttc" id="class_music_progress_bar_delegate_html"><div class="ttname"><a href="../../df/d5c/class_music_progress_bar_delegate.html">MusicProgressBarDelegate</a></div><div class="ttdoc">The class of the progress bar item delegate. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/musicitemdelegate_8h_source.html#l00140">musicitemdelegate.h:140</a></div></div>
+<div class="ttc" id="class_music_push_button_delegate_html_ab06dca20c9fc349f3536ae69f40305a3"><div class="ttname"><a href="../../d5/d3a/class_music_push_button_delegate.html#ab06dca20c9fc349f3536ae69f40305a3">MusicPushButtonDelegate::m_pushButton</a></div><div class="ttdeci">QPushButton * m_pushButton</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/musicitemdelegate_8h_source.html#l00256">musicitemdelegate.h:256</a></div></div>
 <div class="ttc" id="musicglobaldefine_8h_html"><div class="ttname"><a href="../../d6/d9b/musicglobaldefine_8h.html">musicglobaldefine.h</a></div></div>
-<div class="ttc" id="class_music_label_delegate_html"><div class="ttname"><a href="../../d0/dcf/class_music_label_delegate.html">MusicLabelDelegate</a></div><div class="ttdoc">The class of the label item delegate. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/musicitemdelegate_8h_source.html#l00174">musicitemdelegate.h:174</a></div></div>
-<div class="ttc" id="class_music_check_box_delegate_html_a9c9d2ddf5baca2e592c9da7fd5ab9172"><div class="ttname"><a href="../../dd/d51/class_music_check_box_delegate.html#a9c9d2ddf5baca2e592c9da7fd5ab9172">MusicCheckBoxDelegate::paint</a></div><div class="ttdeci">virtual void paint(QPainter *painter, const QStyleOptionViewItem &amp;option, const QModelIndex &amp;index) const override</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d09/musicitemdelegate_8cpp_source.html#l00077">musicitemdelegate.cpp:77</a></div></div>
-<div class="ttc" id="class_music_rename_line_edit_delegate_html"><div class="ttname"><a href="../../d7/dd1/class_music_rename_line_edit_delegate.html">MusicRenameLineEditDelegate</a></div><div class="ttdoc">The class of the rename lineedit item delegate. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/musicitemdelegate_8h_source.html#l00244">musicitemdelegate.h:244</a></div></div>
-<div class="ttc" id="class_music_radio_button_delegate_html_a301677e1c459d32afaf38738c038d3ca"><div class="ttname"><a href="../../dc/d47/class_music_radio_button_delegate.html#a301677e1c459d32afaf38738c038d3ca">MusicRadioButtonDelegate::m_radioButton</a></div><div class="ttdeci">QRadioButton * m_radioButton</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/musicitemdelegate_8h_source.html#l00068">musicitemdelegate.h:68</a></div></div>
-<div class="ttc" id="class_music_radio_button_delegate_html"><div class="ttname"><a href="../../dc/d47/class_music_radio_button_delegate.html">MusicRadioButtonDelegate</a></div><div class="ttdoc">The class of the radio button item delegate. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/musicitemdelegate_8h_source.html#l00042">musicitemdelegate.h:42</a></div></div>
+<div class="ttc" id="class_music_label_delegate_html"><div class="ttname"><a href="../../d0/dcf/class_music_label_delegate.html">MusicLabelDelegate</a></div><div class="ttdoc">The class of the label item delegate. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/musicitemdelegate_8h_source.html#l00180">musicitemdelegate.h:180</a></div></div>
+<div class="ttc" id="class_music_check_box_delegate_html_a60759b1827a2e31d1281a3411274e206"><div class="ttname"><a href="../../dd/d51/class_music_check_box_delegate.html#a60759b1827a2e31d1281a3411274e206">MusicCheckBoxDelegate::m_treeMode</a></div><div class="ttdeci">bool m_treeMode</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/musicitemdelegate_8h_source.html#l00130">musicitemdelegate.h:130</a></div></div>
+<div class="ttc" id="ioapi_8h_html_a7e43d41c2fe013a373b540cba02505cf"><div class="ttname"><a href="../../d2/db7/ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a></div><div class="ttdeci">const char int mode</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/db7/ioapi_8h_source.html#l00135">ioapi.h:135</a></div></div>
+<div class="ttc" id="class_music_rename_line_edit_delegate_html"><div class="ttname"><a href="../../d7/dd1/class_music_rename_line_edit_delegate.html">MusicRenameLineEditDelegate</a></div><div class="ttdoc">The class of the rename lineedit item delegate. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/musicitemdelegate_8h_source.html#l00264">musicitemdelegate.h:264</a></div></div>
+<div class="ttc" id="class_music_radio_button_delegate_html_a301677e1c459d32afaf38738c038d3ca"><div class="ttname"><a href="../../dc/d47/class_music_radio_button_delegate.html#a301677e1c459d32afaf38738c038d3ca">MusicRadioButtonDelegate::m_radioButton</a></div><div class="ttdeci">QRadioButton * m_radioButton</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/musicitemdelegate_8h_source.html#l00076">musicitemdelegate.h:76</a></div></div>
+<div class="ttc" id="class_music_radio_button_delegate_html"><div class="ttname"><a href="../../dc/d47/class_music_radio_button_delegate.html">MusicRadioButtonDelegate</a></div><div class="ttdoc">The class of the radio button item delegate. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d13/musicitemdelegate_8h_source.html#l00044">musicitemdelegate.h:44</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 8 2020 13:51:14 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 25 2020 12:46:31 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

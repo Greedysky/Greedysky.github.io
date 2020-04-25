@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.11.1.0</span>
+   &#160;<span id="projectnumber">2.12.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -116,8 +116,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a67908b9428dcbb0ef3f9971faaf614de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea75ebaf769e11742bf29e877b27e9fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d19/class_music_time_slider_widget.html#aea75ebaf769e11742bf29e877b27e9fb">setRange</a> (<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> min, <a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> max)</td></tr>
 <tr class="separator:aea75ebaf769e11742bf29e877b27e9fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae26b0251a66ee023921d0ab9c2bb32d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d19/class_music_time_slider_widget.html#ae26b0251a66ee023921d0ab9c2bb32d3">setObject</a> (QObject *object) <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
-<tr class="separator:ae26b0251a66ee023921d0ab9c2bb32d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46de7c4aa999c0e3423c7d44b2ba200f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d19/class_music_time_slider_widget.html#a46de7c4aa999c0e3423c7d44b2ba200f">setInputObject</a> (QObject *object) <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a46de7c4aa999c0e3423c7d44b2ba200f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -162,7 +162,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../de/d9f/musictimesliderwidget_8cpp_source.html#l00008">8</a> of file <a class="el" href="../../de/d9f/musictimesliderwidget_8cpp_source.html">musictimesliderwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d2/d69/musicgiflabelwidget_8h_source.html#l00037">MusicGifLabelWidget::Gif_Ballon_White</a>, <a class="el" href="../../d1/da0/musictimesliderwidget_8h_source.html#l00078">m_label</a>, <a class="el" href="../../d1/da0/musictimesliderwidget_8h_source.html#l00079">m_slider</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00452">MusicUIObject::MSliderStyle07</a>, <a class="el" href="../../dc/d06/musicgiflabelwidget_8cpp_source.html#l00044">MusicGifLabelWidget::setType()</a>, and <a class="el" href="../../d6/d56/musicmovingclickedslider_8cpp_source.html#l00020">MusicMovingClickedSlider::setValue()</a>.</p>
+<p>References <a class="el" href="../../d2/d69/musicgiflabelwidget_8h_source.html#l00037">MusicGifLabelWidget::Gif_Ballon_White</a>, <a class="el" href="../../d1/da0/musictimesliderwidget_8h_source.html#l00078">m_label</a>, <a class="el" href="../../d1/da0/musictimesliderwidget_8h_source.html#l00079">m_slider</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00457">MusicUIObject::MQSSSliderStyle07</a>, <a class="el" href="../../dc/d06/musicgiflabelwidget_8cpp_source.html#l00044">MusicGifLabelWidget::setType()</a>, and <a class="el" href="../../d6/d56/musicmovingclickedslider_8cpp_source.html#l00020">MusicMovingClickedSlider::setValue()</a>.</p>
 
 </div>
 </div>
@@ -215,12 +215,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae26b0251a66ee023921d0ab9c2bb32d3"></a>
+<a class="anchor" id="a46de7c4aa999c0e3423c7d44b2ba200f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void MusicTimeSliderWidget::setObject </td>
+          <td class="memname">void MusicTimeSliderWidget::setInputObject </td>
           <td>(</td>
           <td class="paramtype">QObject *&#160;</td>
           <td class="paramname"><em>object</em></td><td>)</td>
@@ -228,7 +228,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set connect current object. </p>
+<p>Set input connection. </p>
 
 <p>Definition at line <a class="el" href="../../de/d9f/musictimesliderwidget_8cpp_source.html#l00024">24</a> of file <a class="el" href="../../de/d9f/musictimesliderwidget_8cpp_source.html">musictimesliderwidget.cpp</a>.</p>
 
@@ -313,7 +313,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../de/d9f/musictimesliderwidget_8cpp_source.html#l00075">75</a> of file <a class="el" href="../../de/d9f/musictimesliderwidget_8cpp_source.html">musictimesliderwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d1/da0/musictimesliderwidget_8h_source.html#l00079">m_slider</a>, and <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00452">MusicUIObject::MSliderStyle07</a>.</p>
+<p>References <a class="el" href="../../d1/da0/musictimesliderwidget_8h_source.html#l00079">m_slider</a>, and <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00457">MusicUIObject::MQSSSliderStyle07</a>.</p>
 
 </div>
 </div>
@@ -365,7 +365,7 @@ Protected Attributes</h2></td></tr>
 
 <p>References <a class="el" href="../../d1/da0/musictimesliderwidget_8h_source.html#l00078">m_label</a>, and <a class="el" href="../../d1/da0/musictimesliderwidget_8h_source.html#l00079">m_slider</a>.</p>
 
-<p>Referenced by <a class="el" href="../../de/d9f/musictimesliderwidget_8cpp_source.html#l00091">resizeEvent()</a>, <a class="el" href="../../de/d9f/musictimesliderwidget_8cpp_source.html#l00024">setObject()</a>, and <a class="el" href="../../de/d9f/musictimesliderwidget_8cpp_source.html#l00051">setValue()</a>.</p>
+<p>Referenced by <a class="el" href="../../de/d9f/musictimesliderwidget_8cpp_source.html#l00091">resizeEvent()</a>, <a class="el" href="../../de/d9f/musictimesliderwidget_8cpp_source.html#l00024">setInputObject()</a>, and <a class="el" href="../../de/d9f/musictimesliderwidget_8cpp_source.html#l00051">setValue()</a>.</p>
 
 </div>
 </div>
@@ -414,7 +414,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d1/da0/musictimesliderwidget_8h_source.html#l00079">79</a> of file <a class="el" href="../../d1/da0/musictimesliderwidget_8h_source.html">musictimesliderwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../de/d9f/musictimesliderwidget_8cpp_source.html#l00008">MusicTimeSliderWidget()</a>, <a class="el" href="../../de/d9f/musictimesliderwidget_8cpp_source.html#l00091">resizeEvent()</a>, <a class="el" href="../../de/d9f/musictimesliderwidget_8cpp_source.html#l00024">setObject()</a>, <a class="el" href="../../de/d9f/musictimesliderwidget_8cpp_source.html#l00060">setRange()</a>, <a class="el" href="../../de/d9f/musictimesliderwidget_8cpp_source.html#l00075">setSliderStyleByType()</a>, <a class="el" href="../../de/d9f/musictimesliderwidget_8cpp_source.html#l00051">setValue()</a>, <a class="el" href="../../de/d9f/musictimesliderwidget_8cpp_source.html#l00065">sliderMovedAt()</a>, and <a class="el" href="../../de/d9f/musictimesliderwidget_8cpp_source.html#l00030">~MusicTimeSliderWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../de/d9f/musictimesliderwidget_8cpp_source.html#l00008">MusicTimeSliderWidget()</a>, <a class="el" href="../../de/d9f/musictimesliderwidget_8cpp_source.html#l00091">resizeEvent()</a>, <a class="el" href="../../de/d9f/musictimesliderwidget_8cpp_source.html#l00024">setInputObject()</a>, <a class="el" href="../../de/d9f/musictimesliderwidget_8cpp_source.html#l00060">setRange()</a>, <a class="el" href="../../de/d9f/musictimesliderwidget_8cpp_source.html#l00075">setSliderStyleByType()</a>, <a class="el" href="../../de/d9f/musictimesliderwidget_8cpp_source.html#l00051">setValue()</a>, <a class="el" href="../../de/d9f/musictimesliderwidget_8cpp_source.html#l00065">sliderMovedAt()</a>, and <a class="el" href="../../de/d9f/musictimesliderwidget_8cpp_source.html#l00030">~MusicTimeSliderWidget()</a>.</p>
 
 </div>
 </div>
@@ -425,7 +425,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 8 2020 13:53:03 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 25 2020 12:48:05 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

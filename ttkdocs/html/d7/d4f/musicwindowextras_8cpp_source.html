@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.11.1.0</span>
+   &#160;<span id="projectnumber">2.12.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -95,124 +95,125 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    m_taskbarProgress = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    m_taskbarButton = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    m_thumbnailToolBar = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    m_superClass = <a class="code" href="../../df/d7f/ttkglobal_8h.html#a21888f51ce9cbd49f45fc9c3868d47b8">MStatic_cast</a>(<a class="code" href="../../db/def/class_music_application.html">MusicApplication</a>*, parent);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="../../db/d1a/class_music_window_extras.html#a8d0bce61a551093f67ec1900abc52671">disableBlurBehindWindow</a>( QtWin::isCompositionEnabled() );</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#  ifdef TTK_DEBUG</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    createJumpList();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    createTaskbar();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#  endif</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    createThumbnailToolBar();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="../../db/d1a/class_music_window_extras.html#a3b44b9dd5bb1671478cfb1681d8f022d">m_disableBlurBehindWindow</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../db/d1a/class_music_window_extras.html#a02f7d0112adcadc6856f3cbcf4ad1c4f">   31</a></span>&#160;<a class="code" href="../../db/d1a/class_music_window_extras.html#a02f7d0112adcadc6856f3cbcf4ad1c4f">MusicWindowExtras::~MusicWindowExtras</a>()</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#if defined Q_OS_WIN &amp;&amp; defined TTK_WINEXTRAS</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">delete</span> m_playToolButton;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">delete</span> m_forwardToolButton;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">delete</span> m_backwardToolButton;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">delete</span> m_taskbarProgress;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">delete</span> m_taskbarButton;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">delete</span> m_thumbnailToolBar;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="../../db/d1a/class_music_window_extras.html#a8d0bce61a551093f67ec1900abc52671">   43</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../db/d1a/class_music_window_extras.html#a8d0bce61a551093f67ec1900abc52671">MusicWindowExtras::disableBlurBehindWindow</a>(<span class="keywordtype">bool</span> enable)</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="../../db/d1a/class_music_window_extras.html#a3b44b9dd5bb1671478cfb1681d8f022d">m_disableBlurBehindWindow</a> = enable;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#if defined Q_OS_WIN &amp;&amp; defined TTK_WINEXTRAS</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    QtWin::enableBlurBehindWindow(m_superClass);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    QtWin::disableBlurBehindWindow(m_superClass);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#if defined Q_OS_WIN &amp;&amp; defined TTK_WINEXTRAS</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../db/d1a/class_music_window_extras.html#ac21aed03fb949aa9b6c54c0cb7d6652b">MusicWindowExtras::showPlayStatus</a>(<span class="keywordtype">bool</span> status)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">if</span>(!status)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        m_playToolButton-&gt;setIcon(m_superClass-&gt;style()-&gt;standardIcon(QStyle::SP_MediaPause));</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#ifdef TTK_DEBUG</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        m_taskbarButton-&gt;setOverlayIcon(m_superClass-&gt;style()-&gt;standardIcon(QStyle::SP_MediaPause));</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        m_taskbarProgress-&gt;show();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        m_taskbarProgress-&gt;resume();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        m_playToolButton-&gt;setIcon(m_superClass-&gt;style()-&gt;standardIcon(QStyle::SP_MediaPlay));</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#ifdef TTK_DEBUG</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        m_taskbarButton-&gt;setOverlayIcon(m_superClass-&gt;style()-&gt;standardIcon(QStyle::SP_MediaPlay));</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        m_taskbarProgress-&gt;show();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        m_taskbarProgress-&gt;pause();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../db/d1a/class_music_window_extras.html#a8a3f9f70891da877b099250c1683a1bf">MusicWindowExtras::setValue</a>(<span class="keywordtype">int</span> value)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    m_taskbarProgress-&gt;setValue(value);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../db/d1a/class_music_window_extras.html#a4788107222c05e84c0bf8f22810a0d32">MusicWindowExtras::setRange</a>(<span class="keywordtype">int</span> start, <span class="keywordtype">int</span> end)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    m_taskbarProgress-&gt;setRange(start, end);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">void</span> MusicWindowExtras::createJumpList()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    QWinJumpList().recent()-&gt;setVisible(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">void</span> MusicWindowExtras::createTaskbar()</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    m_taskbarButton = <span class="keyword">new</span> QWinTaskbarButton(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    m_taskbarButton-&gt;setWindow(m_superClass-&gt;windowHandle());</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    m_taskbarProgress = m_taskbarButton-&gt;progress();</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keywordtype">void</span> MusicWindowExtras::createThumbnailToolBar()</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    m_thumbnailToolBar = <span class="keyword">new</span> QWinThumbnailToolBar(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    m_thumbnailToolBar-&gt;setWindow(m_superClass-&gt;windowHandle());</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    m_playToolButton = <span class="keyword">new</span> QWinThumbnailToolButton(m_thumbnailToolBar);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    m_playToolButton-&gt;setToolTip(tr(<span class="stringliteral">&quot;Play&quot;</span>));</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    m_playToolButton-&gt;setIcon(m_superClass-&gt;style()-&gt;standardIcon(QStyle::SP_MediaPlay));</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    connect(m_playToolButton, SIGNAL(clicked()), m_superClass, SLOT(musicStatePlay()));</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    m_forwardToolButton = <span class="keyword">new</span> QWinThumbnailToolButton(m_thumbnailToolBar);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    m_forwardToolButton-&gt;setToolTip(tr(<span class="stringliteral">&quot;Previous&quot;</span>));</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    m_forwardToolButton-&gt;setIcon(m_superClass-&gt;style()-&gt;standardIcon(QStyle::SP_MediaSeekBackward));</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    connect(m_forwardToolButton, SIGNAL(clicked()), m_superClass, SLOT(musicPlayPrevious()));</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    m_backwardToolButton = <span class="keyword">new</span> QWinThumbnailToolButton(m_thumbnailToolBar);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    m_backwardToolButton-&gt;setToolTip(tr(<span class="stringliteral">&quot;Next&quot;</span>));</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    m_backwardToolButton-&gt;setIcon(m_superClass-&gt;style()-&gt;standardIcon(QStyle::SP_MediaSeekForward));</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    connect(m_backwardToolButton, SIGNAL(clicked()), m_superClass, SLOT(musicPlayNext()));</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    m_thumbnailToolBar-&gt;addButton(m_forwardToolButton);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    m_thumbnailToolBar-&gt;addButton(m_playToolButton);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    m_thumbnailToolBar-&gt;addButton(m_backwardToolButton);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="class_music_window_extras_html_a02f7d0112adcadc6856f3cbcf4ad1c4f"><div class="ttname"><a href="../../db/d1a/class_music_window_extras.html#a02f7d0112adcadc6856f3cbcf4ad1c4f">MusicWindowExtras::~MusicWindowExtras</a></div><div class="ttdeci">~MusicWindowExtras()</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d4f/musicwindowextras_8cpp_source.html#l00031">musicwindowextras.cpp:31</a></div></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    m_superClass = <a class="code" href="../../df/d7f/ttkglobal_8h.html#afad224d36cc24240d9d006a42145c953">TTKStatic_cast</a>(<a class="code" href="../../db/def/class_music_application.html">MusicApplication</a>*, parent);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="../../db/d1a/class_music_window_extras.html#a8d0bce61a551093f67ec1900abc52671">disableBlurBehindWindow</a>(QtWin::isCompositionEnabled());</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#  ifdef TTK_DEBUG</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    createJumpList();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    createTaskbar();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#  endif</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    createThumbnailToolBar();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="../../db/d1a/class_music_window_extras.html#a3b44b9dd5bb1671478cfb1681d8f022d">m_disableBlurBehindWindow</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../db/d1a/class_music_window_extras.html#a02f7d0112adcadc6856f3cbcf4ad1c4f">   32</a></span>&#160;<a class="code" href="../../db/d1a/class_music_window_extras.html#a02f7d0112adcadc6856f3cbcf4ad1c4f">MusicWindowExtras::~MusicWindowExtras</a>()</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#if defined Q_OS_WIN &amp;&amp; defined TTK_WINEXTRAS</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">delete</span> m_playToolButton;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">delete</span> m_forwardToolButton;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">delete</span> m_backwardToolButton;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">delete</span> m_taskbarProgress;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">delete</span> m_taskbarButton;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">delete</span> m_thumbnailToolBar;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="../../db/d1a/class_music_window_extras.html#a8d0bce61a551093f67ec1900abc52671">   44</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../db/d1a/class_music_window_extras.html#a8d0bce61a551093f67ec1900abc52671">MusicWindowExtras::disableBlurBehindWindow</a>(<span class="keywordtype">bool</span> enable)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="../../db/d1a/class_music_window_extras.html#a3b44b9dd5bb1671478cfb1681d8f022d">m_disableBlurBehindWindow</a> = enable;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#if defined Q_OS_WIN &amp;&amp; defined TTK_WINEXTRAS</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    QtWin::enableBlurBehindWindow(m_superClass);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    QtWin::disableBlurBehindWindow(m_superClass);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#if defined Q_OS_WIN &amp;&amp; defined TTK_WINEXTRAS</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../db/d1a/class_music_window_extras.html#ac21aed03fb949aa9b6c54c0cb7d6652b">MusicWindowExtras::showPlayStatus</a>(<span class="keywordtype">bool</span> status)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">if</span>(!status)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        m_playToolButton-&gt;setIcon(m_superClass-&gt;style()-&gt;standardIcon(QStyle::SP_MediaPause));</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#ifdef TTK_DEBUG</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        m_taskbarButton-&gt;setOverlayIcon(m_superClass-&gt;style()-&gt;standardIcon(QStyle::SP_MediaPause));</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        m_taskbarProgress-&gt;show();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        m_taskbarProgress-&gt;resume();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        m_playToolButton-&gt;setIcon(m_superClass-&gt;style()-&gt;standardIcon(QStyle::SP_MediaPlay));</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#ifdef TTK_DEBUG</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        m_taskbarButton-&gt;setOverlayIcon(m_superClass-&gt;style()-&gt;standardIcon(QStyle::SP_MediaPlay));</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        m_taskbarProgress-&gt;show();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        m_taskbarProgress-&gt;pause();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../db/d1a/class_music_window_extras.html#a8a3f9f70891da877b099250c1683a1bf">MusicWindowExtras::setValue</a>(<span class="keywordtype">int</span> value)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    m_taskbarProgress-&gt;setValue(value);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../db/d1a/class_music_window_extras.html#a4788107222c05e84c0bf8f22810a0d32">MusicWindowExtras::setRange</a>(<span class="keywordtype">int</span> start, <span class="keywordtype">int</span> end)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    m_taskbarProgress-&gt;setRange(start, end);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keywordtype">void</span> MusicWindowExtras::createJumpList()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    QWinJumpList().recent()-&gt;setVisible(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keywordtype">void</span> MusicWindowExtras::createTaskbar()</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;{</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    m_taskbarButton = <span class="keyword">new</span> QWinTaskbarButton(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    m_taskbarButton-&gt;setWindow(m_superClass-&gt;windowHandle());</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    m_taskbarProgress = m_taskbarButton-&gt;progress();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keywordtype">void</span> MusicWindowExtras::createThumbnailToolBar()</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    m_thumbnailToolBar = <span class="keyword">new</span> QWinThumbnailToolBar(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    m_thumbnailToolBar-&gt;setWindow(m_superClass-&gt;windowHandle());</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    m_playToolButton = <span class="keyword">new</span> QWinThumbnailToolButton(m_thumbnailToolBar);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    m_playToolButton-&gt;setToolTip(tr(<span class="stringliteral">&quot;Play&quot;</span>));</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    m_playToolButton-&gt;setIcon(m_superClass-&gt;style()-&gt;standardIcon(QStyle::SP_MediaPlay));</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    connect(m_playToolButton, SIGNAL(clicked()), m_superClass, SLOT(musicStatePlay()));</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    m_forwardToolButton = <span class="keyword">new</span> QWinThumbnailToolButton(m_thumbnailToolBar);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    m_forwardToolButton-&gt;setToolTip(tr(<span class="stringliteral">&quot;Previous&quot;</span>));</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    m_forwardToolButton-&gt;setIcon(m_superClass-&gt;style()-&gt;standardIcon(QStyle::SP_MediaSeekBackward));</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    connect(m_forwardToolButton, SIGNAL(clicked()), m_superClass, SLOT(musicPlayPrevious()));</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    m_backwardToolButton = <span class="keyword">new</span> QWinThumbnailToolButton(m_thumbnailToolBar);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    m_backwardToolButton-&gt;setToolTip(tr(<span class="stringliteral">&quot;Next&quot;</span>));</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    m_backwardToolButton-&gt;setIcon(m_superClass-&gt;style()-&gt;standardIcon(QStyle::SP_MediaSeekForward));</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    connect(m_backwardToolButton, SIGNAL(clicked()), m_superClass, SLOT(musicPlayNext()));</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    m_thumbnailToolBar-&gt;addButton(m_forwardToolButton);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    m_thumbnailToolBar-&gt;addButton(m_playToolButton);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    m_thumbnailToolBar-&gt;addButton(m_backwardToolButton);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_music_window_extras_html_a02f7d0112adcadc6856f3cbcf4ad1c4f"><div class="ttname"><a href="../../db/d1a/class_music_window_extras.html#a02f7d0112adcadc6856f3cbcf4ad1c4f">MusicWindowExtras::~MusicWindowExtras</a></div><div class="ttdeci">~MusicWindowExtras()</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d4f/musicwindowextras_8cpp_source.html#l00032">musicwindowextras.cpp:32</a></div></div>
 <div class="ttc" id="class_music_application_html"><div class="ttname"><a href="../../db/def/class_music_application.html">MusicApplication</a></div><div class="ttdoc">The class of the app main widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d24/musicapplication_8h_source.html#l00040">musicapplication.h:40</a></div></div>
 <div class="ttc" id="musicapplication_8h_html"><div class="ttname"><a href="../../d1/d24/musicapplication_8h.html">musicapplication.h</a></div></div>
 <div class="ttc" id="class_music_window_extras_html_a8a3f9f70891da877b099250c1683a1bf"><div class="ttname"><a href="../../db/d1a/class_music_window_extras.html#a8a3f9f70891da877b099250c1683a1bf">MusicWindowExtras::setValue</a></div><div class="ttdeci">void setValue(int value) const </div></div>
 <div class="ttc" id="class_music_window_extras_html_ac21aed03fb949aa9b6c54c0cb7d6652b"><div class="ttname"><a href="../../db/d1a/class_music_window_extras.html#ac21aed03fb949aa9b6c54c0cb7d6652b">MusicWindowExtras::showPlayStatus</a></div><div class="ttdeci">void showPlayStatus(bool status) const </div></div>
+<div class="ttc" id="ttkglobal_8h_html_afad224d36cc24240d9d006a42145c953"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#afad224d36cc24240d9d006a42145c953">TTKStatic_cast</a></div><div class="ttdeci">#define TTKStatic_cast(x, y)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00076">ttkglobal.h:76</a></div></div>
 <div class="ttc" id="class_music_window_extras_html_a4788107222c05e84c0bf8f22810a0d32"><div class="ttname"><a href="../../db/d1a/class_music_window_extras.html#a4788107222c05e84c0bf8f22810a0d32">MusicWindowExtras::setRange</a></div><div class="ttdeci">void setRange(int start, int end) const </div></div>
 <div class="ttc" id="musicwindowextras_8h_html"><div class="ttname"><a href="../../d2/d7f/musicwindowextras_8h.html">musicwindowextras.h</a></div></div>
-<div class="ttc" id="ttkglobal_8h_html_a21888f51ce9cbd49f45fc9c3868d47b8"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#a21888f51ce9cbd49f45fc9c3868d47b8">MStatic_cast</a></div><div class="ttdeci">#define MStatic_cast(x, y)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00076">ttkglobal.h:76</a></div></div>
-<div class="ttc" id="class_music_window_extras_html_a8d0bce61a551093f67ec1900abc52671"><div class="ttname"><a href="../../db/d1a/class_music_window_extras.html#a8d0bce61a551093f67ec1900abc52671">MusicWindowExtras::disableBlurBehindWindow</a></div><div class="ttdeci">void disableBlurBehindWindow(bool enable)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d4f/musicwindowextras_8cpp_source.html#l00043">musicwindowextras.cpp:43</a></div></div>
+<div class="ttc" id="class_music_window_extras_html_a8d0bce61a551093f67ec1900abc52671"><div class="ttname"><a href="../../db/d1a/class_music_window_extras.html#a8d0bce61a551093f67ec1900abc52671">MusicWindowExtras::disableBlurBehindWindow</a></div><div class="ttdeci">void disableBlurBehindWindow(bool enable)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d4f/musicwindowextras_8cpp_source.html#l00044">musicwindowextras.cpp:44</a></div></div>
 <div class="ttc" id="class_music_window_extras_html_a3b44b9dd5bb1671478cfb1681d8f022d"><div class="ttname"><a href="../../db/d1a/class_music_window_extras.html#a3b44b9dd5bb1671478cfb1681d8f022d">MusicWindowExtras::m_disableBlurBehindWindow</a></div><div class="ttdeci">bool m_disableBlurBehindWindow</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d7f/musicwindowextras_8h_source.html#l00093">musicwindowextras.h:93</a></div></div>
 <div class="ttc" id="class_music_window_extras_html_abe3c8ac6f452cfe982fb5cc195966ff1"><div class="ttname"><a href="../../db/d1a/class_music_window_extras.html#abe3c8ac6f452cfe982fb5cc195966ff1">MusicWindowExtras::MusicWindowExtras</a></div><div class="ttdeci">MusicWindowExtras(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d4f/musicwindowextras_8cpp_source.html#l00009">musicwindowextras.cpp:9</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 8 2020 13:51:24 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 25 2020 12:46:37 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

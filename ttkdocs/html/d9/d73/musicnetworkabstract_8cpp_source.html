@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.11.1.0</span>
+   &#160;<span id="projectnumber">2.12.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -110,7 +110,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../d5/de6/class_music_network_abstract.html#a92089bca759998f0f85e93feef67f7b5">   32</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d5/de6/class_music_network_abstract.html#a92089bca759998f0f85e93feef67f7b5">MusicNetworkAbstract::replyError</a>(<a class="code" href="../../df/dbc/namespace_music_object.html#a739090443491193d34585a1956fa3daca0a95e1345ae0e36c86067c5cc867f809">QNetworkReply::NetworkError</a>)</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="../../d5/d2b/ttklogger_8h.html#acb1153597589e0766a4e65aee968526e">M_LOGGER_ERROR</a>(<span class="stringliteral">&quot;Abnormal network connection&quot;</span>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="../../d5/d2b/ttklogger_8h.html#a743bf672cf731b656a4eb9f33b7f7582">TTK_LOGGER_ERROR</a>(<span class="stringliteral">&quot;Abnormal network connection&quot;</span>);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    Q_EMIT <a class="code" href="../../d5/de6/class_music_network_abstract.html#ae957b20ab1307ec7a7d0fdde4405f646">downLoadDataChanged</a>(QString());</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="../../d5/de6/class_music_network_abstract.html#adbbd392b6f9070c502fc8c2a083dd6d7">deleteAll</a>();</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
@@ -135,7 +135,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        errorString += error.errorString();</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="../../d5/d2b/ttklogger_8h.html#acb1153597589e0766a4e65aee968526e">M_LOGGER_ERROR</a>(QString(<span class="stringliteral">&quot;sslErrors: %1&quot;</span>).arg(errorString));</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="../../d5/d2b/ttklogger_8h.html#a743bf672cf731b656a4eb9f33b7f7582">TTK_LOGGER_ERROR</a>(QString(<span class="stringliteral">&quot;sslErrors: %1&quot;</span>).arg(errorString));</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    reply-&gt;ignoreSslErrors();</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -155,10 +155,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
+<div class="ttc" id="ttklogger_8h_html_a743bf672cf731b656a4eb9f33b7f7582"><div class="ttname"><a href="../../d5/d2b/ttklogger_8h.html#a743bf672cf731b656a4eb9f33b7f7582">TTK_LOGGER_ERROR</a></div><div class="ttdeci">#define TTK_LOGGER_ERROR(str)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d2b/ttklogger_8h_source.html#l00050">ttklogger.h:50</a></div></div>
 <div class="ttc" id="musicnetworkabstract_8h_html"><div class="ttname"><a href="../../d1/dbf/musicnetworkabstract_8h.html">musicnetworkabstract.h</a></div></div>
 <div class="ttc" id="class_music_network_abstract_html_adbbd392b6f9070c502fc8c2a083dd6d7"><div class="ttname"><a href="../../d5/de6/class_music_network_abstract.html#adbbd392b6f9070c502fc8c2a083dd6d7">MusicNetworkAbstract::deleteAll</a></div><div class="ttdeci">virtual void deleteAll()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d73/musicnetworkabstract_8cpp_source.html#l00018">musicnetworkabstract.cpp:18</a></div></div>
 <div class="ttc" id="class_music_network_abstract_html_affd39e692440dc4cc5e8e75db192ea5a"><div class="ttname"><a href="../../d5/de6/class_music_network_abstract.html#affd39e692440dc4cc5e8e75db192ea5a">MusicNetworkAbstract::sslErrorsString</a></div><div class="ttdeci">void sslErrorsString(QNetworkReply *reply, const QList&lt; QSslError &gt; &amp;errors)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d73/musicnetworkabstract_8cpp_source.html#l00047">musicnetworkabstract.cpp:47</a></div></div>
-<div class="ttc" id="ttklogger_8h_html_acb1153597589e0766a4e65aee968526e"><div class="ttname"><a href="../../d5/d2b/ttklogger_8h.html#acb1153597589e0766a4e65aee968526e">M_LOGGER_ERROR</a></div><div class="ttdeci">#define M_LOGGER_ERROR(str)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d2b/ttklogger_8h_source.html#l00050">ttklogger.h:50</a></div></div>
 <div class="ttc" id="class_music_network_abstract_html_a632d88a1d6967089707ab1ec87787d0f"><div class="ttname"><a href="../../d5/de6/class_music_network_abstract.html#a632d88a1d6967089707ab1ec87787d0f">MusicNetworkAbstract::m_interrupt</a></div><div class="ttdeci">volatile bool m_interrupt</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dbf/musicnetworkabstract_8h_source.html#l00110">musicnetworkabstract.h:110</a></div></div>
 <div class="ttc" id="namespace_music_object_html_a739090443491193d34585a1956fa3daca87101e0d4e368905892a5472a4932c30"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#a739090443491193d34585a1956fa3daca87101e0d4e368905892a5472a4932c30">MusicObject::NetworkInit</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/de0/musicnetworkdefines_8h_source.html#l00029">musicnetworkdefines.h:29</a></div></div>
 <div class="ttc" id="class_music_network_abstract_html_a92089bca759998f0f85e93feef67f7b5"><div class="ttname"><a href="../../d5/de6/class_music_network_abstract.html#a92089bca759998f0f85e93feef67f7b5">MusicNetworkAbstract::replyError</a></div><div class="ttdeci">virtual void replyError(QNetworkReply::NetworkError error)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d73/musicnetworkabstract_8cpp_source.html#l00032">musicnetworkabstract.cpp:32</a></div></div>
@@ -171,13 +171,13 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_network_abstract_html_a488f80a1d87c2addfaf7ea1f63a31608"><div class="ttname"><a href="../../d5/de6/class_music_network_abstract.html#a488f80a1d87c2addfaf7ea1f63a31608">MusicNetworkAbstract::m_manager</a></div><div class="ttdeci">QNetworkAccessManager * m_manager</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dbf/musicnetworkabstract_8h_source.html#l00112">musicnetworkabstract.h:112</a></div></div>
 <div class="ttc" id="ioapi_8h_html_a7e43d41c2fe013a373b540cba02505cf"><div class="ttname"><a href="../../d2/db7/ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a></div><div class="ttdeci">const char int mode</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/db7/ioapi_8h_source.html#l00135">ioapi.h:135</a></div></div>
 <div class="ttc" id="namespace_music_object_html_a739090443491193d34585a1956fa3daca0a95e1345ae0e36c86067c5cc867f809"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#a739090443491193d34585a1956fa3daca0a95e1345ae0e36c86067c5cc867f809">MusicObject::NetworkError</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/de0/musicnetworkdefines_8h_source.html#l00031">musicnetworkdefines.h:31</a></div></div>
-<div class="ttc" id="namespace_music_object_html"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html">MusicObject</a></div><div class="ttdoc">The namespace of the application object. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00205">musicobject.h:205</a></div></div>
+<div class="ttc" id="namespace_music_object_html"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html">MusicObject</a></div><div class="ttdoc">The namespace of the application object. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00208">musicobject.h:208</a></div></div>
 <div class="ttc" id="class_music_network_abstract_html_afa807c77659d3d6a1f4ae119322d54c9"><div class="ttname"><a href="../../d5/de6/class_music_network_abstract.html#afa807c77659d3d6a1f4ae119322d54c9">MusicNetworkAbstract::~MusicNetworkAbstract</a></div><div class="ttdeci">virtual ~MusicNetworkAbstract()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d73/musicnetworkabstract_8cpp_source.html#l00012">musicnetworkabstract.cpp:12</a></div></div>
 <div class="ttc" id="namespace_music_object_html_a739090443491193d34585a1956fa3dacabfdaa26edc7c953e03324ee1797569dd"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#a739090443491193d34585a1956fa3dacabfdaa26edc7c953e03324ee1797569dd">MusicObject::NetworkSuccess</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/de0/musicnetworkdefines_8h_source.html#l00030">musicnetworkdefines.h:30</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 8 2020 13:51:10 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 25 2020 12:46:28 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

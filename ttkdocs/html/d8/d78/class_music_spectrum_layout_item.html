@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.11.1.0</span>
+   &#160;<span id="projectnumber">2.12.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -73,6 +73,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="../../d9/d5f/class_music_spectrum_layout_item-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -114,12 +115,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a95de7535d94467714539eafb685fde39 inherit pub_methods_class_music_clicked_label"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/db0/class_music_clicked_label.html#a95de7535d94467714539eafb685fde39">MusicClickedLabel</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;text, QWidget *parent=nullptr)</td></tr>
 <tr class="separator:a95de7535d94467714539eafb685fde39 inherit pub_methods_class_music_clicked_label"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ae8d373ad57ddb4081afb8dfbd61aaa52"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d78/class_music_spectrum_layout_item.html#ae8d373ad57ddb4081afb8dfbd61aaa52">paintEvent</a> (QPaintEvent *event) override</td></tr>
+<tr class="separator:ae8d373ad57ddb4081afb8dfbd61aaa52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:aeea5f66b60b003f95908a03138c1e6b9"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d78/class_music_spectrum_layout_item.html#aeea5f66b60b003f95908a03138c1e6b9">m_label</a></td></tr>
-<tr class="separator:aeea5f66b60b003f95908a03138c1e6b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae86ce08b4e4e712d7f481f18f9d430a1"><td class="memItemLeft" align="right" valign="top">QCheckBox *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d78/class_music_spectrum_layout_item.html#ae86ce08b4e4e712d7f481f18f9d430a1">m_box</a></td></tr>
-<tr class="separator:ae86ce08b4e4e712d7f481f18f9d430a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2aa6ea5c7319132bbf0308582d139210"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d78/class_music_spectrum_layout_item.html#a2aa6ea5c7319132bbf0308582d139210">m_isSelected</a></td></tr>
+<tr class="separator:a2aa6ea5c7319132bbf0308582d139210"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -159,9 +163,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Object contsructor. </p>
 
-<p>Definition at line <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html#l00007">7</a> of file <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html">musicspectrumlayoutwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html#l00009">9</a> of file <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html">musicspectrumlayoutwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d6/d51/musicspectrumlayoutwidget_8h_source.html#l00057">m_box</a>, <a class="el" href="../../d6/d51/musicspectrumlayoutwidget_8h_source.html#l00056">m_label</a>, and <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00287">MusicUIObject::MCheckBoxStyle01</a>.</p>
+<p>References <a class="el" href="../../d6/d51/musicspectrumlayoutwidget_8h_source.html#l00061">m_isSelected</a>.</p>
 
 </div>
 </div>
@@ -186,9 +190,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html#l00029">29</a> of file <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html">musicspectrumlayoutwidget.cpp</a>.</p>
-
-<p>References <a class="el" href="../../d6/d51/musicspectrumlayoutwidget_8h_source.html#l00057">m_box</a>, and <a class="el" href="../../d6/d51/musicspectrumlayoutwidget_8h_source.html#l00056">m_label</a>.</p>
+<p>Definition at line <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html#l00016">16</a> of file <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html">musicspectrumlayoutwidget.cpp</a>.</p>
 
 </div>
 </div>
@@ -218,11 +220,11 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Create spectrum item. </p>
 
-<p>Definition at line <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html#l00035">35</a> of file <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html">musicspectrumlayoutwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html#l00021">21</a> of file <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html">musicspectrumlayoutwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d6/d51/musicspectrumlayoutwidget_8h_source.html#l00056">m_label</a>.</p>
+<p>References <a class="el" href="../../de/d84/musicimageutils_8cpp_source.html#l00117">MusicUtils::Image::pixmapToRound()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html#l00129">MusicSpectrumLayoutWidget::addItems()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html#l00127">MusicSpectrumLayoutWidget::addItems()</a>.</p>
 
 </div>
 </div>
@@ -240,9 +242,38 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Get spectrum item check state. </p>
 
-<p>Definition at line <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html#l00046">46</a> of file <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html">musicspectrumlayoutwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html#l00033">33</a> of file <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html">musicspectrumlayoutwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d6/d51/musicspectrumlayoutwidget_8h_source.html#l00057">m_box</a>.</p>
+<p>References <a class="el" href="../../d6/d51/musicspectrumlayoutwidget_8h_source.html#l00061">m_isSelected</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae8d373ad57ddb4081afb8dfbd61aaa52"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MusicSpectrumLayoutItem::paintEvent </td>
+          <td>(</td>
+          <td class="paramtype">QPaintEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Override the widget event. </p>
+
+<p>Definition at line <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html#l00038">38</a> of file <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html">musicspectrumlayoutwidget.cpp</a>.</p>
+
+<p>References <a class="el" href="../../d6/d51/musicspectrumlayoutwidget_8h_source.html#l00061">m_isSelected</a>.</p>
 
 </div>
 </div>
@@ -261,16 +292,16 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Set spectrum item check state. </p>
 
-<p>Definition at line <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html#l00041">41</a> of file <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html">musicspectrumlayoutwidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html#l00027">27</a> of file <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html">musicspectrumlayoutwidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d6/d51/musicspectrumlayoutwidget_8h_source.html#l00057">m_box</a>.</p>
+<p>References <a class="el" href="../../d6/d51/musicspectrumlayoutwidget_8h_source.html#l00061">m_isSelected</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html#l00069">MusicSpectrumLayoutWidget::labelClicked()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html#l00067">MusicSpectrumLayoutWidget::labelClicked()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="ae86ce08b4e4e712d7f481f18f9d430a1"></a>
+<a class="anchor" id="a2aa6ea5c7319132bbf0308582d139210"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -278,7 +309,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QCheckBox* MusicSpectrumLayoutItem::m_box</td>
+          <td class="memname">bool MusicSpectrumLayoutItem::m_isSelected</td>
         </tr>
       </table>
   </td>
@@ -288,33 +319,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/d51/musicspectrumlayoutwidget_8h_source.html#l00057">57</a> of file <a class="el" href="../../d6/d51/musicspectrumlayoutwidget_8h_source.html">musicspectrumlayoutwidget.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d51/musicspectrumlayoutwidget_8h_source.html#l00061">61</a> of file <a class="el" href="../../d6/d51/musicspectrumlayoutwidget_8h_source.html">musicspectrumlayoutwidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html#l00046">isChecked()</a>, <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html#l00007">MusicSpectrumLayoutItem()</a>, <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html#l00041">setCheck()</a>, and <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html#l00029">~MusicSpectrumLayoutItem()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aeea5f66b60b003f95908a03138c1e6b9"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">QLabel* MusicSpectrumLayoutItem::m_label</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../d6/d51/musicspectrumlayoutwidget_8h_source.html#l00056">56</a> of file <a class="el" href="../../d6/d51/musicspectrumlayoutwidget_8h_source.html">musicspectrumlayoutwidget.h</a>.</p>
-
-<p>Referenced by <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html#l00035">addItem()</a>, <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html#l00007">MusicSpectrumLayoutItem()</a>, and <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html#l00029">~MusicSpectrumLayoutItem()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html#l00033">isChecked()</a>, <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html#l00009">MusicSpectrumLayoutItem()</a>, <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html#l00038">paintEvent()</a>, and <a class="el" href="../../db/dda/musicspectrumlayoutwidget_8cpp_source.html#l00027">setCheck()</a>.</p>
 
 </div>
 </div>
@@ -325,7 +332,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 8 2020 13:53:03 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 25 2020 12:48:05 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

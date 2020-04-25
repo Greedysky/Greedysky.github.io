@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.11.1.0</span>
+   &#160;<span id="projectnumber">2.12.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -97,7 +97,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="../../da/d94/class_music_f_p_l_config_manager.html#ab6b12b39d7ca86a11d7a9b082ba617f7">   21</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../da/d94/class_music_f_p_l_config_manager.html#ab6b12b39d7ca86a11d7a9b082ba617f7">MusicFPLConfigManager::readPlaylistData</a>(MusicSongItems &amp;items)</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="../../da/d94/class_music_f_p_l_config_manager.html#af668877e3facbfa895e2af3c40ce0218">   21</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../da/d94/class_music_f_p_l_config_manager.html#af668877e3facbfa895e2af3c40ce0218">MusicFPLConfigManager::readPlaylistData</a>(MusicSongItems &amp;items)</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="../../d3/d40/struct_music_song_item.html">MusicSongItem</a> item;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    item.<a class="code" href="../../d3/d40/struct_music_song_item.html#a6cb400779ddad9caf5196d329f2c60b4">m_itemName</a> = QFileInfo(<a class="code" href="../../da/d94/class_music_f_p_l_config_manager.html#ae3129ff58142b6418f46f42ccd59bc7a">m_fileName</a>).baseName();</div>
@@ -105,7 +105,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    FILE *fp = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">if</span>((fp = fopen(<a class="code" href="../../d5/d67/namespace_music_utils_1_1_codec.html#ab16dcda0d88095779fe1464e0d60f86e">MusicUtils::Codec::toLocal8Bit</a>(<a class="code" href="../../da/d94/class_music_f_p_l_config_manager.html#ae3129ff58142b6418f46f42ccd59bc7a">m_fileName</a>), <span class="stringliteral">&quot;rb&quot;</span>)) == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">// read 16-byte signature</span></div>
@@ -133,7 +133,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="comment">// keys_dex sanity check</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="../../da/d94/class_music_f_p_l_config_manager.html#a766e7e6725d4b49fc10434b39f5b7ea8">m_chunkrunner</a>.<a class="code" href="../../da/d4f/struct_music_f_p_l_config_manager_1_1_f_p_l_track_chunk.html#a334dad64271f8384b6099812c9a6d987">keys_dex</a> &gt; 512)</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        fread((<span class="keywordtype">void</span>*)&amp;keyRunner, <span class="keyword">sizeof</span>(uint), <a class="code" href="../../da/d94/class_music_f_p_l_config_manager.html#a766e7e6725d4b49fc10434b39f5b7ea8">m_chunkrunner</a>.<a class="code" href="../../da/d4f/struct_music_f_p_l_config_manager_1_1_f_p_l_track_chunk.html#a334dad64271f8384b6099812c9a6d987">keys_dex</a> - 3, fp);</div>
@@ -148,13 +148,16 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        items &lt;&lt; item;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="../../da/d94/class_music_f_p_l_config_manager.html#aa4fe74041e7d488f82e381d54e7a0360">   74</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../da/d94/class_music_f_p_l_config_manager.html#aa4fe74041e7d488f82e381d54e7a0360">MusicFPLConfigManager::writePlaylistData</a>(<span class="keyword">const</span> MusicSongItems &amp;items, <span class="keyword">const</span> QString &amp;path)</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    Q_UNUSED(items);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    Q_UNUSED(path);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="../../da/d94/class_music_f_p_l_config_manager.html#ab729e1f78e2f84322b6edaa19af04f6d">   75</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../da/d94/class_music_f_p_l_config_manager.html#ab729e1f78e2f84322b6edaa19af04f6d">MusicFPLConfigManager::writePlaylistData</a>(<span class="keyword">const</span> MusicSongItems &amp;items, <span class="keyword">const</span> QString &amp;path)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    Q_UNUSED(items);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    Q_UNUSED(path);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="ttc" id="class_music_f_p_l_config_manager_html_ab729e1f78e2f84322b6edaa19af04f6d"><div class="ttname"><a href="../../da/d94/class_music_f_p_l_config_manager.html#ab729e1f78e2f84322b6edaa19af04f6d">MusicFPLConfigManager::writePlaylistData</a></div><div class="ttdeci">virtual bool writePlaylistData(const MusicSongItems &amp;items, const QString &amp;path) override</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d0d/musicfplconfigmanager_8cpp_source.html#l00075">musicfplconfigmanager.cpp:75</a></div></div>
 <div class="ttc" id="class_music_f_p_l_config_manager_html_a766e7e6725d4b49fc10434b39f5b7ea8"><div class="ttname"><a href="../../da/d94/class_music_f_p_l_config_manager.html#a766e7e6725d4b49fc10434b39f5b7ea8">MusicFPLConfigManager::m_chunkrunner</a></div><div class="ttdeci">FPLTrackChunk m_chunkrunner</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/db4/musicfplconfigmanager_8h_source.html#l00072">musicfplconfigmanager.h:72</a></div></div>
 <div class="ttc" id="struct_music_f_p_l_config_manager_1_1_f_p_l_track_chunk_html_aa3be2d5e2c9544e8fb1c2d11f092dc4b"><div class="ttname"><a href="../../da/d4f/struct_music_f_p_l_config_manager_1_1_f_p_l_track_chunk.html#aa3be2d5e2c9544e8fb1c2d11f092dc4b">MusicFPLConfigManager::FPLTrackChunk::duration_dbl</a></div><div class="ttdeci">char duration_dbl[8]</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/db4/musicfplconfigmanager_8h_source.html#l00039">musicfplconfigmanager.h:39</a></div></div>
 <div class="ttc" id="class_music_f_p_l_config_manager_html_ae3f621c32b3b649a3d88dcc778c0ecdc"><div class="ttname"><a href="../../da/d94/class_music_f_p_l_config_manager.html#ae3f621c32b3b649a3d88dcc778c0ecdc">MusicFPLConfigManager::MusicFPLConfigManager</a></div><div class="ttdeci">MusicFPLConfigManager()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d0d/musicfplconfigmanager_8cpp_source.html#l00009">musicfplconfigmanager.cpp:9</a></div></div>
@@ -165,6 +168,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_f_p_l_config_manager_html_ae3129ff58142b6418f46f42ccd59bc7a"><div class="ttname"><a href="../../da/d94/class_music_f_p_l_config_manager.html#ae3129ff58142b6418f46f42ccd59bc7a">MusicFPLConfigManager::m_fileName</a></div><div class="ttdeci">QString m_fileName</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/db4/musicfplconfigmanager_8h_source.html#l00071">musicfplconfigmanager.h:71</a></div></div>
 <div class="ttc" id="musicfplconfigmanager_8h_html"><div class="ttname"><a href="../../d4/db4/musicfplconfigmanager_8h.html">musicfplconfigmanager.h</a></div></div>
 <div class="ttc" id="class_music_f_p_l_config_manager_html_a48adf659c4366915b7ef75d05f351f15"><div class="ttname"><a href="../../da/d94/class_music_f_p_l_config_manager.html#a48adf659c4366915b7ef75d05f351f15">MusicFPLConfigManager::readConfig</a></div><div class="ttdeci">bool readConfig(const QString &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d0d/musicfplconfigmanager_8cpp_source.html#l00015">musicfplconfigmanager.cpp:15</a></div></div>
+<div class="ttc" id="class_music_f_p_l_config_manager_html_af668877e3facbfa895e2af3c40ce0218"><div class="ttname"><a href="../../da/d94/class_music_f_p_l_config_manager.html#af668877e3facbfa895e2af3c40ce0218">MusicFPLConfigManager::readPlaylistData</a></div><div class="ttdeci">virtual bool readPlaylistData(MusicSongItems &amp;items) override</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d0d/musicfplconfigmanager_8cpp_source.html#l00021">musicfplconfigmanager.cpp:21</a></div></div>
 <div class="ttc" id="musicnumberdefine_8h_html_a26a0d68f658e1cfc3a2ae7b9d8c6cf76"><div class="ttname"><a href="../../dd/d01/musicnumberdefine_8h.html#a26a0d68f658e1cfc3a2ae7b9d8c6cf76">MT_S2MS</a></div><div class="ttdeci">#define MT_S2MS</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d01/musicnumberdefine_8h_source.html#l00028">musicnumberdefine.h:28</a></div></div>
 <div class="ttc" id="class_music_playlist_interface_html"><div class="ttname"><a href="../../dd/d56/class_music_playlist_interface.html">MusicPlaylistInterface</a></div><div class="ttdoc">The class of the playlist interface. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dc0/musicplaylistinterface_8h_source.html#l00027">musicplaylistinterface.h:27</a></div></div>
 <div class="ttc" id="struct_music_f_p_l_config_manager_1_1_f_p_l_track_chunk_html_a334dad64271f8384b6099812c9a6d987"><div class="ttname"><a href="../../da/d4f/struct_music_f_p_l_config_manager_1_1_f_p_l_track_chunk.html#a334dad64271f8384b6099812c9a6d987">MusicFPLConfigManager::FPLTrackChunk::keys_dex</a></div><div class="ttdeci">uint keys_dex</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/db4/musicfplconfigmanager_8h_source.html#l00044">musicfplconfigmanager.h:44</a></div></div>
@@ -172,15 +176,13 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="musiccodecutils_8h_html"><div class="ttname"><a href="../../df/d26/musiccodecutils_8h.html">musiccodecutils.h</a></div></div>
 <div class="ttc" id="namespace_music_utils_1_1_codec_html_ab16dcda0d88095779fe1464e0d60f86e"><div class="ttname"><a href="../../d5/d67/namespace_music_utils_1_1_codec.html#ab16dcda0d88095779fe1464e0d60f86e">MusicUtils::Codec::toLocal8Bit</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT const char * toLocal8Bit(const QString &amp;str)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d48/musiccodecutils_8cpp_source.html#l00034">musiccodecutils.cpp:34</a></div></div>
 <div class="ttc" id="class_music_time_html_a36b0b6797beb00f42e3f989ef6bcfd6f"><div class="ttname"><a href="../../dc/d95/class_music_time.html#a36b0b6797beb00f42e3f989ef6bcfd6f">MusicTime::msecTime2LabelJustified</a></div><div class="ttdeci">QString msecTime2LabelJustified()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dac/musictime_8cpp_source.html#l00106">musictime.cpp:106</a></div></div>
-<div class="ttc" id="class_music_f_p_l_config_manager_html_aa4fe74041e7d488f82e381d54e7a0360"><div class="ttname"><a href="../../da/d94/class_music_f_p_l_config_manager.html#aa4fe74041e7d488f82e381d54e7a0360">MusicFPLConfigManager::writePlaylistData</a></div><div class="ttdeci">virtual void writePlaylistData(const MusicSongItems &amp;items, const QString &amp;path) override</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d0d/musicfplconfigmanager_8cpp_source.html#l00074">musicfplconfigmanager.cpp:74</a></div></div>
 <div class="ttc" id="struct_music_song_item_html_a6cb400779ddad9caf5196d329f2c60b4"><div class="ttname"><a href="../../d3/d40/struct_music_song_item.html#a6cb400779ddad9caf5196d329f2c60b4">MusicSongItem::m_itemName</a></div><div class="ttdeci">QString m_itemName</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d03/musicsong_8h_source.html#l00205">musicsong.h:205</a></div></div>
 <div class="ttc" id="class_music_song_html"><div class="ttname"><a href="../../d6/de4/class_music_song.html">MusicSong</a></div><div class="ttdoc">The class of the music song info. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d03/musicsong_8h_source.html#l00028">musicsong.h:28</a></div></div>
-<div class="ttc" id="class_music_f_p_l_config_manager_html_ab6b12b39d7ca86a11d7a9b082ba617f7"><div class="ttname"><a href="../../da/d94/class_music_f_p_l_config_manager.html#ab6b12b39d7ca86a11d7a9b082ba617f7">MusicFPLConfigManager::readPlaylistData</a></div><div class="ttdeci">virtual void readPlaylistData(MusicSongItems &amp;items) override</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d0d/musicfplconfigmanager_8cpp_source.html#l00021">musicfplconfigmanager.cpp:21</a></div></div>
 <div class="ttc" id="struct_music_f_p_l_config_manager_1_1_f_p_l_track_chunk_html"><div class="ttname"><a href="../../da/d4f/struct_music_f_p_l_config_manager_1_1_f_p_l_track_chunk.html">MusicFPLConfigManager::FPLTrackChunk</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/db4/musicfplconfigmanager_8h_source.html#l00031">musicfplconfigmanager.h:31</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 8 2020 13:51:11 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 25 2020 12:46:30 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

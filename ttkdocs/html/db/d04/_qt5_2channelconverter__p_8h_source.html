@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.11.1.0</span>
+   &#160;<span id="projectnumber">2.12.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -112,16 +112,15 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d6/d58/class_effect.html#a54c315b7a455a4be611ecc35d78c7a42">applyEffect</a>(<a class="code" href="../../d5/d2a/class_buffer.html">Buffer</a> *b) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">bool</span> m_disabled;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">int</span> m_reorder_array[9];</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">float</span> *m_tmp_buf;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d6/d58/class_effect.html#abd15ec21c9f25262021efc77626b0f64">m_channels</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="../../d1/d72/class_channel_map.html">ChannelMap</a> m_out_map;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">bool</span> m_disabled = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">int</span> m_reorder_array[9] = { 0 };</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">float</span> *m_tmp_buf = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">size_t</span> m_tmp_size  = 0;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="../../d1/d72/class_channel_map.html">ChannelMap</a> m_out_map, m_in_map;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif // CHANNELCONVERTER_P_H</span></div>
 <div class="ttc" id="class_effect_html"><div class="ttname"><a href="../../d6/d58/class_effect.html">Effect</a></div><div class="ttdoc">The Effect class provides the base interface class of audio effects. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d09/_qt4_2effect_8h_source.html#l00036">effect.h:36</a></div></div>
-<div class="ttc" id="class_effect_html_abd15ec21c9f25262021efc77626b0f64"><div class="ttname"><a href="../../d6/d58/class_effect.html#abd15ec21c9f25262021efc77626b0f64">Effect::m_channels</a></div><div class="ttdeci">int m_channels</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d09/_qt4_2effect_8h_source.html#l00117">effect.h:117</a></div></div>
 <div class="ttc" id="class_effect_html_a54c315b7a455a4be611ecc35d78c7a42"><div class="ttname"><a href="../../d6/d58/class_effect.html#a54c315b7a455a4be611ecc35d78c7a42">Effect::applyEffect</a></div><div class="ttdeci">virtual void applyEffect(Buffer *b)=0</div></div>
 <div class="ttc" id="class_channel_map_html"><div class="ttname"><a href="../../d1/d72/class_channel_map.html">ChannelMap</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d9e/_qt4_2channelmap_8h_source.html#l00027">channelmap.h:27</a></div></div>
 <div class="ttc" id="class_effect_html_a5a231deb996d92d4d965b2ae6ae6dda3"><div class="ttname"><a href="../../d6/d58/class_effect.html#a5a231deb996d92d4d965b2ae6ae6dda3">Effect::configure</a></div><div class="ttdeci">virtual void configure(quint32 srate, ChannelMap map)</div></div>
@@ -132,7 +131,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 8 2020 13:51:06 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 25 2020 12:46:25 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

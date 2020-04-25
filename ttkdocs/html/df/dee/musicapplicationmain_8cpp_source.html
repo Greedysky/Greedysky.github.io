@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.11.1.0</span>
+   &#160;<span id="projectnumber">2.12.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -89,24 +89,24 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> failures = <a class="code" href="../../d2/ddb/namespace_music_auto_test.html#a0f15fc05ab583e87d58f0a9da5cede66">AutoTest::run</a>(argc, argv);</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordflow">if</span>(failures == 0)</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;       <a class="code" href="../../d5/d2b/ttklogger_8h.html#a40ddce420b21f37a70b70ca5de3d879a">M_LOGGER_INFO</a>(<span class="stringliteral">&quot;ALL TESTS PASSED&quot;</span>);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;       <a class="code" href="../../d5/d2b/ttklogger_8h.html#ae2a8797595daafbcb53f440f5aca9c8d">TTK_LOGGER_INFO</a>(<span class="stringliteral">&quot;ALL TESTS PASSED&quot;</span>);</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    }</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="../../d5/d2b/ttklogger_8h.html#a40ddce420b21f37a70b70ca5de3d879a">M_LOGGER_INFO</a>(failures &lt;&lt; <span class="stringliteral">&quot; TESTS FAILED!&quot;</span>);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="../../d5/d2b/ttklogger_8h.html#ae2a8797595daafbcb53f440f5aca9c8d">TTK_LOGGER_INFO</a>(failures &lt;&lt; <span class="stringliteral">&quot; TESTS FAILED!&quot;</span>);</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    }</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> app.exec();</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="musicautotest_8h_html_a6ae82246e415b0258c23068cc7a4d5be"><div class="ttname"><a href="../../d1/d59/musicautotest_8h.html#a6ae82246e415b0258c23068cc7a4d5be">TEST_MAIN</a></div><div class="ttdeci">#define TEST_MAIN</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d59/musicautotest_8h_source.html#l00095">musicautotest.h:95</a></div></div>
-<div class="ttc" id="ttklogger_8h_html_a40ddce420b21f37a70b70ca5de3d879a"><div class="ttname"><a href="../../d5/d2b/ttklogger_8h.html#a40ddce420b21f37a70b70ca5de3d879a">M_LOGGER_INFO</a></div><div class="ttdeci">#define M_LOGGER_INFO(str)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d2b/ttklogger_8h_source.html#l00046">ttklogger.h:46</a></div></div>
+<div class="ttc" id="ttklogger_8h_html_ae2a8797595daafbcb53f440f5aca9c8d"><div class="ttname"><a href="../../d5/d2b/ttklogger_8h.html#ae2a8797595daafbcb53f440f5aca9c8d">TTK_LOGGER_INFO</a></div><div class="ttdeci">#define TTK_LOGGER_INFO(str)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d2b/ttklogger_8h_source.html#l00046">ttklogger.h:46</a></div></div>
 <div class="ttc" id="ttkrunmain_8cpp_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="../../d2/d04/ttkrunmain_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d04/ttkrunmain_8cpp_source.html#l00005">ttkrunmain.cpp:5</a></div></div>
 <div class="ttc" id="namespace_music_auto_test_html_a0f15fc05ab583e87d58f0a9da5cede66"><div class="ttname"><a href="../../d2/ddb/namespace_music_auto_test.html#a0f15fc05ab583e87d58f0a9da5cede66">MusicAutoTest::run</a></div><div class="ttdeci">int run(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d59/musicautotest_8h_source.html#l00062">musicautotest.h:62</a></div></div>
 <div class="ttc" id="musicautotest_8h_html"><div class="ttname"><a href="../../d1/d59/musicautotest_8h.html">musicautotest.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 8 2020 13:51:24 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 25 2020 12:46:38 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.11.1.0</span>
+   &#160;<span id="projectnumber">2.12.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -106,7 +106,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="../../df/dbc/namespace_music_object.html#ab14850088dfb96770578ff73eeb97bdd">MusicObject::setSslConfiguration</a>(&amp;request);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="../../d5/de6/class_music_network_abstract.html#a7353006f173d334882dd89b0b7a9bcef">m_reply</a> = <a class="code" href="../../d5/de6/class_music_network_abstract.html#a488f80a1d87c2addfaf7ea1f63a31608">m_manager</a>-&gt;get( request );</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="../../d5/de6/class_music_network_abstract.html#a7353006f173d334882dd89b0b7a9bcef">m_reply</a> = <a class="code" href="../../d5/de6/class_music_network_abstract.html#a488f80a1d87c2addfaf7ea1f63a31608">m_manager</a>-&gt;get(request);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    connect(<a class="code" href="../../d5/de6/class_music_network_abstract.html#a7353006f173d334882dd89b0b7a9bcef">m_reply</a>, SIGNAL(finished()), SLOT(<a class="code" href="../../dd/d34/class_music_download_counter_p_v_thread.html#a27815c8181bee10a7307872b6a9735ab">downLoadFinished</a>()));</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
@@ -134,7 +134,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="../../d5/d2b/ttklogger_8h.html#acb1153597589e0766a4e65aee968526e">M_LOGGER_ERROR</a>(<span class="stringliteral">&quot;Counter PV data error&quot;</span>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="../../d5/d2b/ttklogger_8h.html#a743bf672cf731b656a4eb9f33b7f7582">TTK_LOGGER_ERROR</a>(<span class="stringliteral">&quot;Counter PV data error&quot;</span>);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        Q_EMIT <a class="code" href="../../d5/de6/class_music_network_abstract.html#ae957b20ab1307ec7a7d0fdde4405f646">downLoadDataChanged</a>(QString());</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="../../d5/de6/class_music_network_abstract.html#adbbd392b6f9070c502fc8c2a083dd6d7">deleteAll</a>();</div>
@@ -143,10 +143,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_network_abstract_html"><div class="ttname"><a href="../../d5/de6/class_music_network_abstract.html">MusicNetworkAbstract</a></div><div class="ttdoc">The class of abstract downloading data. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dbf/musicnetworkabstract_8h_source.html#l00031">musicnetworkabstract.h:31</a></div></div>
 <div class="ttc" id="class_music_download_counter_p_v_thread_html_addfecfe8c973709bb2ffcfd18dee7f8f"><div class="ttname"><a href="../../dd/d34/class_music_download_counter_p_v_thread.html#addfecfe8c973709bb2ffcfd18dee7f8f">MusicDownloadCounterPVThread::~MusicDownloadCounterPVThread</a></div><div class="ttdeci">virtual ~MusicDownloadCounterPVThread()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d81/musicdownloadcounterpvthread_8cpp_source.html#l00011">musicdownloadcounterpvthread.cpp:11</a></div></div>
 <div class="ttc" id="class_music_download_counter_p_v_thread_html_a27815c8181bee10a7307872b6a9735ab"><div class="ttname"><a href="../../dd/d34/class_music_download_counter_p_v_thread.html#a27815c8181bee10a7307872b6a9735ab">MusicDownloadCounterPVThread::downLoadFinished</a></div><div class="ttdeci">virtual void downLoadFinished()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d81/musicdownloadcounterpvthread_8cpp_source.html#l00034">musicdownloadcounterpvthread.cpp:34</a></div></div>
+<div class="ttc" id="ttklogger_8h_html_a743bf672cf731b656a4eb9f33b7f7582"><div class="ttname"><a href="../../d5/d2b/ttklogger_8h.html#a743bf672cf731b656a4eb9f33b7f7582">TTK_LOGGER_ERROR</a></div><div class="ttdeci">#define TTK_LOGGER_ERROR(str)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d2b/ttklogger_8h_source.html#l00050">ttklogger.h:50</a></div></div>
 <div class="ttc" id="namespace_music_utils_1_1_algorithm_html_a5e5f071a5bb196d53c48fb2be855da67"><div class="ttname"><a href="../../d6/d11/namespace_music_utils_1_1_algorithm.html#a5e5f071a5bb196d53c48fb2be855da67">MusicUtils::Algorithm::mdII</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT QString mdII(const QString &amp;data, bool encode)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dfd/musicalgorithmutils_8cpp_source.html#l00041">musicalgorithmutils.cpp:41</a></div></div>
 <div class="ttc" id="class_music_download_counter_p_v_thread_html_ab8339656b187634b0028f6bb3e1dfa83"><div class="ttname"><a href="../../dd/d34/class_music_download_counter_p_v_thread.html#ab8339656b187634b0028f6bb3e1dfa83">MusicDownloadCounterPVThread::startToDownload</a></div><div class="ttdeci">void startToDownload()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d81/musicdownloadcounterpvthread_8cpp_source.html#l00016">musicdownloadcounterpvthread.cpp:16</a></div></div>
 <div class="ttc" id="class_music_network_abstract_html_adbbd392b6f9070c502fc8c2a083dd6d7"><div class="ttname"><a href="../../d5/de6/class_music_network_abstract.html#adbbd392b6f9070c502fc8c2a083dd6d7">MusicNetworkAbstract::deleteAll</a></div><div class="ttdeci">virtual void deleteAll()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d73/musicnetworkabstract_8cpp_source.html#l00018">musicnetworkabstract.cpp:18</a></div></div>
-<div class="ttc" id="ttklogger_8h_html_acb1153597589e0766a4e65aee968526e"><div class="ttname"><a href="../../d5/d2b/ttklogger_8h.html#acb1153597589e0766a4e65aee968526e">M_LOGGER_ERROR</a></div><div class="ttdeci">#define M_LOGGER_ERROR(str)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d2b/ttklogger_8h_source.html#l00050">ttklogger.h:50</a></div></div>
 <div class="ttc" id="musicdownloadcounterpvthread_8h_html_abb30f19455e76bb7d76f79c11caf1796"><div class="ttname"><a href="../../d8/d44/musicdownloadcounterpvthread_8h.html#abb30f19455e76bb7d76f79c11caf1796">HOST_URL</a></div><div class="ttdeci">const QString HOST_URL</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d44/musicdownloadcounterpvthread_8h_source.html#l00025">musicdownloadcounterpvthread.h:25</a></div></div>
 <div class="ttc" id="class_music_network_abstract_html_a7353006f173d334882dd89b0b7a9bcef"><div class="ttname"><a href="../../d5/de6/class_music_network_abstract.html#a7353006f173d334882dd89b0b7a9bcef">MusicNetworkAbstract::m_reply</a></div><div class="ttdeci">QNetworkReply * m_reply</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dbf/musicnetworkabstract_8h_source.html#l00111">musicnetworkabstract.h:111</a></div></div>
 <div class="ttc" id="class_music_download_counter_p_v_thread_html_a8dd7cc9af3d843dfbeba3541cd60a0f2"><div class="ttname"><a href="../../dd/d34/class_music_download_counter_p_v_thread.html#a8dd7cc9af3d843dfbeba3541cd60a0f2">MusicDownloadCounterPVThread::MusicDownloadCounterPVThread</a></div><div class="ttdeci">MusicDownloadCounterPVThread(QObject *parent=nullptr)</div><div class="ttdoc">QJson import. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d81/musicdownloadcounterpvthread_8cpp_source.html#l00005">musicdownloadcounterpvthread.cpp:5</a></div></div>
@@ -163,7 +163,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 8 2020 13:51:11 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 25 2020 12:46:30 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.11.1.0</span>
+   &#160;<span id="projectnumber">2.12.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -107,27 +107,27 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../d5/d2b/ttklogger_8h.html#afdd5605d2281d188b0f997fb588d4420">   28</a></span>&#160;<span class="preprocessor">#define CURRENT_DATE QDate::currentDate().toString(MUSIC_YEAR_FORMAT)</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../d5/d2b/ttklogger_8h.html#ad3c2e885532244ce2d3d14e5e4dc6181">   29</a></span>&#160;<span class="preprocessor">#define LOG_END      QString(&quot;log::npos&quot;)</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../d5/d2b/ttklogger_8h.html#a48ac0f7dae3822d148820196d2f26a9e">   31</a></span>&#160;<span class="preprocessor">#define M_LOGGER    (*TTKLogger::createInstance())</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../d5/d2b/ttklogger_8h.html#a78dd5f438ddf582430cb0127ae47e002">   32</a></span>&#160;<span class="preprocessor">#define M_MESSAGE(str, msg)         \</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../d5/d2b/ttklogger_8h.html#a4fed6cc6e9c24261d2352fea82c5f7be">   31</a></span>&#160;<span class="preprocessor">#define TTK_LOGGER    (*TTKLogger::createInstance())</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../d5/d2b/ttklogger_8h.html#a6c26dca297635f705c87bd624bdbf53a">   32</a></span>&#160;<span class="preprocessor">#define TTK_MESSAGE(str, msg)       \</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">{                                   \</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">    M_LOGGER.setLevel(msg);         \</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">    M_LOGGER &lt;&lt; str &lt;&lt; LOG_END;     \</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">    TTK_LOGGER.setLevel(msg);       \</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">    TTK_LOGGER &lt;&lt; str &lt;&lt; LOG_END;   \</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">}</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#ifdef TTK_DEBUG</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">    #define M_LOGGER_INFO(str)  M_MESSAGE(str, &quot;[Info]&quot;)</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">    #define M_LOGGER_DEBUG(str) M_MESSAGE(str, &quot;[Debug]&quot;)</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">    #define M_LOGGER_WARN(str)  M_MESSAGE(str, &quot;[Warn]&quot;)</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">    #define M_LOGGER_TRACE(str) M_MESSAGE(str, &quot;[Trace]&quot;)</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">    #define M_LOGGER_ERROR(str) M_MESSAGE(str, &quot;[Error]&quot;)</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">    #define M_LOGGER_FATAL(str) M_MESSAGE(str, &quot;[Fatal]&quot;)</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">    #define TTK_LOGGER_INFO(str)  TTK_MESSAGE(str, &quot;[Info]&quot;)</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">    #define TTK_LOGGER_DEBUG(str) TTK_MESSAGE(str, &quot;[Debug]&quot;)</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">    #define TTK_LOGGER_WARN(str)  TTK_MESSAGE(str, &quot;[Warn]&quot;)</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">    #define TTK_LOGGER_TRACE(str) TTK_MESSAGE(str, &quot;[Trace]&quot;)</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">    #define TTK_LOGGER_ERROR(str) TTK_MESSAGE(str, &quot;[Error]&quot;)</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">    #define TTK_LOGGER_FATAL(str) TTK_MESSAGE(str, &quot;[Fatal]&quot;)</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="../../d5/d2b/ttklogger_8h.html#a40ddce420b21f37a70b70ca5de3d879a">   46</a></span>&#160;<span class="preprocessor">    #define M_LOGGER_INFO(str)  qDebug() &lt;&lt; str</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../d5/d2b/ttklogger_8h.html#ab585c981b1e02876b7506b00ab13c691">   47</a></span>&#160;<span class="preprocessor">    #define M_LOGGER_DEBUG(str) qDebug() &lt;&lt; str</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="../../d5/d2b/ttklogger_8h.html#a65f15f88adf4a8bb7e9cbc9a86cee7f8">   48</a></span>&#160;<span class="preprocessor">    #define M_LOGGER_WARN(str)  qDebug() &lt;&lt; str</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="../../d5/d2b/ttklogger_8h.html#a207163e2bae32ff1a0afa79c468dc53e">   49</a></span>&#160;<span class="preprocessor">    #define M_LOGGER_TRACE(str) qDebug() &lt;&lt; str</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="../../d5/d2b/ttklogger_8h.html#acb1153597589e0766a4e65aee968526e">   50</a></span>&#160;<span class="preprocessor">    #define M_LOGGER_ERROR(str) qDebug() &lt;&lt; str</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="../../d5/d2b/ttklogger_8h.html#ab43290cea0284b17bc3faf44dd458691">   51</a></span>&#160;<span class="preprocessor">    #define M_LOGGER_FATAL(str) qDebug() &lt;&lt; str</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="../../d5/d2b/ttklogger_8h.html#ae2a8797595daafbcb53f440f5aca9c8d">   46</a></span>&#160;<span class="preprocessor">    #define TTK_LOGGER_INFO(str)  qDebug() &lt;&lt; str</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../d5/d2b/ttklogger_8h.html#a23c6702a46c8436427a179830e14e843">   47</a></span>&#160;<span class="preprocessor">    #define TTK_LOGGER_DEBUG(str) qDebug() &lt;&lt; str</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="../../d5/d2b/ttklogger_8h.html#abbfc7903ce2789f1139564fa0dfa7516">   48</a></span>&#160;<span class="preprocessor">    #define TTK_LOGGER_WARN(str)  qDebug() &lt;&lt; str</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="../../d5/d2b/ttklogger_8h.html#a45f545d6e7881acf41b0bc4d4f03ab51">   49</a></span>&#160;<span class="preprocessor">    #define TTK_LOGGER_TRACE(str) qDebug() &lt;&lt; str</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="../../d5/d2b/ttklogger_8h.html#a743bf672cf731b656a4eb9f33b7f7582">   50</a></span>&#160;<span class="preprocessor">    #define TTK_LOGGER_ERROR(str) qDebug() &lt;&lt; str</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="../../d5/d2b/ttklogger_8h.html#aa7ddae24a38580b38650abc3d11cb4b5">   51</a></span>&#160;<span class="preprocessor">    #define TTK_LOGGER_FATAL(str) qDebug() &lt;&lt; str</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="../../d4/dad/class_t_t_k_logger.html">   57</a></span>&#160;<span class="keyword">class </span>Q_DECL_EXPORT <a class="code" href="../../d4/dad/class_t_t_k_logger.html">TTKLogger</a></div>
@@ -151,7 +151,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="../../d4/dad/class_t_t_k_logger.html#a0428f1c67dab48e2037eb8c1b9d036a7">   87</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="../../d4/dad/class_t_t_k_logger.html">TTKLogger</a> &amp;operator &lt;&lt;(<span class="keywordtype">bool</span> t)</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    {</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#ifdef TTK_DEBUG</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        m_streamString.append( QString(<span class="stringliteral">&quot;%1 &quot;</span>).arg(t ? <span class="stringliteral">&quot;true&quot;</span> : <span class="stringliteral">&quot;false&quot;</span>) );</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        m_streamString.append(QString(<span class="stringliteral">&quot;%1 &quot;</span>).arg(t ? <span class="stringliteral">&quot;true&quot;</span> : <span class="stringliteral">&quot;false&quot;</span>));</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        Q_UNUSED(t);</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -213,7 +213,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="../../d4/dad/class_t_t_k_logger.html#a016b942553ac8f7d96a7c95e8b4f4a21">  155</a></span>&#160;    <a class="code" href="../../d4/dad/class_t_t_k_logger.html">TTKLogger</a> &amp;<a class="code" href="../../d4/dad/class_t_t_k_logger.html#a016b942553ac8f7d96a7c95e8b4f4a21">debugData</a>(<span class="keyword">const</span> <a class="code" href="../../d1/d70/http__parser_8c.html#ad24d0de3f597ca60dd95c4bc59c2ff73">T</a> &amp;data)</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    {</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">#ifdef TTK_DEBUG</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        m_streamString.append( QString(<span class="stringliteral">&quot;%1 %2 &quot;</span>).arg(m_levelType).arg(data) );</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        m_streamString.append(QString(<span class="stringliteral">&quot;%1 %2 &quot;</span>).arg(m_levelType).arg(data));</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        Q_UNUSED(data);</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -262,7 +262,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 8 2020 13:51:24 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 25 2020 12:46:38 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

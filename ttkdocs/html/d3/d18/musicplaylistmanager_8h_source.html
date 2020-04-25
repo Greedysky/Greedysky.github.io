@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.11.1.0</span>
+   &#160;<span id="projectnumber">2.12.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -108,36 +108,41 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> getMusicSongItems(<span class="keyword">const</span> QStringList &amp;paths, MusicSongItems &amp;items);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> readTKPLList(<span class="keyword">const</span> QString &amp;path, MusicSongItems &amp;items);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> writeTKPLList(<span class="keyword">const</span> QString &amp;path, <span class="keyword">const</span> <a class="code" href="../../d3/d40/struct_music_song_item.html">MusicSongItem</a> &amp;item);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">bool</span> readTKPLList(<span class="keyword">const</span> QString &amp;path, MusicSongItems &amp;items);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">bool</span> writeTKPLList(<span class="keyword">const</span> QString &amp;path, <span class="keyword">const</span> <a class="code" href="../../d3/d40/struct_music_song_item.html">MusicSongItem</a> &amp;item);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> readM3UList(<span class="keyword">const</span> QString &amp;path, MusicSongItems &amp;items);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> writeM3UList(<span class="keyword">const</span> QString &amp;path, <span class="keyword">const</span> <a class="code" href="../../d3/d40/struct_music_song_item.html">MusicSongItem</a> &amp;item);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">bool</span> readM3UList(<span class="keyword">const</span> QString &amp;path, MusicSongItems &amp;items);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">bool</span> writeM3UList(<span class="keyword">const</span> QString &amp;path, <span class="keyword">const</span> <a class="code" href="../../d3/d40/struct_music_song_item.html">MusicSongItem</a> &amp;item);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> readPLSList(<span class="keyword">const</span> QString &amp;path, MusicSongItems &amp;items);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> writePLSList(<span class="keyword">const</span> QString &amp;path, <span class="keyword">const</span> <a class="code" href="../../d3/d40/struct_music_song_item.html">MusicSongItem</a> &amp;item);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">bool</span> readPLSList(<span class="keyword">const</span> QString &amp;path, MusicSongItems &amp;items);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">bool</span> writePLSList(<span class="keyword">const</span> QString &amp;path, <span class="keyword">const</span> <a class="code" href="../../d3/d40/struct_music_song_item.html">MusicSongItem</a> &amp;item);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> readWPLList(<span class="keyword">const</span> QString &amp;path, MusicSongItems &amp;items);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> writeWPLList(<span class="keyword">const</span> QString &amp;path, <span class="keyword">const</span> <a class="code" href="../../d3/d40/struct_music_song_item.html">MusicSongItem</a> &amp;item);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">bool</span> readWPLList(<span class="keyword">const</span> QString &amp;path, MusicSongItems &amp;items);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">bool</span> writeWPLList(<span class="keyword">const</span> QString &amp;path, <span class="keyword">const</span> <a class="code" href="../../d3/d40/struct_music_song_item.html">MusicSongItem</a> &amp;item);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> readXSPFList(<span class="keyword">const</span> QString &amp;path, MusicSongItems &amp;items);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> writeXSPFList(<span class="keyword">const</span> QString &amp;path, <span class="keyword">const</span> <a class="code" href="../../d3/d40/struct_music_song_item.html">MusicSongItem</a> &amp;item);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">bool</span> readXSPFList(<span class="keyword">const</span> QString &amp;path, MusicSongItems &amp;items);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">bool</span> writeXSPFList(<span class="keyword">const</span> QString &amp;path, <span class="keyword">const</span> <a class="code" href="../../d3/d40/struct_music_song_item.html">MusicSongItem</a> &amp;item);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> readASXList(<span class="keyword">const</span> QString &amp;path, MusicSongItems &amp;items);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> writeASXList(<span class="keyword">const</span> QString &amp;path, <span class="keyword">const</span> <a class="code" href="../../d3/d40/struct_music_song_item.html">MusicSongItem</a> &amp;item);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">bool</span> readASXList(<span class="keyword">const</span> QString &amp;path, MusicSongItems &amp;items);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">bool</span> writeASXList(<span class="keyword">const</span> QString &amp;path, <span class="keyword">const</span> <a class="code" href="../../d3/d40/struct_music_song_item.html">MusicSongItem</a> &amp;item);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> readKWLList(<span class="keyword">const</span> QString &amp;path, MusicSongItems &amp;items);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">bool</span> readKWLList(<span class="keyword">const</span> QString &amp;path, MusicSongItems &amp;items);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> readKGLList(<span class="keyword">const</span> QString &amp;path, MusicSongItems &amp;items);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">bool</span> readKGLList(<span class="keyword">const</span> QString &amp;path, MusicSongItems &amp;items);</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> readFPLList(<span class="keyword">const</span> QString &amp;path, MusicSongItems &amp;items);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">bool</span> readFPLList(<span class="keyword">const</span> QString &amp;path, MusicSongItems &amp;items);</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> readCSVList(<span class="keyword">const</span> QString &amp;path, MusicSongItems &amp;items);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">void</span> writeCSVList(<span class="keyword">const</span> QString &amp;path, <span class="keyword">const</span> <a class="code" href="../../d3/d40/struct_music_song_item.html">MusicSongItem</a> &amp;item);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">bool</span> readCSVList(<span class="keyword">const</span> QString &amp;path, MusicSongItems &amp;items);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">bool</span> writeCSVList(<span class="keyword">const</span> QString &amp;path, <span class="keyword">const</span> <a class="code" href="../../d3/d40/struct_music_song_item.html">MusicSongItem</a> &amp;item);</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;};</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif // MUSICPLAYLISTMANAGER_H</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">bool</span> readTXTList(<span class="keyword">const</span> QString &amp;path, MusicSongItems &amp;items);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">bool</span> writeTXTList(<span class="keyword">const</span> QString &amp;path, <span class="keyword">const</span> <a class="code" href="../../d3/d40/struct_music_song_item.html">MusicSongItem</a> &amp;item);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordtype">bool</span> writeNFNList(<span class="keyword">const</span> QString &amp;path, <span class="keyword">const</span> <a class="code" href="../../d3/d40/struct_music_song_item.html">MusicSongItem</a> &amp;item);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;};</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#endif // MUSICPLAYLISTMANAGER_H</span></div>
 <div class="ttc" id="ttkglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00144">ttkglobal.h:144</a></div></div>
 <div class="ttc" id="class_music_playlist_manager_html"><div class="ttname"><a href="../../d1/d71/class_music_playlist_manager.html">MusicPlaylistManager</a></div><div class="ttdoc">The class of the playlist manager. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d18/musicplaylistmanager_8h_source.html#l00027">musicplaylistmanager.h:27</a></div></div>
 <div class="ttc" id="musicsong_8h_html"><div class="ttname"><a href="../../d4/d03/musicsong_8h.html">musicsong.h</a></div></div>
@@ -145,7 +150,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 8 2020 13:51:09 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 25 2020 12:46:26 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

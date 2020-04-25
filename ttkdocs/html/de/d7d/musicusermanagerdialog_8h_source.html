@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.11.1.0</span>
+   &#160;<span id="projectnumber">2.12.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -98,7 +98,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * with this program; If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> ================================================= */</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;QTime&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;QElapsedTimer&gt;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dc/d17/musicwidgetheaders_8h.html">musicwidgetheaders.h</a>&quot;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../da/d49/musicabstractmovedialog_8h.html">musicabstractmovedialog.h</a>&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../da/df5/musicdatabaseobject_8h.html">musicdatabaseobject.h</a>&quot;</span></div>
@@ -138,7 +138,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="../../d4/daf/class_music_user_manager_dialog.html#a9a027d4d41d98d878295700d9bb3a5fe">   95</a></span>&#160;    Ui::MusicUserManagerDialog *<a class="code" href="../../d4/daf/class_music_user_manager_dialog.html#a9a027d4d41d98d878295700d9bb3a5fe">m_ui</a>;</div>
 <div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="../../d4/daf/class_music_user_manager_dialog.html#ad91eaa1afe7483aa6755f847e340b0a2">   96</a></span>&#160;    <a class="code" href="../../dd/dda/class_music_user_model.html">MusicUserModel</a> *<a class="code" href="../../d4/daf/class_music_user_manager_dialog.html#ad91eaa1afe7483aa6755f847e340b0a2">m_userModel</a>;</div>
 <div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="../../d4/daf/class_music_user_manager_dialog.html#a627c15e0112cebadf09463d2d59a5b08">   97</a></span>&#160;    <a class="code" href="../../df/dc7/struct_music_user_u_i_d_item.html">MusicUserUIDItem</a> <a class="code" href="../../d4/daf/class_music_user_manager_dialog.html#a627c15e0112cebadf09463d2d59a5b08">m_userUID</a>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="../../d4/daf/class_music_user_manager_dialog.html#aae29e77e96d9d213a3a2d488c417c76f">   98</a></span>&#160;    QTime <a class="code" href="../../d4/daf/class_music_user_manager_dialog.html#aae29e77e96d9d213a3a2d488c417c76f">m_time</a>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="../../d4/daf/class_music_user_manager_dialog.html#acf19f9944a5f31824ee5861e26c3fff1">   98</a></span>&#160;    QElapsedTimer <a class="code" href="../../d4/daf/class_music_user_manager_dialog.html#acf19f9944a5f31824ee5861e26c3fff1">m_time</a>;</div>
 <div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="../../d4/daf/class_music_user_manager_dialog.html#abe73deafa3e3a61ca6a668651ae329a6">   99</a></span>&#160;    QMenu <a class="code" href="../../d4/daf/class_music_user_manager_dialog.html#abe73deafa3e3a61ca6a668651ae329a6">m_popMenu</a>;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
@@ -146,6 +146,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif // MUSICUSERMANAGERDIALOG_H</span></div>
 <div class="ttc" id="musicabstractmovedialog_8h_html"><div class="ttname"><a href="../../da/d49/musicabstractmovedialog_8h.html">musicabstractmovedialog.h</a></div></div>
 <div class="ttc" id="class_music_user_model_html"><div class="ttname"><a href="../../dd/dda/class_music_user_model.html">MusicUserModel</a></div><div class="ttdoc">The class of the user data model. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d09/musicusermodel_8h_source.html#l00030">musicusermodel.h:30</a></div></div>
+<div class="ttc" id="class_music_user_manager_dialog_html_acf19f9944a5f31824ee5861e26c3fff1"><div class="ttname"><a href="../../d4/daf/class_music_user_manager_dialog.html#acf19f9944a5f31824ee5861e26c3fff1">MusicUserManagerDialog::m_time</a></div><div class="ttdeci">QElapsedTimer m_time</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d7d/musicusermanagerdialog_8h_source.html#l00098">musicusermanagerdialog.h:98</a></div></div>
 <div class="ttc" id="namespace_ui_html"><div class="ttname"><a href="../../dc/df0/namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d24/musicapplication_8h_source.html#l00033">musicapplication.h:33</a></div></div>
 <div class="ttc" id="ttkglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00144">ttkglobal.h:144</a></div></div>
 <div class="ttc" id="class_music_user_manager_dialog_html_abe73deafa3e3a61ca6a668651ae329a6"><div class="ttname"><a href="../../d4/daf/class_music_user_manager_dialog.html#abe73deafa3e3a61ca6a668651ae329a6">MusicUserManagerDialog::m_popMenu</a></div><div class="ttdeci">QMenu m_popMenu</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d7d/musicusermanagerdialog_8h_source.html#l00099">musicusermanagerdialog.h:99</a></div></div>
@@ -155,13 +156,12 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="musicwidgetheaders_8h_html"><div class="ttname"><a href="../../dc/d17/musicwidgetheaders_8h.html">musicwidgetheaders.h</a></div></div>
 <div class="ttc" id="class_music_user_manager_dialog_html_a627c15e0112cebadf09463d2d59a5b08"><div class="ttname"><a href="../../d4/daf/class_music_user_manager_dialog.html#a627c15e0112cebadf09463d2d59a5b08">MusicUserManagerDialog::m_userUID</a></div><div class="ttdeci">MusicUserUIDItem m_userUID</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d7d/musicusermanagerdialog_8h_source.html#l00097">musicusermanagerdialog.h:97</a></div></div>
 <div class="ttc" id="class_music_user_manager_dialog_html_ad91eaa1afe7483aa6755f847e340b0a2"><div class="ttname"><a href="../../d4/daf/class_music_user_manager_dialog.html#ad91eaa1afe7483aa6755f847e340b0a2">MusicUserManagerDialog::m_userModel</a></div><div class="ttdeci">MusicUserModel * m_userModel</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d7d/musicusermanagerdialog_8h_source.html#l00096">musicusermanagerdialog.h:96</a></div></div>
-<div class="ttc" id="class_music_user_manager_dialog_html_aae29e77e96d9d213a3a2d488c417c76f"><div class="ttname"><a href="../../d4/daf/class_music_user_manager_dialog.html#aae29e77e96d9d213a3a2d488c417c76f">MusicUserManagerDialog::m_time</a></div><div class="ttdeci">QTime m_time</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d7d/musicusermanagerdialog_8h_source.html#l00098">musicusermanagerdialog.h:98</a></div></div>
 <div class="ttc" id="struct_music_user_u_i_d_item_html"><div class="ttname"><a href="../../df/dc7/struct_music_user_u_i_d_item.html">MusicUserUIDItem</a></div><div class="ttdoc">The class of the user uid item. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/df5/musicdatabaseobject_8h_source.html#l00043">musicdatabaseobject.h:43</a></div></div>
 <div class="ttc" id="class_music_user_manager_dialog_html_a9a027d4d41d98d878295700d9bb3a5fe"><div class="ttname"><a href="../../d4/daf/class_music_user_manager_dialog.html#a9a027d4d41d98d878295700d9bb3a5fe">MusicUserManagerDialog::m_ui</a></div><div class="ttdeci">Ui::MusicUserManagerDialog * m_ui</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d7d/musicusermanagerdialog_8h_source.html#l00095">musicusermanagerdialog.h:95</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 8 2020 13:51:23 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 25 2020 12:46:34 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

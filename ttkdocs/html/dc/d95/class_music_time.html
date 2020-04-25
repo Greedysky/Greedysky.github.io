@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.11.1.0</span>
+   &#160;<span id="projectnumber">2.12.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -187,8 +187,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:aa043d6e702d9149a778b4cd1ed8a0441"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a67fbc6954f1aa93b8a730c57acb853"><td class="memItemLeft" align="right" valign="top">static qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d95/class_music_time.html#a6a67fbc6954f1aa93b8a730c57acb853">timestamp</a> (bool ms=true)</td></tr>
 <tr class="separator:a6a67fbc6954f1aa93b8a730c57acb853"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a3ee98ab69c8a7290782071ea501ecf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d95/class_music_time.html#a0a3ee98ab69c8a7290782071ea501ecf">InitSRand</a> ()</td></tr>
-<tr class="separator:a0a3ee98ab69c8a7290782071ea501ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a752c22e9fc58488a7ff304ad2bee6254"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d95/class_music_time.html#a752c22e9fc58488a7ff304ad2bee6254">initSRand</a> ()</td></tr>
+<tr class="separator:a752c22e9fc58488a7ff304ad2bee6254"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab51b49694af4672684706c9ada04e141"><td class="memItemLeft" align="right" valign="top">static qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d95/class_music_time.html#ab51b49694af4672684706c9ada04e141">labelJustified2MsecTime</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;time)</td></tr>
 <tr class="separator:ab51b49694af4672684706c9ada04e141"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47630fd1610b013a765e48786dabcdee"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d95/class_music_time.html#a47630fd1610b013a765e48786dabcdee">msecTime2LabelJustified</a> (qint64 time, bool greedy=true)</td></tr>
@@ -198,8 +198,8 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:ae8c9e9e37d1784ded4a8d2287031e958"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d95/class_music_time.html#ae8c9e9e37d1784ded4a8d2287031e958">init</a> ()</td></tr>
-<tr class="separator:ae8c9e9e37d1784ded4a8d2287031e958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f221b6797e4289725dd028942c74059"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d95/class_music_time.html#a2f221b6797e4289725dd028942c74059">initialize</a> ()</td></tr>
+<tr class="separator:a2f221b6797e4289725dd028942c74059"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaef8bda1de710acc19df47a20ae6455b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d95/class_music_time.html#aaef8bda1de710acc19df47a20ae6455b">copyToThis</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="../../dc/d95/class_music_time.html">MusicTime</a> &amp;other)</td></tr>
 <tr class="separator:aaef8bda1de710acc19df47a20ae6455b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a759a3971992546cd06d80fffccffc6c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d95/class_music_time.html#a759a3971992546cd06d80fffccffc6c3">fromTimeStamp</a> (qint64 value, <a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> delta)</td></tr>
@@ -233,7 +233,7 @@ Friends</h2></td></tr>
 <div class="textblock"><p>The class of the music time object. </p>
 <dl class="section author"><dt>Author</dt><dd>Greedysky <a href="#" onclick="location.href='mai'+'lto:'+'gre'+'ed'+'ysk'+'y@'+'163'+'.c'+'om'; return false;">greed<span style="display: none;">.nosp@m.</span>ysky<span style="display: none;">.nosp@m.</span>@163.<span style="display: none;">.nosp@m.</span>com</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00029">29</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00028">28</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a6f0b1667c9929bace58d8e366e95e4ad"></a>
 <div class="memitem">
@@ -253,7 +253,7 @@ Friends</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00033">33</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00032">32</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
 
 </div>
 </div>
@@ -274,7 +274,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00005">5</a> of file <a class="el" href="../../d0/dac/musictime_8cpp_source.html">musictime.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00035">All_Msec</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00273">init()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">m_defaultType</a>, and <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00237">m_greedyMode</a>.</p>
+<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00034">All_Msec</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00273">initialize()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00237">m_defaultType</a>, and <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00236">m_greedyMode</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00251">operator*()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00227">operator+()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00239">operator-()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00257">operator/()</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00072">toString()</a>.</p>
 
@@ -328,7 +328,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00017">17</a> of file <a class="el" href="../../d0/dac/musictime_8cpp_source.html">musictime.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00036">All_Sec</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00293">fromTimeStamp()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">m_defaultType</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00027">MT_S</a>, and <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00028">MT_S2MS</a>.</p>
+<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00035">All_Sec</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00293">fromTimeStamp()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00237">m_defaultType</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00027">MT_S</a>, and <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00028">MT_S2MS</a>.</p>
 
 </div>
 </div>
@@ -377,7 +377,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00024">24</a> of file <a class="el" href="../../d0/dac/musictime_8cpp_source.html">musictime.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00035">All_Msec</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">m_defaultType</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00031">setHMSM()</a>.</p>
+<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00034">All_Msec</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00237">m_defaultType</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00031">setHMSM()</a>.</p>
 
 </div>
 </div>
@@ -407,7 +407,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00282">282</a> of file <a class="el" href="../../d0/dac/musictime_8cpp_source.html">musictime.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00110">getDay()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00085">getGreedy()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00114">getHour()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00126">getMillionSecond()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00118">getMinute()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00122">getSecond()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00076">getType()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_day</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">m_defaultType</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00237">m_greedyMode</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_hour</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00240">m_min</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00240">m_msec</a>, and <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00240">m_sec</a>.</p>
+<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00109">getDay()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00084">getGreedy()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00113">getHour()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00125">getMillionSecond()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00117">getMinute()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00121">getSecond()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00075">getType()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">m_day</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00237">m_defaultType</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00236">m_greedyMode</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">m_hour</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_min</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_msec</a>, and <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_sec</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00012">MusicTime()</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00179">operator=()</a>.</p>
 
@@ -489,7 +489,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00293">293</a> of file <a class="el" href="../../d0/dac/musictime_8cpp_source.html">musictime.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00273">init()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_day</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_hour</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00240">m_min</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00240">m_msec</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00240">m_sec</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00044">MT_D2S</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00038">MT_H2S</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00033">MT_M2S</a>, and <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00028">MT_S2MS</a>.</p>
+<p>References <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00273">initialize()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">m_day</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">m_hour</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_min</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_msec</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_sec</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00044">MT_D2S</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00038">MT_H2S</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00033">MT_M2S</a>, and <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00028">MT_S2MS</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00017">MusicTime()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00213">operator*=()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00185">operator+=()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00199">operator-=()</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00220">operator/=()</a>.</p>
 
@@ -517,7 +517,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Get current day. </p>
 
-<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00110">110</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00109">109</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00282">copyToThis()</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00120">msecTime2LabelJustified()</a>.</p>
 
@@ -545,7 +545,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Get current greedy mode. </p>
 
-<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00085">85</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00084">84</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00282">copyToThis()</a>.</p>
 
@@ -573,7 +573,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Get current hour. </p>
 
-<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00114">114</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00113">113</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00282">copyToThis()</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00120">msecTime2LabelJustified()</a>.</p>
 
@@ -601,7 +601,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Get current millionSecond. </p>
 
-<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00126">126</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00125">125</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00282">copyToThis()</a>, and <a class="el" href="../../d7/d89/musiclrcmakerwidget_8cpp_source.html#l00719">MusicLrcMakerWidget::translateTimeString()</a>.</p>
 
@@ -629,7 +629,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Get current second. </p>
 
-<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00118">118</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00117">117</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00282">copyToThis()</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00120">msecTime2LabelJustified()</a>.</p>
 
@@ -657,7 +657,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Get current second. </p>
 
-<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00122">122</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00121">121</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00282">copyToThis()</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00120">msecTime2LabelJustified()</a>.</p>
 
@@ -680,7 +680,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">82</a> of file <a class="el" href="../../d0/dac/musictime_8cpp_source.html">musictime.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00036">All_Sec</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_day</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_hour</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00240">m_min</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00240">m_msec</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00240">m_sec</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00044">MT_D2S</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00038">MT_H2S</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00033">MT_M2S</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00027">MT_S</a>, and <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00028">MT_S2MS</a>.</p>
+<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00035">All_Sec</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">m_day</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">m_hour</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_min</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_msec</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_sec</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00044">MT_D2S</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00038">MT_H2S</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00033">MT_M2S</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00027">MT_S</a>, and <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00028">MT_S2MS</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00100">labelJustified2MsecTime()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00268">operator!=()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00251">operator*()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00213">operator*=()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00227">operator+()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00185">operator+=()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00239">operator-()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00199">operator-=()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00257">operator/()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00220">operator/=()</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00263">operator==()</a>.</p>
 
@@ -708,13 +708,13 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Get current time type, see Type. </p>
 
-<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00076">76</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00075">75</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00282">copyToThis()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae8c9e9e37d1784ded4a8d2287031e958"></a>
+<a class="anchor" id="a2f221b6797e4289725dd028942c74059"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -722,7 +722,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void MusicTime::init </td>
+          <td class="memname">void MusicTime::initialize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -738,13 +738,13 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00273">273</a> of file <a class="el" href="../../d0/dac/musictime_8cpp_source.html">musictime.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_day</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_hour</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00240">m_min</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00240">m_msec</a>, and <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00240">m_sec</a>.</p>
+<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">m_day</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">m_hour</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_min</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_msec</a>, and <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_sec</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00293">fromTimeStamp()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00005">MusicTime()</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00031">setHMSM()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a0a3ee98ab69c8a7290782071ea501ecf"></a>
+<a class="anchor" id="a752c22e9fc58488a7ff304ad2bee6254"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -752,7 +752,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void MusicTime::InitSRand </td>
+          <td class="memname">void MusicTime::initSRand </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -770,7 +770,7 @@ Friends</h2></td></tr>
 
 <p>References <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00089">timestamp()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/d52/musicbarragewidget_8cpp_source.html#l00115">MusicBarrageWidget::addBarrage()</a>, <a class="el" href="../../d2/d52/musicbarragewidget_8cpp_source.html#l00137">MusicBarrageWidget::createLabel()</a>, <a class="el" href="../../d8/da6/musiccodeareawidget_8cpp_source.html#l00012">MusicCodeAreaWidget::MusicCodeAreaWidget()</a>, <a class="el" href="../../dd/de1/musicdesktopwallpaperthread_8cpp_source.html#l00010">MusicDesktopWallpaperThread::MusicDesktopWallpaperThread()</a>, <a class="el" href="../../dc/d65/musicdownloaddiscoverlistthread_8cpp_source.html#l00004">MusicDownLoadDiscoverListThread::MusicDownLoadDiscoverListThread()</a>, <a class="el" href="../../d3/d83/musicnetworktestthread_8cpp_source.html#l00009">MusicNetworkTestThread::MusicNetworkTestThread()</a>, <a class="el" href="../../da/db8/musicplaylist_8cpp_source.html#l00004">MusicPlaylist::MusicPlaylist()</a>, <a class="el" href="../../d4/d5e/musictransitionanimationlabel_8cpp_source.html#l00007">MusicTransitionAnimationLabel::MusicTransitionAnimationLabel()</a>, <a class="el" href="../../d0/d47/musicuserdialog_8cpp_source.html#l00017">MusicUserDialog::MusicUserDialog()</a>, <a class="el" href="../../d4/d09/musicvideosearchtablewidget_8cpp_source.html#l00010">MusicVideoSearchTableWidget::MusicVideoSearchTableWidget()</a>, <a class="el" href="../../db/da3/musicdownloadqqinterface_8cpp_source.html#l00018">MusicDownLoadQQInterface::readFromMusicSongAttribute()</a>, and <a class="el" href="../../db/da3/musicdownloadqqinterface_8cpp_source.html#l00141">MusicDownLoadQQInterface::readFromMusicSongAttributePlus()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/d52/musicbarragewidget_8cpp_source.html#l00115">MusicBarrageWidget::addBarrage()</a>, <a class="el" href="../../d2/d52/musicbarragewidget_8cpp_source.html#l00137">MusicBarrageWidget::createLabel()</a>, <a class="el" href="../../d8/da6/musiccodeareawidget_8cpp_source.html#l00012">MusicCodeAreaWidget::MusicCodeAreaWidget()</a>, <a class="el" href="../../dd/de1/musicdesktopwallpaperthread_8cpp_source.html#l00010">MusicDesktopWallpaperThread::MusicDesktopWallpaperThread()</a>, <a class="el" href="../../dc/d65/musicdownloaddiscoverlistthread_8cpp_source.html#l00004">MusicDownLoadDiscoverListThread::MusicDownLoadDiscoverListThread()</a>, <a class="el" href="../../d3/d83/musicnetworktestthread_8cpp_source.html#l00008">MusicNetworkTestThread::MusicNetworkTestThread()</a>, <a class="el" href="../../da/db8/musicplaylist_8cpp_source.html#l00004">MusicPlaylist::MusicPlaylist()</a>, <a class="el" href="../../d4/d5e/musictransitionanimationlabel_8cpp_source.html#l00007">MusicTransitionAnimationLabel::MusicTransitionAnimationLabel()</a>, <a class="el" href="../../d0/d47/musicuserdialog_8cpp_source.html#l00017">MusicUserDialog::MusicUserDialog()</a>, <a class="el" href="../../d4/d09/musicvideosearchtablewidget_8cpp_source.html#l00010">MusicVideoSearchTableWidget::MusicVideoSearchTableWidget()</a>, <a class="el" href="../../db/da3/musicdownloadqqinterface_8cpp_source.html#l00017">MusicDownLoadQQInterface::readFromMusicSongAttribute()</a>, and <a class="el" href="../../db/da3/musicdownloadqqinterface_8cpp_source.html#l00140">MusicDownLoadQQInterface::readFromMusicSongAttributePlus()</a>.</p>
 
 </div>
 </div>
@@ -790,7 +790,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00054">54</a> of file <a class="el" href="../../d0/dac/musictime_8cpp_source.html">musictime.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_hour</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00240">m_min</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00240">m_msec</a>, and <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00240">m_sec</a>.</p>
+<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">m_hour</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_min</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_msec</a>, and <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_sec</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00059">isValid()</a>.</p>
 
@@ -841,9 +841,9 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00100">100</a> of file <a class="el" href="../../d0/dac/musictime_8cpp_source.html">musictime.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00035">All_Msec</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00064">fromString()</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>.</p>
+<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00034">All_Msec</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00064">fromString()</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dc/d8c/musicm3uconfigmanager_8cpp_source.html#l00059">MusicM3UConfigManager::writePlaylistData()</a>.</p>
+<p>Referenced by <a class="el" href="../../dc/d8c/musicm3uconfigmanager_8cpp_source.html#l00061">MusicM3UConfigManager::writePlaylistData()</a>.</p>
 
 </div>
 </div>
@@ -863,9 +863,9 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00106">106</a> of file <a class="el" href="../../d0/dac/musictime_8cpp_source.html">musictime.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_day</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00237">m_greedyMode</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_hour</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00240">m_min</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00240">m_sec</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00036">MT_H</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00038">MT_H2S</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00072">toString()</a>.</p>
+<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">m_day</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00236">m_greedyMode</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">m_hour</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_min</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_sec</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00036">MT_H</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00038">MT_H2S</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00072">toString()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d5/d1f/musicmvradioprogramthread_8cpp_source.html#l00016">MusicMVRadioProgramThread::downLoadFinished()</a>, <a class="el" href="../../de/dec/musicdownloadquerybdartistthread_8cpp_source.html#l00037">MusicDownLoadQueryBDArtistThread::downLoadFinished()</a>, <a class="el" href="../../d8/dd7/musicdownloadqueryqqrecommendthread_8cpp_source.html#l00037">MusicDownLoadQueryQQRecommendThread::downLoadFinished()</a>, <a class="el" href="../../d1/db1/musicdownloadquerykgrecommendthread_8cpp_source.html#l00033">MusicDownLoadQueryKGRecommendThread::downLoadFinished()</a>, <a class="el" href="../../df/d72/musicdownloadquerywyartistthread_8cpp_source.html#l00039">MusicDownLoadQueryWYArtistThread::downLoadFinished()</a>, <a class="el" href="../../dd/da4/musicdownloadquerywyrecommendthread_8cpp_source.html#l00038">MusicDownLoadQueryWYRecommendThread::downLoadFinished()</a>, <a class="el" href="../../dc/db4/musicdownloadquerybdrecommendthread_8cpp_source.html#l00037">MusicDownLoadQueryBDRecommendThread::downLoadFinished()</a>, <a class="el" href="../../dc/d27/musicdownloadquerykwartistthread_8cpp_source.html#l00038">MusicDownLoadQueryKWArtistThread::downLoadFinished()</a>, <a class="el" href="../../d8/dbf/musicdownloadqueryxmartistthread_8cpp_source.html#l00039">MusicDownLoadQueryXMArtistThread::downLoadFinished()</a>, <a class="el" href="../../d6/df1/musicdownloadquerykwrecommendthread_8cpp_source.html#l00034">MusicDownLoadQueryKWRecommendThread::downLoadFinished()</a>, <a class="el" href="../../d6/dde/musicdownloadqueryxmrecommendthread_8cpp_source.html#l00037">MusicDownLoadQueryXMRecommendThread::downLoadFinished()</a>, <a class="el" href="../../dd/d20/musicdownloadquerykgartistthread_8cpp_source.html#l00037">MusicDownLoadQueryKGArtistThread::downLoadFinished()</a>, <a class="el" href="../../df/db6/musicdownloadquerybdalbumthread_8cpp_source.html#l00058">MusicDownLoadQueryBDAlbumThread::downLoadFinished()</a>, <a class="el" href="../../d9/d51/musicdownloadqueryqqtoplistthread_8cpp_source.html#l00047">MusicDownLoadQueryQQToplistThread::downLoadFinished()</a>, <a class="el" href="../../dd/da1/musicdownloadquerykgtoplistthread_8cpp_source.html#l00047">MusicDownLoadQueryKGToplistThread::downLoadFinished()</a>, <a class="el" href="../../d6/db0/musicdownloadquerywyalbumthread_8cpp_source.html#l00063">MusicDownLoadQueryWYAlbumThread::downLoadFinished()</a>, <a class="el" href="../../de/d3d/musicdownloadquerywytoplistthread_8cpp_source.html#l00049">MusicDownLoadQueryWYToplistThread::downLoadFinished()</a>, <a class="el" href="../../d1/dcd/musicdownloadquerybdtoplistthread_8cpp_source.html#l00048">MusicDownLoadQueryBDToplistThread::downLoadFinished()</a>, <a class="el" href="../../d8/d46/musicdownloadqueryxmalbumthread_8cpp_source.html#l00062">MusicDownLoadQueryXMAlbumThread::downLoadFinished()</a>, <a class="el" href="../../d2/d86/musicdownloadquerykwtoplistthread_8cpp_source.html#l00048">MusicDownLoadQueryKWToplistThread::downLoadFinished()</a>, <a class="el" href="../../da/d56/musicdownloadqueryxmtoplistthread_8cpp_source.html#l00049">MusicDownLoadQueryXMToplistThread::downLoadFinished()</a>, <a class="el" href="../../d8/d45/musicdownloadquerykgalbumthread_8cpp_source.html#l00061">MusicDownLoadQueryKGAlbumThread::downLoadFinished()</a>, <a class="el" href="../../d9/dc0/musicdownloadqueryqqalbumthread_8cpp_source.html#l00057">MusicDownLoadQueryQQAlbumThread::downLoadFinished()</a>, <a class="el" href="../../d8/d8a/musicdownloadqueryqqmoviethread_8cpp_source.html#l00081">MusicDownLoadQueryQQMovieThread::downLoadFinished()</a>, <a class="el" href="../../d8/d05/musicdownloadquerykgmoviethread_8cpp_source.html#l00082">MusicDownLoadQueryKGMovieThread::downLoadFinished()</a>, <a class="el" href="../../d0/dc7/musicdownloadquerykwmoviethread_8cpp_source.html#l00083">MusicDownLoadQueryKWMovieThread::downLoadFinished()</a>, <a class="el" href="../../d7/da7/musicdownloadqueryqqthread_8cpp_source.html#l00077">MusicDownLoadQueryQQThread::downLoadFinished()</a>, <a class="el" href="../../d3/dc6/musicdownloadquerykgthread_8cpp_source.html#l00077">MusicDownLoadQueryKGThread::downLoadFinished()</a>, <a class="el" href="../../d2/dc5/musicdownloadquerywythread_8cpp_source.html#l00081">MusicDownLoadQueryWYThread::downLoadFinished()</a>, <a class="el" href="../../de/df7/musicdownloadqueryxmthread_8cpp_source.html#l00081">MusicDownLoadQueryXMThread::downLoadFinished()</a>, <a class="el" href="../../de/de9/musicdownloadqueryqqartistthread_8cpp_source.html#l00100">MusicDownLoadQueryQQArtistThread::downLoadFinished()</a>, <a class="el" href="../../db/d68/musicdownloadqueryxmmoviethread_8cpp_source.html#l00132">MusicDownLoadQueryXMMovieThread::downLoadFinished()</a>, <a class="el" href="../../d5/d15/musicdownloadquerykwthread_8cpp_source.html#l00137">MusicDownLoadQueryKWThread::downLoadFinished()</a>, <a class="el" href="../../d4/d60/musicvideocontrolwidget_8cpp_source.html#l00090">MusicVideoControlWidget::durationChanged()</a>, <a class="el" href="../../d2/daa/musicsoundkmicrowidget_8cpp_source.html#l00146">MusicSoundKMicroWidget::durationChanged()</a>, <a class="el" href="../../dc/df4/musicwebmusicradioplaywidget_8cpp_source.html#l00360">MusicWebMusicRadioPlayWidget::durationChanged()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00344">MusicApplication::durationChanged()</a>, <a class="el" href="../../d6/d0a/musicdownloadqueryqqplaylistthread_8cpp_source.html#l00209">MusicDownLoadQueryQQPlaylistThread::getDetailsFinished()</a>, <a class="el" href="../../d3/d3b/musicdownloadquerykgplaylistthread_8cpp_source.html#l00188">MusicDownLoadQueryKGPlaylistThread::getDetailsFinished()</a>, <a class="el" href="../../dd/dd9/musicdownloadquerywyplaylistthread_8cpp_source.html#l00206">MusicDownLoadQueryWYPlaylistThread::getDetailsFinished()</a>, <a class="el" href="../../d3/df9/musicdownloadquerykwplaylistthread_8cpp_source.html#l00165">MusicDownLoadQueryKWPlaylistThread::getDetailsFinished()</a>, <a class="el" href="../../d0/d7f/musicdownloadqueryxmplaylistthread_8cpp_source.html#l00208">MusicDownLoadQueryXMPlaylistThread::getDetailsFinished()</a>, <a class="el" href="../../d9/d16/musicdjradioprogramcategorythread_8cpp_source.html#l00175">MusicDJRadioProgramCategoryThread::getDetailsFinished()</a>, <a class="el" href="../../d3/dc4/musicsongtag_8cpp_source.html#l00217">MusicSongTag::getLengthString()</a>, <a class="el" href="../../dd/d07/musiclrcanalysis_8cpp_source.html#l00581">MusicLrcAnalysis::getTranslatedLrc()</a>, <a class="el" href="../../d5/d6b/musicmovinglabelslider_8cpp_source.html#l00036">MusicMovingLabelSlider::mouseMoveEvent()</a>, <a class="el" href="../../d1/d29/musiclrccontainerforinterior_8cpp_source.html#l00481">MusicLrcContainerForInterior::paintEvent()</a>, <a class="el" href="../../d2/daa/musicsoundkmicrowidget_8cpp_source.html#l00125">MusicSoundKMicroWidget::positionChanged()</a>, <a class="el" href="../../dc/df4/musicwebmusicradioplaywidget_8cpp_source.html#l00320">MusicWebMusicRadioPlayWidget::positionChanged()</a>, <a class="el" href="../../d7/d89/musiclrcmakerwidget_8cpp_source.html#l00198">MusicLrcMakerWidget::positionChanged()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00324">MusicApplication::positionChanged()</a>, <a class="el" href="../../db/da1/musicconsoleobject_8cpp_source.html#l00357">MusicConsoleObject::print()</a>, <a class="el" href="../../d4/d31/musicdownloadbdinterface_8cpp_source.html#l00143">MusicDownLoadBDInterface::readFromMusicLLAttribute()</a>, <a class="el" href="../../d5/d1f/musicmvradioprogramthread_8cpp_source.html#l00182">MusicMVRadioProgramThread::readFromMusicMVAttribute()</a>, <a class="el" href="../../d1/dcf/musicdownloadqueryyytthread_8cpp_source.html#l00126">MusicDownLoadQueryYYTThread::readFromMusicMVAttribute()</a>, <a class="el" href="../../d8/d8a/musicdownloadqueryqqmoviethread_8cpp_source.html#l00250">MusicDownLoadQueryQQMovieThread::readFromMusicMVAttribute()</a>, <a class="el" href="../../d8/d05/musicdownloadquerykgmoviethread_8cpp_source.html#l00342">MusicDownLoadQueryKGMovieThread::readFromMusicMVAttribute()</a>, <a class="el" href="../../d6/d5f/musicdownloadquerybdmoviethread_8cpp_source.html#l00454">MusicDownLoadQueryBDMovieThread::readFromMusicMVAttributeIQY()</a>, <a class="el" href="../../d6/d5f/musicdownloadquerybdmoviethread_8cpp_source.html#l00253">MusicDownLoadQueryBDMovieThread::readFromMusicMVAttributeWeb()</a>, <a class="el" href="../../d6/d5f/musicdownloadquerybdmoviethread_8cpp_source.html#l00372">MusicDownLoadQueryBDMovieThread::readFromMusicMVAttributeYYT()</a>, <a class="el" href="../../d4/d31/musicdownloadbdinterface_8cpp_source.html#l00029">MusicDownLoadBDInterface::readFromMusicSongAttribute()</a>, <a class="el" href="../../dc/d60/musicdownloadkwinterface_8cpp_source.html#l00215">MusicDownLoadKWInterface::readFromMusicSongPic()</a>, <a class="el" href="../../db/d68/musicdownloadqueryxmmoviethread_8cpp_source.html#l00016">MusicXMMVInfoConfigManager::readMovieInfoData()</a>, <a class="el" href="../../d2/d1c/musickglconfigmanager_8cpp_source.html#l00013">MusicKGLConfigManager::readPlaylistData()</a>, <a class="el" href="../../dc/d8c/musicm3uconfigmanager_8cpp_source.html#l00016">MusicM3UConfigManager::readPlaylistData()</a>, <a class="el" href="../../d7/d99/musicplsconfigmanager_8cpp_source.html#l00016">MusicPLSConfigManager::readPlaylistData()</a>, <a class="el" href="../../da/d0d/musicfplconfigmanager_8cpp_source.html#l00021">MusicFPLConfigManager::readPlaylistData()</a>, <a class="el" href="../../d4/d60/musicvideocontrolwidget_8cpp_source.html#l00083">MusicVideoControlWidget::setValue()</a>, <a class="el" href="../../d3/dc6/musicdownloadquerykgthread_8cpp_source.html#l00157">MusicDownLoadQueryKGThread::singleDownLoadFinished()</a>, <a class="el" href="../../d2/dc5/musicdownloadquerywythread_8cpp_source.html#l00169">MusicDownLoadQueryWYThread::singleDownLoadFinished()</a>, <a class="el" href="../../de/df7/musicdownloadqueryxmthread_8cpp_source.html#l00166">MusicDownLoadQueryXMThread::singleDownLoadFinished()</a>, <a class="el" href="../../d7/da7/musicdownloadqueryqqthread_8cpp_source.html#l00169">MusicDownLoadQueryQQThread::singleDownLoadFinished()</a>, and <a class="el" href="../../da/d06/musicdownloadquerywymoviethread_8cpp_source.html#l00222">MusicDownLoadQueryWYMovieThread::startMVListQuery()</a>.</p>
+<p>Referenced by <a class="el" href="../../d5/d1f/musicmvradioprogramthread_8cpp_source.html#l00016">MusicMVRadioProgramThread::downLoadFinished()</a>, <a class="el" href="../../de/dec/musicdownloadquerybdartistthread_8cpp_source.html#l00037">MusicDownLoadQueryBDArtistThread::downLoadFinished()</a>, <a class="el" href="../../d8/dd7/musicdownloadqueryqqrecommendthread_8cpp_source.html#l00037">MusicDownLoadQueryQQRecommendThread::downLoadFinished()</a>, <a class="el" href="../../d1/db1/musicdownloadquerykgrecommendthread_8cpp_source.html#l00033">MusicDownLoadQueryKGRecommendThread::downLoadFinished()</a>, <a class="el" href="../../df/d72/musicdownloadquerywyartistthread_8cpp_source.html#l00039">MusicDownLoadQueryWYArtistThread::downLoadFinished()</a>, <a class="el" href="../../dd/da4/musicdownloadquerywyrecommendthread_8cpp_source.html#l00038">MusicDownLoadQueryWYRecommendThread::downLoadFinished()</a>, <a class="el" href="../../dc/db4/musicdownloadquerybdrecommendthread_8cpp_source.html#l00037">MusicDownLoadQueryBDRecommendThread::downLoadFinished()</a>, <a class="el" href="../../dc/d27/musicdownloadquerykwartistthread_8cpp_source.html#l00038">MusicDownLoadQueryKWArtistThread::downLoadFinished()</a>, <a class="el" href="../../d8/dbf/musicdownloadqueryxmartistthread_8cpp_source.html#l00039">MusicDownLoadQueryXMArtistThread::downLoadFinished()</a>, <a class="el" href="../../d6/df1/musicdownloadquerykwrecommendthread_8cpp_source.html#l00034">MusicDownLoadQueryKWRecommendThread::downLoadFinished()</a>, <a class="el" href="../../d6/dde/musicdownloadqueryxmrecommendthread_8cpp_source.html#l00037">MusicDownLoadQueryXMRecommendThread::downLoadFinished()</a>, <a class="el" href="../../dd/d20/musicdownloadquerykgartistthread_8cpp_source.html#l00037">MusicDownLoadQueryKGArtistThread::downLoadFinished()</a>, <a class="el" href="../../df/db6/musicdownloadquerybdalbumthread_8cpp_source.html#l00058">MusicDownLoadQueryBDAlbumThread::downLoadFinished()</a>, <a class="el" href="../../d9/d51/musicdownloadqueryqqtoplistthread_8cpp_source.html#l00047">MusicDownLoadQueryQQToplistThread::downLoadFinished()</a>, <a class="el" href="../../dd/da1/musicdownloadquerykgtoplistthread_8cpp_source.html#l00047">MusicDownLoadQueryKGToplistThread::downLoadFinished()</a>, <a class="el" href="../../d6/db0/musicdownloadquerywyalbumthread_8cpp_source.html#l00063">MusicDownLoadQueryWYAlbumThread::downLoadFinished()</a>, <a class="el" href="../../de/d3d/musicdownloadquerywytoplistthread_8cpp_source.html#l00049">MusicDownLoadQueryWYToplistThread::downLoadFinished()</a>, <a class="el" href="../../d1/dcd/musicdownloadquerybdtoplistthread_8cpp_source.html#l00048">MusicDownLoadQueryBDToplistThread::downLoadFinished()</a>, <a class="el" href="../../d8/d46/musicdownloadqueryxmalbumthread_8cpp_source.html#l00062">MusicDownLoadQueryXMAlbumThread::downLoadFinished()</a>, <a class="el" href="../../d2/d86/musicdownloadquerykwtoplistthread_8cpp_source.html#l00048">MusicDownLoadQueryKWToplistThread::downLoadFinished()</a>, <a class="el" href="../../da/d56/musicdownloadqueryxmtoplistthread_8cpp_source.html#l00049">MusicDownLoadQueryXMToplistThread::downLoadFinished()</a>, <a class="el" href="../../d8/d45/musicdownloadquerykgalbumthread_8cpp_source.html#l00061">MusicDownLoadQueryKGAlbumThread::downLoadFinished()</a>, <a class="el" href="../../d9/dc0/musicdownloadqueryqqalbumthread_8cpp_source.html#l00057">MusicDownLoadQueryQQAlbumThread::downLoadFinished()</a>, <a class="el" href="../../d8/d8a/musicdownloadqueryqqmoviethread_8cpp_source.html#l00081">MusicDownLoadQueryQQMovieThread::downLoadFinished()</a>, <a class="el" href="../../d8/d05/musicdownloadquerykgmoviethread_8cpp_source.html#l00082">MusicDownLoadQueryKGMovieThread::downLoadFinished()</a>, <a class="el" href="../../d0/dc7/musicdownloadquerykwmoviethread_8cpp_source.html#l00083">MusicDownLoadQueryKWMovieThread::downLoadFinished()</a>, <a class="el" href="../../d7/da7/musicdownloadqueryqqthread_8cpp_source.html#l00077">MusicDownLoadQueryQQThread::downLoadFinished()</a>, <a class="el" href="../../d3/dc6/musicdownloadquerykgthread_8cpp_source.html#l00077">MusicDownLoadQueryKGThread::downLoadFinished()</a>, <a class="el" href="../../d2/dc5/musicdownloadquerywythread_8cpp_source.html#l00081">MusicDownLoadQueryWYThread::downLoadFinished()</a>, <a class="el" href="../../de/df7/musicdownloadqueryxmthread_8cpp_source.html#l00081">MusicDownLoadQueryXMThread::downLoadFinished()</a>, <a class="el" href="../../de/de9/musicdownloadqueryqqartistthread_8cpp_source.html#l00100">MusicDownLoadQueryQQArtistThread::downLoadFinished()</a>, <a class="el" href="../../db/d68/musicdownloadqueryxmmoviethread_8cpp_source.html#l00132">MusicDownLoadQueryXMMovieThread::downLoadFinished()</a>, <a class="el" href="../../d5/d15/musicdownloadquerykwthread_8cpp_source.html#l00137">MusicDownLoadQueryKWThread::downLoadFinished()</a>, <a class="el" href="../../d4/d60/musicvideocontrolwidget_8cpp_source.html#l00089">MusicVideoControlWidget::durationChanged()</a>, <a class="el" href="../../d2/daa/musicsoundkmicrowidget_8cpp_source.html#l00146">MusicSoundKMicroWidget::durationChanged()</a>, <a class="el" href="../../dc/df4/musicwebmusicradioplaywidget_8cpp_source.html#l00361">MusicWebMusicRadioPlayWidget::durationChanged()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00330">MusicApplication::durationChanged()</a>, <a class="el" href="../../d6/d0a/musicdownloadqueryqqplaylistthread_8cpp_source.html#l00209">MusicDownLoadQueryQQPlaylistThread::getDetailsFinished()</a>, <a class="el" href="../../d3/d3b/musicdownloadquerykgplaylistthread_8cpp_source.html#l00188">MusicDownLoadQueryKGPlaylistThread::getDetailsFinished()</a>, <a class="el" href="../../dd/dd9/musicdownloadquerywyplaylistthread_8cpp_source.html#l00206">MusicDownLoadQueryWYPlaylistThread::getDetailsFinished()</a>, <a class="el" href="../../d3/df9/musicdownloadquerykwplaylistthread_8cpp_source.html#l00165">MusicDownLoadQueryKWPlaylistThread::getDetailsFinished()</a>, <a class="el" href="../../d0/d7f/musicdownloadqueryxmplaylistthread_8cpp_source.html#l00208">MusicDownLoadQueryXMPlaylistThread::getDetailsFinished()</a>, <a class="el" href="../../d9/d16/musicdjradioprogramcategorythread_8cpp_source.html#l00175">MusicDJRadioProgramCategoryThread::getDetailsFinished()</a>, <a class="el" href="../../d3/dc4/musicsongtag_8cpp_source.html#l00217">MusicSongTag::getLengthString()</a>, <a class="el" href="../../dd/d07/musiclrcanalysis_8cpp_source.html#l00581">MusicLrcAnalysis::getTranslatedLrc()</a>, <a class="el" href="../../d5/d6b/musicmovinglabelslider_8cpp_source.html#l00036">MusicMovingLabelSlider::mouseMoveEvent()</a>, <a class="el" href="../../d1/d29/musiclrccontainerforinterior_8cpp_source.html#l00481">MusicLrcContainerForInterior::paintEvent()</a>, <a class="el" href="../../d2/daa/musicsoundkmicrowidget_8cpp_source.html#l00125">MusicSoundKMicroWidget::positionChanged()</a>, <a class="el" href="../../dc/df4/musicwebmusicradioplaywidget_8cpp_source.html#l00321">MusicWebMusicRadioPlayWidget::positionChanged()</a>, <a class="el" href="../../d7/d89/musiclrcmakerwidget_8cpp_source.html#l00198">MusicLrcMakerWidget::positionChanged()</a>, <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00310">MusicApplication::positionChanged()</a>, <a class="el" href="../../db/da1/musicconsoleobject_8cpp_source.html#l00357">MusicConsoleObject::print()</a>, <a class="el" href="../../d4/d31/musicdownloadbdinterface_8cpp_source.html#l00143">MusicDownLoadBDInterface::readFromMusicLLAttribute()</a>, <a class="el" href="../../d5/d1f/musicmvradioprogramthread_8cpp_source.html#l00182">MusicMVRadioProgramThread::readFromMusicMVAttribute()</a>, <a class="el" href="../../d1/dcf/musicdownloadqueryyytthread_8cpp_source.html#l00125">MusicDownLoadQueryYYTThread::readFromMusicMVAttribute()</a>, <a class="el" href="../../d8/d8a/musicdownloadqueryqqmoviethread_8cpp_source.html#l00250">MusicDownLoadQueryQQMovieThread::readFromMusicMVAttribute()</a>, <a class="el" href="../../d8/d05/musicdownloadquerykgmoviethread_8cpp_source.html#l00342">MusicDownLoadQueryKGMovieThread::readFromMusicMVAttribute()</a>, <a class="el" href="../../d6/d5f/musicdownloadquerybdmoviethread_8cpp_source.html#l00454">MusicDownLoadQueryBDMovieThread::readFromMusicMVAttributeIQY()</a>, <a class="el" href="../../d6/d5f/musicdownloadquerybdmoviethread_8cpp_source.html#l00253">MusicDownLoadQueryBDMovieThread::readFromMusicMVAttributeWeb()</a>, <a class="el" href="../../d6/d5f/musicdownloadquerybdmoviethread_8cpp_source.html#l00372">MusicDownLoadQueryBDMovieThread::readFromMusicMVAttributeYYT()</a>, <a class="el" href="../../d4/d31/musicdownloadbdinterface_8cpp_source.html#l00029">MusicDownLoadBDInterface::readFromMusicSongAttribute()</a>, <a class="el" href="../../dc/d60/musicdownloadkwinterface_8cpp_source.html#l00215">MusicDownLoadKWInterface::readFromMusicSongPic()</a>, <a class="el" href="../../db/d68/musicdownloadqueryxmmoviethread_8cpp_source.html#l00016">MusicXMMVInfoConfigManager::readMovieInfoData()</a>, <a class="el" href="../../d2/d1c/musickglconfigmanager_8cpp_source.html#l00013">MusicKGLConfigManager::readPlaylistData()</a>, <a class="el" href="../../dc/d8c/musicm3uconfigmanager_8cpp_source.html#l00016">MusicM3UConfigManager::readPlaylistData()</a>, <a class="el" href="../../d7/d99/musicplsconfigmanager_8cpp_source.html#l00016">MusicPLSConfigManager::readPlaylistData()</a>, <a class="el" href="../../da/d0d/musicfplconfigmanager_8cpp_source.html#l00021">MusicFPLConfigManager::readPlaylistData()</a>, <a class="el" href="../../d4/d60/musicvideocontrolwidget_8cpp_source.html#l00082">MusicVideoControlWidget::setValue()</a>, <a class="el" href="../../d3/dc6/musicdownloadquerykgthread_8cpp_source.html#l00157">MusicDownLoadQueryKGThread::singleDownLoadFinished()</a>, <a class="el" href="../../d2/dc5/musicdownloadquerywythread_8cpp_source.html#l00169">MusicDownLoadQueryWYThread::singleDownLoadFinished()</a>, <a class="el" href="../../de/df7/musicdownloadqueryxmthread_8cpp_source.html#l00166">MusicDownLoadQueryXMThread::singleDownLoadFinished()</a>, <a class="el" href="../../d7/da7/musicdownloadqueryqqthread_8cpp_source.html#l00169">MusicDownLoadQueryQQThread::singleDownLoadFinished()</a>, and <a class="el" href="../../da/d06/musicdownloadquerywymoviethread_8cpp_source.html#l00222">MusicDownLoadQueryWYMovieThread::startMVListQuery()</a>.</p>
 
 </div>
 </div>
@@ -904,7 +904,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00120">120</a> of file <a class="el" href="../../d0/dac/musictime_8cpp_source.html">musictime.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00035">All_Msec</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00110">getDay()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00114">getHour()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00118">getMinute()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00122">getSecond()</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00036">MT_H</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00038">MT_H2S</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00028">MT_S2MS</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00072">toString()</a>.</p>
+<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00034">All_Msec</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00109">getDay()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00113">getHour()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00117">getMinute()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00121">getSecond()</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00036">MT_H</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00038">MT_H2S</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00028">MT_S2MS</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00072">toString()</a>.</p>
 
 </div>
 </div>
@@ -924,9 +924,9 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00135">135</a> of file <a class="el" href="../../d0/dac/musictime_8cpp_source.html">musictime.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_day</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_hour</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00240">m_min</a>, and <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00240">m_sec</a>.</p>
+<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">m_day</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">m_hour</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_min</a>, and <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_sec</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dd/dd4/musicsourceupdatewidget_8cpp_source.html#l00179">MusicSourceUpdateWidget::downloadSpeedLabelChanged()</a>, <a class="el" href="../../db/dd8/musicaudiorecorderwidget_8cpp_source.html#l00105">MusicAudioRecorderWidget::onTimerout()</a>, and <a class="el" href="../../dd/d25/musiclocalsongsearchpopwidget_8cpp_source.html#l00142">MusicLocalSongSearchPopWidget::utcTimeToLocal()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/dd4/musicsourceupdatewidget_8cpp_source.html#l00180">MusicSourceUpdateWidget::downloadSpeedLabelChanged()</a>, <a class="el" href="../../db/dd8/musicaudiorecorderwidget_8cpp_source.html#l00107">MusicAudioRecorderWidget::onTimerout()</a>, and <a class="el" href="../../dd/d25/musiclocalsongsearchpopwidget_8cpp_source.html#l00142">MusicLocalSongSearchPopWidget::utcTimeToLocal()</a>.</p>
 
 </div>
 </div>
@@ -975,7 +975,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00268">268</a> of file <a class="el" href="../../d0/dac/musictime_8cpp_source.html">musictime.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00035">All_Msec</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>.</p>
+<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00034">All_Msec</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>.</p>
 
 </div>
 </div>
@@ -995,7 +995,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00251">251</a> of file <a class="el" href="../../d0/dac/musictime_8cpp_source.html">musictime.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00035">All_Msec</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">m_defaultType</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00005">MusicTime()</a>.</p>
+<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00034">All_Msec</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00237">m_defaultType</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00005">MusicTime()</a>.</p>
 
 </div>
 </div>
@@ -1015,7 +1015,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00213">213</a> of file <a class="el" href="../../d0/dac/musictime_8cpp_source.html">musictime.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00035">All_Msec</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00036">All_Sec</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00293">fromTimeStamp()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">m_defaultType</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00027">MT_S</a>, and <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00028">MT_S2MS</a>.</p>
+<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00034">All_Msec</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00035">All_Sec</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00293">fromTimeStamp()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00237">m_defaultType</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00027">MT_S</a>, and <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00028">MT_S2MS</a>.</p>
 
 </div>
 </div>
@@ -1035,7 +1035,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00227">227</a> of file <a class="el" href="../../d0/dac/musictime_8cpp_source.html">musictime.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00035">All_Msec</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">m_defaultType</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00005">MusicTime()</a>.</p>
+<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00034">All_Msec</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00237">m_defaultType</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00005">MusicTime()</a>.</p>
 
 </div>
 </div>
@@ -1055,7 +1055,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00233">233</a> of file <a class="el" href="../../d0/dac/musictime_8cpp_source.html">musictime.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00035">All_Msec</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">m_defaultType</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00005">MusicTime()</a>.</p>
+<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00034">All_Msec</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00237">m_defaultType</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00005">MusicTime()</a>.</p>
 
 </div>
 </div>
@@ -1075,7 +1075,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00185">185</a> of file <a class="el" href="../../d0/dac/musictime_8cpp_source.html">musictime.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00035">All_Msec</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00036">All_Sec</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00293">fromTimeStamp()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">m_defaultType</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00027">MT_S</a>, and <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00028">MT_S2MS</a>.</p>
+<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00034">All_Msec</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00035">All_Sec</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00293">fromTimeStamp()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00237">m_defaultType</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00027">MT_S</a>, and <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00028">MT_S2MS</a>.</p>
 
 </div>
 </div>
@@ -1095,7 +1095,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00192">192</a> of file <a class="el" href="../../d0/dac/musictime_8cpp_source.html">musictime.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00035">All_Msec</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00036">All_Sec</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00293">fromTimeStamp()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">m_defaultType</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00027">MT_S</a>, and <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00028">MT_S2MS</a>.</p>
+<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00034">All_Msec</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00035">All_Sec</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00293">fromTimeStamp()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00237">m_defaultType</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00027">MT_S</a>, and <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00028">MT_S2MS</a>.</p>
 
 </div>
 </div>
@@ -1115,7 +1115,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00239">239</a> of file <a class="el" href="../../d0/dac/musictime_8cpp_source.html">musictime.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00035">All_Msec</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">m_defaultType</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00005">MusicTime()</a>.</p>
+<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00034">All_Msec</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00237">m_defaultType</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00005">MusicTime()</a>.</p>
 
 </div>
 </div>
@@ -1135,7 +1135,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00245">245</a> of file <a class="el" href="../../d0/dac/musictime_8cpp_source.html">musictime.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00035">All_Msec</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">m_defaultType</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00005">MusicTime()</a>.</p>
+<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00034">All_Msec</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00237">m_defaultType</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00005">MusicTime()</a>.</p>
 
 </div>
 </div>
@@ -1155,7 +1155,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00199">199</a> of file <a class="el" href="../../d0/dac/musictime_8cpp_source.html">musictime.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00035">All_Msec</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00036">All_Sec</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00293">fromTimeStamp()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">m_defaultType</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00027">MT_S</a>, and <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00028">MT_S2MS</a>.</p>
+<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00034">All_Msec</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00035">All_Sec</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00293">fromTimeStamp()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00237">m_defaultType</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00027">MT_S</a>, and <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00028">MT_S2MS</a>.</p>
 
 </div>
 </div>
@@ -1175,7 +1175,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00206">206</a> of file <a class="el" href="../../d0/dac/musictime_8cpp_source.html">musictime.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00035">All_Msec</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00036">All_Sec</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00293">fromTimeStamp()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">m_defaultType</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00027">MT_S</a>, and <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00028">MT_S2MS</a>.</p>
+<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00034">All_Msec</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00035">All_Sec</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00293">fromTimeStamp()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00237">m_defaultType</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00027">MT_S</a>, and <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00028">MT_S2MS</a>.</p>
 
 </div>
 </div>
@@ -1195,7 +1195,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00257">257</a> of file <a class="el" href="../../d0/dac/musictime_8cpp_source.html">musictime.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00035">All_Msec</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">m_defaultType</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00005">MusicTime()</a>.</p>
+<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00034">All_Msec</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00237">m_defaultType</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00005">MusicTime()</a>.</p>
 
 </div>
 </div>
@@ -1215,7 +1215,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00220">220</a> of file <a class="el" href="../../d0/dac/musictime_8cpp_source.html">musictime.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00035">All_Msec</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00036">All_Sec</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00293">fromTimeStamp()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">m_defaultType</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00027">MT_S</a>, and <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00028">MT_S2MS</a>.</p>
+<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00034">All_Msec</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00035">All_Sec</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00293">fromTimeStamp()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00237">m_defaultType</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00027">MT_S</a>, and <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00028">MT_S2MS</a>.</p>
 
 </div>
 </div>
@@ -1255,7 +1255,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00263">263</a> of file <a class="el" href="../../d0/dac/musictime_8cpp_source.html">musictime.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00035">All_Msec</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>.</p>
+<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00034">All_Msec</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>.</p>
 
 </div>
 </div>
@@ -1282,7 +1282,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Set current day. </p>
 
-<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00090">90</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00089">89</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
 
 </div>
 </div>
@@ -1309,7 +1309,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Set current greedy mode. </p>
 
-<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00081">81</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00080">80</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
 
 </div>
 </div>
@@ -1358,7 +1358,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00031">31</a> of file <a class="el" href="../../d0/dac/musictime_8cpp_source.html">musictime.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00273">init()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_day</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_hour</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00240">m_min</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00240">m_msec</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00240">m_sec</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00042">MT_D2H</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00037">MT_H2M</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00033">MT_M2S</a>, and <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00028">MT_S2MS</a>.</p>
+<p>References <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00273">initialize()</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">m_day</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">m_hour</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_min</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_msec</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_sec</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00042">MT_D2H</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00037">MT_H2M</a>, <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00033">MT_M2S</a>, and <a class="el" href="../../dd/d01/musicnumberdefine_8h_source.html#l00028">MT_S2MS</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00064">fromString()</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00024">MusicTime()</a>.</p>
 
@@ -1387,7 +1387,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Set current hour. </p>
 
-<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00094">94</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00093">93</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
 
 </div>
 </div>
@@ -1414,7 +1414,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Set current millionSecond. </p>
 
-<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00106">106</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00105">105</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
 
 </div>
 </div>
@@ -1441,7 +1441,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Set current minute. </p>
 
-<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00098">98</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00097">97</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
 
 </div>
 </div>
@@ -1468,7 +1468,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Set current second. </p>
 
-<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00102">102</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00101">101</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
 
 </div>
 </div>
@@ -1495,7 +1495,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Set current time type, see Type. </p>
 
-<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00072">72</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00071">71</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
 
 </div>
 </div>
@@ -1524,7 +1524,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00089">89</a> of file <a class="el" href="../../d0/dac/musictime_8cpp_source.html">musictime.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00095">InitSRand()</a>, <a class="el" href="../../d4/d90/musicdownloadxminterface_8cpp_source.html#l00016">MusicDownLoadXMInterface::makeTokenQueryCookies()</a>, <a class="el" href="../../d4/d31/musicdownloadbdinterface_8cpp_source.html#l00017">MusicDownLoadBDInterface::makeTokenQueryUrl()</a>, <a class="el" href="../../d4/d90/musicdownloadxminterface_8cpp_source.html#l00049">MusicDownLoadXMInterface::makeTokenQueryUrl()</a>, <a class="el" href="../../d6/d5f/musicdownloadquerybdmoviethread_8cpp_source.html#l00454">MusicDownLoadQueryBDMovieThread::readFromMusicMVAttributeIQY()</a>, <a class="el" href="../../d3/d08/musicdownloadquerybdlearnthread_8cpp_source.html#l00112">MusicDownLoadQueryBDLearnThread::readFromMusicSongAttribute()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00135">MusicCloudManagerTableWidget::receiveDataFinshed()</a>, <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00041">MusicDataDownloadThread::startRequest()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00050">MusicSongSearchTableWidget::startSearchQuery()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00292">MusicCloudManagerTableWidget::uploadFileDirToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00398">MusicCloudManagerTableWidget::uploadFilesToServer()</a>, and <a class="el" href="../../dd/d25/musiclocalsongsearchpopwidget_8cpp_source.html#l00142">MusicLocalSongSearchPopWidget::utcTimeToLocal()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00095">initSRand()</a>, <a class="el" href="../../d4/d90/musicdownloadxminterface_8cpp_source.html#l00016">MusicDownLoadXMInterface::makeTokenQueryCookies()</a>, <a class="el" href="../../d4/d31/musicdownloadbdinterface_8cpp_source.html#l00017">MusicDownLoadBDInterface::makeTokenQueryUrl()</a>, <a class="el" href="../../d4/d90/musicdownloadxminterface_8cpp_source.html#l00049">MusicDownLoadXMInterface::makeTokenQueryUrl()</a>, <a class="el" href="../../d6/d5f/musicdownloadquerybdmoviethread_8cpp_source.html#l00454">MusicDownLoadQueryBDMovieThread::readFromMusicMVAttributeIQY()</a>, <a class="el" href="../../d3/d08/musicdownloadquerybdlearnthread_8cpp_source.html#l00112">MusicDownLoadQueryBDLearnThread::readFromMusicSongAttribute()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00134">MusicCloudManagerTableWidget::receiveDataFinshed()</a>, <a class="el" href="../../d4/d44/musicdatadownloadthread_8cpp_source.html#l00041">MusicDataDownloadThread::startRequest()</a>, <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00050">MusicSongSearchTableWidget::startSearchQuery()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00291">MusicCloudManagerTableWidget::uploadFileDirToServer()</a>, <a class="el" href="../../dd/dd7/musiccloudmanagerwidget_8cpp_source.html#l00397">MusicCloudManagerTableWidget::uploadFilesToServer()</a>, and <a class="el" href="../../dd/d25/musiclocalsongsearchpopwidget_8cpp_source.html#l00142">MusicLocalSongSearchPopWidget::utcTimeToLocal()</a>.</p>
 
 </div>
 </div>
@@ -1571,7 +1571,7 @@ Friends</h2></td></tr>
 
 <p>References <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00005">MusicTime()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00106">msecTime2LabelJustified()</a>, <a class="el" href="../../db/db0/musicsongringtonemakerwidget_8cpp_source.html#l00171">MusicSongRingtoneMaker::posChanged()</a>, <a class="el" href="../../dd/d07/musiclrcanalysis_8cpp_source.html#l00435">MusicLrcAnalysis::saveLrcTimeChanged()</a>, and <a class="el" href="../../d7/d89/musiclrcmakerwidget_8cpp_source.html#l00719">MusicLrcMakerWidget::translateTimeString()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00106">msecTime2LabelJustified()</a>, <a class="el" href="../../db/db0/musicsongringtonemakerwidget_8cpp_source.html#l00172">MusicSongRingtoneMaker::posChanged()</a>, <a class="el" href="../../dd/d07/musiclrcanalysis_8cpp_source.html#l00435">MusicLrcAnalysis::saveLrcTimeChanged()</a>, and <a class="el" href="../../d7/d89/musiclrcmakerwidget_8cpp_source.html#l00719">MusicLrcMakerWidget::translateTimeString()</a>.</p>
 
 </div>
 </div>
@@ -1592,7 +1592,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00077">77</a> of file <a class="el" href="../../d0/dac/musictime_8cpp_source.html">musictime.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_hour</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00240">m_min</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00240">m_msec</a>, and <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00240">m_sec</a>.</p>
+<p>References <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">m_hour</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_min</a>, <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_msec</a>, and <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">m_sec</a>.</p>
 
 </div>
 </div>
@@ -1629,7 +1629,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00208">208</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00207">207</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
 
 </div>
 </div>
@@ -1665,7 +1665,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00215">215</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00214">214</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
 
 </div>
 </div>
@@ -1688,9 +1688,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">239</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">238</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00282">copyToThis()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00293">fromTimeStamp()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00273">init()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00106">msecTime2LabelJustified()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00135">normalTime2Label()</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00031">setHMSM()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00282">copyToThis()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00293">fromTimeStamp()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00273">initialize()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00106">msecTime2LabelJustified()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00135">normalTime2Label()</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00031">setHMSM()</a>.</p>
 
 </div>
 </div>
@@ -1712,7 +1712,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">238</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00237">237</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00282">copyToThis()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00005">MusicTime()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00251">operator*()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00213">operator*=()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00227">operator+()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00185">operator+=()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00239">operator-()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00199">operator-=()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00257">operator/()</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00220">operator/=()</a>.</p>
 
@@ -1736,7 +1736,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00237">237</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00236">236</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00282">copyToThis()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00106">msecTime2LabelJustified()</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00005">MusicTime()</a>.</p>
 
@@ -1760,9 +1760,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">239</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00238">238</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00282">copyToThis()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00293">fromTimeStamp()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00273">init()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00054">isNull()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00106">msecTime2LabelJustified()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00135">normalTime2Label()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00031">setHMSM()</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00077">toString()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00282">copyToThis()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00293">fromTimeStamp()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00273">initialize()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00054">isNull()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00106">msecTime2LabelJustified()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00135">normalTime2Label()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00031">setHMSM()</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00077">toString()</a>.</p>
 
 </div>
 </div>
@@ -1784,9 +1784,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00240">240</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">239</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00282">copyToThis()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00293">fromTimeStamp()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00273">init()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00054">isNull()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00106">msecTime2LabelJustified()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00135">normalTime2Label()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00031">setHMSM()</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00077">toString()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00282">copyToThis()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00293">fromTimeStamp()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00273">initialize()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00054">isNull()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00106">msecTime2LabelJustified()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00135">normalTime2Label()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00031">setHMSM()</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00077">toString()</a>.</p>
 
 </div>
 </div>
@@ -1808,9 +1808,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00240">240</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">239</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00282">copyToThis()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00293">fromTimeStamp()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00273">init()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00054">isNull()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00031">setHMSM()</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00077">toString()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00282">copyToThis()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00293">fromTimeStamp()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00273">initialize()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00054">isNull()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00031">setHMSM()</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00077">toString()</a>.</p>
 
 </div>
 </div>
@@ -1832,9 +1832,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00240">240</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dcc/musictime_8h_source.html#l00239">239</a> of file <a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00282">copyToThis()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00293">fromTimeStamp()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00273">init()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00054">isNull()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00106">msecTime2LabelJustified()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00135">normalTime2Label()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00031">setHMSM()</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00077">toString()</a>.</p>
+<p>Referenced by <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00282">copyToThis()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00293">fromTimeStamp()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00082">getTimestamp()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00273">initialize()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00054">isNull()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00106">msecTime2LabelJustified()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00135">normalTime2Label()</a>, <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00031">setHMSM()</a>, and <a class="el" href="../../d0/dac/musictime_8cpp_source.html#l00077">toString()</a>.</p>
 
 </div>
 </div>
@@ -1845,7 +1845,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 8 2020 13:53:03 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 25 2020 12:48:05 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

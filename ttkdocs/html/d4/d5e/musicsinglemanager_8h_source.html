@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.11.1.0</span>
+   &#160;<span id="projectnumber">2.12.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -100,89 +100,95 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;QMap&gt;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d7/d5f/musicsingleton_8h.html">musicsingleton.h</a>&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../d4/d5e/musicsinglemanager_8h.html#ac50b70a9cdf35f456a5f54d133626355">   25</a></span>&#160;<span class="preprocessor">#define M_SINGLE_MANAGER_PTR (MusicSingleton&lt;MusicSingleManager&gt;::createInstance())</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#define M_SINGLE_MANAGER_WIDGET_NEW2(name, parent)                      \</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">    MusicSingleManager *manager = M_SINGLE_MANAGER_PTR;                 \</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">    if(!manager-&gt;contains(#name))                                       \</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">    {                                                                   \</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">        manager-&gt;createObject(#name, new name(parent));                 \</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">    }                                                                   \</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">    name *w = MStatic_cast(name*, manager-&gt;object(#name));</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../d4/d5e/musicsinglemanager_8h.html#a8663e90c66fe7a927ec7db99e16edb7d">   35</a></span>&#160;<span class="preprocessor">#define M_SINGLE_MANAGER_WIDGET_NEW(name)                               \</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">    M_SINGLE_MANAGER_WIDGET_NEW2(name, MusicApplication::instance())</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="../../d4/d5e/musicsinglemanager_8h.html#a9bac9516da430dc2355c1f84a6a317c5">   38</a></span>&#160;<span class="preprocessor">#define M_SINGLE_MANAGER_WIDGET_CLASS2(name, parent)                    \</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">{                                                                       \</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">    M_SINGLE_MANAGER_WIDGET_NEW2(name, parent)                          \</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">    w-&gt;raise();                                                         \</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">    w-&gt;show();                                                          \</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">}</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="../../d4/d5e/musicsinglemanager_8h.html#acb470186f34c6e88844ac8c15cc26f51">   45</a></span>&#160;<span class="preprocessor">#define M_SINGLE_MANAGER_WIDGET_CLASS(name)                             \</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">    M_SINGLE_MANAGER_WIDGET_CLASS2(name, MusicApplication::instance())</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#define M_SINGLE_MANAGER_DIALOG_NEW2(name, parent)                      \</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">    MusicSingleManager *manager = M_SINGLE_MANAGER_PTR;                 \</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">    if(!manager-&gt;contains(#name))                                       \</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">    {                                                                   \</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">        manager-&gt;createObject(#name, new name(parent));                 \</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">    }                                                                   \</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">    name *w = MStatic_cast(name*, manager-&gt;object(#name));</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="../../d4/d5e/musicsinglemanager_8h.html#a869d69f3c44489829f4041d445351e23">   56</a></span>&#160;<span class="preprocessor">#define M_SINGLE_MANAGER_DIALOG_NEW(name)                               \</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">    M_SINGLE_MANAGER_DIALOG_NEW2(name, MusicApplication::instance())</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/d4c/musicwidgetutils_8h.html">musicwidgetutils.h</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../d4/d5e/musicsinglemanager_8h.html#ac50b70a9cdf35f456a5f54d133626355">   26</a></span>&#160;<span class="preprocessor">#define M_SINGLE_MANAGER_PTR (MusicSingleton&lt;MusicSingleManager&gt;::createInstance())</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#define M_SINGLE_MANAGER_WIDGET_NEW2(name, parent)                      \</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">    MusicSingleManager *manager = M_SINGLE_MANAGER_PTR;                 \</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">    if(!manager-&gt;contains(#name))                                       \</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">    {                                                                   \</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">        manager-&gt;createObject(#name, new name(parent));                 \</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">    }                                                                   \</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">    name *w = TTKStatic_cast(name*, manager-&gt;object(#name));</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../d4/d5e/musicsinglemanager_8h.html#a8663e90c66fe7a927ec7db99e16edb7d">   36</a></span>&#160;<span class="preprocessor">#define M_SINGLE_MANAGER_WIDGET_NEW(name)                               \</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">    M_SINGLE_MANAGER_WIDGET_NEW2(name, MusicApplication::instance())</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../d4/d5e/musicsinglemanager_8h.html#a9bac9516da430dc2355c1f84a6a317c5">   39</a></span>&#160;<span class="preprocessor">#define M_SINGLE_MANAGER_WIDGET_CLASS2(name, parent)                    \</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">{                                                                       \</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">    M_SINGLE_MANAGER_WIDGET_NEW2(name, parent)                          \</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">    const QRect &amp;r = MusicUtils::Widget::windowScreenGeometry();        \</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">    w-&gt;move((r.width() - w-&gt;width())/2, (r.height() - w-&gt;height())/2);  \</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">    w-&gt;raise();                                                         \</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">    w-&gt;show();                                                          \</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">}</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="../../d4/d5e/musicsinglemanager_8h.html#acb470186f34c6e88844ac8c15cc26f51">   48</a></span>&#160;<span class="preprocessor">#define M_SINGLE_MANAGER_WIDGET_CLASS(name)                             \</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">    M_SINGLE_MANAGER_WIDGET_CLASS2(name, MusicApplication::instance())</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#define M_SINGLE_MANAGER_DIALOG_NEW2(name, parent)                      \</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">    MusicSingleManager *manager = M_SINGLE_MANAGER_PTR;                 \</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">    if(!manager-&gt;contains(#name))                                       \</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">    {                                                                   \</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">        manager-&gt;createObject(#name, new name(parent));                 \</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">    }                                                                   \</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">    name *w = TTKStatic_cast(name*, manager-&gt;object(#name));</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="../../d4/d5e/musicsinglemanager_8h.html#aaaedeb6ea82d355d1adedcebecf50275">   59</a></span>&#160;<span class="preprocessor">#define M_SINGLE_MANAGER_DIALOG_CLASS2(name, parent)                    \</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">{                                                                       \</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">    M_SINGLE_MANAGER_DIALOG_NEW2(name, parent)                          \</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">    w-&gt;exec();                                                          \</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">}</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="../../d4/d5e/musicsinglemanager_8h.html#a9aa6d199b14fcefd0485903afe37b829">   65</a></span>&#160;<span class="preprocessor">#define M_SINGLE_MANAGER_DIALOG_CLASS(name)                             \</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">    M_SINGLE_MANAGER_DIALOG_CLASS2(name, MusicApplication::instance())</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#define M_SINGLE_MANAGER_CORE_NEW2(name, parent)                        \</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">    MusicSingleManager *manager = M_SINGLE_MANAGER_PTR;                 \</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">    if(!manager-&gt;contains(#name))                                       \</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">    {                                                                   \</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">        manager-&gt;createObject(#name, new name(parent));                 \</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">    }                                                                   \</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">    name *w = MStatic_cast(name*, manager-&gt;object(#name));</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="../../d4/d5e/musicsinglemanager_8h.html#a0ca7d07672d93a5128372de501e883ee">   76</a></span>&#160;<span class="preprocessor">#define M_SINGLE_MANAGER_CORE_NEW(name)                                 \</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">    M_SINGLE_MANAGER_CORE_NEW2(name, nullptr)</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="../../d4/d5e/musicsinglemanager_8h.html#a80e99df70de184133393abe8f92128f3">   79</a></span>&#160;<span class="preprocessor">#define M_SINGLE_MANAGER_CORE_CLASS2(name, parent)                      \</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">{                                                                       \</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">    M_SINGLE_MANAGER_CORE_NEW2(name, parent)                            \</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">    w-&gt;start();                                                         \</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">}</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="../../d4/d5e/musicsinglemanager_8h.html#a8578885a373cffd3b186791ea7a9a0ed">   85</a></span>&#160;<span class="preprocessor">#define M_SINGLE_MANAGER_CORE_CLASS(name)                               \</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">    M_SINGLE_MANAGER_CORE_CLASS2(name, nullptr)</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="../../d4/d5e/musicsinglemanager_8h.html#a869d69f3c44489829f4041d445351e23">   59</a></span>&#160;<span class="preprocessor">#define M_SINGLE_MANAGER_DIALOG_NEW(name)                               \</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">    M_SINGLE_MANAGER_DIALOG_NEW2(name, MusicApplication::instance())</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="../../d4/d5e/musicsinglemanager_8h.html#aaaedeb6ea82d355d1adedcebecf50275">   62</a></span>&#160;<span class="preprocessor">#define M_SINGLE_MANAGER_DIALOG_CLASS2(name, parent)                    \</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">{                                                                       \</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">    M_SINGLE_MANAGER_DIALOG_NEW2(name, parent)                          \</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">    const QRect &amp;r = MusicUtils::Widget::windowScreenGeometry();        \</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">    w-&gt;move((r.width() - w-&gt;width())/2, (r.height() - w-&gt;height())/2);  \</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">    w-&gt;exec();                                                          \</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">}</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="../../d4/d5e/musicsinglemanager_8h.html#a9aa6d199b14fcefd0485903afe37b829">   70</a></span>&#160;<span class="preprocessor">#define M_SINGLE_MANAGER_DIALOG_CLASS(name)                             \</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">    M_SINGLE_MANAGER_DIALOG_CLASS2(name, MusicApplication::instance())</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#define M_SINGLE_MANAGER_CORE_NEW2(name, parent)                        \</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">    MusicSingleManager *manager = M_SINGLE_MANAGER_PTR;                 \</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">    if(!manager-&gt;contains(#name))                                       \</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">    {                                                                   \</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">        manager-&gt;createObject(#name, new name(parent));                 \</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">    }                                                                   \</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">    name *w = TTKStatic_cast(name*, manager-&gt;object(#name));</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="../../d4/d5e/musicsinglemanager_8h.html#a0ca7d07672d93a5128372de501e883ee">   81</a></span>&#160;<span class="preprocessor">#define M_SINGLE_MANAGER_CORE_NEW(name)                                 \</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">    M_SINGLE_MANAGER_CORE_NEW2(name, nullptr)</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="../../d4/d5e/musicsinglemanager_8h.html#a80e99df70de184133393abe8f92128f3">   84</a></span>&#160;<span class="preprocessor">#define M_SINGLE_MANAGER_CORE_CLASS2(name, parent)                      \</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">{                                                                       \</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">    M_SINGLE_MANAGER_CORE_NEW2(name, parent)                            \</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">    w-&gt;start();                                                         \</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">}</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="../../d3/d42/class_music_single_manager.html">   93</a></span>&#160;<span class="keyword">class </span>MUSIC_CORE_EXPORT <a class="code" href="../../d3/d42/class_music_single_manager.html">MusicSingleManager</a></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d3/d42/class_music_single_manager.html">MusicSingleManager</a>)</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> createObject(<span class="keyword">const</span> QString &amp;<a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, QObject *<span class="keywordtype">object</span>);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> removeObject(<span class="keyword">const</span> QString &amp;name);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    QObject *object(<span class="keyword">const</span> QString &amp;name);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">bool</span> contains(<span class="keyword">const</span> QString &amp;name) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="../../d3/d42/class_music_single_manager.html#a8eac95efaa5d071f9ca74f2e10032971">  115</a></span>&#160;    QMap&lt;QString, QObject*&gt; <a class="code" href="../../d3/d42/class_music_single_manager.html#a8eac95efaa5d071f9ca74f2e10032971">m_parameter</a>;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <a class="code" href="../../d3/d42/class_music_single_manager.html">MusicSingleManager</a>();</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="../../d4/d5e/musicsinglemanager_8h.html#a8578885a373cffd3b186791ea7a9a0ed">   90</a></span>&#160;<span class="preprocessor">#define M_SINGLE_MANAGER_CORE_CLASS(name)                               \</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">    M_SINGLE_MANAGER_CORE_CLASS2(name, nullptr)</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="../../d3/d42/class_music_single_manager.html">   98</a></span>&#160;<span class="keyword">class </span>MUSIC_CORE_EXPORT <a class="code" href="../../d3/d42/class_music_single_manager.html">MusicSingleManager</a></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d3/d42/class_music_single_manager.html">MusicSingleManager</a>)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> createObject(<span class="keyword">const</span> QString &amp;<a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, QObject *<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> removeObject(<span class="keyword">const</span> QString &amp;name);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    QObject *object(<span class="keyword">const</span> QString &amp;name);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">bool</span> contains(<span class="keyword">const</span> QString &amp;name) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="../../d3/d42/class_music_single_manager.html#a8eac95efaa5d071f9ca74f2e10032971">  120</a></span>&#160;    QMap&lt;QString, QObject*&gt; <a class="code" href="../../d3/d42/class_music_single_manager.html#a8eac95efaa5d071f9ca74f2e10032971">m_parameter</a>;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <a class="code" href="../../d7/d5f/musicsingleton_8h.html#a8d62f3ef8a22e40d7a4ff45f03d0ce0e">DECLARE_SINGLETON_CLASS</a>(<a class="code" href="../../d3/d42/class_music_single_manager.html">MusicSingleManager</a>)</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;};</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif // MUSICSINGLEMANAGER_H</span></div>
-<div class="ttc" id="class_music_single_manager_html_a8eac95efaa5d071f9ca74f2e10032971"><div class="ttname"><a href="../../d3/d42/class_music_single_manager.html#a8eac95efaa5d071f9ca74f2e10032971">MusicSingleManager::m_parameter</a></div><div class="ttdeci">QMap&lt; QString, QObject * &gt; m_parameter</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d5e/musicsinglemanager_8h_source.html#l00115">musicsinglemanager.h:115</a></div></div>
-<div class="ttc" id="class_music_single_manager_html"><div class="ttname"><a href="../../d3/d42/class_music_single_manager.html">MusicSingleManager</a></div><div class="ttdoc">The class of the single object manager. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d5e/musicsinglemanager_8h_source.html#l00093">musicsinglemanager.h:93</a></div></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <a class="code" href="../../d3/d42/class_music_single_manager.html">MusicSingleManager</a>();</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <a class="code" href="../../d7/d5f/musicsingleton_8h.html#a8d62f3ef8a22e40d7a4ff45f03d0ce0e">DECLARE_SINGLETON_CLASS</a>(<a class="code" href="../../d3/d42/class_music_single_manager.html">MusicSingleManager</a>)</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;};</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#endif // MUSICSINGLEMANAGER_H</span></div>
+<div class="ttc" id="class_music_single_manager_html_a8eac95efaa5d071f9ca74f2e10032971"><div class="ttname"><a href="../../d3/d42/class_music_single_manager.html#a8eac95efaa5d071f9ca74f2e10032971">MusicSingleManager::m_parameter</a></div><div class="ttdeci">QMap&lt; QString, QObject * &gt; m_parameter</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d5e/musicsinglemanager_8h_source.html#l00120">musicsinglemanager.h:120</a></div></div>
+<div class="ttc" id="class_music_single_manager_html"><div class="ttname"><a href="../../d3/d42/class_music_single_manager.html">MusicSingleManager</a></div><div class="ttdoc">The class of the single object manager. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d5e/musicsinglemanager_8h_source.html#l00098">musicsinglemanager.h:98</a></div></div>
+<div class="ttc" id="musicwidgetutils_8h_html"><div class="ttname"><a href="../../d3/d4c/musicwidgetutils_8h.html">musicwidgetutils.h</a></div></div>
 <div class="ttc" id="ttkglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00144">ttkglobal.h:144</a></div></div>
 <div class="ttc" id="musicsingleton_8h_html"><div class="ttname"><a href="../../d7/d5f/musicsingleton_8h.html">musicsingleton.h</a></div></div>
 <div class="ttc" id="http__parser_8c_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d70/http__parser_8c_source.html#l00458">http_parser.c:458</a></div></div>
@@ -190,7 +196,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 8 2020 13:51:09 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 25 2020 12:46:26 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.11.1.0</span>
+   &#160;<span id="projectnumber">2.12.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -97,10 +97,12 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <area href="../../df/dda/class_music_k_g_l_config_manager.html" title="The class of the kugou playlist Config Manager. " alt="MusicKGLConfigManager" shape="rect" coords="177,224,344,248"/>
 <area href="../../db/d5c/class_music_k_w_l_config_manager.html" title="The class of the kuwo playlist Config Manager. " alt="MusicKWLConfigManager" shape="rect" coords="177,280,344,304"/>
 <area href="../../d4/d06/class_music_m3_u_config_manager.html" title="The class of the m3u playlist Config Manager. " alt="MusicM3UConfigManager" shape="rect" coords="177,336,344,360"/>
-<area href="../../d5/d3a/class_music_p_l_s_config_manager.html" title="The class of the pls playlist Config Manager. " alt="MusicPLSConfigManager" shape="rect" coords="177,392,344,416"/>
-<area href="../../de/d03/class_music_t_k_p_l_config_manager.html" title="The class of the tkpl config manager. " alt="MusicTKPLConfigManager" shape="rect" coords="177,448,344,472"/>
-<area href="../../d0/d12/class_music_w_p_l_config_manager.html" title="The class of the wpl playlist Config Manager. " alt="MusicWPLConfigManager" shape="rect" coords="177,504,344,528"/>
-<area href="../../da/daf/class_music_x_s_p_f_config_manager.html" title="The class of the xspf playlist Config Manager. " alt="MusicXSPFConfigManager" shape="rect" coords="177,560,344,584"/>
+<area href="../../d6/d58/class_music_n_f_n_config_manager.html" title="The class of the nfn playlist Config Manager. " alt="MusicNFNConfigManager" shape="rect" coords="177,392,344,416"/>
+<area href="../../d5/d3a/class_music_p_l_s_config_manager.html" title="The class of the pls playlist Config Manager. " alt="MusicPLSConfigManager" shape="rect" coords="177,448,344,472"/>
+<area href="../../de/d03/class_music_t_k_p_l_config_manager.html" title="The class of the tkpl config manager. " alt="MusicTKPLConfigManager" shape="rect" coords="177,504,344,528"/>
+<area href="../../de/d20/class_music_t_x_t_config_manager.html" title="The class of the txt playlist Config Manager. " alt="MusicTXTConfigManager" shape="rect" coords="177,560,344,584"/>
+<area href="../../d0/d12/class_music_w_p_l_config_manager.html" title="The class of the wpl playlist Config Manager. " alt="MusicWPLConfigManager" shape="rect" coords="177,616,344,640"/>
+<area href="../../da/daf/class_music_x_s_p_f_config_manager.html" title="The class of the xspf playlist Config Manager. " alt="MusicXSPFConfigManager" shape="rect" coords="177,672,344,696"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -110,10 +112,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab935f6d7720a02201fd4b19734c0d788"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e23b6a24e22d9f1b6870b527cd46e7e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d56/class_music_playlist_interface.html#a1e23b6a24e22d9f1b6870b527cd46e7e">~MusicPlaylistInterface</a> ()</td></tr>
 <tr class="separator:a1e23b6a24e22d9f1b6870b527cd46e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aced54c394eb1f6da5d428d73991763e0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d56/class_music_playlist_interface.html#aced54c394eb1f6da5d428d73991763e0">readPlaylistData</a> (MusicSongItems &amp;items)=0</td></tr>
-<tr class="separator:aced54c394eb1f6da5d428d73991763e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e4611d966232da771384384b292344b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d56/class_music_playlist_interface.html#a5e4611d966232da771384384b292344b">writePlaylistData</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> MusicSongItems &amp;items, <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;path)=0</td></tr>
-<tr class="separator:a5e4611d966232da771384384b292344b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71143520c7320d54709f626acc8ea366"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d56/class_music_playlist_interface.html#a71143520c7320d54709f626acc8ea366">readPlaylistData</a> (MusicSongItems &amp;items)=0</td></tr>
+<tr class="separator:a71143520c7320d54709f626acc8ea366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d366a1d76f3fb19fc6978aece0ef493"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d56/class_music_playlist_interface.html#a4d366a1d76f3fb19fc6978aece0ef493">writePlaylistData</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> MusicSongItems &amp;items, <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;path)=0</td></tr>
+<tr class="separator:a4d366a1d76f3fb19fc6978aece0ef493"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The class of the playlist interface. </p>
@@ -172,7 +174,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aced54c394eb1f6da5d428d73991763e0"></a>
+<a class="anchor" id="a71143520c7320d54709f626acc8ea366"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -180,7 +182,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void MusicPlaylistInterface::readPlaylistData </td>
+          <td class="memname">virtual bool MusicPlaylistInterface::readPlaylistData </td>
           <td>(</td>
           <td class="paramtype">MusicSongItems &amp;&#160;</td>
           <td class="paramname"><em>items</em></td><td>)</td>
@@ -195,11 +197,11 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Read datas from config file. </p>
 
-<p>Implemented in <a class="el" href="../../da/d94/class_music_f_p_l_config_manager.html#ab6b12b39d7ca86a11d7a9b082ba617f7">MusicFPLConfigManager</a>, <a class="el" href="../../db/d5c/class_music_k_w_l_config_manager.html#ac5fea99b95dd6021f0513f25fa7b61e6">MusicKWLConfigManager</a>, <a class="el" href="../../de/d03/class_music_t_k_p_l_config_manager.html#af9858e2d637b71c26fe5e573299d4190">MusicTKPLConfigManager</a>, <a class="el" href="../../d0/dd8/class_music_c_s_v_config_manager.html#a521a8527cda0600b5edf260f03403179">MusicCSVConfigManager</a>, <a class="el" href="../../d4/d06/class_music_m3_u_config_manager.html#a6dd42cab31fe6c1d374b1ae2d57dd9e9">MusicM3UConfigManager</a>, <a class="el" href="../../d5/d3a/class_music_p_l_s_config_manager.html#a0f2702f7b265ab5ef3a1166353416a90">MusicPLSConfigManager</a>, <a class="el" href="../../d4/db1/class_music_a_s_x_config_manager.html#acb1c0905f2793632cda6bbf59d8f6b33">MusicASXConfigManager</a>, <a class="el" href="../../df/dda/class_music_k_g_l_config_manager.html#ad207b670efd65f27ef054fcda2025cfc">MusicKGLConfigManager</a>, <a class="el" href="../../d0/d12/class_music_w_p_l_config_manager.html#a9df7cf7bd79101bade8d9083fdc9c0a5">MusicWPLConfigManager</a>, and <a class="el" href="../../da/daf/class_music_x_s_p_f_config_manager.html#ae121b2b6b1cfe0c2fba0dce2feaed1bf">MusicXSPFConfigManager</a>.</p>
+<p>Implemented in <a class="el" href="../../da/d94/class_music_f_p_l_config_manager.html#af668877e3facbfa895e2af3c40ce0218">MusicFPLConfigManager</a>, <a class="el" href="../../db/d5c/class_music_k_w_l_config_manager.html#a3f07d9101e3c92d707b5105c9e7f1235">MusicKWLConfigManager</a>, <a class="el" href="../../de/d03/class_music_t_k_p_l_config_manager.html#a89af750e9e31f0d4b99efa9b597e06f6">MusicTKPLConfigManager</a>, <a class="el" href="../../d0/dd8/class_music_c_s_v_config_manager.html#acd40b0e7534c12595a80946877634f0d">MusicCSVConfigManager</a>, <a class="el" href="../../d4/d06/class_music_m3_u_config_manager.html#aa3b45d027f4bd4e641faa284e80504bf">MusicM3UConfigManager</a>, <a class="el" href="../../d5/d3a/class_music_p_l_s_config_manager.html#a4d959d1b5caf1e3d2aab422f34b7ac9b">MusicPLSConfigManager</a>, <a class="el" href="../../de/d20/class_music_t_x_t_config_manager.html#a1d48bd85a2a3fa465e7e6ea1e5df3fc9">MusicTXTConfigManager</a>, <a class="el" href="../../d4/db1/class_music_a_s_x_config_manager.html#a432bc1bc823ce0f3166a55d9d81a2310">MusicASXConfigManager</a>, <a class="el" href="../../df/dda/class_music_k_g_l_config_manager.html#a390e9e83762edbed098ebc2638a9563d">MusicKGLConfigManager</a>, <a class="el" href="../../d0/d12/class_music_w_p_l_config_manager.html#a18f094d65ca50c4df750d8a87bce5c4b">MusicWPLConfigManager</a>, <a class="el" href="../../da/daf/class_music_x_s_p_f_config_manager.html#a57d9855543f74b563160560d3f75eab2">MusicXSPFConfigManager</a>, and <a class="el" href="../../d6/d58/class_music_n_f_n_config_manager.html#a5ea294a96443eff0ec98b6fb5755e2d0">MusicNFNConfigManager</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a5e4611d966232da771384384b292344b"></a>
+<a class="anchor" id="a4d366a1d76f3fb19fc6978aece0ef493"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -207,7 +209,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void MusicPlaylistInterface::writePlaylistData </td>
+          <td class="memname">virtual bool MusicPlaylistInterface::writePlaylistData </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> MusicSongItems &amp;&#160;</td>
           <td class="paramname"><em>items</em>, </td>
@@ -232,7 +234,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Write datas into config file. </p>
 
-<p>Implemented in <a class="el" href="../../da/d94/class_music_f_p_l_config_manager.html#aa4fe74041e7d488f82e381d54e7a0360">MusicFPLConfigManager</a>, <a class="el" href="../../de/d03/class_music_t_k_p_l_config_manager.html#a06dc8415fe0799ae493755d6275a642a">MusicTKPLConfigManager</a>, <a class="el" href="../../db/d5c/class_music_k_w_l_config_manager.html#a17fdd2c4af97424715934205b57ebf3f">MusicKWLConfigManager</a>, <a class="el" href="../../d0/dd8/class_music_c_s_v_config_manager.html#a3af6c7a74114c1d39b7c45c93a611900">MusicCSVConfigManager</a>, <a class="el" href="../../d4/d06/class_music_m3_u_config_manager.html#a6a9fe5c3afecd81a2c1bac0e6d74e7ff">MusicM3UConfigManager</a>, <a class="el" href="../../d5/d3a/class_music_p_l_s_config_manager.html#a393c8eebca723bc5fae1c67fa12c317d">MusicPLSConfigManager</a>, <a class="el" href="../../d4/db1/class_music_a_s_x_config_manager.html#a8fee01c5addcd63b4bed5ea8b92cb1b2">MusicASXConfigManager</a>, <a class="el" href="../../df/dda/class_music_k_g_l_config_manager.html#aa643553e7136f3511d4659ac495935a7">MusicKGLConfigManager</a>, <a class="el" href="../../d0/d12/class_music_w_p_l_config_manager.html#af1394ebd36b4baa583f07c8c391099c9">MusicWPLConfigManager</a>, and <a class="el" href="../../da/daf/class_music_x_s_p_f_config_manager.html#aa034d4eb69848ff2c4ce28e5207bda40">MusicXSPFConfigManager</a>.</p>
+<p>Implemented in <a class="el" href="../../da/d94/class_music_f_p_l_config_manager.html#ab729e1f78e2f84322b6edaa19af04f6d">MusicFPLConfigManager</a>, <a class="el" href="../../de/d03/class_music_t_k_p_l_config_manager.html#aa410a4c6aba9624dc18e0bcb381b812c">MusicTKPLConfigManager</a>, <a class="el" href="../../db/d5c/class_music_k_w_l_config_manager.html#a027fb7d4a7bc6c10e021fb877036bb50">MusicKWLConfigManager</a>, <a class="el" href="../../d0/dd8/class_music_c_s_v_config_manager.html#aae45461ee326006480350c09c60f922a">MusicCSVConfigManager</a>, <a class="el" href="../../d4/d06/class_music_m3_u_config_manager.html#a19ec629aebc0e1931de5198037f7f7c0">MusicM3UConfigManager</a>, <a class="el" href="../../d5/d3a/class_music_p_l_s_config_manager.html#a1ebe6edc8117e1dff3d7224b545aae55">MusicPLSConfigManager</a>, <a class="el" href="../../de/d20/class_music_t_x_t_config_manager.html#a5dca5488399b38865a33dd0e9bba60f9">MusicTXTConfigManager</a>, <a class="el" href="../../d4/db1/class_music_a_s_x_config_manager.html#acf5d2cf19e9a41375e577c0f82102329">MusicASXConfigManager</a>, <a class="el" href="../../df/dda/class_music_k_g_l_config_manager.html#a266f1c489d92553bd87de966a2abd5b8">MusicKGLConfigManager</a>, <a class="el" href="../../d0/d12/class_music_w_p_l_config_manager.html#a69f56853f531406f971452358bc7260b">MusicWPLConfigManager</a>, <a class="el" href="../../da/daf/class_music_x_s_p_f_config_manager.html#a7ad16ec6eeab47733f929894d7030963">MusicXSPFConfigManager</a>, and <a class="el" href="../../d6/d58/class_music_n_f_n_config_manager.html#a45ecbd910a00b6b840273eb656e6dfe0">MusicNFNConfigManager</a>.</p>
 
 </div>
 </div>
@@ -242,7 +244,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 8 2020 13:52:51 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 25 2020 12:47:55 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

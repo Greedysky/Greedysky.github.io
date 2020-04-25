@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.11.1.0</span>
+   &#160;<span id="projectnumber">2.12.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -154,20 +154,20 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keywordflow">if</span>(availableSuffixs.contains(suffix))</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                lineCount += fileAllData.count(<span class="charliteral">&#39;\n&#39;</span>) + 1;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                lineCount += fileAllData.count(<span class="stringliteral">&quot;\n&quot;</span>) + 1;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            }</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            file.close();</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }, <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        eventLoop.quit();</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    } );</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    });</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    eventLoop.exec();</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="../../d5/d2b/ttklogger_8h.html#a40ddce420b21f37a70b70ca5de3d879a">M_LOGGER_INFO</a>(<span class="stringliteral">&quot;All File Count &quot;</span> &lt;&lt; fileCount);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="../../d5/d2b/ttklogger_8h.html#a40ddce420b21f37a70b70ca5de3d879a">M_LOGGER_INFO</a>(<span class="stringliteral">&quot;All Meet The Requirements Line Count &quot;</span> &lt;&lt; lineCount);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="../../d5/d2b/ttklogger_8h.html#ae2a8797595daafbcb53f440f5aca9c8d">TTK_LOGGER_INFO</a>(<span class="stringliteral">&quot;All File Count &quot;</span> &lt;&lt; fileCount);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="../../d5/d2b/ttklogger_8h.html#ae2a8797595daafbcb53f440f5aca9c8d">TTK_LOGGER_INFO</a>(<span class="stringliteral">&quot;All Meet The Requirements Line Count &quot;</span> &lt;&lt; lineCount);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">foreach</span>(<span class="keyword">const</span> QString &amp;<a class="code" href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a>, categorys.keys())</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <a class="code" href="../../d5/d2b/ttklogger_8h.html#a40ddce420b21f37a70b70ca5de3d879a">M_LOGGER_INFO</a>(QString(<span class="stringliteral">&quot;.%1 Type  All count %2&quot;</span>).arg(key).arg(categorys[key]));</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <a class="code" href="../../d5/d2b/ttklogger_8h.html#ae2a8797595daafbcb53f440f5aca9c8d">TTK_LOGGER_INFO</a>(QString(<span class="stringliteral">&quot;.%1 Type  All count %2&quot;</span>).arg(key).arg(categorys[key]));</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
@@ -176,9 +176,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
 <div class="ttc" id="tst__codelines_8cpp_html_ab9967bd732c5fbfaaaa1005ff4a81b43"><div class="ttname"><a href="../../d7/db5/tst__codelines_8cpp.html#ab9967bd732c5fbfaaaa1005ff4a81b43">foreachFileFromDirectory</a></div><div class="ttdeci">void foreachFileFromDirectory(const QDir &amp;directory, const std::function&lt; void(const QFileInfo &amp;)&gt; &amp;each, const bool &amp;recursion)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/db5/tst__codelines_8cpp_source.html#l00013">tst_codelines.cpp:13</a></div></div>
-<div class="ttc" id="musiclrcfromkrc_8cpp_html_ad706e4249347c1cd1381934a5691137d"><div class="ttname"><a href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a></div><div class="ttdeci">const wchar_t key[]</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d45/musiclrcfromkrc_8cpp_source.html#l00017">musiclrcfromkrc.cpp:17</a></div></div>
-<div class="ttc" id="ttklogger_8h_html_a40ddce420b21f37a70b70ca5de3d879a"><div class="ttname"><a href="../../d5/d2b/ttklogger_8h.html#a40ddce420b21f37a70b70ca5de3d879a">M_LOGGER_INFO</a></div><div class="ttdeci">#define M_LOGGER_INFO(str)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d2b/ttklogger_8h_source.html#l00046">ttklogger.h:46</a></div></div>
+<div class="ttc" id="musiclrcfromkrc_8cpp_html_ad706e4249347c1cd1381934a5691137d"><div class="ttname"><a href="../../d8/d45/musiclrcfromkrc_8cpp.html#ad706e4249347c1cd1381934a5691137d">key</a></div><div class="ttdeci">const wchar_t key[]</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d45/musiclrcfromkrc_8cpp_source.html#l00016">musiclrcfromkrc.cpp:16</a></div></div>
 <div class="ttc" id="tst__codelines_8h_html"><div class="ttname"><a href="../../d3/d5a/tst__codelines_8h.html">tst_codelines.h</a></div></div>
+<div class="ttc" id="ttklogger_8h_html_ae2a8797595daafbcb53f440f5aca9c8d"><div class="ttname"><a href="../../d5/d2b/ttklogger_8h.html#ae2a8797595daafbcb53f440f5aca9c8d">TTK_LOGGER_INFO</a></div><div class="ttdeci">#define TTK_LOGGER_INFO(str)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d2b/ttklogger_8h_source.html#l00046">ttklogger.h:46</a></div></div>
 <div class="ttc" id="class_code_lines_test_html_ab14e7e4b3415a9e127e49818715eebde"><div class="ttname"><a href="../../d4/d32/class_code_lines_test.html#ab14e7e4b3415a9e127e49818715eebde">CodeLinesTest::codeLines</a></div><div class="ttdeci">void codeLines()</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/db5/tst__codelines_8cpp_source.html#l00034">tst_codelines.cpp:34</a></div></div>
 <div class="ttc" id="class_code_lines_test_html_a652e147a81904c13f47b9f8f40b8cd1e"><div class="ttname"><a href="../../d4/d32/class_code_lines_test.html#a652e147a81904c13f47b9f8f40b8cd1e">CodeLinesTest::initTestCase</a></div><div class="ttdeci">void initTestCase()</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/db5/tst__codelines_8cpp_source.html#l00029">tst_codelines.cpp:29</a></div></div>
 <div class="ttc" id="class_code_lines_test_html_ae42971462e1aeb519402ebcdb198aeb2"><div class="ttname"><a href="../../d4/d32/class_code_lines_test.html#ae42971462e1aeb519402ebcdb198aeb2">CodeLinesTest::cleanupTestCase</a></div><div class="ttdeci">void cleanupTestCase()</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/db5/tst__codelines_8cpp_source.html#l00095">tst_codelines.cpp:95</a></div></div>
@@ -186,7 +186,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 8 2020 13:51:24 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 25 2020 12:46:38 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

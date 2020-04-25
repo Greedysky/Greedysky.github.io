@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.11.1.0</span>
+   &#160;<span id="projectnumber">2.12.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -87,7 +87,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QtCore/QCoreApplication&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifdef UNICODE</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#  if QT_VERSION &gt;= 0x040000</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#  if TTK_QT_VERSION_CHECK(4,0,0)</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#    define TCHAR2QString(x) QString::fromUtf16(x)</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#  else</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#    define TCHAR2QString(x) QString::fromUcs2(x)</span></div>
@@ -108,7 +108,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d9/db1/class_q_device_watcher_private.html#aae86c1f1f256617bf5428a1aeae85940">QDeviceWatcherPrivate::start</a>()</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="../../d9/db1/class_q_device_watcher_private.html#aa83bf1b3dccb947751659a0521a2be3b">init</a>())</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="../../d9/db1/class_q_device_watcher_private.html#a1e04e89de3197e92280a1cb9b7877d23">initialize</a>())</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        this-&gt;QThread::start();</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -131,7 +131,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d9/db1/class_q_device_watcher_private.html#aa83bf1b3dccb947751659a0521a2be3b">QDeviceWatcherPrivate::init</a>()</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d9/db1/class_q_device_watcher_private.html#a1e04e89de3197e92280a1cb9b7877d23">QDeviceWatcherPrivate::initialize</a>()</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        MSGQUEUEOPTIONS msgopts;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
@@ -196,7 +196,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_q_device_watcher_private_html_a83f9f96895f2cd8f98d48a5ef22a102d"><div class="ttname"><a href="../../d9/db1/class_q_device_watcher_private.html#a83f9f96895f2cd8f98d48a5ef22a102d">QDeviceWatcherPrivate::emitDeviceAdded</a></div><div class="ttdeci">void emitDeviceAdded(const QString &amp;dev)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0f/qdevicewatcher_8cpp_source.html#l00048">qdevicewatcher.cpp:48</a></div></div>
 <div class="ttc" id="qdevicewatcher_8h_html"><div class="ttname"><a href="../../d4/d4a/qdevicewatcher_8h.html">qdevicewatcher.h</a></div></div>
 <div class="ttc" id="class_q_device_watcher_private_html_a392c4c26fc47df8eac38a23282097d6a"><div class="ttname"><a href="../../d9/db1/class_q_device_watcher_private.html#a392c4c26fc47df8eac38a23282097d6a">QDeviceWatcherPrivate::parseDeviceInfo</a></div><div class="ttdeci">void parseDeviceInfo()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/db1/qdevicewatcher__mac_8cpp_source.html#l00049">qdevicewatcher_mac.cpp:49</a></div></div>
-<div class="ttc" id="class_q_device_watcher_private_html_aa83bf1b3dccb947751659a0521a2be3b"><div class="ttname"><a href="../../d9/db1/class_q_device_watcher_private.html#aa83bf1b3dccb947751659a0521a2be3b">QDeviceWatcherPrivate::init</a></div><div class="ttdeci">bool init()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/db1/qdevicewatcher__mac_8cpp_source.html#l00054">qdevicewatcher_mac.cpp:54</a></div></div>
 <div class="ttc" id="ioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="../../d2/db7/ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/db7/ioapi_8h_source.html#l00136">ioapi.h:136</a></div></div>
 <div class="ttc" id="class_q_device_watcher_private_html_aae86c1f1f256617bf5428a1aeae85940"><div class="ttname"><a href="../../d9/db1/class_q_device_watcher_private.html#aae86c1f1f256617bf5428a1aeae85940">QDeviceWatcherPrivate::start</a></div><div class="ttdeci">bool start()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/db1/qdevicewatcher__mac_8cpp_source.html#l00033">qdevicewatcher_mac.cpp:33</a></div></div>
 <div class="ttc" id="class_q_device_change_event_html"><div class="ttname"><a href="../../d0/db4/class_q_device_change_event.html">QDeviceChangeEvent</a></div><div class="ttdoc">The class of the device watcher event. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d4a/qdevicewatcher_8h_source.html#l00059">qdevicewatcher.h:59</a></div></div>
@@ -205,13 +204,14 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_q_device_change_event_html_a95395bb9d467c7fc5667c8502c65a3b9acf455fb5b06c43e81b1a27d56474c904"><div class="ttname"><a href="../../d0/db4/class_q_device_change_event.html#a95395bb9d467c7fc5667c8502c65a3b9acf455fb5b06c43e81b1a27d56474c904">QDeviceChangeEvent::Remove</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d4a/qdevicewatcher_8h_source.html#l00062">qdevicewatcher.h:62</a></div></div>
 <div class="ttc" id="qdevicewatcher__p_8h_html"><div class="ttname"><a href="../../de/d87/qdevicewatcher__p_8h.html">qdevicewatcher_p.h</a></div></div>
 <div class="ttc" id="namespace_music_auto_test_html_a0f15fc05ab583e87d58f0a9da5cede66"><div class="ttname"><a href="../../d2/ddb/namespace_music_auto_test.html#a0f15fc05ab583e87d58f0a9da5cede66">MusicAutoTest::run</a></div><div class="ttdeci">int run(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d59/musicautotest_8h_source.html#l00062">musicautotest.h:62</a></div></div>
+<div class="ttc" id="class_q_device_watcher_private_html_a1e04e89de3197e92280a1cb9b7877d23"><div class="ttname"><a href="../../d9/db1/class_q_device_watcher_private.html#a1e04e89de3197e92280a1cb9b7877d23">QDeviceWatcherPrivate::initialize</a></div><div class="ttdeci">bool initialize()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/db1/qdevicewatcher__mac_8cpp_source.html#l00054">qdevicewatcher_mac.cpp:54</a></div></div>
 <div class="ttc" id="class_q_device_watcher_private_html_a5a370eb80faf353c335541283e455b7f"><div class="ttname"><a href="../../d9/db1/class_q_device_watcher_private.html#a5a370eb80faf353c335541283e455b7f">QDeviceWatcherPrivate::event_receivers</a></div><div class="ttdeci">QList&lt; QObject * &gt; event_receivers</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d87/qdevicewatcher__p_8h_source.html#l00089">qdevicewatcher_p.h:89</a></div></div>
 <div class="ttc" id="class_q_device_watcher_private_html_a80545fcd70e272e25b232cb30af5cacd"><div class="ttname"><a href="../../d9/db1/class_q_device_watcher_private.html#a80545fcd70e272e25b232cb30af5cacd">QDeviceWatcherPrivate::~QDeviceWatcherPrivate</a></div><div class="ttdeci">~QDeviceWatcherPrivate()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/db1/qdevicewatcher__mac_8cpp_source.html#l00028">qdevicewatcher_mac.cpp:28</a></div></div>
 <div class="ttc" id="class_q_device_change_event_html_a95395bb9d467c7fc5667c8502c65a3b9a1a23ee441f0d2c2e8cf802b4059ac83c"><div class="ttname"><a href="../../d0/db4/class_q_device_change_event.html#a95395bb9d467c7fc5667c8502c65a3b9a1a23ee441f0d2c2e8cf802b4059ac83c">QDeviceChangeEvent::Add</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d4a/qdevicewatcher_8h_source.html#l00062">qdevicewatcher.h:62</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 8 2020 13:51:29 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Apr 25 2020 12:46:49 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
