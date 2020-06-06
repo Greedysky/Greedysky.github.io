@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.12.0.0</span>
+   &#160;<span id="projectnumber">2.13.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -112,8 +112,6 @@ Public Member Functions</h2></td></tr>
 Private Slots</h2></td></tr>
 <tr class="memitem:a8d341f09766b37d62589ad9010b4dba1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dac/class_music_network_operator.html#a8d341f09766b37d62589ad9010b4dba1">downLoadFinished</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QByteArray &amp;data)</td></tr>
 <tr class="separator:a8d341f09766b37d62589ad9010b4dba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a811417103ad55c982cc8e3f8a8151fa4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dac/class_music_network_operator.html#a811417103ad55c982cc8e3f8a8151fa4">downLoadQueryFinished</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QByteArray &amp;data)</td></tr>
-<tr class="separator:a811417103ad55c982cc8e3f8a8151fa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The class of music network operator. </p>
@@ -174,40 +172,9 @@ Private Slots</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d6/d78/musicnetworkoperator_8cpp_source.html#l00022">22</a> of file <a class="el" href="../../d6/d78/musicnetworkoperator_8cpp_source.html">musicnetworkoperator.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d6/d78/musicnetworkoperator_8cpp_source.html#l00051">downLoadQueryFinished()</a>, <a class="el" href="../../db/dac/class_music_network_operator.html#a7b7cb7ac302ed6028c7e8ebc49e5ab2d">getNetworkOperatorFinished()</a>, <a class="el" href="../../dc/d66/musicdownloadsourcethread_8cpp_source.html#l00014">MusicDownloadSourceThread::startToDownload()</a>, and <a class="el" href="../../df/d7f/ttkglobal_8h_source.html#l00058">TTKConst_cast</a>.</p>
+<p>References <a class="el" href="../../db/dac/class_music_network_operator.html#a7b7cb7ac302ed6028c7e8ebc49e5ab2d">getNetworkOperatorFinished()</a>, and <a class="el" href="../../dc/ddd/parser_8cpp_source.html#l00069">QJson::Parser::parse()</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d6/d78/musicnetworkoperator_8cpp_source.html#l00015">startToDownload()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a811417103ad55c982cc8e3f8a8151fa4"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MusicNetworkOperator::downLoadQueryFinished </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QByteArray &amp;&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Download data from ip net finished. </p>
-
-<p>Definition at line <a class="el" href="../../d6/d78/musicnetworkoperator_8cpp_source.html#l00051">51</a> of file <a class="el" href="../../d6/d78/musicnetworkoperator_8cpp_source.html">musicnetworkoperator.cpp</a>.</p>
-
-<p>References <a class="el" href="../../db/dac/class_music_network_operator.html#a7b7cb7ac302ed6028c7e8ebc49e5ab2d">getNetworkOperatorFinished()</a>, and <a class="el" href="../../df/d7f/ttkglobal_8h_source.html#l00058">TTKConst_cast</a>.</p>
-
-<p>Referenced by <a class="el" href="../../d6/d78/musicnetworkoperator_8cpp_source.html#l00022">downLoadFinished()</a>.</p>
 
 </div>
 </div>
@@ -234,7 +201,7 @@ Private Slots</h2></td></tr>
 </div><div class="memdoc">
 <p>Get network operator is finished. </p>
 
-<p>Referenced by <a class="el" href="../../d6/d78/musicnetworkoperator_8cpp_source.html#l00022">downLoadFinished()</a>, and <a class="el" href="../../d6/d78/musicnetworkoperator_8cpp_source.html#l00051">downLoadQueryFinished()</a>.</p>
+<p>Referenced by <a class="el" href="../../d6/d78/musicnetworkoperator_8cpp_source.html#l00022">downLoadFinished()</a>.</p>
 
 </div>
 </div>
@@ -256,7 +223,7 @@ Private Slots</h2></td></tr>
 
 <p>References <a class="el" href="../../d6/d78/musicnetworkoperator_8cpp_source.html#l00022">downLoadFinished()</a>, <a class="el" href="../../d6/d78/musicnetworkoperator_8cpp_source.html#l00007">IP_CHECK_URL</a>, <a class="el" href="../../d3/dfd/musicalgorithmutils_8cpp_source.html#l00041">MusicUtils::Algorithm::mdII()</a>, and <a class="el" href="../../dc/d66/musicdownloadsourcethread_8cpp_source.html#l00014">MusicDownloadSourceThread::startToDownload()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d2c/musicsettingwidget_8cpp_source.html#l00493">MusicSettingWidget::testNetworkConnection()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d2c/musicsettingwidget_8cpp_source.html#l00500">MusicSettingWidget::testNetworkConnection()</a>.</p>
 
 </div>
 </div>
@@ -267,7 +234,7 @@ Private Slots</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 25 2020 12:47:50 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 6 2020 15:36:43 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

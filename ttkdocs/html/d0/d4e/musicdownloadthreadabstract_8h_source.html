@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.12.0.0</span>
+   &#160;<span id="projectnumber">2.13.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -127,17 +127,17 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> updateDownloadSpeed();</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    QString transferData() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    QString mapCurrentQueryData() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
 <div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="../../dc/def/class_music_down_load_thread_abstract.html#af626870fcbd5d8d2bd0354c34b28ceef">   79</a></span>&#160;    QFile *<a class="code" href="../../dc/def/class_music_down_load_thread_abstract.html#af626870fcbd5d8d2bd0354c34b28ceef">m_file</a>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="../../dc/def/class_music_down_load_thread_abstract.html#a7753f3b1623a17364d8a922695c13a56">   80</a></span>&#160;    QString <a class="code" href="../../dc/def/class_music_down_load_thread_abstract.html#a7753f3b1623a17364d8a922695c13a56">m_url</a>, m_savePathName;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="../../dc/def/class_music_down_load_thread_abstract.html#a7753f3b1623a17364d8a922695c13a56">   80</a></span>&#160;    QString <a class="code" href="../../dc/def/class_music_down_load_thread_abstract.html#a7753f3b1623a17364d8a922695c13a56">m_url</a>, m_savePath;</div>
 <div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="../../dc/def/class_music_down_load_thread_abstract.html#aef8485ed356e8fafc5ffb476220437f7">   81</a></span>&#160;    <a class="code" href="../../df/dbc/namespace_music_object.html#adbfc8a91e330beadb8b20cbf1204dc28">MusicObject::DownloadType</a> <a class="code" href="../../dc/def/class_music_down_load_thread_abstract.html#aef8485ed356e8fafc5ffb476220437f7">m_downloadType</a>;</div>
 <div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="../../dc/def/class_music_down_load_thread_abstract.html#abfc3610edc3b94046ecde66ef766e5bf">   82</a></span>&#160;    qint64 m_hasReceived, m_currentReceived, <a class="code" href="../../dc/def/class_music_down_load_thread_abstract.html#abfc3610edc3b94046ecde66ef766e5bf">m_totalSize</a>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="../../dc/def/class_music_down_load_thread_abstract.html#a776330bc99b7420107a1cf8d395ee1bb">   83</a></span>&#160;    QTimer <a class="code" href="../../dc/def/class_music_down_load_thread_abstract.html#a776330bc99b7420107a1cf8d395ee1bb">m_timer</a>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif // MUSICDOWNLOADTHREADABSTRACT_H</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="../../dc/def/class_music_down_load_thread_abstract.html#a38a09c5109a20da5faa106c7c80ee57e">   83</a></span>&#160;    QTimer <a class="code" href="../../dc/def/class_music_down_load_thread_abstract.html#a38a09c5109a20da5faa106c7c80ee57e">m_speedTimer</a>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif // MUSICDOWNLOADTHREADABSTRACT_H</span></div>
+<div class="ttc" id="class_music_down_load_thread_abstract_html_a38a09c5109a20da5faa106c7c80ee57e"><div class="ttname"><a href="../../dc/def/class_music_down_load_thread_abstract.html#a38a09c5109a20da5faa106c7c80ee57e">MusicDownLoadThreadAbstract::m_speedTimer</a></div><div class="ttdeci">QTimer m_speedTimer</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00083">musicdownloadthreadabstract.h:83</a></div></div>
 <div class="ttc" id="class_music_network_abstract_html"><div class="ttname"><a href="../../d5/de6/class_music_network_abstract.html">MusicNetworkAbstract</a></div><div class="ttdoc">The class of abstract downloading data. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dbf/musicnetworkabstract_8h_source.html#l00031">musicnetworkabstract.h:31</a></div></div>
 <div class="ttc" id="class_music_down_load_thread_abstract_html"><div class="ttname"><a href="../../dc/def/class_music_down_load_thread_abstract.html">MusicDownLoadThreadAbstract</a></div><div class="ttdoc">The class of abstract downloading data. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00030">musicdownloadthreadabstract.h:30</a></div></div>
 <div class="ttc" id="musicnetworkabstract_8h_html"><div class="ttname"><a href="../../d1/dbf/musicnetworkabstract_8h.html">musicnetworkabstract.h</a></div></div>
@@ -152,11 +152,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_down_load_thread_abstract_html_a7753f3b1623a17364d8a922695c13a56"><div class="ttname"><a href="../../dc/def/class_music_down_load_thread_abstract.html#a7753f3b1623a17364d8a922695c13a56">MusicDownLoadThreadAbstract::m_url</a></div><div class="ttdeci">QString m_url</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00080">musicdownloadthreadabstract.h:80</a></div></div>
 <div class="ttc" id="namespace_music_object_html_a739090443491193d34585a1956fa3daca0a95e1345ae0e36c86067c5cc867f809"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#a739090443491193d34585a1956fa3daca0a95e1345ae0e36c86067c5cc867f809">MusicObject::NetworkError</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/de0/musicnetworkdefines_8h_source.html#l00031">musicnetworkdefines.h:31</a></div></div>
 <div class="ttc" id="namespace_music_object_html_adbfc8a91e330beadb8b20cbf1204dc28"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#adbfc8a91e330beadb8b20cbf1204dc28">MusicObject::DownloadType</a></div><div class="ttdeci">DownloadType</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de0/musicnetworkdefines_8h_source.html#l00035">musicnetworkdefines.h:35</a></div></div>
-<div class="ttc" id="class_music_down_load_thread_abstract_html_a776330bc99b7420107a1cf8d395ee1bb"><div class="ttname"><a href="../../dc/def/class_music_down_load_thread_abstract.html#a776330bc99b7420107a1cf8d395ee1bb">MusicDownLoadThreadAbstract::m_timer</a></div><div class="ttdeci">QTimer m_timer</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d4e/musicdownloadthreadabstract_8h_source.html#l00083">musicdownloadthreadabstract.h:83</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 25 2020 12:46:28 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 6 2020 15:35:45 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

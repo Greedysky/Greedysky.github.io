@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.12.0.0</span>
+   &#160;<span id="projectnumber">2.13.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -181,8 +181,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <a class="code" href="../../dc/d95/class_music_time.html">MusicTime</a>  operator* (<span class="keyword">const</span> <span class="keywordtype">int</span> other);</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <a class="code" href="../../dc/d95/class_music_time.html">MusicTime</a>  operator/ (<span class="keyword">const</span> <span class="keywordtype">int</span> other);</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keywordtype">bool</span> operator== (<span class="keyword">const</span> <a class="code" href="../../dc/d95/class_music_time.html">MusicTime</a> &amp;other) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordtype">bool</span> operator!= (<span class="keyword">const</span> <a class="code" href="../../dc/d95/class_music_time.html">MusicTime</a> &amp;other) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../da/de4/volume_8h.html#a4ab818c7410e21e8fb8c3adc3e13b33a">operator== </a>(<span class="keyword">const</span> <a class="code" href="../../dc/d95/class_music_time.html">MusicTime</a> &amp;other) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../da/de4/volume_8h.html#a28f47c6fd17fd2ea480bff4d41627d78">operator!= </a>(<span class="keyword">const</span> <a class="code" href="../../dc/d95/class_music_time.html">MusicTime</a> &amp;other) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
 <div class="line"><a name="l00207"></a><span class="lineno"><a class="line" href="../../dc/d95/class_music_time.html#a7ad20cdaf34b13a38aeb3e736fc9aa7d">  207</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">friend</span> QDataStream&amp; <a class="code" href="../../dc/d95/class_music_time.html#a7ad20cdaf34b13a38aeb3e736fc9aa7d">operator&lt;&lt;</a>(QDataStream &amp;<a class="code" href="../../d2/db7/ioapi_8h.html#a4ed0a20697a8c37f8af699a8ec6d76a8">stream</a>, <span class="keyword">const</span> <a class="code" href="../../dc/d95/class_music_time.html">MusicTime</a> &amp;other)</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    {</div>
@@ -213,6 +213,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="preprocessor">#endif // MUSICTIME_H</span></div>
 <div class="ttc" id="class_music_time_html_a705165887036cb7d1c07fe4eb684a69b"><div class="ttname"><a href="../../dc/d95/class_music_time.html#a705165887036cb7d1c07fe4eb684a69b">MusicTime::setGreedy</a></div><div class="ttdeci">void setGreedy(bool mode)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dcc/musictime_8h_source.html#l00080">musictime.h:80</a></div></div>
+<div class="ttc" id="volume_8h_html_a4ab818c7410e21e8fb8c3adc3e13b33a"><div class="ttname"><a href="../../da/de4/volume_8h.html#a4ab818c7410e21e8fb8c3adc3e13b33a">operator==</a></div><div class="ttdeci">bool operator==(const VolumeSettings &amp;v1, const VolumeSettings &amp;v2)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de4/volume_8h_source.html#l00038">volume.h:38</a></div></div>
 <div class="ttc" id="class_music_time_html_a3dbf612d8558a56a816bea3026e8587b"><div class="ttname"><a href="../../dc/d95/class_music_time.html#a3dbf612d8558a56a816bea3026e8587b">MusicTime::m_greedyMode</a></div><div class="ttdeci">bool m_greedyMode</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dcc/musictime_8h_source.html#l00236">musictime.h:236</a></div></div>
 <div class="ttc" id="class_music_time_html_a5cea43fb39832664ec82a82bd4ec374e"><div class="ttname"><a href="../../dc/d95/class_music_time.html#a5cea43fb39832664ec82a82bd4ec374e">MusicTime::m_sec</a></div><div class="ttdeci">int m_sec</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dcc/musictime_8h_source.html#l00239">musictime.h:239</a></div></div>
 <div class="ttc" id="class_music_time_html_ad937e64c9b84c7a8a8bc7b1fc214feeb"><div class="ttname"><a href="../../dc/d95/class_music_time.html#ad937e64c9b84c7a8a8bc7b1fc214feeb">MusicTime::setMinute</a></div><div class="ttdeci">void setMinute(int min)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dcc/musictime_8h_source.html#l00097">musictime.h:97</a></div></div>
@@ -234,6 +235,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="musicglobaldefine_8h_html"><div class="ttname"><a href="../../d6/d9b/musicglobaldefine_8h.html">musicglobaldefine.h</a></div></div>
 <div class="ttc" id="class_music_time_html_a1ded125b70d851f1bb9d18b4d99b7850"><div class="ttname"><a href="../../dc/d95/class_music_time.html#a1ded125b70d851f1bb9d18b4d99b7850">MusicTime::m_hour</a></div><div class="ttdeci">int m_hour</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dcc/musictime_8h_source.html#l00238">musictime.h:238</a></div></div>
 <div class="ttc" id="class_music_time_html_a455712e30c7544f2d6d5b2c29092bdb3"><div class="ttname"><a href="../../dc/d95/class_music_time.html#a455712e30c7544f2d6d5b2c29092bdb3">MusicTime::setMillionSecond</a></div><div class="ttdeci">void setMillionSecond(int msec)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dcc/musictime_8h_source.html#l00105">musictime.h:105</a></div></div>
+<div class="ttc" id="volume_8h_html_a28f47c6fd17fd2ea480bff4d41627d78"><div class="ttname"><a href="../../da/de4/volume_8h.html#a28f47c6fd17fd2ea480bff4d41627d78">operator!=</a></div><div class="ttdeci">bool operator!=(const VolumeSettings &amp;v1, const VolumeSettings &amp;v2)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de4/volume_8h_source.html#l00043">volume.h:43</a></div></div>
 <div class="ttc" id="ioapi_8h_html_a7e43d41c2fe013a373b540cba02505cf"><div class="ttname"><a href="../../d2/db7/ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a></div><div class="ttdeci">const char int mode</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/db7/ioapi_8h_source.html#l00135">ioapi.h:135</a></div></div>
 <div class="ttc" id="class_music_time_html_aed4a7572d8bd8f2a957de1d699cfcad8"><div class="ttname"><a href="../../dc/d95/class_music_time.html#aed4a7572d8bd8f2a957de1d699cfcad8">MusicTime::getSecond</a></div><div class="ttdeci">int getSecond() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dcc/musictime_8h_source.html#l00121">musictime.h:121</a></div></div>
 <div class="ttc" id="class_music_time_html_a455c734a0fb0afbabc234a3a3c935ea7"><div class="ttname"><a href="../../dc/d95/class_music_time.html#a455c734a0fb0afbabc234a3a3c935ea7">MusicTime::setType</a></div><div class="ttdeci">void setType(Type type)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dcc/musictime_8h_source.html#l00071">musictime.h:71</a></div></div>
@@ -244,7 +246,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 25 2020 12:46:26 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 6 2020 15:35:45 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

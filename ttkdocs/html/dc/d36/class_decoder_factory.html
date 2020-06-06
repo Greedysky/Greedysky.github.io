@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.12.0.0</span>
+   &#160;<span id="projectnumber">2.13.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -82,32 +82,20 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <p>Input plugin interface (decoder factory).  
  <a href="../../dc/d36/class_decoder_factory.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="../../d1/d0f/_qt4_2decoderfactory_8h_source.html">decoderfactory.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../d8/db3/decoderfactory_8h_source.html">decoderfactory.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a262138497dc6a14e0144d31680927e9f"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d36/class_decoder_factory.html#a262138497dc6a14e0144d31680927e9f">~DecoderFactory</a> ()</td></tr>
 <tr class="separator:a262138497dc6a14e0144d31680927e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad71f0809a8471ef7d09c56a6e161fc22"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d36/class_decoder_factory.html#ad71f0809a8471ef7d09c56a6e161fc22">canDecode</a> (QIODevice *d) <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> =0</td></tr>
-<tr class="separator:ad71f0809a8471ef7d09c56a6e161fc22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd5f184037bf0c66ef5ccd8f0f04703f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../da/dcb/class_decoder_properties.html">DecoderProperties</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d36/class_decoder_factory.html#abd5f184037bf0c66ef5ccd8f0f04703f">properties</a> () <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> =0</td></tr>
-<tr class="separator:abd5f184037bf0c66ef5ccd8f0f04703f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe8a59ca408347f319c264ae0789fff5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../da/d56/class_decoder.html">Decoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d36/class_decoder_factory.html#abe8a59ca408347f319c264ae0789fff5">create</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;path, QIODevice *input=0)=0</td></tr>
-<tr class="separator:abe8a59ca408347f319c264ae0789fff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c07afde4ce2b7b050408ec904aadaa7"><td class="memItemLeft" align="right" valign="top">virtual QList&lt; <a class="el" href="../../d1/dc5/class_track_info.html">TrackInfo</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d36/class_decoder_factory.html#a2c07afde4ce2b7b050408ec904aadaa7">createPlayList</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;fileName, TrackInfo::Parts parts, QStringList *ignoredPaths)=0</td></tr>
-<tr class="separator:a2c07afde4ce2b7b050408ec904aadaa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade246d20fd4227cb55f12d53d1cc3534"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/dff/class_meta_data_model.html">MetaDataModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d36/class_decoder_factory.html#ade246d20fd4227cb55f12d53d1cc3534">createMetaDataModel</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;path, bool readOnly)=0</td></tr>
-<tr class="separator:ade246d20fd4227cb55f12d53d1cc3534"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a262138497dc6a14e0144d31680927e9f"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d36/class_decoder_factory.html#a262138497dc6a14e0144d31680927e9f">~DecoderFactory</a> ()</td></tr>
-<tr class="separator:a262138497dc6a14e0144d31680927e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad71f0809a8471ef7d09c56a6e161fc22"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d36/class_decoder_factory.html#ad71f0809a8471ef7d09c56a6e161fc22">canDecode</a> (QIODevice *d) <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> =0</td></tr>
-<tr class="separator:ad71f0809a8471ef7d09c56a6e161fc22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd5f184037bf0c66ef5ccd8f0f04703f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../da/dcb/class_decoder_properties.html">DecoderProperties</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d36/class_decoder_factory.html#abd5f184037bf0c66ef5ccd8f0f04703f">properties</a> () <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> =0</td></tr>
+<tr class="memitem:a4065fac0b2c7ef7f6d68712f594e70cd"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d36/class_decoder_factory.html#a4065fac0b2c7ef7f6d68712f594e70cd">canDecode</a> (QIODevice *input) <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> =0</td></tr>
+<tr class="separator:a4065fac0b2c7ef7f6d68712f594e70cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd5f184037bf0c66ef5ccd8f0f04703f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d33/struct_decoder_properties.html">DecoderProperties</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d36/class_decoder_factory.html#abd5f184037bf0c66ef5ccd8f0f04703f">properties</a> () <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> =0</td></tr>
 <tr class="separator:abd5f184037bf0c66ef5ccd8f0f04703f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a3dbfcf1b9b0fc5d9515dd839d31e82"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../da/d56/class_decoder.html">Decoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d36/class_decoder_factory.html#a5a3dbfcf1b9b0fc5d9515dd839d31e82">create</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;path, QIODevice *input=nullptr)=0</td></tr>
 <tr class="separator:a5a3dbfcf1b9b0fc5d9515dd839d31e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c07afde4ce2b7b050408ec904aadaa7"><td class="memItemLeft" align="right" valign="top">virtual QList&lt; <a class="el" href="../../d1/dc5/class_track_info.html">TrackInfo</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d36/class_decoder_factory.html#a2c07afde4ce2b7b050408ec904aadaa7">createPlayList</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;fileName, TrackInfo::Parts parts, QStringList *ignoredPaths)=0</td></tr>
-<tr class="separator:a2c07afde4ce2b7b050408ec904aadaa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5de415d074f61c423ae98f26b45cb45"><td class="memItemLeft" align="right" valign="top">virtual QList&lt; <a class="el" href="../../d1/dc5/class_track_info.html">TrackInfo</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d36/class_decoder_factory.html#af5de415d074f61c423ae98f26b45cb45">createPlayList</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;fileName, TrackInfo::Parts parts, QStringList *ignoredPaths)=0</td></tr>
+<tr class="separator:af5de415d074f61c423ae98f26b45cb45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade246d20fd4227cb55f12d53d1cc3534"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/dff/class_meta_data_model.html">MetaDataModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d36/class_decoder_factory.html#ade246d20fd4227cb55f12d53d1cc3534">createMetaDataModel</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;path, bool readOnly)=0</td></tr>
 <tr class="separator:ade246d20fd4227cb55f12d53d1cc3534"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -115,7 +103,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Input plugin interface (decoder factory). </p>
 <dl class="section author"><dt>Author</dt><dd>Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'+'@ya'+'.r'+'u'; return false;">forko<span style="display: none;">.nosp@m.</span>tov0<span style="display: none;">.nosp@m.</span>2@ya.<span style="display: none;">.nosp@m.</span>ru</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d1/d0f/_qt4_2decoderfactory_8h_source.html#l00062">62</a> of file <a class="el" href="../../d1/d0f/_qt4_2decoderfactory_8h_source.html">decoderfactory.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/db3/decoderfactory_8h_source.html#l00052">52</a> of file <a class="el" href="../../d8/db3/decoderfactory_8h_source.html">decoderfactory.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a262138497dc6a14e0144d31680927e9f"></a>
 <div class="memitem">
@@ -139,38 +127,12 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Object destructor. </p>
 
-<p>Definition at line <a class="el" href="../../d1/d0f/_qt4_2decoderfactory_8h_source.html#l00068">68</a> of file <a class="el" href="../../d1/d0f/_qt4_2decoderfactory_8h_source.html">decoderfactory.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a262138497dc6a14e0144d31680927e9f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual DecoderFactory::~DecoderFactory </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Object destructor. </p>
-
-<p>Definition at line <a class="el" href="../../d1/dab/_qt5_2decoderfactory_8h_source.html#l00068">68</a> of file <a class="el" href="../../d1/dab/_qt5_2decoderfactory_8h_source.html">decoderfactory.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/db3/decoderfactory_8h_source.html#l00058">58</a> of file <a class="el" href="../../d8/db3/decoderfactory_8h_source.html">decoderfactory.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ad71f0809a8471ef7d09c56a6e161fc22"></a>
+<a class="anchor" id="a4065fac0b2c7ef7f6d68712f594e70cd"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -181,32 +143,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual bool DecoderFactory::canDecode </td>
           <td>(</td>
           <td class="paramtype">QIODevice *&#160;</td>
-          <td class="paramname"><em>d</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns <b>true</b> if plugin can decode data provided by <b>d</b>, otherwise returns <b>false</b> </p>
-
-</div>
-</div>
-<a class="anchor" id="ad71f0809a8471ef7d09c56a6e161fc22"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool DecoderFactory::canDecode </td>
-          <td>(</td>
-          <td class="paramtype">QIODevice *&#160;</td>
-          <td class="paramname"><em>d</em></td><td>)</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -238,47 +175,6 @@ Public Member Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">QIODevice *&#160;</td>
           <td class="paramname"><em>input</em> = <code>nullptr</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Creates decoder object. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">path</td><td>File path </td></tr>
-    <tr><td class="paramname">input</td><td>Input data (if required) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="abe8a59ca408347f319c264ae0789fff5"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="../../da/d56/class_decoder.html">Decoder</a>* DecoderFactory::create </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;&#160;</td>
-          <td class="paramname"><em>path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">QIODevice *&#160;</td>
-          <td class="paramname"><em>input</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -346,7 +242,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ade246d20fd4227cb55f12d53d1cc3534"></a>
+<a class="anchor" id="af5de415d074f61c423ae98f26b45cb45"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -354,97 +250,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="../../df/dff/class_meta_data_model.html">MetaDataModel</a>* DecoderFactory::createMetaDataModel </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;&#160;</td>
-          <td class="paramname"><em>path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>readOnly</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Creats metadata object, which provides full access to file tags. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">path</td><td>File path. </td></tr>
-    <tr><td class="paramname">readOnly</td><td>Open file in read-only mode (<b>true</b> - enabled, <b>false</b> - disable). </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../df/dff/class_meta_data_model.html" title="The MetaDataModel is the base interface class of metadata access. ">MetaDataModel</a> pointer. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a2c07afde4ce2b7b050408ec904aadaa7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual QList&lt;<a class="el" href="../../d1/dc5/class_track_info.html">TrackInfo</a> *&gt; DecoderFactory::createPlayList </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;&#160;</td>
-          <td class="paramname"><em>fileName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">TrackInfo::Parts&#160;</td>
-          <td class="paramname"><em>parts</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">QStringList *&#160;</td>
-          <td class="paramname"><em>ignoredPaths</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Extracts metadata and audio information from file <b>path</b> and returns a list of <b><a class="el" href="../../d1/dc5/class_track_info.html" title="The TrackInfo class stores metadata and other information about track. ">TrackInfo</a></b> items. One file may contain several playlist items (for example: cda disk or flac with embedded cue) </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fileName</td><td>File path. </td></tr>
-    <tr><td class="paramname">parts</td><td>parts of metadata which should be extracted from file. </td></tr>
-    <tr><td class="paramname">ignoredPaths</td><td>Pointer to a list of the files which should be ignored by the recursive search (useful to exclude cue data files from playlist). </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a2c07afde4ce2b7b050408ec904aadaa7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual QList&lt;<a class="el" href="../../d1/dc5/class_track_info.html">TrackInfo</a> *&gt; DecoderFactory::createPlayList </td>
+          <td class="memname">virtual QList&lt;<a class="el" href="../../d1/dc5/class_track_info.html">TrackInfo</a>*&gt; DecoderFactory::createPlayList </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;&#160;</td>
           <td class="paramname"><em>fileName</em>, </td>
@@ -494,7 +300,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="../../da/dcb/class_decoder_properties.html">DecoderProperties</a> DecoderFactory::properties </td>
+          <td class="memname">virtual <a class="el" href="../../d9/d33/struct_decoder_properties.html">DecoderProperties</a> DecoderFactory::properties </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -512,37 +318,13 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abd5f184037bf0c66ef5ccd8f0f04703f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="../../da/dcb/class_decoder_properties.html">DecoderProperties</a> DecoderFactory::properties </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns decoder plugin properties. </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>TTKExtra/Qt4/<a class="el" href="../../d1/d0f/_qt4_2decoderfactory_8h_source.html">decoderfactory.h</a></li>
+<li>TTKExtra/<a class="el" href="../../d8/db3/decoderfactory_8h_source.html">decoderfactory.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 25 2020 12:47:04 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 6 2020 15:36:17 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.12.0.0</span>
+   &#160;<span id="projectnumber">2.13.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -75,7 +75,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">musicsinglemanager.h File Reference</div>  </div>
 </div><!--header-->
@@ -94,8 +95,6 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ac50b70a9cdf35f456a5f54d133626355"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5e/musicsinglemanager_8h.html#ac50b70a9cdf35f456a5f54d133626355">M_SINGLE_MANAGER_PTR</a>&#160;&#160;&#160;(<a class="el" href="../../d4/df6/class_music_singleton.html">MusicSingleton</a>&lt;<a class="el" href="../../d3/d42/class_music_single_manager.html">MusicSingleManager</a>&gt;::createInstance())</td></tr>
-<tr class="separator:ac50b70a9cdf35f456a5f54d133626355"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51144ac2469f85558007dda9189e3070"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5e/musicsinglemanager_8h.html#a51144ac2469f85558007dda9189e3070">M_SINGLE_MANAGER_WIDGET_NEW2</a>(<a class="el" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>,  parent)</td></tr>
 <tr class="separator:a51144ac2469f85558007dda9189e3070"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8663e90c66fe7a927ec7db99e16edb7d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5e/musicsinglemanager_8h.html#a8663e90c66fe7a927ec7db99e16edb7d">M_SINGLE_MANAGER_WIDGET_NEW</a>(<a class="el" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)&#160;&#160;&#160;<a class="el" href="../../d4/d5e/musicsinglemanager_8h.html#a51144ac2469f85558007dda9189e3070">M_SINGLE_MANAGER_WIDGET_NEW2</a>(<a class="el" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, <a class="el" href="../../db/def/class_music_application.html#ae136c193d051f02d052da8ac7951c69a">MusicApplication::instance</a>())</td></tr>
@@ -120,6 +119,13 @@ Macros</h2></td></tr>
 <tr class="separator:a80e99df70de184133393abe8f92128f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8578885a373cffd3b186791ea7a9a0ed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5e/musicsinglemanager_8h.html#a8578885a373cffd3b186791ea7a9a0ed">M_SINGLE_MANAGER_CORE_CLASS</a>(<a class="el" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)&#160;&#160;&#160;<a class="el" href="../../d4/d5e/musicsinglemanager_8h.html#a80e99df70de184133393abe8f92128f3">M_SINGLE_MANAGER_CORE_CLASS2</a>(<a class="el" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, nullptr)</td></tr>
 <tr class="separator:a8578885a373cffd3b186791ea7a9a0ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac50b70a9cdf35f456a5f54d133626355"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5e/musicsinglemanager_8h.html#ac50b70a9cdf35f456a5f54d133626355">M_SINGLE_MANAGER_PTR</a>&#160;&#160;&#160;<a class="el" href="../../de/daf/musicsingleton_8cpp.html#a468b94a11db94be2eae001cfd7ccf761">GetMusicSingleManager</a>()</td></tr>
+<tr class="separator:ac50b70a9cdf35f456a5f54d133626355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ad8d3fccb242c5e1e858f30389899c9a2"><td class="memItemLeft" align="right" valign="top">MUSIC_CORE_EXPORT <a class="el" href="../../d3/d42/class_music_single_manager.html">MusicSingleManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5e/musicsinglemanager_8h.html#ad8d3fccb242c5e1e858f30389899c9a2">GetMusicSingleManager</a> ()</td></tr>
+<tr class="separator:ad8d3fccb242c5e1e858f30389899c9a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a8578885a373cffd3b186791ea7a9a0ed"></a>
@@ -136,7 +142,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html#l00090">90</a> of file <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html">musicsinglemanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html#l00089">89</a> of file <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html">musicsinglemanager.h</a>.</p>
 
 </div>
 </div>
@@ -167,10 +173,10 @@ Macros</h2></td></tr>
 <div class="line"><a class="code" href="../../d4/d5e/musicsinglemanager_8h.html#adbfa4d24bf05eec049aeaa636694c755">    M_SINGLE_MANAGER_CORE_NEW2</a>(<a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, parent)                            \</div>
 <div class="line">    w-&gt;start();                                                         \</div>
 <div class="line">}</div>
-<div class="ttc" id="musicsinglemanager_8h_html_adbfa4d24bf05eec049aeaa636694c755"><div class="ttname"><a href="../../d4/d5e/musicsinglemanager_8h.html#adbfa4d24bf05eec049aeaa636694c755">M_SINGLE_MANAGER_CORE_NEW2</a></div><div class="ttdeci">#define M_SINGLE_MANAGER_CORE_NEW2(name, parent)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d5e/musicsinglemanager_8h_source.html#l00073">musicsinglemanager.h:73</a></div></div>
+<div class="ttc" id="musicsinglemanager_8h_html_adbfa4d24bf05eec049aeaa636694c755"><div class="ttname"><a href="../../d4/d5e/musicsinglemanager_8h.html#adbfa4d24bf05eec049aeaa636694c755">M_SINGLE_MANAGER_CORE_NEW2</a></div><div class="ttdeci">#define M_SINGLE_MANAGER_CORE_NEW2(name, parent)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d5e/musicsinglemanager_8h_source.html#l00072">musicsinglemanager.h:72</a></div></div>
 <div class="ttc" id="http__parser_8c_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d70/http__parser_8c_source.html#l00458">http_parser.c:458</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html#l00084">84</a> of file <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html">musicsinglemanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html#l00083">83</a> of file <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html">musicsinglemanager.h</a>.</p>
 
 </div>
 </div>
@@ -188,7 +194,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html#l00081">81</a> of file <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html">musicsinglemanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html#l00080">80</a> of file <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html">musicsinglemanager.h</a>.</p>
 
 </div>
 </div>
@@ -222,13 +228,13 @@ Macros</h2></td></tr>
 <div class="line">    }                                                                   <a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">\</a></div>
 <div class="line"><a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">    name</a> *w = <a class="code" href="../../df/d7f/ttkglobal_8h.html#afad224d36cc24240d9d006a42145c953">TTKStatic_cast</a>(<a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>*, manager-&gt;<a class="code" href="../../d3/d42/class_music_single_manager.html#a84502677f03d2cb2871f4a6f675e23c6">object</a>(#<a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>));</div>
 <div class="ttc" id="class_music_single_manager_html_accedfcbe07e9bb7e71517f49766c7157"><div class="ttname"><a href="../../d3/d42/class_music_single_manager.html#accedfcbe07e9bb7e71517f49766c7157">MusicSingleManager::contains</a></div><div class="ttdeci">bool contains(const QString &amp;name) const </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4f/musicsinglemanager_8cpp_source.html#l00023">musicsinglemanager.cpp:23</a></div></div>
-<div class="ttc" id="class_music_single_manager_html"><div class="ttname"><a href="../../d3/d42/class_music_single_manager.html">MusicSingleManager</a></div><div class="ttdoc">The class of the single object manager. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d5e/musicsinglemanager_8h_source.html#l00098">musicsinglemanager.h:98</a></div></div>
+<div class="ttc" id="class_music_single_manager_html"><div class="ttname"><a href="../../d3/d42/class_music_single_manager.html">MusicSingleManager</a></div><div class="ttdoc">The class of the single object manager. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d5e/musicsinglemanager_8h_source.html#l00097">musicsinglemanager.h:97</a></div></div>
 <div class="ttc" id="class_music_single_manager_html_a84502677f03d2cb2871f4a6f675e23c6"><div class="ttname"><a href="../../d3/d42/class_music_single_manager.html#a84502677f03d2cb2871f4a6f675e23c6">MusicSingleManager::object</a></div><div class="ttdeci">QObject * object(const QString &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4f/musicsinglemanager_8cpp_source.html#l00018">musicsinglemanager.cpp:18</a></div></div>
 <div class="ttc" id="ttkglobal_8h_html_afad224d36cc24240d9d006a42145c953"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#afad224d36cc24240d9d006a42145c953">TTKStatic_cast</a></div><div class="ttdeci">#define TTKStatic_cast(x, y)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00076">ttkglobal.h:76</a></div></div>
 <div class="ttc" id="http__parser_8c_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d70/http__parser_8c_source.html#l00458">http_parser.c:458</a></div></div>
-<div class="ttc" id="musicsinglemanager_8h_html_ac50b70a9cdf35f456a5f54d133626355"><div class="ttname"><a href="../../d4/d5e/musicsinglemanager_8h.html#ac50b70a9cdf35f456a5f54d133626355">M_SINGLE_MANAGER_PTR</a></div><div class="ttdeci">#define M_SINGLE_MANAGER_PTR</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d5e/musicsinglemanager_8h_source.html#l00026">musicsinglemanager.h:26</a></div></div>
+<div class="ttc" id="musicsinglemanager_8h_html_ac50b70a9cdf35f456a5f54d133626355"><div class="ttname"><a href="../../d4/d5e/musicsinglemanager_8h.html#ac50b70a9cdf35f456a5f54d133626355">M_SINGLE_MANAGER_PTR</a></div><div class="ttdeci">#define M_SINGLE_MANAGER_PTR</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d5e/musicsinglemanager_8h_source.html#l00130">musicsinglemanager.h:130</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html#l00073">73</a> of file <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html">musicsinglemanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html#l00072">72</a> of file <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html">musicsinglemanager.h</a>.</p>
 
 </div>
 </div>
@@ -246,7 +252,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html#l00070">70</a> of file <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html">musicsinglemanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html#l00069">69</a> of file <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html">musicsinglemanager.h</a>.</p>
 
 </div>
 </div>
@@ -281,10 +287,10 @@ Macros</h2></td></tr>
 <div class="line">}</div>
 <div class="ttc" id="namespace_music_utils_1_1_widget_html_acbe01d0d6cc66b8900c1b89e3ed31845"><div class="ttname"><a href="../../d2/d69/namespace_music_utils_1_1_widget.html#acbe01d0d6cc66b8900c1b89e3ed31845">MusicUtils::Widget::windowScreenGeometry</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT QRect windowScreenGeometry(int index=0)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d90/musicwidgetutils_8cpp_source.html#l00074">musicwidgetutils.cpp:74</a></div></div>
 <div class="ttc" id="http__parser_8c_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d70/http__parser_8c_source.html#l00458">http_parser.c:458</a></div></div>
-<div class="ttc" id="musicsinglemanager_8h_html_a9b31b82df7e79721e9a236e067051572"><div class="ttname"><a href="../../d4/d5e/musicsinglemanager_8h.html#a9b31b82df7e79721e9a236e067051572">M_SINGLE_MANAGER_DIALOG_NEW2</a></div><div class="ttdeci">#define M_SINGLE_MANAGER_DIALOG_NEW2(name, parent)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d5e/musicsinglemanager_8h_source.html#l00051">musicsinglemanager.h:51</a></div></div>
+<div class="ttc" id="musicsinglemanager_8h_html_a9b31b82df7e79721e9a236e067051572"><div class="ttname"><a href="../../d4/d5e/musicsinglemanager_8h.html#a9b31b82df7e79721e9a236e067051572">M_SINGLE_MANAGER_DIALOG_NEW2</a></div><div class="ttdeci">#define M_SINGLE_MANAGER_DIALOG_NEW2(name, parent)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d5e/musicsinglemanager_8h_source.html#l00050">musicsinglemanager.h:50</a></div></div>
 <div class="ttc" id="zconf_8h_html_a2c212835823e3c54a8ab6d95c652660e"><div class="ttname"><a href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a></div><div class="ttdeci">#define const</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d95/zconf_8h_source.html#l00230">zconf.h:230</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html#l00062">62</a> of file <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html">musicsinglemanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html#l00061">61</a> of file <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html">musicsinglemanager.h</a>.</p>
 
 </div>
 </div>
@@ -302,7 +308,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html#l00059">59</a> of file <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html">musicsinglemanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html#l00058">58</a> of file <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html">musicsinglemanager.h</a>.</p>
 
 </div>
 </div>
@@ -336,13 +342,13 @@ Macros</h2></td></tr>
 <div class="line">    }                                                                   <a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">\</a></div>
 <div class="line"><a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">    name</a> *w = <a class="code" href="../../df/d7f/ttkglobal_8h.html#afad224d36cc24240d9d006a42145c953">TTKStatic_cast</a>(<a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>*, manager-&gt;<a class="code" href="../../d3/d42/class_music_single_manager.html#a84502677f03d2cb2871f4a6f675e23c6">object</a>(#<a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>));</div>
 <div class="ttc" id="class_music_single_manager_html_accedfcbe07e9bb7e71517f49766c7157"><div class="ttname"><a href="../../d3/d42/class_music_single_manager.html#accedfcbe07e9bb7e71517f49766c7157">MusicSingleManager::contains</a></div><div class="ttdeci">bool contains(const QString &amp;name) const </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4f/musicsinglemanager_8cpp_source.html#l00023">musicsinglemanager.cpp:23</a></div></div>
-<div class="ttc" id="class_music_single_manager_html"><div class="ttname"><a href="../../d3/d42/class_music_single_manager.html">MusicSingleManager</a></div><div class="ttdoc">The class of the single object manager. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d5e/musicsinglemanager_8h_source.html#l00098">musicsinglemanager.h:98</a></div></div>
+<div class="ttc" id="class_music_single_manager_html"><div class="ttname"><a href="../../d3/d42/class_music_single_manager.html">MusicSingleManager</a></div><div class="ttdoc">The class of the single object manager. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d5e/musicsinglemanager_8h_source.html#l00097">musicsinglemanager.h:97</a></div></div>
 <div class="ttc" id="class_music_single_manager_html_a84502677f03d2cb2871f4a6f675e23c6"><div class="ttname"><a href="../../d3/d42/class_music_single_manager.html#a84502677f03d2cb2871f4a6f675e23c6">MusicSingleManager::object</a></div><div class="ttdeci">QObject * object(const QString &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4f/musicsinglemanager_8cpp_source.html#l00018">musicsinglemanager.cpp:18</a></div></div>
 <div class="ttc" id="ttkglobal_8h_html_afad224d36cc24240d9d006a42145c953"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#afad224d36cc24240d9d006a42145c953">TTKStatic_cast</a></div><div class="ttdeci">#define TTKStatic_cast(x, y)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00076">ttkglobal.h:76</a></div></div>
 <div class="ttc" id="http__parser_8c_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d70/http__parser_8c_source.html#l00458">http_parser.c:458</a></div></div>
-<div class="ttc" id="musicsinglemanager_8h_html_ac50b70a9cdf35f456a5f54d133626355"><div class="ttname"><a href="../../d4/d5e/musicsinglemanager_8h.html#ac50b70a9cdf35f456a5f54d133626355">M_SINGLE_MANAGER_PTR</a></div><div class="ttdeci">#define M_SINGLE_MANAGER_PTR</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d5e/musicsinglemanager_8h_source.html#l00026">musicsinglemanager.h:26</a></div></div>
+<div class="ttc" id="musicsinglemanager_8h_html_ac50b70a9cdf35f456a5f54d133626355"><div class="ttname"><a href="../../d4/d5e/musicsinglemanager_8h.html#ac50b70a9cdf35f456a5f54d133626355">M_SINGLE_MANAGER_PTR</a></div><div class="ttdeci">#define M_SINGLE_MANAGER_PTR</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d5e/musicsinglemanager_8h_source.html#l00130">musicsinglemanager.h:130</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html#l00051">51</a> of file <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html">musicsinglemanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html#l00050">50</a> of file <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html">musicsinglemanager.h</a>.</p>
 
 </div>
 </div>
@@ -351,14 +357,14 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define M_SINGLE_MANAGER_PTR&#160;&#160;&#160;(<a class="el" href="../../d4/df6/class_music_singleton.html">MusicSingleton</a>&lt;<a class="el" href="../../d3/d42/class_music_single_manager.html">MusicSingleManager</a>&gt;::createInstance())</td>
+          <td class="memname">#define M_SINGLE_MANAGER_PTR&#160;&#160;&#160;<a class="el" href="../../de/daf/musicsingleton_8cpp.html#a468b94a11db94be2eae001cfd7ccf761">GetMusicSingleManager</a>()</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html#l00026">26</a> of file <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html">musicsinglemanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html#l00130">130</a> of file <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html">musicsinglemanager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d2/daa/musicsoundkmicrowidget_8cpp_source.html#l00308">MusicSoundKMicroWidget::closeEvent()</a>, <a class="el" href="../../db/dd8/musicaudiorecorderwidget_8cpp_source.html#l00095">MusicAudioRecorderWidget::~MusicAudioRecorderWidget()</a>, <a class="el" href="../../d3/d72/musicdesktopwallpaperwidget_8cpp_source.html#l00081">MusicDesktopWallpaperWidget::~MusicDesktopWallpaperWidget()</a>, <a class="el" href="../../d9/d47/musiclocalsongsmanagerwidget_8cpp_source.html#l00110">MusicLocalSongsManagerWidget::~MusicLocalSongsManagerWidget()</a>, <a class="el" href="../../dc/d86/musicnetworkconnectiontestwidget_8cpp_source.html#l00165">MusicNetworkConnectionTestWidget::~MusicNetworkConnectionTestWidget()</a>, <a class="el" href="../../dc/d09/musicspectrumwidget_8cpp_source.html#l00069">MusicSpectrumWidget::~MusicSpectrumWidget()</a>, <a class="el" href="../../d1/d33/musictoolsetswidget_8cpp_source.html#l00048">MusicToolSetsWidget::~MusicToolSetsWidget()</a>, and <a class="el" href="../../d8/d22/musicvolumegainwidget_8cpp_source.html#l00109">MusicVolumeGainWidget::~MusicVolumeGainWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../d2/daa/musicsoundkmicrowidget_8cpp_source.html#l00308">MusicSoundKMicroWidget::closeEvent()</a>, <a class="el" href="../../d3/d72/musicdesktopwallpaperwidget_8cpp_source.html#l00081">MusicDesktopWallpaperWidget::~MusicDesktopWallpaperWidget()</a>, <a class="el" href="../../d9/d47/musiclocalsongsmanagerwidget_8cpp_source.html#l00110">MusicLocalSongsManagerWidget::~MusicLocalSongsManagerWidget()</a>, <a class="el" href="../../dc/d86/musicnetworkconnectiontestwidget_8cpp_source.html#l00165">MusicNetworkConnectionTestWidget::~MusicNetworkConnectionTestWidget()</a>, <a class="el" href="../../dc/dcd/musicreplaygainwidget_8cpp_source.html#l00121">MusicReplayGainWidget::~MusicReplayGainWidget()</a>, <a class="el" href="../../dc/d09/musicspectrumwidget_8cpp_source.html#l00075">MusicSpectrumWidget::~MusicSpectrumWidget()</a>, and <a class="el" href="../../d1/d33/musictoolsetswidget_8cpp_source.html#l00047">MusicToolSetsWidget::~MusicToolSetsWidget()</a>.</p>
 
 </div>
 </div>
@@ -376,9 +382,9 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html#l00048">48</a> of file <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html">musicsinglemanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html#l00047">47</a> of file <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html">musicsinglemanager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d1/d33/musictoolsetswidget_8cpp_source.html#l00098">MusicToolSetsWidget::itemHasClicked()</a>, <a class="el" href="../../d5/d7d/musicapplicationobject_8cpp_source.html#l00302">MusicApplicationObject::musicSpectrumWidget()</a>, and <a class="el" href="../../db/da6/musictopareawidget_8cpp_source.html#l00441">MusicTopAreaWidget::musicStackedToolsWidgetChanged()</a>.</p>
+<p>Referenced by <a class="el" href="../../d1/d33/musictoolsetswidget_8cpp_source.html#l00096">MusicToolSetsWidget::itemHasClicked()</a>, <a class="el" href="../../d5/d7d/musicapplicationobject_8cpp_source.html#l00306">MusicApplicationObject::musicSpectrumWidget()</a>, and <a class="el" href="../../db/da6/musictopareawidget_8cpp_source.html#l00416">MusicTopAreaWidget::musicStackedToolsWidgetChanged()</a>.</p>
 
 </div>
 </div>
@@ -414,12 +420,12 @@ Macros</h2></td></tr>
 <div class="line">}</div>
 <div class="ttc" id="namespace_music_utils_1_1_widget_html_acbe01d0d6cc66b8900c1b89e3ed31845"><div class="ttname"><a href="../../d2/d69/namespace_music_utils_1_1_widget.html#acbe01d0d6cc66b8900c1b89e3ed31845">MusicUtils::Widget::windowScreenGeometry</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT QRect windowScreenGeometry(int index=0)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d90/musicwidgetutils_8cpp_source.html#l00074">musicwidgetutils.cpp:74</a></div></div>
 <div class="ttc" id="http__parser_8c_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d70/http__parser_8c_source.html#l00458">http_parser.c:458</a></div></div>
-<div class="ttc" id="musicsinglemanager_8h_html_a51144ac2469f85558007dda9189e3070"><div class="ttname"><a href="../../d4/d5e/musicsinglemanager_8h.html#a51144ac2469f85558007dda9189e3070">M_SINGLE_MANAGER_WIDGET_NEW2</a></div><div class="ttdeci">#define M_SINGLE_MANAGER_WIDGET_NEW2(name, parent)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d5e/musicsinglemanager_8h_source.html#l00028">musicsinglemanager.h:28</a></div></div>
+<div class="ttc" id="musicsinglemanager_8h_html_a51144ac2469f85558007dda9189e3070"><div class="ttname"><a href="../../d4/d5e/musicsinglemanager_8h.html#a51144ac2469f85558007dda9189e3070">M_SINGLE_MANAGER_WIDGET_NEW2</a></div><div class="ttdeci">#define M_SINGLE_MANAGER_WIDGET_NEW2(name, parent)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d5e/musicsinglemanager_8h_source.html#l00027">musicsinglemanager.h:27</a></div></div>
 <div class="ttc" id="zconf_8h_html_a2c212835823e3c54a8ab6d95c652660e"><div class="ttname"><a href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a></div><div class="ttdeci">#define const</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d95/zconf_8h_source.html#l00230">zconf.h:230</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html#l00039">39</a> of file <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html">musicsinglemanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html#l00038">38</a> of file <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html">musicsinglemanager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d2c/musicsettingwidget_8cpp_source.html#l00500">MusicSettingWidget::checkNetworkConnection()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d2c/musicsettingwidget_8cpp_source.html#l00507">MusicSettingWidget::checkNetworkConnection()</a>.</p>
 
 </div>
 </div>
@@ -437,9 +443,9 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html#l00036">36</a> of file <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html">musicsinglemanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html#l00035">35</a> of file <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html">musicsinglemanager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/dbd/musicmobiledeviceswidget_8cpp_source.html#l00041">MusicMobileDevicesWidget::showMobileManager()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/dbd/musicmobiledeviceswidget_8cpp_source.html#l00033">MusicMobileDevicesWidget::showMobileManager()</a>.</p>
 
 </div>
 </div>
@@ -473,20 +479,40 @@ Macros</h2></td></tr>
 <div class="line">    }                                                                   <a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">\</a></div>
 <div class="line"><a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">    name</a> *w = <a class="code" href="../../df/d7f/ttkglobal_8h.html#afad224d36cc24240d9d006a42145c953">TTKStatic_cast</a>(<a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>*, manager-&gt;<a class="code" href="../../d3/d42/class_music_single_manager.html#a84502677f03d2cb2871f4a6f675e23c6">object</a>(#<a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>));</div>
 <div class="ttc" id="class_music_single_manager_html_accedfcbe07e9bb7e71517f49766c7157"><div class="ttname"><a href="../../d3/d42/class_music_single_manager.html#accedfcbe07e9bb7e71517f49766c7157">MusicSingleManager::contains</a></div><div class="ttdeci">bool contains(const QString &amp;name) const </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4f/musicsinglemanager_8cpp_source.html#l00023">musicsinglemanager.cpp:23</a></div></div>
-<div class="ttc" id="class_music_single_manager_html"><div class="ttname"><a href="../../d3/d42/class_music_single_manager.html">MusicSingleManager</a></div><div class="ttdoc">The class of the single object manager. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d5e/musicsinglemanager_8h_source.html#l00098">musicsinglemanager.h:98</a></div></div>
+<div class="ttc" id="class_music_single_manager_html"><div class="ttname"><a href="../../d3/d42/class_music_single_manager.html">MusicSingleManager</a></div><div class="ttdoc">The class of the single object manager. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d5e/musicsinglemanager_8h_source.html#l00097">musicsinglemanager.h:97</a></div></div>
 <div class="ttc" id="class_music_single_manager_html_a84502677f03d2cb2871f4a6f675e23c6"><div class="ttname"><a href="../../d3/d42/class_music_single_manager.html#a84502677f03d2cb2871f4a6f675e23c6">MusicSingleManager::object</a></div><div class="ttdeci">QObject * object(const QString &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4f/musicsinglemanager_8cpp_source.html#l00018">musicsinglemanager.cpp:18</a></div></div>
 <div class="ttc" id="ttkglobal_8h_html_afad224d36cc24240d9d006a42145c953"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#afad224d36cc24240d9d006a42145c953">TTKStatic_cast</a></div><div class="ttdeci">#define TTKStatic_cast(x, y)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00076">ttkglobal.h:76</a></div></div>
 <div class="ttc" id="http__parser_8c_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d70/http__parser_8c_source.html#l00458">http_parser.c:458</a></div></div>
-<div class="ttc" id="musicsinglemanager_8h_html_ac50b70a9cdf35f456a5f54d133626355"><div class="ttname"><a href="../../d4/d5e/musicsinglemanager_8h.html#ac50b70a9cdf35f456a5f54d133626355">M_SINGLE_MANAGER_PTR</a></div><div class="ttdeci">#define M_SINGLE_MANAGER_PTR</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d5e/musicsinglemanager_8h_source.html#l00026">musicsinglemanager.h:26</a></div></div>
+<div class="ttc" id="musicsinglemanager_8h_html_ac50b70a9cdf35f456a5f54d133626355"><div class="ttname"><a href="../../d4/d5e/musicsinglemanager_8h.html#ac50b70a9cdf35f456a5f54d133626355">M_SINGLE_MANAGER_PTR</a></div><div class="ttdeci">#define M_SINGLE_MANAGER_PTR</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d5e/musicsinglemanager_8h_source.html#l00130">musicsinglemanager.h:130</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html#l00028">28</a> of file <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html">musicsinglemanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html#l00027">27</a> of file <a class="el" href="../../d4/d5e/musicsinglemanager_8h_source.html">musicsinglemanager.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ad8d3fccb242c5e1e858f30389899c9a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MUSIC_CORE_EXPORT <a class="el" href="../../d3/d42/class_music_single_manager.html">MusicSingleManager</a>* GetMusicSingleManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../de/daf/musicsingleton_8cpp_source.html#l00035">35</a> of file <a class="el" href="../../de/daf/musicsingleton_8cpp_source.html">musicsingleton.cpp</a>.</p>
+
+<p>References <a class="el" href="../../d7/d5f/musicsingleton_8h_source.html#l00064">MusicSingleton&lt; T &gt;::createInstance()</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 25 2020 12:46:52 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 6 2020 15:36:10 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

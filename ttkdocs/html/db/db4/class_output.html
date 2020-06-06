@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.12.0.0</span>
+   &#160;<span id="projectnumber">2.13.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -87,42 +87,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <p>The <a class="el" href="../../db/db4/class_output.html" title="The Output class provides the base interface class of audio outputs. ">Output</a> class provides the base interface class of audio outputs.  
  <a href="../../db/db4/class_output.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="../../d8/d4b/_qt4_2output_8h_source.html">output.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../d8/d30/output_8h_source.html">output.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a428c663520336477a12f1a33504eb067"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#a428c663520336477a12f1a33504eb067">Output</a> ()</td></tr>
-<tr class="separator:a428c663520336477a12f1a33504eb067"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0162ebdc8e5b13917788692fa9a753a0"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#a0162ebdc8e5b13917788692fa9a753a0">~Output</a> ()</td></tr>
-<tr class="separator:a0162ebdc8e5b13917788692fa9a753a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa263b1653d889e0b411761c78c11888a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#aa263b1653d889e0b411761c78c11888a">initialize</a> (quint32 freq, <a class="el" href="../../d1/d72/class_channel_map.html">ChannelMap</a> map, <a class="el" href="../../d9/d95/class_qmmp.html#aae85042846160153e83c605bae56f1cb">Qmmp::AudioFormat</a> <a class="el" href="../../db/db4/class_output.html#a59aabf75c461d50d96728409fa5885eb">format</a>)=0</td></tr>
-<tr class="separator:aa263b1653d889e0b411761c78c11888a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac079be29dca77eb2998e40bc8657d022"><td class="memItemLeft" align="right" valign="top">virtual qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#ac079be29dca77eb2998e40bc8657d022">latency</a> ()=0</td></tr>
-<tr class="separator:ac079be29dca77eb2998e40bc8657d022"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad38102ae94be2742217c83de4ffa109"><td class="memItemLeft" align="right" valign="top">virtual qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#aad38102ae94be2742217c83de4ffa109">writeAudio</a> (unsigned char *data, qint64 maxSize)=0</td></tr>
-<tr class="separator:aad38102ae94be2742217c83de4ffa109"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79935c74515cd67300e196738017fd8d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#a79935c74515cd67300e196738017fd8d">drain</a> ()=0</td></tr>
-<tr class="separator:a79935c74515cd67300e196738017fd8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a931551a0d03f7d1568bd27f573bfbf7f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#a931551a0d03f7d1568bd27f573bfbf7f">reset</a> ()=0</td></tr>
-<tr class="separator:a931551a0d03f7d1568bd27f573bfbf7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a829b16c3fd7914127f3f3da73c03b1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#a9a829b16c3fd7914127f3f3da73c03b1">suspend</a> ()</td></tr>
-<tr class="separator:a9a829b16c3fd7914127f3f3da73c03b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a059e3d31c635c400fd4eb2541b7c7fa4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#a059e3d31c635c400fd4eb2541b7c7fa4">resume</a> ()</td></tr>
-<tr class="separator:a059e3d31c635c400fd4eb2541b7c7fa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a274fa066fb246235a5fc8e4cb158d48c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#a274fa066fb246235a5fc8e4cb158d48c">setTrackInfo</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="../../d1/dc5/class_track_info.html">TrackInfo</a> &amp;info)</td></tr>
-<tr class="separator:a274fa066fb246235a5fc8e4cb158d48c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24ba4295dcf5da5b2b6a40bafcad701f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d77/class_audio_parameters.html">AudioParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#a24ba4295dcf5da5b2b6a40bafcad701f">audioParameters</a> () <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
-<tr class="separator:a24ba4295dcf5da5b2b6a40bafcad701f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcd175b6160c08803f626feac3ebaf2e"><td class="memItemLeft" align="right" valign="top">quint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#abcd175b6160c08803f626feac3ebaf2e">sampleRate</a> () <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
-<tr class="separator:abcd175b6160c08803f626feac3ebaf2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f41f80b4d4887c2ede6fcbb24e92611"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#a7f41f80b4d4887c2ede6fcbb24e92611">channels</a> () <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
-<tr class="separator:a7f41f80b4d4887c2ede6fcbb24e92611"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b4ae1778c32a1639a16cbe0a1168cf9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="../../d1/d72/class_channel_map.html">ChannelMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#a5b4ae1778c32a1639a16cbe0a1168cf9">channelMap</a> () <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
-<tr class="separator:a5b4ae1778c32a1639a16cbe0a1168cf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59aabf75c461d50d96728409fa5885eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d95/class_qmmp.html#aae85042846160153e83c605bae56f1cb">Qmmp::AudioFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#a59aabf75c461d50d96728409fa5885eb">format</a> () <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
-<tr class="separator:a59aabf75c461d50d96728409fa5885eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3e95e05849f198a47eaf10abcbb3a4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#aa3e95e05849f198a47eaf10abcbb3a4a">sampleSize</a> () <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
-<tr class="separator:aa3e95e05849f198a47eaf10abcbb3a4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a428c663520336477a12f1a33504eb067"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#a428c663520336477a12f1a33504eb067">Output</a> ()</td></tr>
 <tr class="separator:a428c663520336477a12f1a33504eb067"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0162ebdc8e5b13917788692fa9a753a0"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#a0162ebdc8e5b13917788692fa9a753a0">~Output</a> ()</td></tr>
@@ -162,20 +130,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a3e7e0924cb3ff937440bb8667172a927"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f961f1a09a57aa41c88c46539114825"><td class="memItemLeft" align="right" valign="top">static QList&lt; <a class="el" href="../../dc/db6/class_output_factory.html">OutputFactory</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#a2f961f1a09a57aa41c88c46539114825">factories</a> ()</td></tr>
 <tr class="separator:a2f961f1a09a57aa41c88c46539114825"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1e6977ce0207cac38ef202b8a958126"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#ab1e6977ce0207cac38ef202b8a958126">file</a> (<a class="el" href="../../dc/db6/class_output_factory.html">OutputFactory</a> *factory)</td></tr>
-<tr class="separator:ab1e6977ce0207cac38ef202b8a958126"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a408b4ce301613d7204b43f058ccd8201"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#a408b4ce301613d7204b43f058ccd8201">setCurrentFactory</a> (<a class="el" href="../../dc/db6/class_output_factory.html">OutputFactory</a> *factory)</td></tr>
-<tr class="separator:a408b4ce301613d7204b43f058ccd8201"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8b5df8fa3b9b3c6bc6c0aa9c9a8c689"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dc/db6/class_output_factory.html">OutputFactory</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#ab8b5df8fa3b9b3c6bc6c0aa9c9a8c689">currentFactory</a> ()</td></tr>
-<tr class="separator:ab8b5df8fa3b9b3c6bc6c0aa9c9a8c689"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e7e0924cb3ff937440bb8667172a927"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../db/db4/class_output.html">Output</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#a3e7e0924cb3ff937440bb8667172a927">create</a> ()</td></tr>
-<tr class="separator:a3e7e0924cb3ff937440bb8667172a927"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f961f1a09a57aa41c88c46539114825"><td class="memItemLeft" align="right" valign="top">static QList&lt; <a class="el" href="../../dc/db6/class_output_factory.html">OutputFactory</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#a2f961f1a09a57aa41c88c46539114825">factories</a> ()</td></tr>
-<tr class="separator:a2f961f1a09a57aa41c88c46539114825"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1e6977ce0207cac38ef202b8a958126"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#ab1e6977ce0207cac38ef202b8a958126">file</a> (<a class="el" href="../../dc/db6/class_output_factory.html">OutputFactory</a> *factory)</td></tr>
-<tr class="separator:ab1e6977ce0207cac38ef202b8a958126"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a408b4ce301613d7204b43f058ccd8201"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#a408b4ce301613d7204b43f058ccd8201">setCurrentFactory</a> (<a class="el" href="../../dc/db6/class_output_factory.html">OutputFactory</a> *factory)</td></tr>
-<tr class="separator:a408b4ce301613d7204b43f058ccd8201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae656f15664b47e5eb000f38434419ad9"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#ae656f15664b47e5eb000f38434419ad9">file</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="../../dc/db6/class_output_factory.html">OutputFactory</a> *factory)</td></tr>
+<tr class="separator:ae656f15664b47e5eb000f38434419ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ba6df1760f30cb9361a8e13ba55bd12"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#a4ba6df1760f30cb9361a8e13ba55bd12">setCurrentFactory</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="../../dc/db6/class_output_factory.html">OutputFactory</a> *factory)</td></tr>
+<tr class="separator:a4ba6df1760f30cb9361a8e13ba55bd12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8b5df8fa3b9b3c6bc6c0aa9c9a8c689"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dc/db6/class_output_factory.html">OutputFactory</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#ab8b5df8fa3b9b3c6bc6c0aa9c9a8c689">currentFactory</a> ()</td></tr>
 <tr class="separator:ab8b5df8fa3b9b3c6bc6c0aa9c9a8c689"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -183,13 +141,9 @@ Static Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:adbe92e5a07f7608de8f77fc7cbb7f5fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#adbe92e5a07f7608de8f77fc7cbb7f5fb">configure</a> (quint32 freq, <a class="el" href="../../d1/d72/class_channel_map.html">ChannelMap</a> map, <a class="el" href="../../d9/d95/class_qmmp.html#aae85042846160153e83c605bae56f1cb">Qmmp::AudioFormat</a> <a class="el" href="../../db/db4/class_output.html#a59aabf75c461d50d96728409fa5885eb">format</a>)</td></tr>
 <tr class="separator:adbe92e5a07f7608de8f77fc7cbb7f5fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbe92e5a07f7608de8f77fc7cbb7f5fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#adbe92e5a07f7608de8f77fc7cbb7f5fb">configure</a> (quint32 freq, <a class="el" href="../../d1/d72/class_channel_map.html">ChannelMap</a> map, <a class="el" href="../../d9/d95/class_qmmp.html#aae85042846160153e83c605bae56f1cb">Qmmp::AudioFormat</a> <a class="el" href="../../db/db4/class_output.html#a59aabf75c461d50d96728409fa5885eb">format</a>)</td></tr>
-<tr class="separator:adbe92e5a07f7608de8f77fc7cbb7f5fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
-<tr class="memitem:ae277a355f06576bc1540fad865b68711"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#ae277a355f06576bc1540fad865b68711">loadPlugins</a> ()</td></tr>
-<tr class="separator:ae277a355f06576bc1540fad865b68711"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae277a355f06576bc1540fad865b68711"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#ae277a355f06576bc1540fad865b68711">loadPlugins</a> ()</td></tr>
 <tr class="separator:ae277a355f06576bc1540fad865b68711"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -206,8 +160,8 @@ Private Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
-<tr class="memitem:a669b5a953835c2b4b0676cfc8839ac8e"><td class="memItemLeft" align="right" valign="top">static QList&lt; <a class="el" href="../../dc/db2/class_qmmp_plugin_cache.html">QmmpPluginCache</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#a669b5a953835c2b4b0676cfc8839ac8e">m_cache</a></td></tr>
-<tr class="separator:a669b5a953835c2b4b0676cfc8839ac8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5abc8db130b30f1bdd12833c48485224"><td class="memItemLeft" align="right" valign="top">static QList&lt; <a class="el" href="../../dc/db2/class_qmmp_plugin_cache.html">QmmpPluginCache</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db4/class_output.html#a5abc8db130b30f1bdd12833c48485224">m_cache</a></td></tr>
+<tr class="separator:a5abc8db130b30f1bdd12833c48485224"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="../../db/db4/class_output.html" title="The Output class provides the base interface class of audio outputs. ">Output</a> class provides the base interface class of audio outputs. </p>
@@ -215,48 +169,8 @@ Static Private Attributes</h2></td></tr>
 <dd>
 Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'+'@ya'+'.r'+'u'; return false;">forko<span style="display: none;">.nosp@m.</span>tov0<span style="display: none;">.nosp@m.</span>2@ya.<span style="display: none;">.nosp@m.</span>ru</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d8/d4b/_qt4_2output_8h_source.html#l00027">27</a> of file <a class="el" href="../../d8/d4b/_qt4_2output_8h_source.html">output.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d30/output_8h_source.html#l00027">27</a> of file <a class="el" href="../../d8/d30/output_8h_source.html">output.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a428c663520336477a12f1a33504eb067"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Output::Output </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Object contsructor. </p>
-
-</div>
-</div>
-<a class="anchor" id="a0162ebdc8e5b13917788692fa9a753a0"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual Output::~Output </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Destructor. </p>
-
-</div>
-</div>
 <a class="anchor" id="a428c663520336477a12f1a33504eb067"></a>
 <div class="memitem">
 <div class="memproto">
@@ -314,22 +228,6 @@ Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'
 
 </div>
 </div>
-<a class="anchor" id="a24ba4295dcf5da5b2b6a40bafcad701f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d2/d77/class_audio_parameters.html">AudioParameters</a> Output::audioParameters </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns selected audio parameters. </p>
-
-</div>
-</div>
 <a class="anchor" id="a5b4ae1778c32a1639a16cbe0a1168cf9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -343,38 +241,6 @@ Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'
       </table>
 </div><div class="memdoc">
 <p>Returns required channel map. </p>
-
-</div>
-</div>
-<a class="anchor" id="a5b4ae1778c32a1639a16cbe0a1168cf9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="../../d1/d72/class_channel_map.html">ChannelMap</a> Output::channelMap </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns required channel map. </p>
-
-</div>
-</div>
-<a class="anchor" id="a7f41f80b4d4887c2ede6fcbb24e92611"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> Output::channels </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns number of channels. </p>
 
 </div>
 </div>
@@ -439,78 +305,6 @@ Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a class="anchor" id="adbe92e5a07f7608de8f77fc7cbb7f5fb"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Output::configure </td>
-          <td>(</td>
-          <td class="paramtype">quint32&#160;</td>
-          <td class="paramname"><em>freq</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d1/d72/class_channel_map.html">ChannelMap</a>&#160;</td>
-          <td class="paramname"><em>map</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d9/d95/class_qmmp.html#aae85042846160153e83c605bae56f1cb">Qmmp::AudioFormat</a>&#160;</td>
-          <td class="paramname"><em>format</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Use this function inside <a class="el" href="../../db/db4/class_output.html#aa263b1653d889e0b411761c78c11888a">initialize()</a> reimplementation to tell about accepted audio parameters. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">freq</td><td>Sample rate. </td></tr>
-    <tr><td class="paramname">map</td><td>Map of channels. </td></tr>
-    <tr><td class="paramname">format</td><td>Audio format. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a3e7e0924cb3ff937440bb8667172a927"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="../../db/db4/class_output.html">Output</a>* Output::create </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Creates selected output. </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../db/db4/class_output.html" title="The Output class provides the base interface class of audio outputs. ">Output</a> subclass object. </dd></dl>
 
 </div>
 </div>
@@ -564,54 +358,6 @@ Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'
 
 </div>
 </div>
-<a class="anchor" id="ab8b5df8fa3b9b3c6bc6c0aa9c9a8c689"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="../../dc/db6/class_output_factory.html">OutputFactory</a>* Output::currentFactory </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns selected output factory. </p>
-
-</div>
-</div>
-<a class="anchor" id="a79935c74515cd67300e196738017fd8d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Output::drain </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Writes all remaining plugin's internal data to audio output device. Subclass should reimplement this function. </p>
-
-</div>
-</div>
 <a class="anchor" id="a79935c74515cd67300e196738017fd8d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -658,35 +404,11 @@ Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'
 </div><div class="memdoc">
 <p>Returns a list of output factories. </p>
 
-<p>Referenced by <a class="el" href="../../d8/dec/musicpluginwidget_8cpp_source.html#l00145">MusicPluginWidget::loadPluginsInfo()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/dec/musicpluginwidget_8cpp_source.html#l00159">MusicPluginWidget::loadPluginsInfo()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a2f961f1a09a57aa41c88c46539114825"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static QList&lt;<a class="el" href="../../dc/db6/class_output_factory.html">OutputFactory</a>*&gt; Output::factories </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns a list of output factories. </p>
-
-</div>
-</div>
-<a class="anchor" id="ab1e6977ce0207cac38ef202b8a958126"></a>
+<a class="anchor" id="ae656f15664b47e5eb000f38434419ad9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -696,7 +418,7 @@ Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'
         <tr>
           <td class="memname">static QString Output::file </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/db6/class_output_factory.html">OutputFactory</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="../../dc/db6/class_output_factory.html">OutputFactory</a> *&#160;</td>
           <td class="paramname"><em>factory</em></td><td>)</td>
           <td></td>
         </tr>
@@ -714,37 +436,7 @@ Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'
   </dd>
 </dl>
 
-<p>Referenced by <a class="el" href="../../d8/dec/musicpluginwidget_8cpp_source.html#l00145">MusicPluginWidget::loadPluginsInfo()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab1e6977ce0207cac38ef202b8a958126"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static QString Output::file </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/db6/class_output_factory.html">OutputFactory</a> *&#160;</td>
-          <td class="paramname"><em>factory</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns plugin file path. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">factory</td><td><a class="el" href="../../db/db4/class_output.html" title="The Output class provides the base interface class of audio outputs. ">Output</a> plugin factory. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Referenced by <a class="el" href="../../d8/dec/musicpluginwidget_8cpp_source.html#l00159">MusicPluginWidget::loadPluginsInfo()</a>.</p>
 
 </div>
 </div>
@@ -761,71 +453,6 @@ Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'
       </table>
 </div><div class="memdoc">
 <p>Returns selected audio format. </p>
-
-</div>
-</div>
-<a class="anchor" id="a59aabf75c461d50d96728409fa5885eb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d9/d95/class_qmmp.html#aae85042846160153e83c605bae56f1cb">Qmmp::AudioFormat</a> Output::format </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns selected audio format. </p>
-
-</div>
-</div>
-<a class="anchor" id="aa263b1653d889e0b411761c78c11888a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool Output::initialize </td>
-          <td>(</td>
-          <td class="paramtype">quint32&#160;</td>
-          <td class="paramname"><em>freq</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d1/d72/class_channel_map.html">ChannelMap</a>&#160;</td>
-          <td class="paramname"><em>map</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d9/d95/class_qmmp.html#aae85042846160153e83c605bae56f1cb">Qmmp::AudioFormat</a>&#160;</td>
-          <td class="paramname"><em>format</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Prepares object for usage and setups required audio parameters. Subclass should reimplement this function. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">freq</td><td>Sample rate. </td></tr>
-    <tr><td class="paramname">map</td><td>Map of channels. </td></tr>
-    <tr><td class="paramname">format</td><td>Audio format </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>initialization result (<b>true</b> - success, <b>false</b> - failure) </dd></dl>
 
 </div>
 </div>
@@ -902,30 +529,6 @@ Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'
 
 </div>
 </div>
-<a class="anchor" id="ac079be29dca77eb2998e40bc8657d022"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual qint64 Output::latency </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns output interface latency in milliseconds. </p>
-
-</div>
-</div>
 <a class="anchor" id="ae277a355f06576bc1540fad865b68711"></a>
 <div class="memitem">
 <div class="memproto">
@@ -946,53 +549,6 @@ Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'
   </tr>
 </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ae277a355f06576bc1540fad865b68711"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void Output::loadPlugins </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a931551a0d03f7d1568bd27f573bfbf7f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Output::reset </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Drops all plugin's internal data, resets audio device Subclass should reimplement this function. </p>
 
 </div>
 </div>
@@ -1044,46 +600,6 @@ Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'
 
 </div>
 </div>
-<a class="anchor" id="a059e3d31c635c400fd4eb2541b7c7fa4"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Output::resume </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Resumes processing audio data. </p>
-
-</div>
-</div>
-<a class="anchor" id="abcd175b6160c08803f626feac3ebaf2e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">quint32 Output::sampleRate </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns samplerate. </p>
-
-</div>
-</div>
 <a class="anchor" id="abcd175b6160c08803f626feac3ebaf2e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1116,23 +632,7 @@ Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'
 
 </div>
 </div>
-<a class="anchor" id="aa3e95e05849f198a47eaf10abcbb3a4a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> Output::sampleSize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns sample size in bytes. </p>
-
-</div>
-</div>
-<a class="anchor" id="a408b4ce301613d7204b43f058ccd8201"></a>
+<a class="anchor" id="a4ba6df1760f30cb9361a8e13ba55bd12"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1142,7 +642,7 @@ Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'
         <tr>
           <td class="memname">static void Output::setCurrentFactory </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/db6/class_output_factory.html">OutputFactory</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="../../dc/db6/class_output_factory.html">OutputFactory</a> *&#160;</td>
           <td class="paramname"><em>factory</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1155,55 +655,7 @@ Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'
 </div><div class="memdoc">
 <p>Selects current output <b>factory</b>. </p>
 
-</div>
-</div>
-<a class="anchor" id="a408b4ce301613d7204b43f058ccd8201"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void Output::setCurrentFactory </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/db6/class_output_factory.html">OutputFactory</a> *&#160;</td>
-          <td class="paramname"><em>factory</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Selects current output <b>factory</b>. </p>
-
-</div>
-</div>
-<a class="anchor" id="a274fa066fb246235a5fc8e4cb158d48c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Output::setTrackInfo </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="../../d1/dc5/class_track_info.html">TrackInfo</a> &amp;&#160;</td>
-          <td class="paramname"><em>info</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Sets track information for output. Default implementation does nothing. Reimplement this function to receive metadata. </p>
+<p>Referenced by <a class="el" href="../../d8/dec/musicpluginwidget_8cpp_source.html#l00058">MusicPluginItem::setEnabled()</a>.</p>
 
 </div>
 </div>
@@ -1253,66 +705,6 @@ Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'
 </table>
 </div><div class="memdoc">
 <p>Stops processing audio data, preserving buffered audio data. </p>
-
-</div>
-</div>
-<a class="anchor" id="a9a829b16c3fd7914127f3f3da73c03b1"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Output::suspend </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Stops processing audio data, preserving buffered audio data. </p>
-
-</div>
-</div>
-<a class="anchor" id="aad38102ae94be2742217c83de4ffa109"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual qint64 Output::writeAudio </td>
-          <td>(</td>
-          <td class="paramtype">unsigned char *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">qint64&#160;</td>
-          <td class="paramname"><em>maxSize</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Requests playback to pause. If it was paused already, playback should resume. Subclasses that reimplement this function must call the base implementation.</p>
-<p>Writes up to <b>maxSize</b> bytes from <b>data</b> to the output interface device. Returns the number of bytes written, or -1 if an error occurred. Subclass should reimplement this function. </p>
 
 </div>
 </div>
@@ -1353,7 +745,7 @@ Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a669b5a953835c2b4b0676cfc8839ac8e"></a>
+<a class="anchor" id="a5abc8db130b30f1bdd12833c48485224"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1361,7 +753,7 @@ Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static QList&lt; <a class="el" href="../../dc/db2/class_qmmp_plugin_cache.html">QmmpPluginCache</a> * &gt; * Output::m_cache</td>
+          <td class="memname">QList&lt;<a class="el" href="../../dc/db2/class_qmmp_plugin_cache.html">QmmpPluginCache</a>*&gt;* Output::m_cache</td>
         </tr>
       </table>
   </td>
@@ -1371,7 +763,7 @@ Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d4b/_qt4_2output_8h_source.html#l00147">147</a> of file <a class="el" href="../../d8/d4b/_qt4_2output_8h_source.html">output.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d30/output_8h_source.html#l00147">147</a> of file <a class="el" href="../../d8/d30/output_8h_source.html">output.h</a>.</p>
 
 </div>
 </div>
@@ -1393,7 +785,7 @@ Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d4b/_qt4_2output_8h_source.html#l00143">143</a> of file <a class="el" href="../../d8/d4b/_qt4_2output_8h_source.html">output.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d30/output_8h_source.html#l00143">143</a> of file <a class="el" href="../../d8/d30/output_8h_source.html">output.h</a>.</p>
 
 </div>
 </div>
@@ -1415,7 +807,7 @@ Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d4b/_qt4_2output_8h_source.html#l00144">144</a> of file <a class="el" href="../../d8/d4b/_qt4_2output_8h_source.html">output.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d30/output_8h_source.html#l00144">144</a> of file <a class="el" href="../../d8/d30/output_8h_source.html">output.h</a>.</p>
 
 </div>
 </div>
@@ -1437,7 +829,7 @@ Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d4b/_qt4_2output_8h_source.html#l00142">142</a> of file <a class="el" href="../../d8/d4b/_qt4_2output_8h_source.html">output.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d30/output_8h_source.html#l00142">142</a> of file <a class="el" href="../../d8/d30/output_8h_source.html">output.h</a>.</p>
 
 </div>
 </div>
@@ -1459,17 +851,17 @@ Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d4b/_qt4_2output_8h_source.html#l00145">145</a> of file <a class="el" href="../../d8/d4b/_qt4_2output_8h_source.html">output.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d30/output_8h_source.html#l00145">145</a> of file <a class="el" href="../../d8/d30/output_8h_source.html">output.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>TTKExtra/Qt4/<a class="el" href="../../d8/d4b/_qt4_2output_8h_source.html">output.h</a></li>
+<li>TTKExtra/<a class="el" href="../../d8/d30/output_8h_source.html">output.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 25 2020 12:48:07 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 6 2020 15:36:56 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

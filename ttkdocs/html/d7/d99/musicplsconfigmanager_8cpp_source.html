@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.12.0.0</span>
+   &#160;<span id="projectnumber">2.13.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -170,7 +170,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    {</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        data &lt;&lt; QString(<span class="stringliteral">&quot;File%1=%2&quot;</span>).arg(count).arg(song.<a class="code" href="../../d6/de4/class_music_song.html#aa30b5fb6f676a07103eb4588b3cda859">getMusicPath</a>());</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        data &lt;&lt; QString(<span class="stringliteral">&quot;Title%1=%2&quot;</span>).arg(count).arg(song.<a class="code" href="../../d6/de4/class_music_song.html#acd2945ae3799e0e77ad308fb0873e43e">getMusicName</a>());</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        data &lt;&lt; QString(<span class="stringliteral">&quot;Length%1=%2&quot;</span>).arg(count).arg(MusicTime::MusicTime::labelJustified2MsecTime(song.<a class="code" href="../../d6/de4/class_music_song.html#ae35e2b779f78292a4fac0708abc86ce7">getMusicPlayTime</a>())/1000);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        data &lt;&lt; QString(<span class="stringliteral">&quot;Length%1=%2&quot;</span>).arg(count).arg(MusicTime::MusicTime::labelJustified2MsecTime(song.<a class="code" href="../../d6/de4/class_music_song.html#ae35e2b779f78292a4fac0708abc86ce7">getMusicPlayTime</a>()) / 1000);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        ++count;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    data &lt;&lt; <span class="stringliteral">&quot;NumberOfEntries=&quot;</span> + QString::number(item.<a class="code" href="../../d3/d40/struct_music_song_item.html#adfd79c10fd52b31c1b4ffe39143d9ab9">m_songs</a>.count());</div>
@@ -205,7 +205,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 25 2020 12:46:30 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 6 2020 15:35:46 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

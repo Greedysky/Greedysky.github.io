@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.12.0.0</span>
+   &#160;<span id="projectnumber">2.13.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -98,10 +98,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    m_superClass = <a class="code" href="../../df/d7f/ttkglobal_8h.html#afad224d36cc24240d9d006a42145c953">TTKStatic_cast</a>(<a class="code" href="../../db/def/class_music_application.html">MusicApplication</a>*, parent);</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="../../db/d1a/class_music_window_extras.html#a8d0bce61a551093f67ec1900abc52671">disableBlurBehindWindow</a>(QtWin::isCompositionEnabled());</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#  ifdef TTK_DEBUG</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#ifdef TTK_DEBUG</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    createJumpList();</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    createTaskbar();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#  endif</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    createThumbnailToolBar();</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="../../db/d1a/class_music_window_extras.html#a3b44b9dd5bb1671478cfb1681d8f022d">m_disableBlurBehindWindow</a> = <span class="keyword">true</span>;</div>
@@ -130,7 +130,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#if defined Q_OS_WIN &amp;&amp; defined TTK_WINEXTRAS</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../db/d1a/class_music_window_extras.html#ac21aed03fb949aa9b6c54c0cb7d6652b">MusicWindowExtras::showPlayStatus</a>(<span class="keywordtype">bool</span> status)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../db/d1a/class_music_window_extras.html#ae56df538a3bffcb74f9fcc1b35561496">MusicWindowExtras::setCurrentPlayStatus</a>(<span class="keywordtype">bool</span> status)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">if</span>(!status)</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    {</div>
@@ -202,8 +202,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_window_extras_html_a02f7d0112adcadc6856f3cbcf4ad1c4f"><div class="ttname"><a href="../../db/d1a/class_music_window_extras.html#a02f7d0112adcadc6856f3cbcf4ad1c4f">MusicWindowExtras::~MusicWindowExtras</a></div><div class="ttdeci">~MusicWindowExtras()</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d4f/musicwindowextras_8cpp_source.html#l00032">musicwindowextras.cpp:32</a></div></div>
 <div class="ttc" id="class_music_application_html"><div class="ttname"><a href="../../db/def/class_music_application.html">MusicApplication</a></div><div class="ttdoc">The class of the app main widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d24/musicapplication_8h_source.html#l00040">musicapplication.h:40</a></div></div>
 <div class="ttc" id="musicapplication_8h_html"><div class="ttname"><a href="../../d1/d24/musicapplication_8h.html">musicapplication.h</a></div></div>
+<div class="ttc" id="class_music_window_extras_html_ae56df538a3bffcb74f9fcc1b35561496"><div class="ttname"><a href="../../db/d1a/class_music_window_extras.html#ae56df538a3bffcb74f9fcc1b35561496">MusicWindowExtras::setCurrentPlayStatus</a></div><div class="ttdeci">void setCurrentPlayStatus(bool status) const </div></div>
 <div class="ttc" id="class_music_window_extras_html_a8a3f9f70891da877b099250c1683a1bf"><div class="ttname"><a href="../../db/d1a/class_music_window_extras.html#a8a3f9f70891da877b099250c1683a1bf">MusicWindowExtras::setValue</a></div><div class="ttdeci">void setValue(int value) const </div></div>
-<div class="ttc" id="class_music_window_extras_html_ac21aed03fb949aa9b6c54c0cb7d6652b"><div class="ttname"><a href="../../db/d1a/class_music_window_extras.html#ac21aed03fb949aa9b6c54c0cb7d6652b">MusicWindowExtras::showPlayStatus</a></div><div class="ttdeci">void showPlayStatus(bool status) const </div></div>
 <div class="ttc" id="ttkglobal_8h_html_afad224d36cc24240d9d006a42145c953"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#afad224d36cc24240d9d006a42145c953">TTKStatic_cast</a></div><div class="ttdeci">#define TTKStatic_cast(x, y)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00076">ttkglobal.h:76</a></div></div>
 <div class="ttc" id="class_music_window_extras_html_a4788107222c05e84c0bf8f22810a0d32"><div class="ttname"><a href="../../db/d1a/class_music_window_extras.html#a4788107222c05e84c0bf8f22810a0d32">MusicWindowExtras::setRange</a></div><div class="ttdeci">void setRange(int start, int end) const </div></div>
 <div class="ttc" id="musicwindowextras_8h_html"><div class="ttname"><a href="../../d2/d7f/musicwindowextras_8h.html">musicwindowextras.h</a></div></div>
@@ -213,7 +213,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 25 2020 12:46:37 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 6 2020 15:36:00 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

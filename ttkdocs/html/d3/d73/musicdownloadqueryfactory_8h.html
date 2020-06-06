@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.12.0.0</span>
+   &#160;<span id="projectnumber">2.13.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -75,7 +75,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">musicdownloadqueryfactory.h File Reference</div>  </div>
 </div><!--header-->
@@ -93,8 +94,13 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:af0e4dd2e431c1734645f26565541bdfb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d73/musicdownloadqueryfactory_8h.html#af0e4dd2e431c1734645f26565541bdfb">M_DOWNLOAD_QUERY_PTR</a>&#160;&#160;&#160;(<a class="el" href="../../d4/df6/class_music_singleton.html">MusicSingleton</a>&lt;<a class="el" href="../../d0/d19/class_music_down_load_query_factory.html">MusicDownLoadQueryFactory</a>&gt;::createInstance())</td></tr>
+<tr class="memitem:af0e4dd2e431c1734645f26565541bdfb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d73/musicdownloadqueryfactory_8h.html#af0e4dd2e431c1734645f26565541bdfb">M_DOWNLOAD_QUERY_PTR</a>&#160;&#160;&#160;<a class="el" href="../../d3/d73/musicdownloadqueryfactory_8h.html#a1ead0b33faf6dc6d9063d70db8c476bb">GetMusicDownLoadQueryFactory</a>()</td></tr>
 <tr class="separator:af0e4dd2e431c1734645f26565541bdfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a1ead0b33faf6dc6d9063d70db8c476bb"><td class="memItemLeft" align="right" valign="top">MUSIC_NETWORK_EXPORT <a class="el" href="../../d0/d19/class_music_down_load_query_factory.html">MusicDownLoadQueryFactory</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d73/musicdownloadqueryfactory_8h.html#a1ead0b33faf6dc6d9063d70db8c476bb">GetMusicDownLoadQueryFactory</a> ()</td></tr>
+<tr class="separator:a1ead0b33faf6dc6d9063d70db8c476bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="af0e4dd2e431c1734645f26565541bdfb"></a>
@@ -102,21 +108,41 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define M_DOWNLOAD_QUERY_PTR&#160;&#160;&#160;(<a class="el" href="../../d4/df6/class_music_singleton.html">MusicSingleton</a>&lt;<a class="el" href="../../d0/d19/class_music_down_load_query_factory.html">MusicDownLoadQueryFactory</a>&gt;::createInstance())</td>
+          <td class="memname">#define M_DOWNLOAD_QUERY_PTR&#160;&#160;&#160;<a class="el" href="../../d3/d73/musicdownloadqueryfactory_8h.html#a1ead0b33faf6dc6d9063d70db8c476bb">GetMusicDownLoadQueryFactory</a>()</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/d73/musicdownloadqueryfactory_8h_source.html#l00025">25</a> of file <a class="el" href="../../d3/d73/musicdownloadqueryfactory_8h_source.html">musicdownloadqueryfactory.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d73/musicdownloadqueryfactory_8h_source.html#l00125">125</a> of file <a class="el" href="../../d3/d73/musicdownloadqueryfactory_8h_source.html">musicdownloadqueryfactory.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00428">MusicSongSearchTableWidget::addSearchMusicToPlaylist()</a>, <a class="el" href="../../d9/d96/musicsongsharingwidget_8cpp_source.html#l00102">MusicSongSharingWidget::confirmButtonClicked()</a>, <a class="el" href="../../d3/d4e/musicidentifysongswidget_8cpp_source.html#l00247">MusicIdentifySongsWidget::createDetectedSuccessedWidget()</a>, <a class="el" href="../../d6/d2d/musicplaylistfoundwidget_8cpp_source.html#l00256">MusicPlaylistFoundWidget::currentPlaylistClicked()</a>, <a class="el" href="../../d1/d83/musiclrcdownloadbatchwidget_8cpp_source.html#l00146">MusicLrcDownloadBatchWidget::downloadButtonClicked()</a>, <a class="el" href="../../dd/d07/musiclrcanalysis_8cpp_source.html#l00581">MusicLrcAnalysis::getTranslatedLrc()</a>, <a class="el" href="../../d0/df0/musicplaylistfoundcommentswidget_8cpp_source.html#l00010">MusicPlaylistFoundCommentsWidget::initWidget()</a>, <a class="el" href="../../d4/d71/musiclrccommentswidget_8cpp_source.html#l00010">MusicLrcCommentsWidget::initWidget()</a>, <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00035">MusicAlbumFoundWidget::MusicAlbumFoundWidget()</a>, <a class="el" href="../../d6/dee/musicartistfoundwidget_8cpp_source.html#l00256">MusicArtistAlbumsFoundWidget::MusicArtistAlbumsFoundWidget()</a>, <a class="el" href="../../d6/dee/musicartistfoundwidget_8cpp_source.html#l00346">MusicArtistFoundWidget::MusicArtistFoundWidget()</a>, <a class="el" href="../../da/dfc/musicartistlistfoundwidget_8cpp_source.html#l00040">MusicArtistListFoundWidget::MusicArtistListFoundWidget()</a>, <a class="el" href="../../d6/dee/musicartistfoundwidget_8cpp_source.html#l00093">MusicArtistMvsFoundWidget::MusicArtistMvsFoundWidget()</a>, <a class="el" href="../../d6/dee/musicartistfoundwidget_8cpp_source.html#l00188">MusicArtistSimilarFoundWidget::MusicArtistSimilarFoundWidget()</a>, <a class="el" href="../../d8/dc0/musicdownloadstatusobject_8cpp_source.html#l00090">MusicDownloadStatusObject::musicCheckLrcValid()</a>, <a class="el" href="../../d2/da8/musiclrcsearchtablewidget_8cpp_source.html#l00042">MusicLrcSearchTableWidget::musicDownloadLocal()</a>, <a class="el" href="../../d8/d0d/musicdownloadwidget_8cpp_source.html#l00110">MusicDownloadWidget::MusicDownloadWidget()</a>, <a class="el" href="../../d8/dc0/musicdownloadstatusobject_8cpp_source.html#l00125">MusicDownloadStatusObject::musicHaveNoLrcAlready()</a>, <a class="el" href="../../d9/d0e/musiclocalsongsearchinterioredit_8cpp_source.html#l00007">MusicLocalSongSearchInteriorEdit::MusicLocalSongSearchInteriorEdit()</a>, <a class="el" href="../../d6/d2d/musicplaylistfoundwidget_8cpp_source.html#l00118">MusicPlaylistFoundWidget::MusicPlaylistFoundWidget()</a>, <a class="el" href="../../d0/dc5/musictoplistfoundwidget_8cpp_source.html#l00031">MusicToplistFoundWidget::MusicToplistFoundWidget()</a>, <a class="el" href="../../d5/dd0/musicrecommendfoundwidget_8cpp_source.html#l00045">MusicRecommendFoundWidget::setSongName()</a>, <a class="el" href="../../dd/d45/musicsimilarfoundwidget_8cpp_source.html#l00045">MusicSimilarFoundWidget::setSongName()</a>, <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00053">MusicAlbumFoundWidget::setSongNameById()</a>, <a class="el" href="../../d6/dee/musicartistfoundwidget_8cpp_source.html#l00374">MusicArtistFoundWidget::setSongNameById()</a>, <a class="el" href="../../d4/d09/musicvideosearchtablewidget_8cpp_source.html#l00031">MusicVideoSearchTableWidget::startSearchQuery()</a>, <a class="el" href="../../df/dd1/musicquerytablewidget_8cpp_source.html#l00053">MusicQueryItemTableWidget::startSearchQuery()</a>, <a class="el" href="../../d4/d09/musicvideosearchtablewidget_8cpp_source.html#l00049">MusicVideoSearchTableWidget::startSearchSingleQuery()</a>, and <a class="el" href="../../d9/d0e/musiclocalsongsearchinterioredit_8cpp_source.html#l00035">MusicLocalSongSearchInteriorEdit::textChanged()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/d38/musicsongsearchonlinewidget_8cpp_source.html#l00428">MusicSongSearchTableWidget::addSearchMusicToPlaylist()</a>, <a class="el" href="../../d8/dc0/musicdownloadstatusobject_8cpp_source.html#l00090">MusicDownloadStatusObject::checkLrcValid()</a>, <a class="el" href="../../d9/d96/musicsongsharingwidget_8cpp_source.html#l00102">MusicSongSharingWidget::confirmButtonClicked()</a>, <a class="el" href="../../d3/d4e/musicidentifysongswidget_8cpp_source.html#l00247">MusicIdentifySongsWidget::createDetectedSuccessedWidget()</a>, <a class="el" href="../../d8/dc0/musicdownloadstatusobject_8cpp_source.html#l00125">MusicDownloadStatusObject::currentLrcDataDownload()</a>, <a class="el" href="../../d6/d2d/musicplaylistfoundwidget_8cpp_source.html#l00256">MusicPlaylistFoundWidget::currentPlaylistClicked()</a>, <a class="el" href="../../d1/d83/musiclrcdownloadbatchwidget_8cpp_source.html#l00120">MusicLrcDownloadBatchWidget::downloadButtonClicked()</a>, <a class="el" href="../../dd/d07/musiclrcanalysis_8cpp_source.html#l00581">MusicLrcAnalysis::getTranslatedLrc()</a>, <a class="el" href="../../d0/df0/musicplaylistfoundcommentswidget_8cpp_source.html#l00010">MusicPlaylistFoundCommentsWidget::initWidget()</a>, <a class="el" href="../../d4/d71/musiclrccommentswidget_8cpp_source.html#l00010">MusicLrcCommentsWidget::initWidget()</a>, <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00035">MusicAlbumFoundWidget::MusicAlbumFoundWidget()</a>, <a class="el" href="../../d6/dee/musicartistfoundwidget_8cpp_source.html#l00256">MusicArtistAlbumsFoundWidget::MusicArtistAlbumsFoundWidget()</a>, <a class="el" href="../../d6/dee/musicartistfoundwidget_8cpp_source.html#l00346">MusicArtistFoundWidget::MusicArtistFoundWidget()</a>, <a class="el" href="../../da/dfc/musicartistlistfoundwidget_8cpp_source.html#l00040">MusicArtistListFoundWidget::MusicArtistListFoundWidget()</a>, <a class="el" href="../../d6/dee/musicartistfoundwidget_8cpp_source.html#l00093">MusicArtistMvsFoundWidget::MusicArtistMvsFoundWidget()</a>, <a class="el" href="../../d6/dee/musicartistfoundwidget_8cpp_source.html#l00188">MusicArtistSimilarFoundWidget::MusicArtistSimilarFoundWidget()</a>, <a class="el" href="../../d2/da8/musiclrcsearchtablewidget_8cpp_source.html#l00042">MusicLrcSearchTableWidget::musicDownloadLocal()</a>, <a class="el" href="../../d8/d0d/musicdownloadwidget_8cpp_source.html#l00110">MusicDownloadWidget::MusicDownloadWidget()</a>, <a class="el" href="../../d9/d0e/musiclocalsongsearchinterioredit_8cpp_source.html#l00007">MusicLocalSongSearchInteriorEdit::MusicLocalSongSearchInteriorEdit()</a>, <a class="el" href="../../d6/d2d/musicplaylistfoundwidget_8cpp_source.html#l00118">MusicPlaylistFoundWidget::MusicPlaylistFoundWidget()</a>, <a class="el" href="../../d0/dc5/musictoplistfoundwidget_8cpp_source.html#l00031">MusicToplistFoundWidget::MusicToplistFoundWidget()</a>, <a class="el" href="../../d5/dd0/musicrecommendfoundwidget_8cpp_source.html#l00045">MusicRecommendFoundWidget::setSongName()</a>, <a class="el" href="../../dd/d45/musicsimilarfoundwidget_8cpp_source.html#l00045">MusicSimilarFoundWidget::setSongName()</a>, <a class="el" href="../../da/d29/musicalbumfoundwidget_8cpp_source.html#l00053">MusicAlbumFoundWidget::setSongNameById()</a>, <a class="el" href="../../d6/dee/musicartistfoundwidget_8cpp_source.html#l00374">MusicArtistFoundWidget::setSongNameById()</a>, <a class="el" href="../../d4/d09/musicvideosearchtablewidget_8cpp_source.html#l00031">MusicVideoSearchTableWidget::startSearchQuery()</a>, <a class="el" href="../../df/dd1/musicquerytablewidget_8cpp_source.html#l00053">MusicQueryItemTableWidget::startSearchQuery()</a>, <a class="el" href="../../d4/d09/musicvideosearchtablewidget_8cpp_source.html#l00049">MusicVideoSearchTableWidget::startSearchSingleQuery()</a>, and <a class="el" href="../../d9/d0e/musiclocalsongsearchinterioredit_8cpp_source.html#l00035">MusicLocalSongSearchInteriorEdit::textChanged()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a1ead0b33faf6dc6d9063d70db8c476bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MUSIC_NETWORK_EXPORT <a class="el" href="../../d0/d19/class_music_down_load_query_factory.html">MusicDownLoadQueryFactory</a>* GetMusicDownLoadQueryFactory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../de/daf/musicsingleton_8cpp_source.html#l00045">45</a> of file <a class="el" href="../../de/daf/musicsingleton_8cpp_source.html">musicsingleton.cpp</a>.</p>
+
+<p>References <a class="el" href="../../d7/d5f/musicsingleton_8h_source.html#l00064">MusicSingleton&lt; T &gt;::createInstance()</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 25 2020 12:46:53 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 6 2020 15:36:10 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
