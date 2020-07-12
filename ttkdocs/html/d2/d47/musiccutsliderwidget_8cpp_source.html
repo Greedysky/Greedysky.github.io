@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.0.0</span>
+   &#160;<span id="projectnumber">2.13.1.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -183,7 +183,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">int</span> lineStartHeight = (<a class="code" href="../../d4/d31/class_music_cut_slider_widget.html#af8c258f9efdef464fa549d727912399e">m_height</a> - (<a class="code" href="../../d2/d47/musiccutsliderwidget_8cpp.html#a086731f6f8c02a7a087b64fcf04f6bd3">PAINT_SLIDER_HEIGHT</a> + <a class="code" href="../../d2/d47/musiccutsliderwidget_8cpp.html#aa560fca5c66db4f45ee7f32233899bd9">PAINT_BUTTON_WIDTH</a>))/2;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">int</span> lineStartHeight = (<a class="code" href="../../d4/d31/class_music_cut_slider_widget.html#af8c258f9efdef464fa549d727912399e">m_height</a> - (<a class="code" href="../../d2/d47/musiccutsliderwidget_8cpp.html#a086731f6f8c02a7a087b64fcf04f6bd3">PAINT_SLIDER_HEIGHT</a> + <a class="code" href="../../d2/d47/musiccutsliderwidget_8cpp.html#aa560fca5c66db4f45ee7f32233899bd9">PAINT_BUTTON_WIDTH</a>)) / 2;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <a class="code" href="../../d4/d31/class_music_cut_slider_widget.html#a9f4f58b93947fac0797c33ba75b18388">m_leftControl</a>-&gt;move(-<a class="code" href="../../d2/d47/musiccutsliderwidget_8cpp.html#aa560fca5c66db4f45ee7f32233899bd9">PAINT_BUTTON_WIDTH</a>/2, lineStartHeight + <a class="code" href="../../d2/d47/musiccutsliderwidget_8cpp.html#a086731f6f8c02a7a087b64fcf04f6bd3">PAINT_SLIDER_HEIGHT</a>);</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="code" href="../../d4/d31/class_music_cut_slider_widget.html#a980714e42426ce2fdefc4f55ac8ed88b">m_rightControl</a>-&gt;move(-<a class="code" href="../../d2/d47/musiccutsliderwidget_8cpp.html#aa560fca5c66db4f45ee7f32233899bd9">PAINT_BUTTON_WIDTH</a>/2, lineStartHeight + <a class="code" href="../../d2/d47/musiccutsliderwidget_8cpp.html#a086731f6f8c02a7a087b64fcf04f6bd3">PAINT_SLIDER_HEIGHT</a>);</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
@@ -247,7 +247,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    QWidget::paintEvent(event);</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    QPainter painter(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> lineStartHeight = (<a class="code" href="../../d4/d31/class_music_cut_slider_widget.html#af8c258f9efdef464fa549d727912399e">m_height</a> - (<a class="code" href="../../d2/d47/musiccutsliderwidget_8cpp.html#a086731f6f8c02a7a087b64fcf04f6bd3">PAINT_SLIDER_HEIGHT</a> + <a class="code" href="../../d2/d47/musiccutsliderwidget_8cpp.html#aa560fca5c66db4f45ee7f32233899bd9">PAINT_BUTTON_WIDTH</a>))/2;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> lineStartHeight = (<a class="code" href="../../d4/d31/class_music_cut_slider_widget.html#af8c258f9efdef464fa549d727912399e">m_height</a> - (<a class="code" href="../../d2/d47/musiccutsliderwidget_8cpp.html#a086731f6f8c02a7a087b64fcf04f6bd3">PAINT_SLIDER_HEIGHT</a> + <a class="code" href="../../d2/d47/musiccutsliderwidget_8cpp.html#aa560fca5c66db4f45ee7f32233899bd9">PAINT_BUTTON_WIDTH</a>)) / 2;</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    painter.setBrush(QBrush(QColor(220, 220, 220)));</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    painter.drawRect(0, lineStartHeight, <a class="code" href="../../d4/d31/class_music_cut_slider_widget.html#aadbc4b10b8642054dcf81b2d58efa7ff">m_width</a>, <a class="code" href="../../d2/d47/musiccutsliderwidget_8cpp.html#a086731f6f8c02a7a087b64fcf04f6bd3">PAINT_SLIDER_HEIGHT</a>);</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
@@ -260,7 +260,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    painter.drawRect(leftX &lt; rightX ? leftX + <a class="code" href="../../d2/d47/musiccutsliderwidget_8cpp.html#aa560fca5c66db4f45ee7f32233899bd9">PAINT_BUTTON_WIDTH</a>/2 : rightX + <a class="code" href="../../d2/d47/musiccutsliderwidget_8cpp.html#aa560fca5c66db4f45ee7f32233899bd9">PAINT_BUTTON_WIDTH</a>/2, lineStartHeight, abs(leftX -rightX), <a class="code" href="../../d2/d47/musiccutsliderwidget_8cpp.html#a086731f6f8c02a7a087b64fcf04f6bd3">PAINT_SLIDER_HEIGHT</a>);</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    painter.setBrush(QBrush(QColor(0, 0, 0)));</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    painter.drawRect(<a class="code" href="../../d4/d31/class_music_cut_slider_widget.html#aff453876f62a9f395788fa3ea697401a">m_position</a> - <a class="code" href="../../d2/d47/musiccutsliderwidget_8cpp.html#a09cccb177a262a25c68fbb3fb8751620">PAINT_HANDER</a>/2, lineStartHeight + (<a class="code" href="../../d2/d47/musiccutsliderwidget_8cpp.html#a086731f6f8c02a7a087b64fcf04f6bd3">PAINT_SLIDER_HEIGHT</a> - <a class="code" href="../../d2/d47/musiccutsliderwidget_8cpp.html#a09cccb177a262a25c68fbb3fb8751620">PAINT_HANDER</a>)/2, <a class="code" href="../../d2/d47/musiccutsliderwidget_8cpp.html#a09cccb177a262a25c68fbb3fb8751620">PAINT_HANDER</a>, <a class="code" href="../../d2/d47/musiccutsliderwidget_8cpp.html#a09cccb177a262a25c68fbb3fb8751620">PAINT_HANDER</a>);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    painter.drawRect(<a class="code" href="../../d4/d31/class_music_cut_slider_widget.html#aff453876f62a9f395788fa3ea697401a">m_position</a> - <a class="code" href="../../d2/d47/musiccutsliderwidget_8cpp.html#a09cccb177a262a25c68fbb3fb8751620">PAINT_HANDER</a>/2, lineStartHeight + (<a class="code" href="../../d2/d47/musiccutsliderwidget_8cpp.html#a086731f6f8c02a7a087b64fcf04f6bd3">PAINT_SLIDER_HEIGHT</a> - <a class="code" href="../../d2/d47/musiccutsliderwidget_8cpp.html#a09cccb177a262a25c68fbb3fb8751620">PAINT_HANDER</a>) / 2, <a class="code" href="../../d2/d47/musiccutsliderwidget_8cpp.html#a09cccb177a262a25c68fbb3fb8751620">PAINT_HANDER</a>, <a class="code" href="../../d2/d47/musiccutsliderwidget_8cpp.html#a09cccb177a262a25c68fbb3fb8751620">PAINT_HANDER</a>);</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;}</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
@@ -318,7 +318,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 6 2020 15:35:48 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 12 2020 14:02:44 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

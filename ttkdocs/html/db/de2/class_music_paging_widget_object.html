@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.0.0</span>
+   &#160;<span id="projectnumber">2.13.1.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -98,8 +98,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
 Signals</h2></td></tr>
-<tr class="memitem:af2de79b1c3e886168930dfde80fa9683"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de2/class_music_paging_widget_object.html#af2de79b1c3e886168930dfde80fa9683">mapped</a> (<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> index)</td></tr>
-<tr class="separator:af2de79b1c3e886168930dfde80fa9683"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aaea965dad77fcc0c59089a9b3f07db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de2/class_music_paging_widget_object.html#a1aaea965dad77fcc0c59089a9b3f07db">clicked</a> (<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> index)</td></tr>
+<tr class="separator:a1aaea965dad77fcc0c59089a9b3f07db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -156,7 +156,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Object contsructor. </p>
 
-<p>Definition at line <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00011">11</a> of file <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html">musicpagingwidgetobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00010">10</a> of file <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html">musicpagingwidgetobject.cpp</a>.</p>
 
 <p>References <a class="el" href="../../d4/dc2/musicpagingwidgetobject_8h_source.html#l00069">m_currentPage</a>, and <a class="el" href="../../d4/dc2/musicpagingwidgetobject_8h_source.html#l00070">m_pagingWidget</a>.</p>
 
@@ -183,13 +183,40 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00018">18</a> of file <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html">musicpagingwidgetobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00017">17</a> of file <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html">musicpagingwidgetobject.cpp</a>.</p>
 
 <p>References <a class="el" href="../../d4/dc2/musicpagingwidgetobject_8h_source.html#l00071">m_pagingItems</a>, and <a class="el" href="../../d4/dc2/musicpagingwidgetobject_8h_source.html#l00070">m_pagingWidget</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a1aaea965dad77fcc0c59089a9b3f07db"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MusicPagingWidgetObject::clicked </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Mapped the clicked page index. </p>
+
+<p>Referenced by <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00028">createPagingWidget()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a4ea26580557ed5182405004b1864c6f6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -215,11 +242,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Create paging items. </p>
 
-<p>Definition at line <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00029">29</a> of file <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html">musicpagingwidgetobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00028">28</a> of file <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html">musicpagingwidgetobject.cpp</a>.</p>
 
-<p>References <a class="el" href="../../da/d90/musicwidgetutils_8cpp_source.html#l00058">MusicUtils::Widget::fontTextWidth()</a>, <a class="el" href="../../d4/dc2/musicpagingwidgetobject_8h_source.html#l00071">m_pagingItems</a>, <a class="el" href="../../d4/dc2/musicpagingwidgetobject_8h_source.html#l00070">m_pagingWidget</a>, <a class="el" href="../../db/de2/class_music_paging_widget_object.html#af2de79b1c3e886168930dfde80fa9683">mapped()</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00039">MusicUIObject::MQSSColorStyle04</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00166">MusicUIObject::MQSSFontStyle01</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00178">MusicUIObject::MQSSFontStyle05</a>, and <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00009">PAGE_SIZE</a>.</p>
+<p>References <a class="el" href="../../db/de2/class_music_paging_widget_object.html#a1aaea965dad77fcc0c59089a9b3f07db">clicked()</a>, <a class="el" href="../../da/d90/musicwidgetutils_8cpp_source.html#l00058">MusicUtils::Widget::fontTextWidth()</a>, <a class="el" href="../../d4/dc2/musicpagingwidgetobject_8h_source.html#l00071">m_pagingItems</a>, <a class="el" href="../../d4/dc2/musicpagingwidgetobject_8h_source.html#l00070">m_pagingWidget</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00039">MusicUIObject::MQSSColorStyle04</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00166">MusicUIObject::MQSSFontStyle01</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00178">MusicUIObject::MQSSFontStyle05</a>, and <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00008">PAGE_SIZE</a>.</p>
 
-<p>Referenced by <a class="el" href="../../da/dfc/musicartistlistfoundwidget_8cpp_source.html#l00093">MusicArtistListFoundWidget::createArtistListItem()</a>, <a class="el" href="../../d6/dee/musicartistfoundwidget_8cpp_source.html#l00146">MusicArtistMvsFoundWidget::createArtistMvsItem()</a>, <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00378">MusicCommentsWidget::createPagingWidget()</a>, <a class="el" href="../../d6/d2d/musicplaylistfoundwidget_8cpp_source.html#l00182">MusicPlaylistFoundWidget::createPlaylistItem()</a>, and <a class="el" href="../../d1/df4/musicwebdjradiofoundwidget_8cpp_source.html#l00150">MusicWebDJRadioFoundWidget::createProgramItem()</a>.</p>
+<p>Referenced by <a class="el" href="../../da/dfc/musicartistlistfoundwidget_8cpp_source.html#l00093">MusicArtistListFoundWidget::createArtistListItem()</a>, <a class="el" href="../../d6/dee/musicartistfoundwidget_8cpp_source.html#l00145">MusicArtistMvsFoundWidget::createArtistMvsItem()</a>, <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00378">MusicCommentsWidget::createPagingWidget()</a>, <a class="el" href="../../d6/d2d/musicplaylistfoundwidget_8cpp_source.html#l00182">MusicPlaylistFoundWidget::createPlaylistItem()</a>, and <a class="el" href="../../d1/df4/musicwebdjradiofoundwidget_8cpp_source.html#l00150">MusicWebDJRadioFoundWidget::createProgramItem()</a>.</p>
 
 </div>
 </div>
@@ -237,11 +264,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Get current page index. </p>
 
-<p>Definition at line <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00218">218</a> of file <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html">musicpagingwidgetobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00215">215</a> of file <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html">musicpagingwidgetobject.cpp</a>.</p>
 
 <p>References <a class="el" href="../../d4/dc2/musicpagingwidgetobject_8h_source.html#l00069">m_currentPage</a>, and <a class="el" href="../../d4/dc2/musicpagingwidgetobject_8h_source.html#l00071">m_pagingItems</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00322">MusicCommentsWidget::buttonClicked()</a>, <a class="el" href="../../d6/dee/musicartistfoundwidget_8cpp_source.html#l00172">MusicArtistMvsFoundWidget::buttonClicked()</a>, <a class="el" href="../../da/dfc/musicartistlistfoundwidget_8cpp_source.html#l00202">MusicArtistListFoundWidget::buttonClicked()</a>, <a class="el" href="../../d6/d2d/musicplaylistfoundwidget_8cpp_source.html#l00296">MusicPlaylistFoundWidget::buttonClicked()</a>, and <a class="el" href="../../d1/df4/musicwebdjradiofoundwidget_8cpp_source.html#l00239">MusicWebDJRadioFoundWidget::buttonClicked()</a>.</p>
+<p>Referenced by <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00322">MusicCommentsWidget::buttonClicked()</a>, <a class="el" href="../../d6/dee/musicartistfoundwidget_8cpp_source.html#l00171">MusicArtistMvsFoundWidget::buttonClicked()</a>, <a class="el" href="../../da/dfc/musicartistlistfoundwidget_8cpp_source.html#l00204">MusicArtistListFoundWidget::buttonClicked()</a>, <a class="el" href="../../d6/d2d/musicplaylistfoundwidget_8cpp_source.html#l00296">MusicPlaylistFoundWidget::buttonClicked()</a>, and <a class="el" href="../../d1/df4/musicwebdjradiofoundwidget_8cpp_source.html#l00239">MusicWebDJRadioFoundWidget::buttonClicked()</a>.</p>
 
 </div>
 </div>
@@ -259,36 +286,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Get create paging widget. </p>
 
-<p>Definition at line <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00024">24</a> of file <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html">musicpagingwidgetobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00023">23</a> of file <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html">musicpagingwidgetobject.cpp</a>.</p>
 
 <p>References <a class="el" href="../../d4/dc2/musicpagingwidgetobject_8h_source.html#l00070">m_pagingWidget</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af2de79b1c3e886168930dfde80fa9683"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MusicPagingWidgetObject::mapped </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
-          <td class="paramname"><em>index</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Mapped the clicked page index. </p>
-
-<p>Referenced by <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00029">createPagingWidget()</a>.</p>
 
 </div>
 </div>
@@ -317,11 +317,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Start to page by given index and total. </p>
 
-<p>Definition at line <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00124">124</a> of file <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html">musicpagingwidgetobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00121">121</a> of file <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html">musicpagingwidgetobject.cpp</a>.</p>
 
-<p>References <a class="el" href="../../da/d90/musicwidgetutils_8cpp_source.html#l00058">MusicUtils::Widget::fontTextWidth()</a>, <a class="el" href="../../d4/dc2/musicpagingwidgetobject_8h_source.html#l00069">m_currentPage</a>, <a class="el" href="../../d4/dc2/musicpagingwidgetobject_8h_source.html#l00071">m_pagingItems</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00039">MusicUIObject::MQSSColorStyle04</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00166">MusicUIObject::MQSSFontStyle01</a>, and <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00009">PAGE_SIZE</a>.</p>
+<p>References <a class="el" href="../../da/d90/musicwidgetutils_8cpp_source.html#l00058">MusicUtils::Widget::fontTextWidth()</a>, <a class="el" href="../../d4/dc2/musicpagingwidgetobject_8h_source.html#l00069">m_currentPage</a>, <a class="el" href="../../d4/dc2/musicpagingwidgetobject_8h_source.html#l00071">m_pagingItems</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00039">MusicUIObject::MQSSColorStyle04</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00166">MusicUIObject::MQSSFontStyle01</a>, and <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00008">PAGE_SIZE</a>.</p>
 
-<p>Referenced by <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00322">MusicCommentsWidget::buttonClicked()</a>, <a class="el" href="../../d6/dee/musicartistfoundwidget_8cpp_source.html#l00172">MusicArtistMvsFoundWidget::buttonClicked()</a>, <a class="el" href="../../da/dfc/musicartistlistfoundwidget_8cpp_source.html#l00202">MusicArtistListFoundWidget::buttonClicked()</a>, <a class="el" href="../../d6/d2d/musicplaylistfoundwidget_8cpp_source.html#l00296">MusicPlaylistFoundWidget::buttonClicked()</a>, and <a class="el" href="../../d1/df4/musicwebdjradiofoundwidget_8cpp_source.html#l00239">MusicWebDJRadioFoundWidget::buttonClicked()</a>.</p>
+<p>Referenced by <a class="el" href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00322">MusicCommentsWidget::buttonClicked()</a>, <a class="el" href="../../d6/dee/musicartistfoundwidget_8cpp_source.html#l00171">MusicArtistMvsFoundWidget::buttonClicked()</a>, <a class="el" href="../../da/dfc/musicartistlistfoundwidget_8cpp_source.html#l00204">MusicArtistListFoundWidget::buttonClicked()</a>, <a class="el" href="../../d6/d2d/musicplaylistfoundwidget_8cpp_source.html#l00296">MusicPlaylistFoundWidget::buttonClicked()</a>, and <a class="el" href="../../d1/df4/musicwebdjradiofoundwidget_8cpp_source.html#l00239">MusicWebDJRadioFoundWidget::buttonClicked()</a>.</p>
 
 </div>
 </div>
@@ -340,9 +340,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Reset page to origin. </p>
 
-<p>Definition at line <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00098">98</a> of file <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html">musicpagingwidgetobject.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00095">95</a> of file <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html">musicpagingwidgetobject.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/dc2/musicpagingwidgetobject_8h_source.html#l00069">m_currentPage</a>, <a class="el" href="../../d4/dc2/musicpagingwidgetobject_8h_source.html#l00071">m_pagingItems</a>, and <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00009">PAGE_SIZE</a>.</p>
+<p>References <a class="el" href="../../d4/dc2/musicpagingwidgetobject_8h_source.html#l00069">m_currentPage</a>, <a class="el" href="../../d4/dc2/musicpagingwidgetobject_8h_source.html#l00071">m_pagingItems</a>, and <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00008">PAGE_SIZE</a>.</p>
 
 <p>Referenced by <a class="el" href="../../da/dfc/musicartistlistfoundwidget_8cpp_source.html#l00093">MusicArtistListFoundWidget::createArtistListItem()</a>, <a class="el" href="../../d6/d2d/musicplaylistfoundwidget_8cpp_source.html#l00182">MusicPlaylistFoundWidget::createPlaylistItem()</a>, and <a class="el" href="../../d1/df4/musicwebdjradiofoundwidget_8cpp_source.html#l00150">MusicWebDJRadioFoundWidget::createProgramItem()</a>.</p>
 
@@ -369,7 +369,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d4/dc2/musicpagingwidgetobject_8h_source.html#l00069">69</a> of file <a class="el" href="../../d4/dc2/musicpagingwidgetobject_8h_source.html">musicpagingwidgetobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00218">currentIndex()</a>, <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00011">MusicPagingWidgetObject()</a>, <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00124">paging()</a>, and <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00098">reset()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00215">currentIndex()</a>, <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00010">MusicPagingWidgetObject()</a>, <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00121">paging()</a>, and <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00095">reset()</a>.</p>
 
 </div>
 </div>
@@ -393,7 +393,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d4/dc2/musicpagingwidgetobject_8h_source.html#l00071">71</a> of file <a class="el" href="../../d4/dc2/musicpagingwidgetobject_8h_source.html">musicpagingwidgetobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00029">createPagingWidget()</a>, <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00218">currentIndex()</a>, <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00124">paging()</a>, <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00098">reset()</a>, and <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00018">~MusicPagingWidgetObject()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00028">createPagingWidget()</a>, <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00215">currentIndex()</a>, <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00121">paging()</a>, <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00095">reset()</a>, and <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00017">~MusicPagingWidgetObject()</a>.</p>
 
 </div>
 </div>
@@ -417,7 +417,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d4/dc2/musicpagingwidgetobject_8h_source.html#l00070">70</a> of file <a class="el" href="../../d4/dc2/musicpagingwidgetobject_8h_source.html">musicpagingwidgetobject.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00029">createPagingWidget()</a>, <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00024">getCreatePagingWidget()</a>, <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00011">MusicPagingWidgetObject()</a>, and <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00018">~MusicPagingWidgetObject()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00028">createPagingWidget()</a>, <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00023">getCreatePagingWidget()</a>, <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00010">MusicPagingWidgetObject()</a>, and <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00017">~MusicPagingWidgetObject()</a>.</p>
 
 </div>
 </div>
@@ -428,7 +428,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 6 2020 15:36:45 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 12 2020 14:03:33 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

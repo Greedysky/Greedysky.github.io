@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.0.0</span>
+   &#160;<span id="projectnumber">2.13.1.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -83,10 +83,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d0/deb/musicuiobject_8h.html">musicuiobject.h</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dc/d17/musicwidgetheaders_8h.html">musicwidgetheaders.h</a>&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/d50/musicstringutils_8h.html">musicstringutils.h</a>&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QFile&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QButtonGroup&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;QSignalMapper&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d2/dc8/musicclickedgroup_8h.html">musicclickedgroup.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QFile&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;QButtonGroup&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
 <div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../d1/d19/class_music_e_m_o_j_i_label_widget.html#ae0a612ada6bde26239cbb4ed5d80978f">   12</a></span>&#160;<a class="code" href="../../d1/d19/class_music_e_m_o_j_i_label_widget.html#ae0a612ada6bde26239cbb4ed5d80978f">MusicEMOJILabelWidget::MusicEMOJILabelWidget</a>(QWidget *parent)</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    : QLabel(parent)</div>
@@ -110,8 +110,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    labelIconLayout-&gt;setContentsMargins(0, 0, 0, 0);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    labelIconLayout-&gt;setSpacing(3);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    QSignalMapper *mapper = <span class="keyword">new</span> QSignalMapper(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    connect(mapper, SIGNAL(mapped(<span class="keywordtype">int</span>)), SLOT(<a class="code" href="../../d1/d19/class_music_e_m_o_j_i_label_widget.html#aa4d352001a9f3bd0adc3f17311bac0b0">labelClicked</a>(<span class="keywordtype">int</span>)));</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="../../dd/d51/class_music_clicked_group.html">MusicClickedGroup</a> *clickedGroup = <span class="keyword">new</span> <a class="code" href="../../dd/d51/class_music_clicked_group.html">MusicClickedGroup</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    connect(clickedGroup, SIGNAL(clicked(<span class="keywordtype">int</span>)), SLOT(<a class="code" href="../../d1/d19/class_music_e_m_o_j_i_label_widget.html#aa4d352001a9f3bd0adc3f17311bac0b0">labelClicked</a>(<span class="keywordtype">int</span>)));</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;3; ++i)</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
@@ -121,10 +121,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            l-&gt;setAlignment(Qt::AlignCenter);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            l-&gt;setStyleSheet(QString(<span class="stringliteral">&quot;QLabel{%1}QLabel:hover{%2}&quot;</span>).arg(<a class="code" href="../../d2/dc5/namespace_music_u_i_object.html#afb6a537cf51af500c19557b3434a88dd">MusicUIObject::MQSSBorderStyle04</a>).arg(<a class="code" href="../../d2/dc5/namespace_music_u_i_object.html#a423d5ae318ea0221f10b7a627b523ad3">MusicUIObject::MQSSBorderStyle05</a>));</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            l-&gt;setFixedSize(32, 32);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            connect(l, SIGNAL(clicked()), mapper, SLOT(map()));</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            mapper-&gt;setMapping(l, i*7 + j);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            labelIconLayout-&gt;addWidget(l, i, j);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <a class="code" href="../../d1/d19/class_music_e_m_o_j_i_label_widget.html#a35a773db7444779334e869cf13ff6462">m_labelItems</a> &lt;&lt; l;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            labelIconLayout-&gt;addWidget(l, i, j);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <a class="code" href="../../d1/d19/class_music_e_m_o_j_i_label_widget.html#a35a773db7444779334e869cf13ff6462">m_labelItems</a> &lt;&lt; l;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            clickedGroup-&gt;<a class="code" href="../../dd/d51/class_music_clicked_group.html#a6e0ea625996a7df7a46984c26b245670">mapped</a>(l);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    labelWidget-&gt;setLayout(labelIconLayout);</div>
@@ -207,13 +207,16 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="musicstringutils_8h_html"><div class="ttname"><a href="../../d4/d50/musicstringutils_8h.html">musicstringutils.h</a></div></div>
 <div class="ttc" id="musicuiobject_8h_html"><div class="ttname"><a href="../../d0/deb/musicuiobject_8h.html">musicuiobject.h</a></div></div>
 <div class="ttc" id="class_music_e_m_o_j_i_label_widget_html_aa52496b4b5ab714af921d2924a88c8be"><div class="ttname"><a href="../../d1/d19/class_music_e_m_o_j_i_label_widget.html#aa52496b4b5ab714af921d2924a88c8be">MusicEMOJILabelWidget::leaveEvent</a></div><div class="ttdeci">virtual void leaveEvent(QEvent *event) override</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d3f/musicemojilabelwidget_8cpp_source.html#l00122">musicemojilabelwidget.cpp:122</a></div></div>
+<div class="ttc" id="class_music_clicked_group_html_a6e0ea625996a7df7a46984c26b245670"><div class="ttname"><a href="../../dd/d51/class_music_clicked_group.html#a6e0ea625996a7df7a46984c26b245670">MusicClickedGroup::mapped</a></div><div class="ttdeci">void mapped(QWidget *widget)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d86/musicclickedgroup_8cpp_source.html#l00009">musicclickedgroup.cpp:9</a></div></div>
 <div class="ttc" id="class_music_e_m_o_j_i_label_widget_html_ae0a612ada6bde26239cbb4ed5d80978f"><div class="ttname"><a href="../../d1/d19/class_music_e_m_o_j_i_label_widget.html#ae0a612ada6bde26239cbb4ed5d80978f">MusicEMOJILabelWidget::MusicEMOJILabelWidget</a></div><div class="ttdeci">MusicEMOJILabelWidget(QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d3f/musicemojilabelwidget_8cpp_source.html#l00012">musicemojilabelwidget.cpp:12</a></div></div>
+<div class="ttc" id="musicclickedgroup_8h_html"><div class="ttname"><a href="../../d2/dc8/musicclickedgroup_8h.html">musicclickedgroup.h</a></div></div>
 <div class="ttc" id="class_music_e_m_o_j_i_label_widget_html_a60ce779bdf22332c3799203aaae5d084"><div class="ttname"><a href="../../d1/d19/class_music_e_m_o_j_i_label_widget.html#a60ce779bdf22332c3799203aaae5d084">MusicEMOJILabelWidget::m_datas</a></div><div class="ttdeci">QStringList m_datas</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/da7/musicemojilabelwidget_8h_source.html#l00067">musicemojilabelwidget.h:67</a></div></div>
 <div class="ttc" id="ioapi_8h_html_a601c4660e8a1a14a1b87fe387e934d19"><div class="ttname"><a href="../../d2/db7/ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a></div><div class="ttdeci">voidpf uLong offset</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/db7/ioapi_8h_source.html#l00142">ioapi.h:142</a></div></div>
 <div class="ttc" id="musictinyuiobject_8h_html"><div class="ttname"><a href="../../df/d37/musictinyuiobject_8h.html">musictinyuiobject.h</a></div></div>
 <div class="ttc" id="class_music_e_m_o_j_i_label_widget_html_aa4d352001a9f3bd0adc3f17311bac0b0"><div class="ttname"><a href="../../d1/d19/class_music_e_m_o_j_i_label_widget.html#aa4d352001a9f3bd0adc3f17311bac0b0">MusicEMOJILabelWidget::labelClicked</a></div><div class="ttdeci">void labelClicked(int index)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d3f/musicemojilabelwidget_8cpp_source.html#l00111">musicemojilabelwidget.cpp:111</a></div></div>
 <div class="ttc" id="class_music_e_m_o_j_i_label_widget_html_a94a69087d30665772754ea4bf9803ec5"><div class="ttname"><a href="../../d1/d19/class_music_e_m_o_j_i_label_widget.html#a94a69087d30665772754ea4bf9803ec5">MusicEMOJILabelWidget::dataChanged</a></div><div class="ttdeci">void dataChanged(const QString &amp;data)</div></div>
 <div class="ttc" id="musicwidgetheaders_8h_html"><div class="ttname"><a href="../../dc/d17/musicwidgetheaders_8h.html">musicwidgetheaders.h</a></div></div>
+<div class="ttc" id="class_music_clicked_group_html"><div class="ttname"><a href="../../dd/d51/class_music_clicked_group.html">MusicClickedGroup</a></div><div class="ttdoc">The class of the label widget click group mapper. </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dc8/musicclickedgroup_8h_source.html#l00028">musicclickedgroup.h:28</a></div></div>
 <div class="ttc" id="class_music_e_m_o_j_i_label_widget_html_adc087b0876b316c17e9184d4a67490ac"><div class="ttname"><a href="../../d1/d19/class_music_e_m_o_j_i_label_widget.html#adc087b0876b316c17e9184d4a67490ac">MusicEMOJILabelWidget::m_currentPage</a></div><div class="ttdeci">int m_currentPage</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/da7/musicemojilabelwidget_8h_source.html#l00064">musicemojilabelwidget.h:64</a></div></div>
 <div class="ttc" id="musicemojilabelwidget_8h_html"><div class="ttname"><a href="../../d5/da7/musicemojilabelwidget_8h.html">musicemojilabelwidget.h</a></div></div>
 <div class="ttc" id="namespace_music_u_i_object_html_af5d4e9ac3d8d5689dbdd7e7ee2bfec92"><div class="ttname"><a href="../../d2/dc5/namespace_music_u_i_object.html#af5d4e9ac3d8d5689dbdd7e7ee2bfec92">MusicUIObject::MQSSTinyBtnClose</a></div><div class="ttdeci">const QString MQSSTinyBtnClose</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d37/musictinyuiobject_8h_source.html#l00157">musictinyuiobject.h:157</a></div></div>
@@ -230,7 +233,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 6 2020 15:35:49 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 12 2020 14:02:44 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

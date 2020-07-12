@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.0.0</span>
+   &#160;<span id="projectnumber">2.13.1.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -236,12 +236,12 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="../../d5/ddc/class_music_query_item_table_widget.html#adbfe97c60044fca907c70c524abbd13b">  157</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d5/ddc/class_music_query_item_table_widget.html#adbfe97c60044fca907c70c524abbd13b">MusicQueryItemTableWidget::resizeEvent</a>(QResizeEvent *event)</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;{</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    MusicQueryTableWidget::resizeEvent(event);</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <a class="code" href="../../d5/ddc/class_music_query_item_table_widget.html#a60d362515198a3c11b27590c045f0809">m_loadingLabel</a>-&gt;move((width() - <a class="code" href="../../d5/ddc/class_music_query_item_table_widget.html#a60d362515198a3c11b27590c045f0809">m_loadingLabel</a>-&gt;width())/2, (height() - <a class="code" href="../../d5/ddc/class_music_query_item_table_widget.html#a60d362515198a3c11b27590c045f0809">m_loadingLabel</a>-&gt;height())/2);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <a class="code" href="../../d5/ddc/class_music_query_item_table_widget.html#a60d362515198a3c11b27590c045f0809">m_loadingLabel</a>-&gt;move((width() - <a class="code" href="../../d5/ddc/class_music_query_item_table_widget.html#a60d362515198a3c11b27590c045f0809">m_loadingLabel</a>-&gt;width()) / 2, (height() - <a class="code" href="../../d5/ddc/class_music_query_item_table_widget.html#a60d362515198a3c11b27590c045f0809">m_loadingLabel</a>-&gt;height()) / 2);</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;}</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
 <div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="../../d5/ddc/class_music_query_item_table_widget.html#ad303d3cba0026127c6e40a482d2d7e79">  163</a></span>&#160;QString <a class="code" href="../../d5/ddc/class_music_query_item_table_widget.html#ad303d3cba0026127c6e40a482d2d7e79">MusicQueryItemTableWidget::randToGetStrength</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">switch</span>(qrand()%5)</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">switch</span>(<a class="code" href="../../dc/d95/class_music_time.html#ac1cb675cfe96a0f69a915ff272f30466">MusicTime::random</a>(5))</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    {</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keywordflow">case</span> 0: <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;:/video/lb_video_1&quot;</span>);</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keywordflow">case</span> 1: <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;:/video/lb_video_2&quot;</span>);</div>
@@ -281,6 +281,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_query_item_table_widget_html_a36bc1fe23d3921ca993b1d103adde0d9"><div class="ttname"><a href="../../d5/ddc/class_music_query_item_table_widget.html#a36bc1fe23d3921ca993b1d103adde0d9">MusicQueryItemTableWidget::itemDoubleClicked</a></div><div class="ttdeci">virtual void itemDoubleClicked(int row, int column)=0</div></div>
 <div class="ttc" id="class_music_query_item_table_widget_html_a90d8f4f4a4714e2ce4ad65d26a783727"><div class="ttname"><a href="../../d5/ddc/class_music_query_item_table_widget.html#a90d8f4f4a4714e2ce4ad65d26a783727">MusicQueryItemTableWidget::clearAllItems</a></div><div class="ttdeci">virtual void clearAllItems() override</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dd1/musicquerytablewidget_8cpp_source.html#l00080">musicquerytablewidget.cpp:80</a></div></div>
 <div class="ttc" id="musicgiflabelwidget_8h_html"><div class="ttname"><a href="../../d2/d69/musicgiflabelwidget_8h.html">musicgiflabelwidget.h</a></div></div>
+<div class="ttc" id="class_music_time_html_ac1cb675cfe96a0f69a915ff272f30466"><div class="ttname"><a href="../../dc/d95/class_music_time.html#ac1cb675cfe96a0f69a915ff272f30466">MusicTime::random</a></div><div class="ttdeci">static int random(int value=RAND_MAX)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dac/musictime_8cpp_source.html#l00105">musictime.cpp:105</a></div></div>
 <div class="ttc" id="class_music_down_load_query_thread_abstract_html"><div class="ttname"><a href="../../dc/de4/class_music_down_load_query_thread_abstract.html">MusicDownLoadQueryThreadAbstract</a></div><div class="ttdoc">The class to abstract query download data from net. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00092">musicdownloadquerythreadabstract.h:92</a></div></div>
 <div class="ttc" id="struct_music_searched_item_html"><div class="ttname"><a href="../../d6/dc5/struct_music_searched_item.html">MusicSearchedItem</a></div><div class="ttdoc">The class of the searched data item. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d3d/musicdownloadquerythreadabstract_8h_source.html#l00029">musicdownloadquerythreadabstract.h:29</a></div></div>
 <div class="ttc" id="namespace_music_utils_1_1_string_html_afea118893bdc84cbcb2f708d8d4690c1"><div class="ttname"><a href="../../d2/de2/namespace_music_utils_1_1_string.html#afea118893bdc84cbcb2f708d8d4690c1">MusicUtils::String::songName</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT QString songName(const QString &amp;value, const QString &amp;key=&quot;-&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dca/musicstringutils_8cpp_source.html#l00137">musicstringutils.cpp:137</a></div></div>
@@ -304,7 +305,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 6 2020 15:35:49 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 12 2020 14:02:45 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

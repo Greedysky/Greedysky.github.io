@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.0.0</span>
+   &#160;<span id="projectnumber">2.13.1.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -180,142 +180,129 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        hDll = ::LoadLibraryW(L<span class="stringliteral">&quot;DBGHELP.DLL&quot;</span>);</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    LPCWSTR szResult = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">if</span>(hDll)</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        MINIDUMPWRITEDUMP pDump = (MINIDUMPWRITEDUMP)::GetProcAddress(hDll, <span class="stringliteral">&quot;MiniDumpWriteDump&quot;</span>);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">if</span>(pDump)</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            WCHAR szDumpPath[_MAX_PATH];</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            WCHAR szDumpRootPath[_MAX_PATH];</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            WCHAR szScratch[_MAX_PATH];</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">if</span>(hDll)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        MINIDUMPWRITEDUMP pDump = (MINIDUMPWRITEDUMP)::GetProcAddress(hDll, <span class="stringliteral">&quot;MiniDumpWriteDump&quot;</span>);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordflow">if</span>(pDump)</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            WCHAR szDumpPath[_MAX_PATH];</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            WCHAR szDumpRootPath[_MAX_PATH];</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            WCHAR szScratch[_MAX_PATH];</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="comment">// work out a good place for the dump file</span></div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="comment">// work out a good place for the dump file</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <span class="keywordflow">if</span>(m_szDumpFilePath == <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            {</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                <span class="keywordflow">if</span>(GetModuleFileNameW(<span class="keyword">nullptr</span>, szDbgHelpPath, _MAX_PATH))</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                {</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                    WCHAR *pSlash = wcsrchr(szDbgHelpPath, L<span class="charliteral">&#39;\\&#39;</span>);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                    <span class="keywordflow">if</span>(pSlash)</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                    {</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                        wcscpy(pSlash + 1, L<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                        wcscpy(szDumpPath, szDbgHelpPath);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                    }</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                }</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!GetTempPathW(_MAX_PATH, szDumpPath))</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                {</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                    wcscpy(szDumpPath, L<span class="stringliteral">&quot;c:\\temp\\&quot;</span>);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                }</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            }</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            {</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                wcscpy(szDumpPath, m_szDumpFilePath);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            }</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            wcscpy(szDumpRootPath, szDumpPath);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="keywordflow">if</span>(m_szDumpFilePath == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <span class="keywordflow">if</span>(GetModuleFileNameW(<span class="keyword">nullptr</span>, szDbgHelpPath, _MAX_PATH))</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                    WCHAR *pSlash = wcsrchr(szDbgHelpPath, L<span class="charliteral">&#39;\\&#39;</span>);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                    <span class="keywordflow">if</span>(pSlash)</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                    {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                        wcscpy(pSlash + 1, L<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                        wcscpy(szDumpPath, szDbgHelpPath);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                    }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!GetTempPathW(_MAX_PATH, szDumpPath))</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                    wcscpy(szDumpPath, L<span class="stringliteral">&quot;c:\\temp\\&quot;</span>);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                }</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                wcscpy(szDumpPath, m_szDumpFilePath);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            }</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            wcscpy(szDumpRootPath, szDumpPath);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            <span class="comment">//PrintDebug(L&quot;[MiniDumper] Mini Dump file:[%s]&quot;,szDumpPath);</span></div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            <span class="comment">//PrintDebug(L&quot;[MiniDumper] Mini Dump file:[%s]&quot;,szDumpPath);</span></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            <span class="comment">// ask the user if they want to save a dump file</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            <span class="comment">//if(::MessageBox(nullptr, _T(&quot;Something bad happened in your program, would you like to save a diagnostic file?&quot;), m_szAppName, MB_YESNO)==IDYES)</span></div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            {</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                HANDLE hFile = <a class="code" href="../../dc/d6f/iowin32_8c.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a>;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                <span class="keywordtype">int</span> i = 1;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                WCHAR szFileNumber[_MAX_PATH];</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                <span class="keywordflow">while</span>(hFile == <a class="code" href="../../dc/d6f/iowin32_8c.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a>)</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                {</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                    swprintf(szFileNumber, <span class="keyword">sizeof</span>(szFileNumber), L<span class="stringliteral">&quot;_%04d&quot;</span>,i);</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                    wcscpy(szDumpPath, szDumpRootPath);</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                    wcscat(szDumpPath, m_szAppName);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            <span class="comment">// ask the user if they want to save a dump file</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            <span class="comment">//if(::MessageBox(nullptr, _T(&quot;Something bad happened in your program, would you like to save a diagnostic file?&quot;), m_szAppName, MB_YESNO)==IDYES)</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            {</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                HANDLE hFile = <a class="code" href="../../dc/d6f/iowin32_8c.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a>;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                <span class="keywordtype">int</span> i = 1;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                WCHAR szFileNumber[_MAX_PATH];</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                <span class="keywordflow">while</span>(hFile == <a class="code" href="../../dc/d6f/iowin32_8c.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a>)</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                {</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                    swprintf(szFileNumber, <span class="keyword">sizeof</span>(szFileNumber), L<span class="stringliteral">&quot;_%04d&quot;</span>,i);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                    wcscpy(szDumpPath, szDumpRootPath);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                    wcscat(szDumpPath, m_szAppName);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                    wcscat(szDumpPath, L<span class="stringliteral">&quot;_&quot;</span>);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                    wcscat(szDumpPath, m_szAppVersion);</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                    wcscat(szDumpPath, L<span class="stringliteral">&quot;_&quot;</span>);</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                    wcscat(szDumpPath, m_szAppVersion);</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                    wcscat(szDumpPath, L<span class="stringliteral">&quot;_&quot;</span>);</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                    wcscat(szDumpPath, m_szAppBuildNumber);</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                    wcscat(szDumpPath, szFileNumber);</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                    wcscat(szDumpPath, L<span class="stringliteral">&quot;.dmp&quot;</span>);</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                    hFile = ::CreateFileW(szDumpPath, GENERIC_WRITE, FILE_SHARE_WRITE, <span class="keyword">nullptr</span>, CREATE_NEW, FILE_ATTRIBUTE_NORMAL, <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                    i++;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                    <span class="keywordflow">if</span>(i &gt; MAX_DUMP_FILE_NUMBER)</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                    {</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                        hFile = ::CreateFileW(szDumpPath, GENERIC_WRITE, FILE_SHARE_WRITE, <span class="keyword">nullptr</span>, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                    }</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                }</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                <span class="comment">// create the file</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                <span class="keywordflow">if</span>(hFile!=<a class="code" href="../../dc/d6f/iowin32_8c.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a>)</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                {</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                    _MINIDUMP_EXCEPTION_INFORMATION ExInfo;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                    ExInfo.ThreadId = ::GetCurrentThreadId();</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                    ExInfo.ExceptionPointers = pExceptionInfo;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                    ExInfo.ClientPointers = 0;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                    <span class="comment">// write the dump</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                    BOOL bOK = pDump(GetCurrentProcess(), GetCurrentProcessId(), hFile, MiniDumpNormal, &amp;ExInfo, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                    <span class="keywordflow">if</span>(bOK)</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                    {</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                        swprintf(szScratch, <span class="keyword">sizeof</span>(szScratch), L<span class="stringliteral">&quot;Saved dump file to &#39;%s&#39;&quot;</span>, szDumpPath);</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                        szResult = szScratch;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                        retval = EXCEPTION_EXECUTE_HANDLER;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                    }</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                    {</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                        swprintf(szScratch, <span class="keyword">sizeof</span>(szScratch),L<span class="stringliteral">&quot;Failed to save dump file to &#39;%s&#39; (error %d)&quot;</span>, szDumpPath, GetLastError());</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                        szResult = szScratch;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                    }</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                    ::CloseHandle(hFile);</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                    WCHAR csOutMessage[MAX_WARNING_MESSAGE_PATH];</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                    swprintf(csOutMessage, <span class="keyword">sizeof</span>(csOutMessage), csOutMessage, m_szAppName, szDumpPath);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                    wcscat(szDumpPath, m_szAppBuildNumber);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                    wcscat(szDumpPath, szFileNumber);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                    wcscat(szDumpPath, L<span class="stringliteral">&quot;.dmp&quot;</span>);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                    hFile = ::CreateFileW(szDumpPath, GENERIC_WRITE, FILE_SHARE_WRITE, <span class="keyword">nullptr</span>, CREATE_NEW, FILE_ATTRIBUTE_NORMAL, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                    i++;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                    <span class="keywordflow">if</span>(i &gt; MAX_DUMP_FILE_NUMBER)</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                    {</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                        hFile = ::CreateFileW(szDumpPath, GENERIC_WRITE, FILE_SHARE_WRITE, <span class="keyword">nullptr</span>, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                    }</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                }</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                <span class="comment">// create the file</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                <span class="keywordflow">if</span>(hFile!=<a class="code" href="../../dc/d6f/iowin32_8c.html#a5fdc7facea201bfce4ad308105f88d0c">INVALID_HANDLE_VALUE</a>)</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                    _MINIDUMP_EXCEPTION_INFORMATION ExInfo;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                    ExInfo.ThreadId = ::GetCurrentThreadId();</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                    ExInfo.ExceptionPointers = pExceptionInfo;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                    ExInfo.ClientPointers = 0;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                    <span class="comment">// write the dump</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                    BOOL bOK = pDump(GetCurrentProcess(), GetCurrentProcessId(), hFile, MiniDumpNormal, &amp;ExInfo, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                    <span class="keywordflow">if</span>(bOK)</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                    {</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                        swprintf(szScratch, <span class="keyword">sizeof</span>(szScratch), L<span class="stringliteral">&quot;Saved dump file to &#39;%s&#39;&quot;</span>, szDumpPath);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                        retval = EXCEPTION_EXECUTE_HANDLER;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                    }</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                    {</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                        swprintf(szScratch, <span class="keyword">sizeof</span>(szScratch),L<span class="stringliteral">&quot;Failed to save dump file to &#39;%s&#39; (error %d)&quot;</span>, szDumpPath, GetLastError());</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                    }</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                    ::CloseHandle(hFile);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                    WCHAR csOutMessage[MAX_WARNING_MESSAGE_PATH];</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                    swprintf(csOutMessage, <span class="keyword">sizeof</span>(csOutMessage), csOutMessage, m_szAppName, szDumpPath);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                }</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                {</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                    swprintf(szScratch, <span class="keyword">sizeof</span>(szScratch),L<span class="stringliteral">&quot;Failed to create dump file &#39;%s&#39; (error %d)&quot;</span>, szDumpPath, GetLastError());</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                }</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                {</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                    swprintf(szScratch, <span class="keyword">sizeof</span>(szScratch),L<span class="stringliteral">&quot;Failed to create dump file &#39;%s&#39; (error %d)&quot;</span>, szDumpPath, GetLastError());</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                    szResult = szScratch;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                }</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            }</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        }</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        {</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            szResult = L<span class="stringliteral">&quot;DBGHELP.DLL too old&quot;</span>;</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        }</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    }</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    {</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        szResult = L<span class="stringliteral">&quot;DBGHELP.DLL not found&quot;</span>;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    }</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            }</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        }</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    }</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordflow">return</span> retval;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;}</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="preprocessor">#elif defined Q_OS_UNIX</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="preprocessor">#include &lt;signal.h&gt;</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="keywordtype">void</span> errorHandler(<span class="keywordtype">int</span> type)</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;{</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <a class="code" href="../../d5/d2b/ttklogger_8h.html#ae2a8797595daafbcb53f440f5aca9c8d">TTK_LOGGER_INFO</a>(<span class="stringliteral">&quot;Error Type &quot;</span> &lt;&lt; type);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <a class="code" href="../../d8/d5c/minidumper_8cpp.html#adf9dd84041e30ac428e446645f5575d8">cleanAppicationCache</a>();</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    exit(0);</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;}</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordflow">return</span> retval;</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;}</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="preprocessor">#elif defined Q_OS_UNIX</span></div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="preprocessor">#include &lt;signal.h&gt;</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="keywordtype">void</span> errorHandler(<span class="keywordtype">int</span> type)</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;{</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <a class="code" href="../../d5/d2b/ttklogger_8h.html#ae2a8797595daafbcb53f440f5aca9c8d">TTK_LOGGER_INFO</a>(<span class="stringliteral">&quot;Error Type &quot;</span> &lt;&lt; type);</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <a class="code" href="../../d8/d5c/minidumper_8cpp.html#adf9dd84041e30ac428e446645f5575d8">cleanAppicationCache</a>();</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    exit(0);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;MiniDumper::MiniDumper()</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;{</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    signal(SIGPIPE, errorHandler);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    signal(SIGSEGV, errorHandler);</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    signal(SIGFPE, errorHandler);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    signal(SIGABRT, errorHandler);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;}</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;MiniDumper::~MiniDumper()</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;{</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <a class="code" href="../../d8/d5c/minidumper_8cpp.html#adf9dd84041e30ac428e446645f5575d8">cleanAppicationCache</a>();</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;}</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;MiniDumper::MiniDumper()</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;{</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    signal(SIGPIPE, errorHandler);</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    signal(SIGSEGV, errorHandler);</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    signal(SIGFPE, errorHandler);</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    signal(SIGABRT, errorHandler);</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;}</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;MiniDumper::~MiniDumper()</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;{</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <a class="code" href="../../d8/d5c/minidumper_8cpp.html#adf9dd84041e30ac428e446645f5575d8">cleanAppicationCache</a>();</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;}</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="miniprocess_8h_html"><div class="ttname"><a href="../../d1/da4/miniprocess_8h.html">miniprocess.h</a></div></div>
 <div class="ttc" id="musicotherdefine_8h_html_a61c34894038965bfd1df2b2d37cd7ebf"><div class="ttname"><a href="../../d2/d77/musicotherdefine_8h.html#a61c34894038965bfd1df2b2d37cd7ebf">MUSIC_COLOR_FILE</a></div><div class="ttdeci">#define MUSIC_COLOR_FILE</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d77/musicotherdefine_8h_source.html#l00031">musicotherdefine.h:31</a></div></div>
 <div class="ttc" id="musicotherdefine_8h_html_a61eb9499870cfe157d299dddeee34968"><div class="ttname"><a href="../../d2/d77/musicotherdefine_8h.html#a61eb9499870cfe157d299dddeee34968">MUSIC_RECORD_IN_FILE</a></div><div class="ttdeci">#define MUSIC_RECORD_IN_FILE</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d77/musicotherdefine_8h_source.html#l00035">musicotherdefine.h:35</a></div></div>
@@ -339,7 +326,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 6 2020 15:36:02 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 12 2020 14:02:58 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

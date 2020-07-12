@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.0.0</span>
+   &#160;<span id="projectnumber">2.13.1.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -130,7 +130,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d1/dab/class_music_abstract_table_widget.html#a889b12c661d22d4115ebaf8cff0e7ffb">itemCellClicked</a>(<span class="keywordtype">int</span> row, <span class="keywordtype">int</span> column) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> keyDownLoadFinished(<span class="keyword">const</span> QByteArray &amp;data);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> downLoadFinished(<span class="keyword">const</span> QByteArray &amp;data);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> receiveDataFinshed(<span class="keyword">const</span> QSyncDataItems &amp;items);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> uploadFileFinished(<span class="keyword">const</span> QString &amp;time);</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> deleteFileFinished(<span class="keywordtype">bool</span> <a class="code" href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>);</div>
@@ -215,7 +215,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_cloud_manager_table_widget_html_a74f0abcd5c47d1533c7b779a94fd4a16"><div class="ttname"><a href="../../d7/d36/class_music_cloud_manager_table_widget.html#a74f0abcd5c47d1533c7b779a94fd4a16">MusicCloudManagerTableWidget::m_totalFileSzie</a></div><div class="ttdeci">qint64 m_totalFileSzie</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00177">musiccloudmanagerwidget.h:177</a></div></div>
 <div class="ttc" id="class_music_cloud_manager_table_widget_html_ad86459e6787b81221e3bc10862bfc9d0"><div class="ttname"><a href="../../d7/d36/class_music_cloud_manager_table_widget.html#ad86459e6787b81221e3bc10862bfc9d0">MusicCloudManagerTableWidget::m_openFileWidget</a></div><div class="ttdeci">MusicOpenFileWidget * m_openFileWidget</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d28/musiccloudmanagerwidget_8h_source.html#l00183">musiccloudmanagerwidget.h:183</a></div></div>
 <div class="ttc" id="class_q_sync_download_data_html"><div class="ttname"><a href="../../dd/da6/class_q_sync_download_data.html">QSyncDownloadData</a></div><div class="ttdoc">The class of the sync cloud data item. </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d6c/qsyncdownloaddata_8h_source.html#l00027">qsyncdownloaddata.h:27</a></div></div>
-<div class="ttc" id="struct_music_cloud_data_item_html"><div class="ttname"><a href="../../d8/d2e/struct_music_cloud_data_item.html">MusicCloudDataItem</a></div><div class="ttdoc">Sync import. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/dd1/musicclouddataitem_8h_source.html#l00029">musicclouddataitem.h:29</a></div></div>
+<div class="ttc" id="struct_music_cloud_data_item_html"><div class="ttname"><a href="../../d8/d2e/struct_music_cloud_data_item.html">MusicCloudDataItem</a></div><div class="ttdoc">The class of the cloud data item. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/dd1/musicclouddataitem_8h_source.html#l00029">musicclouddataitem.h:29</a></div></div>
 <div class="ttc" id="class_q_sync_upload_data_html"><div class="ttname"><a href="../../dd/d9d/class_q_sync_upload_data.html">QSyncUploadData</a></div><div class="ttdoc">The class of the sync cloud data item. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d1f/qsyncuploaddata_8h_source.html#l00027">qsyncuploaddata.h:27</a></div></div>
 <div class="ttc" id="musicwidgetheaders_8h_html"><div class="ttname"><a href="../../dc/d17/musicwidgetheaders_8h.html">musicwidgetheaders.h</a></div></div>
 <div class="ttc" id="class_q_sync_list_data_html"><div class="ttname"><a href="../../dc/d50/class_q_sync_list_data.html">QSyncListData</a></div><div class="ttdoc">The class of the sync cloud data item. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d44/qsynclistdata_8h_source.html#l00027">qsynclistdata.h:27</a></div></div>
@@ -238,7 +238,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 6 2020 15:35:51 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 12 2020 14:02:48 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

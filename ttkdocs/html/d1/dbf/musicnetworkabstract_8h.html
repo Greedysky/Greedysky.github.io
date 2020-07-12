@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.0.0</span>
+   &#160;<span id="projectnumber">2.13.1.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -76,6 +76,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">musicnetworkabstract.h File Reference</div>  </div>
@@ -83,9 +84,11 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="contents">
 <div class="textblock"><code>#include &lt;QNetworkReply&gt;</code><br />
 <code>#include &lt;QSslConfiguration&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d9/dcc/musictime_8h_source.html">musictime.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../df/d0e/musicnetworkthread_8h_source.html">musicnetworkthread.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../de/de0/musicnetworkdefines_8h_source.html">musicnetworkdefines.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d8/d63/musicalgorithmutils_8h_source.html">musicalgorithmutils.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/d36/parser_8h_source.html">qjson/parser.h</a>&quot;</code><br />
 </div>
 <p><a href="../../d1/dbf/musicnetworkabstract_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -101,15 +104,76 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:df/dbc/namespace_music_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">The namespace of the application object. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ae7a7121954f2d924f612bb80af3adc35"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dbf/musicnetworkabstract_8h.html#ae7a7121954f2d924f612bb80af3adc35">TTK_HTTPM</a>&#160;&#160;&#160;&quot;http:&quot;</td></tr>
+<tr class="memdesc:ae7a7121954f2d924f612bb80af3adc35"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d3/d7b/namespace_q_json.html" title="Namespace used by QJson. ">QJson</a> import.  <a href="#ae7a7121954f2d924f612bb80af3adc35">More...</a><br /></td></tr>
+<tr class="separator:ae7a7121954f2d924f612bb80af3adc35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73915e741d45378c5bfba33770a901c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dbf/musicnetworkabstract_8h.html#a73915e741d45378c5bfba33770a901c5">TTK_HTTP</a>&#160;&#160;&#160;&quot;http://&quot;</td></tr>
+<tr class="separator:a73915e741d45378c5bfba33770a901c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c6da166d4c1e86a3ef362da8f84863a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dbf/musicnetworkabstract_8h.html#a9c6da166d4c1e86a3ef362da8f84863a">TTK_HTTPS</a>&#160;&#160;&#160;&quot;https://&quot;</td></tr>
+<tr class="separator:a9c6da166d4c1e86a3ef362da8f84863a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ab14850088dfb96770578ff73eeb97bdd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dbc/namespace_music_object.html#ab14850088dfb96770578ff73eeb97bdd">MusicObject::setSslConfiguration</a> (QNetworkRequest *request, QSslSocket::PeerVerifyMode <a class="el" href="../../d2/db7/ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>)</td></tr>
 <tr class="separator:ab14850088dfb96770578ff73eeb97bdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a73915e741d45378c5bfba33770a901c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TTK_HTTP&#160;&#160;&#160;&quot;http://&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d1/dbf/musicnetworkabstract_8h_source.html#l00033">33</a> of file <a class="el" href="../../d1/dbf/musicnetworkabstract_8h_source.html">musicnetworkabstract.h</a>.</p>
+
+<p>Referenced by <a class="el" href="../../dd/d30/musicdownloadquerykwalbumthread_8cpp_source.html#l00055">MusicDownLoadQueryKWAlbumThread::downLoadFinished()</a>, <a class="el" href="../../d3/d6a/musicxmcommentsthread_8cpp_source.html#l00056">MusicXMSongCommentsThread::downLoadFinished()</a>, <a class="el" href="../../d3/d6a/musicxmcommentsthread_8cpp_source.html#l00161">MusicXMPlaylistCommentsThread::downLoadFinished()</a>, <a class="el" href="../../d0/dc7/musicdownloadquerykwmoviethread_8cpp_source.html#l00159">MusicDownLoadQueryKWMovieThread::pageDownLoadFinished()</a>, <a class="el" href="../../db/d68/musicdownloadqueryxmmoviethread_8cpp_source.html#l00208">MusicDownLoadQueryXMMovieThread::pageDownLoadFinished()</a>, <a class="el" href="../../dc/d60/musicdownloadkwinterface_8cpp_source.html#l00212">MusicDownLoadKWInterface::readFromMusicSongPic()</a>, <a class="el" href="../../d5/d15/musicdownloadquerykwthread_8cpp_source.html#l00010">MusicKWMusicInfoConfigManager::readMusicInfoConfig()</a>, <a class="el" href="../../df/dde/musiccoremplayer_8cpp_source.html#l00034">MusicCoreMPlayer::setMedia()</a>, and <a class="el" href="../../dd/d30/musicdownloadquerykwalbumthread_8cpp_source.html#l00157">MusicDownLoadQueryKWAlbumThread::singleDownLoadFinished()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae7a7121954f2d924f612bb80af3adc35"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TTK_HTTPM&#160;&#160;&#160;&quot;http:&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d3/d7b/namespace_q_json.html" title="Namespace used by QJson. ">QJson</a> import. </p>
+
+<p>Definition at line <a class="el" href="../../d1/dbf/musicnetworkabstract_8h_source.html#l00032">32</a> of file <a class="el" href="../../d1/dbf/musicnetworkabstract_8h_source.html">musicnetworkabstract.h</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d2/d3f/musicxmartistsimilarthread_8cpp_source.html#l00033">MusicXMArtistSimilarThread::downLoadFinished()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9c6da166d4c1e86a3ef362da8f84863a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TTK_HTTPS&#160;&#160;&#160;&quot;https://&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d1/dbf/musicnetworkabstract_8h_source.html#l00034">34</a> of file <a class="el" href="../../d1/dbf/musicnetworkabstract_8h_source.html">musicnetworkabstract.h</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d3/d6a/musicxmcommentsthread_8cpp_source.html#l00056">MusicXMSongCommentsThread::downLoadFinished()</a>, <a class="el" href="../../d3/d6a/musicxmcommentsthread_8cpp_source.html#l00161">MusicXMPlaylistCommentsThread::downLoadFinished()</a>, <a class="el" href="../../db/d68/musicdownloadqueryxmmoviethread_8cpp_source.html#l00208">MusicDownLoadQueryXMMovieThread::pageDownLoadFinished()</a>, and <a class="el" href="../../df/dde/musiccoremplayer_8cpp_source.html#l00034">MusicCoreMPlayer::setMedia()</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 6 2020 15:36:10 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 12 2020 14:03:05 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

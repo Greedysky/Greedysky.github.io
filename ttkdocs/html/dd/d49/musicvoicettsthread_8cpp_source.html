@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.0.0</span>
+   &#160;<span id="projectnumber">2.13.1.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -89,7 +89,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="../../d0/d9e/class_music_voice_tts_thread.html#a7b4e81a2d36969e4273eb5de922dcefe">m_person</a> = 0;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="../../d0/d9e/class_music_voice_tts_thread.html#a36c9626d54292720de02663ccf3cf413">m_parser</a> = <span class="keyword">new</span> <a class="code" href="../../d0/d30/class_music_download_source_thread.html">MusicDownloadSourceThread</a>(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    connect(<a class="code" href="../../d0/d9e/class_music_voice_tts_thread.html#a36c9626d54292720de02663ccf3cf413">m_parser</a>, SIGNAL(downLoadByteDataChanged(QByteArray)), SIGNAL(<a class="code" href="../../d0/d9e/class_music_voice_tts_thread.html#a84a73b1b0354f70f60233b97684b7ac6">downLoadDataChanged</a>(QByteArray)));</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    connect(<a class="code" href="../../d0/d9e/class_music_voice_tts_thread.html#a36c9626d54292720de02663ccf3cf413">m_parser</a>, SIGNAL(downLoadRawDataChanged(QByteArray)), SIGNAL(<a class="code" href="../../d0/d9e/class_music_voice_tts_thread.html#a84a73b1b0354f70f60233b97684b7ac6">downLoadDataChanged</a>(QByteArray)));</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../d0/d9e/class_music_voice_tts_thread.html#acbe03e42b5eccee59a7a1df32135f913">   16</a></span>&#160;<a class="code" href="../../d0/d9e/class_music_voice_tts_thread.html#acbe03e42b5eccee59a7a1df32135f913">MusicVoiceTtsThread::~MusicVoiceTtsThread</a>()</div>
@@ -177,7 +177,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="musicvoicettsthread_8h_html"><div class="ttname"><a href="../../d2/dd8/musicvoicettsthread_8h.html">musicvoicettsthread.h</a></div></div>
 <div class="ttc" id="class_music_voice_tts_thread_html_a3bd7962f49d28b4632972c59ae88dca9"><div class="ttname"><a href="../../d0/d9e/class_music_voice_tts_thread.html#a3bd7962f49d28b4632972c59ae88dca9">MusicVoiceTtsThread::setSpeed</a></div><div class="ttdeci">void setSpeed(int speed)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d49/musicvoicettsthread_8cpp_source.html#l00021">musicvoicettsthread.cpp:21</a></div></div>
 <div class="ttc" id="class_music_voice_tts_thread_html_a55381dcae967ab1ee7723d261f3667c7"><div class="ttname"><a href="../../d0/d9e/class_music_voice_tts_thread.html#a55381dcae967ab1ee7723d261f3667c7">MusicVoiceTtsThread::mapTypeFromEnumToString</a></div><div class="ttdeci">QString mapTypeFromEnumToString(TranslationType type)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d49/musicvoicettsthread_8cpp_source.html#l00068">musicvoicettsthread.cpp:68</a></div></div>
-<div class="ttc" id="class_music_download_source_thread_html"><div class="ttname"><a href="../../d0/d30/class_music_download_source_thread.html">MusicDownloadSourceThread</a></div><div class="ttdoc">The class of source data download thread. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/de0/musicdownloadsourcethread_8h_source.html#l00026">musicdownloadsourcethread.h:26</a></div></div>
+<div class="ttc" id="class_music_download_source_thread_html"><div class="ttname"><a href="../../d0/d30/class_music_download_source_thread.html">MusicDownloadSourceThread</a></div><div class="ttdoc">The class of source data download thread. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/de0/musicdownloadsourcethread_8h_source.html#l00027">musicdownloadsourcethread.h:27</a></div></div>
 <div class="ttc" id="class_music_voice_tts_thread_html_aca1290a7a0a49af02cbf24a1ea0b42c2"><div class="ttname"><a href="../../d0/d9e/class_music_voice_tts_thread.html#aca1290a7a0a49af02cbf24a1ea0b42c2">MusicVoiceTtsThread::setVolume</a></div><div class="ttdeci">void setVolume(int volume)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d49/musicvoicettsthread_8cpp_source.html#l00041">musicvoicettsthread.cpp:41</a></div></div>
 <div class="ttc" id="class_music_voice_tts_thread_html_a2b4f17cea26fa3a08dac271ee4beb55d"><div class="ttname"><a href="../../d0/d9e/class_music_voice_tts_thread.html#a2b4f17cea26fa3a08dac271ee4beb55d">MusicVoiceTtsThread::MusicVoiceTtsThread</a></div><div class="ttdeci">MusicVoiceTtsThread(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d49/musicvoicettsthread_8cpp_source.html#l00004">musicvoicettsthread.cpp:4</a></div></div>
 <div class="ttc" id="class_music_voice_tts_thread_html_a8946ad5856d4fcd45974f423e4e6c10e"><div class="ttname"><a href="../../d0/d9e/class_music_voice_tts_thread.html#a8946ad5856d4fcd45974f423e4e6c10e">MusicVoiceTtsThread::getSpeed</a></div><div class="ttdeci">int getSpeed() const </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d49/musicvoicettsthread_8cpp_source.html#l00026">musicvoicettsthread.cpp:26</a></div></div>
@@ -185,7 +185,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 6 2020 15:35:46 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 12 2020 14:02:41 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

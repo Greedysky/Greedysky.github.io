@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.0.0</span>
+   &#160;<span id="projectnumber">2.13.1.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -236,9 +236,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">#  define APPCACHE_DIR_FULL     MusicObject::getAppDir() + APPCACHE_DIR</span></div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="../../d8/d07/musicobject_8h.html#a5905ceb355514ca44348039580cb38a5">  159</a></span>&#160;<span class="preprocessor">#  define MAIN_DIR_FULL         MusicObject::getAppDir() + &quot;../&quot;</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="../../d8/d07/musicobject_8h.html#a30edeff35b00c1de4cce6a156042bb32">  160</a></span>&#160;<span class="preprocessor">#  define APPDATA_DIR_FULL      MusicObject::getHomeDir() + APPDATA_DIR</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="../../d8/d07/musicobject_8h.html#a30edeff35b00c1de4cce6a156042bb32">  160</a></span>&#160;<span class="preprocessor">#  define APPDATA_DIR_FULL      MusicObject::getConfigDir() + APPDATA_DIR</span></div>
 <div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="../../d8/d07/musicobject_8h.html#ac33b851ebc210ceb8d5b27ccac878faf">  161</a></span>&#160;<span class="preprocessor">#  define DOWNLOADS_DIR_FULL    MAIN_DIR_FULL + DOWNLOADS_DIR</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="../../d8/d07/musicobject_8h.html#a1b463d105c3801876c5ef4bebd0ed0b0">  162</a></span>&#160;<span class="preprocessor">#  define APPCACHE_DIR_FULL     MusicObject::getHomeDir() + APPCACHE_DIR</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="../../d8/d07/musicobject_8h.html#a1b463d105c3801876c5ef4bebd0ed0b0">  162</a></span>&#160;<span class="preprocessor">#  define APPCACHE_DIR_FULL     MusicObject::getConfigDir() + APPCACHE_DIR</span></div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
@@ -392,13 +392,17 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    }</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
-<div class="line"><a name="l00330"></a><span class="lineno"><a class="line" href="../../df/dbc/namespace_music_object.html#ad80e90803313e48893fefc62f6a9a065">  330</a></span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../df/dbc/namespace_music_object.html#ad80e90803313e48893fefc62f6a9a065">getHomeDir</a>()</div>
+<div class="line"><a name="l00330"></a><span class="lineno"><a class="line" href="../../df/dbc/namespace_music_object.html#ab64c21cd9514b0ff84be4aabff8c170d">  330</a></span>&#160;    <span class="keyword">static</span> QString <a class="code" href="../../df/dbc/namespace_music_object.html#ab64c21cd9514b0ff84be4aabff8c170d">getConfigDir</a>()</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    {</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <span class="keywordflow">return</span>  QDir::homePath() +<span class="stringliteral">&quot;/.ttkmp/&quot;</span>;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    }</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;}</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="preprocessor">#endif // MUSICOBJECT_H</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="preprocessor">#ifdef Q_OS_WIN</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <span class="keywordflow">return</span> QString::fromLocal8Bit(getenv(<span class="stringliteral">&quot;APPDATA&quot;</span>)) + <span class="stringliteral">&quot;/ttkmp/&quot;</span>;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="keywordflow">return</span> QDir::homePath() + <span class="stringliteral">&quot;/.config/ttkmp/&quot;</span>;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    }</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;}</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="preprocessor">#endif // MUSICOBJECT_H</span></div>
 <div class="ttc" id="struct_music_object_1_1_music_song_information_html_a2ed7beda9c060a1567526c0326af0c5a"><div class="ttname"><a href="../../d9/d32/struct_music_object_1_1_music_song_information.html#a2ed7beda9c060a1567526c0326af0c5a">MusicObject::MusicSongInformation::m_year</a></div><div class="ttdeci">QString m_year</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00263">musicobject.h:263</a></div></div>
 <div class="ttc" id="ttkglobal_8h_html_a26874f3399a60d18f8f82ce4a546e0c9"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#a26874f3399a60d18f8f82ce4a546e0c9">TTK_DECLARE_LISTS</a></div><div class="ttdeci">#define TTK_DECLARE_LISTS(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00161">ttkglobal.h:161</a></div></div>
 <div class="ttc" id="namespace_music_object_html_a0d8f8dd6eee2cdaf8348979c6dbf2753a70aba372b6085f683efc6185812e6b1a"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#a0d8f8dd6eee2cdaf8348979c6dbf2753a70aba372b6085f683efc6185812e6b1a">MusicObject::FT_Kerningt</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00303">musicobject.h:303</a></div></div>
@@ -407,6 +411,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="namespace_music_object_html_acca66249298ff7b620f3937badf42999"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#acca66249298ff7b620f3937badf42999">MusicObject::PlayMode</a></div><div class="ttdeci">PlayMode</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00277">musicobject.h:277</a></div></div>
 <div class="ttc" id="namespace_music_object_html_a0d8f8dd6eee2cdaf8348979c6dbf2753acbbf0b93fcbc55e21cfbb1a0ca81e7f8"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#a0d8f8dd6eee2cdaf8348979c6dbf2753acbbf0b93fcbc55e21cfbb1a0ca81e7f8">MusicObject::FT_Overline</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00300">musicobject.h:300</a></div></div>
 <div class="ttc" id="struct_music_object_1_1_music_song_attribute_html"><div class="ttname"><a href="../../d6/d87/struct_music_object_1_1_music_song_attribute.html">MusicObject::MusicSongAttribute</a></div><div class="ttdoc">The class of the music song atrribute. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00220">musicobject.h:220</a></div></div>
+<div class="ttc" id="namespace_music_object_html_ab64c21cd9514b0ff84be4aabff8c170d"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#ab64c21cd9514b0ff84be4aabff8c170d">MusicObject::getConfigDir</a></div><div class="ttdeci">static QString getConfigDir()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00330">musicobject.h:330</a></div></div>
 <div class="ttc" id="namespace_music_object_html_a0d8f8dd6eee2cdaf8348979c6dbf2753a763fd7f244f81bfe3abf22146d651b85"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#a0d8f8dd6eee2cdaf8348979c6dbf2753a763fd7f244f81bfe3abf22146d651b85">MusicObject::FT_Italic</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00298">musicobject.h:298</a></div></div>
 <div class="ttc" id="struct_music_object_1_1_music_song_attribute_html_abbc6888c02b50d3bbd30d832ccc0913a"><div class="ttname"><a href="../../d6/d87/struct_music_object_1_1_music_song_attribute.html#abbc6888c02b50d3bbd30d832ccc0913a">MusicObject::MusicSongAttribute::operator==</a></div><div class="ttdeci">bool operator==(const MusicSongAttribute &amp;other) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00240">musicobject.h:240</a></div></div>
 <div class="ttc" id="namespace_music_object_html_a0d8f8dd6eee2cdaf8348979c6dbf2753"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#a0d8f8dd6eee2cdaf8348979c6dbf2753">MusicObject::FontStyleMode</a></div><div class="ttdeci">FontStyleMode</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00295">musicobject.h:295</a></div></div>
@@ -430,7 +435,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="struct_music_object_1_1_music_song_information_html_abfe28d9c9fe913fcb5ac76ef3006d5ca"><div class="ttname"><a href="../../d9/d32/struct_music_object_1_1_music_song_information.html#abfe28d9c9fe913fcb5ac76ef3006d5ca">MusicObject::MusicSongInformation::m_singerName</a></div><div class="ttdeci">QString m_singerName</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00259">musicobject.h:259</a></div></div>
 <div class="ttc" id="struct_music_object_1_1_music_song_information_html_a5a6d9f587ab2758b70563121ed5a4881"><div class="ttname"><a href="../../d9/d32/struct_music_object_1_1_music_song_information.html#a5a6d9f587ab2758b70563121ed5a4881">MusicObject::MusicSongInformation::m_albumName</a></div><div class="ttdeci">QString m_albumName</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00260">musicobject.h:260</a></div></div>
 <div class="ttc" id="musicglobal_8h_html"><div class="ttname"><a href="../../da/d4e/musicglobal_8h.html">musicglobal.h</a></div></div>
-<div class="ttc" id="namespace_music_object_html_ad80e90803313e48893fefc62f6a9a065"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#ad80e90803313e48893fefc62f6a9a065">MusicObject::getHomeDir</a></div><div class="ttdeci">static QString getHomeDir()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00330">musicobject.h:330</a></div></div>
 <div class="ttc" id="namespace_music_object_html_a0d8f8dd6eee2cdaf8348979c6dbf2753a253e77a3aee7e09b85c397699861670b"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#a0d8f8dd6eee2cdaf8348979c6dbf2753a253e77a3aee7e09b85c397699861670b">MusicObject::FT_FixedPitch</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00302">musicobject.h:302</a></div></div>
 <div class="ttc" id="namespace_music_object_html_a238a757abacff658612590d6fcc1c6e8"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#a238a757abacff658612590d6fcc1c6e8">MusicObject::MusicSongAttribute</a></div><div class="ttdeci">struct MusicObject::MusicSongAttribute MusicSongAttribute</div><div class="ttdoc">The class of the music song atrribute. </div></div>
 <div class="ttc" id="namespace_music_object_html_a85dbc7f8359cfda6504c7f64d5349217a01792f2a1fb83ae4e2b0d84b6aa4fc2a"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#a85dbc7f8359cfda6504c7f64d5349217a01792f2a1fb83ae4e2b0d84b6aa4fc2a">MusicObject::PS_PlayingState</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00273">musicobject.h:273</a></div></div>
@@ -457,7 +461,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 6 2020 15:35:44 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 12 2020 14:02:32 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

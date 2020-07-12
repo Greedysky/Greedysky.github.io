@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.0.0</span>
+   &#160;<span id="projectnumber">2.13.1.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -97,46 +97,43 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License along</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * with this program; If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> ================================================= */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d1/dbf/musicnetworkabstract_8h.html">musicnetworkabstract.h</a>&quot;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../d0/d30/class_music_download_source_thread.html">   26</a></span>&#160;<span class="keyword">class </span>MUSIC_NETWORK_EXPORT <a class="code" href="../../d0/d30/class_music_download_source_thread.html">MusicDownloadSourceThread</a> : <span class="keyword">public</span> <a class="code" href="../../d5/de6/class_music_network_abstract.html">MusicNetworkAbstract</a></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d0/d30/class_music_download_source_thread.html">MusicDownloadSourceThread</a>)</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d0/d30/class_music_download_source_thread.html">MusicDownloadSourceThread</a>(QObject *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    ~<a class="code" href="../../d0/d30/class_music_download_source_thread.html">MusicDownloadSourceThread</a>();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> startToDownload(<span class="keyword">const</span> QString &amp;url);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> downLoadByteDataChanged(<span class="keyword">const</span> QByteArray &amp;data);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> downLoadExtDataChanged(<span class="keyword">const</span> QByteArray &amp;data, <span class="keyword">const</span> QVariantMap &amp;ext);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d5/de6/class_music_network_abstract.html#a5633d328e4f80b91dde0113550d6e852">downLoadFinished</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d5/de6/class_music_network_abstract.html#a92089bca759998f0f85e93feef67f7b5">replyError</a>(<a class="code" href="../../df/dbc/namespace_music_object.html#a739090443491193d34585a1956fa3daca0a95e1345ae0e36c86067c5cc867f809">QNetworkReply::NetworkError</a> error) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#ifndef QT_NO_SSL</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d5/de6/class_music_network_abstract.html#ab5e73bd758ed5fb3147f93797d75b0e4">sslErrors</a>(QNetworkReply *reply, <span class="keyword">const</span> QList&lt;QSslError&gt; &amp;errors) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif // MUSICDOWNLOADSOURCETHREAD_H</span></div>
-<div class="ttc" id="class_music_network_abstract_html"><div class="ttname"><a href="../../d5/de6/class_music_network_abstract.html">MusicNetworkAbstract</a></div><div class="ttdoc">The class of abstract downloading data. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dbf/musicnetworkabstract_8h_source.html#l00031">musicnetworkabstract.h:31</a></div></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d1/dbf/musicnetworkabstract_8h.html">musicnetworkabstract.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../d0/d30/class_music_download_source_thread.html">   27</a></span>&#160;<span class="keyword">class </span>MUSIC_NETWORK_EXPORT <a class="code" href="../../d0/d30/class_music_download_source_thread.html">MusicDownloadSourceThread</a> : <span class="keyword">public</span> <a class="code" href="../../d5/de6/class_music_network_abstract.html">MusicNetworkAbstract</a></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a>(<a class="code" href="../../d0/d30/class_music_download_source_thread.html">MusicDownloadSourceThread</a>)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d0/d30/class_music_download_source_thread.html">MusicDownloadSourceThread</a>(QObject *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    ~<a class="code" href="../../d0/d30/class_music_download_source_thread.html">MusicDownloadSourceThread</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> startToDownload(<span class="keyword">const</span> QString &amp;url);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d5/de6/class_music_network_abstract.html#a5633d328e4f80b91dde0113550d6e852">downLoadFinished</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d5/de6/class_music_network_abstract.html#a92089bca759998f0f85e93feef67f7b5">replyError</a>(<a class="code" href="../../df/dbc/namespace_music_object.html#a739090443491193d34585a1956fa3daca0a95e1345ae0e36c86067c5cc867f809">QNetworkReply::NetworkError</a> error) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#ifndef QT_NO_SSL</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d5/de6/class_music_network_abstract.html#ab5e73bd758ed5fb3147f93797d75b0e4">sslErrors</a>(QNetworkReply *reply, <span class="keyword">const</span> QList&lt;QSslError&gt; &amp;errors) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif // MUSICDOWNLOADSOURCETHREAD_H</span></div>
+<div class="ttc" id="class_music_network_abstract_html"><div class="ttname"><a href="../../d5/de6/class_music_network_abstract.html">MusicNetworkAbstract</a></div><div class="ttdoc">The class of abstract downloading data. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dbf/musicnetworkabstract_8h_source.html#l00039">musicnetworkabstract.h:39</a></div></div>
 <div class="ttc" id="musicnetworkabstract_8h_html"><div class="ttname"><a href="../../d1/dbf/musicnetworkabstract_8h.html">musicnetworkabstract.h</a></div></div>
 <div class="ttc" id="ttkglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00144">ttkglobal.h:144</a></div></div>
 <div class="ttc" id="class_music_network_abstract_html_a92089bca759998f0f85e93feef67f7b5"><div class="ttname"><a href="../../d5/de6/class_music_network_abstract.html#a92089bca759998f0f85e93feef67f7b5">MusicNetworkAbstract::replyError</a></div><div class="ttdeci">virtual void replyError(QNetworkReply::NetworkError error)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d73/musicnetworkabstract_8cpp_source.html#l00032">musicnetworkabstract.cpp:32</a></div></div>
 <div class="ttc" id="class_music_network_abstract_html_a5633d328e4f80b91dde0113550d6e852"><div class="ttname"><a href="../../d5/de6/class_music_network_abstract.html#a5633d328e4f80b91dde0113550d6e852">MusicNetworkAbstract::downLoadFinished</a></div><div class="ttdeci">virtual void downLoadFinished()=0</div></div>
 <div class="ttc" id="class_music_network_abstract_html_ab5e73bd758ed5fb3147f93797d75b0e4"><div class="ttname"><a href="../../d5/de6/class_music_network_abstract.html#ab5e73bd758ed5fb3147f93797d75b0e4">MusicNetworkAbstract::sslErrors</a></div><div class="ttdeci">virtual void sslErrors(QNetworkReply *reply, const QList&lt; QSslError &gt; &amp;errors)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d73/musicnetworkabstract_8cpp_source.html#l00040">musicnetworkabstract.cpp:40</a></div></div>
-<div class="ttc" id="class_music_download_source_thread_html"><div class="ttname"><a href="../../d0/d30/class_music_download_source_thread.html">MusicDownloadSourceThread</a></div><div class="ttdoc">The class of source data download thread. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/de0/musicdownloadsourcethread_8h_source.html#l00026">musicdownloadsourcethread.h:26</a></div></div>
+<div class="ttc" id="class_music_download_source_thread_html"><div class="ttname"><a href="../../d0/d30/class_music_download_source_thread.html">MusicDownloadSourceThread</a></div><div class="ttdoc">The class of source data download thread. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/de0/musicdownloadsourcethread_8h_source.html#l00027">musicdownloadsourcethread.h:27</a></div></div>
 <div class="ttc" id="namespace_music_object_html_a739090443491193d34585a1956fa3daca0a95e1345ae0e36c86067c5cc867f809"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#a739090443491193d34585a1956fa3daca0a95e1345ae0e36c86067c5cc867f809">MusicObject::NetworkError</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/de0/musicnetworkdefines_8h_source.html#l00031">musicnetworkdefines.h:31</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 6 2020 15:35:46 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 12 2020 14:02:41 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
