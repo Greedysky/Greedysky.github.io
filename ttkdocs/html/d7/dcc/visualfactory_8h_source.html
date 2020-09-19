@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.1.0</span>
+   &#160;<span id="projectnumber">2.13.2.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -114,30 +114,34 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="../../d2/d88/struct_visual_properties.html#a706980bedc13b86d46ed46692427f0f1">   38</a></span>&#160;    QString <a class="code" href="../../d2/d88/struct_visual_properties.html#a706980bedc13b86d46ed46692427f0f1">shortName</a>;         </div>
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../d2/d88/struct_visual_properties.html#a4b123ddcfb733fb33a3234f1f17c7b81">   39</a></span>&#160;    <span class="keywordtype">bool</span> hasSettings = <span class="keyword">false</span>;  </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="../../dd/d52/class_visual_factory.html">   44</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../df/df6/qmmp__export_8h.html#ae57db6e0c0f040f03506ccfc59947d30">QMMP_EXPORT</a> <a class="code" href="../../dd/d52/class_visual_factory.html">VisualFactory</a></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="../../dd/d52/class_visual_factory.html#ab480e8d2742e4fb7d26b2e50ab67919c">   50</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../dd/d52/class_visual_factory.html#ab480e8d2742e4fb7d26b2e50ab67919c">~VisualFactory</a>() {}</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../d2/d88/struct_visual_properties.html">VisualProperties</a> properties() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../dc/d74/class_visual.html">Visual</a> *create(QWidget *parent) = 0;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;Q_DECLARE_INTERFACE(<a class="code" href="../../dd/d52/class_visual_factory.html">VisualFactory</a>, <span class="stringliteral">&quot;VisualFactory/1.0&quot;</span>)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="../../dd/d52/class_visual_factory.html">   45</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../df/df6/qmmp__export_8h.html#ae57db6e0c0f040f03506ccfc59947d30">QMMP_EXPORT</a> <a class="code" href="../../dd/d52/class_visual_factory.html">VisualFactory</a></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="../../dd/d52/class_visual_factory.html#ab480e8d2742e4fb7d26b2e50ab67919c">   51</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../dd/d52/class_visual_factory.html#ab480e8d2742e4fb7d26b2e50ab67919c">~VisualFactory</a>()</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../d2/d88/struct_visual_properties.html">VisualProperties</a> properties() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../dc/d74/class_visual.html">Visual</a> *create(QWidget *parent) = 0;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;Q_DECLARE_INTERFACE(<a class="code" href="../../dd/d52/class_visual_factory.html">VisualFactory</a>, <span class="stringliteral">&quot;VisualFactory/1.0&quot;</span>)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="struct_visual_properties_html_afea0a73dbaca05aece56d3ca63b17baa"><div class="ttname"><a href="../../d2/d88/struct_visual_properties.html#afea0a73dbaca05aece56d3ca63b17baa">VisualProperties::name</a></div><div class="ttdeci">QString name</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dcc/visualfactory_8h_source.html#l00037">visualfactory.h:37</a></div></div>
 <div class="ttc" id="class_visual_html"><div class="ttname"><a href="../../dc/d74/class_visual.html">Visual</a></div><div class="ttdoc">The Visual class provides the base interface class of visualizations. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d6d/visual_8h_source.html#l00040">visual.h:40</a></div></div>
-<div class="ttc" id="class_visual_factory_html_ab480e8d2742e4fb7d26b2e50ab67919c"><div class="ttname"><a href="../../dd/d52/class_visual_factory.html#ab480e8d2742e4fb7d26b2e50ab67919c">VisualFactory::~VisualFactory</a></div><div class="ttdeci">virtual ~VisualFactory()</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dcc/visualfactory_8h_source.html#l00050">visualfactory.h:50</a></div></div>
+<div class="ttc" id="class_visual_factory_html_ab480e8d2742e4fb7d26b2e50ab67919c"><div class="ttname"><a href="../../dd/d52/class_visual_factory.html#ab480e8d2742e4fb7d26b2e50ab67919c">VisualFactory::~VisualFactory</a></div><div class="ttdeci">virtual ~VisualFactory()</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dcc/visualfactory_8h_source.html#l00051">visualfactory.h:51</a></div></div>
 <div class="ttc" id="qmmp__export_8h_html"><div class="ttname"><a href="../../df/df6/qmmp__export_8h.html">qmmp_export.h</a></div></div>
 <div class="ttc" id="qmmp__export_8h_html_ae57db6e0c0f040f03506ccfc59947d30"><div class="ttname"><a href="../../df/df6/qmmp__export_8h.html#ae57db6e0c0f040f03506ccfc59947d30">QMMP_EXPORT</a></div><div class="ttdeci">#define QMMP_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df6/qmmp__export_8h_source.html#l00029">qmmp_export.h:29</a></div></div>
-<div class="ttc" id="class_visual_factory_html"><div class="ttname"><a href="../../dd/d52/class_visual_factory.html">VisualFactory</a></div><div class="ttdoc">Visual plugin interface (visual factory). </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dcc/visualfactory_8h_source.html#l00044">visualfactory.h:44</a></div></div>
+<div class="ttc" id="class_visual_factory_html"><div class="ttname"><a href="../../dd/d52/class_visual_factory.html">VisualFactory</a></div><div class="ttdoc">Visual plugin interface (visual factory). </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dcc/visualfactory_8h_source.html#l00045">visualfactory.h:45</a></div></div>
 <div class="ttc" id="struct_visual_properties_html"><div class="ttname"><a href="../../d2/d88/struct_visual_properties.html">VisualProperties</a></div><div class="ttdoc">Structure to store visual plugin properies. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dcc/visualfactory_8h_source.html#l00035">visualfactory.h:35</a></div></div>
 <div class="ttc" id="struct_visual_properties_html_a706980bedc13b86d46ed46692427f0f1"><div class="ttname"><a href="../../d2/d88/struct_visual_properties.html#a706980bedc13b86d46ed46692427f0f1">VisualProperties::shortName</a></div><div class="ttdeci">QString shortName</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dcc/visualfactory_8h_source.html#l00038">visualfactory.h:38</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2020 14:02:31 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 19 2020 13:46:00 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

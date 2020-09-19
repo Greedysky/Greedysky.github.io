@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.1.0</span>
+   &#160;<span id="projectnumber">2.13.2.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -131,7 +131,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">bool</span> getUserLoginState() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> setTimerStop();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> setBackgroundAnimation(<span class="keywordtype">bool</span> <a class="code" href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> setCurrentPlayStatus(<span class="keywordtype">bool</span> status);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> setLabelText(<span class="keyword">const</span> QString &amp;<a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> setVolumeValue(<span class="keywordtype">int</span> value) <span class="keyword">const</span>;</div>
@@ -151,7 +151,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordtype">void</span> musicBackgroundSkinChanged(<span class="keyword">const</span> QString &amp;fileName);</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordtype">void</span> musicBackgroundSkinCustumChanged(<span class="keyword">const</span> QString &amp;fileName);</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordtype">void</span> musicBackgroundChanged();</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">void</span> musicBackgroundSliderStateChanged(<span class="keywordtype">bool</span> <a class="code" href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">void</span> musicBackgroundAnimationChanged(<span class="keywordtype">bool</span> <a class="code" href="../../d1/d70/http__parser_8c.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>);</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordtype">void</span> musicBackgroundThemeDownloadFinished();</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordtype">void</span> musicBackgroundThemeChangedByResize();</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordtype">void</span> musicPlaylistTransparent(<span class="keywordtype">int</span> index);</div>
@@ -185,9 +185,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00244"></a><span class="lineno"><a class="line" href="../../d3/d96/class_music_top_area_widget.html#ab264b10fc9a5a73b438f5be58149f242">  244</a></span>&#160;    QTimer <a class="code" href="../../d3/d96/class_music_top_area_widget.html#ab264b10fc9a5a73b438f5be58149f242">m_pictureCarouselTimer</a>;</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
 <div class="line"><a name="l00246"></a><span class="lineno"><a class="line" href="../../d3/d96/class_music_top_area_widget.html#aea359e6d9a59e0f4c711c4d536348fd2">  246</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="../../d3/d96/class_music_top_area_widget.html">MusicTopAreaWidget</a> *<a class="code" href="../../d3/d96/class_music_top_area_widget.html#aea359e6d9a59e0f4c711c4d536348fd2">m_instance</a>;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;};</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="preprocessor">#endif // MUSICTOPAREAWIDGET_H</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;};</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor">#endif // MUSICTOPAREAWIDGET_H</span></div>
 <div class="ttc" id="class_music_top_area_widget_html"><div class="ttname"><a href="../../d3/d96/class_music_top_area_widget.html">MusicTopAreaWidget</a></div><div class="ttdoc">The class of the app top area widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d18/musictopareawidget_8h_source.html#l00037">musictopareawidget.h:37</a></div></div>
 <div class="ttc" id="namespace_ui_html"><div class="ttname"><a href="../../dc/df0/namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d24/musicapplication_8h_source.html#l00033">musicapplication.h:33</a></div></div>
 <div class="ttc" id="class_music_top_area_widget_html_ad128f0505842f8d8e8c3344854b71e88"><div class="ttname"><a href="../../d3/d96/class_music_top_area_widget.html#ad128f0505842f8d8e8c3344854b71e88">MusicTopAreaWidget::getBackgroundAlpha</a></div><div class="ttdeci">int getBackgroundAlpha() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d18/musictopareawidget_8h_source.html#l00069">musictopareawidget.h:69</a></div></div>
@@ -214,7 +215,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2020 14:02:32 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 19 2020 13:46:00 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

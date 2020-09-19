@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.1.0</span>
+   &#160;<span id="projectnumber">2.13.2.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -116,22 +116,26 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../db/d53/struct_output_properties.html#ae867dc1421c030139fe600299b7441c6">   40</a></span>&#160;    QString <a class="code" href="../../db/d53/struct_output_properties.html#ae867dc1421c030139fe600299b7441c6">shortName</a>;         </div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../db/d53/struct_output_properties.html#a38537378a22c0fc0ffe4b2050e6bef27">   41</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../db/d53/struct_output_properties.html#a38537378a22c0fc0ffe4b2050e6bef27">hasSettings</a> = <span class="keyword">false</span>;  </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="../../dc/db6/class_output_factory.html">   46</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../df/df6/qmmp__export_8h.html#ae57db6e0c0f040f03506ccfc59947d30">QMMP_EXPORT</a> <a class="code" href="../../dc/db6/class_output_factory.html">OutputFactory</a></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="../../dc/db6/class_output_factory.html#a6e6f7a874c009c75dea7f338fbd398da">   52</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../dc/db6/class_output_factory.html#a6e6f7a874c009c75dea7f338fbd398da">~OutputFactory</a>() {}</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../db/d53/struct_output_properties.html">OutputProperties</a> properties() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../db/db4/class_output.html">Output</a> *create() = 0;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../d7/d83/class_volume.html">Volume</a> *createVolume() = 0;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;Q_DECLARE_INTERFACE(<a class="code" href="../../dc/db6/class_output_factory.html">OutputFactory</a>, <span class="stringliteral">&quot;OutputFactory/1.0&quot;</span>)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../dc/db6/class_output_factory.html">   47</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../df/df6/qmmp__export_8h.html#ae57db6e0c0f040f03506ccfc59947d30">QMMP_EXPORT</a> <a class="code" href="../../dc/db6/class_output_factory.html">OutputFactory</a></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="../../dc/db6/class_output_factory.html#a6e6f7a874c009c75dea7f338fbd398da">   53</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../dc/db6/class_output_factory.html#a6e6f7a874c009c75dea7f338fbd398da">~OutputFactory</a>()</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../db/d53/struct_output_properties.html">OutputProperties</a> properties() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../db/db4/class_output.html">Output</a> *create() = 0;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../d7/d83/class_volume.html">Volume</a> *createVolume() = 0;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;Q_DECLARE_INTERFACE(<a class="code" href="../../dc/db6/class_output_factory.html">OutputFactory</a>, <span class="stringliteral">&quot;OutputFactory/1.0&quot;</span>)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="class_volume_html"><div class="ttname"><a href="../../d7/d83/class_volume.html">Volume</a></div><div class="ttdoc">The Volume class provides asbtract volume interface. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de4/volume_8h_source.html#l00051">volume.h:51</a></div></div>
-<div class="ttc" id="class_output_html"><div class="ttname"><a href="../../db/db4/class_output.html">Output</a></div><div class="ttdoc">The Output class provides the base interface class of audio outputs. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d30/output_8h_source.html#l00027">output.h:27</a></div></div>
-<div class="ttc" id="class_output_factory_html_a6e6f7a874c009c75dea7f338fbd398da"><div class="ttname"><a href="../../dc/db6/class_output_factory.html#a6e6f7a874c009c75dea7f338fbd398da">OutputFactory::~OutputFactory</a></div><div class="ttdeci">virtual ~OutputFactory()</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/ded/outputfactory_8h_source.html#l00052">outputfactory.h:52</a></div></div>
+<div class="ttc" id="class_output_html"><div class="ttname"><a href="../../db/db4/class_output.html">Output</a></div><div class="ttdoc">The Output class provides the base interface class of audio outputs. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d30/output_8h_source.html#l00040">output.h:40</a></div></div>
+<div class="ttc" id="class_output_factory_html_a6e6f7a874c009c75dea7f338fbd398da"><div class="ttname"><a href="../../dc/db6/class_output_factory.html#a6e6f7a874c009c75dea7f338fbd398da">OutputFactory::~OutputFactory</a></div><div class="ttdeci">virtual ~OutputFactory()</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/ded/outputfactory_8h_source.html#l00053">outputfactory.h:53</a></div></div>
 <div class="ttc" id="struct_output_properties_html_ae867dc1421c030139fe600299b7441c6"><div class="ttname"><a href="../../db/d53/struct_output_properties.html#ae867dc1421c030139fe600299b7441c6">OutputProperties::shortName</a></div><div class="ttdeci">QString shortName</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/ded/outputfactory_8h_source.html#l00040">outputfactory.h:40</a></div></div>
 <div class="ttc" id="class_decoder_html"><div class="ttname"><a href="../../da/d56/class_decoder.html">Decoder</a></div><div class="ttdoc">The Decoder class provides the base interface class of audio decoders. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d72/decoder_8h_source.html#l00039">decoder.h:39</a></div></div>
 <div class="ttc" id="struct_output_properties_html_a38537378a22c0fc0ffe4b2050e6bef27"><div class="ttname"><a href="../../db/d53/struct_output_properties.html#a38537378a22c0fc0ffe4b2050e6bef27">OutputProperties::hasSettings</a></div><div class="ttdeci">bool hasSettings</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/ded/outputfactory_8h_source.html#l00041">outputfactory.h:41</a></div></div>
@@ -139,11 +143,11 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="struct_output_properties_html"><div class="ttname"><a href="../../db/d53/struct_output_properties.html">OutputProperties</a></div><div class="ttdoc">Helper structure to store output plugin properies. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/ded/outputfactory_8h_source.html#l00037">outputfactory.h:37</a></div></div>
 <div class="ttc" id="qmmp__export_8h_html_ae57db6e0c0f040f03506ccfc59947d30"><div class="ttname"><a href="../../df/df6/qmmp__export_8h.html#ae57db6e0c0f040f03506ccfc59947d30">QMMP_EXPORT</a></div><div class="ttdeci">#define QMMP_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df6/qmmp__export_8h_source.html#l00029">qmmp_export.h:29</a></div></div>
 <div class="ttc" id="struct_output_properties_html_a35bd4f91f5e1c72a1d2b75df9f3b821b"><div class="ttname"><a href="../../db/d53/struct_output_properties.html#a35bd4f91f5e1c72a1d2b75df9f3b821b">OutputProperties::name</a></div><div class="ttdeci">QString name</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/ded/outputfactory_8h_source.html#l00039">outputfactory.h:39</a></div></div>
-<div class="ttc" id="class_output_factory_html"><div class="ttname"><a href="../../dc/db6/class_output_factory.html">OutputFactory</a></div><div class="ttdoc">Output plugin interface (output factory). </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/ded/outputfactory_8h_source.html#l00046">outputfactory.h:46</a></div></div>
+<div class="ttc" id="class_output_factory_html"><div class="ttname"><a href="../../dc/db6/class_output_factory.html">OutputFactory</a></div><div class="ttdoc">Output plugin interface (output factory). </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/ded/outputfactory_8h_source.html#l00047">outputfactory.h:47</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2020 14:02:31 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 19 2020 13:46:00 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

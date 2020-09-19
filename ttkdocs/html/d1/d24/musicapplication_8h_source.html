@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.1.0</span>
+   &#160;<span id="projectnumber">2.13.2.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -132,10 +132,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> radioExecuteOuter(<span class="keyword">const</span> QString &amp;path);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> musicImportSongsSettingPathOuter(<span class="keyword">const</span> QStringList &amp;path, <span class="keywordtype">bool</span> play);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> musicImportSongsPathOuter(<span class="keyword">const</span> QStringList &amp;path, <span class="keywordtype">bool</span> play);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> musicImportSongsSettingPath(<span class="keyword">const</span> QStringList &amp;path);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> musicImportSongsPath(<span class="keyword">const</span> QStringList &amp;path);</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    QString musicDownloadContains(<span class="keywordtype">bool</span> &amp;contains) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">bool</span> musicLovestContains() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">bool</span> musicListLovestContains(<span class="keywordtype">int</span> index) <span class="keyword">const</span>;</div>
@@ -224,13 +224,14 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00340"></a><span class="lineno"><a class="line" href="../../db/def/class_music_application.html#aa070bf1498c4962f041a0f4b5def922f">  340</a></span>&#160;    <a class="code" href="../../d9/d08/class_music_application_object.html">MusicApplicationObject</a> *<a class="code" href="../../db/def/class_music_application.html#aa070bf1498c4962f041a0f4b5def922f">m_applicationObject</a>;</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
 <div class="line"><a name="l00342"></a><span class="lineno"><a class="line" href="../../db/def/class_music_application.html#a3eca2a4b7ea809fc9aba38c688df61f9">  342</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="../../db/def/class_music_application.html">MusicApplication</a> *<a class="code" href="../../db/def/class_music_application.html#a3eca2a4b7ea809fc9aba38c688df61f9">m_instance</a>;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;};</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="preprocessor">#endif // MUSICAPPLICATION_H</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;};</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="preprocessor">#endif // MUSICAPPLICATION_H</span></div>
 <div class="ttc" id="class_music_application_html_adbcba1879c5034b31b5e72d4fa79e502"><div class="ttname"><a href="../../db/def/class_music_application.html#adbcba1879c5034b31b5e72d4fa79e502">MusicApplication::m_bottomAreaWidget</a></div><div class="ttdeci">MusicBottomAreaWidget * m_bottomAreaWidget</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d24/musicapplication_8h_source.html#l00336">musicapplication.h:336</a></div></div>
 <div class="ttc" id="class_music_application_object_html"><div class="ttname"><a href="../../d9/d08/class_music_application_object.html">MusicApplicationObject</a></div><div class="ttdoc">The class of the app object widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dc1/musicapplicationobject_8h_source.html#l00036">musicapplicationobject.h:36</a></div></div>
 <div class="ttc" id="class_music_top_area_widget_html"><div class="ttname"><a href="../../d3/d96/class_music_top_area_widget.html">MusicTopAreaWidget</a></div><div class="ttdoc">The class of the app top area widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d18/musictopareawidget_8h_source.html#l00037">musictopareawidget.h:37</a></div></div>
-<div class="ttc" id="namespace_music_object_html_acca66249298ff7b620f3937badf42999"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#acca66249298ff7b620f3937badf42999">MusicObject::PlayMode</a></div><div class="ttdeci">PlayMode</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00277">musicobject.h:277</a></div></div>
+<div class="ttc" id="namespace_music_object_html_acca66249298ff7b620f3937badf42999"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#acca66249298ff7b620f3937badf42999">MusicObject::PlayMode</a></div><div class="ttdeci">PlayMode</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00279">musicobject.h:279</a></div></div>
 <div class="ttc" id="class_music_application_html_aaceadfa132763d18e96a11c4fd0d4f87"><div class="ttname"><a href="../../db/def/class_music_application.html#aaceadfa132763d18e96a11c4fd0d4f87">MusicApplication::m_musicPlaylist</a></div><div class="ttdeci">MusicPlaylist * m_musicPlaylist</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d24/musicapplication_8h_source.html#l00334">musicapplication.h:334</a></div></div>
 <div class="ttc" id="namespace_ui_html"><div class="ttname"><a href="../../dc/df0/namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d24/musicapplication_8h_source.html#l00033">musicapplication.h:33</a></div></div>
 <div class="ttc" id="class_music_application_html_a4ed19c276d57c557e6e3fd356f92d293"><div class="ttname"><a href="../../db/def/class_music_application.html#a4ed19c276d57c557e6e3fd356f92d293">MusicApplication::m_musicSongTreeWidget</a></div><div class="ttdeci">MusicSongsSummariziedWidget * m_musicSongTreeWidget</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d24/musicapplication_8h_source.html#l00335">musicapplication.h:335</a></div></div>
@@ -260,7 +261,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2020 14:02:31 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 19 2020 13:46:00 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

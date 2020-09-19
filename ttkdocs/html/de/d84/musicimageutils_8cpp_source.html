@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.1.0</span>
+   &#160;<span id="projectnumber">2.13.2.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -79,283 +79,188 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="contents">
 <a href="../../de/d84/musicimageutils_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/d18/musicimageutils_8h.html">musicimageutils.h</a>&quot;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/d07/musicobject_8h.html">musicobject.h</a>&quot;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;qmath.h&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/d48/qimagewrap_8h.html">qalg/qimagewrap.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QBitmap&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QBuffer&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QPainter&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="../../db/dc4/namespace_gaussian_blur.html">    9</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="../../db/dc4/namespace_gaussian_blur.html">GaussianBlur</a> {</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="../../db/dc4/namespace_gaussian_blur.html#a3da18ec9de8bc9b336c215af44e736e7">   10</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../db/dc4/namespace_gaussian_blur.html#a3da18ec9de8bc9b336c215af44e736e7">gaussBlur</a>(<span class="keywordtype">int</span>* pix, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h, <span class="keywordtype">int</span> radius)</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> sigma =  1.0 * radius / 2.57;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> deno  =  1.0 / (sigma * sqrt(2.0 * M_PI));</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> nume  = -1.0 / (2.0 * sigma * sigma);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">float</span>* gaussMatrix = (<span class="keywordtype">float</span>*)malloc(<span class="keyword">sizeof</span>(<span class="keywordtype">float</span>)* (radius + radius + 1));</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">float</span> gaussSum = 0.0;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0, x = -radius; x &lt;= radius; ++x, ++i)</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordtype">float</span> g = deno * exp(1.0 * nume * x * x);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        gaussMatrix[i] = g;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        gaussSum += g;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="../../d8/d75/namespace_music_utils_1_1_image.html#a394316cf8175bc4b9b1712bfc2ce2960">    9</a></span>&#160;QPixmap <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#a394316cf8175bc4b9b1712bfc2ce2960">MusicUtils::Image::pixmapToRound</a>(<span class="keyword">const</span> QPixmap &amp;src, <span class="keywordtype">int</span> ratioX, <span class="keywordtype">int</span> ratioY)</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#a394316cf8175bc4b9b1712bfc2ce2960">pixmapToRound</a>(src, QRect(QPoint(0, 0), src.size()), ratioX, ratioY);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="../../d8/d75/namespace_music_utils_1_1_image.html#a453bca9adb52b7f0300ce03ecd05659d">   14</a></span>&#160;QPixmap <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#a394316cf8175bc4b9b1712bfc2ce2960">MusicUtils::Image::pixmapToRound</a>(<span class="keyword">const</span> QPixmap &amp;src, <span class="keyword">const</span> QSize &amp;<a class="code" href="../../d2/db7/ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, <span class="keywordtype">int</span> ratioX, <span class="keywordtype">int</span> ratioY)</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#a394316cf8175bc4b9b1712bfc2ce2960">pixmapToRound</a>(src, QRect(QPoint(0, 0), size), ratioX, ratioY);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../d8/d75/namespace_music_utils_1_1_image.html#aaf17bb86293e92f60f67e57bbf0cc475">   19</a></span>&#160;QPixmap <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#a394316cf8175bc4b9b1712bfc2ce2960">MusicUtils::Image::pixmapToRound</a>(<span class="keyword">const</span> QPixmap &amp;src, <span class="keyword">const</span> QRect &amp;rect, <span class="keywordtype">int</span> ratioX, <span class="keywordtype">int</span> ratioY)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">if</span>(src.isNull())</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">return</span> QPixmap();</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> len = radius + radius + 1;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; len; ++i)</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        gaussMatrix[i] /= gaussSum;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">int</span>* rowData  = (<span class="keywordtype">int</span>*)malloc(w * <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">int</span>* listData = (<span class="keywordtype">int</span>*)malloc(h * <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> y = 0; y &lt; h; ++y)</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        memcpy(rowData, pix + y * w, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>) * w);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> x = 0; x &lt; w; ++x)</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordtype">float</span> r = 0, g = 0, b = 0;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            gaussSum = 0;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    QPixmap image = src.scaled(rect.size());</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    image.setMask(<a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#aa44db6c6a1654e7fc0e9ae148e2ba3eb">getBitmapMask</a>(rect, ratioX, ratioY));</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">return</span> image;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../d8/d75/namespace_music_utils_1_1_image.html#a902e507837bc2817ea10c41a12f18498">   31</a></span>&#160;QPixmap <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#a394316cf8175bc4b9b1712bfc2ce2960">MusicUtils::Image::pixmapToRound</a>(<span class="keyword">const</span> QPixmap &amp;src, <span class="keyword">const</span> QPixmap &amp;mask, <span class="keyword">const</span> QSize &amp;<a class="code" href="../../d2/db7/ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">if</span>(src.isNull() || mask.isNull())</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">return</span> QPixmap();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    QPixmap image(mask);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    QPainter painter(&amp;image);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    painter.setCompositionMode(QPainter::CompositionMode_SourceIn);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    painter.setRenderHints(QPainter::Antialiasing | QPainter::SmoothPixmapTransform);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    painter.drawPixmap(0, 0, src.scaled(size));</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = -radius; i &lt;= radius; ++i)</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <span class="keywordtype">int</span> k = x + i;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                <span class="keywordflow">if</span>(0 &lt;= k &amp;&amp; k &lt;= w)</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                    <span class="keywordtype">int</span> color = rowData[k];</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                    <span class="keywordtype">int</span> cr = (color &amp; 0x00ff0000) &gt;&gt; 16;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                    <span class="keywordtype">int</span> cg = (color &amp; 0x0000ff00) &gt;&gt; 8;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                    <span class="keywordtype">int</span> cb = (color &amp; 0x000000ff);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                    r += cr * gaussMatrix[i + radius];</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                    g += cg * gaussMatrix[i + radius];</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                    b += cb * gaussMatrix[i + radius];</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                    gaussSum += gaussMatrix[i + radius];</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordtype">int</span> cr = (<a class="code" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)(r / gaussSum);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordtype">int</span> cg = (<a class="code" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)(g / gaussSum);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordtype">int</span> cb = (<a class="code" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)(b / gaussSum);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            pix[y * w + x] = cr &lt;&lt; 16 | cg &lt;&lt; 8 | cb | 0xff000000;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> x = 0; x &lt; w; ++x)</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> y = 0; y &lt; h; ++y)</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            listData[y] = pix[y * w + x];</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> y = 0; y &lt; h; ++y)</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordtype">float</span> r = 0, g = 0, b = 0;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            gaussSum = 0;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = -radius; j &lt;= radius; ++j)</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                <span class="keywordtype">int</span> k = y + j;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> image;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../d8/d75/namespace_music_utils_1_1_image.html#aa44db6c6a1654e7fc0e9ae148e2ba3eb">   47</a></span>&#160;QBitmap <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#aa44db6c6a1654e7fc0e9ae148e2ba3eb">MusicUtils::Image::getBitmapMask</a>(<span class="keyword">const</span> QRect &amp;rect, <span class="keywordtype">int</span> ratioX, <span class="keywordtype">int</span> ratioY)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    QBitmap mask(rect.size());</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    QPainter painter(&amp;mask);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    painter.fillRect(rect, Qt::white);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    painter.setBrush(QColor(0, 0, 0));</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    painter.setRenderHints(QPainter::Antialiasing | QPainter::SmoothPixmapTransform);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    painter.drawRoundedRect(rect, ratioX, ratioY);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">return</span> mask;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="../../d8/d75/namespace_music_utils_1_1_image.html#a9a575cd2a72aeec631b7896658099146">   58</a></span>&#160;QByteArray <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#a9a575cd2a72aeec631b7896658099146">MusicUtils::Image::getPixmapData</a>(<span class="keyword">const</span> QPixmap &amp;pix)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">if</span>(pix.isNull())</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">return</span> QByteArray();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    QByteArray data;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    QBuffer buffer(&amp;data);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">if</span>(buffer.open(QIODevice::WriteOnly))</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        pix.save(&amp;buffer, <a class="code" href="../../d8/d07/musicobject_8h.html#af3f3ca7aa945b0135d807f3fcfd722ba">JPG_FILE_PREFIX</a>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    buffer.close();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">return</span> data;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="../../d8/d75/namespace_music_utils_1_1_image.html#ae9cbd9698bce02014e8b220143e2a959">   75</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#ae9cbd9698bce02014e8b220143e2a959">MusicUtils::Image::fusionPixmap</a>(QPixmap &amp;back, <span class="keyword">const</span> QPixmap &amp;front, <span class="keyword">const</span> QPoint &amp;pt)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">if</span>(front.isNull())</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    QPainter painter(&amp;back);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    painter.setRenderHints(QPainter::Antialiasing | QPainter::SmoothPixmapTransform);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    painter.drawPixmap(pt.x(), pt.y(), front);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                <span class="keywordflow">if</span>(0 &lt;= k &amp;&amp; k &lt;= h)</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                    <span class="keywordtype">int</span> color = listData[k];</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                    <span class="keywordtype">int</span> cr = (color &amp; 0x00ff0000) &gt;&gt; 16;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                    <span class="keywordtype">int</span> cg = (color &amp; 0x0000ff00) &gt;&gt; 8;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                    <span class="keywordtype">int</span> cb = (color &amp; 0x000000ff);</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="../../d8/d75/namespace_music_utils_1_1_image.html#a193f8f4ccdba290ea2c25d8f6af53aec">   87</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#ae9cbd9698bce02014e8b220143e2a959">MusicUtils::Image::fusionPixmap</a>(QImage &amp;back, <span class="keyword">const</span> QImage &amp;front, <span class="keyword">const</span> QPoint &amp;pt)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">if</span>(front.isNull())</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                    r += cr * gaussMatrix[j + radius];</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                    g += cg * gaussMatrix[j + radius];</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                    b += cb * gaussMatrix[j + radius];</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                    gaussSum += gaussMatrix[j + radius];</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                }</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            }</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keywordtype">int</span> cr = (<a class="code" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)(r / gaussSum);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keywordtype">int</span> cg = (<a class="code" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)(g / gaussSum);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordtype">int</span> cb = (<a class="code" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)(b / gaussSum);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            pix[y * w + x] = cr &lt;&lt; 16 | cg &lt;&lt; 8 | cb | 0xff000000;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        }</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    free(gaussMatrix);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    free(rowData);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    free(listData);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    QPainter painter(&amp;back);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    painter.setRenderHints(QPainter::Antialiasing | QPainter::SmoothPixmapTransform);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    painter.drawImage(pt.x(), pt.y(), front);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="../../d8/d75/namespace_music_utils_1_1_image.html#a947e6edbd4dcab5fac2eaa4ac82151a4">   99</a></span>&#160;QPixmap <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#a947e6edbd4dcab5fac2eaa4ac82151a4">MusicUtils::Image::grayScalePixmap</a>(<span class="keyword">const</span> QPixmap &amp;src, <span class="keywordtype">int</span> radius)</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;{</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    QImage pix = src.toImage();</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> w=0; w&lt;pix.width(); w++)</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> h=0; h&lt;pix.height(); h++)</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keywordtype">int</span> gray = qGray(pix.pixel(w, h)) + radius;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                gray = qBound(0, gray, 255);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keyword">const</span> QRgb rgb = qRgb(gray, gray, gray);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            pix.setPixel(w, h, rgb);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">return</span> QPixmap::fromImage(pix);</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="../../d8/d75/namespace_music_utils_1_1_image.html#a394316cf8175bc4b9b1712bfc2ce2960">  117</a></span>&#160;QPixmap <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#a394316cf8175bc4b9b1712bfc2ce2960">MusicUtils::Image::pixmapToRound</a>(<span class="keyword">const</span> QPixmap &amp;src, <span class="keywordtype">int</span> ratioX, <span class="keywordtype">int</span> ratioY)</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;{</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#a394316cf8175bc4b9b1712bfc2ce2960">pixmapToRound</a>(src, QRect(QPoint(0, 0), src.size()), ratioX, ratioY);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="../../d8/d75/namespace_music_utils_1_1_image.html#af2fed784d1ca87c5a9319ae821d6926d">  115</a></span>&#160;QImage <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#af2fed784d1ca87c5a9319ae821d6926d">MusicUtils::Image::gaussPixmap</a>(<span class="keyword">const</span> QImage &amp;image, <span class="keywordtype">int</span> radius)</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;{</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    QImage img = image.copy();</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#af2fed784d1ca87c5a9319ae821d6926d">MusicUtils::Image::gaussPixmap</a>(img, radius);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">return</span> img;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="../../d8/d75/namespace_music_utils_1_1_image.html#a453bca9adb52b7f0300ce03ecd05659d">  122</a></span>&#160;QPixmap <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#a394316cf8175bc4b9b1712bfc2ce2960">MusicUtils::Image::pixmapToRound</a>(<span class="keyword">const</span> QPixmap &amp;src, <span class="keyword">const</span> QSize &amp;<a class="code" href="../../d2/db7/ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, <span class="keywordtype">int</span> ratioX, <span class="keywordtype">int</span> ratioY)</div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="../../d8/d75/namespace_music_utils_1_1_image.html#ac8f8a302e6b9e558b4aa5e8867f01fe2">  122</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#af2fed784d1ca87c5a9319ae821d6926d">MusicUtils::Image::gaussPixmap</a>(QImage &amp;image, <span class="keywordtype">int</span> radius)</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;{</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#a394316cf8175bc4b9b1712bfc2ce2960">pixmapToRound</a>(src, QRect(QPoint(0, 0), size), ratioX, ratioY);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="../../d8/d75/namespace_music_utils_1_1_image.html#aaf17bb86293e92f60f67e57bbf0cc475">  127</a></span>&#160;QPixmap <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#a394316cf8175bc4b9b1712bfc2ce2960">MusicUtils::Image::pixmapToRound</a>(<span class="keyword">const</span> QPixmap &amp;src, <span class="keyword">const</span> QRect &amp;rect, <span class="keywordtype">int</span> ratioX, <span class="keywordtype">int</span> ratioY)</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;{</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">if</span>(src.isNull())</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    {</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keywordflow">return</span> QPixmap();</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    QPixmap image = src.scaled(rect.size());</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    image.setMask(<a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#aa44db6c6a1654e7fc0e9ae148e2ba3eb">getBitmapMask</a>(rect, ratioX, ratioY));</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordflow">return</span> image;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="../../d8/d75/namespace_music_utils_1_1_image.html#a902e507837bc2817ea10c41a12f18498">  139</a></span>&#160;QPixmap <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#a394316cf8175bc4b9b1712bfc2ce2960">MusicUtils::Image::pixmapToRound</a>(<span class="keyword">const</span> QPixmap &amp;src, <span class="keyword">const</span> QPixmap &amp;mask, <span class="keyword">const</span> QSize &amp;<a class="code" href="../../d2/db7/ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>)</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;{</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordflow">if</span>(src.isNull() || mask.isNull())</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    {</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keywordflow">return</span> QPixmap();</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <a class="code" href="../../d7/d61/class_q_image_wrap_1_1_q_gauss_blur.html">QImageWrap::QGaussBlur</a> wrap;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    wrap.<a class="code" href="../../d7/d61/class_q_image_wrap_1_1_q_gauss_blur.html#a310a76a06dc8c2ad2e6190694902d2a3">render</a>((<span class="keywordtype">int</span>*)image.bits(), image.width(), image.height(), radius);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="../../d8/d75/namespace_music_utils_1_1_image.html#aa42db62b62b023fac58a0ef90d117e78">  128</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#aa42db62b62b023fac58a0ef90d117e78">MusicUtils::Image::reRenderAlpha</a>(<span class="keywordtype">int</span> alpha, <span class="keywordtype">int</span> value)</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;{</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordflow">return</span> reRenderValue&lt;int&gt;(0xFF, alpha, value);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="../../d8/d75/namespace_music_utils_1_1_image.html#a28ab293202e6834a9b87f8ec4dc04c27">  133</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#a28ab293202e6834a9b87f8ec4dc04c27">MusicUtils::Image::reRenderImage</a>(<span class="keywordtype">int</span> delta, <span class="keyword">const</span> QImage *input, QImage *output)</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;{</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> w=0; w&lt;input-&gt;width(); w++)</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> h=0; h&lt;input-&gt;height(); h++)</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        {</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <span class="keyword">const</span> QRgb rgb = input-&gt;pixel(w, h);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            output-&gt;setPixel(w, h, qRgb(<a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#a4905dd42a5d59975ff342256f181c5ca">colorBurnTransform</a>(qRed(rgb), delta),</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                                        <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#a4905dd42a5d59975ff342256f181c5ca">colorBurnTransform</a>(qGreen(rgb), delta),</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                                        <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#a4905dd42a5d59975ff342256f181c5ca">colorBurnTransform</a>(qBlue(rgb), delta)));</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        }</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    }</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    QPixmap image(mask);</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    QPainter painter(&amp;image);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    painter.setCompositionMode(QPainter::CompositionMode_SourceIn);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    painter.setRenderHints(QPainter::Antialiasing | QPainter::SmoothPixmapTransform);</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    painter.drawPixmap(0, 0, src.scaled(size));</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordflow">return</span> image;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;}</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
-<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="../../d8/d75/namespace_music_utils_1_1_image.html#aa44db6c6a1654e7fc0e9ae148e2ba3eb">  155</a></span>&#160;QBitmap <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#aa44db6c6a1654e7fc0e9ae148e2ba3eb">MusicUtils::Image::getBitmapMask</a>(<span class="keyword">const</span> QRect &amp;rect, <span class="keywordtype">int</span> ratioX, <span class="keywordtype">int</span> ratioY)</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;{</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    QBitmap mask(rect.size());</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    QPainter painter(&amp;mask);</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    painter.fillRect(rect, Qt::white);</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    painter.setBrush(QColor(0, 0, 0));</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    painter.setRenderHints(QPainter::Antialiasing | QPainter::SmoothPixmapTransform);</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    painter.drawRoundedRect(rect, ratioX, ratioY);</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">return</span> mask;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;}</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="../../d8/d75/namespace_music_utils_1_1_image.html#a4905dd42a5d59975ff342256f181c5ca">  147</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#a4905dd42a5d59975ff342256f181c5ca">MusicUtils::Image::colorBurnTransform</a>(<span class="keywordtype">int</span> c, <span class="keywordtype">int</span> delta)</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;{</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordflow">if</span>(0 &gt; delta || delta &gt; 0xFF)</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    {</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordflow">return</span> c;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    }</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> result = (c - (c * delta)/(0xFF - delta));</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordflow">if</span>(result &gt; 0xFF)</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    {</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordflow">return</span> 0xFF;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    }</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(result &lt; 0)</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;}</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
-<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="../../d8/d75/namespace_music_utils_1_1_image.html#a9a575cd2a72aeec631b7896658099146">  166</a></span>&#160;QByteArray <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#a9a575cd2a72aeec631b7896658099146">MusicUtils::Image::getPixmapData</a>(<span class="keyword">const</span> QPixmap &amp;pix)</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;{</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">if</span>(pix.isNull())</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    {</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keywordflow">return</span> QByteArray();</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    }</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    QByteArray data;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    QBuffer buffer(&amp;data);</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keywordflow">if</span>(buffer.open(QIODevice::WriteOnly))</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    {</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        pix.save(&amp;buffer, <a class="code" href="../../d8/d07/musicobject_8h.html#af3f3ca7aa945b0135d807f3fcfd722ba">JPG_FILE_PREFIX</a>);</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    }</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    buffer.close();</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordflow">return</span> data;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;}</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
-<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="../../d8/d75/namespace_music_utils_1_1_image.html#ae9cbd9698bce02014e8b220143e2a959">  183</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#ae9cbd9698bce02014e8b220143e2a959">MusicUtils::Image::fusionPixmap</a>(QPixmap &amp;back, <span class="keyword">const</span> QPixmap &amp;front, <span class="keyword">const</span> QPoint &amp;pt)</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;{</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordflow">if</span>(front.isNull())</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    {</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    }</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    QPainter painter(&amp;back);</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    painter.setRenderHints(QPainter::Antialiasing | QPainter::SmoothPixmapTransform);</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    painter.drawPixmap(pt.x(), pt.y(), front);</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;}</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
-<div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="../../d8/d75/namespace_music_utils_1_1_image.html#a947e6edbd4dcab5fac2eaa4ac82151a4">  195</a></span>&#160;QPixmap <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#a947e6edbd4dcab5fac2eaa4ac82151a4">MusicUtils::Image::grayScalePixmap</a>(<span class="keyword">const</span> QPixmap &amp;src, <span class="keywordtype">int</span> radius)</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;{</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    QImage pix = src.toImage();</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> w=0; w&lt;pix.width(); w++)</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    {</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> h=0; h&lt;pix.height(); h++)</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        {</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            <span class="keywordtype">int</span> gray = qGray(pix.pixel(w, h)) + radius;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                gray = qBound(0, gray, 255);</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            <span class="keyword">const</span> QRgb rgb = qRgb(gray, gray, gray);</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            pix.setPixel(w, h, rgb);</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        }</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    }</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordflow">return</span> QPixmap::fromImage(pix);</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;}</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
-<div class="line"><a name="l00211"></a><span class="lineno"><a class="line" href="../../d8/d75/namespace_music_utils_1_1_image.html#af2fed784d1ca87c5a9319ae821d6926d">  211</a></span>&#160;QImage <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#af2fed784d1ca87c5a9319ae821d6926d">MusicUtils::Image::gaussPixmap</a>(<span class="keyword">const</span> QImage &amp;image, <span class="keywordtype">int</span> radius)</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;{</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    QImage img = image.copy();</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#af2fed784d1ca87c5a9319ae821d6926d">MusicUtils::Image::gaussPixmap</a>(img, radius);</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="keywordflow">return</span> img;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;}</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
-<div class="line"><a name="l00218"></a><span class="lineno"><a class="line" href="../../d8/d75/namespace_music_utils_1_1_image.html#ac8f8a302e6b9e558b4aa5e8867f01fe2">  218</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#af2fed784d1ca87c5a9319ae821d6926d">MusicUtils::Image::gaussPixmap</a>(QImage &amp;image, <span class="keywordtype">int</span> radius)</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;{</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <a class="code" href="../../db/dc4/namespace_gaussian_blur.html#a3da18ec9de8bc9b336c215af44e736e7">GaussianBlur::gaussBlur</a>((<span class="keywordtype">int</span>*)image.bits(), image.width(), image.height(), radius);</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;}</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
-<div class="line"><a name="l00223"></a><span class="lineno"><a class="line" href="../../d8/d75/namespace_music_utils_1_1_image.html#aa42db62b62b023fac58a0ef90d117e78">  223</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#aa42db62b62b023fac58a0ef90d117e78">MusicUtils::Image::reRenderAlpha</a>(<span class="keywordtype">int</span> alpha, <span class="keywordtype">int</span> value)</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;{</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="keywordflow">return</span> reRenderValue&lt;int&gt;(0xFF, alpha, value);</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;}</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
-<div class="line"><a name="l00228"></a><span class="lineno"><a class="line" href="../../d8/d75/namespace_music_utils_1_1_image.html#a28ab293202e6834a9b87f8ec4dc04c27">  228</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#a28ab293202e6834a9b87f8ec4dc04c27">MusicUtils::Image::reRenderImage</a>(<span class="keywordtype">int</span> delta, <span class="keyword">const</span> QImage *input, QImage *output)</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;{</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> w=0; w&lt;input-&gt;width(); w++)</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    {</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> h=0; h&lt;input-&gt;height(); h++)</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        {</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            <span class="keyword">const</span> QRgb rgb = input-&gt;pixel(w, h);</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            output-&gt;setPixel(w, h, qRgb(<a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#a4905dd42a5d59975ff342256f181c5ca">colorBurnTransform</a>(qRed(rgb), delta),</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                                        <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#a4905dd42a5d59975ff342256f181c5ca">colorBurnTransform</a>(qGreen(rgb), delta),</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                                        <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#a4905dd42a5d59975ff342256f181c5ca">colorBurnTransform</a>(qBlue(rgb), delta)));</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        }</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    }</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;}</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
-<div class="line"><a name="l00242"></a><span class="lineno"><a class="line" href="../../d8/d75/namespace_music_utils_1_1_image.html#a4905dd42a5d59975ff342256f181c5ca">  242</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#a4905dd42a5d59975ff342256f181c5ca">MusicUtils::Image::colorBurnTransform</a>(<span class="keywordtype">int</span> c, <span class="keywordtype">int</span> delta)</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;{</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keywordflow">if</span>(0 &gt; delta || delta &gt; 0xFF)</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    {</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="keywordflow">return</span> c;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    }</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> result = (c - (c * delta)/(0xFF - delta));</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keywordflow">if</span>(result &gt; 0xFF)</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    {</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <span class="keywordflow">return</span> 0xFF;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    }</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(result &lt; 0)</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    {</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    }</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;}</div>
-<div class="ttc" id="namespace_music_utils_1_1_image_html_aa42db62b62b023fac58a0ef90d117e78"><div class="ttname"><a href="../../d8/d75/namespace_music_utils_1_1_image.html#aa42db62b62b023fac58a0ef90d117e78">MusicUtils::Image::reRenderAlpha</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT int reRenderAlpha(int alpha, int value)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d84/musicimageutils_8cpp_source.html#l00223">musicimageutils.cpp:223</a></div></div>
-<div class="ttc" id="namespace_gaussian_blur_html"><div class="ttname"><a href="../../db/dc4/namespace_gaussian_blur.html">GaussianBlur</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d84/musicimageutils_8cpp_source.html#l00009">musicimageutils.cpp:9</a></div></div>
+<div class="ttc" id="namespace_music_utils_1_1_image_html_aa42db62b62b023fac58a0ef90d117e78"><div class="ttname"><a href="../../d8/d75/namespace_music_utils_1_1_image.html#aa42db62b62b023fac58a0ef90d117e78">MusicUtils::Image::reRenderAlpha</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT int reRenderAlpha(int alpha, int value)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d84/musicimageutils_8cpp_source.html#l00128">musicimageutils.cpp:128</a></div></div>
+<div class="ttc" id="qimagewrap_8h_html"><div class="ttname"><a href="../../df/d48/qimagewrap_8h.html">qimagewrap.h</a></div></div>
 <div class="ttc" id="ioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="../../d2/db7/ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/db7/ioapi_8h_source.html#l00136">ioapi.h:136</a></div></div>
-<div class="ttc" id="ioapi_8h_html_a787fa3cf048117ba7123753c1e74fcd6"><div class="ttname"><a href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a></div><div class="ttdeci">typedef int(ZCALLBACK *close_file_func) OF((voidpf opaque</div></div>
+<div class="ttc" id="class_q_image_wrap_1_1_q_gauss_blur_html_a310a76a06dc8c2ad2e6190694902d2a3"><div class="ttname"><a href="../../d7/d61/class_q_image_wrap_1_1_q_gauss_blur.html#a310a76a06dc8c2ad2e6190694902d2a3">QImageWrap::QGaussBlur::render</a></div><div class="ttdeci">void render(int *pix, int width, int height, int radius)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d5f/qimagewrap_8cpp_source.html#l00006">qimagewrap.cpp:6</a></div></div>
 <div class="ttc" id="musicobject_8h_html_af3f3ca7aa945b0135d807f3fcfd722ba"><div class="ttname"><a href="../../d8/d07/musicobject_8h.html#af3f3ca7aa945b0135d807f3fcfd722ba">JPG_FILE_PREFIX</a></div><div class="ttdeci">#define JPG_FILE_PREFIX</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00039">musicobject.h:39</a></div></div>
-<div class="ttc" id="namespace_music_utils_1_1_image_html_a9a575cd2a72aeec631b7896658099146"><div class="ttname"><a href="../../d8/d75/namespace_music_utils_1_1_image.html#a9a575cd2a72aeec631b7896658099146">MusicUtils::Image::getPixmapData</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT QByteArray getPixmapData(const QPixmap &amp;pix)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d84/musicimageutils_8cpp_source.html#l00166">musicimageutils.cpp:166</a></div></div>
-<div class="ttc" id="namespace_music_utils_1_1_image_html_aa44db6c6a1654e7fc0e9ae148e2ba3eb"><div class="ttname"><a href="../../d8/d75/namespace_music_utils_1_1_image.html#aa44db6c6a1654e7fc0e9ae148e2ba3eb">MusicUtils::Image::getBitmapMask</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT QBitmap getBitmapMask(const QRect &amp;rect, int ratioX, int ratioY)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d84/musicimageutils_8cpp_source.html#l00155">musicimageutils.cpp:155</a></div></div>
-<div class="ttc" id="namespace_music_utils_1_1_image_html_af2fed784d1ca87c5a9319ae821d6926d"><div class="ttname"><a href="../../d8/d75/namespace_music_utils_1_1_image.html#af2fed784d1ca87c5a9319ae821d6926d">MusicUtils::Image::gaussPixmap</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT QImage gaussPixmap(const QImage &amp;image, int radius)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d84/musicimageutils_8cpp_source.html#l00211">musicimageutils.cpp:211</a></div></div>
+<div class="ttc" id="namespace_music_utils_1_1_image_html_a9a575cd2a72aeec631b7896658099146"><div class="ttname"><a href="../../d8/d75/namespace_music_utils_1_1_image.html#a9a575cd2a72aeec631b7896658099146">MusicUtils::Image::getPixmapData</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT QByteArray getPixmapData(const QPixmap &amp;pix)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d84/musicimageutils_8cpp_source.html#l00058">musicimageutils.cpp:58</a></div></div>
+<div class="ttc" id="namespace_music_utils_1_1_image_html_aa44db6c6a1654e7fc0e9ae148e2ba3eb"><div class="ttname"><a href="../../d8/d75/namespace_music_utils_1_1_image.html#aa44db6c6a1654e7fc0e9ae148e2ba3eb">MusicUtils::Image::getBitmapMask</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT QBitmap getBitmapMask(const QRect &amp;rect, int ratioX, int ratioY)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d84/musicimageutils_8cpp_source.html#l00047">musicimageutils.cpp:47</a></div></div>
+<div class="ttc" id="class_q_image_wrap_1_1_q_gauss_blur_html"><div class="ttname"><a href="../../d7/d61/class_q_image_wrap_1_1_q_gauss_blur.html">QImageWrap::QGaussBlur</a></div><div class="ttdoc">The class of the gauss blur wrapper. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d48/qimagewrap_8h_source.html#l00032">qimagewrap.h:32</a></div></div>
+<div class="ttc" id="namespace_music_utils_1_1_image_html_af2fed784d1ca87c5a9319ae821d6926d"><div class="ttname"><a href="../../d8/d75/namespace_music_utils_1_1_image.html#af2fed784d1ca87c5a9319ae821d6926d">MusicUtils::Image::gaussPixmap</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT QImage gaussPixmap(const QImage &amp;image, int radius)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d84/musicimageutils_8cpp_source.html#l00115">musicimageutils.cpp:115</a></div></div>
 <div class="ttc" id="musicimageutils_8h_html"><div class="ttname"><a href="../../de/d18/musicimageutils_8h.html">musicimageutils.h</a></div></div>
-<div class="ttc" id="namespace_music_utils_1_1_image_html_a394316cf8175bc4b9b1712bfc2ce2960"><div class="ttname"><a href="../../d8/d75/namespace_music_utils_1_1_image.html#a394316cf8175bc4b9b1712bfc2ce2960">MusicUtils::Image::pixmapToRound</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT QPixmap pixmapToRound(const QPixmap &amp;src, int ratioX, int ratioY)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d84/musicimageutils_8cpp_source.html#l00117">musicimageutils.cpp:117</a></div></div>
-<div class="ttc" id="namespace_music_utils_1_1_image_html_a28ab293202e6834a9b87f8ec4dc04c27"><div class="ttname"><a href="../../d8/d75/namespace_music_utils_1_1_image.html#a28ab293202e6834a9b87f8ec4dc04c27">MusicUtils::Image::reRenderImage</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT void reRenderImage(int delta, const QImage *input, QImage *output)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d84/musicimageutils_8cpp_source.html#l00228">musicimageutils.cpp:228</a></div></div>
-<div class="ttc" id="namespace_music_utils_1_1_image_html_a947e6edbd4dcab5fac2eaa4ac82151a4"><div class="ttname"><a href="../../d8/d75/namespace_music_utils_1_1_image.html#a947e6edbd4dcab5fac2eaa4ac82151a4">MusicUtils::Image::grayScalePixmap</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT QPixmap grayScalePixmap(const QPixmap &amp;src, int radius=0)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d84/musicimageutils_8cpp_source.html#l00195">musicimageutils.cpp:195</a></div></div>
+<div class="ttc" id="namespace_music_utils_1_1_image_html_a394316cf8175bc4b9b1712bfc2ce2960"><div class="ttname"><a href="../../d8/d75/namespace_music_utils_1_1_image.html#a394316cf8175bc4b9b1712bfc2ce2960">MusicUtils::Image::pixmapToRound</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT QPixmap pixmapToRound(const QPixmap &amp;src, int ratioX, int ratioY)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d84/musicimageutils_8cpp_source.html#l00009">musicimageutils.cpp:9</a></div></div>
+<div class="ttc" id="namespace_music_utils_1_1_image_html_a28ab293202e6834a9b87f8ec4dc04c27"><div class="ttname"><a href="../../d8/d75/namespace_music_utils_1_1_image.html#a28ab293202e6834a9b87f8ec4dc04c27">MusicUtils::Image::reRenderImage</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT void reRenderImage(int delta, const QImage *input, QImage *output)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d84/musicimageutils_8cpp_source.html#l00133">musicimageutils.cpp:133</a></div></div>
+<div class="ttc" id="namespace_music_utils_1_1_image_html_a947e6edbd4dcab5fac2eaa4ac82151a4"><div class="ttname"><a href="../../d8/d75/namespace_music_utils_1_1_image.html#a947e6edbd4dcab5fac2eaa4ac82151a4">MusicUtils::Image::grayScalePixmap</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT QPixmap grayScalePixmap(const QPixmap &amp;src, int radius=0)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d84/musicimageutils_8cpp_source.html#l00099">musicimageutils.cpp:99</a></div></div>
 <div class="ttc" id="musicobject_8h_html"><div class="ttname"><a href="../../d8/d07/musicobject_8h.html">musicobject.h</a></div></div>
-<div class="ttc" id="namespace_gaussian_blur_html_a3da18ec9de8bc9b336c215af44e736e7"><div class="ttname"><a href="../../db/dc4/namespace_gaussian_blur.html#a3da18ec9de8bc9b336c215af44e736e7">GaussianBlur::gaussBlur</a></div><div class="ttdeci">void gaussBlur(int *pix, int w, int h, int radius)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d84/musicimageutils_8cpp_source.html#l00010">musicimageutils.cpp:10</a></div></div>
-<div class="ttc" id="namespace_music_utils_1_1_image_html_a4905dd42a5d59975ff342256f181c5ca"><div class="ttname"><a href="../../d8/d75/namespace_music_utils_1_1_image.html#a4905dd42a5d59975ff342256f181c5ca">MusicUtils::Image::colorBurnTransform</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT int colorBurnTransform(int c, int delta)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d84/musicimageutils_8cpp_source.html#l00242">musicimageutils.cpp:242</a></div></div>
-<div class="ttc" id="namespace_music_utils_1_1_image_html_ae9cbd9698bce02014e8b220143e2a959"><div class="ttname"><a href="../../d8/d75/namespace_music_utils_1_1_image.html#ae9cbd9698bce02014e8b220143e2a959">MusicUtils::Image::fusionPixmap</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT void fusionPixmap(QPixmap &amp;back, const QPixmap &amp;front, const QPoint &amp;pt)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d84/musicimageutils_8cpp_source.html#l00183">musicimageutils.cpp:183</a></div></div>
+<div class="ttc" id="namespace_music_utils_1_1_image_html_a4905dd42a5d59975ff342256f181c5ca"><div class="ttname"><a href="../../d8/d75/namespace_music_utils_1_1_image.html#a4905dd42a5d59975ff342256f181c5ca">MusicUtils::Image::colorBurnTransform</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT int colorBurnTransform(int c, int delta)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d84/musicimageutils_8cpp_source.html#l00147">musicimageutils.cpp:147</a></div></div>
+<div class="ttc" id="namespace_music_utils_1_1_image_html_ae9cbd9698bce02014e8b220143e2a959"><div class="ttname"><a href="../../d8/d75/namespace_music_utils_1_1_image.html#ae9cbd9698bce02014e8b220143e2a959">MusicUtils::Image::fusionPixmap</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT void fusionPixmap(QPixmap &amp;back, const QPixmap &amp;front, const QPoint &amp;pt)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d84/musicimageutils_8cpp_source.html#l00075">musicimageutils.cpp:75</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2020 14:02:43 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 19 2020 13:46:06 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

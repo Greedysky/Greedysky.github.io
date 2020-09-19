@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.1.0</span>
+   &#160;<span id="projectnumber">2.13.2.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -77,89 +77,102 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="title">output.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d8/d30/output_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Copyright (c) 2000-2001 Brad Hughes &lt;bhughes@trolltech.com&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// Use, modification and distribution is allowed without limitation,</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// warranty, or liability of any kind.</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef OUTPUT_H</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define OUTPUT_H</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;QList&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QIODevice&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QMap&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/ded/outputfactory_8h.html">outputfactory.h</a>&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/d32/audioparameters_8h.html">audioparameters.h</a>&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/d64/trackinfo_8h.html">trackinfo.h</a>&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/d9d/channelmap_8h.html">channelmap.h</a>&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span>QTimer;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">class </span><a class="code" href="../../d0/ddf/class_qmmp_settings.html">QmmpSettings</a>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">class </span><a class="code" href="../../dc/db2/class_qmmp_plugin_cache.html">QmmpPluginCache</a>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../db/db4/class_output.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../df/df6/qmmp__export_8h.html#ae57db6e0c0f040f03506ccfc59947d30">QMMP_EXPORT</a> <a class="code" href="../../db/db4/class_output.html">Output</a></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="../../db/db4/class_output.html">Output</a>();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../db/db4/class_output.html">Output</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> initialize(quint32 freq, <a class="code" href="../../d1/d72/class_channel_map.html">ChannelMap</a> map, <a class="code" href="../../d9/d95/class_qmmp.html#aae85042846160153e83c605bae56f1cb">Qmmp::AudioFormat</a> format) = 0;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">virtual</span> qint64 latency() = 0;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">virtual</span> qint64 writeAudio(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *data, qint64 maxSize) = 0;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> drain() = 0;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> reset() = 0;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> suspend();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> resume();</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> setTrackInfo(<span class="keyword">const</span> <a class="code" href="../../d1/dc5/class_track_info.html">TrackInfo</a> &amp;info);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="../../d2/d77/class_audio_parameters.html">AudioParameters</a> audioParameters() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    quint32 sampleRate() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">int</span> channels() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d1/d72/class_channel_map.html">ChannelMap</a> channelMap() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="../../d9/d95/class_qmmp.html#aae85042846160153e83c605bae56f1cb">Qmmp::AudioFormat</a> format() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">int</span> sampleSize() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">static</span> <a class="code" href="../../db/db4/class_output.html">Output</a> *create();</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keyword">static</span> QList&lt;OutputFactory*&gt; factories();</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keyword">static</span> QString file(<span class="keyword">const</span> <a class="code" href="../../dc/db6/class_output_factory.html">OutputFactory</a> *factory);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> setCurrentFactory(<span class="keyword">const</span> <a class="code" href="../../dc/db6/class_output_factory.html">OutputFactory</a>* factory);</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keyword">static</span> <a class="code" href="../../dc/db6/class_output_factory.html">OutputFactory</a> *currentFactory();</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordtype">void</span> configure(quint32 freq, <a class="code" href="../../d1/d72/class_channel_map.html">ChannelMap</a> map, <a class="code" href="../../d9/d95/class_qmmp.html#aae85042846160153e83c605bae56f1cb">Qmmp::AudioFormat</a> format);</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="../../db/db4/class_output.html#ae6e1a40faa063303fc28c23bc049f285">  142</a></span>&#160;    quint32 <a class="code" href="../../db/db4/class_output.html#ae6e1a40faa063303fc28c23bc049f285">m_frequency</a>;</div>
-<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="../../db/db4/class_output.html#a3bbc3ce46e9989aefc011a2a69eb81ee">  143</a></span>&#160;    <a class="code" href="../../d1/d72/class_channel_map.html">ChannelMap</a> <a class="code" href="../../db/db4/class_output.html#a3bbc3ce46e9989aefc011a2a69eb81ee">m_chan_map</a>;</div>
-<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="../../db/db4/class_output.html#abb8bfde9e740ff4db12a474826af9f2d">  144</a></span>&#160;    <a class="code" href="../../d9/d95/class_qmmp.html#aae85042846160153e83c605bae56f1cb">Qmmp::AudioFormat</a> <a class="code" href="../../db/db4/class_output.html#abb8bfde9e740ff4db12a474826af9f2d">m_format</a>;</div>
-<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="../../db/db4/class_output.html#a06a574ecf65471fc16cbaf1a7db6a172">  145</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../db/db4/class_output.html#a06a574ecf65471fc16cbaf1a7db6a172">m_sample_size</a>;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> loadPlugins();</div>
-<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="../../db/db4/class_output.html#a5abc8db130b30f1bdd12833c48485224">  147</a></span>&#160;    <span class="keyword">static</span> QList&lt;QmmpPluginCache*&gt; *<a class="code" href="../../db/db4/class_output.html#a5abc8db130b30f1bdd12833c48485224">m_cache</a>;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;};</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">#endif // OUTPUT_H</span></div>
-<div class="ttc" id="class_output_html_abb8bfde9e740ff4db12a474826af9f2d"><div class="ttname"><a href="../../db/db4/class_output.html#abb8bfde9e740ff4db12a474826af9f2d">Output::m_format</a></div><div class="ttdeci">Qmmp::AudioFormat m_format</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d30/output_8h_source.html#l00144">output.h:144</a></div></div>
+<a href="../../d8/d30/output_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/***************************************************************************</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *   Copyright (C) 2009-2020 by Ilya Kotov                                 *</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *   forkotov02@ya.ru                                                      *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *                                                                         *</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *   This program is free software; you can redistribute it and/or modify  *</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *   it under the terms of the GNU General Public License as published by  *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> *   the Free Software Foundation; either version 2 of the License, or     *</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *   (at your option) any later version.                                   *</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> *                                                                         *</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *   This program is distributed in the hope that it will be useful,       *</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *   but WITHOUT ANY WARRANTY; without even the implied warranty of        *</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *   GNU General Public License for more details.                          *</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *                                                                         *</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *   You should have received a copy of the GNU General Public License     *</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *   along with this program; if not, write to the                         *</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *   Free Software Foundation, Inc.,                                       *</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.         *</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> ***************************************************************************/</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef OUTPUT_H</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define OUTPUT_H</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;QList&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;QIODevice&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;QMap&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/ded/outputfactory_8h.html">outputfactory.h</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/d32/audioparameters_8h.html">audioparameters.h</a>&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/d64/trackinfo_8h.html">trackinfo.h</a>&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/d9d/channelmap_8h.html">channelmap.h</a>&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">class </span>QTimer;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">class </span><a class="code" href="../../d0/ddf/class_qmmp_settings.html">QmmpSettings</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">class </span><a class="code" href="../../dc/db2/class_qmmp_plugin_cache.html">QmmpPluginCache</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../db/db4/class_output.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../df/df6/qmmp__export_8h.html#ae57db6e0c0f040f03506ccfc59947d30">QMMP_EXPORT</a> <a class="code" href="../../db/db4/class_output.html">Output</a></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="../../db/db4/class_output.html">Output</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../db/db4/class_output.html">Output</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> initialize(quint32 freq, <a class="code" href="../../d1/d72/class_channel_map.html">ChannelMap</a> map, <a class="code" href="../../d9/d95/class_qmmp.html#aae85042846160153e83c605bae56f1cb">Qmmp::AudioFormat</a> format) = 0;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">virtual</span> qint64 latency() = 0;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">virtual</span> qint64 writeAudio(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *data, qint64 maxSize) = 0;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> drain() = 0;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> reset() = 0;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> suspend();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> resume();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> setTrackInfo(<span class="keyword">const</span> <a class="code" href="../../d1/dc5/class_track_info.html">TrackInfo</a> &amp;info);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="../../d2/d77/class_audio_parameters.html">AudioParameters</a> audioParameters() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    quint32 sampleRate() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">int</span> channels() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d1/d72/class_channel_map.html">ChannelMap</a> channelMap() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="../../d9/d95/class_qmmp.html#aae85042846160153e83c605bae56f1cb">Qmmp::AudioFormat</a> format() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">int</span> sampleSize() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keyword">static</span> <a class="code" href="../../db/db4/class_output.html">Output</a> *create();</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keyword">static</span> QList&lt;OutputFactory*&gt; factories();</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keyword">static</span> QString file(<span class="keyword">const</span> <a class="code" href="../../dc/db6/class_output_factory.html">OutputFactory</a> *factory);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> setCurrentFactory(<span class="keyword">const</span> <a class="code" href="../../dc/db6/class_output_factory.html">OutputFactory</a>* factory);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keyword">static</span> <a class="code" href="../../dc/db6/class_output_factory.html">OutputFactory</a> *currentFactory();</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordtype">void</span> configure(quint32 freq, <a class="code" href="../../d1/d72/class_channel_map.html">ChannelMap</a> map, <a class="code" href="../../d9/d95/class_qmmp.html#aae85042846160153e83c605bae56f1cb">Qmmp::AudioFormat</a> format);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="../../db/db4/class_output.html#ae6e1a40faa063303fc28c23bc049f285">  155</a></span>&#160;    quint32 m_frequency = 0;</div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="../../db/db4/class_output.html#a3bbc3ce46e9989aefc011a2a69eb81ee">  156</a></span>&#160;    <a class="code" href="../../d1/d72/class_channel_map.html">ChannelMap</a> <a class="code" href="../../db/db4/class_output.html#a3bbc3ce46e9989aefc011a2a69eb81ee">m_chan_map</a>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="../../db/db4/class_output.html#abb8bfde9e740ff4db12a474826af9f2d">  157</a></span>&#160;    <a class="code" href="../../d9/d95/class_qmmp.html#aae85042846160153e83c605bae56f1cb">Qmmp::AudioFormat</a> m_format = <a class="code" href="../../d9/d95/class_qmmp.html#aae85042846160153e83c605bae56f1cbae840dc195719424bfacb8745127a385a">Qmmp::PCM_UNKNOWN</a>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="../../db/db4/class_output.html#a06a574ecf65471fc16cbaf1a7db6a172">  158</a></span>&#160;    <span class="keywordtype">int</span> m_sample_size = 0;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> loadPlugins();</div>
+<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="../../db/db4/class_output.html#a5abc8db130b30f1bdd12833c48485224">  161</a></span>&#160;    <span class="keyword">static</span> QList&lt;QmmpPluginCache*&gt; *<a class="code" href="../../db/db4/class_output.html#a5abc8db130b30f1bdd12833c48485224">m_cache</a>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;};</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="preprocessor">#endif // OUTPUT_H</span></div>
 <div class="ttc" id="trackinfo_8h_html"><div class="ttname"><a href="../../de/d64/trackinfo_8h.html">trackinfo.h</a></div></div>
-<div class="ttc" id="class_output_html_ae6e1a40faa063303fc28c23bc049f285"><div class="ttname"><a href="../../db/db4/class_output.html#ae6e1a40faa063303fc28c23bc049f285">Output::m_frequency</a></div><div class="ttdeci">quint32 m_frequency</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d30/output_8h_source.html#l00142">output.h:142</a></div></div>
-<div class="ttc" id="class_output_html_a5abc8db130b30f1bdd12833c48485224"><div class="ttname"><a href="../../db/db4/class_output.html#a5abc8db130b30f1bdd12833c48485224">Output::m_cache</a></div><div class="ttdeci">static QList&lt; QmmpPluginCache * &gt; * m_cache</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d30/output_8h_source.html#l00147">output.h:147</a></div></div>
+<div class="ttc" id="class_output_html_a5abc8db130b30f1bdd12833c48485224"><div class="ttname"><a href="../../db/db4/class_output.html#a5abc8db130b30f1bdd12833c48485224">Output::m_cache</a></div><div class="ttdeci">static QList&lt; QmmpPluginCache * &gt; * m_cache</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d30/output_8h_source.html#l00161">output.h:161</a></div></div>
 <div class="ttc" id="class_qmmp_settings_html"><div class="ttname"><a href="../../d0/ddf/class_qmmp_settings.html">QmmpSettings</a></div><div class="ttdoc">The QmmpSettings class provides access to global settings. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/da5/qmmpsettings_8h_source.html#l00035">qmmpsettings.h:35</a></div></div>
 <div class="ttc" id="class_audio_parameters_html"><div class="ttname"><a href="../../d2/d77/class_audio_parameters.html">AudioParameters</a></div><div class="ttdoc">The AudioParameters class keeps information about audio settings. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d32/audioparameters_8h_source.html#l00031">audioparameters.h:31</a></div></div>
-<div class="ttc" id="class_output_html"><div class="ttname"><a href="../../db/db4/class_output.html">Output</a></div><div class="ttdoc">The Output class provides the base interface class of audio outputs. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d30/output_8h_source.html#l00027">output.h:27</a></div></div>
+<div class="ttc" id="class_output_html"><div class="ttname"><a href="../../db/db4/class_output.html">Output</a></div><div class="ttdoc">The Output class provides the base interface class of audio outputs. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d30/output_8h_source.html#l00040">output.h:40</a></div></div>
 <div class="ttc" id="channelmap_8h_html"><div class="ttname"><a href="../../d4/d9d/channelmap_8h.html">channelmap.h</a></div></div>
 <div class="ttc" id="class_qmmp_plugin_cache_html"><div class="ttname"><a href="../../dc/db2/class_qmmp_plugin_cache.html">QmmpPluginCache</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/dff/qmmpplugincache__p_8h_source.html#l00038">qmmpplugincache_p.h:38</a></div></div>
-<div class="ttc" id="class_track_info_html"><div class="ttname"><a href="../../d1/dc5/class_track_info.html">TrackInfo</a></div><div class="ttdoc">The TrackInfo class stores metadata and other information about track. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d64/trackinfo_8h_source.html#l00031">trackinfo.h:31</a></div></div>
+<div class="ttc" id="class_track_info_html"><div class="ttname"><a href="../../d1/dc5/class_track_info.html">TrackInfo</a></div><div class="ttdoc">The TrackInfo class stores metadata and other information about track. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d64/trackinfo_8h_source.html#l00032">trackinfo.h:32</a></div></div>
 <div class="ttc" id="class_channel_map_html"><div class="ttname"><a href="../../d1/d72/class_channel_map.html">ChannelMap</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d9d/channelmap_8h_source.html#l00027">channelmap.h:27</a></div></div>
 <div class="ttc" id="outputfactory_8h_html"><div class="ttname"><a href="../../d5/ded/outputfactory_8h.html">outputfactory.h</a></div></div>
 <div class="ttc" id="qmmp__export_8h_html_ae57db6e0c0f040f03506ccfc59947d30"><div class="ttname"><a href="../../df/df6/qmmp__export_8h.html#ae57db6e0c0f040f03506ccfc59947d30">QMMP_EXPORT</a></div><div class="ttdeci">#define QMMP_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df6/qmmp__export_8h_source.html#l00029">qmmp_export.h:29</a></div></div>
 <div class="ttc" id="audioparameters_8h_html"><div class="ttname"><a href="../../d3/d32/audioparameters_8h.html">audioparameters.h</a></div></div>
-<div class="ttc" id="class_output_html_a06a574ecf65471fc16cbaf1a7db6a172"><div class="ttname"><a href="../../db/db4/class_output.html#a06a574ecf65471fc16cbaf1a7db6a172">Output::m_sample_size</a></div><div class="ttdeci">int m_sample_size</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d30/output_8h_source.html#l00145">output.h:145</a></div></div>
-<div class="ttc" id="class_output_html_a3bbc3ce46e9989aefc011a2a69eb81ee"><div class="ttname"><a href="../../db/db4/class_output.html#a3bbc3ce46e9989aefc011a2a69eb81ee">Output::m_chan_map</a></div><div class="ttdeci">ChannelMap m_chan_map</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d30/output_8h_source.html#l00143">output.h:143</a></div></div>
-<div class="ttc" id="class_qmmp_html_aae85042846160153e83c605bae56f1cb"><div class="ttname"><a href="../../d9/d95/class_qmmp.html#aae85042846160153e83c605bae56f1cb">Qmmp::AudioFormat</a></div><div class="ttdeci">AudioFormat</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d30/qmmp_8h_source.html#l00115">qmmp.h:115</a></div></div>
-<div class="ttc" id="class_output_factory_html"><div class="ttname"><a href="../../dc/db6/class_output_factory.html">OutputFactory</a></div><div class="ttdoc">Output plugin interface (output factory). </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/ded/outputfactory_8h_source.html#l00046">outputfactory.h:46</a></div></div>
+<div class="ttc" id="class_output_html_a3bbc3ce46e9989aefc011a2a69eb81ee"><div class="ttname"><a href="../../db/db4/class_output.html#a3bbc3ce46e9989aefc011a2a69eb81ee">Output::m_chan_map</a></div><div class="ttdeci">ChannelMap m_chan_map</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d30/output_8h_source.html#l00156">output.h:156</a></div></div>
+<div class="ttc" id="class_qmmp_html_aae85042846160153e83c605bae56f1cb"><div class="ttname"><a href="../../d9/d95/class_qmmp.html#aae85042846160153e83c605bae56f1cb">Qmmp::AudioFormat</a></div><div class="ttdeci">AudioFormat</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d30/qmmp_8h_source.html#l00114">qmmp.h:114</a></div></div>
+<div class="ttc" id="class_output_factory_html"><div class="ttname"><a href="../../dc/db6/class_output_factory.html">OutputFactory</a></div><div class="ttdoc">Output plugin interface (output factory). </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/ded/outputfactory_8h_source.html#l00047">outputfactory.h:47</a></div></div>
+<div class="ttc" id="class_qmmp_html_aae85042846160153e83c605bae56f1cbae840dc195719424bfacb8745127a385a"><div class="ttname"><a href="../../d9/d95/class_qmmp.html#aae85042846160153e83c605bae56f1cbae840dc195719424bfacb8745127a385a">Qmmp::PCM_UNKNOWN</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d30/qmmp_8h_source.html#l00116">qmmp.h:116</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2020 14:02:31 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 19 2020 13:46:00 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

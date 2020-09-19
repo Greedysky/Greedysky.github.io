@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.1.0</span>
+   &#160;<span id="projectnumber">2.13.2.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -110,10 +110,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="../../d5/d2a/class_buffer.html">   34</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../df/df6/qmmp__export_8h.html#ae57db6e0c0f040f03506ccfc59947d30">QMMP_EXPORT</a> <a class="code" href="../../d5/d2a/class_buffer.html">Buffer</a></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../d5/d2a/class_buffer.html#a5b2007ab206ac8555881e8852d04cb79">   41</a></span>&#160;    <a class="code" href="../../d5/d2a/class_buffer.html#a5b2007ab206ac8555881e8852d04cb79">Buffer</a>(<span class="keywordtype">size_t</span> sz)</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        data = <span class="keyword">new</span> <span class="keywordtype">float</span>[sz];</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="../../d2/db7/ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = sz;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../d5/d2a/class_buffer.html#a5b2007ab206ac8555881e8852d04cb79">   41</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d5/d2a/class_buffer.html#a5b2007ab206ac8555881e8852d04cb79">Buffer</a>(<span class="keywordtype">size_t</span> sz)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        : <a class="code" href="../../d2/db7/ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>(sz)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        data = <span class="keyword">new</span> <span class="keywordtype">float</span>[sz];</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
 <div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="../../d5/d2a/class_buffer.html#a59b8743e4a5f731bdd0c4185c9ef263b">   49</a></span>&#160;    <a class="code" href="../../d5/d2a/class_buffer.html#a59b8743e4a5f731bdd0c4185c9ef263b">~Buffer</a>()</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {</div>
@@ -129,9 +129,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="../../d5/d2a/class_buffer.html#a24e94f119f4b386771c78cf37aaff41b">   60</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="../../d2/db7/ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = 0;                     </div>
 <div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="../../d5/d2a/class_buffer.html#a79ae28db16eda1b53d492099eca6ffc6">   61</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../da/dbf/iir_8c.html#adf42a979321286885fe5a447d48d14d6">rate</a> = 0;               </div>
 <div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="../../d5/d2a/class_buffer.html#a4f1cfb3e982d97b423b51a27899a0148">   62</a></span>&#160;    QSharedPointer&lt;TrackInfo&gt; <a class="code" href="../../d5/d2a/class_buffer.html#a4f1cfb3e982d97b423b51a27899a0148">trackInfo</a>; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif // BUFFER_H</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif // BUFFER_H</span></div>
 <div class="ttc" id="qmmp_8h_html"><div class="ttname"><a href="../../d8/d30/qmmp_8h.html">qmmp.h</a></div></div>
 <div class="ttc" id="class_buffer_html_a5b2007ab206ac8555881e8852d04cb79"><div class="ttname"><a href="../../d5/d2a/class_buffer.html#a5b2007ab206ac8555881e8852d04cb79">Buffer::Buffer</a></div><div class="ttdeci">Buffer(size_t sz)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d08/buffer_8h_source.html#l00041">buffer.h:41</a></div></div>
 <div class="ttc" id="trackinfo_8h_html"><div class="ttname"><a href="../../de/d64/trackinfo_8h.html">trackinfo.h</a></div></div>
@@ -144,7 +144,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2020 14:02:30 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 19 2020 13:46:00 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

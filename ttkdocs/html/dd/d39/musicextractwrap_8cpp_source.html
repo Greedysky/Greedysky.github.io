@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.1.0</span>
+   &#160;<span id="projectnumber">2.13.2.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -92,9 +92,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#  pragma GCC diagnostic ignored &quot;-Wsign-compare&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../d7/d52/class_music_extract_wrap.html#a0366ff5d84ffdb42b0d5ff7bf8e738db">   16</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d7/d52/class_music_extract_wrap.html#a0366ff5d84ffdb42b0d5ff7bf8e738db">MusicExtractWrap::outputThunderSkin</a>(QPixmap &amp;image, <span class="keyword">const</span> QString &amp;path)</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../d7/d52/class_music_extract_wrap.html#a2d6b7e1893523f5239522a9a1b0cbaff">   16</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d7/d52/class_music_extract_wrap.html#a2d6b7e1893523f5239522a9a1b0cbaff">MusicExtractWrap::outputThunderSkin</a>(QPixmap &amp;image, <span class="keyword">const</span> QString &amp;input)</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d2/d5c/unzip_8h.html#ad578db1d36691a2a244482a3b2360ca3">unzFile</a> &amp;zFile = <a class="code" href="../../d6/da7/unzip_8c.html#a2f972fa989d43a27e43420101d1b49f2">unzOpen64</a>(path.toLocal8Bit().constData());</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d2/d5c/unzip_8h.html#ad578db1d36691a2a244482a3b2360ca3">unzFile</a> &amp;zFile = <a class="code" href="../../d6/da7/unzip_8c.html#a2f972fa989d43a27e43420101d1b49f2">unzOpen64</a>(input.toLocal8Bit().constData());</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">if</span>(!zFile)</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -154,277 +154,287 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="../../d7/d52/class_music_extract_wrap.html#a71160eb8c3d8f9490fcb5b57bbfd3a20">   78</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d7/d52/class_music_extract_wrap.html#a71160eb8c3d8f9490fcb5b57bbfd3a20">MusicExtractWrap::outputData</a>(<span class="keyword">const</span> QString &amp;path)</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="../../d7/d52/class_music_extract_wrap.html#a44ffa32b070df03cbf350d5d96037613">   78</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d7/d52/class_music_extract_wrap.html#a44ffa32b070df03cbf350d5d96037613">MusicExtractWrap::outputBinary</a>(<span class="keyword">const</span> QString &amp;input)</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d2/d5c/unzip_8h.html#ad578db1d36691a2a244482a3b2360ca3">unzFile</a> &amp;zFile = <a class="code" href="../../d6/da7/unzip_8c.html#a2f972fa989d43a27e43420101d1b49f2">unzOpen64</a>(path.toLocal8Bit().constData());</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">if</span>(!zFile)</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    QDir dir(path);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">const</span> QString &amp;diName = QFileInfo(path).absolutePath() + <span class="stringliteral">&quot;/&quot;</span> + QFileInfo(path).baseName() + <span class="stringliteral">&quot;/&quot;</span>;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    dir.mkpath(diName);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    dir.cd(diName);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="../../d1/dd3/structunz__file__info64__s.html">unz_file_info64</a> fileInfo;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="../../d1/d2a/structunz__global__info64__s.html">unz_global_info64</a> gInfo;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../d6/da7/unzip_8c.html#aba7a370257ec6a2babb96fe24210b9df">unzGetGlobalInfo64</a>(zFile, &amp;gInfo) != <a class="code" href="../../d2/d5c/unzip_8h.html#ada043545f95ccd4dae93fa44d95e39a8">UNZ_OK</a>)</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <a class="code" href="../../d6/da7/unzip_8c.html#aae2ff51513fca418b0e2e1f32b4e4516">unzClose</a>(zFile);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;gInfo.<a class="code" href="../../d1/d2a/structunz__global__info64__s.html#a628f94ac445f2a6cd64c9e82d481e738">number_entry</a>; ++i)</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordtype">char</span> file[<a class="code" href="../../dd/d39/musicextractwrap_8cpp.html#a41c3e2404e9bd936bd2ee0e91f6bb5bf">WIN_NAME_MAX_LENGTH</a>] = {0};</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordtype">char</span> ext[<a class="code" href="../../dd/d39/musicextractwrap_8cpp.html#a41c3e2404e9bd936bd2ee0e91f6bb5bf">WIN_NAME_MAX_LENGTH</a>] = {0};</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordtype">char</span> com[<a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a238a940e6b775b3d187e5e8a5f95d6a2">MH_KB</a>] = {0};</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="../../d6/da7/unzip_8c.html#a27afcf0515cce2e9633700e47de9c319">unzGetCurrentFileInfo64</a>(zFile, &amp;fileInfo, file, <span class="keyword">sizeof</span>(file), ext, <a class="code" href="../../dd/d39/musicextractwrap_8cpp.html#a41c3e2404e9bd936bd2ee0e91f6bb5bf">WIN_NAME_MAX_LENGTH</a>, com, <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a238a940e6b775b3d187e5e8a5f95d6a2">MH_KB</a>) != <a class="code" href="../../d2/d5c/unzip_8h.html#ada043545f95ccd4dae93fa44d95e39a8">UNZ_OK</a>)</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">if</span>(QString(file).contains(<span class="stringliteral">&quot;/&quot;</span>))</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            dir.mkpath(QFileInfo(file).path());</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d7/d52/class_music_extract_wrap.html#a44ffa32b070df03cbf350d5d96037613">outputBinary</a>(input, QFileInfo(input).absolutePath() + <span class="stringliteral">&quot;/&quot;</span> + QFileInfo(input).baseName() + <span class="stringliteral">&quot;/&quot;</span>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="../../d7/d52/class_music_extract_wrap.html#afbbf409cabec894ede8338363ce30e40">   83</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d7/d52/class_music_extract_wrap.html#a44ffa32b070df03cbf350d5d96037613">MusicExtractWrap::outputBinary</a>(<span class="keyword">const</span> QString &amp;input, <span class="keyword">const</span> QString &amp;output)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    QStringList path;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d7/d52/class_music_extract_wrap.html#a44ffa32b070df03cbf350d5d96037613">outputBinary</a>(input, output, path);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="../../d7/d52/class_music_extract_wrap.html#a7466c7f069e128503d1ae1c3fb78a1e7">   89</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d7/d52/class_music_extract_wrap.html#a44ffa32b070df03cbf350d5d96037613">MusicExtractWrap::outputBinary</a>(<span class="keyword">const</span> QString &amp;input, <span class="keyword">const</span> QString &amp;output, QStringList &amp;path)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d2/d5c/unzip_8h.html#ad578db1d36691a2a244482a3b2360ca3">unzFile</a> &amp;zFile = <a class="code" href="../../d6/da7/unzip_8c.html#a2f972fa989d43a27e43420101d1b49f2">unzOpen64</a>(input.toLocal8Bit().constData());</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">if</span>(!zFile)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    QDir dir;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    dir.mkpath(output);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    dir.cd(output);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="../../d1/dd3/structunz__file__info64__s.html">unz_file_info64</a> fileInfo;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="../../d1/d2a/structunz__global__info64__s.html">unz_global_info64</a> gInfo;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../d6/da7/unzip_8c.html#aba7a370257ec6a2babb96fe24210b9df">unzGetGlobalInfo64</a>(zFile, &amp;gInfo) != <a class="code" href="../../d2/d5c/unzip_8h.html#ada043545f95ccd4dae93fa44d95e39a8">UNZ_OK</a>)</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <a class="code" href="../../d6/da7/unzip_8c.html#aae2ff51513fca418b0e2e1f32b4e4516">unzClose</a>(zFile);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;gInfo.<a class="code" href="../../d1/d2a/structunz__global__info64__s.html#a628f94ac445f2a6cd64c9e82d481e738">number_entry</a>; ++i)</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordtype">char</span> file[<a class="code" href="../../dd/d39/musicextractwrap_8cpp.html#a41c3e2404e9bd936bd2ee0e91f6bb5bf">WIN_NAME_MAX_LENGTH</a>] = {0};</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordtype">char</span> ext[<a class="code" href="../../dd/d39/musicextractwrap_8cpp.html#a41c3e2404e9bd936bd2ee0e91f6bb5bf">WIN_NAME_MAX_LENGTH</a>] = {0};</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordtype">char</span> com[<a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a238a940e6b775b3d187e5e8a5f95d6a2">MH_KB</a>] = {0};</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="../../d6/da7/unzip_8c.html#ae7995961a44b900ce2765dfc3e983f23">unzOpenCurrentFile</a>(zFile) != <a class="code" href="../../d2/d5c/unzip_8h.html#ada043545f95ccd4dae93fa44d95e39a8">UNZ_OK</a>)</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="../../d6/da7/unzip_8c.html#a27afcf0515cce2e9633700e47de9c319">unzGetCurrentFileInfo64</a>(zFile, &amp;fileInfo, file, <span class="keyword">sizeof</span>(file), ext, <a class="code" href="../../dd/d39/musicextractwrap_8cpp.html#a41c3e2404e9bd936bd2ee0e91f6bb5bf">WIN_NAME_MAX_LENGTH</a>, com, <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a238a940e6b775b3d187e5e8a5f95d6a2">MH_KB</a>) != <a class="code" href="../../d2/d5c/unzip_8h.html#ada043545f95ccd4dae93fa44d95e39a8">UNZ_OK</a>)</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        {</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        }</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordtype">char</span> dt[<a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a238a940e6b775b3d187e5e8a5f95d6a2">MH_KB</a>] = {0};</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="../../d2/db7/ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = 0;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        QFile fileName(diName + file);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        fileName.open(QFile::WriteOnly);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">while</span>(<span class="keyword">true</span>)</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">if</span>(QString(file).contains(<span class="stringliteral">&quot;/&quot;</span>))</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            dir.mkpath(QFileInfo(file).path());</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="../../d6/da7/unzip_8c.html#ae7995961a44b900ce2765dfc3e983f23">unzOpenCurrentFile</a>(zFile) != <a class="code" href="../../d2/d5c/unzip_8h.html#ada043545f95ccd4dae93fa44d95e39a8">UNZ_OK</a>)</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        {</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            size= <a class="code" href="../../d6/da7/unzip_8c.html#add15efe6db6390302c2d9926ee4ab2f0">unzReadCurrentFile</a>(zFile, dt, <span class="keyword">sizeof</span>(dt));</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <span class="keywordflow">if</span>(size &lt;= 0)</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            {</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            }</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            fileName.write(dt, size);</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        }</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        fileName.close();</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <a class="code" href="../../d6/da7/unzip_8c.html#aa9215f88f27e48cd1f94cf4bf7d31575">unzCloseCurrentFile</a>(zFile);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="keywordflow">if</span>(i &lt; gInfo.<a class="code" href="../../d1/d2a/structunz__global__info64__s.html#a628f94ac445f2a6cd64c9e82d481e738">number_entry</a> - 1 &amp;&amp; <a class="code" href="../../d6/da7/unzip_8c.html#a4dae3d3f76e944981aee0c8467267d29">unzGoToNextFile</a>(zFile) != <a class="code" href="../../d2/d5c/unzip_8h.html#ada043545f95ccd4dae93fa44d95e39a8">UNZ_OK</a>)</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        {</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        }</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    }</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <a class="code" href="../../d6/da7/unzip_8c.html#aae2ff51513fca418b0e2e1f32b4e4516">unzClose</a>(zFile);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordtype">char</span> dt[<a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a238a940e6b775b3d187e5e8a5f95d6a2">MH_KB</a>] = {0};</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="../../d2/db7/ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = 0;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        QFile outputFile(output + file);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        outputFile.open(QFile::WriteOnly);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keywordflow">while</span>(<span class="keyword">true</span>)</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            size= <a class="code" href="../../d6/da7/unzip_8c.html#add15efe6db6390302c2d9926ee4ab2f0">unzReadCurrentFile</a>(zFile, dt, <span class="keyword">sizeof</span>(dt));</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            <span class="keywordflow">if</span>(size &lt;= 0)</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            outputFile.write(dt, size);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        }</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;}</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
-<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="../../d7/d52/class_music_extract_wrap.html#ab8bf18cf5d4352eee4df3e875b8615d1">  148</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d7/d52/class_music_extract_wrap.html#ab8bf18cf5d4352eee4df3e875b8615d1">MusicExtractWrap::outputSkin</a>(<a class="code" href="../../db/d6a/struct_music_background_image.html">MusicBackgroundImage</a> *image, <span class="keyword">const</span> QString &amp;path)</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;{</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d2/d5c/unzip_8h.html#ad578db1d36691a2a244482a3b2360ca3">unzFile</a> &amp;zFile = <a class="code" href="../../d6/da7/unzip_8c.html#a2f972fa989d43a27e43420101d1b49f2">unzOpen64</a>(path.toLocal8Bit().constData());</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordflow">if</span>(!zFile)</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    {</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    }</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        outputFile.close();</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        path &lt;&lt; outputFile.fileName();</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <a class="code" href="../../d6/da7/unzip_8c.html#aa9215f88f27e48cd1f94cf4bf7d31575">unzCloseCurrentFile</a>(zFile);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">if</span>(i &lt; gInfo.<a class="code" href="../../d1/d2a/structunz__global__info64__s.html#a628f94ac445f2a6cd64c9e82d481e738">number_entry</a> - 1 &amp;&amp; <a class="code" href="../../d6/da7/unzip_8c.html#a4dae3d3f76e944981aee0c8467267d29">unzGoToNextFile</a>(zFile) != <a class="code" href="../../d2/d5c/unzip_8h.html#ada043545f95ccd4dae93fa44d95e39a8">UNZ_OK</a>)</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        {</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        }</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    }</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <a class="code" href="../../d6/da7/unzip_8c.html#aae2ff51513fca418b0e2e1f32b4e4516">unzClose</a>(zFile);</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <a class="code" href="../../d1/dd3/structunz__file__info64__s.html">unz_file_info64</a> fileInfo;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <a class="code" href="../../d1/d2a/structunz__global__info64__s.html">unz_global_info64</a> gInfo;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../d6/da7/unzip_8c.html#aba7a370257ec6a2babb96fe24210b9df">unzGetGlobalInfo64</a>(zFile, &amp;gInfo) != <a class="code" href="../../d2/d5c/unzip_8h.html#ada043545f95ccd4dae93fa44d95e39a8">UNZ_OK</a>)</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    {</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <a class="code" href="../../d6/da7/unzip_8c.html#aae2ff51513fca418b0e2e1f32b4e4516">unzClose</a>(zFile);</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;gInfo.<a class="code" href="../../d1/d2a/structunz__global__info64__s.html#a628f94ac445f2a6cd64c9e82d481e738">number_entry</a>; ++i)</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    {</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keywordtype">char</span> file[<a class="code" href="../../dd/d39/musicextractwrap_8cpp.html#a41c3e2404e9bd936bd2ee0e91f6bb5bf">WIN_NAME_MAX_LENGTH</a>] = {0};</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keywordtype">char</span> ext[<a class="code" href="../../dd/d39/musicextractwrap_8cpp.html#a41c3e2404e9bd936bd2ee0e91f6bb5bf">WIN_NAME_MAX_LENGTH</a>] = {0};</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keywordtype">char</span> com[<a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a238a940e6b775b3d187e5e8a5f95d6a2">MH_KB</a>] = {0};</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="../../d6/da7/unzip_8c.html#a27afcf0515cce2e9633700e47de9c319">unzGetCurrentFileInfo64</a>(zFile, &amp;fileInfo, file, <span class="keyword">sizeof</span>(file), ext, <a class="code" href="../../dd/d39/musicextractwrap_8cpp.html#a41c3e2404e9bd936bd2ee0e91f6bb5bf">WIN_NAME_MAX_LENGTH</a>, com, <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a238a940e6b775b3d187e5e8a5f95d6a2">MH_KB</a>) != <a class="code" href="../../d2/d5c/unzip_8h.html#ada043545f95ccd4dae93fa44d95e39a8">UNZ_OK</a>)</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        {</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;}</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="../../d7/d52/class_music_extract_wrap.html#a8b987c264ce8f3de378fd6c7427772e6">  159</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d7/d52/class_music_extract_wrap.html#a8b987c264ce8f3de378fd6c7427772e6">MusicExtractWrap::outputSkin</a>(<a class="code" href="../../db/d6a/struct_music_background_image.html">MusicBackgroundImage</a> *image, <span class="keyword">const</span> QString &amp;input)</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;{</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d2/d5c/unzip_8h.html#ad578db1d36691a2a244482a3b2360ca3">unzFile</a> &amp;zFile = <a class="code" href="../../d6/da7/unzip_8c.html#a2f972fa989d43a27e43420101d1b49f2">unzOpen64</a>(input.toLocal8Bit().constData());</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordflow">if</span>(!zFile)</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    }</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <a class="code" href="../../d1/dd3/structunz__file__info64__s.html">unz_file_info64</a> fileInfo;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <a class="code" href="../../d1/d2a/structunz__global__info64__s.html">unz_global_info64</a> gInfo;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../d6/da7/unzip_8c.html#aba7a370257ec6a2babb96fe24210b9df">unzGetGlobalInfo64</a>(zFile, &amp;gInfo) != <a class="code" href="../../d2/d5c/unzip_8h.html#ada043545f95ccd4dae93fa44d95e39a8">UNZ_OK</a>)</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    {</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <a class="code" href="../../d6/da7/unzip_8c.html#aae2ff51513fca418b0e2e1f32b4e4516">unzClose</a>(zFile);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    }</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="../../d6/da7/unzip_8c.html#ae7995961a44b900ce2765dfc3e983f23">unzOpenCurrentFile</a>(zFile) != <a class="code" href="../../d2/d5c/unzip_8h.html#ada043545f95ccd4dae93fa44d95e39a8">UNZ_OK</a>)</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        {</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        }</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <span class="keywordtype">char</span> dt[<a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a238a940e6b775b3d187e5e8a5f95d6a2">MH_KB</a>] = {0};</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="../../d2/db7/ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = 0;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        QByteArray arrayData;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="keywordflow">if</span>(QString(file).toLower().contains(<a class="code" href="../../d8/d07/musicobject_8h.html#a5390d0fe4db069c647d8c57f720ac944">SKN_FILE</a>))</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        {</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            <span class="keywordflow">while</span>(<span class="keyword">true</span>)</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            {</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                size= <a class="code" href="../../d6/da7/unzip_8c.html#add15efe6db6390302c2d9926ee4ab2f0">unzReadCurrentFile</a>(zFile, dt, <span class="keyword">sizeof</span>(dt));</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                <span class="keywordflow">if</span>(size &lt;= 0)</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                {</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                }</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                arrayData.append(dt, size);</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            }</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            QPixmap pix;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            pix.loadFromData(arrayData);</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            image-&gt;<a class="code" href="../../db/d6a/struct_music_background_image.html#ab4dcc7624aafea33e63b8896d236b0b6">m_pix</a> = pix;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        }</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(QString(file).toLower().contains(<a class="code" href="../../d8/d07/musicobject_8h.html#a3ec6ac973634273e8ffff5a4b6de6c92">XML_FILE</a>))</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        {</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            <span class="keywordflow">while</span>(<span class="keyword">true</span>)</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            {</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                size= <a class="code" href="../../d6/da7/unzip_8c.html#add15efe6db6390302c2d9926ee4ab2f0">unzReadCurrentFile</a>(zFile, dt, <span class="keyword">sizeof</span>(dt));</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                <span class="keywordflow">if</span>(size &lt;= 0)</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                {</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                }</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                arrayData.append(dt, size);</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            }</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            <a class="code" href="../../d8/d5b/class_music_skin_config_manager.html">MusicSkinConfigManager</a> manager;</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;            <a class="code" href="../../dd/d4d/struct_music_skin_config_item.html">MusicSkinConfigItem</a> item;</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;            <span class="keywordflow">if</span>(manager.<a class="code" href="../../d7/d53/class_music_abstract_xml.html#a7fbd6bb0e247266f8fede87b064959ea">fromByteArray</a>(arrayData))</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;            {</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                manager.<a class="code" href="../../d8/d5b/class_music_skin_config_manager.html#a5417c3cd71e9a24a6af58d79d429fbc7">readSkinData</a>(item);</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                image-&gt;<a class="code" href="../../db/d6a/struct_music_background_image.html#a8be025f30eb520dcb929d1a3f6912ee9">m_item</a> = item;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            }</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        }</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <a class="code" href="../../d6/da7/unzip_8c.html#aa9215f88f27e48cd1f94cf4bf7d31575">unzCloseCurrentFile</a>(zFile);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;gInfo.<a class="code" href="../../d1/d2a/structunz__global__info64__s.html#a628f94ac445f2a6cd64c9e82d481e738">number_entry</a>; ++i)</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    {</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="keywordtype">char</span> file[<a class="code" href="../../dd/d39/musicextractwrap_8cpp.html#a41c3e2404e9bd936bd2ee0e91f6bb5bf">WIN_NAME_MAX_LENGTH</a>] = {0};</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keywordtype">char</span> ext[<a class="code" href="../../dd/d39/musicextractwrap_8cpp.html#a41c3e2404e9bd936bd2ee0e91f6bb5bf">WIN_NAME_MAX_LENGTH</a>] = {0};</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <span class="keywordtype">char</span> com[<a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a238a940e6b775b3d187e5e8a5f95d6a2">MH_KB</a>] = {0};</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="../../d6/da7/unzip_8c.html#a27afcf0515cce2e9633700e47de9c319">unzGetCurrentFileInfo64</a>(zFile, &amp;fileInfo, file, <span class="keyword">sizeof</span>(file), ext, <a class="code" href="../../dd/d39/musicextractwrap_8cpp.html#a41c3e2404e9bd936bd2ee0e91f6bb5bf">WIN_NAME_MAX_LENGTH</a>, com, <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a238a940e6b775b3d187e5e8a5f95d6a2">MH_KB</a>) != <a class="code" href="../../d2/d5c/unzip_8h.html#ada043545f95ccd4dae93fa44d95e39a8">UNZ_OK</a>)</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        {</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        }</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="../../d6/da7/unzip_8c.html#ae7995961a44b900ce2765dfc3e983f23">unzOpenCurrentFile</a>(zFile) != <a class="code" href="../../d2/d5c/unzip_8h.html#ada043545f95ccd4dae93fa44d95e39a8">UNZ_OK</a>)</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        {</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keywordtype">char</span> dt[<a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a238a940e6b775b3d187e5e8a5f95d6a2">MH_KB</a>] = {0};</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="../../d2/db7/ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = 0;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        QByteArray arrayData;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="keywordflow">if</span>(QString(file).toLower().contains(<a class="code" href="../../d8/d07/musicobject_8h.html#a5390d0fe4db069c647d8c57f720ac944">SKN_FILE</a>))</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        {</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            <span class="keywordflow">while</span>(<span class="keyword">true</span>)</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            {</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                size= <a class="code" href="../../d6/da7/unzip_8c.html#add15efe6db6390302c2d9926ee4ab2f0">unzReadCurrentFile</a>(zFile, dt, <span class="keyword">sizeof</span>(dt));</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                <span class="keywordflow">if</span>(size &lt;= 0)</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                {</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                }</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                arrayData.append(dt, size);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            }</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            QPixmap pix;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            pix.loadFromData(arrayData);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            image-&gt;<a class="code" href="../../db/d6a/struct_music_background_image.html#ab4dcc7624aafea33e63b8896d236b0b6">m_pix</a> = pix;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        }</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(QString(file).toLower().contains(<a class="code" href="../../d8/d07/musicobject_8h.html#a3ec6ac973634273e8ffff5a4b6de6c92">XML_FILE</a>))</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        {</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;            <span class="keywordflow">while</span>(<span class="keyword">true</span>)</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;            {</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                size= <a class="code" href="../../d6/da7/unzip_8c.html#add15efe6db6390302c2d9926ee4ab2f0">unzReadCurrentFile</a>(zFile, dt, <span class="keyword">sizeof</span>(dt));</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                <span class="keywordflow">if</span>(size &lt;= 0)</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                {</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                }</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                arrayData.append(dt, size);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            }</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="keywordflow">if</span>(i &lt; gInfo.<a class="code" href="../../d1/d2a/structunz__global__info64__s.html#a628f94ac445f2a6cd64c9e82d481e738">number_entry</a> - 1 &amp;&amp; <a class="code" href="../../d6/da7/unzip_8c.html#a4dae3d3f76e944981aee0c8467267d29">unzGoToNextFile</a>(zFile) != <a class="code" href="../../d2/d5c/unzip_8h.html#ada043545f95ccd4dae93fa44d95e39a8">UNZ_OK</a>)</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        {</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        }</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    }</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <a class="code" href="../../d6/da7/unzip_8c.html#aae2ff51513fca418b0e2e1f32b4e4516">unzClose</a>(zFile);</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;}</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
-<div class="line"><a name="l00233"></a><span class="lineno"><a class="line" href="../../d7/d52/class_music_extract_wrap.html#a85548bfde5122110d4e436a596a27019">  233</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d7/d52/class_music_extract_wrap.html#a85548bfde5122110d4e436a596a27019">MusicExtractWrap::inputSkin</a>(<a class="code" href="../../db/d6a/struct_music_background_image.html">MusicBackgroundImage</a> *image, <span class="keyword">const</span> QString &amp;path)</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;{</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../da/d3a/zip_8h.html#af69b9a5ea9aaf8e8f0b7681e451b224c">zipFile</a> &amp;zFile = <a class="code" href="../../d0/d5f/zip_8c.html#acaa442d344aeae9756cccf317f705f92">zipOpen64</a>(path.toLocal8Bit().constData(), 0);</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keywordflow">if</span>(!zFile)</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    {</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    }</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            <a class="code" href="../../d8/d5b/class_music_skin_config_manager.html">MusicSkinConfigManager</a> manager;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            <a class="code" href="../../dd/d4d/struct_music_skin_config_item.html">MusicSkinConfigItem</a> item;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            <span class="keywordflow">if</span>(manager.<a class="code" href="../../d7/d53/class_music_abstract_xml.html#a7fbd6bb0e247266f8fede87b064959ea">fromByteArray</a>(arrayData))</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            {</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                manager.<a class="code" href="../../d8/d5b/class_music_skin_config_manager.html#a5417c3cd71e9a24a6af58d79d429fbc7">readSkinData</a>(item);</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                image-&gt;<a class="code" href="../../db/d6a/struct_music_background_image.html#a8be025f30eb520dcb929d1a3f6912ee9">m_item</a> = item;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            }</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        }</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <a class="code" href="../../d6/da7/unzip_8c.html#aa9215f88f27e48cd1f94cf4bf7d31575">unzCloseCurrentFile</a>(zFile);</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="keywordflow">if</span>(i &lt; gInfo.<a class="code" href="../../d1/d2a/structunz__global__info64__s.html#a628f94ac445f2a6cd64c9e82d481e738">number_entry</a> - 1 &amp;&amp; <a class="code" href="../../d6/da7/unzip_8c.html#a4dae3d3f76e944981aee0c8467267d29">unzGoToNextFile</a>(zFile) != <a class="code" href="../../d2/d5c/unzip_8h.html#ada043545f95ccd4dae93fa44d95e39a8">UNZ_OK</a>)</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        {</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        }</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    }</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <a class="code" href="../../d6/da7/unzip_8c.html#aae2ff51513fca418b0e2e1f32b4e4516">unzClose</a>(zFile);</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keyword">const</span> QString &amp;nPrefix = QFileInfo(path).baseName();</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <span class="keywordtype">int</span> level = 5;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;}</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <a class="code" href="../../d6/d5a/structzip__fileinfo.html">zip_fileinfo</a> fileInfo;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    memset(&amp;fileInfo, 0, <span class="keyword">sizeof</span>(fileInfo));</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <a class="code" href="../../d0/d5f/zip_8c.html#a4dcfafc7f9a04486b46fd5508da62373">zipOpenNewFileInZip</a>(zFile, (nPrefix + <a class="code" href="../../d8/d07/musicobject_8h.html#a5390d0fe4db069c647d8c57f720ac944">SKN_FILE</a>).<a class="code" href="../../d5/d67/namespace_music_utils_1_1_codec.html#ab16dcda0d88095779fe1464e0d60f86e">toLocal8Bit</a>().constData(), &amp;fileInfo, <span class="keyword">nullptr</span>, 0, <span class="keyword">nullptr</span>, 0, <span class="keyword">nullptr</span>, <a class="code" href="../../d4/dae/zlib_8h.html#a27a96226f3dc88e4743131c632adf32f">Z_DEFLATED</a>, level);</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    QByteArray data = <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#a9a575cd2a72aeec631b7896658099146">MusicUtils::Image::getPixmapData</a>(image-&gt;<a class="code" href="../../db/d6a/struct_music_background_image.html#ab4dcc7624aafea33e63b8896d236b0b6">m_pix</a>);</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <a class="code" href="../../d0/d5f/zip_8c.html#a6395947bc85d51cce3c4040242a0acdc">zipWriteInFileInZip</a>(zFile, data.constData(), data.size());</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <a class="code" href="../../d0/d5f/zip_8c.html#a31eb94963d918c7f84f1d23a72bff92d">zipCloseFileInZip</a>(zFile);</div>
+<div class="line"><a name="l00244"></a><span class="lineno"><a class="line" href="../../d7/d52/class_music_extract_wrap.html#ae55a0245af30ac27cd91b7e44f982163">  244</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d7/d52/class_music_extract_wrap.html#ae55a0245af30ac27cd91b7e44f982163">MusicExtractWrap::inputSkin</a>(<a class="code" href="../../db/d6a/struct_music_background_image.html">MusicBackgroundImage</a> *image, <span class="keyword">const</span> QString &amp;output)</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;{</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../da/d3a/zip_8h.html#af69b9a5ea9aaf8e8f0b7681e451b224c">zipFile</a> &amp;zFile = <a class="code" href="../../d0/d5f/zip_8c.html#acaa442d344aeae9756cccf317f705f92">zipOpen64</a>(output.toLocal8Bit().constData(), 0);</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="keywordflow">if</span>(!zFile)</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    {</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    }</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <a class="code" href="../../d8/d5b/class_music_skin_config_manager.html">MusicSkinConfigManager</a> manager;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    manager.<a class="code" href="../../d8/d5b/class_music_skin_config_manager.html#a93a0c181ca8229b90b4582cc4a5a51f1">writeSkinData</a>(image-&gt;<a class="code" href="../../db/d6a/struct_music_background_image.html#a8be025f30eb520dcb929d1a3f6912ee9">m_item</a>, <a class="code" href="../../d2/d77/musicotherdefine_8h.html#a1cdee3fcaf366a7852ce8dcbb2f6084b">MUSIC_IMAGE_FILE</a>);</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    data = manager.<a class="code" href="../../d7/d53/class_music_abstract_xml.html#ad8b34a0e3f46b50236ca77a0fd149635">toByteArray</a>();</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <a class="code" href="../../d0/d5f/zip_8c.html#a4dcfafc7f9a04486b46fd5508da62373">zipOpenNewFileInZip</a>(zFile, (nPrefix + <a class="code" href="../../d8/d07/musicobject_8h.html#a3ec6ac973634273e8ffff5a4b6de6c92">XML_FILE</a>).<a class="code" href="../../d5/d67/namespace_music_utils_1_1_codec.html#ab16dcda0d88095779fe1464e0d60f86e">toLocal8Bit</a>().constData(), &amp;fileInfo, <span class="keyword">nullptr</span>, 0, <span class="keyword">nullptr</span>, 0, <span class="keyword">nullptr</span>, <a class="code" href="../../d4/dae/zlib_8h.html#a27a96226f3dc88e4743131c632adf32f">Z_DEFLATED</a>, level);</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <a class="code" href="../../d0/d5f/zip_8c.html#a6395947bc85d51cce3c4040242a0acdc">zipWriteInFileInZip</a>(zFile, data.constData(), data.size());</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <a class="code" href="../../d0/d5f/zip_8c.html#a31eb94963d918c7f84f1d23a72bff92d">zipCloseFileInZip</a>(zFile);</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    QFile::remove(<a class="code" href="../../d2/d77/musicotherdefine_8h.html#a1cdee3fcaf366a7852ce8dcbb2f6084b">MUSIC_IMAGE_FILE</a>);</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <a class="code" href="../../d0/d5f/zip_8c.html#a2317369d8804b71273d8b0784a21d73d">zipClose</a>(zFile, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keyword">const</span> QString &amp;nPrefix = QFileInfo(output).baseName();</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keywordtype">int</span> level = 5;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <a class="code" href="../../d6/d5a/structzip__fileinfo.html">zip_fileinfo</a> fileInfo;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    memset(&amp;fileInfo, 0, <span class="keyword">sizeof</span>(fileInfo));</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <a class="code" href="../../d0/d5f/zip_8c.html#a4dcfafc7f9a04486b46fd5508da62373">zipOpenNewFileInZip</a>(zFile, (nPrefix + <a class="code" href="../../d8/d07/musicobject_8h.html#a5390d0fe4db069c647d8c57f720ac944">SKN_FILE</a>).<a class="code" href="../../d5/d67/namespace_music_utils_1_1_codec.html#ab16dcda0d88095779fe1464e0d60f86e">toLocal8Bit</a>().constData(), &amp;fileInfo, <span class="keyword">nullptr</span>, 0, <span class="keyword">nullptr</span>, 0, <span class="keyword">nullptr</span>, <a class="code" href="../../d4/dae/zlib_8h.html#a27a96226f3dc88e4743131c632adf32f">Z_DEFLATED</a>, level);</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    QByteArray data = <a class="code" href="../../d8/d75/namespace_music_utils_1_1_image.html#a9a575cd2a72aeec631b7896658099146">MusicUtils::Image::getPixmapData</a>(image-&gt;<a class="code" href="../../db/d6a/struct_music_background_image.html#ab4dcc7624aafea33e63b8896d236b0b6">m_pix</a>);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <a class="code" href="../../d0/d5f/zip_8c.html#a6395947bc85d51cce3c4040242a0acdc">zipWriteInFileInZip</a>(zFile, data.constData(), data.size());</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <a class="code" href="../../d0/d5f/zip_8c.html#a31eb94963d918c7f84f1d23a72bff92d">zipCloseFileInZip</a>(zFile);</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;}</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
-<div class="line"><a name="l00266"></a><span class="lineno"><a class="line" href="../../d7/d52/class_music_extract_wrap.html#af89fffc3eb61c31ae8daae9124da06d3">  266</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d7/d52/class_music_extract_wrap.html#af89fffc3eb61c31ae8daae9124da06d3">MusicExtractWrap::outputText</a>(QByteArray &amp;data, <span class="keyword">const</span> QString &amp;path)</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;{</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d2/d5c/unzip_8h.html#ad578db1d36691a2a244482a3b2360ca3">unzFile</a> &amp;zFile = <a class="code" href="../../d6/da7/unzip_8c.html#a2f972fa989d43a27e43420101d1b49f2">unzOpen64</a>(path.toLocal8Bit().constData());</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keywordflow">if</span>(!zFile)</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    {</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    }</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <a class="code" href="../../d8/d5b/class_music_skin_config_manager.html">MusicSkinConfigManager</a> manager;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    manager.<a class="code" href="../../d8/d5b/class_music_skin_config_manager.html#a93a0c181ca8229b90b4582cc4a5a51f1">writeSkinData</a>(image-&gt;<a class="code" href="../../db/d6a/struct_music_background_image.html#a8be025f30eb520dcb929d1a3f6912ee9">m_item</a>, <a class="code" href="../../d2/d77/musicotherdefine_8h.html#a1cdee3fcaf366a7852ce8dcbb2f6084b">MUSIC_IMAGE_FILE</a>);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    data = manager.<a class="code" href="../../d7/d53/class_music_abstract_xml.html#ad8b34a0e3f46b50236ca77a0fd149635">toByteArray</a>();</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <a class="code" href="../../d0/d5f/zip_8c.html#a4dcfafc7f9a04486b46fd5508da62373">zipOpenNewFileInZip</a>(zFile, (nPrefix + <a class="code" href="../../d8/d07/musicobject_8h.html#a3ec6ac973634273e8ffff5a4b6de6c92">XML_FILE</a>).<a class="code" href="../../d5/d67/namespace_music_utils_1_1_codec.html#ab16dcda0d88095779fe1464e0d60f86e">toLocal8Bit</a>().constData(), &amp;fileInfo, <span class="keyword">nullptr</span>, 0, <span class="keyword">nullptr</span>, 0, <span class="keyword">nullptr</span>, <a class="code" href="../../d4/dae/zlib_8h.html#a27a96226f3dc88e4743131c632adf32f">Z_DEFLATED</a>, level);</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <a class="code" href="../../d0/d5f/zip_8c.html#a6395947bc85d51cce3c4040242a0acdc">zipWriteInFileInZip</a>(zFile, data.constData(), data.size());</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <a class="code" href="../../d0/d5f/zip_8c.html#a31eb94963d918c7f84f1d23a72bff92d">zipCloseFileInZip</a>(zFile);</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    QFile::remove(<a class="code" href="../../d2/d77/musicotherdefine_8h.html#a1cdee3fcaf366a7852ce8dcbb2f6084b">MUSIC_IMAGE_FILE</a>);</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <a class="code" href="../../d0/d5f/zip_8c.html#a2317369d8804b71273d8b0784a21d73d">zipClose</a>(zFile, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <a class="code" href="../../d1/dd3/structunz__file__info64__s.html">unz_file_info64</a> fileInfo;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <a class="code" href="../../d1/d2a/structunz__global__info64__s.html">unz_global_info64</a> gInfo;</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../d6/da7/unzip_8c.html#aba7a370257ec6a2babb96fe24210b9df">unzGetGlobalInfo64</a>(zFile, &amp;gInfo) != <a class="code" href="../../d2/d5c/unzip_8h.html#ada043545f95ccd4dae93fa44d95e39a8">UNZ_OK</a>)</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    {</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <a class="code" href="../../d6/da7/unzip_8c.html#aae2ff51513fca418b0e2e1f32b4e4516">unzClose</a>(zFile);</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    }</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;gInfo.<a class="code" href="../../d1/d2a/structunz__global__info64__s.html#a628f94ac445f2a6cd64c9e82d481e738">number_entry</a>; ++i)</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    {</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        <span class="keywordtype">char</span> file[<a class="code" href="../../dd/d39/musicextractwrap_8cpp.html#a41c3e2404e9bd936bd2ee0e91f6bb5bf">WIN_NAME_MAX_LENGTH</a>] = {0};</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        <span class="keywordtype">char</span> ext[<a class="code" href="../../dd/d39/musicextractwrap_8cpp.html#a41c3e2404e9bd936bd2ee0e91f6bb5bf">WIN_NAME_MAX_LENGTH</a>] = {0};</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        <span class="keywordtype">char</span> com[<a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a238a940e6b775b3d187e5e8a5f95d6a2">MH_KB</a>] = {0};</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="../../d6/da7/unzip_8c.html#a27afcf0515cce2e9633700e47de9c319">unzGetCurrentFileInfo64</a>(zFile, &amp;fileInfo, file, <span class="keyword">sizeof</span>(file), ext, <a class="code" href="../../dd/d39/musicextractwrap_8cpp.html#a41c3e2404e9bd936bd2ee0e91f6bb5bf">WIN_NAME_MAX_LENGTH</a>, com, <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a238a940e6b775b3d187e5e8a5f95d6a2">MH_KB</a>) != <a class="code" href="../../d2/d5c/unzip_8h.html#ada043545f95ccd4dae93fa44d95e39a8">UNZ_OK</a>)</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        {</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        }</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;}</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
+<div class="line"><a name="l00277"></a><span class="lineno"><a class="line" href="../../d7/d52/class_music_extract_wrap.html#ae69e280d1a5b9b323e06cc1e8eb5deea">  277</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d7/d52/class_music_extract_wrap.html#ae69e280d1a5b9b323e06cc1e8eb5deea">MusicExtractWrap::outputData</a>(QByteArray &amp;data, <span class="keyword">const</span> QString &amp;input)</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;{</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d2/d5c/unzip_8h.html#ad578db1d36691a2a244482a3b2360ca3">unzFile</a> &amp;zFile = <a class="code" href="../../d6/da7/unzip_8c.html#a2f972fa989d43a27e43420101d1b49f2">unzOpen64</a>(input.toLocal8Bit().constData());</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="keywordflow">if</span>(!zFile)</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    {</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    }</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <a class="code" href="../../d1/dd3/structunz__file__info64__s.html">unz_file_info64</a> fileInfo;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <a class="code" href="../../d1/d2a/structunz__global__info64__s.html">unz_global_info64</a> gInfo;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../d6/da7/unzip_8c.html#aba7a370257ec6a2babb96fe24210b9df">unzGetGlobalInfo64</a>(zFile, &amp;gInfo) != <a class="code" href="../../d2/d5c/unzip_8h.html#ada043545f95ccd4dae93fa44d95e39a8">UNZ_OK</a>)</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    {</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <a class="code" href="../../d6/da7/unzip_8c.html#aae2ff51513fca418b0e2e1f32b4e4516">unzClose</a>(zFile);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    }</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="../../d6/da7/unzip_8c.html#ae7995961a44b900ce2765dfc3e983f23">unzOpenCurrentFile</a>(zFile) != <a class="code" href="../../d2/d5c/unzip_8h.html#ada043545f95ccd4dae93fa44d95e39a8">UNZ_OK</a>)</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        {</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        }</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        <span class="keywordtype">char</span> dt[<a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a238a940e6b775b3d187e5e8a5f95d6a2">MH_KB</a>] = {0};</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="../../d2/db7/ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = 0;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <span class="keywordflow">while</span>(<span class="keyword">true</span>)</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        {</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;            size= <a class="code" href="../../d6/da7/unzip_8c.html#add15efe6db6390302c2d9926ee4ab2f0">unzReadCurrentFile</a>(zFile, dt, <span class="keyword">sizeof</span>(dt));</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;            <span class="keywordflow">if</span>(size &lt;= 0)</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;            {</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;            }</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;            data.append(dt, size);</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        }</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        <a class="code" href="../../d6/da7/unzip_8c.html#aa9215f88f27e48cd1f94cf4bf7d31575">unzCloseCurrentFile</a>(zFile);</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        <span class="keywordflow">if</span>(i &lt; gInfo.<a class="code" href="../../d1/d2a/structunz__global__info64__s.html#a628f94ac445f2a6cd64c9e82d481e738">number_entry</a> - 1 &amp;&amp; <a class="code" href="../../d6/da7/unzip_8c.html#a4dae3d3f76e944981aee0c8467267d29">unzGoToNextFile</a>(zFile) != <a class="code" href="../../d2/d5c/unzip_8h.html#ada043545f95ccd4dae93fa44d95e39a8">UNZ_OK</a>)</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        {</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        }</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    }</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <a class="code" href="../../d6/da7/unzip_8c.html#aae2ff51513fca418b0e2e1f32b4e4516">unzClose</a>(zFile);</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;}</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
-<div class="line"><a name="l00323"></a><span class="lineno"><a class="line" href="../../d7/d52/class_music_extract_wrap.html#a5be292f7b85cd408b772befbba5363ad">  323</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d7/d52/class_music_extract_wrap.html#a5be292f7b85cd408b772befbba5363ad">MusicExtractWrap::inputText</a>(<span class="keyword">const</span> QByteArray &amp;data, <span class="keyword">const</span> QString &amp;path)</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;{</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../da/d3a/zip_8h.html#af69b9a5ea9aaf8e8f0b7681e451b224c">zipFile</a> &amp;zFile = <a class="code" href="../../d0/d5f/zip_8c.html#acaa442d344aeae9756cccf317f705f92">zipOpen64</a>(path.toLocal8Bit().constData(), 0);</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="keywordflow">if</span>(!zFile)</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    {</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    }</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;gInfo.<a class="code" href="../../d1/d2a/structunz__global__info64__s.html#a628f94ac445f2a6cd64c9e82d481e738">number_entry</a>; ++i)</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    {</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <span class="keywordtype">char</span> file[<a class="code" href="../../dd/d39/musicextractwrap_8cpp.html#a41c3e2404e9bd936bd2ee0e91f6bb5bf">WIN_NAME_MAX_LENGTH</a>] = {0};</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="keywordtype">char</span> ext[<a class="code" href="../../dd/d39/musicextractwrap_8cpp.html#a41c3e2404e9bd936bd2ee0e91f6bb5bf">WIN_NAME_MAX_LENGTH</a>] = {0};</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        <span class="keywordtype">char</span> com[<a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a238a940e6b775b3d187e5e8a5f95d6a2">MH_KB</a>] = {0};</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="../../d6/da7/unzip_8c.html#a27afcf0515cce2e9633700e47de9c319">unzGetCurrentFileInfo64</a>(zFile, &amp;fileInfo, file, <span class="keyword">sizeof</span>(file), ext, <a class="code" href="../../dd/d39/musicextractwrap_8cpp.html#a41c3e2404e9bd936bd2ee0e91f6bb5bf">WIN_NAME_MAX_LENGTH</a>, com, <a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a238a940e6b775b3d187e5e8a5f95d6a2">MH_KB</a>) != <a class="code" href="../../d2/d5c/unzip_8h.html#ada043545f95ccd4dae93fa44d95e39a8">UNZ_OK</a>)</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        {</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        }</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="../../d6/da7/unzip_8c.html#ae7995961a44b900ce2765dfc3e983f23">unzOpenCurrentFile</a>(zFile) != <a class="code" href="../../d2/d5c/unzip_8h.html#ada043545f95ccd4dae93fa44d95e39a8">UNZ_OK</a>)</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        {</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        }</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        <span class="keywordtype">char</span> dt[<a class="code" href="../../dd/d01/musicnumberdefine_8h.html#a238a940e6b775b3d187e5e8a5f95d6a2">MH_KB</a>] = {0};</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="../../d2/db7/ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = 0;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        <span class="keywordflow">while</span>(<span class="keyword">true</span>)</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        {</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;            size= <a class="code" href="../../d6/da7/unzip_8c.html#add15efe6db6390302c2d9926ee4ab2f0">unzReadCurrentFile</a>(zFile, dt, <span class="keyword">sizeof</span>(dt));</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;            <span class="keywordflow">if</span>(size &lt;= 0)</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;            {</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;            }</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;            data.append(dt, size);</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        }</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <a class="code" href="../../d6/da7/unzip_8c.html#aa9215f88f27e48cd1f94cf4bf7d31575">unzCloseCurrentFile</a>(zFile);</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        <span class="keywordflow">if</span>(i &lt; gInfo.<a class="code" href="../../d1/d2a/structunz__global__info64__s.html#a628f94ac445f2a6cd64c9e82d481e738">number_entry</a> - 1 &amp;&amp; <a class="code" href="../../d6/da7/unzip_8c.html#a4dae3d3f76e944981aee0c8467267d29">unzGoToNextFile</a>(zFile) != <a class="code" href="../../d2/d5c/unzip_8h.html#ada043545f95ccd4dae93fa44d95e39a8">UNZ_OK</a>)</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        {</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        }</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    }</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <a class="code" href="../../d6/da7/unzip_8c.html#aae2ff51513fca418b0e2e1f32b4e4516">unzClose</a>(zFile);</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keyword">const</span> QString &amp;nPrefix = QFileInfo(path).baseName();</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="keywordtype">int</span> level = 5;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;}</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <a class="code" href="../../d6/d5a/structzip__fileinfo.html">zip_fileinfo</a> fileInfo;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    memset(&amp;fileInfo, 0, <span class="keyword">sizeof</span>(fileInfo));</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <a class="code" href="../../d0/d5f/zip_8c.html#a4dcfafc7f9a04486b46fd5508da62373">zipOpenNewFileInZip</a>(zFile, nPrefix.toLocal8Bit().constData(), &amp;fileInfo, <span class="keyword">nullptr</span>, 0, <span class="keyword">nullptr</span>, 0, <span class="keyword">nullptr</span>, <a class="code" href="../../d4/dae/zlib_8h.html#a27a96226f3dc88e4743131c632adf32f">Z_DEFLATED</a>, level);</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <a class="code" href="../../d0/d5f/zip_8c.html#a6395947bc85d51cce3c4040242a0acdc">zipWriteInFileInZip</a>(zFile, data.constData(), data.size());</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <a class="code" href="../../d0/d5f/zip_8c.html#a31eb94963d918c7f84f1d23a72bff92d">zipCloseFileInZip</a>(zFile);</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <a class="code" href="../../d0/d5f/zip_8c.html#a2317369d8804b71273d8b0784a21d73d">zipClose</a>(zFile, <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;}</div>
+<div class="line"><a name="l00334"></a><span class="lineno"><a class="line" href="../../d7/d52/class_music_extract_wrap.html#aceeb065ebf9353e792a48edc19b38d42">  334</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d7/d52/class_music_extract_wrap.html#aceeb065ebf9353e792a48edc19b38d42">MusicExtractWrap::inputData</a>(<span class="keyword">const</span> QByteArray &amp;data, <span class="keyword">const</span> QString &amp;output)</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;{</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../da/d3a/zip_8h.html#af69b9a5ea9aaf8e8f0b7681e451b224c">zipFile</a> &amp;zFile = <a class="code" href="../../d0/d5f/zip_8c.html#acaa442d344aeae9756cccf317f705f92">zipOpen64</a>(output.toLocal8Bit().constData(), 0);</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keywordflow">if</span>(!zFile)</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    {</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    }</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="keyword">const</span> QString &amp;nPrefix = QFileInfo(output).baseName();</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="keywordtype">int</span> level = 5;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <a class="code" href="../../d6/d5a/structzip__fileinfo.html">zip_fileinfo</a> fileInfo;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    memset(&amp;fileInfo, 0, <span class="keyword">sizeof</span>(fileInfo));</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <a class="code" href="../../d0/d5f/zip_8c.html#a4dcfafc7f9a04486b46fd5508da62373">zipOpenNewFileInZip</a>(zFile, nPrefix.toLocal8Bit().constData(), &amp;fileInfo, <span class="keyword">nullptr</span>, 0, <span class="keyword">nullptr</span>, 0, <span class="keyword">nullptr</span>, <a class="code" href="../../d4/dae/zlib_8h.html#a27a96226f3dc88e4743131c632adf32f">Z_DEFLATED</a>, level);</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <a class="code" href="../../d0/d5f/zip_8c.html#a6395947bc85d51cce3c4040242a0acdc">zipWriteInFileInZip</a>(zFile, data.constData(), data.size());</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <a class="code" href="../../d0/d5f/zip_8c.html#a31eb94963d918c7f84f1d23a72bff92d">zipCloseFileInZip</a>(zFile);</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <a class="code" href="../../d0/d5f/zip_8c.html#a2317369d8804b71273d8b0784a21d73d">zipClose</a>(zFile, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;}</div>
 <div class="ttc" id="unzip_8c_html_aba7a370257ec6a2babb96fe24210b9df"><div class="ttname"><a href="../../d6/da7/unzip_8c.html#aba7a370257ec6a2babb96fe24210b9df">unzGetGlobalInfo64</a></div><div class="ttdeci">ZEXTERN int ZEXPORT unzGetGlobalInfo64(unzFile file, unz_global_info64 *pglobal_info)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/da7/unzip_8c_source.html#l00828">unzip.c:828</a></div></div>
 <div class="ttc" id="musicnumberdefine_8h_html_a238a940e6b775b3d187e5e8a5f95d6a2"><div class="ttname"><a href="../../dd/d01/musicnumberdefine_8h.html#a238a940e6b775b3d187e5e8a5f95d6a2">MH_KB</a></div><div class="ttdeci">#define MH_KB</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d01/musicnumberdefine_8h_source.html#l00053">musicnumberdefine.h:53</a></div></div>
 <div class="ttc" id="structunz__global__info64__s_html"><div class="ttname"><a href="../../d1/d2a/structunz__global__info64__s.html">unz_global_info64_s</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d5c/unzip_8h_source.html#l00096">unzip.h:96</a></div></div>
-<div class="ttc" id="class_music_extract_wrap_html_a71160eb8c3d8f9490fcb5b57bbfd3a20"><div class="ttname"><a href="../../d7/d52/class_music_extract_wrap.html#a71160eb8c3d8f9490fcb5b57bbfd3a20">MusicExtractWrap::outputData</a></div><div class="ttdeci">static bool outputData(const QString &amp;path)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d39/musicextractwrap_8cpp_source.html#l00078">musicextractwrap.cpp:78</a></div></div>
 <div class="ttc" id="musiccoreutils_8h_html"><div class="ttname"><a href="../../da/dde/musiccoreutils_8h.html">musiccoreutils.h</a></div></div>
 <div class="ttc" id="class_music_skin_config_manager_html_a5417c3cd71e9a24a6af58d79d429fbc7"><div class="ttname"><a href="../../d8/d5b/class_music_skin_config_manager.html#a5417c3cd71e9a24a6af58d79d429fbc7">MusicSkinConfigManager::readSkinData</a></div><div class="ttdeci">void readSkinData(MusicSkinConfigItem &amp;item)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/deb/musicbackgroundconfigmanager_8cpp_source.html#l00009">musicbackgroundconfigmanager.cpp:9</a></div></div>
 <div class="ttc" id="class_music_skin_config_manager_html_a93a0c181ca8229b90b4582cc4a5a51f1"><div class="ttname"><a href="../../d8/d5b/class_music_skin_config_manager.html#a93a0c181ca8229b90b4582cc4a5a51f1">MusicSkinConfigManager::writeSkinData</a></div><div class="ttdeci">void writeSkinData(const MusicSkinConfigItem &amp;item, const QString &amp;path)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/deb/musicbackgroundconfigmanager_8cpp_source.html#l00015">musicbackgroundconfigmanager.cpp:15</a></div></div>
@@ -432,49 +442,50 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="zip_8c_html_a31eb94963d918c7f84f1d23a72bff92d"><div class="ttname"><a href="../../d0/d5f/zip_8c.html#a31eb94963d918c7f84f1d23a72bff92d">zipCloseFileInZip</a></div><div class="ttdeci">ZEXTERN int ZEXPORT zipCloseFileInZip(zipFile file)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d5f/zip_8c_source.html#l01750">zip.c:1750</a></div></div>
 <div class="ttc" id="structunz__file__info64__s_html"><div class="ttname"><a href="../../d1/dd3/structunz__file__info64__s.html">unz_file_info64_s</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d5c/unzip_8h_source.html#l00111">unzip.h:111</a></div></div>
 <div class="ttc" id="musicbackgroundconfigmanager_8h_html"><div class="ttname"><a href="../../dc/d4d/musicbackgroundconfigmanager_8h.html">musicbackgroundconfigmanager.h</a></div></div>
-<div class="ttc" id="class_music_extract_wrap_html_a5be292f7b85cd408b772befbba5363ad"><div class="ttname"><a href="../../d7/d52/class_music_extract_wrap.html#a5be292f7b85cd408b772befbba5363ad">MusicExtractWrap::inputText</a></div><div class="ttdeci">static bool inputText(const QByteArray &amp;data, const QString &amp;path)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d39/musicextractwrap_8cpp_source.html#l00323">musicextractwrap.cpp:323</a></div></div>
 <div class="ttc" id="unzip_8h_html_ad578db1d36691a2a244482a3b2360ca3"><div class="ttname"><a href="../../d2/d5c/unzip_8h.html#ad578db1d36691a2a244482a3b2360ca3">unzFile</a></div><div class="ttdeci">voidp unzFile</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d5c/unzip_8h_source.html#l00070">unzip.h:70</a></div></div>
 <div class="ttc" id="unzip_8h_html_ada043545f95ccd4dae93fa44d95e39a8"><div class="ttname"><a href="../../d2/d5c/unzip_8h.html#ada043545f95ccd4dae93fa44d95e39a8">UNZ_OK</a></div><div class="ttdeci">#define UNZ_OK</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d5c/unzip_8h_source.html#l00074">unzip.h:74</a></div></div>
-<div class="ttc" id="musicotherdefine_8h_html_a1cdee3fcaf366a7852ce8dcbb2f6084b"><div class="ttname"><a href="../../d2/d77/musicotherdefine_8h.html#a1cdee3fcaf366a7852ce8dcbb2f6084b">MUSIC_IMAGE_FILE</a></div><div class="ttdeci">#define MUSIC_IMAGE_FILE</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d77/musicotherdefine_8h_source.html#l00032">musicotherdefine.h:32</a></div></div>
+<div class="ttc" id="musicotherdefine_8h_html_a1cdee3fcaf366a7852ce8dcbb2f6084b"><div class="ttname"><a href="../../d2/d77/musicotherdefine_8h.html#a1cdee3fcaf366a7852ce8dcbb2f6084b">MUSIC_IMAGE_FILE</a></div><div class="ttdeci">#define MUSIC_IMAGE_FILE</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d77/musicotherdefine_8h_source.html#l00031">musicotherdefine.h:31</a></div></div>
 <div class="ttc" id="unzip_8c_html_aa9215f88f27e48cd1f94cf4bf7d31575"><div class="ttname"><a href="../../d6/da7/unzip_8c.html#aa9215f88f27e48cd1f94cf4bf7d31575">unzCloseCurrentFile</a></div><div class="ttdeci">ZEXTERN int ZEXPORT unzCloseCurrentFile(unzFile file)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/da7/unzip_8c_source.html#l02004">unzip.c:2004</a></div></div>
 <div class="ttc" id="unzip_8h_html"><div class="ttname"><a href="../../d2/d5c/unzip_8h.html">unzip.h</a></div></div>
 <div class="ttc" id="ioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="../../d2/db7/ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/db7/ioapi_8h_source.html#l00136">ioapi.h:136</a></div></div>
-<div class="ttc" id="class_music_extract_wrap_html_a0366ff5d84ffdb42b0d5ff7bf8e738db"><div class="ttname"><a href="../../d7/d52/class_music_extract_wrap.html#a0366ff5d84ffdb42b0d5ff7bf8e738db">MusicExtractWrap::outputThunderSkin</a></div><div class="ttdeci">static bool outputThunderSkin(QPixmap &amp;image, const QString &amp;path)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d39/musicextractwrap_8cpp_source.html#l00016">musicextractwrap.cpp:16</a></div></div>
 <div class="ttc" id="unzip_8c_html_a2f972fa989d43a27e43420101d1b49f2"><div class="ttname"><a href="../../d6/da7/unzip_8c.html#a2f972fa989d43a27e43420101d1b49f2">unzOpen64</a></div><div class="ttdeci">ZEXTERN unzFile ZEXPORT unzOpen64(const void *path)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/da7/unzip_8c_source.html#l00798">unzip.c:798</a></div></div>
+<div class="ttc" id="class_music_extract_wrap_html_a8b987c264ce8f3de378fd6c7427772e6"><div class="ttname"><a href="../../d7/d52/class_music_extract_wrap.html#a8b987c264ce8f3de378fd6c7427772e6">MusicExtractWrap::outputSkin</a></div><div class="ttdeci">static bool outputSkin(MusicBackgroundImage *image, const QString &amp;input)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d39/musicextractwrap_8cpp_source.html#l00159">musicextractwrap.cpp:159</a></div></div>
 <div class="ttc" id="unzip_8c_html_a27afcf0515cce2e9633700e47de9c319"><div class="ttname"><a href="../../d6/da7/unzip_8c.html#a27afcf0515cce2e9633700e47de9c319">unzGetCurrentFileInfo64</a></div><div class="ttdeci">ZEXTERN int ZEXPORT unzGetCurrentFileInfo64(unzFile file, unz_file_info64 *pfile_info, char *szFileName, uLong fileNameBufferSize, void *extraField, uLong extraFieldBufferSize, char *szComment, uLong commentBufferSize)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/da7/unzip_8c_source.html#l01124">unzip.c:1124</a></div></div>
-<div class="ttc" id="namespace_music_utils_1_1_image_html_a9a575cd2a72aeec631b7896658099146"><div class="ttname"><a href="../../d8/d75/namespace_music_utils_1_1_image.html#a9a575cd2a72aeec631b7896658099146">MusicUtils::Image::getPixmapData</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT QByteArray getPixmapData(const QPixmap &amp;pix)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d84/musicimageutils_8cpp_source.html#l00166">musicimageutils.cpp:166</a></div></div>
-<div class="ttc" id="musicobject_8h_html_a3ec6ac973634273e8ffff5a4b6de6c92"><div class="ttname"><a href="../../d8/d07/musicobject_8h.html#a3ec6ac973634273e8ffff5a4b6de6c92">XML_FILE</a></div><div class="ttdeci">#define XML_FILE</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00085">musicobject.h:85</a></div></div>
+<div class="ttc" id="namespace_music_utils_1_1_image_html_a9a575cd2a72aeec631b7896658099146"><div class="ttname"><a href="../../d8/d75/namespace_music_utils_1_1_image.html#a9a575cd2a72aeec631b7896658099146">MusicUtils::Image::getPixmapData</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT QByteArray getPixmapData(const QPixmap &amp;pix)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d84/musicimageutils_8cpp_source.html#l00058">musicimageutils.cpp:58</a></div></div>
+<div class="ttc" id="musicobject_8h_html_a3ec6ac973634273e8ffff5a4b6de6c92"><div class="ttname"><a href="../../d8/d07/musicobject_8h.html#a3ec6ac973634273e8ffff5a4b6de6c92">XML_FILE</a></div><div class="ttdeci">#define XML_FILE</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00087">musicobject.h:87</a></div></div>
 <div class="ttc" id="zip_8h_html_af69b9a5ea9aaf8e8f0b7681e451b224c"><div class="ttname"><a href="../../da/d3a/zip_8h.html#af69b9a5ea9aaf8e8f0b7681e451b224c">zipFile</a></div><div class="ttdeci">voidp zipFile</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d3a/zip_8h_source.html#l00069">zip.h:69</a></div></div>
 <div class="ttc" id="struct_music_background_image_html_ab4dcc7624aafea33e63b8896d236b0b6"><div class="ttname"><a href="../../db/d6a/struct_music_background_image.html#ab4dcc7624aafea33e63b8896d236b0b6">MusicBackgroundImage::m_pix</a></div><div class="ttdeci">QPixmap m_pix</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d4d/musicbackgroundconfigmanager_8h_source.html#l00053">musicbackgroundconfigmanager.h:53</a></div></div>
 <div class="ttc" id="struct_music_background_image_html"><div class="ttname"><a href="../../db/d6a/struct_music_background_image.html">MusicBackgroundImage</a></div><div class="ttdoc">The class of the skin backgroud image item. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d4d/musicbackgroundconfigmanager_8h_source.html#l00051">musicbackgroundconfigmanager.h:51</a></div></div>
+<div class="ttc" id="class_music_extract_wrap_html_a44ffa32b070df03cbf350d5d96037613"><div class="ttname"><a href="../../d7/d52/class_music_extract_wrap.html#a44ffa32b070df03cbf350d5d96037613">MusicExtractWrap::outputBinary</a></div><div class="ttdeci">static bool outputBinary(const QString &amp;input)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d39/musicextractwrap_8cpp_source.html#l00078">musicextractwrap.cpp:78</a></div></div>
 <div class="ttc" id="musicimageutils_8h_html"><div class="ttname"><a href="../../de/d18/musicimageutils_8h.html">musicimageutils.h</a></div></div>
+<div class="ttc" id="class_music_extract_wrap_html_ae55a0245af30ac27cd91b7e44f982163"><div class="ttname"><a href="../../d7/d52/class_music_extract_wrap.html#ae55a0245af30ac27cd91b7e44f982163">MusicExtractWrap::inputSkin</a></div><div class="ttdeci">static bool inputSkin(MusicBackgroundImage *image, const QString &amp;output)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d39/musicextractwrap_8cpp_source.html#l00244">musicextractwrap.cpp:244</a></div></div>
 <div class="ttc" id="zlib_8h_html_a27a96226f3dc88e4743131c632adf32f"><div class="ttname"><a href="../../d4/dae/zlib_8h.html#a27a96226f3dc88e4743131c632adf32f">Z_DEFLATED</a></div><div class="ttdeci">#define Z_DEFLATED</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dae/zlib_8h_source.html#l00209">zlib.h:209</a></div></div>
 <div class="ttc" id="zip_8c_html_acaa442d344aeae9756cccf317f705f92"><div class="ttname"><a href="../../d0/d5f/zip_8c.html#acaa442d344aeae9756cccf317f705f92">zipOpen64</a></div><div class="ttdeci">ZEXTERN zipFile ZEXPORT zipOpen64(const void *pathname, int append)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d5f/zip_8c_source.html#l00953">zip.c:953</a></div></div>
 <div class="ttc" id="unzip_8c_html_a4dae3d3f76e944981aee0c8467267d29"><div class="ttname"><a href="../../d6/da7/unzip_8c.html#a4dae3d3f76e944981aee0c8467267d29">unzGoToNextFile</a></div><div class="ttdeci">ZEXTERN int ZEXPORT unzGoToNextFile(unzFile file)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/da7/unzip_8c_source.html#l01199">unzip.c:1199</a></div></div>
 <div class="ttc" id="zip_8c_html_a2317369d8804b71273d8b0784a21d73d"><div class="ttname"><a href="../../d0/d5f/zip_8c.html#a2317369d8804b71273d8b0784a21d73d">zipClose</a></div><div class="ttdeci">ZEXTERN int ZEXPORT zipClose(zipFile file, const char *global_comment)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d5f/zip_8c_source.html#l01882">zip.c:1882</a></div></div>
 <div class="ttc" id="musicextractwrap_8cpp_html_a41c3e2404e9bd936bd2ee0e91f6bb5bf"><div class="ttname"><a href="../../dd/d39/musicextractwrap_8cpp.html#a41c3e2404e9bd936bd2ee0e91f6bb5bf">WIN_NAME_MAX_LENGTH</a></div><div class="ttdeci">#define WIN_NAME_MAX_LENGTH</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d39/musicextractwrap_8cpp_source.html#l00011">musicextractwrap.cpp:11</a></div></div>
 <div class="ttc" id="struct_music_background_image_html_a8be025f30eb520dcb929d1a3f6912ee9"><div class="ttname"><a href="../../db/d6a/struct_music_background_image.html#a8be025f30eb520dcb929d1a3f6912ee9">MusicBackgroundImage::m_item</a></div><div class="ttdeci">MusicSkinConfigItem m_item</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d4d/musicbackgroundconfigmanager_8h_source.html#l00054">musicbackgroundconfigmanager.h:54</a></div></div>
+<div class="ttc" id="class_music_extract_wrap_html_a2d6b7e1893523f5239522a9a1b0cbaff"><div class="ttname"><a href="../../d7/d52/class_music_extract_wrap.html#a2d6b7e1893523f5239522a9a1b0cbaff">MusicExtractWrap::outputThunderSkin</a></div><div class="ttdeci">static bool outputThunderSkin(QPixmap &amp;image, const QString &amp;input)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d39/musicextractwrap_8cpp_source.html#l00016">musicextractwrap.cpp:16</a></div></div>
 <div class="ttc" id="namespace_music_utils_1_1_codec_html_ab16dcda0d88095779fe1464e0d60f86e"><div class="ttname"><a href="../../d5/d67/namespace_music_utils_1_1_codec.html#ab16dcda0d88095779fe1464e0d60f86e">MusicUtils::Codec::toLocal8Bit</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT const char * toLocal8Bit(const QString &amp;str)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d48/musiccodecutils_8cpp_source.html#l00034">musiccodecutils.cpp:34</a></div></div>
 <div class="ttc" id="class_music_skin_config_manager_html"><div class="ttname"><a href="../../d8/d5b/class_music_skin_config_manager.html">MusicSkinConfigManager</a></div><div class="ttdoc">The class of the skin XML Config Manager. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d4d/musicbackgroundconfigmanager_8h_source.html#l00068">musicbackgroundconfigmanager.h:68</a></div></div>
-<div class="ttc" id="class_music_extract_wrap_html_a85548bfde5122110d4e436a596a27019"><div class="ttname"><a href="../../d7/d52/class_music_extract_wrap.html#a85548bfde5122110d4e436a596a27019">MusicExtractWrap::inputSkin</a></div><div class="ttdeci">static bool inputSkin(MusicBackgroundImage *image, const QString &amp;path)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d39/musicextractwrap_8cpp_source.html#l00233">musicextractwrap.cpp:233</a></div></div>
-<div class="ttc" id="class_music_extract_wrap_html_ab8bf18cf5d4352eee4df3e875b8615d1"><div class="ttname"><a href="../../d7/d52/class_music_extract_wrap.html#ab8bf18cf5d4352eee4df3e875b8615d1">MusicExtractWrap::outputSkin</a></div><div class="ttdeci">static bool outputSkin(MusicBackgroundImage *image, const QString &amp;path)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d39/musicextractwrap_8cpp_source.html#l00148">musicextractwrap.cpp:148</a></div></div>
 <div class="ttc" id="structzip__fileinfo_html"><div class="ttname"><a href="../../d6/d5a/structzip__fileinfo.html">zip_fileinfo</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d3a/zip_8h_source.html#l00099">zip.h:99</a></div></div>
 <div class="ttc" id="musicextractwrap_8h_html"><div class="ttname"><a href="../../d6/d27/musicextractwrap_8h.html">musicextractwrap.h</a></div></div>
+<div class="ttc" id="class_music_extract_wrap_html_ae69e280d1a5b9b323e06cc1e8eb5deea"><div class="ttname"><a href="../../d7/d52/class_music_extract_wrap.html#ae69e280d1a5b9b323e06cc1e8eb5deea">MusicExtractWrap::outputData</a></div><div class="ttdeci">static bool outputData(QByteArray &amp;data, const QString &amp;input)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d39/musicextractwrap_8cpp_source.html#l00277">musicextractwrap.cpp:277</a></div></div>
 <div class="ttc" id="zip_8c_html_a4dcfafc7f9a04486b46fd5508da62373"><div class="ttname"><a href="../../d0/d5f/zip_8c.html#a4dcfafc7f9a04486b46fd5508da62373">zipOpenNewFileInZip</a></div><div class="ttdeci">ZEXTERN int ZEXPORT zipOpenNewFileInZip(zipFile file, const char *filename, const zip_fileinfo *zipfi, const void *extrafield_local, uInt size_extrafield_local, const void *extrafield_global, uInt size_extrafield_global, const char *comment, int method, int level)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d5f/zip_8c_source.html#l01350">zip.c:1350</a></div></div>
 <div class="ttc" id="zip_8c_html_a6395947bc85d51cce3c4040242a0acdc"><div class="ttname"><a href="../../d0/d5f/zip_8c.html#a6395947bc85d51cce3c4040242a0acdc">zipWriteInFileInZip</a></div><div class="ttdeci">ZEXTERN int ZEXPORT zipWriteInFileInZip(zipFile file, const void *buf, unsigned int len)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d5f/zip_8c_source.html#l01402">zip.c:1402</a></div></div>
 <div class="ttc" id="class_music_abstract_xml_html_a7fbd6bb0e247266f8fede87b064959ea"><div class="ttname"><a href="../../d7/d53/class_music_abstract_xml.html#a7fbd6bb0e247266f8fede87b064959ea">MusicAbstractXml::fromByteArray</a></div><div class="ttdeci">bool fromByteArray(const QByteArray &amp;data)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d4d/musicabstractxml_8cpp_source.html#l00155">musicabstractxml.cpp:155</a></div></div>
-<div class="ttc" id="musicobject_8h_html_a5390d0fe4db069c647d8c57f720ac944"><div class="ttname"><a href="../../d8/d07/musicobject_8h.html#a5390d0fe4db069c647d8c57f720ac944">SKN_FILE</a></div><div class="ttdeci">#define SKN_FILE</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00076">musicobject.h:76</a></div></div>
+<div class="ttc" id="musicobject_8h_html_a5390d0fe4db069c647d8c57f720ac944"><div class="ttname"><a href="../../d8/d07/musicobject_8h.html#a5390d0fe4db069c647d8c57f720ac944">SKN_FILE</a></div><div class="ttdeci">#define SKN_FILE</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00078">musicobject.h:78</a></div></div>
 <div class="ttc" id="class_music_abstract_xml_html_ad8b34a0e3f46b50236ca77a0fd149635"><div class="ttname"><a href="../../d7/d53/class_music_abstract_xml.html#ad8b34a0e3f46b50236ca77a0fd149635">MusicAbstractXml::toByteArray</a></div><div class="ttdeci">QByteArray toByteArray() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d4d/musicabstractxml_8cpp_source.html#l00182">musicabstractxml.cpp:182</a></div></div>
 <div class="ttc" id="unzip_8c_html_add15efe6db6390302c2d9926ee4ab2f0"><div class="ttname"><a href="../../d6/da7/unzip_8c.html#add15efe6db6390302c2d9926ee4ab2f0">unzReadCurrentFile</a></div><div class="ttdeci">ZEXTERN int ZEXPORT unzReadCurrentFile(unzFile file, voidp buf, unsigned len)</div><div class="ttdoc">Addition for GDAL : END. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/da7/unzip_8c_source.html#l01684">unzip.c:1684</a></div></div>
 <div class="ttc" id="unzip_8c_html_aae2ff51513fca418b0e2e1f32b4e4516"><div class="ttname"><a href="../../d6/da7/unzip_8c.html#aae2ff51513fca418b0e2e1f32b4e4516">unzClose</a></div><div class="ttdeci">ZEXTERN int ZEXPORT unzClose(unzFile file)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/da7/unzip_8c_source.html#l00808">unzip.c:808</a></div></div>
-<div class="ttc" id="class_music_extract_wrap_html_af89fffc3eb61c31ae8daae9124da06d3"><div class="ttname"><a href="../../d7/d52/class_music_extract_wrap.html#af89fffc3eb61c31ae8daae9124da06d3">MusicExtractWrap::outputText</a></div><div class="ttdeci">static bool outputText(QByteArray &amp;data, const QString &amp;path)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d39/musicextractwrap_8cpp_source.html#l00266">musicextractwrap.cpp:266</a></div></div>
 <div class="ttc" id="unzip_8c_html_ae7995961a44b900ce2765dfc3e983f23"><div class="ttname"><a href="../../d6/da7/unzip_8c.html#ae7995961a44b900ce2765dfc3e983f23">unzOpenCurrentFile</a></div><div class="ttdeci">ZEXTERN int ZEXPORT unzOpenCurrentFile(unzFile file)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/da7/unzip_8c_source.html#l01641">unzip.c:1641</a></div></div>
 <div class="ttc" id="structunz__global__info64__s_html_a628f94ac445f2a6cd64c9e82d481e738"><div class="ttname"><a href="../../d1/d2a/structunz__global__info64__s.html#a628f94ac445f2a6cd64c9e82d481e738">unz_global_info64_s::number_entry</a></div><div class="ttdeci">ZPOS64_T number_entry</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d5c/unzip_8h_source.html#l00098">unzip.h:98</a></div></div>
 <div class="ttc" id="struct_music_skin_config_item_html"><div class="ttname"><a href="../../dd/d4d/struct_music_skin_config_item.html">MusicSkinConfigItem</a></div><div class="ttdoc">The class of the skin config item. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d4d/musicbackgroundconfigmanager_8h_source.html#l00028">musicbackgroundconfigmanager.h:28</a></div></div>
+<div class="ttc" id="class_music_extract_wrap_html_aceeb065ebf9353e792a48edc19b38d42"><div class="ttname"><a href="../../d7/d52/class_music_extract_wrap.html#aceeb065ebf9353e792a48edc19b38d42">MusicExtractWrap::inputData</a></div><div class="ttdeci">static bool inputData(const QByteArray &amp;data, const QString &amp;output)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d39/musicextractwrap_8cpp_source.html#l00334">musicextractwrap.cpp:334</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2020 14:02:32 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 19 2020 13:46:00 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.1.0</span>
+   &#160;<span id="projectnumber">2.13.2.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -168,18 +168,18 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a19a9b5f09b7ef0f25f6e8024166fdef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bf816f8c47d0fedfcab8cc7ea6cf7f7"><td class="memItemLeft" align="right" valign="top">QMap&lt; <a class="el" href="../../d9/d95/class_qmmp.html#a84fe34688f73d1518c69661fae2ac03f">Qmmp::ReplayGainKey</a>, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc5/class_track_info.html#a9bf816f8c47d0fedfcab8cc7ea6cf7f7">m_replayGainInfo</a></td></tr>
 <tr class="separator:a9bf816f8c47d0fedfcab8cc7ea6cf7f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2092fe23071b2530963c41808920acd0"><td class="memItemLeft" align="right" valign="top">Parts&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc5/class_track_info.html#a2092fe23071b2530963c41808920acd0">m_parts</a></td></tr>
+<tr class="memitem:a2092fe23071b2530963c41808920acd0"><td class="memItemLeft" align="right" valign="top">Parts&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc5/class_track_info.html#a2092fe23071b2530963c41808920acd0">m_parts</a> = Parts()</td></tr>
 <tr class="separator:a2092fe23071b2530963c41808920acd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaaa0635a1d8b91624157ad2d89b759cd"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc5/class_track_info.html#aaaa0635a1d8b91624157ad2d89b759cd">m_path</a></td></tr>
 <tr class="separator:aaaa0635a1d8b91624157ad2d89b759cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad49961fc775be7fe9041f9b6c802e8eb"><td class="memItemLeft" align="right" valign="top">qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc5/class_track_info.html#ad49961fc775be7fe9041f9b6c802e8eb">m_duration</a></td></tr>
+<tr class="memitem:ad49961fc775be7fe9041f9b6c802e8eb"><td class="memItemLeft" align="right" valign="top">qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc5/class_track_info.html#ad49961fc775be7fe9041f9b6c802e8eb">m_duration</a> = 0</td></tr>
 <tr class="separator:ad49961fc775be7fe9041f9b6c802e8eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="../../d1/dc5/class_track_info.html" title="The TrackInfo class stores metadata and other information about track. ">TrackInfo</a> class stores metadata and other information about track. </p>
 <dl class="section author"><dt>Author</dt><dd>Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'+'@ya'+'.r'+'u'; return false;">forko<span style="display: none;">.nosp@m.</span>tov0<span style="display: none;">.nosp@m.</span>2@ya.<span style="display: none;">.nosp@m.</span>ru</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="../../de/d64/trackinfo_8h_source.html#l00031">31</a> of file <a class="el" href="../../de/d64/trackinfo_8h_source.html">trackinfo.h</a>.</p>
+<p>Definition at line <a class="el" href="../../de/d64/trackinfo_8h_source.html#l00032">32</a> of file <a class="el" href="../../de/d64/trackinfo_8h_source.html">trackinfo.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a9027261d42ac51bfc013e91c348f9879"></a>
 <div class="memitem">
@@ -206,7 +206,7 @@ Private Attributes</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="../../de/d64/trackinfo_8h_source.html#l00053">53</a> of file <a class="el" href="../../de/d64/trackinfo_8h_source.html">trackinfo.h</a>.</p>
+<p>Definition at line <a class="el" href="../../de/d64/trackinfo_8h_source.html#l00054">54</a> of file <a class="el" href="../../de/d64/trackinfo_8h_source.html">trackinfo.h</a>.</p>
 
 </div>
 </div>
@@ -230,6 +230,9 @@ Private Attributes</h2></td></tr>
 <a class="anchor" id="a3a5a5bbf844acdbfd922e8c8bd7e9f18"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">TrackInfo::TrackInfo </td>
@@ -239,6 +242,11 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Constructs a new empty <a class="el" href="../../d1/dc5/class_track_info.html" title="The TrackInfo class stores metadata and other information about track. ">TrackInfo</a> that with file <b>path</b> (local path or URL). </p>
 
@@ -782,7 +790,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">qint64 TrackInfo::m_duration</td>
+          <td class="memname">qint64 TrackInfo::m_duration = 0</td>
         </tr>
       </table>
   </td>
@@ -792,7 +800,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d64/trackinfo_8h_source.html#l00177">177</a> of file <a class="el" href="../../de/d64/trackinfo_8h_source.html">trackinfo.h</a>.</p>
+<p>Definition at line <a class="el" href="../../de/d64/trackinfo_8h_source.html#l00178">178</a> of file <a class="el" href="../../de/d64/trackinfo_8h_source.html">trackinfo.h</a>.</p>
 
 </div>
 </div>
@@ -814,7 +822,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d64/trackinfo_8h_source.html#l00172">172</a> of file <a class="el" href="../../de/d64/trackinfo_8h_source.html">trackinfo.h</a>.</p>
+<p>Definition at line <a class="el" href="../../de/d64/trackinfo_8h_source.html#l00173">173</a> of file <a class="el" href="../../de/d64/trackinfo_8h_source.html">trackinfo.h</a>.</p>
 
 </div>
 </div>
@@ -826,7 +834,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Parts TrackInfo::m_parts</td>
+          <td class="memname">Parts TrackInfo::m_parts = Parts()</td>
         </tr>
       </table>
   </td>
@@ -836,7 +844,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d64/trackinfo_8h_source.html#l00175">175</a> of file <a class="el" href="../../de/d64/trackinfo_8h_source.html">trackinfo.h</a>.</p>
+<p>Definition at line <a class="el" href="../../de/d64/trackinfo_8h_source.html#l00176">176</a> of file <a class="el" href="../../de/d64/trackinfo_8h_source.html">trackinfo.h</a>.</p>
 
 </div>
 </div>
@@ -858,7 +866,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d64/trackinfo_8h_source.html#l00176">176</a> of file <a class="el" href="../../de/d64/trackinfo_8h_source.html">trackinfo.h</a>.</p>
+<p>Definition at line <a class="el" href="../../de/d64/trackinfo_8h_source.html#l00177">177</a> of file <a class="el" href="../../de/d64/trackinfo_8h_source.html">trackinfo.h</a>.</p>
 
 </div>
 </div>
@@ -880,7 +888,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d64/trackinfo_8h_source.html#l00173">173</a> of file <a class="el" href="../../de/d64/trackinfo_8h_source.html">trackinfo.h</a>.</p>
+<p>Definition at line <a class="el" href="../../de/d64/trackinfo_8h_source.html#l00174">174</a> of file <a class="el" href="../../de/d64/trackinfo_8h_source.html">trackinfo.h</a>.</p>
 
 </div>
 </div>
@@ -902,7 +910,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d64/trackinfo_8h_source.html#l00174">174</a> of file <a class="el" href="../../de/d64/trackinfo_8h_source.html">trackinfo.h</a>.</p>
+<p>Definition at line <a class="el" href="../../de/d64/trackinfo_8h_source.html#l00175">175</a> of file <a class="el" href="../../de/d64/trackinfo_8h_source.html">trackinfo.h</a>.</p>
 
 </div>
 </div>
@@ -912,7 +920,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2020 14:03:40 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 19 2020 13:47:08 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

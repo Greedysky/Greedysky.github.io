@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.1.0</span>
+   &#160;<span id="projectnumber">2.13.2.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -99,11 +99,11 @@ Public Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a6009d12b57fa2018ce7eec29ba0eaa41"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d78/class_visual_node.html">VisualNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbc/class_visual_buffer.html#a6009d12b57fa2018ce7eec29ba0eaa41">m_buffer</a> [<a class="el" href="../../d6/d65/visualbuffer__p_8h.html#abed3e9c3f738fca35f5eb51733290a26">VISUAL_BUFFER_SIZE</a>]</td></tr>
 <tr class="separator:a6009d12b57fa2018ce7eec29ba0eaa41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4880e297f66d891526cf4417f3e6cdc1"><td class="memItemLeft" align="right" valign="top">qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbc/class_visual_buffer.html#a4880e297f66d891526cf4417f3e6cdc1">m_elapsed</a></td></tr>
+<tr class="memitem:a4880e297f66d891526cf4417f3e6cdc1"><td class="memItemLeft" align="right" valign="top">qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbc/class_visual_buffer.html#a4880e297f66d891526cf4417f3e6cdc1">m_elapsed</a> = 0</td></tr>
 <tr class="separator:a4880e297f66d891526cf4417f3e6cdc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1d5ec2eb8cb9c6051f46df84721b981"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbc/class_visual_buffer.html#ac1d5ec2eb8cb9c6051f46df84721b981">m_take_index</a></td></tr>
+<tr class="memitem:ac1d5ec2eb8cb9c6051f46df84721b981"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbc/class_visual_buffer.html#ac1d5ec2eb8cb9c6051f46df84721b981">m_take_index</a> = 0</td></tr>
 <tr class="separator:ac1d5ec2eb8cb9c6051f46df84721b981"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28975f431035cb797cd63c9b8ff71e0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbc/class_visual_buffer.html#a28975f431035cb797cd63c9b8ff71e0d">m_add_index</a></td></tr>
+<tr class="memitem:a28975f431035cb797cd63c9b8ff71e0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbc/class_visual_buffer.html#a28975f431035cb797cd63c9b8ff71e0d">m_add_index</a> = 0</td></tr>
 <tr class="separator:a28975f431035cb797cd63c9b8ff71e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51892861a835d125f567b76b7925a802"><td class="memItemLeft" align="right" valign="top">QElapsedTimer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbc/class_visual_buffer.html#a51892861a835d125f567b76b7925a802">m_time</a></td></tr>
 <tr class="separator:a51892861a835d125f567b76b7925a802"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -112,7 +112,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="../../d6/d65/visualbuffer__p_8h_source.html#l00045">45</a> of file <a class="el" href="../../d6/d65/visualbuffer__p_8h_source.html">visualbuffer_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d65/visualbuffer__p_8h_source.html#l00039">39</a> of file <a class="el" href="../../d6/d65/visualbuffer__p_8h_source.html">visualbuffer_p.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="afa89baf809b5c050659707e71175da34"></a>
 <div class="memitem">
@@ -228,7 +228,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> VisualBuffer::m_add_index</td>
+          <td class="memname"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> VisualBuffer::m_add_index = 0</td>
         </tr>
       </table>
   </td>
@@ -238,7 +238,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/d65/visualbuffer__p_8h_source.html#l00059">59</a> of file <a class="el" href="../../d6/d65/visualbuffer__p_8h_source.html">visualbuffer_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d65/visualbuffer__p_8h_source.html#l00053">53</a> of file <a class="el" href="../../d6/d65/visualbuffer__p_8h_source.html">visualbuffer_p.h</a>.</p>
 
 </div>
 </div>
@@ -260,7 +260,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/d65/visualbuffer__p_8h_source.html#l00056">56</a> of file <a class="el" href="../../d6/d65/visualbuffer__p_8h_source.html">visualbuffer_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d65/visualbuffer__p_8h_source.html#l00050">50</a> of file <a class="el" href="../../d6/d65/visualbuffer__p_8h_source.html">visualbuffer_p.h</a>.</p>
 
 </div>
 </div>
@@ -272,7 +272,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">qint64 VisualBuffer::m_elapsed</td>
+          <td class="memname">qint64 VisualBuffer::m_elapsed = 0</td>
         </tr>
       </table>
   </td>
@@ -282,7 +282,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/d65/visualbuffer__p_8h_source.html#l00057">57</a> of file <a class="el" href="../../d6/d65/visualbuffer__p_8h_source.html">visualbuffer_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d65/visualbuffer__p_8h_source.html#l00051">51</a> of file <a class="el" href="../../d6/d65/visualbuffer__p_8h_source.html">visualbuffer_p.h</a>.</p>
 
 </div>
 </div>
@@ -304,7 +304,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/d65/visualbuffer__p_8h_source.html#l00061">61</a> of file <a class="el" href="../../d6/d65/visualbuffer__p_8h_source.html">visualbuffer_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d65/visualbuffer__p_8h_source.html#l00055">55</a> of file <a class="el" href="../../d6/d65/visualbuffer__p_8h_source.html">visualbuffer_p.h</a>.</p>
 
 </div>
 </div>
@@ -316,7 +316,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> VisualBuffer::m_take_index</td>
+          <td class="memname"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> VisualBuffer::m_take_index = 0</td>
         </tr>
       </table>
   </td>
@@ -326,7 +326,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/d65/visualbuffer__p_8h_source.html#l00058">58</a> of file <a class="el" href="../../d6/d65/visualbuffer__p_8h_source.html">visualbuffer_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d65/visualbuffer__p_8h_source.html#l00052">52</a> of file <a class="el" href="../../d6/d65/visualbuffer__p_8h_source.html">visualbuffer_p.h</a>.</p>
 
 </div>
 </div>
@@ -348,7 +348,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/d65/visualbuffer__p_8h_source.html#l00060">60</a> of file <a class="el" href="../../d6/d65/visualbuffer__p_8h_source.html">visualbuffer_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d65/visualbuffer__p_8h_source.html#l00054">54</a> of file <a class="el" href="../../d6/d65/visualbuffer__p_8h_source.html">visualbuffer_p.h</a>.</p>
 
 </div>
 </div>
@@ -358,7 +358,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2020 14:03:41 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 19 2020 13:47:09 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

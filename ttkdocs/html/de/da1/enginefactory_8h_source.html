@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.1.0</span>
+   &#160;<span id="projectnumber">2.13.2.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -122,24 +122,28 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="../../d0/de0/struct_engine_properties.html#ac65dc7ad69637655903036ca85bd9207">   46</a></span>&#160;    QStringList <a class="code" href="../../d0/de0/struct_engine_properties.html#ac65dc7ad69637655903036ca85bd9207">protocols</a>;    </div>
 <div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../d0/de0/struct_engine_properties.html#a328448568348c2a61a02c0a49d485b47">   47</a></span>&#160;    <span class="keywordtype">bool</span> hasSettings = <span class="keyword">false</span>; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="../../dd/d27/class_engine_factory.html">   52</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../df/df6/qmmp__export_8h.html#ae57db6e0c0f040f03506ccfc59947d30">QMMP_EXPORT</a> <a class="code" href="../../dd/d27/class_engine_factory.html">EngineFactory</a></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="../../dd/d27/class_engine_factory.html#ac789fcc29cf6ed75e497cfc19c71670a">   58</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../dd/d27/class_engine_factory.html#ac789fcc29cf6ed75e497cfc19c71670a">~EngineFactory</a>() {}</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> supports(<span class="keyword">const</span> QString &amp;source) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../d0/de0/struct_engine_properties.html">EngineProperties</a> properties() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../de/df0/class_abstract_engine.html">AbstractEngine</a> *create(QObject *parent = <span class="keyword">nullptr</span>) = 0;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">virtual</span> QList&lt;TrackInfo*&gt; createPlayList(<span class="keyword">const</span> QString &amp;fileName, TrackInfo::Parts parts, QStringList *ignoredPaths) = 0;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../df/dff/class_meta_data_model.html">MetaDataModel</a>* createMetaDataModel(<span class="keyword">const</span> QString &amp;path, <span class="keywordtype">bool</span> readOnly) = 0;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;Q_DECLARE_INTERFACE(<a class="code" href="../../dd/d27/class_engine_factory.html">EngineFactory</a>, <span class="stringliteral">&quot;EngineFactory/1.0&quot;</span>)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="../../dd/d27/class_engine_factory.html">   53</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../df/df6/qmmp__export_8h.html#ae57db6e0c0f040f03506ccfc59947d30">QMMP_EXPORT</a> <a class="code" href="../../dd/d27/class_engine_factory.html">EngineFactory</a></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="../../dd/d27/class_engine_factory.html#ac789fcc29cf6ed75e497cfc19c71670a">   59</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../dd/d27/class_engine_factory.html#ac789fcc29cf6ed75e497cfc19c71670a">~EngineFactory</a>()</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> supports(<span class="keyword">const</span> QString &amp;source) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../d0/de0/struct_engine_properties.html">EngineProperties</a> properties() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../de/df0/class_abstract_engine.html">AbstractEngine</a> *create(QObject *parent = <span class="keyword">nullptr</span>) = 0;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">virtual</span> QList&lt;TrackInfo*&gt; createPlayList(<span class="keyword">const</span> QString &amp;fileName, TrackInfo::Parts parts, QStringList *ignoredPaths) = 0;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../df/dff/class_meta_data_model.html">MetaDataModel</a>* createMetaDataModel(<span class="keyword">const</span> QString &amp;path, <span class="keywordtype">bool</span> readOnly) = 0;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;Q_DECLARE_INTERFACE(<a class="code" href="../../dd/d27/class_engine_factory.html">EngineFactory</a>, <span class="stringliteral">&quot;EngineFactory/1.0&quot;</span>)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="qmmp_8h_html"><div class="ttname"><a href="../../d8/d30/qmmp_8h.html">qmmp.h</a></div></div>
 <div class="ttc" id="trackinfo_8h_html"><div class="ttname"><a href="../../de/d64/trackinfo_8h.html">trackinfo.h</a></div></div>
-<div class="ttc" id="class_engine_factory_html_ac789fcc29cf6ed75e497cfc19c71670a"><div class="ttname"><a href="../../dd/d27/class_engine_factory.html#ac789fcc29cf6ed75e497cfc19c71670a">EngineFactory::~EngineFactory</a></div><div class="ttdeci">virtual ~EngineFactory()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/da1/enginefactory_8h_source.html#l00058">enginefactory.h:58</a></div></div>
+<div class="ttc" id="class_engine_factory_html_ac789fcc29cf6ed75e497cfc19c71670a"><div class="ttname"><a href="../../dd/d27/class_engine_factory.html#ac789fcc29cf6ed75e497cfc19c71670a">EngineFactory::~EngineFactory</a></div><div class="ttdeci">virtual ~EngineFactory()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/da1/enginefactory_8h_source.html#l00059">enginefactory.h:59</a></div></div>
 <div class="ttc" id="struct_engine_properties_html"><div class="ttname"><a href="../../d0/de0/struct_engine_properties.html">EngineProperties</a></div><div class="ttdoc">Structure to store custom audio engine properies. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/da1/enginefactory_8h_source.html#l00039">enginefactory.h:39</a></div></div>
 <div class="ttc" id="struct_engine_properties_html_ac65dc7ad69637655903036ca85bd9207"><div class="ttname"><a href="../../d0/de0/struct_engine_properties.html#ac65dc7ad69637655903036ca85bd9207">EngineProperties::protocols</a></div><div class="ttdeci">QStringList protocols</div><div class="ttdef"><b>Definition:</b> <a href="../../de/da1/enginefactory_8h_source.html#l00046">enginefactory.h:46</a></div></div>
 <div class="ttc" id="struct_engine_properties_html_a92bb265ced02d8b1069d6ed0aa7c853a"><div class="ttname"><a href="../../d0/de0/struct_engine_properties.html#a92bb265ced02d8b1069d6ed0aa7c853a">EngineProperties::description</a></div><div class="ttdeci">QString description</div><div class="ttdef"><b>Definition:</b> <a href="../../de/da1/enginefactory_8h_source.html#l00044">enginefactory.h:44</a></div></div>
@@ -151,13 +155,13 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="metadatamodel_8h_html"><div class="ttname"><a href="../../d3/db0/metadatamodel_8h.html">metadatamodel.h</a></div></div>
 <div class="ttc" id="class_abstract_engine_html"><div class="ttname"><a href="../../de/df0/class_abstract_engine.html">AbstractEngine</a></div><div class="ttdoc">The AbstractEngine class provides the base interface class of audio audio engines. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dcf/abstractengine_8h_source.html#l00038">abstractengine.h:38</a></div></div>
 <div class="ttc" id="qmmp__export_8h_html_ae57db6e0c0f040f03506ccfc59947d30"><div class="ttname"><a href="../../df/df6/qmmp__export_8h.html#ae57db6e0c0f040f03506ccfc59947d30">QMMP_EXPORT</a></div><div class="ttdeci">#define QMMP_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df6/qmmp__export_8h_source.html#l00029">qmmp_export.h:29</a></div></div>
-<div class="ttc" id="class_engine_factory_html"><div class="ttname"><a href="../../dd/d27/class_engine_factory.html">EngineFactory</a></div><div class="ttdoc">Engine plugin interface. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/da1/enginefactory_8h_source.html#l00052">enginefactory.h:52</a></div></div>
+<div class="ttc" id="class_engine_factory_html"><div class="ttname"><a href="../../dd/d27/class_engine_factory.html">EngineFactory</a></div><div class="ttdoc">Engine plugin interface. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/da1/enginefactory_8h_source.html#l00053">enginefactory.h:53</a></div></div>
 <div class="ttc" id="struct_engine_properties_html_a4fbe62ba7229c9bf13c8e24f9949f886"><div class="ttname"><a href="../../d0/de0/struct_engine_properties.html#a4fbe62ba7229c9bf13c8e24f9949f886">EngineProperties::shortName</a></div><div class="ttdeci">QString shortName</div><div class="ttdef"><b>Definition:</b> <a href="../../de/da1/enginefactory_8h_source.html#l00042">enginefactory.h:42</a></div></div>
 <div class="ttc" id="struct_engine_properties_html_ae67f1b4234cdde2514299e70fa958475"><div class="ttname"><a href="../../d0/de0/struct_engine_properties.html#ae67f1b4234cdde2514299e70fa958475">EngineProperties::name</a></div><div class="ttdeci">QString name</div><div class="ttdef"><b>Definition:</b> <a href="../../de/da1/enginefactory_8h_source.html#l00041">enginefactory.h:41</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2020 14:02:30 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 19 2020 13:46:00 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

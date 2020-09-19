@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.1.0</span>
+   &#160;<span id="projectnumber">2.13.2.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -130,10 +130,10 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a5e0d752455b8c0554f1439f4cd45e51e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10c869b411b10194af85f807691e993e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d4d/class_music_background_list_widget.html">MusicBackgroundListWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d78/class_music_background_remote_widget.html#a10c869b411b10194af85f807691e993e">m_backgroundList</a></td></tr>
 <tr class="separator:a10c869b411b10194af85f807691e993e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a067bcd846076a821334bb0af216ac1fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/dca/class_music_download_queue_cache.html">MusicDownloadQueueCache</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d78/class_music_background_remote_widget.html#a067bcd846076a821334bb0af216ac1fa">m_downloadQueue</a></td></tr>
-<tr class="separator:a067bcd846076a821334bb0af216ac1fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74aef1e2a9f1b966c35161fd71d05eb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dfc/class_music_download_background_remote_thread.html">MusicDownloadBackgroundRemoteThread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d78/class_music_background_remote_widget.html#a74aef1e2a9f1b966c35161fd71d05eb8">m_queryThread</a></td></tr>
-<tr class="separator:a74aef1e2a9f1b966c35161fd71d05eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6421690722b58d39e92c602251f828ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/db0/class_music_download_queue_request.html">MusicDownloadQueueRequest</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d78/class_music_background_remote_widget.html#a6421690722b58d39e92c602251f828ed">m_downloadQueue</a></td></tr>
+<tr class="separator:a6421690722b58d39e92c602251f828ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f1deb71f8422b42628a04c82b7e8abf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d76/class_music_download_background_remote_request.html">MusicDownloadBackgroundRemoteRequest</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d78/class_music_background_remote_widget.html#a4f1deb71f8422b42628a04c82b7e8abf">m_downloadRequest</a></td></tr>
+<tr class="separator:a4f1deb71f8422b42628a04c82b7e8abf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The class of the remote background widget. </p>
@@ -166,7 +166,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html#l00009">9</a> of file <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html">musicbackgroundremotewidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../de/de0/musicnetworkdefines_8h_source.html#l00040">MusicObject::DownloadBigBackground</a>, <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html#l00040">downLoadFinished()</a>, <a class="el" href="../../d8/d5e/musicbackgroundremotewidget_8h_source.html#l00073">m_backgroundList</a>, <a class="el" href="../../d8/d5e/musicbackgroundremotewidget_8h_source.html#l00071">m_currentIndex</a>, <a class="el" href="../../d8/d5e/musicbackgroundremotewidget_8h_source.html#l00074">m_downloadQueue</a>, and <a class="el" href="../../d8/d5e/musicbackgroundremotewidget_8h_source.html#l00075">m_queryThread</a>.</p>
+<p>References <a class="el" href="../../de/de0/musicnetworkdefines_8h_source.html#l00040">MusicObject::DownloadBigBackground</a>, <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html#l00040">downLoadFinished()</a>, <a class="el" href="../../d8/d5e/musicbackgroundremotewidget_8h_source.html#l00073">m_backgroundList</a>, <a class="el" href="../../d8/d5e/musicbackgroundremotewidget_8h_source.html#l00071">m_currentIndex</a>, <a class="el" href="../../d8/d5e/musicbackgroundremotewidget_8h_source.html#l00074">m_downloadQueue</a>, and <a class="el" href="../../d8/d5e/musicbackgroundremotewidget_8h_source.html#l00075">m_downloadRequest</a>.</p>
 
 </div>
 </div>
@@ -185,7 +185,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html#l00027">27</a> of file <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html">musicbackgroundremotewidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html#l00035">abort()</a>, <a class="el" href="../../d8/d5e/musicbackgroundremotewidget_8h_source.html#l00073">m_backgroundList</a>, <a class="el" href="../../d8/d5e/musicbackgroundremotewidget_8h_source.html#l00074">m_downloadQueue</a>, and <a class="el" href="../../d8/d5e/musicbackgroundremotewidget_8h_source.html#l00075">m_queryThread</a>.</p>
+<p>References <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html#l00035">abort()</a>, <a class="el" href="../../d8/d5e/musicbackgroundremotewidget_8h_source.html#l00073">m_backgroundList</a>, <a class="el" href="../../d8/d5e/musicbackgroundremotewidget_8h_source.html#l00074">m_downloadQueue</a>, and <a class="el" href="../../d8/d5e/musicbackgroundremotewidget_8h_source.html#l00075">m_downloadRequest</a>.</p>
 
 </div>
 </div>
@@ -202,11 +202,11 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Abort the current download thread. </p>
+<p>Abort the current download request. </p>
 
 <p>Definition at line <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html#l00035">35</a> of file <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html">musicbackgroundremotewidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d6/d6e/musicdownloadqueuecache_8cpp_source.html#l00051">MusicDownloadQueueCache::abort()</a>, and <a class="el" href="../../d8/d5e/musicbackgroundremotewidget_8h_source.html#l00074">m_downloadQueue</a>.</p>
+<p>References <a class="el" href="../../dc/d06/musicdownloadqueuerequest_8cpp_source.html#l00051">MusicDownloadQueueRequest::abort()</a>, and <a class="el" href="../../d8/d5e/musicbackgroundremotewidget_8h_source.html#l00074">m_downloadQueue</a>.</p>
 
 <p>Referenced by <a class="el" href="../../db/dab/musicbackgroundskindialog_8cpp_source.html#l00216">MusicBackgroundSkinDialog::backgroundListWidgetChanged()</a>, and <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html#l00027">~MusicBackgroundRemoteWidget()</a>.</p>
 
@@ -336,7 +336,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html#l00061">61</a> of file <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html">musicbackgroundremotewidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d6/d6e/musicdownloadqueuecache_8cpp_source.html#l00070">MusicDownloadQueueCache::addImageQueue()</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00171">CACHE_DIR_FULL</a>, <a class="el" href="../../d4/dfe/musicbackgroundlistwidget_8cpp_source.html#l00182">MusicBackgroundListWidget::clearAllItems()</a>, <a class="el" href="../../d4/dfe/musicbackgroundlistwidget_8cpp_source.html#l00188">MusicBackgroundListWidget::createItem()</a>, <a class="el" href="../../d8/d5e/musicbackgroundremotewidget_8h_source.html#l00073">m_backgroundList</a>, <a class="el" href="../../d8/d5e/musicbackgroundremotewidget_8h_source.html#l00071">m_currentIndex</a>, <a class="el" href="../../d8/d5e/musicbackgroundremotewidget_8h_source.html#l00074">m_downloadQueue</a>, <a class="el" href="../../d8/d5e/musicbackgroundremotewidget_8h_source.html#l00072">m_groups</a>, <a class="el" href="../../d5/de8/musicdownloadqueuecache_8h_source.html#l00030">MusicDownloadQueueData::m_savePath</a>, <a class="el" href="../../d5/de8/musicdownloadqueuecache_8h_source.html#l00029">MusicDownloadQueueData::m_url</a>, and <a class="el" href="../../d6/d6e/musicdownloadqueuecache_8cpp_source.html#l00043">MusicDownloadQueueCache::startToDownload()</a>.</p>
+<p>References <a class="el" href="../../dc/d06/musicdownloadqueuerequest_8cpp_source.html#l00070">MusicDownloadQueueRequest::addImageQueue()</a>, <a class="el" href="../../d8/d07/musicobject_8h_source.html#l00173">CACHE_DIR_FULL</a>, <a class="el" href="../../d4/dfe/musicbackgroundlistwidget_8cpp_source.html#l00182">MusicBackgroundListWidget::clearAllItems()</a>, <a class="el" href="../../d4/dfe/musicbackgroundlistwidget_8cpp_source.html#l00188">MusicBackgroundListWidget::createItem()</a>, <a class="el" href="../../d8/d5e/musicbackgroundremotewidget_8h_source.html#l00073">m_backgroundList</a>, <a class="el" href="../../d8/d5e/musicbackgroundremotewidget_8h_source.html#l00071">m_currentIndex</a>, <a class="el" href="../../d8/d5e/musicbackgroundremotewidget_8h_source.html#l00074">m_downloadQueue</a>, <a class="el" href="../../d8/d5e/musicbackgroundremotewidget_8h_source.html#l00072">m_groups</a>, <a class="el" href="../../d9/de4/musicdownloadqueuerequest_8h_source.html#l00030">MusicDownloadQueueData::m_savePath</a>, <a class="el" href="../../d9/de4/musicdownloadqueuerequest_8h_source.html#l00029">MusicDownloadQueueData::m_url</a>, and <a class="el" href="../../dc/d06/musicdownloadqueuerequest_8cpp_source.html#l00043">MusicDownloadQueueRequest::startToDownload()</a>.</p>
 
 <p>Referenced by <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html#l00195">MusicBackgroundThunderWidget::buttonClicked()</a>, <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html#l00295">MusicBackgroundDailyWidget::downLoadFinished()</a>, and <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html#l00263">MusicBackgroundDailyWidget::initialize()</a>.</p>
 
@@ -391,7 +391,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a067bcd846076a821334bb0af216ac1fa"></a>
+<a class="anchor" id="a6421690722b58d39e92c602251f828ed"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -399,7 +399,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d6/dca/class_music_download_queue_cache.html">MusicDownloadQueueCache</a>* MusicBackgroundRemoteWidget::m_downloadQueue</td>
+          <td class="memname"><a class="el" href="../../d6/db0/class_music_download_queue_request.html">MusicDownloadQueueRequest</a>* MusicBackgroundRemoteWidget::m_downloadQueue</td>
         </tr>
       </table>
   </td>
@@ -412,6 +412,30 @@ Protected Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="../../d8/d5e/musicbackgroundremotewidget_8h_source.html#l00074">74</a> of file <a class="el" href="../../d8/d5e/musicbackgroundremotewidget_8h_source.html">musicbackgroundremotewidget.h</a>.</p>
 
 <p>Referenced by <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html#l00035">abort()</a>, <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html#l00195">MusicBackgroundThunderWidget::buttonClicked()</a>, <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html#l00009">MusicBackgroundRemoteWidget()</a>, <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html#l00061">startToDownload()</a>, and <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html#l00027">~MusicBackgroundRemoteWidget()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4f1deb71f8422b42628a04c82b7e8abf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d76/class_music_download_background_remote_request.html">MusicDownloadBackgroundRemoteRequest</a>* MusicBackgroundRemoteWidget::m_downloadRequest</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d8/d5e/musicbackgroundremotewidget_8h_source.html#l00075">75</a> of file <a class="el" href="../../d8/d5e/musicbackgroundremotewidget_8h_source.html">musicbackgroundremotewidget.h</a>.</p>
+
+<p>Referenced by <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html#l00101">MusicBackgroundThunderWidget::initialize()</a>, <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html#l00263">MusicBackgroundDailyWidget::initialize()</a>, <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html#l00009">MusicBackgroundRemoteWidget()</a>, and <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html#l00027">~MusicBackgroundRemoteWidget()</a>.</p>
 
 </div>
 </div>
@@ -439,30 +463,6 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a74aef1e2a9f1b966c35161fd71d05eb8"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../dd/dfc/class_music_download_background_remote_thread.html">MusicDownloadBackgroundRemoteThread</a>* MusicBackgroundRemoteWidget::m_queryThread</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../d8/d5e/musicbackgroundremotewidget_8h_source.html#l00075">75</a> of file <a class="el" href="../../d8/d5e/musicbackgroundremotewidget_8h_source.html">musicbackgroundremotewidget.h</a>.</p>
-
-<p>Referenced by <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html#l00101">MusicBackgroundThunderWidget::initialize()</a>, <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html#l00263">MusicBackgroundDailyWidget::initialize()</a>, <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html#l00009">MusicBackgroundRemoteWidget()</a>, and <a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html#l00027">~MusicBackgroundRemoteWidget()</a>.</p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>TTKModule/TTKWidget/musicWidgetKits/<a class="el" href="../../d8/d5e/musicbackgroundremotewidget_8h_source.html">musicbackgroundremotewidget.h</a></li>
 <li>TTKModule/TTKWidget/musicWidgetKits/<a class="el" href="../../db/de8/musicbackgroundremotewidget_8cpp_source.html">musicbackgroundremotewidget.cpp</a></li>
@@ -470,7 +470,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2020 14:03:24 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 19 2020 13:46:29 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

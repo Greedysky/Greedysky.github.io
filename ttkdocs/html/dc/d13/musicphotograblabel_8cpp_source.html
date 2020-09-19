@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.1.0</span>
+   &#160;<span id="projectnumber">2.13.2.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -125,12 +125,12 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">if</span>(img.width() &gt; img.height())</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#ab93d35b15e94a74e51ab19224412a7ab">m_ratio</a> = img.width()*1.0f/width();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#a5d967938362c48ab85e9210d3031aca8">m_imgRect</a> = QRect(0, 0, img.width()/<a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#ab93d35b15e94a74e51ab19224412a7ab">m_ratio</a>, img.height()/<a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#ab93d35b15e94a74e51ab19224412a7ab">m_ratio</a>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#a5d967938362c48ab85e9210d3031aca8">m_imgRect</a> = QRect(0, 0, img.width() / <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#ab93d35b15e94a74e51ab19224412a7ab">m_ratio</a>, img.height() / <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#ab93d35b15e94a74e51ab19224412a7ab">m_ratio</a>);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#ab93d35b15e94a74e51ab19224412a7ab">m_ratio</a> = img.height()*1.0f/height();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#a5d967938362c48ab85e9210d3031aca8">m_imgRect</a> = QRect(0, 0, img.width()/<a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#ab93d35b15e94a74e51ab19224412a7ab">m_ratio</a>, img.height()/<a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#ab93d35b15e94a74e51ab19224412a7ab">m_ratio</a>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#a5d967938362c48ab85e9210d3031aca8">m_imgRect</a> = QRect(0, 0, img.width() / <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#ab93d35b15e94a74e51ab19224412a7ab">m_ratio</a>, img.height() / <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#ab93d35b15e94a74e51ab19224412a7ab">m_ratio</a>);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#a5d967938362c48ab85e9210d3031aca8">m_imgRect</a>.setX((width() - <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#a5d967938362c48ab85e9210d3031aca8">m_imgRect</a>.width()) / 2);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#a5d967938362c48ab85e9210d3031aca8">m_imgRect</a>.setY((height() - <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#a5d967938362c48ab85e9210d3031aca8">m_imgRect</a>.height()) / 2);</div>
@@ -157,9 +157,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    QPainter painter(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    QPixmap pix(<span class="stringliteral">&quot;:/lrc/lb_transparent&quot;</span>);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;ceil(width()/<a class="code" href="../../dc/d13/musicphotograblabel_8cpp.html#a0f78f92367d8496b133bfc4621b23a16">PIX_WIDTH</a>); ++i)</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;ceil(width() / <a class="code" href="../../dc/d13/musicphotograblabel_8cpp.html#a0f78f92367d8496b133bfc4621b23a16">PIX_WIDTH</a>); ++i)</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;=ceil(height()/<a class="code" href="../../dc/d13/musicphotograblabel_8cpp.html#afd235386a5c0475e77cc6fa2141edd91">PIX_HEIGHT</a>); ++j)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;=ceil(height() / <a class="code" href="../../dc/d13/musicphotograblabel_8cpp.html#afd235386a5c0475e77cc6fa2141edd91">PIX_HEIGHT</a>); ++j)</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        {</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            painter.drawPixmap(i*<a class="code" href="../../dc/d13/musicphotograblabel_8cpp.html#a0f78f92367d8496b133bfc4621b23a16">PIX_WIDTH</a>, j*<a class="code" href="../../dc/d13/musicphotograblabel_8cpp.html#afd235386a5c0475e77cc6fa2141edd91">PIX_HEIGHT</a>, PIX_WIDTH, PIX_HEIGHT, pix);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
@@ -192,7 +192,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2020 14:02:45 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 19 2020 13:46:06 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

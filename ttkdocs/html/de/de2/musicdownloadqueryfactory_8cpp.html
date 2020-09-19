@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.1.0</span>
+   &#160;<span id="projectnumber">2.13.2.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -79,94 +79,94 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="../../d3/d73/musicdownloadqueryfactory_8h_source.html">musicdownloadqueryfactory.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../dd/d2f/musicsettingmanager_8h_source.html">musicsettingmanager.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d7/de7/musicdownloadquerywythread_8h_source.html">musicdownloadquerywythread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d6/d14/musicdownloadqueryxmthread_8h_source.html">musicdownloadqueryxmthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../de/ded/musicdownloadquerykgthread_8h_source.html">musicdownloadquerykgthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../db/d0c/musicdownloadquerykwthread_8h_source.html">musicdownloadquerykwthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d4/d76/musicdownloadquerybdthread_8h_source.html">musicdownloadquerybdthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d0/d7c/musicdownloadqueryqqthread_8h_source.html">musicdownloadqueryqqthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d8/d8d/musicdownloadquerywymoviethread_8h_source.html">musicdownloadquerywymoviethread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d6/d1b/musicdownloadqueryxmmoviethread_8h_source.html">musicdownloadqueryxmmoviethread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../de/d5e/musicdownloadquerykgmoviethread_8h_source.html">musicdownloadquerykgmoviethread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d6/d0e/musicdownloadquerykwmoviethread_8h_source.html">musicdownloadquerykwmoviethread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../dc/dda/musicdownloadquerybdmoviethread_8h_source.html">musicdownloadquerybdmoviethread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d7/d5f/musicdownloadqueryqqmoviethread_8h_source.html">musicdownloadqueryqqmoviethread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d9/d8c/musicdownloadquerywyalbumthread_8h_source.html">musicdownloadquerywyalbumthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d7/dca/musicdownloadqueryxmalbumthread_8h_source.html">musicdownloadqueryxmalbumthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../db/dcc/musicdownloadquerykgalbumthread_8h_source.html">musicdownloadquerykgalbumthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../da/dbe/musicdownloadquerykwalbumthread_8h_source.html">musicdownloadquerykwalbumthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d5/d5b/musicdownloadquerybdalbumthread_8h_source.html">musicdownloadquerybdalbumthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d0/daf/musicdownloadqueryqqalbumthread_8h_source.html">musicdownloadqueryqqalbumthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../db/d58/musicdownloadquerywyartistthread_8h_source.html">musicdownloadquerywyartistthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d6/d8f/musicdownloadqueryxmartistthread_8h_source.html">musicdownloadqueryxmartistthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d5/d23/musicdownloadquerykgartistthread_8h_source.html">musicdownloadquerykgartistthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../db/d5b/musicdownloadquerykwartistthread_8h_source.html">musicdownloadquerykwartistthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d2/d83/musicdownloadquerybdartistthread_8h_source.html">musicdownloadquerybdartistthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d9/d5e/musicdownloadqueryqqartistthread_8h_source.html">musicdownloadqueryqqartistthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d6/da9/musicdownloadquerywyartistlistthread_8h_source.html">musicdownloadquerywyartistlistthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../dd/d24/musicdownloadqueryxmartistlistthread_8h_source.html">musicdownloadqueryxmartistlistthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d7/dd1/musicdownloadquerykgartistlistthread_8h_source.html">musicdownloadquerykgartistlistthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d0/db3/musicdownloadquerykwartistlistthread_8h_source.html">musicdownloadquerykwartistlistthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d0/dcb/musicdownloadquerybdartistlistthread_8h_source.html">musicdownloadquerybdartistlistthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../dc/da7/musicdownloadqueryqqartistlistthread_8h_source.html">musicdownloadqueryqqartistlistthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d6/dc6/musicdownloadquerywytoplistthread_8h_source.html">musicdownloadquerywytoplistthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../de/d69/musicdownloadqueryqqtoplistthread_8h_source.html">musicdownloadqueryqqtoplistthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../dc/dd8/musicdownloadqueryxmtoplistthread_8h_source.html">musicdownloadqueryxmtoplistthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d1/d9a/musicdownloadquerybdtoplistthread_8h_source.html">musicdownloadquerybdtoplistthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../da/dec/musicdownloadquerykgtoplistthread_8h_source.html">musicdownloadquerykgtoplistthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d1/d24/musicdownloadquerykwtoplistthread_8h_source.html">musicdownloadquerykwtoplistthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../db/d44/musicdownloadquerywyplaylistthread_8h_source.html">musicdownloadquerywyplaylistthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../da/dd2/musicdownloadqueryqqplaylistthread_8h_source.html">musicdownloadqueryqqplaylistthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../db/d81/musicdownloadquerybdplaylistthread_8h_source.html">musicdownloadquerybdplaylistthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d6/d41/musicdownloadqueryxmplaylistthread_8h_source.html">musicdownloadqueryxmplaylistthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d9/dc6/musicdownloadquerykgplaylistthread_8h_source.html">musicdownloadquerykgplaylistthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../dd/d22/musicdownloadquerykwplaylistthread_8h_source.html">musicdownloadquerykwplaylistthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../da/d6c/musicdownloadquerywyrecommendthread_8h_source.html">musicdownloadquerywyrecommendthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d1/d0f/musicdownloadqueryqqrecommendthread_8h_source.html">musicdownloadqueryqqrecommendthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d1/d9a/musicdownloadquerybdrecommendthread_8h_source.html">musicdownloadquerybdrecommendthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d0/d24/musicdownloadqueryxmrecommendthread_8h_source.html">musicdownloadqueryxmrecommendthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d0/d51/musicdownloadquerykgrecommendthread_8h_source.html">musicdownloadquerykgrecommendthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../de/d85/musicdownloadquerykwrecommendthread_8h_source.html">musicdownloadquerykwrecommendthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d4/ddc/musicwycommentsthread_8h_source.html">musicwycommentsthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../df/d16/musicxmcommentsthread_8h_source.html">musicxmcommentsthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d1/da4/musicbdcommentsthread_8h_source.html">musicbdcommentsthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d4/d25/musickgcommentsthread_8h_source.html">musickgcommentsthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d4/d1b/musickwcommentsthread_8h_source.html">musickwcommentsthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d9/d9c/musicqqcommentsthread_8h_source.html">musicqqcommentsthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d9/d1e/musicwydiscoverlistthread_8h_source.html">musicwydiscoverlistthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../df/de7/musicxmdiscoverlistthread_8h_source.html">musicxmdiscoverlistthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d9/da2/musicbddiscoverlistthread_8h_source.html">musicbddiscoverlistthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d4/ddf/musicqqdiscoverlistthread_8h_source.html">musicqqdiscoverlistthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d0/d2b/musickgdiscoverlistthread_8h_source.html">musickgdiscoverlistthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d6/dbb/musickwdiscoverlistthread_8h_source.html">musickwdiscoverlistthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d4/dde/musicwysongsuggestthread_8h_source.html">musicwysongsuggestthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../da/d08/musicxmsongsuggestthread_8h_source.html">musicxmsongsuggestthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d9/dd4/musicbdsongsuggestthread_8h_source.html">musicbdsongsuggestthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../dd/da4/musicqqsongsuggestthread_8h_source.html">musicqqsongsuggestthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d1/d0d/musickgsongsuggestthread_8h_source.html">musickgsongsuggestthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../de/d8a/musickwsongsuggestthread_8h_source.html">musickwsongsuggestthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../df/d7f/musicwyartistsimilarthread_8h_source.html">musicwyartistsimilarthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d2/d3b/musicxmartistsimilarthread_8h_source.html">musicxmartistsimilarthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d9/dbc/musicbdartistsimilarthread_8h_source.html">musicbdartistsimilarthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../de/d02/musicqqartistsimilarthread_8h_source.html">musicqqartistsimilarthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d1/db2/musickgartistsimilarthread_8h_source.html">musickgartistsimilarthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d4/dca/musickwartistsimilarthread_8h_source.html">musickwartistsimilarthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../dd/d28/musictranslationthread_8h_source.html">musictranslationthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../db/d64/musicwytranslationthread_8h_source.html">musicwytranslationthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d3/d51/musicdatadownloadthread_8h_source.html">musicdatadownloadthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d4/d8a/musictextdownloadthread_8h_source.html">musictextdownloadthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d7/d63/musicwytextdownloadthread_8h_source.html">musicwytextdownloadthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d8/da4/musicxmtextdownloadthread_8h_source.html">musicxmtextdownloadthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../de/d83/musickwtextdownloadthread_8h_source.html">musickwtextdownloadthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d9/d4f/musicqqtextdownloadthread_8h_source.html">musicqqtextdownloadthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d1/d96/musickwbackgroundthread_8h_source.html">musickwbackgroundthread.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d8/d52/musicqqbackgroundthread_8h_source.html">musicqqbackgroundthread.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d62/musicwyqueryrequest_8h_source.html">musicwyqueryrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d3/d09/musicxmqueryrequest_8h_source.html">musicxmqueryrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d2a/musickgqueryrequest_8h_source.html">musickgqueryrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/d14/musickwqueryrequest_8h_source.html">musickwqueryrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/df1/musicbdqueryrequest_8h_source.html">musicbdqueryrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/d87/musicqqqueryrequest_8h_source.html">musicqqqueryrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d9/d7f/musicwyquerymovierequest_8h_source.html">musicwyquerymovierequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/d3b/musicxmquerymovierequest_8h_source.html">musicxmquerymovierequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d3/dd9/musickgquerymovierequest_8h_source.html">musickgquerymovierequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/d9b/musickwquerymovierequest_8h_source.html">musickwquerymovierequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/df2/musicbdquerymovierequest_8h_source.html">musicbdquerymovierequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/dc5/musicqqquerymovierequest_8h_source.html">musicqqquerymovierequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../de/d70/musicwyqueryalbumrequest_8h_source.html">musicwyqueryalbumrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d8/d8a/musicxmqueryalbumrequest_8h_source.html">musicxmqueryalbumrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dc/d2d/musickgqueryalbumrequest_8h_source.html">musickgqueryalbumrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../de/d35/musickwqueryalbumrequest_8h_source.html">musickwqueryalbumrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/d4a/musicbdqueryalbumrequest_8h_source.html">musicbdqueryalbumrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d3/d32/musicqqqueryalbumrequest_8h_source.html">musicqqqueryalbumrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/d76/musicwyqueryartistrequest_8h_source.html">musicwyqueryartistrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/d22/musicxmqueryartistrequest_8h_source.html">musicxmqueryartistrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../de/ddf/musickgqueryartistrequest_8h_source.html">musickgqueryartistrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dc/dca/musickwqueryartistrequest_8h_source.html">musickwqueryartistrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/dec/musicbdqueryartistrequest_8h_source.html">musicbdqueryartistrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../de/d90/musicqqqueryartistrequest_8h_source.html">musicqqqueryartistrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d9d/musicwyqueryartistlistrequest_8h_source.html">musicwyqueryartistlistrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d9/d56/musicxmqueryartistlistrequest_8h_source.html">musicxmqueryartistlistrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../de/d8a/musickgqueryartistlistrequest_8h_source.html">musickgqueryartistlistrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d7/df7/musickwqueryartistlistrequest_8h_source.html">musickwqueryartistlistrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d4a/musicbdqueryartistlistrequest_8h_source.html">musicbdqueryartistlistrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/dc3/musicqqqueryartistlistrequest_8h_source.html">musicqqqueryartistlistrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/d61/musicwyquerytoplistrequest_8h_source.html">musicwyquerytoplistrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d8/d23/musicqqquerytoplistrequest_8h_source.html">musicqqquerytoplistrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../de/dd3/musicxmquerytoplistrequest_8h_source.html">musicxmquerytoplistrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d7/d1e/musicbdquerytoplistrequest_8h_source.html">musicbdquerytoplistrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/d8b/musickgquerytoplistrequest_8h_source.html">musickgquerytoplistrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d8/d7d/musickwquerytoplistrequest_8h_source.html">musickwquerytoplistrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/d1b/musicwyqueryplaylistrequest_8h_source.html">musicwyqueryplaylistrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d7/d9d/musicqqqueryplaylistrequest_8h_source.html">musicqqqueryplaylistrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/d98/musicbdqueryplaylistrequest_8h_source.html">musicbdqueryplaylistrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/dae/musicxmqueryplaylistrequest_8h_source.html">musicxmqueryplaylistrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/d00/musickgqueryplaylistrequest_8h_source.html">musickgqueryplaylistrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d3/d7a/musickwqueryplaylistrequest_8h_source.html">musickwqueryplaylistrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d3/d5e/musicwyqueryrecommendrequest_8h_source.html">musicwyqueryrecommendrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/dbf/musicqqqueryrecommendrequest_8h_source.html">musicqqqueryrecommendrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/d70/musicbdqueryrecommendrequest_8h_source.html">musicbdqueryrecommendrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/d4e/musicxmqueryrecommendrequest_8h_source.html">musicxmqueryrecommendrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../de/db3/musickgqueryrecommendrequest_8h_source.html">musickgqueryrecommendrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/dbd/musickwqueryrecommendrequest_8h_source.html">musickwqueryrecommendrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/d92/musicwycommentsrequest_8h_source.html">musicwycommentsrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/d36/musicxmcommentsrequest_8h_source.html">musicxmcommentsrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/dea/musicbdcommentsrequest_8h_source.html">musicbdcommentsrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d0/dd0/musickgcommentsrequest_8h_source.html">musickgcommentsrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/d36/musickwcommentsrequest_8h_source.html">musickwcommentsrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/d8d/musicqqcommentsrequest_8h_source.html">musicqqcommentsrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d9/d6f/musicwydiscoverlistrequest_8h_source.html">musicwydiscoverlistrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/d09/musicxmdiscoverlistrequest_8h_source.html">musicxmdiscoverlistrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d7/d1a/musicbddiscoverlistrequest_8h_source.html">musicbddiscoverlistrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../de/d76/musicqqdiscoverlistrequest_8h_source.html">musicqqdiscoverlistrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/ddc/musickgdiscoverlistrequest_8h_source.html">musickgdiscoverlistrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d90/musickwdiscoverlistrequest_8h_source.html">musickwdiscoverlistrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/dd9/musicwysongsuggestrequest_8h_source.html">musicwysongsuggestrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d3/df9/musicxmsongsuggestrequest_8h_source.html">musicxmsongsuggestrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/d4a/musicbdsongsuggestrequest_8h_source.html">musicbdsongsuggestrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/d13/musicqqsongsuggestrequest_8h_source.html">musicqqsongsuggestrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/df6/musickgsongsuggestrequest_8h_source.html">musickgsongsuggestrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/d98/musickwsongsuggestrequest_8h_source.html">musickwsongsuggestrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/d25/musicwyartistsimilarrequest_8h_source.html">musicwyartistsimilarrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/d01/musicxmartistsimilarrequest_8h_source.html">musicxmartistsimilarrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/deb/musicbdartistsimilarrequest_8h_source.html">musicbdartistsimilarrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/d55/musicqqartistsimilarrequest_8h_source.html">musicqqartistsimilarrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d8/d16/musickgartistsimilarrequest_8h_source.html">musickgartistsimilarrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dc/d4d/musickwartistsimilarrequest_8h_source.html">musickwartistsimilarrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d8/d2e/musicbdtranslationrequest_8h_source.html">musicbdtranslationrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/db5/musicwytranslationrequest_8h_source.html">musicwytranslationrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d1/de5/musicdownloaddatarequest_8h_source.html">musicdownloaddatarequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/de5/musicdownloadtextrequest_8h_source.html">musicdownloadtextrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/db7/musicwydownloadtextrequest_8h_source.html">musicwydownloadtextrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d3/d82/musicxmdownloadtextrequest_8h_source.html">musicxmdownloadtextrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/dd4/musickwdownloadtextrequest_8h_source.html">musickwdownloadtextrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/dfe/musicqqdownloadtextrequest_8h_source.html">musicqqdownloadtextrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d7/d17/musickwdownloadbackgroundrequest_8h_source.html">musickwdownloadbackgroundrequest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../de/dc3/musicqqdownloadbackgroundrequest_8h_source.html">musicqqdownloadbackgroundrequest.h</a>&quot;</code><br />
 </div>
 <p><a href="../../de/de2/musicdownloadqueryfactory_8cpp_source.html">Go to the source code of this file.</a></p>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2020 14:03:05 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 19 2020 13:46:25 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

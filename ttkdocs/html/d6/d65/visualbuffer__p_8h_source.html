@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.1.0</span>
+   &#160;<span id="projectnumber">2.13.2.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -111,54 +111,42 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="../../df/d78/class_visual_node.html#a70b01aab6c31ca6fe70038b2b2edac6f">   34</a></span>&#160;    <span class="keywordtype">float</span> data[2][512];</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../df/d78/class_visual_node.html#a0820040e88e44f11e47990128eba2b03">   35</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../df/d78/class_visual_node.html#a0820040e88e44f11e47990128eba2b03">used</a>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../df/d78/class_visual_node.html#a8fac3eed9631c9adfdefb0602360b132">   36</a></span>&#160;    qint64 <a class="code" href="../../df/d78/class_visual_node.html#a8fac3eed9631c9adfdefb0602360b132">ts</a>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="../../df/d78/class_visual_node.html#a4dd91f8fbd8c6e761ddaee56e6c2d175">   38</a></span>&#160;    <a class="code" href="../../df/d78/class_visual_node.html#a4dd91f8fbd8c6e761ddaee56e6c2d175">VisualNode</a>()</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        used = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        ts = 0;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="../../d9/dbc/class_visual_buffer.html">   45</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../df/df6/qmmp__export_8h.html#ae57db6e0c0f040f03506ccfc59947d30">QMMP_EXPORT</a> <a class="code" href="../../d9/dbc/class_visual_buffer.html">VisualBuffer</a></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="../../d9/dbc/class_visual_buffer.html">VisualBuffer</a>();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> add(<span class="keywordtype">float</span> *pcm, <span class="keywordtype">int</span> samples, <span class="keywordtype">int</span> channels, qint64 ts, qint64 delay);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="../../df/d78/class_visual_node.html">VisualNode</a> *take();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> clear();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    QMutex *mutex();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="../../d9/dbc/class_visual_buffer.html#a6009d12b57fa2018ce7eec29ba0eaa41">   56</a></span>&#160;    <a class="code" href="../../df/d78/class_visual_node.html">VisualNode</a> m_buffer[<a class="code" href="../../d6/d65/visualbuffer__p_8h.html#abed3e9c3f738fca35f5eb51733290a26">VISUAL_BUFFER_SIZE</a>];</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="../../d9/dbc/class_visual_buffer.html#a4880e297f66d891526cf4417f3e6cdc1">   57</a></span>&#160;    qint64 <a class="code" href="../../d9/dbc/class_visual_buffer.html#a4880e297f66d891526cf4417f3e6cdc1">m_elapsed</a>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="../../d9/dbc/class_visual_buffer.html#ac1d5ec2eb8cb9c6051f46df84721b981">   58</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d9/dbc/class_visual_buffer.html#ac1d5ec2eb8cb9c6051f46df84721b981">m_take_index</a>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="../../d9/dbc/class_visual_buffer.html#a28975f431035cb797cd63c9b8ff71e0d">   59</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d9/dbc/class_visual_buffer.html#a28975f431035cb797cd63c9b8ff71e0d">m_add_index</a>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="../../d9/dbc/class_visual_buffer.html#a51892861a835d125f567b76b7925a802">   60</a></span>&#160;    QElapsedTimer <a class="code" href="../../d9/dbc/class_visual_buffer.html#a51892861a835d125f567b76b7925a802">m_time</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="../../d9/dbc/class_visual_buffer.html#a26cf0d72323ef1d8fa5ca8defa3380f0">   61</a></span>&#160;    QMutex <a class="code" href="../../d9/dbc/class_visual_buffer.html#a26cf0d72323ef1d8fa5ca8defa3380f0">m_mutex</a>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif // VISUALBUFFER_P_H</span></div>
-<div class="ttc" id="class_visual_node_html_a4dd91f8fbd8c6e761ddaee56e6c2d175"><div class="ttname"><a href="../../df/d78/class_visual_node.html#a4dd91f8fbd8c6e761ddaee56e6c2d175">VisualNode::VisualNode</a></div><div class="ttdeci">VisualNode()</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d65/visualbuffer__p_8h_source.html#l00038">visualbuffer_p.h:38</a></div></div>
-<div class="ttc" id="class_visual_buffer_html_a28975f431035cb797cd63c9b8ff71e0d"><div class="ttname"><a href="../../d9/dbc/class_visual_buffer.html#a28975f431035cb797cd63c9b8ff71e0d">VisualBuffer::m_add_index</a></div><div class="ttdeci">int m_add_index</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d65/visualbuffer__p_8h_source.html#l00059">visualbuffer_p.h:59</a></div></div>
-<div class="ttc" id="class_visual_buffer_html_a4880e297f66d891526cf4417f3e6cdc1"><div class="ttname"><a href="../../d9/dbc/class_visual_buffer.html#a4880e297f66d891526cf4417f3e6cdc1">VisualBuffer::m_elapsed</a></div><div class="ttdeci">qint64 m_elapsed</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d65/visualbuffer__p_8h_source.html#l00057">visualbuffer_p.h:57</a></div></div>
-<div class="ttc" id="class_visual_buffer_html_ac1d5ec2eb8cb9c6051f46df84721b981"><div class="ttname"><a href="../../d9/dbc/class_visual_buffer.html#ac1d5ec2eb8cb9c6051f46df84721b981">VisualBuffer::m_take_index</a></div><div class="ttdeci">int m_take_index</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d65/visualbuffer__p_8h_source.html#l00058">visualbuffer_p.h:58</a></div></div>
-<div class="ttc" id="class_visual_node_html_a0820040e88e44f11e47990128eba2b03"><div class="ttname"><a href="../../df/d78/class_visual_node.html#a0820040e88e44f11e47990128eba2b03">VisualNode::used</a></div><div class="ttdeci">bool used</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d65/visualbuffer__p_8h_source.html#l00035">visualbuffer_p.h:35</a></div></div>
-<div class="ttc" id="class_visual_buffer_html_a26cf0d72323ef1d8fa5ca8defa3380f0"><div class="ttname"><a href="../../d9/dbc/class_visual_buffer.html#a26cf0d72323ef1d8fa5ca8defa3380f0">VisualBuffer::m_mutex</a></div><div class="ttdeci">QMutex m_mutex</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d65/visualbuffer__p_8h_source.html#l00061">visualbuffer_p.h:61</a></div></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../df/d78/class_visual_node.html#a0820040e88e44f11e47990128eba2b03">   35</a></span>&#160;    <span class="keywordtype">bool</span> used = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../df/d78/class_visual_node.html#a8fac3eed9631c9adfdefb0602360b132">   36</a></span>&#160;    qint64 ts = 0;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../d9/dbc/class_visual_buffer.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../df/df6/qmmp__export_8h.html#ae57db6e0c0f040f03506ccfc59947d30">QMMP_EXPORT</a> <a class="code" href="../../d9/dbc/class_visual_buffer.html">VisualBuffer</a></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="../../d9/dbc/class_visual_buffer.html">VisualBuffer</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> add(<span class="keywordtype">float</span> *pcm, <span class="keywordtype">int</span> samples, <span class="keywordtype">int</span> channels, qint64 ts, qint64 delay);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="../../df/d78/class_visual_node.html">VisualNode</a> *take();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> clear();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    QMutex *mutex();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="../../d9/dbc/class_visual_buffer.html#a6009d12b57fa2018ce7eec29ba0eaa41">   50</a></span>&#160;    <a class="code" href="../../df/d78/class_visual_node.html">VisualNode</a> m_buffer[<a class="code" href="../../d6/d65/visualbuffer__p_8h.html#abed3e9c3f738fca35f5eb51733290a26">VISUAL_BUFFER_SIZE</a>];</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="../../d9/dbc/class_visual_buffer.html#a4880e297f66d891526cf4417f3e6cdc1">   51</a></span>&#160;    qint64 m_elapsed = 0;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="../../d9/dbc/class_visual_buffer.html#ac1d5ec2eb8cb9c6051f46df84721b981">   52</a></span>&#160;    <span class="keywordtype">int</span> m_take_index = 0;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="../../d9/dbc/class_visual_buffer.html#a28975f431035cb797cd63c9b8ff71e0d">   53</a></span>&#160;    <span class="keywordtype">int</span> m_add_index = 0;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="../../d9/dbc/class_visual_buffer.html#a51892861a835d125f567b76b7925a802">   54</a></span>&#160;    QElapsedTimer <a class="code" href="../../d9/dbc/class_visual_buffer.html#a51892861a835d125f567b76b7925a802">m_time</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="../../d9/dbc/class_visual_buffer.html#a26cf0d72323ef1d8fa5ca8defa3380f0">   55</a></span>&#160;    QMutex <a class="code" href="../../d9/dbc/class_visual_buffer.html#a26cf0d72323ef1d8fa5ca8defa3380f0">m_mutex</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif // VISUALBUFFER_P_H</span></div>
+<div class="ttc" id="class_visual_buffer_html_a26cf0d72323ef1d8fa5ca8defa3380f0"><div class="ttname"><a href="../../d9/dbc/class_visual_buffer.html#a26cf0d72323ef1d8fa5ca8defa3380f0">VisualBuffer::m_mutex</a></div><div class="ttdeci">QMutex m_mutex</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d65/visualbuffer__p_8h_source.html#l00055">visualbuffer_p.h:55</a></div></div>
 <div class="ttc" id="qmmp__export_8h_html"><div class="ttname"><a href="../../df/df6/qmmp__export_8h.html">qmmp_export.h</a></div></div>
-<div class="ttc" id="class_visual_buffer_html"><div class="ttname"><a href="../../d9/dbc/class_visual_buffer.html">VisualBuffer</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d65/visualbuffer__p_8h_source.html#l00045">visualbuffer_p.h:45</a></div></div>
+<div class="ttc" id="class_visual_buffer_html"><div class="ttname"><a href="../../d9/dbc/class_visual_buffer.html">VisualBuffer</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d65/visualbuffer__p_8h_source.html#l00039">visualbuffer_p.h:39</a></div></div>
 <div class="ttc" id="qmmp__export_8h_html_ae57db6e0c0f040f03506ccfc59947d30"><div class="ttname"><a href="../../df/df6/qmmp__export_8h.html#ae57db6e0c0f040f03506ccfc59947d30">QMMP_EXPORT</a></div><div class="ttdeci">#define QMMP_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df6/qmmp__export_8h_source.html#l00029">qmmp_export.h:29</a></div></div>
 <div class="ttc" id="visualbuffer__p_8h_html_abed3e9c3f738fca35f5eb51733290a26"><div class="ttname"><a href="../../d6/d65/visualbuffer__p_8h.html#abed3e9c3f738fca35f5eb51733290a26">VISUAL_BUFFER_SIZE</a></div><div class="ttdeci">#define VISUAL_BUFFER_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d65/visualbuffer__p_8h_source.html#l00029">visualbuffer_p.h:29</a></div></div>
-<div class="ttc" id="class_visual_buffer_html_a51892861a835d125f567b76b7925a802"><div class="ttname"><a href="../../d9/dbc/class_visual_buffer.html#a51892861a835d125f567b76b7925a802">VisualBuffer::m_time</a></div><div class="ttdeci">QElapsedTimer m_time</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d65/visualbuffer__p_8h_source.html#l00060">visualbuffer_p.h:60</a></div></div>
+<div class="ttc" id="class_visual_buffer_html_a51892861a835d125f567b76b7925a802"><div class="ttname"><a href="../../d9/dbc/class_visual_buffer.html#a51892861a835d125f567b76b7925a802">VisualBuffer::m_time</a></div><div class="ttdeci">QElapsedTimer m_time</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d65/visualbuffer__p_8h_source.html#l00054">visualbuffer_p.h:54</a></div></div>
 <div class="ttc" id="class_visual_node_html"><div class="ttname"><a href="../../df/d78/class_visual_node.html">VisualNode</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d65/visualbuffer__p_8h_source.html#l00031">visualbuffer_p.h:31</a></div></div>
-<div class="ttc" id="class_visual_node_html_a8fac3eed9631c9adfdefb0602360b132"><div class="ttname"><a href="../../df/d78/class_visual_node.html#a8fac3eed9631c9adfdefb0602360b132">VisualNode::ts</a></div><div class="ttdeci">qint64 ts</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d65/visualbuffer__p_8h_source.html#l00036">visualbuffer_p.h:36</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2020 14:02:31 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 19 2020 13:46:00 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

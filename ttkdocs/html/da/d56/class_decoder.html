@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.1.0</span>
+   &#160;<span id="projectnumber">2.13.2.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -177,7 +177,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a7ac6416ab3c963da08ee34cc8a401533"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ad20bcabb8a863b7d02b1ac68b2678a"><td class="memItemLeft" align="right" valign="top">QIODevice *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d56/class_decoder.html#a1ad20bcabb8a863b7d02b1ac68b2678a">m_input</a></td></tr>
 <tr class="separator:a1ad20bcabb8a863b7d02b1ac68b2678a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12d6a9f7c78952bc51f6bedf39a51bdf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d56/class_decoder.html#a12d6a9f7c78952bc51f6bedf39a51bdf">m_hasMetaData</a></td></tr>
+<tr class="memitem:a12d6a9f7c78952bc51f6bedf39a51bdf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d56/class_decoder.html#a12d6a9f7c78952bc51f6bedf39a51bdf">m_hasMetaData</a> = false</td></tr>
 <tr class="separator:a12d6a9f7c78952bc51f6bedf39a51bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88422a0447346aad23468e8e97966959"><td class="memItemLeft" align="right" valign="top">QMap&lt; <a class="el" href="../../d9/d95/class_qmmp.html#aa4a16a069a893d4bf425a793b03d8291">Qmmp::MetaData</a>, QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d56/class_decoder.html#a88422a0447346aad23468e8e97966959">m_metaData</a></td></tr>
 <tr class="separator:a88422a0447346aad23468e8e97966959"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,6 +202,9 @@ Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'
 <a class="anchor" id="a0630315accb833ee3ddc0450485fe71f"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Decoder::Decoder </td>
@@ -211,6 +214,11 @@ Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Object contsructor. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1150,7 +1158,7 @@ Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Decoder::m_hasMetaData</td>
+          <td class="memname">bool Decoder::m_hasMetaData = false</td>
         </tr>
       </table>
   </td>
@@ -1160,7 +1168,7 @@ Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/d72/decoder_8h_source.html#l00219">219</a> of file <a class="el" href="../../d6/d72/decoder_8h_source.html">decoder.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d72/decoder_8h_source.html#l00220">220</a> of file <a class="el" href="../../d6/d72/decoder_8h_source.html">decoder.h</a>.</p>
 
 </div>
 </div>
@@ -1182,7 +1190,7 @@ Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/d72/decoder_8h_source.html#l00218">218</a> of file <a class="el" href="../../d6/d72/decoder_8h_source.html">decoder.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d72/decoder_8h_source.html#l00219">219</a> of file <a class="el" href="../../d6/d72/decoder_8h_source.html">decoder.h</a>.</p>
 
 </div>
 </div>
@@ -1204,7 +1212,7 @@ Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/d72/decoder_8h_source.html#l00220">220</a> of file <a class="el" href="../../d6/d72/decoder_8h_source.html">decoder.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d72/decoder_8h_source.html#l00221">221</a> of file <a class="el" href="../../d6/d72/decoder_8h_source.html">decoder.h</a>.</p>
 
 </div>
 </div>
@@ -1226,7 +1234,7 @@ Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/d72/decoder_8h_source.html#l00216">216</a> of file <a class="el" href="../../d6/d72/decoder_8h_source.html">decoder.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d72/decoder_8h_source.html#l00217">217</a> of file <a class="el" href="../../d6/d72/decoder_8h_source.html">decoder.h</a>.</p>
 
 </div>
 </div>
@@ -1248,7 +1256,7 @@ Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/d72/decoder_8h_source.html#l00217">217</a> of file <a class="el" href="../../d6/d72/decoder_8h_source.html">decoder.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d72/decoder_8h_source.html#l00218">218</a> of file <a class="el" href="../../d6/d72/decoder_8h_source.html">decoder.h</a>.</p>
 
 </div>
 </div>
@@ -1270,7 +1278,7 @@ Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/d72/decoder_8h_source.html#l00221">221</a> of file <a class="el" href="../../d6/d72/decoder_8h_source.html">decoder.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d72/decoder_8h_source.html#l00222">222</a> of file <a class="el" href="../../d6/d72/decoder_8h_source.html">decoder.h</a>.</p>
 
 </div>
 </div>
@@ -1280,7 +1288,7 @@ Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2020 14:03:21 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 19 2020 13:46:27 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

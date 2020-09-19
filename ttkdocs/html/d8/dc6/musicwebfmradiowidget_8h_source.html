@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.1.0</span>
+   &#160;<span id="projectnumber">2.13.2.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -100,7 +100,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../da/db4/musicabstracttablewidget_8h.html">musicabstracttablewidget.h</a>&quot;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">class </span><a class="code" href="../../de/d7b/class_music_f_m_radio_channel_thread.html">MusicFMRadioChannelThread</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">class </span><a class="code" href="../../d4/dbe/class_music_f_m_radio_channel_request.html">MusicFMRadioChannelRequest</a>;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">class </span><a class="code" href="../../d0/d7d/class_music_web_f_m_radio_play_widget.html">MusicWebFMRadioPlayWidget</a>;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../dd/dd7/class_music_web_f_m_radio_widget.html">   30</a></span>&#160;<span class="keyword">class </span>MUSIC_TOOL_EXPORT <a class="code" href="../../dd/dd7/class_music_web_f_m_radio_widget.html">MusicWebFMRadioWidget</a> : <span class="keyword">public</span> <a class="code" href="../../d1/dab/class_music_abstract_table_widget.html">MusicAbstractTableWidget</a></div>
@@ -128,7 +128,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
 <div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="../../dd/dd7/class_music_web_f_m_radio_widget.html#a203178540bbffdb6013ef0cd362ac1e1">   83</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../dd/dd7/class_music_web_f_m_radio_widget.html#a203178540bbffdb6013ef0cd362ac1e1">m_outerIndex</a>;</div>
 <div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="../../dd/dd7/class_music_web_f_m_radio_widget.html#a5e28c41dec1bfd866d2f118fc480c6d4">   84</a></span>&#160;    <a class="code" href="../../d0/d7d/class_music_web_f_m_radio_play_widget.html">MusicWebFMRadioPlayWidget</a> *<a class="code" href="../../dd/dd7/class_music_web_f_m_radio_widget.html#a5e28c41dec1bfd866d2f118fc480c6d4">m_musicRadio</a>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="../../dd/dd7/class_music_web_f_m_radio_widget.html#a2d237667038fde114ef1ce8476d88756">   85</a></span>&#160;    <a class="code" href="../../de/d7b/class_music_f_m_radio_channel_thread.html">MusicFMRadioChannelThread</a> *<a class="code" href="../../dd/dd7/class_music_web_f_m_radio_widget.html#a2d237667038fde114ef1ce8476d88756">m_getChannelThread</a>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="../../dd/dd7/class_music_web_f_m_radio_widget.html#aef34713d1dc91a266b6a19cebaef7b1d">   85</a></span>&#160;    <a class="code" href="../../d4/dbe/class_music_f_m_radio_channel_request.html">MusicFMRadioChannelRequest</a> *<a class="code" href="../../dd/dd7/class_music_web_f_m_radio_widget.html#aef34713d1dc91a266b6a19cebaef7b1d">m_getChannelThread</a>;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;};</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
@@ -140,14 +140,14 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_abstract_table_widget_html_a53ee6cc49c2ca8593091c3a10b931245"><div class="ttname"><a href="../../d1/dab/class_music_abstract_table_widget.html#a53ee6cc49c2ca8593091c3a10b931245">MusicAbstractTableWidget::itemCellEntered</a></div><div class="ttdeci">virtual void itemCellEntered(int row, int column)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d08/musicabstracttablewidget_8cpp_source.html#l00069">musicabstracttablewidget.cpp:69</a></div></div>
 <div class="ttc" id="class_music_web_f_m_radio_play_widget_html"><div class="ttname"><a href="../../d0/d7d/class_music_web_f_m_radio_play_widget.html">MusicWebFMRadioPlayWidget</a></div><div class="ttdoc">The class of the web music radio widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/dd9/musicwebfmradioplaywidget_8h_source.html#l00037">musicwebfmradioplaywidget.h:37</a></div></div>
 <div class="ttc" id="class_music_web_f_m_radio_widget_html_a5e28c41dec1bfd866d2f118fc480c6d4"><div class="ttname"><a href="../../dd/dd7/class_music_web_f_m_radio_widget.html#a5e28c41dec1bfd866d2f118fc480c6d4">MusicWebFMRadioWidget::m_musicRadio</a></div><div class="ttdeci">MusicWebFMRadioPlayWidget * m_musicRadio</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dc6/musicwebfmradiowidget_8h_source.html#l00084">musicwebfmradiowidget.h:84</a></div></div>
-<div class="ttc" id="class_music_f_m_radio_channel_thread_html"><div class="ttname"><a href="../../de/d7b/class_music_f_m_radio_channel_thread.html">MusicFMRadioChannelThread</a></div><div class="ttdoc">The class of fm radio thread of song channel. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d0d/musicfmradiochannelthread_8h_source.html#l00038">musicfmradiochannelthread.h:38</a></div></div>
+<div class="ttc" id="class_music_web_f_m_radio_widget_html_aef34713d1dc91a266b6a19cebaef7b1d"><div class="ttname"><a href="../../dd/dd7/class_music_web_f_m_radio_widget.html#aef34713d1dc91a266b6a19cebaef7b1d">MusicWebFMRadioWidget::m_getChannelThread</a></div><div class="ttdeci">MusicFMRadioChannelRequest * m_getChannelThread</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dc6/musicwebfmradiowidget_8h_source.html#l00085">musicwebfmradiowidget.h:85</a></div></div>
+<div class="ttc" id="class_music_f_m_radio_channel_request_html"><div class="ttname"><a href="../../d4/dbe/class_music_f_m_radio_channel_request.html">MusicFMRadioChannelRequest</a></div><div class="ttdoc">The class of fm radio request of song channel. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d94/musicfmradiochannelrequest_8h_source.html#l00038">musicfmradiochannelrequest.h:38</a></div></div>
 <div class="ttc" id="class_music_abstract_table_widget_html_a889b12c661d22d4115ebaf8cff0e7ffb"><div class="ttname"><a href="../../d1/dab/class_music_abstract_table_widget.html#a889b12c661d22d4115ebaf8cff0e7ffb">MusicAbstractTableWidget::itemCellClicked</a></div><div class="ttdeci">virtual void itemCellClicked(int row, int column)=0</div></div>
-<div class="ttc" id="class_music_web_f_m_radio_widget_html_a2d237667038fde114ef1ce8476d88756"><div class="ttname"><a href="../../dd/dd7/class_music_web_f_m_radio_widget.html#a2d237667038fde114ef1ce8476d88756">MusicWebFMRadioWidget::m_getChannelThread</a></div><div class="ttdeci">MusicFMRadioChannelThread * m_getChannelThread</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dc6/musicwebfmradiowidget_8h_source.html#l00085">musicwebfmradiowidget.h:85</a></div></div>
 <div class="ttc" id="class_music_web_f_m_radio_widget_html"><div class="ttname"><a href="../../dd/dd7/class_music_web_f_m_radio_widget.html">MusicWebFMRadioWidget</a></div><div class="ttdoc">The class of the web music radio list widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dc6/musicwebfmradiowidget_8h_source.html#l00030">musicwebfmradiowidget.h:30</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2020 14:02:49 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 19 2020 13:46:08 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

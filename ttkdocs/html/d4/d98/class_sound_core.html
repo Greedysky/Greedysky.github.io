@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.1.0</span>
+   &#160;<span id="projectnumber">2.13.2.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -239,11 +239,11 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ab4cad11362834969e5008a4f11d2ee18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a543792164b762b9a8a6639706cd5ca8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d52/class_volume_handler.html">VolumeHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d98/class_sound_core.html#a543792164b762b9a8a6639706cd5ca8b">m_volumeControl</a></td></tr>
 <tr class="separator:a543792164b762b9a8a6639706cd5ca8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab79b0bcbb46054e9d6057919ad7e077"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/df0/class_abstract_engine.html">AbstractEngine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d98/class_sound_core.html#aab79b0bcbb46054e9d6057919ad7e077">m_engine</a></td></tr>
+<tr class="memitem:aab79b0bcbb46054e9d6057919ad7e077"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/df0/class_abstract_engine.html">AbstractEngine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d98/class_sound_core.html#aab79b0bcbb46054e9d6057919ad7e077">m_engine</a> = nullptr</td></tr>
 <tr class="separator:aab79b0bcbb46054e9d6057919ad7e077"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4693f700ec8f811e75b4cb0ee9b4447d"><td class="memItemLeft" align="right" valign="top">QQueue&lt; <a class="el" href="../../dc/d3d/class_input_source.html">InputSource</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d98/class_sound_core.html#a4693f700ec8f811e75b4cb0ee9b4447d">m_sources</a></td></tr>
 <tr class="separator:a4693f700ec8f811e75b4cb0ee9b4447d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab643d24f9fc7281053010798804f3d50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d98/class_sound_core.html#ab643d24f9fc7281053010798804f3d50">m_nextState</a></td></tr>
+<tr class="memitem:ab643d24f9fc7281053010798804f3d50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d98/class_sound_core.html#ab643d24f9fc7281053010798804f3d50">m_nextState</a> = <a class="el" href="../../d4/d98/class_sound_core.html#a2254d314000d2c280ddf96f003ad1902a3d468f28fca44c3a8c9334f99bccd383">NO_ENGINE</a></td></tr>
 <tr class="separator:ab643d24f9fc7281053010798804f3d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
@@ -293,6 +293,9 @@ Static Private Attributes</h2></td></tr>
 <a class="anchor" id="ac9a035246445532cd4f174f3391b1eaf"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">SoundCore::SoundCore </td>
@@ -302,6 +305,11 @@ Static Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Object constructor. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -695,7 +703,7 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns a pointer to the <a class="el" href="../../d4/d98/class_sound_core.html" title="The SoundCore class provides a simple interface for audio playback. ">SoundCore</a> instance. </p>
 
-<p>Referenced by <a class="el" href="../../dc/d09/musicspectrumwidget_8cpp_source.html#l00297">MusicSpectrumWidget::createLightWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../dc/d09/musicspectrumwidget_8cpp_source.html#l00330">MusicSpectrumWidget::createLightWidget()</a>.</p>
 
 </div>
 </div>
@@ -858,7 +866,7 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>This function returns file path or stream url. </p>
 
-<p>Referenced by <a class="el" href="../../dc/d09/musicspectrumwidget_8cpp_source.html#l00297">MusicSpectrumWidget::createLightWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../dc/d09/musicspectrumwidget_8cpp_source.html#l00330">MusicSpectrumWidget::createLightWidget()</a>.</p>
 
 </div>
 </div>
@@ -1471,7 +1479,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../de/df0/class_abstract_engine.html">AbstractEngine</a>* SoundCore::m_engine</td>
+          <td class="memname"><a class="el" href="../../de/df0/class_abstract_engine.html">AbstractEngine</a>* SoundCore::m_engine = nullptr</td>
         </tr>
       </table>
   </td>
@@ -1481,7 +1489,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d94/soundcore_8h_source.html#l00276">276</a> of file <a class="el" href="../../db/d94/soundcore_8h_source.html">soundcore.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d94/soundcore_8h_source.html#l00277">277</a> of file <a class="el" href="../../db/d94/soundcore_8h_source.html">soundcore.h</a>.</p>
 
 </div>
 </div>
@@ -1503,7 +1511,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d94/soundcore_8h_source.html#l00274">274</a> of file <a class="el" href="../../db/d94/soundcore_8h_source.html">soundcore.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d94/soundcore_8h_source.html#l00275">275</a> of file <a class="el" href="../../db/d94/soundcore_8h_source.html">soundcore.h</a>.</p>
 
 </div>
 </div>
@@ -1525,7 +1533,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d94/soundcore_8h_source.html#l00271">271</a> of file <a class="el" href="../../db/d94/soundcore_8h_source.html">soundcore.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d94/soundcore_8h_source.html#l00272">272</a> of file <a class="el" href="../../db/d94/soundcore_8h_source.html">soundcore.h</a>.</p>
 
 </div>
 </div>
@@ -1547,7 +1555,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d94/soundcore_8h_source.html#l00273">273</a> of file <a class="el" href="../../db/d94/soundcore_8h_source.html">soundcore.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d94/soundcore_8h_source.html#l00274">274</a> of file <a class="el" href="../../db/d94/soundcore_8h_source.html">soundcore.h</a>.</p>
 
 </div>
 </div>
@@ -1559,7 +1567,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> SoundCore::m_nextState</td>
+          <td class="memname"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> SoundCore::m_nextState = <a class="el" href="../../d4/d98/class_sound_core.html#a2254d314000d2c280ddf96f003ad1902a3d468f28fca44c3a8c9334f99bccd383">NO_ENGINE</a></td>
         </tr>
       </table>
   </td>
@@ -1569,7 +1577,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d94/soundcore_8h_source.html#l00278">278</a> of file <a class="el" href="../../db/d94/soundcore_8h_source.html">soundcore.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d94/soundcore_8h_source.html#l00279">279</a> of file <a class="el" href="../../db/d94/soundcore_8h_source.html">soundcore.h</a>.</p>
 
 </div>
 </div>
@@ -1591,7 +1599,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d94/soundcore_8h_source.html#l00272">272</a> of file <a class="el" href="../../db/d94/soundcore_8h_source.html">soundcore.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d94/soundcore_8h_source.html#l00273">273</a> of file <a class="el" href="../../db/d94/soundcore_8h_source.html">soundcore.h</a>.</p>
 
 </div>
 </div>
@@ -1613,7 +1621,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d94/soundcore_8h_source.html#l00277">277</a> of file <a class="el" href="../../db/d94/soundcore_8h_source.html">soundcore.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d94/soundcore_8h_source.html#l00278">278</a> of file <a class="el" href="../../db/d94/soundcore_8h_source.html">soundcore.h</a>.</p>
 
 </div>
 </div>
@@ -1635,7 +1643,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d94/soundcore_8h_source.html#l00270">270</a> of file <a class="el" href="../../db/d94/soundcore_8h_source.html">soundcore.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d94/soundcore_8h_source.html#l00271">271</a> of file <a class="el" href="../../db/d94/soundcore_8h_source.html">soundcore.h</a>.</p>
 
 </div>
 </div>
@@ -1657,7 +1665,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d94/soundcore_8h_source.html#l00275">275</a> of file <a class="el" href="../../db/d94/soundcore_8h_source.html">soundcore.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d94/soundcore_8h_source.html#l00276">276</a> of file <a class="el" href="../../db/d94/soundcore_8h_source.html">soundcore.h</a>.</p>
 
 </div>
 </div>
@@ -1667,7 +1675,7 @@ Static Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2020 14:03:40 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 19 2020 13:47:08 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

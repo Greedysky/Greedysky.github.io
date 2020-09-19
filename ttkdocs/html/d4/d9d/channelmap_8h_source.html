@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.1.0</span>
+   &#160;<span id="projectnumber">2.13.2.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -107,7 +107,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="../../d1/d72/class_channel_map.html">ChannelMap</a>();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="../../d1/d72/class_channel_map.html">ChannelMap</a>(<span class="keywordtype">int</span> channels);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d1/d72/class_channel_map.html">ChannelMap</a>(<span class="keywordtype">int</span> channels);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">int</span> mask() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d1/d72/class_channel_map.html">ChannelMap</a> remaped() <span class="keyword">const</span>;</div>
@@ -116,17 +116,18 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="../../d1/d72/class_channel_map.html#aac746a40be4ac1c1891663b7fd59c2db">   38</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="../../d9/d95/class_qmmp.html#a659e3c6ff40c318e09f95c51cb01c9ca">Qmmp::ChannelPosition</a> m_internal_map[9];</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> generateMap(<span class="keywordtype">int</span> channels);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif // CHANNELMAP_H</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif // CHANNELMAP_H</span></div>
 <div class="ttc" id="qmmp_8h_html"><div class="ttname"><a href="../../d8/d30/qmmp_8h.html">qmmp.h</a></div></div>
-<div class="ttc" id="class_qmmp_html_a659e3c6ff40c318e09f95c51cb01c9ca"><div class="ttname"><a href="../../d9/d95/class_qmmp.html#a659e3c6ff40c318e09f95c51cb01c9ca">Qmmp::ChannelPosition</a></div><div class="ttdeci">ChannelPosition</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d30/qmmp_8h_source.html#l00138">qmmp.h:138</a></div></div>
+<div class="ttc" id="class_qmmp_html_a659e3c6ff40c318e09f95c51cb01c9ca"><div class="ttname"><a href="../../d9/d95/class_qmmp.html#a659e3c6ff40c318e09f95c51cb01c9ca">Qmmp::ChannelPosition</a></div><div class="ttdeci">ChannelPosition</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d30/qmmp_8h_source.html#l00137">qmmp.h:137</a></div></div>
 <div class="ttc" id="class_channel_map_html"><div class="ttname"><a href="../../d1/d72/class_channel_map.html">ChannelMap</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d9d/channelmap_8h_source.html#l00027">channelmap.h:27</a></div></div>
 <div class="ttc" id="qmmp__export_8h_html_ae57db6e0c0f040f03506ccfc59947d30"><div class="ttname"><a href="../../df/df6/qmmp__export_8h.html#ae57db6e0c0f040f03506ccfc59947d30">QMMP_EXPORT</a></div><div class="ttdeci">#define QMMP_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df6/qmmp__export_8h_source.html#l00029">qmmp_export.h:29</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2020 14:02:30 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 19 2020 13:46:00 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

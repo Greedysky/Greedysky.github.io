@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.1.0</span>
+   &#160;<span id="projectnumber">2.13.2.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -171,13 +171,13 @@ Protected Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a296557df877d5f3ac369fd54107a714f"><td class="memItemLeft" align="right" valign="top">QTimer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d74/class_visual.html#a296557df877d5f3ac369fd54107a714f">m_timer</a></td></tr>
 <tr class="separator:a296557df877d5f3ac369fd54107a714f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe77391b7549b5f587e6a0c8b2369dde"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d74/class_visual.html#afe77391b7549b5f587e6a0c8b2369dde">m_running</a></td></tr>
+<tr class="memitem:afe77391b7549b5f587e6a0c8b2369dde"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d74/class_visual.html#afe77391b7549b5f587e6a0c8b2369dde">m_running</a> = false</td></tr>
 <tr class="separator:afe77391b7549b5f587e6a0c8b2369dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa445a17cbfc6ce19a2b679b63ee7265"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d74/class_visual.html#aaa445a17cbfc6ce19a2b679b63ee7265">m_rows</a></td></tr>
+<tr class="memitem:aaa445a17cbfc6ce19a2b679b63ee7265"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d74/class_visual.html#aaa445a17cbfc6ce19a2b679b63ee7265">m_rows</a> = 0</td></tr>
 <tr class="separator:aaa445a17cbfc6ce19a2b679b63ee7265"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a6757be4beabd51059fa86621c6bef5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d74/class_visual.html#a1a6757be4beabd51059fa86621c6bef5">m_cols</a></td></tr>
+<tr class="memitem:a1a6757be4beabd51059fa86621c6bef5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d74/class_visual.html#a1a6757be4beabd51059fa86621c6bef5">m_cols</a> = 0</td></tr>
 <tr class="separator:a1a6757be4beabd51059fa86621c6bef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d975095494d58c5f5f45599f8ff1bf8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d74/class_visual.html#a0d975095494d58c5f5f45599f8ff1bf8">m_intern_vis_data</a></td></tr>
+<tr class="memitem:a0d975095494d58c5f5f45599f8ff1bf8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d74/class_visual.html#a0d975095494d58c5f5f45599f8ff1bf8">m_intern_vis_data</a> = nullptr</td></tr>
 <tr class="separator:a0d975095494d58c5f5f45599f8ff1bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1df83a0ac3e8cd4a5b5c5c10ff2a62a"><td class="memItemLeft" align="right" valign="top">QAction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d74/class_visual.html#ab1df83a0ac3e8cd4a5b5c5c10ff2a62a">m_screenAction</a></td></tr>
 <tr class="separator:ab1df83a0ac3e8cd4a5b5c5c10ff2a62a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -215,6 +215,9 @@ Static Private Attributes</h2></td></tr>
 <a class="anchor" id="ad51c727da619e40165e119f9d0ffabd9"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Visual::Visual </td>
@@ -234,6 +237,11 @@ Static Private Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Object contsructor. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1013,7 +1021,7 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns a pointer to a list of created visual objects. </p>
 
-<p>Referenced by <a class="el" href="../../dc/d09/musicspectrumwidget_8cpp_source.html#l00249">MusicSpectrumWidget::createModuleWidget()</a>, <a class="el" href="../../dc/d09/musicspectrumwidget_8cpp_source.html#l00197">MusicSpectrumWidget::createSpectrumWidget()</a>, <a class="el" href="../../d0/d04/musicremotewidgetforripple_8cpp_source.html#l00082">MusicRemoteWidgetForRipple::createVisualWidget()</a>, and <a class="el" href="../../dd/d9c/musicripplespecturmobject_8cpp_source.html#l00030">MusicRippleSpecturmObject::show()</a>.</p>
+<p>Referenced by <a class="el" href="../../dc/d09/musicspectrumwidget_8cpp_source.html#l00282">MusicSpectrumWidget::createModuleWidget()</a>, <a class="el" href="../../dc/d09/musicspectrumwidget_8cpp_source.html#l00228">MusicSpectrumWidget::createSpectrumWidget()</a>, <a class="el" href="../../d0/d04/musicremotewidgetforripple_8cpp_source.html#l00082">MusicRemoteWidgetForRipple::createVisualWidget()</a>, and <a class="el" href="../../dd/d9c/musicripplespecturmobject_8cpp_source.html#l00030">MusicRippleSpecturmObject::show()</a>.</p>
 
 </div>
 </div>
@@ -1048,7 +1056,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> Visual::m_cols</td>
+          <td class="memname"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> Visual::m_cols = 0</td>
         </tr>
       </table>
   </td>
@@ -1114,7 +1122,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>* Visual::m_intern_vis_data</td>
+          <td class="memname"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>* Visual::m_intern_vis_data = nullptr</td>
         </tr>
       </table>
   </td>
@@ -1202,7 +1210,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> Visual::m_rows</td>
+          <td class="memname"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> Visual::m_rows = 0</td>
         </tr>
       </table>
   </td>
@@ -1224,7 +1232,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Visual::m_running</td>
+          <td class="memname">bool Visual::m_running = false</td>
         </tr>
       </table>
   </td>
@@ -1332,7 +1340,7 @@ Static Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2020 14:03:41 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 19 2020 13:47:09 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

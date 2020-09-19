@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.1.0</span>
+   &#160;<span id="projectnumber">2.13.2.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -115,7 +115,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="../../de/df0/class_abstract_engine.html">AbstractEngine</a>(QObject *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../de/df0/class_abstract_engine.html">AbstractEngine</a>(QObject *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../de/df0/class_abstract_engine.html">AbstractEngine</a>();</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> enqueue(<a class="code" href="../../dc/d3d/class_input_source.html">InputSource</a> *source) = 0;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> play() = 0;</div>
@@ -140,10 +140,11 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> loadPlugins();</div>
 <div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="../../de/df0/class_abstract_engine.html#ad4067fa68cad8574cbc3576416f1a0ef">  129</a></span>&#160;    <span class="keyword">static</span> QList&lt;QmmpPluginCache*&gt; *<a class="code" href="../../de/df0/class_abstract_engine.html#ad4067fa68cad8574cbc3576416f1a0ef">m_cache</a>;</div>
 <div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="../../de/df0/class_abstract_engine.html#aadc066b667f4680b0fa34cb3ca916f5f">  130</a></span>&#160;    <span class="keyword">static</span> QStringList <a class="code" href="../../de/df0/class_abstract_engine.html#aadc066b667f4680b0fa34cb3ca916f5f">m_disabledNames</a>;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;};</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;};</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#endif // ABSTRACTENGINE_H</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#endif // ABSTRACTENGINE_H</span></div>
 <div class="ttc" id="class_abstract_engine_html_ac9cafe653af647ebaec7a53294c0c606"><div class="ttname"><a href="../../de/df0/class_abstract_engine.html#ac9cafe653af647ebaec7a53294c0c606">AbstractEngine::m_mutex</a></div><div class="ttdeci">QMutex m_mutex</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dcf/abstractengine_8h_source.html#l00127">abstractengine.h:127</a></div></div>
 <div class="ttc" id="class_input_source_html"><div class="ttname"><a href="../../dc/d3d/class_input_source.html">InputSource</a></div><div class="ttdoc">The InputSource class provides the base interface class of transports. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/dd7/inputsource_8h_source.html#l00038">inputsource.h:38</a></div></div>
 <div class="ttc" id="class_abstract_engine_html_aadc066b667f4680b0fa34cb3ca916f5f"><div class="ttname"><a href="../../de/df0/class_abstract_engine.html#aadc066b667f4680b0fa34cb3ca916f5f">AbstractEngine::m_disabledNames</a></div><div class="ttdeci">static QStringList m_disabledNames</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dcf/abstractengine_8h_source.html#l00130">abstractengine.h:130</a></div></div>
@@ -152,12 +153,12 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="qmmpsettings_8h_html"><div class="ttname"><a href="../../d0/da5/qmmpsettings_8h.html">qmmpsettings.h</a></div></div>
 <div class="ttc" id="class_abstract_engine_html"><div class="ttname"><a href="../../de/df0/class_abstract_engine.html">AbstractEngine</a></div><div class="ttdoc">The AbstractEngine class provides the base interface class of audio audio engines. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dcf/abstractengine_8h_source.html#l00038">abstractengine.h:38</a></div></div>
 <div class="ttc" id="qmmp__export_8h_html_ae57db6e0c0f040f03506ccfc59947d30"><div class="ttname"><a href="../../df/df6/qmmp__export_8h.html#ae57db6e0c0f040f03506ccfc59947d30">QMMP_EXPORT</a></div><div class="ttdeci">#define QMMP_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df6/qmmp__export_8h_source.html#l00029">qmmp_export.h:29</a></div></div>
-<div class="ttc" id="class_engine_factory_html"><div class="ttname"><a href="../../dd/d27/class_engine_factory.html">EngineFactory</a></div><div class="ttdoc">Engine plugin interface. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/da1/enginefactory_8h_source.html#l00052">enginefactory.h:52</a></div></div>
+<div class="ttc" id="class_engine_factory_html"><div class="ttname"><a href="../../dd/d27/class_engine_factory.html">EngineFactory</a></div><div class="ttdoc">Engine plugin interface. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/da1/enginefactory_8h_source.html#l00053">enginefactory.h:53</a></div></div>
 <div class="ttc" id="class_abstract_engine_html_ad4067fa68cad8574cbc3576416f1a0ef"><div class="ttname"><a href="../../de/df0/class_abstract_engine.html#ad4067fa68cad8574cbc3576416f1a0ef">AbstractEngine::m_cache</a></div><div class="ttdeci">static QList&lt; QmmpPluginCache * &gt; * m_cache</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dcf/abstractengine_8h_source.html#l00129">abstractengine.h:129</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2020 14:02:30 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 19 2020 13:46:00 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

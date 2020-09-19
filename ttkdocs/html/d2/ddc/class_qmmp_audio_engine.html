@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.1.0</span>
+   &#160;<span id="projectnumber">2.13.2.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -181,13 +181,13 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a789f5fa7e990136b16da51ba646fd99d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d36/class_decoder_factory.html">DecoderFactory</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a789f5fa7e990136b16da51ba646fd99d">m_factory</a></td></tr>
+<tr class="memitem:a789f5fa7e990136b16da51ba646fd99d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d36/class_decoder_factory.html">DecoderFactory</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a789f5fa7e990136b16da51ba646fd99d">m_factory</a> = nullptr</td></tr>
 <tr class="separator:a789f5fa7e990136b16da51ba646fd99d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ddcd4317ba3738209cfe52bdeb1358b"><td class="memItemLeft" align="right" valign="top">QList&lt; <a class="el" href="../../d6/d58/class_effect.html">Effect</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a4ddcd4317ba3738209cfe52bdeb1358b">m_effects</a></td></tr>
 <tr class="separator:a4ddcd4317ba3738209cfe52bdeb1358b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e3a8dab62e3748521ba0dd42a2a789d"><td class="memItemLeft" align="right" valign="top">QList&lt; <a class="el" href="../../d6/d58/class_effect.html">Effect</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a9e3a8dab62e3748521ba0dd42a2a789d">m_blockedEffects</a></td></tr>
 <tr class="separator:a9e3a8dab62e3748521ba0dd42a2a789d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6938a44947d29414d92d2af7c720b1ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d3f/class_output_writer.html">OutputWriter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a6938a44947d29414d92d2af7c720b1ab">m_output</a></td></tr>
+<tr class="memitem:a6938a44947d29414d92d2af7c720b1ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d3f/class_output_writer.html">OutputWriter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a6938a44947d29414d92d2af7c720b1ab">m_output</a> = nullptr</td></tr>
 <tr class="separator:a6938a44947d29414d92d2af7c720b1ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a614c036167ff38ded2e9e82acfaabfaa"><td class="memItemLeft" align="right" valign="top">std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a614c036167ff38ded2e9e82acfaabfaa">m_done</a></td></tr>
 <tr class="separator:a614c036167ff38ded2e9e82acfaabfaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,21 +195,21 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a7b158ea591b7700d1a10f73abdbfac61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af109a8735507fc8c833ab6daa9203212"><td class="memItemLeft" align="right" valign="top">std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#af109a8735507fc8c833ab6daa9203212">m_user_stop</a></td></tr>
 <tr class="separator:af109a8735507fc8c833ab6daa9203212"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa52f4c9b5139d6f284fbf8a02af4cba6"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#aa52f4c9b5139d6f284fbf8a02af4cba6">m_bks</a></td></tr>
+<tr class="memitem:aa52f4c9b5139d6f284fbf8a02af4cba6"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#aa52f4c9b5139d6f284fbf8a02af4cba6">m_bks</a> = 0</td></tr>
 <tr class="separator:aa52f4c9b5139d6f284fbf8a02af4cba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af55b55af82af698819bad1c91f79fb26"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#af55b55af82af698819bad1c91f79fb26">m_sample_size</a></td></tr>
+<tr class="memitem:af55b55af82af698819bad1c91f79fb26"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#af55b55af82af698819bad1c91f79fb26">m_sample_size</a> = 0</td></tr>
 <tr class="separator:af55b55af82af698819bad1c91f79fb26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b9ecd86c710962ee073e40549f193f6"><td class="memItemLeft" align="right" valign="top">qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a8b9ecd86c710962ee073e40549f193f6">m_seekTime</a></td></tr>
 <tr class="separator:a8b9ecd86c710962ee073e40549f193f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28ad8bf4726512f53c4e053d45f2ad16"><td class="memItemLeft" align="right" valign="top">quint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a28ad8bf4726512f53c4e053d45f2ad16">m_output_at</a></td></tr>
 <tr class="separator:a28ad8bf4726512f53c4e053d45f2ad16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09fe4b0b41f47fdd3fb27f41635c3281"><td class="memItemLeft" align="right" valign="top">quint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a09fe4b0b41f47fdd3fb27f41635c3281">m_output_size</a></td></tr>
+<tr class="memitem:a09fe4b0b41f47fdd3fb27f41635c3281"><td class="memItemLeft" align="right" valign="top">quint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a09fe4b0b41f47fdd3fb27f41635c3281">m_output_size</a> = 0</td></tr>
 <tr class="separator:a09fe4b0b41f47fdd3fb27f41635c3281"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad85ddee2d95f177f1f2e3b27d526f3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#aad85ddee2d95f177f1f2e3b27d526f3a">m_bitrate</a></td></tr>
 <tr class="separator:aad85ddee2d95f177f1f2e3b27d526f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade9aaad9f0c643c5cc1e453be4be8080"><td class="memItemLeft" align="right" valign="top">unsigned char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#ade9aaad9f0c643c5cc1e453be4be8080">m_output_buf</a></td></tr>
+<tr class="memitem:ade9aaad9f0c643c5cc1e453be4be8080"><td class="memItemLeft" align="right" valign="top">unsigned char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#ade9aaad9f0c643c5cc1e453be4be8080">m_output_buf</a> = nullptr</td></tr>
 <tr class="separator:ade9aaad9f0c643c5cc1e453be4be8080"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a156f02ccfbbb131d19147c28af7378d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d56/class_decoder.html">Decoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a156f02ccfbbb131d19147c28af7378d6">m_decoder</a></td></tr>
+<tr class="memitem:a156f02ccfbbb131d19147c28af7378d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d56/class_decoder.html">Decoder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a156f02ccfbbb131d19147c28af7378d6">m_decoder</a> = nullptr</td></tr>
 <tr class="separator:a156f02ccfbbb131d19147c28af7378d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d23dbe59e266b03540893518d167f37"><td class="memItemLeft" align="right" valign="top">QQueue&lt; <a class="el" href="../../da/d56/class_decoder.html">Decoder</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a1d23dbe59e266b03540893518d167f37">m_decoders</a></td></tr>
 <tr class="separator:a1d23dbe59e266b03540893518d167f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -221,13 +221,13 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a1882d1b654414b4f424ef318eed5e835"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada3c0388e4a0a99aa18284d37abfc668"><td class="memItemLeft" align="right" valign="top">QSharedPointer&lt; <a class="el" href="../../d1/dc5/class_track_info.html">TrackInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#ada3c0388e4a0a99aa18284d37abfc668">m_trackInfo</a></td></tr>
 <tr class="separator:ada3c0388e4a0a99aa18284d37abfc668"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd5962dbb5130abd0f92e05ab942052d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d7e/class_replay_gain.html">ReplayGain</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#acd5962dbb5130abd0f92e05ab942052d">m_replayGain</a></td></tr>
+<tr class="memitem:acd5962dbb5130abd0f92e05ab942052d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d7e/class_replay_gain.html">ReplayGain</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#acd5962dbb5130abd0f92e05ab942052d">m_replayGain</a> = nullptr</td></tr>
 <tr class="separator:acd5962dbb5130abd0f92e05ab942052d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af41c4763a423a53d26a35ff303bd0ff8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/ddf/class_qmmp_settings.html">QmmpSettings</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#af41c4763a423a53d26a35ff303bd0ff8">m_settings</a></td></tr>
 <tr class="separator:af41c4763a423a53d26a35ff303bd0ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d071d3c001719a376a678044872628b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dc9/class_audio_converter.html">AudioConverter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a5d071d3c001719a376a678044872628b">m_converter</a></td></tr>
 <tr class="separator:a5d071d3c001719a376a678044872628b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00328cd7720fc8e3743167ec2e1740d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d48/class_dithering.html">Dithering</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a00328cd7720fc8e3743167ec2e1740d6">m_dithering</a></td></tr>
+<tr class="memitem:a00328cd7720fc8e3743167ec2e1740d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d48/class_dithering.html">Dithering</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/class_qmmp_audio_engine.html#a00328cd7720fc8e3743167ec2e1740d6">m_dithering</a> = nullptr</td></tr>
 <tr class="separator:a00328cd7720fc8e3743167ec2e1740d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
@@ -248,6 +248,9 @@ Additional Inherited Members</h2></td></tr>
 <a class="anchor" id="aac03f33901230c8fd7edc45d6de92dd5"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">QmmpAudioEngine::QmmpAudioEngine </td>
@@ -257,6 +260,11 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -860,7 +868,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint QmmpAudioEngine::m_bks</td>
+          <td class="memname">uint QmmpAudioEngine::m_bks = 0</td>
         </tr>
       </table>
   </td>
@@ -926,7 +934,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../da/d56/class_decoder.html">Decoder</a>* QmmpAudioEngine::m_decoder</td>
+          <td class="memname"><a class="el" href="../../da/d56/class_decoder.html">Decoder</a>* QmmpAudioEngine::m_decoder = nullptr</td>
         </tr>
       </table>
   </td>
@@ -970,7 +978,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d9/d48/class_dithering.html">Dithering</a>* QmmpAudioEngine::m_dithering</td>
+          <td class="memname"><a class="el" href="../../d9/d48/class_dithering.html">Dithering</a>* QmmpAudioEngine::m_dithering = nullptr</td>
         </tr>
       </table>
   </td>
@@ -1036,7 +1044,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../dc/d36/class_decoder_factory.html">DecoderFactory</a>* QmmpAudioEngine::m_factory</td>
+          <td class="memname"><a class="el" href="../../dc/d36/class_decoder_factory.html">DecoderFactory</a>* QmmpAudioEngine::m_factory = nullptr</td>
         </tr>
       </table>
   </td>
@@ -1146,7 +1154,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d1/d3f/class_output_writer.html">OutputWriter</a>* QmmpAudioEngine::m_output</td>
+          <td class="memname"><a class="el" href="../../d1/d3f/class_output_writer.html">OutputWriter</a>* QmmpAudioEngine::m_output = nullptr</td>
         </tr>
       </table>
   </td>
@@ -1190,7 +1198,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned char* QmmpAudioEngine::m_output_buf</td>
+          <td class="memname">unsigned char* QmmpAudioEngine::m_output_buf = nullptr</td>
         </tr>
       </table>
   </td>
@@ -1212,7 +1220,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">quint64 QmmpAudioEngine::m_output_size</td>
+          <td class="memname">quint64 QmmpAudioEngine::m_output_size = 0</td>
         </tr>
       </table>
   </td>
@@ -1234,7 +1242,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d7/d7e/class_replay_gain.html">ReplayGain</a>* QmmpAudioEngine::m_replayGain</td>
+          <td class="memname"><a class="el" href="../../d7/d7e/class_replay_gain.html">ReplayGain</a>* QmmpAudioEngine::m_replayGain = nullptr</td>
         </tr>
       </table>
   </td>
@@ -1256,7 +1264,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint QmmpAudioEngine::m_sample_size</td>
+          <td class="memname">uint QmmpAudioEngine::m_sample_size = 0</td>
         </tr>
       </table>
   </td>
@@ -1364,7 +1372,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2020 14:03:40 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 19 2020 13:47:08 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
