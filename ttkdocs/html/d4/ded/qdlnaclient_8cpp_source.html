@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.2.0</span>
+   &#160;<span id="projectnumber">2.13.3.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -124,7 +124,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="../../df/ded/class_q_dlna_client_private.html#ac38801bd280b55e652da35df5ea27301">   45</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../df/ded/class_q_dlna_client_private.html#ac38801bd280b55e652da35df5ea27301">QDlnaClientPrivate::initData</a>(<span class="keyword">const</span> QString &amp;data)</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">const</span> QStringList&amp; list = data.split(<span class="stringliteral">&quot;\r\n&quot;</span>);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">foreach</span>(QString str, list)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">for</span>(QString str : qAsConst(list))</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    {</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        QStringList data_list;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">if</span>(str.contains(<span class="stringliteral">&quot;LOCATION:&quot;</span>))</div>
@@ -170,9 +170,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">foreach</span>(<span class="keyword">const</span> QString &amp;<a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, <a class="code" href="../../d4/ded/qdlnaclient_8cpp.html#aa529fae67e9a0ff6b01b0860febdc72a">FRIENS_NAMES</a>)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> QString &amp;<a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a> : qAsConst(<a class="code" href="../../d4/ded/qdlnaclient_8cpp.html#aa529fae67e9a0ff6b01b0860febdc72a">FRIENS_NAMES</a>))</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="../../df/ded/class_q_dlna_client_private.html#ac4aeed590bea75579dc9cf9f86b600d1">m_friendlyName</a> = <a class="code" href="../../df/ded/class_q_dlna_client_private.html#ac083cc5b14630b0f5f2339e15af177b1">m_xml</a>-&gt;<a class="code" href="../../d0/d1c/class_q_dlna_xml.html#affab984c38d699d394d5fd4609a5244c">readTagNameValue</a>(name);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="../../df/ded/class_q_dlna_client_private.html#ac4aeed590bea75579dc9cf9f86b600d1">m_friendlyName</a> = <a class="code" href="../../df/ded/class_q_dlna_client_private.html#ac083cc5b14630b0f5f2339e15af177b1">m_xml</a>-&gt;<a class="code" href="../../d0/d1c/class_q_dlna_xml.html#affab984c38d699d394d5fd4609a5244c">readTagNameValue</a>(<a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="../../df/ded/class_q_dlna_client_private.html#ac4aeed590bea75579dc9cf9f86b600d1">m_friendlyName</a>.isEmpty())</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        {</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="keywordflow">break</span>;</div>
@@ -183,9 +183,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">foreach</span>(<span class="keyword">const</span> QString &amp;name, <a class="code" href="../../d4/ded/qdlnaclient_8cpp.html#abb169b5cd8c9a2e05eba6563085236cb">AVT_NAMES</a>)</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> QString &amp;<a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a> : qAsConst(<a class="code" href="../../d4/ded/qdlnaclient_8cpp.html#abb169b5cd8c9a2e05eba6563085236cb">AVT_NAMES</a>))</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <a class="code" href="../../d0/d16/struct_q_dlna_service.html">QDlnaService</a> server = <a class="code" href="../../df/ded/class_q_dlna_client_private.html#ac083cc5b14630b0f5f2339e15af177b1">m_xml</a>-&gt;<a class="code" href="../../d0/d1c/class_q_dlna_xml.html#a53e3194a48e1c8eebce94fcb91d1e1b3">readServiceTag</a>(name, <span class="stringliteral">&quot;server&quot;</span>);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <a class="code" href="../../d0/d16/struct_q_dlna_service.html">QDlnaService</a> server = <a class="code" href="../../df/ded/class_q_dlna_client_private.html#ac083cc5b14630b0f5f2339e15af177b1">m_xml</a>-&gt;<a class="code" href="../../d0/d1c/class_q_dlna_xml.html#a53e3194a48e1c8eebce94fcb91d1e1b3">readServiceTag</a>(<a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, <span class="stringliteral">&quot;server&quot;</span>);</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">if</span>(!server.<a class="code" href="../../d0/d16/struct_q_dlna_service.html#a82a903a39f4582cbdad7b49522f7cf80">isEmpty</a>())</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        {</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <a class="code" href="../../df/ded/class_q_dlna_client_private.html#af55586b9cb2454b8e23df06045f01f71">m_services</a>.insert(<a class="code" href="../../d4/ded/qdlnaclient_8cpp.html#a297134bd8586be7655f3faf4c68ac74d">AVTRANSPORT</a>, server);</div>
@@ -193,9 +193,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        }</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">foreach</span>(<span class="keyword">const</span> QString &amp;name, <a class="code" href="../../d4/ded/qdlnaclient_8cpp.html#abb169b5cd8c9a2e05eba6563085236cb">AVT_NAMES</a>)</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> QString &amp;<a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a> : qAsConst(<a class="code" href="../../d4/ded/qdlnaclient_8cpp.html#abb169b5cd8c9a2e05eba6563085236cb">AVT_NAMES</a>))</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <a class="code" href="../../d0/d16/struct_q_dlna_service.html">QDlnaService</a> server = <a class="code" href="../../df/ded/class_q_dlna_client_private.html#ac083cc5b14630b0f5f2339e15af177b1">m_xml</a>-&gt;<a class="code" href="../../d0/d1c/class_q_dlna_xml.html#a53e3194a48e1c8eebce94fcb91d1e1b3">readServiceTag</a>(name, <span class="stringliteral">&quot;service&quot;</span>);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <a class="code" href="../../d0/d16/struct_q_dlna_service.html">QDlnaService</a> server = <a class="code" href="../../df/ded/class_q_dlna_client_private.html#ac083cc5b14630b0f5f2339e15af177b1">m_xml</a>-&gt;<a class="code" href="../../d0/d1c/class_q_dlna_xml.html#a53e3194a48e1c8eebce94fcb91d1e1b3">readServiceTag</a>(<a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, <span class="stringliteral">&quot;service&quot;</span>);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">if</span>(!server.<a class="code" href="../../d0/d16/struct_q_dlna_service.html#a82a903a39f4582cbdad7b49522f7cf80">isEmpty</a>())</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        {</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <a class="code" href="../../df/ded/class_q_dlna_client_private.html#af55586b9cb2454b8e23df06045f01f71">m_services</a>.insert(<a class="code" href="../../d4/ded/qdlnaclient_8cpp.html#a297134bd8586be7655f3faf4c68ac74d">AVTRANSPORT</a>, server);</div>
@@ -382,7 +382,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 19 2020 13:46:12 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 21 2020 13:05:49 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

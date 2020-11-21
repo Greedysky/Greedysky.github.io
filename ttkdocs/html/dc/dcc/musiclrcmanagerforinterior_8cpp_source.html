@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.2.0</span>
+   &#160;<span id="projectnumber">2.13.3.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -118,12 +118,12 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    ttplus = (<a class="code" href="../../d6/d4a/class_music_lrc_manager.html#a19521b6aefdf91fcbfc1344399133c40">m_lrcPerWidth</a> - <a class="code" href="../../d6/d4a/class_music_lrc_manager.html#a6eabb11b7f11f21d3405a0e7b161e3f2">m_geometry</a>.x()) / 2.0;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    painter.drawText((ttplus &lt; 0 ? <a class="code" href="../../d6/d4a/class_music_lrc_manager.html#a31e4754842d85a53e7b1ad90f90f5d2f">m_intervalCount</a> : ttplus) + 1, 1,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                     <a class="code" href="../../d6/d4a/class_music_lrc_manager.html#a6eabb11b7f11f21d3405a0e7b161e3f2">m_geometry</a>.x(), <a class="code" href="../../d6/d4a/class_music_lrc_manager.html#a6eabb11b7f11f21d3405a0e7b161e3f2">m_geometry</a>.y(), Qt::AlignLeft, text());</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                     <a class="code" href="../../d6/d4a/class_music_lrc_manager.html#a6eabb11b7f11f21d3405a0e7b161e3f2">m_geometry</a>.x(), <a class="code" href="../../d6/d4a/class_music_lrc_manager.html#a6eabb11b7f11f21d3405a0e7b161e3f2">m_geometry</a>.y(), Qt::AlignLeft | Qt::AlignVCenter, text());</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">//Then draw a gradient in the above</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    painter.setPen(QPen(<a class="code" href="../../d6/d4a/class_music_lrc_manager.html#a665884182229d56632340d3a8ec04d13">m_linearGradient</a>, 0));</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    painter.drawText(ttplus &lt; 0 ? <a class="code" href="../../d6/d4a/class_music_lrc_manager.html#a31e4754842d85a53e7b1ad90f90f5d2f">m_intervalCount</a> : ttplus, 0,</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                     <a class="code" href="../../d6/d4a/class_music_lrc_manager.html#a6eabb11b7f11f21d3405a0e7b161e3f2">m_geometry</a>.x(), <a class="code" href="../../d6/d4a/class_music_lrc_manager.html#a6eabb11b7f11f21d3405a0e7b161e3f2">m_geometry</a>.y(), Qt::AlignLeft, text());</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                     <a class="code" href="../../d6/d4a/class_music_lrc_manager.html#a6eabb11b7f11f21d3405a0e7b161e3f2">m_geometry</a>.x(), <a class="code" href="../../d6/d4a/class_music_lrc_manager.html#a6eabb11b7f11f21d3405a0e7b161e3f2">m_geometry</a>.y(), Qt::AlignLeft | Qt::AlignVCenter, text());</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">int</span> offsetValue = <a class="code" href="../../d6/d4a/class_music_lrc_manager.html#a5f580deb089b1c94d7bf80306ce26310">m_lrcMaskWidth</a>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="../../dd/d2f/musicsettingmanager_8h.html#a82234057ccded2024a02b92f47d0c86b">M_SETTING_PTR</a>-&gt;value(<a class="code" href="../../db/d01/class_music_setting_manager.html#a146c66bf631250e49944cfbd221e29a5affa6b9d84971356c01ff516f58ef7b0e">MusicSettingManager::OtherLrcKTVMode</a>).toBool())</div>
@@ -134,7 +134,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">//Set lyrics mask</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    painter.setPen(QPen(<a class="code" href="../../d6/d4a/class_music_lrc_manager.html#a115d9dafc4f11c2dc770b8fc24c91f63">m_maskLinearGradient</a>, 0));</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    painter.drawText(ttplus &lt; 0 ? <a class="code" href="../../d6/d4a/class_music_lrc_manager.html#a31e4754842d85a53e7b1ad90f90f5d2f">m_intervalCount</a> : ttplus, 0,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                     offsetValue, <a class="code" href="../../d6/d4a/class_music_lrc_manager.html#a6eabb11b7f11f21d3405a0e7b161e3f2">m_geometry</a>.y(), Qt::AlignLeft, text());</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                     offsetValue, <a class="code" href="../../d6/d4a/class_music_lrc_manager.html#a6eabb11b7f11f21d3405a0e7b161e3f2">m_geometry</a>.y(), Qt::AlignLeft | Qt::AlignVCenter, text());</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
 <div class="ttc" id="class_music_lrc_manager_html"><div class="ttname"><a href="../../d6/d4a/class_music_lrc_manager.html">MusicLrcManager</a></div><div class="ttdoc">The class of the lrc manager base. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d52/musiclrcmanager_8h_source.html#l00085">musiclrcmanager.h:85</a></div></div>
 <div class="ttc" id="class_music_lrc_manager_html_a6eabb11b7f11f21d3405a0e7b161e3f2"><div class="ttname"><a href="../../d6/d4a/class_music_lrc_manager.html#a6eabb11b7f11f21d3405a0e7b161e3f2">MusicLrcManager::m_geometry</a></div><div class="ttdeci">QPoint m_geometry</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d52/musiclrcmanager_8h_source.html#l00184">musiclrcmanager.h:184</a></div></div>
@@ -161,7 +161,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 19 2020 13:46:07 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 21 2020 13:05:43 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

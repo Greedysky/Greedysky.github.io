@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.2.0</span>
+   &#160;<span id="projectnumber">2.13.3.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -132,7 +132,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="../../d0/d63/class_music_lrc_color_widget.html#a8541d1b42503e4a888ec2960d0184f18">   54</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d0/d63/class_music_lrc_color_widget.html#a8541d1b42503e4a888ec2960d0184f18">MusicLrcColorWidget::setColors</a>(<span class="keyword">const</span> QList&lt;QColor&gt; &amp;colors)</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">foreach</span>(<span class="keyword">const</span> QColor &amp;color, colors)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> QColor &amp;color : qAsConst(colors))</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    {</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        QListWidgetItem *it = <span class="keyword">new</span> QListWidgetItem(<a class="code" href="../../d0/d63/class_music_lrc_color_widget.html#a3aef74273ba6bd6b2ece4a343840939d">m_ui</a>-&gt;listWidget);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#if TTK_QT_VERSION_CHECK(5,13,0)</span></div>
@@ -239,7 +239,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_color_dialog_html_a041948da9bcbd6642b4fd359663d1992"><div class="ttname"><a href="../../da/d61/class_music_color_dialog.html#a041948da9bcbd6642b4fd359663d1992">MusicColorDialog::exec</a></div><div class="ttdeci">virtual int exec()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dd6/musiccolordialog_8cpp_source.html#l00303">musiccolordialog.cpp:303</a></div></div>
 <div class="ttc" id="class_music_lrc_color_widget_html_abb57fdc417d6de9e59a8e98e1b1f3504"><div class="ttname"><a href="../../d0/d63/class_music_lrc_color_widget.html#abb57fdc417d6de9e59a8e98e1b1f3504">MusicLrcColorWidget::addButtonClicked</a></div><div class="ttdeci">void addButtonClicked()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da1/musiclrccolorwidget_8cpp_source.html#l00082">musiclrccolorwidget.cpp:82</a></div></div>
 <div class="ttc" id="class_music_color_dialog_html_adfa4b537589e5b9f03c0aa81ccab85b5"><div class="ttname"><a href="../../da/d61/class_music_color_dialog.html#adfa4b537589e5b9f03c0aa81ccab85b5">MusicColorDialog::color</a></div><div class="ttdeci">QColor color() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dd6/musiccolordialog_8cpp_source.html#l00281">musiccolordialog.cpp:281</a></div></div>
-<div class="ttc" id="namespace_music_u_i_object_html_a479709e2ba1b8b3d9b17c9bafb2f9bdd"><div class="ttname"><a href="../../d2/dc5/namespace_music_u_i_object.html#a479709e2ba1b8b3d9b17c9bafb2f9bdd">MusicUIObject::MQSSPushButtonStyle04</a></div><div class="ttdeci">const QString MQSSPushButtonStyle04</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/deb/musicuiobject_8h_source.html#l00233">musicuiobject.h:233</a></div></div>
+<div class="ttc" id="namespace_music_u_i_object_html_a479709e2ba1b8b3d9b17c9bafb2f9bdd"><div class="ttname"><a href="../../d2/dc5/namespace_music_u_i_object.html#a479709e2ba1b8b3d9b17c9bafb2f9bdd">MusicUIObject::MQSSPushButtonStyle04</a></div><div class="ttdeci">const QString MQSSPushButtonStyle04</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/deb/musicuiobject_8h_source.html#l00237">musicuiobject.h:237</a></div></div>
 <div class="ttc" id="class_music_lrc_color_widget_html_ab1a311b46fc0975cf37384decaa190e7"><div class="ttname"><a href="../../d0/d63/class_music_lrc_color_widget.html#ab1a311b46fc0975cf37384decaa190e7">MusicLrcColorWidget::getColors</a></div><div class="ttdeci">QList&lt; QColor &gt; getColors() const </div><div class="ttdef"><b>Definition:</b> <a href="../../da/da1/musiclrccolorwidget_8cpp_source.html#l00068">musiclrccolorwidget.cpp:68</a></div></div>
 <div class="ttc" id="musicuiobject_8h_html"><div class="ttname"><a href="../../d0/deb/musicuiobject_8h.html">musicuiobject.h</a></div></div>
 <div class="ttc" id="namespace_ui_html"><div class="ttname"><a href="../../dc/df0/namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d24/musicapplication_8h_source.html#l00033">musicapplication.h:33</a></div></div>
@@ -259,11 +259,11 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_color_dialog_html"><div class="ttname"><a href="../../da/d61/class_music_color_dialog.html">MusicColorDialog</a></div><div class="ttdoc">The class of the get color table widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d4a/musiccolordialog_8h_source.html#l00135">musiccolordialog.h:135</a></div></div>
 <div class="ttc" id="class_music_lrc_color_widget_html_a85b18b18018e4865ce390f22cecae32e"><div class="ttname"><a href="../../d0/d63/class_music_lrc_color_widget.html#a85b18b18018e4865ce390f22cecae32e">MusicLrcColorWidget::deleteButtonClicked</a></div><div class="ttdeci">void deleteButtonClicked()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da1/musiclrccolorwidget_8cpp_source.html#l00098">musiclrccolorwidget.cpp:98</a></div></div>
 <div class="ttc" id="class_music_lrc_color_widget_html_a8541d1b42503e4a888ec2960d0184f18"><div class="ttname"><a href="../../d0/d63/class_music_lrc_color_widget.html#a8541d1b42503e4a888ec2960d0184f18">MusicLrcColorWidget::setColors</a></div><div class="ttdeci">void setColors(const QList&lt; QColor &gt; &amp;colors)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da1/musiclrccolorwidget_8cpp_source.html#l00054">musiclrccolorwidget.cpp:54</a></div></div>
-<div class="ttc" id="namespace_music_u_i_object_html_af7109404e158f8bbc5fa1d41136f87cd"><div class="ttname"><a href="../../d2/dc5/namespace_music_u_i_object.html#af7109404e158f8bbc5fa1d41136f87cd">MusicUIObject::MQSSToolButtonStyle04</a></div><div class="ttdeci">const QString MQSSToolButtonStyle04</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/deb/musicuiobject_8h_source.html#l00207">musicuiobject.h:207</a></div></div>
+<div class="ttc" id="namespace_music_u_i_object_html_af7109404e158f8bbc5fa1d41136f87cd"><div class="ttname"><a href="../../d2/dc5/namespace_music_u_i_object.html#af7109404e158f8bbc5fa1d41136f87cd">MusicUIObject::MQSSToolButtonStyle04</a></div><div class="ttdeci">const QString MQSSToolButtonStyle04</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/deb/musicuiobject_8h_source.html#l00211">musicuiobject.h:211</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 19 2020 13:46:06 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 21 2020 13:05:43 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

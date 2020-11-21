@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.2.0</span>
+   &#160;<span id="projectnumber">2.13.3.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -792,7 +792,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;{</div>
 <div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ecinum;</div>
 <div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;</div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;        ecinum = <a class="code" href="../../d5/d4f/qrinput_8c.html#aa8c3fafcc65da42c8870f11899d00969">QRinput_decodeECIfromByteArray</a>(data);;</div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;    ecinum = <a class="code" href="../../d5/d4f/qrinput_8c.html#aa8c3fafcc65da42c8870f11899d00969">QRinput_decodeECIfromByteArray</a>(data);</div>
 <div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;</div>
 <div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;        <span class="comment">/* See Table 4 of JISX 0510:2004 pp.17. */</span></div>
 <div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;        <span class="keywordflow">if</span>(ecinum &lt; 128) {</div>
@@ -813,7 +813,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;        entry-&gt;<a class="code" href="../../df/d7b/struct___q_rinput___list.html#ac5218ca09695bf13a42f7f18e9bf1d33">bstream</a> = <a class="code" href="../../dd/dff/bitstream_8c.html#ad485284fa1d00d9376d75e39fe477fad">BitStream_new</a>();</div>
 <div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;        <span class="keywordflow">if</span>(entry-&gt;<a class="code" href="../../df/d7b/struct___q_rinput___list.html#ac5218ca09695bf13a42f7f18e9bf1d33">bstream</a> == NULL) <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;</div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;        ecinum = <a class="code" href="../../d5/d4f/qrinput_8c.html#aa8c3fafcc65da42c8870f11899d00969">QRinput_decodeECIfromByteArray</a>(entry-&gt;<a class="code" href="../../df/d7b/struct___q_rinput___list.html#ab1b2193ef5cbbc3ebac66c403c1e0d86">data</a>);;</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;    ecinum = <a class="code" href="../../d5/d4f/qrinput_8c.html#aa8c3fafcc65da42c8870f11899d00969">QRinput_decodeECIfromByteArray</a>(entry-&gt;<a class="code" href="../../df/d7b/struct___q_rinput___list.html#ab1b2193ef5cbbc3ebac66c403c1e0d86">data</a>);</div>
 <div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;</div>
 <div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;        <span class="comment">/* See Table 4 of JISX 0510:2004 pp.17. */</span></div>
 <div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;        <span class="keywordflow">if</span>(ecinum &lt; 128) {</div>
@@ -1770,7 +1770,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 19 2020 13:46:12 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 21 2020 13:05:50 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

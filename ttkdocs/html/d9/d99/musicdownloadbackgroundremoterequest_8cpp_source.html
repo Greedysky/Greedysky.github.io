@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.2.0</span>
+   &#160;<span id="projectnumber">2.13.3.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -202,7 +202,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <a class="code" href="../../d4/da7/struct_music_skin_remote_group.html">MusicSkinRemoteGroup</a> group;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            group.<a class="code" href="../../d4/da7/struct_music_skin_remote_group.html#a9f9eb8122c81c87a9200a5d5d521159d">m_group</a> = <a class="code" href="../../d2/d77/musicotherdefine_8h.html#ad0132e7ce2e999ea3b599f52a4ac7135">MUSIC_DAILY_DIR</a>;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            <span class="keyword">const</span> QVariantList &amp;datas = value[<span class="stringliteral">&quot;images&quot;</span>].toList();</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <span class="keywordflow">foreach</span>(<span class="keyword">const</span> QVariant &amp;var, datas)</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">const</span> QVariant &amp;var : qAsConst(datas))</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            {</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                <span class="keywordflow">if</span>(var.isNull())</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                {</div>
@@ -267,7 +267,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 19 2020 13:46:01 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 21 2020 13:05:38 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.2.0</span>
+   &#160;<span id="projectnumber">2.13.3.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -110,10 +110,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    QDomElement musicPlayer = <a class="code" href="../../d7/d53/class_music_abstract_xml.html#a70c15a3f4ecf3459b6d55f00cc03ae25">createRoot</a>(<a class="code" href="../../d8/d07/musicobject_8h.html#af0b5cfa4242ae7f98ba80fd23ef8afa9">APP_NAME</a>);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    QDomElement download = <a class="code" href="../../d7/d53/class_music_abstract_xml.html#a8f7c9636105c2171c5d8bd1962a1f5f8">writeDomNode</a>(musicPlayer, <span class="stringliteral">&quot;barrageRecord&quot;</span>);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">foreach</span>(<span class="keyword">const</span> <a class="code" href="../../d9/da2/struct_music_barrage_record.html">MusicBarrageRecord</a> &amp;record, records)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <a class="code" href="../../d9/da2/struct_music_barrage_record.html">MusicBarrageRecord</a> &amp;record : qAsConst(records))</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="../../d7/d53/class_music_abstract_xml.html#a1d8591bec41e041eda317cd312d7e847">writeDomElementMutilText</a>(download, <span class="stringliteral">&quot;value&quot;</span>, MusicXmlAttributes() &lt;&lt; <a class="code" href="../../d5/d83/musicabstractxml_8h.html#a56051115a51c2b883990e0435e2ab8fa">MusicXmlAttribute</a>(<span class="stringliteral">&quot;color&quot;</span>, record.<a class="code" href="../../d9/da2/struct_music_barrage_record.html#abbadffd6ae4a4247e81e797a06a937f5">m_color</a>)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                 &lt;&lt; <a class="code" href="../../df/d70/struct_music_xml_attribute.html">MusicXmlAttribute</a>(<span class="stringliteral">&quot;size&quot;</span>, record.<a class="code" href="../../d9/da2/struct_music_barrage_record.html#a3eb032e9d0e1f0d26de55f58050753ee">m_size</a>), record.<a class="code" href="../../d9/da2/struct_music_barrage_record.html#a12800ff49e0f30a843b435800bf4fc14">m_value</a>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="../../d7/d53/class_music_abstract_xml.html#a1d8591bec41e041eda317cd312d7e847">writeDomElementMutilText</a>(download, <span class="stringliteral">&quot;value&quot;</span>, MusicXmlAttributes() &lt;&lt; <a class="code" href="../../d5/d83/musicabstractxml_8h.html#a56051115a51c2b883990e0435e2ab8fa">MusicXmlAttribute</a>(<span class="stringliteral">&quot;color&quot;</span>, record.m_color)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                 &lt;&lt; <a class="code" href="../../df/d70/struct_music_xml_attribute.html">MusicXmlAttribute</a>(<span class="stringliteral">&quot;size&quot;</span>, record.m_size), record.<a class="code" href="../../df/d70/struct_music_xml_attribute.html#ad30793438ee6023083e2bdc90b556375">m_value</a>);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    QTextStream out(<a class="code" href="../../d7/d53/class_music_abstract_xml.html#a6f1e9e0075f3431244fb0cd01f9823b7">m_file</a>);</div>
@@ -128,6 +128,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="musicobject_8h_html_af0b5cfa4242ae7f98ba80fd23ef8afa9"><div class="ttname"><a href="../../d8/d07/musicobject_8h.html#af0b5cfa4242ae7f98ba80fd23ef8afa9">APP_NAME</a></div><div class="ttdeci">#define APP_NAME</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00100">musicobject.h:100</a></div></div>
 <div class="ttc" id="struct_music_barrage_record_html"><div class="ttname"><a href="../../d9/da2/struct_music_barrage_record.html">MusicBarrageRecord</a></div><div class="ttdoc">The class of the barrage record item. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d73/musicbarragerecordconfigmanager_8h_source.html#l00027">musicbarragerecordconfigmanager.h:27</a></div></div>
 <div class="ttc" id="struct_music_barrage_record_html_a12800ff49e0f30a843b435800bf4fc14"><div class="ttname"><a href="../../d9/da2/struct_music_barrage_record.html#a12800ff49e0f30a843b435800bf4fc14">MusicBarrageRecord::m_value</a></div><div class="ttdeci">QString m_value</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d73/musicbarragerecordconfigmanager_8h_source.html#l00031">musicbarragerecordconfigmanager.h:31</a></div></div>
+<div class="ttc" id="struct_music_xml_attribute_html_ad30793438ee6023083e2bdc90b556375"><div class="ttname"><a href="../../df/d70/struct_music_xml_attribute.html#ad30793438ee6023083e2bdc90b556375">MusicXmlAttribute::m_value</a></div><div class="ttdeci">QVariant m_value</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d83/musicabstractxml_8h_source.html#l00034">musicabstractxml.h:34</a></div></div>
 <div class="ttc" id="musicbarragerecordconfigmanager_8h_html"><div class="ttname"><a href="../../dd/d73/musicbarragerecordconfigmanager_8h.html">musicbarragerecordconfigmanager.h</a></div></div>
 <div class="ttc" id="class_music_abstract_xml_html_a1d8591bec41e041eda317cd312d7e847"><div class="ttname"><a href="../../d7/d53/class_music_abstract_xml.html#a1d8591bec41e041eda317cd312d7e847">MusicAbstractXml::writeDomElementMutilText</a></div><div class="ttdeci">QDomElement writeDomElementMutilText(QDomElement &amp;element, const QString &amp;node, const MusicXmlAttributes &amp;attrs, const QString &amp;text)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d4d/musicabstractxml_8cpp_source.html#l00323">musicabstractxml.cpp:323</a></div></div>
 <div class="ttc" id="class_music_abstract_xml_html_ab974135c04f057f389b2cd946e3979ea"><div class="ttname"><a href="../../d7/d53/class_music_abstract_xml.html#ab974135c04f057f389b2cd946e3979ea">MusicAbstractXml::m_document</a></div><div class="ttdeci">QDomDocument * m_document</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d83/musicabstractxml_8h_source.html#l00183">musicabstractxml.h:183</a></div></div>
@@ -142,7 +143,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 19 2020 13:46:06 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 21 2020 13:05:41 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

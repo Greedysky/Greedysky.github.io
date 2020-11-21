@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.2.0</span>
+   &#160;<span id="projectnumber">2.13.3.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -136,7 +136,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                value = value[<span class="stringliteral">&quot;data&quot;</span>].toMap();</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                value = value[<span class="stringliteral">&quot;song&quot;</span>].toMap();</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                <span class="keyword">const</span> QVariantList &amp;datas = value[<span class="stringliteral">&quot;itemlist&quot;</span>].toList();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <span class="keywordflow">foreach</span>(<span class="keyword">const</span> QVariant &amp;var, datas)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <span class="keywordflow">for</span>(<span class="keyword">const</span> QVariant &amp;var : qAsConst(datas))</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                {</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                    <span class="keywordflow">if</span>(<a class="code" href="../../da/d9c/class_music_abstract_network.html#af86d0f4d864edc458d179b5aa1bb3953">m_interrupt</a>) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
@@ -160,7 +160,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
 <div class="ttc" id="class_music_abstract_network_html_a2c9ff5c30aa033ed4a51541ce74724d4"><div class="ttname"><a href="../../da/d9c/class_music_abstract_network.html#a2c9ff5c30aa033ed4a51541ce74724d4">MusicAbstractNetwork::m_manager</a></div><div class="ttdeci">QNetworkAccessManager * m_manager</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/daa/musicabstractnetwork_8h_source.html#l00120">musicabstractnetwork.h:120</a></div></div>
 <div class="ttc" id="musicqqqueryinterface_8h_html_a2dc1716055324937a2fcdfd2ebc6f223"><div class="ttname"><a href="../../d4/d2e/musicqqqueryinterface_8h.html#a2dc1716055324937a2fcdfd2ebc6f223">QQ_UA_URL</a></div><div class="ttdeci">const QString QQ_UA_URL</div><div class="ttdoc">cookie url </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d2e/musicqqqueryinterface_8h_source.html#l00026">musicqqqueryinterface.h:26</a></div></div>
-<div class="ttc" id="musicqqqueryinterface_8h_html_a7fe815e711441e5240737ce9f2fb8c86"><div class="ttname"><a href="../../d4/d2e/musicqqqueryinterface_8h.html#a7fe815e711441e5240737ce9f2fb8c86">QQ_SUGGEST_URL</a></div><div class="ttdeci">const QString QQ_SUGGEST_URL</div><div class="ttdoc">suggest url </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d2e/musicqqqueryinterface_8h_source.html#l00062">musicqqqueryinterface.h:62</a></div></div>
+<div class="ttc" id="musicqqqueryinterface_8h_html_a7fe815e711441e5240737ce9f2fb8c86"><div class="ttname"><a href="../../d4/d2e/musicqqqueryinterface_8h.html#a7fe815e711441e5240737ce9f2fb8c86">QQ_SUGGEST_URL</a></div><div class="ttdeci">const QString QQ_SUGGEST_URL</div><div class="ttdoc">suggest url </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d2e/musicqqqueryinterface_8h_source.html#l00058">musicqqqueryinterface.h:58</a></div></div>
 <div class="ttc" id="struct_music_results_item_html_a71362efe20ea83bbb48daacefeabf048"><div class="ttname"><a href="../../d8/d62/struct_music_results_item.html#a71362efe20ea83bbb48daacefeabf048">MusicResultsItem::m_name</a></div><div class="ttdeci">QString m_name</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dc4/musicabstractqueryrequest_8h_source.html#l00054">musicabstractqueryrequest.h:54</a></div></div>
 <div class="ttc" id="namespace_music_utils_1_1_algorithm_html_a5e5f071a5bb196d53c48fb2be855da67"><div class="ttname"><a href="../../d6/d11/namespace_music_utils_1_1_algorithm.html#a5e5f071a5bb196d53c48fb2be855da67">MusicUtils::Algorithm::mdII</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT QString mdII(const QString &amp;data, bool encode)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dfd/musicalgorithmutils_8cpp_source.html#l00041">musicalgorithmutils.cpp:41</a></div></div>
 <div class="ttc" id="class_music_abstract_network_html_af86d0f4d864edc458d179b5aa1bb3953"><div class="ttname"><a href="../../da/d9c/class_music_abstract_network.html#af86d0f4d864edc458d179b5aa1bb3953">MusicAbstractNetwork::m_interrupt</a></div><div class="ttdeci">volatile bool m_interrupt</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/daa/musicabstractnetwork_8h_source.html#l00117">musicabstractnetwork.h:117</a></div></div>
@@ -187,7 +187,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 19 2020 13:46:05 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 21 2020 13:05:39 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

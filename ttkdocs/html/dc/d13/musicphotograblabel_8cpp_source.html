@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.2.0</span>
+   &#160;<span id="projectnumber">2.13.3.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -124,12 +124,12 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">if</span>(img.width() &gt; img.height())</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#ab93d35b15e94a74e51ab19224412a7ab">m_ratio</a> = img.width()*1.0f/width();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#ab93d35b15e94a74e51ab19224412a7ab">m_ratio</a> = img.width() * 1.0f / width();</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#a5d967938362c48ab85e9210d3031aca8">m_imgRect</a> = QRect(0, 0, img.width() / <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#ab93d35b15e94a74e51ab19224412a7ab">m_ratio</a>, img.height() / <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#ab93d35b15e94a74e51ab19224412a7ab">m_ratio</a>);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#ab93d35b15e94a74e51ab19224412a7ab">m_ratio</a> = img.height()*1.0f/height();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#ab93d35b15e94a74e51ab19224412a7ab">m_ratio</a> = img.height() * 1.0f / height();</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#a5d967938362c48ab85e9210d3031aca8">m_imgRect</a> = QRect(0, 0, img.width() / <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#ab93d35b15e94a74e51ab19224412a7ab">m_ratio</a>, img.height() / <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#ab93d35b15e94a74e51ab19224412a7ab">m_ratio</a>);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#a5d967938362c48ab85e9210d3031aca8">m_imgRect</a>.setX((width() - <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#a5d967938362c48ab85e9210d3031aca8">m_imgRect</a>.width()) / 2);</div>
@@ -143,7 +143,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="../../d6/d0a/class_music_photo_grab_label.html#afcc88a782f06edc67959c9b26c176f64">   64</a></span>&#160;QPixmap <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#afcc88a782f06edc67959c9b26c176f64">MusicPhotoGrabLabel::pixmap</a>()</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    QPixmap img(<a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#a5a849f7ea000df84393b5de32ac6d861">m_path</a>);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">return</span> img.copy(QRect((<a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#ad79521a3284be1acbb9794ecba3d8959">m_grabItem</a>-&gt;geometry().topLeft() - <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#a5d967938362c48ab85e9210d3031aca8">m_imgRect</a>.topLeft())*<a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#ab93d35b15e94a74e51ab19224412a7ab">m_ratio</a>, <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#ad79521a3284be1acbb9794ecba3d8959">m_grabItem</a>-&gt;geometry().size()*<a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#ab93d35b15e94a74e51ab19224412a7ab">m_ratio</a>));</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">return</span> img.copy(QRect((<a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#ad79521a3284be1acbb9794ecba3d8959">m_grabItem</a>-&gt;geometry().topLeft() - <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#a5d967938362c48ab85e9210d3031aca8">m_imgRect</a>.topLeft()) * <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#ab93d35b15e94a74e51ab19224412a7ab">m_ratio</a>, <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#ad79521a3284be1acbb9794ecba3d8959">m_grabItem</a>-&gt;geometry().size() * <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#ab93d35b15e94a74e51ab19224412a7ab">m_ratio</a>));</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
 <div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="../../d6/d0a/class_music_photo_grab_label.html#aa7ca776d0353d219457482cbb0fa97f4">   70</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d6/d0a/class_music_photo_grab_label.html#aa7ca776d0353d219457482cbb0fa97f4">MusicPhotoGrabLabel::rectChanged</a>()</div>
@@ -192,7 +192,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 19 2020 13:46:06 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 21 2020 13:05:43 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

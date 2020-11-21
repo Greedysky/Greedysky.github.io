@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.2.0</span>
+   &#160;<span id="projectnumber">2.13.3.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -111,8 +111,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1c1de19d82f1d37f307f958089c30970"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe365266da4768fc6bd34574727bdd29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d9f/class_recycler.html">Recycler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3f/class_output_writer.html#afe365266da4768fc6bd34574727bdd29">recycler</a> ()</td></tr>
 <tr class="separator:afe365266da4768fc6bd34574727bdd29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88a1b65ac8a0bdfdfa44f699e7a57c5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d77/class_audio_parameters.html">AudioParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3f/class_output_writer.html#a88a1b65ac8a0bdfdfa44f699e7a57c5c">audioParameters</a> () <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
-<tr class="separator:a88a1b65ac8a0bdfdfa44f699e7a57c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af73066e70169a1ddb48783d2cd50f3f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="../../d2/d77/class_audio_parameters.html">AudioParameters</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3f/class_output_writer.html#af73066e70169a1ddb48783d2cd50f3f4">inputAudioParameters</a> () <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:af73066e70169a1ddb48783d2cd50f3f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afedebb294b0319cf4e93c44c3e61bee1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d77/class_audio_parameters.html">AudioParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3f/class_output_writer.html#afedebb294b0319cf4e93c44c3e61bee1">outputAudioParameters</a> () <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:afedebb294b0319cf4e93c44c3e61bee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabfaf7a6c0b5b0e6328e34c8598cd8e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3f/class_output_writer.html#aabfaf7a6c0b5b0e6328e34c8598cd8e3">sampleSize</a> () <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
 <tr class="separator:aabfaf7a6c0b5b0e6328e34c8598cd8e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0628ddd7210a99a72ba2b0c521dc728a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3f/class_output_writer.html#a0628ddd7210a99a72ba2b0c521dc728a">updateEqSettings</a> ()</td></tr>
@@ -246,22 +248,6 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a88a1b65ac8a0bdfdfa44f699e7a57c5c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d2/d77/class_audio_parameters.html">AudioParameters</a> OutputWriter::audioParameters </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns selected audio parameters. </p>
-
-</div>
-</div>
 <a class="anchor" id="a857f0499d6d8ab2420179e64d081ab52"></a>
 <div class="memitem">
 <div class="memproto">
@@ -415,6 +401,38 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>initialization result (<b>true</b> - success, <b>false</b> - failure) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af73066e70169a1ddb48783d2cd50f3f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="../../d2/d77/class_audio_parameters.html">AudioParameters</a>&amp; OutputWriter::inputAudioParameters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns selected audio parameters, i.e. passed by <b>initialize</b> function. </p>
+
+</div>
+</div>
+<a class="anchor" id="afedebb294b0319cf4e93c44c3e61bee1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d77/class_audio_parameters.html">AudioParameters</a> OutputWriter::outputAudioParameters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns output audio parameters, i.e. accepted by output device. </p>
 
 </div>
 </div>
@@ -659,7 +677,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00118">118</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00122">122</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
 
 </div>
 </div>
@@ -681,7 +699,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00111">111</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00115">115</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
 
 </div>
 </div>
@@ -703,7 +721,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00109">109</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00113">113</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
 
 </div>
 </div>
@@ -725,7 +743,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00124">124</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00128">128</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
 
 </div>
 </div>
@@ -747,7 +765,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00108">108</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00112">112</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
 
 </div>
 </div>
@@ -769,7 +787,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00119">119</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00123">123</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
 
 </div>
 </div>
@@ -791,7 +809,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00115">115</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00119">119</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
 
 </div>
 </div>
@@ -813,7 +831,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00110">110</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00114">114</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
 
 </div>
 </div>
@@ -835,7 +853,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00123">123</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00127">127</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
 
 </div>
 </div>
@@ -857,7 +875,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00107">107</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00111">111</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
 
 </div>
 </div>
@@ -879,7 +897,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00106">106</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00110">110</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
 
 </div>
 </div>
@@ -901,7 +919,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00122">122</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00126">126</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
 
 </div>
 </div>
@@ -923,7 +941,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00108">108</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00112">112</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
 
 </div>
 </div>
@@ -945,7 +963,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00114">114</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00118">118</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
 
 </div>
 </div>
@@ -967,7 +985,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00104">104</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00108">108</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
 
 </div>
 </div>
@@ -989,7 +1007,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00121">121</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00125">125</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
 
 </div>
 </div>
@@ -1011,7 +1029,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00125">125</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00129">129</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
 
 </div>
 </div>
@@ -1033,7 +1051,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00126">126</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00130">130</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
 
 </div>
 </div>
@@ -1055,7 +1073,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00113">113</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00117">117</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
 
 </div>
 </div>
@@ -1077,7 +1095,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00116">116</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00120">120</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
 
 </div>
 </div>
@@ -1099,7 +1117,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00105">105</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00109">109</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
 
 </div>
 </div>
@@ -1121,7 +1139,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00120">120</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00124">124</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
 
 </div>
 </div>
@@ -1143,7 +1161,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00103">103</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00107">107</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
 
 </div>
 </div>
@@ -1165,7 +1183,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00119">119</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00123">123</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
 
 </div>
 </div>
@@ -1187,7 +1205,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00117">117</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00121">121</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
 
 </div>
 </div>
@@ -1209,7 +1227,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00112">112</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html#l00116">116</a> of file <a class="el" href="../../dc/df8/outputwriter__p_8h_source.html">outputwriter_p.h</a>.</p>
 
 </div>
 </div>
@@ -1219,7 +1237,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 19 2020 13:47:07 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 21 2020 13:06:20 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

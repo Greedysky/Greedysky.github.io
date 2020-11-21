@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.2.0</span>
+   &#160;<span id="projectnumber">2.13.3.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -146,7 +146,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            QVariantMap value = data.toMap();</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            value = value[<span class="stringliteral">&quot;trans_result&quot;</span>].toMap();</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keyword">const</span> QVariantList &amp;datas = value[<span class="stringliteral">&quot;data&quot;</span>].toList();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">foreach</span>(<span class="keyword">const</span> QVariant &amp;var, datas)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">const</span> QVariant &amp;var : qAsConst(datas))</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            {</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                value = var.toMap();</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <span class="keywordflow">if</span>(value.isEmpty() || value[<span class="stringliteral">&quot;dst&quot;</span>].toString().isEmpty())</div>
@@ -210,7 +210,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 19 2020 13:46:01 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 21 2020 13:05:39 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

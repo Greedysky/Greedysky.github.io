@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.2.0</span>
+   &#160;<span id="projectnumber">2.13.3.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -122,9 +122,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../d3/d40/struct_music_song_item.html">MusicSongItem</a> &amp;item = items[i];</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        QDomElement seqDom = <a class="code" href="../../d7/d53/class_music_abstract_xml.html#a8f7c9636105c2171c5d8bd1962a1f5f8">writeDomNode</a>(bodySettingDom, <span class="stringliteral">&quot;seq&quot;</span>);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">foreach</span>(<span class="keyword">const</span> <a class="code" href="../../d6/de4/class_music_song.html">MusicSong</a> &amp;song, item.<a class="code" href="../../d3/d40/struct_music_song_item.html#adfd79c10fd52b31c1b4ffe39143d9ab9">m_songs</a>)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">const</span> <a class="code" href="../../d6/de4/class_music_song.html">MusicSong</a> &amp;song : qAsConst(item.<a class="code" href="../../d3/d40/struct_music_song_item.html#adfd79c10fd52b31c1b4ffe39143d9ab9">m_songs</a>))</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <a class="code" href="../../d7/d53/class_music_abstract_xml.html#af13e58c22cf752b1a668865ea820c7ac">writeDomElementMutil</a>(seqDom, <span class="stringliteral">&quot;media&quot;</span>, MusicXmlAttributes() &lt;&lt; <a class="code" href="../../d5/d83/musicabstractxml_8h.html#a56051115a51c2b883990e0435e2ab8fa">MusicXmlAttribute</a>(<span class="stringliteral">&quot;src&quot;</span>, song.<a class="code" href="../../d6/de4/class_music_song.html#aa30b5fb6f676a07103eb4588b3cda859">getMusicPath</a>()));</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <a class="code" href="../../d7/d53/class_music_abstract_xml.html#af13e58c22cf752b1a668865ea820c7ac">writeDomElementMutil</a>(seqDom, <span class="stringliteral">&quot;media&quot;</span>, MusicXmlAttributes() &lt;&lt; <a class="code" href="../../d5/d83/musicabstractxml_8h.html#a56051115a51c2b883990e0435e2ab8fa">MusicXmlAttribute</a>(<span class="stringliteral">&quot;src&quot;</span>, song.getMusicPath()));</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
@@ -157,7 +157,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_w_p_l_config_manager_html_a69f56853f531406f971452358bc7260b"><div class="ttname"><a href="../../d0/d12/class_music_w_p_l_config_manager.html#a69f56853f531406f971452358bc7260b">MusicWPLConfigManager::writePlaylistData</a></div><div class="ttdeci">virtual bool writePlaylistData(const MusicSongItems &amp;items, const QString &amp;path) override</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/db1/musicwplconfigmanager_8cpp_source.html#l00025">musicwplconfigmanager.cpp:25</a></div></div>
 <div class="ttc" id="class_music_abstract_xml_html_a5669fb45a963540c30a44e58372952e5"><div class="ttname"><a href="../../d7/d53/class_music_abstract_xml.html#a5669fb45a963540c30a44e58372952e5">MusicAbstractXml::m_nodeHelper</a></div><div class="ttdeci">MusicXmlNodeHelper * m_nodeHelper</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d83/musicabstractxml_8h_source.html#l00184">musicabstractxml.h:184</a></div></div>
 <div class="ttc" id="class_music_w_p_l_config_manager_html_a5277ebb5289f8b19cf1a8b33f6234895"><div class="ttname"><a href="../../d0/d12/class_music_w_p_l_config_manager.html#a5277ebb5289f8b19cf1a8b33f6234895">MusicWPLConfigManager::readMusicFilePath</a></div><div class="ttdeci">MusicSongs readMusicFilePath(const QDomNode &amp;node) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/db1/musicwplconfigmanager_8cpp_source.html#l00057">musicwplconfigmanager.cpp:57</a></div></div>
-<div class="ttc" id="class_music_song_html_aa30b5fb6f676a07103eb4588b3cda859"><div class="ttname"><a href="../../d6/de4/class_music_song.html#aa30b5fb6f676a07103eb4588b3cda859">MusicSong::getMusicPath</a></div><div class="ttdeci">QString getMusicPath() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d03/musicsong_8h_source.html#l00110">musicsong.h:110</a></div></div>
 <div class="ttc" id="class_music_abstract_xml_html_ab974135c04f057f389b2cd946e3979ea"><div class="ttname"><a href="../../d7/d53/class_music_abstract_xml.html#ab974135c04f057f389b2cd946e3979ea">MusicAbstractXml::m_document</a></div><div class="ttdeci">QDomDocument * m_document</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d83/musicabstractxml_8h_source.html#l00183">musicabstractxml.h:183</a></div></div>
 <div class="ttc" id="class_music_playlist_interface_html"><div class="ttname"><a href="../../dd/d56/class_music_playlist_interface.html">MusicPlaylistInterface</a></div><div class="ttdoc">The class of the playlist interface. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dc0/musicplaylistinterface_8h_source.html#l00027">musicplaylistinterface.h:27</a></div></div>
 <div class="ttc" id="class_music_w_p_l_config_manager_html_a8ea39482ac285229e49a8e222cb7208a"><div class="ttname"><a href="../../d0/d12/class_music_w_p_l_config_manager.html#a8ea39482ac285229e49a8e222cb7208a">MusicWPLConfigManager::MusicWPLConfigManager</a></div><div class="ttdeci">MusicWPLConfigManager(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/db1/musicwplconfigmanager_8cpp_source.html#l00004">musicwplconfigmanager.cpp:4</a></div></div>
@@ -173,7 +172,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 19 2020 13:46:05 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 21 2020 13:05:40 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

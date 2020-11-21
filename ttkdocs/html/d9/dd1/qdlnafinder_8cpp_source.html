@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.2.0</span>
+   &#160;<span id="projectnumber">2.13.3.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -132,9 +132,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="../../d6/dd0/class_q_dlna_finder_private.html#a2950e968d4da4056d307ddd2d8986567">   54</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d6/dd0/class_q_dlna_finder_private.html#a2950e968d4da4056d307ddd2d8986567">QDlnaFinderPrivate::findClient</a>(<span class="keyword">const</span> QString &amp;server)</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">foreach</span>(<a class="code" href="../../d0/d46/class_q_dlna_client.html">QDlnaClient</a> *client, <a class="code" href="../../d6/dd0/class_q_dlna_finder_private.html#ade462668376e89d340d2908f1c0e5c82">m_clients</a>)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">for</span>(<a class="code" href="../../d0/d46/class_q_dlna_client.html">QDlnaClient</a> *client : qAsConst(<a class="code" href="../../d6/dd0/class_q_dlna_finder_private.html#ade462668376e89d340d2908f1c0e5c82">m_clients</a>))</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">if</span>(client-&gt;<a class="code" href="../../d0/d46/class_q_dlna_client.html#ab802c21ce4a8ed62ccb1cd7134cb4531">server</a>() == server)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">if</span>(client-&gt;server() == server)</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        {</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        }</div>
@@ -179,9 +179,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="../../dd/d24/ttkprivate_8h.html#a8eedd09c47b53d5e42ca132295c5e1ef">TTK_D</a>(<a class="code" href="../../da/d6d/class_q_dlna_finder.html">QDlnaFinder</a>);</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    QStringList names;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">foreach</span>(<a class="code" href="../../d0/d46/class_q_dlna_client.html">QDlnaClient</a> *<a class="code" href="../../da/d6d/class_q_dlna_finder.html#a697c909f2d10f03a65d662855fbabab1">client</a>, d-&gt;m_clients)</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">for</span>(<a class="code" href="../../d0/d46/class_q_dlna_client.html">QDlnaClient</a> *<a class="code" href="../../da/d6d/class_q_dlna_finder.html#a697c909f2d10f03a65d662855fbabab1">client</a> : qAsConst(d-&gt;m_clients))</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        names.push_back(client-&gt;<a class="code" href="../../d0/d46/class_q_dlna_client.html#ab22d7b63ebd76e73ad90654ab77cd58b">serverName</a>());</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        names.push_back(<a class="code" href="../../da/d6d/class_q_dlna_finder.html#a697c909f2d10f03a65d662855fbabab1">client</a>-&gt;<a class="code" href="../../d0/d46/class_q_dlna_client.html#ab22d7b63ebd76e73ad90654ab77cd58b">serverName</a>());</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">return</span> names;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
@@ -243,7 +243,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 19 2020 13:46:12 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 21 2020 13:05:49 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
