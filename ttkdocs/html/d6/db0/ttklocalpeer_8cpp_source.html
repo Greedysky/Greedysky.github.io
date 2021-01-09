@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.3.0</span>
+   &#160;<span id="projectnumber">2.13.4.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -202,7 +202,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">if</span>(!res)</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    {</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        qWarning(<span class="stringliteral">&quot;Application: listen on local socket failed, %s&quot;</span>, qPrintable(d-&gt;m_server-&gt;errorString()));</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        qWarning(<span class="stringliteral">&quot;Application: listen on local socket failed, %s&quot;</span>, <a class="code" href="../../d8/d30/qmmp_8h.html#a0dfbc877d5d936767641c34cc6f524ee">qPrintable</a>(d-&gt;m_server-&gt;errorString()));</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    connect(d-&gt;m_server, SIGNAL(newConnection()), SLOT(<a class="code" href="../../db/d19/class_t_t_k_local_peer.html#af1d2cdfb082a0d29e61af07958c63eb8">receiveConnection</a>()));</div>
@@ -318,6 +318,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    Q_EMIT <a class="code" href="../../db/d19/class_t_t_k_local_peer.html#aacb340ed44ecf6791addc25b0fc7fc66">messageReceived</a>(message); <span class="comment">//### (might take a long time to return)</span></div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;}</div>
+<div class="ttc" id="qmmp_8h_html_a0dfbc877d5d936767641c34cc6f524ee"><div class="ttname"><a href="../../d8/d30/qmmp_8h.html#a0dfbc877d5d936767641c34cc6f524ee">qPrintable</a></div><div class="ttdeci">#define qPrintable(s)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d30/qmmp_8h_source.html#l00043">qmmp.h:43</a></div></div>
 <div class="ttc" id="class_t_t_k_local_peer_private_html_ad570d74f0290358527d104b51f5fc4ad"><div class="ttname"><a href="../../dc/de9/class_t_t_k_local_peer_private.html#ad570d74f0290358527d104b51f5fc4ad">TTKLocalPeerPrivate::m_socketName</a></div><div class="ttdeci">QString m_socketName</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db0/ttklocalpeer_8cpp_source.html#l00039">ttklocalpeer.cpp:39</a></div></div>
 <div class="ttc" id="namespace_t_t_k_locked_private_html"><div class="ttname"><a href="../../dc/d69/namespace_t_t_k_locked_private.html">TTKLockedPrivate</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db0/ttklocalpeer_8cpp_source.html#l00023">ttklocalpeer.cpp:23</a></div></div>
 <div class="ttc" id="class_t_t_k_locked_private_1_1_t_t_k_locked_file_html"><div class="ttname"><a href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html">TTKLockedPrivate::TTKLockedFile</a></div><div class="ttdoc">The class of the music local file. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d17/ttklockedfile_8h_source.html#l00014">ttklockedfile.h:14</a></div></div>
@@ -347,7 +348,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 21 2020 13:05:47 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 9 2021 16:57:35 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

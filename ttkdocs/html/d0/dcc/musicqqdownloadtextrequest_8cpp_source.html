@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.3.0</span>
+   &#160;<span id="projectnumber">2.13.4.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -99,8 +99,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            QNetworkRequest request;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            request.setUrl(<a class="code" href="../../df/d6c/class_music_abstract_down_load_request.html#a34afa54466aeceea04f59809ac43deba">m_url</a>);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            request.setRawHeader(<span class="stringliteral">&quot;Host&quot;</span>, <a class="code" href="../../d6/d11/namespace_music_utils_1_1_algorithm.html#a5e5f071a5bb196d53c48fb2be855da67">MusicUtils::Algorithm::mdII</a>(<a class="code" href="../../d0/dcc/musicqqdownloadtextrequest_8cpp.html#ac7c6fb5101144cc64e55dde83808714f">HOST_URL</a>, <span class="keyword">false</span>).<a class="code" href="../../d5/d67/namespace_music_utils_1_1_codec.html#aad54c82cfaa63b854d28f1fe1ba4d34c">toUtf8</a>());</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            request.setRawHeader(<span class="stringliteral">&quot;Referer&quot;</span>, <a class="code" href="../../d6/d11/namespace_music_utils_1_1_algorithm.html#a5e5f071a5bb196d53c48fb2be855da67">MusicUtils::Algorithm::mdII</a>(<a class="code" href="../../d0/dcc/musicqqdownloadtextrequest_8cpp.html#ad508284610130135fdad98369add160b">REFER_URL</a>, <span class="keyword">false</span>).<a class="code" href="../../d5/d67/namespace_music_utils_1_1_codec.html#aad54c82cfaa63b854d28f1fe1ba4d34c">toUtf8</a>());</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            request.setRawHeader(<span class="stringliteral">&quot;Host&quot;</span>, <a class="code" href="../../d6/d11/namespace_music_utils_1_1_algorithm.html#a5e5f071a5bb196d53c48fb2be855da67">MusicUtils::Algorithm::mdII</a>(<a class="code" href="../../d0/dcc/musicqqdownloadtextrequest_8cpp.html#ac7c6fb5101144cc64e55dde83808714f">HOST_URL</a>, <span class="keyword">false</span>).toUtf8());</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            request.setRawHeader(<span class="stringliteral">&quot;Referer&quot;</span>, <a class="code" href="../../d6/d11/namespace_music_utils_1_1_algorithm.html#a5e5f071a5bb196d53c48fb2be855da67">MusicUtils::Algorithm::mdII</a>(<a class="code" href="../../d0/dcc/musicqqdownloadtextrequest_8cpp.html#ad508284610130135fdad98369add160b">REFER_URL</a>, <span class="keyword">false</span>).toUtf8());</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#ifndef QT_NO_SSL</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            connect(<a class="code" href="../../da/d9c/class_music_abstract_network.html#a2c9ff5c30aa033ed4a51541ce74724d4">m_manager</a>, SIGNAL(<a class="code" href="../../df/d6c/class_music_abstract_down_load_request.html#a1f2f5c7931198c283bd06888a31a82f5">sslErrors</a>(QNetworkReply*,QList&lt;QSslError&gt;)), SLOT(<a class="code" href="../../df/d6c/class_music_abstract_down_load_request.html#a1f2f5c7931198c283bd06888a31a82f5">sslErrors</a>(QNetworkReply*,QList&lt;QSslError&gt;)));</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <a class="code" href="../../df/dbc/namespace_music_object.html#ab14850088dfb96770578ff73eeb97bdd">MusicObject::setSslConfiguration</a>(&amp;request);</div>
@@ -146,7 +146,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                lrcData = value[<span class="stringliteral">&quot;lyric&quot;</span>].toByteArray();</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;255; ++i)</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                    lrcData.replace(QString(<span class="stringliteral">&quot;&amp;#%1;&quot;</span>).arg(i).<a class="code" href="../../d5/d67/namespace_music_utils_1_1_codec.html#aad54c82cfaa63b854d28f1fe1ba4d34c">toUtf8</a>(), QString(QChar(i)).<a class="code" href="../../d5/d67/namespace_music_utils_1_1_codec.html#aad54c82cfaa63b854d28f1fe1ba4d34c">toUtf8</a>());</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                    lrcData.replace(QString(<span class="stringliteral">&quot;&amp;#%1;&quot;</span>).arg(i).toUtf8(), QString(QChar(i)).toUtf8());</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                }</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            }</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            QTextStream outstream(<a class="code" href="../../df/d6c/class_music_abstract_down_load_request.html#adf2cf599a3765c100275f065424f218a">m_file</a>);</div>
@@ -197,11 +197,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_abstract_network_html_a016721dd4c30eca0104eddb8ff3e49f0"><div class="ttname"><a href="../../da/d9c/class_music_abstract_network.html#a016721dd4c30eca0104eddb8ff3e49f0">MusicAbstractNetwork::m_reply</a></div><div class="ttdeci">QNetworkReply * m_reply</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/daa/musicabstractnetwork_8h_source.html#l00119">musicabstractnetwork.h:119</a></div></div>
 <div class="ttc" id="namespace_music_object_html_adbfc8a91e330beadb8b20cbf1204dc28"><div class="ttname"><a href="../../df/dbc/namespace_music_object.html#adbfc8a91e330beadb8b20cbf1204dc28">MusicObject::DownloadType</a></div><div class="ttdeci">DownloadType</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de0/musicnetworkdefines_8h_source.html#l00035">musicnetworkdefines.h:35</a></div></div>
 <div class="ttc" id="class_music_q_q_down_load_text_request_html_ac23ac9cc03d07301496e4e699a0e692a"><div class="ttname"><a href="../../d1/ddb/class_music_q_q_down_load_text_request.html#ac23ac9cc03d07301496e4e699a0e692a">MusicQQDownLoadTextRequest::MusicQQDownLoadTextRequest</a></div><div class="ttdeci">MusicQQDownLoadTextRequest(const QString &amp;url, const QString &amp;save, MusicObject::DownloadType type, QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dcc/musicqqdownloadtextrequest_8cpp_source.html#l00006">musicqqdownloadtextrequest.cpp:6</a></div></div>
-<div class="ttc" id="namespace_music_utils_1_1_codec_html_aad54c82cfaa63b854d28f1fe1ba4d34c"><div class="ttname"><a href="../../d5/d67/namespace_music_utils_1_1_codec.html#aad54c82cfaa63b854d28f1fe1ba4d34c">MusicUtils::Codec::toUtf8</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT const char * toUtf8(const QString &amp;str)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d48/musiccodecutils_8cpp_source.html#l00039">musiccodecutils.cpp:39</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 21 2020 13:05:39 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 9 2021 16:57:22 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

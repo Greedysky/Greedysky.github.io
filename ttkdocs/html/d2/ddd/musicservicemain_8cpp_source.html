@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.3.0</span>
+   &#160;<span id="projectnumber">2.13.4.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -136,26 +136,25 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="../../db/def/class_music_application.html">MusicApplication</a> w;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    w.show();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">if</span>(argc == 4)</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">if</span>(QString::fromLocal8Bit(argv[2]) == <a class="code" href="../../d2/d77/musicotherdefine_8h.html#aebdeab2e63bbca354e0ad26b21ef2afd">MUSIC_OUTER_OPEN</a>)</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            w.<a class="code" href="../../db/def/class_music_application.html#abbd22e0377b3f2e1667c676f019d1b33">musicImportSongsPathOuter</a>(QStringList() &lt;&lt; QString::fromLocal8Bit(argv[3]), <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">if</span>(QString::fromLocal8Bit(argv[2]) == <a class="code" href="../../d2/d77/musicotherdefine_8h.html#a974d61da6f7ec1c350d5e5d358d552ca">MUSIC_OUTER_LIST</a>)</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            w.<a class="code" href="../../db/def/class_music_application.html#abbd22e0377b3f2e1667c676f019d1b33">musicImportSongsPathOuter</a>(QStringList() &lt;&lt; QString::fromLocal8Bit(argv[3]), <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">if</span>(QString::fromLocal8Bit(argv[2]) == <a class="code" href="../../d2/d77/musicotherdefine_8h.html#a8778853641afba3a7d781b1ee4edd98e">MUSIC_OUTER_RADIO</a>)</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            w.<a class="code" href="../../db/def/class_music_application.html#afbf18ef0b39be40706d2ecf5fa6be767">radioExecuteOuter</a>(argv[3]);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> a.exec();</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">if</span>(argc == 4)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">if</span>(QString::fromLocal8Bit(argv[2]) == <a class="code" href="../../d2/d77/musicotherdefine_8h.html#aebdeab2e63bbca354e0ad26b21ef2afd">MUSIC_OUTER_OPEN</a>)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            w.<a class="code" href="../../db/def/class_music_application.html#abbd22e0377b3f2e1667c676f019d1b33">musicImportSongsPathOuter</a>(QStringList() &lt;&lt; QString::fromLocal8Bit(argv[3]), <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">if</span>(QString::fromLocal8Bit(argv[2]) == <a class="code" href="../../d2/d77/musicotherdefine_8h.html#a974d61da6f7ec1c350d5e5d358d552ca">MUSIC_OUTER_LIST</a>)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            w.<a class="code" href="../../db/def/class_music_application.html#abbd22e0377b3f2e1667c676f019d1b33">musicImportSongsPathOuter</a>(QStringList() &lt;&lt; QString::fromLocal8Bit(argv[3]), <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">if</span>(QString::fromLocal8Bit(argv[2]) == <a class="code" href="../../d2/d77/musicotherdefine_8h.html#a8778853641afba3a7d781b1ee4edd98e">MUSIC_OUTER_RADIO</a>)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            w.<a class="code" href="../../db/def/class_music_application.html#afbf18ef0b39be40706d2ecf5fa6be767">radioExecuteOuter</a>(argv[3]);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">return</span> a.exec();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
 <div class="ttc" id="musicservicemain_8cpp_html_af1dfb0fa358d45ea669836884a0a69e9"><div class="ttname"><a href="../../d2/ddd/musicservicemain_8cpp.html#af1dfb0fa358d45ea669836884a0a69e9">loadAppScaledFactor</a></div><div class="ttdeci">void loadAppScaledFactor(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/ddd/musicservicemain_8cpp_source.html#l00012">musicservicemain.cpp:12</a></div></div>
 <div class="ttc" id="class_music_platform_manager_html"><div class="ttname"><a href="../../d7/d0f/class_music_platform_manager.html">MusicPlatformManager</a></div><div class="ttdoc">The class of the platform system manager. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d27/musicplatformmanager_8h_source.html#l00028">musicplatformmanager.h:28</a></div></div>
 <div class="ttc" id="class_t_t_k_dumper_html"><div class="ttname"><a href="../../d6/d54/class_t_t_k_dumper.html">TTKDumper</a></div><div class="ttdoc">The class of the ttk dumper. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d84/ttkdumper_8h_source.html#l00029">ttkdumper.h:29</a></div></div>
@@ -183,7 +182,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 21 2020 13:05:47 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 9 2021 16:57:35 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

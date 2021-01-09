@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.3.0</span>
+   &#160;<span id="projectnumber">2.13.4.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -208,7 +208,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    QNetworkRequest request;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    request.setUrl(musicUrl);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    request.setRawHeader(<span class="stringliteral">&quot;User-Agent&quot;</span>, <a class="code" href="../../d6/d11/namespace_music_utils_1_1_algorithm.html#a5e5f071a5bb196d53c48fb2be855da67">MusicUtils::Algorithm::mdII</a>(<a class="code" href="../../d0/d82/musickgqueryinterface_8h.html#a70d147a89c62c19897a06675bf7d36fa">KG_UA_URL</a>, <a class="code" href="../../d8/d63/musicalgorithmutils_8h.html#a7f3992659c79a4b6aa6daa4ade5ddd28">ALG_UA_KEY</a>, <span class="keyword">false</span>).<a class="code" href="../../d5/d67/namespace_music_utils_1_1_codec.html#aad54c82cfaa63b854d28f1fe1ba4d34c">toUtf8</a>());</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    request.setRawHeader(<span class="stringliteral">&quot;User-Agent&quot;</span>, <a class="code" href="../../d6/d11/namespace_music_utils_1_1_algorithm.html#a5e5f071a5bb196d53c48fb2be855da67">MusicUtils::Algorithm::mdII</a>(<a class="code" href="../../d0/d82/musickgqueryinterface_8h.html#a70d147a89c62c19897a06675bf7d36fa">KG_UA_URL</a>, <a class="code" href="../../d8/d63/musicalgorithmutils_8h.html#a7f3992659c79a4b6aa6daa4ade5ddd28">ALG_UA_KEY</a>, <span class="keyword">false</span>).toUtf8());</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <a class="code" href="../../df/dbc/namespace_music_object.html#ab14850088dfb96770578ff73eeb97bdd">MusicObject::setSslConfiguration</a>(&amp;request);</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <a class="code" href="../../d9/dec/class_music_semaphore_loop.html">MusicSemaphoreLoop</a> loop;</div>
@@ -336,13 +336,12 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="struct_music_object_1_1_music_song_information_html"><div class="ttname"><a href="../../d9/d32/struct_music_object_1_1_music_song_information.html">MusicObject::MusicSongInformation</a></div><div class="ttdoc">The class of the music song information. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00254">musicobject.h:254</a></div></div>
 <div class="ttc" id="musicnumberdefine_8h_html_ac59e311ee2fef18ad00f3f6f9b44cd80"><div class="ttname"><a href="../../dd/d01/musicnumberdefine_8h.html#ac59e311ee2fef18ad00f3f6f9b44cd80">MB_750</a></div><div class="ttdeci">#define MB_750</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d01/musicnumberdefine_8h_source.html#l00096">musicnumberdefine.h:96</a></div></div>
 <div class="ttc" id="struct_music_searched_item_html_a81fc92d99bdb598e205723395c0f5125"><div class="ttname"><a href="../../d6/dc5/struct_music_searched_item.html#a81fc92d99bdb598e205723395c0f5125">MusicSearchedItem::m_time</a></div><div class="ttdeci">QString m_time</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dc4/musicabstractqueryrequest_8h_source.html#l00034">musicabstractqueryrequest.h:34</a></div></div>
-<div class="ttc" id="namespace_music_utils_1_1_codec_html_aad54c82cfaa63b854d28f1fe1ba4d34c"><div class="ttname"><a href="../../d5/d67/namespace_music_utils_1_1_codec.html#aad54c82cfaa63b854d28f1fe1ba4d34c">MusicUtils::Codec::toUtf8</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT const char * toUtf8(const QString &amp;str)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d48/musiccodecutils_8cpp_source.html#l00039">musiccodecutils.cpp:39</a></div></div>
 <div class="ttc" id="struct_music_results_item_html"><div class="ttname"><a href="../../d8/d62/struct_music_results_item.html">MusicResultsItem</a></div><div class="ttdoc">The class of the search song results data item. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/dc4/musicabstractqueryrequest_8h_source.html#l00051">musicabstractqueryrequest.h:51</a></div></div>
 <div class="ttc" id="class_music_m_v_radio_program_request_html_a330b1501ed1b7c2e76e8acc1cf5a34cf"><div class="ttname"><a href="../../d4/d74/class_music_m_v_radio_program_request.html#a330b1501ed1b7c2e76e8acc1cf5a34cf">MusicMVRadioProgramRequest::downLoadFinished</a></div><div class="ttdeci">virtual void downLoadFinished() override</div><div class="ttdef"><b>Definition:</b> <a href="../../da/df7/musicmvradioprogramrequest_8cpp_source.html#l00013">musicmvradioprogramrequest.cpp:13</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 21 2020 13:05:40 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 9 2021 16:57:23 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

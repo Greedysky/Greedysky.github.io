@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.3.0</span>
+   &#160;<span id="projectnumber">2.13.4.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -117,7 +117,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">if</span>(file.open(QFile::WriteOnly))</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            data.remove(0, data.indexOf(<span class="stringliteral">&quot;\r\n&quot;</span>));</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            data.insert(0, QString(<span class="stringliteral">&quot;dir %1freepats/&quot;</span>).arg(<a class="code" href="../../d8/d07/musicobject_8h.html#a54c0294e6176dafdc239dd0a2f12fca1">MAKE_CONFIG_DIR_FULL</a>).<a class="code" href="../../d5/d67/namespace_music_utils_1_1_codec.html#aad54c82cfaa63b854d28f1fe1ba4d34c">toUtf8</a>());</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            data.insert(0, QString(<span class="stringliteral">&quot;dir %1freepats/&quot;</span>).arg(<a class="code" href="../../d8/d07/musicobject_8h.html#a54c0294e6176dafdc239dd0a2f12fca1">MAKE_CONFIG_DIR_FULL</a>).toUtf8());</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            file.write(data);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
@@ -213,11 +213,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="namespace_music_utils_1_1_q_m_m_p_html_a91e3ecc272fb204668934f3c1b555665"><div class="ttname"><a href="../../dc/d03/namespace_music_utils_1_1_q_m_m_p.html#a91e3ecc272fb204668934f3c1b555665">MusicUtils::QMMP::pluginPath</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT QString pluginPath(const QString &amp;module, const QString &amp;format)</div><div class="ttdoc">qmmp incldue </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d26/musicqmmputils_8cpp_source.html#l00014">musicqmmputils.cpp:14</a></div></div>
 <div class="ttc" id="visual_8h_html"><div class="ttname"><a href="../../d9/d6d/visual_8h.html">visual.h</a></div></div>
 <div class="ttc" id="class_visual_html_a53ef32117764cf98c8bd87a084079cec"><div class="ttname"><a href="../../dc/d74/class_visual.html#a53ef32117764cf98c8bd87a084079cec">Visual::setEnabled</a></div><div class="ttdeci">static void setEnabled(VisualFactory *factory, bool enable=true)</div></div>
-<div class="ttc" id="namespace_music_utils_1_1_codec_html_aad54c82cfaa63b854d28f1fe1ba4d34c"><div class="ttname"><a href="../../d5/d67/namespace_music_utils_1_1_codec.html#aad54c82cfaa63b854d28f1fe1ba4d34c">MusicUtils::Codec::toUtf8</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT const char * toUtf8(const QString &amp;str)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d48/musiccodecutils_8cpp_source.html#l00039">musiccodecutils.cpp:39</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 21 2020 13:05:41 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 9 2021 16:57:24 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.3.0</span>
+   &#160;<span id="projectnumber">2.13.4.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -157,14 +157,14 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d9/db1/class_q_device_watcher_private.html#a392c4c26fc47df8eac38a23282097d6a">QDeviceWatcherPrivate::parseDeviceInfo</a>()</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{<span class="comment">//zDebug(&quot;%s active&quot;, qPrintable(QTime::currentTime().toString()));</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        QByteArray data;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#if CONFIG_SOCKETNOTIFIER</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="comment">//socket_notifier-&gt;setEnabled(false); //for win</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        data.resize(UEVENT_BUFFER_SIZE*2);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        data.fill(0);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordtype">size_t</span> len = read(socket_notifier-&gt;socket(), data.data(), UEVENT_BUFFER_SIZE*2);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="../../de/d87/qdevicewatcher__p_8h.html#a046fbc98aa04f27375d32c526e5f97ed">zDebug</a>(<span class="stringliteral">&quot;read fro socket %d bytes&quot;</span>, len);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        qDebug(<span class="stringliteral">&quot;read fro socket %d bytes&quot;</span>, len);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        data.resize(len);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="comment">//socket_notifier-&gt;setEnabled(true); //for win</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#elif CONFIG_TCPSOCKET</span></div>
@@ -194,7 +194,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                data.resize(UEVENT_BUFFER_SIZE*2);</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                data.fill(0);</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                <span class="keywordtype">size_t</span> len = recv(netlink_socket, data.data(), data.size(), 0);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <a class="code" href="../../de/d87/qdevicewatcher__p_8h.html#a046fbc98aa04f27375d32c526e5f97ed">zDebug</a>(<span class="stringliteral">&quot;read fro socket %d bytes&quot;</span>, len);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                qDebug(<span class="stringliteral">&quot;read fro socket %d bytes&quot;</span>, len);</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                data.resize(len);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                data = data.replace(0, <span class="charliteral">&#39;\n&#39;</span>).trimmed();</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                <span class="keywordflow">if</span> (buffer.isOpen())</div>
@@ -259,7 +259,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="comment">//QAbstractSocket *socket = new QAbstractSocket(QAbstractSocket::UnknownSocketType, this); //will not detect &quot;remove&quot;, why?</span></div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        tcp_socket = <span class="keyword">new</span> QTcpSocket(<span class="keyword">this</span>); <span class="comment">//works too</span></div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="keywordflow">if</span> (!tcp_socket-&gt;setSocketDescriptor(netlink_socket, QAbstractSocket::ConnectedState)) {</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                qWarning(<span class="stringliteral">&quot;Failed to assign native socket to QAbstractSocket: %s&quot;</span>, qPrintable(tcp_socket-&gt;errorString()));</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                qWarning(<span class="stringliteral">&quot;Failed to assign native socket to QAbstractSocket: %s&quot;</span>, <a class="code" href="../../d8/d30/qmmp_8h.html#a0dfbc877d5d936767641c34cc6f524ee">qPrintable</a>(tcp_socket-&gt;errorString()));</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                <span class="keyword">delete</span> tcp_socket;</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        }</div>
@@ -269,7 +269,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="keywordtype">void</span> QDeviceWatcherPrivate::parseLine(<span class="keyword">const</span> QByteArray &amp;line)</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;{</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <a class="code" href="../../de/d87/qdevicewatcher__p_8h.html#a046fbc98aa04f27375d32c526e5f97ed">zDebug</a>(<span class="stringliteral">&quot;%s&quot;</span>, line.constData());</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        qDebug(<span class="stringliteral">&quot;%s&quot;</span>, line.constData());</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="preprocessor">#define USE_REGEXP 0</span></div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="preprocessor">#if USE_REGEXP</span></div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        QRegExp rx(<span class="stringliteral">&quot;(\\w+)(?:@/.*/block/.*/)(\\w+)\\W*&quot;</span>);</div>
@@ -297,7 +297,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                <span class="keyword">event</span> = <span class="keyword">new</span> <a class="code" href="../../d0/db4/class_q_device_change_event.html">QDeviceChangeEvent</a>(<a class="code" href="../../d0/db4/class_q_device_change_event.html#a95395bb9d467c7fc5667c8502c65a3b9a284f0c83f5b05b4d19da9af77ec46de1">QDeviceChangeEvent::Change</a>, dev);</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        }</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <a class="code" href="../../de/d87/qdevicewatcher__p_8h.html#a046fbc98aa04f27375d32c526e5f97ed">zDebug</a>(<span class="stringliteral">&quot;%s %s&quot;</span>, qPrintable(action_str), qPrintable(dev));</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        qDebug(<span class="stringliteral">&quot;%s %s&quot;</span>, <a class="code" href="../../d8/d30/qmmp_8h.html#a0dfbc877d5d936767641c34cc6f524ee">qPrintable</a>(action_str), <a class="code" href="../../d8/d30/qmmp_8h.html#a0dfbc877d5d936767641c34cc6f524ee">qPrintable</a>(dev));</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <span class="keywordflow">if</span> (event != 0 &amp;&amp; !<a class="code" href="../../d9/db1/class_q_device_watcher_private.html#a5a370eb80faf353c335541283e455b7f">event_receivers</a>.isEmpty()) {</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="keywordflow">for</span>(QObject* obj : qAsConst(<a class="code" href="../../d9/db1/class_q_device_watcher_private.html#a5a370eb80faf353c335541283e455b7f">event_receivers</a>)) {</div>
@@ -307,10 +307,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;}</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="preprocessor">#endif //Q_OS_LINUX</span></div>
+<div class="ttc" id="qmmp_8h_html_a0dfbc877d5d936767641c34cc6f524ee"><div class="ttname"><a href="../../d8/d30/qmmp_8h.html#a0dfbc877d5d936767641c34cc6f524ee">qPrintable</a></div><div class="ttdeci">#define qPrintable(s)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d30/qmmp_8h_source.html#l00043">qmmp.h:43</a></div></div>
 <div class="ttc" id="class_q_device_watcher_private_html_a83f9f96895f2cd8f98d48a5ef22a102d"><div class="ttname"><a href="../../d9/db1/class_q_device_watcher_private.html#a83f9f96895f2cd8f98d48a5ef22a102d">QDeviceWatcherPrivate::emitDeviceAdded</a></div><div class="ttdeci">void emitDeviceAdded(const QString &amp;dev)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0f/qdevicewatcher_8cpp_source.html#l00048">qdevicewatcher.cpp:48</a></div></div>
 <div class="ttc" id="qdevicewatcher_8h_html"><div class="ttname"><a href="../../d4/d4a/qdevicewatcher_8h.html">qdevicewatcher.h</a></div></div>
 <div class="ttc" id="class_q_device_watcher_private_html_a392c4c26fc47df8eac38a23282097d6a"><div class="ttname"><a href="../../d9/db1/class_q_device_watcher_private.html#a392c4c26fc47df8eac38a23282097d6a">QDeviceWatcherPrivate::parseDeviceInfo</a></div><div class="ttdeci">void parseDeviceInfo()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/db1/qdevicewatcher__mac_8cpp_source.html#l00049">qdevicewatcher_mac.cpp:49</a></div></div>
-<div class="ttc" id="qdevicewatcher__p_8h_html_a046fbc98aa04f27375d32c526e5f97ed"><div class="ttname"><a href="../../de/d87/qdevicewatcher__p_8h.html#a046fbc98aa04f27375d32c526e5f97ed">zDebug</a></div><div class="ttdeci">#define zDebug(fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d87/qdevicewatcher__p_8h_source.html#l00040">qdevicewatcher_p.h:40</a></div></div>
 <div class="ttc" id="class_q_device_change_event_html_a95395bb9d467c7fc5667c8502c65a3b9a284f0c83f5b05b4d19da9af77ec46de1"><div class="ttname"><a href="../../d0/db4/class_q_device_change_event.html#a95395bb9d467c7fc5667c8502c65a3b9a284f0c83f5b05b4d19da9af77ec46de1">QDeviceChangeEvent::Change</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d4a/qdevicewatcher_8h_source.html#l00062">qdevicewatcher.h:62</a></div></div>
 <div class="ttc" id="class_q_device_watcher_private_html_aae86c1f1f256617bf5428a1aeae85940"><div class="ttname"><a href="../../d9/db1/class_q_device_watcher_private.html#aae86c1f1f256617bf5428a1aeae85940">QDeviceWatcherPrivate::start</a></div><div class="ttdeci">bool start()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/db1/qdevicewatcher__mac_8cpp_source.html#l00033">qdevicewatcher_mac.cpp:33</a></div></div>
 <div class="ttc" id="class_q_device_watcher_private_html_aee776fb4b91cbef5d2f115de46c68d47"><div class="ttname"><a href="../../d9/db1/class_q_device_watcher_private.html#aee776fb4b91cbef5d2f115de46c68d47">QDeviceWatcherPrivate::emitDeviceChanged</a></div><div class="ttdeci">void emitDeviceChanged(const QString &amp;dev)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d0f/qdevicewatcher_8cpp_source.html#l00056">qdevicewatcher.cpp:56</a></div></div>
@@ -320,13 +320,13 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_q_device_change_event_html_a95395bb9d467c7fc5667c8502c65a3b9acf455fb5b06c43e81b1a27d56474c904"><div class="ttname"><a href="../../d0/db4/class_q_device_change_event.html#a95395bb9d467c7fc5667c8502c65a3b9acf455fb5b06c43e81b1a27d56474c904">QDeviceChangeEvent::Remove</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d4a/qdevicewatcher_8h_source.html#l00062">qdevicewatcher.h:62</a></div></div>
 <div class="ttc" id="qdevicewatcher__p_8h_html"><div class="ttname"><a href="../../de/d87/qdevicewatcher__p_8h.html">qdevicewatcher_p.h</a></div></div>
 <div class="ttc" id="class_q_device_watcher_private_html_a1e04e89de3197e92280a1cb9b7877d23"><div class="ttname"><a href="../../d9/db1/class_q_device_watcher_private.html#a1e04e89de3197e92280a1cb9b7877d23">QDeviceWatcherPrivate::initialize</a></div><div class="ttdeci">bool initialize()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/db1/qdevicewatcher__mac_8cpp_source.html#l00054">qdevicewatcher_mac.cpp:54</a></div></div>
-<div class="ttc" id="class_q_device_watcher_private_html_a5a370eb80faf353c335541283e455b7f"><div class="ttname"><a href="../../d9/db1/class_q_device_watcher_private.html#a5a370eb80faf353c335541283e455b7f">QDeviceWatcherPrivate::event_receivers</a></div><div class="ttdeci">QList&lt; QObject * &gt; event_receivers</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d87/qdevicewatcher__p_8h_source.html#l00089">qdevicewatcher_p.h:89</a></div></div>
+<div class="ttc" id="class_q_device_watcher_private_html_a5a370eb80faf353c335541283e455b7f"><div class="ttname"><a href="../../d9/db1/class_q_device_watcher_private.html#a5a370eb80faf353c335541283e455b7f">QDeviceWatcherPrivate::event_receivers</a></div><div class="ttdeci">QList&lt; QObject * &gt; event_receivers</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d87/qdevicewatcher__p_8h_source.html#l00081">qdevicewatcher_p.h:81</a></div></div>
 <div class="ttc" id="class_q_device_watcher_private_html_a80545fcd70e272e25b232cb30af5cacd"><div class="ttname"><a href="../../d9/db1/class_q_device_watcher_private.html#a80545fcd70e272e25b232cb30af5cacd">QDeviceWatcherPrivate::~QDeviceWatcherPrivate</a></div><div class="ttdeci">~QDeviceWatcherPrivate()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/db1/qdevicewatcher__mac_8cpp_source.html#l00028">qdevicewatcher_mac.cpp:28</a></div></div>
 <div class="ttc" id="class_q_device_change_event_html_a95395bb9d467c7fc5667c8502c65a3b9a1a23ee441f0d2c2e8cf802b4059ac83c"><div class="ttname"><a href="../../d0/db4/class_q_device_change_event.html#a95395bb9d467c7fc5667c8502c65a3b9a1a23ee441f0d2c2e8cf802b4059ac83c">QDeviceChangeEvent::Add</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d4a/qdevicewatcher_8h_source.html#l00062">qdevicewatcher.h:62</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 21 2020 13:05:50 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 9 2021 16:57:41 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.3.0</span>
+   &#160;<span id="projectnumber">2.13.4.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -82,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">/* =================================================</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of the TTK Music Player project</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2020 Greedysky Studio</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2015 - 2021 Greedysky Studio</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * This program is free software; you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
@@ -206,8 +206,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="../../db/d84/class_music_abstract_move_resize_widget.html#a2fdce71d866ff4ce19e40304d4226bbd">eventFilter</a>(QObject *<span class="keywordtype">object</span>, QEvent *event) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keywordtype">void</span> setMusicPlayIndex();</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keywordtype">void</span> readXMLConfigFromText();</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="keywordtype">void</span> writeXMLConfigToText();</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keywordtype">void</span> readSystemConfigFromFile();</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="keywordtype">void</span> writeSystemConfigToFile();</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00329"></a><span class="lineno"><a class="line" href="../../db/def/class_music_application.html#ad1e3174e11364dcc636b4d66ba9b83bd">  329</a></span>&#160;    Ui::MusicApplication *<a class="code" href="../../db/def/class_music_application.html#ad1e3174e11364dcc636b4d66ba9b83bd">m_ui</a>;</div>
@@ -237,7 +237,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_application_html_a4ed19c276d57c557e6e3fd356f92d293"><div class="ttname"><a href="../../db/def/class_music_application.html#a4ed19c276d57c557e6e3fd356f92d293">MusicApplication::m_musicSongTreeWidget</a></div><div class="ttdeci">MusicSongsSummariziedWidget * m_musicSongTreeWidget</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d24/musicapplication_8h_source.html#l00335">musicapplication.h:335</a></div></div>
 <div class="ttc" id="class_music_application_html"><div class="ttname"><a href="../../db/def/class_music_application.html">MusicApplication</a></div><div class="ttdoc">The class of the app main widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d24/musicapplication_8h_source.html#l00040">musicapplication.h:40</a></div></div>
 <div class="ttc" id="class_music_abstract_move_resize_widget_html_a10f3bcc8a0dfffd609d4907bec5bfd31"><div class="ttname"><a href="../../db/d84/class_music_abstract_move_resize_widget.html#a10f3bcc8a0dfffd609d4907bec5bfd31">MusicAbstractMoveResizeWidget::mouseDoubleClickEvent</a></div><div class="ttdeci">virtual void mouseDoubleClickEvent(QMouseEvent *event) override</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d55/musicabstractmoveresizewidget_8cpp_source.html#l00033">musicabstractmoveresizewidget.cpp:33</a></div></div>
-<div class="ttc" id="ttkglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00154">ttkglobal.h:154</a></div></div>
+<div class="ttc" id="ttkglobal_8h_html_a5dc0d6a3b589488a5e20f4796d3c83f4"><div class="ttname"><a href="../../df/d7f/ttkglobal_8h.html#a5dc0d6a3b589488a5e20f4796d3c83f4">TTK_DECLARE_MODULE</a></div><div class="ttdeci">#define TTK_DECLARE_MODULE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d7f/ttkglobal_8h_source.html#l00162">ttkglobal.h:162</a></div></div>
 <div class="ttc" id="class_music_application_html_aa070bf1498c4962f041a0f4b5def922f"><div class="ttname"><a href="../../db/def/class_music_application.html#aa070bf1498c4962f041a0f4b5def922f">MusicApplication::m_applicationObject</a></div><div class="ttdeci">MusicApplicationObject * m_applicationObject</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d24/musicapplication_8h_source.html#l00340">musicapplication.h:340</a></div></div>
 <div class="ttc" id="class_music_player_html"><div class="ttname"><a href="../../dd/de1/class_music_player.html">MusicPlayer</a></div><div class="ttdoc">The class of the music player. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d60/musicplayer_8h_source.html#l00036">musicplayer.h:36</a></div></div>
 <div class="ttc" id="class_music_application_html_ad1e3174e11364dcc636b4d66ba9b83bd"><div class="ttname"><a href="../../db/def/class_music_application.html#ad1e3174e11364dcc636b4d66ba9b83bd">MusicApplication::m_ui</a></div><div class="ttdeci">Ui::MusicApplication * m_ui</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d24/musicapplication_8h_source.html#l00329">musicapplication.h:329</a></div></div>
@@ -261,7 +261,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 21 2020 13:05:37 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 9 2021 16:57:17 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

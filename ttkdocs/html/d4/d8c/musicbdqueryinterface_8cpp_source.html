@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.3.0</span>
+   &#160;<span id="projectnumber">2.13.4.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -99,7 +99,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">const</span> QUrl &amp;musicUrl = <a class="code" href="../../d6/d11/namespace_music_utils_1_1_algorithm.html#a5e5f071a5bb196d53c48fb2be855da67">MusicUtils::Algorithm::mdII</a>(<a class="code" href="../../d6/db1/musicbdqueryinterface_8h.html#a47717d84c3182afe454fe32d86777de0">BD_SONG_INFO_URL</a>, <span class="keyword">false</span>).arg(key).arg(eKey);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    request-&gt;setUrl(musicUrl);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    request-&gt;setRawHeader(<span class="stringliteral">&quot;User-Agent&quot;</span>, <a class="code" href="../../d6/d11/namespace_music_utils_1_1_algorithm.html#a5e5f071a5bb196d53c48fb2be855da67">MusicUtils::Algorithm::mdII</a>(<a class="code" href="../../d6/db1/musicbdqueryinterface_8h.html#a5b3a09f3ad209c613ad0e19a9af30900">BD_UA_URL</a>, <a class="code" href="../../d8/d63/musicalgorithmutils_8h.html#a7f3992659c79a4b6aa6daa4ade5ddd28">ALG_UA_KEY</a>, <span class="keyword">false</span>).<a class="code" href="../../d5/d67/namespace_music_utils_1_1_codec.html#aad54c82cfaa63b854d28f1fe1ba4d34c">toUtf8</a>());</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    request-&gt;setRawHeader(<span class="stringliteral">&quot;User-Agent&quot;</span>, <a class="code" href="../../d6/d11/namespace_music_utils_1_1_algorithm.html#a5e5f071a5bb196d53c48fb2be855da67">MusicUtils::Algorithm::mdII</a>(<a class="code" href="../../d6/db1/musicbdqueryinterface_8h.html#a5b3a09f3ad209c613ad0e19a9af30900">BD_UA_URL</a>, <a class="code" href="../../d8/d63/musicalgorithmutils_8h.html#a7f3992659c79a4b6aa6daa4ade5ddd28">ALG_UA_KEY</a>, <span class="keyword">false</span>).toUtf8());</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="../../df/dbc/namespace_music_object.html#ab14850088dfb96770578ff73eeb97bdd">MusicObject::setSslConfiguration</a>(request);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
@@ -223,7 +223,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    QNetworkRequest request;</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    request.setUrl(musicUrl);</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    request.setRawHeader(<span class="stringliteral">&quot;User-Agent&quot;</span>, <a class="code" href="../../d6/d11/namespace_music_utils_1_1_algorithm.html#a5e5f071a5bb196d53c48fb2be855da67">MusicUtils::Algorithm::mdII</a>(<a class="code" href="../../d6/db1/musicbdqueryinterface_8h.html#a5b3a09f3ad209c613ad0e19a9af30900">BD_UA_URL</a>, <a class="code" href="../../d8/d63/musicalgorithmutils_8h.html#a7f3992659c79a4b6aa6daa4ade5ddd28">ALG_UA_KEY</a>, <span class="keyword">false</span>).<a class="code" href="../../d5/d67/namespace_music_utils_1_1_codec.html#aad54c82cfaa63b854d28f1fe1ba4d34c">toUtf8</a>());</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    request.setRawHeader(<span class="stringliteral">&quot;User-Agent&quot;</span>, <a class="code" href="../../d6/d11/namespace_music_utils_1_1_algorithm.html#a5e5f071a5bb196d53c48fb2be855da67">MusicUtils::Algorithm::mdII</a>(<a class="code" href="../../d6/db1/musicbdqueryinterface_8h.html#a5b3a09f3ad209c613ad0e19a9af30900">BD_UA_URL</a>, <a class="code" href="../../d8/d63/musicalgorithmutils_8h.html#a7f3992659c79a4b6aa6daa4ade5ddd28">ALG_UA_KEY</a>, <span class="keyword">false</span>).toUtf8());</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <a class="code" href="../../df/dbc/namespace_music_object.html#ab14850088dfb96770578ff73eeb97bdd">MusicObject::setSslConfiguration</a>(&amp;request);</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    QNetworkAccessManager manager;</div>
@@ -284,7 +284,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    QNetworkRequest request;</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    request.setUrl(musicUrl);</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    request.setRawHeader(<span class="stringliteral">&quot;User-Agent&quot;</span>, <a class="code" href="../../d6/d11/namespace_music_utils_1_1_algorithm.html#a5e5f071a5bb196d53c48fb2be855da67">MusicUtils::Algorithm::mdII</a>(<a class="code" href="../../d6/db1/musicbdqueryinterface_8h.html#a5b3a09f3ad209c613ad0e19a9af30900">BD_UA_URL</a>, <a class="code" href="../../d8/d63/musicalgorithmutils_8h.html#a7f3992659c79a4b6aa6daa4ade5ddd28">ALG_UA_KEY</a>, <span class="keyword">false</span>).<a class="code" href="../../d5/d67/namespace_music_utils_1_1_codec.html#aad54c82cfaa63b854d28f1fe1ba4d34c">toUtf8</a>());</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    request.setRawHeader(<span class="stringliteral">&quot;User-Agent&quot;</span>, <a class="code" href="../../d6/d11/namespace_music_utils_1_1_algorithm.html#a5e5f071a5bb196d53c48fb2be855da67">MusicUtils::Algorithm::mdII</a>(<a class="code" href="../../d6/db1/musicbdqueryinterface_8h.html#a5b3a09f3ad209c613ad0e19a9af30900">BD_UA_URL</a>, <a class="code" href="../../d8/d63/musicalgorithmutils_8h.html#a7f3992659c79a4b6aa6daa4ade5ddd28">ALG_UA_KEY</a>, <span class="keyword">false</span>).toUtf8());</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <a class="code" href="../../df/dbc/namespace_music_object.html#ab14850088dfb96770578ff73eeb97bdd">MusicObject::setSslConfiguration</a>(&amp;request);</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    QNetworkAccessManager manager;</div>
@@ -381,11 +381,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="struct_music_object_1_1_music_song_information_html_a8c8564ad8b72baee38abdb5320dab4f3"><div class="ttname"><a href="../../d9/d32/struct_music_object_1_1_music_song_information.html#a8c8564ad8b72baee38abdb5320dab4f3">MusicObject::MusicSongInformation::m_songId</a></div><div class="ttdeci">QString m_songId</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00257">musicobject.h:257</a></div></div>
 <div class="ttc" id="struct_music_object_1_1_music_song_information_html"><div class="ttname"><a href="../../d9/d32/struct_music_object_1_1_music_song_information.html">MusicObject::MusicSongInformation</a></div><div class="ttdoc">The class of the music song information. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00254">musicobject.h:254</a></div></div>
 <div class="ttc" id="musicurlutils_8h_html"><div class="ttname"><a href="../../de/d91/musicurlutils_8h.html">musicurlutils.h</a></div></div>
-<div class="ttc" id="namespace_music_utils_1_1_codec_html_aad54c82cfaa63b854d28f1fe1ba4d34c"><div class="ttname"><a href="../../d5/d67/namespace_music_utils_1_1_codec.html#aad54c82cfaa63b854d28f1fe1ba4d34c">MusicUtils::Codec::toUtf8</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT const char * toUtf8(const QString &amp;str)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d48/musiccodecutils_8cpp_source.html#l00039">musiccodecutils.cpp:39</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 21 2020 13:05:38 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 9 2021 16:57:20 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

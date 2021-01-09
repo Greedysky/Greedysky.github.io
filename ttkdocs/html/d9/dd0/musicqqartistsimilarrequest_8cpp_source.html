@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.3.0</span>
+   &#160;<span id="projectnumber">2.13.4.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -101,7 +101,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    QNetworkRequest request;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    request.setUrl(musicUrl);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    request.setRawHeader(<span class="stringliteral">&quot;User-Agent&quot;</span>, <a class="code" href="../../d6/d11/namespace_music_utils_1_1_algorithm.html#a5e5f071a5bb196d53c48fb2be855da67">MusicUtils::Algorithm::mdII</a>(<a class="code" href="../../d4/d2e/musicqqqueryinterface_8h.html#a2dc1716055324937a2fcdfd2ebc6f223">QQ_UA_URL</a>, <a class="code" href="../../d8/d63/musicalgorithmutils_8h.html#a7f3992659c79a4b6aa6daa4ade5ddd28">ALG_UA_KEY</a>, <span class="keyword">false</span>).<a class="code" href="../../d5/d67/namespace_music_utils_1_1_codec.html#aad54c82cfaa63b854d28f1fe1ba4d34c">toUtf8</a>());</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    request.setRawHeader(<span class="stringliteral">&quot;User-Agent&quot;</span>, <a class="code" href="../../d6/d11/namespace_music_utils_1_1_algorithm.html#a5e5f071a5bb196d53c48fb2be855da67">MusicUtils::Algorithm::mdII</a>(<a class="code" href="../../d4/d2e/musicqqqueryinterface_8h.html#a2dc1716055324937a2fcdfd2ebc6f223">QQ_UA_URL</a>, <a class="code" href="../../d8/d63/musicalgorithmutils_8h.html#a7f3992659c79a4b6aa6daa4ade5ddd28">ALG_UA_KEY</a>, <span class="keyword">false</span>).toUtf8());</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="../../df/dbc/namespace_music_object.html#ab14850088dfb96770578ff73eeb97bdd">MusicObject::setSslConfiguration</a>(&amp;request);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="../../da/d9c/class_music_abstract_network.html#a016721dd4c30eca0104eddb8ff3e49f0">m_reply</a> = <a class="code" href="../../da/d9c/class_music_abstract_network.html#a2c9ff5c30aa033ed4a51541ce74724d4">m_manager</a>-&gt;get(request);</div>
@@ -185,13 +185,12 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_abstract_network_html_ae488726b8040e298df310c639909a2b1"><div class="ttname"><a href="../../da/d9c/class_music_abstract_network.html#ae488726b8040e298df310c639909a2b1">MusicAbstractNetwork::replyError</a></div><div class="ttdeci">virtual void replyError(QNetworkReply::NetworkError error)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d23/musicabstractnetwork_8cpp_source.html#l00032">musicabstractnetwork.cpp:32</a></div></div>
 <div class="ttc" id="class_music_abstract_network_html_a016721dd4c30eca0104eddb8ff3e49f0"><div class="ttname"><a href="../../da/d9c/class_music_abstract_network.html#a016721dd4c30eca0104eddb8ff3e49f0">MusicAbstractNetwork::m_reply</a></div><div class="ttdeci">QNetworkReply * m_reply</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/daa/musicabstractnetwork_8h_source.html#l00119">musicabstractnetwork.h:119</a></div></div>
 <div class="ttc" id="struct_music_results_item_html_a497a498dea61aea41e374ae3a6f2c29a"><div class="ttname"><a href="../../d8/d62/struct_music_results_item.html#a497a498dea61aea41e374ae3a6f2c29a">MusicResultsItem::m_coverUrl</a></div><div class="ttdeci">QString m_coverUrl</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dc4/musicabstractqueryrequest_8h_source.html#l00056">musicabstractqueryrequest.h:56</a></div></div>
-<div class="ttc" id="namespace_music_utils_1_1_codec_html_aad54c82cfaa63b854d28f1fe1ba4d34c"><div class="ttname"><a href="../../d5/d67/namespace_music_utils_1_1_codec.html#aad54c82cfaa63b854d28f1fe1ba4d34c">MusicUtils::Codec::toUtf8</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT const char * toUtf8(const QString &amp;str)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d48/musiccodecutils_8cpp_source.html#l00039">musiccodecutils.cpp:39</a></div></div>
 <div class="ttc" id="struct_music_results_item_html"><div class="ttname"><a href="../../d8/d62/struct_music_results_item.html">MusicResultsItem</a></div><div class="ttdoc">The class of the search song results data item. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/dc4/musicabstractqueryrequest_8h_source.html#l00051">musicabstractqueryrequest.h:51</a></div></div>
 <div class="ttc" id="struct_music_results_item_html_a0b3a7434a82b7d434beccb3bf9af470a"><div class="ttname"><a href="../../d8/d62/struct_music_results_item.html#a0b3a7434a82b7d434beccb3bf9af470a">MusicResultsItem::m_updateTime</a></div><div class="ttdeci">QString m_updateTime</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dc4/musicabstractqueryrequest_8h_source.html#l00059">musicabstractqueryrequest.h:59</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 21 2020 13:05:39 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 9 2021 16:57:22 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

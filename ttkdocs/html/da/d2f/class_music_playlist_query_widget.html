@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.3.0</span>
+   &#160;<span id="projectnumber">2.13.4.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -145,8 +145,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ab9bddba51a4a09a5f6f4c0aa990f7683"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d2f/class_music_playlist_query_widget.html#ab9bddba51a4a09a5f6f4c0aa990f7683">m_firstInit</a></td></tr>
-<tr class="separator:ab9bddba51a4a09a5f6f4c0aa990f7683"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76ef810e3524377de2302fa02060c4d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d2f/class_music_playlist_query_widget.html#a76ef810e3524377de2302fa02060c4d5">m_initialized</a></td></tr>
+<tr class="separator:a76ef810e3524377de2302fa02060c4d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99c9ff38056b894893b2fb9c85e12c21"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d2f/class_music_playlist_query_widget.html#a99c9ff38056b894893b2fb9c85e12c21">m_categoryChanged</a></td></tr>
 <tr class="separator:a99c9ff38056b894893b2fb9c85e12c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cc127bf0cc00eae4403b4f85f615d81"><td class="memItemLeft" align="right" valign="top">QGridLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d2f/class_music_playlist_query_widget.html#a9cc127bf0cc00eae4403b4f85f615d81">m_gridLayout</a></td></tr>
@@ -230,7 +230,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00117">117</a> of file <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html">musicplaylistquerywidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00181">createPlaylistItem()</a>, <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00135">m_categoryButton</a>, <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00131">m_categoryChanged</a>, <a class="el" href="../../d1/dcf/musicabstractitemquerywidget_8h_source.html#l00112">MusicAbstractItemQueryWidget::m_container</a>, <a class="el" href="../../d3/d73/musicdownloadqueryfactory_8h_source.html#l00125">M_DOWNLOAD_QUERY_PTR</a>, <a class="el" href="../../d1/dcf/musicabstractitemquerywidget_8h_source.html#l00115">MusicAbstractItemQueryWidget::m_downloadRequest</a>, <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00131">m_firstInit</a>, <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00132">m_gridLayout</a>, <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00134">m_infoWidget</a>, <a class="el" href="../../d1/dcf/musicabstractitemquerywidget_8h_source.html#l00109">MusicAbstractItemQueryWidget::m_mainWindow</a>, and <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00133">m_pagingWidgetObject</a>.</p>
+<p>References <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00181">createPlaylistItem()</a>, <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00135">m_categoryButton</a>, <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00131">m_categoryChanged</a>, <a class="el" href="../../d1/dcf/musicabstractitemquerywidget_8h_source.html#l00112">MusicAbstractItemQueryWidget::m_container</a>, <a class="el" href="../../d3/d73/musicdownloadqueryfactory_8h_source.html#l00125">M_DOWNLOAD_QUERY_PTR</a>, <a class="el" href="../../d1/dcf/musicabstractitemquerywidget_8h_source.html#l00115">MusicAbstractItemQueryWidget::m_downloadRequest</a>, <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00132">m_gridLayout</a>, <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00134">m_infoWidget</a>, <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00131">m_initialized</a>, <a class="el" href="../../d1/dcf/musicabstractitemquerywidget_8h_source.html#l00109">MusicAbstractItemQueryWidget::m_mainWindow</a>, and <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00133">m_pagingWidgetObject</a>.</p>
 
 </div>
 </div>
@@ -284,7 +284,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Set current index to playlist menu page. </p>
 
-<p>Definition at line <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00271">271</a> of file <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html">musicplaylistquerywidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00273">273</a> of file <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html">musicplaylistquerywidget.cpp</a>.</p>
 
 <p>References <a class="el" href="../../d1/dcf/musicabstractitemquerywidget_8h_source.html#l00112">MusicAbstractItemQueryWidget::m_container</a>, and <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00097">PLAYLIST_WINDOW_INDEX_0</a>.</p>
 
@@ -313,7 +313,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Paging widget button has changed. </p>
 
-<p>Definition at line <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00295">295</a> of file <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html">musicplaylistquerywidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00297">297</a> of file <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html">musicplaylistquerywidget.cpp</a>.</p>
 
 <p>References <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00215">MusicPagingWidgetObject::currentIndex()</a>, <a class="el" href="../../d0/d26/musicpagingrequest_8h_source.html#l00051">MusicPagingRequest::getPageSize()</a>, <a class="el" href="../../d0/d26/musicpagingrequest_8h_source.html#l00055">MusicPagingRequest::getPageTotal()</a>, <a class="el" href="../../d1/dcf/musicabstractitemquerywidget_8h_source.html#l00115">MusicAbstractItemQueryWidget::m_downloadRequest</a>, <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00132">m_gridLayout</a>, <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00133">m_pagingWidgetObject</a>, <a class="el" href="../../d1/dcf/musicabstractitemquerywidget_8h_source.html#l00116">MusicAbstractItemQueryWidget::m_resizeWidgets</a>, <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00121">MusicPagingWidgetObject::paging()</a>, and <a class="el" href="../../d6/d24/musicpagingrequest_8cpp_source.html#l00030">MusicPagingRequest::startToPage()</a>.</p>
 
@@ -344,7 +344,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Current category changed. </p>
 
-<p>Definition at line <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00276">276</a> of file <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html">musicplaylistquerywidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00278">278</a> of file <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html">musicplaylistquerywidget.cpp</a>.</p>
 
 <p>References <a class="el" href="../../d2/d25/musicplaylistquerycategorypopwidget_8cpp_source.html#l00095">MusicPlaylistFoundCategoryPopWidget::closeMenu()</a>, <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00135">m_categoryButton</a>, <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00131">m_categoryChanged</a>, <a class="el" href="../../d1/dcf/musicabstractitemquerywidget_8h_source.html#l00115">MusicAbstractItemQueryWidget::m_downloadRequest</a>, <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00132">m_gridLayout</a>, <a class="el" href="../../d4/dfd/musiccategoryconfigmanager_8h_source.html#l00029">MusicResultsCategoryItem::m_id</a>, <a class="el" href="../../d4/dfd/musiccategoryconfigmanager_8h_source.html#l00030">MusicResultsCategoryItem::m_name</a>, <a class="el" href="../../d1/dcf/musicabstractitemquerywidget_8h_source.html#l00116">MusicAbstractItemQueryWidget::m_resizeWidgets</a>, <a class="el" href="../../d1/dcf/musicabstractitemquerywidget_8h_source.html#l00108">MusicAbstractItemQueryWidget::m_songNameFull</a>, <a class="el" href="../../db/dc4/musicabstractqueryrequest_8h_source.html#l00110">MusicAbstractQueryRequest::OtherQuery</a>, and <a class="el" href="../../de/dcf/class_music_abstract_query_request.html#abdde181bd671d47f443b25137d4a05cf">MusicAbstractQueryRequest::startToSearch()</a>.</p>
 
@@ -375,7 +375,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00181">181</a> of file <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html">musicplaylistquerywidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00295">buttonClicked()</a>, <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00028">MusicPagingWidgetObject::createPagingWidget()</a>, <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00255">currentPlaylistClicked()</a>, <a class="el" href="../../d0/d26/musicpagingrequest_8h_source.html#l00051">MusicPagingRequest::getPageSize()</a>, <a class="el" href="../../d0/d26/musicpagingrequest_8h_source.html#l00055">MusicPagingRequest::getPageTotal()</a>, <a class="el" href="../../db/dc4/musicabstractqueryrequest_8h_source.html#l00167">MusicAbstractQueryRequest::getQueryServer()</a>, <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00016">LINE_SPACING_SIZE</a>, <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00135">m_categoryButton</a>, <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00131">m_categoryChanged</a>, <a class="el" href="../../d1/dcf/musicabstractitemquerywidget_8h_source.html#l00112">MusicAbstractItemQueryWidget::m_container</a>, <a class="el" href="../../d1/dcf/musicabstractitemquerywidget_8h_source.html#l00115">MusicAbstractItemQueryWidget::m_downloadRequest</a>, <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00131">m_firstInit</a>, <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00132">m_gridLayout</a>, <a class="el" href="../../d1/dcf/musicabstractitemquerywidget_8h_source.html#l00109">MusicAbstractItemQueryWidget::m_mainWindow</a>, <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00133">m_pagingWidgetObject</a>, <a class="el" href="../../d1/dcf/musicabstractitemquerywidget_8h_source.html#l00116">MusicAbstractItemQueryWidget::m_resizeWidgets</a>, <a class="el" href="../../d1/dcf/musicabstractitemquerywidget_8h_source.html#l00111">MusicAbstractItemQueryWidget::m_statusLabel</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00049">MusicUIObject::MQSSColorStyle06</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00055">MusicUIObject::MQSSColorStyle08</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00325">MusicUIObject::MQSSScrollBarStyle01</a>, <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00095">MusicPagingWidgetObject::reset()</a>, <a class="el" href="../../d2/d25/musicplaylistquerycategorypopwidget_8cpp_source.html#l00064">MusicPlaylistFoundCategoryPopWidget::setCategory()</a>, <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00061">MusicPlaylistQueryItemWidget::setMusicResultsItem()</a>, and <a class="el" href="../../df/d7f/ttkglobal_8h_source.html#l00086">TTKStatic_cast</a>.</p>
+<p>References <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00297">buttonClicked()</a>, <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00028">MusicPagingWidgetObject::createPagingWidget()</a>, <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00257">currentPlaylistClicked()</a>, <a class="el" href="../../d0/d26/musicpagingrequest_8h_source.html#l00051">MusicPagingRequest::getPageSize()</a>, <a class="el" href="../../d0/d26/musicpagingrequest_8h_source.html#l00055">MusicPagingRequest::getPageTotal()</a>, <a class="el" href="../../db/dc4/musicabstractqueryrequest_8h_source.html#l00167">MusicAbstractQueryRequest::getQueryServer()</a>, <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00016">LINE_SPACING_SIZE</a>, <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00135">m_categoryButton</a>, <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00131">m_categoryChanged</a>, <a class="el" href="../../d1/dcf/musicabstractitemquerywidget_8h_source.html#l00112">MusicAbstractItemQueryWidget::m_container</a>, <a class="el" href="../../d1/dcf/musicabstractitemquerywidget_8h_source.html#l00115">MusicAbstractItemQueryWidget::m_downloadRequest</a>, <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00132">m_gridLayout</a>, <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00131">m_initialized</a>, <a class="el" href="../../d1/dcf/musicabstractitemquerywidget_8h_source.html#l00109">MusicAbstractItemQueryWidget::m_mainWindow</a>, <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00133">m_pagingWidgetObject</a>, <a class="el" href="../../d1/dcf/musicabstractitemquerywidget_8h_source.html#l00116">MusicAbstractItemQueryWidget::m_resizeWidgets</a>, <a class="el" href="../../d1/dcf/musicabstractitemquerywidget_8h_source.html#l00111">MusicAbstractItemQueryWidget::m_statusLabel</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00049">MusicUIObject::MQSSColorStyle06</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00055">MusicUIObject::MQSSColorStyle08</a>, <a class="el" href="../../d0/deb/musicuiobject_8h_source.html#l00325">MusicUIObject::MQSSScrollBarStyle01</a>, <a class="el" href="../../d9/d6b/musicpagingwidgetobject_8cpp_source.html#l00095">MusicPagingWidgetObject::reset()</a>, <a class="el" href="../../d2/d25/musicplaylistquerycategorypopwidget_8cpp_source.html#l00064">MusicPlaylistFoundCategoryPopWidget::setCategory()</a>, <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00061">MusicPlaylistQueryItemWidget::setMusicResultsItem()</a>, and <a class="el" href="../../df/d7f/ttkglobal_8h_source.html#l00094">TTKStatic_cast</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00117">MusicPlaylistQueryWidget()</a>.</p>
 
@@ -404,9 +404,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Current play list clicked. </p>
 
-<p>Definition at line <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00255">255</a> of file <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html">musicplaylistquerywidget.cpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00257">257</a> of file <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html">musicplaylistquerywidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../da/d9d/class_music_query_playlist_request.html#ae65d61440f318964fdf10d7ee9e6d6b8">MusicQueryPlaylistRequest::getPlaylistInfo()</a>, <a class="el" href="../../d1/dcf/musicabstractitemquerywidget_8h_source.html#l00112">MusicAbstractItemQueryWidget::m_container</a>, <a class="el" href="../../d3/d73/musicdownloadqueryfactory_8h_source.html#l00125">M_DOWNLOAD_QUERY_PTR</a>, <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00134">m_infoWidget</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00098">PLAYLIST_WINDOW_INDEX_1</a>, <a class="el" href="../../dd/d3c/musicplaylistqueryinfowidget_8cpp_source.html#l00059">MusicPlaylistQueryInfoWidget::setMusicResultsItem()</a>, <a class="el" href="../../dd/d3c/musicplaylistqueryinfowidget_8cpp_source.html#l00251">MusicPlaylistQueryInfoWidget::setQueryInput()</a>, and <a class="el" href="../../df/d7f/ttkglobal_8h_source.html#l00086">TTKStatic_cast</a>.</p>
+<p>References <a class="el" href="../../da/d9d/class_music_query_playlist_request.html#ae65d61440f318964fdf10d7ee9e6d6b8">MusicQueryPlaylistRequest::getPlaylistInfo()</a>, <a class="el" href="../../d1/dcf/musicabstractitemquerywidget_8h_source.html#l00112">MusicAbstractItemQueryWidget::m_container</a>, <a class="el" href="../../d3/d73/musicdownloadqueryfactory_8h_source.html#l00125">M_DOWNLOAD_QUERY_PTR</a>, <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00134">m_infoWidget</a>, <a class="el" href="../../d2/d77/musicotherdefine_8h_source.html#l00098">PLAYLIST_WINDOW_INDEX_1</a>, <a class="el" href="../../dd/d3c/musicplaylistqueryinfowidget_8cpp_source.html#l00059">MusicPlaylistQueryInfoWidget::setMusicResultsItem()</a>, <a class="el" href="../../dd/d3c/musicplaylistqueryinfowidget_8cpp_source.html#l00251">MusicPlaylistQueryInfoWidget::setQueryInput()</a>, and <a class="el" href="../../df/d7f/ttkglobal_8h_source.html#l00094">TTKStatic_cast</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00181">createPlaylistItem()</a>, and <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00150">setSongNameById()</a>.</p>
 
@@ -502,7 +502,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00150">150</a> of file <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html">musicplaylistquerywidget.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00255">currentPlaylistClicked()</a>, <a class="el" href="../../db/dc4/musicabstractqueryrequest_8h_source.html#l00053">MusicResultsItem::m_id</a>, and <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00144">setSongName()</a>.</p>
+<p>References <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00257">currentPlaylistClicked()</a>, <a class="el" href="../../db/dc4/musicabstractqueryrequest_8h_source.html#l00053">MusicResultsItem::m_id</a>, and <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00144">setSongName()</a>.</p>
 
 <p>Referenced by <a class="el" href="../../dc/d39/musicrightareawidget_8cpp_source.html#l00643">MusicRightAreaWidget::musicPlaylistFound()</a>.</p>
 
@@ -529,7 +529,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00135">135</a> of file <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html">musicplaylistquerywidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00276">categoryChanged()</a>, <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00181">createPlaylistItem()</a>, <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00117">MusicPlaylistQueryWidget()</a>, and <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00135">~MusicPlaylistQueryWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00278">categoryChanged()</a>, <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00181">createPlaylistItem()</a>, <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00117">MusicPlaylistQueryWidget()</a>, and <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00135">~MusicPlaylistQueryWidget()</a>.</p>
 
 </div>
 </div>
@@ -553,31 +553,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00131">131</a> of file <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html">musicplaylistquerywidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00276">categoryChanged()</a>, <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00181">createPlaylistItem()</a>, and <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00117">MusicPlaylistQueryWidget()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab9bddba51a4a09a5f6f4c0aa990f7683"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool MusicPlaylistQueryWidget::m_firstInit</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00131">131</a> of file <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html">musicplaylistquerywidget.h</a>.</p>
-
-<p>Referenced by <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00181">createPlaylistItem()</a>, and <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00117">MusicPlaylistQueryWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00278">categoryChanged()</a>, <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00181">createPlaylistItem()</a>, and <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00117">MusicPlaylistQueryWidget()</a>.</p>
 
 </div>
 </div>
@@ -601,7 +577,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00132">132</a> of file <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html">musicplaylistquerywidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00295">buttonClicked()</a>, <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00276">categoryChanged()</a>, <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00181">createPlaylistItem()</a>, <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00117">MusicPlaylistQueryWidget()</a>, <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00159">resizeWindow()</a>, and <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00135">~MusicPlaylistQueryWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00297">buttonClicked()</a>, <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00278">categoryChanged()</a>, <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00181">createPlaylistItem()</a>, <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00117">MusicPlaylistQueryWidget()</a>, <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00159">resizeWindow()</a>, and <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00135">~MusicPlaylistQueryWidget()</a>.</p>
 
 </div>
 </div>
@@ -625,7 +601,31 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00134">134</a> of file <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html">musicplaylistquerywidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00255">currentPlaylistClicked()</a>, <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00117">MusicPlaylistQueryWidget()</a>, <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00159">resizeWindow()</a>, and <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00135">~MusicPlaylistQueryWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00257">currentPlaylistClicked()</a>, <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00117">MusicPlaylistQueryWidget()</a>, <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00159">resizeWindow()</a>, and <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00135">~MusicPlaylistQueryWidget()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a76ef810e3524377de2302fa02060c4d5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MusicPlaylistQueryWidget::m_initialized</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00131">131</a> of file <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html">musicplaylistquerywidget.h</a>.</p>
+
+<p>Referenced by <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00181">createPlaylistItem()</a>, and <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00117">MusicPlaylistQueryWidget()</a>.</p>
 
 </div>
 </div>
@@ -649,7 +649,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html#l00133">133</a> of file <a class="el" href="../../d7/dcf/musicplaylistquerywidget_8h_source.html">musicplaylistquerywidget.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00295">buttonClicked()</a>, <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00181">createPlaylistItem()</a>, <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00117">MusicPlaylistQueryWidget()</a>, and <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00135">~MusicPlaylistQueryWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00297">buttonClicked()</a>, <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00181">createPlaylistItem()</a>, <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00117">MusicPlaylistQueryWidget()</a>, and <a class="el" href="../../d4/d1c/musicplaylistquerywidget_8cpp_source.html#l00135">~MusicPlaylistQueryWidget()</a>.</p>
 
 </div>
 </div>
@@ -660,7 +660,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 21 2020 13:06:11 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 9 2021 16:58:08 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
