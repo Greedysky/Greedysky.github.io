@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.4.0</span>
+   &#160;<span id="projectnumber">2.14.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -121,7 +121,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">bool</span> addMusicLists(<span class="keyword">const</span> MusicSongItems &amp;names);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> appendMusicLists(<span class="keyword">const</span> MusicSongItems &amp;names);</div>
 <div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="../../db/de9/class_music_songs_summarizied_widget.html#adb48d37435472824f87ca09080edd86d">   59</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> MusicSongItems&amp; <a class="code" href="../../db/de9/class_music_songs_summarizied_widget.html#adb48d37435472824f87ca09080edd86d">getMusicLists</a>()<span class="keyword"> const  </span>{ <span class="keywordflow">return</span> m_songItems; }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> importMusicSongsByPath(QStringList &amp;filelist);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> importMusicSongsByPath(<span class="keyword">const</span> QStringList &amp;files);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    QStringList getMusicSongsFileName(<span class="keywordtype">int</span> index) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    QStringList getMusicSongsFilePath(<span class="keywordtype">int</span> index) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">int</span> mapSongIndexByFilePath(<span class="keywordtype">int</span> toolIndex, <span class="keyword">const</span> QString &amp;path) <span class="keyword">const</span>;</div>
@@ -222,7 +222,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_songs_summarizied_widget_html_abc90bd3b9540b8636dfa560c5e4bae00"><div class="ttname"><a href="../../db/de9/class_music_songs_summarizied_widget.html#abc90bd3b9540b8636dfa560c5e4bae00">MusicSongsSummariziedWidget::m_listFunctionWidget</a></div><div class="ttdeci">MusicSongsListFunctionWidget * m_listFunctionWidget</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00299">musicsongssummariziedwidget.h:299</a></div></div>
 <div class="ttc" id="class_music_songs_summarizied_widget_html_a0da4adc27a2c2a584bf7175f316d4752"><div class="ttname"><a href="../../db/de9/class_music_songs_summarizied_widget.html#a0da4adc27a2c2a584bf7175f316d4752">MusicSongsSummariziedWidget::m_searchFileListIndex</a></div><div class="ttdeci">int m_searchFileListIndex</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00291">musicsongssummariziedwidget.h:291</a></div></div>
 <div class="ttc" id="class_music_songs_tool_box_widget_html"><div class="ttname"><a href="../../d7/ded/class_music_songs_tool_box_widget.html">MusicSongsToolBoxWidget</a></div><div class="ttdoc">The class of the tool box widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d35/musicsongstoolboxwidget_8h_source.html#l00235">musicsongstoolboxwidget.h:235</a></div></div>
-<div class="ttc" id="struct_music_song_item_html"><div class="ttname"><a href="../../d3/d40/struct_music_song_item.html">MusicSongItem</a></div><div class="ttdoc">The class of the music song item. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d03/musicsong_8h_source.html#l00203">musicsong.h:203</a></div></div>
+<div class="ttc" id="struct_music_song_item_html"><div class="ttname"><a href="../../d3/d40/struct_music_song_item.html">MusicSongItem</a></div><div class="ttdoc">The class of the music song item. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d03/musicsong_8h_source.html#l00204">musicsong.h:204</a></div></div>
 <div class="ttc" id="class_music_songs_summarizied_widget_html_ae874dc210b9f157fc5d58380c1599dcd"><div class="ttname"><a href="../../db/de9/class_music_songs_summarizied_widget.html#ae874dc210b9f157fc5d58380c1599dcd">MusicSongsSummariziedWidget::m_searchfileListCache</a></div><div class="ttdeci">TTKIntListMap m_searchfileListCache</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00297">musicsongssummariziedwidget.h:297</a></div></div>
 <div class="ttc" id="class_music_songs_summarizied_widget_html"><div class="ttname"><a href="../../db/de9/class_music_songs_summarizied_widget.html">MusicSongsSummariziedWidget</a></div><div class="ttdoc">The class of the songs summarizied widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00036">musicsongssummariziedwidget.h:36</a></div></div>
 <div class="ttc" id="class_music_songs_summarizied_widget_html_a64532beb546670ccf0335fbae6ab796e"><div class="ttname"><a href="../../db/de9/class_music_songs_summarizied_widget.html#a64532beb546670ccf0335fbae6ab796e">MusicSongsSummariziedWidget::m_listMaskWidget</a></div><div class="ttdeci">MusicSongsToolBoxMaskWidget * m_listMaskWidget</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/db6/musicsongssummariziedwidget_8h_source.html#l00296">musicsongssummariziedwidget.h:296</a></div></div>
@@ -234,7 +234,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 9 2021 16:57:27 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 27 2021 14:10:33 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.4.0</span>
+   &#160;<span id="projectnumber">2.14.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -150,13 +150,13 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    connect(<a class="code" href="../../da/d05/class_music_song_dlna_transfer_widget.html#aba6cd78fc277800b8f8fff6ff5a0e31d">m_ui</a>-&gt;refreshButton, SIGNAL(clicked()), SLOT(<a class="code" href="../../da/d05/class_music_song_dlna_transfer_widget.html#aa4bf78b95f0e2072b9696c3a639114c8">startToScan</a>()));</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    connect(<a class="code" href="../../da/d05/class_music_song_dlna_transfer_widget.html#a5fe7c0d5e626d95244f6f8db8147db1a">m_dlnaFinder</a>, SIGNAL(finished()), SLOT(<a class="code" href="../../da/d05/class_music_song_dlna_transfer_widget.html#aed43ae951195bb430194dc14fbbceba6">scanFinished</a>()));</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="../../d8/dcd/musicconnectionpool_8h.html#abe02d07e21afea398afe83b4299238c0">M_CONNECTION_PTR</a>-&gt;setValue(getClassName(), <span class="keyword">this</span>);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="../../d8/dcd/musicconnectionpool_8h.html#abe02d07e21afea398afe83b4299238c0">M_CONNECTION_PTR</a>-&gt;poolConnect(getClassName(), MusicSongsSummariziedWidget::getClassName());</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="../../d8/dcd/musicconnectionpool_8h.html#a1d58a3fd1b35d37e6f1ef8e0edf3cd36">G_CONNECTION_PTR</a>-&gt;setValue(getClassName(), <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="../../d8/dcd/musicconnectionpool_8h.html#a1d58a3fd1b35d37e6f1ef8e0edf3cd36">G_CONNECTION_PTR</a>-&gt;poolConnect(getClassName(), MusicSongsSummariziedWidget::getClassName());</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="../../da/d05/class_music_song_dlna_transfer_widget.html#a56ab94997f102421c5f4840771640e58">   78</a></span>&#160;<a class="code" href="../../da/d05/class_music_song_dlna_transfer_widget.html#a56ab94997f102421c5f4840771640e58">MusicSongDlnaTransferWidget::~MusicSongDlnaTransferWidget</a>()</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="../../d8/dcd/musicconnectionpool_8h.html#abe02d07e21afea398afe83b4299238c0">M_CONNECTION_PTR</a>-&gt;removeValue(getClassName());</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="../../d8/dcd/musicconnectionpool_8h.html#a1d58a3fd1b35d37e6f1ef8e0edf3cd36">G_CONNECTION_PTR</a>-&gt;removeValue(getClassName());</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">delete</span> <a class="code" href="../../da/d05/class_music_song_dlna_transfer_widget.html#a5fe7c0d5e626d95244f6f8db8147db1a">m_dlnaFinder</a>;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">delete</span> <a class="code" href="../../da/d05/class_music_song_dlna_transfer_widget.html#aba6cd78fc277800b8f8fff6ff5a0e31d">m_ui</a>;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
@@ -258,6 +258,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="ioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="../../d2/db7/ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/db7/ioapi_8h_source.html#l00136">ioapi.h:136</a></div></div>
 <div class="ttc" id="class_q_dlna_client_html"><div class="ttname"><a href="../../d0/d46/class_q_dlna_client.html">QDlnaClient</a></div><div class="ttdoc">The class of the dlna client. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d3d/qdlnaclient_8h_source.html#l00029">qdlnaclient.h:29</a></div></div>
 <div class="ttc" id="class_q_dlna_finder_html"><div class="ttname"><a href="../../da/d6d/class_q_dlna_finder.html">QDlnaFinder</a></div><div class="ttdoc">The class of the dlna finder. </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d00/qdlnafinder_8h_source.html#l00031">qdlnafinder.h:31</a></div></div>
+<div class="ttc" id="musicconnectionpool_8h_html_a1d58a3fd1b35d37e6f1ef8e0edf3cd36"><div class="ttname"><a href="../../d8/dcd/musicconnectionpool_8h.html#a1d58a3fd1b35d37e6f1ef8e0edf3cd36">G_CONNECTION_PTR</a></div><div class="ttdeci">#define G_CONNECTION_PTR</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dcd/musicconnectionpool_8h_source.html#l00090">musicconnectionpool.h:90</a></div></div>
 <div class="ttc" id="class_music_song_dlna_transfer_widget_html_aba6cd78fc277800b8f8fff6ff5a0e31d"><div class="ttname"><a href="../../da/d05/class_music_song_dlna_transfer_widget.html#aba6cd78fc277800b8f8fff6ff5a0e31d">MusicSongDlnaTransferWidget::m_ui</a></div><div class="ttdeci">Ui::MusicSongDlnaTransferWidget * m_ui</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de1/musicsongdlnatransferwidget_8h_source.html#l00088">musicsongdlnatransferwidget.h:88</a></div></div>
 <div class="ttc" id="class_q_dlna_finder_html_af92899f631225eea7dcb483bf85fa1ef"><div class="ttname"><a href="../../da/d6d/class_q_dlna_finder.html#af92899f631225eea7dcb483bf85fa1ef">QDlnaFinder::clientNames</a></div><div class="ttdeci">QStringList clientNames() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd1/qdlnafinder_8cpp_source.html#l00099">qdlnafinder.cpp:99</a></div></div>
 <div class="ttc" id="qdlnaclient_8h_html"><div class="ttname"><a href="../../d8/d3d/qdlnaclient_8h.html">qdlnaclient.h</a></div></div>
@@ -278,7 +279,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="musicsongdlnatransferwidget_8h_html"><div class="ttname"><a href="../../d4/de1/musicsongdlnatransferwidget_8h.html">musicsongdlnatransferwidget.h</a></div></div>
 <div class="ttc" id="class_music_song_dlna_transfer_widget_html_af0096038ee4e53431b34317c74b2098e"><div class="ttname"><a href="../../da/d05/class_music_song_dlna_transfer_widget.html#af0096038ee4e53431b34317c74b2098e">MusicSongDlnaTransferWidget::positionChanged</a></div><div class="ttdeci">void positionChanged(qint64 position)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dcc/musicsongdlnatransferwidget_8cpp_source.html#l00108">musicsongdlnatransferwidget.cpp:108</a></div></div>
 <div class="ttc" id="namespace_music_u_i_object_html_a9debd853b595a4b684bfe88e1ed5c3d3"><div class="ttname"><a href="../../d2/dc5/namespace_music_u_i_object.html#a9debd853b595a4b684bfe88e1ed5c3d3">MusicUIObject::MQSSBackgroundStyle01</a></div><div class="ttdeci">const QString MQSSBackgroundStyle01</div><div class="ttdoc">Background. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/deb/musicuiobject_8h_source.html#l00081">musicuiobject.h:81</a></div></div>
-<div class="ttc" id="musicconnectionpool_8h_html_abe02d07e21afea398afe83b4299238c0"><div class="ttname"><a href="../../d8/dcd/musicconnectionpool_8h.html#abe02d07e21afea398afe83b4299238c0">M_CONNECTION_PTR</a></div><div class="ttdeci">#define M_CONNECTION_PTR</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dcd/musicconnectionpool_8h_source.html#l00090">musicconnectionpool.h:90</a></div></div>
 <div class="ttc" id="class_music_song_dlna_transfer_widget_html_ac5d977348242fe62dd3f58cab6c20eb7"><div class="ttname"><a href="../../da/d05/class_music_song_dlna_transfer_widget.html#ac5d977348242fe62dd3f58cab6c20eb7">MusicSongDlnaTransferWidget::show</a></div><div class="ttdeci">void show()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dcc/musicsongdlnatransferwidget_8cpp_source.html#l00167">musicsongdlnatransferwidget.cpp:167</a></div></div>
 <div class="ttc" id="musicconnectionpool_8h_html"><div class="ttname"><a href="../../d8/dcd/musicconnectionpool_8h.html">musicconnectionpool.h</a></div></div>
 <div class="ttc" id="class_music_song_dlna_transfer_widget_html_aed43ae951195bb430194dc14fbbceba6"><div class="ttname"><a href="../../da/d05/class_music_song_dlna_transfer_widget.html#aed43ae951195bb430194dc14fbbceba6">MusicSongDlnaTransferWidget::scanFinished</a></div><div class="ttdeci">void scanFinished()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dcc/musicsongdlnatransferwidget_8cpp_source.html#l00090">musicsongdlnatransferwidget.cpp:90</a></div></div>
@@ -297,7 +297,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 9 2021 16:57:29 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 27 2021 14:10:33 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

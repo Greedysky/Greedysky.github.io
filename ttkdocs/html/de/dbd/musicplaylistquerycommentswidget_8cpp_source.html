@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.13.4.0</span>
+   &#160;<span id="projectnumber">2.14.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -90,7 +90,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="../../df/dfe/class_music_comments_widget.html#ad433d5491f783302cb18094664f53942">MusicCommentsWidget::initWidget</a>(isPain);</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="../../df/dfe/class_music_comments_widget.html#a83ef985b52353ba8bfb8a786f871003b">m_downloadRequest</a> = <a class="code" href="../../d3/d73/musicdownloadqueryfactory_8h.html#af0e4dd2e431c1734645f26565541bdfb">M_DOWNLOAD_QUERY_PTR</a>-&gt;getPlaylistCommentRequest(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="../../df/dfe/class_music_comments_widget.html#a83ef985b52353ba8bfb8a786f871003b">m_downloadRequest</a> = <a class="code" href="../../d3/d73/musicdownloadqueryfactory_8h.html#a6374947b5fe6aef0f91bc4818280f0ff">G_DOWNLOAD_QUERY_PTR</a>-&gt;getPlaylistCommentRequest(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    connect(<a class="code" href="../../df/dfe/class_music_comments_widget.html#a83ef985b52353ba8bfb8a786f871003b">m_downloadRequest</a>, SIGNAL(<a class="code" href="../../df/dfe/class_music_comments_widget.html#afafba61b788efd8e25d7ca80fc306a44">createSearchedItem</a>(<a class="code" href="../../d8/d62/struct_music_results_item.html">MusicResultsItem</a>)), SLOT(<a class="code" href="../../df/dfe/class_music_comments_widget.html#afafba61b788efd8e25d7ca80fc306a44">createSearchedItem</a>(<a class="code" href="../../d8/d62/struct_music_results_item.html">MusicResultsItem</a>)));</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
 <div class="ttc" id="class_music_comments_widget_html"><div class="ttname"><a href="../../df/dfe/class_music_comments_widget.html">MusicCommentsWidget</a></div><div class="ttdoc">The class of the song comment widget. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/dfd/musiccommentswidget_8h_source.html#l00064">musiccommentswidget.h:64</a></div></div>
@@ -98,7 +98,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_playlist_query_comments_widget_html_aa7ce409f4895bb23ed850a25b89206fc"><div class="ttname"><a href="../../db/ddb/class_music_playlist_query_comments_widget.html#aa7ce409f4895bb23ed850a25b89206fc">MusicPlaylistQueryCommentsWidget::initWidget</a></div><div class="ttdeci">virtual void initWidget(bool isPain) override</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dbd/musicplaylistquerycommentswidget_8cpp_source.html#l00010">musicplaylistquerycommentswidget.cpp:10</a></div></div>
 <div class="ttc" id="class_music_comments_widget_html_a83ef985b52353ba8bfb8a786f871003b"><div class="ttname"><a href="../../df/dfe/class_music_comments_widget.html#a83ef985b52353ba8bfb8a786f871003b">MusicCommentsWidget::m_downloadRequest</a></div><div class="ttdeci">MusicCommentsRequest * m_downloadRequest</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dfd/musiccommentswidget_8h_source.html#l00127">musiccommentswidget.h:127</a></div></div>
 <div class="ttc" id="musicplaylistquerycommentswidget_8h_html"><div class="ttname"><a href="../../d9/da3/musicplaylistquerycommentswidget_8h.html">musicplaylistquerycommentswidget.h</a></div></div>
-<div class="ttc" id="musicdownloadqueryfactory_8h_html_af0e4dd2e431c1734645f26565541bdfb"><div class="ttname"><a href="../../d3/d73/musicdownloadqueryfactory_8h.html#af0e4dd2e431c1734645f26565541bdfb">M_DOWNLOAD_QUERY_PTR</a></div><div class="ttdeci">#define M_DOWNLOAD_QUERY_PTR</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d73/musicdownloadqueryfactory_8h_source.html#l00125">musicdownloadqueryfactory.h:125</a></div></div>
+<div class="ttc" id="musicdownloadqueryfactory_8h_html_a6374947b5fe6aef0f91bc4818280f0ff"><div class="ttname"><a href="../../d3/d73/musicdownloadqueryfactory_8h.html#a6374947b5fe6aef0f91bc4818280f0ff">G_DOWNLOAD_QUERY_PTR</a></div><div class="ttdeci">#define G_DOWNLOAD_QUERY_PTR</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d73/musicdownloadqueryfactory_8h_source.html#l00120">musicdownloadqueryfactory.h:120</a></div></div>
 <div class="ttc" id="class_music_comments_widget_html_afafba61b788efd8e25d7ca80fc306a44"><div class="ttname"><a href="../../df/dfe/class_music_comments_widget.html#afafba61b788efd8e25d7ca80fc306a44">MusicCommentsWidget::createSearchedItem</a></div><div class="ttdeci">void createSearchedItem(const MusicResultsItem &amp;comments)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00307">musiccommentswidget.cpp:307</a></div></div>
 <div class="ttc" id="musicdownloadqueryfactory_8h_html"><div class="ttname"><a href="../../d3/d73/musicdownloadqueryfactory_8h.html">musicdownloadqueryfactory.h</a></div></div>
 <div class="ttc" id="class_music_comments_widget_html_ad433d5491f783302cb18094664f53942"><div class="ttname"><a href="../../df/dfe/class_music_comments_widget.html#ad433d5491f783302cb18094664f53942">MusicCommentsWidget::initWidget</a></div><div class="ttdeci">virtual void initWidget(bool isPain)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d42/musiccommentswidget_8cpp_source.html#l00167">musiccommentswidget.cpp:167</a></div></div>
@@ -106,7 +106,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 9 2021 16:57:34 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 27 2021 14:10:36 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
