@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.14.0.0</span>
+   &#160;<span id="projectnumber">2.15.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -103,22 +103,22 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d2/dcc/class_music_source_update_request.html#a5b8d5ce50325cff7bfec25369de4c7d2">m_rawData</a>[<span class="stringliteral">&quot;version&quot;</span>].toString();</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../d2/dcc/class_music_source_update_request.html#a9f5af0d36374b9fc207aaca938408c51">   27</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d2/dcc/class_music_source_update_request.html#a9f5af0d36374b9fc207aaca938408c51">MusicSourceUpdateRequest::isLastedVersion</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../d2/dcc/class_music_source_update_request.html#a926976392b33d7c0c53d2ae1db33cff9">   27</a></span>&#160;QString <a class="code" href="../../d2/dcc/class_music_source_update_request.html#a926976392b33d7c0c53d2ae1db33cff9">MusicSourceUpdateRequest::getVersionDescription</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">const</span> QString &amp;v = <a class="code" href="../../d2/dcc/class_music_source_update_request.html#a1cfbc72d86a1825e48d795d3b072f9ee">getVersion</a>();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">if</span>(v.isEmpty())</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">return</span> v == <a class="code" href="../../d4/da6/ttkversion_8h.html#afe555b76f3d75cdb97648e7ddeb7b0dd">TTKMUSIC_VERSION_STR</a>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../d2/dcc/class_music_source_update_request.html#a926976392b33d7c0c53d2ae1db33cff9">   40</a></span>&#160;QString <a class="code" href="../../d2/dcc/class_music_source_update_request.html#a926976392b33d7c0c53d2ae1db33cff9">MusicSourceUpdateRequest::getVersionDescription</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d2/dcc/class_music_source_update_request.html#a5b8d5ce50325cff7bfec25369de4c7d2">m_rawData</a>[<span class="stringliteral">&quot;data&quot;</span>].toString();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d2/dcc/class_music_source_update_request.html#a5b8d5ce50325cff7bfec25369de4c7d2">m_rawData</a>[<span class="stringliteral">&quot;data&quot;</span>].toString();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../d2/dcc/class_music_source_update_request.html#a9f5af0d36374b9fc207aaca938408c51">   32</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d2/dcc/class_music_source_update_request.html#a9f5af0d36374b9fc207aaca938408c51">MusicSourceUpdateRequest::isLastedVersion</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">const</span> QString &amp;version = <a class="code" href="../../d2/dcc/class_music_source_update_request.html#a1cfbc72d86a1825e48d795d3b072f9ee">getVersion</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">if</span>(version.isEmpty())</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d4/da6/ttkversion_8h.html#afe555b76f3d75cdb97648e7ddeb7b0dd">TTKMUSIC_VERSION_STR</a> == version;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="../../d2/dcc/class_music_source_update_request.html#a098374d305c4346965c85d8bb6ebf81d">   45</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/dcc/class_music_source_update_request.html#a098374d305c4346965c85d8bb6ebf81d">MusicSourceUpdateRequest::downLoadFinished</a>(<span class="keyword">const</span> QByteArray &amp;data)</div>
@@ -136,7 +136,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
 <div class="ttc" id="class_q_sync_utils_html_a774e2efcc82c8f662be71dd20ee58417"><div class="ttname"><a href="../../d9/d86/class_q_sync_utils.html#a774e2efcc82c8f662be71dd20ee58417">QSyncUtils::generateDataBucketUrl</a></div><div class="ttdeci">static QString generateDataBucketUrl()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d57/qsyncutils_8cpp_source.html#l00097">qsyncutils.cpp:97</a></div></div>
 <div class="ttc" id="ttkversion_8h_html_afe555b76f3d75cdb97648e7ddeb7b0dd"><div class="ttname"><a href="../../d4/da6/ttkversion_8h.html#afe555b76f3d75cdb97648e7ddeb7b0dd">TTKMUSIC_VERSION_STR</a></div><div class="ttdeci">#define TTKMUSIC_VERSION_STR</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/da6/ttkversion_8h_source.html#l00136">ttkversion.h:136</a></div></div>
-<div class="ttc" id="class_music_source_update_request_html_a9f5af0d36374b9fc207aaca938408c51"><div class="ttname"><a href="../../d2/dcc/class_music_source_update_request.html#a9f5af0d36374b9fc207aaca938408c51">MusicSourceUpdateRequest::isLastedVersion</a></div><div class="ttdeci">bool isLastedVersion() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d6b/musicsourceupdaterequest_8cpp_source.html#l00027">musicsourceupdaterequest.cpp:27</a></div></div>
+<div class="ttc" id="class_music_source_update_request_html_a9f5af0d36374b9fc207aaca938408c51"><div class="ttname"><a href="../../d2/dcc/class_music_source_update_request.html#a9f5af0d36374b9fc207aaca938408c51">MusicSourceUpdateRequest::isLastedVersion</a></div><div class="ttdeci">bool isLastedVersion() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d6b/musicsourceupdaterequest_8cpp_source.html#l00032">musicsourceupdaterequest.cpp:32</a></div></div>
 <div class="ttc" id="musicsourceupdaterequest_8cpp_html_a79995a5e8462fc45395710a1548cf0d4"><div class="ttname"><a href="../../d7/d6b/musicsourceupdaterequest_8cpp.html#a79995a5e8462fc45395710a1548cf0d4">OS_VERSION_URL</a></div><div class="ttdeci">#define OS_VERSION_URL</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d6b/musicsourceupdaterequest_8cpp_source.html#l00007">musicsourceupdaterequest.cpp:7</a></div></div>
 <div class="ttc" id="class_music_source_update_request_html_a098374d305c4346965c85d8bb6ebf81d"><div class="ttname"><a href="../../d2/dcc/class_music_source_update_request.html#a098374d305c4346965c85d8bb6ebf81d">MusicSourceUpdateRequest::downLoadFinished</a></div><div class="ttdeci">void downLoadFinished(const QByteArray &amp;data)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d6b/musicsourceupdaterequest_8cpp_source.html#l00045">musicsourceupdaterequest.cpp:45</a></div></div>
 <div class="ttc" id="musicsourceupdaterequest_8h_html"><div class="ttname"><a href="../../dd/d19/musicsourceupdaterequest_8h.html">musicsourceupdaterequest.h</a></div></div>
@@ -145,7 +145,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="class_music_source_update_request_html_ad9ec6ebe8c667955c3e26bb416f11e48"><div class="ttname"><a href="../../d2/dcc/class_music_source_update_request.html#ad9ec6ebe8c667955c3e26bb416f11e48">MusicSourceUpdateRequest::downLoadDataChanged</a></div><div class="ttdeci">void downLoadDataChanged(const QVariant &amp;data)</div></div>
 <div class="ttc" id="class_q_json_1_1_parser_html_a9d57257adc3638a8b992cf4dc39a30bf"><div class="ttname"><a href="../../d0/dfe/class_q_json_1_1_parser.html#a9d57257adc3638a8b992cf4dc39a30bf">QJson::Parser::parse</a></div><div class="ttdeci">QVariant parse(QIODevice *io, bool *ok=0)</div><div class="ttdoc">Read JSON string from the I/O Device and converts it to a QVariant object. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/ddd/parser_8cpp_source.html#l00069">parser.cpp:69</a></div></div>
 <div class="ttc" id="musicdownloadsourcerequest_8h_html"><div class="ttname"><a href="../../d5/d4b/musicdownloadsourcerequest_8h.html">musicdownloadsourcerequest.h</a></div></div>
-<div class="ttc" id="class_music_source_update_request_html_a926976392b33d7c0c53d2ae1db33cff9"><div class="ttname"><a href="../../d2/dcc/class_music_source_update_request.html#a926976392b33d7c0c53d2ae1db33cff9">MusicSourceUpdateRequest::getVersionDescription</a></div><div class="ttdeci">QString getVersionDescription() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d6b/musicsourceupdaterequest_8cpp_source.html#l00040">musicsourceupdaterequest.cpp:40</a></div></div>
+<div class="ttc" id="class_music_source_update_request_html_a926976392b33d7c0c53d2ae1db33cff9"><div class="ttname"><a href="../../d2/dcc/class_music_source_update_request.html#a926976392b33d7c0c53d2ae1db33cff9">MusicSourceUpdateRequest::getVersionDescription</a></div><div class="ttdeci">QString getVersionDescription() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d6b/musicsourceupdaterequest_8cpp_source.html#l00027">musicsourceupdaterequest.cpp:27</a></div></div>
 <div class="ttc" id="class_music_download_source_request_html_a69be4b8f2dd60678a92a1f898d165fb2"><div class="ttname"><a href="../../d4/daf/class_music_download_source_request.html#a69be4b8f2dd60678a92a1f898d165fb2">MusicDownloadSourceRequest::startToDownload</a></div><div class="ttdeci">void startToDownload(const QString &amp;url)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dcb/musicdownloadsourcerequest_8cpp_source.html#l00014">musicdownloadsourcerequest.cpp:14</a></div></div>
 <div class="ttc" id="class_music_download_source_request_html"><div class="ttname"><a href="../../d4/daf/class_music_download_source_request.html">MusicDownloadSourceRequest</a></div><div class="ttdoc">The class of source data download request. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d4b/musicdownloadsourcerequest_8h_source.html#l00027">musicdownloadsourcerequest.h:27</a></div></div>
 <div class="ttc" id="class_music_source_update_request_html_a4c603e7af34c5dffc9cd9a54e9e581c4"><div class="ttname"><a href="../../d2/dcc/class_music_source_update_request.html#a4c603e7af34c5dffc9cd9a54e9e581c4">MusicSourceUpdateRequest::startToDownload</a></div><div class="ttdeci">void startToDownload()</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d6b/musicsourceupdaterequest_8cpp_source.html#l00015">musicsourceupdaterequest.cpp:15</a></div></div>
@@ -156,7 +156,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 27 2021 14:10:29 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 5 2021 21:05:31 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

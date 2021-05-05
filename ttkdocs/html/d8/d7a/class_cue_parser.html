@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.14.0.0</span>
+   &#160;<span id="projectnumber">2.15.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -81,6 +81,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="title">CueParser Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="../../d8/d7a/class_cue_parser.html" title="The CueParser class provides CUE parser. ">CueParser</a> class provides CUE parser.  
+ <a href="../../d8/d7a/class_cue_parser.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d1/d95/cueparser_8h_source.html">cueparser.h</a>&gt;</code></p>
 <table class="memberdecls">
@@ -149,8 +152,10 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a3ef5811cd90678a2dbe6121c55dd1380"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="../../d1/d95/cueparser_8h_source.html#l00033">33</a> of file <a class="el" href="../../d1/d95/cueparser_8h_source.html">cueparser.h</a>.</p>
+<div class="textblock"><p>The <a class="el" href="../../d8/d7a/class_cue_parser.html" title="The CueParser class provides CUE parser. ">CueParser</a> class provides CUE parser. </p>
+<dl class="section author"><dt>Author</dt><dd>Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'+'@ya'+'.r'+'u'; return false;">forko<span style="display: none;">.nosp@m.</span>tov0<span style="display: none;">.nosp@m.</span>2@ya.<span style="display: none;">.nosp@m.</span>ru</a> </dd></dl>
+
+<p>Definition at line <a class="el" href="../../d1/d95/cueparser_8h_source.html#l00036">36</a> of file <a class="el" href="../../d1/d95/cueparser_8h_source.html">cueparser.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ad72243a08bdf5cf4786e2c41387bec2d"></a>
 <div class="memitem">
@@ -164,15 +169,13 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Constructs empty CUE parser. </p>
 
 </div>
 </div>
 <a class="anchor" id="a20f7a37e0b687a5d549ec089fbfbb309"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">CueParser::CueParser </td>
@@ -192,12 +195,14 @@ Private Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+<p>Constructs CUE parser and parses given content. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Content of CUE file. </td></tr>
+    <tr><td class="paramname">codecName</td><td>Codec name ("UTF-8" by default). </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -213,6 +218,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Object destructor. </p>
 
 </div>
 </div>
@@ -229,6 +235,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Removes all parsed data. </p>
 
 </div>
 </div>
@@ -244,6 +251,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns number of tracks. </p>
 
 </div>
 </div>
@@ -260,6 +268,12 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Creates playlist using parsed CUE metadata. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">track</td><td>Track number to return (-1 for all playlist or 1..n for specific track) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -276,6 +290,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns duration in milliseconds of the given <b>track</b>. </p>
 
 </div>
 </div>
@@ -292,6 +307,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns data file of the given <b>track</b>. </p>
 
 </div>
 </div>
@@ -307,6 +323,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns a list of data files. </p>
 
 </div>
 </div>
@@ -347,6 +364,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns information for the given <b>track</b>. </p>
 
 </div>
 </div>
@@ -362,6 +380,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns <b>true</b> if parser has no data, otherwise returns <b>false</b>. </p>
 
 </div>
 </div>
@@ -388,6 +407,13 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Parses CUE file content. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Content of CUE file. </td></tr>
+    <tr><td class="paramname">codecName</td><td>Codec name ("UTF-8" by default). </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -414,6 +440,13 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Parses CUE file content. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Content of CUE file. </td></tr>
+    <tr><td class="paramname">codec</td><td>Codec. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -430,6 +463,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns offset in milliseconds of the given <b>track</b>. </p>
 
 </div>
 </div>
@@ -456,6 +490,13 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Sets duration for the given content file. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>Content file path. </td></tr>
+    <tr><td class="paramname">duration</td><td>Duration in milliseconds. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -472,6 +513,12 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Sets duration for the single content file (useful for embedded CUE). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">duration</td><td>Duration in milliseconds. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -504,6 +551,14 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Updates metadata of the <b>track</b>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">track</td><td>Track number (1..n). </td></tr>
+    <tr><td class="paramname">key</td><td>Metadata key. </td></tr>
+    <tr><td class="paramname">value</td><td>Metadata value. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -530,6 +585,13 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Sets audio properties for the given content file. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>Content file path. </td></tr>
+    <tr><td class="paramname">properties</td><td>Audio properties. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -546,6 +608,12 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Sets audio properties for the single content file (useful for embedded CUE). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">properties</td><td>Audio properties. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -572,6 +640,13 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Sets URLs for CUE tracks in the following format: {scheme}://{path}#{track number} </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scheme</td><td>URL scheme. </td></tr>
+    <tr><td class="paramname">path</td><td>Content file path. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -612,6 +687,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns URL of the given <b>track</b>. </p>
 
 </div>
 </div>
@@ -634,7 +710,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/d95/cueparser_8h_source.html#l00071">71</a> of file <a class="el" href="../../d1/d95/cueparser_8h_source.html">cueparser.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/d95/cueparser_8h_source.html#l00152">152</a> of file <a class="el" href="../../d1/d95/cueparser_8h_source.html">cueparser.h</a>.</p>
 
 </div>
 </div>
@@ -656,7 +732,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/d95/cueparser_8h_source.html#l00070">70</a> of file <a class="el" href="../../d1/d95/cueparser_8h_source.html">cueparser.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/d95/cueparser_8h_source.html#l00151">151</a> of file <a class="el" href="../../d1/d95/cueparser_8h_source.html">cueparser.h</a>.</p>
 
 </div>
 </div>
@@ -666,7 +742,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 27 2021 14:10:54 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 5 2021 21:05:54 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

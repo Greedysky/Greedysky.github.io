@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.14.0.0</span>
+   &#160;<span id="projectnumber">2.15.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -169,7 +169,7 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a296557df877d5f3ac369fd54107a714f"><td class="memItemLeft" align="right" valign="top">QTimer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d74/class_visual.html#a296557df877d5f3ac369fd54107a714f">m_timer</a></td></tr>
+<tr class="memitem:a296557df877d5f3ac369fd54107a714f"><td class="memItemLeft" align="right" valign="top">QTimer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d74/class_visual.html#a296557df877d5f3ac369fd54107a714f">m_timer</a> = nullptr</td></tr>
 <tr class="separator:a296557df877d5f3ac369fd54107a714f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe77391b7549b5f587e6a0c8b2369dde"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d74/class_visual.html#afe77391b7549b5f587e6a0c8b2369dde">m_running</a> = false</td></tr>
 <tr class="separator:afe77391b7549b5f587e6a0c8b2369dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,7 +179,7 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a1a6757be4beabd51059fa86621c6bef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d975095494d58c5f5f45599f8ff1bf8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d74/class_visual.html#a0d975095494d58c5f5f45599f8ff1bf8">m_intern_vis_data</a> = nullptr</td></tr>
 <tr class="separator:a0d975095494d58c5f5f45599f8ff1bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1df83a0ac3e8cd4a5b5c5c10ff2a62a"><td class="memItemLeft" align="right" valign="top">QAction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d74/class_visual.html#ab1df83a0ac3e8cd4a5b5c5c10ff2a62a">m_screenAction</a></td></tr>
+<tr class="memitem:ab1df83a0ac3e8cd4a5b5c5c10ff2a62a"><td class="memItemLeft" align="right" valign="top">QAction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d74/class_visual.html#ab1df83a0ac3e8cd4a5b5c5c10ff2a62a">m_screenAction</a> = nullptr</td></tr>
 <tr class="separator:ab1df83a0ac3e8cd4a5b5c5c10ff2a62a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
@@ -197,8 +197,8 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:a3a0e540a2ec03a34e678116e31f56d1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad97a6b8ea2a5009b945dd9f54d8b021d"><td class="memItemLeft" align="right" valign="top">static QHash&lt; <a class="el" href="../../dd/d52/class_visual_factory.html">VisualFactory</a> *, <a class="el" href="../../dc/d74/class_visual.html">Visual</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d74/class_visual.html#ad97a6b8ea2a5009b945dd9f54d8b021d">m_vis_map</a></td></tr>
 <tr class="separator:ad97a6b8ea2a5009b945dd9f54d8b021d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae74809865410d641e0e1dd3b8f580e41"><td class="memItemLeft" align="right" valign="top">static QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d74/class_visual.html#ae74809865410d641e0e1dd3b8f580e41">m_parentWidget</a></td></tr>
-<tr class="separator:ae74809865410d641e0e1dd3b8f580e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a966bb7174884a845cd54c99665d23b44"><td class="memItemLeft" align="right" valign="top">static QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d74/class_visual.html#a966bb7174884a845cd54c99665d23b44">m_parentClass</a></td></tr>
+<tr class="separator:a966bb7174884a845cd54c99665d23b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7820b89dda404482b54b21977a4b1a3b"><td class="memItemLeft" align="right" valign="top">static QObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d74/class_visual.html#a7820b89dda404482b54b21977a4b1a3b">m_receiver</a></td></tr>
 <tr class="separator:a7820b89dda404482b54b21977a4b1a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81a4e2d92dbc6450b2fbf5045f3ca396"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d74/class_visual.html#a81a4e2d92dbc6450b2fbf5045f3ca396">m_member</a></td></tr>
@@ -537,7 +537,7 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns a list of visual factories. </p>
 
-<p>Referenced by <a class="el" href="../../dd/d26/musicqmmputils_8cpp_source.html#l00049">MusicUtils::QMMP::enabledVisualPlugin()</a>, and <a class="el" href="../../d8/dec/musicpluginwidget_8cpp_source.html#l00159">MusicPluginWidget::loadPluginsInfo()</a>.</p>
+<p>Referenced by <a class="el" href="../../dd/d26/musicqmmputils_8cpp_source.html#l00049">MusicUtils::QMMP::enabledVisualPlugin()</a>, and <a class="el" href="../../d8/dec/musicpluginwidget_8cpp_source.html#l00247">MusicPluginWidget::loadPluginsInfo()</a>.</p>
 
 </div>
 </div>
@@ -569,7 +569,7 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Referenced by <a class="el" href="../../d8/dec/musicpluginwidget_8cpp_source.html#l00159">MusicPluginWidget::loadPluginsInfo()</a>.</p>
+<p>Referenced by <a class="el" href="../../d8/dec/musicpluginwidget_8cpp_source.html#l00247">MusicPluginWidget::loadPluginsInfo()</a>.</p>
 
 </div>
 </div>
@@ -906,7 +906,7 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Starts visualization. </p>
 
-<p>Referenced by <a class="el" href="../../dd/d9c/musicripplespecturmobject_8cpp_source.html#l00071">MusicRippleSpecturmObject::update()</a>.</p>
+<p>Referenced by <a class="el" href="../../d6/dbc/musicripplespecturmmodule_8cpp_source.html#l00071">MusicRippleSpecturmModule::update()</a>.</p>
 
 </div>
 </div>
@@ -1021,7 +1021,7 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns a pointer to a list of created visual objects. </p>
 
-<p>Referenced by <a class="el" href="../../dc/d09/musicspectrumwidget_8cpp_source.html#l00282">MusicSpectrumWidget::createModuleWidget()</a>, <a class="el" href="../../dc/d09/musicspectrumwidget_8cpp_source.html#l00228">MusicSpectrumWidget::createSpectrumWidget()</a>, <a class="el" href="../../d0/d04/musicremotewidgetforripple_8cpp_source.html#l00082">MusicRemoteWidgetForRipple::createVisualWidget()</a>, and <a class="el" href="../../dd/d9c/musicripplespecturmobject_8cpp_source.html#l00030">MusicRippleSpecturmObject::show()</a>.</p>
+<p>Referenced by <a class="el" href="../../dc/d09/musicspectrumwidget_8cpp_source.html#l00281">MusicSpectrumWidget::createModuleWidget()</a>, <a class="el" href="../../dc/d09/musicspectrumwidget_8cpp_source.html#l00227">MusicSpectrumWidget::createSpectrumWidget()</a>, <a class="el" href="../../d0/d04/musicremotewidgetforripple_8cpp_source.html#l00082">MusicRemoteWidgetForRipple::createVisualWidget()</a>, and <a class="el" href="../../d6/dbc/musicripplespecturmmodule_8cpp_source.html#l00030">MusicRippleSpecturmModule::show()</a>.</p>
 
 </div>
 </div>
@@ -1158,7 +1158,7 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae74809865410d641e0e1dd3b8f580e41"></a>
+<a class="anchor" id="a966bb7174884a845cd54c99665d23b44"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1166,7 +1166,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QWidget* Visual::m_parentWidget</td>
+          <td class="memname">QWidget* Visual::m_parentClass</td>
         </tr>
       </table>
   </td>
@@ -1254,7 +1254,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QAction* Visual::m_screenAction</td>
+          <td class="memname">QAction* Visual::m_screenAction = nullptr</td>
         </tr>
       </table>
   </td>
@@ -1276,7 +1276,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QTimer* Visual::m_timer</td>
+          <td class="memname">QTimer* Visual::m_timer = nullptr</td>
         </tr>
       </table>
   </td>
@@ -1340,7 +1340,7 @@ Static Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 27 2021 14:11:44 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 5 2021 21:06:35 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

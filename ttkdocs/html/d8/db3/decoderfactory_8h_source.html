@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.14.0.0</span>
+   &#160;<span id="projectnumber">2.15.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -134,12 +134,13 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../da/d56/class_decoder.html">Decoder</a> *create(<span class="keyword">const</span> QString &amp;path, QIODevice *input = <span class="keyword">nullptr</span>) = 0;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">virtual</span> QList&lt;TrackInfo*&gt; createPlayList(<span class="keyword">const</span> QString &amp;fileName, TrackInfo::Parts parts, QStringList *ignoredPaths) = 0;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../df/dff/class_meta_data_model.html">MetaDataModel</a>* createMetaDataModel(<span class="keyword">const</span> QString &amp;path, <span class="keywordtype">bool</span> readOnly) = 0;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;};</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;Q_DECLARE_INTERFACE(<a class="code" href="../../dc/d36/class_decoder_factory.html">DecoderFactory</a>, <span class="stringliteral">&quot;DecoderFactory/1.0&quot;</span>)</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> showSettings(QWidget *parent) = 0;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;};</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;Q_DECLARE_INTERFACE(<a class="code" href="../../dc/d36/class_decoder_factory.html">DecoderFactory</a>, <span class="stringliteral">&quot;DecoderFactory/1.0&quot;</span>)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="struct_decoder_properties_html_a694a08267ac72efa2ac3aeeb987aec1f"><div class="ttname"><a href="../../d9/d33/struct_decoder_properties.html#a694a08267ac72efa2ac3aeeb987aec1f">DecoderProperties::description</a></div><div class="ttdeci">QString description</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/db3/decoderfactory_8h_source.html#l00041">decoderfactory.h:41</a></div></div>
 <div class="ttc" id="trackinfo_8h_html"><div class="ttname"><a href="../../de/d64/trackinfo_8h.html">trackinfo.h</a></div></div>
 <div class="ttc" id="class_decoder_factory_html_a262138497dc6a14e0144d31680927e9f"><div class="ttname"><a href="../../dc/d36/class_decoder_factory.html#a262138497dc6a14e0144d31680927e9f">DecoderFactory::~DecoderFactory</a></div><div class="ttdeci">virtual ~DecoderFactory()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/db3/decoderfactory_8h_source.html#l00059">decoderfactory.h:59</a></div></div>
@@ -159,7 +160,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 27 2021 14:10:27 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 5 2021 21:05:29 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

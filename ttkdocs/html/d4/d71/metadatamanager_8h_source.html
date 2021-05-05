@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.14.0.0</span>
+   &#160;<span id="projectnumber">2.15.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -146,7 +146,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    QFileInfoList findCoverFiles(QDir dir, <span class="keywordtype">int</span> depth) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <a class="code" href="../../db/de0/struct_meta_data_manager_1_1_cover_cache_item.html">CoverCacheItem</a> *createCoverCacheItem(<span class="keyword">const</span> QString &amp;url) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="../../d0/df1/class_meta_data_manager.html#aace0194588f689e84a0eb1c2f93684b1">  128</a></span>&#160;    <span class="keyword">mutable</span> QList&lt;CoverCacheItem *&gt; <a class="code" href="../../d0/df1/class_meta_data_manager.html#aace0194588f689e84a0eb1c2f93684b1">m_cover_cache</a>;</div>
-<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="../../d0/df1/class_meta_data_manager.html#afa14f9ce7305870209e20340c1292588">  129</a></span>&#160;    <a class="code" href="../../d0/ddf/class_qmmp_settings.html">QmmpSettings</a> *<a class="code" href="../../d0/df1/class_meta_data_manager.html#afa14f9ce7305870209e20340c1292588">m_settings</a>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="../../d0/df1/class_meta_data_manager.html#afa14f9ce7305870209e20340c1292588">  129</a></span>&#160;    <a class="code" href="../../d0/ddf/class_qmmp_settings.html">QmmpSettings</a> *m_settings = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="../../d0/df1/class_meta_data_manager.html#aa7e9a27d0fecfcb5c8309af39c3a6684">  130</a></span>&#160;    <span class="keyword">mutable</span> QMutex <a class="code" href="../../d0/df1/class_meta_data_manager.html#aa7e9a27d0fecfcb5c8309af39c3a6684">m_mutex</a>;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
 <div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="../../d0/df1/class_meta_data_manager.html#a9b34a9ef1dabf9a971d23a88aecb8acc">  132</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="../../d0/df1/class_meta_data_manager.html">MetaDataManager</a>* <a class="code" href="../../d0/df1/class_meta_data_manager.html#a9b34a9ef1dabf9a971d23a88aecb8acc">m_instance</a>;</div>
@@ -158,7 +158,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="struct_meta_data_manager_1_1_cover_cache_item_html_ae4f2e9ef64f7c732f294e4fb7c963050"><div class="ttname"><a href="../../db/de0/struct_meta_data_manager_1_1_cover_cache_item.html#ae4f2e9ef64f7c732f294e4fb7c963050">MetaDataManager::CoverCacheItem::coverPath</a></div><div class="ttdeci">QString coverPath</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d71/metadatamanager_8h_source.html#l00122">metadatamanager.h:122</a></div></div>
 <div class="ttc" id="class_meta_data_manager_html_aa7e9a27d0fecfcb5c8309af39c3a6684"><div class="ttname"><a href="../../d0/df1/class_meta_data_manager.html#aa7e9a27d0fecfcb5c8309af39c3a6684">MetaDataManager::m_mutex</a></div><div class="ttdeci">QMutex m_mutex</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d71/metadatamanager_8h_source.html#l00130">metadatamanager.h:130</a></div></div>
 <div class="ttc" id="trackinfo_8h_html"><div class="ttname"><a href="../../de/d64/trackinfo_8h.html">trackinfo.h</a></div></div>
-<div class="ttc" id="class_meta_data_manager_html_afa14f9ce7305870209e20340c1292588"><div class="ttname"><a href="../../d0/df1/class_meta_data_manager.html#afa14f9ce7305870209e20340c1292588">MetaDataManager::m_settings</a></div><div class="ttdeci">QmmpSettings * m_settings</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d71/metadatamanager_8h_source.html#l00129">metadatamanager.h:129</a></div></div>
 <div class="ttc" id="class_qmmp_settings_html"><div class="ttname"><a href="../../d0/ddf/class_qmmp_settings.html">QmmpSettings</a></div><div class="ttdoc">The QmmpSettings class provides access to global settings. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/da5/qmmpsettings_8h_source.html#l00035">qmmpsettings.h:35</a></div></div>
 <div class="ttc" id="class_meta_data_manager_html_a9b34a9ef1dabf9a971d23a88aecb8acc"><div class="ttname"><a href="../../d0/df1/class_meta_data_manager.html#a9b34a9ef1dabf9a971d23a88aecb8acc">MetaDataManager::m_instance</a></div><div class="ttdeci">static MetaDataManager * m_instance</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d71/metadatamanager_8h_source.html#l00132">metadatamanager.h:132</a></div></div>
 <div class="ttc" id="class_meta_data_model_html"><div class="ttname"><a href="../../df/dff/class_meta_data_model.html">MetaDataModel</a></div><div class="ttdoc">The MetaDataModel is the base interface class of metadata access. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/db0/metadatamodel_8h_source.html#l00081">metadatamodel.h:81</a></div></div>
@@ -175,7 +174,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 27 2021 14:10:27 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 5 2021 21:05:29 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.14.0.0</span>
+   &#160;<span id="projectnumber">2.15.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -81,6 +81,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>This class represents audio channel mapping.  
+ <a href="../../d1/d72/class_channel_map.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="../../d4/d9d/channelmap_8h_source.html">channelmap.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Inheritance diagram for ChannelMap:</div>
@@ -95,10 +98,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a00621fe83a6041e29d603947c1adf11b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d72/class_channel_map.html#a00621fe83a6041e29d603947c1adf11b">ChannelMap</a> ()</td></tr>
-<tr class="separator:a00621fe83a6041e29d603947c1adf11b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c94bc06004da928ef641d717a1818fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d72/class_channel_map.html#a7c94bc06004da928ef641d717a1818fc">ChannelMap</a> (<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> channels)</td></tr>
-<tr class="separator:a7c94bc06004da928ef641d717a1818fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69260f7d06904860cee67cf188f78079"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d72/class_channel_map.html#a69260f7d06904860cee67cf188f78079">ChannelMap</a> (<a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> channels=0)</td></tr>
+<tr class="separator:a69260f7d06904860cee67cf188f78079"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebf3b4e4443679c04a37a1d1e4ecef51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d72/class_channel_map.html#aebf3b4e4443679c04a37a1d1e4ecef51">mask</a> () <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
 <tr class="separator:aebf3b4e4443679c04a37a1d1e4ecef51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd6c034a4989b06feb881a97c1d26110"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="../../d1/d72/class_channel_map.html">ChannelMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d72/class_channel_map.html#abd6c034a4989b06feb881a97c1d26110">remaped</a> () <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
@@ -117,25 +118,16 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:aac746a40be4ac1c1891663b7fd59c2db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="../../d4/d9d/channelmap_8h_source.html#l00027">27</a> of file <a class="el" href="../../d4/d9d/channelmap_8h_source.html">channelmap.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a00621fe83a6041e29d603947c1adf11b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ChannelMap::ChannelMap </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<div class="textblock"><p>This class represents audio channel mapping. </p>
+<ul>
+<li>* <dl class="section author"><dt>Author</dt><dd>Ilya Kotov <a href="#" onclick="location.href='mai'+'lto:'+'for'+'ko'+'tov'+'02'+'@ya'+'.r'+'u'; return false;">forko<span style="display: none;">.nosp@m.</span>tov0<span style="display: none;">.nosp@m.</span>2@ya.<span style="display: none;">.nosp@m.</span>ru</a></dd></dl>
+</li>
+<li></li>
+</ul>
 
-</div>
-</div>
-<a class="anchor" id="a7c94bc06004da928ef641d717a1818fc"></a>
+<p>Definition at line <a class="el" href="../../d4/d9d/channelmap_8h_source.html#l00030">30</a> of file <a class="el" href="../../d4/d9d/channelmap_8h_source.html">channelmap.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a69260f7d06904860cee67cf188f78079"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -146,7 +138,7 @@ Static Private Attributes</h2></td></tr>
           <td class="memname">ChannelMap::ChannelMap </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d2/db7/ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
-          <td class="paramname"><em>channels</em></td><td>)</td>
+          <td class="paramname"><em>channels</em> = <code>0</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -156,6 +148,12 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Constructs channel mapping with internal order. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channels</td><td>Number channels </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -196,6 +194,7 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns a mask with used channels. </p>
 
 </div>
 </div>
@@ -211,6 +210,7 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Converts current channel order to internal. </p>
 
 </div>
 </div>
@@ -226,6 +226,7 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Converts channel channel mapping to string representation (for debug purposes). </p>
 
 </div>
 </div>
@@ -248,7 +249,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/d9d/channelmap_8h_source.html#l00038">38</a> of file <a class="el" href="../../d4/d9d/channelmap_8h_source.html">channelmap.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d9d/channelmap_8h_source.html#l00053">53</a> of file <a class="el" href="../../d4/d9d/channelmap_8h_source.html">channelmap.h</a>.</p>
 
 </div>
 </div>
@@ -258,7 +259,7 @@ Static Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 27 2021 14:10:54 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 5 2021 21:05:54 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

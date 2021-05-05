@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.14.0.0</span>
+   &#160;<span id="projectnumber">2.15.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -195,14 +195,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>MAKE_TRANSFORM_PREFIX
 : <a class="el" href="d8/d07/musicobject_8h.html#a38e7a56ca0fe3930441d7bd68fa9e916">musicobject.h</a>
 </li>
+<li>MakePlayedItem
+: <a class="el" href="d1/d94/musicplayedlistpopwidget_8h.html#a0d9a0b6f7c0ed9391aea9dfc250834c9">musicplayedlistpopwidget.h</a>
+</li>
 <li>MAKEULONG64
 : <a class="el" href="d0/d5f/zip_8c.html#abb9fced82ed75c8bba3235ee4a45d389">zip.c</a>
 </li>
 <li>MARGIN_SIDE
-: <a class="el" href="d5/d7d/musicapplicationobject_8cpp.html#a246e265e8d2e7804bd9a732001475877">musicapplicationobject.cpp</a>
+: <a class="el" href="dd/d98/musicapplicationmodule_8cpp.html#a246e265e8d2e7804bd9a732001475877">musicapplicationmodule.cpp</a>
 </li>
 <li>MARGIN_SIDE_BY
-: <a class="el" href="d5/d7d/musicapplicationobject_8cpp.html#a7d5225e22bda1955b438321bd3e6ce40">musicapplicationobject.cpp</a>
+: <a class="el" href="dd/d98/musicapplicationmodule_8cpp.html#a7d5225e22bda1955b438321bd3e6ce40">musicapplicationmodule.cpp</a>
 </li>
 <li>MARK
 : <a class="el" href="d1/d70/http__parser_8c.html#a284a5ef12de6ef8f0c26ae9c4edfa0b1">http_parser.c</a>
@@ -498,9 +501,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>MUSIC_APE_FILE
 : <a class="el" href="d2/d77/musicotherdefine_8h.html#a5fe4f80dbed2d5412f7fef509f8cb005">musicotherdefine.h</a>
 </li>
-<li>MUSIC_AUDIT_ROLE
-: <a class="el" href="df/d13/musicitemdelegate_8h.html#aeec9db215af9a350d6d46f9247f8f174">musicitemdelegate.h</a>
-</li>
 <li>MUSIC_AUTHOR_NAME
 : <a class="el" href="d2/d77/musicotherdefine_8h.html#a3b88c2a48c35b47892a10c08eb019719">musicotherdefine.h</a>
 </li>
@@ -525,8 +525,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>MUSIC_DAILY_DIR
 : <a class="el" href="d2/d77/musicotherdefine_8h.html#ad0132e7ce2e999ea3b599f52a4ac7135">musicotherdefine.h</a>
 </li>
-<li>MUSIC_DATAS_ROLE
-: <a class="el" href="df/d13/musicitemdelegate_8h.html#a81d22a0ac0fc6fb078973b51ec747bad">musicitemdelegate.h</a>
+<li>MUSIC_DATA_ROLE
+: <a class="el" href="df/d13/musicitemdelegate_8h.html#a622325f641cbabc290a2ebd74a9ab28f">musicitemdelegate.h</a>
 </li>
 <li>MUSIC_DIR
 : <a class="el" href="d8/d07/musicobject_8h.html#acd8710d6f7c95572e5954b9de2b7f794">musicobject.h</a>
@@ -534,16 +534,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>MUSIC_DIR_FULL
 : <a class="el" href="d8/d07/musicobject_8h.html#a2490ae4966bdf280821e864950396eb7">musicobject.h</a>
 </li>
-<li>MUSIC_ENABL_ROLE
-: <a class="el" href="df/d13/musicitemdelegate_8h.html#aab18a5568a4b37998ac69b7bab0879b9">musicitemdelegate.h</a>
+<li>MUSIC_ENABLE_ROLE
+: <a class="el" href="df/d13/musicitemdelegate_8h.html#abf15cfae12eafd635281b7412416ede4">musicitemdelegate.h</a>
 </li>
 <li>MUSIC_END_NAMESPACE
 : <a class="el" href="da/d4e/musicglobal_8h.html#ad27e56dfb012403f469dc077cb0fbcd6">musicglobal.h</a>
 </li>
 <li>MUSIC_EXPORT
 : <a class="el" href="d3/d98/musicrunglobaldefine_8h.html#ae0cc44a55615028149ff1074772adf7b">musicrunglobaldefine.h</a>
-, <a class="el" href="d3/de6/musicextrasglobaldefine_8h.html#ae0cc44a55615028149ff1074772adf7b">musicextrasglobaldefine.h</a>
 , <a class="el" href="d6/d9b/musicglobaldefine_8h.html#ae0cc44a55615028149ff1074772adf7b">musicglobaldefine.h</a>
+, <a class="el" href="d3/de6/musicextrasglobaldefine_8h.html#ae0cc44a55615028149ff1074772adf7b">musicextrasglobaldefine.h</a>
 , <a class="el" href="d2/d5c/musicconfigglobaldefine_8h.html#ae0cc44a55615028149ff1074772adf7b">musicconfigglobaldefine.h</a>
 </li>
 <li>MUSIC_EXTRAS_EXPORT
@@ -597,11 +597,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>MUSIC_OUTER_RADIO
 : <a class="el" href="d2/d77/musicotherdefine_8h.html#a8778853641afba3a7d781b1ee4edd98e">musicotherdefine.h</a>
 </li>
-<li>MUSIC_PROCS_ROLE
-: <a class="el" href="df/d13/musicitemdelegate_8h.html#aa4e7a956ae72ebec9fc475eb1d8de5d8">musicitemdelegate.h</a>
-</li>
-<li>MUSIC_QUERY_ROLE
-: <a class="el" href="df/d13/musicitemdelegate_8h.html#a9dd0496dd70f80802594be2a674b4328">musicitemdelegate.h</a>
+<li>MUSIC_PROGRESS_ROLE
+: <a class="el" href="df/d13/musicitemdelegate_8h.html#a638a2e7c0a3131925a4578142caf414f">musicitemdelegate.h</a>
 </li>
 <li>MUSIC_RECENT_LIST
 : <a class="el" href="d2/d77/musicotherdefine_8h.html#a5b14c2eb8ef233d6440983e5fd97f24a">musicotherdefine.h</a>
@@ -618,17 +615,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>MUSIC_RUN_EXPORT
 : <a class="el" href="d3/d98/musicrunglobaldefine_8h.html#aea27712b48c33c128659ff5608edeff4">musicrunglobaldefine.h</a>
 </li>
-<li>MUSIC_SHOWN_ROLE
-: <a class="el" href="df/d13/musicitemdelegate_8h.html#a91591072ae1ce55389ff702981a7df49">musicitemdelegate.h</a>
-</li>
 <li>MUSIC_SID_FILE
 : <a class="el" href="d2/d77/musicotherdefine_8h.html#a73ef9fa0cfb131cad74f5799bdba696e">musicotherdefine.h</a>
 </li>
 <li>MUSIC_STIME_FORMAT
 : <a class="el" href="d2/d77/musicotherdefine_8h.html#ac8106e1e02b9cb0c06dc17bd3f3d86e3">musicotherdefine.h</a>
 </li>
-<li>MUSIC_TEXTS_ROLE
-: <a class="el" href="df/d13/musicitemdelegate_8h.html#a0e95096d1ade2675c192c7cb59d04fd6">musicitemdelegate.h</a>
+<li>MUSIC_TEXT_ROLE
+: <a class="el" href="df/d13/musicitemdelegate_8h.html#a7ce0c33cce3c5201e60ac6fd03bb88f7">musicitemdelegate.h</a>
 </li>
 <li>MUSIC_TIME_FORMAT
 : <a class="el" href="d2/d77/musicotherdefine_8h.html#a94c2f9bd17524749ac712f4e785e67a7">musicotherdefine.h</a>
@@ -636,8 +630,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>MUSIC_TIME_INIT
 : <a class="el" href="d2/d77/musicotherdefine_8h.html#a7f243f2533170abed08274bb38958644">musicotherdefine.h</a>
 </li>
-<li>MUSIC_TIMES_ROLE
-: <a class="el" href="df/d13/musicitemdelegate_8h.html#a95ef4ab84a308953404717247dfc0219">musicitemdelegate.h</a>
+<li>MUSIC_TIME_ROLE
+: <a class="el" href="df/d13/musicitemdelegate_8h.html#afac191455723bc2a580a049baf016048">musicitemdelegate.h</a>
 </li>
 <li>MUSIC_TTKLRCF
 : <a class="el" href="d4/d38/musiclrcanalysis_8h.html#ab1ce350f17c7e9a9f6ab6a206a664ddb">musiclrcanalysis.h</a>
@@ -682,7 +676,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 27 2021 14:11:51 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 5 2021 21:06:45 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

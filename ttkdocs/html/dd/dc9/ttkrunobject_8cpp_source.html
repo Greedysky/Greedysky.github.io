@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.14.0.0</span>
+   &#160;<span id="projectnumber">2.15.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -108,7 +108,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../d1/d67/class_t_t_k_run_object.html#a0f6ed7778f58bd87f06ede5d42e0bb08">   29</a></span>&#160;<a class="code" href="../../d1/d67/class_t_t_k_run_object.html#a0f6ed7778f58bd87f06ede5d42e0bb08">TTKRunObject::TTKRunObject</a>(QObject *parent)</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    : QObject(parent)</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="../../dd/d24/ttkprivate_8h.html#a16e697408c6ce0f129db3559d3a79514">TTK_INIT_PRIVATE</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="../../dd/d24/ttkprivate_8h.html#a64bda0cf6260b5682d918c6a7f82e74f">TTK_INIT_PRIVATE</a>(<a class="code" href="../../d1/d67/class_t_t_k_run_object.html">TTKRunObject</a>);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="../../dd/d24/ttkprivate_8h.html#a8eedd09c47b53d5e42ca132295c5e1ef">TTK_D</a>(<a class="code" href="../../d1/d67/class_t_t_k_run_object.html">TTKRunObject</a>);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    d-&gt;m_process = <span class="keyword">new</span> QProcess(<span class="keyword">this</span>);</div>
@@ -156,7 +156,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="musicobject_8h_html_af0b5cfa4242ae7f98ba80fd23ef8afa9"><div class="ttname"><a href="../../d8/d07/musicobject_8h.html#af0b5cfa4242ae7f98ba80fd23ef8afa9">APP_NAME</a></div><div class="ttdeci">#define APP_NAME</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d07/musicobject_8h_source.html#l00097">musicobject.h:97</a></div></div>
 <div class="ttc" id="class_music_config_object_html_a656dad4036f10f67883bc4ed2b3b8f1b"><div class="ttname"><a href="../../de/d7e/class_music_config_object.html#a656dad4036f10f67883bc4ed2b3b8f1b">MusicConfigObject::checkValid</a></div><div class="ttdeci">void checkValid()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d49/musicconfigobject_8cpp_source.html#l00012">musicconfigobject.cpp:12</a></div></div>
 <div class="ttc" id="class_t_t_k_run_object_private_html_ae0b108c325731151efb15260c7e66e41"><div class="ttname"><a href="../../d9/db5/class_t_t_k_run_object_private.html#ae0b108c325731151efb15260c7e66e41">TTKRunObjectPrivate::m_process</a></div><div class="ttdeci">QProcess * m_process</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc9/ttkrunobject_8cpp_source.html#l00013">ttkrunobject.cpp:13</a></div></div>
-<div class="ttc" id="ttkprivate_8h_html_a16e697408c6ce0f129db3559d3a79514"><div class="ttname"><a href="../../dd/d24/ttkprivate_8h.html#a16e697408c6ce0f129db3559d3a79514">TTK_INIT_PRIVATE</a></div><div class="ttdeci">#define TTK_INIT_PRIVATE</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00030">ttkprivate.h:30</a></div></div>
 <div class="ttc" id="class_t_t_k_run_object_html_af60f4e5ac7f5c9023013650c06317bc5"><div class="ttname"><a href="../../d1/d67/class_t_t_k_run_object.html#af60f4e5ac7f5c9023013650c06317bc5">TTKRunObject::checkValid</a></div><div class="ttdeci">void checkValid()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc9/ttkrunobject_8cpp_source.html#l00039">ttkrunobject.cpp:39</a></div></div>
 <div class="ttc" id="class_music_config_object_html"><div class="ttname"><a href="../../de/d7e/class_music_config_object.html">MusicConfigObject</a></div><div class="ttdoc">The class of the music init object. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d74/musicconfigobject_8h_source.html#l00028">musicconfigobject.h:28</a></div></div>
 <div class="ttc" id="ttklogger_8h_html_ae2a8797595daafbcb53f440f5aca9c8d"><div class="ttname"><a href="../../d5/d2b/ttklogger_8h.html#ae2a8797595daafbcb53f440f5aca9c8d">TTK_LOGGER_INFO</a></div><div class="ttdeci">#define TTK_LOGGER_INFO(str)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d2b/ttklogger_8h_source.html#l00046">ttklogger.h:46</a></div></div>
@@ -164,13 +163,14 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="ttkrunobject_8h_html"><div class="ttname"><a href="../../d8/db2/ttkrunobject_8h.html">ttkrunobject.h</a></div></div>
 <div class="ttc" id="musicconfigobject_8h_html"><div class="ttname"><a href="../../de/d74/musicconfigobject_8h.html">musicconfigobject.h</a></div></div>
 <div class="ttc" id="class_t_t_k_run_object_html_a56d6dd1f9675b0b0cb0a986e7dd86323"><div class="ttname"><a href="../../d1/d67/class_t_t_k_run_object.html#a56d6dd1f9675b0b0cb0a986e7dd86323">TTKRunObject::run</a></div><div class="ttdeci">void run(int argc, char **argv)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc9/ttkrunobject_8cpp_source.html#l00045">ttkrunobject.cpp:45</a></div></div>
-<div class="ttc" id="class_t_t_k_private_html"><div class="ttname"><a href="../../d1/d29/class_t_t_k_private.html">TTKPrivate</a></div><div class="ttdoc">The class of the ttk private base. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00043">ttkprivate.h:43</a></div></div>
+<div class="ttc" id="ttkprivate_8h_html_a64bda0cf6260b5682d918c6a7f82e74f"><div class="ttname"><a href="../../dd/d24/ttkprivate_8h.html#a64bda0cf6260b5682d918c6a7f82e74f">TTK_INIT_PRIVATE</a></div><div class="ttdeci">#define TTK_INIT_PRIVATE(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00032">ttkprivate.h:32</a></div></div>
+<div class="ttc" id="class_t_t_k_private_html"><div class="ttname"><a href="../../d1/d29/class_t_t_k_private.html">TTKPrivate</a></div><div class="ttdoc">The class of the ttk private base. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00047">ttkprivate.h:47</a></div></div>
 <div class="ttc" id="class_t_t_k_run_object_html_a78fd33871fd52415410a59ccce4151e8"><div class="ttname"><a href="../../d1/d67/class_t_t_k_run_object.html#a78fd33871fd52415410a59ccce4151e8">TTKRunObject::finished</a></div><div class="ttdeci">void finished(int code)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc9/ttkrunobject_8cpp_source.html#l00059">ttkrunobject.cpp:59</a></div></div>
-<div class="ttc" id="ttkprivate_8h_html_a8eedd09c47b53d5e42ca132295c5e1ef"><div class="ttname"><a href="../../dd/d24/ttkprivate_8h.html#a8eedd09c47b53d5e42ca132295c5e1ef">TTK_D</a></div><div class="ttdeci">#define TTK_D(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00036">ttkprivate.h:36</a></div></div>
+<div class="ttc" id="ttkprivate_8h_html_a8eedd09c47b53d5e42ca132295c5e1ef"><div class="ttname"><a href="../../dd/d24/ttkprivate_8h.html#a8eedd09c47b53d5e42ca132295c5e1ef">TTK_D</a></div><div class="ttdeci">#define TTK_D(Class)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d24/ttkprivate_8h_source.html#l00040">ttkprivate.h:40</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 27 2021 14:10:37 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 5 2021 21:05:38 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

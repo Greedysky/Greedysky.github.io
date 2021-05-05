@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.14.0.0</span>
+   &#160;<span id="projectnumber">2.15.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -235,9 +235,9 @@ Private Attributes</h2></td></tr>
 <tr class="separator:afb94e73cd29eefc17d77c15648ff7a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad339de74939840a99f3494a35ed1d314"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d98/class_sound_core.html#ad339de74939840a99f3494a35ed1d314">m_path</a></td></tr>
 <tr class="separator:ad339de74939840a99f3494a35ed1d314"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4cad11362834969e5008a4f11d2ee18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d5e/class_state_handler.html">StateHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d98/class_sound_core.html#ab4cad11362834969e5008a4f11d2ee18">m_handler</a></td></tr>
+<tr class="memitem:ab4cad11362834969e5008a4f11d2ee18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d5e/class_state_handler.html">StateHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d98/class_sound_core.html#ab4cad11362834969e5008a4f11d2ee18">m_handler</a> = nullptr</td></tr>
 <tr class="separator:ab4cad11362834969e5008a4f11d2ee18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a543792164b762b9a8a6639706cd5ca8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d52/class_volume_handler.html">VolumeHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d98/class_sound_core.html#a543792164b762b9a8a6639706cd5ca8b">m_volumeControl</a></td></tr>
+<tr class="memitem:a543792164b762b9a8a6639706cd5ca8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d52/class_volume_handler.html">VolumeHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d98/class_sound_core.html#a543792164b762b9a8a6639706cd5ca8b">m_volumeControl</a> = nullptr</td></tr>
 <tr class="separator:a543792164b762b9a8a6639706cd5ca8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab79b0bcbb46054e9d6057919ad7e077"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/df0/class_abstract_engine.html">AbstractEngine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d98/class_sound_core.html#aab79b0bcbb46054e9d6057919ad7e077">m_engine</a> = nullptr</td></tr>
 <tr class="separator:aab79b0bcbb46054e9d6057919ad7e077"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -703,7 +703,7 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns a pointer to the <a class="el" href="../../d4/d98/class_sound_core.html" title="The SoundCore class provides a simple interface for audio playback. ">SoundCore</a> instance. </p>
 
-<p>Referenced by <a class="el" href="../../dc/d09/musicspectrumwidget_8cpp_source.html#l00330">MusicSpectrumWidget::createLightWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../dc/d09/musicspectrumwidget_8cpp_source.html#l00333">MusicSpectrumWidget::createLightWidget()</a>.</p>
 
 </div>
 </div>
@@ -866,7 +866,7 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>This function returns file path or stream url. </p>
 
-<p>Referenced by <a class="el" href="../../dc/d09/musicspectrumwidget_8cpp_source.html#l00330">MusicSpectrumWidget::createLightWidget()</a>.</p>
+<p>Referenced by <a class="el" href="../../dc/d09/musicspectrumwidget_8cpp_source.html#l00333">MusicSpectrumWidget::createLightWidget()</a>.</p>
 
 </div>
 </div>
@@ -1501,7 +1501,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d1/d5e/class_state_handler.html">StateHandler</a>* SoundCore::m_handler</td>
+          <td class="memname"><a class="el" href="../../d1/d5e/class_state_handler.html">StateHandler</a>* SoundCore::m_handler = nullptr</td>
         </tr>
       </table>
   </td>
@@ -1655,7 +1655,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../db/d52/class_volume_handler.html">VolumeHandler</a>* SoundCore::m_volumeControl</td>
+          <td class="memname"><a class="el" href="../../db/d52/class_volume_handler.html">VolumeHandler</a>* SoundCore::m_volumeControl = nullptr</td>
         </tr>
       </table>
   </td>
@@ -1675,7 +1675,7 @@ Static Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 27 2021 14:11:43 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 5 2021 21:06:33 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

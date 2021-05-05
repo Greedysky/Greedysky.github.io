@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.14.0.0</span>
+   &#160;<span id="projectnumber">2.15.0.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -156,10 +156,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="../../d0/d8f/class_florid.html#a0cf85460a11bb9840274d14a1b433999">  130</a></span>&#160;    QImage <a class="code" href="../../d0/d8f/class_florid.html#a0cf85460a11bb9840274d14a1b433999">m_image</a>;</div>
-<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="../../d0/d8f/class_florid.html#a16011b22ae137efad463186c9c39cd3c">  131</a></span>&#160;    <span class="keywordtype">bool</span> m_useImage = <span class="keyword">true</span>, m_renderLabel = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="../../d0/d8f/class_florid.html#a50f585140c088085c84743e2b3866afe">  131</a></span>&#160;    <span class="keywordtype">bool</span> m_renderLabel = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="../../d0/d8f/class_florid.html#abd0b39272315fe475041b2af36634dd5">  132</a></span>&#160;    QColor m_averageColor = QColor(255, 255, 255);</div>
 <div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="../../d0/d8f/class_florid.html#a21add81930dba9ea557924bcdd6f71f8">  133</a></span>&#160;    <span class="keywordtype">bool</span> m_gradientOn = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="../../d0/d8f/class_florid.html#ae72cccd8507b9f0bb1883084366cffb9">  134</a></span>&#160;    <a class="code" href="../../d7/d92/class_round_animation_label.html">RoundAnimationLabel</a> *<a class="code" href="../../d0/d8f/class_florid.html#ae72cccd8507b9f0bb1883084366cffb9">m_roundLabel</a>;</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="../../d0/d8f/class_florid.html#ae72cccd8507b9f0bb1883084366cffb9">  134</a></span>&#160;    <a class="code" href="../../d7/d92/class_round_animation_label.html">RoundAnimationLabel</a> *m_roundLabel = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;};</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
@@ -171,7 +171,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="namespace_music_utils_1_1_image_html_a28ab293202e6834a9b87f8ec4dc04c27"><div class="ttname"><a href="../../d8/d75/namespace_music_utils_1_1_image.html#a28ab293202e6834a9b87f8ec4dc04c27">MusicUtils::Image::reRenderImage</a></div><div class="ttdeci">MUSIC_UTILS_EXPORT void reRenderImage(int delta, const QImage *input, QImage *output)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d84/musicimageutils_8cpp_source.html#l00146">musicimageutils.cpp:146</a></div></div>
 <div class="ttc" id="class_visual_html_ab3b7ebf4a502114d1774447dc2555bf6"><div class="ttname"><a href="../../dc/d74/class_visual.html#ab3b7ebf4a502114d1774447dc2555bf6">Visual::start</a></div><div class="ttdeci">virtual void start()</div></div>
 <div class="ttc" id="class_visual_html_acfd8b1b71891f15bb51babdc677ae2d8"><div class="ttname"><a href="../../dc/d74/class_visual.html#acfd8b1b71891f15bb51babdc677ae2d8">Visual::hideEvent</a></div><div class="ttdeci">virtual void hideEvent(QHideEvent *event) override</div></div>
-<div class="ttc" id="class_florid_html_ae72cccd8507b9f0bb1883084366cffb9"><div class="ttname"><a href="../../d0/d8f/class_florid.html#ae72cccd8507b9f0bb1883084366cffb9">Florid::m_roundLabel</a></div><div class="ttdeci">RoundAnimationLabel * m_roundLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dc8/florid_8h_source.html#l00134">florid.h:134</a></div></div>
 <div class="ttc" id="class_visual_html_ada18127a7e2b162f5604af57f4ba297f"><div class="ttname"><a href="../../dc/d74/class_visual.html#ada18127a7e2b162f5604af57f4ba297f">Visual::stop</a></div><div class="ttdeci">virtual void stop()</div></div>
 <div class="ttc" id="class_round_animation_label_html_ac3648b57297fc657d5ee397a3dbde1e4"><div class="ttname"><a href="../../d7/d92/class_round_animation_label.html#ac3648b57297fc657d5ee397a3dbde1e4">RoundAnimationLabel::m_pixmap</a></div><div class="ttdeci">QPixmap m_pixmap</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dc8/florid_8h_source.html#l00067">florid.h:67</a></div></div>
 <div class="ttc" id="qmmp__export_8h_html_ae57db6e0c0f040f03506ccfc59947d30"><div class="ttname"><a href="../../df/df6/qmmp__export_8h.html#ae57db6e0c0f040f03506ccfc59947d30">QMMP_EXPORT</a></div><div class="ttdeci">#define QMMP_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df6/qmmp__export_8h_source.html#l00029">qmmp_export.h:29</a></div></div>
@@ -184,7 +183,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 27 2021 14:10:27 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 5 2021 21:05:29 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
