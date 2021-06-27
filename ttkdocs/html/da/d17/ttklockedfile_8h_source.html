@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.15.0.0</span>
+   &#160;<span id="projectnumber">2.15.1.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -84,56 +84,56 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifdef Q_OS_WIN</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QVector&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/d98/musicrunglobaldefine_8h.html">musicrunglobaldefine.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/d04/ttkglobaldefine_8h.html">ttkglobaldefine.h</a>&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dc/d69/namespace_t_t_k_locked_private.html">TTKLockedPrivate</a> {</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html">   14</a></span>&#160;    <span class="keyword">class </span><a class="code" href="../../d3/d98/musicrunglobaldefine_8h.html#aea27712b48c33c128659ff5608edeff4">MUSIC_RUN_EXPORT</a> <a class="code" href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html">TTKLockedFile</a> : <span class="keyword">public</span> QFile</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html#a2c1431992f51c8bafa2e86b889e267db">   17</a></span>&#160;        <span class="keyword">enum</span> <a class="code" href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html#a2c1431992f51c8bafa2e86b889e267db">LockMode</a></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        {</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html#a2c1431992f51c8bafa2e86b889e267dba70d204ae7f263d696e891ba558396ecb">   19</a></span>&#160;            NoLock = 0,</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html#a2c1431992f51c8bafa2e86b889e267dbada6dddf35113ba2ad0cfc71fdc43e337">   20</a></span>&#160;            <a class="code" href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html#a2c1431992f51c8bafa2e86b889e267dbada6dddf35113ba2ad0cfc71fdc43e337">ReadLock</a>,</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html#a2c1431992f51c8bafa2e86b889e267dbaa0706f099e93bbe8bf8f08698c2c2721">   21</a></span>&#160;            WriteLock</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        };</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html">TTKLockedFile</a>();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html">TTKLockedFile</a>(<span class="keyword">const</span> QString &amp;<a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        ~<a class="code" href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html">TTKLockedFile</a>();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">bool</span> open(OpenMode <a class="code" href="../../d2/db7/ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordtype">bool</span> lock(LockMode <a class="code" href="../../d2/db7/ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>, <span class="keywordtype">bool</span> block = <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">bool</span> unlock();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">bool</span> isLocked() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        LockMode lockMode() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">    #ifdef Q_OS_WIN</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        Qt::HANDLE wmutex;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        Qt::HANDLE rmutex;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        QVector&lt;Qt::HANDLE&gt; rmutexes;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        QString mutexname;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        Qt::HANDLE getMutexHandle(<span class="keywordtype">int</span> idx, <span class="keywordtype">bool</span> doCreate);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">bool</span> waitMutex(Qt::HANDLE mutex, <span class="keywordtype">bool</span> doBlock);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dc/d69/namespace_t_t_k_locked_private.html">TTKLockedPrivate</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html">   17</a></span>&#160;    <span class="keyword">class </span><a class="code" href="../../de/d04/ttkglobaldefine_8h.html#a1901ac8ec2858494367d44f9a048f597">TTK_MODULE_EXPORT</a> <a class="code" href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html">TTKLockedFile</a> : <span class="keyword">public</span> QFile</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html#a2c1431992f51c8bafa2e86b889e267db">   20</a></span>&#160;        <span class="keyword">enum</span> <a class="code" href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html#a2c1431992f51c8bafa2e86b889e267db">LockMode</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        {</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html#a2c1431992f51c8bafa2e86b889e267dba70d204ae7f263d696e891ba558396ecb">   22</a></span>&#160;            NoLock = 0,</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html#a2c1431992f51c8bafa2e86b889e267dbada6dddf35113ba2ad0cfc71fdc43e337">   23</a></span>&#160;            <a class="code" href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html#a2c1431992f51c8bafa2e86b889e267dbada6dddf35113ba2ad0cfc71fdc43e337">ReadLock</a>,</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html#a2c1431992f51c8bafa2e86b889e267dbaa0706f099e93bbe8bf8f08698c2c2721">   24</a></span>&#160;            WriteLock</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        };</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html">TTKLockedFile</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html">TTKLockedFile</a>(<span class="keyword">const</span> QString &amp;<a class="code" href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        ~<a class="code" href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html">TTKLockedFile</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordtype">bool</span> open(OpenMode <a class="code" href="../../d2/db7/ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordtype">bool</span> lock(LockMode <a class="code" href="../../d2/db7/ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>, <span class="keywordtype">bool</span> block = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">bool</span> unlock();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordtype">bool</span> isLocked() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        LockMode lockMode() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">    #ifdef Q_OS_WIN</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        Qt::HANDLE wmutex;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        Qt::HANDLE rmutex;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        QVector&lt;Qt::HANDLE&gt; rmutexes;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        QString mutexname;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">    #endif</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html#a68c555e7bc751bc1d945b6c7da9d2c41">   67</a></span>&#160;        <a class="code" href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html#a2c1431992f51c8bafa2e86b889e267db">LockMode</a> <a class="code" href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html#a68c555e7bc751bc1d945b6c7da9d2c41">m_lock_mode</a>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    };</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif //TTKLOCKEDFILE_H</span></div>
-<div class="ttc" id="namespace_t_t_k_locked_private_html"><div class="ttname"><a href="../../dc/d69/namespace_t_t_k_locked_private.html">TTKLockedPrivate</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db0/ttklocalpeer_8cpp_source.html#l00023">ttklocalpeer.cpp:23</a></div></div>
-<div class="ttc" id="class_t_t_k_locked_private_1_1_t_t_k_locked_file_html"><div class="ttname"><a href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html">TTKLockedPrivate::TTKLockedFile</a></div><div class="ttdoc">The class of the music local file. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d17/ttklockedfile_8h_source.html#l00014">ttklockedfile.h:14</a></div></div>
-<div class="ttc" id="class_t_t_k_locked_private_1_1_t_t_k_locked_file_html_a68c555e7bc751bc1d945b6c7da9d2c41"><div class="ttname"><a href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html#a68c555e7bc751bc1d945b6c7da9d2c41">TTKLockedPrivate::TTKLockedFile::m_lock_mode</a></div><div class="ttdeci">LockMode m_lock_mode</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d17/ttklockedfile_8h_source.html#l00067">ttklockedfile.h:67</a></div></div>
-<div class="ttc" id="musicrunglobaldefine_8h_html_aea27712b48c33c128659ff5608edeff4"><div class="ttname"><a href="../../d3/d98/musicrunglobaldefine_8h.html#aea27712b48c33c128659ff5608edeff4">MUSIC_RUN_EXPORT</a></div><div class="ttdeci">#define MUSIC_RUN_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d98/musicrunglobaldefine_8h_source.html#l00029">musicrunglobaldefine.h:29</a></div></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        Qt::HANDLE getMutexHandle(<span class="keywordtype">int</span> idx, <span class="keywordtype">bool</span> doCreate);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordtype">bool</span> waitMutex(Qt::HANDLE mutex, <span class="keywordtype">bool</span> doBlock);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html#a68c555e7bc751bc1d945b6c7da9d2c41">   70</a></span>&#160;        <a class="code" href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html#a2c1431992f51c8bafa2e86b889e267db">LockMode</a> <a class="code" href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html#a68c555e7bc751bc1d945b6c7da9d2c41">m_lock_mode</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    };</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif //TTKLOCKEDFILE_H</span></div>
+<div class="ttc" id="namespace_t_t_k_locked_private_html"><div class="ttname"><a href="../../dc/d69/namespace_t_t_k_locked_private.html">TTKLockedPrivate</a></div><div class="ttdoc">The namespace of locked private. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db0/ttklocalpeer_8cpp_source.html#l00023">ttklocalpeer.cpp:23</a></div></div>
+<div class="ttc" id="class_t_t_k_locked_private_1_1_t_t_k_locked_file_html"><div class="ttname"><a href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html">TTKLockedPrivate::TTKLockedFile</a></div><div class="ttdoc">The class of the ttk local file. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d17/ttklockedfile_8h_source.html#l00017">ttklockedfile.h:17</a></div></div>
+<div class="ttc" id="ttkglobaldefine_8h_html_a1901ac8ec2858494367d44f9a048f597"><div class="ttname"><a href="../../de/d04/ttkglobaldefine_8h.html#a1901ac8ec2858494367d44f9a048f597">TTK_MODULE_EXPORT</a></div><div class="ttdeci">#define TTK_MODULE_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d04/ttkglobaldefine_8h_source.html#l00027">ttkglobaldefine.h:27</a></div></div>
+<div class="ttc" id="class_t_t_k_locked_private_1_1_t_t_k_locked_file_html_a68c555e7bc751bc1d945b6c7da9d2c41"><div class="ttname"><a href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html#a68c555e7bc751bc1d945b6c7da9d2c41">TTKLockedPrivate::TTKLockedFile::m_lock_mode</a></div><div class="ttdeci">LockMode m_lock_mode</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d17/ttklockedfile_8h_source.html#l00070">ttklockedfile.h:70</a></div></div>
+<div class="ttc" id="ttkglobaldefine_8h_html"><div class="ttname"><a href="../../de/d04/ttkglobaldefine_8h.html">ttkglobaldefine.h</a></div></div>
 <div class="ttc" id="http__parser_8c_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="../../d1/d70/http__parser_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d70/http__parser_8c_source.html#l00458">http_parser.c:458</a></div></div>
-<div class="ttc" id="class_t_t_k_locked_private_1_1_t_t_k_locked_file_html_a2c1431992f51c8bafa2e86b889e267dbada6dddf35113ba2ad0cfc71fdc43e337"><div class="ttname"><a href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html#a2c1431992f51c8bafa2e86b889e267dbada6dddf35113ba2ad0cfc71fdc43e337">TTKLockedPrivate::TTKLockedFile::ReadLock</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d17/ttklockedfile_8h_source.html#l00020">ttklockedfile.h:20</a></div></div>
-<div class="ttc" id="class_t_t_k_locked_private_1_1_t_t_k_locked_file_html_a2c1431992f51c8bafa2e86b889e267db"><div class="ttname"><a href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html#a2c1431992f51c8bafa2e86b889e267db">TTKLockedPrivate::TTKLockedFile::LockMode</a></div><div class="ttdeci">LockMode</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d17/ttklockedfile_8h_source.html#l00017">ttklockedfile.h:17</a></div></div>
+<div class="ttc" id="class_t_t_k_locked_private_1_1_t_t_k_locked_file_html_a2c1431992f51c8bafa2e86b889e267dbada6dddf35113ba2ad0cfc71fdc43e337"><div class="ttname"><a href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html#a2c1431992f51c8bafa2e86b889e267dbada6dddf35113ba2ad0cfc71fdc43e337">TTKLockedPrivate::TTKLockedFile::ReadLock</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d17/ttklockedfile_8h_source.html#l00023">ttklockedfile.h:23</a></div></div>
+<div class="ttc" id="class_t_t_k_locked_private_1_1_t_t_k_locked_file_html_a2c1431992f51c8bafa2e86b889e267db"><div class="ttname"><a href="../../d7/dbc/class_t_t_k_locked_private_1_1_t_t_k_locked_file.html#a2c1431992f51c8bafa2e86b889e267db">TTKLockedPrivate::TTKLockedFile::LockMode</a></div><div class="ttdeci">LockMode</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d17/ttklockedfile_8h_source.html#l00020">ttklockedfile.h:20</a></div></div>
 <div class="ttc" id="ioapi_8h_html_a7e43d41c2fe013a373b540cba02505cf"><div class="ttname"><a href="../../d2/db7/ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a></div><div class="ttdeci">const char int mode</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/db7/ioapi_8h_source.html#l00135">ioapi.h:135</a></div></div>
-<div class="ttc" id="musicrunglobaldefine_8h_html"><div class="ttname"><a href="../../d3/d98/musicrunglobaldefine_8h.html">musicrunglobaldefine.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 5 2021 21:05:38 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 27 2021 13:28:19 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -242,6 +242,138 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-C++ 模板之SFINAE和enable_if分析" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2021/06/25/C++ 模板之SFINAE和enable_if分析/" class="article-date">
+      <time datetime="2021-06-25T12:06:14.000Z" itemprop="datePublished">2021-06-25</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/06/25/C++ 模板之SFINAE和enable_if分析/">C++ 模板之SFINAE和enable_if分析</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              本文主要介绍C++如何实现类型萃取以及如何禁止函数编译期间根据特定的条件来选择启用或禁用特定的重载，感兴趣的同学一起和小编学习吧。
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/技术专帖/">技术专帖</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a  href="/2021/06/25/C++ 模板之SFINAE和enable_if分析/#more">更多 >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-C++ array的神奇用法总结" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2021/03/20/C++ array的神奇用法总结/" class="article-date">
+      <time datetime="2021-03-20T04:43:15.000Z" itemprop="datePublished">2021-03-20</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/03/20/C++ array的神奇用法总结/">C++ array的神奇用法总结</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              std::array是在C++11标准中增加的STL容器，它的设计目的是提供与原生数组类似的功能与性能。
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/技术专帖/">技术专帖</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-11/">C++11</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-17/">C++17</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a  href="/2021/03/20/C++ array的神奇用法总结/#more">更多 >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-C++ STL萃取机制" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -506,11 +638,11 @@
 
 
   
-    <article id="post-C++ array的神奇用法总结" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-C++ type traits分析" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2021/01/02/C++ array的神奇用法总结/" class="article-date">
-      <time datetime="2021-01-02T03:42:26.000Z" itemprop="datePublished">2021-01-02</time>
+      <a href="/2021/01/02/C++ type traits分析/" class="article-date">
+      <time datetime="2021-01-02T08:14:26.000Z" itemprop="datePublished">2021-01-02</time>
 </a>
     </div>
   
@@ -523,7 +655,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/01/02/C++ array的神奇用法总结/">C++ array的神奇用法总结</a>
+      <a class="article-title" href="/2021/01/02/C++ type traits分析/">C++ type traits分析</a>
     </h1>
   
 
@@ -533,7 +665,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              std::array是在C++11标准中增加的STL容器，它的设计目的是提供与原生数组类似的功能与性能。
+              我们在平时常常会听到有人说traits/萃取等高大上的东西，有时候可能也会对此产生很大的疑问，觉得type tratis很高大上，高深莫测；其实说到底这个东西很简单，总结为一句话就是在运行的时候识别类型（即类型萃取）。
           
       
     </div>
@@ -548,12 +680,12 @@
 
       
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-11/">C++11</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-17/">C++17</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li></ul>
     </div>
 
       
         <p class="article-more-link">
-          <a  href="/2021/01/02/C++ array的神奇用法总结/#more">更多 >></a>
+          <a  href="/2021/01/02/C++ type traits分析/#more">更多 >></a>
         </p>
       
       <div class="clearfix"></div>
@@ -752,138 +884,6 @@
       
         <p class="article-more-link">
           <a  href="/2020/11/23/C++20 协程初探/#more">更多 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-C++ volatile详解" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2020/11/10/C++ volatile详解/" class="article-date">
-      <time datetime="2020-11-10T08:54:13.000Z" itemprop="datePublished">2020-11-10</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/11/10/C++ volatile详解/">C++ volatile详解</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              最近在讨论多线程编程中的一个可能的 false sharing 问题时，有人提出加 volatile 可能可以解决问题。这种错误的认识荼毒多年，促使我写下这篇文章。
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/技术专帖/">技术专帖</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a  href="/2020/11/10/C++ volatile详解/#more">更多 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-C++ assert 函数用法总结与注意事项" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2020/11/04/C++ assert 函数用法总结与注意事项/" class="article-date">
-      <time datetime="2020-11-04T06:38:29.000Z" itemprop="datePublished">2020-11-04</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/11/04/C++ assert 函数用法总结与注意事项/">C++ assert 函数用法总结与注意事项</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              assert宏的原型定义在<assert.h>中，其作用是如果它的条件返回错误，则终止程序执行。
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/技术专帖/">技术专帖</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a  href="/2020/11/04/C++ assert 函数用法总结与注意事项/#more">更多 >></a>
         </p>
       
       <div class="clearfix"></div>

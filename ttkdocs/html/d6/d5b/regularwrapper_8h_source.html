@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.15.0.0</span>
+   &#160;<span id="projectnumber">2.15.1.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -99,7 +99,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define REGULARWRAPPER_H</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/df6/qmmp__export_8h.html">qmmp_export.h</a>&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#ifdef QMMP_GREATER_NEW</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#if QT_VERSION &gt;= QT_VERSION_CHECK(5,0,0)</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;QRegularExpression&gt;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;QRegExp&gt;</span></div>
@@ -117,7 +117,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">static</span> QString escape(<span class="keyword">const</span> QString &amp;str);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#ifdef QMMP_GREATER_NEW</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#if QT_VERSION &gt;= QT_VERSION_CHECK(5,0,0)</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">operator</span> QRegularExpression () <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../d7/d4c/class_regular_wrapper.html#a83710c6185bb01e500ddff19c492c39d">   47</a></span>&#160;    QRegularExpression <a class="code" href="../../d7/d4c/class_regular_wrapper.html#a83710c6185bb01e500ddff19c492c39d">m_regular</a>;</div>
@@ -130,7 +130,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif // REGULARWRAPPER_H</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="class_regular_wrapper_html_a83710c6185bb01e500ddff19c492c39d"><div class="ttname"><a href="../../d7/d4c/class_regular_wrapper.html#a83710c6185bb01e500ddff19c492c39d">RegularWrapper::m_regular</a></div><div class="ttdeci">QRegularExpression m_regular</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5b/regularwrapper_8h_source.html#l00047">regularwrapper.h:47</a></div></div>
 <div class="ttc" id="class_regular_wrapper_html_ab29140d63304426d2fd3c57993f71446"><div class="ttname"><a href="../../d7/d4c/class_regular_wrapper.html#ab29140d63304426d2fd3c57993f71446">RegularWrapper::m_match</a></div><div class="ttdeci">QRegularExpressionMatch m_match</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5b/regularwrapper_8h_source.html#l00048">regularwrapper.h:48</a></div></div>
 <div class="ttc" id="class_regular_wrapper_html"><div class="ttname"><a href="../../d7/d4c/class_regular_wrapper.html">RegularWrapper</a></div><div class="ttdoc">The class of the regular wrapper. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5b/regularwrapper_8h_source.html#l00032">regularwrapper.h:32</a></div></div>
@@ -139,7 +139,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 5 2021 21:05:29 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 27 2021 13:28:12 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

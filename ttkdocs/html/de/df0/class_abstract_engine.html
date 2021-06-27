@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.15.0.0</span>
+   &#160;<span id="projectnumber">2.15.1.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -125,6 +125,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ad1e672f82fb0f365822d69c81ead704a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a417d13e12a27ab5ad3b662ae53fa41f9"><td class="memItemLeft" align="right" valign="top">static QList&lt; <a class="el" href="../../dd/d27/class_engine_factory.html">EngineFactory</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/class_abstract_engine.html#a417d13e12a27ab5ad3b662ae53fa41f9">enabledFactories</a> ()</td></tr>
 <tr class="separator:a417d13e12a27ab5ad3b662ae53fa41f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a793367b1da97e0e9558e91b8de20b367"><td class="memItemLeft" align="right" valign="top">static QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/class_abstract_engine.html#a793367b1da97e0e9558e91b8de20b367">nameFilters</a> ()</td></tr>
+<tr class="separator:a793367b1da97e0e9558e91b8de20b367"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa99454aba207569e499b9fe5e6294f5c"><td class="memItemLeft" align="right" valign="top">static QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/class_abstract_engine.html#aa99454aba207569e499b9fe5e6294f5c">contentTypes</a> ()</td></tr>
+<tr class="separator:aa99454aba207569e499b9fe5e6294f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a8c068f22f447ec3fd6c205fb8ce684"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d27/class_engine_factory.html">EngineFactory</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/class_abstract_engine.html#a5a8c068f22f447ec3fd6c205fb8ce684">findByFilePath</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> QString &amp;path)</td></tr>
 <tr class="separator:a5a8c068f22f447ec3fd6c205fb8ce684"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac99cdf5d0f8074b69d419794fb4c15b4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/class_abstract_engine.html#ac99cdf5d0f8074b69d419794fb4c15b4">setEnabled</a> (<a class="el" href="../../dd/d27/class_engine_factory.html">EngineFactory</a> *factory, bool enable=true)</td></tr>
@@ -221,6 +225,30 @@ Static Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aa99454aba207569e499b9fe5e6294f5c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static QStringList AbstractEngine::contentTypes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a list of the supported mime types. </p>
+
+</div>
+</div>
 <a class="anchor" id="a9b06bdc088478dbac1ae20b64c9f1fdb"></a>
 <div class="memitem">
 <div class="memproto">
@@ -499,6 +527,30 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a793367b1da97e0e9558e91b8de20b367"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static QStringList AbstractEngine::nameFilters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a list of file name filters, i.e. "*.mp3 *.mpg". </p>
+
+</div>
+</div>
 <a class="anchor" id="a8ffc889ed8d2285f7f460f4370e8ad99"></a>
 <div class="memitem">
 <div class="memproto">
@@ -688,7 +740,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/dcf/abstractengine_8h_source.html#l00129">129</a> of file <a class="el" href="../../dd/dcf/abstractengine_8h_source.html">abstractengine.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dcf/abstractengine_8h_source.html#l00137">137</a> of file <a class="el" href="../../dd/dcf/abstractengine_8h_source.html">abstractengine.h</a>.</p>
 
 </div>
 </div>
@@ -710,7 +762,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/dcf/abstractengine_8h_source.html#l00130">130</a> of file <a class="el" href="../../dd/dcf/abstractengine_8h_source.html">abstractengine.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dcf/abstractengine_8h_source.html#l00138">138</a> of file <a class="el" href="../../dd/dcf/abstractengine_8h_source.html">abstractengine.h</a>.</p>
 
 </div>
 </div>
@@ -732,7 +784,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/dcf/abstractengine_8h_source.html#l00127">127</a> of file <a class="el" href="../../dd/dcf/abstractengine_8h_source.html">abstractengine.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dcf/abstractengine_8h_source.html#l00135">135</a> of file <a class="el" href="../../dd/dcf/abstractengine_8h_source.html">abstractengine.h</a>.</p>
 
 </div>
 </div>
@@ -742,7 +794,7 @@ Static Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 5 2021 21:05:54 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 27 2021 13:28:34 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

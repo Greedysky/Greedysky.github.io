@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../lb_app_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">TTKMusicplayer
-   &#160;<span id="projectnumber">2.15.0.0</span>
+   &#160;<span id="projectnumber">2.15.1.0</span>
    </div>
    <div id="projectbrief">TTKMusicPlayer that imitation Kugou music, the music player use of qmmp core library based on Qt for windows and linux</div>
   </td>
@@ -83,7 +83,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;QMutex&gt;</code><br />
-<code>#include &quot;<a class="el" href="../../d7/d5f/musicsingleton_8h_source.html">musicsingleton.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/d3a/ttksingleton_8h_source.html">ttksingleton.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/d9b/musicglobaldefine_8h_source.html">musicglobaldefine.h</a>&quot;</code><br />
 </div>
 <p><a href="../../d1/d08/musicdispatchmanager_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -103,14 +104,14 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a6f8566eaa1e2a2b96cfb542ae89f8015"><td class="memItemLeft" align="right" valign="top">typedef struct MUSIC_CORE_EXPORT <a class="el" href="../../dc/dde/struct_music_dispatch_item.html">MusicDispatchItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d08/musicdispatchmanager_8h.html#a6f8566eaa1e2a2b96cfb542ae89f8015">MusicDispatchItem</a></td></tr>
-<tr class="memdesc:a6f8566eaa1e2a2b96cfb542ae89f8015"><td class="mdescLeft">&#160;</td><td class="mdescRight">The class of the functions dispatch item.  <a href="#a6f8566eaa1e2a2b96cfb542ae89f8015">More...</a><br /></td></tr>
-<tr class="separator:a6f8566eaa1e2a2b96cfb542ae89f8015"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0193ad8365e7fc18ef72317d67e84477"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../de/d04/ttkglobaldefine_8h.html#a1901ac8ec2858494367d44f9a048f597">TTK_MODULE_EXPORT</a> <a class="el" href="../../dc/dde/struct_music_dispatch_item.html">MusicDispatchItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d08/musicdispatchmanager_8h.html#a0193ad8365e7fc18ef72317d67e84477">MusicDispatchItem</a></td></tr>
+<tr class="memdesc:a0193ad8365e7fc18ef72317d67e84477"><td class="mdescLeft">&#160;</td><td class="mdescRight">The class of the functions dispatch item.  <a href="#a0193ad8365e7fc18ef72317d67e84477">More...</a><br /></td></tr>
+<tr class="separator:a0193ad8365e7fc18ef72317d67e84477"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8260d28c206959d42cd193a2fb3b6a2a"><td class="memItemLeft" align="right" valign="top">MUSIC_CORE_EXPORT <a class="el" href="../../da/d80/class_music_dispatch_manager.html">MusicDispatchManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d08/musicdispatchmanager_8h.html#a8260d28c206959d42cd193a2fb3b6a2a">GetMusicDispatchManager</a> ()</td></tr>
-<tr class="separator:a8260d28c206959d42cd193a2fb3b6a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9afc5b136f2851434c816f3c71bb164"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d04/ttkglobaldefine_8h.html#a1901ac8ec2858494367d44f9a048f597">TTK_MODULE_EXPORT</a> <a class="el" href="../../da/d80/class_music_dispatch_manager.html">MusicDispatchManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d08/musicdispatchmanager_8h.html#ad9afc5b136f2851434c816f3c71bb164">GetMusicDispatchManager</a> ()</td></tr>
+<tr class="separator:ad9afc5b136f2851434c816f3c71bb164"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a7d72c45b428c9675bcdee4df84d3d569"></a>
@@ -123,19 +124,19 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/d08/musicdispatchmanager_8h_source.html#l00095">95</a> of file <a class="el" href="../../d1/d08/musicdispatchmanager_8h_source.html">musicdispatchmanager.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/d08/musicdispatchmanager_8h_source.html#l00096">96</a> of file <a class="el" href="../../d1/d08/musicdispatchmanager_8h_source.html">musicdispatchmanager.h</a>.</p>
 
-<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00852">MusicApplication::setDeleteItemAt()</a>.</p>
+<p>Referenced by <a class="el" href="../../db/d25/musicapplication_8cpp_source.html#l00843">MusicApplication::setDeleteItemAt()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="a6f8566eaa1e2a2b96cfb542ae89f8015"></a>
+<a class="anchor" id="a0193ad8365e7fc18ef72317d67e84477"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct MUSIC_CORE_EXPORT <a class="el" href="../../dc/dde/struct_music_dispatch_item.html">MusicDispatchItem</a> <a class="el" href="../../dc/dde/struct_music_dispatch_item.html">MusicDispatchItem</a></td>
+          <td class="memname">typedef struct <a class="el" href="../../de/d04/ttkglobaldefine_8h.html#a1901ac8ec2858494367d44f9a048f597">TTK_MODULE_EXPORT</a> <a class="el" href="../../dc/dde/struct_music_dispatch_item.html">MusicDispatchItem</a> <a class="el" href="../../dc/dde/struct_music_dispatch_item.html">MusicDispatchItem</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -146,12 +147,12 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a8260d28c206959d42cd193a2fb3b6a2a"></a>
+<a class="anchor" id="ad9afc5b136f2851434c816f3c71bb164"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">MUSIC_CORE_EXPORT <a class="el" href="../../da/d80/class_music_dispatch_manager.html">MusicDispatchManager</a>* GetMusicDispatchManager </td>
+          <td class="memname"><a class="el" href="../../de/d04/ttkglobaldefine_8h.html#a1901ac8ec2858494367d44f9a048f597">TTK_MODULE_EXPORT</a> <a class="el" href="../../da/d80/class_music_dispatch_manager.html">MusicDispatchManager</a>* GetMusicDispatchManager </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -161,14 +162,14 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../de/daf/musicsingleton_8cpp_source.html#l00020">20</a> of file <a class="el" href="../../de/daf/musicsingleton_8cpp_source.html">musicsingleton.cpp</a>.</p>
 
-<p>References <a class="el" href="../../d7/d5f/musicsingleton_8h_source.html#l00063">MusicSingleton&lt; T &gt;::createInstance()</a>.</p>
+<p>References <a class="el" href="../../d4/d3a/ttksingleton_8h_source.html#l00061">TTKSingleton&lt; T &gt;::createInstance()</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 5 2021 21:05:41 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 27 2021 13:28:28 for TTKMusicplayer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
